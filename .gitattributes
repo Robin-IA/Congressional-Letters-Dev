@@ -9,3 +9,4 @@
 *.warc   binary
 *.sqlite binary
 *.xlsx   binary
+*.docx   binary

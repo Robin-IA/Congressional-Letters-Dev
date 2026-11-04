@@ -15,3 +15,7 @@ pypdf     >= 6.16.2
 # item. Not needed to build or serve the explorer: the per-member data and the
 # thumbnails are both served from this repository at the moment.
 internetarchive >= 5.11.0
+
+# Only for build/make_decisions_doc.py, which writes the shareable .docx of
+# docs/keeping-it-current.md. Not needed to build or serve the explorer.
+python-docx >= 1.2.0
