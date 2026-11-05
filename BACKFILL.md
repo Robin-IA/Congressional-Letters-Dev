@@ -59,7 +59,15 @@ git remote add dev https://github.com/Robin-IA/Congressional-Letters-Dev.git
 git fetch dev && git checkout -B harvest-member-letters dev/harvest-member-letters
 ```
 
-## 2. Install
+## 2. Install — nothing to install
+
+All four scripts this runbook uses are **stdlib only**: `harvest.py`,
+`chamber_rosters.py`, `backfill_roster.py` and `harvest_paths.py`. Verified by
+walking their imports, not by reading them. So a bare `python3` runs the
+backfill and there is no environment to get wrong.
+
+`requirements.txt` exists for the thumbnail renderer and the archive.org
+uploader. Install it only if you also mean to render previews:
 
 ```bash
 python3 -m venv .venv && source .venv/bin/activate

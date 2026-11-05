@@ -16,6 +16,7 @@ pypdf     >= 6.16.2
 # thumbnails are both served from this repository at the moment.
 internetarchive >= 5.11.0
 
-# Only for build/make_decisions_doc.py, which writes the shareable .docx of
-# docs/keeping-it-current.md. Not needed to build or serve the explorer.
-python-docx >= 1.2.0
+# Nothing here is needed for the backfill. build/harvest.py,
+# chamber_rosters.py, backfill_roster.py and harvest_paths.py are stdlib only,
+# so that work runs on a bare python3 -- checked with an AST scan, not by
+# reading the imports.
