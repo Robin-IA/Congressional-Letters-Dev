@@ -105,8 +105,8 @@ Measured on 5 November, two hosts, nothing else running:
 ```
 
 That is two hosts of evidence and it does not extrapolate to 778. Senate hosts
-are the slow ones — more years, far more captures — and there are 141 of them
-against 637 House hosts. Assume overnight rather than an afternoon.
+are the slow ones — more years, far more captures — and there are 138 of them
+against 640 House hosts. Assume overnight rather than an afternoon.
 
 **A zero is usually a true zero.** `adler.house.gov` has 20 captures in Wayback
 and rows that match `urlkey:.*letter.*`, but all of them are `enewsletter-signup`
@@ -204,7 +204,7 @@ the cache is incomplete, not the corpus — run it again without `--export-only`
 URLs each, not hundreds: `house.gov/abercrombie` gave 8 letters from 17 rows on
 5 November, against 18 letter-shaped URLs found by hand. Across 435 sites that
 is plausibly a few thousand, concentrated in the years the explorer is thinnest
-— 2003 to 2008 together hold 553 letters today.
+— 2003 to 2008 together hold 562 letters today.
 
 **They are not 435 missing members.** Matched by label and chamber: 73 are an
 earlier URL for a member already in the explorer, 193 for a member already in

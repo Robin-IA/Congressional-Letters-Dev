@@ -21,7 +21,7 @@ these sites hold ten to twenty letter-shaped URLs each -- 18 under
 ``house.gov/abercrombie``, 15 under ``house.gov/upton``, 2 under
 ``house.gov/waters`` -- against hundreds for a modern senate host. Across 435
 sites that is still a few thousand letters, from the years the explorer is
-thinnest: 2003 to 2008 together currently hold 553.
+thinnest: 2003 to 2008 together currently hold 562.
 
 The 435 rows are also not 435 missing members. Matching each segment against the
 subdomain sites in the same file, by label and chamber: 73 are an earlier URL
