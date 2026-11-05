@@ -28,8 +28,9 @@ The open work is no longer the render. It is the **backfill** — the members wh
 have left, who the explorer has never seen — and the **per-Congress
 restructure**. Both are in [`BACKFILL.md`](BACKFILL.md) and section 8 below.
 
-Read [`CLAUDE.md`](CLAUDE.md) for why the project is built the way it is. This
-file is only about resuming.
+Read [`CLAUDE.md`](CLAUDE.md) for why the project is built the way it is, and
+[issue #2](https://github.com/internetarchivecanada/letters-from-congress/issues/2)
+for what to do next and in what order. This file is only about resuming.
 
 ---
 

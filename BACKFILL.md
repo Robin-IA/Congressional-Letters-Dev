@@ -6,6 +6,11 @@ through it by hand. Everything it needs is here or in the clone.
 **Prepared 5 November 2026**, branch `harvest-member-letters` on `origin`
 (`internetarchivecanada/letters-from-congress` — the private one).
 
+**This file is the mechanics. The sequence and the acceptance criteria are
+[issue #2](https://github.com/internetarchivecanada/letters-from-congress/issues/2)** — what each pass is for,
+how to tell it worked, and the two decisions that cannot be made by running
+something.
+
 | | |
 | --- | --- |
 | Backfill queue | 1,213 member sites the explorer has never touched |
