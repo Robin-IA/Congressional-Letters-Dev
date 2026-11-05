@@ -9,7 +9,7 @@ through it by hand. Everything it needs is here or in the clone.
 | --- | --- |
 | Backfill queue | 1,215 member sites the explorer has never touched |
 | **Queryable this pass** | **778 hostnames** |
-| Deferred | 437 path-keyed `house.gov/<name>` sites — see §6 |
+| **Second pass** | **435 path-keyed `house.gov/<name>` sites** — see §8 |
 | Identified | 689 of 778 carry a bioguide; 89 do not |
 | Verified on | 2 hosts, 5 November — see §4 |
 | Expected runtime | **many hours. Run it detached.** |
@@ -147,13 +147,7 @@ which is open: they have no current website to link to, and 89 of them have no
 bioguide, so they cannot yet be attributed to a person. Attribution is fixable
 by matching names against `legislators-historical.json`; it has not been done.
 
-**It leaves 437 sites out.** Through the 2000s most representatives sat at
-`house.gov/<name>/` rather than on a subdomain. Those are not hostnames:
-`harvest_host` would build a cache filename containing a slash and enumerate the
-wrong thing. Finding their letters needs a CDX query against a path prefix,
-which is a second pass rather than a variation on this one. They are in
-`data/member-sites.tsv`; `python build/backfill_roster.py --include-path-keyed`
-lists them.
+**It leaves the path-keyed sites to a second pass**, which now exists — §8.
 
 **Thumbnails are a downstream constraint.** `thumbs/` is already 854 MB across
 47,688 files against a roughly 1 GB Pages budget. Every letter this backfill
@@ -172,3 +166,42 @@ git checkout pre-congress-restructure -- index.html app.js index.json payload th
 were serving on 5 November 2026. Nothing in this runbook writes to those paths,
 so you should not need it — it exists so that rolling back is a checkout rather
 than a reconstruction.
+
+---
+
+## 8. Second pass: the path-keyed sites
+
+Through the 2000s most representatives had no host of their own but a directory
+on the chamber's site — 391 of the 440 the House listed in 2003, none by 2016.
+Those 437 rows of `data/member-sites.tsv` carry a slash, and `harvest.py` cannot
+take them: it names its cache after the host, so a slash makes a subdirectory,
+and it enumerates a host where the target is a path prefix.
+
+```bash
+nohup python build/harvest_paths.py --workers 3 > paths.log 2>&1 &
+tail -f paths.log
+```
+
+Defaults are safe here — it writes `data/letters-paths.jsonl` and
+`data/cdx-cache/paths/`, neither of which the explorer reads. Two segments are
+skipped as chamber plumbing rather than members (`cgi-bin`, `include_content`),
+leaving 435.
+
+**Expect less than the host pass.** These sites hold ten to twenty letter-shaped
+URLs each, not hundreds: `house.gov/abercrombie` gave 8 letters from 17 rows on
+5 November, against 18 letter-shaped URLs found by hand. Across 435 sites that
+is plausibly a few thousand, concentrated in the years the explorer is thinnest
+— 2003 to 2008 together hold 553 letters today.
+
+**They are not 435 missing members.** Matched by label and chamber: 73 are an
+earlier URL for a member already in the explorer, 193 for a member already in
+the host queue above, and 171 have no subdomain counterpart at all. Only the 73
+resolve to a bioguide — the House's own directory never stated one — so for the
+other 362 the row names a site, not yet a person. Every row carries an
+`attribution` field saying which case it is. Nothing here should be folded into
+the explorer on the strength of an inferred match alone.
+
+**If you change the query, do not pass a wildcard and `matchType=prefix`
+together.** Either alone enumerates the prefix; together they return nothing,
+and an empty CDX answer is indistinguishable from a member who wrote no letters.
+That is written at the top of both `harvest_paths.py` and `cdx_rows`.
