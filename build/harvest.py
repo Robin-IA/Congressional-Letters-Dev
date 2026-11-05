@@ -216,7 +216,16 @@ def fetch(url: str, *, timeout: int = TIMEOUT) -> str:
         try:
             request = urllib.request.Request(url, headers=UA)
             with urllib.request.urlopen(request, timeout=timeout) as response:
-                return response.read().decode("utf-8", "replace")
+                body = response.read().decode("utf-8", "replace")
+            # CDX serves an "Internet Archive: Temporarily Offline" HTML page
+            # under a 200 when its index is down. The row parser skips any line
+            # without five fields, so that page reads as a host with no letters
+            # and caches as a success -- the silent short read this whole
+            # enumeration exists to avoid. Treat it as the outage it is.
+            if body.lstrip()[:1] == "<":
+                raise RuntimeError("CDX answered HTML, not an index "
+                                   "(temporarily offline?)")
+            return body
         except urllib.error.HTTPError as exc:
             last = exc
             # 429 and 5xx are worth waiting out; 400s are not.
@@ -231,14 +240,25 @@ def fetch(url: str, *, timeout: int = TIMEOUT) -> str:
 
 def cdx_rows(host: str, *, extra_filters: list[str] | None = None,
              date_from: str | None = None, date_to: str | None = None,
-             page: int | None = None,
-             page_size: int | None = None) -> list[dict]:
+             page: int | None = None, page_size: int | None = None,
+             match_type: str | None = "domain") -> list[dict]:
+    """Enumerate one host's letter-shaped captures.
+
+    ``match_type`` is ``None`` for the path-keyed sites of the 2000s, where the
+    member lived at ``house.gov/<name>/`` and the target is a path prefix
+    rather than a host -- pass ``"house.gov/<name>/*"`` as ``host``. Do not
+    pass a wildcard AND ``matchType=prefix``: together they return nothing,
+    while either alone works, and the empty answer looks exactly like a host
+    with no letters.
+    """
     filters = ["statuscode:200", r"urlkey:.*letter.*",
                r"!urlkey:.*newsletter.*"] + (extra_filters or [])
-    params = [("url", host), ("matchType", "domain"),
+    params = [("url", host),
               ("collapse", "urlkey"), ("limit", PER_HOST_CAP),
               ("showResumeKey", "true"),
               ("fl", "original,timestamp,mimetype,length,digest")]
+    if match_type:
+        params.insert(1, ("matchType", match_type))
     if date_from:
         params.append(("from", date_from))
     if date_to:
