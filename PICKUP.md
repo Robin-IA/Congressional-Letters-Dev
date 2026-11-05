@@ -3,7 +3,7 @@
 Hand this file to Claude Code and say "continue the work". Everything it needs
 is here or in the clone.
 
-**State as of 5 November 2026**, branch `harvest-member-letters` on `origin`
+**State as of 5 November 2026**, branch `harvest-member-letters` on `dev`
 (`git log -1` for the commit — a sha written here goes stale the next push):
 
 | | |
@@ -34,41 +34,53 @@ for what to do next and in what order. This file is only about resuming.
 
 ---
 
-## 0. The three remotes have diverged on purpose — do not push them in step
+## 0. Four repositories. Develop in one of them.
 
 This used to be one branch on three remotes, and section 5 below used to tell
 you to push all three in a loop. **That loop would now publish a private
 document.** As of 5 November:
 
-| Remote | Repository | Serving | Has the backfill work |
-| --- | --- | --- | --- |
-| `origin` | `internetarchivecanada/letters-from-congress` | private, no Pages | **yes** |
-| `iac` | `internetarchivecanada/congressional-letters` | public mirror, Pages | no — `ddaf0c9ac` |
-| `mine` | `Robin-IA/congressional-letters` | working copy, Pages | no — `ddaf0c9ac` |
+| Remote | Repository | What it is |
+| --- | --- | --- |
+| **`dev`** | **`Robin-IA/Congressional-Letters-Dev`** | **private, no Pages — the working copy. Develop here.** |
+| `origin` | `internetarchivecanada/letters-from-congress` | private, no Pages. Holds PR #1 and issue #2. **Frozen** |
+| `iac` | `internetarchivecanada/congressional-letters` | public, Pages. The live explorer. **Frozen** |
+| `mine` | `Robin-IA/congressional-letters` | public, Pages. Your copy of the live explorer. **Frozen** |
 
-Six commits sit on `origin` and nowhere else. One of them adds
-`docs/keeping-it-current.md`, an internal decisions document. Both `iac` and
-`mine` serve GitHub Pages **from the branch root**, so a push there makes
-`docs/keeping-it-current.md` fetchable at a public URL. That is the whole reason
-the private remote exists.
+**`iac` and `mine` are being reviewed by other people and must not change.**
+Both serve GitHub Pages **from the branch root**, so a push to either also makes
+`docs/keeping-it-current.md` — an internal decisions document — fetchable at a
+public URL. Two reasons, either one sufficient, not to push them.
 
-So: **backfill and restructure work goes to `origin` only.** Publishing rendered
-previews to the public mirrors is still fine, but push those two from a tree
-that does not carry `docs/` — or cherry-pick — and never with a `for` loop over
-all three.
+**`origin` is frozen too**, as the record of what was handed over: the backfill
+code, both runbooks and the issue that sequences them. It is nine commits ahead
+of the two public repos and a strict superset of them — nothing is stranded
+anywhere else.
+
+`dev` carries all of it: both branches, the `pre-congress-restructure` tag, and
+every commit the other three have between them. It is private, so the internal
+document is safe there, and it has no Pages site, so nothing it holds is served
+to anyone.
+
+So: **all new work goes to `dev`.** Pushing `origin`, `iac` or `mine` is a
+deliberate act requiring a reason, not something a loop does on your behalf.
 
 ## 1. Clone
 
 ```bash
 mkdir -p ~/ia && cd ~/ia
-gh repo clone internetarchivecanada/letters-from-congress congressional-member-letters -- -b harvest-member-letters
+gh repo clone Robin-IA/Congressional-Letters-Dev congressional-member-letters -- -b harvest-member-letters
 cd congressional-member-letters
 ```
 
-**`letters-from-congress`, not `congressional-letters`**, and **not `main`**.
-`main` is the initial scaffold; the work has never been merged into it, and
-both Pages sites serve the branch. The public repo is a mirror six commits
-behind and does not have the backfill code.
+**`Congressional-Letters-Dev`**, and **not `main`**. `main` is the initial
+scaffold; the work has never been merged into it, and both Pages sites serve
+the branch.
+
+The other three repositories are frozen — see section 0. Of the names, the one
+that sounds like the main repository, `congressional-letters`, is the published
+mirror and the furthest behind. Clone the dev repo and the question does not
+arise.
 
 The clone brings all 47,688 thumbnail files, all 514 member files and the page
 itself. (47,674 of those match a document still in the corpus; 14 are leftovers
@@ -139,7 +151,7 @@ The renderer writes straight into `thumbs/`, so there is no copy step.
 
 ```bash
 python3 build/build_site.py --thumb-base thumbs/ --force
-git add -A && git commit -m "Publish previews" && git push origin harvest-member-letters
+git add -A && git commit -m "Publish previews" && git push dev harvest-member-letters
 ```
 
 `--force` because the build refuses to shrink the corpus by more than a tenth
@@ -148,11 +160,12 @@ without being told to, which is a guard worth keeping.
 Every 20–30 minutes is plenty. **GitHub Pages allows 10 builds an hour from a
 branch and every push is one**, so do not loop tighter than that.
 
-**Do not push all three remotes in a loop.** That is what section 0 is about:
-`origin` carries an internal document and the other two serve Pages from the
-branch root. With 239 documents left there is no publishing loop to run anyway —
-one final build, and the public mirrors can be brought forward deliberately,
-once, by whoever decides what the public branch should contain.
+**Push `dev`, and nothing else.** That is what section 0 is about: the two
+public repos are under review by other people, and they serve Pages from the
+branch root where an internal document now sits. With 239 documents left there
+is no publishing loop to run anyway — one final build into `dev`, and the public
+repos get brought forward deliberately, once, by whoever decides what the public
+branch should contain and what happens to `docs/`.
 
 ## 6. How to tell whether it is actually working
 

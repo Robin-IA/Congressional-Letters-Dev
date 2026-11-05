@@ -3,8 +3,8 @@
 Hand this file to Claude Code on the studio and say "run the backfill", or work
 through it by hand. Everything it needs is here or in the clone.
 
-**Prepared 5 November 2026**, branch `harvest-member-letters` on `origin`
-(`internetarchivecanada/letters-from-congress` — the private one).
+**Prepared 5 November 2026**, branch `harvest-member-letters` on `dev`
+(`Robin-IA/Congressional-Letters-Dev` — the private working copy).
 
 **This file is the mechanics. The sequence and the acceptance criteria are
 [issue #2](https://github.com/internetarchivecanada/letters-from-congress/issues/2)** — what each pass is for,
@@ -38,22 +38,25 @@ explorer has none of him. The trial run in §4 recovered 44 letters.
 
 ```bash
 mkdir -p ~/ia && cd ~/ia
-gh repo clone internetarchivecanada/letters-from-congress congressional-backfill -- -b harvest-member-letters
+gh repo clone Robin-IA/Congressional-Letters-Dev congressional-backfill -- -b harvest-member-letters
 cd congressional-backfill
 ```
 
-**`letters-from-congress`, not `congressional-letters`.** `PICKUP.md` sends you
-to the latter, which is right for the explorer and wrong here: it is the public
-Pages repository and does not have this work. The backfill code lives only on
-`letters-from-congress`, which is private. Pushing it to the public repo would
-publish `docs/keeping-it-current.md` at a public URL, so it has not been pushed
-there. Clone this one and the question does not arise.
+**`Congressional-Letters-Dev`, not either `congressional-letters`.** The two
+repos with that name are public, serve GitHub Pages, are under review by other
+people, and do not have this work. `Congressional-Letters-Dev` is private,
+carries everything, and is where development happens. Clone it and the question
+does not arise.
+
+`internetarchivecanada/letters-from-congress` also has this work and is also
+private, but it is frozen as the record of what was handed over. Do not push to
+it.
 
 If you would rather work in an existing clone, add the remote:
 
 ```bash
-git remote add lfc https://github.com/internetarchivecanada/letters-from-congress.git
-git fetch lfc && git checkout -B harvest-member-letters lfc/harvest-member-letters
+git remote add dev https://github.com/Robin-IA/Congressional-Letters-Dev.git
+git fetch dev && git checkout -B harvest-member-letters dev/harvest-member-letters
 ```
 
 ## 2. Install
@@ -141,7 +144,7 @@ print("no bioguide:", sum(1 for r in rows if not r.get("bioguide")))
 PY
 ```
 
-Commit the output and push to `lfc`/`origin`. **Do not merge it into the
+Commit the output and push to `dev`. **Do not merge it into the
 explorer yet** — see §6. Nothing in this run touches `index.json`, `payload/`
 or `data/members.json`, so the live explorer is unaffected either way.
 
@@ -162,7 +165,7 @@ them where the thumbnails currently live.
 
 ## 7. If it goes wrong
 
-The explorer as served before any of this is tagged, on all three remotes:
+The explorer as served before any of this is tagged, on all four remotes:
 
 ```bash
 git checkout pre-congress-restructure -- index.html app.js index.json payload thumbs
