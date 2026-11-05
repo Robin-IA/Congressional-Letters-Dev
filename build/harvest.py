@@ -574,6 +574,11 @@ def main() -> None:
                         default=root / "data" / "letters-raw.jsonl")
     parser.add_argument("--members-out", type=Path,
                         default=root / "data" / "members.json")
+    parser.add_argument("--members-in", type=Path,
+                        help="harvest this roster instead of building one from "
+                             "legislators-current.json; see build/backfill_roster.py. "
+                             "Requires --members-out and --out to be given, so a "
+                             "backfill cannot overwrite the explorer's own data.")
     parser.add_argument("--workers", type=int, default=3)
     parser.add_argument("--limit", type=int, default=0,
                         help="probe only the first N members")
@@ -586,7 +591,20 @@ def main() -> None:
     args = parser.parse_args()
 
     args.cache.mkdir(parents=True, exist_ok=True)
-    members = load_members(args.cache)
+    if args.members_in:
+        # The default --out and --members-out are what the explorer reads, and
+        # this roster is not the explorer's. Refusing is cheaper than the
+        # alternative: see the --limit note below for how that goes.
+        defaults = {"members_out": root / "data" / "members.json",
+                    "out": root / "data" / "letters-raw.jsonl"}
+        clashing = [f"--{k.replace('_', '-')}" for k, v in defaults.items()
+                    if getattr(args, k) == v]
+        if clashing:
+            parser.error("--members-in needs %s set to something other than the "
+                         "explorer's own file" % " and ".join(clashing))
+        members = json.loads(args.members_in.read_text(encoding="utf-8"))
+    else:
+        members = load_members(args.cache)
     # --limit bounds what is QUERIED, never what is exported. It used to slice
     # the member list itself, so a three-host trial run quietly rewrote the
     # dataset as three members and the explorer rebuilt around it.
