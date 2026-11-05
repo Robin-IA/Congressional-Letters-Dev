@@ -158,10 +158,12 @@ by matching names against `legislators-historical.json`; it has not been done.
 
 **It leaves the path-keyed sites to a second pass**, which now exists — §8.
 
-**Thumbnails are a downstream constraint.** `thumbs/` is already 854 MB across
-47,688 files against a roughly 1 GB Pages budget. Every letter this backfill
-finds is eventually a letter wanting a preview, and there is not room for all of
-them where the thumbnails currently live.
+**Thumbnails are a downstream constraint, and a near one.** The published site
+is 874.9 MB against GitHub Pages' 1,024 MB limit — `thumbs/` is 854.2 MB of it,
+across 47,688 files. About 149 MB is left, and a preview averages 18.8 KB, so
+there is room for roughly **8,000 more thumbnails**. This backfill expects more
+letters than that, so deciding where the previews live stops being optional
+somewhere in the middle of it.
 
 ## 7. If it goes wrong
 

@@ -13,7 +13,7 @@ is here or in the clone.
 | Letters showing a preview | 69,120 of 69,565 PDF letters — 99% |
 | Still to render | **239** |
 | Given up on | 115 documents, recorded and skipped automatically |
-| Disk | **854 MB** of a 940 MB budget |
+| Published site | **874.9 MB** of GitHub Pages' 1,024 MB limit — 85% |
 
 Live now, both serving `ddaf0c9ac` on the `harvest-member-letters` branch:
 <https://internetarchivecanada.github.io/congressional-letters/> ·
@@ -29,8 +29,10 @@ have left, who the explorer has never seen — and the **per-Congress
 restructure**. Both are in [`BACKFILL.md`](BACKFILL.md) and section 8 below.
 
 Read [`CLAUDE.md`](CLAUDE.md) for why the project is built the way it is, and
-[issue #2](https://github.com/internetarchivecanada/letters-from-congress/issues/2)
-for what to do next and in what order. This file is only about resuming.
+[`letters-from-congress` issue #2](https://github.com/internetarchivecanada/letters-from-congress/issues/2)
+for what to do next and in what order. **That one is on the private repository**
+— this repository has its own issues #1–#3, about the data files, and the
+numbers do not refer to the same things. This file is only about resuming.
 
 ---
 
@@ -108,6 +110,21 @@ was — it now holds the chamber directory pages (90 files) and
 `legislators-historical.json` as well — and **carrying it across is worth it**:
 with that cache, `build/chamber_rosters.py` and `build/backfill_roster.py` both
 run offline in seconds instead of re-reading 20 archived pages.
+
+**The hand-carry is not one problem but three, and each has an issue.** Copying
+five files by hand has gone wrong in a sister repository before — 452 records
+lost when a stale copy went the wrong way — so it is worth knowing which of
+these actually has to travel that way.
+
+| | Issue |
+| --- | --- |
+| The four small ones — `pdf-dates`, `thumb-failures`, `wrapper-targets`, `wrapper-resolved` — are **1.53 MB in total** and should simply be committed | [#1](https://github.com/Robin-IA/Congressional-Letters-Dev/issues/1) |
+| `letters-parsed.jsonl` is **derived**: carry the 28.75 MB `letters-raw.jsonl` and rebuild it with `build/parse_urls.py`, which needs no network | [#2](https://github.com/Robin-IA/Congressional-Letters-Dev/issues/2) |
+| `letter-text.jsonl` is 52 MB, irreplaceable, and read by nothing yet. It needs a home that is not this repository | [#3](https://github.com/Robin-IA/Congressional-Letters-Dev/issues/3) |
+
+Until those land, copy the whole `data/` directory. **Do not resolve any of them
+by committing the two large files**: they are 104 MB against about 149 MB of
+Pages headroom, which the remaining thumbnails also need.
 
 ## 4. Resume the render
 
@@ -239,9 +256,12 @@ what the project is waiting on.
   files beside the WARCs — the same index, already built — but they are
   access-restricted. The reasoning is in `docs/keeping-it-current.md`, which
   lives only on the private `origin` repository — not in this one.
-- **Thumbnails are at 854 MB of a ~940 MB budget.** Every letter the backfill
-  finds is eventually a letter wanting a preview, and there is not room for all
-  of them where the thumbnails currently live.
+- **The published site is at 874.9 MB of Pages' 1,024 MB limit.** Measured from
+  `git ls-files`, not estimated: 48,239 tracked files, of which `thumbs/` is
+  854.2 MB. That leaves about **149 MB**, and previews average 18.8 KB — so
+  room for roughly **8,000 more thumbnails** before Pages refuses to publish.
+  The backfill expects more letters than that. This is now a near-term
+  constraint on the work, not a tidiness complaint about where files live.
 - **Why the archive.org item swallows zips.** A zip uploaded there returns 200
   from S3 and then never appears, twice, with the task queue empty. Solving it
   would let the thumbnails move off the Pages repository, which is where they do
