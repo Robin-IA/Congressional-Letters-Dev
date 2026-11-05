@@ -36,34 +36,31 @@ for what to do next and in what order. This file is only about resuming.
 
 ## 0. Four repositories. Develop in one of them.
 
-This used to be one branch on three remotes, and section 5 below used to tell
-you to push all three in a loop. **That loop would now publish a private
-document.** As of 5 November:
-
 | Remote | Repository | What it is |
 | --- | --- | --- |
-| **`dev`** | **`Robin-IA/Congressional-Letters-Dev`** | **private, no Pages — the working copy. Develop here.** |
-| `origin` | `internetarchivecanada/letters-from-congress` | private, no Pages. Holds PR #1 and issue #2. **Frozen** |
-| `iac` | `internetarchivecanada/congressional-letters` | public, Pages. The live explorer. **Frozen** |
+| **`dev`** | **`Robin-IA/Congressional-Letters-Dev`** | **public, Pages — the working copy. Develop here.** |
+| `origin` | `internetarchivecanada/letters-from-congress` | private, no Pages. The handover record: PR #1, issue #2, and the internal decisions doc. **Frozen** |
+| `iac` | `internetarchivecanada/congressional-letters` | public, Pages. The live explorer, under review. **Frozen** |
 | `mine` | `Robin-IA/congressional-letters` | public, Pages. Your copy of the live explorer. **Frozen** |
 
 **`iac` and `mine` are being reviewed by other people and must not change.**
-Both serve GitHub Pages **from the branch root**, so a push to either also makes
-`docs/keeping-it-current.md` — an internal decisions document — fetchable at a
-public URL. Two reasons, either one sufficient, not to push them.
+Development happens on `dev` and reaches them only when it is finished, as a
+deliberate push, once.
 
-**`origin` is frozen too**, as the record of what was handed over: the backfill
-code, both runbooks and the issue that sequences them. It is nine commits ahead
-of the two public repos and a strict superset of them — nothing is stranded
-anywhere else.
+**`origin` is frozen as the record of what was handed over.** It is the only
+repository that still holds `docs/keeping-it-current.md` and its generator
+`build/make_decisions_doc.py` — an internal decisions document. It is private,
+and that is where that document stays.
 
-`dev` carries all of it: both branches, the `pre-congress-restructure` tag, and
-every commit the other three have between them. It is private, so the internal
-document is safe there, and it has no Pages site, so nothing it holds is served
-to anyone.
+**`dev` does not have those files, by construction.** It was made public on
+5 November so it could serve a Pages preview during development, and the three
+paths carrying that document were removed from **every commit** first, not
+merely deleted in a new one. A public repository publishes its history, so
+deleting a file forward would have published it anyway.
 
-So: **all new work goes to `dev`.** Pushing `origin`, `iac` or `mine` is a
-deliberate act requiring a reason, not something a loop does on your behalf.
+So: **all new work goes to `dev`.** Before adding anything under `docs/`, or
+anything else not meant to be read by strangers, remember that this repository
+is now public and serves its own branch root over HTTP.
 
 ## 1. Clone
 
@@ -240,7 +237,8 @@ what the project is waiting on.
   the same download as the thumbnail. Nobody has built an index. See issue #1 in
   `Robin-IA/congressional-letters`. NARA's own crawl items carry extracted-text
   files beside the WARCs — the same index, already built — but they are
-  access-restricted; see `docs/keeping-it-current.md`.
+  access-restricted. The reasoning is in `docs/keeping-it-current.md`, which
+  lives only on the private `origin` repository — not in this one.
 - **Thumbnails are at 854 MB of a ~940 MB budget.** Every letter the backfill
   finds is eventually a letter wanting a preview, and there is not room for all
   of them where the thumbnails currently live.
