@@ -3,11 +3,12 @@
 Hand this file to Claude Code on the studio and say "run the backfill", or work
 through it by hand. Everything it needs is here or in the clone.
 
-**Prepared 5 November 2026**, commit `a8c728f4`, branch `harvest-member-letters`.
+**Prepared 5 November 2026**, branch `harvest-member-letters` on `origin`
+(`internetarchivecanada/letters-from-congress` — the private one).
 
 | | |
 | --- | --- |
-| Backfill queue | 1,215 member sites the explorer has never touched |
+| Backfill queue | 1,213 member sites the explorer has never touched |
 | **Queryable this pass** | **778 hostnames** |
 | **Second pass** | **435 path-keyed `house.gov/<name>` sites** — see §8 |
 | Identified | 689 of 778 carry a bioguide; 89 do not |
@@ -173,7 +174,7 @@ than a reconstruction.
 
 Through the 2000s most representatives had no host of their own but a directory
 on the chamber's site — 391 of the 440 the House listed in 2003, none by 2016.
-Those 437 rows of `data/member-sites.tsv` carry a slash, and `harvest.py` cannot
+Those 435 rows of `data/member-sites.tsv` carry a slash, and `harvest.py` cannot
 take them: it names its cache after the host, so a slash makes a subdirectory,
 and it enumerates a host where the target is a path prefix.
 
@@ -183,9 +184,21 @@ tail -f paths.log
 ```
 
 Defaults are safe here — it writes `data/letters-paths.jsonl` and
-`data/cdx-cache/paths/`, neither of which the explorer reads. Two segments are
-skipped as chamber plumbing rather than members (`cgi-bin`, `include_content`),
-leaving 435.
+`data/cdx-cache/paths/`, neither of which the explorer reads. It prints
+`435 path-keyed sites (0 skipped as chamber plumbing)` — the two that were
+plumbing, `senate.gov/cgi-bin` and `house.gov/include_content`, are now dropped
+where the roster is built rather than here.
+
+**It refuses to shrink its own output by more than a tenth.** The export reads
+the cache, so a run against a cold cache writes a handful of letters over a
+finished pass. If you see
+
+```
+refusing to shrink: this export has 9 letters against 2,400 already written
+```
+
+the cache is incomplete, not the corpus — run it again without `--export-only`.
+`--force` overrides, and should be needed roughly never.
 
 **Expect less than the host pass.** These sites hold ten to twenty letter-shaped
 URLs each, not hundreds: `house.gov/abercrombie` gave 8 letters from 17 rows on

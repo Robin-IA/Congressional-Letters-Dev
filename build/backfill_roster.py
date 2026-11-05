@@ -20,7 +20,7 @@ somewhere else, and passed in with ``--members-in``.
 What is left out, and why
 -------------------------
 **Path-keyed sites are skipped.** Through the 2000s most representatives sat
-at ``house.gov/<name>/`` rather than on a subdomain, and 437 of the queue look
+at ``house.gov/<name>/`` rather than on a subdomain, and 435 of the queue look
 like that. They are not hosts: ``harvest_host`` would make a cache filename
 containing a slash and enumerate the wrong thing. Finding their letters needs a
 CDX query against a path prefix rather than a host, which is a second pass and

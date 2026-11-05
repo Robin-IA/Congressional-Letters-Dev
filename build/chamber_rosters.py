@@ -103,6 +103,10 @@ FURNITURE = {
     "learn", "evs", "legislative", "artandhistory", "reference", "visitors",
     "pagfoundation", "educate", "galleries", "general", "about", "contact",
     "search", "index", "home", "media", "news", "jobs", "doc", "docs",
+    # Server plumbing rather than a section, but it keys the same way and is
+    # just as much not a member: senate.gov/cgi-bin and
+    # house.gov/include_content both reached the roster before this line did.
+    "cgi-bin", "include_content", "bin", "cgi",
 }
 
 # Before this, a directory listed a handful of sites because a handful existed.

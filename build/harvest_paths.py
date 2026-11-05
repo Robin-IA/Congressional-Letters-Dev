@@ -6,7 +6,7 @@ Why this is a second pass
 Through the 2000s most representatives had no host of their own: they sat in a
 directory on the chamber's site. 391 of the 440 members the House listed in
 2003 look like that, and none do by 2016. ``build/chamber_rosters.py`` keys
-them host + first path segment, which is why 437 rows of
+them host + first path segment, which is why 435 rows of
 ``data/member-sites.tsv`` carry a slash.
 
 Those rows cannot go through ``harvest.py``. It names its cache after the host,
@@ -23,7 +23,7 @@ these sites hold ten to twenty letter-shaped URLs each -- 18 under
 sites that is still a few thousand letters, from the years the explorer is
 thinnest: 2003 to 2008 together currently hold 553.
 
-The 437 rows are also not 437 missing members. Matching each segment against the
+The 435 rows are also not 435 missing members. Matching each segment against the
 subdomain sites in the same file, by label and chamber: 73 are an earlier URL
 for a member already in the explorer, 193 for a member already in the host
 backfill queue, and 171 have no subdomain counterpart at all. So much of this is
@@ -65,7 +65,10 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import harvest  # noqa: E402  sibling script, not a package
 
 # Segments that are the chamber's own plumbing rather than a member.
-# chamber_rosters.py should learn these; until it does, they are skipped here.
+# ``chamber_rosters.py`` now drops these at the source, so a current TSV has
+# none and this skips nothing. It stays because an older TSV still has them and
+# because a plumbing prefix is a wildcard over the whole chamber site -- the one
+# query here that could run for hours and return nothing that is a letter.
 NOT_A_MEMBER = {"cgi-bin", "include_content", "bin", "cgi"}
 
 RETRIES = 3
@@ -150,6 +153,9 @@ def main() -> int:
                     help="query only the first N sites; never limits the export")
     ap.add_argument("--export-only", action="store_true",
                     help="re-filter the cache without touching the network")
+    ap.add_argument("--force", action="store_true",
+                    help="overwrite the output even if it would shrink by more "
+                         "than a tenth")
     args = ap.parse_args()
 
     args.cache.mkdir(parents=True, exist_ok=True)
@@ -206,6 +212,22 @@ def main() -> int:
         meta = attribution[site]
         for row in kept:
             letters.append({"site": site, **meta, **row})
+
+    # REFUSE TO SHRINK WITHOUT BEING TOLD TO, the same guard build_site.py
+    # carries. The export reads the cache, so a run against a cold or partly
+    # cleared cache writes a handful of letters over a finished pass -- and a
+    # two-site trial export wrote 9 letters where 435 sites belong while this
+    # was being built. The explorer has lost records to exactly this shape of
+    # overwrite before.
+    if args.out.exists() and not args.force:
+        was = sum(1 for _ in args.out.open(encoding="utf-8"))
+        if was and len(letters) < was * 0.9:
+            raise SystemExit(
+                "refusing to shrink: this export has "
+                "%d letters against %d already written (%+.0f%%). "
+                "If the cache is genuinely smaller, pass --force. If it is "
+                "not, the cache is incomplete -- run without --export-only."
+                % (len(letters), was, (len(letters) - was) / was * 100))
 
     args.out.parent.mkdir(parents=True, exist_ok=True)
     with args.out.open("w", encoding="utf-8", newline="\n") as fh:
