@@ -263,7 +263,7 @@ if __name__ == "__main__":
 
     root = Path(__file__).resolve().parents[1]
     texts = []
-    for path in (root / "payload" / "member").glob("*.json"):
+    for path in (root / "119th" / "payload" / "member").glob("*.json"):
         for row in json.loads(path.read_text(encoding="utf-8")):
             if row[6]:
                 texts.append(row[6])

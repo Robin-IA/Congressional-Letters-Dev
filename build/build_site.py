@@ -277,10 +277,13 @@ def main() -> None:
                         default=[], help="additional parsed letters")
     # thumbs live under --payload; kept as a flag for odd layouts
     parser.add_argument("--thumbs", type=Path, default=None)
-    parser.add_argument("--out", type=Path, default=root,
-                        help="where index.json is written (the repo root)")
-    parser.add_argument("--payload", type=Path, default=root / "payload",
-                        help="per-member files and thumbnails, uploaded separately")
+    # Each Congress is its own explorer in its own folder, one level below the
+    # home page; the 119th is the one built so far. Thumbnails are shared by
+    # every Congress and stay in thumbs/ at the root.
+    parser.add_argument("--out", type=Path, default=root / "119th",
+                        help="the Congress's folder, where index.json is written")
+    parser.add_argument("--payload", type=Path, default=root / "119th" / "payload",
+                        help="per-member files and the search index")
     parser.add_argument("--pdf-dates", type=Path,
                         default=root / "data" / "pdf-dates.jsonl")
     parser.add_argument("--force", action="store_true",
@@ -307,7 +310,9 @@ def main() -> None:
     # item rations queued tasks and each file is one. See publish_thumbs.py.
     if args.thumb_base:
         thumb_base = args.thumb_base
-        thumbs_dir = args.thumbs or (root / thumb_base.strip("/"))
+        # The page resolves thumb_base against its own folder, so the files
+        # are found the same way: ../thumbs/ from 119th/ is the root thumbs/.
+        thumbs_dir = args.thumbs or (args.out / thumb_base).resolve()
 
     # Dates the PDFs state about themselves, collected by the thumbnail pass.
     # Preferred over the Wayback capture and beaten only by a date the

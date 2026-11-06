@@ -11,7 +11,7 @@
 // with its state in the query string (?member=W000817, ?view=search&q=...).
 // Those links are out in the world, so send them on to where the explorer
 // lives now rather than dropping them on a page that ignores the query.
-if (location.search) location.replace('explorer.html' + location.search + location.hash);
+if (location.search) location.replace('119th/' + location.search + location.hash);
 </script>
 <style>
 :root {
@@ -98,7 +98,7 @@ form.search button { height: 4.2rem; padding: 0 2rem; background: var(--active);
       replaced wholesale when the seat changes hands, so for many of these letters
       the archive is the only copy left.</p>
 
-    <form class="search" action="explorer.html" role="search">
+    <form class="search" action="119th/" role="search">
       <input type="hidden" name="view" value="search">
       <input name="q" type="search" placeholder="Search letters by recipient, subject or member" aria-label="Search letters" autocomplete="off">
       <button type="submit">Search</button>
@@ -107,12 +107,12 @@ form.search button { height: 4.2rem; padding: 0 2rem; background: var(--active);
     <p class="label">Congresses</p>
 
     <section class="congress" aria-labelledby="c119">
-      <h2 id="c119"><a href="explorer.html">119th Congress (2024-26)</a></h2>
+      <h2 id="c119"><a href="119th/">119th Congress (2024-26)</a></h2>
       <p class="what" id="what119">Every letter on the websites of the members of the 119th Congress.</p>
       <div class="chambers">
-        <a class="sen" href="explorer.html?chamber=sen"><span class="k">U.S. Senate</span><span class="v" data-count="sen">Members</span></a>
-        <a class="rep" href="explorer.html?chamber=rep"><span class="k">U.S. House of Representatives</span><span class="v" data-count="rep">Members</span></a>
-        <a class="all" href="explorer.html"><span class="k">All letters</span><span class="v" data-count="all">Browse and search</span></a>
+        <a class="sen" href="119th/?chamber=sen"><span class="k">U.S. Senate</span><span class="v" data-count="sen">Members</span></a>
+        <a class="rep" href="119th/?chamber=rep"><span class="k">U.S. House of Representatives</span><span class="v" data-count="rep">Members</span></a>
+        <a class="all" href="119th/"><span class="k">All letters</span><span class="v" data-count="all">Browse and search</span></a>
       </div>
       <p class="adding">Adding the members who left office during this Congress — Lindsey Graham,
         Marco Rubio, J.D. Vance and others.</p>
@@ -135,14 +135,14 @@ form.search button { height: 4.2rem; padding: 0 2rem; background: var(--active);
 
   <footer><div class="wrap">
     Every letter here was published on a member of Congress's own website and preserved by the
-    Wayback Machine. <a href="explorer.html?view=about">How this was built, and what it misses</a>.
+    Wayback Machine. <a href="119th/?view=about">How this was built, and what it misses</a>.
   </div></footer>
 </div>
 <script>
 // Counts come from the explorer's own index rather than being typed here, so
 // they cannot drift from what the explorer shows. If it fails to load, the
 // page still works: the labels stand without numbers.
-fetch('index.json', { cache: 'no-cache' }).then(r => r.json()).then(index => {
+fetch('119th/index.json', { cache: 'no-cache' }).then(r => r.json()).then(index => {
   const fmt = n => Number(n).toLocaleString('en-US');
   const members = index.members || [];
   const count = ch => members.filter(m => m.chamber === ch).length;

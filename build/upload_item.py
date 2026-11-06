@@ -95,7 +95,7 @@ def main() -> None:
     root = Path(__file__).resolve().parents[1]
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--item", required=True, help="archive.org identifier")
-    parser.add_argument("--payload", type=Path, default=root / "payload")
+    parser.add_argument("--payload", type=Path, default=root / "119th" / "payload")
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--limit", type=int, default=0,
                         help="upload at most this many files this run")
