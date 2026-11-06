@@ -267,6 +267,14 @@ def main() -> None:
                         default=root / "data" / "letters-parsed.jsonl")
     parser.add_argument("--members", type=Path,
                         default=root / "data" / "members.json")
+    # Members of the Congress who are no longer sitting, harvested separately
+    # so that harvest.py, which rewrites members.json and letters-raw.jsonl
+    # from the current roster, cannot drop them. Repeatable, one pair per
+    # roster: data/congress119-departed.json and its parsed letters.
+    parser.add_argument("--also-members", type=Path, action="append",
+                        default=[], help="an additional roster")
+    parser.add_argument("--also-parsed", type=Path, action="append",
+                        default=[], help="additional parsed letters")
     # thumbs live under --payload; kept as a flag for odd layouts
     parser.add_argument("--thumbs", type=Path, default=None)
     parser.add_argument("--out", type=Path, default=root,
@@ -320,6 +328,8 @@ def main() -> None:
         print(f"  {len(pdf_dates):,} dates from PDF metadata", file=sys.stderr)
 
     member_rows = json.loads(args.members.read_text(encoding="utf-8"))
+    for extra in args.also_members:
+        member_rows += json.loads(extra.read_text(encoding="utf-8"))
     members = {m["bioguide"]: m for m in member_rows}
 
     by_member: dict[str, list] = defaultdict(list)
@@ -333,70 +343,74 @@ def main() -> None:
     total = 0
     thumbed = 0
 
-    with args.parsed.open(encoding="utf-8") as handle:
-        for line in handle:
-            record = json.loads(line)
-            bioguide = record.get("bioguide")
-            if bioguide not in members:
-                continue
-            total += 1
+    def parsed_lines():
+        for path in [args.parsed, *args.also_parsed]:
+            with path.open(encoding="utf-8") as handle:
+                yield from handle
 
-            digest = record.get("digest") or ""
-            kind = ("pdf" if record["mimetype"].startswith("application/pdf")
-                    else "page")
-            recipient = record.get("recipient_canonical")
-            subject = tidy_subject(record.get("subject"))
-            # Filename first, then what the PDF says about itself, then the
-            # capture. Only the first is the letter's own stated date; the
-            # second is when the file was made, which for a scan is when it
-            # was scanned.
-            best = record.get("date")
-            precision = record.get("date_precision")
-            if not best:
-                from_pdf = pdf_dates.get(digest or "")
-                if from_pdf:
-                    best, precision = from_pdf, "scanned"
-                else:
-                    best = record.get("date_best")
-            year = int(best[:4]) if best else None
+    for line in parsed_lines():
+        record = json.loads(line)
+        bioguide = record.get("bioguide")
+        if bioguide not in members:
+            continue
+        total += 1
 
-            # The capture digest is the content address of the letter, and
-            # also the thumbnail's filename. Identical letters captured many
-            # times share one digest, so they share one rendering.
-            #
-            # WRITTEN WHETHER OR NOT THE PICTURE EXISTS YET. It used to be
-            # blanked when the file was missing, which made every member file
-            # depend on how far the renderer had got — so each rebuild changed
-            # all 514 of them and each one had to be pushed to the item again,
-            # at the five files a minute the item will accept. The renderer
-            # produces a few hundred an hour, so that loop could never keep up
-            # with itself.
-            #
-            # The page asks for the picture and shows the placeholder if it is
-            # not there. Thumbnails are lazy, so a letter nobody scrolls to
-            # costs nothing, and a thumbnail published to the repository shows
-            # up without the member data being touched at all.
-            if bool(digest) and (thumbs_dir / f"{digest}{SUFFIX}").exists():
-                thumbed += 1
+        digest = record.get("digest") or ""
+        kind = ("pdf" if record["mimetype"].startswith("application/pdf")
+                else "page")
+        recipient = record.get("recipient_canonical")
+        subject = tidy_subject(record.get("subject"))
+        # Filename first, then what the PDF says about itself, then the
+        # capture. Only the first is the letter's own stated date; the
+        # second is when the file was made, which for a scan is when it
+        # was scanned.
+        best = record.get("date")
+        precision = record.get("date_precision")
+        if not best:
+            from_pdf = pdf_dates.get(digest or "")
+            if from_pdf:
+                best, precision = from_pdf, "scanned"
+            else:
+                best = record.get("date_best")
+        year = int(best[:4]) if best else None
 
-            by_member[bioguide].append([
-                record["key"], record["timestamp"], kind, best,
-                precision, recipient, subject,
-                ",".join(tag_topics(f"{subject or ''} {recipient or ''}")),
-                ",".join(record.get("cosigners") or []),
-                digest,
-            ])
+        # The capture digest is the content address of the letter, and
+        # also the thumbnail's filename. Identical letters captured many
+        # times share one digest, so they share one rendering.
+        #
+        # WRITTEN WHETHER OR NOT THE PICTURE EXISTS YET. It used to be
+        # blanked when the file was missing, which made every member file
+        # depend on how far the renderer had got — so each rebuild changed
+        # all 514 of them and each one had to be pushed to the item again,
+        # at the five files a minute the item will accept. The renderer
+        # produces a few hundred an hour, so that loop could never keep up
+        # with itself.
+        #
+        # The page asks for the picture and shows the placeholder if it is
+        # not there. Thumbnails are lazy, so a letter nobody scrolls to
+        # costs nothing, and a thumbnail published to the repository shows
+        # up without the member data being touched at all.
+        if bool(digest) and (thumbs_dir / f"{digest}{SUFFIX}").exists():
+            thumbed += 1
 
-            if recipient:
-                recipients[recipient] += 1
-                per_member_recipients[bioguide][recipient] += 1
-            if year:
-                years[year] += 1
-                per_member_years[bioguide][year] += 1
-            kinds[kind] += 1
-            precisions[precision or "none"] += 1
-            if record.get("role"):
-                roles[record["role"]] += 1
+        by_member[bioguide].append([
+            record["key"], record["timestamp"], kind, best,
+            precision, recipient, subject,
+            ",".join(tag_topics(f"{subject or ''} {recipient or ''}")),
+            ",".join(record.get("cosigners") or []),
+            digest,
+        ])
+
+        if recipient:
+            recipients[recipient] += 1
+            per_member_recipients[bioguide][recipient] += 1
+        if year:
+            years[year] += 1
+            per_member_years[bioguide][year] += 1
+        kinds[kind] += 1
+        precisions[precision or "none"] += 1
+        if record.get("role"):
+            roles[record["role"]] += 1
 
     # A searchable index of every letter's description, so search works from
     # a cold page load. Without it search could only see members the visitor
@@ -482,6 +496,9 @@ def main() -> None:
             "district": member.get("district"),
             "party": member["party"],
             "since": member.get("since"),
+            # Set only for a member who left during the Congress: the date
+            # their last term ended. Absent means still sitting.
+            **({"left": member["left"]} if member.get("left") else {}),
             "host": member["host"],
             "site": member["url"],
             "letters": len(letters),

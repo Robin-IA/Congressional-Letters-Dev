@@ -109,6 +109,16 @@ const stateName = code => STATE_NAMES[(code || '').toUpperCase()] || code || '';
 
 function chamber(m) { return m.chamber === 'sen' ? 'Senate' : 'House'; }
 
+// A member who left during the Congress carries `left`, the date their last
+// term ended; everyone else is still sitting.
+const service = m => `${m.since}–${m.left ? m.left.slice(0, 4) : 'present'}`;
+
+// A departed member's site is usually gone or someone else's by now, so link
+// the Wayback Machine's copy as of the day they left rather than the address.
+const siteHref = m => (m.left
+  ? `https://web.archive.org/web/${m.left.replaceAll('-', '')}/${m.site}`
+  : m.site);
+
 function partyClass(party) {
   const p = (party || '').toLowerCase();
   if (p.startsWith('democrat')) return 'b-dem';
@@ -124,6 +134,9 @@ function memberBadges(m) {
       (m.party || '').slice(0, 11)),
     el('span', { class: 'state', title: stateName(m.state) },
       m.district != null && m.district !== '' ? `${m.state}-${m.district}` : m.state),
+    m.left
+      ? el('span', { class: 'chip', title: `Term ended ${m.left}` }, `Left office ${m.left.slice(0, 4)}`)
+      : null,
   ];
 }
 
@@ -435,7 +448,7 @@ function viewMembers() {
       el('span', { class: 'meta' }, memberBadges(m),
         m.since
           ? el('span', { class: 'since', title: 'Dates of service' },
-            `${m.since}–present`)
+            service(m))
           : null),
       m.top.length
         ? el('span', { class: 'with' }, `wrote to ${m.top.slice(0, 2).join(', ')}`)
@@ -444,7 +457,7 @@ function viewMembers() {
   }
 
   const out = el('div', {},
-    el('p', { class: 'hero' }, 'Letters from Congress'),
+    el('p', { class: 'hero' }, '119th Congress (2024-26)'),
     el('p', { class: 'sub' },
       el('b', {}, num(INDEX.letters)), ' letters published on ',
       el('b', {}, num(INDEX.members_with_letters)),
@@ -481,7 +494,7 @@ async function viewMember(id) {
           el('span', { class: 'meta' }, memberBadges(m)))),
       el('div', { class: 'empty' },
         'No letters found on this member’s site. ',
-        el('a', { href: m.site, target: '_blank', rel: 'noopener' }, m.host)));
+        el('a', { href: siteHref(m), target: '_blank', rel: 'noopener' }, m.host)));
   }
 
   const p = params();
@@ -506,7 +519,7 @@ async function viewMember(id) {
         el('h2', {}, m.name),
         el('span', { class: 'meta' }, memberBadges(m)),
         el('a', {
-          href: m.site, target: '_blank', rel: 'noopener',
+          href: siteHref(m), target: '_blank', rel: 'noopener',
           class: 'small', style: 'margin-left:auto',
         }, m.host)),
       el('div', { class: 'stats' },
@@ -520,7 +533,7 @@ async function viewMember(id) {
               : 'Letters')),
         m.since
           ? el('div', {},
-            el('span', { class: 'v tab' }, `${m.since}–present`),
+            el('span', { class: 'v tab' }, service(m)),
             el('span', { class: 'k' }, 'Dates of service'))
           : null,
         el('div', {}, el('span', { class: 'v tab' }, num(recipients.length)),
@@ -1095,9 +1108,13 @@ function viewAbout() {
     el('h3', {}, 'What’s missing'),
     el('p', {}, `Only what was archived. This is what the Wayback Machine holds of what
       Congress published — not a complete record of what Congress sent.`),
-    el('p', {}, `Only people currently serving. Letters from members who have already left
-      office are in the archive too, and they’re the ones most at risk of being
-      forgotten — but matching former members to the websites they used to have is a
+    el('p', {}, `Only members of the 119th Congress.${
+      INDEX.members.some(m => m.left)
+        ? ` That includes the ${num(INDEX.members.filter(m => m.left).length)} who left
+      office during it, and the letters they had published by the time they went.`
+        : ''} Members who left before
+      the 119th began are in the archive too, and they’re the ones most at risk of
+      being forgotten — but matching them to the websites they used to have is a
       bigger job, and we haven’t done it yet.`),
     el('p', {}, `Only letters with the word “letter” somewhere in the file name or
       web address. One posted as an unnamed attachment won’t show up here.`),
@@ -1194,9 +1211,9 @@ async function render() {
   const box = $('#q');
   if (box && view === 'search') box.value = p.get('q') || '';
   document.title = p.get('member')
-    ? `${byId.get(p.get('member'))?.name || 'Member'} · Letters from Congress`
-    : p.get('to') ? `${p.get('to')} · Letters from Congress`
-      : 'Letters from Congress · Internet Archive';
+    ? `${byId.get(p.get('member'))?.name || 'Member'} · Letters from Congress Over Time`
+    : p.get('to') ? `${p.get('to')} · Letters from Congress Over Time`
+      : '119th Congress (2024-26) · Letters from Congress Over Time';
 }
 
 async function boot() {
