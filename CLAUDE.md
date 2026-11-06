@@ -4,28 +4,35 @@ Letters published on sitting members of Congress's own websites and preserved by
 the Wayback Machine. Read `README.md` first for what the thing is; this file is
 for the decisions that are not visible from the code.
 
-## Where it is published
+## This is a development repository. Push here and nowhere else.
 
-Two GitHub Pages sites, both serving the **`harvest-member-letters`** branch
-from its root:
-
-- <https://internetarchivecanada.github.io/congressional-letters/> — public
-- <https://robin-ia.github.io/congressional-letters/> — working copy
-
-**Neither serves `main`.** `main` is the initial scaffold and the work has never
-been merged into it. Pages points at the branch in both repositories.
-
-Three remotes, and they are not interchangeable:
+**`Robin-IA/Congressional-Letters-Dev` is where all work happens, and the only
+repository anything is pushed to.** It may eventually replace the published
+explorer at `internetarchivecanada/congressional-letters` — *may*, and only
+once that replacement has been approved. Until then the published explorer
+does not change: not a push, not a sync, not a "small fix".
 
 | Remote | Repository | Role |
 | --- | --- | --- |
-| `mine` | `Robin-IA/congressional-letters` | working copy, Pages |
-| `origin` | `internetarchivecanada/letters-from-congress` | **private**, holds PR #1, no Pages |
-| `iac` | `internetarchivecanada/congressional-letters` | public mirror, Pages |
+| **`dev`** | **`Robin-IA/Congressional-Letters-Dev`** | **public, Pages preview. Push here only.** |
+| `iac` | `internetarchivecanada/congressional-letters` | the published explorer, under review. **Frozen until replacement is approved** |
+| `mine` | `Robin-IA/congressional-letters` | copy of the published explorer. **Frozen** |
+| `origin` | `internetarchivecanada/letters-from-congress` | private handover record: PR #1, issue #2, the internal decisions doc. **Frozen** |
 
-`letters-from-congress` is private and Pages from a private repository needs a
-paid plan. That is the whole reason the public mirror exists as a separate
-repository rather than by opening that one up.
+Fetching from the frozen remotes is fine. Pushing to them is not.
+
+All three Pages sites serve the **`harvest-member-letters`** branch from its
+root, not `main` — `main` is the initial scaffold and the work has never been
+merged into it.
+
+- <https://robin-ia.github.io/Congressional-Letters-Dev/> — the development preview
+- <https://internetarchivecanada.github.io/congressional-letters/> — published, frozen
+- <https://robin-ia.github.io/congressional-letters/> — published copy, frozen
+
+**`dev` is public.** It was made so on 5 November to serve the preview, and the
+internal decisions doc was stripped from every commit first. A public repository
+publishes its history, so nothing internal goes into it — not under `docs/`,
+not anywhere. That doc stays on `origin`.
 
 ## The corpus rule
 
@@ -145,10 +152,13 @@ check where each half came from.
 
 ## Conventions
 
-- **Branch and open a PR; never commit to `main`.** Pushing a branch needs no
-  permission. Merging is Robin's call.
-- Push to all three remotes, `mine` first, then `origin`, then `iac`. Unchained,
-  so one failing does not stop the others.
+- **Branch and open a PR against `harvest-member-letters` on `dev`; never commit
+  to `main`.** Pushing a branch to `dev` needs no permission. Merging is Robin's
+  call.
+- **Push to `dev` only.** An earlier version of this file said to push to all
+  three remotes in turn; that predates the dev repository and is wrong now.
+  Bringing `iac` forward is a deliberate, one-time act after approval, not part
+  of any publish cycle.
 - GitHub Pages allows **10 builds an hour** from a branch and every push is one.
   Batch edits rather than pushing each.
 - Tests: `python3 -m unittest discover -s tests`. 95 at the time of writing, and

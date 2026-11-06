@@ -1,8 +1,13 @@
 # Letters from Congress
 
-### → **[Read it here](https://internetarchivecanada.github.io/congressional-letters/)** · [mirror](https://robin-ia.github.io/congressional-letters/)
+### → **[Development preview](https://robin-ia.github.io/Congressional-Letters-Dev/)** · [published explorer](https://internetarchivecanada.github.io/congressional-letters/)
 
 *Picking this up on another machine? → [PICKUP.md](PICKUP.md)*
+
+> **This is the development repository.** Work here may eventually replace the
+> published explorer at `internetarchivecanada/congressional-letters`, once that
+> is approved. Until then the published explorer is frozen and nothing from here
+> is pushed to it.
 
 Letters published on sitting members of Congress's own websites and preserved
 by the Wayback Machine, organised by member: who each one wrote to, and when.
@@ -11,11 +16,11 @@ by the Wayback Machine, organised by member: who each one wrote to, and when.
 
 | | |
 | --- | --- |
-| Internet Archive Canada | <https://internetarchivecanada.github.io/congressional-letters/> |
-| Working copy | <https://robin-ia.github.io/congressional-letters/> |
+| Development preview | <https://robin-ia.github.io/Congressional-Letters-Dev/> — this repository |
+| Published explorer | <https://internetarchivecanada.github.io/congressional-letters/> — frozen at `ddaf0c9ac`, tagged `pre-congress-restructure` |
 
-Both serve the same branch and are rebuilt by the same publish cycle, so they
-stay in step.
+They are no longer in step. The preview follows this repository; the published
+explorer stays as it was until a replacement is approved.
 
 One static page over a small index plus one file per member. No server, no
 database. To run it locally, serve the repository root — the page, `index.json`
@@ -145,11 +150,12 @@ legible. A visitor learns more from the page than from anything a parser could
 write about it, which is why a member's letters are shown as a wall of
 documents before they are shown as a table.
 
-`build/thumbs.py` renders them, named by capture digest so a letter captured
-twenty times is rendered once. About 1.3 GB in total, which does not belong in
-a git repository — the explorer reads `thumb_base` from `index.json`, so they
-can be served from an archive.org item the way the North Korea explorer serves
-its screenshot zips.
+`build/thumbs.py` renders them as WebP, named by capture digest so a letter
+captured twenty times is rendered once. They are served from this repository's
+`thumbs/` — 854 MB across 47,688 files, most of GitHub Pages' 1 GB limit. That
+is not where they belong: the explorer reads `thumb_base` from `index.json`, so
+they can move to an archive.org item the way the North Korea explorer serves
+its screenshot zips, once the item will accept a zip.
 
 ## Four traps in this pipeline
 
@@ -199,14 +205,18 @@ failed. Three passes took 58 failures down to a handful.
 
 ## Deploying
 
-Runs the way [etd-viewer](https://github.com/internetarchivecanada/etd-viewer)
-does: a static page on GitHub Pages serving from the repository root, with the
-bulk of the data in an archive.org item the browser reads directly — item
-downloads carry `Access-Control-Allow-Origin: *`, so no server is involved.
+A static page on GitHub Pages serving the `harvest-member-letters` branch from
+the repository root. Everything it reads is in this repository: `index.json`
+(~160 KB, so the page paints immediately), `payload/member/` (514 per-member
+files) and `thumbs/`.
 
-`index.json` (~160 KB) sits in the repository so the page paints immediately.
-`payload/` — 514 per-member files — is gitignored
-and uploaded with `build/upload_item.py`. See [deploy/README.md](deploy/README.md).
+It was built to run the way [etd-viewer](https://github.com/internetarchivecanada/etd-viewer)
+does, with the bulk data in an archive.org item the browser reads directly, and
+the item would not take it — see `CLAUDE.md`. `data_base` and `thumb_base` in
+`index.json` are one field each when it moves back.
+
+Push to this repository only. A push is a Pages build of the development
+preview, and Pages allows 10 an hour.
 
 ## Rebuilding
 
@@ -214,11 +224,15 @@ and uploaded with `build/upload_item.py`. See [deploy/README.md](deploy/README.m
 python3 build/harvest.py --workers 5      # CDX per member site; resumable
 python3 build/resolve_wrappers.py         # chase download pages to the file
 python3 build/parse_urls.py               # URLs -> date, recipient, subject
-python3 build/thumbs.py                   # render first pages; runs for days
-python3 build/publish_thumbs.py           # payload/thumbs -> thumbs/
-python3 build/build_site.py --item letters-from-congress-data --thumb-base thumbs/
+python3 build/thumbs.py --thumbs thumbs   # render first pages; writes straight into thumbs/
+python3 build/build_site.py --thumb-base thumbs/ --force
 python3 -m unittest discover -s tests
 ```
+
+**`--thumbs thumbs` matters.** Without it the renderer looks in
+`payload/thumbs/`, which is gitignored and empty on a fresh clone, and re-fetches
+every PDF already rendered. `--force` lets the build proceed when the corpus
+shrinks by more than a tenth, which it otherwise refuses.
 
 `harvest.py` caches **raw** CDX rows and cleans on the way out, so a newly
 discovered kind of junk costs a re-filter rather than another pass over 539
@@ -238,7 +252,7 @@ fills together rather than one member finishing while another stays blank.
 | --- | --- |
 | `index.json` | members, counts, facets, year histogram, column order, cache stamp |
 | `payload/member/<bioguide>.json` | one member's letters, fetched on demand |
-| `thumbs/<digest>.jpg` | rendered first pages, by capture digest |
+| `thumbs/<digest>.webp` | rendered first pages, by capture digest |
 
 Anything the browser fetches that a build rewrites is fetched with the stamp
 from `index.json` on it. Three separate caches — the Pages CDN, the browser,
