@@ -1,92 +1,105 @@
 # Deploying
 
-Built to run the way [internetarchivecanada/etd-viewer](https://github.com/internetarchivecanada/etd-viewer)
-runs: a static page on GitHub Pages, and the bulk of the data in an
-archive.org item that the browser reads directly.
+A static page on GitHub Pages, serving the `harvest-member-letters` branch from
+the repository root. No server, no database, and — for now — no archive.org
+item: everything the page reads is in this repository.
 
-That works because item downloads carry `Access-Control-Allow-Origin: *` —
-verified against `archive.org/download/etd-catalog-cardinalscholar-bsu-edu/`.
-Without that header the page would need a server. With it there is, as the ETD
-viewer puts it, no server and no build.
+It was built to run the way [internetarchivecanada/etd-viewer](https://github.com/internetarchivecanada/etd-viewer)
+runs, with the bulk of the data in an archive.org item that the browser reads
+directly. That works because item downloads carry
+`Access-Control-Allow-Origin: *` — verified against
+`archive.org/download/etd-catalog-cardinalscholar-bsu-edu/`. The item would
+not take the files at the rate they were produced, so they moved here; see
+below.
 
 ## What lives where
+
+Measured from `git ls-files`, 6 November 2026.
 
 | | | |
 | --- | --- | --- |
 | `index.html`, `app.js` | the repository, at the root | Pages serves from root, as etd-viewer does |
-| `index.json` | the repository, ~165 KB | members, counts, facets, year histogram — so the page paints at once |
-| `payload/member/<id>.json` | an archive.org item | ~15 MB across 514 files, fetched one member at a time |
-| `thumbs/<digest>.jpg` | **the repository, for now** | ~120 MB today; see below |
+| `index.json` | the repository, 167 KB | members, counts, facets, year histogram — so the page paints at once |
+| `payload/member/<id>.json`, `payload/search.json` | the repository, 19.6 MB | 514 member files, fetched one member at a time |
+| `thumbs/<digest>.webp` | the repository, 854.2 MB | 47,688 rendered first pages, 18.3 KB on average |
 
-`payload/` is gitignored.
+`data_base` and `thumb_base` in `index.json` say where the page looks for the
+last two. Both are relative paths today (`payload/member/`, `thumbs/`); each is
+one field to change when the data moves back to an item.
 
-## Why the thumbnails are in the repository
+## Why the item is not in the path
 
-They should be on the item with everything else, and they are not, because the
-item will not take them at the rate they are rendered. Every uploaded file
-queues an `archive.php` task and an item rations how many may be queued:
+Every uploaded file queues an `archive.php` task and an item rations how many
+may be queued:
 
 ```
 Please reduce your request rate. - bucket_tasks_queued exceeds rationed amount
 ```
 
-Measured here: 34 tasks draining at roughly five a minute. That is half a day
-for the four thousand thumbnails already rendered and months for all 48,102 —
-the upload, not the rendering, becomes the thing that cannot finish. Bundling
-into a zip is the documented way out, and is how the North Korea explorer
-serves its screenshots, but a zip uploaded to this item returns 200 from S3 and
-then never appears, twice, with the task queue empty. **That is unexplained and
-is the thing to fix.**
+Measured here: 34 tasks draining at roughly five a minute. That is months for
+48,000 thumbnails — the upload, not the rendering, becomes the thing that
+cannot finish. Bundling into a zip is the documented way out, and is how the
+North Korea explorer serves its screenshots, but a zip uploaded to this item
+returns 200 from S3 and then never appears, twice, with the task queue empty.
+**That is unexplained and is the thing to fix.**
 
-Pages will hold them in the meantime, up to a measured limit. Published sites
-"may be no larger than 1 GB" and these average 26 KB, so the ceiling arrives at
-roughly 40,000 of 48,102 — about 83% coverage. `publish_thumbs.py` stops at an
-820 MB budget rather than discovering the cap by being switched off.
+## The Pages ceiling
 
-When the item will take a bundle, point `thumb_base` back and delete the
-folder; it is one field in `index.json`. If the budget runs out first,
-re-compress rather than re-render — the PDFs are not kept, so rendering again
-means pulling several thousand multi-megabyte files off Wayback a second time,
-and the JPEGs are already here.
+Published sites "may be no larger than 1 GB", and a site that breaches it may
+simply stop being served. The tracked tree is **874.9 MB**, nearly all of it
+`thumbs/`. That leaves about 149 MB — roughly 8,000 more thumbnails at the
+current average — and the backfill of departed members will want more than
+that.
+
+Thumbnails are WebP at quality 72, which is what made the corpus fit at all:
+the same size as JPEG at quality 50, 21% smaller than the JPEGs they replaced.
+`build/publish_thumbs.py` holds a 940 MB budget for thumbnails, a 64 MB margin
+under the ceiling once everything else is counted.
+
+If the budget runs out before the item works, re-compress rather than
+re-render. The PDFs are not kept, so rendering again means pulling thousands of
+multi-megabyte files off Wayback a second time.
 
 ## Publishing
 
+The renderer writes straight into `thumbs/`, so there is no copy step:
+
 ```bash
-python3 build/publish_thumbs.py                                  # payload/thumbs -> thumbs/
-python3 build/upload_item.py --item letters-from-congress-data   # member data only now
-python3 build/build_site.py  --item letters-from-congress-data --thumb-base thumbs/
-git add -A && git commit -m "rebuild" && git push
+python3 build/thumbs.py --thumbs thumbs --workers 2 --pause 1.5
+python3 build/build_site.py --thumb-base thumbs/ --force
+git add -A && git commit -m "Publish previews" && git push dev
 ```
 
-`--item` writes `data_base` into `index.json` as
-`https://archive.org/download/<item>/…`; `--thumb-base` overrides where the
-page looks for pictures, independently. Without either, both stay as local
-`payload/` paths, which is what serves a checkout.
+`build_site.py` must run again after any thumbnail pass, because `index.json`
+records which thumbnails existed when it was built. `--force` lets it proceed
+when the corpus shrinks by more than a tenth, which it otherwise refuses.
 
-The uploader skips files already on the item at the same size, and sends
-`member/*.json` and `search.json` before any thumbnail — a missing thumbnail is
-a gap in a wall, a missing member file is the wrong letters.
+**Push to `dev` only** — see `CLAUDE.md`. Pages allows **10 builds an hour**
+from a branch and every push is one, so batch edits rather than pushing each.
 
-Pages allows **10 builds an hour** from a branch, and every push is a build, so
-batch edits rather than pushing each one.
+`build/upload_item.py` and `build_site.py --item` remain for when the item is
+back in the path: `--item` writes `data_base` as
+`https://archive.org/download/<item>/…`. Neither is used today.
 
 ## Where it is published
 
-Two repositories, both serving the `harvest-member-letters` branch from its
-root, both rebuilt by the same publish cycle:
+All three sites serve the `harvest-member-letters` branch from its root — not
+`main`, which is the initial scaffold and has never had the work merged into
+it.
 
-| | |
-| --- | --- |
-| `internetarchivecanada/congressional-letters` | <https://internetarchivecanada.github.io/congressional-letters/> |
-| `Robin-IA/congressional-letters` | <https://robin-ia.github.io/congressional-letters/> |
+| Repository | Site | |
+| --- | --- | --- |
+| `Robin-IA/Congressional-Letters-Dev` | <https://robin-ia.github.io/Congressional-Letters-Dev/> | **development preview — this repository** |
+| `internetarchivecanada/congressional-letters` | <https://internetarchivecanada.github.io/congressional-letters/> | published explorer, frozen |
+| `Robin-IA/congressional-letters` | <https://robin-ia.github.io/congressional-letters/> | copy of the published explorer, frozen |
 
-Not `main` in either: `main` is the initial scaffold and the work has never
-been merged into it. Pages points at the branch instead.
+The two published sites stay at `ddaf0c9ac` (tag `pre-congress-restructure`)
+until replacing them with this work is approved. That is a deliberate,
+one-time push, not part of publishing.
 
-`internetarchivecanada/letters-from-congress` is the older repository and holds
-the pull request, but it is private and has no Pages site — Pages from a private
-repository needs a paid plan, which is why the public mirror was made as a
-separate repository rather than by opening that one up.
+`internetarchivecanada/letters-from-congress` is the private handover record
+and has no Pages site — Pages from a private repository needs a paid plan,
+which is why the published explorer was made as a separate public repository.
 
 ## The labs tile
 
@@ -103,12 +116,12 @@ there as `letters-from-congress-cover.jpg`.
 ## Keeping it current
 
 ```bash
-python3 build/harvest.py --workers 4      # resumable; see the note on partitioning
+python3 build/harvest.py --workers 3      # resumable; CDX per member site
 python3 build/parse_urls.py
-python3 build/build_site.py --item letters-from-congress-data
-python3 build/thumbs.py --per-member 4    # slow by design, read the docstring
-python3 build/upload_item.py --item letters-from-congress-data
+python3 build/thumbs.py --thumbs thumbs --workers 2 --pause 1.5
+python3 build/build_site.py --thumb-base thumbs/ --force
 ```
 
-`build_site.py` must run again after any thumbnail pass, because `index.json`
-records which thumbnails existed when it was built.
+`harvest.py` writes the explorer's own `data/members.json` and
+`data/letters-raw.jsonl`. The departed-member backfill must not — it runs with
+its outputs redirected, and `BACKFILL.md` has the commands.
