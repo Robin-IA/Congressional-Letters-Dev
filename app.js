@@ -1211,9 +1211,9 @@ async function render() {
   const box = $('#q');
   if (box && view === 'search') box.value = p.get('q') || '';
   document.title = p.get('member')
-    ? `${byId.get(p.get('member'))?.name || 'Member'} · Letters from Congress Over Time`
-    : p.get('to') ? `${p.get('to')} · Letters from Congress Over Time`
-      : '119th Congress (2024-26) · Letters from Congress Over Time';
+    ? `${byId.get(p.get('member'))?.name || 'Member'} · Letters from Congress (2007-present)`
+    : p.get('to') ? `${p.get('to')} · Letters from Congress (2007-present)`
+      : '119th Congress (2024-26) · Letters from Congress (2007-present)';
 }
 
 async function boot() {
