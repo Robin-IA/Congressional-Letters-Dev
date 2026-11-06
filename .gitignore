@@ -17,3 +17,8 @@ data/thumb-failures.jsonl
 # aborts the whole add -- which silently left a day of thumbnails unpublished,
 # because the publish loop does exactly that every cycle.
 *.part
+
+# Derived or duplicated; rebuilt by parse_urls.py and harvest.py.
+data/letters-119-departed-parsed.jsonl
+data/congress119-departed-queried.json
+*.log

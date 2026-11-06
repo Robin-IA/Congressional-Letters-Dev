@@ -114,8 +114,7 @@ form.search button { height: 4.2rem; padding: 0 2rem; background: var(--active);
         <a class="rep" href="119th/?chamber=rep"><span class="k">U.S. House of Representatives</span><span class="v" data-count="rep">Members</span></a>
         <a class="all" href="119th/"><span class="k">All letters</span><span class="v" data-count="all">Browse and search</span></a>
       </div>
-      <p class="adding">Adding the members who left office during this Congress — Lindsey Graham,
-        Marco Rubio, J.D. Vance and others.</p>
+      <p class="adding" id="left119">Includes the members who left office during this Congress.</p>
     </section>
 
     <!-- Placeholders until each Congress is built. Not links yet: a link to a
@@ -153,6 +152,14 @@ fetch('119th/index.json', { cache: 'no-cache' }).then(r => r.json()).then(index 
   document.getElementById('what119').innerHTML =
     `Every letter on the websites of the members of the 119th Congress: <b>${fmt(index.letters)}</b> letters ` +
     `from <b>${fmt(index.members_with_letters)}</b> members, ${index.span ? index.span.join('–') : ''}.`;
+  // Named from the data, most letters first, so the note follows the build.
+  const left = members.filter(m => m.left).sort((a, b) => b.letters - a.letters);
+  if (left.length) {
+    const named = left.slice(0, 3).map(m => m.name).join(', ');
+    document.getElementById('left119').textContent =
+      `Includes the ${fmt(left.length)} members who left office during this Congress — ${named} and ` +
+      `${fmt(left.length - 3)} more — with the letters they had published by the time they went.`;
+  }
 }).catch(() => {});
 </script>
 </body>
