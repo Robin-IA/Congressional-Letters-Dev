@@ -1,9 +1,15 @@
 #!/usr/bin/env python3
 """Step 1 of the methodology: one roster per Congress.
 
-    python3 build/congress_roster.py                 # 110th-119th
-    python3 build/congress_roster.py 112 113         # just those
+    python3 build/congress_roster.py                 # add missing rosters, refresh the sitting Congress
+    python3 build/congress_roster.py 120             # add the 120th
     python3 build/congress_roster.py --source-dir D  # read the legislators JSON from D
+
+**Rosters are built once and then added to, not rebuilt.** A finished
+Congress's roster is never rewritten: the script skips any closed Congress
+whose file already exists, and says so. Only the Congress still sitting is
+refreshed, because members still join and leave it. ``--rebuild`` overrides
+that, for correcting a known error in a closed roster.
 
 Writes ``data/rosters/congressNNN-roster.csv``: one row per member who served
 **any part** of that Congress -- including those who joined, resigned, died or
@@ -201,14 +207,27 @@ def roster(n: int, cur: list, hist: list, today: str) -> list[dict]:
 
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("congress", nargs="*", type=int, default=list(range(110, 120)))
+    ap.add_argument("congress", nargs="*", type=int,
+                    help="Congress numbers; default: 110th to the sitting Congress")
     ap.add_argument("--source-dir", type=Path, help="read the two legislators JSON files from here")
     ap.add_argument("--out", type=Path, default=OUT)
+    ap.add_argument("--rebuild", action="store_true",
+                    help="rewrite closed Congresses' rosters that already exist")
     a = ap.parse_args()
-    cur, hist = load(a.source_dir)
     today = date.today().isoformat()
+    sitting = next(n for n in range(110, 200) if bounds(n)[0] <= today < bounds(n)[1])
+    todo = []
+    for n in a.congress or range(110, sitting + 1):
+        path = a.out / f"congress{n}-roster.csv"
+        if path.exists() and bounds(n)[1] <= today and not a.rebuild:
+            print(f"{n}th: closed, roster exists; left as is (--rebuild to rewrite)")
+        else:
+            todo.append(n)
+    if not todo:
+        return
+    cur, hist = load(a.source_dir)
     a.out.mkdir(parents=True, exist_ok=True)
-    for n in a.congress:
+    for n in todo:
         rows = roster(n, cur, hist, today)
         with open(a.out / f"congress{n}-roster.csv", "w", newline="", encoding="utf-8") as f:
             w = csv.DictWriter(f, COLUMNS, lineterminator="\n")

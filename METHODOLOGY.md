@@ -22,9 +22,26 @@ designed and are listed so the order is clear, not because they are settled.
 per Congress, including everyone who served any part of it.**
 
 ```bash
-python3 build/congress_roster.py          # 110th–119th
-python3 build/congress_roster.py 109      # any other Congress
+python3 build/congress_roster.py          # add any missing roster; refresh the sitting Congress
+python3 build/congress_roster.py 120      # add the 120th when it convenes
 ```
+
+**Rosters are built once and then added to; they are not rebuilt.** Once a
+Congress has ended, its roster is fixed. The script skips any closed Congress
+whose file already exists, and says so. Going forward the work is adding:
+
+- the sitting Congress is refreshed as members join and leave it
+- each new Congress gets its own roster when it convenes
+- later steps add their results alongside a roster, never by regenerating it
+
+`--rebuild` rewrites a closed roster. Use it only to correct a known error, and
+say what was corrected in the commit.
+
+A fixed roster is a record of who served in that Congress, which does not
+change. Three columns describe a member's career beyond it, and they are only
+true as of the day the roster was built: `years_in_office` ("…present"),
+`total_years_in_congress`, and `service_notes` such as "left Congress 2025-01-03".
+The 110th–118th rosters were built on 7 November 2026.
 
 Stdlib only. It downloads `legislators-current.json` and
 `legislators-historical.json` from
