@@ -153,6 +153,12 @@ member's own time in office.
   returned captures years older than the true last one: Conaway's came back as
   2012 against a real December 2020. Every capture in the window is fetched,
   collapsed to one per day, and success (status 200, HTML) is decided locally.
+- **A redirect capture of the home page counts.** Many home pages only ever
+  answered 302 into the site. Shelby's did on 154 of 155 captured days in the
+  110th, so a count of 200s alone reported one day. Wayback follows the
+  redirect inside the archive (that capture opens "United States Senator
+  Richard Shelby : Home"). `days_200` and `days_redirect_only` keep the two
+  apart.
 - `lookup` is `found`, `none in window`, `no URL in roster` or `error`.
   Errors are not cached, so the next run retries them.
 
