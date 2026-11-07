@@ -25,13 +25,16 @@ Two query shapes
   successful capture in the window, the lookup falls back to a prefix query
   over the path or host, which finds sites whose front page sat at
   ``index.html`` or similar. ``query`` in the output says which answered.
+* A redirect capture of the home page counts as a capture: many home pages
+  only ever answered 302 into the site, and Wayback follows it. ``days_200``
+  and ``days_redirect_only`` keep the two apart.
 
 What it does not do
 -------------------
 No ``filter=`` and no negative ``limit`` are sent to CDX. Together they
 returned captures years older than the true last one (Conaway's 2012 against a
 real December 2020). Every row in the window comes back, collapsed to one per
-day, and success is decided here: status 200 and an HTML MIME type.
+day, and what counts is decided here: status 200 with HTML, or a 3xx.
 
 Resumable: each answer is cached under ``harvest/wayback/cache/`` (ignored by
 git), so a re-run asks Wayback only for what it does not already have. A query
@@ -61,7 +64,7 @@ UA = {"User-Agent": "ia-congressional-member-letters/0.1 "
                     "(Internet Archive; collections research)"}
 
 COLUMNS = ["bioguide_id", "name", "chamber", "state", "district", "url",
-           "window_from", "window_to", "query", "days_captured",
+           "window_from", "window_to", "query", "days_captured", "days_200", "days_redirect_only",
            "first_capture", "last_capture", "wayback_first", "wayback_last",
            "lookup", "checked_on"]
 
@@ -104,8 +107,16 @@ def cached(key: dict, pause: float) -> list | None:
     return rows
 
 
-def good(rows: list) -> list[str]:
-    return sorted({r[0] for r in rows if len(r) >= 3 and r[1] == "200" and "html" in r[2]})
+def good(rows: list) -> tuple[list[str], list[str]]:
+    """Timestamps of usable captures: (200 HTML, redirects).
+
+    A redirect counts. Many sites' home pages only ever answered 302 into the
+    site (Shelby's: 154 of 155 days in the 110th), and Wayback follows the
+    redirect inside the archive, so a link to that capture opens the site.
+    """
+    ok = sorted({r[0] for r in rows if len(r) >= 3 and r[1] == "200" and "html" in r[2]})
+    redirect = sorted({r[0] for r in rows if len(r) >= 2 and r[1][:1] == "3"})
+    return ok, redirect
 
 
 def lookup(url: str, start: str, end: str, pause: float) -> dict:
@@ -116,20 +127,23 @@ def lookup(url: str, start: str, end: str, pause: float) -> dict:
     rows = cached({**base, "url": tgt}, pause)
     if rows is None:
         return {"query": "home page", "lookup": "error"}
-    ok, how = good(rows), "home page"
-    if not ok:
+    (ok, redirect), how = good(rows), "home page"
+    if not ok and not redirect:
         rows = cached({**base, "url": tgt, "matchType": "prefix", "limit": "5000"}, pause)
         if rows is None:
             return {"query": "prefix", "lookup": "error"}
-        ok, how = good(rows), "prefix"
-    if not ok:
+        (ok, _), redirect, how = good(rows), [], "prefix"
+    every = sorted(set(ok) | set(redirect))
+    if not every:
         return {"query": how, "days_captured": 0, "lookup": "none in window"}
-    days = sorted({t[:8] for t in ok})
+    days = {t[:8] for t in every}
     live = tgt.rstrip("/") + "/"
     return {"query": how, "days_captured": len(days),
-            "first_capture": ok[0], "last_capture": ok[-1],
-            "wayback_first": f"https://web.archive.org/web/{ok[0]}/{live}",
-            "wayback_last": f"https://web.archive.org/web/{ok[-1]}/{live}",
+            "days_200": len({t[:8] for t in ok}),
+            "days_redirect_only": len(days - {t[:8] for t in ok}),
+            "first_capture": every[0], "last_capture": every[-1],
+            "wayback_first": f"https://web.archive.org/web/{every[0]}/{live}",
+            "wayback_last": f"https://web.archive.org/web/{every[-1]}/{live}",
             "lookup": "found"}
 
 
