@@ -28,8 +28,7 @@ Source: [`unitedstates/congress-legislators`](https://github.com/unitedstates/co
 - 119th Congress: Ashley Moody and Jon Husted were appointed until the 2026-11-03 special elections.
   The source does not yet record the results.
 - The 111th's Carte Goodwin (appointed July–November 2010) has no website recorded.
-- Bishop, Regula and Reyes (110th–112th) carry `wwwc.house.gov/...` URLs, a bad value in the source,
-  left as given.
+- Bishop, Regula and Reyes (110th–112th) carry `wwwc.house.gov/...` URLs as the source gives them.
 
-The `data/congressNNN-members.csv` files (113th–118th) carry the same members plus live-site checks
-and Wayback links. Those enrichments will be redone across all ten Congresses later.
+Built by `build/congress_roster.py`. This is step 1 of [`METHODOLOGY.md`](../../METHODOLOGY.md).
+URLs are recorded in whatever form the source gives, for lookup in the Wayback Machine in step 2.
