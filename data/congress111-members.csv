@@ -1,0 +1,560 @@
+name,bioguide_id,chamber,state,district,party,years_in_office,service_this_congress,website,website_now,site_check,wayback_last_capture,website_moved,url_also_used_by,service_notes
+Lisa Murkowski,M001153,Senate,AK,,Republican,Senate 2003–present,2009-01-03 to 2011-01-03,https://murkowski.senate.gov,https://www.murkowski.senate.gov,,,moved https://murkowski.senate.gov → https://www.murkowski.senate.gov (2011),,
+Mark Begich,B001265,Senate,AK,,Democrat,Senate 2009–2015,2009-01-06 to 2011-01-03,https://www.begich.senate.gov,,,,,,left Congress 2015-01-03
+Jeff Sessions,S001141,Senate,AL,,Republican,Senate 1997–2017,2009-01-06 to 2011-01-03,https://www.sessions.senate.gov,,,,moved https://www.sessions.senate.gov → https://www.sessions.senate.gov/public (2015),,left Congress 2017-02-08
+Richard C. Shelby,S000320,Senate,AL,,Republican,House 1979–1987; Senate 1987–2023,2009-01-03 to 2011-01-03,https://shelby.senate.gov,,,,moved https://shelby.senate.gov → https://www.shelby.senate.gov (2011),,left Congress 2023-01-03
+Blanche Lincoln,L000035,Senate,AR,,Democrat,House 1993–1997; Senate 1999–2011,2009-01-03 to 2011-01-03,https://lincoln.senate.gov,,,,,,did not return in next Congress
+Mark L. Pryor,P000590,Senate,AR,,Democrat,Senate 2003–2015,2009-01-06 to 2011-01-03,https://www.pryor.senate.gov,,,,,,left Congress 2015-01-03
+John McCain,M000303,Senate,AZ,,Republican,House 1983–1987; Senate 1987–2018,2009-01-03 to 2011-01-03,https://mccain.senate.gov,,,,moved https://mccain.senate.gov → https://www.mccain.senate.gov (2011),,left Congress 2018-08-25
+Jon Kyl,K000352,Senate,AZ,,Republican,House 1987–1995; Senate 1995–2013; Senate 2018–2018,2009-01-03 to 2011-01-03,https://kyl.senate.gov,,,,moved https://kyl.senate.gov → https://www.kyl.senate.gov (2018),,left Congress 2018-12-31
+Barbara Boxer,B000711,Senate,CA,,Democrat,House 1983–1993; Senate 1993–2017,2009-01-03 to 2011-01-03,https://boxer.senate.gov,,,,moved https://boxer.senate.gov → https://www.boxer.senate.gov (2011),,left Congress 2017-01-03
+Dianne Feinstein,F000062,Senate,CA,,Democrat,Senate 1992–2023,2009-01-03 to 2011-01-03,https://feinstein.senate.gov,,,,moved https://feinstein.senate.gov → https://www.feinstein.senate.gov (2013),,left Congress 2023-09-28
+Ken Salazar,S001163,Senate,CO,,Democrat,Senate 2005–2009,2009-01-03 to 2009-01-21,https://salazar.senate.gov,,,,,,left 2009-01-21 (during this Congress)
+Mark Udall,U000038,Senate,CO,,Democrat,House 1999–2009; Senate 2009–2015,2009-01-06 to 2011-01-03,https://www.markudall.senate.gov,,,,,,left Congress 2015-01-03
+Michael F. Bennet,B001267,Senate,CO,,Democrat,Senate 2009–present,2009-01-22 to 2011-01-03,https://bennet.senate.gov,https://www.bennet.senate.gov,,,moved https://bennet.senate.gov → https://www.bennet.senate.gov (2011); moved https://www.bennet.senate.gov → https://www.bennet.senate.gov/public (2017); moved https://www.bennet.senate.gov/public → https://www.bennet.senate.gov (2023),,joined 2009-01-22
+Christopher Dodd,D000388,Senate,CT,,Democrat,House 1975–1981; Senate 1981–2011,2009-01-03 to 2011-01-03,https://dodd.senate.gov,,,,,,did not return in next Congress
+Joseph I. Lieberman,L000304,Senate,CT,,Independent,Senate 1989–2013,2009-01-03 to 2011-01-03,https://lieberman.senate.gov,,,,,,left Congress 2013-01-03
+Christopher A. Coons,C001088,Senate,DE,,Democrat,Senate 2010–present,2010-11-15 to 2011-01-03,https://www.coons.senate.gov,https://www.coons.senate.gov,,,,,joined 2010-11-15
+Edward Kaufman,K000373,Senate,DE,,Democrat,Senate 2009–2010,2009-01-16 to 2010-11-15,https://kaufman.senate.gov,,,,,,joined 2009-01-16; left 2010-11-15 (during this Congress)
+Joseph Biden,B000444,Senate,DE,,Democrat,Senate 1973–2009,2009-01-06 to 2009-01-15,https://biden.senate.gov,,,,,,left 2009-01-15 (during this Congress)
+Thomas R. Carper,C000174,Senate,DE,,Democrat,House 1983–1993; Senate 2001–2025,2009-01-03 to 2011-01-03,https://carper.senate.gov,,,,moved https://carper.senate.gov → https://www.carper.senate.gov/public (2013); moved https://www.carper.senate.gov/public → https://www.carper.senate.gov (2019),,left Congress 2025-01-03
+Bill Nelson,N000032,Senate,FL,,Democrat,House 1979–1991; Senate 2001–2019,2009-01-03 to 2011-01-03,https://billnelson.senate.gov,,,,moved https://billnelson.senate.gov → https://www.billnelson.senate.gov (2013),,left Congress 2019-01-03
+George LeMieux,L000572,Senate,FL,,Republican,Senate 2009–2011,2009-09-10 to 2011-01-03,https://lemieux.senate.gov,,,,,,joined 2009-09-10; did not return in next Congress
+Mel Martinez,M001162,Senate,FL,,Republican,Senate 2005–2009,2009-01-03 to 2009-09-09,https://martinez.senate.gov,,,,,,left 2009-09-09 (during this Congress)
+Johnny Isakson,I000055,Senate,GA,,Republican,House 1999–2005; Senate 2005–2019,2009-01-03 to 2011-01-03,https://isakson.senate.gov,,,,moved https://isakson.senate.gov → https://www.isakson.senate.gov (2011),,left Congress 2019-12-31
+Saxby Chambliss,C000286,Senate,GA,,Republican,House 1995–2003; Senate 2003–2015,2009-01-06 to 2011-01-03,https://www.chambliss.senate.gov,,,,,,left Congress 2015-01-03
+Daniel K. Akaka,A000069,Senate,HI,,Democrat,House 1977–1990; Senate 1990–2013,2009-01-03 to 2011-01-03,https://akaka.senate.gov,,,,,,left Congress 2013-01-03
+Daniel K. Inouye,I000025,Senate,HI,,Democrat,House 1959–1963; Senate 1963–2012,2009-01-03 to 2011-01-03,https://inouye.senate.gov,,,,,,left Congress 2012-12-17
+Chuck Grassley,G000386,Senate,IA,,Republican,House 1975–1981; Senate 1981–present,2009-01-03 to 2011-01-03,https://grassley.senate.gov,https://www.grassley.senate.gov,,,moved https://grassley.senate.gov → https://www.grassley.senate.gov (2011),,
+Tom Harkin,H000206,Senate,IA,,Democrat,House 1975–1985; Senate 1985–2015,2009-01-06 to 2011-01-03,https://www.harkin.senate.gov,,,,,,left Congress 2015-01-03
+James E. Risch,R000584,Senate,ID,,Republican,Senate 2009–present,2009-01-06 to 2011-01-03,https://www.risch.senate.gov,https://www.risch.senate.gov,,,,,
+Mike Crapo,C000880,Senate,ID,,Republican,House 1993–1999; Senate 1999–present,2009-01-03 to 2011-01-03,https://crapo.senate.gov,https://www.crapo.senate.gov,,,moved https://crapo.senate.gov → https://www.crapo.senate.gov (2011),,
+Mark Kirk,K000360,Senate,IL,,Republican,House 2001–2010; Senate 2010–2017,2009-01-06 to 2011-01-03,https://www.house.gov/kirk,,,,moved https://www.house.gov/kirk → https://www.kirk.senate.gov (2011),,switched chamber 2010-11-29; left Congress 2017-01-03
+Richard J. Durbin,D000563,Senate,IL,,Democrat,House 1983–1997; Senate 1997–present,2009-01-06 to 2011-01-03,https://www.durbin.senate.gov,https://www.durbin.senate.gov,,,,,
+Roland Burris,B001266,Senate,IL,,Democrat,Senate 2009–2010,2009-01-15 to 2010-11-29,https://burris.senate.gov,,,,,,joined 2009-01-15; left 2010-11-29 (during this Congress)
+Evan Bayh,B001233,Senate,IN,,Democrat,Senate 1999–2011,2009-01-03 to 2011-01-03,https://bayh.senate.gov,,,,,,did not return in next Congress
+Richard G. Lugar,L000504,Senate,IN,,Republican,Senate 1977–2013,2009-01-03 to 2011-01-03,https://lugar.senate.gov,,,,,,left Congress 2013-01-03
+Pat Roberts,R000307,Senate,KS,,Republican,House 1981–1997; Senate 1997–2021,2009-01-06 to 2011-01-03,https://www.roberts.senate.gov,,,,,,left Congress 2021-01-03
+Samuel Brownback,B000953,Senate,KS,,Republican,House 1995–1996; Senate 1996–2011,2009-01-03 to 2011-01-03,https://brownback.senate.gov,,,,,,did not return in next Congress
+Jim Bunning,B001066,Senate,KY,,Republican,House 1987–1999; Senate 1999–2011,2009-01-03 to 2011-01-03,https://bunning.senate.gov,,,,,,did not return in next Congress
+Mitch McConnell,M000355,Senate,KY,,Republican,Senate 1985–present,2009-01-06 to 2011-01-03,https://www.mcconnell.senate.gov,https://www.mcconnell.senate.gov,,,,,
+David Vitter,V000127,Senate,LA,,Republican,House 1999–2005; Senate 2005–2017,2009-01-03 to 2011-01-03,https://vitter.senate.gov,,,,moved https://vitter.senate.gov → https://www.vitter.senate.gov (2011),,left Congress 2017-01-03
+Mary L. Landrieu,L000550,Senate,LA,,Democrat,Senate 1997–2015,2009-01-06 to 2011-01-03,https://www.landrieu.senate.gov,,,,,,left Congress 2015-01-03
+Edward Kennedy,K000105,Senate,MA,,Democrat,Senate 1962–2009,2009-01-03 to 2009-08-25,https://kennedy.senate.gov,,,,,later used by John Kennedy (2017–present),left 2009-08-25 (during this Congress)
+John F. Kerry,K000148,Senate,MA,,Democrat,Senate 1985–2013,2009-01-06 to 2011-01-03,https://www.kerry.senate.gov,,,,,,left Congress 2013-02-01
+Paul Kirk,K000374,Senate,MA,,Democrat,Senate 2009–2010,2009-09-25 to 2010-02-04,https://kirk.senate.gov/ ,,,,,later used by Mark Kirk (2011–2017),joined 2009-09-25; left 2010-02-04 (during this Congress)
+Scott P. Brown,B001268,Senate,MA,,Republican,Senate 2010–2013,2010-02-04 to 2011-01-03,https://scottbrown.senate.gov,,,,,,joined 2010-02-04; left Congress 2013-01-03
+Barbara A. Mikulski,M000702,Senate,MD,,Democrat,House 1977–1987; Senate 1987–2017,2009-01-03 to 2011-01-03,https://mikulski.senate.gov,,,,moved https://mikulski.senate.gov → https://www.mikulski.senate.gov (2011),,left Congress 2017-01-03
+Benjamin L. Cardin,C000141,Senate,MD,,Democrat,House 1987–2007; Senate 2007–2025,2009-01-03 to 2011-01-03,https://cardin.senate.gov,,,,moved https://cardin.senate.gov → https://www.cardin.senate.gov (2013),,left Congress 2025-01-03
+Olympia J. Snowe,S000663,Senate,ME,,Republican,House 1979–1995; Senate 1995–2013,2009-01-03 to 2011-01-03,https://snowe.senate.gov,,,,,,left Congress 2013-01-03
+Susan M. Collins,C001035,Senate,ME,,Republican,Senate 1997–present,2009-01-06 to 2011-01-03,https://www.collins.senate.gov,https://www.collins.senate.gov,,,,,
+Carl Levin,L000261,Senate,MI,,Democrat,Senate 1979–2015,2009-01-06 to 2011-01-03,https://www.levin.senate.gov,,,,,,left Congress 2015-01-03
+Debbie Stabenow,S000770,Senate,MI,,Democrat,House 1997–2001; Senate 2001–2025,2009-01-03 to 2011-01-03,https://stabenow.senate.gov,,,,moved https://stabenow.senate.gov → https://www.stabenow.senate.gov (2013),,left Congress 2025-01-03
+Al Franken,F000457,Senate,MN,,Democrat,Senate 2009–2018,2009-07-07 to 2011-01-03,https://www.franken.senate.gov,,,,,,joined 2009-07-07; left Congress 2018-01-02
+Amy Klobuchar,K000367,Senate,MN,,Democrat,Senate 2007–present,2009-01-03 to 2011-01-03,https://klobuchar.senate.gov,https://www.klobuchar.senate.gov,,,moved https://klobuchar.senate.gov → https://www.klobuchar.senate.gov (2013),,
+Christopher Bond,B000611,Senate,MO,,Republican,Senate 1987–2011,2009-01-03 to 2011-01-03,https://bond.senate.gov,,,,,,did not return in next Congress
+Claire McCaskill,M001170,Senate,MO,,Democrat,Senate 2007–2019,2009-01-03 to 2011-01-03,https://mccaskill.senate.gov,,,,moved https://mccaskill.senate.gov → https://www.mccaskill.senate.gov (2013),,left Congress 2019-01-03
+Roger F. Wicker,W000437,Senate,MS,,Republican,House 1995–2007; Senate 2007–present,2009-01-03 to 2011-01-03,https://wicker.senate.gov,https://www.wicker.senate.gov,,,moved https://wicker.senate.gov → https://www.wicker.senate.gov (2013),,
+Thad Cochran,C000567,Senate,MS,,Republican,House 1973–1979; Senate 1979–2018,2009-01-06 to 2011-01-03,https://www.cochran.senate.gov,,,,,,left Congress 2018-04-01
+Jon Tester,T000464,Senate,MT,,Democrat,Senate 2007–2025,2009-01-03 to 2011-01-03,https://tester.senate.gov,,,,moved https://tester.senate.gov → https://www.tester.senate.gov (2013),,left Congress 2025-01-03
+Max Baucus,B000243,Senate,MT,,Democrat,House 1975–1978; Senate 1978–2014,2009-01-06 to 2011-01-03,https://www.baucus.senate.gov,,,,,,left Congress 2014-02-06
+Kay R. Hagan,H001049,Senate,NC,,Democrat,Senate 2009–2015,2009-01-06 to 2011-01-03,https://www.hagan.senate.gov,,,,,,left Congress 2015-01-03
+Richard Burr,B001135,Senate,NC,,Republican,House 1995–2005; Senate 2005–2023,2009-01-03 to 2011-01-03,https://burr.senate.gov,,,,moved https://burr.senate.gov → https://www.burr.senate.gov (2011),,left Congress 2023-01-03
+Byron Dorgan,D000432,Senate,ND,,Democrat,House 1981–1992; Senate 1992–2011,2009-01-03 to 2011-01-03,https://dorgan.senate.gov,,,,,,did not return in next Congress
+Kent Conrad,C000705,Senate,ND,,Democrat,Senate 1987–2013,2009-01-03 to 2011-01-03,https://conrad.senate.gov,,,,,,left Congress 2013-01-03
+Ben Nelson,N000180,Senate,NE,,Democrat,Senate 2001–2013,2009-01-03 to 2011-01-03,https://bennelson.senate.gov,,,,,,left Congress 2013-01-03
+Mike Johanns,J000291,Senate,NE,,Republican,Senate 2009–2015,2009-01-06 to 2011-01-03,https://www.johanns.senate.gov,,,,,,left Congress 2015-01-03
+Jeanne Shaheen,S001181,Senate,NH,,Democrat,Senate 2009–present,2009-01-06 to 2011-01-03,https://www.shaheen.senate.gov,https://www.shaheen.senate.gov,,,,,
+Judd Gregg,G000445,Senate,NH,,Republican,House 1981–1989; Senate 1993–2011,2009-01-03 to 2011-01-03,https://gregg.senate.gov,,,,,,did not return in next Congress
+Frank R. Lautenberg,L000123,Senate,NJ,,Democrat,Senate 1982–2001; Senate 2003–2013,2009-01-06 to 2011-01-03,https://www.lautenberg.senate.gov,,,,,,left Congress 2013-06-03
+Robert Menendez,M000639,Senate,NJ,,Democrat,House 1993–2006; Senate 2006–2024,2009-01-03 to 2011-01-03,https://menendez.senate.gov,,,,moved https://menendez.senate.gov → https://www.menendez.senate.gov (2013),,left Congress 2024-08-20
+Jeff Bingaman,B000468,Senate,NM,,Democrat,Senate 1983–2013,2009-01-03 to 2011-01-03,https://bingaman.senate.gov,,,,,,left Congress 2013-01-03
+Tom Udall,U000039,Senate,NM,,Democrat,House 1999–2009; Senate 2009–2021,2009-01-06 to 2011-01-03,https://www.tomudall.senate.gov,,,,,,left Congress 2021-01-03
+Harry Reid,R000146,Senate,NV,,Democrat,House 1983–1987; Senate 1987–2017,2009-01-03 to 2011-01-03,https://reid.senate.gov,,,,moved https://reid.senate.gov → https://www.reid.senate.gov (2011),,left Congress 2017-01-03
+John Ensign,E000194,Senate,NV,,Republican,House 1995–1999; Senate 2001–2011,2009-01-03 to 2011-01-03,https://ensign.senate.gov,,,,,,left Congress 2011-05-03
+Charles E. Schumer,S000148,Senate,NY,,Democrat,House 1981–1999; Senate 1999–present,2009-01-03 to 2011-01-03,https://schumer.senate.gov,https://www.schumer.senate.gov,,,moved https://schumer.senate.gov → https://www.schumer.senate.gov (2011),,
+Hillary Clinton,C001041,Senate,NY,,Democrat,Senate 2001–2009,2009-01-03 to 2009-01-21,https://clinton.senate.gov,,,,,,left 2009-01-21 (during this Congress)
+Kirsten E. Gillibrand,G000555,Senate,NY,,Democrat,House 2007–2009; Senate 2009–present,2009-01-06 to 2011-01-03,https://gillibrand.house.gov | https://gillibrand.senate.gov,https://www.gillibrand.senate.gov,,,moved https://gillibrand.house.gov → https://gillibrand.senate.gov during this Congress; moved https://gillibrand.senate.gov → https://www.gillibrand.senate.gov (2013),,switched chamber 2009-01-27
+George Voinovich,V000126,Senate,OH,,Republican,Senate 1999–2011,2009-01-03 to 2011-01-03,https://voinovich.senate.gov,,,,,,did not return in next Congress
+Sherrod Brown,B000944,Senate,OH,,Democrat,House 1993–2007; Senate 2007–2025,2009-01-03 to 2011-01-03,https://brown.senate.gov,,,,moved https://brown.senate.gov → https://www.brown.senate.gov (2013),,left Congress 2025-01-03
+James M. Inhofe,I000024,Senate,OK,,Republican,House 1987–1994; Senate 1994–2023,2009-01-06 to 2011-01-03,https://www.inhofe.senate.gov,,,,,,left Congress 2023-01-03
+Tom Coburn,C000560,Senate,OK,,Republican,House 1995–2001; Senate 2005–2015,2009-01-03 to 2011-01-03,https://coburn.senate.gov,,,,moved https://coburn.senate.gov → https://www.coburn.senate.gov (2011),,left Congress 2015-01-03
+Jeff Merkley,M001176,Senate,OR,,Democrat,Senate 2009–present,2009-01-06 to 2011-01-03,https://www.merkley.senate.gov,https://www.merkley.senate.gov,,,,,
+Ron Wyden,W000779,Senate,OR,,Democrat,House 1981–1996; Senate 1996–present,2009-01-03 to 2011-01-03,https://wyden.senate.gov,https://www.wyden.senate.gov,,,moved https://wyden.senate.gov → https://www.wyden.senate.gov (2011),,
+Arlen Specter,S000709,Senate,PA,,Republican → Democrat (2009-04-30),Senate 1981–2011,2009-01-03 to 2011-01-03,https://specter.senate.gov,,,,,,did not return in next Congress
+"Robert P. Casey, Jr.",C001070,Senate,PA,,Democrat,Senate 2007–2025,2009-01-03 to 2011-01-03,https://casey.senate.gov,,,,moved https://casey.senate.gov → https://www.casey.senate.gov (2013),,left Congress 2025-01-03
+Jack Reed,R000122,Senate,RI,,Democrat,House 1991–1997; Senate 1997–present,2009-01-06 to 2011-01-03,https://www.reed.senate.gov,https://www.reed.senate.gov,,,,,
+Sheldon Whitehouse,W000802,Senate,RI,,Democrat,Senate 2007–present,2009-01-03 to 2011-01-03,https://whitehouse.senate.gov,https://www.whitehouse.senate.gov,,,moved https://whitehouse.senate.gov → https://www.whitehouse.senate.gov (2013),,
+Jim DeMint,D000595,Senate,SC,,Republican,House 1999–2005; Senate 2005–2013,2009-01-03 to 2011-01-03,https://demint.senate.gov,,,,,,left Congress 2013-01-01
+Lindsey Graham,G000359,Senate,SC,,Republican,House 1995–2003; Senate 2003–2026,2009-01-06 to 2011-01-03,https://www.lgraham.senate.gov,,,,moved https://www.lgraham.senate.gov → https://www.lgraham.senate.gov/public (2015),,left Congress 2026-07-11
+John Thune,T000250,Senate,SD,,Republican,House 1997–2003; Senate 2005–present,2009-01-03 to 2011-01-03,https://thune.senate.gov,https://www.thune.senate.gov,,,moved https://thune.senate.gov → https://www.thune.senate.gov (2011),,
+Tim Johnson,J000177,Senate,SD,,Democrat,House 1987–1997; Senate 1997–2015,2009-01-06 to 2011-01-03,https://www.johnson.senate.gov,,,,,,left Congress 2015-01-03
+Bob Corker,C001071,Senate,TN,,Republican,Senate 2007–2019,2009-01-03 to 2011-01-03,https://corker.senate.gov,,,,moved https://corker.senate.gov → https://www.corker.senate.gov (2013),,left Congress 2019-01-03
+Lamar Alexander,A000360,Senate,TN,,Republican,Senate 2003–2021,2009-01-06 to 2011-01-03,https://www.alexander.senate.gov,,,,moved https://www.alexander.senate.gov → https://www.alexander.senate.gov/public (2015),,left Congress 2021-01-03
+John Cornyn,C001056,Senate,TX,,Republican,Senate 2002–present,2009-01-06 to 2011-01-03,https://www.cornyn.senate.gov,https://www.cornyn.senate.gov,,,,,
+Kay Bailey Hutchison,H001016,Senate,TX,,Republican,Senate 1993–2013,2009-01-03 to 2011-01-03,https://hutchison.senate.gov,,,,,,left Congress 2013-01-03
+Orrin G. Hatch,H000338,Senate,UT,,Republican,Senate 1977–2019,2009-01-03 to 2011-01-03,https://hatch.senate.gov,,,,moved https://hatch.senate.gov → https://www.hatch.senate.gov (2013),,left Congress 2019-01-03
+Robert Bennett,B000382,Senate,UT,,Republican,Senate 1993–2011,2009-01-03 to 2011-01-03,https://bennett.senate.gov,,,,,,did not return in next Congress
+Jim Webb,W000803,Senate,VA,,Democrat,Senate 2007–2013,2009-01-03 to 2011-01-03,https://webb.senate.gov,,,,,,left Congress 2013-01-03
+Mark R. Warner,W000805,Senate,VA,,Democrat,Senate 2009–present,2009-01-06 to 2011-01-03,https://www.warner.senate.gov,https://www.warner.senate.gov,,,,previously used by John Warner (2003–2009),
+Bernard Sanders,S000033,Senate,VT,,Independent,House 1991–2007; Senate 2007–present,2009-01-03 to 2011-01-03,https://sanders.senate.gov,https://www.sanders.senate.gov,,,moved https://sanders.senate.gov → https://www.sanders.senate.gov (2013),,
+Patrick J. Leahy,L000174,Senate,VT,,Democrat,Senate 1975–2023,2009-01-03 to 2011-01-03,https://leahy.senate.gov,,,,moved https://leahy.senate.gov → https://www.leahy.senate.gov (2011),,left Congress 2023-01-03
+Maria Cantwell,C000127,Senate,WA,,Democrat,House 1993–1995; Senate 2001–present,2009-01-03 to 2011-01-03,https://cantwell.senate.gov,https://www.cantwell.senate.gov,,,moved https://cantwell.senate.gov → https://www.cantwell.senate.gov (2013),,
+Patty Murray,M001111,Senate,WA,,Democrat,Senate 1993–present,2009-01-03 to 2011-01-03,https://murray.senate.gov,https://www.murray.senate.gov,,,moved https://murray.senate.gov → https://www.murray.senate.gov (2011),,
+Herb Kohl,K000305,Senate,WI,,Democrat,Senate 1989–2013,2009-01-03 to 2011-01-03,https://kohl.senate.gov,,,,,,left Congress 2013-01-03
+Russell Feingold,F000061,Senate,WI,,Democrat,Senate 1993–2011,2009-01-03 to 2011-01-03,https://feingold.senate.gov,,,,,,did not return in next Congress
+Carte Goodwin,G000561,Senate,WV,,Democrat,Senate 2010–2010,2010-07-20 to 2010-11-14,,,,,,,joined 2010-07-20; left 2010-11-14 (during this Congress)
+"Joe Manchin, III",M001183,Senate,WV,,Democrat,Senate 2010–2025,2010-11-15 to 2011-01-03,https://manchin.senate.gov,,,,moved https://manchin.senate.gov → https://www.manchin.senate.gov (2013),,joined 2010-11-15; left Congress 2025-01-03
+"John D. Rockefeller, IV",R000361,Senate,WV,,Democrat,Senate 1985–2015,2009-01-06 to 2011-01-03,https://www.rockefeller.senate.gov,,,,,,left Congress 2015-01-03
+Robert Byrd,B001210,Senate,WV,,Democrat,House 1953–1959; Senate 1959–2010,2009-01-03 to 2010-06-28,https://byrd.senate.gov,,,,,,left 2010-06-28 (during this Congress)
+John Barrasso,B001261,Senate,WY,,Republican,Senate 2007–present,2009-01-03 to 2011-01-03,https://barrasso.senate.gov,https://www.barrasso.senate.gov,,,moved https://barrasso.senate.gov → https://www.barrasso.senate.gov (2013),,
+Michael B. Enzi,E000285,Senate,WY,,Republican,Senate 1997–2021,2009-01-06 to 2011-01-03,https://www.enzi.senate.gov,,,,,,left Congress 2021-01-03
+Don Young,Y000033,House,AK,0,Republican,House 1973–2022,2009-01-06 to 2011-01-03,https://donyoung.house.gov,,,,,,left Congress 2022-03-18
+Jo Bonner,B001244,House,AL,1,Republican,House 2003–2013,2009-01-06 to 2011-01-03,https://bonner.house.gov,,,,,,left Congress 2013-08-02
+Bobby Bright,B001264,House,AL,2,Democrat,House 2009–2011,2009-01-06 to 2011-01-03,https://www.bright.house.gov,,,,,,did not return in next Congress
+Mike Rogers,R000575,House,AL,3,Republican,House 2003–present,2009-01-06 to 2011-01-03,https://www.house.gov/mike-rogers,https://mikerogers.house.gov,,,moved https://www.house.gov/mike-rogers → https://mike-rogers.house.gov (2013); moved https://mike-rogers.house.gov → https://mikerogers.house.gov (2015),,
+Robert B. Aderholt,A000055,House,AL,4,Republican,House 1997–present,2009-01-06 to 2011-01-03,https://aderholt.house.gov,https://aderholt.house.gov,,,,,
+Parker Griffith,G000557,House,AL,5,Democrat → Republican (2009-12-22),House 2009–2011,2009-01-06 to 2011-01-03,https://griffith.house.gov,,,,,,did not return in next Congress
+Spencer Bachus,B000013,House,AL,6,Republican,House 1993–2015,2009-01-06 to 2011-01-03,https://bachus.house.gov,,,,,,left Congress 2015-01-03
+Artur Davis,D000602,House,AL,7,Democrat,House 2003–2011,2009-01-06 to 2011-01-03,https://www.house.gov/arturdavis,,,,,,did not return in next Congress
+Robert Berry,B000420,House,AR,1,Democrat,House 1997–2011,2009-01-06 to 2011-01-03,https://www.house.gov/berry,,,,,,did not return in next Congress
+Victor Snyder,S000672,House,AR,2,Democrat,House 1997–2011,2009-01-06 to 2011-01-03,https://www.house.gov/snyder,,,,,,did not return in next Congress
+John Boozman,B001236,House,AR,3,Republican,House 2001–2011; Senate 2011–present,2009-01-06 to 2011-01-03,https://www.boozman.house.gov,https://www.boozman.senate.gov/public,,,"moved https://www.boozman.house.gov → https://www.boozman.senate.gov (House→Senate, 2011); moved https://www.boozman.senate.gov → https://www.boozman.senate.gov/public (House→Senate, 2017)",,
+Mike Ross,R000573,House,AR,4,Democrat,House 2001–2013,2009-01-06 to 2011-01-03,https://www.house.gov/ross,,,,,,left Congress 2013-01-03
+Eni F. H. Faleomavaega,F000010,House,AS,0,Democrat,House 1989–2015,2009-01-06 to 2011-01-03,https://www.house.gov/faleomavaega,,,,moved https://www.house.gov/faleomavaega → https://faleomavaega.house.gov (2013),,left Congress 2015-01-03
+Ann Kirkpatrick,K000368,House,AZ,1,Democrat,House 2009–2011; House 2013–2017; House 2019–2023,2009-01-06 to 2011-01-03,https://kirkpatrick.house.gov,,,,,,left Congress 2023-01-03
+Trent Franks,F000448,House,AZ,2,Republican,House 2003–2017,2009-01-06 to 2011-01-03,https://www.house.gov/franks,,,,moved https://www.house.gov/franks → https://franks.house.gov (2013),,left Congress 2017-12-08
+John Shadegg,S000275,House,AZ,3,Republican,House 1995–2011,2009-01-06 to 2011-01-03,https://johnshadegg.house.gov,,,,,,did not return in next Congress
+Ed Pastor,P000099,House,AZ,4,Democrat,House 1991–2015,2009-01-06 to 2011-01-03,https://www.house.gov/pastor,,,,moved https://www.house.gov/pastor → https://www.pastor.house.gov (2013),,left Congress 2015-01-03
+Harry Mitchell,M001167,House,AZ,5,Democrat,House 2007–2011,2009-01-06 to 2011-01-03,https://mitchell.house.gov,,,,,later used by Paul Mitchell (2017–2021),did not return in next Congress
+Jeff Flake,F000444,House,AZ,6,Republican,House 2001–2013; Senate 2013–2019,2009-01-06 to 2011-01-03,https://flake.house.gov,,,,"moved https://flake.house.gov → https://www.flake.senate.gov/public (House→Senate, 2013)",,left Congress 2019-01-03
+Raúl M. Grijalva,G000551,House,AZ,7,Democrat,House 2003–2025,2009-01-06 to 2011-01-03,https://www.house.gov/grijalva,,,,moved https://www.house.gov/grijalva → https://grijalva.house.gov (2013),,left Congress 2025-03-13
+Gabrielle Giffords,G000554,House,AZ,8,Democrat,House 2007–2012,2009-01-06 to 2011-01-03,https://giffords.house.gov,,,,,,left Congress 2012-01-25
+Mike Thompson,T000460,House,CA,1,Democrat,House 1999–present,2009-01-06 to 2011-01-03,https://mikethompson.house.gov,https://mikethompson.house.gov,,,,,
+Wally Herger,H000528,House,CA,2,Republican,House 1987–2013,2009-01-06 to 2011-01-03,https://www.house.gov/herger,,,,,,left Congress 2013-01-03
+Daniel E. Lungren,L000517,House,CA,3,Republican,House 1979–1989; House 2005–2013,2009-01-06 to 2011-01-03,https://www.lungren.house.gov,,,,,,left Congress 2013-01-03
+Tom McClintock,M001177,House,CA,4,Republican,House 2009–present,2009-01-06 to 2011-01-03,https://mcclintock.house.gov,https://mcclintock.house.gov,,,,,
+Doris O. Matsui,M001163,House,CA,5,Democrat,House 2005–present,2009-01-06 to 2011-01-03,https://www.house.gov/matsui,https://matsui.house.gov,,,moved https://www.house.gov/matsui → https://matsui.house.gov (2013),previously used by Robert Matsui (2003–2005),
+Lynn C. Woolsey,W000738,House,CA,6,Democrat,House 1993–2013,2009-01-06 to 2011-01-03,https://woolsey.house.gov,,,,,,left Congress 2013-01-03
+George Miller,M000725,House,CA,7,Democrat,House 1975–2015,2009-01-06 to 2011-01-03,https://www.house.gov/georgemiller,,,,moved https://www.house.gov/georgemiller → https://georgemiller.house.gov (2013),,left Congress 2015-01-03
+Nancy Pelosi,P000197,House,CA,8,Democrat,House 1987–present,2009-01-06 to 2011-01-03,https://www.house.gov/pelosi,https://pelosi.house.gov,,,moved https://www.house.gov/pelosi → https://pelosi.house.gov (2013),,
+Barbara Lee,L000551,House,CA,9,Democrat,House 1998–2025,2009-01-06 to 2011-01-03,https://lee.house.gov,,,,,,left Congress 2025-01-03
+Ellen Tauscher,T000057,House,CA,10,Democrat,House 1997–2009,2009-01-06 to 2009-06-26,https://www.house.gov/tauscher,,,,,,left 2009-06-26 (during this Congress)
+John Garamendi,G000559,House,CA,10,Democrat,House 2009–present,2009-11-03 to 2011-01-03,https://garamendi.house.gov,https://garamendi.house.gov,,,,,joined 2009-11-03
+Jerry McNerney,M001166,House,CA,11,Democrat,House 2007–2023,2009-01-06 to 2011-01-03,https://mcnerney.house.gov,,,,,,left Congress 2023-01-03
+Jackie Speier,S001175,House,CA,12,Democrat,House 2008–2023,2009-01-06 to 2011-01-03,https://speier.house.gov,,,,,,left Congress 2023-01-03
+Fortney Pete Stark,S000810,House,CA,13,Democrat,House 1973–2013,2009-01-06 to 2011-01-03,https://www.house.gov/stark,,,,,,left Congress 2013-01-03
+Anna G. Eshoo,E000215,House,CA,14,Democrat,House 1993–2025,2009-01-06 to 2011-01-03,https://eshoo.house.gov,,,,,,left Congress 2025-01-03
+Michael M. Honda,H001034,House,CA,15,Democrat,House 2001–2017,2009-01-06 to 2011-01-03,https://www.house.gov/honda,,,,moved https://www.house.gov/honda → https://honda.house.gov (2013),,left Congress 2017-01-03
+Zoe Lofgren,L000397,House,CA,16,Democrat,House 1995–present,2009-01-06 to 2011-01-03,https://www.house.gov/lofgren,https://lofgren.house.gov,,,moved https://www.house.gov/lofgren → https://lofgren.house.gov (2013),,
+Sam Farr,F000030,House,CA,17,Democrat,House 1993–2017,2009-01-06 to 2011-01-03,https://www.house.gov/farr,,,,moved https://www.house.gov/farr → https://www.farr.house.gov (2013); moved https://www.farr.house.gov → https://farr.house.gov (2015),,left Congress 2017-01-03
+Dennis Cardoza,C001050,House,CA,18,Democrat,House 2003–2012,2009-01-06 to 2011-01-03,https://www.house.gov/cardoza,,,,,,left Congress 2012-08-15
+George Radanovich,R000004,House,CA,19,Republican,House 1995–2011,2009-01-06 to 2011-01-03,https://radanovich.house.gov,,,,,,did not return in next Congress
+Jim Costa,C001059,House,CA,20,Democrat,House 2005–present,2009-01-06 to 2011-01-03,https://www.house.gov/costa,https://costa.house.gov,,,moved https://www.house.gov/costa → https://costa.house.gov (2013),,
+Devin Nunes,N000181,House,CA,21,Republican,House 2003–2022,2009-01-06 to 2011-01-03,https://nunes.house.gov,,,,,,left Congress 2022-01-03
+Kevin McCarthy,M001165,House,CA,22,Republican,House 2007–2023,2009-01-06 to 2011-01-03,https://kevinmccarthy.house.gov,,,,,,left Congress 2023-12-31
+Lois Capps,C001036,House,CA,23,Democrat,House 1998–2017,2009-01-06 to 2011-01-03,https://www.house.gov/capps,,,,moved https://www.house.gov/capps → https://capps.house.gov (2013),,left Congress 2017-01-03
+Elton Gallegly,G000021,House,CA,24,Republican,House 1987–2013,2009-01-06 to 2011-01-03,https://www.house.gov/gallegly,,,,,,left Congress 2013-01-03
+"Howard P. ""Buck"" McKeon",M000508,House,CA,25,Republican,House 1993–2015,2009-01-06 to 2011-01-03,https://mckeon.house.gov,,,,,,left Congress 2015-01-03
+David Dreier,D000492,House,CA,26,Republican,House 1981–2013,2009-01-06 to 2011-01-03,https://dreier.house.gov,,,,,,left Congress 2013-01-03
+Brad Sherman,S000344,House,CA,27,Democrat,House 1997–present,2009-01-06 to 2011-01-03,https://bradsherman.house.gov,https://sherman.house.gov,,,moved https://bradsherman.house.gov → https://sherman.house.gov (2015),,
+Howard L. Berman,B000410,House,CA,28,Democrat,House 1983–2013,2009-01-06 to 2011-01-03,https://www.house.gov/berman,,,,,,left Congress 2013-01-03
+Adam B. Schiff,S001150,House,CA,29,Democrat,House 2001–2024; Senate 2024–present,2009-01-06 to 2011-01-03,https://schiff.house.gov,https://www.schiff.senate.gov,,,"moved https://schiff.house.gov → https://www.schiff.senate.gov (House→Senate, 2024)",,
+Henry A. Waxman,W000215,House,CA,30,Democrat,House 1975–2015,2009-01-06 to 2011-01-03,https://www.henrywaxman.house.gov,,,,moved https://www.henrywaxman.house.gov → https://waxman.house.gov (2013),,left Congress 2015-01-03
+Xavier Becerra,B000287,House,CA,31,Democrat,House 1993–2017,2009-01-06 to 2011-01-03,https://becerra.house.gov,,,,,,left Congress 2017-01-24
+Hilda Solis,S001153,House,CA,32,Democrat,House 2001–2009,2009-01-06 to 2009-02-24,https://solis.house.gov,,,,,,left 2009-02-24 (during this Congress)
+Judy Chu,C001080,House,CA,32,Democrat,House 2009–present,2009-07-16 to 2011-01-03,https://chu.house.gov,https://chu.house.gov,,,,,joined 2009-07-16
+Diane Watson,W000794,House,CA,33,Democrat,House 2001–2011,2009-01-06 to 2011-01-03,https://www.house.gov/watson,,,,,,did not return in next Congress
+Lucille Roybal-Allard,R000486,House,CA,34,Democrat,House 1993–2023,2009-01-06 to 2011-01-03,https://www.house.gov/roybal-allard,,,,moved https://www.house.gov/roybal-allard → https://roybal-allard.house.gov (2013),,left Congress 2023-01-03
+Maxine Waters,W000187,House,CA,35,Democrat,House 1991–present,2009-01-06 to 2011-01-03,https://www.house.gov/waters,https://waters.house.gov,,,moved https://www.house.gov/waters → https://waters.house.gov (2013),,
+Jane Harman,H000213,House,CA,36,Democrat,House 1993–1999; House 2001–2011,2009-01-06 to 2011-01-03,https://www.house.gov/harman,,,,,,left Congress 2011-02-28
+Laura Richardson,R000581,House,CA,37,Democrat,House 2007–2013,2009-01-06 to 2011-01-03,https://richardson.house.gov,,,,,,left Congress 2013-01-03
+Grace F. Napolitano,N000179,House,CA,38,Democrat,House 1999–2025,2009-01-06 to 2011-01-03,https://napolitano.house.gov,,,,,,left Congress 2025-01-03
+Linda T. Sánchez,S001156,House,CA,39,Democrat,House 2003–present,2009-01-06 to 2011-01-03,https://www.house.gov/lindasanchez,https://lindasanchez.house.gov,,,moved https://www.house.gov/lindasanchez → https://lindasanchez.house.gov (2013),,
+Edward R. Royce,R000487,House,CA,40,Republican,House 1993–2019,2009-01-06 to 2011-01-03,https://www.royce.house.gov,,,,moved https://www.royce.house.gov → https://royce.house.gov (2013),,left Congress 2019-01-03
+Jerry Lewis,L000274,House,CA,41,Republican,House 1979–2013,2009-01-06 to 2011-01-03,https://www.house.gov/jerrylewis,,,,,,left Congress 2013-01-03
+Gary G. Miller,M001139,House,CA,42,Republican,House 1999–2015,2009-01-06 to 2011-01-03,https://www.house.gov/garymiller,,,,moved https://www.house.gov/garymiller → https://garymiller.house.gov (2013),,left Congress 2015-01-03
+Joe Baca,B001234,House,CA,43,Democrat,House 1999–2013,2009-01-06 to 2011-01-03,https://www.house.gov/baca,,,,,,left Congress 2013-01-03
+Ken Calvert,C000059,House,CA,44,Republican,House 1993–present,2009-01-06 to 2011-01-03,https://calvert.house.gov,https://calvert.house.gov,,,,,
+Mary Bono Mack,B001228,House,CA,45,Republican,House 1998–2013,2009-01-06 to 2011-01-03,https://bono.house.gov,,,,,,left Congress 2013-01-03
+Dana Rohrabacher,R000409,House,CA,46,Republican,House 1989–2019,2009-01-06 to 2011-01-03,https://www.house.gov/rohrabacher,,,,moved https://www.house.gov/rohrabacher → https://rohrabacher.house.gov (2013),,left Congress 2019-01-03
+Loretta Sanchez,S000030,House,CA,47,Democrat,House 1997–2017,2009-01-06 to 2011-01-03,https://www.lorettasanchez.house.gov,,,,moved https://www.lorettasanchez.house.gov → https://lorettasanchez.house.gov (2013),,left Congress 2017-01-03
+John Campbell,C001064,House,CA,48,Republican,House 2005–2015,2009-01-06 to 2011-01-03,https://www.house.gov/campbell,,,,moved https://www.house.gov/campbell → https://www.campbell.house.gov (2013),,left Congress 2015-01-03
+Darrell Issa,I000056,House,CA,49,Republican,House 2001–2019; House 2021–present,2009-01-06 to 2011-01-03,https://www.house.gov/issa,https://issa.house.gov,,,moved https://www.house.gov/issa → https://issa.house.gov (2013),,
+Brian P. Bilbray,B000461,House,CA,50,Republican,House 1995–2001; House 2006–2013,2009-01-06 to 2011-01-03,https://www.house.gov/bilbray,,,,,,left Congress 2013-01-03
+Bob Filner,F000116,House,CA,51,Democrat,House 1993–2012,2009-01-06 to 2011-01-03,https://www.house.gov/filner,,,,,,left Congress 2012-12-03
+Duncan Hunter,H001048,House,CA,52,Republican,House 2009–2020,2009-01-06 to 2011-01-03,https://hunter.house.gov,,,,,,left Congress 2020-01-13
+Susan A. Davis,D000598,House,CA,53,Democrat,House 2001–2021,2009-01-06 to 2011-01-03,https://www.house.gov/susandavis,,,,moved https://www.house.gov/susandavis → https://susandavis.house.gov (2015),,left Congress 2021-01-03
+Diana DeGette,D000197,House,CO,1,Democrat,House 1997–present,2009-01-06 to 2011-01-03,https://www.house.gov/degette,https://degette.house.gov,,,moved https://www.house.gov/degette → https://degette.house.gov (2013),,
+Jared Polis,P000598,House,CO,2,Democrat,House 2009–2019,2009-01-06 to 2011-01-03,https://polis.house.gov,,,,,,left Congress 2019-01-03
+John Salazar,S001158,House,CO,3,Democrat,House 2005–2011,2009-01-06 to 2011-01-03,https://www.house.gov/salazar,,,,,,did not return in next Congress
+Betsy Markey,M001172,House,CO,4,Democrat,House 2009–2011,2009-01-06 to 2011-01-03,https://betsymarkey.house.gov,,,,,,did not return in next Congress
+Doug Lamborn,L000564,House,CO,5,Republican,House 2007–2025,2009-01-06 to 2011-01-03,https://lamborn.house.gov,,,,,,left Congress 2025-01-03
+Mike Coffman,C001077,House,CO,6,Republican,House 2009–2019,2009-01-06 to 2011-01-03,https://coffman.house.gov,,,,,,left Congress 2019-01-03
+Ed Perlmutter,P000593,House,CO,7,Democrat,House 2007–2023,2009-01-06 to 2011-01-03,https://perlmutter.house.gov,,,,,,left Congress 2023-01-03
+John B. Larson,L000557,House,CT,1,Democrat,House 1999–present,2009-01-06 to 2011-01-03,https://www.house.gov/larson,https://larson.house.gov,,,moved https://www.house.gov/larson → https://www.larson.house.gov (2013); moved https://www.larson.house.gov → https://larson.house.gov (2015),,
+Joe Courtney,C001069,House,CT,2,Democrat,House 2007–present,2009-01-06 to 2011-01-03,https://courtney.house.gov,https://courtney.house.gov,,,,,
+Rosa L. DeLauro,D000216,House,CT,3,Democrat,House 1991–present,2009-01-06 to 2011-01-03,https://www.house.gov/delauro,https://delauro.house.gov,,,moved https://www.house.gov/delauro → https://delauro.house.gov (2013),,
+James A. Himes,H001047,House,CT,4,Democrat,House 2009–present,2009-01-06 to 2011-01-03,https://himes.house.gov,https://himes.house.gov,,,,,
+Christopher Murphy,M001169,House,CT,5,Democrat,House 2007–2013; Senate 2013–present,2009-01-06 to 2011-01-03,https://chrismurphy.house.gov,https://www.murphy.senate.gov,,,"moved https://chrismurphy.house.gov → https://www.murphy.senate.gov (House→Senate, 2013)",,
+Eleanor Holmes Norton,N000147,House,DC,0,Democrat,House 1991–present,2009-01-06 to 2011-01-03,https://www.house.gov/norton,https://norton.house.gov,,,moved https://www.house.gov/norton → https://norton.house.gov (2013),,
+Michael Castle,C000243,House,DE,0,Republican,House 1993–2011,2009-01-06 to 2011-01-03,https://www.house.gov/castle,,,,,,did not return in next Congress
+Jeff Miller,M001144,House,FL,1,Republican,House 2001–2017,2009-01-06 to 2011-01-03,https://www.house.gov/jeffmiller,,,,moved https://www.house.gov/jeffmiller → https://jeffmiller.house.gov (2013),,left Congress 2017-01-03
+Allen Boyd,B000716,House,FL,2,Democrat,House 1997–2011,2009-01-06 to 2011-01-03,https://boyd.house.gov,,,,,,did not return in next Congress
+Corrine Brown,B000911,House,FL,3,Democrat,House 1993–2017,2009-01-06 to 2011-01-03,https://www.house.gov/corrinebrown,,,,moved https://www.house.gov/corrinebrown → https://corrinebrown.house.gov (2013),,left Congress 2017-01-03
+Ander Crenshaw,C001045,House,FL,4,Republican,House 2001–2017,2009-01-06 to 2011-01-03,https://crenshaw.house.gov,,domain now belongs to a different member: Dan Crenshaw,,,later used by Dan Crenshaw (2019–present),left Congress 2017-01-03
+Virginia Brown-Waite,B001247,House,FL,5,Republican,House 2003–2011,2009-01-06 to 2011-01-03,https://www.house.gov/brown-waite,,,,,,did not return in next Congress
+Cliff Stearns,S000822,House,FL,6,Republican,House 1989–2013,2009-01-06 to 2011-01-03,https://www.house.gov/stearns,,,,,,left Congress 2013-01-03
+John L. Mica,M000689,House,FL,7,Republican,House 1993–2017,2009-01-06 to 2011-01-03,https://www.house.gov/mica,,,,moved https://www.house.gov/mica → https://mica.house.gov (2013),,left Congress 2017-01-03
+Alan Grayson,G000556,House,FL,8,Democrat,House 2009–2011; House 2013–2017,2009-01-06 to 2011-01-03,https://grayson.house.gov,,,,,,left Congress 2017-01-03; district 8→9 in next Congress
+Gus M. Bilirakis,B001257,House,FL,9,Republican,House 2007–present,2009-01-06 to 2011-01-03,https://bilirakis.house.gov,https://bilirakis.house.gov,,,,,
+C. W. Bill Young,Y000031,House,FL,10,Republican,House 1971–2013,2009-01-06 to 2011-01-03,https://www.house.gov/young,,,,,,left Congress 2013-10-18
+Kathy Castor,C001066,House,FL,11,Democrat,House 2007–present,2009-01-06 to 2011-01-03,https://castor.house.gov,https://castor.house.gov,,,,,
+Adam Putnam,P000586,House,FL,12,Republican,House 2001–2011,2009-01-06 to 2011-01-03,https://adamputnam.house.gov,,,,,,did not return in next Congress
+Vern Buchanan,B001260,House,FL,13,Republican,House 2007–present,2009-01-06 to 2011-01-03,https://buchanan.house.gov,https://buchanan.house.gov,,,,,
+Connie Mack,M001155,House,FL,14,Republican,House 2005–2013,2009-01-06 to 2011-01-03,https://www.house.gov/mack,,,,,,left Congress 2013-01-03
+Bill Posey,P000599,House,FL,15,Republican,House 2009–2025,2009-01-06 to 2011-01-03,https://posey.house.gov,,,,,,left Congress 2025-01-03
+Thomas J. Rooney,R000583,House,FL,16,Republican,House 2009–2019,2009-01-06 to 2011-01-03,https://rooney.house.gov,,,,,,left Congress 2019-01-03
+Kendrick Meek,M001148,House,FL,17,Democrat,House 2003–2011,2009-01-06 to 2011-01-03,https://kendrickmeek.house.gov,,,,,,did not return in next Congress
+Ileana Ros-Lehtinen,R000435,House,FL,18,Republican,House 1989–2019,2009-01-06 to 2011-01-03,https://www.house.gov/ros-lehtinen,,,,moved https://www.house.gov/ros-lehtinen → https://ros-lehtinen.house.gov (2013),,left Congress 2019-01-03
+Robert Wexler,W000314,House,FL,19,Democrat,House 1997–2010,2009-01-06 to 2010-01-04,https://wexler.house.gov,,,,,,left 2010-01-04 (during this Congress)
+Theodore E. Deutch,D000610,House,FL,19,Democrat,House 2010–2022,2010-04-15 to 2011-01-03,https://deutch.house.gov,,,,moved https://deutch.house.gov → https://teddeutch.house.gov (2013),,joined 2010-04-15; left Congress 2022-09-30
+Debbie Wasserman Schultz,W000797,House,FL,20,Democrat,House 2005–present,2009-01-06 to 2011-01-03,https://www.house.gov/schultz,https://wassermanschultz.house.gov,,,moved https://www.house.gov/schultz → https://wassermanschultz.house.gov (2013),,
+Lincoln Diaz-Balart,D000299,House,FL,21,Republican,House 1993–2011,2009-01-06 to 2011-01-03,https://www.house.gov/diaz-balart,,,,,,did not return in next Congress
+Ron Klein,K000366,House,FL,22,Democrat,House 2007–2011,2009-01-06 to 2011-01-03,https://klein.house.gov,,,,,,did not return in next Congress
+Alcee L. Hastings,H000324,House,FL,23,Democrat,House 1993–2021,2009-01-06 to 2011-01-03,https://alceehastings.house.gov,,,,,,left Congress 2021-04-06
+Suzanne Kosmas,K000370,House,FL,24,Democrat,House 2009–2011,2009-01-06 to 2011-01-03,https://www.kosmas.house.gov,,,,,,did not return in next Congress
+Mario Diaz-Balart,D000600,House,FL,25,Republican,House 2003–present,2009-01-06 to 2011-01-03,https://www.house.gov/mariodiaz-balart,https://mariodiazbalart.house.gov,,,moved https://www.house.gov/mariodiaz-balart → https://mariodiazbalart.house.gov (2013),,district 25→21 in next Congress
+Jack Kingston,K000220,House,GA,1,Republican,House 1993–2015,2009-01-06 to 2011-01-03,https://kingston.house.gov,,,,,,left Congress 2015-01-03
+"Sanford D. Bishop, Jr.",B000490,House,GA,2,Democrat,House 1993–present,2009-01-06 to 2011-01-03,https://bishop.house.gov,https://bishop.house.gov,,,,,
+Lynn A. Westmoreland,W000796,House,GA,3,Republican,House 2005–2017,2009-01-06 to 2011-01-03,https://www.house.gov/westmoreland,,,,moved https://www.house.gov/westmoreland → https://westmoreland.house.gov (2013),,left Congress 2017-01-03
+"Henry C. ""Hank"" Johnson, Jr.",J000288,House,GA,4,Democrat,House 2007–present,2009-01-06 to 2011-01-03,https://hankjohnson.house.gov,https://hankjohnson.house.gov,,,,,
+John Lewis,L000287,House,GA,5,Democrat,House 1987–2020,2009-01-06 to 2011-01-03,https://www.house.gov/johnlewis,,,,moved https://www.house.gov/johnlewis → https://johnlewis.house.gov (2013),,left Congress 2020-07-17
+Tom Price,P000591,House,GA,6,Republican,House 2005–2017,2009-01-06 to 2011-01-03,https://www.house.gov/tomprice,,,,moved https://www.house.gov/tomprice → https://tomprice.house.gov (2013),,left Congress 2017-02-10
+John Linder,L000321,House,GA,7,Republican,House 1993–2011,2009-01-06 to 2011-01-03,https://linder.house.gov,,,,,,did not return in next Congress
+James Marshall,M001146,House,GA,8,Democrat,House 2003–2011,2009-01-06 to 2011-01-03,https://jimmarshall.house.gov,,,,,,did not return in next Congress
+Nathan Deal,D000168,House,GA,9,Republican,House 1993–2010,2009-01-06 to 2010-03-22,https://www.house.gov/deal,,,,,,left 2010-03-22 (during this Congress)
+Tom Graves,G000560,House,GA,9,Republican,House 2010–2020,2010-06-08 to 2011-01-03,https://tomgraves.house.gov,,,,,,joined 2010-06-08; left Congress 2020-10-04
+Paul C. Broun,B001262,House,GA,10,Republican,House 2007–2015,2009-01-06 to 2011-01-03,https://broun.house.gov,,,,,,left Congress 2015-01-03
+Phil Gingrey,G000550,House,GA,11,Republican,House 2003–2015,2009-01-06 to 2011-01-03,https://www.house.gov/gingrey,,,,moved https://www.house.gov/gingrey → https://gingrey.house.gov (2013),,left Congress 2015-01-03
+John Barrow,B001252,House,GA,12,Democrat,House 2005–2015,2009-01-06 to 2011-01-03,https://barrow.house.gov,,,,,,left Congress 2015-01-03
+David Scott,S001157,House,GA,13,Democrat,House 2003–2026,2009-01-06 to 2011-01-03,https://davidscott.house.gov,,,,,,left Congress 2026-04-21
+Madeleine Z. Bordallo,B001245,House,GU,0,Democrat,House 2003–2019,2009-01-06 to 2011-01-03,https://www.house.gov/bordallo,,,,moved https://www.house.gov/bordallo → https://bordallo.house.gov (2013),,left Congress 2019-01-03
+Charles Djou,D000611,House,HI,1,Republican,House 2010–2011,2010-05-22 to 2011-01-03,https://djou.house.gov,,,,,,joined 2010-05-22; did not return in next Congress
+Neil Abercrombie,A000014,House,HI,1,Democrat,House 1985–1987; House 1991–2010,2009-01-06 to 2010-03-01,https://www.house.gov/abercrombie,,,,,,left 2010-03-01 (during this Congress)
+Mazie K. Hirono,H001042,House,HI,2,Democrat,House 2007–2013; Senate 2013–present,2009-01-06 to 2011-01-03,https://hirono.house.gov,https://www.hirono.senate.gov,,,"moved https://hirono.house.gov → https://www.hirono.senate.gov (House→Senate, 2013)",,
+Bruce L. Braley,B001259,House,IA,1,Democrat,House 2007–2015,2009-01-06 to 2011-01-03,https://braley.house.gov,,,,,,left Congress 2015-01-03
+David Loebsack,L000565,House,IA,2,Democrat,House 2007–2021,2009-01-06 to 2011-01-03,https://loebsack.house.gov,,,,,,left Congress 2021-01-03
+Leonard L. Boswell,B000652,House,IA,3,Democrat,House 1997–2013,2009-01-06 to 2011-01-03,https://boswell.house.gov,,,,,,left Congress 2013-01-03
+Tom Latham,L000111,House,IA,4,Republican,House 1995–2015,2009-01-06 to 2011-01-03,https://www.house.gov/latham,,,,moved https://www.house.gov/latham → https://latham.house.gov (2013),,left Congress 2015-01-03
+Steve King,K000362,House,IA,5,Republican,House 2003–2021,2009-01-06 to 2011-01-03,https://www.house.gov/steveking,,,,moved https://www.house.gov/steveking → https://steveking.house.gov (2013),,left Congress 2021-01-03
+Walter Minnick,M001175,House,ID,1,Democrat,House 2009–2011,2009-01-06 to 2011-01-03,https://minnick.house.gov,,,,,,did not return in next Congress
+Michael K. Simpson,S001148,House,ID,2,Republican,House 1999–present,2009-01-06 to 2011-01-03,https://www.house.gov/simpson,https://simpson.house.gov,,,moved https://www.house.gov/simpson → https://simpson.house.gov (2013),,
+Bobby L. Rush,R000515,House,IL,1,Democrat,House 1993–2023,2009-01-06 to 2011-01-03,https://www.house.gov/rush,,,,moved https://www.house.gov/rush → https://rush.house.gov (2013),,left Congress 2023-01-03
+Jesse L. Jackson Jr.,J000283,House,IL,2,Democrat,House 1995–2012,2009-01-06 to 2011-01-03,https://www.house.gov/jackson,,,,,,left Congress 2012-11-21
+Daniel Lipinski,L000563,House,IL,3,Democrat,House 2005–2021,2009-01-06 to 2011-01-03,https://www.lipinski.house.gov,,,,moved https://www.lipinski.house.gov → https://lipinski.house.gov (2015),,left Congress 2021-01-03
+Luis V. Gutiérrez,G000535,House,IL,4,Democrat,House 1993–2019,2009-01-06 to 2011-01-03,https://www.house.gov/gutierrez,,,,moved https://www.house.gov/gutierrez → https://gutierrez.house.gov (2013),,left Congress 2019-01-03
+Mike Quigley,Q000023,House,IL,5,Democrat,House 2009–present,2009-04-07 to 2011-01-03,https://quigley.house.gov,https://quigley.house.gov,,,,,joined 2009-04-07
+Peter J. Roskam,R000580,House,IL,6,Republican,House 2007–2019,2009-01-06 to 2011-01-03,https://roskam.house.gov,,,,,,left Congress 2019-01-03
+Danny K. Davis,D000096,House,IL,7,Democrat,House 1997–present,2009-01-06 to 2011-01-03,https://www.house.gov/davis,https://davis.house.gov,,,moved https://www.house.gov/davis → https://www.davis.house.gov (2013); moved https://www.davis.house.gov → https://davis.house.gov (2015),,
+Melissa Bean,B001253,House,IL,8,Democrat,House 2005–2011,2009-01-06 to 2011-01-03,https://www.house.gov/bean,,,,,,did not return in next Congress
+Janice D. Schakowsky,S001145,House,IL,9,Democrat,House 1999–present,2009-01-06 to 2011-01-03,https://www.house.gov/schakowsky,https://schakowsky.house.gov,,,moved https://www.house.gov/schakowsky → https://schakowsky.house.gov (2013),,
+Deborah Halvorson,H001044,House,IL,11,Democrat,House 2009–2011,2009-01-06 to 2011-01-03,https://halvorson.house.gov,,,,,,did not return in next Congress
+Jerry F. Costello,C000794,House,IL,12,Democrat,House 1988–2013,2009-01-06 to 2011-01-03,https://www.house.gov/costello,,,,,,left Congress 2013-01-03
+Judy Biggert,B001232,House,IL,13,Republican,House 1999–2013,2009-01-06 to 2011-01-03,https://judybiggert.house.gov,,,,,,left Congress 2013-01-03
+Bill Foster,F000454,House,IL,14,Democrat,House 2008–2011; House 2013–present,2009-01-06 to 2011-01-03,https://foster.house.gov,https://foster.house.gov,,,,,district 14→11 in next Congress
+Timothy V. Johnson,J000285,House,IL,15,Republican,House 2001–2013,2009-01-06 to 2011-01-03,https://www.house.gov/timjohnson,,,,,,left Congress 2013-01-03
+Donald A. Manzullo,M001138,House,IL,16,Republican,House 1993–2013,2009-01-06 to 2011-01-03,https://manzullo.house.gov,,,,,,left Congress 2013-01-03
+Phil Hare,H001040,House,IL,17,Democrat,House 2007–2011,2009-01-06 to 2011-01-03,https://hare.house.gov,,,,,,did not return in next Congress
+Aaron Schock,S001179,House,IL,18,Republican,House 2009–2015,2009-01-06 to 2011-01-03,https://schock.house.gov,,,,,,left Congress 2015-03-31
+John Shimkus,S000364,House,IL,19,Republican,House 1997–2021,2009-01-06 to 2011-01-03,https://www.house.gov/shimkus,,,,moved https://www.house.gov/shimkus → https://shimkus.house.gov (2013),,left Congress 2021-01-03
+Peter J. Visclosky,V000108,House,IN,1,Democrat,House 1985–2021,2009-01-06 to 2011-01-03,https://www.house.gov/visclosky,,,,moved https://www.house.gov/visclosky → https://visclosky.house.gov (2013),,left Congress 2021-01-03
+Joe Donnelly,D000607,House,IN,2,Democrat,House 2007–2013; Senate 2013–2019,2009-01-06 to 2011-01-03,https://donnelly.house.gov,,,,"moved https://donnelly.house.gov → https://www.donnelly.senate.gov (House→Senate, 2013)",,left Congress 2019-01-03
+Mark Souder,S001143,House,IN,3,Republican,House 1995–2010,2009-01-06 to 2010-05-21,https://souder.house.gov,,,,,,left 2010-05-21 (during this Congress)
+Marlin A. Stutzman,S001188,House,IN,3,Republican,House 2010–2017; House 2025–present,2010-11-16 to 2011-01-03,https://stutzman.house.gov,https://stutzman.house.gov,,,,,joined 2010-11-16
+Stephen Buyer,B001203,House,IN,4,Republican,House 1993–2011,2009-01-06 to 2011-01-03,https://stevebuyer.house.gov,,,,,,did not return in next Congress
+Dan Burton,B001149,House,IN,5,Republican,House 1983–2013,2009-01-06 to 2011-01-03,https://burton.house.gov,,,,,,left Congress 2013-01-03
+Mike Pence,P000587,House,IN,6,Republican,House 2001–2013,2009-01-06 to 2011-01-03,https://mikepence.house.gov,,,,,,left Congress 2013-01-03
+André Carson,C001072,House,IN,7,Democrat,House 2008–present,2009-01-06 to 2011-01-03,https://carson.house.gov,https://carson.house.gov,,,,previously used by Brad Carson (2003–2005),
+Brad Ellsworth,E000289,House,IN,8,Democrat,House 2007–2011,2009-01-06 to 2011-01-03,https://ellsworth.house.gov,,,,,,did not return in next Congress
+Baron Hill,H001030,House,IN,9,Democrat,House 1999–2005; House 2007–2011,2009-01-06 to 2011-01-03,https://baronhill.house.gov,,,,,,did not return in next Congress
+Jerry Moran,M000934,House,KS,1,Republican,House 1997–2011; Senate 2011–present,2009-01-06 to 2011-01-03,https://www.jerrymoran.house.gov,https://www.moran.senate.gov,,,"moved https://www.jerrymoran.house.gov → https://www.moran.senate.gov (House→Senate, 2011)",,
+Lynn Jenkins,J000290,House,KS,2,Republican,House 2009–2019,2009-01-06 to 2011-01-03,https://lynnjenkins.house.gov,,,,,,left Congress 2019-01-03
+Dennis Moore,M001140,House,KS,3,Democrat,House 1999–2011,2009-01-06 to 2011-01-03,https://moore.house.gov,,,,,,did not return in next Congress
+Todd Tiahrt,T000260,House,KS,4,Republican,House 1995–2011,2009-01-06 to 2011-01-03,https://www.house.gov/tiahrt,,,,,,did not return in next Congress
+Ed Whitfield,W000413,House,KY,1,Republican,House 1995–2016,2009-01-06 to 2011-01-03,https://www.house.gov/whitfield,,,,moved https://www.house.gov/whitfield → https://whitfield.house.gov (2013),,left Congress 2016-09-07
+Brett Guthrie,G000558,House,KY,2,Republican,House 2009–present,2009-01-06 to 2011-01-03,https://guthrie.house.gov,https://guthrie.house.gov,,,,,
+John A. Yarmuth,Y000062,House,KY,3,Democrat,House 2007–2023,2009-01-06 to 2011-01-03,https://yarmuth.house.gov,,,,,,left Congress 2023-01-03
+Geoff Davis,D000603,House,KY,4,Republican,House 2005–2012,2009-01-06 to 2011-01-03,https://geoffdavis.house.gov,,,,,,left Congress 2012-07-31
+Harold Rogers,R000395,House,KY,5,Republican,House 1981–present,2009-01-06 to 2011-01-03,https://halrogers.house.gov,https://halrogers.house.gov,,,,,
+Ben Chandler,C001058,House,KY,6,Democrat,House 2004–2013,2009-01-06 to 2011-01-03,https://chandler.house.gov,,,,,,left Congress 2013-01-03
+Steve Scalise,S001176,House,LA,1,Republican,House 2008–present,2009-01-06 to 2011-01-03,https://scalise.house.gov,https://scalise.house.gov,,,,,
+Anh Cao,C001079,House,LA,2,Republican,House 2009–2011,2009-01-06 to 2011-01-03,https://josephcao.house.gov,,,,,,did not return in next Congress
+Charles Melancon,M001161,House,LA,3,Democrat,House 2005–2011,2009-01-06 to 2011-01-03,https://melancon.house.gov,,,,,,did not return in next Congress
+John Fleming,F000456,House,LA,4,Republican,House 2009–2017,2009-01-06 to 2011-01-03,https://fleming.house.gov,,,,,,left Congress 2017-01-03
+Rodney Alexander,A000361,House,LA,5,Republican,House 2003–2013,2009-01-06 to 2011-01-03,https://alexander.house.gov,,,,,,left Congress 2013-09-27
+Bill Cassidy,C001075,House,LA,6,Republican,House 2009–2015; Senate 2015–present,2009-01-06 to 2011-01-03,https://cassidy.house.gov,https://www.cassidy.senate.gov,,,"moved https://cassidy.house.gov → https://www.cassidy.senate.gov (House→Senate, 2015)",,
+Charles W. Boustany Jr.,B001255,House,LA,7,Republican,House 2005–2017,2009-01-06 to 2011-01-03,https://www.house.gov/boustany,,,,moved https://www.house.gov/boustany → https://boustany.house.gov (2013),,left Congress 2017-01-03
+John W. Olver,O000085,House,MA,1,Democrat,House 1991–2013,2009-01-06 to 2011-01-03,https://www.house.gov/olver,,,,,,left Congress 2013-01-03
+Richard E. Neal,N000015,House,MA,2,Democrat,House 1989–present,2009-01-06 to 2011-01-03,https://www.house.gov/neal,https://neal.house.gov,,,moved https://www.house.gov/neal → https://neal.house.gov (2013),,
+James P. McGovern,M000312,House,MA,3,Democrat,House 1997–present,2009-01-06 to 2011-01-03,https://www.house.gov/mcgovern,https://mcgovern.house.gov,,,moved https://www.house.gov/mcgovern → https://mcgovern.house.gov (2013),,
+Barney Frank,F000339,House,MA,4,Democrat,House 1981–2013,2009-01-06 to 2011-01-03,https://www.house.gov/frank,,,,,,left Congress 2013-01-03
+Niki Tsongas,T000465,House,MA,5,Democrat,House 2007–2019,2009-01-06 to 2011-01-03,https://tsongas.house.gov,,,,,,left Congress 2019-01-03
+John F. Tierney,T000266,House,MA,6,Democrat,House 1997–2015,2009-01-06 to 2011-01-03,https://www.house.gov/tierney,,,,moved https://www.house.gov/tierney → https://tierney.house.gov (2013),,left Congress 2015-01-03
+Edward J. Markey,M000133,House,MA,7,Democrat,House 1975–2013; Senate 2013–present,2009-01-06 to 2011-01-03,https://www.house.gov/markey,https://www.markey.senate.gov,,,"moved https://www.house.gov/markey → https://www.markey.senate.gov (House→Senate, 2013)",,
+Michael E. Capuano,C001037,House,MA,8,Democrat,House 1999–2019,2009-01-06 to 2011-01-03,https://www.house.gov/capuano,,,,moved https://www.house.gov/capuano → https://capuano.house.gov (2015),,left Congress 2019-01-03
+Stephen F. Lynch,L000562,House,MA,9,Democrat,House 2001–present,2009-01-06 to 2011-01-03,https://www.house.gov/lynch,https://lynch.house.gov,,,moved https://www.house.gov/lynch → https://lynch.house.gov (2013),,
+William Delahunt,D000210,House,MA,10,Democrat,House 1997–2011,2009-01-06 to 2011-01-03,https://www.house.gov/delahunt,,,,,,did not return in next Congress
+Frank Kratovil,K000371,House,MD,1,Democrat,House 2009–2011,2009-01-06 to 2011-01-03,https://kratovil.house.gov,,,,,,did not return in next Congress
+C. A. Dutch Ruppersberger,R000576,House,MD,2,Democrat,House 2003–2025,2009-01-06 to 2011-01-03,https://www.house.gov/ruppersberger,,,,moved https://www.house.gov/ruppersberger → https://ruppersberger.house.gov (2013),,left Congress 2025-01-03
+John P. Sarbanes,S001168,House,MD,3,Democrat,House 2007–2025,2009-01-06 to 2011-01-03,https://sarbanes.house.gov,,,,,,left Congress 2025-01-03
+Donna F. Edwards,E000290,House,MD,4,Democrat,House 2008–2017,2009-01-06 to 2011-01-03,https://donnaedwards.house.gov,,,,,,left Congress 2017-01-03
+Steny H. Hoyer,H000874,House,MD,5,Democrat,House 1981–present,2009-01-06 to 2011-01-03,https://hoyer.house.gov,https://hoyer.house.gov,,,,,
+Roscoe G. Bartlett,B000208,House,MD,6,Republican,House 1993–2013,2009-01-06 to 2011-01-03,https://bartlett.house.gov,,,,,,left Congress 2013-01-03
+Elijah E. Cummings,C000984,House,MD,7,Democrat,House 1996–2019,2009-01-06 to 2011-01-03,https://www.house.gov/cummings,,,,moved https://www.house.gov/cummings → https://cummings.house.gov (2013),,left Congress 2019-10-17
+Chris Van Hollen,V000128,House,MD,8,Democrat,House 2003–2017; Senate 2017–present,2009-01-06 to 2011-01-03,https://vanhollen.house.gov,https://www.vanhollen.senate.gov,,,"moved https://vanhollen.house.gov → https://www.vanhollen.senate.gov (House→Senate, 2017)",,
+Chellie Pingree,P000597,House,ME,1,Democrat,House 2009–present,2009-01-06 to 2011-01-03,https://pingree.house.gov,https://pingree.house.gov,,,,,
+Michael H. Michaud,M001149,House,ME,2,Democrat,House 2003–2015,2009-01-06 to 2011-01-03,https://michaud.house.gov,,,,,,left Congress 2015-01-03
+Bart Stupak,S001045,House,MI,1,Democrat,House 1993–2011,2009-01-06 to 2011-01-03,https://www.house.gov/stupak,,,,,,did not return in next Congress
+Peter Hoekstra,H000676,House,MI,2,Republican,House 1993–2011,2009-01-06 to 2011-01-03,https://www.house.gov/hoekstra,,,,,,did not return in next Congress
+Vernon Ehlers,E000092,House,MI,3,Republican,House 1993–2011,2009-01-06 to 2011-01-03,https://www.house.gov/ehlers,,,,,,did not return in next Congress
+Dave Camp,C000071,House,MI,4,Republican,House 1991–2015,2009-01-06 to 2011-01-03,https://camp.house.gov,,,,,,left Congress 2015-01-03
+Dale E. Kildee,K000172,House,MI,5,Democrat,House 1977–2013,2009-01-06 to 2011-01-03,https://www.house.gov/kildee,,,,,,left Congress 2013-01-03
+Fred Upton,U000031,House,MI,6,Republican,House 1987–2023,2009-01-06 to 2011-01-03,https://www.house.gov/upton,,,,moved https://www.house.gov/upton → https://upton.house.gov (2013),,left Congress 2023-01-03
+Mark Schauer,S001178,House,MI,7,Democrat,House 2009–2011,2009-01-06 to 2011-01-03,https://schauer.house.gov,,,,,,did not return in next Congress
+Mike Rogers,R000572,House,MI,8,Republican,House 2001–2015,2009-01-06 to 2011-01-03,https://www.house.gov/mikerogers,,,,moved https://www.house.gov/mikerogers → https://mikerogers.house.gov (2013),,left Congress 2015-01-03
+Gary C. Peters,P000595,House,MI,9,Democrat,House 2009–2015; Senate 2015–present,2009-01-06 to 2011-01-03,https://peters.house.gov,https://www.peters.senate.gov,,,"moved https://peters.house.gov → https://www.peters.senate.gov (House→Senate, 2015)",,
+Candice S. Miller,M001150,House,MI,10,Republican,House 2003–2016,2009-01-06 to 2011-01-03,https://candicemiller.house.gov,,,,,,left Congress 2016-12-31
+Thaddeus McCotter,M001147,House,MI,11,Republican,House 2003–2012,2009-01-06 to 2011-01-03,https://mccotter.house.gov,,,,,,left Congress 2012-07-06
+Sander M. Levin,L000263,House,MI,12,Democrat,House 1983–2019,2009-01-06 to 2011-01-03,https://www.house.gov/levin,,,,moved https://www.house.gov/levin → https://levin.house.gov (2013),,left Congress 2019-01-03
+Carolyn Kilpatrick,K000180,House,MI,13,Democrat,House 1997–2011,2009-01-06 to 2011-01-03,https://www.house.gov/kilpatrick,,,,,,did not return in next Congress
+"John Conyers, Jr.",C000714,House,MI,14,Democrat,House 1965–2017,2009-01-06 to 2011-01-03,https://www.house.gov/conyers,,,,moved https://www.house.gov/conyers → https://conyers.house.gov (2013),,left Congress 2017-12-05
+John D. Dingell,D000355,House,MI,15,Democrat,House 1955–2015,2009-01-06 to 2011-01-03,https://www.house.gov/dingell,,,,moved https://www.house.gov/dingell → https://dingell.house.gov (2013),,left Congress 2015-01-03
+Timothy J. Walz,W000799,House,MN,1,Democrat,House 2007–2019,2009-01-06 to 2011-01-03,https://walz.house.gov,,,,,,left Congress 2019-01-03
+John Kline,K000363,House,MN,2,Republican,House 2003–2017,2009-01-06 to 2011-01-03,https://kline.house.gov,,,,,,left Congress 2017-01-03
+Erik Paulsen,P000594,House,MN,3,Republican,House 2009–2019,2009-01-06 to 2011-01-03,https://paulsen.house.gov,,,,,,left Congress 2019-01-03
+Betty McCollum,M001143,House,MN,4,Democrat,House 2001–present,2009-01-06 to 2011-01-03,https://www.house.gov/mccollum,https://mccollum.house.gov,,,moved https://www.house.gov/mccollum → https://mccollum.house.gov (2013),,
+Keith Ellison,E000288,House,MN,5,Democrat,House 2007–2019,2009-01-06 to 2011-01-03,https://ellison.house.gov,,,,,,left Congress 2019-01-03
+Michele Bachmann,B001256,House,MN,6,Republican,House 2007–2015,2009-01-06 to 2011-01-03,https://bachmann.house.gov,,,,,,left Congress 2015-01-03
+Collin C. Peterson,P000258,House,MN,7,Democrat,House 1991–2021,2009-01-06 to 2011-01-03,https://collinpeterson.house.gov,,,,,,left Congress 2021-01-03
+James Oberstar,O000006,House,MN,8,Democrat,House 1975–2011,2009-01-06 to 2011-01-03,https://oberstar.house.gov,,,,,,did not return in next Congress
+Wm. Lacy Clay,C001049,House,MO,1,Democrat,House 2001–2021,2009-01-06 to 2011-01-03,https://www.house.gov/clay,,,,moved https://www.house.gov/clay → https://lacyclay.house.gov (2013),,left Congress 2021-01-03
+W. Todd Akin,A000358,House,MO,2,Republican,House 2001–2013,2009-01-06 to 2011-01-03,https://akin.house.gov,,,,,,left Congress 2013-01-03
+Russ Carnahan,C001060,House,MO,3,Democrat,House 2005–2013,2009-01-06 to 2011-01-03,https://www.house.gov/carnahan,,,,,,left Congress 2013-01-03
+Ike Skelton,S000465,House,MO,4,Democrat,House 1977–2011,2009-01-06 to 2011-01-03,https://www.house.gov/skelton,,,,,,did not return in next Congress
+Emanuel Cleaver,C001061,House,MO,5,Democrat,House 2005–present,2009-01-06 to 2011-01-03,https://www.house.gov/cleaver,https://cleaver.house.gov,,,moved https://www.house.gov/cleaver → https://cleaver.house.gov (2013),,
+Sam Graves,G000546,House,MO,6,Republican,House 2001–present,2009-01-06 to 2011-01-03,https://www.house.gov/graves,https://graves.house.gov,,,moved https://www.house.gov/graves → https://graves.house.gov (2013),,
+Roy Blunt,B000575,House,MO,7,Republican,House 1997–2011; Senate 2011–2023,2009-01-06 to 2011-01-03,https://blunt.house.gov,,,,"moved https://blunt.house.gov → https://www.blunt.senate.gov (House→Senate, 2011)",,left Congress 2023-01-03
+Jo Ann Emerson,E000172,House,MO,8,Republican,House 1997–2013,2009-01-06 to 2011-01-03,https://www.house.gov/emerson,,,,moved https://www.house.gov/emerson → https://emerson.house.gov (2013),,left Congress 2013-01-22
+Blaine Luetkemeyer,L000569,House,MO,9,Republican,House 2009–2025,2009-01-06 to 2011-01-03,https://luetkemeyer.house.gov,,,,,,left Congress 2025-01-03
+Gregorio Kilili Camacho Sablan,S001177,House,MP,0,Independent → Democrat (2009-02-23),House 2009–2025,2009-01-06 to 2011-01-03,https://sablan.house.gov,,,,,,left Congress 2025-01-03
+Travis Childers,C001074,House,MS,1,Democrat,House 2008–2011,2009-01-06 to 2011-01-03,https://www.childers.house.gov,,,,,,did not return in next Congress
+Bennie G. Thompson,T000193,House,MS,2,Democrat,House 1993–present,2009-01-06 to 2011-01-03,https://benniethompson.house.gov,https://benniethompson.house.gov,,,,,
+Gregg Harper,H001045,House,MS,3,Republican,House 2009–2019,2009-01-06 to 2011-01-03,https://harper.house.gov,,,,,,left Congress 2019-01-03
+Gene Taylor,T000074,House,MS,4,Democrat,House 1989–2011,2009-01-06 to 2011-01-03,https://www.house.gov/genetaylor,,,,,,did not return in next Congress
+Denny Rehberg,R000571,House,MT,0,Republican,House 2001–2013,2009-01-06 to 2011-01-03,https://www.house.gov/rehberg,,,,,,left Congress 2013-01-03
+G. K. Butterfield,B001251,House,NC,1,Democrat,House 2004–2022,2009-01-06 to 2011-01-03,https://www.house.gov/butterfield,,,,moved https://www.house.gov/butterfield → https://butterfield.house.gov (2013),,left Congress 2022-12-30
+Bob Etheridge,E000226,House,NC,2,Democrat,House 1997–2011,2009-01-06 to 2011-01-03,https://www.house.gov/etheridge,,,,,,did not return in next Congress
+Walter B. Jones,J000255,House,NC,3,Republican,House 1995–2019,2009-01-06 to 2011-01-03,https://jones.house.gov,,,,,later used by Mondaire Jones (2021–2023),left Congress 2019-02-10
+David E. Price,P000523,House,NC,4,Democrat,House 1987–1995; House 1997–2023,2009-01-06 to 2011-01-03,https://price.house.gov,,,,,,left Congress 2023-01-03
+Virginia Foxx,F000450,House,NC,5,Republican,House 2005–present,2009-01-06 to 2011-01-03,https://foxx.house.gov,https://foxx.house.gov,,,,,
+Howard Coble,C000556,House,NC,6,Republican,House 1985–2015,2009-01-06 to 2011-01-03,https://www.house.gov/coble,,,,moved https://www.house.gov/coble → https://coble.house.gov (2013),,left Congress 2015-01-03
+Mike McIntyre,M000485,House,NC,7,Democrat,House 1997–2015,2009-01-06 to 2011-01-03,https://www.house.gov/mcintyre,,,,moved https://www.house.gov/mcintyre → https://mcintyre.house.gov (2013),,left Congress 2015-01-03
+Larry Kissell,K000369,House,NC,8,Democrat,House 2009–2013,2009-01-06 to 2011-01-03,https://kissell.house.gov,,,,,,left Congress 2013-01-03
+Sue Wilkins Myrick,M001134,House,NC,9,Republican,House 1995–2013,2009-01-06 to 2011-01-03,https://www.house.gov/myrick,,,,,,left Congress 2013-01-03
+Patrick T. McHenry,M001156,House,NC,10,Republican,House 2005–2025,2009-01-06 to 2011-01-03,https://www.house.gov/mchenry,,,,moved https://www.house.gov/mchenry → https://mchenry.house.gov (2013),,left Congress 2025-01-03
+Heath Shuler,S001171,House,NC,11,Democrat,House 2007–2013,2009-01-06 to 2011-01-03,https://shuler.house.gov,,,,,,left Congress 2013-01-03
+Melvin L. Watt,W000207,House,NC,12,Democrat,House 1993–2014,2009-01-06 to 2011-01-03,https://www.house.gov/watt,,,,moved https://www.house.gov/watt → https://watt.house.gov (2013),,left Congress 2014-01-06
+Brad Miller,M001154,House,NC,13,Democrat,House 2003–2013,2009-01-06 to 2011-01-03,https://www.house.gov/bradmiller,,,,,,left Congress 2013-01-03
+Earl Pomeroy,P000422,House,ND,0,Democrat,House 1993–2011,2009-01-06 to 2011-01-03,https://www.house.gov/pomeroy,,,,,,did not return in next Congress
+Jeff Fortenberry,F000449,House,NE,1,Republican,House 2005–2022,2009-01-06 to 2011-01-03,https://fortenberry.house.gov,,,,,,left Congress 2022-03-31
+Lee Terry,T000459,House,NE,2,Republican,House 1999–2015,2009-01-06 to 2011-01-03,https://leeterry.house.gov,,,,,,left Congress 2015-01-03
+Adrian Smith,S001172,House,NE,3,Republican,House 2007–present,2009-01-06 to 2011-01-03,https://adriansmith.house.gov,https://adriansmith.house.gov,,,,,
+Carol Shea-Porter,S001170,House,NH,1,Democrat,House 2007–2011; House 2013–2015; House 2017–2019,2009-01-06 to 2011-01-03,https://shea-porter.house.gov,,,,,,left Congress 2019-01-03
+Paul Hodes,H001043,House,NH,2,Democrat,House 2007–2011,2009-01-06 to 2011-01-03,https://hodes.house.gov,,,,,,did not return in next Congress
+Robert E. Andrews,A000210,House,NJ,1,Democrat,House 1990–2014,2009-01-06 to 2011-01-03,https://www.house.gov/andrews,,,,moved https://www.house.gov/andrews → https://andrews.house.gov (2013),,left Congress 2014-02-18
+Frank A. LoBiondo,L000554,House,NJ,2,Republican,House 1995–2019,2009-01-06 to 2011-01-03,https://www.house.gov/lobiondo,,,,moved https://www.house.gov/lobiondo → https://lobiondo.house.gov (2013),,left Congress 2019-01-03
+John Adler,A000364,House,NJ,3,Democrat,House 2009–2011,2009-01-06 to 2011-01-03,https://adler.house.gov,,,,,,did not return in next Congress
+Christopher H. Smith,S000522,House,NJ,4,Republican,House 1981–present,2009-01-06 to 2011-01-03,https://www.house.gov/chrissmith,https://chrissmith.house.gov,,,moved https://www.house.gov/chrissmith → https://chrissmith.house.gov (2013),,
+Scott Garrett,G000548,House,NJ,5,Republican,House 2003–2017,2009-01-06 to 2011-01-03,https://garrett.house.gov,,,,,,left Congress 2017-01-03
+"Frank Pallone, Jr.",P000034,House,NJ,6,Democrat,House 1987–present,2009-01-06 to 2011-01-03,https://www.house.gov/pallone,https://pallone.house.gov,,,moved https://www.house.gov/pallone → https://pallone.house.gov (2013),,
+Leonard Lance,L000567,House,NJ,7,Republican,House 2009–2019,2009-01-06 to 2011-01-03,https://lance.house.gov,,,,,,left Congress 2019-01-03
+"Bill Pascrell, Jr.",P000096,House,NJ,8,Democrat,House 1997–2024,2009-01-06 to 2011-01-03,https://pascrell.house.gov,,,,,,left Congress 2024-08-21
+Steven R. Rothman,R000462,House,NJ,9,Democrat,House 1997–2013,2009-01-06 to 2011-01-03,https://rothman.house.gov,,,,,,left Congress 2013-01-03
+Donald Payne,P000149,House,NJ,10,Democrat,House 1989–2012,2009-01-06 to 2011-01-03,https://www.house.gov/payne,,,,,,left Congress 2012-03-06
+Rodney P. Frelinghuysen,F000372,House,NJ,11,Republican,House 1995–2019,2009-01-06 to 2011-01-03,https://frelinghuysen.house.gov,,,,,,left Congress 2019-01-03
+Rush Holt,H001032,House,NJ,12,Democrat,House 1999–2015,2009-01-06 to 2011-01-03,https://holt.house.gov,,,,,,left Congress 2015-01-03
+Albio Sires,S001165,House,NJ,13,Democrat,House 2006–2023,2009-01-06 to 2011-01-03,https://www.house.gov/sires,,,,moved https://www.house.gov/sires → https://sires.house.gov (2013),,left Congress 2023-01-03
+Martin Heinrich,H001046,House,NM,1,Democrat,House 2009–2013; Senate 2013–present,2009-01-06 to 2011-01-03,https://heinrich.house.gov,https://www.heinrich.senate.gov,,,"moved https://heinrich.house.gov → https://www.heinrich.senate.gov (House→Senate, 2013)",,
+Harry Teague,T000466,House,NM,2,Democrat,House 2009–2011,2009-01-06 to 2011-01-03,https://teague.house.gov,,,,,,did not return in next Congress
+Ben Ray Luján,L000570,House,NM,3,Democrat,House 2009–2021; Senate 2021–present,2009-01-06 to 2011-01-03,https://lujan.house.gov,https://www.lujan.senate.gov,,,"moved https://lujan.house.gov → https://www.lujan.senate.gov (House→Senate, 2021)",,
+Shelley Berkley,B001231,House,NV,1,Democrat,House 1999–2013,2009-01-06 to 2011-01-03,https://berkley.house.gov,,,,,,left Congress 2013-01-03
+Dean Heller,H001041,House,NV,2,Republican,House 2007–2011; Senate 2011–2019,2009-01-06 to 2011-01-03,https://heller.house.gov,,,,"moved https://heller.house.gov → https://heller.senate.gov (House→Senate, 2011); moved https://heller.senate.gov → https://www.heller.senate.gov/public (House→Senate, 2013)",,left Congress 2019-01-03
+Dina Titus,T000468,House,NV,3,Democrat,House 2009–2011; House 2013–present,2009-01-06 to 2011-01-03,https://titus.house.gov,https://titus.house.gov,,,,,district 3→1 in next Congress
+Timothy H. Bishop,B001242,House,NY,1,Democrat,House 2003–2015,2009-01-06 to 2011-01-03,https://wwwc.house.gov/timbishop,,,,moved https://wwwc.house.gov/timbishop → https://timbishop.house.gov (2011),,left Congress 2015-01-03
+Steve Israel,I000057,House,NY,2,Democrat,House 2001–2017,2009-01-06 to 2011-01-03,https://www.house.gov/israel,,,,moved https://www.house.gov/israel → https://israel.house.gov (2013),,left Congress 2017-01-03
+Peter T. King,K000210,House,NY,3,Republican,House 1993–2021,2009-01-06 to 2011-01-03,https://peteking.house.gov,,,,,,left Congress 2021-01-03
+Carolyn McCarthy,M000309,House,NY,4,Democrat,House 1997–2015,2009-01-06 to 2011-01-03,https://www.house.gov/carolynmccarthy,,,,moved https://www.house.gov/carolynmccarthy → https://carolynmccarthy.house.gov (2013),,left Congress 2015-01-03
+Gary L. Ackerman,A000022,House,NY,5,Democrat,House 1983–2013,2009-01-06 to 2011-01-03,https://ackerman.house.gov,,,,,,left Congress 2013-01-03
+Gregory W. Meeks,M001137,House,NY,6,Democrat,House 1997–present,2009-01-06 to 2011-01-03,https://www.house.gov/meeks,https://meeks.house.gov,,,moved https://www.house.gov/meeks → https://meeks.house.gov (2013),,
+Joseph Crowley,C001038,House,NY,7,Democrat,House 1999–2019,2009-01-06 to 2011-01-03,https://www.house.gov/crowley,,,,moved https://www.house.gov/crowley → https://crowley.house.gov (2013),,left Congress 2019-01-03
+Jerrold Nadler,N000002,House,NY,8,Democrat,House 1992–present,2009-01-06 to 2011-01-03,https://www.house.gov/nadler,https://nadler.house.gov,,,moved https://www.house.gov/nadler → https://nadler.house.gov (2013),,
+Anthony Weiner,W000792,House,NY,9,Democrat,House 1999–2011,2009-01-06 to 2011-01-03,https://www.house.gov/weiner,,,,,,left Congress 2011-06-21
+Edolphus Towns,T000326,House,NY,10,Democrat,House 1983–2013,2009-01-06 to 2011-01-03,https://www.house.gov/towns,,,,,,left Congress 2013-01-03
+Yvette D. Clarke,C001067,House,NY,11,Democrat,House 2007–present,2009-01-06 to 2011-01-03,https://clarke.house.gov,https://clarke.house.gov,,,,,
+Nydia M. Velázquez,V000081,House,NY,12,Democrat,House 1993–present,2009-01-06 to 2011-01-03,https://www.house.gov/velazquez,https://velazquez.house.gov,,,moved https://www.house.gov/velazquez → https://velazquez.house.gov (2015),,
+Michael McMahon,M001174,House,NY,13,Democrat,House 2009–2011,2009-01-06 to 2011-01-03,https://mcmahon.house.gov,,,,,,did not return in next Congress
+Carolyn B. Maloney,M000087,House,NY,14,Democrat,House 1993–2023,2009-01-06 to 2011-01-03,https://maloney.house.gov,,,,,,left Congress 2023-01-03
+Charles B. Rangel,R000053,House,NY,15,Democrat,House 1971–2017,2009-01-06 to 2011-01-03,https://rangel.house.gov,,,,,,left Congress 2017-01-03
+José E. Serrano,S000248,House,NY,16,Democrat,House 1990–2021,2009-01-06 to 2011-01-03,https://www.house.gov/serrano,,,,moved https://www.house.gov/serrano → https://serrano.house.gov (2013),,left Congress 2021-01-03
+Eliot L. Engel,E000179,House,NY,17,Democrat,House 1989–2021,2009-01-06 to 2011-01-03,https://www.house.gov/engel,,,,moved https://www.house.gov/engel → https://engel.house.gov (2013),,left Congress 2021-01-03
+Nita M. Lowey,L000480,House,NY,18,Democrat,House 1989–2021,2009-01-06 to 2011-01-03,https://www.house.gov/lowey,,,,moved https://www.house.gov/lowey → https://lowey.house.gov (2013),,left Congress 2021-01-03
+John Hall,H001039,House,NY,19,Democrat,House 2007–2011,2009-01-06 to 2011-01-03,https://johnhall.house.gov,,,,,,did not return in next Congress
+Scott Murphy,M001178,House,NY,20,Democrat,House 2009–2011,2009-04-29 to 2011-01-03,https://scottmurphy.house.gov,,,,,,joined 2009-04-29; did not return in next Congress
+Paul Tonko,T000469,House,NY,21,Democrat,House 2009–present,2009-01-06 to 2011-01-03,https://tonko.house.gov,https://tonko.house.gov,,,,,
+Maurice D. Hinchey,H000627,House,NY,22,Democrat,House 1993–2013,2009-01-06 to 2011-01-03,https://www.house.gov/hinchey,,,,,,left Congress 2013-01-03
+John McHugh,M000472,House,NY,23,Republican,House 1993–2009,2009-01-06 to 2009-09-21,https://mchugh.house.gov,,,,,,left 2009-09-21 (during this Congress)
+William L. Owens,O000169,House,NY,23,Democrat,House 2009–2015,2009-11-03 to 2011-01-03,https://owens.house.gov,,domain now belongs to a different member: Burgess Owens,,,later used by Burgess Owens (2021–present),joined 2009-11-03; left Congress 2015-01-03
+Michael Arcuri,A000363,House,NY,24,Democrat,House 2007–2011,2009-01-06 to 2011-01-03,https://arcuri.house.gov,,,,,,did not return in next Congress
+Daniel B. Maffei,M001171,House,NY,25,Democrat,House 2009–2011; House 2013–2015,2009-01-06 to 2011-01-03,https://maffei.house.gov,,,,,,left Congress 2015-01-03; district 25→24 in next Congress
+Christopher Lee,L000568,House,NY,26,Republican,House 2009–2011,2009-01-06 to 2011-01-03,https://chrislee.house.gov,,,,,,left Congress 2011-02-09
+Brian Higgins,H001038,House,NY,27,Democrat,House 2005–2024,2009-01-06 to 2011-01-03,https://www.house.gov/higgins,,,,moved https://www.house.gov/higgins → https://higgins.house.gov (2013),,left Congress 2024-02-02
+Louise McIntosh Slaughter,S000480,House,NY,28,Democrat,House 1987–2018,2009-01-06 to 2011-01-03,https://www.louise.house.gov,,,,moved https://www.louise.house.gov → https://louise.house.gov (2015),,left Congress 2018-03-16
+Eric Massa,M001173,House,NY,29,Democrat,House 2009–2010,2009-01-06 to 2010-03-08,https://massa.house.gov,,,,,,left 2010-03-08 (during this Congress)
+Tom Reed,R000585,House,NY,29,Republican,House 2010–2022,2010-11-18 to 2011-01-03,https://reed.house.gov,,,,,,joined 2010-11-18; left Congress 2022-05-10; URL not in dataset for this term; taken from next term
+Steve Driehaus,D000609,House,OH,1,Democrat,House 2009–2011,2009-01-06 to 2011-01-03,https://driehaus.house.gov,,,,,,did not return in next Congress
+Jean Schmidt,S001164,House,OH,2,Republican,House 2005–2013,2009-01-06 to 2011-01-03,https://www.house.gov/schmidt,,,,,,left Congress 2013-01-03
+Michael R. Turner,T000463,House,OH,3,Republican,House 2003–present,2009-01-06 to 2011-01-03,https://www.house.gov/miketurner,https://turner.house.gov,,,moved https://www.house.gov/miketurner → https://turner.house.gov (2011),,
+Jim Jordan,J000289,House,OH,4,Republican,House 2007–present,2009-01-06 to 2011-01-03,https://jordan.house.gov,https://jordan.house.gov,,,,,
+Robert E. Latta,L000566,House,OH,5,Republican,House 2007–present,2009-01-06 to 2011-01-03,https://latta.house.gov,https://latta.house.gov,,,,,
+Charles Wilson,W000801,House,OH,6,Democrat,House 2007–2011,2009-01-06 to 2011-01-03,https://charliewilson.house.gov,,,,,,did not return in next Congress
+Steve Austria,A000365,House,OH,7,Republican,House 2009–2013,2009-01-06 to 2011-01-03,https://austria.house.gov,,,,,,left Congress 2013-01-03
+John A. Boehner,B000589,House,OH,8,Republican,House 1991–2015,2009-01-06 to 2011-01-03,https://johnboehner.house.gov,,,,moved https://johnboehner.house.gov → https://boehner.house.gov (2013); moved https://boehner.house.gov → https://johnboehner.house.gov (2015),,left Congress 2015-10-31
+Marcy Kaptur,K000009,House,OH,9,Democrat,House 1983–present,2009-01-06 to 2011-01-03,https://kaptur.house.gov,https://kaptur.house.gov,,,moved https://kaptur.house.gov → https://www.kaptur.house.gov (2013); moved https://www.kaptur.house.gov → https://kaptur.house.gov (2015),,
+Dennis J. Kucinich,K000336,House,OH,10,Democrat,House 1997–2013,2009-01-06 to 2011-01-03,https://kucinich.house.gov,,,,,,left Congress 2013-01-03
+Marcia L. Fudge,F000455,House,OH,11,Democrat,House 2008–2021,2009-01-06 to 2011-01-03,https://fudge.house.gov,,,,,,left Congress 2021-03-10
+Patrick J. Tiberi,T000462,House,OH,12,Republican,House 2001–2018,2009-01-06 to 2011-01-03,https://tiberi.house.gov,,,,,,left Congress 2018-01-15
+Betty Sutton,S001174,House,OH,13,Democrat,House 2007–2013,2009-01-06 to 2011-01-03,https://sutton.house.gov,,,,,,left Congress 2013-01-03
+Steven C. LaTourette,L000553,House,OH,14,Republican,House 1995–2013,2009-01-06 to 2011-01-03,https://www.house.gov/latourette,,,,,,left Congress 2013-01-03
+Mary Jo Kilroy,K000372,House,OH,15,Democrat,House 2009–2011,2009-01-06 to 2011-01-03,https://kilroy.house.gov,,,,,,did not return in next Congress
+John Boccieri,B001263,House,OH,16,Democrat,House 2009–2011,2009-01-06 to 2011-01-03,https://boccieri.house.gov,,,,,,did not return in next Congress
+Tim Ryan,R000577,House,OH,17,Democrat,House 2003–2023,2009-01-06 to 2011-01-03,https://timryan.house.gov,,,,,,left Congress 2023-01-03
+Zachary Space,S001173,House,OH,18,Democrat,House 2007–2011,2009-01-06 to 2011-01-03,https://space.house.gov,,,,,,did not return in next Congress
+John Sullivan,S001155,House,OK,1,Republican,House 2002–2013,2009-01-06 to 2011-01-03,https://www.house.gov/sullivan,,,,,,left Congress 2013-01-03
+Dan Boren,B001254,House,OK,2,Democrat,House 2005–2013,2009-01-06 to 2011-01-03,https://www.house.gov/boren,,,,,,left Congress 2013-01-03
+Frank D. Lucas,L000491,House,OK,3,Republican,House 1993–present,2009-01-06 to 2011-01-03,https://www.house.gov/lucas,https://lucas.house.gov,,,moved https://www.house.gov/lucas → https://lucas.house.gov (2013),,
+Tom Cole,C001053,House,OK,4,Republican,House 2003–present,2009-01-06 to 2011-01-03,https://www.house.gov/cole,https://cole.house.gov,,,moved https://www.house.gov/cole → https://cole.house.gov (2013),,
+Mary Fallin,F000453,House,OK,5,Republican,House 2007–2011,2009-01-06 to 2011-01-03,https://fallin.house.gov,,,,,,did not return in next Congress
+David Wu,W000793,House,OR,1,Democrat,House 1999–2011,2009-01-06 to 2011-01-03,https://www.house.gov/wu,,,,,,left Congress 2011-08-03
+Greg Walden,W000791,House,OR,2,Republican,House 1999–2021,2009-01-06 to 2011-01-03,https://walden.house.gov,,,,,,left Congress 2021-01-03
+Earl Blumenauer,B000574,House,OR,3,Democrat,House 1996–2025,2009-01-06 to 2011-01-03,https://blumenauer.house.gov,,,,,,left Congress 2025-01-03
+Peter A. DeFazio,D000191,House,OR,4,Democrat,House 1987–2023,2009-01-06 to 2011-01-03,https://defazio.house.gov,,,,,,left Congress 2023-01-03
+Kurt Schrader,S001180,House,OR,5,Democrat,House 2009–2023,2009-01-06 to 2011-01-03,https://schrader.house.gov,,,,,,left Congress 2023-01-03
+Robert A. Brady,B001227,House,PA,1,Democrat,House 1998–2019,2009-01-06 to 2011-01-03,https://www.brady.house.gov,,,,moved https://www.brady.house.gov → https://brady.house.gov (2013),,left Congress 2019-01-03
+Chaka Fattah,F000043,House,PA,2,Democrat,House 1995–2016,2009-01-06 to 2011-01-03,https://www.house.gov/fattah,,,,moved https://www.house.gov/fattah → https://fattah.house.gov (2013),,left Congress 2016-06-23
+Kathleen Dahlkemper,D000608,House,PA,3,Democrat,House 2009–2011,2009-01-06 to 2011-01-03,https://dahlkemper.house.gov,,,,,,did not return in next Congress
+Jason Altmire,A000362,House,PA,4,Democrat,House 2007–2013,2009-01-06 to 2011-01-03,https://altmire.house.gov,,,,,,left Congress 2013-01-03
+Glenn Thompson,T000467,House,PA,5,Republican,House 2009–present,2009-01-06 to 2011-01-03,https://thompson.house.gov,https://thompson.house.gov,,,,,
+Jim Gerlach,G000549,House,PA,6,Republican,House 2003–2015,2009-01-06 to 2011-01-03,https://gerlach.house.gov,,,,,,left Congress 2015-01-03
+Joe Sestak,S001169,House,PA,7,Democrat,House 2007–2011,2009-01-06 to 2011-01-03,https://sestak.house.gov,,,,,,did not return in next Congress
+Patrick Murphy,M001168,House,PA,8,Democrat,House 2007–2011,2009-01-06 to 2011-01-03,https://patrickmurphy.house.gov,,,,,later used by Patrick Murphy (2013–2017),did not return in next Congress
+Bill Shuster,S001154,House,PA,9,Republican,House 2001–2019,2009-01-06 to 2011-01-03,https://www.house.gov/shuster,,,,moved https://www.house.gov/shuster → https://shuster.house.gov (2013),,left Congress 2019-01-03
+Christopher Carney,C001065,House,PA,10,Democrat,House 2007–2011,2009-01-06 to 2011-01-03,https://carney.house.gov,,,,,,did not return in next Congress
+Paul Kanjorski,K000008,House,PA,11,Democrat,House 1985–2011,2009-01-06 to 2011-01-03,https://kanjorski.house.gov,,,,,,did not return in next Congress
+John Murtha,M001120,House,PA,12,Democrat,House 1973–2010,2009-01-06 to 2010-02-08,https://www.house.gov/murtha,,,,,,left 2010-02-08 (during this Congress)
+Mark S. Critz,C001081,House,PA,12,Democrat,House 2010–2013,2010-05-20 to 2011-01-03,https://critz.house.gov,,,,,,joined 2010-05-20; left Congress 2013-01-03
+Allyson Y. Schwartz,S001162,House,PA,13,Democrat,House 2005–2015,2009-01-06 to 2011-01-03,https://www.house.gov/schwartz,,,,moved https://www.house.gov/schwartz → https://schwartz.house.gov (2013),,left Congress 2015-01-03
+Michael F. Doyle,D000482,House,PA,14,Democrat,House 1995–2022,2009-01-06 to 2011-01-03,https://www.house.gov/doyle,,,,moved https://www.house.gov/doyle → https://doyle.house.gov (2013),,left Congress 2022-12-31
+Charles W. Dent,D000604,House,PA,15,Republican,House 2005–2018,2009-01-06 to 2011-01-03,https://dent.house.gov,,,,,,left Congress 2018-05-12
+Joseph R. Pitts,P000373,House,PA,16,Republican,House 1997–2017,2009-01-06 to 2011-01-03,https://www.house.gov/pitts,,,,moved https://www.house.gov/pitts → https://pitts.house.gov (2013),,left Congress 2017-01-03
+Tim Holden,H000712,House,PA,17,Democrat,House 1993–2013,2009-01-06 to 2011-01-03,https://www.holden.house.gov,,,,,,left Congress 2013-01-03
+Tim Murphy,M001151,House,PA,18,Republican,House 2003–2017,2009-01-06 to 2011-01-03,https://murphy.house.gov,,domain now belongs to a different member: Gregory F. Murphy,,,later used by Stephanie N. Murphy (2019–2023); later used by Gregory F. Murphy (2023–present),left Congress 2017-10-21
+Todd Russell Platts,P000585,House,PA,19,Republican,House 2001–2013,2009-01-06 to 2011-01-03,https://www.house.gov/platts,,,,,,left Congress 2013-01-03
+Pedro R. Pierluisi,P000596,House,PR,0,Democrat,House 2009–2017,2009-01-06 to 2011-01-03,https://pierluisi.house.gov,,,,,,left Congress 2017-01-03
+Patrick Kennedy,K000113,House,RI,1,Democrat,House 1995–2011,2009-01-06 to 2011-01-03,https://patrickkennedy.house.gov,,,,,,did not return in next Congress
+James R. Langevin,L000559,House,RI,2,Democrat,House 2001–2023,2009-01-06 to 2011-01-03,https://www.house.gov/langevin,,,,moved https://www.house.gov/langevin → https://langevin.house.gov (2013),,left Congress 2023-01-03
+Henry Brown,B001235,House,SC,1,Republican,House 2001–2011,2009-01-06 to 2011-01-03,https://brown.house.gov,,,,,,did not return in next Congress
+Joe Wilson,W000795,House,SC,2,Republican,House 2001–present,2009-01-06 to 2011-01-03,https://joewilson.house.gov,https://joewilson.house.gov,,,,,
+James Barrett,B001239,House,SC,3,Republican,House 2003–2011,2009-01-06 to 2011-01-03,https://www.house.gov/barrett,,,,,,did not return in next Congress
+Bob Inglis,I000023,House,SC,4,Republican,House 1993–1999; House 2005–2011,2009-01-06 to 2011-01-03,https://inglis.house.gov,,,,,,did not return in next Congress
+John Spratt,S000749,House,SC,5,Democrat,House 1983–2011,2009-01-06 to 2011-01-03,https://www.house.gov/spratt,,,,,,did not return in next Congress
+James E. Clyburn,C000537,House,SC,6,Democrat,House 1993–present,2009-01-06 to 2011-01-03,https://clyburn.house.gov,https://clyburn.house.gov,,,,,
+Stephanie Herseth Sandlin,H001037,House,SD,0,Democrat,House 2004–2011,2009-01-06 to 2011-01-03,https://www.house.gov/herseth,,,,,,did not return in next Congress
+David P. Roe,R000582,House,TN,1,Republican,House 2009–2021,2009-01-06 to 2011-01-03,https://www.roe.house.gov,,,,moved https://www.roe.house.gov → https://roe.house.gov (2013),,left Congress 2021-01-03
+"John J. Duncan, Jr.",D000533,House,TN,2,Republican,House 1988–2019,2009-01-06 to 2011-01-03,https://www.house.gov/duncan,,,,moved https://www.house.gov/duncan → https://duncan.house.gov (2013),,left Congress 2019-01-03
+Zach Wamp,W000119,House,TN,3,Republican,House 1995–2011,2009-01-06 to 2011-01-03,https://www.house.gov/wamp,,,,,,did not return in next Congress
+Lincoln Davis,D000599,House,TN,4,Democrat,House 2003–2011,2009-01-06 to 2011-01-03,https://www.house.gov/lincolndavis,,,,,,did not return in next Congress
+Jim Cooper,C000754,House,TN,5,Democrat,House 1983–1995; House 2003–2023,2009-01-06 to 2011-01-03,https://cooper.house.gov,,,,,,left Congress 2023-01-03
+Barton Gordon,G000309,House,TN,6,Democrat,House 1985–2011,2009-01-06 to 2011-01-03,https://gordon.house.gov,,,,,,did not return in next Congress
+Marsha Blackburn,B001243,House,TN,7,Republican,House 2003–2019; Senate 2019–present,2009-01-06 to 2011-01-03,https://www.house.gov/blackburn,https://www.blackburn.senate.gov,,,"moved https://www.house.gov/blackburn → https://blackburn.house.gov (2013); moved https://blackburn.house.gov → https://www.blackburn.senate.gov (House→Senate, 2019)",,
+John Tanner,T000038,House,TN,8,Democrat,House 1989–2011,2009-01-06 to 2011-01-03,https://www.house.gov/tanner,,,,,,did not return in next Congress
+Steve Cohen,C001068,House,TN,9,Democrat,House 2007–present,2009-01-06 to 2011-01-03,https://cohen.house.gov,https://cohen.house.gov,,,,,
+Louie Gohmert,G000552,House,TX,1,Republican,House 2005–2023,2009-01-06 to 2011-01-03,https://gohmert.house.gov,,,,,,left Congress 2023-01-03
+Ted Poe,P000592,House,TX,2,Republican,House 2005–2019,2009-01-06 to 2011-01-03,https://www.house.gov/poe,,,,moved https://www.house.gov/poe → https://poe.house.gov (2013),,left Congress 2019-01-03
+Sam Johnson,J000174,House,TX,3,Republican,House 1991–2019,2009-01-06 to 2011-01-03,https://www.house.gov/samjohnson,,,,moved https://www.house.gov/samjohnson → https://samjohnson.house.gov (2013),,left Congress 2019-01-03
+Ralph M. Hall,H000067,House,TX,4,Republican,House 1981–2015,2009-01-06 to 2011-01-03,https://www.house.gov/ralphhall,,,,moved https://www.house.gov/ralphhall → https://ralphhall.house.gov (2013),,left Congress 2015-01-03
+Jeb Hensarling,H001036,House,TX,5,Republican,House 2003–2019,2009-01-06 to 2011-01-03,https://www.house.gov/hensarling,,,,moved https://www.house.gov/hensarling → https://hensarling.house.gov (2013),,left Congress 2019-01-03
+Joe Barton,B000213,House,TX,6,Republican,House 1985–2019,2009-01-06 to 2011-01-03,https://joebarton.house.gov,,,,,,left Congress 2019-01-03
+John Abney Culberson,C001048,House,TX,7,Republican,House 2001–2019,2009-01-06 to 2011-01-03,https://culberson.house.gov,,,,,,left Congress 2019-01-03
+Kevin Brady,B000755,House,TX,8,Republican,House 1997–2023,2009-01-06 to 2011-01-03,https://www.house.gov/brady,,,,moved https://www.house.gov/brady → https://kevinbrady.house.gov (2013),,left Congress 2023-01-03
+Al Green,G000553,House,TX,9,Democrat,House 2005–present,2009-01-06 to 2011-01-03,https://www.house.gov/algreen,https://algreen.house.gov,,,moved https://www.house.gov/algreen → https://algreen.house.gov (2013),,
+Michael T. McCaul,M001157,House,TX,10,Republican,House 2005–present,2009-01-06 to 2011-01-03,https://www.house.gov/mccaul,https://mccaul.house.gov,,,moved https://www.house.gov/mccaul → https://mccaul.house.gov (2013),,
+K. Michael Conaway,C001062,House,TX,11,Republican,House 2005–2021,2009-01-06 to 2011-01-03,https://www.house.gov/conaway,,,,moved https://www.house.gov/conaway → https://conaway.house.gov (2013),,left Congress 2021-01-03
+Kay Granger,G000377,House,TX,12,Republican,House 1997–2025,2009-01-06 to 2011-01-03,https://kaygranger.house.gov,,,,,,left Congress 2025-01-03
+Mac Thornberry,T000238,House,TX,13,Republican,House 1995–2021,2009-01-06 to 2011-01-03,https://www.house.gov/thornberry,,,,moved https://www.house.gov/thornberry → https://thornberry.house.gov (2013),,left Congress 2021-01-03
+Ron Paul,P000583,House,TX,14,Republican,House 1976–1977; House 1979–1985; House 1997–2013,2009-01-06 to 2011-01-03,https://www.house.gov/paul,,,,,,left Congress 2013-01-03
+Rubén Hinojosa,H000636,House,TX,15,Democrat,House 1997–2017,2009-01-06 to 2011-01-03,https://hinojosa.house.gov,,,,,,left Congress 2017-01-03
+Silvestre Reyes,R000170,House,TX,16,Democrat,House 1997–2013,2009-01-06 to 2011-01-03,https://wwwc.house.gov/reyes,,,,,,left Congress 2013-01-03
+Thomas Edwards,E000063,House,TX,17,Democrat,House 1991–2011,2009-01-06 to 2011-01-03,https://www.house.gov/edwards,,,,,,did not return in next Congress
+Sheila Jackson Lee,J000032,House,TX,18,Democrat,House 1995–2024,2009-01-06 to 2011-01-03,https://www.jacksonlee.house.gov,,,,moved https://www.jacksonlee.house.gov → https://jacksonlee.house.gov (2013),,left Congress 2024-07-19
+Randy Neugebauer,N000182,House,TX,19,Republican,House 2003–2017,2009-01-06 to 2011-01-03,https://randy.house.gov,,,,,,left Congress 2017-01-03
+Charles A. Gonzalez,G000544,House,TX,20,Democrat,House 1999–2013,2009-01-06 to 2011-01-03,https://gonzalez.house.gov,,domain now belongs to a different member: Vicente Gonzalez,,,later used by Vicente Gonzalez (2017–present),left Congress 2013-01-03
+Lamar Smith,S000583,House,TX,21,Republican,House 1987–2019,2009-01-06 to 2011-01-03,https://lamarsmith.house.gov,,,,,,left Congress 2019-01-03
+Pete Olson,O000168,House,TX,22,Republican,House 2009–2021,2009-01-06 to 2011-01-03,https://olson.house.gov,,,,,,left Congress 2021-01-03
+Ciro Rodriguez,R000568,House,TX,23,Democrat,House 1997–2005; House 2007–2011,2009-01-06 to 2011-01-03,https://rodriguez.house.gov,,,,,,did not return in next Congress
+Kenny Marchant,M001158,House,TX,24,Republican,House 2005–2021,2009-01-06 to 2011-01-03,https://www.house.gov/marchant,,,,moved https://www.house.gov/marchant → https://marchant.house.gov (2013),,left Congress 2021-01-03
+Lloyd Doggett,D000399,House,TX,25,Democrat,House 1995–present,2009-01-06 to 2011-01-03,https://www.house.gov/doggett,https://doggett.house.gov,,,moved https://www.house.gov/doggett → https://doggett.house.gov (2013),,
+Michael C. Burgess,B001248,House,TX,26,Republican,House 2003–2025,2009-01-06 to 2011-01-03,https://burgess.house.gov,,,,,,left Congress 2025-01-03
+Solomon Ortiz,O000107,House,TX,27,Democrat,House 1983–2011,2009-01-06 to 2011-01-03,https://ortiz.house.gov,,,,,,did not return in next Congress
+Henry Cuellar,C001063,House,TX,28,Democrat,House 2005–present,2009-01-06 to 2011-01-03,https://www.house.gov/cuellar,https://cuellar.house.gov,,,moved https://www.house.gov/cuellar → https://cuellar.house.gov (2013),,
+Gene Green,G000410,House,TX,29,Democrat,House 1993–2019,2009-01-06 to 2011-01-03,https://www.house.gov/green,,,,moved https://www.house.gov/green → https://green.house.gov (2013),,left Congress 2019-01-03
+Eddie Bernice Johnson,J000126,House,TX,30,Democrat,House 1993–2023,2009-01-06 to 2011-01-03,https://www.house.gov/ebjohnson,,,,moved https://www.house.gov/ebjohnson → https://ebjohnson.house.gov (2013),,left Congress 2023-01-03
+John R. Carter,C001051,House,TX,31,Republican,House 2003–present,2009-01-06 to 2011-01-03,https://carter.house.gov,https://carter.house.gov,,,,,
+Pete Sessions,S000250,House,TX,32,Republican,House 1997–2019; House 2021–present,2009-01-06 to 2011-01-03,https://www.house.gov/sessions,https://sessions.house.gov,,,moved https://www.house.gov/sessions → https://sessions.house.gov (2013),,
+Rob Bishop,B001250,House,UT,1,Republican,House 2003–2021,2009-01-06 to 2011-01-03,https://www.house.gov/robbishop,,,,moved https://www.house.gov/robbishop → https://robbishop.house.gov (2013),,left Congress 2021-01-03
+Jim Matheson,M001142,House,UT,2,Democrat,House 2001–2015,2009-01-06 to 2011-01-03,https://www.house.gov/matheson,,,,moved https://www.house.gov/matheson → https://matheson.house.gov (2013),,left Congress 2015-01-03
+Jason Chaffetz,C001076,House,UT,3,Republican,House 2009–2017,2009-01-06 to 2011-01-03,https://chaffetz.house.gov,,,,,,left Congress 2017-06-30
+Robert J. Wittman,W000804,House,VA,1,Republican,House 2007–present,2009-01-06 to 2011-01-03,https://www.wittman.house.gov,https://wittman.house.gov,,,moved https://www.wittman.house.gov → https://wittman.house.gov (2015),,
+Glenn Nye,N000183,House,VA,2,Democrat,House 2009–2011,2009-01-06 to 2011-01-03,https://nye.house.gov,,,,,,did not return in next Congress
+"Robert C. ""Bobby"" Scott",S000185,House,VA,3,Democrat,House 1993–present,2009-01-06 to 2011-01-03,https://www.house.gov/scott,https://bobbyscott.house.gov,,,moved https://www.house.gov/scott → https://www.bobbyscott.house.gov (2013); moved https://www.bobbyscott.house.gov → https://bobbyscott.house.gov (2015),,
+J. Randy Forbes,F000445,House,VA,4,Republican,House 2001–2017,2009-01-06 to 2011-01-03,https://www.house.gov/forbes,,,,moved https://www.house.gov/forbes → https://forbes.house.gov (2013),,left Congress 2017-01-03
+Thomas Perriello,P000600,House,VA,5,Democrat,House 2009–2011,2009-01-06 to 2011-01-03,https://perriello.house.gov,,,,,,did not return in next Congress
+Bob Goodlatte,G000289,House,VA,6,Republican,House 1993–2019,2009-01-06 to 2011-01-03,https://www.house.gov/goodlatte,,,,moved https://www.house.gov/goodlatte → https://goodlatte.house.gov (2013),,left Congress 2019-01-03
+Eric Cantor,C001046,House,VA,7,Republican,House 2001–2014,2009-01-06 to 2011-01-03,https://cantor.house.gov,,,,,,left Congress 2014-08-18
+James P. Moran,M000933,House,VA,8,Democrat,House 1991–2015,2009-01-06 to 2011-01-03,https://www.house.gov/moran,,,,moved https://www.house.gov/moran → https://moran.house.gov (2013),,left Congress 2015-01-03
+Frederick Boucher,B000657,House,VA,9,Democrat,House 1983–2011,2009-01-06 to 2011-01-03,https://www.boucher.house.gov,,,,,,did not return in next Congress
+Frank R. Wolf,W000672,House,VA,10,Republican,House 1981–2015,2009-01-06 to 2011-01-03,https://www.house.gov/wolf,,,,moved https://www.house.gov/wolf → https://wolf.house.gov (2013),,left Congress 2015-01-03
+Gerald E. Connolly,C001078,House,VA,11,Democrat,House 2009–2025,2009-01-06 to 2011-01-03,https://connolly.house.gov,,,,,,left Congress 2025-05-21
+Donna M. Christensen,C000380,House,VI,0,Democrat,House 1997–2015,2009-01-06 to 2011-01-03,https://www.house.gov/christian-christensen,,,,moved https://www.house.gov/christian-christensen → https://www.donnachristensen.house.gov (2011); moved https://www.donnachristensen.house.gov → https://donnachristensen.house.gov (2013),,left Congress 2015-01-03
+Peter Welch,W000800,House,VT,0,Democrat,House 2007–2023; Senate 2023–present,2009-01-06 to 2011-01-03,https://welch.house.gov,https://www.welch.senate.gov,,,"moved https://welch.house.gov → https://www.welch.house.gov (2013); moved https://www.welch.house.gov → https://welch.house.gov (2015); moved https://welch.house.gov → https://www.welch.senate.gov (House→Senate, 2023)",,
+Jay Inslee,I000026,House,WA,1,Democrat,House 1993–1995; House 1999–2012,2009-01-06 to 2011-01-03,https://www.house.gov/inslee,,,,,,left Congress 2012-03-20
+Rick Larsen,L000560,House,WA,2,Democrat,House 2001–present,2009-01-06 to 2011-01-03,https://www.house.gov/larsen,https://larsen.house.gov,,,moved https://www.house.gov/larsen → https://larsen.house.gov (2013),,
+Brian Baird,B001229,House,WA,3,Democrat,House 1999–2011,2009-01-06 to 2011-01-03,https://www.baird.house.gov,,,,,later used by James R. Baird (2019–present),did not return in next Congress
+Doc Hastings,H000329,House,WA,4,Republican,House 1995–2015,2009-01-06 to 2011-01-03,https://hastings.house.gov,,,,,,left Congress 2015-01-03
+Cathy McMorris Rodgers,M001159,House,WA,5,Republican,House 2005–2025,2009-01-06 to 2011-01-03,https://mcmorris.house.gov,,,,,,left Congress 2025-01-03
+Norman D. Dicks,D000327,House,WA,6,Democrat,House 1977–2013,2009-01-06 to 2011-01-03,https://www.house.gov/dicks,,,,,,left Congress 2013-01-03
+Jim McDermott,M000404,House,WA,7,Democrat,House 1989–2017,2009-01-06 to 2011-01-03,https://www.house.gov/mcdermott,,,,moved https://www.house.gov/mcdermott → https://mcdermott.house.gov (2013),,left Congress 2017-01-03
+David G. Reichert,R000578,House,WA,8,Republican,House 2005–2019,2009-01-06 to 2011-01-03,https://www.house.gov/reichert,,,,moved https://www.house.gov/reichert → https://reichert.house.gov (2013),,left Congress 2019-01-03
+Adam Smith,S000510,House,WA,9,Democrat,House 1997–present,2009-01-06 to 2011-01-03,https://www.house.gov/adamsmith,https://adamsmith.house.gov,,,moved https://www.house.gov/adamsmith → https://adamsmith.house.gov (2013),,
+Paul D. Ryan,R000570,House,WI,1,Republican,House 1999–2019,2009-01-06 to 2011-01-03,https://www.house.gov/ryan,,,,moved https://www.house.gov/ryan → https://paulryan.house.gov (2013),,left Congress 2019-01-03
+Tammy Baldwin,B001230,House,WI,2,Democrat,House 1999–2013; Senate 2013–present,2009-01-06 to 2011-01-03,https://tammybaldwin.house.gov,https://www.baldwin.senate.gov,,,"moved https://tammybaldwin.house.gov → https://www.baldwin.senate.gov (House→Senate, 2013)",,
+Ron Kind,K000188,House,WI,3,Democrat,House 1997–2023,2009-01-06 to 2011-01-03,https://www.house.gov/kind,,,,moved https://www.house.gov/kind → https://kind.house.gov (2013),,left Congress 2023-01-03
+Gwen Moore,M001160,House,WI,4,Democrat,House 2005–present,2009-01-06 to 2011-01-03,https://www.house.gov/gwenmoore,https://gwenmoore.house.gov,,,moved https://www.house.gov/gwenmoore → https://gwenmoore.house.gov (2013),,
+"F. James Sensenbrenner, Jr.",S000244,House,WI,5,Republican,House 1979–2021,2009-01-06 to 2011-01-03,https://www.house.gov/sensenbrenner,,,,moved https://www.house.gov/sensenbrenner → https://sensenbrenner.house.gov (2013),,left Congress 2021-01-03
+Thomas E. Petri,P000265,House,WI,6,Republican,House 1979–2015,2009-01-06 to 2011-01-03,https://www.house.gov/petri,,,,moved https://www.house.gov/petri → https://petri.house.gov (2013),,left Congress 2015-01-03
+David Obey,O000007,House,WI,7,Democrat,House 1969–2011,2009-01-06 to 2011-01-03,https://obey.house.gov,,,,,,did not return in next Congress
+Steve Kagen,K000365,House,WI,8,Democrat,House 2007–2011,2009-01-06 to 2011-01-03,https://kagen.house.gov,,,,,,did not return in next Congress
+Alan Mollohan,M000844,House,WV,1,Democrat,House 1983–2011,2009-01-06 to 2011-01-03,https://www.house.gov/mollohan,,,,,,did not return in next Congress
+Shelley Moore Capito,C001047,House,WV,2,Republican,House 2001–2015; Senate 2015–present,2009-01-06 to 2011-01-03,https://capito.house.gov,https://www.capito.senate.gov,,,"moved https://capito.house.gov → https://www.capito.senate.gov (House→Senate, 2015)",,
+Nick J. Rahall II,R000011,House,WV,3,Democrat,House 1977–2015,2009-01-06 to 2011-01-03,https://www.rahall.house.gov,,,,moved https://www.rahall.house.gov → https://rahall.house.gov (2013),,left Congress 2015-01-03
+Cynthia M. Lummis,L000571,House,WY,0,Republican,House 2009–2017; Senate 2021–present,2009-01-06 to 2011-01-03,https://lummis.house.gov,https://www.lummis.senate.gov,,,"moved https://lummis.house.gov → https://www.lummis.senate.gov (House→Senate, 2021)",,
