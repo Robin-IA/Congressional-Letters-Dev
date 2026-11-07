@@ -4,13 +4,13 @@ How the corpus is assembled, step by step. **Revised 7 November 2026.** The
 work now starts from who served in each Congress and works outward from there,
 rather than from the websites the chambers happened to list.
 
-Each step's output is the next step's input. Steps 2 and later are still being
-designed and are listed so the order is clear, not because they are settled.
+Each step's output is the next step's input. Steps 3 and 4 are still to be
+designed. They are listed so the order is clear, not because they are settled.
 
 | Step | What | Output | State |
 | --- | --- | --- | --- |
 | 1 | Roster for each Congress | `data/rosters/congressNNN-roster.csv` | **done, 110th–119th** |
-| 2 | Find each member's site in the Wayback Machine | | to design |
+| 2 | Find each member's site in the Wayback Machine | `harvest/wayback/congressNNN-wayback.csv` | **running, 110th–119th** |
 | 3 | Flag URLs used by more than one member | | to design |
 | 4 | Find the letters on each site | | to design |
 
@@ -118,17 +118,59 @@ number of partial terms and the number with no URL. On 7 November 2026:
 
 ---
 
-## Steps 2–4: to design
+## Step 2: find each site in the Wayback Machine
 
-Recorded so they are not lost; none is decided.
+```bash
+python3 build/wayback_lookup.py          # every roster in data/rosters/
+python3 build/wayback_lookup.py 118      # one Congress
+```
 
-- **Wayback lookup (step 2).** For each roster row, look up
-  `website_at_the_time` in CDX, **bounded to the member's own service dates**.
-  An unbounded lookup can return a later member's site at the same address.
-  `www.house.gov/<name>` URLs need a path-prefix query, not a host query
-  (see `BACKFILL.md` §8). An earlier pass did this for the 113th–118th; its
-  results are in git history at commit `b8c646b93`
-  (`data/congressNNN-members.csv`).
+For each roster row, this asks the Wayback Machine whether it holds the home
+page of `website_at_the_time` **during that member's own service in that
+Congress**. It writes `harvest/wayback/congressNNN-wayback.csv`: one row per
+member per URL, with the number of days captured, the first and last capture,
+and a Wayback link to each.
+
+**Everything harvested goes under `harvest/`**, beside the rosters, never into
+them. The raw CDX answers are cached in `harvest/wayback/cache/`, which git
+ignores. A re-run asks Wayback only for what it does not have, so an
+interrupted run is resumed by running it again.
+
+### Why every lookup is bounded
+
+Surname hostnames are reused. An unbounded "last capture" of `jones.house.gov`
+is Mondaire Jones's 2023 site, not Walter Jones's. Every query carries `from`
+and `to` set to `served_this_congress`, so a capture can only come from the
+member's own time in office.
+
+### How a capture is counted
+
+- The home page is queried first: `pelosi.house.gov/`, or `www.house.gov/pelosi/`
+  for the older path-style sites. If that has no successful capture in the
+  window, a prefix query over the whole site follows. The `query` column says
+  which one answered.
+- **No `filter=` and no negative `limit` are sent to CDX.** Used together, they
+  returned captures years older than the true last one: Conaway's came back as
+  2012 against a real December 2020. Every capture in the window is fetched,
+  collapsed to one per day, and success (status 200, HTML) is decided locally.
+- `lookup` is `found`, `none in window`, `no URL in roster` or `error`.
+  Errors are not cached, so the next run retries them.
+
+### Checked before the full run (7 November 2026)
+
+A trial of eight members whose answers were known landed every capture inside
+the member's window. Three were opened by page title:
+
+- Walter Jones: `jones.house.gov`, last capture 2019-01-02, titled "Congressman Walter Jones"
+- Nancy Pelosi: `www.house.gov/pelosi`, 2009-01-02, "Congresswoman Nancy Pelosi, California, 8th District"
+- Stephanie Murphy: `murphy.house.gov`, 2020-12-31, "Stephanie Murphy"
+
+The first two are cases the unbounded lookup got wrong or could not express.
+
+## Steps 3–4: to design
+
+Recorded so they are not lost; neither is decided.
+
 - **Reused URLs (step 3).** Surname hostnames are reassigned: `jones.house.gov`
   was Walter Jones, then Mondaire Jones. Across Congresses, the rosters show
   who held each URL and when. See issues

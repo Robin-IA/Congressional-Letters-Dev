@@ -22,3 +22,7 @@ data/thumb-failures.jsonl
 data/letters-119-departed-parsed.jsonl
 data/congress119-departed-queried.json
 *.log
+
+# Step 2 raw CDX answers; rebuilt by build/wayback_lookup.py.
+harvest/wayback/cache/
+harvest/wayback/*.trial.csv
