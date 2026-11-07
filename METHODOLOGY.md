@@ -84,10 +84,22 @@ during the Congress has both, separated by `|`.
 
 ### Where the source falls short
 
-- **No URL recorded**: Five members' URLs come from Wayback evidence
-  instead, and each row says how it was established. They are listed in
-  `URL_OVERRIDES` in the script. Carte Goodwin (111th, appointed July to
-  November 2010) has no URL at all.
+- **No URL recorded.** Across the 110th–119th, 17 rows have no URL for that
+  term in the source. Each row's `service_notes` says how its URL was
+  filled:
+  - **11 special-election members** take the URL from their next term
+    ("URL not in dataset for this term; taken from next term").
+  - **5 come from Wayback evidence** ("URL not in dataset; …"), listed in
+    `URL_OVERRIDES` in the script. Mayra Flores's is inferred.
+  - **1 has no URL at all**: Carte Goodwin (111th, appointed July to
+    November 2010).
+
+  **Rule: every member with no URL gets an issue to check Wayback for one,
+  worked after the initial explorer is built.** Goodwin's is
+  [#10](https://github.com/Robin-IA/Congressional-Letters-Dev/issues/10).
+  The 16 filled URLs are checked by step 2, which looks each one up within
+  that member's own service. Any that step 2 cannot confirm get an issue of
+  their own.
 - **Why someone left is not recorded**, only when.
 - **Career totals can run up to about two years high** for members who first
   entered by special election long ago. The source dates those first terms from
