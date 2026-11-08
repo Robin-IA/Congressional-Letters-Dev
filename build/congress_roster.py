@@ -31,6 +31,8 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import re
+import unicodedata
 import urllib.request
 from collections import Counter
 from datetime import date
@@ -59,6 +61,21 @@ URL_OVERRIDES = {
                      "from 2018-12, during her tenure"),
     "Erica Lee Carter": ("https://ericaleecarter.house.gov",
                          "URL not in dataset; Wayback captures span 2024-11 to 2024-12"),
+}
+
+# Source URLs that are wrong for a term, keyed (bioguide, Congress). The House's
+# own member directory for that Congress is the evidence; the note is carried.
+_W = "URL corrected: the dataset records {}; the House member directory lists {} for this seat"
+URL_CORRECTIONS = {
+    # the two Weldons: Dave (FL-15) was given Curt's (PA-7) site
+    ("W000267", 108): ("https://www.house.gov/weldon",
+                       _W.format("www.house.gov/curtweldon, Curt Weldon's site", "www.house.gov/weldon 2003-02–2005-01")),
+    ("W000267", 109): ("https://www.house.gov/weldon | https://weldon.house.gov",
+                       _W.format("www.house.gov/curtweldon, Curt Weldon's site",
+                                 "www.house.gov/weldon 2005-01, then weldon.house.gov 2005-04–2006-12")),
+    # curtweldon.house.gov is first listed in 2005-04
+    ("W000268", 108): ("https://www.house.gov/curtweldon",
+                       _W.format("curtweldon.house.gov, which it first lists in 2005", "www.house.gov/curtweldon 2003-02–2005-01")),
 }
 
 COLUMNS = ["name", "bioguide_id", "party", "state", "chamber", "district",
@@ -119,8 +136,37 @@ def career_days(terms: list, today: str) -> int:
     return sum(days(a, b) for a, b in merged)
 
 
+def fold(s: str) -> str:
+    return re.sub(r"[^a-z]", "", unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode().lower())
+
+
+def directory(n: int) -> list[dict]:
+    """URLs the chambers listed during this Congress (build/directory_urls.py), if read."""
+    f = OUT / f"directory-urls-{n}.tsv"
+    return list(csv.DictReader(open(f, encoding="utf-8"), delimiter="\t")) if f.exists() else []
+
+
+def from_directory(listed: list[dict], p: dict, t: dict) -> tuple[str, str]:
+    """The one URL a chamber directory listed for this member's seat and surname."""
+    ch = chamber(t["type"])
+    # any part of a compound surname: listed as "Mary Bono", recorded as "Bono Mack"
+    parts = [fold(x) for x in re.split(r"[\s-]+", p["name"]["last"]) if len(fold(x)) >= 2]
+    hits = {d["url"]: d for d in listed
+            if d["chamber"] == ch and d["state"] == t["state"]
+            and (ch == "Senate" or d["district"] == str(t.get("district", "")))
+            and any(x in fold(d["name_listed"]) for x in parts)}
+    if not hits:
+        return "", ""
+    first = min(d["first_seen"] for d in hits.values())
+    last_ = max(d["last_seen"] for d in hits.values())
+    when = first if first == last_ else f"{first}–{last_}"
+    urls = sorted(hits, key=lambda u: hits[u]["first_seen"])     # a site that moved: both, in order
+    return " | ".join(urls), f"URL not in dataset; listed in the {ch} member directory as archived {when}"
+
+
 def roster(n: int, cur: list, hist: list, today: str) -> list[dict]:
     S, E = bounds(n)
+    listed = directory(n)
     curids = {p["id"]["bioguide"] for p in cur}
     # The day this Congress actually convened: the most common term start in it.
     convened = Counter(t["start"] for p in cur + hist for t in p["terms"]
@@ -157,8 +203,15 @@ def roster(n: int, cur: list, hist: list, today: str) -> list[dict]:
             if u and u not in urls:
                 urls.append(u)
         src = ""
+        if (bid, n) in URL_CORRECTIONS:
+            u, src = URL_CORRECTIONS[(bid, n)]
+            urls = u.split(" | ")
         if not urls and nm in URL_OVERRIDES:
             urls, src = [URL_OVERRIDES[nm][0]], URL_OVERRIDES[nm][1]
+        if not urls and listed:
+            u, why = from_directory(listed, p, tl)
+            if u:
+                urls, src = u.split(" | "), why
         if not urls and later and later[0].get("url"):
             urls, src = [norm(later[0]["url"])], "URL not in dataset for this term; taken from next term"
 

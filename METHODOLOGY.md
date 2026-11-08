@@ -9,8 +9,8 @@ designed. They are listed so the order is clear, not because they are settled.
 
 | Step | What | Output | State |
 | --- | --- | --- | --- |
-| 1 | Roster for each Congress | `data/rosters/congressNNN-roster.csv` | **done, 110th–119th** |
-| 2 | Find each member's site in the Wayback Machine | `harvest/wayback/congressNNN-wayback.csv` | **done, 110th–119th** |
+| 1 | Roster for each Congress | `data/rosters/congressNNN-roster.csv` | **done, 106th–119th** |
+| 2 | Find each member's site in the Wayback Machine | `harvest/wayback/congressNNN-wayback.csv` | **done, 106th–119th** |
 | 3 | Flag URLs used by more than one member | | to design |
 | 4 | Find the letters on each site | | to design |
 
@@ -41,7 +41,8 @@ A fixed roster is a record of who served in that Congress, which does not
 change. Three columns describe a member's career beyond it, and they are only
 true as of the day the roster was built: `years_in_office` ("…present"),
 `total_years_in_congress`, and `service_notes` such as "left Congress 2025-01-03".
-The 110th–118th rosters were built on 7 November 2026.
+The 110th–118th rosters were built on 7 November 2026, and the 106th–109th on
+8 November 2026, which takes the rosters back to 1999 and so covers the year 2000.
 
 Stdlib only. It downloads `legislators-current.json` and
 `legislators-historical.json` from
@@ -84,6 +85,48 @@ during the Congress has both, separated by `|`.
 
 ### Where the source falls short
 
+- **Before 2003 the source records almost no URLs.** In the 106th Congress
+  (1999–2001), 459 of 544 members have none. For those Congresses the roster
+  uses what the chambers themselves published at the time:
+  - `build/directory_urls.py` reads the House member directory
+    (`www.house.gov/house/MemberWWW.html`, later `.shtml`) and the Senate's
+    (`www.senate.gov/senators/index.cfm`), one Wayback capture a quarter
+    across each Congress. It writes `data/rosters/directory-urls-NNN.tsv`:
+    every listed URL, with the dates it was seen.
+  - A member with no URL in the source takes the URL listed for their seat
+    (chamber, state, district) under their surname. The note reads "listed in
+    the House member directory as archived 19990219–20001206". A site that
+    moved during the Congress gives both URLs, in order, joined by `|`.
+  - This comes before borrowing the next term's URL, because a listing from
+    the time is better evidence than a later term.
+  - **Sources by row:**
+
+    | Congress | From the source | From the directory | From the next term | None |
+    | --- | ---: | ---: | ---: | ---: |
+    | 106th | 33 | 509 | 0 | 2 |
+    | 107th | 66 | 481 | 2 | 1 |
+    | 108th | 544 | 0 | 0 | 0 |
+    | 109th | 500 | 45 | 0 | 0 |
+
+    The directory is read only for these four Congresses; the 110th–119th
+    rosters do not use it.
+  - The directory has its own traps. A member with no site was linked back
+    into the directory itself (`Member.htm#il02`), and a seat left vacant was
+    linked to the Clerk's vacancy page. Neither is taken as a member's URL.
+    Step 2 checks every directory URL inside the member's own service.
+  - **The directory also catches the source being wrong.** For the 106th–109th,
+    112 rows with a source URL disagree with the directory for the same seat
+    and surname. Nearly all are migrations: the member had both
+    `www.house.gov/name` and `name.house.gov` (or `~name` and
+    `name.senate.gov`) within the Congress, each record caught one, and step 2
+    found every one of them. Two were wrong, and `URL_CORRECTIONS` in the
+    script fixes them, keyed by bioguide and Congress, with a note in the row:
+    Dave Weldon (FL-15) was given Curt Weldon's `www.house.gov/curtweldon` in
+    the 108th and 109th; and Curt Weldon's 108th URL, `curtweldon.house.gov`,
+    is not listed until April 2005, so nothing was captured in his window.
+    Whether directory URLs should be **added** to the source's, rather than
+    used only when it is blank, is
+    [#16](https://github.com/Robin-IA/Congressional-Letters-Dev/issues/16).
 - **No URL recorded.** Across the 110th–119th, 17 rows have no URL for that
   term in the source. Each row's `service_notes` says how its URL was
   filled:
@@ -100,6 +143,11 @@ during the Congress has both, separated by `|`.
   The 16 filled URLs are checked by step 2, which looks each one up within
   that member's own service. Any that step 2 cannot confirm get an issue of
   their own.
+  The 106th–107th add three: Joel Hefley and Jesse Jackson Jr. in the 106th
+  ([#12](https://github.com/Robin-IA/Congressional-Letters-Dev/issues/12),
+  [#13](https://github.com/Robin-IA/Congressional-Letters-Dev/issues/13)), and
+  Dean Barkley in the 107th
+  ([#14](https://github.com/Robin-IA/Congressional-Letters-Dev/issues/14)).
 - **Why someone left is not recorded**, only when.
 - **Career totals can run up to about two years high** for members who first
   entered by special election long ago. The source dates those first terms from
@@ -117,6 +165,10 @@ number of partial terms and the number with no URL. On 7 November 2026:
 
 | Congress | Members | Partial | No URL |
 | --- | ---: | ---: | ---: |
+| 106th | 544 | 9 | 2 |
+| 107th | 550 | 25 | 1 |
+| 108th | 544 | 10 | 0 |
+| 109th | 545 | 13 | 0 |
 | 110th | 554 | 30 | 0 |
 | 111th | 559 | 36 | 1 |
 | 112th | 552 | 27 | 0 |
@@ -221,6 +273,39 @@ in June 2022 and on 3 January 2023. No issue was needed beyond #10.
 served only weeks of that Congress: members sworn in after a November election
 (Massie, DelBene, Wild, Hern), or members who left in its first weeks for
 another office (Biden, Clinton, Harris, Becerra, Pompeo, Sasse, Vance).
+
+### Results for the 106th–109th (run 8 November 2026)
+
+**2,271 of 2,276 lookups found the site within the member's own service.**
+
+| Congress | Lookups | Found | Median days captured | Found only as redirects |
+| --- | ---: | ---: | ---: | ---: |
+| 106th | 548 | 545 | 14 | 7 |
+| 107th | 625 | 623 | 94 | 19 |
+| 108th | 544 | 544 | 95.5 | 35 |
+| 109th | 559 | 559 | 200 | 100 |
+
+- **Every URL taken from a chamber directory is confirmed**: 509 in the
+  106th, 481 in the 107th, 45 in the 109th.
+- **The five that were not found:**
+  - Three members with no URL: Hefley, Jackson Jr. (#12, #13) and Barkley
+    (#14).
+  - John Cornyn, 107th, 34 days as an early-sworn senator. His URL is borrowed
+    from his next term. The exact query finds nothing, and the prefix fallback
+    returned 504 on every try, so the row stays `error`. His first capture
+    at all is 2003-03-26.
+    [#15](https://github.com/Robin-IA/Congressional-Letters-Dev/issues/15).
+  - Denny Hastert's `dennyhastert.house.gov`, listed once by the 106th
+    directory in February 1999. His other listed URL, `www.house.gov/hastert`,
+    was found, so he is confirmed.
+- **The 106th is thinly captured: median 14 days in two years**, against
+  roughly 95 from the 107th on. Twelve members found have fewer than 5 days,
+  several of them serving the whole Congress (Dreier, Obey, Mollohan). That is
+  how often the Wayback Machine crawled in 1999–2000, not a gap in the
+  rosters. Expect fewer letters per member there.
+- The 107th's 625 lookups against 550 members are mostly senators whose
+  directory listing moved from `www.senate.gov/~name` to `name.senate.gov`
+  during that Congress. Both addresses are looked up.
 
 ## Steps 3–4: to design
 
