@@ -9,8 +9,8 @@ designed. They are listed so the order is clear, not because they are settled.
 
 | Step | What | Output | State |
 | --- | --- | --- | --- |
-| 1 | Roster for each Congress | `data/rosters/congressNNN-roster.csv` | **done, 110th–119th** |
-| 2 | Find each member's site in the Wayback Machine | `harvest/wayback/congressNNN-wayback.csv` | **done, 110th–119th** |
+| 1 | Roster for each Congress | `data/rosters/congressNNN-roster.csv` | **done, 106th–119th** |
+| 2 | Find each member's site in the Wayback Machine | `harvest/wayback/congressNNN-wayback.csv` | **done, 110th–119th**; 106th–109th running |
 | 3 | Flag URLs used by more than one member | | to design |
 | 4 | Find the letters on each site | | to design |
 
@@ -41,7 +41,8 @@ A fixed roster is a record of who served in that Congress, which does not
 change. Three columns describe a member's career beyond it, and they are only
 true as of the day the roster was built: `years_in_office` ("…present"),
 `total_years_in_congress`, and `service_notes` such as "left Congress 2025-01-03".
-The 110th–118th rosters were built on 7 November 2026.
+The 110th–118th rosters were built on 7 November 2026, and the 106th–109th on
+8 November 2026, which takes the rosters back to 1999 and so covers the year 2000.
 
 Stdlib only. It downloads `legislators-current.json` and
 `legislators-historical.json` from
@@ -84,6 +85,35 @@ during the Congress has both, separated by `|`.
 
 ### Where the source falls short
 
+- **Before 2003 the source records almost no URLs.** In the 106th Congress
+  (1999–2001), 459 of 544 members have none. For those Congresses the roster
+  uses what the chambers themselves published at the time:
+  - `build/directory_urls.py` reads the House member directory
+    (`www.house.gov/house/MemberWWW.html`, later `.shtml`) and the Senate's
+    (`www.senate.gov/senators/index.cfm`), one Wayback capture a quarter
+    across each Congress. It writes `data/rosters/directory-urls-NNN.tsv`:
+    every listed URL, with the dates it was seen.
+  - A member with no URL in the source takes the URL listed for their seat
+    (chamber, state, district) under their surname. The note reads "listed in
+    the House member directory as archived 19990219–20001206". A site that
+    moved during the Congress gives both URLs, in order, joined by `|`.
+  - This comes before borrowing the next term's URL, because a listing from
+    the time is better evidence than a later term.
+  - **Sources by row:**
+
+    | Congress | From the source | From the directory | From the next term | None |
+    | --- | ---: | ---: | ---: | ---: |
+    | 106th | 33 | 509 | 0 | 2 |
+    | 107th | 66 | 481 | 2 | 1 |
+    | 108th | 544 | 0 | 0 | 0 |
+    | 109th | 500 | 45 | 0 | 0 |
+
+    The directory is read only for these four Congresses; the 110th–119th
+    rosters do not use it.
+  - The directory has its own traps. A member with no site was linked back
+    into the directory itself (`Member.htm#il02`), and a seat left vacant was
+    linked to the Clerk's vacancy page. Neither is taken as a member's URL.
+    Step 2 checks every directory URL inside the member's own service.
 - **No URL recorded.** Across the 110th–119th, 17 rows have no URL for that
   term in the source. Each row's `service_notes` says how its URL was
   filled:
@@ -100,6 +130,11 @@ during the Congress has both, separated by `|`.
   The 16 filled URLs are checked by step 2, which looks each one up within
   that member's own service. Any that step 2 cannot confirm get an issue of
   their own.
+  The 106th–107th add three: Joel Hefley and Jesse Jackson Jr. in the 106th
+  ([#12](https://github.com/Robin-IA/Congressional-Letters-Dev/issues/12),
+  [#13](https://github.com/Robin-IA/Congressional-Letters-Dev/issues/13)), and
+  Dean Barkley in the 107th
+  ([#14](https://github.com/Robin-IA/Congressional-Letters-Dev/issues/14)).
 - **Why someone left is not recorded**, only when.
 - **Career totals can run up to about two years high** for members who first
   entered by special election long ago. The source dates those first terms from
@@ -117,6 +152,10 @@ number of partial terms and the number with no URL. On 7 November 2026:
 
 | Congress | Members | Partial | No URL |
 | --- | ---: | ---: | ---: |
+| 106th | 544 | 9 | 2 |
+| 107th | 550 | 25 | 1 |
+| 108th | 544 | 10 | 0 |
+| 109th | 545 | 13 | 0 |
 | 110th | 554 | 30 | 0 |
 | 111th | 559 | 36 | 1 |
 | 112th | 552 | 27 | 0 |
