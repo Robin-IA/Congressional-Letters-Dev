@@ -146,15 +146,25 @@ def directory(n: int) -> list[dict]:
     return list(csv.DictReader(open(f, encoding="utf-8"), delimiter="\t")) if f.exists() else []
 
 
-def from_directory(listed: list[dict], p: dict, t: dict) -> tuple[str, str]:
-    """The one URL a chamber directory listed for this member's seat and surname."""
+def seat_listings(listed: list[dict], p: dict, t: dict) -> dict[str, tuple[str, str]]:
+    """{url: (first_seen, last_seen)} the directory listed for this member's seat and surname."""
     ch = chamber(t["type"])
     # any part of a compound surname: listed as "Mary Bono", recorded as "Bono Mack"
     parts = [fold(x) for x in re.split(r"[\s-]+", p["name"]["last"]) if len(fold(x)) >= 2]
-    hits = {d["url"]: d for d in listed
-            if d["chamber"] == ch and d["state"] == t["state"]
-            and (ch == "Senate" or d["district"] == str(t.get("district", "")))
-            and any(x in fold(d["name_listed"]) for x in parts)}
+    out: dict[str, tuple[str, str]] = {}
+    for d in listed:
+        if (d["chamber"] == ch and d["state"] == t["state"]
+                and (ch == "Senate" or d["district"] == str(t.get("district", "")))
+                and any(x in fold(d["name_listed"]) for x in parts)):
+            a, b = out.get(d["url"], (d["first_seen"], d["last_seen"]))
+            out[d["url"]] = (min(a, d["first_seen"]), max(b, d["last_seen"]))
+    return out
+
+
+def from_directory(listed: list[dict], p: dict, t: dict) -> tuple[str, str]:
+    """The URL(s) a chamber directory listed for this member's seat and surname."""
+    ch = chamber(t["type"])
+    hits = {u: {"first_seen": a, "last_seen": b} for u, (a, b) in seat_listings(listed, p, t).items()}
     if not hits:
         return "", ""
     first = min(d["first_seen"] for d in hits.values())
@@ -162,6 +172,34 @@ def from_directory(listed: list[dict], p: dict, t: dict) -> tuple[str, str]:
     when = first if first == last_ else f"{first}–{last_}"
     urls = sorted(hits, key=lambda u: hits[u]["first_seen"])     # a site that moved: both, in order
     return " | ".join(urls), f"URL not in dataset; listed in the {ch} member directory as archived {when}"
+
+
+def same_site(a: str, b: str) -> bool:
+    """https://www.house.gov/pombo/pombo.htm and https://house.gov/pombo are one site."""
+    k = lambda u: re.sub(r"^https?://(www\.)?", "", u.lower()).rstrip("/")
+    a, b = k(a), k(b)
+    return a == b or a.startswith(b + "/") or b.startswith(a + "/")
+
+
+def also_listed(listed: list[dict], p: dict, t: dict, urls: list) -> tuple[list, str]:
+    """Directory URLs for this seat and surname that the source's URLs do not cover.
+
+    A member's site often moved within a Congress -- www.house.gov/name to
+    name.house.gov, www.senate.gov/~name to name.senate.gov -- and the source
+    records one address. Letters were published at whichever was live, so both
+    are kept and looked up (issue #16).
+    """
+    hits = seat_listings(listed, p, t)
+    extra: list = []
+    for x in sorted(hits, key=lambda x: hits[x][0]):       # hayes.house.gov = www.hayes.house.gov
+        if not any(same_site(x, s) for s in urls + extra):
+            extra.append(x)
+    if not extra:
+        return [], ""
+    when = "; ".join(f"{x} as archived {a}" + (f"–{b}" if b != a else "")
+                     for x in extra for a, b in [hits[x]])
+    return extra, (f"URL changed during this Congress: the {chamber(t['type'])} member directory "
+                   f"also lists {when}")
 
 
 def roster(n: int, cur: list, hist: list, today: str) -> list[dict]:
@@ -214,6 +252,11 @@ def roster(n: int, cur: list, hist: list, today: str) -> list[dict]:
                 urls, src = u.split(" | "), why
         if not urls and later and later[0].get("url"):
             urls, src = [norm(later[0]["url"])], "URL not in dataset for this term; taken from next term"
+        if urls and listed:
+            extra, why = also_listed(listed, p, tl, urls)
+            if extra:
+                urls += extra
+                src = "; ".join(x for x in (src, why) if x)
 
         st, en = max(first["start"], S), min(tl["end"], E)
         svc = []

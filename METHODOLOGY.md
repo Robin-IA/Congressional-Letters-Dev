@@ -114,19 +114,33 @@ during the Congress has both, separated by `|`.
     into the directory itself (`Member.htm#il02`), and a seat left vacant was
     linked to the Clerk's vacancy page. Neither is taken as a member's URL.
     Step 2 checks every directory URL inside the member's own service.
-  - **The directory also catches the source being wrong.** For the 106th–109th,
-    112 rows with a source URL disagree with the directory for the same seat
-    and surname. Nearly all are migrations: the member had both
-    `www.house.gov/name` and `name.house.gov` (or `~name` and
-    `name.senate.gov`) within the Congress, each record caught one, and step 2
-    found every one of them. Two were wrong, and `URL_CORRECTIONS` in the
-    script fixes them, keyed by bioguide and Congress, with a note in the row:
-    Dave Weldon (FL-15) was given Curt Weldon's `www.house.gov/curtweldon` in
-    the 108th and 109th; and Curt Weldon's 108th URL, `curtweldon.house.gov`,
-    is not listed until April 2005, so nothing was captured in his window.
-    Whether directory URLs should be **added** to the source's, rather than
-    used only when it is blank, is
-    [#16](https://github.com/Robin-IA/Congressional-Letters-Dev/issues/16).
+  - **Where the source and the directory disagree, both are kept.** A
+    member's site often moved within a Congress (`www.house.gov/name` to
+    `name.house.gov`, `www.senate.gov/~name` to `name.senate.gov`), and the
+    source records one address. Letters were published at whichever was live,
+    so every address the directory lists for the seat and surname is added
+    after the source's, and step 2 looks up each
+    ([#16](https://github.com/Robin-IA/Congressional-Letters-Dev/issues/16)).
+    The note reads "URL changed during this Congress: the House member
+    directory also lists https://bonner.house.gov as archived
+    20050103–20061201". `same_site()` keeps `www.` and path variants of one
+    address from being added twice. This added 291 URLs for 286 members:
+
+    | Congress | Members | URLs added | Shape |
+    | --- | ---: | ---: | --- |
+    | 106th | 32 | 32 | senators: `~name` beside `name.senate.gov` |
+    | 107th | 59 | 59 | 54 senators, 5 House |
+    | 108th | 76 | 77 | House, mostly `name.house.gov`; 9 on `wwwc.house.gov` |
+    | 109th | 119 | 123 | the same; 8 on `wwwc.house.gov` |
+
+    `wwwc.house.gov` was a second House web server the directory linked some
+    members to in 2003–06. Wayback holds it; all 17 were found.
+  - **The directory also catches the source being wrong.** Two source URLs
+    were wrong, and `URL_CORRECTIONS` in the script replaces them, keyed by
+    bioguide and Congress, with a note in the row: Dave Weldon (FL-15) was
+    given Curt Weldon's `www.house.gov/curtweldon` in the 108th and 109th;
+    and Curt Weldon's 108th URL, `curtweldon.house.gov`, is not listed until
+    April 2005, so nothing was captured in his window.
 - **No URL recorded.** Across the 110th–119th, 17 rows have no URL for that
   term in the source. Each row's `service_notes` says how its URL was
   filled:
@@ -276,18 +290,22 @@ another office (Biden, Clinton, Harris, Becerra, Pompeo, Sasse, Vance).
 
 ### Results for the 106th–109th (run 8 November 2026)
 
-**2,271 of 2,276 lookups found the site within the member's own service.**
+**2,560 of 2,567 lookups found the site within the member's own service.**
+That includes the 291 addresses added where a site moved (see step 1), looked
+up on 8–9 November.
 
 | Congress | Lookups | Found | Median days captured | Found only as redirects |
 | --- | ---: | ---: | ---: | ---: |
-| 106th | 548 | 545 | 14 | 7 |
-| 107th | 625 | 623 | 94 | 19 |
-| 108th | 544 | 544 | 95.5 | 35 |
-| 109th | 559 | 559 | 200 | 100 |
+| 106th | 580 | 577 | 14 | 7 |
+| 107th | 684 | 682 | 94 | 20 |
+| 108th | 621 | 620 | 93 | 37 |
+| 109th | 682 | 681 | 192 | 103 |
 
 - **Every URL taken from a chamber directory is confirmed**: 509 in the
   106th, 481 in the 107th, 45 in the 109th.
-- **The five that were not found:**
+- **289 of the 291 added addresses were found.** Median days captured:
+  18, 91, 49 and 150 for the 106th–109th.
+- **The seven that were not found:**
   - Three members with no URL: Hefley, Jackson Jr. (#12, #13) and Barkley
     (#14).
   - John Cornyn, 107th, 34 days as an early-sworn senator. His URL is borrowed
@@ -298,14 +316,17 @@ another office (Biden, Clinton, Harris, Becerra, Pompeo, Sasse, Vance).
   - Denny Hastert's `dennyhastert.house.gov`, listed once by the 106th
     directory in February 1999. His other listed URL, `www.house.gov/hastert`,
     was found, so he is confirmed.
+  - Todd Akin's `akin.house.gov`, 108th and 109th: one of the added
+    addresses. The directory lists it from August 2003 to December 2006, but
+    Wayback has no capture of its home page between 2001 and 2007-01-19. The
+    108th's prefix query found nothing; the 109th's timed out, so that row is
+    `error`. His other address, `www.house.gov/akin`, was found in both, so
+    he is confirmed.
 - **The 106th is thinly captured: median 14 days in two years**, against
   roughly 95 from the 107th on. Twelve members found have fewer than 5 days,
   several of them serving the whole Congress (Dreier, Obey, Mollohan). That is
   how often the Wayback Machine crawled in 1999–2000, not a gap in the
   rosters. Expect fewer letters per member there.
-- The 107th's 625 lookups against 550 members are mostly senators whose
-  directory listing moved from `www.senate.gov/~name` to `name.senate.gov`
-  during that Congress. Both addresses are looked up.
 
 ## Steps 3–4: to design
 
