@@ -4,13 +4,13 @@ How the corpus is assembled, step by step. **Revised 7 November 2026.** The
 work now starts from who served in each Congress and works outward from there,
 rather than from the websites the chambers happened to list.
 
-Each step's output is the next step's input. Steps 2 and later are still being
-designed and are listed so the order is clear, not because they are settled.
+Each step's output is the next step's input. Steps 3 and 4 are still to be
+designed. They are listed so the order is clear, not because they are settled.
 
 | Step | What | Output | State |
 | --- | --- | --- | --- |
 | 1 | Roster for each Congress | `data/rosters/congressNNN-roster.csv` | **done, 110th–119th** |
-| 2 | Find each member's site in the Wayback Machine | | to design |
+| 2 | Find each member's site in the Wayback Machine | `harvest/wayback/congressNNN-wayback.csv` | **done, 110th–119th** |
 | 3 | Flag URLs used by more than one member | | to design |
 | 4 | Find the letters on each site | | to design |
 
@@ -84,10 +84,22 @@ during the Congress has both, separated by `|`.
 
 ### Where the source falls short
 
-- **No URL recorded**: Five members' URLs come from Wayback evidence
-  instead, and each row says how it was established. They are listed in
-  `URL_OVERRIDES` in the script. Carte Goodwin (111th, appointed July to
-  November 2010) has no URL at all.
+- **No URL recorded.** Across the 110th–119th, 17 rows have no URL for that
+  term in the source. Each row's `service_notes` says how its URL was
+  filled:
+  - **11 special-election members** take the URL from their next term
+    ("URL not in dataset for this term; taken from next term").
+  - **5 come from Wayback evidence** ("URL not in dataset; …"), listed in
+    `URL_OVERRIDES` in the script. Mayra Flores's is inferred.
+  - **1 has no URL at all**: Carte Goodwin (111th, appointed July to
+    November 2010).
+
+  **Rule: every member with no URL gets an issue to check Wayback for one,
+  worked after the initial explorer is built.** Goodwin's is
+  [#10](https://github.com/Robin-IA/Congressional-Letters-Dev/issues/10).
+  The 16 filled URLs are checked by step 2, which looks each one up within
+  that member's own service. Any that step 2 cannot confirm get an issue of
+  their own.
 - **Why someone left is not recorded**, only when.
 - **Career totals can run up to about two years high** for members who first
   entered by special election long ago. The source dates those first terms from
@@ -118,17 +130,102 @@ number of partial terms and the number with no URL. On 7 November 2026:
 
 ---
 
-## Steps 2–4: to design
+## Step 2: find each site in the Wayback Machine
 
-Recorded so they are not lost; none is decided.
+```bash
+python3 build/wayback_lookup.py          # every roster in data/rosters/
+python3 build/wayback_lookup.py 118      # one Congress
+```
 
-- **Wayback lookup (step 2).** For each roster row, look up
-  `website_at_the_time` in CDX, **bounded to the member's own service dates**.
-  An unbounded lookup can return a later member's site at the same address.
-  `www.house.gov/<name>` URLs need a path-prefix query, not a host query
-  (see `BACKFILL.md` §8). An earlier pass did this for the 113th–118th; its
-  results are in git history at commit `b8c646b93`
-  (`data/congressNNN-members.csv`).
+For each roster row, this asks the Wayback Machine whether it holds the home
+page of `website_at_the_time` **during that member's own service in that
+Congress**. It writes `harvest/wayback/congressNNN-wayback.csv`: one row per
+member per URL, with the number of days captured, the first and last capture,
+and a Wayback link to each.
+
+**Everything harvested goes under `harvest/`**, beside the rosters, never into
+them. The raw CDX answers are cached in `harvest/wayback/cache/`, which git
+ignores. A re-run asks Wayback only for what it does not have, so an
+interrupted run is resumed by running it again.
+
+### Why every lookup is bounded
+
+Surname hostnames are reused. An unbounded "last capture" of `jones.house.gov`
+is Mondaire Jones's 2023 site, not Walter Jones's. Every query carries `from`
+and `to` set to `served_this_congress`, so a capture can only come from the
+member's own time in office.
+
+### How a capture is counted
+
+- The home page is queried first: `pelosi.house.gov/`, or `www.house.gov/pelosi/`
+  for the older path-style sites. If that has no successful capture in the
+  window, a prefix query over the whole site follows. The `query` column says
+  which one answered.
+- **No `filter=` and no negative `limit` are sent to CDX.** Used together, they
+  returned captures years older than the true last one: Conaway's came back as
+  2012 against a real December 2020. Every capture in the window is fetched,
+  collapsed to one per day, and success (status 200, HTML) is decided locally.
+- **A redirect capture of the home page counts.** Many home pages only ever
+  answered 302 into the site. Shelby's did on 154 of 155 captured days in the
+  110th, so a count of 200s alone reported one day. Wayback follows the
+  redirect inside the archive (that capture opens "United States Senator
+  Richard Shelby : Home"). `days_200` and `days_redirect_only` keep the two
+  apart.
+- `lookup` is `found`, `none in window`, `no URL in roster` or `error`.
+  Errors are not cached, so the next run retries them.
+
+### Checked before the full run (7 November 2026)
+
+A trial of eight members whose answers were known landed every capture inside
+the member's window. Three were opened by page title:
+
+- Walter Jones: `jones.house.gov`, last capture 2019-01-02, titled "Congressman Walter Jones"
+- Nancy Pelosi: `www.house.gov/pelosi`, 2009-01-02, "Congresswoman Nancy Pelosi, California, 8th District"
+- Stephanie Murphy: `murphy.house.gov`, 2020-12-31, "Stephanie Murphy"
+
+The first two are cases the unbounded lookup got wrong or could not express.
+
+### Results (run 7–8 November 2026)
+
+**5,548 of 5,549 lookups found the site within the member's own service.** The
+one that did not is Carte Goodwin, who has no URL (#10). Three lookups failed
+on the network in the first run (Hinchey, McCaskill, Wicker) and were found on
+the re-run. No home page needed the prefix fallback.
+
+| Congress | Lookups | Found | Median days captured | Found only as redirects |
+| --- | ---: | ---: | ---: | ---: |
+| 110th | 555 | 555 | 95 | 38 |
+| 111th | 560 | 559 | 86 | 122 |
+| 112th | 553 | 553 | 68 | 156 |
+| 113th | 555 | 555 | 88 | 16 |
+| 114th | 547 | 547 | 72 | 1 |
+| 115th | 561 | 561 | 100 | 3 |
+| 116th | 550 | 550 | 111 | 3 |
+| 117th | 557 | 557 | 100 | 1 |
+| 118th | 556 | 556 | 99 | 0 |
+| 119th | 555 | 555 | 220 | 0 |
+
+"Found only as redirects" means not one capture of the home page in the window
+was a 200; counting 200s alone would have reported those 340 members as missing,
+almost all of them in the 110th–112th. The 119th's median runs to the build
+date and is not comparable.
+
+**The 16 filled URLs are all confirmed.** Each was found inside the member's
+own window. The five taken from Wayback evidence, plus Tom Reed, Tony Wied and
+Donald Payne Jr. (`payne.house.gov` was his father's first), were opened and
+read: every capture names the member it is credited to. Mayra Flores's
+`flores.house.gov`, which had been inferred, reads "Congresswoman Mayra Flores"
+in June 2022 and on 3 January 2023. No issue was needed beyond #10.
+
+**24 members have fewer than 5 days captured, and none is a gap.** Every one
+served only weeks of that Congress: members sworn in after a November election
+(Massie, DelBene, Wild, Hern), or members who left in its first weeks for
+another office (Biden, Clinton, Harris, Becerra, Pompeo, Sasse, Vance).
+
+## Steps 3–4: to design
+
+Recorded so they are not lost; neither is decided.
+
 - **Reused URLs (step 3).** Surname hostnames are reassigned: `jones.house.gov`
   was Walter Jones, then Mondaire Jones. Across Congresses, the rosters show
   who held each URL and when. See issues
