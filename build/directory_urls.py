@@ -10,6 +10,8 @@ and the Wayback Machine holds it:
 
 * House: ``www.house.gov/house/MemberWWW.html`` -- one ``<li>`` per member,
   "<a href=/name/>Name</a>, State, 3rd".
+* House from 2011: ``www.house.gov/representatives/`` -- a table per state,
+  district then "<a href=http://name.house.gov/>Last, First</a>".
 * Senate: ``www.senate.gov/senators/index.cfm`` -- "<a href=~name/>Last, First</a> (P - ST)".
 
 This reads one capture of each per quarter across the Congress and writes
@@ -49,6 +51,8 @@ SOURCES = [
     ("House", "www.house.gov/house/MemberWWW.html"),
     ("House", "www.house.gov/house/MemberWWW.shtml"),
     ("Senate", "www.senate.gov/senators/index.cfm"),
+    # from 2011 the House directory is a table per state; the page above 404s from 2012
+    ("House", "www.house.gov/representatives/"),
 ]
 
 STATES = {
@@ -69,6 +73,10 @@ STATES = {
 
 HOUSE_RE = re.compile(
     r'<a\s+href="?([^"\s>]+)"?[^>]*>\s*([^<]+?)\s*</a>\s*(?:</b>)?\s*,\s*([^<\n]+)', re.I)
+# <h2 id="state_al">Alabama</h2> ... <tr><td>1</td><td><a href="http://bonner.house.gov/">Bonner, Jo </a>
+REPS_STATE_RE = re.compile(r'<h2\s+id="state_([a-z]{2})"', re.I)
+REPS_ROW_RE = re.compile(
+    r'<tr>\s*<td>\s*([^<]*?)\s*</td>\s*<td>\s*<a\s+href="([^"]+)"[^>]*>\s*([^<]+?)\s*</a>', re.I)
 SENATE_RE = re.compile(
     r'<a\s+href="?([^"\s>]*senate\.gov[^"\s>]*)"?[^>]*>\s*([^<]+?)\s*</a>\s*(?:&nbsp;|\s)*\(\s*([A-Z]+)\s*-\s*([A-Z]{2})\s*\)',
     re.I)
@@ -145,7 +153,18 @@ def seat(rest: str) -> tuple[str, str] | None:
 
 def parse(chamber: str, src: str, page: str) -> list[tuple]:
     rows = []
-    if chamber == "House":
+    if src.endswith("/representatives/"):
+        fix = {"AQ": "AS"}                          # the page files American Samoa as "state_aq"
+        cuts = [(m.start(), fix.get(m.group(1).upper(), m.group(1).upper()))
+                for m in REPS_STATE_RE.finditer(page)]
+        for i, (at, st) in enumerate(cuts):
+            end = cuts[i + 1][0] if i + 1 < len(cuts) else len(page)
+            for dist, href, name in REPS_ROW_RE.findall(page[at:end]):
+                url = absolute(href, src)
+                d = re.match(r"\d+", dist.strip())
+                if "house.gov" in url and not vacancy(url):
+                    rows.append((chamber, st, d.group(0) if d else "0", html.unescape(name).strip(), url))
+    elif chamber == "House":
         for href, name, rest in HOUSE_RE.findall(page):
             where, url = seat(html.unescape(rest)), absolute(href, src)
             if where and "house.gov" in url and not vacancy(url):
