@@ -201,7 +201,7 @@ James Davis,D000114,Democrat,FL,House,11,https://www.house.gov/jimdavis,2003-01-
 Adam Putnam,P000586,Republican,FL,House,12,https://www.house.gov/putnam,2003-01-07 to 2005-01-03,727,full,left Congress 2011-01-03,House 2001–2011,10.0
 Katherine Harris,H001035,Republican,FL,House,13,https://www.house.gov/harris,2003-01-07 to 2005-01-03,727,full,left Congress 2007-01-03,House 2003–2007,4.0
 Porter Goss,G000336,Republican,FL,House,14,https://www.house.gov/goss,2003-01-07 to 2004-09-23,625,partial,left 2004-09-23 (during this Congress),House 1989–2004,15.7
-David Weldon,W000267,Republican,FL,House,15,https://www.house.gov/curtweldon,2003-01-07 to 2005-01-03,727,full,left Congress 2009-01-03,House 1995–2009,14.0
+David Weldon,W000267,Republican,FL,House,15,https://www.house.gov/weldon,2003-01-07 to 2005-01-03,727,full,"left Congress 2009-01-03; URL corrected: the dataset records www.house.gov/curtweldon, Curt Weldon's site; the House member directory lists www.house.gov/weldon 2003-02–2005-01 for this seat",House 1995–2009,14.0
 Mark Foley,F000238,Republican,FL,House,16,https://www.house.gov/foley,2003-01-07 to 2005-01-03,727,full,left Congress 2006-09-29,House 1995–2006,11.7
 Kendrick Meek,M001148,Democrat,FL,House,17,https://www.house.gov/kenmeek,2003-01-07 to 2005-01-03,727,full,left Congress 2011-01-03,House 2003–2011,8.0
 Ileana Ros-Lehtinen,R000435,Republican,FL,House,18,https://www.house.gov/ros-lehtinen,2003-01-07 to 2005-01-03,727,full,left Congress 2019-01-03,House 1989–2019,29.3
@@ -440,7 +440,7 @@ Philip English,E000187,Republican,PA,House,3,https://www.house.gov/english,2003-
 Melissa Hart,H001033,Republican,PA,House,4,https://hart.house.gov,2003-01-07 to 2005-01-03,727,full,left Congress 2007-01-03,House 2001–2007,6.0
 John Peterson,P000263,Republican,PA,House,5,https://www.house.gov/johnpeterson,2003-01-07 to 2005-01-03,727,full,left Congress 2009-01-03,House 1997–2009,12.0
 Jim Gerlach,G000549,Republican,PA,House,6,https://www.house.gov/gerlach,2003-01-07 to 2005-01-03,727,full,left Congress 2015-01-03,House 2003–2015,12.0
-W. Weldon,W000268,Republican,PA,House,7,https://curtweldon.house.gov,2003-01-07 to 2005-01-03,727,full,left Congress 2007-01-03,House 1987–2007,20.0
+W. Weldon,W000268,Republican,PA,House,7,https://www.house.gov/curtweldon,2003-01-07 to 2005-01-03,727,full,"left Congress 2007-01-03; URL corrected: the dataset records curtweldon.house.gov, which it first lists in 2005; the House member directory lists www.house.gov/curtweldon 2003-02–2005-01 for this seat",House 1987–2007,20.0
 James Greenwood,G000439,Republican,PA,House,8,https://www.house.gov/greenwood,2003-01-07 to 2005-01-03,727,full,did not return in next Congress,House 1993–2005,12.0
 Bill Shuster,S001154,Republican,PA,House,9,https://www.house.gov/shuster,2003-01-07 to 2005-01-03,727,full,left Congress 2019-01-03,House 2001–2019,17.6
 Donald Sherwood,S001146,Republican,PA,House,10,https://www.house.gov/sherwood,2003-01-07 to 2005-01-03,727,full,left Congress 2007-01-03,House 1999–2007,8.0

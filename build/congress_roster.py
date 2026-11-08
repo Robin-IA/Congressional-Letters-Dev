@@ -63,6 +63,21 @@ URL_OVERRIDES = {
                          "URL not in dataset; Wayback captures span 2024-11 to 2024-12"),
 }
 
+# Source URLs that are wrong for a term, keyed (bioguide, Congress). The House's
+# own member directory for that Congress is the evidence; the note is carried.
+_W = "URL corrected: the dataset records {}; the House member directory lists {} for this seat"
+URL_CORRECTIONS = {
+    # the two Weldons: Dave (FL-15) was given Curt's (PA-7) site
+    ("W000267", 108): ("https://www.house.gov/weldon",
+                       _W.format("www.house.gov/curtweldon, Curt Weldon's site", "www.house.gov/weldon 2003-02–2005-01")),
+    ("W000267", 109): ("https://www.house.gov/weldon | https://weldon.house.gov",
+                       _W.format("www.house.gov/curtweldon, Curt Weldon's site",
+                                 "www.house.gov/weldon 2005-01, then weldon.house.gov 2005-04–2006-12")),
+    # curtweldon.house.gov is first listed in 2005-04
+    ("W000268", 108): ("https://www.house.gov/curtweldon",
+                       _W.format("curtweldon.house.gov, which it first lists in 2005", "www.house.gov/curtweldon 2003-02–2005-01")),
+}
+
 COLUMNS = ["name", "bioguide_id", "party", "state", "chamber", "district",
            "website_at_the_time", "served_this_congress", "days_this_congress",
            "full_or_partial", "service_notes", "years_in_office",
@@ -188,6 +203,9 @@ def roster(n: int, cur: list, hist: list, today: str) -> list[dict]:
             if u and u not in urls:
                 urls.append(u)
         src = ""
+        if (bid, n) in URL_CORRECTIONS:
+            u, src = URL_CORRECTIONS[(bid, n)]
+            urls = u.split(" | ")
         if not urls and nm in URL_OVERRIDES:
             urls, src = [URL_OVERRIDES[nm][0]], URL_OVERRIDES[nm][1]
         if not urls and listed:
