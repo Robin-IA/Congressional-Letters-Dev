@@ -10,7 +10,7 @@ designed. They are listed so the order is clear, not because they are settled.
 | Step | What | Output | State |
 | --- | --- | --- | --- |
 | 1 | Roster for each Congress | `data/rosters/congressNNN-roster.csv` | **done, 110th–119th** |
-| 2 | Find each member's site in the Wayback Machine | `harvest/wayback/congressNNN-wayback.csv` | **running, 110th–119th** |
+| 2 | Find each member's site in the Wayback Machine | `harvest/wayback/congressNNN-wayback.csv` | **done, 110th–119th** |
 | 3 | Flag URLs used by more than one member | | to design |
 | 4 | Find the letters on each site | | to design |
 
@@ -184,6 +184,43 @@ the member's window. Three were opened by page title:
 - Stephanie Murphy: `murphy.house.gov`, 2020-12-31, "Stephanie Murphy"
 
 The first two are cases the unbounded lookup got wrong or could not express.
+
+### Results (run 7–8 November 2026)
+
+**5,548 of 5,549 lookups found the site within the member's own service.** The
+one that did not is Carte Goodwin, who has no URL (#10). Three lookups failed
+on the network in the first run (Hinchey, McCaskill, Wicker) and were found on
+the re-run. No home page needed the prefix fallback.
+
+| Congress | Lookups | Found | Median days captured | Found only as redirects |
+| --- | ---: | ---: | ---: | ---: |
+| 110th | 555 | 555 | 95 | 38 |
+| 111th | 560 | 559 | 86 | 122 |
+| 112th | 553 | 553 | 68 | 156 |
+| 113th | 555 | 555 | 88 | 16 |
+| 114th | 547 | 547 | 72 | 1 |
+| 115th | 561 | 561 | 100 | 3 |
+| 116th | 550 | 550 | 111 | 3 |
+| 117th | 557 | 557 | 100 | 1 |
+| 118th | 556 | 556 | 99 | 0 |
+| 119th | 555 | 555 | 220 | 0 |
+
+"Found only as redirects" means not one capture of the home page in the window
+was a 200; counting 200s alone would have reported those 340 members as missing,
+almost all of them in the 110th–112th. The 119th's median runs to the build
+date and is not comparable.
+
+**The 16 filled URLs are all confirmed.** Each was found inside the member's
+own window. The five taken from Wayback evidence, plus Tom Reed, Tony Wied and
+Donald Payne Jr. (`payne.house.gov` was his father's first), were opened and
+read: every capture names the member it is credited to. Mayra Flores's
+`flores.house.gov`, which had been inferred, reads "Congresswoman Mayra Flores"
+in June 2022 and on 3 January 2023. No issue was needed beyond #10.
+
+**24 members have fewer than 5 days captured, and none is a gap.** Every one
+served only weeks of that Congress: members sworn in after a November election
+(Massie, DelBene, Wild, Hern), or members who left in its first weeks for
+another office (Biden, Clinton, Harris, Becerra, Pompeo, Sasse, Vance).
 
 ## Steps 3–4: to design
 

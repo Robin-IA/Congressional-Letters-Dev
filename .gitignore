@@ -26,3 +26,4 @@ data/congress119-departed-queried.json
 # Step 2 raw CDX answers; rebuilt by build/wayback_lookup.py.
 harvest/wayback/cache/
 harvest/wayback/*.trial.csv
+harvest/wayback/*.log
