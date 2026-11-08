@@ -90,7 +90,7 @@ def bounds(n: int) -> tuple[str, str]:
 
 
 def norm(u: str | None) -> str:
-    return (u or "").rstrip("/").replace("http://", "https://")
+    return (u or "").strip().rstrip("/").replace("http://", "https://")
 
 
 def days(a: str, b: str) -> int:
