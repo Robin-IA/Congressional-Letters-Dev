@@ -11,7 +11,7 @@ designed. They are listed so the order is clear, not because they are settled.
 | --- | --- | --- | --- |
 | 1 | Roster for each Congress | `data/rosters/congressNNN-roster.csv` | **done, 106th–119th** |
 | 2 | Find each member's site in the Wayback Machine | `harvest/wayback/congressNNN-wayback.csv` | **done, 106th–119th** |
-| 3 | Flag URLs used by more than one member | | to design |
+| 3 | Who held each address, and when | `data/address-holders.csv` | designed, not built |
 | 4 | Find the letters on each site | | to design |
 
 ---
@@ -328,17 +328,103 @@ up on 8–9 November.
   how often the Wayback Machine crawled in 1999–2000, not a gap in the
   rosters. Expect fewer letters per member there.
 
-## Steps 3–4: to design
+## Step 3: who held each address, and when (designed, not built)
 
-Recorded so they are not lost; neither is decided.
+**An address identifies a member only for a span of time.** `murphy.house.gov`
+was Tim Murphy's, then Stephanie Murphy's, then Greg Murphy's. Step 2 is safe
+from this, because every lookup is bounded to the member's own service. Step 4
+is not: a letter found on a reused address has to go to whoever held the
+address on the letter's date. Step 3 writes the table that makes that possible.
+It is the fix for
+[#8](https://github.com/Robin-IA/Congressional-Letters-Dev/issues/8), and step 4
+uses it to fix the misattribution in
+[#7](https://github.com/Robin-IA/Congressional-Letters-Dev/issues/7).
 
-- **Reused URLs (step 3).** Surname hostnames are reassigned: `jones.house.gov`
-  was Walter Jones, then Mondaire Jones. Across Congresses, the rosters show
-  who held each URL and when. See issues
-  [#7](https://github.com/Robin-IA/Congressional-Letters-Dev/issues/7) (letters
-  credited to the wrong member) and
-  [#8](https://github.com/Robin-IA/Congressional-Letters-Dev/issues/8) (the URLs
-  themselves).
+### What it writes
+
+`data/address-holders.csv`, built from the rosters and step 2 alone, with no
+new Wayback queries. One row per address per member who held it:
+
+| Column | |
+| --- | --- |
+| `address` | the key below |
+| `urls` | every URL in the rosters that reduces to this address |
+| `bioguide_id`, `name`, `state`, `chamber`, `district` | the holder |
+| `held_from`, `held_to` | the span (rule 2) |
+| `congresses` | the Congresses whose roster gives this member this address |
+| `first_capture`, `last_capture` | from step 2, inside that span |
+| `holders` | how many members held this address; 1 for most |
+| `before`, `after` | the previous and next holder's bioguide, if any |
+
+### Rules
+
+1. **The address is the host**, without `www.`, so `kennedy.senate.gov` and
+   `www.kennedy.senate.gov/public` are one address. On the hosts several
+   members shared at once, it is the host plus the member's own path:
+   `house.gov/matsui`, `wwwc.house.gov/regula`, `senate.gov/~chafee`, and
+   `senate.gov/senators/carper.html` (the holding pages the Senate posted for
+   senators arriving in January 2001, before their own sites were up).
+2. **A member holds an address only during the Congresses whose roster gives
+   it to them**, and within those, only during their service: never their
+   whole career. Greg Murphy has served since 2019 but was at
+   `gregmurphy.house.gov` until 2023, so his span on `murphy.house.gov` starts
+   in 2023. Where a member's site moved within a Congress, both addresses
+   carry that member's service in that Congress; step 2's capture dates show
+   when each was live, but are recorded, not used to cut the span, because
+   captures are too sparse to mark an edge.
+3. **A letter goes to whoever held its address on the letter's date.** That is
+   the date read from the letter where there is one, and otherwise the
+   **earliest capture of the letter's own URL**: a letter cannot be captured
+   before it was posted, so that capture bounds the posting date from above.
+   - In a holder's span: that holder.
+   - After a holder's span and before the next holder's: the holder before,
+     flagged `after_service`. A site left up after a member died or resigned
+     still shows that member's letters (Matsui, 2005-01-03 to 2005-03-10;
+     Payne, 2012-03-06 to 2012-11-15).
+   - Before the first holder in the rosters, or after the last: no holder.
+     `attribution: none`, kept out of the explorer, as letters-from-congress#2
+     sets for the backfill. That covers holders from before 1999, whom the
+     rosters do not record.
+   - Dated by capture rather than by the letter, on an address with more than
+     one holder: flagged `by_capture`, for review.
+4. **A letter belongs to the address it was captured at**, not to wherever that
+   address redirects. `dingell.house.gov` redirects to `debbiedingell.house.gov`,
+   a different member's site.
+
+### Measured on the 106th–119th rosters (8 November 2026)
+
+**2,038 addresses; 49 held by more than one member**, 102 holder spans between
+them. No two holders of one address overlap in time.
+
+- **38 are a surname reused in another seat**, often years apart:
+  `jones.house.gov` (Walter Jones, then Mondaire Jones), `menendez.house.gov`
+  (Robert Menendez 1999–2007, Rob Menendez from 2023), `mikerogers.house.gov`
+  (two different Mike Rogers, Michigan then Alabama), `kennedy.senate.gov`,
+  `kirk.senate.gov`.
+- **11 passed within one seat**, to a relative or a successor of the same name:
+  the Chafees, Clays, Hunters, Lipinskis, Matsuis, Shusters, Fitzpatricks,
+  Grijalvas, Murkowskis, Paynes and Warners.
+- **`murphy.house.gov` is the only address with three holders.**
+
+### Tests to write with it
+
+`murphy.house.gov` (three holders), `mikerogers.house.gov` (same name, two
+people), `menendez.house.gov` (father and son, sixteen years apart),
+`payne.house.gov` and `house.gov/matsui` (same seat, a gap between holders),
+and a letter on `dingell.house.gov` (a redirect to another member).
+
+### Open
+
+- **Letters in a gap between holders** go to the holder before, flagged. The
+  alternative is no holder at all. This is the one choice in step 3 that
+  changes what the explorer shows.
+- `payne.house.gov` is listed under "Payne, Donald" for both father and son,
+  so the directory cannot separate them. Their spans separate them instead.
+
+## Step 4: to design
+
+Recorded so it is not lost; not decided.
+
 - **Letters (step 4).** The harvest in `BACKFILL.md` and `build/harvest.py`,
   driven by roster rows rather than by the chambers' website directories.
 
