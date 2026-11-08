@@ -146,6 +146,44 @@ def directory(n: int) -> list[dict]:
     return list(csv.DictReader(open(f, encoding="utf-8"), delimiter="\t")) if f.exists() else []
 
 
+# (state, folded surname) -> [(bioguide, given-name keys)], for every legislator.
+# Filled by roster(); lets a listing be told apart from a relative's in the same seat.
+KIN: dict[tuple[str, str], list[tuple[str, set]]] = {}
+
+
+def given_keys(p: dict) -> set:
+    """First three letters of each name a legislator goes by: first, middle, nickname."""
+    n = p["name"]
+    names = [n.get("first", ""), n.get("middle", ""), n.get("nickname", ""),
+             (n.get("official_full") or "").split(" ")[0]]
+    return {fold(x)[:3] for x in names if len(fold(x)) >= 2}
+
+
+def fill_kin(people: list) -> None:
+    KIN.clear()
+    for p in people:
+        for st in {t["state"] for t in p["terms"]}:
+            KIN.setdefault((st, fold(p["name"]["last"])), []).append((p["id"]["bioguide"], given_keys(p)))
+
+
+def listed_given(name: str) -> set:
+    """Given-name keys in a listing: 'Carson, Julia' / 'Julia Carson' -> {'jul'};
+    'Clay Jr., William "Lacy"' -> {'wil', 'lac'}."""
+    g = name.split(",", 1)[1] if "," in name else name.rsplit(" ", 1)[0]
+    return {fold(w)[:3] for w in re.split(r'[\s."]+', g) if len(fold(w)) >= 2}
+
+
+def someone_else(d: dict, p: dict, t: dict) -> bool:
+    """The listing names a different legislator of this surname and state: a parent, child or
+    sibling in the same seat (Julia and André Carson, Michael and Gus Bilirakis). A listing
+    carrying any name this member goes by is theirs: Wm. Lacy Clay is 'William "Lacy"'."""
+    g = listed_given(d["name_listed"])
+    if not g or g & given_keys(p):
+        return False
+    me = p["id"]["bioguide"]
+    return any(g & keys for bid, keys in KIN.get((t["state"], fold(p["name"]["last"])), []) if bid != me)
+
+
 def seat_listings(listed: list[dict], p: dict, t: dict) -> dict[str, tuple[str, str]]:
     """{url: (first_seen, last_seen)} the directory listed for this member's seat and surname."""
     ch = chamber(t["type"])
@@ -155,7 +193,8 @@ def seat_listings(listed: list[dict], p: dict, t: dict) -> dict[str, tuple[str, 
     for d in listed:
         if (d["chamber"] == ch and d["state"] == t["state"]
                 and (ch == "Senate" or d["district"] == str(t.get("district", "")))
-                and any(x in fold(d["name_listed"]) for x in parts)):
+                and any(x in fold(d["name_listed"]) for x in parts)
+                and not someone_else(d, p, t)):
             a, b = out.get(d["url"], (d["first_seen"], d["last_seen"]))
             out[d["url"]] = (min(a, d["first_seen"]), max(b, d["last_seen"]))
     return out
@@ -205,6 +244,7 @@ def also_listed(listed: list[dict], p: dict, t: dict, urls: list) -> tuple[list,
 def roster(n: int, cur: list, hist: list, today: str) -> list[dict]:
     S, E = bounds(n)
     listed = directory(n)
+    fill_kin(cur + hist)
     curids = {p["id"]["bioguide"] for p in cur}
     # The day this Congress actually convened: the most common term start in it.
     convened = Counter(t["start"] for p in cur + hist for t in p["terms"]
