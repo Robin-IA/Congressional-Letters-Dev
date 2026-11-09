@@ -4,15 +4,14 @@ How the corpus is assembled, step by step. **Revised 7 November 2026.** The
 work now starts from who served in each Congress and works outward from there,
 rather than from the websites the chambers happened to list.
 
-Each step's output is the next step's input. Steps 3 and 4 are still to be
-designed. They are listed so the order is clear, not because they are settled.
+Each step's output is the next step's input. Step 4 is designed but not built.
 
 | Step | What | Output | State |
 | --- | --- | --- | --- |
 | 1 | Roster for each Congress | `data/rosters/congressNNN-roster.csv` | **done, 106th–119th** |
 | 2 | Find each member's site in the Wayback Machine | `harvest/wayback/congressNNN-wayback.csv` | **done, 106th–119th** |
 | 3 | Who held each address, and when | `data/address-holders.csv` | done, 106th–119th |
-| 4 | Find the letters on each site | | to design |
+| 4 | Find the letters at each address | `data/letters-parsed.jsonl` | designed, not built |
 
 ---
 
@@ -477,12 +476,128 @@ the address key itself.
 - `payne.house.gov` is listed under "Payne, Donald" for both father and son,
   so the directory cannot separate them. Their spans separate them instead.
 
-## Step 4: to design
+## Step 4: find the letters at each address (designed, not built)
 
-Recorded so it is not lost; not decided.
+**Query every address in `data/address-holders.csv`, keep what opens as a
+letter, and credit each letter with step 3's `attribute()` when the site is
+built, not when it is harvested.** The harvest is the expensive half and is
+done once per address; who gets a letter depends on the rosters, the dates and
+the rules, all of which can change, so it is worked out afresh on every build.
+This is the principle `build/harvest.py` already follows for cleaning (cache
+raw rows, filter on the way out), extended to attribution.
 
-- **Letters (step 4).** The harvest in `BACKFILL.md` and `build/harvest.py`,
-  driven by roster rows rather than by the chambers' website directories.
+### Measured against today's explorer (9 November 2026)
+
+`attribute()` run over the 73,354 letters the explorer now holds
+(`letters-parsed.jsonl` and the 119th's departed members), with the date read
+from the URL where there is one and the first capture otherwise:
+
+| Outcome | Letters |
+| --- | ---: |
+| Same member as now | 71,545 |
+| **A different member** | **1,058** |
+| No holder | 495 |
+| Address not in the table (caucus subdomains) | 256 |
+
+- **The 1,058 are #7, fixed.** `grijalva.house.gov` 404, `murphy.house.gov`
+  269, `levin.house.gov` 140, `kennedy.house.gov` 53, `gallagher.house.gov`
+  45, `fitzpatrick.house.gov` 32, `conaway.house.gov` 25, then
+  `kennedy.senate.gov`, `owens`, `moran`, `hurd`, `ross`. #7 measured 874 plus
+  242 with no holder from the legislators file alone; the rosters and the
+  directories place most of those 242.
+- **2,219 letters are dated only by capture on a shared address**
+  (`by_capture`). They are attributed, and listed for review.
+- **The explorer covers 527 of the 2,043 addresses and 555 of the 1,571
+  members** who served in the 106th–119th. The other 1,516 addresses are the
+  harvest: 674 House hosts, 151 Senate hosts, 576 `www.house.gov/<name>`
+  paths, 105 `senate.gov` paths, 9 on `wwwc.house.gov`, and
+  `jessejacksonjr.org`. Most were first held before 2010 (1,117 of them).
+
+### Harvest, per address
+
+- **One CDX query per address, unbounded in time.** A letter stays up after
+  its author leaves, and a reused address can carry the previous holder's
+  letters for years. The date decides who gets it, and step 3 already knows
+  who held the address when. Bounding the query to the holder's span would
+  drop exactly the letters `after_service` exists for.
+- **Hosts** take `matchType=domain`, as `harvest.py` does now; **paths on a
+  shared host** take `url=www.house.gov/<name>/&matchType=prefix`, and the
+  `senate.gov/~name` and `senators/<file>.html` forms likewise. This is the
+  second pass `BACKFILL.md` §8 left open.
+- **The same filters as now**: `statuscode:200`, `urlkey:.*letter.*`,
+  `!urlkey:.*newsletter.*`, one row per `urlkey`. Raw rows are cached per
+  address under `harvest/letters/cache/`, so a cleaning change costs a
+  re-filter, not a re-harvest.
+- **Over https, and paged when the whole-host query times out.** Cornyn's
+  host (step 2) and the large sites `harvest.py` warns of answer 504 because
+  CDX reads the whole index before filtering; `showNumPages` with `&page=N`
+  answers inside the gateway limit and is resumable. `http://` CDX answered
+  503 to the renderer and is not used.
+- **Order by breadth, as the renderer does**: every address's first query
+  before any address's retry, members with no letters at all first. The run
+  takes days and will be stopped before it finishes; what it has done by then
+  should be spread across members, not deep in a few.
+- **It competes with the renderer and `resolve_wrappers.py` for the same
+  Wayback budget.** Run one at a time.
+
+### What counts as a letter
+
+Unchanged from the corpus rule in `CLAUDE.md`: **every letter opens as a
+letter.** Announcement pages and press releases wearing the word are dropped;
+the Senate CMS's download wrappers go to `resolve_wrappers.py`; captures cut
+at the crawl's 64,000-byte cap are bad captures. These filters live in
+`harvest.py` and `parse_urls.py` and are reused, not rewritten.
+
+### Dating
+
+The date `attribute()` is given, in order:
+
+1. **The letter's own date**, read from its URL or path (`parse_urls.py`:
+   31,081 letters today).
+2. **The date the PDF says it was made** (`data/pdf-dates.jsonl`, written by
+   the renderer: 715 more today, and it grows as rendering continues).
+3. **The first capture of the letter's URL**, which bounds the posting date
+   from above. Flagged `by_capture` on a shared address.
+
+Because the renderer adds PDF dates after the harvest, attributing at build
+time means a letter first credited by capture is re-credited by its own date
+as soon as one is known.
+
+### Written
+
+`data/letters-parsed.jsonl` keeps its shape, with `bioguide` now the holder on
+the letter's date rather than whoever holds the host today, and four fields
+added: `address`, `attribution` (`holder`, `after_service` or `none`),
+`dated_by` (`letter`, `pdf` or `capture`) and `by_capture`. `none` stays out
+of the explorer, as letters-from-congress#2 set for the backfill. The 119th's
+departed file merges into it; it existed only because the harvest started
+from the sitting roster.
+
+### Tests to write with it
+
+The 1,058 above are the acceptance test: no letter credited to a member
+outside that member's holding of its address (#7's own criterion). Pinned
+cases: a Grijalva letter from 2020 on `grijalva.house.gov` goes to Raúl, not
+Adelita; Greg Murphy has no `murphy.house.gov` letter before 2023; a
+`by_capture` letter re-credited once a PDF date arrives.
+
+### Open
+
+- **A letter dated before an address's first holder, by that same member's
+  earlier office.** 428 of the 495 with no holder are this: Tammy Baldwin's
+  and Bernie Sanders's House letters reposted on their Senate sites, and
+  Tom Cole's `cole.house.gov`, live from 2007 while the rosters record
+  `www.house.gov/cole` until 2011. The member wrote them. The design as built
+  says `none`; crediting the first holder when they were in Congress on that
+  date, flagged `earlier_office`, would keep them. The other 67 are dated
+  before anyone held the address, some by a misread date (`090206` read as
+  2006 on Michael Bennet's site, posted in 2009).
+- **Caucus subdomains.** `cpc.grijalva.house.gov` (108 letters),
+  `rsc.jordan.house.gov` (76), `rsc.scalise.house.gov` (62),
+  `diabetes.degette.house.gov`, `doctorscaucus.murphy.house.gov`: the
+  Progressive Caucus, the Republican Study Committee and others, hosted on a
+  chair's address. Credit the parent address's holder, flagged `caucus`, or
+  leave them out. They are the caucus's letters more than the member's.
 
 ## How this relates to the earlier approach
 
