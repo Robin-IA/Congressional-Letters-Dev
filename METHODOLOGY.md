@@ -443,6 +443,17 @@ rule below, for step 4 to call.
      `attribution: none`, kept out of the explorer, as letters-from-congress#2
      sets for the backfill. That covers holders from before 1999, whom the
      rosters do not record.
+   - **A caucus site on a member's subdomain** (`cpc.grijalva.house.gov`,
+     `rsc.jordan.house.gov`): whoever the parent address gives on the
+     letter's date, flagged `caucus`. **Kept in the data and not published**,
+     decided 9 November 2026 (Robin), until Robin-IA/Congressional-Letters-Dev#24
+     is done. The subdomain does not reliably say who wrote the letter. The
+     Progressive Caucus's are mostly co-chair letters Grijalva signed, but
+     about half the Republican Study Committee's are letters *to* the caucus
+     from outside groups (NTU, ACU, Eagle Forum). Others are by members who were not the chair. And 61 of the RSC's sit on both
+     `rsc.jordan` and `rsc.scalise`, because the RSC site moves to each new
+     chair's subdomain with its back files. `UNPUBLISHED` in
+     `build/address_holders.py` is the set the explorer build leaves out.
    - Dated by capture rather than by the letter, on an address with more than
      one holder: flagged `by_capture`, for review.
 4. **A letter belongs to the address it was captured at**, not to wherever that
@@ -505,8 +516,8 @@ from the URL where there is one and the first capture otherwise:
 | Same member as now | 71,545 |
 | **A different member** | **1,058** |
 | Same member, flagged `earlier_office` | 428 |
-| No holder | 67 |
-| Address not in the table (caucus subdomains) | 256 |
+| No holder | 68 |
+| Caucus subdomain, flagged `caucus` (kept, not published) | 255 |
 
 - **The 1,058 are #7, fixed.** `grijalva.house.gov` 404, `murphy.house.gov`
   269, `levin.house.gov` 140, `kennedy.house.gov` 53, `gallagher.house.gov`
@@ -581,8 +592,8 @@ as soon as one is known.
 the letter's date rather than whoever holds the host today, and four fields
 added: `address`, `attribution` (`holder`, `after_service` or `none`),
 `dated_by` (`letter`, `pdf` or `capture`) and `by_capture`. `attribution` can
-also be `earlier_office` (step 3, rule 3). `none` stays out
-of the explorer, as letters-from-congress#2 set for the backfill. The 119th's
+also be `earlier_office` or `caucus` (step 3, rule 3). `none` and `caucus` stay
+out of the explorer, as letters-from-congress#2 set for the backfill. The 119th's
 departed file merges into it; it existed only because the harvest started
 from the sitting roster.
 
@@ -596,12 +607,15 @@ Adelita; Greg Murphy has no `murphy.house.gov` letter before 2023; a
 
 ### Open
 
-- **Caucus subdomains.** `cpc.grijalva.house.gov` (108 letters),
-  `rsc.jordan.house.gov` (76), `rsc.scalise.house.gov` (62),
-  `diabetes.degette.house.gov`, `doctorscaucus.murphy.house.gov`: the
-  Progressive Caucus, the Republican Study Committee and others, hosted on a
-  chair's address. Credit the parent address's holder, flagged `caucus`, or
-  leave them out. They are the caucus's letters more than the member's.
+- **Caucus letters, before they can be published** (#24). Drop the outside
+  groups' letters to the RSC, dedupe the RSC across its two hosts, and credit
+  the caucus chair as of the letter's date rather than the subdomain's owner.
+  The counts above are rows: 256 is 202 in `letters-parsed.jsonl` plus the
+  54 Progressive Caucus letters repeated in the 119th's departed file, and
+  126 distinct documents.
+- **Committee letters** (#23). Not harvested at all yet. Committee sites are
+  on no roster. Same pattern: the chair (or ranking member) on the letter's
+  date, flagged `committee`.
 
 ## How this relates to the earlier approach
 

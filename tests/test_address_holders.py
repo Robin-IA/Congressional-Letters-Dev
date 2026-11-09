@@ -14,9 +14,11 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "build"))
 
 from address_holders import (  # noqa: E402
+    UNPUBLISHED,
     address_key,
     attribute,
     build,
+    caucus_parent,
     index,
     lookup_rows,
     overlaps,
@@ -148,6 +150,16 @@ class Attribute(unittest.TestCase):
         # Carol Shea-Porter really was out of office 2011-2013
         self.assertEqual(who("https://shea-porter.house.gov/x.pdf", "2012-06-01"),
                          ("S001170", "after_service"))
+
+    def test_a_caucus_subdomain_goes_to_its_parents_holder_flagged(self):
+        self.assertEqual(who("https://cpc.grijalva.house.gov/x.pdf", "2014-12-09"),
+                         ("G000551", "caucus"))
+        self.assertEqual(who("https://rsc.jordan.house.gov/x.pdf", "2012-02-03"),
+                         ("J000289", "caucus"))
+        self.assertIn("caucus", UNPUBLISHED)
+        # a member's own address is never treated as a caucus subdomain
+        self.assertEqual(caucus_parent(IDX, "murphy.house.gov"), "")
+        self.assertEqual(caucus_parent(IDX, "nobody.house.gov"), "")
 
     def test_the_day_a_seat_changes_hands_goes_to_the_incoming_holder(self):
         self.assertEqual(who("https://murphy.house.gov/a.pdf", "2023-01-03"), (GREG_MURPHY, "holder"))

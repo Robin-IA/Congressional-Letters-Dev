@@ -239,9 +239,20 @@ def attribute(idx: Index, url: str, date: str = "",
     last: ``none``. On the day a seat changes hands both spans include it; the
     incoming holder wins, since a new term begins at noon.
     """
-    hs = idx.get(address_key(url), [])
+    key = address_key(url)
+    hs = idx.get(key, [])
     by_capture = not date
     d = _iso(date or first_capture)
+    if not hs and d:
+        parent = caucus_parent(idx, key)
+        if parent:
+            # A caucus site on a member's subdomain (cpc.grijalva.house.gov,
+            # rsc.jordan.house.gov): whoever the parent address gives, flagged
+            # ``caucus``. Kept in the data, not published (decided 2026-11-09):
+            # about half the RSC's are letters *to* the caucus from outside
+            # groups, and the RSC site carries earlier chairs' files with it.
+            a = attribute(idx, "https://" + parent + "/", date, first_capture)
+            return Attribution(a.bioguide_id, "caucus" if a.bioguide_id else "none", a.by_capture)
     if not hs or not d:
         return Attribution("", "none")
     flag = by_capture and len({h.bioguide_id for h in hs}) > 1
@@ -268,6 +279,22 @@ def attribute(idx: Index, url: str, date: str = "",
         if any(a <= d <= b for a, b, _ in getattr(idx, "service", {}).get(first.bioguide_id, [])):
             return Attribution(first.bioguide_id, "earlier_office", flag)
     return Attribution("", "none", flag)
+
+
+# Attributions kept in the data but left out of every published explorer.
+UNPUBLISHED = {"caucus"}
+
+
+def caucus_parent(idx: Index, key: str) -> str:
+    """The member address a caucus subdomain sits on, or "" if it is not one.
+
+    ``cpc.grijalva.house.gov`` -> ``grijalva.house.gov``, only when the
+    subdomain is not itself an address in the table and its parent is.
+    """
+    if "/" in key or key in idx:
+        return ""
+    parent = key.split(".", 1)[1] if key.count(".") > 2 else ""
+    return parent if parent in idx else ""
 
 
 def _iso(s: str) -> str:
