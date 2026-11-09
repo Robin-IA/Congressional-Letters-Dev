@@ -36,6 +36,7 @@ the results.
 | 2026-11-09 | The letter PDFs are not hosted. Every letter opens from the Wayback Machine. |
 | 2026-11-09 | A letter dated between two holders of an address goes to the earlier holder, flagged `after_service`, unless that member was still in office in the same chamber (step 3). |
 | 2026-11-09 | The methodology is written before any new explorer is published. |
+| 2026-11-09 | A letter dated before an address's first holder goes to that holder, flagged `earlier_office`, when they were already in Congress. That keeps 428 of today's letters; 67 still have no holder. |
 | 2026-11-09 | **Each letter appears in exactly one explorer: the Congress in session on the letter's date.** No letter or thumbnail is stored twice. The alternative, every letter of a Congress's members, would repeat a long-serving member's letters in every Congress they served. |
 
 ## The pipeline for Congress N
@@ -255,8 +256,6 @@ To be developed separately. What it has to do, as discussed on 9 November:
 
 ## Open
 
-- **Letters from a member's earlier office**: 428 letters dated before their
-  address's first holder (`METHODOLOGY.md` step 4).
 - **Caucus subdomains**: 256 letters on sites like `rsc.jordan.house.gov`.
 - **A letter credited `after_service` to someone not on Congress N's
   roster**: list them in N's explorer as a former holder, or only in the
