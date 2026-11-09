@@ -413,7 +413,10 @@ new Wayback queries. One row per address per member who held it:
    before it was posted, so that capture bounds the posting date from above.
    - In a holder's span: that holder.
    - After a holder's span and before the next holder's: the holder before,
-     flagged `after_service`. A site left up after a member died or resigned
+     flagged `after_service`. Decided 9 November 2026 (Robin), over the
+     alternative of crediting no one: these letters stay in the explorer,
+     under the member whose site they were on, and the flag lets them be
+     shown or reviewed apart. A site left up after a member died or resigned
      still shows that member's letters (Matsui, 2005-01-03 to 2005-03-10;
      Payne, 2012-03-06 to 2012-11-15).
    - Before the first holder in the rosters, or after the last: no holder.
@@ -450,9 +453,6 @@ and a letter on `dingell.house.gov` (a redirect to another member).
 
 ### Open
 
-- **Letters in a gap between holders** go to the holder before, flagged. The
-  alternative is no holder at all. This is the one choice in step 3 that
-  changes what the explorer shows.
 - `payne.house.gov` is listed under "Payne, Donald" for both father and son,
   so the directory cannot separate them. Their spans separate them instead.
 
