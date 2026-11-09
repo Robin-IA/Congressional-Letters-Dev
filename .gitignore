@@ -28,3 +28,4 @@ harvest/wayback/cache/
 harvest/wayback/*.trial.csv
 harvest/wayback/*.log
 harvest/directories/cache/
+harvest/letters/cache/
