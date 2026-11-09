@@ -37,6 +37,8 @@ the results.
 | 2026-11-09 | A letter dated between two holders of an address goes to the earlier holder, flagged `after_service`, unless that member was still in office in the same chamber (step 3). |
 | 2026-11-09 | The methodology is written before any new explorer is published. |
 | 2026-11-09 | A letter dated before an address's first holder goes to that holder, flagged `earlier_office`, when they were already in Congress. That keeps 428 of today's letters; 67 still have no holder. |
+| 2026-11-09 | Letters on a caucus subdomain (`cpc.grijalva.house.gov`, `rsc.jordan.house.gov`) go to the parent address's holder, flagged `caucus`, and are **kept in the data but not published** (`UNPUBLISHED` in `build/address_holders.py`) until #24 is done. 255 rows, 126 distinct documents. About half the RSC's are letters to the caucus from outside groups. |
+| 2026-11-09 | Committee letters are wanted, credited to the chair as of the letter's date. Not yet harvested (#23). |
 | 2026-11-09 | **Each letter appears in exactly one explorer: the Congress in session on the letter's date.** No letter or thumbnail is stored twice. The alternative, every letter of a Congress's members, would repeat a long-serving member's letters in every Congress they served. |
 
 ## The pipeline for Congress N
@@ -182,6 +184,9 @@ every letter on the sitting members' sites.
     capture (`METHODOLOGY.md` step 4).
 - **Credited by** `address_holders.attribute()`, at build time, never at
   harvest. A rebuild picks up new dates and roster fixes without a new harvest.
+- **Left out:** attribution `none`, and everything in `UNPUBLISHED`
+  (`caucus`, #24). They stay in the data, so a decision to publish them is a
+  rebuild, not a harvest.
 - **Members:** everyone on Congress N's roster, with a count of zero where no
   letters were found. A member credited only with `after_service` letters is
   listed separately as a former holder (open, below).
@@ -256,7 +261,8 @@ To be developed separately. What it has to do, as discussed on 9 November:
 
 ## Open
 
-- **Caucus subdomains**: 256 letters on sites like `rsc.jordan.house.gov`.
+- **Caucus letters** (#24): what it takes to publish them. Drop outside groups' letters to the RSC, dedupe it across its two hosts, and credit the chair on the letter's date.
+- **Committee letters** (#23): rosters of committee sites and of their chairs and ranking members, then a harvest.
 - **A letter credited `after_service` to someone not on Congress N's
   roster**: list them in N's explorer as a former holder, or only in the
   federated explorer.
