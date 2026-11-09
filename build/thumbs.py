@@ -78,7 +78,13 @@ MAX_BYTES = 40 * 1024 * 1024      # a letter is not 40 MB; something else is
 # 64,000 is the one this corpus actually hits; the others are the usual caps
 # and cost nothing to watch for.
 TRUNCATED_AT = {64000, 65536, 51200, 102400, 100000, 1000000}
-WIDTH = 340                        # rendered thumbnail width in pixels
+# Rendered thumbnail width in pixels. 340 until 9 November 2026: twice the
+# explorer's card (about 165 px), and 925 MB for 49,279 thumbnails, which was
+# the whole 1 GB Pages ceiling with the backfill still to come. Measured on 300
+# real thumbnails at quality 72: 240 px is 8.3 KB (46%), 200 px 5.7 KB (32%),
+# 170 px 4.2 KB (23%). 200 px is a little soft on a Retina screen and triples
+# the room: the existing set re-encoded to 294 MB, about 160,000 in 940 MB.
+WIDTH = 200
 
 # WebP, and the reason is arithmetic rather than fashion. Four files build a
 # thumbnail's filename, so the format lives here and they import it.

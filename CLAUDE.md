@@ -63,12 +63,13 @@ So `thumbs/` and `payload/member/` are both tracked and served by Pages.
 `thumb_base` and `data_base` in `index.json` are one field each when it moves
 back.
 
-**Thumbnails are WebP at quality 72.** Measured on 200 real files: 18.6 KB
-against JPEG's 23.6 KB, the same size as JPEG quality 50 while still being
-quality 72. That 21% is exactly what makes all 48,113 fit inside the 1 GB Pages
-ceiling — 868 MB projected, against a 940 MB budget in `publish_thumbs.py` that
-leaves a 64 MB margin. The ceiling is a hard limit; a site that breaches it may
-simply stop being served.
+**Thumbnails are WebP at quality 72, 200 px wide.** WebP because, measured on
+200 real files, it is 18.6 KB against JPEG's 23.6 KB at the same setting. 200 px
+since 9 November 2026: at 340 px, twice the card's width, 49,279 thumbnails came
+to 925 MB, the whole 1 GB Pages ceiling with the backfill still to come.
+Re-encoded to 200 px they are 294 MB, about 6 KB each, so roughly 160,000 fit
+inside the 940 MB budget in `publish_thumbs.py`. The ceiling is a hard limit; a
+site that breaches it may simply stop being served.
 
 ## The long jobs
 
