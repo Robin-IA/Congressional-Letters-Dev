@@ -59,6 +59,9 @@ URL_OVERRIDES = {
     "Brenda Jones": ("https://brendajones.house.gov",
                      "URL not in dataset; Wayback captures of brendajones.house.gov date "
                      "from 2018-12, during her tenure"),
+    "Carte Goodwin": ("https://goodwin.senate.gov",
+                      "URL not in dataset; Wayback captures of goodwin.senate.gov span "
+                      "2010-07-21 to 2010-11-08, matching his appointment"),
     "Erica Lee Carter": ("https://ericaleecarter.house.gov",
                          "URL not in dataset; Wayback captures span 2024-11 to 2024-12"),
 }

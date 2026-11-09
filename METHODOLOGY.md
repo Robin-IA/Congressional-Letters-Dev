@@ -89,8 +89,11 @@ during the Congress has both, separated by `|`.
   (1999–2001), 459 of 544 members have none. For those Congresses the roster
   uses what the chambers themselves published at the time:
   - `build/directory_urls.py` reads the House member directory
-    (`www.house.gov/house/MemberWWW.html`, later `.shtml`) and the Senate's
-    (`www.senate.gov/senators/index.cfm`), one Wayback capture a quarter
+    (`www.house.gov/house/MemberWWW.html`, later `.shtml`, which is 404 from
+    2012; from 2011 `www.house.gov/representatives/`, a table per state that
+    files American Samoa as `state_aq`) and the Senate's
+    (`www.senate.gov/senators/index.cfm`, which redirects from November 2002,
+    so there are no Senate listings from the 108th on), one Wayback capture a quarter
     across each Congress. It writes `data/rosters/directory-urls-NNN.tsv`:
     every listed URL, with the dates it was seen.
   - A member with no URL in the source takes the URL listed for their seat
@@ -108,8 +111,9 @@ during the Congress has both, separated by `|`.
     | 108th | 544 | 0 | 0 | 0 |
     | 109th | 500 | 45 | 0 | 0 |
 
-    The directory is read only for these four Congresses; the 110th–119th
-    rosters do not use it.
+    The directory is read for the 106th–112th. In the 110th–112th it supplies
+    no member's only URL, just the second addresses below; the 113th–119th do
+    not use it.
   - The directory has its own traps. A member with no site was linked back
     into the directory itself (`Member.htm#il02`), and a seat left vacant was
     linked to the Clerk's vacancy page. Neither is taken as a member's URL.
@@ -124,7 +128,7 @@ during the Congress has both, separated by `|`.
     The note reads "URL changed during this Congress: the House member
     directory also lists https://bonner.house.gov as archived
     20050103–20061201". `same_site()` keeps `www.` and path variants of one
-    address from being added twice. This added 291 URLs for 286 members:
+    address from being added twice. This added 457 URLs for 452 members:
 
     | Congress | Members | URLs added | Shape |
     | --- | ---: | ---: | --- |
@@ -132,9 +136,30 @@ during the Congress has both, separated by `|`.
     | 107th | 59 | 59 | 54 senators, 5 House |
     | 108th | 76 | 77 | House, mostly `name.house.gov`; 9 on `wwwc.house.gov` |
     | 109th | 119 | 123 | the same; 8 on `wwwc.house.gov` |
+    | 110th | 36 | 36 | House: 34 `name.house.gov`, 2 `www.house.gov/name` |
+    | 111th | 56 | 56 | House: 43 and 13 |
+    | 112th | 74 | 74 | House: 66 and 8 |
 
     `wwwc.house.gov` was a second House web server the directory linked some
-    members to in 2003–06. Wayback holds it; all 17 were found.
+    members to from 2003. Wayback holds it; all 17 in the 108th–109th were
+    found, and of the 110th's, only Marilyn Musgrave's
+    `wwwc.house.gov/musgrave` was not (her `musgrave.house.gov` was).
+  - **A relative's listing is not the member's.** The directory is matched by
+    seat and surname, and relatives share both: Julia and André Carson
+    (IN-7), Michael and Gus Bilirakis (FL-9), and Lincoln and Mario
+    Diaz-Balart, whose seats were renumbered around each other. Matched on
+    surname alone, each was given the other's site. `someone_else()` drops a
+    listing whose given names belong to another legislator with the same
+    surname and state, unless the listing also carries a name this member
+    goes by. That keeps Lacy Clay, listed as `Clay Jr., William "Lacy"` while
+    his father was William. In the 106th–109th it changed no URL, only the
+    listing dates in the notes for five rows (the Chafees, the Shusters and
+    Doris Matsui), which had included the relative's. One case it cannot
+    separate: Donald Payne and Donald Payne Jr. are both listed as "Payne,
+    Donald", so Payne Jr.'s note carries dates from his father's listing too.
+  - **Source URLs are stripped of whitespace.** Three carried a trailing
+    space (Kuhl and Goode in the 110th, Paul Kirk in the 111th), which made
+    Kuhl's and Goode's directory address look like a second one.
   - **The directory also catches the source being wrong.** Two source URLs
     were wrong, and `URL_CORRECTIONS` in the script replaces them, keyed by
     bioguide and Congress, with a note in the row: Dave Weldon (FL-15) was
@@ -146,15 +171,16 @@ during the Congress has both, separated by `|`.
   filled:
   - **11 special-election members** take the URL from their next term
     ("URL not in dataset for this term; taken from next term").
-  - **5 come from Wayback evidence** ("URL not in dataset; …"), listed in
-    `URL_OVERRIDES` in the script. Mayra Flores's is inferred.
-  - **1 has no URL at all**: Carte Goodwin (111th, appointed July to
-    November 2010).
+  - **6 come from Wayback evidence** ("URL not in dataset; …"), listed in
+    `URL_OVERRIDES` in the script. Mayra Flores's is inferred. Carte Goodwin
+    (111th, appointed July to November 2010) had none at first;
+    `goodwin.senate.gov` is captured from 2010-07-21, his second day, to
+    2010-11-08, and was added on 9 November.
 
   **Rule: every member with no URL gets an issue to check Wayback for one,
-  worked after the initial explorer is built.** Goodwin's is
-  [#10](https://github.com/Robin-IA/Congressional-Letters-Dev/issues/10).
-  The 16 filled URLs are checked by step 2, which looks each one up within
+  worked after the initial explorer is built.** Goodwin's was
+  [#10](https://github.com/Robin-IA/Congressional-Letters-Dev/issues/10),
+  now closed. The 17 filled URLs are checked by step 2, which looks each one up within
   that member's own service. Any that step 2 cannot confirm get an issue of
   their own.
   The 106th–107th add three: Joel Hefley and Jesse Jackson Jr. in the 106th
@@ -184,7 +210,7 @@ number of partial terms and the number with no URL. On 7 November 2026:
 | 108th | 544 | 10 | 0 |
 | 109th | 545 | 13 | 0 |
 | 110th | 554 | 30 | 0 |
-| 111th | 559 | 36 | 1 |
+| 111th | 559 | 36 | 0 |
 | 112th | 552 | 27 | 0 |
 | 113th | 554 | 26 | 0 |
 | 114th | 547 | 15 | 0 |
@@ -253,16 +279,19 @@ The first two are cases the unbounded lookup got wrong or could not express.
 
 ### Results (run 7–8 November 2026)
 
-**5,548 of 5,549 lookups found the site within the member's own service.** The
-one that did not is Carte Goodwin, who has no URL (#10). Three lookups failed
+**5,716 of 5,717 lookups found the site within the member's own service.** The
+one that did not is Marilyn Musgrave's second address in the 110th; her first
+was found, so every member of the 110th–119th is confirmed. The 110th–112th
+were re-run on 8–9 November with the 166 added addresses and Carte Goodwin's
+URL (step 1). Three lookups failed
 on the network in the first run (Hinchey, McCaskill, Wicker) and were found on
 the re-run. No home page needed the prefix fallback.
 
 | Congress | Lookups | Found | Median days captured | Found only as redirects |
 | --- | ---: | ---: | ---: | ---: |
-| 110th | 555 | 555 | 95 | 38 |
-| 111th | 560 | 559 | 86 | 122 |
-| 112th | 553 | 553 | 68 | 156 |
+| 110th | 591 | 590 | 94 | 39 |
+| 111th | 616 | 616 | 86 | 130 |
+| 112th | 629 | 629 | 69 | 166 |
 | 113th | 555 | 555 | 88 | 16 |
 | 114th | 547 | 547 | 72 | 1 |
 | 115th | 561 | 561 | 100 | 3 |
@@ -272,16 +301,18 @@ the re-run. No home page needed the prefix fallback.
 | 119th | 555 | 555 | 220 | 0 |
 
 "Found only as redirects" means not one capture of the home page in the window
-was a 200; counting 200s alone would have reported those 340 members as missing,
+was a 200; counting 200s alone would have reported those 359 addresses as missing,
 almost all of them in the 110th–112th. The 119th's median runs to the build
 date and is not comparable.
 
-**The 16 filled URLs are all confirmed.** Each was found inside the member's
+**The 17 filled URLs are all confirmed.** Carte Goodwin's, added later, was
+found on 8 days of his 117. Each was found inside the member's
 own window. The five taken from Wayback evidence, plus Tom Reed, Tony Wied and
 Donald Payne Jr. (`payne.house.gov` was his father's first), were opened and
 read: every capture names the member it is credited to. Mayra Flores's
 `flores.house.gov`, which had been inferred, reads "Congresswoman Mayra Flores"
-in June 2022 and on 3 January 2023. No issue was needed beyond #10.
+in June 2022 and on 3 January 2023. No issue was needed beyond #10. All 166 addresses added to the 110th–112th
+were found but Musgrave's (median 73, 96 and 77 days).
 
 **24 members have fewer than 5 days captured, and none is a gap.** Every one
 served only weeks of that Congress: members sworn in after a November election
@@ -309,9 +340,13 @@ up on 8–9 November.
   - Three members with no URL: Hefley, Jackson Jr. (#12, #13) and Barkley
     (#14).
   - John Cornyn, 107th, 34 days as an early-sworn senator. His URL is borrowed
-    from his next term. The exact query finds nothing, and the prefix fallback
-    returned 504 on every try, so the row stays `error`. His first capture
-    at all is 2003-03-26.
+    from his next term. The exact query finds nothing, and the prefix query
+    for the whole host answers 504 every time, including split into three
+    date ranges: CDX reads the host's whole index before filtering by date.
+    Read instead page by page (`showNumPages`: 1,102 pages, 9 November),
+    with a control query on the same pages returning his 2003 captures, it
+    holds **no capture of `cornyn.senate.gov` in his window**. His first
+    capture at all is 2003-03-26. The row is now `none in window`.
     [#15](https://github.com/Robin-IA/Congressional-Letters-Dev/issues/15).
   - Denny Hastert's `dennyhastert.house.gov`, listed once by the 106th
     directory in February 1999. His other listed URL, `www.house.gov/hastert`,
@@ -393,7 +428,7 @@ new Wayback queries. One row per address per member who held it:
 
 ### Measured on the 106th–119th rosters (8 November 2026)
 
-**2,038 addresses; 49 held by more than one member**, 102 holder spans between
+**2,038 addresses (2,039 with Carte Goodwin's, added 9 November and held by him alone); 49 held by more than one member**, 102 holder spans between
 them. No two holders of one address overlap in time.
 
 - **38 are a surname reused in another seat**, often years apart:
