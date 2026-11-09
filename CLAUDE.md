@@ -151,7 +151,7 @@ check where each half came from.
   so one failing does not stop the others.
 - GitHub Pages allows **10 builds an hour** from a branch and every push is one.
   Batch edits rather than pushing each.
-- Tests: `python3 -m unittest discover -s tests`. 95 at the time of writing, and
+- Tests: `python3 -m unittest discover -s tests`. 114 at the time of writing, and
   several of them assert that something which *looks* like debris survives —
   that is the half of the subject cleaning which is easy to get wrong.
 

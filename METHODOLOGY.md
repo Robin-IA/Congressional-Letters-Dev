@@ -11,7 +11,7 @@ designed. They are listed so the order is clear, not because they are settled.
 | --- | --- | --- | --- |
 | 1 | Roster for each Congress | `data/rosters/congressNNN-roster.csv` | **done, 106th–119th** |
 | 2 | Find each member's site in the Wayback Machine | `harvest/wayback/congressNNN-wayback.csv` | **done, 106th–119th** |
-| 3 | Who held each address, and when | `data/address-holders.csv` | designed, not built |
+| 3 | Who held each address, and when | `data/address-holders.csv` | done, 106th–119th |
 | 4 | Find the letters on each site | | to design |
 
 ---
@@ -363,7 +363,7 @@ up on 8–9 November.
   how often the Wayback Machine crawled in 1999–2000, not a gap in the
   rosters. Expect fewer letters per member there.
 
-## Step 3: who held each address, and when (designed, not built)
+## Step 3: who held each address, and when
 
 **An address identifies a member only for a span of time.** `murphy.house.gov`
 was Tim Murphy's, then Stephanie Murphy's, then Greg Murphy's. Step 2 is safe
@@ -377,8 +377,11 @@ uses it to fix the misattribution in
 
 ### What it writes
 
-`data/address-holders.csv`, built from the rosters and step 2 alone, with no
-new Wayback queries. One row per address per member who held it:
+`data/address-holders.csv`, written by `build/address_holders.py` from the
+rosters and step 2 alone, with no new Wayback queries. One row per address per
+member per unbroken run of Congresses: a member who left and came back to the
+same address has a row for each stay. `attribute()` in the same script is the
+rule below, for step 4 to call.
 
 | Column | |
 | --- | --- |
@@ -406,7 +409,10 @@ new Wayback queries. One row per address per member who held it:
    in 2023. Where a member's site moved within a Congress, both addresses
    carry that member's service in that Congress; step 2's capture dates show
    when each was live, but are recorded, not used to cut the span, because
-   captures are too sparse to mark an edge.
+   captures are too sparse to mark an edge. **The one cut made is a change of
+   chamber**: a roster row covering both chambers (Menendez, Wicker,
+   Gillibrand, Heller, Markey, Kirk, Schiff, Kim) gives the House address the
+   service up to the switch date and the Senate address the service after.
 3. **A letter goes to whoever held its address on the letter's date.** That is
    the date read from the letter where there is one, and otherwise the
    **earliest capture of the letter's own URL**: a letter cannot be captured
@@ -416,7 +422,14 @@ new Wayback queries. One row per address per member who held it:
      flagged `after_service`. Decided 9 November 2026 (Robin), over the
      alternative of crediting no one: these letters stay in the explorer,
      under the member whose site they were on, and the flag lets them be
-     shown or reviewed apart. A site left up after a member died or resigned
+     shown or reviewed apart. **Except where the earlier holder was still in
+     office in the same chamber**, and the roster had recorded another
+     address for them in those Congresses: Ed Pastor, Jim Matheson and John
+     Boehner each served throughout, but the source gives a different URL in
+     some Congresses. Those letters are the holder's outright. The other 24
+     members with a gap at their own address really had left and come back
+     (Shea-Porter, Titus, Issa, Kyl, Zinke …), and stay `after_service`. A
+     House site left up after its member moved to the Senate is after service. A site left up after a member died or resigned
      still shows that member's letters (Matsui, 2005-01-03 to 2005-03-10;
      Payne, 2012-03-06 to 2012-11-15).
    - Before the first holder in the rosters, or after the last: no holder.
@@ -429,27 +442,35 @@ new Wayback queries. One row per address per member who held it:
    address redirects. `dingell.house.gov` redirects to `debbiedingell.house.gov`,
    a different member's site.
 
-### Measured on the 106th–119th rosters (8 November 2026)
+### Built, 9 November 2026
 
-**2,038 addresses (2,039 with Carte Goodwin's, added 9 November and held by him alone); 49 held by more than one member**, 102 holder spans between
-them. No two holders of one address overlap in time.
+**2,043 addresses in 2,120 rows; 49 held by more than one member**, 100 rows
+between them. No two members hold one address on the same day; the script
+checks this on every build and the tests assert it. (The design's ad hoc
+count, 2,038, keyed a few addresses differently. These are from the table.)
 
-- **38 are a surname reused in another seat**, often years apart:
+- **33 are a surname reused in another seat**, often years apart:
   `jones.house.gov` (Walter Jones, then Mondaire Jones), `menendez.house.gov`
   (Robert Menendez 1999–2007, Rob Menendez from 2023), `mikerogers.house.gov`
   (two different Mike Rogers, Michigan then Alabama), `kennedy.senate.gov`,
   `kirk.senate.gov`.
-- **11 passed within one seat**, to a relative or a successor of the same name:
-  the Chafees, Clays, Hunters, Lipinskis, Matsuis, Shusters, Fitzpatricks,
-  Grijalvas, Murkowskis, Paynes and Warners.
+- **16 stayed in one state and chamber**: relatives or successors of the
+  same name (the Chafees, Clays, Hunters, Lipinskis, Matsuis, Shusters,
+  Fitzpatricks, Grijalvas, Murkowskis, Paynes, Warners, Menendezes) and
+  surnames reused in the same state (`cox`, `flores`, `gonzalez`,
+  `house.gov/campbell`). The design's count of 11 judged by seat, not state.
 - **`murphy.house.gov` is the only address with three holders.**
 
-### Tests to write with it
+### Tests
 
+`tests/test_address_holders.py`, 19 cases on the real data:
 `murphy.house.gov` (three holders), `mikerogers.house.gov` (same name, two
-people), `menendez.house.gov` (father and son, sixteen years apart),
-`payne.house.gov` and `house.gov/matsui` (same seat, a gap between holders),
-and a letter on `dingell.house.gov` (a redirect to another member).
+people), `menendez.house.gov` (father and son, sixteen years apart, and the
+cut at the father's move to the Senate), `payne.house.gov` and
+`house.gov/matsui` (same seat, a gap between holders), a letter on
+`dingell.house.gov` (a redirect to another member, not followed), Pastor
+and Shea-Porter (a gap in office and out of it), the `by_capture` flag, and
+the address key itself.
 
 ### Open
 
