@@ -200,7 +200,7 @@ def overlaps(holdings: list[Holding]) -> list[tuple[Holding, Holding]]:
 @dataclass
 class Attribution:
     bioguide_id: str          # "" when attribution is none
-    attribution: str          # "holder", "after_service" or "none"
+    attribution: str          # "holder", "after_service", "earlier_office" or "none"
     by_capture: bool = False  # dated by capture on an address with more than one holder
 
 
@@ -233,7 +233,9 @@ def attribute(idx: Index, url: str, date: str = "",
 
     In a span: that holder. Between two holders: the earlier, flagged
     ``after_service`` (decided 2026-11-09) unless that member was still in
-    office then, in the same chamber, at another address. Before the first or after the
+    office then, in the same chamber, at another address. Before the first
+    holder: that holder, flagged ``earlier_office`` (decided 2026-11-09), if
+    they were in Congress then in any chamber; otherwise ``none``. After the
     last: ``none``. On the day a seat changes hands both spans include it; the
     incoming holder wins, since a new term begins at noon.
     """
@@ -257,6 +259,14 @@ def attribute(idx: Index, url: str, date: str = "",
         serving = any(a <= d <= b and ch == last.chamber
                       for a, b, ch in getattr(idx, "service", {}).get(last.bioguide_id, []))
         return Attribution(last.bioguide_id, "holder" if serving else "after_service", flag)
+    if later and not earlier:
+        # Before the address's first holder, but written by that member in an
+        # earlier office and reposted here: Baldwin's and Sanders's House
+        # letters on their Senate sites, Cole's cole.house.gov while the roster
+        # records www.house.gov/cole. Theirs, flagged (decided 2026-11-09).
+        first = min(later, key=lambda h: h.held_from)
+        if any(a <= d <= b for a, b, _ in getattr(idx, "service", {}).get(first.bioguide_id, [])):
+            return Attribution(first.bioguide_id, "earlier_office", flag)
     return Attribution("", "none", flag)
 
 

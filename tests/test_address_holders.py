@@ -119,7 +119,15 @@ class Attribute(unittest.TestCase):
                          (DEBBIE_DINGELL, "holder"))
 
     def test_before_the_first_holder_is_none(self):
+        # Tim Murphy was not yet in Congress in 2001
         self.assertEqual(who("https://murphy.house.gov/a.pdf", "2001-05-01"), ("", "none"))
+
+    def test_a_letter_from_the_holders_earlier_office(self):
+        # Tammy Baldwin was in the House until 2013; baldwin.senate.gov is hers from 2013
+        self.assertEqual(who("https://www.baldwin.senate.gov/a.pdf", "2010-06-06"),
+                         ("B001230", "earlier_office"))
+        # Tom Cole served from 2003; the rosters give him cole.house.gov from 2011
+        self.assertEqual(who("https://cole.house.gov/a.pdf", "2007-11-01"), ("C001053", "earlier_office"))
 
     def test_unknown_address_or_no_date_is_none(self):
         self.assertEqual(who("https://nobody.house.gov/a.pdf", "2010-05-01"), ("", "none"))

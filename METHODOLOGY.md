@@ -431,7 +431,15 @@ rule below, for step 4 to call.
      House site left up after its member moved to the Senate is after service. A site left up after a member died or resigned
      still shows that member's letters (Matsui, 2005-01-03 to 2005-03-10;
      Payne, 2012-03-06 to 2012-11-15).
-   - Before the first holder in the rosters, or after the last: no holder.
+   - Before the first holder in the rosters, **when that holder was already in
+     Congress**: that holder, flagged `earlier_office`. Decided 9 November
+     2026 (Robin). These are letters a member wrote before the rosters give
+     them this address. Some are reposts from another chamber (Baldwin's,
+     Sanders's and Markey's House letters on their Senate sites). More are a
+     site live before the source records it (`mccollum.house.gov`,
+     `bobbyscott.house.gov`, Cole's `cole.house.gov` from 2007 while the
+     rosters give `www.house.gov/cole` until 2011).
+   - Otherwise, before the first holder or after the last: no holder.
      `attribution: none`, kept out of the explorer, as letters-from-congress#2
      sets for the backfill. That covers holders from before 1999, whom the
      rosters do not record.
@@ -496,7 +504,8 @@ from the URL where there is one and the first capture otherwise:
 | --- | ---: |
 | Same member as now | 71,545 |
 | **A different member** | **1,058** |
-| No holder | 495 |
+| Same member, flagged `earlier_office` | 428 |
+| No holder | 67 |
 | Address not in the table (caucus subdomains) | 256 |
 
 - **The 1,058 are #7, fixed.** `grijalva.house.gov` 404, `murphy.house.gov`
@@ -505,6 +514,9 @@ from the URL where there is one and the first capture otherwise:
   `kennedy.senate.gov`, `owens`, `moran`, `hurd`, `ross`. #7 measured 874 plus
   242 with no holder from the legislators file alone; the rosters and the
   directories place most of those 242.
+- **The 67 with no holder** are dated before anyone in the rosters held the
+  address, some by a misread date: `090206` was read as 2006 on Michael
+  Bennet's site, which he did not hold until 2009.
 - **2,219 letters are dated only by capture on a shared address**
   (`by_capture`). They are attributed, and listed for review.
 - **The explorer covers 527 of the 2,043 addresses and 555 of the 1,571
@@ -568,7 +580,8 @@ as soon as one is known.
 `data/letters-parsed.jsonl` keeps its shape, with `bioguide` now the holder on
 the letter's date rather than whoever holds the host today, and four fields
 added: `address`, `attribution` (`holder`, `after_service` or `none`),
-`dated_by` (`letter`, `pdf` or `capture`) and `by_capture`. `none` stays out
+`dated_by` (`letter`, `pdf` or `capture`) and `by_capture`. `attribution` can
+also be `earlier_office` (step 3, rule 3). `none` stays out
 of the explorer, as letters-from-congress#2 set for the backfill. The 119th's
 departed file merges into it; it existed only because the harvest started
 from the sitting roster.
@@ -583,15 +596,6 @@ Adelita; Greg Murphy has no `murphy.house.gov` letter before 2023; a
 
 ### Open
 
-- **A letter dated before an address's first holder, by that same member's
-  earlier office.** 428 of the 495 with no holder are this: Tammy Baldwin's
-  and Bernie Sanders's House letters reposted on their Senate sites, and
-  Tom Cole's `cole.house.gov`, live from 2007 while the rosters record
-  `www.house.gov/cole` until 2011. The member wrote them. The design as built
-  says `none`; crediting the first holder when they were in Congress on that
-  date, flagged `earlier_office`, would keep them. The other 67 are dated
-  before anyone held the address, some by a misread date (`090206` read as
-  2006 on Michael Bennet's site, posted in 2009).
 - **Caucus subdomains.** `cpc.grijalva.house.gov` (108 letters),
   `rsc.jordan.house.gov` (76), `rsc.scalise.house.gov` (62),
   `diabetes.degette.house.gov`, `doctorscaucus.murphy.house.gov`: the
