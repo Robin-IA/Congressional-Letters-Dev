@@ -67,7 +67,10 @@ import urllib.request
 from datetime import date
 from pathlib import Path
 
-CDX = "http://web.archive.org/cdx/search/cdx"
+# https, not http. Under load the http endpoint answers 503 "Temporarily
+# Offline" in about five seconds -- 21% of requests on 11 November 2026 --
+# while https kept answering; thumbs.py found the same.
+CDX = "https://web.archive.org/cdx/search/cdx"
 ROSTER = ("https://unitedstates.github.io/congress-legislators/"
           "legislators-current.json")
 
