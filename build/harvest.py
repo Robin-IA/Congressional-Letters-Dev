@@ -292,7 +292,8 @@ def cdx_rows(host: str, *, extra_filters: list[str] | None = None,
 
 
 def cdx_rows_paged(host: str, page_size: int = PAGE_SIZE,
-                   pause: float = 0.4) -> list[dict]:
+                   pause: float = 0.4,
+                   partial_path: Path | None = None) -> list[dict]:
     """Enumerate a host by walking CDX's own index pages.
 
     This is the right axis, and date ranges were the wrong one. CDX is sorted
@@ -330,8 +331,18 @@ def cdx_rows_paged(host: str, page_size: int = PAGE_SIZE,
     except ValueError:
         raise RuntimeError(f"showNumPages answered {text[:40]!r}") from None
 
-    seen: dict[str, dict] = {}
+    # PAGES ARE KEPT AS THEY ARRIVE. Under throttling a five-page host would
+    # get four pages, lose the fifth, and on the next pass start again from
+    # page 0 -- so a site was only ever finished by a pass lucky enough to
+    # get every page in one go, and the biggest sites, which have the most
+    # pages, were the least likely to be. Each page that answers is saved to
+    # ``partial_path`` and is not asked for again.
+    done, started = load_partial(partial_path, host, pages, page_size)
+    failed: list[int] = []
+    in_a_row = 0
     for page in range(pages):
+        if page in done:
+            continue
         # A PAGE THAT FAILS FAILS THE HOST. An earlier version tolerated up to
         # a quarter of the pages failing and still wrote the host to cache as
         # a success, which under throttling turned a rate limit into silent
@@ -342,7 +353,8 @@ def cdx_rows_paged(host: str, page_size: int = PAGE_SIZE,
         # That is the exact fault this whole enumeration exists to avoid, so
         # the host is retried a few times and then given up on loudly. A host
         # marked failed is re-queried on the next run; a host silently short
-        # is wrong for ever.
+        # is wrong for ever. What the page cache changes is only what the
+        # re-query has to ask for. The host still fails whole.
         last: Exception | None = None
         for attempt in range(3):
             try:
@@ -352,14 +364,75 @@ def cdx_rows_paged(host: str, page_size: int = PAGE_SIZE,
                 last = exc
                 time.sleep(min(45, 5 * (2 ** attempt)))
         else:
-            raise RuntimeError(
-                f"page {page} of {pages} failed after 3 attempts: "
-                f"{type(last).__name__}") from last
-        for row in rows:
-            seen.setdefault(row["url"], row)
+            failed.append(page)
+            in_a_row += 1
+            # One bad page carries on to the rest, since they are worth
+            # keeping. Two in a row is the server pushing back, and asking for
+            # more only feeds the throttle.
+            if in_a_row >= 2:
+                break
+            continue
+        in_a_row = 0
+        done[page] = rows
+        save_partial(partial_path, host, pages, page_size, started, done)
         if pause:
             time.sleep(pause)
+    if failed:
+        raise RuntimeError(
+            f"page {failed[0]} of {pages} failed after 3 attempts "
+            f"({len(done)} of {pages} pages kept): {type(last).__name__}")
+
+    # Unioned in page order, so the result is the one a single uninterrupted
+    # walk would have produced.
+    seen: dict[str, dict] = {}
+    for page in range(pages):
+        for row in done[page]:
+            seen.setdefault(row["url"], row)
     return list(seen.values())
+
+
+# How long saved pages stay usable. CDX page boundaries are blocks of its
+# index, so they hold while the index does; a host whose page count changes is
+# started over at once, and anything older than this is started over anyway
+# rather than trusted across an index rebuild nobody announced.
+PARTIAL_MAX_AGE = 7 * 24 * 3600
+
+
+def partial_path_for(cache_dir: Path, host: str) -> Path:
+    return cache_dir / f"{host}.partial.json"
+
+
+def load_partial(path: Path | None, host: str, pages: int,
+                 page_size: int) -> tuple[dict[int, list[dict]], float]:
+    """Pages saved by an earlier, unfinished walk of the same host.
+
+    Empty unless the saved walk was of the same host, the same page count and
+    page size, and the same cache method, and is recent. Anything else is
+    discarded rather than mixed in. Returns the pages and when that walk
+    began, which is now when there is nothing to carry on from.
+    """
+    now = time.time()
+    if path is None:
+        return {}, now
+    saved = read_cache(path)
+    if (not saved or saved.get("host") != host
+            or saved.get("pages") != pages
+            or saved.get("page_size") != page_size
+            or saved.get("method") != CACHE_METHOD
+            or now - saved.get("started", 0) > PARTIAL_MAX_AGE):
+        return {}, now
+    done = {int(k): v for k, v in saved.get("done", {}).items()
+            if k.isdigit() and int(k) < pages and isinstance(v, list)}
+    return done, saved["started"]
+
+
+def save_partial(path: Path | None, host: str, pages: int, page_size: int,
+                 started: float, done: dict[int, list[dict]]) -> None:
+    if path is None:
+        return
+    write_cache(path, {"host": host, "pages": pages, "page_size": page_size,
+                       "method": CACHE_METHOD, "started": started,
+                       "done": {str(k): v for k, v in sorted(done.items())}})
 
 
 def cdx_rows_partitioned(host: str, start: int = 1996,
@@ -507,8 +580,9 @@ def harvest_host(member: dict, cache_dir: Path) -> dict:
     # Any heavily crawled site is exposed, which is every site here. So the
     # cheap path is not available: the only trustworthy enumeration is one
     # where each request scans a narrow enough window to finish.
+    partial = partial_path_for(cache_dir, host)
     try:
-        rows = cdx_rows_paged(host)
+        rows = cdx_rows_paged(host, partial_path=partial)
     except Exception as exc:  # noqa: BLE001
         result["error"] = str(exc)[:160]
         write_cache(cache_path, result)
@@ -518,6 +592,10 @@ def harvest_host(member: dict, cache_dir: Path) -> dict:
 
     result["rows"] = rows
     write_cache(cache_path, result)
+    # The finished entry is written first, so a kill between the two leaves
+    # a stale partial beside a good entry, which is never read, rather than
+    # a host with neither.
+    partial.unlink(missing_ok=True)
     return result
 
 
