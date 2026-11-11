@@ -210,9 +210,54 @@ TEMPLATE_URL = re.compile(
 VIEWER_QUERY = re.compile(r"[?&](download|inline|ref|utm_\w+)=", re.IGNORECASE)
 
 
+# WHERE THE TIME GOES. Every request is appended here as one JSON line: when,
+# how long, which host and page, which try, and how it ended. A clean site
+# costs about 15 seconds; on 11 November the harvest averaged well over a
+# minute a site, and the difference is retries and waits that the run log
+# cannot show. ``build/timing_report.py`` reads it. None turns it off.
+TIMING_LOG: Path | None = None
+
+
+def outcome(exc: Exception | None) -> str:
+    """A short name for how a request ended, for the timing log."""
+    if exc is None:
+        return "ok"
+    if isinstance(exc, urllib.error.HTTPError):
+        return f"http{exc.code}"
+    reason = getattr(exc, "reason", None)
+    if isinstance(exc, TimeoutError) or isinstance(reason, TimeoutError) \
+            or "timed out" in str(exc):
+        return "timeout"
+    if isinstance(exc, RuntimeError) and "answered HTML" in str(exc):
+        return "html"
+    return type(exc).__name__
+
+
+def log_request(url: str, attempt: int, started: float,
+                exc: Exception | None, size: int) -> None:
+    if TIMING_LOG is None:
+        return
+    query = dict(urllib.parse.parse_qsl(urllib.parse.urlsplit(url).query))
+    kind = ("count" if query.get("showNumPages") else
+            f"page {query['page']}" if "page" in query else "other")
+    line = json.dumps({"t": round(started, 1),
+                       "s": round(time.time() - started, 2),
+                       "pid": os.getpid(), "host": query.get("url", url[:80]),
+                       "kind": kind, "try": attempt + 1,
+                       "result": outcome(exc), "bytes": size})
+    try:
+        # One short line per append, so two harvests sharing the file do not
+        # interleave inside a line.
+        with TIMING_LOG.open("a", encoding="utf-8") as handle:
+            handle.write(line + "\n")
+    except OSError:
+        pass  # timing is diagnostic; it must never fail a harvest
+
+
 def fetch(url: str, *, timeout: int = TIMEOUT) -> str:
     last: Exception | None = None
     for attempt in range(RETRIES):
+        started = time.time()
         try:
             request = urllib.request.Request(url, headers=UA)
             with urllib.request.urlopen(request, timeout=timeout) as response:
@@ -225,14 +270,17 @@ def fetch(url: str, *, timeout: int = TIMEOUT) -> str:
             if body.lstrip()[:1] == "<":
                 raise RuntimeError("CDX answered HTML, not an index "
                                    "(temporarily offline?)")
+            log_request(url, attempt, started, None, len(body))
             return body
         except urllib.error.HTTPError as exc:
+            log_request(url, attempt, started, exc, 0)
             last = exc
             # 429 and 5xx are worth waiting out; 400s are not.
             if exc.code not in (429, 500, 502, 503, 504):
                 break
             time.sleep(8 * (attempt + 1))
         except Exception as exc:  # noqa: BLE001
+            log_request(url, attempt, started, exc, 0)
             last = exc
             time.sleep(6 * (attempt + 1))
     raise RuntimeError(f"{type(last).__name__}: {str(last)[:100]}")
@@ -680,6 +728,9 @@ def main() -> None:
     parser.add_argument("--workers", type=int, default=3)
     parser.add_argument("--limit", type=int, default=0,
                         help="probe only the first N members")
+    parser.add_argument("--no-timing", action="store_true",
+                        help="do not append each request to "
+                             "<cache>/requests.jsonl")
     parser.add_argument("--export-only", action="store_true",
                         help="re-filter the cache without touching the network")
     parser.add_argument("--resolved", type=Path,
@@ -689,6 +740,8 @@ def main() -> None:
     args = parser.parse_args()
 
     args.cache.mkdir(parents=True, exist_ok=True)
+    global TIMING_LOG
+    TIMING_LOG = None if args.no_timing else args.cache / "requests.jsonl"
     if args.members_in:
         # The default --out and --members-out are what the explorer reads, and
         # this roster is not the explorer's. Refusing is cheaper than the
