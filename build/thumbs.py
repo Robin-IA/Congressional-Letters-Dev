@@ -352,6 +352,8 @@ def one(record: dict, thumbs: Path, pause: float, retries: int,
             else:
                 try:
                     render(blob, staged)
+                except ImportError:
+                    raise                 # the machine, not the letter
                 except Exception as exc:  # noqa: BLE001
                     bad = f"unreadable-{type(exc).__name__}"
             if bad:
@@ -440,6 +442,20 @@ def main() -> None:
     parser.add_argument("--per-member", type=int, default=0,
                         help="cap per member, so breadth comes before depth")
     args = parser.parse_args()
+
+    # FAIL BEFORE FETCHING, NOT AFTER. Without the PDF libraries every render
+    # raises ModuleNotFoundError, which the loop below records as
+    # "unreadable-..." -- a terminal outcome, so each letter was given up on
+    # for good after one download. That happened on 11 November 2026 on a
+    # Python without them; use the repository's .venv.
+    try:
+        import PIL  # noqa: F401
+        import pypdf  # noqa: F401
+        import pypdfium2  # noqa: F401
+    except ImportError as exc:
+        sys.exit(f"{exc}: this Python ({sys.executable}) cannot render. "
+                 "Run with .venv/bin/python, or pip install -r "
+                 "requirements.txt.")
 
     args.thumbs.mkdir(parents=True, exist_ok=True)
 
