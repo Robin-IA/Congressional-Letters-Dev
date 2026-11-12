@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Build Letters from Congress, the page over every per-Congress explorer.
 
+    python3 build/export_csv.py           # the Download data files, first
     python3 build/build_hub.py            # into ../explorers/Letters-from-Congress/
     python3 build/build_hub.py --out DIR
 
@@ -52,9 +53,15 @@ def main() -> int:
         k = json.loads(idx.read_text(encoding="utf-8")).get("congress") or {}
         if k.get("number") != int(m.group(1)):
             sys.exit(f"{idx} says Congress {k.get('number')}, not {m.group(1)}")
-        congresses.append({"number": int(m.group(1)),
-                           "label": f"{k.get('ordinal', m.group(1))} Congress",
-                           "path": f"../{d.name}/"})
+        entry = {"number": int(m.group(1)),
+                 "label": f"{k.get('ordinal', m.group(1))} Congress",
+                 "path": f"../{d.name}/"}
+        # The Download data file, from export_csv.py. Linked only when it
+        # exists; without it the card says "coming soon".
+        csvs = sorted((d / "data").glob("letters-from-congress-*.csv"))
+        if csvs:
+            entry["download"] = f"../{d.name}/data/{csvs[-1].name}"
+        congresses.append(entry)
     if not congresses:
         sys.exit(f"no explorers under {args.explorers}")
     congresses.sort(key=lambda c: c["number"])
