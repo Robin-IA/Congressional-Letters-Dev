@@ -41,6 +41,7 @@ the results.
 | 2026-11-09 | Committee letters are wanted, credited to the chair as of the letter's date. Not yet harvested (#23). |
 | 2026-11-09 | **Each letter appears in exactly one explorer: the Congress in session on the letter's date.** No letter or thumbnail is stored twice. The alternative, every letter of a Congress's members, would repeat a long-serving member's letters in every Congress they served. |
 | 2026-11-12 | The federated explorer is **Letters from Congress**, folder and repository name `Letters-from-Congress`, published beside the explorers so `../Explorer-Congressional-Letters-<N>/` reaches each one. Each explorer's "All Congresses" link goes to `../Letters-from-Congress/`. Built by `build/build_hub.py`. |
+| 2026-11-12 | Letter subjects use a **real controlled vocabulary**, built in `metadata-vocabulary`: agencies in LCNAF/NACO form, subjects from FAST or LCSH, each with its source and URI. `build/topics.py`'s 96 unsourced terms are reconciled first, as candidates for Robin to accept (#40). |
 
 ## The pipeline for Congress N
 
