@@ -508,7 +508,8 @@ def main() -> None:
             # (build_congress.py); a sitting member has none and shows "present".
             **({"until": member["until"]} if member.get("until") else {}),
             "host": member["host"],
-            "site": member["url"],
+            # Into an href on the page: only an http(s) address, never javascript: or the like.
+            "site": member["url"] if re.match(r"https?://", member.get("url") or "") else None,
             "letters": len(letters),
             "span": ([min(member_years), max(member_years)]
                      if member_years else None),

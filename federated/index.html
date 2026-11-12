@@ -219,7 +219,9 @@ const ord = n => n + (['th','st','nd','rd'][(n % 100 - 20) % 10] || ['th','st','
 const long = iso => new Date(iso + 'T12:00:00').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 // Search rows carry a year, not a date: the Congress whose first year is odd.
 const congressOfYear = y => Math.floor((y - 1787) / 2);
-const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+// Links from data.json: relative paths or http(s) only, so a javascript: URL cannot reach an href.
+const safeHref = h => (/^(\.{0,2}\/|https?:\/\/)/.test(h) ? h : '#');
 
 let DATA, INDEX, SEARCH, MEMBERS = new Map();
 const byN = new Map();
@@ -299,12 +301,12 @@ function drawCongresses() {
   const host = $('#congresses');
   host.innerHTML = DATA.congresses.map(c => {
     const [icon, word] = STATUS[c.status];
-    const name = c.href ? `<a href="${c.href}">${ord(c.n)} Congress</a>` : `${ord(c.n)} Congress`;
+    const name = c.href ? `<a href="${esc(safeHref(c.href))}">${ord(c.n)} Congress</a>` : `${ord(c.n)} Congress`;
     const top = c.top.length ? `Most written to: ${c.top.map(([r, k]) => `${esc(r)} (${fmt(k)})`).join(', ')}` : 'No letters yet.';
     const now = c.n === 119
       ? `<p class="detail">Today's 119th explorer still holds every letter on these members' sites, ${fmt(DATA.total)} distinct letters in all; once the earlier explorers exist it keeps only the ${fmt(c.letters)} dated in the 119th.</p>`
       : '';
-    return `<article class="congress ${c.status}" id="c${c.n}" aria-labelledby="h${c.n}">
+    return `<article class="congress ${esc(c.status)}" id="c${c.n}" aria-labelledby="h${c.n}">
       <div class="head"><h3 id="h${c.n}">${name}</h3><span class="dates">${long(c.start)} – ${long(c.end)}</span>
         <span class="status ${c.status}"><span aria-hidden="true">${icon}</span>${word}</span></div>
       <div class="facts">
@@ -313,7 +315,7 @@ function drawCongresses() {
         <div><span class="k">Members on the roster</span><span class="v">${fmt(c.roster)}</span></div>
       </div>
       <p class="top">${top}</p>
-      <p class="detail">${icon} ${esc(c.detail)}${c.href ? ` · <a href="${c.href}">Open the explorer</a>` : ''}</p>${now}
+      <p class="detail">${icon} ${esc(c.detail)}${c.href ? ` · <a href="${esc(safeHref(c.href))}">Open the explorer</a>` : ''}</p>${now}
     </article>`;
   }).join('');
 }
@@ -366,13 +368,13 @@ async function runSearch(q) {
   $('#groups').innerHTML = [...groups.keys()].sort((a, b) => b - a).map(n => {
     const rows = groups.get(n).sort((a, b) => b[2] - a[2]);
     const c = byN.get(n);
-    const open = c && c.href ? `<a href="${c.href}?view=search&q=${encodeURIComponent(q)}">Open in the ${ord(n)} explorer</a>` : '';
+    const open = c && c.href ? `<a href="${esc(safeHref(c.href))}?view=search&q=${encodeURIComponent(q)}">Open in the ${ord(n)} explorer</a>` : '';
     return `<div class="group" id="g${n}"><h3>${ord(n)} Congress <span class="ct">${fmt(rows.length)} letters</span>${open}</h3>
       <ol class="hits">${rows.slice(0, LIMIT).map(r => {
         const id = SEARCH.members[r[0]], m = MEMBERS.get(id) || { name: id };
         const rec = r[1] >= 0 ? SEARCH.recipients[r[1]] : '';
-        return `<li><span class="y tab">${r[2]}</span><a class="s" href="../119th/?member=${encodeURIComponent(id)}">${esc(r[4] || 'Untitled letter')}</a>
-          <span class="m">${esc(m.name)}${m.state ? ` (${m.state})` : ''}${rec ? ` to ${esc(rec)}` : ''}</span></li>`;
+        return `<li><span class="y tab">${Number(r[2])}</span><a class="s" href="../119th/?member=${encodeURIComponent(id)}">${esc(r[4] || 'Untitled letter')}</a>
+          <span class="m">${esc(m.name)}${m.state ? ` (${esc(m.state)})` : ''}${rec ? ` to ${esc(rec)}` : ''}</span></li>`;
       }).join('')}</ol>${rows.length > LIMIT ? `<p class="more">and ${fmt(rows.length - LIMIT)} more in the ${ord(n)}</p>` : ''}</div>`;
   }).join('');
 }
@@ -388,7 +390,7 @@ async function drawCareer(name) {
   const ns = DATA.congresses.map(c => c.n).sort((a, b) => a - b);
   const first = Math.min(...[...per.keys(), 119]);
   const shown = ns.filter(n => n >= Math.min(first, 115));
-  $('#careerHead').innerHTML = `<a href="../119th/?member=${m.id}">${esc(m.name)}</a>`;
+  $('#careerHead').innerHTML = `<a href="../119th/?member=${encodeURIComponent(m.id)}">${esc(m.name)}</a>`;
   $('#careerSub').textContent = `${m.chamber === 'sen' ? 'Senator' : 'Representative'}, ${m.state}${m.district ? '-' + m.district : ''}, ${m.party} · in Congress since ${m.since} · ${fmt(m.letters)} letters on ${m.host.replace(/^www\./, '')}`;
   bars($('#career'), shown.map(n => {
     const k = per.get(n) || 0;

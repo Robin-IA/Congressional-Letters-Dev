@@ -113,7 +113,7 @@ def captures(src: str, frm: str, to: str, pause: float) -> list[str]:
 
 def replay(ts: str, src: str, pause: float) -> str:
     CACHE.mkdir(parents=True, exist_ok=True)
-    f = CACHE / (hashlib.sha1(f"{ts} {src}".encode()).hexdigest() + ".html")
+    f = CACHE / (hashlib.sha1(f"{ts} {src}".encode(), usedforsecurity=False).hexdigest() + ".html")
     if not f.exists():
         b = get(f"https://web.archive.org/web/{ts}id_/http://{src}", pause)
         if b is None:

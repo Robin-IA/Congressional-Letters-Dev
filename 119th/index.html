@@ -8,7 +8,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='5' y='3' width='22' height='26' rx='1.5' fill='none' stroke='%232c2c2c' stroke-width='2.4'/%3E%3Cpath d='M10 10h12M10 15h12M10 20h7' stroke='%232c2c2c' stroke-width='2.2' stroke-linecap='round'/%3E%3C/svg%3E">
 <style>
 :root {
-  --page: #fbfbfd; --panel: #fff; --ink: #2b2b2b; --muted: #6e6e73; --faint: #96969b;
+  --page: #fbfbfd; --panel: #fff; --ink: #2b2b2b; --muted: #6e6e73; --faint: #6b6b71;
   --bar: #2c2c2c; --link: #2f6bbd; --active: #4b64ff; --hair: #e4e4e8; --tint: #f4f4f7;
   --sen: #2f6f9f; --hou: #7a4f9c; --dem: #2a6ebb; --rep: #c0392b; --ind: #6b7280;
   --font: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -53,6 +53,10 @@ nav.views button:hover { color: var(--ink); }
 nav.views button[aria-current="page"] { border-color: var(--active); color: var(--active); }
 main { flex: 1; width: 100%; padding: 2.4rem; max-width: 126rem; margin: 0 auto; }
 footer { border-top: 1px solid var(--hair); color: var(--muted); font-size: 1.2rem; padding: 1.8rem 2.4rem; }
+/* A link in running text needs more than colour to be seen as a link. */
+footer a, .prose a { text-decoration: underline; }
+/* Narrow screens: a results table scrolls in its own box rather than the page. */
+@media (max-width: 760px) { .tablewrap { overflow-x: auto; } }
 footer .wrap { padding: 0; }
 
 .muted { color: var(--muted); }
@@ -60,12 +64,13 @@ footer .wrap { padding: 0; }
 .small { font-size: 1.2rem; }
 .tab { font-variant-numeric: tabular-nums; }
 .hero { font-family: var(--serif); font-size: 2.1rem; line-height: 1.4; max-width: 60rem; margin-bottom: .8rem; letter-spacing: -.01em; }
+.dates { font-size: 1.3rem; color: var(--muted); margin: -.4rem 0 1rem; font-variant-numeric: tabular-nums; }
 .sub { font-size: 1.45rem; color: var(--muted); max-width: 68rem; margin-bottom: 2rem; }
 .sub b { color: var(--ink); font-variant-numeric: tabular-nums; }
 
 .controls { display: flex; flex-wrap: wrap; gap: .7rem; align-items: center; margin-bottom: 1.6rem; }
-.controls input[type=search] { flex: 1 1 20rem; min-width: 16rem; height: 3.4rem; padding: 0 1.1rem; border: 1px solid var(--hair); border-radius: 3px; background: #fff; }
-.controls select { height: 3.4rem; padding: 0 .7rem; border: 1px solid var(--hair); border-radius: 3px; background: #fff; }
+.controls input[type=search] { flex: 1 1 20rem; min-width: 16rem; height: 3.4rem; padding: 0 1.1rem; border: 1px solid #8a8a90; border-radius: 3px; background: #fff; }
+.controls select { height: 3.4rem; padding: 0 .7rem; border: 1px solid #8a8a90; border-radius: 3px; background: #fff; }
 .count { margin-left: auto; color: var(--muted); font-size: 1.25rem; }
 
 .grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr)); }
@@ -84,7 +89,7 @@ footer .wrap { padding: 0; }
 .topics { display: block; margin-top: .3rem; }
 .topics a.topic { display: inline-block; margin: .15rem .3rem 0 0; padding: .05rem .45rem;
   border-radius: 10px; font-size: 1.05rem; background: #eef1fb; color: #3a4a8c;
-  border: 1px solid #dde3f6; }
+  border: 1px solid #dde3f6; min-height: 2.4rem; display: inline-flex; align-items: center; }
 .topics a.topic:hover { background: #e2e8fa; text-decoration: none; }
 .shot .topics a.topic { font-size: 1rem; }
 .chip { display: inline-block; padding: .05rem .5rem; border: 1px solid var(--hair); border-radius: 2px; font-size: 1.1rem; color: var(--muted); background: var(--tint); }
@@ -118,8 +123,8 @@ footer .wrap { padding: 0; }
 .stats .v { font-size: 2rem; font-variant-numeric: tabular-nums; }
 .stats .k { font-size: 1.1rem; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
 
-.cols { display: grid; gap: 1.6rem; grid-template-columns: 1fr; }
-@media (min-width: 1020px) { .cols { grid-template-columns: 1fr 30rem; align-items: start; } }
+.cols { display: grid; gap: 1.6rem; grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 1020px) { .cols { grid-template-columns: minmax(0, 1fr) 30rem; align-items: start; } }
 
 /* The thumbnail wall: the letters themselves, which is the whole point. */
 .wall { display: grid; gap: 1.1rem; grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); }
@@ -209,6 +214,6 @@ table.letters td:last-child, table.letters th:last-child { width: 1%; white-spac
      therefore showed figures the data no longer supported — 36% where
      index.json said 46%, and a "Press releases" row for a thing this
      collection had stopped containing. Bump this whenever app.js changes. -->
-<script type="module" src="../app.js?v=2026-11-06d"></script>
+<script type="module" src="../app.js?v=2026-11-12a"></script>
 </body>
 </html>

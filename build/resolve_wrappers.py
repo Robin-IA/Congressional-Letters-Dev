@@ -247,7 +247,7 @@ def follow(entry: dict, pause: float, retries: int) -> dict:
                                       else entry["timestamp"]),
                         "length": str(len(blob)),
                         "digest": base64.b32encode(
-                            hashlib.sha1(blob).digest()).decode("ascii"),
+                            hashlib.sha1(blob, usedforsecurity=False).digest()).decode("ascii"),
                         "blob": blob}
             except urllib.error.HTTPError as exc:
                 if exc.code in (301, 302, 303, 307, 308):

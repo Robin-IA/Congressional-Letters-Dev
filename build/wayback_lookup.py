@@ -98,7 +98,7 @@ def cdx(params: dict, pause: float) -> list[list[str]] | None:
 
 def cached(key: dict, pause: float) -> list | None:
     CACHE.mkdir(parents=True, exist_ok=True)
-    f = CACHE / (hashlib.sha1(json.dumps(key, sort_keys=True).encode()).hexdigest() + ".json")
+    f = CACHE / (hashlib.sha1(json.dumps(key, sort_keys=True).encode(), usedforsecurity=False).hexdigest() + ".json")
     if f.exists():
         return json.loads(f.read_text())["rows"]
     rows = cdx(key, pause)
