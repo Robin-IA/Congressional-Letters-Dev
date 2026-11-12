@@ -1,8 +1,8 @@
 #!/bin/bash
 # Render thumbnails behind a running harvest, a cycle at a time.
 #
-#   build/thumbs_loop.sh                  # 115-118 first, then 106-114
-#   build/thumbs_loop.sh 115-118 106-114  # the same, said explicitly
+#   build/thumbs_loop.sh                        # 115-118, 106-114, then paths
+#   build/thumbs_loop.sh 115-118 106-114 paths  # the same, said explicitly
 #   BATCH=200 build/thumbs_loop.sh        # renders per cycle (default 400)
 #
 # Each cycle turns every site the harvest has finished so far into a letter
@@ -28,7 +28,7 @@ set -u
 cd "$(dirname "$0")/.." || exit 1
 
 RANGES=("$@")
-[ ${#RANGES[@]} -eq 0 ] && RANGES=(115-118 106-114)
+[ ${#RANGES[@]} -eq 0 ] && RANGES=(115-118 106-114 paths)
 BATCH="${BATCH:-400}"
 # The renderer needs pypdfium2, pillow and pypdf; the harvest needs nothing.
 PY="${PY:-.venv/bin/python}"
@@ -43,6 +43,15 @@ say() { echo "$(date '+%Y-%m-%d %H:%M:%S')  $*" | tee -a "$LOG"; }
 
 refresh() {   # $1 = range; writes $DIR/letters-parsed-$1.jsonl
     local r="$1"
+    # A list with no member file is not a CDX range: the house.gov/<name>/
+    # paths (harvest_paths.py, then paths_letters.py and parse_urls.py) are
+    # one finished list, harvest/letters/letters-parsed-paths.jsonl. Render
+    # from it as it stands; it changes only when the path harvest is re-run.
+    if [ ! -f "harvest/letters-$r-members.json" ]; then
+        [ -f "harvest/letters/letters-parsed-$r.jsonl" ] || return 1
+        cp "harvest/letters/letters-parsed-$r.jsonl" "$DIR/letters-parsed-$r.jsonl"
+        return 0
+    fi
     python3 build/harvest.py --export-only --no-timing \
         --members-in "harvest/letters-$r-members.json" \
         --members-out "$DIR/members-$r.json" \
