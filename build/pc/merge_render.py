@@ -4,7 +4,9 @@
     python3 build/pc/merge_render.py ~/Downloads/pc-render          # dry run
     python3 build/pc/merge_render.py ~/Downloads/pc-render --apply
 
-FOLDER is what came back from the PC, laid out as run_render.py left it:
+FOLDER is what came back from the PC. Either a checkout of a return branch
+packed by pack_return.py -- data.zip and thumbs-*.zip, unpacked here into a
+temporary folder first -- or a folder laid out as run_render.py left it:
 thumbs/*.webp, pdf-dates.jsonl, letter-text.jsonl, thumb-failures.jsonl, and
 optionally pdfs/*.pdf and letter-ocr.jsonl (ocr_tesseract.py). Any of them may
 be missing; a thumbnails-only return is fine.
@@ -21,6 +23,8 @@ Safe to run again on a later, larger return.
 from __future__ import annotations
 
 import json
+import tempfile
+import zipfile
 import shutil
 import sys
 from collections import Counter
@@ -62,6 +66,21 @@ def main() -> int:
     if len(args) != 1:
         sys.exit(__doc__)
     src = Path(args[0]).expanduser()
+    if (src / "data.zip").exists() or list(src.glob("thumbs-*.zip")):
+        tmp = Path(tempfile.mkdtemp(prefix="pc-return-"))
+        for z in sorted(src.glob("*.zip")):
+            with zipfile.ZipFile(z) as zf:
+                for info in zf.infolist():
+                    # Windows zips can use backslashes; never write outside tmp.
+                    name = info.filename.replace("\\", "/")
+                    parts = Path(name).parts
+                    if name.endswith("/") or ".." in parts or name.startswith("/"):
+                        continue
+                    dest = tmp.joinpath(*parts)
+                    dest.parent.mkdir(parents=True, exist_ok=True)
+                    dest.write_bytes(zf.read(info))
+        print(f"unpacked {src} into {tmp}")
+        src = tmp
 
     plan = []
     for sub, suffix, dest in (("thumbs", ".webp", REPO / "thumbs"),
