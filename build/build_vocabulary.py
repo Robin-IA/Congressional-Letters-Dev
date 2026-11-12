@@ -92,6 +92,9 @@ def ordinal(n: int) -> str:
 
 # ------------------------------------------------------------------ the data
 
+RECIPIENT_YEARS: Counter = Counter()   # (recipient, year) -> letters, for split decisions
+
+
 def explorer_counts() -> tuple[Counter, Counter, Counter]:
     """Letters per member, per recipient, per topic, as the explorers publish them."""
     per_member, per_recipient, per_topic = Counter(), Counter(), Counter()
@@ -109,6 +112,7 @@ def explorer_counts() -> tuple[Counter, Counter, Counter]:
                 per_member[m["id"]] += 1
                 if r[col["recipient"]]:
                     per_recipient[r[col["recipient"]]] += 1
+                    RECIPIENT_YEARS[(r[col["recipient"]], (r[col["date"]] or "")[:4])] += 1
                 for t in re.split(r"[;,]", r[col["topics"]] or ""):
                     if t.strip():
                         per_topic[t.strip()] += 1
@@ -415,6 +419,28 @@ def main() -> int:
         ids.discard(cand["term_id"])
         relations[:] = [r for r in relations if r["term_id"] != cand["term_id"]]
         if rv["decision"] == "reject":
+            continue
+        if rv["decision"] == "split":
+            # One name, two people or offices, told apart by the letter's year:
+            # "Federal Communications Commission@2014-2017;Environmental
+            # Protection Agency@2018-2021". Letters outside every range stay
+            # uncounted rather than guessed.
+            for part in rv["target"].split(";"):
+                label, _, span = part.partition("@")
+                lo, _, hi = span.partition("-")
+                tgt = next((t_ for t_ in terms if t_["label"] == label.strip()
+                            and t_["status"] == "preferred"), None)
+                if tgt is None:
+                    add(f"O-{slug(label)}", label.strip(), rv["kind"] or "organization",
+                        "body", "preferred", "reviewed")
+                    tgt = terms[-1]
+                    if rv["broader"]:
+                        extra_hier.append({"term": label.strip(), "broader": rv["broader"]})
+                n = sum(c for (rec, yr), c in RECIPIENT_YEARS.items()
+                        if rec == cand["label"] and yr and lo <= yr <= (hi or lo))
+                tgt["letters"] = int(tgt["letters"] or 0) + n
+                rel(tgt["term_id"], "officeHolderName", f"{cand['label']} ({span})",
+                    "preferred", "reviewed")
             continue
         if rv["decision"] == "member":
             tid = f"M-{rv['target']}"

@@ -19,13 +19,13 @@ Carson,33,officeholder,Department of Housing and Urban Development,,,,"Ben Carso
 Appropriations,32,merge,Appropriations committees,,organization,Congressional committees,the appropriators,proposed
 Mcdonald,32,officeholder,Department of Veterans Affairs,,,,"Bob McDonald, VA Secretary 2014-2017",proposed
 Governor Newsom,31,person,Gavin Newsom,,person,Governors,Governor of California,proposed
-Bush,30,hold,,,,,President Bush or Rep. Cori Bush: check the letters' dates,proposed
+Bush,30,officeholder,The President,,,,"checked: all 30 dated 2004-2008, ""Dear Mr. President"": George W. Bush; Rep. Cori Bush took office in 2021",proposed
 House And Senate Leadership,30,merge,Congressional leadership,,,,already a term,proposed
 Secnav,30,merge,Department of the Navy,,organization,Department of Defense,Secretary of the Navy,proposed
 Usaid,29,merge,United States Agency for International Development,USAID,organization,Independent agencies and commissions,USAID: United States Agency for International Development,proposed
-Gov Brown,28,hold,,,,,Jerry Brown (California) or Kate Brown (Oregon): check the members' states,proposed
+Gov Brown,28,person,Jerry Brown,,person,Governors,"checked: 21 of 22 from California members, ""The Honorable Edmund G. Brown Jr.""; one Oregon letter is to Kate Brown",proposed
 Secaf,28,merge,Department of the Air Force,,organization,Department of Defense,Secretary of the Air Force,proposed
-Wheeler,28,hold,,,,,Andrew Wheeler (EPA) or Tom Wheeler (FCC): check the dates,proposed
+Wheeler,28,split,Federal Communications Commission@2014-2017;Environmental Protection Agency@2018-2021,,,,"checked: 2014-2016 ""Chairman Wheeler"" is Tom Wheeler (FCC, 8 letters); 2018-2021 ""Administrator Wheeler"" is Andrew Wheeler (EPA, 20)",proposed
 Air Force,26,merge,Department of the Air Force,,organization,Department of Defense,the Air Force,proposed
 Gov Desantis,26,person,Ron DeSantis,,,,Governor of Florida; a former member (D000621),proposed
 Ambassador Lighthizer,25,officeholder,Office of the US Trade Representative,,,,"Robert Lighthizer, USTR 2017-2021",proposed
@@ -34,39 +34,39 @@ Boehner,23,officeholder,The Speaker of the House,,,,"John Boehner, Speaker 2011-
 Corps,22,merge,Army Corps of Engineers,,,,the Corps,proposed
 Cpsc,22,merge,Consumer Product Safety Commission,CPSC,organization,Independent agencies and commissions,CPSC,proposed
 Navy,22,merge,Department of the Navy,,organization,Department of Defense,the Navy,proposed
-Regulators,22,hold,,,,,which regulators: check the letters,proposed
+Regulators,22,merge,Financial regulators (several),,organization,Independent agencies and commissions,"checked: letters addressed to several financial regulators at once (OCC, Fed, Treasury)",proposed
 Desantis,21,person,Ron DeSantis,,,,Governor of Florida; a former member (D000621),proposed
 Gov Hochul,21,person,Kathy Hochul,,person,Governors,Governor of New York; a former member (H001062),proposed
 Governor,21,reject,,,,,no governor named,proposed
 Itc,21,merge,United States International Trade Commission,ITC,organization,Independent agencies and commissions,ITC,proposed
-Kelly,21,hold,,,,,"John Kelly (DHS, chief of staff) or Sen. Mark Kelly: check the dates",proposed
+Kelly,21,split,Department of Homeland Security@2017-2017;White House Chief of Staff@2018-2019,,organization,Executive Office of the President,"checked: John F. Kelly; 2017 as Homeland Security Secretary (14), 2018 as White House Chief of Staff, on security clearances (7)",proposed
 Lahood,21,officeholder,Department of Transportation,,,,"Ray LaHood, Transportation Secretary 2009-2013",proposed
 Nps,21,merge,National Park Service,NPS,organization,Department of the Interior,NPS,proposed
 Twitter,21,merge,Twitter (X),,organization,Companies,company,proposed
 Amtrak,20,merge,Amtrak,,organization,Government corporations,federally chartered passenger railroad,proposed
 Cbo,20,merge,Congressional Budget Office,CBO,organization,Congress,CBO,proposed
-Davis,20,hold,,,,,a common surname: check the letters,proposed
+Davis,20,member,D000136,,,,"checked: Waxman's letters to ""Chairman Davis"": Rep. Tom Davis, Government Reform chair; archived 2009",proposed
 Gov Abbott,20,person,Greg Abbott,,person,Governors,Governor of Texas,proposed
-Graham,20,hold,,,,,Sen. Lindsey Graham or another Graham: check the letters,proposed
+Graham,20,member,G000359,,,,"checked: ""Chairman Graham"", ""The Honorable Lindsey O. Graham"": Senate Judiciary chair, 2018-2020",proposed
 Durbin,19,member,D000563,,,,Richard Durbin,proposed
 Fra,19,merge,Federal Railroad Administration,,organization,Department of Transportation,FRA,proposed
 Fta,19,merge,Federal Transit Administration,FTA,organization,Department of Transportation,FTA,proposed
-Gov Scott,19,hold,,,,,Rick Scott (Florida) or Phil Scott (Vermont): check the members' states,proposed
+Gov Scott,19,person,Rick Scott,,person,Governors,"checked: 13 of 14 from Florida members, 2012-2017; Governor of Florida, later a senator (S001217)",proposed
 Gov Wolf,19,person,Tom Wolf,,person,Governors,Governor of Pennsylvania 2015-2023,proposed
 Leader Mcconnell,19,merge,Congressional leadership,,,,the leadership table already files McConnell here,proposed
 Pfizer,19,merge,Pfizer,,organization,Companies,company,proposed
 Pmg Dejoy,19,officeholder,United States Postal Service,,,,"Louis DeJoy, Postmaster General 2020-2025",proposed
 Pres,19,merge,The President,,,,abbreviation,proposed
-Cao,18,hold,,,,,"the House Chief Administrative Officer, or a surname: check the letters",proposed
-Hogan,18,hold,,,,,probably Gov. Larry Hogan of Maryland: check the members' states,proposed
+Cao,18,merge,Chief Administrative Officer of the House,CAO,organization,Congress,"checked: ""Dear Chief Administrative Officer Kiko"", ""Dear Ms. Szpindor"" (House CAOs)",proposed
+Hogan,18,person,Larry Hogan,,person,Governors,"checked: ""The Honorable Larry Hogan"", Governor of Maryland",proposed
 Phrma,18,merge,PhRMA,,organization,Associations and other organizations,pharmaceutical industry trade association,proposed
 Stb,18,merge,Surface Transportation Board,STB,organization,Independent agencies and commissions,STB,proposed
 Wells Fargo,18,merge,Wells Fargo,,organization,Companies,company,proposed
 Bor,17,merge,Bureau of Reclamation,,organization,Department of the Interior,BOR,proposed
 Carranza,17,officeholder,Small Business Administration,,,,"Jovita Carranza, SBA Administrator 2020-2021",proposed
 Center,17,reject,,,,,a fragment of a longer name,proposed
-Gates,17,hold,,,,,Robert Gates (Defense) or Bill Gates: check the letters,proposed
-Osc,17,hold,,,,,probably the Office of Special Counsel: check the letters,proposed
+Gates,17,officeholder,Department of Defense,,,,"checked: Robert Gates, Secretary of Defense; 15 of 17 dated 2007-2011, two later dates are probably first captures",proposed
+Osc,17,merge,Office of Special Counsel,OSC,organization,Independent agencies and commissions,"checked: addressed to Carolyn Lerner, Special Counsel, U.S. Office of Special Counsel; Hatch Act",proposed
 Secarmy,17,merge,Department of the Army,,organization,Department of Defense,Secretary of the Army,proposed
 Senators,17,merge,United States Senate,,organization,Congress,senators as a body,proposed
 Airlines,16,merge,Airlines (several),,organization,Companies,letters to several airlines at once,proposed
@@ -82,7 +82,7 @@ Release,16,reject,,,,,"""press release"", not a recipient",proposed
 Appropriations Committee,15,merge,Appropriations committees,,organization,Congressional committees,House or Senate appropriations,proposed
 Dha,15,merge,Defense Health Agency,,organization,Department of Defense,DHA,proposed
 Dos,15,merge,Department of State,,,,DOS,proposed
-Financial Regulators,15,hold,,,,,several financial regulators at once,proposed
+Financial Regulators,15,merge,Financial regulators (several),,organization,Independent agencies and commissions,"checked: letters addressed to several financial regulators at once (Fed, Treasury)",proposed
 Governor Evers,15,person,Tony Evers,,person,Governors,Governor of Wisconsin,proposed
 Newsom,15,person,Gavin Newsom,,person,Governors,Governor of California,proposed
 Rfk,15,officeholder,Department of Health and Human Services,,,,"Robert F. Kennedy Jr., HHS Secretary from 2025",proposed
@@ -96,7 +96,7 @@ Reid,14,merge,Congressional leadership,,,,"Harry Reid, Senate leader; filed as M
 Sasc,14,merge,Senate Armed Services Committee,SASC,organization,Congressional committees,SASC,proposed
 Usfws,14,merge,Fish and Wildlife Service,USFWS,organization,Department of the Interior,USFWS,proposed
 Apple,13,merge,Apple,,organization,Companies,company,proposed
-Ceg,13,hold,,,,,an abbreviation not yet identified,proposed
+Ceg,13,member,G000386,,,,"checked: CEG is Charles E. Grassley; letters to and answering ""Senator Grassley"", Judiciary chair",proposed
 Chief Justice Roberts,13,officeholder,Supreme Court of the United States,,organization,Courts,"John Roberts, Chief Justice; the surname lead to Sen. Pat Roberts is wrong",proposed
 Cuomo,13,person,Andrew Cuomo,,person,Governors,Governor of New York 2011-2021,proposed
 Dos Dhs,13,reject,,,,,two agencies at once; the letters belong under each,proposed
@@ -109,14 +109,14 @@ Hochul,13,person,Kathy Hochul,,person,Governors,Governor of New York; a former m
 Houseleaders,13,merge,Congressional leadership,,,,already a term,proposed
 Kraninger,13,officeholder,Consumer Financial Protection Bureau,,,,"Kathy Kraninger, CFPB Director 2018-2021",proposed
 Mlb,13,merge,Major League Baseball,MLB,organization,Associations and other organizations,sports league,proposed
-Nsa,13,hold,,,,,the National Security Agency or the National Security Advisor: check the letters,proposed
+Nsa,13,merge,National Security Agency,NSA,organization,Department of Defense,"checked: 12 of 13 are the agency (surveillance, SS7, SolarWinds); Markey's 2020 letter is to the National Security Advisor",proposed
 Nsa Sullivan,13,officeholder,National Security Advisor,,organization,Executive Office of the President,"Jake Sullivan, National Security Advisor 2021-2025",proposed
 Nunes,13,member,N000181,,,,"Devin Nunes, Intelligence chair",proposed
-Peters,13,hold,,,,,a surname: check the letters,proposed
+Peters,13,member,P000595,,,,"checked: 11 of 13 to Sen. Gary Peters (HSGAC chair); one 2007 letter is to Transportation Secretary Mary Peters, one 2024 to a ""Director Peters""",proposed
 Sigtarp,13,merge,Special Inspector General for TARP,SIGTARP,organization,Inspectors general,SIGTARP,proposed
 Boem,12,merge,Bureau of Ocean Energy Management,BOEM,organization,Department of the Interior,BOEM,proposed
-Burton,12,hold,,,,,a surname: check the letters,proposed
-Chu,12,hold,,,,,probably Energy Secretary Steven Chu; the surname lead to Rep. Judy Chu is likely wrong,proposed
+Burton,12,member,B001149,,,,"checked: Waxman's letters to ""Chairman Burton"": Rep. Dan Burton, Government Reform chair",proposed
+Chu,12,officeholder,Department of Energy,,,,"checked: ""The Honorable Steven Chu, Secretary, U.S. Department of Energy""; the lead to Rep. Judy Chu is wrong",proposed
 Committee,12,reject,,,,,no committee named,proposed
 Dni,12,merge,Office of the Director of National Intelligence,DNI,organization,Independent agencies and commissions,the DNI,proposed
 Gov Rauner,12,person,Bruce Rauner,,person,Governors,Governor of Illinois 2015-2019,proposed
@@ -127,7 +127,7 @@ Of State Blinken,12,officeholder,Department of State,,,,"Antony Blinken, Secreta
 Oge,12,merge,Office of Government Ethics,OGE,organization,Independent agencies and commissions,OGE,proposed
 Rfk Jr,12,officeholder,Department of Health and Human Services,,,,"Robert F. Kennedy Jr., HHS Secretary from 2025",proposed
 Uscg,12,merge,United States Coast Guard,USCG,organization,Department of Homeland Security,USCG,proposed
-Alexander,11,hold,,,,,Sen. Lamar Alexander or another: check the letters,proposed
+Alexander,11,member,A000360,,,,"checked: 10 of 11 to ""Chairman Lamar Alexander"" (HELP); one 2013 letter is to Gen. Keith Alexander (NSA)",proposed
 Bernanke,11,officeholder,Federal Reserve,,,,"Ben Bernanke, Fed Chair 2006-2014",proposed
 Cfius,11,merge,Committee on Foreign Investment in the United States,CFIUS,organization,Department of the Treasury,"CFIUS, chaired by Treasury",proposed
 Commissioner Rettig,11,officeholder,Internal Revenue Service,,,,"Charles Rettig, IRS Commissioner 2018-2022",proposed
@@ -135,20 +135,20 @@ Congressional Leaders,11,merge,Congressional leadership,,,,already a term,propos
 Darcy,11,officeholder,Army Corps of Engineers,,,,"Jo-Ellen Darcy, Assistant Secretary of the Army for Civil Works 2009-2017, over the Corps",proposed
 Dodig,11,merge,Department of Defense Inspector General,DoD IG,organization,Inspectors general,DoD IG,proposed
 Gov Edwards,11,person,John Bel Edwards,,person,Governors,Governor of Louisiana 2016-2024,proposed
-Help,11,hold,,,,,"the Senate HELP Committee, or a fragment: check the letters",proposed
+Help,11,merge,"Senate Health, Education, Labor and Pensions Committee",HELP,organization,Congressional committees,"checked: letters to HELP on OxyContin, Lyme disease, harassment hearings, Confucius Institutes",proposed
 Lighthizer,11,officeholder,Office of the US Trade Representative,,,,"Robert Lighthizer, USTR 2017-2021",proposed
 Lisa Jackson,11,officeholder,Environmental Protection Agency,,,,"Lisa P. Jackson, EPA Administrator 2009-2013",proposed
 Mckinsey,11,merge,McKinsey & Company,,organization,Companies,company,proposed
 Ncaa,11,merge,NCAA,,organization,Associations and other organizations,college athletics association,proposed
 Ndaa Conference,11,merge,Conference committees,,organization,Congressional committees,NDAA conference,proposed
 Ondcp,11,merge,Office of National Drug Control Policy,ONDCP,organization,Executive Office of the President,ONDCP,proposed
-Scott,11,hold,,,,,a surname: check the letters,proposed
+Scott,11,hold,,,,,checked: Gov. Rick Scott and Rep. Bobby Scott (Education and Labor chair); needs a per-letter split,proposed
 Social Media,11,merge,Social media companies (several),,organization,Companies,letters to several platforms at once,proposed
 Solis,11,officeholder,Department of Labor,,,,"Hilda Solis, Labor Secretary 2009-2013 (a former member)",proposed
-Thompson,11,hold,,,,,a surname: check the letters,proposed
+Thompson,11,hold,,,,,"checked: three people: Rep. Bennie Thompson (Homeland Security, January 6 committee), HHS Secretary Tommy Thompson, and others; needs a per-letter split",proposed
 Usdot,11,merge,Department of Transportation,,,,USDOT,proposed
 Ambassador Tai,10,officeholder,Office of the US Trade Representative,,,,"Katherine Tai, USTR 2021-2025",proposed
-Benson,10,hold,,,,,a surname: check the letters,proposed
+Benson,10,officeholder,Michigan Secretary of State,,organization,State and local government,"checked: ""The Honorable Jocelyn Benson, Michigan Secretary of State""",proposed
 Clapper,10,officeholder,Office of the Director of National Intelligence,,organization,Independent agencies and commissions,"James Clapper, DNI 2010-2017",proposed
 Eeoc,10,merge,Equal Employment Opportunity Commission,EEOC,organization,Independent agencies and commissions,EEOC,proposed
 Ercot,10,merge,ERCOT,,organization,Associations and other organizations,"Electric Reliability Council of Texas, the Texas grid operator",proposed
@@ -157,13 +157,13 @@ Geo Group,10,merge,GEO Group,,organization,Companies,private prison company,prop
 House Ethics,10,merge,House Committee on Ethics,,organization,Congressional committees,House Ethics,proposed
 Hu Jintao,10,person,Hu Jintao,,person,Foreign leaders,President of China 2003-2013,proposed
 Issa,10,member,I000056,,,,"Darrell Issa, Oversight chair",proposed
-Mullin,10,hold,,,,,a surname: check the letters,proposed
+Mullin,10,officeholder,Department of Homeland Security,,,,"checked: ""The Honorable Markwayne Mullin, Secretary, U.S. Department of Homeland Security"", 2026; he left the Senate in March 2026",proposed
 Norfolk Southern,10,merge,Norfolk Southern,,organization,Companies,railroad company,proposed
 Rma,10,merge,Risk Management Agency,RMA,organization,Department of Agriculture,USDA's crop insurance agency,proposed
 Roberts And Thomas,10,officeholder,Supreme Court of the United States,,organization,Courts,Justices Roberts and Thomas,proposed
-Rogers,10,hold,,,,,a surname: check the letters,proposed
-Walker,10,hold,,,,,a surname: check the letters,proposed
-Wolf,10,hold,,,,,Gov. Tom Wolf or Chad Wolf (DHS): check the dates,proposed
+Rogers,10,hold,,,,,"checked: Rep. Harold Rogers (appropriations), Rep. Mike Rogers, Adm. Michael Rogers (NSA); needs a per-letter split",proposed
+Walker,10,person,Scott Walker,,person,Governors,checked: 9 of 10 to Gov. Scott Walker of Wisconsin (BadgerCare); one 2006 letter is to Comptroller General David Walker (GAO),proposed
+Wolf,10,hold,,,,,"checked: Rep. Frank Wolf (appropriations), Acting DHS Secretary Chad Wolf, Gov. Tom Wolf; needs a per-letter split",proposed
 Wyden,10,member,W000779,,,,Ron Wyden,proposed
 Ceq,9,merge,Council on Environmental Quality,CEQ,organization,Executive Office of the President,CEQ: Council on Environmental Quality,proposed
 Epw,9,merge,Senate Environment and Public Works Committee,EPW,organization,Congressional committees,EPW: Senate Environment and Public Works Committee,proposed
