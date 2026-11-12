@@ -40,6 +40,8 @@ the results.
 | 2026-11-09 | Letters on a caucus subdomain (`cpc.grijalva.house.gov`, `rsc.jordan.house.gov`) go to the parent address's holder, flagged `caucus`, and are **kept in the data but not published** (`UNPUBLISHED` in `build/address_holders.py`) until #24 is done. 255 rows, 126 distinct documents. About half the RSC's are letters to the caucus from outside groups. |
 | 2026-11-09 | Committee letters are wanted, credited to the chair as of the letter's date. Not yet harvested (#23). |
 | 2026-11-09 | **Each letter appears in exactly one explorer: the Congress in session on the letter's date.** No letter or thumbnail is stored twice. The alternative, every letter of a Congress's members, would repeat a long-serving member's letters in every Congress they served. |
+| 2026-11-12 | The federated explorer is **Letters from Congress**, repository and folder **`Explorer-Letters`**, published beside the explorers so `../Explorer-Congressional-Letters-<N>/` reaches each one. Each explorer's "All Congresses" link goes to `../Explorer-Letters/`. Built by `build/build_hub.py`. Not `Letters-from-Congress`: under Robin-IA that name still forwards to the private `internetarchivecanada/letters-from-congress`, which it was moved to, and reusing it would break that forwarding. |
+| 2026-11-12 | Letter subjects will use a **real controlled vocabulary**, built in `metadata-vocabulary`, with a source for every term. **Which vocabulary waits for the OCR**, so it is chosen from what the letters say. LCSH is not robust enough for letters. `build/topics.py`'s 96 terms stay as they are until then (#40). |
 
 ## The pipeline for Congress N
 
@@ -252,9 +254,49 @@ every letter on the sitting members' sites.
 - **Issues are worked after the explorer they affect is built**, unless they
   block it.
 
+## Published
+
+**12 November 2026, first publish**, under Robin-IA, from the build of 11:59.
+Every repository is public, with Pages serving `main` from its root. They
+include the thumbnails rendered so far; rendering continues, and each is
+republished as it fills in: rebuild, `export_csv.py`, `build_hub.py`, push.
+
+Home page: <https://robin-ia.github.io/Explorer-Letters/>, 112,201 letters
+from 1,244 members across 14 Congresses, as the page computes it.
+
+| Congress | Repository | Stamp | Letters | Members with letters | Thumbnails |
+| --- | --- | --- | ---: | ---: | ---: |
+| 106th | [`Explorer-Congressional-Letters-106`](https://robin-ia.github.io/Explorer-Congressional-Letters-106/) | 20261112115906 | 41 | 17 of 544 | 21 |
+| 107th | [`Explorer-Congressional-Letters-107`](https://robin-ia.github.io/Explorer-Congressional-Letters-107/) | 20261112115906 | 408 | 74 of 550 | 85 |
+| 108th | [`Explorer-Congressional-Letters-108`](https://robin-ia.github.io/Explorer-Congressional-Letters-108/) | 20261112115906 | 1,010 | 166 of 544 | 333 |
+| 109th | [`Explorer-Congressional-Letters-109`](https://robin-ia.github.io/Explorer-Congressional-Letters-109/) | 20261112115907 | 2,583 | 224 of 545 | 436 |
+| 110th | [`Explorer-Congressional-Letters-110`](https://robin-ia.github.io/Explorer-Congressional-Letters-110/) | 20261112115907 | 2,292 | 258 of 554 | 787 |
+| 111th | [`Explorer-Congressional-Letters-111`](https://robin-ia.github.io/Explorer-Congressional-Letters-111/) | 20261112115907 | 5,220 | 379 of 559 | 1,717 |
+| 112th | [`Explorer-Congressional-Letters-112`](https://robin-ia.github.io/Explorer-Congressional-Letters-112/) | 20261112115908 | 5,926 | 399 of 552 | 2,457 |
+| 113th | [`Explorer-Congressional-Letters-113`](https://robin-ia.github.io/Explorer-Congressional-Letters-113/) | 20261112115909 | 6,932 | 448 of 554 | 3,735 |
+| 114th | [`Explorer-Congressional-Letters-114`](https://robin-ia.github.io/Explorer-Congressional-Letters-114/) | 20261112115911 | 7,926 | 467 of 547 | 4,795 |
+| 115th | [`Explorer-Congressional-Letters-115`](https://robin-ia.github.io/Explorer-Congressional-Letters-115/) | 20261112115913 | 11,506 | 468 of 561 | 6,817 |
+| 116th | [`Explorer-Congressional-Letters-116`](https://robin-ia.github.io/Explorer-Congressional-Letters-116/) | 20261112115915 | 20,014 | 502 of 550 | 10,633 |
+| 117th | [`Explorer-Congressional-Letters-117`](https://robin-ia.github.io/Explorer-Congressional-Letters-117/) | 20261112115919 | 20,601 | 523 of 557 | 11,712 |
+| 118th | [`Explorer-Congressional-Letters-118`](https://robin-ia.github.io/Explorer-Congressional-Letters-118/) | 20261112115924 | 16,324 | 486 of 554 | 11,931 |
+| 119th | [`Explorer-Congressional-Letters-119`](https://robin-ia.github.io/Explorer-Congressional-Letters-119/) | 20261112115927 | 11,418 | 484 of 555 | 9,725 |
+
+Checked live: each `index.json` carries its build's stamp; five member pages
+and the 118th's CSV load; thumbnails return 200 in five explorers sampled;
+Elizabeth Warren's 118th page shows her 727 letters and opens each from
+Wayback; the home page's search for "FEMA" finds 866 letters across 14
+Congresses, linking into the right explorer.
+
 ## The federated explorer: requirements so far
 
-To be developed separately. What it has to do, as discussed on 9 November:
+What it has to do, as discussed on 9 November. **The first version was built
+on 12 November** (`build/build_hub.py`, page in `build/hub/`): it lists every
+Congress and searches across them, loading each explorer's `search.json`
+newest first, and gathers a member's Congresses into one card. Search matches
+subject, recipient, topics and member names, as the explorers' own search
+does; full text waits for the OCR and an index. Career pages and the
+cross-Congress views below are not built yet. PR #25 is an earlier mockup of
+the same page, from the 119th's data alone.
 
 - **List every Congress** with its dates and counts, read from each
   explorer's `index.json`. Counts are computed by the federated explorer from
@@ -284,4 +326,3 @@ To be developed separately. What it has to do, as discussed on 9 November:
   - Copied: copies drift apart, and the caching trap repeats per repository.
 - **OCR engine and the full-text index format** (step 5).
 - **Senate paths on shared hosts** (`senate.gov/~name`, step 4). The House paths are done.
-- **The federated explorer's repository name.**

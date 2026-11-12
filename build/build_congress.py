@@ -198,7 +198,10 @@ def page_files(n: int, dest: Path) -> None:
     html = swap(html, 'title="All Congresses">119th Congress (2025-26)</a>',
                 f'title="All Congresses">{short}</a>', "crumb")
     html = html.replace('src="../app.js?v=', 'src="app.js?v=')
-    html = html.replace('href="../"', 'href="../"')  # federated home, once it exists
+    # "All Congresses" goes to Letters from Congress, Explorer-Letters (build_hub.py), which is
+    # published beside the explorers: robin-ia.github.io/<repo>/ for each.
+    html = swap(html, 'class="crumb" href="../"',
+                'class="crumb" href="../Explorer-Letters/"', "crumb link")
     # The 119th's name for itself. Each Congress's own label already says
     # which years it covers, so the per-Congress page drops "(2007-present)".
     html = swap(html, "<title>Letters from Congress (2007-present) ·",
