@@ -160,17 +160,18 @@ footer a { color: #fff; text-decoration: underline; }
 
 
 /* Real letters: first pages from the explorers' own thumbnails. */
-.herogrid { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 3.6rem; align-items: start; }
-.pages { margin: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
-.pages a { display: block; background: #fff; border: 1px solid var(--hair); border-radius: 4px; padding: .6rem;
+.herogrid { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 3.6rem; align-items: center; }
+/* One row of four, so the letters stand no taller than the text beside them. */
+.pages { margin: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .9rem; }
+.pages a { display: block; background: #fff; border: 1px solid var(--hair); border-radius: 4px; padding: .4rem;
   box-shadow: 0 6px 18px rgba(94, 21, 32, .14); transition: transform .2s, box-shadow .2s; text-decoration: none; }
 .pages a:nth-child(1) { transform: rotate(-2deg); }
-.pages a:nth-child(2) { transform: rotate(1.5deg) translateY(1.2rem); }
-.pages a:nth-child(3) { transform: rotate(1deg) translateY(-.4rem); }
-.pages a:nth-child(4) { transform: rotate(-1.5deg) translateY(.8rem); }
+.pages a:nth-child(2) { transform: rotate(1.5deg) translateY(.6rem); }
+.pages a:nth-child(3) { transform: rotate(1deg) translateY(-.3rem); }
+.pages a:nth-child(4) { transform: rotate(-1.5deg) translateY(.4rem); }
 .pages a:hover, .pages a:focus-visible { transform: none; box-shadow: 0 10px 26px rgba(31, 70, 130, .22); }
-.pages img, .shots img { display: block; width: 100%; aspect-ratio: 17 / 22; object-fit: cover; object-position: top; background: var(--blue-tint); }
-.pages span { display: block; font-size: 1.15rem; color: var(--muted); padding: .5rem .2rem 0; line-height: 1.3;
+.pages img, .shots img { display: block; width: 100%; height: auto; aspect-ratio: 17 / 22; object-fit: cover; object-position: top; background: var(--blue-tint); }
+.pages span { display: block; font-size: 1.05rem; color: var(--muted); padding: .5rem .2rem 0; line-height: 1.3;
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .shots { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .6rem; margin: 1.2rem 0 0; }
 .shots a { display: block; border: 1px solid var(--hair); border-radius: 3px; overflow: hidden; background: #fff; }
