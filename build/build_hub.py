@@ -2,7 +2,7 @@
 """Build Letters from Congress, the page over every per-Congress explorer.
 
     python3 build/export_csv.py           # the Download data files, first
-    python3 build/build_hub.py            # into ../explorers/Letters-from-Congress/
+    python3 build/build_hub.py            # into ../explorers/Explorer-Letters/
     python3 build/build_hub.py --out DIR
 
 Lists the Congresses and searches across them (EXPLORERS.md, "The federated
@@ -34,7 +34,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 EXPLORERS = ROOT.parent / "explorers"
-NAME = "Letters-from-Congress"
+NAME = "Explorer-Letters"   # the page is titled "Letters from Congress"
 
 
 def main() -> int:
