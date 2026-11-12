@@ -32,6 +32,7 @@ fact about the catalogue, not a parse failure to paper over.
 from __future__ import annotations
 
 import argparse
+import csv
 import json
 import re
 import sys
@@ -377,33 +378,73 @@ def readable(key: str) -> str:
     return text.strip()
 
 
-def find_date(key: str, slug: str) -> tuple[str | None, str | None]:
-    """An ISO date the URL states, and where it came from."""
+def find_date(key: str, slug: str, captured: date_type | None = None,
+              since: int | None = None) -> tuple[str | None, str | None]:
+    """An ISO date the URL states, and where it came from.
+
+    ``captured`` is the first Wayback capture and ``since`` the year the
+    member entered Congress. A two-digit-year date is ambiguous: "090501" is
+    1 May 2009 to Begich's office and 5 September 2001 read month-first, a
+    date eight years before he took his seat. Both readings are tried, and one
+    that falls after the capture or before the member served is set aside.
+    When both survive, month-first stands, as it always has. Issue #58.
+    """
+    since = int(since) if since else None
     for pattern, order in DATE_PATTERNS:
         match = pattern.search(slug)
         if not match:
             continue
         a, b, c = match.groups()
-        try:
-            if order == "ymd":
-                year, month, day = int(a), int(b), int(c)
-            elif order == "mdy":
-                month, day, year = int(a), int(b), int(c)
-            else:
-                month, day = int(a), int(b)
-                year = 2000 + int(c)
-            if not (1 <= month <= 12 and 1 <= day <= 31):
+        if order == "ymd":
+            readings = [(int(a), int(b), int(c))]
+        elif order == "mdy":
+            readings = [(int(c), int(a), int(b))]
+        else:
+            readings = [(2000 + int(c), int(a), int(b)),   # MMDDYY, as before
+                        (2000 + int(a), int(b), int(c))]   # YYMMDD
+        dates = []
+        for year, month, day in readings:
+            try:
+                parsed = date_type(year, month, day)
+            except ValueError:
+                dates.append(None)
                 continue
-            parsed = date_type(year, month, day)
             # A letter cannot be dated after today. Eleven slugs in 29,316
             # parsed to 2027-2029 — "...letter to hhs 5 29 29" reads as a
             # two-digit year that is not one — and those few were enough to
             # report the whole corpus as running to 2029.
-            if parsed > date_type.today():
-                continue
-            return parsed.isoformat(), "slug"
-        except ValueError:
+            dates.append(parsed if parsed <= date_type.today() else None)
+        if len(readings) == 1:
+            if dates[0]:
+                return dates[0].isoformat(), "slug"
             continue
+        # Two-digit year. Without a capture or a first year there is nothing
+        # to weigh, so month-first stands alone, as it always has.
+        month_first, year_first = dates
+        if not (captured or since):
+            if month_first:
+                return month_first.isoformat(), "slug"
+            continue
+
+        def fits(d):
+            # Not after Wayback first saw the file, and not before the member
+            # served: Crane's "040910" as April 2010 sat six years after its
+            # September 2004 capture.
+            return (d is not None and not (captured and d > captured)
+                    and not (since and d.year < since))
+        if fits(month_first):
+            return month_first.isoformat(), "slug"
+        if fits(year_first):
+            return year_first.isoformat(), "slug"
+        if month_first and not (captured and month_first > captured):
+            # Neither reading sits inside the member's service. The date is
+            # still possible; the doubt is about who the letter belongs to,
+            # not when it was written, so it stands as it always has.
+            return month_first.isoformat(), "slug"
+        if month_first or year_first:
+            # After its own capture and no other reading fits: no date beats
+            # a wrong one, and the capture still places the letter.
+            return None, None
 
     match = PATH_DATE.search(key)
     if match:
@@ -535,10 +576,15 @@ def known_recipient(text: str) -> tuple[str, str] | None:
 
 
 def parse(record: dict, last_name: str,
-          surnames: frozenset[str] = frozenset()) -> dict:
+          surnames: frozenset[str] = frozenset(), since: int | None = None) -> dict:
     key = record["key"]
     slug = readable(key)
-    iso, date_source = find_date(key, slug)
+    captured = record.get("timestamp", "")
+    try:
+        captured_on = date_type(int(captured[:4]), int(captured[4:6]), int(captured[6:8]))
+    except (ValueError, IndexError):
+        captured_on = None
+    iso, date_source = find_date(key, slug, captured_on, since)
     body = strip_date(slug)
     role, cosigners, qualifiers, from_letter, topic = split_role(
         body, last_name, surnames)
@@ -650,6 +696,25 @@ def parse(record: dict, last_name: str,
     }
 
 
+def first_years(rosters: Path) -> dict[str, int]:
+    """The year each member first served, from the per-Congress rosters.
+
+    Not the harvest rosters' ``since``: those say when a site first appeared
+    in the chamber directories, which only begin in 2003, so a member serving
+    since 1995 can read as "since 2007" and a 2005 letter of theirs looks
+    impossible. The rosters cover the 106th Congress on, which is enough: a
+    two-digit-year date is 2000 or later.
+    """
+    first: dict[str, int] = {}
+    for path in rosters.glob("congress*-roster.csv"):
+        with path.open(encoding="utf-8") as handle:
+            for row in csv.DictReader(handle):
+                bioguide, served = row.get("bioguide_id"), row.get("served_this_congress") or ""
+                if bioguide and served[:4].isdigit():
+                    first[bioguide] = min(first.get(bioguide, 9999), int(served[:4]))
+    return first
+
+
 def main() -> None:
     root = Path(__file__).resolve().parents[1]
     parser = argparse.ArgumentParser(description=__doc__)
@@ -663,6 +728,7 @@ def main() -> None:
 
     member_list = json.loads(args.members.read_text(encoding="utf-8"))
     members = {m["bioguide"]: m for m in member_list}
+    first = first_years(root / "data" / "rosters")
     surnames = frozenset(
         (m.get("last") or "").lower() for m in member_list if m.get("last"))
 
@@ -672,7 +738,8 @@ def main() -> None:
         for line in source:
             record = json.loads(line)
             member = members.get(record.get("bioguide"), {})
-            parsed = parse(record, member.get("last", ""), surnames)
+            parsed = parse(record, member.get("last", ""), surnames,
+                           first.get(record.get("bioguide")))
             stats["letters"] += 1
             stats["dated"] += bool(parsed["date"])
             stats["with_recipient"] += bool(parsed["recipient_canonical"])

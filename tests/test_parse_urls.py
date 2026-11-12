@@ -10,6 +10,7 @@ code that needs cases pinned down.
 
 import sys
 import unittest
+from datetime import date as date_type
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "build"))
@@ -207,6 +208,39 @@ class Dates(unittest.TestCase):
             find_date("x", "02142020 letter to epa on pfas action plan")[0],
             "2020-02-14")
 
+    # Issue #58: a two-digit-year date read month-first when the office wrote
+    # it year-first. The capture and the member's first year settle it.
+    def test_year_first_six_digits_when_month_first_predates_the_member(self):
+        # Begich, in the Senate from 2009: 1 May 2009, not 5 September 2001.
+        self.assertEqual(find_date("x", "090501 fy2010 sasc milcon begich request letter",
+                                   date_type(2012, 10, 17), 2009)[0], "2009-05-01")
+
+    def test_year_first_with_dashes(self):
+        # Brown-Waite, in the House from 2003, first captured 29 August 2007.
+        self.assertEqual(find_date("x", "07 08 01 crist letter to brown waite",
+                                   date_type(2007, 8, 29), 2003)[0], "2007-08-01")
+
+    def test_a_date_after_its_own_capture_is_impossible(self):
+        # Crane's path site, no first year on the roster: April 2010 is after
+        # Wayback first saw the file in September 2004, so 10 September 2004.
+        self.assertEqual(find_date("x", "lettertoresidents 040910",
+                                   date_type(2004, 9, 26), None)[0], "2004-09-10")
+
+    def test_month_first_still_wins_when_both_readings_fit(self):
+        self.assertEqual(find_date("x", "042310 letter to reid",
+                                   date_type(2011, 1, 1), 2000)[0], "2010-04-23")
+
+    def test_month_first_stands_when_only_the_service_check_fails(self):
+        # "6.3.16 Letter to Harold Rogers": 3 June 2016 is a possible date.
+        # Before the member served means a doubt about attribution, not date.
+        self.assertEqual(find_date("x", "6 3 16 letter to harold rogers",
+                                   date_type(2016, 8, 28), 2017)[0], "2016-06-03")
+
+    def test_no_date_when_the_only_reading_is_after_the_capture(self):
+        # "122005": 20 December 2005, but Wayback had the file in April 2005.
+        self.assertIsNone(find_date("x", "april12 122005 letter to sec",
+                                    date_type(2005, 4, 26), 1999)[0])
+
     def test_reads_a_run_together_year_first_date(self):
         self.assertEqual(find_date("x", "20130624 fhfa letter")[0], "2013-06-24")
 
@@ -366,7 +400,8 @@ class EndToEnd(unittest.TestCase):
         # the recipient and it ends up as the description instead. 211 letters
         # were described as "hhs", "fda", "usps", "doj" or "cms".
         out = parse(letter(
-            "x.senate.gov/wp-content/uploads/2025/04/hhs-letter_041525.pdf"),
+            "x.senate.gov/wp-content/uploads/2025/04/hhs-letter_041525.pdf",
+            timestamp="20250420000000"),
             "Alsobrooks")
         self.assertEqual(out["recipient_canonical"],
                          "Department of Health and Human Services")
