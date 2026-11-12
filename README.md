@@ -8,7 +8,8 @@ commit. Nothing here is served by GitHub Pages.
 | --- | --- | --- | --- |
 | `pc-harvest-115-118.zip` | 11 November 2026, 18:05 | 268 of 385 | `C:\harvest` |
 | `pc-harvest-106-110.zip` | 11 November 2026, 22:05 | 111 of 111 | `C:\harvest-106-110` |
-| `pc-render-106-114-paths.zip` | 12 November 2026, 09:51 | 7,662 PDFs to render | `C:\render2` |
+| `pc-render-106-114-paths.zip` | 12 November 2026, 11:34 | 7,260 PDFs to render | `C:\render3` |
+| `pc-ocr-106-115.zip` | 12 November 2026, 11:34 | 7,025 scans to fetch and OCR | `C:\ocr` |
 
 Both harvests are finished and returned. The render bundle is the PC's
 current job, rebuilt at 09:51 on 12 November for a second run, with

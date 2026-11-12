@@ -4,6 +4,79 @@ Written 11 November 2026, 22:15, by the Claude session on the Mac. This is
 what a Claude session on the Windows PC needs to know to help run the letter
 harvest. Robin is the person you are working with.
 
+## Current jobs: read this first (12 November 2026, 11:45)
+
+Everything below this section is history: how the harvests and the first two
+render runs were set up. These are the PC's jobs now. **Run them on the
+Charter broadband, not the hotspot**: the hotspot measured as throttled to about
+2.5 MB a minute, and on broadband 6 workers did 9.8 PDFs a minute.
+
+The Mac meanwhile renders only the 115th–118th and fetches only the
+116th–119th scans, so nothing below overlaps with it.
+
+**Wayback is refusing some connections** from this household's IP today:
+dropped connections (`URLError`) come and go. Both tools retry them, so a burst
+of failures is not a reason to stop. If more than half of a pass fails for an
+hour, lower `WORKERS` and tell Robin.
+
+### Job 1: render the 106th–114th and the path letters (7,260 PDFs)
+
+The same job as `C:\render2`, rebuilt at 11:34 to leave out everything already
+rendered, including the PC's own 564.
+
+1. Download
+   <https://github.com/Robin-IA/Congressional-Letters-Dev/raw/pc-bundle/pc-render-106-114-paths.zip>
+   and unzip it into a **new** folder, `C:\render3`. Do not resume `C:\render2`.
+2. Copy `ocr_tesseract.py` from `C:\render2` into `C:\render3`. It is unchanged
+   for this job.
+3. Window 1: `cd C:\render3`, `$env:WORKERS=6`, `py run_render.py`.
+4. Window 2: `cd C:\render3`, `py ocr_tesseract.py --watch`.
+
+### Job 2: OCR the 106th–115th scans that have no text (7,025 PDFs)
+
+These letters already have thumbnails, but they were rendered before PDFs were
+kept, so their scans were never OCRed. Each is downloaded again from the exact
+capture the thumbnail came from, checked against the sha256 recorded then, and
+read with Tesseract. Nothing is rendered.
+
+1. Download
+   <https://github.com/Robin-IA/Congressional-Letters-Dev/raw/pc-bundle/pc-ocr-106-115.zip>
+   and unzip it into its own folder, `C:\ocr`. It holds `fetch_for_ocr.py`, a new
+   `ocr_tesseract.py` (it also stops when the fetch is done), `fetch-list.jsonl`
+   and a small `letter-text.jsonl`.
+2. Window 3: `cd C:\ocr`, `$env:WORKERS=4`, `py fetch_for_ocr.py`. Standard
+   library only; nothing to install.
+3. Window 4: `cd C:\ocr`, `py ocr_tesseract.py --watch`.
+
+`fetch_for_ocr.py` works in passes and retries failures on the next pass, after
+5 minutes. A 404, a non-PDF or a sha256 mismatch is final and not retried. It
+stops when everything is kept, or after 3 passes in a row that keep nothing, and
+writes `=== done` to `fetch-pc.log`; `ocr_tesseract.py` then finishes the last
+PDFs and stops too.
+
+Tested on the Mac before sending: two scans downloaded, matched their sha256
+and were read (3,324 and 7,260 characters), and the OCR stopped by itself once
+the fetch log said done.
+
+**Run both jobs at once if the CPU keeps up**, 10 download workers in all.
+If the OCR in either folder falls behind its downloads, give `ocr_tesseract.py`
+`--workers 2` in each folder, or run Job 2 after Job 1.
+
+### What comes back, and what does not
+
+**No PDFs.** They stay on the PC. Nothing on the Mac needs them: the OCR is
+done here and the explorers open every letter from Wayback. Stop pushing to
+`pc-render-pdfs-2`.
+
+| Job | Branch | Contents |
+| --- | --- | --- |
+| 1 | `pc-render-return-3` | `thumbs\` (zipped, under 90 MB a file), `pdf-dates.jsonl`, `letter-text.jsonl`, `letter-ocr.jsonl`, `thumb-failures.jsonl` |
+| 2 | `pc-ocr-return-106-115` | `letter-ocr.jsonl`, `fetch-failures.jsonl`, `fetch-pc.log` |
+
+Batches are fine: every batch can carry the whole of each `.jsonl` so far, and
+the merge adds only what the Mac lacks. 500 thumbnails is about 9 MB; Job 2's
+OCR is a few MB in all. Give each push a short README with counts.
+
 ## What the PC is for
 
 The PC harvests letters from the Wayback Machine's CDX index for two ranges of
