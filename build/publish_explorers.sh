@@ -40,7 +40,10 @@ EOF
   git add -A
   git commit -q -m "Build of $(date '+%Y-%m-%d %H:%M')" || say "$name: nothing new to commit"
   if ! gh repo view "$OWNER/$name" >/dev/null 2>&1; then
-    gh repo create "$OWNER/$name" --public --description "$desc" >/dev/null || { say "$name: create failed"; return 1; }
+    # --homepage puts the Pages address in the repository's About panel, so
+    # the live site is one click from the code.
+    gh repo create "$OWNER/$name" --public --description "$desc" \
+      --homepage "https://robin-ia.github.io/$name/" >/dev/null || { say "$name: create failed"; return 1; }
     say "$name: repository created"
   fi
   local real; real=$(gh api "repos/$OWNER/$name" --jq .full_name 2>/dev/null)
