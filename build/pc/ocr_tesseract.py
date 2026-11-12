@@ -29,7 +29,9 @@ names it otherwise. Each worker runs one single-threaded Tesseract; the default
 is half the cores, leaving the rest for the renderer.
 
 With --watch it re-reads the folder every 10 minutes and stops by itself once
-render-pc.log says rendering is over and nothing is left to read. Ctrl-C is
+nothing is left to read and whatever is keeping PDFs here has finished:
+render-pc.log (run_render.py) or fetch-pc.log (fetch_for_ocr.py), whichever
+the folder has, ends with "=== done" or "=== stopping". Ctrl-C is
 safe; run it again and PDFs already read are skipped.
 """
 from __future__ import annotations
@@ -141,12 +143,18 @@ def ocr_pdf(pdf_path: str, tess: str, pages: int, dpi: int, lang: str) -> dict:
             "text": text[:60000]}
 
 
-def rendering_over(log: Path) -> bool:
-    if not log.exists():
+def feeder_over(folder: Path) -> bool:
+    """True once every log of a process keeping PDFs here says it finished."""
+    logs = [folder / name for name in ("render-pc.log", "fetch-pc.log")
+            if (folder / name).exists()]
+    if not logs:
         return False
-    marks = [l for l in log.read_text(encoding="utf-8", errors="replace").splitlines()
-             if "===" in l]
-    return bool(marks) and ("=== done" in marks[-1] or "=== stopping" in marks[-1])
+    for log in logs:
+        marks = [l for l in log.read_text(encoding="utf-8", errors="replace").splitlines()
+                 if "===" in l]
+        if not (marks and ("=== done" in marks[-1] or "=== stopping" in marks[-1])):
+            return False
+    return True
 
 
 def main() -> int:
@@ -209,8 +217,8 @@ def main() -> int:
                           file=sys.stderr, flush=True)
         if not args.watch or (args.max and total >= args.max):
             return 0
-        if not todo and rendering_over(HERE / "render-pc.log"):
-            print("rendering is over and every PDF is read: done", file=sys.stderr)
+        if not todo and feeder_over(HERE):
+            print("no more PDFs are coming and every one is read: done", file=sys.stderr)
             return 0
         time.sleep(600)
 
