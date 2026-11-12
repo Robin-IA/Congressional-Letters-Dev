@@ -91,12 +91,23 @@ function renderList() {
         el('div', { class: 'dt' }, `Could not load (${idx.failed})`));
     }
     const k = idx.congress || {};
-    return el('a', { class: 'congress', href: congressLink(c) },
-      el('div', { class: 'nm' }, `${k.ordinal || c.number} Congress`),
+    // A card, not one big link, so the download sits beside the explorer link
+    // rather than inside it. The download is a placeholder: the data file for
+    // each Congress is not built yet, and the page says so rather than
+    // offering a link that goes nowhere. When it exists, set c.download in
+    // hub.json (build_hub.py) and the link appears.
+    return el('div', { class: 'congress' },
+      el('a', { class: 'nm', href: congressLink(c) }, `${k.ordinal || c.number} Congress`),
       el('div', { class: 'dt' }, k.dates || ''),
       el('div', { class: 'ct tab' }, el('b', {}, num(idx.letters)), ' letters · ',
         num(idx.members_with_letters), ' of ', num(idx.members_total), ' members'),
-      el('div', { class: 'bar' }, el('i', { style: `width:${Math.max(2, (idx.letters / max) * 100)}%` })));
+      el('div', { class: 'bar' }, el('i', { style: `width:${Math.max(2, (idx.letters / max) * 100)}%` })),
+      el('div', { class: 'acts' },
+        el('a', { href: congressLink(c) }, 'Open the explorer'),
+        c.download
+          ? el('a', { href: c.download, download: '' }, 'Download data')
+          : el('span', { class: 'soon', title: 'The data file for this Congress is not built yet' },
+            'Download data · coming soon')));
   }));
 
   if (ok.length) {

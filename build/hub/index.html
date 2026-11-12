@@ -53,8 +53,10 @@ footer { border-top: 1px solid var(--hair); color: var(--muted); font-size: 1.25
 
 .congresses { display: grid; grid-template-columns: repeat(auto-fill, minmax(26rem, 1fr)); gap: 1.2rem; }
 .congress { display: block; background: var(--panel); border: 1px solid var(--hair); border-radius: 8px; padding: 1.6rem 1.8rem; color: var(--ink); }
-.congress:hover { border-color: var(--active); text-decoration: none; }
-.congress .nm { font-family: var(--serif); font-size: 2rem; }
+.congress:hover { border-color: var(--active); }
+.congress .nm { display: inline-block; font-family: var(--serif); font-size: 2rem; color: var(--ink); }
+.congress .acts { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .4rem 1.2rem; margin-top: 1.2rem; font-size: 1.3rem; }
+.congress .soon { color: var(--faint); }
 .congress .dt { color: var(--muted); font-size: 1.25rem; margin: .2rem 0 1rem; }
 .congress .ct { font-size: 1.3rem; }
 .congress .ct b { font-size: 1.7rem; font-weight: 500; }
