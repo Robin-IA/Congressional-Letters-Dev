@@ -10,6 +10,9 @@ data/wrapper-targets.jsonl
 data/wrapper-resolved.jsonl
 data/pdf-dates.jsonl
 data/letter-text.jsonl
+data/letter-ocr.jsonl
+# Compiled from build/ocr.swift on each Mac.
+build/ocr
 data/thumb-failures.jsonl
 
 # The renderer writes <digest>.part and renames it into place. A `git add -A`
