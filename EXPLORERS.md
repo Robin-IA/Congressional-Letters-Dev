@@ -106,9 +106,22 @@ python3 build/harvest.py --members-in harvest/letters-<range>-members.json \
   letters at all before any re-run.
 - **The cache holds raw CDX rows** (`harvest/letters/cache/`, not committed),
   so a change to the cleaning costs a re-filter, not a re-harvest.
-- **Paths on shared hosts** (`www.house.gov/<name>`, `senate.gov/~name`) are
-  not handled yet. `cdx_rows_paged` assumes a hostname. These are mostly
-  before 2012.
+- **Paths on shared hosts** (`www.house.gov/<name>`) go through their own
+  harvest, because `cdx_rows_paged` assumes a hostname. Mostly before 2012.
+  - `build/harvest_paths.py` queries the 435 House paths in
+    `data/member-sites.tsv` into `data/letters-paths.jsonl`. Run on 12
+    November 2026: 1,616 letters from 174 of the 435.
+  - `build/paths_letters.py`, then `parse_urls.py`, turns them into
+    `harvest/letters/letters-parsed-paths.jsonl`, which `build_congress.py`
+    reads with the rest. Each is credited to whoever held the path on its
+    date, from the rosters: 1,561 credited, 55 to no one. The name match in
+    `harvest_paths.py` itself had credited 138.
+  - **Still missing:** Senate paths (`senate.gov/~name`). `member-sites.tsv`
+    has none, and the five tried by hand, Thurmond and Helms among them,
+    returned nothing.
+  - **Expect few.** Sites of that era rarely put "letter" in a URL. Hastert's
+    `house.gov/hastert` has 842 captures and no letter: its 24 PDFs are forms
+    and flyers.
 - **One Wayback job at a time.** The harvest, the renderer and
   `resolve_wrappers.py` share the same budget.
 
@@ -270,5 +283,5 @@ To be developed separately. What it has to do, as discussed on 9 November:
   - Shared: a fix lands everywhere, but it also changes closed Congresses.
   - Copied: copies drift apart, and the caching trap repeats per repository.
 - **OCR engine and the full-text index format** (step 5).
-- **Harvesting paths on shared hosts** (step 4).
+- **Senate paths on shared hosts** (`senate.gov/~name`, step 4). The House paths are done.
 - **The federated explorer's repository name.**
