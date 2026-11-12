@@ -36,21 +36,33 @@ Python's standard library.
    ```
 
    It prints how many sites are still to do and writes
-   `~/Desktop/pc-harvest-115-118/pc-harvest-115-118.zip`. On 11 November that
-   was about 2 MB, with 269 of 385 sites to do.
+   `~/Desktop/pc-harvest-115-118/pc-harvest-115-118.zip`. The current build is
+   from 18:05 on 11 November: about 2 MB, with 268 of 385 sites to do.
+3. Put the zip on the `pc-bundle` branch of `Robin-IA/Congressional-Letters-Dev`
+   so the PC can download it. That branch holds only the zip and a README.
 
 If the Mac finishes a few more sites after the bundle is built, the PC simply
 repeats them. Nothing is lost either way.
 
 ## What goes to the PC
 
-One file, the zip. Move it however is easiest: Google Drive, a USB stick, or
-email to yourself.
+One file, the zip. The easiest way is to download it on the PC from GitHub:
+
+<https://github.com/Robin-IA/Congressional-Letters-Dev/raw/pc-bundle/pc-harvest-115-118.zip>
+
+Google Drive, a USB stick or email work too.
+
+**If the PC unzipped an earlier copy.** Bundles built before 18:05 on 11
+November query the Wayback index over `http://`, which answered 503 to about a
+fifth of requests under load. The current one uses `https://`. Copy the new
+zip's `build\harvest.py` over the old one and keep the PC's
+`harvest\letters\cache` folder, which holds what the PC has already done.
+`run_pc.py` picks it up at the start of its next pass.
 
 | In the zip | What it is |
 | --- | --- |
 | `run_pc.py` | The runner |
-| `build/harvest.py` | The harvester: keeps each CDX page as it arrives, and logs every request's time |
+| `build/harvest.py` | The harvester: queries over https, keeps each CDX page as it arrives, and logs every request's time |
 | `build/timing_report.py` | Reads the request log |
 | `harvest/letters-<range>-members.json` | The sites to harvest |
 | `harvest/letters/cache/` | Every cache file the Mac has for those sites, finished or not |
@@ -138,6 +150,12 @@ files.
    ```
 
 Or hand steps 2–5 to Claude Code in a session in this repository.
+
+**Thumbnails need nothing more.** If `build/thumbs_loop.sh` is running on the
+Mac, its next cycle rebuilds the letter list from the merged cache and renders
+the PC's letters along with the rest. The PC only harvests; it never renders.
+The loop writes its own lists to `harvest/letters/loop/`, so steps 5 and 6 are
+still what produce the range's own `letters-parsed-<range>.jsonl`.
 
 ## If something goes wrong
 
