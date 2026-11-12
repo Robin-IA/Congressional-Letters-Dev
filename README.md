@@ -17,7 +17,7 @@ ready and has been approved. Push to this repository only — see `CLAUDE.md`.
 
 | Congress | State |
 | --- | --- |
-| **119th (2024-26)** | **Built** — 73,354 letters from 529 of 555 members, including the 16 who left office during it. Previews for the departed members' letters are still being rendered |
+| **119th (2025-26)** | **Built** — 73,354 letters from 529 of 555 members, including the 16 who left office during it. Previews for the departed members' letters are still being rendered |
 | 110th – 118th | Placeholders on the home page, not yet built |
 
 The 119th explorer is the work that began as
