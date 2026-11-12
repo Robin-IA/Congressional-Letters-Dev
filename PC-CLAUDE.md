@@ -9,6 +9,13 @@
 > 2. **Push what the Mac does need, about once an hour:** the thumbnails and
 >    the `.jsonl` files, packed by `pack_return.py`. See "Sending results back,
 >    step by step" below. Until those arrive, the Mac has nothing to merge.
+> 3. **Job 2 (the scans' OCR, `C:\ocr`) is PAUSED from 13:35, 12 November.**
+>    Every download shares one Wayback allowance, and rendering comes first so
+>    the explorers are complete sooner. Push one last OCR return
+>    (`pack_return.py C:\ocr C:\push\ocr`, then commit and push), then
+>    Ctrl-C both `C:\ocr` windows. **Keep Job 1 rendering.** Resume Job 2 only
+>    when Robin says; running `py fetch_for_ocr.py` again carries on where it
+>    stopped. The Mac has paused its own share the same way.
 
 Written 11 November 2026, 22:15, by the Claude session on the Mac. This is
 what a Claude session on the Windows PC needs to know to help run the letter
