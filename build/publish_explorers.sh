@@ -10,6 +10,7 @@
 # run this only when asked). Refuses to push to a name that forwards to another
 # repository, and checks the remote main is the commit just made.
 set -u
+HERE="$(cd "$(dirname "$0")" && pwd)"   # before the cd below, for publish_iac.sh
 cd ~/ia/explorers || exit 1
 OWNER=Robin-IA
 LOG=~/ia/explorers/publish.log
@@ -71,3 +72,10 @@ done
 publish "Explorer-Letters" \
   "Letters from Congress: start here. All letters from every Congress, 106th to 119th, that members published on their own websites, preserved by the Wayback Machine. Search across all of them, then open any Congress's explorer."
 say "=== all done ==="
+
+# The same build to Internet Archive Canada, so the two never drift apart:
+# auto_publish.sh calls this script every round and gets both. PUBLISH_IAC=0
+# publishes to Robin-IA only.
+if [ "${PUBLISH_IAC:-1}" != 0 ]; then
+  bash "$HERE/publish_iac.sh"
+fi
