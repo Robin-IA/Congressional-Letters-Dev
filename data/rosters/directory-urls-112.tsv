@@ -1,0 +1,587 @@
+chamber	state	district	name_listed	url	first_seen	last_seen	captures
+House	AK	0	Young, Don	https://donyoung.house.gov	20110105	20121201	6
+House	AL	1	Bonner, Jo	https://bonner.house.gov	20110105	20121201	6
+House	AL	2	Bright, Bobby	https://bright.house.gov	20110105	20110105	1
+House	AL	2	Roby, Martha	https://roby.house.gov	20110401	20121201	5
+House	AL	3	Rogers (AL), Mike	https://www.house.gov/mike-rogers	20110902	20121201	3
+House	AL	3	Rogers, Mike	https://www.house.gov/mike-rogers	20110105	20110501	3
+House	AL	4	Aderholt, Robert	https://aderholt.house.gov	20110105	20121201	6
+House	AL	5	Brooks, Mo	https://brooks.house.gov	20110401	20121201	5
+House	AL	5	Griffith, Parker	https://griffith.house.gov	20110105	20110105	1
+House	AL	6	Bachus, Spencer	https://bachus.house.gov	20110105	20121201	6
+House	AL	7	Davis, Artur	https://www.house.gov/arturdavis	20110105	20110105	1
+House	AL	7	Sewell, Terri A.	https://sewell.house.gov	20110401	20121201	5
+House	AR	1	Berry, Marion	https://www.house.gov/berry	20110105	20110105	1
+House	AR	1	Crawford, Rick	https://crawford.house.gov	20110401	20121201	5
+House	AR	2	Griffin, Tim	https://griffin.house.gov	20110401	20121201	5
+House	AR	2	Snyder, Vic	https://www.house.gov/snyder	20110105	20110105	1
+House	AR	3	Boozman, John	https://www.house.gov/boozman	20110105	20110105	1
+House	AR	3	Womack, Steve	https://womack.house.gov	20110401	20121201	5
+House	AR	4	Ross, Mike	https://ross.house.gov	20110105	20121201	6
+House	AS	0	Faleomavaega, Eni F. H.	https://www.house.gov/faleomavaega	20110105	20121201	6
+House	AZ	1	Gosar, Paul A.	https://gosar.house.gov	20120501	20121201	2
+House	AZ	1	Gosar, Paul R.	https://gosar.house.gov	20110401	20110902	3
+House	AZ	1	Kirkpatrick, Ann	https://kirkpatrick.house.gov	20110105	20110105	1
+House	AZ	2	Franks, Trent	https://www.house.gov/franks	20110105	20121201	6
+House	AZ	3	Quayle, Ben	https://quayle.house.gov	20110401	20121201	5
+House	AZ	3	Shadegg, John	https://johnshadegg.house.gov	20110105	20110105	1
+House	AZ	4	Pastor, Ed	https://www.house.gov/pastor	20110105	20121201	6
+House	AZ	5	Mitchell, Harry E.	https://mitchell.house.gov	20110105	20110105	1
+House	AZ	5	Schweikert, David	https://schweikert.house.gov	20110401	20121201	5
+House	AZ	6	Flake, Jeff	https://flake.house.gov	20110105	20121201	6
+House	AZ	7	Grijalva, Raul	https://grijalva.house.gov	20110105	20121201	6
+House	AZ	8	Barber, Ron	https://barber.house.gov	20121201	20121201	1
+House	AZ	8	Giffords, Gabrielle	https://giffords.house.gov	20110105	20120501	5
+House	CA	1	Thompson, Mike	https://mikethompson.house.gov	20110105	20121201	6
+House	CA	10	Garamendi, John	https://garamendi.house.gov	20110105	20121201	6
+House	CA	11	McNerney, Jerry	https://mcnerney.house.gov	20110105	20121201	6
+House	CA	12	Speier, Jackie	https://speier.house.gov	20110105	20121201	6
+House	CA	13	Stark, Fortney Pete	https://www.stark.house.gov	20110105	20121201	6
+House	CA	14	Eshoo, Anna G.	https://eshoo.house.gov	20110105	20121201	6
+House	CA	15	Honda, Mike	https://www.house.gov/honda	20110105	20121201	6
+House	CA	16	Lofgren, Zoe	https://www.house.gov/lofgren	20110105	20121201	6
+House	CA	17	Farr, Sam	https://www.house.gov/farr	20110105	20121201	6
+House	CA	18	Cardoza, Dennis	https://www.house.gov/cardoza	20110105	20120501	5
+House	CA	19	Denham, Jeff	https://denham.house.gov	20110401	20121201	5
+House	CA	19	Radanovich, George P.	https://radanovich.house.gov	20110105	20110105	1
+House	CA	2	Herger, Wally	https://www.house.gov/herger	20110105	20121201	6
+House	CA	20	Costa, Jim	https://costa.house.gov	20110501	20121201	4
+House	CA	20	Costa, Jim	https://www.house.gov/costa	20110105	20110401	2
+House	CA	21	Nunes, Devin	https://nunes.house.gov	20110105	20121201	6
+House	CA	22	McCarthy, Kevin	https://kevinmccarthy.house.gov	20110105	20121201	6
+House	CA	23	Capps, Lois	https://capps.house.gov	20110902	20121201	3
+House	CA	23	Capps, Lois	https://www.house.gov/capps	20110105	20110501	3
+House	CA	24	Gallegly, Elton	https://www.house.gov/gallegly	20110105	20121201	6
+House	CA	25	McKeon, Buck	https://mckeon.house.gov	20110105	20121201	6
+House	CA	26	Dreier, David	https://dreier.house.gov	20110105	20121201	6
+House	CA	27	Sherman, Brad	https://bradsherman.house.gov	20110105	20121201	6
+House	CA	28	Berman, Howard	https://www.house.gov/berman	20110105	20121201	6
+House	CA	29	Schiff, Adam	https://schiff.house.gov	20110105	20121201	6
+House	CA	3	Lungren, Daniel E.	https://lungren.house.gov	20110105	20121201	6
+House	CA	30	Waxman, Henry	https://www.henrywaxman.house.gov	20110105	20121201	6
+House	CA	31	Becerra, Xavier	https://becerra.house.gov	20110105	20121201	6
+House	CA	32	Chu, Judy	https://chu.house.gov	20110105	20121201	6
+House	CA	33	Bass, Karen	https://karenbass.house.gov	20110401	20121201	5
+House	CA	33	Watson, Diane E.	https://www.house.gov/watson	20110105	20110105	1
+House	CA	34	Roybal-Allard, Lucille	https://www.house.gov/roybal-allard	20110105	20121201	6
+House	CA	35	Waters, Maxine	https://www.house.gov/waters	20110105	20121201	6
+House	CA	36	Hahn, Janice	https://hahn.house.gov	20110902	20121201	3
+House	CA	36	Harman, Jane	https://harman.house.gov	20110105	20110105	1
+House	CA	37	Richardson, Laura	https://richardson.house.gov	20110105	20121201	6
+House	CA	38	Napolitano, Grace	https://napolitano.house.gov	20110105	20121201	6
+House	CA	39	Sanchez, Linda	https://lindasanchez.house.gov	20110105	20121201	6
+House	CA	4	McClintock, Tom	https://mcclintock.house.gov	20110105	20121201	6
+House	CA	40	Royce, Ed	https://www.royce.house.gov	20110105	20121201	6
+House	CA	41	Lewis, Jerry	https://www.house.gov/jerrylewis	20110105	20121201	6
+House	CA	42	Miller, Gary	https://garymiller.house.gov	20110105	20121201	6
+House	CA	43	Baca, Joe	https://www.house.gov/baca	20110105	20121201	6
+House	CA	44	Calvert, Ken	https://calvert.house.gov	20110105	20121201	6
+House	CA	45	Bono, Mary	https://bono.house.gov	20110105	20121201	6
+House	CA	46	Rohrabacher, Dana	https://www.house.gov/rohrabacher	20110105	20121201	6
+House	CA	47	Sanchez, Loretta	https://www.lorettasanchez.house.gov	20110105	20121201	6
+House	CA	48	Campbell, John	https://www.campbell.house.gov	20110105	20121201	6
+House	CA	49	Issa, Darrell	https://www.house.gov/issa	20110105	20121201	6
+House	CA	5	Matsui, Doris O.	https://matsui.house.gov	20110501	20121201	4
+House	CA	5	Matsui, Doris O.	https://www.house.gov/matsui	20110105	20110401	2
+House	CA	50	Bilbray, Brian P.	https://bilbray.house.gov	20110105	20121201	6
+House	CA	51	Filner, Bob	https://filner.house.gov	20110902	20121201	3
+House	CA	51	Filner, Bob	https://www.house.gov/filner	20110105	20110501	3
+House	CA	52	Hunter, Duncan D.	https://hunter.house.gov	20110105	20121201	6
+House	CA	53	Davis, Susan	https://www.house.gov/susandavis	20110105	20121201	6
+House	CA	6	Woolsey, Lynn	https://woolsey.house.gov	20110105	20121201	6
+House	CA	7	Miller, George	https://www.house.gov/georgemiller	20110105	20121201	6
+House	CA	8	Pelosi, Nancy	https://pelosi.house.gov	20110105	20121201	6
+House	CA	9	Lee, Barbara	https://lee.house.gov	20110105	20121201	6
+House	CO	1	DeGette, Diana	https://www.house.gov/degette	20110105	20121201	6
+House	CO	2	Polis, Jared	https://polis.house.gov	20110105	20121201	6
+House	CO	3	Salazar, John T.	https://www.house.gov/salazar	20110105	20110105	1
+House	CO	3	Tipton, Scott	https://tipton.house.gov	20110401	20121201	5
+House	CO	4	Gardner, Cory	https://gardner.house.gov	20110401	20121201	5
+House	CO	4	Markey, Betsy	https://betsymarkey.house.gov	20110105	20110105	1
+House	CO	5	Lamborn, Doug	https://lamborn.house.gov	20110105	20121201	6
+House	CO	6	Coffman, Mike	https://coffman.house.gov	20110105	20121201	6
+House	CO	7	Perlmutter, Ed	https://perlmutter.house.gov	20110105	20121201	6
+House	CT	1	Larson, John B.	https://www.larson.house.gov	20110105	20121201	6
+House	CT	2	Courtney, Joe	https://courtney.house.gov	20110105	20121201	6
+House	CT	3	DeLauro, Rosa L.	https://www.house.gov/delauro	20110105	20121201	6
+House	CT	4	Himes, Jim	https://himes.house.gov	20110105	20121201	6
+House	CT	5	Murphy, Christopher S.	https://chrismurphy.house.gov	20110105	20121201	6
+House	DC	0	Norton, Eleanor Holmes	https://www.house.gov/norton	20110105	20121201	6
+House	DE	0	Carney, John	https://johncarney.house.gov	20110401	20121201	5
+House	DE	0	Castle, Michael N.	https://www.house.gov/castle	20110105	20110105	1
+House	FL	1	Miller, Jeff	https://www.house.gov/jeffmiller	20110105	20121201	6
+House	FL	10	Young, C.W.  Bill	https://www.house.gov/young	20110105	20121201	6
+House	FL	11	Castor, Kathy	https://castor.house.gov	20110105	20121201	6
+House	FL	12	Putnam, Adam	https://adamputnam.house.gov	20110105	20110105	1
+House	FL	12	Ross, Dennis	https://dennisross.house.gov	20110401	20121201	5
+House	FL	13	Buchanan, Vern	https://buchanan.house.gov	20110105	20121201	6
+House	FL	14	Mack, Connie	https://www.house.gov/mack	20110105	20121201	6
+House	FL	15	Posey, Bill	https://posey.house.gov	20110105	20121201	6
+House	FL	16	Rooney, Tom	https://rooney.house.gov	20110105	20121201	6
+House	FL	17	Meek, Kendrick	https://kendrickmeek.house.gov	20110105	20110105	1
+House	FL	17	Wilson, Frederica	https://wilson.house.gov	20110401	20121201	5
+House	FL	18	Ros-Lehtinen, Ileana	https://ros-lehtinen.house.gov	20110105	20121201	6
+House	FL	19	Deutch, Ted	https://deutch.house.gov	20110105	20110401	2
+House	FL	19	Deutch, Ted	https://teddeutch.house.gov	20110501	20121201	4
+House	FL	2	Boyd, Allen	https://www.house.gov/boyd	20110105	20110105	1
+House	FL	2	Southerland, Steve	https://southerland.house.gov	20110401	20121201	5
+House	FL	20	Wasserman Schultz, Debbie	https://wassermanschultz.house.gov	20110105	20121201	6
+House	FL	21	Diaz-Balart, Lincoln	https://diaz-balart.house.gov	20110105	20110105	1
+House	FL	21	Diaz-Balart, Mario	https://mariodiazbalart.house.gov	20110401	20121201	5
+House	FL	22	Klein, Ron	https://www.klein.house.gov	20110105	20110105	1
+House	FL	22	West, Allen	https://west.house.gov	20110401	20121201	5
+House	FL	23	Hastings, Alcee L.	https://www.alceehastings.house.gov	20110105	20121201	6
+House	FL	24	Adams, Sandy	https://adams.house.gov	20110401	20121201	5
+House	FL	24	Kosmas, Suzanne M.	https://kosmas.house.gov	20110105	20110105	1
+House	FL	25	Diaz-Balart, Mario	https://www.house.gov/mariodiaz-balart	20110105	20110105	1
+House	FL	25	Rivera, David	https://rivera.house.gov	20110401	20121201	5
+House	FL	3	Brown, Corrine	https://corrinebrown.house.gov	20110501	20121201	4
+House	FL	3	Brown, Corrine	https://www.house.gov/corrinebrown	20110105	20110401	2
+House	FL	4	Crenshaw, Ander	https://crenshaw.house.gov	20110105	20121201	6
+House	FL	5	Brown-Waite, Virginia	https://brown-waite.house.gov	20110105	20110105	1
+House	FL	5	Nugent, Richard	https://nugent.house.gov	20110401	20121201	5
+House	FL	6	Stearns, Cliff	https://www.house.gov/stearns	20110105	20121201	6
+House	FL	7	Mica, John	https://www.house.gov/mica	20110105	20121201	6
+House	FL	8	Grayson, Alan	https://grayson.house.gov	20110105	20110105	1
+House	FL	8	Webster, Daniel	https://webster.house.gov	20110401	20121201	5
+House	FL	9	Bilirakis, Gus M.	https://bilirakis.house.gov	20110105	20121201	6
+House	GA	1	Kingston, Jack	https://kingston.house.gov	20110105	20121201	6
+House	GA	10	Broun, Paul C.	https://broun.house.gov	20110105	20121201	6
+House	GA	11	Gingrey, Phil	https://www.house.gov/gingrey	20110105	20121201	6
+House	GA	12	Barrow, John	https://barrow.house.gov	20110105	20121201	6
+House	GA	13	Scott, David	https://davidscott.house.gov	20110105	20121201	6
+House	GA	2	Bishop Jr., Sanford D.	https://bishop.house.gov	20110105	20121201	6
+House	GA	3	Westmoreland, Lynn A.	https://www.house.gov/westmoreland	20110105	20121201	6
+House	GA	4	"Johnson, Henry C. ""Hank"" Jr."	https://hankjohnson.house.gov	20110105	20121201	6
+House	GA	5	Lewis, John	https://www.house.gov/johnlewis	20110105	20121201	6
+House	GA	6	Price, Tom	https://tomprice.house.gov	20110902	20121201	3
+House	GA	6	Price, Tom	https://www.house.gov/tomprice	20110105	20110501	3
+House	GA	7	Linder, John	https://linder.house.gov	20110105	20110105	1
+House	GA	7	Woodall, Robert	https://woodall.house.gov	20110401	20121201	5
+House	GA	8	Marshall, Jim	https://jimmarshall.house.gov	20110105	20110105	1
+House	GA	8	Scott, Austin	https://austinscott.house.gov	20110401	20121201	5
+House	GA	9	Graves, Tom	https://tomgraves.house.gov	20110105	20121201	6
+House	GU	0	Bordallo, Madeleine	https://www.house.gov/bordallo	20110105	20121201	6
+House	HI	1	Djou, Charles	https://djou.house.gov	20110105	20110105	1
+House	HI	1	Hanabusa, Colleen	https://hanabusa.house.gov	20110401	20121201	5
+House	HI	2	Hirono, Mazie K.	https://hirono.house.gov	20110105	20121201	6
+House	IA	1	Braley, Bruce L.	https://braley.house.gov	20110105	20121201	6
+House	IA	2	Loebsack, David	https://loebsack.house.gov	20110105	20121201	6
+House	IA	3	Boswell, Leonard	https://boswell.house.gov	20110105	20121201	6
+House	IA	4	Latham, Tom	https://www.house.gov/latham	20110105	20121201	6
+House	IA	5	King, Steve	https://steveking.house.gov	20110501	20121201	4
+House	IA	5	King, Steve	https://www.house.gov/steveking	20110105	20110401	2
+House	ID	1	Labrador, Raul R.	https://labrador.house.gov	20110401	20121201	5
+House	ID	1	Minnick, Walt	https://minnick.house.gov	20110105	20110105	1
+House	ID	2	Simpson, Mike	https://www.house.gov/simpson	20110105	20121201	6
+House	IL	1	Rush, Bobby L.	https://rush.house.gov	20110902	20121201	3
+House	IL	1	Rush, Bobby L.	https://www.house.gov/rush	20110105	20110501	3
+House	IL	10	Dold, Robert	https://dold.house.gov	20110401	20121201	5
+House	IL	11	"Halvorson, Deborah ""Debbie"""	https://halvorson.house.gov	20110105	20110105	1
+House	IL	11	Kinzinger, Adam	https://kinzinger.house.gov	20110401	20121201	5
+House	IL	12	Costello, Jerry	https://www.costello.house.gov	20110105	20121201	6
+House	IL	13	Biggert, Judy	https://biggert.house.gov	20110501	20121201	4
+House	IL	13	Biggert, Judy	https://www.house.gov/biggert	20110105	20110401	2
+House	IL	14	Foster, Bill	https://foster.house.gov	20110105	20110105	1
+House	IL	14	Hultgren, Randy	https://hultgren.house.gov	20110401	20121201	5
+House	IL	15	Johnson, Timothy V.	https://www.house.gov/timjohnson	20110105	20121201	6
+House	IL	16	Manzullo, Donald	https://manzullo.house.gov	20110105	20121201	6
+House	IL	17	Hare, Phil	https://hare.house.gov	20110105	20110105	1
+House	IL	17	Schilling, Bobby	https://schilling.house.gov	20110401	20121201	5
+House	IL	18	Schock, Aaron	https://schock.house.gov	20110105	20121201	6
+House	IL	19	Shimkus, John	https://shimkus.house.gov	20110105	20121201	6
+House	IL	2	Jackson Jr., Jesse L.	https://www.house.gov/jackson	20110105	20121201	6
+House	IL	3	Lipinski, Daniel	https://www.lipinski.house.gov	20110105	20121201	6
+House	IL	4	Gutierrez, Luis	https://gutierrez.house.gov	20121201	20121201	1
+House	IL	4	Gutierrez, Luis	https://luisgutierrez.house.gov	20110105	20120501	5
+House	IL	5	Quigley, Mike	https://quigley.house.gov	20110105	20121201	6
+House	IL	6	Roskam, Peter J.	https://roskam.house.gov	20110105	20121201	6
+House	IL	7	Davis, Danny K.	https://www.house.gov/davis	20110105	20121201	6
+House	IL	8	Bean, Melissa L.	https://www.house.gov/bean	20110105	20110105	1
+House	IL	8	Walsh, Joe	https://walsh.house.gov	20110401	20121201	5
+House	IL	9	Schakowsky, Jan	https://www.house.gov/schakowsky	20110105	20121201	6
+House	IN	1	Visclosky, Peter	https://visclosky.house.gov	20110105	20121201	6
+House	IN	2	Donnelly, Joe	https://donnelly.house.gov	20110105	20121201	6
+House	IN	3	Stutzman, Marlin	https://stutzman.house.gov	20110105	20121201	6
+House	IN	4	Buyer, Steve	https://www.house.gov/buyer	20110105	20110105	1
+House	IN	4	Rokita, Todd	https://rokita.house.gov	20110401	20121201	5
+House	IN	5	Burton, Dan	https://www.house.gov/burton	20110105	20121201	6
+House	IN	6	Pence, Mike	https://mikepence.house.gov	20110105	20121201	6
+House	IN	7	Carson, André	https://carson.house.gov	20110105	20121201	6
+House	IN	8	Bucshon, Larry	https://bucshon.house.gov	20110401	20121201	5
+House	IN	8	Ellsworth, Brad	https://www.ellsworth.house.gov	20110105	20110105	1
+House	IN	9	Hill, Baron	https://baronhill.house.gov	20110105	20110105	1
+House	IN	9	Young, Todd	https://toddyoung.house.gov	20110401	20121201	5
+House	KS	1	Huelskamp, Tim	https://huelskamp.house.gov	20110401	20121201	5
+House	KS	1	Moran, Jerry	https://www.jerrymoran.house.gov	20110105	20110105	1
+House	KS	2	Jenkins, Lynn	https://lynnjenkins.house.gov	20110105	20121201	6
+House	KS	3	Moore, Dennis	https://moore.house.gov	20110105	20110105	1
+House	KS	3	Yoder, Kevin	https://yoder.house.gov	20110401	20121201	5
+House	KS	4	Pompeo, Mike	https://pompeo.house.gov	20110401	20121201	5
+House	KS	4	Tiahrt, Todd	https://www.house.gov/tiahrt	20110105	20110105	1
+House	KY	1	Whitfield, Ed	https://www.house.gov/whitfield	20110105	20121201	6
+House	KY	2	Guthrie, S. Brett	https://guthrie.house.gov	20110105	20121201	6
+House	KY	3	Yarmuth, John A.	https://yarmuth.house.gov	20110105	20121201	6
+House	KY	4	Davis, Geoff	https://geoffdavis.house.gov	20110105	20120501	5
+House	KY	4	Massie, Thomas	https://massie.house.gov	20121201	20121201	1
+House	KY	5	Rogers, Harold	https://halrogers.house.gov	20110105	20121201	6
+House	KY	6	Chandler, Ben	https://chandler.house.gov	20110105	20121201	6
+House	LA	1	Scalise, Steve	https://scalise.house.gov	20121201	20121201	1
+House	LA	1	Scalise, Steve	https://www.scalise.house.gov	20110105	20120501	5
+House	LA	2	Cao, Joseph	https://josephcao.house.gov	20110105	20110105	1
+House	LA	2	Richmond, Cedric	https://richmond.house.gov	20110401	20121201	5
+House	LA	3	Landry, Jeffrey	https://landry.house.gov	20110401	20121201	5
+House	LA	3	Melancon, Charlie	https://www.melancon.house.gov	20110105	20110105	1
+House	LA	4	Fleming, John	https://fleming.house.gov	20110105	20121201	6
+House	LA	5	Alexander, Rodney	https://www.house.gov/alexander	20110105	20121201	6
+House	LA	6	Cassidy, William	https://cassidy.house.gov	20110902	20121201	3
+House	LA	6	"Cassidy, William ""Bill"""	https://cassidy.house.gov	20110105	20110501	3
+House	LA	7	Boustany Jr., Charles W.	https://www.house.gov/boustany	20110105	20121201	6
+House	MA	1	Olver, John	https://www.house.gov/olver	20110105	20121201	6
+House	MA	10	Delahunt, William	https://delahunt.house.gov	20110105	20110105	1
+House	MA	10	Keating, William	https://keating.house.gov	20110401	20121201	5
+House	MA	2	Neal, Richard E.	https://neal.house.gov	20110501	20121201	4
+House	MA	2	Neal, Richard E.	https://www.house.gov/neal	20110105	20110401	2
+House	MA	3	McGovern, James	https://mcgovern.house.gov	20110105	20121201	6
+House	MA	4	Frank, Barney	https://frank.house.gov	20120501	20121201	2
+House	MA	4	Frank, Barney	https://www.house.gov/frank	20110105	20110902	4
+House	MA	5	Tsongas, Niki	https://tsongas.house.gov	20110105	20121201	6
+House	MA	6	Tierney, John	https://tierney.house.gov	20110105	20121201	6
+House	MA	7	Markey, Ed	https://www.house.gov/markey	20110105	20121201	6
+House	MA	8	Capuano, Michael E.	https://www.house.gov/capuano	20110105	20121201	6
+House	MA	9	Lynch, Stephen F.	https://lynch.house.gov	20110105	20121201	6
+House	MD	1	Harris, Andy	https://harris.house.gov	20110401	20121201	5
+House	MD	1	Kratovil, Jr., Frank M.	https://kratovil.house.gov	20110105	20110105	1
+House	MD	2	Ruppersberger, Dutch	https://www.house.gov/ruppersberger	20110105	20121201	6
+House	MD	3	Sarbanes, John P.	https://sarbanes.house.gov	20110105	20121201	6
+House	MD	4	Edwards, Donna F.	https://www.house.gov/donnaedwards	20110105	20121201	6
+House	MD	5	Hoyer, Steny H.	https://hoyer.house.gov	20110105	20121201	6
+House	MD	6	Bartlett, Roscoe	https://bartlett.house.gov	20110105	20121201	6
+House	MD	7	Cummings, Elijah	https://www.house.gov/cummings	20110105	20121201	6
+House	MD	8	Van Hollen, Chris	https://vanhollen.house.gov	20110105	20121201	6
+House	ME	1	Pingree, Chellie	https://pingree.house.gov	20110105	20121201	6
+House	ME	2	Michaud, Michael	https://michaud.house.gov	20110105	20121201	6
+House	MI	1	Benishek, Dan	https://benishek.house.gov	20110401	20121201	5
+House	MI	1	Stupak, Bart	https://www.house.gov/stupak	20110105	20110105	1
+House	MI	10	Miller, Candice	https://candicemiller.house.gov	20110105	20121201	6
+House	MI	11	Curson, David	https://curson.house.gov	20121201	20121201	1
+House	MI	11	McCotter, Thaddeus	https://mccotter.house.gov	20110105	20120501	5
+House	MI	12	Levin, Sander	https://levin.house.gov	20110902	20121201	3
+House	MI	12	Levin, Sander	https://www.house.gov/levin	20110105	20110501	3
+House	MI	13	Clarke, Hansen	https://hansenclarke.house.gov	20110401	20121201	5
+House	MI	13	Kilpatrick, Carolyn	https://www.house.gov/kilpatrick	20110105	20110105	1
+House	MI	14	Conyers Jr., John	https://www.house.gov/conyers	20110105	20121201	6
+House	MI	15	Dingell, John	https://www.house.gov/dingell	20110105	20121201	6
+House	MI	2	Hoekstra, Pete	https://www.house.gov/hoekstra	20110105	20110105	1
+House	MI	2	Huizenga, Bill	https://huizenga.house.gov	20110401	20121201	5
+House	MI	3	Amash, Justin	https://amash.house.gov	20110401	20121201	5
+House	MI	3	Ehlers, Vernon J.	https://www.house.gov/ehlers	20110105	20110105	1
+House	MI	4	Camp, Dave	https://camp.house.gov	20110105	20121201	6
+House	MI	5	Kildee, Dale	https://kildee.house.gov	20110105	20121201	6
+House	MI	6	Upton, Fred	https://www.house.gov/upton	20110105	20121201	6
+House	MI	7	Schauer, Mark	https://schauer.house.gov	20110105	20110105	1
+House	MI	7	Walberg, Tim	https://walberg.house.gov	20110401	20121201	5
+House	MI	8	Rogers (MI), Mike	https://mikerogers.house.gov	20110902	20121201	3
+House	MI	8	Rogers, Mike	https://mikerogers.house.gov	20110501	20110501	1
+House	MI	8	Rogers, Mike	https://www.house.gov/mikerogers	20110105	20110401	2
+House	MI	9	Peters, Gary	https://peters.house.gov	20110105	20121201	6
+House	MN	1	Walz, Timothy J.	https://walz.house.gov	20110105	20121201	6
+House	MN	2	Kline, John	https://kline.house.gov	20110105	20121201	6
+House	MN	3	Paulsen, Erik	https://paulsen.house.gov	20110105	20121201	6
+House	MN	4	McCollum, Betty	https://www.house.gov/mccollum	20110105	20121201	6
+House	MN	5	Ellison, Keith	https://ellison.house.gov	20110105	20121201	6
+House	MN	6	Bachmann, Michele	https://bachmann.house.gov	20110105	20121201	6
+House	MN	7	Peterson, Collin C.	https://collinpeterson.house.gov	20110105	20121201	6
+House	MN	8	Cravaack, Chip	https://cravaack.house.gov	20110401	20121201	5
+House	MN	8	Oberstar, James L.	https://oberstar.house.gov	20110105	20110105	1
+House	MO	1	"Clay Jr., William ""Lacy"""	https://www.house.gov/clay	20110105	20121201	6
+House	MO	2	Akin, Todd	https://akin.house.gov	20110105	20121201	6
+House	MO	3	Carnahan, Russ	https://carnahan.house.gov	20110105	20121201	6
+House	MO	4	Hartzler, Vicky	https://hartzler.house.gov	20110401	20121201	5
+House	MO	4	Skelton, Ike	https://www.house.gov/skelton	20110105	20110105	1
+House	MO	5	Cleaver, Emanuel	https://www.house.gov/cleaver	20110105	20121201	6
+House	MO	6	Graves, Sam	https://graves.house.gov	20110902	20121201	3
+House	MO	6	Graves, Sam	https://www.house.gov/graves	20110105	20110501	3
+House	MO	7	Blunt, Roy	https://www.house.gov/blunt	20110105	20110105	1
+House	MO	7	Long, Billy	https://long.house.gov	20110401	20121201	5
+House	MO	8	Emerson, Jo Ann	https://emerson.house.gov	20110902	20121201	3
+House	MO	8	Emerson, Jo Ann	https://www.house.gov/emerson	20110105	20110501	3
+House	MO	9	Luetkemeyer, Blaine	https://luetkemeyer.house.gov	20110105	20121201	6
+House	MP	0	Sablan, Gregorio	https://sablan.house.gov	20110105	20121201	6
+House	MS	1	Childers, Travis	https://childers.house.gov	20110105	20110105	1
+House	MS	1	Nunnelee, Alan	https://nunnelee.house.gov	20110401	20121201	5
+House	MS	2	Thompson, Bennie G.	https://benniethompson.house.gov	20110105	20121201	6
+House	MS	3	Harper, Gregg	https://harper.house.gov	20110105	20121201	6
+House	MS	4	Palazzo, Steven	https://palazzo.house.gov	20110401	20121201	5
+House	MS	4	Taylor, Gene	https://www.house.gov/genetaylor	20110105	20110105	1
+House	MT	0	Rehberg, Dennis	https://www.house.gov/rehberg	20110105	20121201	6
+House	NC	1	Butterfield, G.K.	https://www.house.gov/butterfield	20110105	20121201	6
+House	NC	10	McHenry, Patrick T.	https://www.house.gov/mchenry	20110105	20121201	6
+House	NC	11	Shuler, Heath	https://shuler.house.gov	20110105	20121201	6
+House	NC	12	Watt, Mel	https://watt.house.gov	20110902	20121201	3
+House	NC	12	Watt, Mel	https://www.watt.house.gov	20110105	20110501	3
+House	NC	13	Miller, Brad	https://bradmiller.house.gov	20110501	20121201	4
+House	NC	13	Miller, Brad	https://www.house.gov/bradmiller	20110105	20110401	2
+House	NC	2	Ellmers, Renee	https://ellmers.house.gov	20110401	20121201	5
+House	NC	2	Etheridge, Bob	https://www.house.gov/etheridge	20110105	20110105	1
+House	NC	3	Jones, Walter B.	https://jones.house.gov	20110105	20121201	6
+House	NC	4	Price, David	https://price.house.gov	20110105	20121201	6
+House	NC	5	Foxx, Virginia	https://foxx.house.gov	20110105	20121201	6
+House	NC	6	Coble, Howard	https://www.house.gov/coble	20110105	20121201	6
+House	NC	7	McIntyre, Mike	https://www.house.gov/mcintyre	20110105	20121201	6
+House	NC	8	Kissell, Larry	https://kissell.house.gov	20110105	20121201	6
+House	NC	9	Myrick, Sue	https://www.house.gov/myrick	20110105	20121201	6
+House	ND	0	Berg, Rick	https://berg.house.gov	20110401	20121201	5
+House	ND	0	Pomeroy, Earl	https://www.house.gov/pomeroy	20110105	20110105	1
+House	NE	1	Fortenberry, Jeff	https://fortenberry.house.gov	20110105	20121201	6
+House	NE	2	Terry, Lee	https://leeterry.house.gov	20110105	20121201	6
+House	NE	3	Smith, Adrian	https://www.adriansmith.house.gov	20110105	20121201	6
+House	NH	1	Guinta, Frank	https://guinta.house.gov	20110401	20121201	5
+House	NH	1	Shea-Porter, Carol	https://shea-porter.house.gov	20110105	20110105	1
+House	NH	2	Bass, Charles	https://bass.house.gov	20110401	20121201	5
+House	NH	2	Hodes, Paul W.	https://hodes.house.gov	20110105	20110105	1
+House	NJ	1	Andrews, Robert E.	https://www.house.gov/andrews	20110105	20121201	6
+House	NJ	10	Payne Jr., Donald	https://payne.house.gov	20121201	20121201	1
+House	NJ	10	Payne, Donald M.	https://payne.house.gov	20110105	20120501	5
+House	NJ	11	Frelinghuysen, Rodney	https://frelinghuysen.house.gov	20110105	20121201	6
+House	NJ	12	Holt, Rush	https://holt.house.gov	20110105	20121201	6
+House	NJ	13	Sires, Albio	https://sires.house.gov	20120501	20121201	2
+House	NJ	13	Sires, Albio	https://www.house.gov/sires	20110105	20110902	4
+House	NJ	2	LoBiondo, Frank	https://www.house.gov/lobiondo	20110105	20121201	6
+House	NJ	3	Adler, John	https://adler.house.gov	20110105	20110105	1
+House	NJ	3	Runyan, Jon	https://runyan.house.gov	20110401	20121201	5
+House	NJ	4	Smith, Chris	https://chrissmith.house.gov	20110105	20121201	6
+House	NJ	5	Garrett, Scott	https://garrett.house.gov	20110105	20121201	6
+House	NJ	6	Pallone Jr., Frank	https://www.house.gov/pallone	20110105	20121201	6
+House	NJ	7	Lance, Leonard	https://lance.house.gov	20110105	20121201	6
+House	NJ	8	Pascrell Jr., Bill	https://pascrell.house.gov	20110105	20121201	6
+House	NJ	9	Rothman, Steven	https://rothman.house.gov	20110105	20121201	6
+House	NM	1	Heinrich, Martin T.	https://heinrich.house.gov	20110105	20121201	6
+House	NM	2	Pearce, Steve	https://pearce.house.gov	20110401	20121201	5
+House	NM	2	Teague, Harry	https://teague.house.gov	20110105	20110105	1
+House	NM	3	Lujan, Ben R.	https://lujan.house.gov	20110105	20121201	6
+House	NV	1	Berkley, Shelley	https://www.house.gov/berkley	20110105	20121201	6
+House	NV	2	Amodei, Mark	https://amodei.house.gov	20120501	20121201	2
+House	NV	2	Heller, Dean	https://heller.house.gov	20110105	20110501	3
+House	NV	3	Heck, Joe	https://heck.house.gov	20110401	20121201	5
+House	NV	3	Titus, Dina	https://titus.house.gov	20110105	20110105	1
+House	NY	1	Bishop, Timothy	https://wwwc.house.gov/timbishop	20110105	20121201	6
+House	NY	10	Towns, Edolphus	https://towns.house.gov	20110902	20121201	3
+House	NY	10	Towns, Edolphus	https://www.house.gov/towns	20110105	20110501	3
+House	NY	11	Clarke, Yvette D.	https://clarke.house.gov	20110105	20121201	6
+House	NY	12	VelÃ¡zquez, Nydia M.	https://www.house.gov/velazquez	20110902	20121201	3
+House	NY	12	Velázquez, Nydia M.	https://www.house.gov/velazquez	20110105	20110501	3
+House	NY	13	Grimm, Michael	https://grimm.house.gov	20110401	20121201	5
+House	NY	13	McMahon, Michael E.	https://mcmahon.house.gov	20110105	20110105	1
+House	NY	14	Maloney, Carolyn	https://maloney.house.gov	20110105	20121201	6
+House	NY	15	Rangel, Charles B.	https://rangel.house.gov	20110105	20121201	6
+House	NY	16	Serrano, José E.	https://serrano.house.gov	20110105	20121201	6
+House	NY	17	Engel, Eliot	https://www.house.gov/engel	20110105	20121201	6
+House	NY	18	Lowey, Nita	https://www.house.gov/lowey	20110105	20121201	6
+House	NY	19	Hall, John J.	https://johnhall.house.gov	20110105	20110105	1
+House	NY	19	Hayworth, Nan	https://hayworth.house.gov	20110401	20121201	5
+House	NY	2	Israel, Steve	https://israel.house.gov	20110105	20121201	6
+House	NY	20	Gibson, Chris	https://gibson.house.gov	20110401	20121201	5
+House	NY	20	Murphy, Scott	https://scottmurphy.house.gov	20110105	20110105	1
+House	NY	21	Tonko, Paul D.	https://tonko.house.gov	20110105	20121201	6
+House	NY	22	Hinchey, Maurice	https://www.house.gov/hinchey	20110105	20121201	6
+House	NY	23	Owens, Bill	https://owens.house.gov	20110105	20121201	6
+House	NY	24	Arcuri, Michael A.	https://arcuri.house.gov	20110105	20110105	1
+House	NY	24	Hanna, Richard	https://hanna.house.gov	20110401	20121201	5
+House	NY	25	Buerkle, Ann Marie	https://buerkle.house.gov	20110401	20121201	5
+House	NY	25	Maffei, Daniel B.	https://maffei.house.gov	20110105	20110105	1
+House	NY	26	Hochul, Kathy	https://hochul.house.gov	20110902	20121201	3
+House	NY	26	Lee, Christopher J.	https://chrislee.house.gov	20110105	20110105	1
+House	NY	27	Higgins, Brian	https://www.house.gov/higgins	20110105	20121201	6
+House	NY	28	Slaughter, Louise	https://www.louise.house.gov	20110105	20121201	6
+House	NY	29	Reed, Tom	https://reed.house.gov	20110105	20121201	6
+House	NY	3	King, Pete	https://peteking.house.gov	20110105	20121201	6
+House	NY	4	McCarthy, Carolyn	https://www.house.gov/carolynmccarthy	20110105	20121201	6
+House	NY	5	Ackerman, Gary	https://www.house.gov/ackerman	20110105	20121201	6
+House	NY	6	Meeks, Gregory W.	https://www.house.gov/meeks	20110105	20121201	6
+House	NY	7	Crowley, Joseph	https://crowley.house.gov	20110105	20121201	6
+House	NY	8	Nadler, Jerrold	https://www.house.gov/nadler	20110105	20121201	6
+House	NY	9	Turner, Robert	https://bobturner.house.gov	20120501	20121201	2
+House	NY	9	Weiner, Anthony D.	https://www.weiner.house.gov	20110105	20110501	3
+House	OH	1	Chabot, Steve	https://chabot.house.gov	20110401	20121201	5
+House	OH	1	Driehaus, Steve	https://driehaus.house.gov	20110105	20110105	1
+House	OH	10	Kucinich, Dennis J.	https://kucinich.house.gov	20110105	20121201	6
+House	OH	11	Fudge, Marcia L.	https://fudge.house.gov	20110105	20121201	6
+House	OH	12	Tiberi, Pat	https://tiberi.house.gov	20110105	20121201	6
+House	OH	13	Sutton, Betty	https://sutton.house.gov	20110105	20121201	6
+House	OH	14	LaTourette, Steven C.	https://latourette.house.gov	20110105	20121201	6
+House	OH	15	Kilroy, Mary Jo	https://kilroy.house.gov	20110105	20110105	1
+House	OH	15	Stivers, Steve	https://stivers.house.gov	20110401	20121201	5
+House	OH	16	Boccieri, John A.	https://boccieri.house.gov	20110105	20110105	1
+House	OH	16	Renacci, Jim	https://renacci.house.gov	20110401	20121201	5
+House	OH	17	Ryan, Tim	https://timryan.house.gov	20110105	20121201	6
+House	OH	18	Gibbs, Bob	https://gibbs.house.gov	20110401	20121201	5
+House	OH	18	Space, Zachary T.	https://space.house.gov	20110105	20110105	1
+House	OH	2	Schmidt, Jean	https://www.house.gov/schmidt	20110105	20121201	6
+House	OH	3	Turner, Michael	https://www.house.gov/miketurner	20110105	20121201	6
+House	OH	4	Jordan, Jim	https://jordan.house.gov	20110105	20121201	6
+House	OH	5	Latta, Robert E.	https://latta.house.gov	20110105	20121201	6
+House	OH	6	Johnson, Bill	https://billjohnson.house.gov	20110401	20121201	5
+House	OH	6	Wilson, Charles A.	https://www.charliewilson.house.gov	20110105	20110105	1
+House	OH	7	Austria, Steve	https://austria.house.gov	20110105	20121201	6
+House	OH	8	Boehner, John A.	https://johnboehner.house.gov	20110105	20121201	6
+House	OH	9	Kaptur, Marcy	https://www.kaptur.house.gov	20110105	20121201	6
+House	OK	1	Sullivan, John	https://www.house.gov/sullivan	20110105	20121201	6
+House	OK	2	Boren, Dan	https://www.house.gov/boren	20110105	20121201	6
+House	OK	3	Lucas, Frank	https://www.house.gov/lucas	20110105	20121201	6
+House	OK	4	Cole, Tom	https://cole.house.gov	20110501	20121201	4
+House	OK	4	Cole, Tom	https://www.house.gov/cole	20110105	20110401	2
+House	OK	5	Fallin, Mary	https://fallin.house.gov	20110105	20110105	1
+House	OK	5	Lankford, James	https://lankford.house.gov	20110401	20121201	5
+House	OR	1	Bonamici, Suzanne	https://bonamici.house.gov	20120501	20121201	2
+House	OR	1	Wu, David	https://www.house.gov/wu	20110105	20110501	3
+House	OR	2	Walden, Greg	https://walden.house.gov	20110105	20121201	6
+House	OR	3	Blumenauer, Earl	https://blumenauer.house.gov	20110105	20121201	6
+House	OR	4	DeFazio, Peter	https://www.defazio.house.gov	20110105	20121201	6
+House	OR	5	Schrader, Kurt	https://schrader.house.gov	20110105	20121201	6
+House	PA	1	Brady, Robert	https://www.brady.house.gov	20110105	20121201	6
+House	PA	10	Carney, Christopher P.	https://carney.house.gov	20110105	20110105	1
+House	PA	10	Marino, Tom	https://marino.house.gov	20110401	20121201	5
+House	PA	11	Barletta, Lou	https://barletta.house.gov	20110401	20121201	5
+House	PA	11	Kanjorski, Paul E.	https://kanjorski.house.gov	20110105	20110105	1
+House	PA	12	Critz, Mark	https://critz.house.gov	20110105	20121201	6
+House	PA	13	Schwartz, Allyson Y.	https://www.house.gov/schwartz	20110105	20121201	6
+House	PA	14	Doyle, Mike	https://doyle.house.gov	20110105	20121201	6
+House	PA	15	Dent, Charles W.	https://dent.house.gov	20110105	20121201	6
+House	PA	16	Pitts, Joseph R.	https://www.house.gov/pitts	20110105	20121201	6
+House	PA	17	Holden, Tim	https://www.holden.house.gov	20110105	20121201	6
+House	PA	18	Murphy, Tim	https://murphy.house.gov	20110105	20121201	6
+House	PA	19	Platts, Todd	https://www.house.gov/platts	20110105	20121201	6
+House	PA	2	Fattah, Chaka	https://www.house.gov/fattah	20110105	20121201	6
+House	PA	3	Dahlkemper, Kathy	https://dahlkemper.house.gov	20110105	20110105	1
+House	PA	3	Kelly, Mike	https://kelly.house.gov	20110401	20121201	5
+House	PA	4	Altmire, Jason	https://altmire.house.gov	20110105	20121201	6
+House	PA	5	Thompson, Glenn W.	https://thompson.house.gov	20110105	20121201	6
+House	PA	6	Gerlach, Jim	https://gerlach.house.gov	20110105	20121201	6
+House	PA	7	Meehan, Pat	https://meehan.house.gov	20110401	20121201	5
+House	PA	7	Sestak, Joe	https://sestak.house.gov	20110105	20110105	1
+House	PA	8	Fitzpatrick, Michael G.	https://fitzpatrick.house.gov	20110401	20121201	5
+House	PA	8	Murphy, Patrick J.	https://www.patrickmurphy.house.gov	20110105	20110105	1
+House	PA	9	Shuster, Bill	https://www.house.gov/shuster	20110105	20121201	6
+House	PR	0	Pierluisi, Pedro	https://pierluisi.house.gov	20110105	20121201	6
+House	RI	1	Cicilline, David	https://cicilline.house.gov	20110401	20121201	5
+House	RI	1	Kennedy, Patrick	https://patrickkennedy.house.gov	20110105	20110105	1
+House	RI	2	Langevin, Jim	https://www.house.gov/langevin	20110105	20121201	6
+House	SC	1	Brown, Henry	https://brown.house.gov	20110105	20110105	1
+House	SC	1	Scott, Tim	https://timscott.house.gov	20110401	20121201	5
+House	SC	2	Wilson, Joe	https://joewilson.house.gov	20110105	20121201	6
+House	SC	3	Barrett, J.Gresham	https://www.house.gov/barrett	20110105	20110105	1
+House	SC	3	Duncan, Jeff	https://jeffduncan.house.gov	20110401	20121201	5
+House	SC	4	Gowdy, Trey	https://gowdy.house.gov	20110401	20121201	5
+House	SC	4	Inglis, Bob	https://inglis.house.gov	20110105	20110105	1
+House	SC	5	Mulvaney, Mick	https://mulvaney.house.gov	20110401	20121201	5
+House	SC	5	Spratt, John	https://www.house.gov/spratt	20110105	20110105	1
+House	SC	6	Clyburn, James E.	https://clyburn.house.gov	20110105	20121201	6
+House	SD	0	Herseth Sandlin, Stephanie	https://hersethsandlin.house.gov	20110105	20110105	1
+House	SD	0	Noem, Kristi	https://noem.house.gov	20110401	20121201	5
+House	TN	1	Roe, Phil	https://roe.house.gov	20110105	20121201	6
+House	TN	2	Duncan Jr., John J.	https://www.house.gov/duncan	20110105	20121201	6
+House	TN	3	Fleischmann, Chuck	https://fleischmann.house.gov	20110401	20121201	5
+House	TN	3	Wamp, Zach	https://www.house.gov/wamp	20110105	20110105	1
+House	TN	4	Davis, Lincoln	https://www.house.gov/lincolndavis	20110105	20110105	1
+House	TN	4	DesJarlais, Scott	https://desjarlais.house.gov	20110401	20121201	5
+House	TN	5	Cooper, Jim	https://www.cooper.house.gov	20110105	20121201	6
+House	TN	6	Black, Diane	https://black.house.gov	20110401	20121201	5
+House	TN	6	Gordon, Bart	https://gordon.house.gov	20110105	20110105	1
+House	TN	7	Blackburn, Marsha	https://blackburn.house.gov	20110105	20121201	6
+House	TN	8	Fincher, Stephen	https://fincher.house.gov	20110401	20121201	5
+House	TN	8	Tanner, John	https://www.house.gov/tanner	20110105	20110105	1
+House	TN	9	Cohen, Steve	https://cohen.house.gov	20110105	20121201	6
+House	TX	1	Gohmert, Louie	https://gohmert.house.gov	20110105	20121201	6
+House	TX	10	McCaul, Michael T.	https://www.house.gov/mccaul	20110105	20121201	6
+House	TX	11	Conaway, K. Michael	https://conaway.house.gov	20110105	20121201	6
+House	TX	12	Granger, Kay	https://kaygranger.house.gov	20110105	20121201	6
+House	TX	13	Thornberry, Mac	https://www.house.gov/thornberry	20110105	20121201	6
+House	TX	14	Paul, Ron	https://www.house.gov/paul	20110105	20121201	6
+House	TX	15	Hinojosa, Rubén	https://www.house.gov/hinojosa	20110105	20121201	6
+House	TX	16	Reyes, Silvestre	https://reyes.house.gov	20110105	20121201	6
+House	TX	17	Edwards, Chet	https://www.house.gov/edwards	20110105	20110105	1
+House	TX	17	Flores, Bill	https://flores.house.gov	20110401	20121201	5
+House	TX	18	Jackson Lee, Sheila	https://jacksonlee.house.gov	20110105	20121201	6
+House	TX	19	Neugebauer, Randy	https://randy.house.gov	20110105	20121201	6
+House	TX	2	Poe, Ted	https://www.house.gov/poe	20110105	20121201	6
+House	TX	20	Gonzalez, Charlie A.	https://www.gonzalez.house.gov	20110105	20121201	6
+House	TX	21	Smith, Lamar	https://lamarsmith.house.gov	20110105	20121201	6
+House	TX	22	Olson, Pete	https://olson.house.gov	20110105	20121201	6
+House	TX	23	Canseco, Francisco	https://canseco.house.gov	20110401	20121201	5
+House	TX	23	Rodriguez, Ciro	https://www.rodriguez.house.gov	20110105	20110105	1
+House	TX	24	Marchant, Kenny	https://www.house.gov/marchant	20110105	20121201	6
+House	TX	25	Doggett, Lloyd	https://doggett.house.gov	20110501	20121201	4
+House	TX	25	Doggett, Lloyd	https://www.house.gov/doggett	20110105	20110401	2
+House	TX	26	Burgess, Michael	https://burgess.house.gov	20110105	20121201	6
+House	TX	27	Farenthold, Blake	https://farenthold.house.gov	20110401	20121201	5
+House	TX	27	Ortiz, Solomon P.	https://ortiz.house.gov	20110105	20110105	1
+House	TX	28	Cuellar, Henry	https://cuellar.house.gov	20110105	20121201	6
+House	TX	29	Green, Gene	https://green.house.gov	20110501	20121201	4
+House	TX	29	Green, Gene	https://www.house.gov/green	20110105	20110401	2
+House	TX	3	Johnson, Sam	https://samjohnson.house.gov	20120501	20121201	2
+House	TX	3	Johnson, Sam	https://www.house.gov/samjohnson	20110105	20110902	4
+House	TX	30	Johnson, Eddie Bernice	https://www.house.gov/ebjohnson	20110105	20121201	6
+House	TX	31	Carter, John	https://carter.house.gov	20110105	20121201	6
+House	TX	32	Sessions, Pete	https://www.house.gov/sessions	20110105	20121201	6
+House	TX	4	Hall, Ralph M.	https://www.house.gov/ralphhall	20110105	20121201	6
+House	TX	5	Hensarling, Jeb	https://www.house.gov/hensarling	20110105	20121201	6
+House	TX	6	Barton, Joe	https://joebarton.house.gov	20110105	20121201	6
+House	TX	7	Culberson, John	https://culberson.house.gov	20110105	20121201	6
+House	TX	8	Brady, Kevin	https://kevinbrady.house.gov	20120501	20121201	2
+House	TX	8	Brady, Kevin	https://www.house.gov/brady	20110105	20110902	4
+House	TX	9	Green, Al	https://www.house.gov/algreen	20110105	20121201	6
+House	UT	1	Bishop, Rob	https://robbishop.house.gov	20110105	20121201	6
+House	UT	2	Matheson, Jim	https://matheson.house.gov	20120501	20121201	2
+House	UT	2	Matheson, Jim	https://www.house.gov/matheson	20110105	20110902	4
+House	UT	3	Chaffetz, Jason	https://chaffetz.house.gov	20110105	20121201	6
+House	VA	1	Wittman, Robert J.	https://www.wittman.house.gov	20110105	20121201	6
+House	VA	10	Wolf, Frank	https://www.house.gov/wolf	20110105	20121201	6
+House	VA	11	"Connolly, Gerald E. ""Gerry"""	https://connolly.house.gov	20110105	20121201	6
+House	VA	2	Nye III, Glenn C.	https://nye.house.gov	20110105	20110105	1
+House	VA	2	Rigell, E.	https://rigell.house.gov	20110501	20110501	1
+House	VA	2	Rigell, Scott	https://rigell.house.gov	20110401	20121201	4
+House	VA	3	Scott, Robert C.	https://www.house.gov/scott	20110902	20121201	3
+House	VA	3	"Scott, Robert C. ""Bobby"""	https://www.house.gov/scott	20110105	20110501	3
+House	VA	4	Forbes, J. Randy	https://www.house.gov/forbes	20110105	20121201	6
+House	VA	5	Hurt, Robert	https://hurt.house.gov	20110401	20121201	5
+House	VA	5	Perriello, Tom	https://perriello.house.gov	20110105	20110105	1
+House	VA	6	Goodlatte, Bob	https://www.house.gov/goodlatte	20110105	20121201	6
+House	VA	7	Cantor, Eric	https://cantor.house.gov	20110105	20121201	6
+House	VA	8	Moran, James	https://moran.house.gov	20110501	20121201	4
+House	VA	8	Moran, Jim	https://moran.house.gov	20110105	20110401	2
+House	VA	9	Boucher, Rick	https://www.boucher.house.gov	20110105	20110105	1
+House	VA	9	Griffith, Morgan	https://morgangriffith.house.gov	20110401	20121201	5
+House	VI	0	Christensen, Donna M.,	https://donnachristensen.house.gov	20110902	20121201	3
+House	VI	0	Christian-Christensen, Donna M.	https://donnachristensen.house.gov	20110105	20110401	2
+House	VI	0	Christian-Christensen, Donna M.,	https://donnachristensen.house.gov	20110501	20110501	1
+House	VT	0	Welch, Peter	https://www.welch.house.gov	20110105	20121201	6
+House	WA	1	DelBene, Suzan	https://delbene.house.gov	20121201	20121201	1
+House	WA	1	Inslee, Jay	https://inslee.house.gov	20110902	20120501	2
+House	WA	1	Inslee, Jay	https://www.house.gov/inslee	20110105	20110501	3
+House	WA	2	Larsen, Rick	https://www.house.gov/larsen	20110105	20121201	6
+House	WA	3	Baird, Brian	https://baird.house.gov	20110105	20110105	1
+House	WA	3	Herrera Beutler, Jaime	https://herrerabeutler.house.gov	20110401	20121201	5
+House	WA	4	Hastings, Doc	https://hastings.house.gov	20110105	20121201	6
+House	WA	5	McMorris Rodgers, Cathy	https://mcmorris.house.gov	20110105	20121201	6
+House	WA	6	Dicks, Norman D.	https://www.house.gov/dicks	20110105	20121201	6
+House	WA	7	McDermott, Jim	https://www.house.gov/mcdermott	20110105	20121201	6
+House	WA	8	Reichert, David G.	https://www.house.gov/reichert	20110105	20121201	6
+House	WA	9	Smith, Adam	https://www.house.gov/adamsmith	20110105	20121201	6
+House	WI	1	Ryan, Paul	https://paulryan.house.gov	20121201	20121201	1
+House	WI	1	Ryan, Paul	https://www.house.gov/ryan	20110105	20120501	5
+House	WI	2	Baldwin, Tammy	https://tammybaldwin.house.gov	20110105	20121201	6
+House	WI	3	Kind, Ron	https://kind.house.gov	20110105	20121201	6
+House	WI	4	Moore, Gwen	https://www.house.gov/gwenmoore	20110105	20121201	6
+House	WI	5	Sensenbrenner, F. James	https://www.house.gov/sensenbrenner	20110105	20121201	6
+House	WI	6	Petri, Thomas	https://petri.house.gov	20110902	20121201	3
+House	WI	6	Petri, Thomas	https://www.house.gov/petri	20110105	20110501	3
+House	WI	7	Duffy, Sean P.	https://duffy.house.gov	20110401	20121201	5
+House	WI	7	Obey, David R.	https://obey.house.gov	20110105	20110105	1
+House	WI	8	Kagen, Steve	https://kagen.house.gov	20110105	20110105	1
+House	WI	8	Ribble, Reid	https://ribble.house.gov	20110401	20121201	5
+House	WV	1	McKinley, David	https://mckinley.house.gov	20110401	20121201	5
+House	WV	1	Mollohan, Alan B.	https://mollohan.house.gov	20110105	20110105	1
+House	WV	2	Capito, Shelley Moore	https://capito.house.gov	20110105	20121201	6
+House	WV	3	Rahall, Nick	https://www.rahall.house.gov	20110105	20121201	6
+House	WY	0	Lummis, Cynthia M.	https://lummis.house.gov	20110105	20121201	6

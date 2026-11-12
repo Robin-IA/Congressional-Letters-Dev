@@ -1,0 +1,563 @@
+chamber	state	district	name_listed	url	first_seen	last_seen	captures
+House	AK	0	Young, Don	https://donyoung.house.gov	20070104	20090103	10
+House	AL	1	Bonner, Jo	https://bonner.house.gov	20070104	20090103	10
+House	AL	2	Everett, Terry	https://www.everett.house.gov	20070104	20090103	10
+House	AL	3	Rogers, Mike	https://www.house.gov/mike-rogers	20070104	20090103	10
+House	AL	4	Aderholt, Robert	https://aderholt.house.gov	20070104	20090103	10
+House	AL	5	"Cramer, Robert E. ""Bud"""	https://cramer.house.gov	20070104	20090103	10
+House	AL	6	Bachus, Spencer	https://bachus.house.gov	20070104	20090103	10
+House	AL	7	Davis, Artur	https://www.house.gov/arturdavis	20070104	20090103	10
+House	AR	1	Berry, Marion	https://www.house.gov/berry	20070104	20090103	10
+House	AR	2	Snyder, Vic	https://www.house.gov/snyder	20070104	20090103	10
+House	AR	3	Boozman, John	https://www.house.gov/boozman	20070104	20090103	10
+House	AR	4	Ross, Mike	https://ross.house.gov	20080130	20090103	6
+House	AR	4	Ross, Mike	https://www.house.gov/ross	20070104	20071001	4
+House	AS	0	Faleomavaega, Eni F. H.	https://www.house.gov/faleomavaega	20070104	20090103	10
+House	AZ	1	Renzi, Rick	https://www.house.gov/renzi	20070104	20090103	10
+House	AZ	2	Franks, Trent	https://www.house.gov/franks	20070104	20090103	10
+House	AZ	3	Shadegg, John	https://johnshadegg.house.gov	20070104	20090103	10
+House	AZ	4	Pastor, Ed	https://www.house.gov/pastor	20070401	20090103	9
+House	AZ	4	Pastor, Ed	https://www.pastor.house.gov	20070104	20070104	1
+House	AZ	5	Hayworth, J.D.	https://hayworth.house.gov	20070104	20070104	1
+House	AZ	5	Mitchell, Harry E.	https://mitchell.house.gov	20070401	20090103	9
+House	AZ	6	Flake, Jeff	https://flake.house.gov	20070104	20090103	10
+House	AZ	7	Grijalva, Raul	https://grijalva.house.gov	20080130	20090103	6
+House	AZ	7	Grijalva, Raul	https://www.house.gov/grijalva	20070104	20071001	4
+House	AZ	8	Giffords, Gabrielle	https://giffords.house.gov	20070401	20090103	9
+House	AZ	8	Kolbe, Jim	https://www.house.gov/kolbe	20070104	20070104	1
+House	CA	1	Thompson, Mike	https://mikethompson.house.gov	20070104	20090103	10
+House	CA	10	Tauscher, Ellen	https://www.house.gov/tauscher	20070104	20090103	10
+House	CA	11	McNerney, Jerry	https://mcnerney.house.gov	20070401	20090103	9
+House	CA	11	Pombo, Richard	https://pombo.house.gov	20070104	20070104	1
+House	CA	12	Lantos, Tom	https://lantos.house.gov	20070104	20080130	5
+House	CA	12	Speier, Jackie	https://speier.house.gov	20080418	20090103	5
+House	CA	13	Stark, Fortney Pete	https://www.house.gov/stark	20070104	20090103	10
+House	CA	14	Eshoo, Anna G.	https://eshoo.house.gov	20070104	20090103	10
+House	CA	15	Honda, Mike	https://www.house.gov/honda	20070104	20090103	10
+House	CA	16	Lofgren, Zoe	https://www.house.gov/lofgren	20070104	20090103	10
+House	CA	17	Farr, Sam	https://www.house.gov/farr	20070104	20090103	10
+House	CA	18	Cardoza, Dennis	https://www.house.gov/cardoza	20070104	20090103	10
+House	CA	19	Radanovich, George P.	https://radanovich.house.gov	20070104	20090103	10
+House	CA	2	Herger, Wally	https://www.house.gov/herger	20070104	20090103	10
+House	CA	20	Costa, Jim	https://www.house.gov/costa	20070104	20090103	10
+House	CA	21	Nunes, Devin	https://nunes.house.gov	20070104	20090103	10
+House	CA	22	McCarthy, Kevin	https://kevinmccarthy.house.gov	20070401	20090103	9
+House	CA	22	Thomas, Bill	https://www.house.gov/billthomas	20070104	20070104	1
+House	CA	23	Capps, Lois	https://www.house.gov/capps	20070104	20090103	10
+House	CA	24	Gallegly, Elton	https://www.house.gov/gallegly	20070104	20090103	10
+House	CA	25	McKeon, Buck	https://mckeon.house.gov	20070104	20090103	10
+House	CA	26	Dreier, David	https://dreier.house.gov	20070104	20090103	10
+House	CA	27	Sherman, Brad	https://bradsherman.house.gov	20070104	20090103	10
+House	CA	28	Berman, Howard	https://www.house.gov/berman	20070104	20090103	10
+House	CA	29	Schiff, Adam	https://schiff.house.gov	20070104	20090103	10
+House	CA	3	Lungren, Daniel E.	https://lungren.house.gov	20071001	20090103	7
+House	CA	3	Lungren, Daniel E.	https://www.lungren.house.gov	20070104	20070701	3
+House	CA	30	Waxman, Henry	https://www.henrywaxman.house.gov	20070104	20090103	10
+House	CA	31	Becerra, Xavier	https://becerra.house.gov	20070104	20090103	10
+House	CA	32	Solis, Hilda	https://solis.house.gov	20070104	20090103	10
+House	CA	33	Watson, Diane E.	https://www.house.gov/watson	20070104	20090103	10
+House	CA	34	Roybal-Allard, Lucille	https://www.house.gov/roybal-allard	20070104	20090103	10
+House	CA	35	Waters, Maxine	https://www.house.gov/waters	20070104	20090103	10
+House	CA	36	Harman, Jane	https://www.house.gov/harman	20070104	20090103	10
+House	CA	37	Millender-McDonald, Juanita	https://millender-mcdonald.house.gov	20070104	20070401	2
+House	CA	37	Richardson, Laura	https://richardson.house.gov	20071001	20090103	7
+House	CA	38	Napolitano, Grace	https://napolitano.house.gov	20070104	20090103	10
+House	CA	39	Sanchez, Linda	https://lindasanchez.house.gov	20080130	20090103	6
+House	CA	39	Sanchez, Linda	https://www.house.gov/lindasanchez	20070104	20071001	4
+House	CA	4	Doolittle, John	https://doolittle.house.gov	20070104	20090103	10
+House	CA	40	Royce, Ed	https://www.royce.house.gov	20070104	20090103	10
+House	CA	41	Lewis, Jerry	https://www.house.gov/jerrylewis	20070104	20090103	10
+House	CA	42	Miller, Gary	https://garymiller.house.gov	20080418	20090103	5
+House	CA	42	Miller, Gary	https://www.house.gov/garymiller	20070104	20080130	5
+House	CA	43	Baca, Joe	https://www.house.gov/baca	20070104	20090103	10
+House	CA	44	Calvert, Ken	https://calvert.house.gov	20070104	20090103	10
+House	CA	45	Bono, Mary	https://bono.house.gov	20070104	20090103	10
+House	CA	46	Rohrabacher, Dana	https://www.house.gov/rohrabacher	20070104	20090103	10
+House	CA	47	Sanchez, Loretta	https://www.lorettasanchez.house.gov	20070104	20090103	10
+House	CA	48	Campbell, John	https://www.campbell.house.gov	20080418	20090103	5
+House	CA	48	Campbell, John	https://www.house.gov/campbell	20070104	20080130	5
+House	CA	49	Issa, Darrell	https://www.house.gov/issa	20070104	20090103	10
+House	CA	5	Matsui, Doris O.	https://www.house.gov/matsui	20070104	20090103	10
+House	CA	50	Bilbray, Brian P.	https://www.house.gov/bilbray	20070104	20090103	10
+House	CA	51	Filner, Bob	https://www.house.gov/filner	20070104	20090103	10
+House	CA	52	Hunter, Duncan	https://www.house.gov/hunter	20070104	20090103	10
+House	CA	53	Davis, Susan	https://www.house.gov/susandavis	20070104	20090103	10
+House	CA	6	Woolsey, Lynn	https://woolsey.house.gov	20070104	20090103	10
+House	CA	7	Miller, George	https://www.house.gov/georgemiller	20070104	20090103	10
+House	CA	8	Pelosi, Nancy	https://www.house.gov/pelosi	20070104	20090103	10
+House	CA	9	Lee, Barbara	https://lee.house.gov	20070104	20090103	10
+House	CO	1	DeGette, Diana	https://www.house.gov/degette	20070104	20090103	10
+House	CO	2	Udall, Mark	https://markudall.house.gov/HoR/CO02/Home.htm	20070104	20090103	10
+House	CO	3	Salazar, John T.	https://www.house.gov/salazar	20070104	20090103	10
+House	CO	4	Musgrave, Marilyn	https://musgrave.house.gov	20070401	20090103	9
+House	CO	4	Musgrave, Marilyn	https://wwwc.house.gov/musgrave	20070104	20070104	1
+House	CO	5	Hefley, Joel	https://www.house.gov/hefley	20070104	20070104	1
+House	CO	5	Lamborn, Doug	https://lamborn.house.gov	20070401	20090103	9
+House	CO	6	Tancredo, Tom	https://tancredo.house.gov	20070104	20090103	10
+House	CO	7	Beauprez, Bob	https://www.house.gov/beauprez	20070104	20070104	1
+House	CO	7	Perlmutter, Ed	https://perlmutter.house.gov	20070401	20090103	9
+House	CT	1	Larson, John B.	https://www.house.gov/larson	20070104	20080418	6
+House	CT	1	Larson, John B.	https://www.larson.house.gov	20080706	20090103	4
+House	CT	2	Courtney, Joe	https://courtney.house.gov	20070401	20090103	9
+House	CT	2	Simmons, Rob	https://simmons.house.gov	20070104	20070104	1
+House	CT	3	DeLauro, Rosa L.	https://www.house.gov/delauro	20070104	20090103	10
+House	CT	4	Shays, Christopher	https://www.house.gov/shays	20070104	20090103	10
+House	CT	5	Johnson, Nancy L.	https://www.house.gov/nancyjohnson	20070104	20070104	1
+House	CT	5	Murphy, Christopher S.	https://chrismurphy.house.gov	20070401	20090103	9
+House	DC	0	Norton, Eleanor Holmes	https://www.house.gov/norton	20070104	20090103	10
+House	DE	0	Castle, Michael N.	https://www.house.gov/castle	20070104	20090103	10
+House	FL	1	Miller, Jeff	https://www.house.gov/jeffmiller	20070104	20090103	10
+House	FL	10	Young, C.W.  Bill	https://www.house.gov/young	20070104	20090103	10
+House	FL	11	Castor, Kathy	https://castor.house.gov	20070401	20090103	9
+House	FL	11	Davis, Jim	https://www.house.gov/jimdavis	20070104	20070104	1
+House	FL	12	Putnam, Adam	https://adamputnam.house.gov	20070104	20090103	10
+House	FL	13	Buchanan, Vern	https://buchanan.house.gov	20070401	20090103	9
+House	FL	13	Harris, Katherine	https://harris.house.gov	20070104	20070104	1
+House	FL	14	Mack, Connie	https://www.house.gov/mack	20070104	20090103	10
+House	FL	15	Weldon, Dave	https://weldon.house.gov	20070104	20090103	10
+House	FL	16	Mahoney, Tim	https://mahoney.house.gov	20070401	20070701	2
+House	FL	16	Mahoney, Tim	https://www.mahoney.house.gov	20071001	20090103	7
+House	FL	17	Meek, Kendrick	https://kendrickmeek.house.gov	20070104	20090103	10
+House	FL	18	Ros-Lehtinen, Ileana	https://ros-lehtinen.house.gov	20090103	20090103	1
+House	FL	18	Ros-Lehtinen, Ileana	https://www.house.gov/ros-lehtinen	20070104	20081005	9
+House	FL	19	Wexler, Robert	https://wexler.house.gov	20070104	20090103	10
+House	FL	2	Boyd, Allen	https://www.house.gov/boyd	20070104	20090103	10
+House	FL	20	Wasserman Schultz, Debbie	https://wassermanschultz.house.gov	20071001	20090103	7
+House	FL	20	Wasserman Schultz, Debbie	https://www.house.gov/schultz	20070104	20070701	3
+House	FL	21	Diaz-Balart, Lincoln	https://diaz-balart.house.gov	20071001	20090103	7
+House	FL	21	Diaz-Balart, Lincoln	https://www.house.gov/diaz-balart	20070104	20070701	3
+House	FL	22	Klein, Ron	https://klein.house.gov	20070401	20080130	4
+House	FL	22	Klein, Ron	https://www.klein.house.gov	20080418	20090103	5
+House	FL	22	Shaw Jr., E. Clay	https://shaw.house.gov	20070104	20070104	1
+House	FL	23	Hastings, Alcee L.	https://alceehastings.house.gov	20070104	20070701	3
+House	FL	23	Hastings, Alcee L.	https://www.alceehastings.house.gov	20071001	20090103	7
+House	FL	24	Feeney, Tom	https://www.house.gov/feeney	20070104	20090103	10
+House	FL	25	Diaz-Balart, Mario	https://www.house.gov/mariodiaz-balart	20070104	20090103	10
+House	FL	3	Brown, Corrine	https://www.house.gov/corrinebrown	20070104	20090103	10
+House	FL	4	Crenshaw, Ander	https://crenshaw.house.gov	20070104	20090103	10
+House	FL	5	Brown-Waite, Virginia	https://brown-waite.house.gov	20071001	20090103	7
+House	FL	5	Brown-Waite, Virginia	https://www.house.gov/brown-waite	20070104	20070701	3
+House	FL	6	Stearns, Cliff	https://www.house.gov/stearns	20070104	20090103	10
+House	FL	7	Mica, John	https://www.house.gov/mica	20070104	20090103	10
+House	FL	8	Keller, Ric	https://www.house.gov/keller	20070104	20090103	10
+House	FL	9	Bilirakis, Gus M.	https://bilirakis.house.gov	20070401	20090103	9
+House	FL	9	Bilirakis, Michael	https://www.house.gov/bilirakis	20070104	20070104	1
+House	GA	1	Kingston, Jack	https://kingston.house.gov	20070104	20090103	10
+House	GA	10	Broun, Paul C.	https://broun.house.gov	20071001	20090103	7
+House	GA	10	Deal, Nathan	https://www.house.gov/deal	20070104	20070104	1
+House	GA	11	Gingrey, Phil	https://www.house.gov/gingrey	20070104	20090103	10
+House	GA	12	Barrow, John	https://barrow.house.gov	20070104	20090103	10
+House	GA	13	Scott, David	https://davidscott.house.gov	20070104	20090103	10
+House	GA	2	Bishop Jr., Sanford D.	https://bishop.house.gov	20070104	20090103	10
+House	GA	3	Marshall, Jim	https://jimmarshall.house.gov	20070104	20070104	1
+House	GA	3	Westmoreland, Lynn A.	https://www.house.gov/westmoreland	20070401	20090103	9
+House	GA	4	"Johnson, Henry C. ""Hank"" Jr."	https://hankjohnson.house.gov	20070401	20090103	9
+House	GA	4	McKinney, Cynthia	https://www.house.gov/mckinney	20070104	20070104	1
+House	GA	5	Lewis, John	https://www.house.gov/johnlewis	20070104	20090103	10
+House	GA	6	Price, Tom	https://www.house.gov/tomprice	20070104	20090103	10
+House	GA	7	Linder, John	https://linder.house.gov	20070104	20090103	10
+House	GA	8	Marshall, Jim	https://jimmarshall.house.gov	20070401	20090103	9
+House	GA	8	Westmoreland, Lynn A.	https://www.house.gov/westmoreland	20070104	20070104	1
+House	GA	9	Deal, Nathan	https://www.house.gov/deal	20070401	20090103	9
+House	GA	9	Norwood, Charlie	https://www.house.gov/norwood	20070104	20070104	1
+House	GU	0	Bordallo, Madeleine	https://www.house.gov/bordallo	20070104	20090103	10
+House	HI	1	Abercrombie, Neil	https://www.house.gov/abercrombie	20070104	20090103	10
+House	HI	2	Case, Ed	https://wwwc.house.gov/case	20070104	20070104	1
+House	HI	2	Hirono, Mazie K.	https://hirono.house.gov	20070401	20090103	9
+House	IA	1	Braley, Bruce L.	https://braley.house.gov	20070401	20090103	9
+House	IA	1	Nussle, Jim	https://nussle.house.gov	20070104	20070104	1
+House	IA	2	Leach, Jim	https://leach.house.gov	20070104	20070104	1
+House	IA	2	Loebsack, David	https://loebsack.house.gov	20070401	20090103	9
+House	IA	3	Boswell, Leonard	https://boswell.house.gov	20070104	20090103	10
+House	IA	4	Latham, Tom	https://www.house.gov/latham	20070104	20090103	10
+House	IA	5	King, Steve	https://www.house.gov/steveking	20070104	20090103	10
+House	ID	1	Otter, Butch	https://otter.house.gov	20070104	20070104	1
+House	ID	1	Sali, Bill	https://sali.house.gov	20070401	20090103	9
+House	ID	2	Simpson, Mike	https://www.house.gov/simpson	20070104	20090103	10
+House	IL	1	Rush, Bobby L.	https://www.house.gov/rush	20070104	20090103	10
+House	IL	10	Kirk, Mark	https://www.house.gov/kirk	20070104	20090103	10
+House	IL	11	Weller, Jerry	https://www.house.gov/weller	20070104	20090103	10
+House	IL	12	Costello, Jerry	https://www.costello.house.gov	20080706	20090103	4
+House	IL	12	Costello, Jerry	https://www.house.gov/costello	20070104	20080418	6
+House	IL	13	Biggert, Judy	https://www.house.gov/biggert	20070104	20090103	10
+House	IL	14	Foster, Bill	https://foster.house.gov	20080418	20090103	5
+House	IL	14	Hastert, Denny	https://www.house.gov/hastert	20070104	20071001	4
+House	IL	15	Johnson, Timothy V.	https://www.house.gov/timjohnson	20070104	20090103	10
+House	IL	16	Manzullo, Donald	https://manzullo.house.gov	20070104	20090103	10
+House	IL	17	Evans, Lane	https://www.house.gov/evans	20070104	20070104	1
+House	IL	17	Hare, Phil	https://hare.house.gov	20070401	20090103	9
+House	IL	18	LaHood, Ray	https://www.house.gov/lahood	20070401	20090103	9
+House	IL	18	Lahood, Ray	https://www.house.gov/lahood	20070104	20070104	1
+House	IL	19	Shimkus, John	https://www.house.gov/shimkus	20070104	20090103	10
+House	IL	2	Jackson Jr., Jesse L.	https://www.house.gov/jackson	20070104	20090103	10
+House	IL	3	Lipinski, Daniel	https://www.lipinski.house.gov	20070104	20090103	10
+House	IL	4	Gutierrez, Luis	https://luisgutierrez.house.gov	20080418	20090103	5
+House	IL	4	Gutierrez, Luis	https://www.house.gov/gutierrez	20070104	20080130	5
+House	IL	5	Emanuel, Rahm	https://www.house.gov/emanuel	20070104	20090103	10
+House	IL	6	Hyde, Henry	https://www.house.gov/hyde	20070104	20070104	1
+House	IL	6	Roskam, Peter J.	https://roskam.house.gov	20070401	20090103	9
+House	IL	7	Davis, Danny K.	https://www.house.gov/davis	20070104	20090103	10
+House	IL	8	Bean, Melissa L.	https://www.house.gov/bean	20070104	20090103	10
+House	IL	9	Schakowsky, Jan	https://www.house.gov/schakowsky	20070104	20090103	10
+House	IN	1	Visclosky, Peter	https://www.house.gov/visclosky	20070104	20090103	10
+House	IN	2	Chocola, Chris	https://www.house.gov/chocola	20070104	20070104	1
+House	IN	2	Donnelly, Joe	https://donnelly.house.gov	20070401	20090103	9
+House	IN	3	Souder, Mark E.	https://souder.house.gov	20070104	20090103	10
+House	IN	4	Buyer, Steve	https://www.house.gov/buyer	20070104	20090103	10
+House	IN	5	Burton, Dan	https://www.house.gov/burton	20070104	20090103	10
+House	IN	6	Pence, Mike	https://mikepence.house.gov	20070104	20090103	10
+House	IN	7	Carson, André	https://carson.house.gov	20080418	20090103	5
+House	IN	7	Carson, Julia	https://juliacarson.house.gov	20070104	20071001	4
+House	IN	8	Ellsworth, Brad	https://ellsworth.house.gov	20070401	20070701	2
+House	IN	8	Ellsworth, Brad	https://www.ellsworth.house.gov	20071001	20090103	7
+House	IN	8	Hostettler, John N.	https://www.house.gov/hostettler	20070104	20070104	1
+House	IN	9	Hill, Baron	https://baronhill.house.gov	20070401	20090103	9
+House	IN	9	Sodrel, Michael E.	https://www.house.gov/sodrel	20070104	20070104	1
+House	KS	1	Moran, Jerry	https://www.jerrymoran.house.gov	20070104	20090103	10
+House	KS	2	Boyda, Nancy E.	https://boyda.house.gov	20070401	20090103	9
+House	KS	2	Ryun, Jim	https://ryun.house.gov	20070104	20070104	1
+House	KS	3	Moore, Dennis	https://moore.house.gov	20070104	20090103	10
+House	KS	4	Tiahrt, Todd	https://www.house.gov/tiahrt	20070104	20090103	10
+House	KY	1	Whitfield, Ed	https://www.house.gov/whitfield	20070104	20090103	10
+House	KY	2	Lewis, Ron	https://www.house.gov/ronlewis	20070104	20090103	10
+House	KY	3	Northup, Anne	https://northup.house.gov	20070104	20070104	1
+House	KY	3	Yarmuth, John A.	https://yarmuth.house.gov	20070401	20090103	9
+House	KY	4	Davis, Geoff	https://geoffdavis.house.gov	20070104	20090103	10
+House	KY	5	Rogers, Harold	https://halrogers.house.gov	20070104	20090103	10
+House	KY	6	Chandler, Ben	https://chandler.house.gov	20070104	20090103	10
+House	LA	1	Jindal, Bobby	https://www.house.gov/jindal	20070104	20071001	4
+House	LA	1	Scalise, Steve	https://www.scalise.house.gov	20080706	20090103	4
+House	LA	2	Jefferson, William J.	https://www.house.gov/jefferson	20070104	20090103	10
+House	LA	3	Melancon, Charlie	https://melancon.house.gov	20070104	20080130	5
+House	LA	3	Melancon, Charlie	https://www.melancon.house.gov	20080418	20090103	5
+House	LA	4	McCrery, Jim	https://mccrery.house.gov	20070104	20090103	10
+House	LA	5	Alexander, Rodney	https://www.house.gov/alexander	20070104	20090103	10
+House	LA	6	Baker, Richard	https://baker.house.gov	20070104	20080130	5
+House	LA	6	Cazayoux, Don	https://www.cazayoux.house.gov	20080706	20090103	4
+House	LA	7	Boustany Jr., Charles W.	https://www.house.gov/boustany	20070104	20090103	10
+House	MA	1	Olver, John	https://www.house.gov/olver	20070104	20090103	10
+House	MA	10	Delahunt, William	https://www.house.gov/delahunt	20070104	20090103	10
+House	MA	2	Neal, Richard E.	https://www.house.gov/neal	20070104	20090103	10
+House	MA	3	McGovern, James	https://mcgovern.house.gov	20070401	20090103	9
+House	MA	3	McGovern, James	https://www.house.gov/mcgovern	20070104	20070104	1
+House	MA	4	Frank, Barney	https://www.house.gov/frank	20070104	20090103	10
+House	MA	5	Meehan, Marty	https://www.house.gov/meehan	20070104	20070701	3
+House	MA	5	Tsongas, Niki	https://tsongas.house.gov	20080130	20090103	6
+House	MA	6	Tierney, John	https://tierney.house.gov	20071001	20090103	7
+House	MA	6	Tierney, John	https://www.house.gov/tierney	20070104	20070701	3
+House	MA	7	Markey, Ed	https://www.house.gov/markey	20070104	20090103	10
+House	MA	8	Capuano, Michael E.	https://www.house.gov/capuano	20070104	20090103	10
+House	MA	9	Lynch, Stephen F.	https://www.house.gov/lynch	20070104	20090103	10
+House	MD	1	Gilchrest, Wayne	https://www.house.gov/gilchrest	20070104	20090103	10
+House	MD	2	Ruppersberger, Dutch	https://www.house.gov/ruppersberger	20070104	20090103	10
+House	MD	3	Cardin, Benjamin L.	https://www.house.gov/cardin	20070104	20070104	1
+House	MD	3	Sarbanes, John P.	https://sarbanes.house.gov	20070401	20090103	9
+House	MD	4	Edwards, Donna F.	https://www.house.gov/donnaedwards	20080706	20090103	4
+House	MD	4	Wynn, Albert	https://www.house.gov/wynn	20070104	20080418	6
+House	MD	5	Hoyer, Steny H.	https://hoyer.house.gov	20070104	20090103	10
+House	MD	6	Bartlett, Roscoe	https://bartlett.house.gov	20070104	20090103	10
+House	MD	7	Cummings, Elijah	https://www.house.gov/cummings	20070104	20090103	10
+House	MD	8	Van Hollen, Chris	https://vanhollen.house.gov	20070104	20090103	10
+House	ME	1	Allen, Tom	https://tomallen.house.gov	20070104	20090103	10
+House	ME	2	Michaud, Michael	https://michaud.house.gov	20070104	20090103	10
+House	MI	1	Stupak, Bart	https://www.house.gov/stupak	20070104	20090103	10
+House	MI	10	Miller, Candice	https://candicemiller.house.gov	20070104	20090103	10
+House	MI	11	McCotter, Thaddeus	https://mccotter.house.gov	20070104	20090103	10
+House	MI	12	Levin, Sander	https://www.house.gov/levin	20070104	20090103	10
+House	MI	13	Kilpatrick, Carolyn	https://www.house.gov/kilpatrick	20070104	20090103	10
+House	MI	14	Conyers Jr., John	https://www.house.gov/conyers	20070104	20090103	10
+House	MI	15	Dingell, John	https://www.house.gov/dingell	20070104	20090103	10
+House	MI	2	Hoekstra, Pete	https://www.house.gov/hoekstra	20070104	20090103	10
+House	MI	3	Ehlers, Vernon J.	https://www.house.gov/ehlers	20070104	20090103	10
+House	MI	4	Camp, Dave	https://camp.house.gov	20070104	20090103	10
+House	MI	5	Kildee, Dale	https://www.house.gov/kildee	20070104	20090103	10
+House	MI	6	Upton, Fred	https://www.house.gov/upton	20070104	20090103	10
+House	MI	7	"Schwarz, John J.H. ""Joe"""	https://schwarz.house.gov	20070104	20070104	1
+House	MI	7	Walberg, Timothy	https://walberg.house.gov	20070401	20090103	9
+House	MI	8	Rogers, Mike	https://www.house.gov/mikerogers	20070104	20090103	10
+House	MI	9	Knollenberg, Joseph	https://www.house.gov/knollenberg	20070104	20090103	10
+House	MN	1	Gutknecht, Gil	https://www.gil.house.gov	20070104	20070104	1
+House	MN	1	Walz, Timothy J.	https://walz.house.gov	20070401	20090103	9
+House	MN	2	Kline, John	https://kline.house.gov	20070104	20090103	10
+House	MN	3	Ramstad, Jim	https://www.house.gov/ramstad	20070104	20090103	10
+House	MN	4	McCollum, Betty	https://www.house.gov/mccollum	20070104	20090103	10
+House	MN	5	Ellison, Keith	https://ellison.house.gov	20070401	20090103	9
+House	MN	5	Sabo, Martin Olav	https://www.house.gov/sabo	20070104	20070104	1
+House	MN	6	Bachmann, Michele	https://bachmann.house.gov	20070401	20090103	9
+House	MN	6	Kennedy, Mark	https://markkennedy.house.gov	20070104	20070104	1
+House	MN	7	Peterson, Collin C.	https://collinpeterson.house.gov	20070104	20090103	10
+House	MN	8	Oberstar, James L.	https://oberstar.house.gov	20070104	20090103	10
+House	MO	1	"Clay Jr., William ""Lacy"""	https://www.house.gov/clay	20070104	20090103	10
+House	MO	2	Akin, Todd	https://akin.house.gov	20070104	20090103	10
+House	MO	3	Carnahan, Russ	https://carnahan.house.gov	20071001	20090103	7
+House	MO	3	Carnahan, Russ	https://www.house.gov/carnahan	20070104	20070701	3
+House	MO	4	Skelton, Ike	https://www.house.gov/skelton	20070104	20090103	10
+House	MO	5	Cleaver, Emanuel	https://www.house.gov/cleaver	20070104	20090103	10
+House	MO	6	Graves, Sam	https://www.house.gov/graves	20070104	20090103	10
+House	MO	7	Blunt, Roy	https://www.house.gov/blunt	20070104	20090103	10
+House	MO	8	Emerson, Jo Ann	https://www.house.gov/emerson	20070104	20090103	10
+House	MO	9	Hulshof, Kenny	https://hulshof.house.gov	20070104	20090103	10
+House	MS	1	Childers, Travis	https://childers.house.gov	20080706	20090103	4
+House	MS	1	Wicker, Roger	https://www.house.gov/wicker	20070104	20071001	4
+House	MS	2	Thompson, Bennie G.	https://benniethompson.house.gov	20070104	20090103	10
+House	MS	3	"Pickering, Charles W. ""Chip"""	https://www.house.gov/pickering	20070104	20090103	10
+House	MS	4	Taylor, Gene	https://www.house.gov/genetaylor	20070104	20090103	10
+House	MT	0	Rehberg, Dennis	https://www.house.gov/rehberg	20070104	20090103	10
+House	NC	1	Butterfield, G.K.	https://www.house.gov/butterfield	20070104	20090103	10
+House	NC	10	McHenry, Patrick T.	https://www.house.gov/mchenry	20070104	20090103	10
+House	NC	11	Shuler, Heath	https://shuler.house.gov	20070401	20090103	9
+House	NC	11	Taylor, Charles H.	https://www.house.gov/charlestaylor	20070104	20070104	1
+House	NC	12	Watt, Mel	https://www.house.gov/watt	20070104	20070401	2
+House	NC	12	Watt, Mel	https://www.watt.house.gov	20070701	20090103	8
+House	NC	13	Miller, Brad	https://www.house.gov/bradmiller	20070104	20090103	10
+House	NC	2	Etheridge, Bob	https://www.house.gov/etheridge	20070104	20090103	10
+House	NC	3	Jones, Walter B.	https://jones.house.gov	20070104	20090103	10
+House	NC	4	Price, David	https://price.house.gov	20070104	20090103	10
+House	NC	5	Foxx, Virginia	https://foxx.house.gov	20070104	20090103	10
+House	NC	6	Coble, Howard	https://www.house.gov/coble	20070104	20090103	10
+House	NC	7	McIntyre, Mike	https://www.house.gov/mcintyre	20070104	20090103	10
+House	NC	8	Hayes, Robin	https://hayes.house.gov	20070104	20090103	10
+House	NC	9	Myrick, Sue	https://www.house.gov/myrick	20070104	20090103	10
+House	ND	0	Pomeroy, Earl	https://www.house.gov/pomeroy	20070104	20090103	10
+House	NE	1	Fortenberry, Jeff	https://fortenberry.house.gov	20070104	20090103	10
+House	NE	2	Terry, Lee	https://leeterry.house.gov	20070104	20090103	10
+House	NE	3	Osborne, Tom	https://www.house.gov/osborne	20070104	20070104	1
+House	NE	3	Smith, Adrian	https://adriansmith.house.gov	20070401	20070701	2
+House	NE	3	Smith, Adrian	https://www.adriansmith.house.gov	20071001	20090103	7
+House	NH	1	Bradley, Jeb	https://www.house.gov/bradley	20070104	20070104	1
+House	NH	1	Shea-Porter, Carol	https://shea-porter.house.gov	20070401	20090103	9
+House	NH	2	Bass, Charles	https://www.house.gov/bass	20070104	20070104	1
+House	NH	2	Hodes, Paul W.	https://hodes.house.gov	20070401	20090103	9
+House	NJ	1	Andrews, Robert E.	https://www.house.gov/andrews	20070104	20090103	10
+House	NJ	10	Payne, Donald M.	https://www.house.gov/payne	20070104	20090103	10
+House	NJ	11	Frelinghuysen, Rodney	https://frelinghuysen.house.gov	20070104	20090103	10
+House	NJ	12	Holt, Rush	https://holt.house.gov	20070104	20090103	10
+House	NJ	13	Sires, Albio	https://www.house.gov/sires	20070104	20090103	10
+House	NJ	2	LoBiondo, Frank	https://www.house.gov/lobiondo	20070104	20090103	10
+House	NJ	3	Saxton, Jim	https://www.house.gov/saxton	20070104	20090103	10
+House	NJ	4	Smith, Chris	https://chrissmith.house.gov	20070701	20090103	8
+House	NJ	4	Smith, Chris	https://www.house.gov/chrissmith	20070104	20070401	2
+House	NJ	5	Garrett, Scott	https://garrett.house.gov	20070104	20090103	10
+House	NJ	6	Pallone Jr., Frank	https://www.house.gov/pallone	20070104	20090103	10
+House	NJ	7	Ferguson, Michael	https://www.house.gov/ferguson	20070104	20090103	10
+House	NJ	8	Pascrell Jr., Bill	https://pascrell.house.gov	20070104	20090103	10
+House	NJ	9	Rothman, Steven	https://rothman.house.gov	20070104	20090103	10
+House	NM	1	Wilson, Heather	https://wilson.house.gov	20070104	20090103	10
+House	NM	2	Pearce, Steve	https://www.house.gov/pearce	20070104	20090103	10
+House	NM	3	Udall, Tom	https://tomudall.house.gov	20070104	20080130	5
+House	NM	3	Udall, Tom	https://www.tomudall.house.gov	20080418	20090103	5
+House	NV	1	Berkley, Shelley	https://www.house.gov/berkley	20070104	20090103	10
+House	NV	2	Heller, Dean	https://heller.house.gov	20070401	20090103	9
+House	NV	3	Porter, Jon	https://www.house.gov/porter	20070104	20090103	10
+House	NY	1	Bishop, Timothy	https://wwwc.house.gov/timbishop	20070104	20090103	10
+House	NY	10	Towns, Edolphus	https://www.house.gov/towns	20070104	20090103	10
+House	NY	11	Clarke, Yvette D.	https://clarke.house.gov	20070401	20090103	9
+House	NY	11	Owens, Major	https://www.house.gov/owens	20070104	20070104	1
+House	NY	12	Velázquez, Nydia M.	https://www.house.gov/velazquez	20070104	20090103	10
+House	NY	13	Fossella, Vito	https://www.house.gov/fossella	20070104	20090103	10
+House	NY	14	Maloney, Carolyn	https://maloney.house.gov	20070104	20090103	10
+House	NY	15	Rangel, Charles B.	https://rangel.house.gov	20070104	20090103	10
+House	NY	16	Serrano, José E.	https://serrano.house.gov	20080130	20090103	6
+House	NY	16	Serrano, José E.	https://www.house.gov/serrano	20070104	20071001	4
+House	NY	17	Engel, Eliot	https://www.house.gov/engel	20070104	20090103	10
+House	NY	18	Lowey, Nita	https://www.house.gov/lowey	20070104	20090103	10
+House	NY	19	Hall, John J.	https://johnhall.house.gov	20070401	20090103	9
+House	NY	19	Kelly, Sue	https://www.house.gov/suekelly	20070104	20070104	1
+House	NY	2	Israel, Steve	https://israel.house.gov	20080130	20090103	6
+House	NY	2	Israel, Steve	https://www.house.gov/israel	20070104	20071001	4
+House	NY	20	Gillibrand, Kirsten E.	https://gillibrand.house.gov	20070401	20080130	4
+House	NY	20	Gillibrand, Kirsten E.	https://www.gillibrand.house.gov	20080418	20090103	5
+House	NY	20	Sweeney, John E.	https://www.house.gov/sweeney	20070104	20070104	1
+House	NY	21	McNulty, Michael R.	https://www.house.gov/mcnulty	20070104	20090103	10
+House	NY	22	Hinchey, Maurice	https://www.house.gov/hinchey	20070104	20090103	10
+House	NY	23	McHugh, John M.	https://mchugh.house.gov	20070104	20090103	10
+House	NY	24	Arcuri, Michael A.	https://arcuri.house.gov	20070401	20090103	9
+House	NY	24	Boehlert, Sherwood L.	https://www.house.gov/boehlert	20070104	20070104	1
+House	NY	25	Walsh, Jim	https://www.house.gov/walsh	20070104	20090103	10
+House	NY	26	Reynolds, Thomas M.	https://reynolds.house.gov	20070104	20090103	10
+House	NY	27	Higgins, Brian	https://www.house.gov/higgins	20070104	20090103	10
+House	NY	28	Slaughter, Louise	https://www.louise.house.gov	20070104	20090103	10
+House	NY	29	"Kuhl Jr., John R. ""Randy"""	https://www.house.gov/kuhl	20070104	20090103	10
+House	NY	3	King, Pete	https://peteking.house.gov	20070104	20090103	10
+House	NY	4	McCarthy, Carolyn	https://www.house.gov/carolynmccarthy	20070104	20090103	10
+House	NY	5	Ackerman, Gary	https://www.house.gov/ackerman	20070104	20090103	10
+House	NY	6	Meeks, Gregory W.	https://www.house.gov/meeks	20070104	20090103	10
+House	NY	7	Crowley, Joseph	https://crowley.house.gov	20071001	20090103	7
+House	NY	7	Crowley, Joseph	https://www.house.gov/crowley	20070104	20070701	3
+House	NY	8	Nadler, Jerrold	https://www.house.gov/nadler	20070104	20090103	10
+House	NY	9	Weiner, Anthony D.	https://www.house.gov/weiner	20070104	20080418	6
+House	NY	9	Weiner, Anthony D.	https://www.weiner.house.gov	20080706	20090103	4
+House	OH	1	Chabot, Steve	https://www.house.gov/chabot	20070104	20090103	10
+House	OH	10	Kucinich, Dennis J.	https://kucinich.house.gov	20070104	20090103	10
+House	OH	11	Fudge, Marcia L.	https://fudge.house.gov	20090103	20090103	1
+House	OH	11	Jones, Stephanie Tubbs	https://www.house.gov/tubbsjones	20070104	20080730	8
+House	OH	12	Tiberi, Pat	https://tiberi.house.gov	20070104	20090103	10
+House	OH	13	Brown, Sherrod	https://sherrod.house.gov	20070104	20070104	1
+House	OH	13	Sutton, Betty	https://sutton.house.gov	20070401	20090103	9
+House	OH	14	LaTourette, Steven C.	https://latourette.house.gov	20071001	20090103	7
+House	OH	14	LaTourette, Steven C.	https://www.house.gov/latourette	20070104	20070701	3
+House	OH	15	Pryce, Deborah	https://www.house.gov/pryce	20070104	20090103	10
+House	OH	16	Regula, Ralph	https://regula.house.gov	20071001	20090103	7
+House	OH	16	Regula, Ralph	https://wwwc.house.gov/regula	20070104	20070701	3
+House	OH	17	Ryan, Tim	https://timryan.house.gov	20070104	20090103	10
+House	OH	18	Space, Zachary T.	https://space.house.gov	20070401	20090103	9
+House	OH	2	Schmidt, Jean	https://www.house.gov/schmidt	20070104	20090103	10
+House	OH	3	Turner, Michael	https://www.house.gov/miketurner	20070104	20090103	10
+House	OH	4	Jordan, Jim	https://jordan.house.gov	20070401	20090103	9
+House	OH	4	Oxley, Michael G.	https://oxley.house.gov	20070104	20070104	1
+House	OH	5	Gillmor, Paul	https://gillmor.house.gov	20070104	20070701	3
+House	OH	5	Latta, Robert E.	https://latta.house.gov	20080130	20090103	6
+House	OH	6	Strickland, Ted	https://www.house.gov/strickland	20070104	20070104	1
+House	OH	6	Wilson, Charles A.	https://charliewilson.house.gov	20070401	20080130	4
+House	OH	6	Wilson, Charles A.	https://www.charliewilson.house.gov	20080418	20090103	5
+House	OH	7	Hobson, David	https://www.house.gov/hobson	20070104	20090103	10
+House	OH	8	Boehner, John A.	https://johnboehner.house.gov	20070104	20090103	10
+House	OH	9	Kaptur, Marcy	https://kaptur.house.gov	20070104	20080130	5
+House	OH	9	Kaptur, Marcy	https://www.kaptur.house.gov	20080418	20090103	5
+House	OK	1	Sullivan, John	https://www.house.gov/sullivan	20070104	20090103	10
+House	OK	2	Boren, Dan	https://www.house.gov/boren	20070104	20090103	10
+House	OK	3	Lucas, Frank	https://www.house.gov/lucas	20070104	20090103	10
+House	OK	4	Cole, Tom	https://www.house.gov/cole	20070104	20090103	10
+House	OK	5	Fallin, Mary	https://fallin.house.gov	20070401	20090103	9
+House	OK	5	Istook Jr., Ernest J.	https://www.house.gov/istook	20070104	20070104	1
+House	OR	1	Wu, David	https://www.house.gov/wu	20070104	20090103	10
+House	OR	2	Walden, Greg	https://walden.house.gov	20070104	20090103	10
+House	OR	3	Blumenauer, Earl	https://blumenauer.house.gov	20070104	20090103	10
+House	OR	4	DeFazio, Peter	https://defazio.house.gov	20070104	20080130	5
+House	OR	4	DeFazio, Peter	https://www.defazio.house.gov	20080418	20090103	5
+House	OR	5	Hooley, Darlene	https://www.house.gov/hooley	20070104	20090103	10
+House	PA	1	Brady, Robert	https://www.brady.house.gov	20070701	20090103	8
+House	PA	1	Brady, Robert	https://www.house.gov/robertbrady	20070104	20070401	2
+House	PA	10	Carney, Christopher P.	https://carney.house.gov	20070401	20090103	9
+House	PA	10	Sherwood, Don	https://www.house.gov/sherwood	20070104	20070104	1
+House	PA	11	Kanjorski, Paul E.	https://kanjorski.house.gov	20070104	20090103	10
+House	PA	12	Murtha, John	https://www.house.gov/murtha	20070104	20090103	10
+House	PA	13	Schwartz, Allyson Y.	https://www.house.gov/schwartz	20070104	20090103	10
+House	PA	14	Doyle, Mike	https://doyle.house.gov	20090103	20090103	1
+House	PA	14	Doyle, Mike	https://www.house.gov/doyle	20070104	20081005	9
+House	PA	15	Dent, Charles W.	https://dent.house.gov	20070104	20090103	10
+House	PA	16	Pitts, Joseph R.	https://www.house.gov/pitts	20070104	20090103	10
+House	PA	17	Holden, Tim	https://www.holden.house.gov	20070104	20090103	10
+House	PA	18	Murphy, Tim	https://murphy.house.gov	20070104	20090103	10
+House	PA	19	Platts, Todd	https://www.house.gov/platts	20070104	20090103	10
+House	PA	2	Fattah, Chaka	https://www.house.gov/fattah	20070104	20090103	10
+House	PA	3	English, Phil	https://www.house.gov/english	20070104	20090103	10
+House	PA	4	Altmire, Jason	https://altmire.house.gov	20070401	20090103	9
+House	PA	4	Hart, Melissa	https://hart.house.gov	20070104	20070104	1
+House	PA	5	Peterson, John E.	https://www.house.gov/johnpeterson	20070104	20090103	10
+House	PA	6	Gerlach, Jim	https://gerlach.house.gov	20070104	20090103	10
+House	PA	7	Sestak, Joe	https://sestak.house.gov	20070401	20090103	9
+House	PA	7	Weldon, Curt	https://curtweldon.house.gov	20070104	20070104	1
+House	PA	8	Fitzpatrick, Michael G.	https://fitzpatrick.house.gov	20070104	20070104	1
+House	PA	8	Murphy, Patrick J.	https://patrickmurphy.house.gov	20070401	20080130	4
+House	PA	8	Murphy, Patrick J.	https://www.patrickmurphy.house.gov	20080418	20090103	5
+House	PA	9	Shuster, Bill	https://www.house.gov/shuster	20070104	20090103	10
+House	PR	0	Fortuno, Luis G.	https://www.house.gov/fortuno	20070104	20090103	10
+House	RI	1	Kennedy, Patrick	https://patrickkennedy.house.gov	20070104	20090103	10
+House	RI	2	Langevin, Jim	https://www.house.gov/langevin	20070104	20090103	10
+House	SC	1	Brown, Henry	https://brown.house.gov	20070104	20090103	10
+House	SC	2	Wilson, Joe	https://joewilson.house.gov	20070104	20090103	10
+House	SC	3	Barrett, J.Gresham	https://www.house.gov/barrett	20070104	20090103	10
+House	SC	4	Inglis, Bob	https://inglis.house.gov	20070104	20090103	10
+House	SC	5	Spratt, John	https://www.house.gov/spratt	20070104	20090103	10
+House	SC	6	Clyburn, James E.	https://clyburn.house.gov	20070104	20090103	10
+House	SD	0	Herseth Sandlin, Stephanie	https://hersethsandlin.house.gov	20070701	20090103	8
+House	SD	0	Herseth, Stephanie	https://www.house.gov/herseth	20070104	20070401	2
+House	TN	1	Davis, David	https://daviddavis.house.gov	20070401	20090103	9
+House	TN	1	Jenkins, William L.	https://www.house.gov/jenkins	20070104	20070104	1
+House	TN	2	Duncan Jr., John J.	https://www.house.gov/duncan	20070104	20090103	10
+House	TN	3	Wamp, Zach	https://www.house.gov/wamp	20070104	20090103	10
+House	TN	4	Davis, Lincoln	https://www.house.gov/lincolndavis	20070104	20090103	10
+House	TN	5	Cooper, Jim	https://cooper.house.gov	20070104	20080130	5
+House	TN	5	Cooper, Jim	https://www.cooper.house.gov	20080418	20090103	5
+House	TN	6	Gordon, Bart	https://gordon.house.gov	20070104	20090103	10
+House	TN	7	Blackburn, Marsha	https://blackburn.house.gov	20070701	20090103	8
+House	TN	7	Blackburn, Marsha	https://www.house.gov/blackburn	20070104	20070401	2
+House	TN	8	Tanner, John	https://www.house.gov/tanner	20070104	20090103	10
+House	TN	9	Cohen, Steve	https://cohen.house.gov	20070401	20090103	9
+House	TN	9	Ford, Harold	https://www.house.gov/ford	20070104	20070104	1
+House	TX	1	Gohmert, Louie	https://gohmert.house.gov	20070104	20090103	10
+House	TX	10	McCaul, Michael T.	https://www.house.gov/mccaul	20070104	20090103	10
+House	TX	11	Conaway, K. Michael	https://conaway.house.gov	20070401	20090103	9
+House	TX	11	Conaway, K. Michael	https://www.house.gov/conaway	20070104	20070104	1
+House	TX	12	Granger, Kay	https://kaygranger.house.gov	20070104	20090103	10
+House	TX	13	Thornberry, Mac	https://www.house.gov/thornberry	20070104	20090103	10
+House	TX	14	Paul, Ron	https://www.house.gov/paul	20070104	20090103	10
+House	TX	15	Hinojosa, Rubén	https://hinojosa.house.gov	20070104	20070104	1
+House	TX	15	Hinojosa, Rubén	https://www.house.gov/hinojosa	20070401	20090103	9
+House	TX	16	Reyes, Silvestre	https://wwwc.house.gov/reyes	20070104	20090103	10
+House	TX	17	Edwards, Chet	https://www.house.gov/edwards	20070104	20090103	10
+House	TX	18	Jackson Lee, Sheila	https://jacksonlee.house.gov	20070104	20090103	10
+House	TX	19	Neugebauer, Randy	https://randy.house.gov	20070104	20090103	10
+House	TX	2	Poe, Ted	https://www.house.gov/poe	20070104	20090103	10
+House	TX	20	Gonzalez, Charlie A.	https://gonzalez.house.gov	20070104	20080130	5
+House	TX	20	Gonzalez, Charlie A.	https://www.gonzalez.house.gov	20080418	20090103	5
+House	TX	21	Smith, Lamar	https://lamarsmith.house.gov	20070104	20090103	10
+House	TX	22	Lampson, Nick	https://lampson.house.gov	20070401	20090103	9
+House	TX	22	Sekula Gibbs, Shelley	https://www.house.gov/gibbs	20070104	20070104	1
+House	TX	23	Bonilla, Henry	https://bonilla.house.gov	20070104	20070104	1
+House	TX	23	Rodriguez, Ciro	https://rodriguez.house.gov	20070401	20080130	4
+House	TX	23	Rodriguez, Ciro	https://www.rodriguez.house.gov	20080418	20090103	5
+House	TX	24	Marchant, Kenny	https://www.house.gov/marchant	20070104	20090103	10
+House	TX	25	Doggett, Lloyd	https://www.house.gov/doggett	20070104	20090103	10
+House	TX	26	Burgess, Michael	https://burgess.house.gov	20070104	20090103	10
+House	TX	27	Ortiz, Solomon P.	https://ortiz.house.gov	20070104	20090103	10
+House	TX	28	Cuellar, Henry	https://cuellar.house.gov	20080130	20090103	6
+House	TX	28	Cuellar, Henry	https://www.house.gov/cuellar	20070104	20071001	4
+House	TX	29	Green, Gene	https://www.house.gov/green	20070104	20090103	10
+House	TX	3	Johnson, Sam	https://www.house.gov/samjohnson	20070104	20090103	10
+House	TX	30	Johnson, Eddie Bernice	https://www.house.gov/ebjohnson	20070104	20090103	10
+House	TX	31	Carter, John	https://carter.house.gov	20070104	20090103	10
+House	TX	32	Sessions, Pete	https://www.house.gov/sessions	20070104	20090103	10
+House	TX	4	Hall, Ralph M.	https://www.house.gov/ralphhall	20070104	20090103	10
+House	TX	5	Hensarling, Jeb	https://www.house.gov/hensarling	20070104	20090103	10
+House	TX	6	Barton, Joe	https://joebarton.house.gov	20070104	20090103	10
+House	TX	7	Culberson, John	https://culberson.house.gov	20070104	20090103	10
+House	TX	8	Brady, Kevin	https://www.house.gov/brady	20070104	20090103	10
+House	TX	9	Green, Al	https://www.house.gov/algreen	20070104	20090103	10
+House	UT	1	Bishop, Rob	https://robbishop.house.gov	20070701	20090103	8
+House	UT	1	Bishop, Rob	https://www.house.gov/robbishop	20070104	20070401	2
+House	UT	2	Matheson, Jim	https://www.house.gov/matheson	20070104	20090103	10
+House	UT	3	Cannon, Chris	https://chriscannon.house.gov	20070104	20090103	10
+House	VA	1	Davis, Jo Ann S.	https://joanndavis.house.gov	20070104	20071001	4
+House	VA	1	Wittman, Robert J.	https://wittman.house.gov	20080130	20080130	1
+House	VA	1	Wittman, Robert J.	https://www.wittman.house.gov	20080418	20090103	5
+House	VA	10	Wolf, Frank	https://www.house.gov/wolf	20070104	20090103	10
+House	VA	11	Davis, Tom	https://tomdavis.house.gov	20070104	20081005	9
+House	VA	2	Drake, Thelma D.	https://drake.house.gov	20070104	20090103	10
+House	VA	3	"Scott, Robert C. ""Bobby"""	https://www.house.gov/scott	20070104	20090103	10
+House	VA	4	Forbes, J. Randy	https://www.house.gov/forbes	20070104	20090103	10
+House	VA	5	Goode Jr., Virgil H.	https://www.house.gov/goode	20070104	20090103	10
+House	VA	6	Goodlatte, Bob	https://www.house.gov/goodlatte	20070104	20090103	10
+House	VA	7	Cantor, Eric	https://cantor.house.gov	20070104	20090103	10
+House	VA	8	Moran, Jim	https://moran.house.gov	20070401	20090103	9
+House	VA	8	Moran, Jim	https://www.house.gov/moran	20070104	20070104	1
+House	VA	9	Boucher, Rick	https://www.boucher.house.gov	20070104	20090103	10
+House	VI	0	Christian-Christensen, Donna M.	https://donnachristensen.house.gov	20080130	20090103	6
+House	VI	0	Christian-Christensen, Donna M.	https://www.house.gov/christian-christensen	20070104	20071001	4
+House	VT	0	Sanders, Bernie	https://bernie.house.gov	20070104	20070104	1
+House	VT	0	Welch, Peter	https://welch.house.gov	20070401	20080130	4
+House	VT	0	Welch, Peter	https://www.welch.house.gov	20080418	20090103	5
+House	WA	1	Inslee, Jay	https://www.house.gov/inslee	20070104	20090103	10
+House	WA	2	Larsen, Rick	https://www.house.gov/larsen	20070104	20090103	10
+House	WA	3	Baird, Brian	https://www.house.gov/baird	20070104	20090103	10
+House	WA	4	Hastings, Doc	https://hastings.house.gov	20070104	20090103	10
+House	WA	5	McMorris Rodgers, Cathy	https://mcmorris.house.gov	20070104	20090103	10
+House	WA	5	Rodgers, Cathy McMorris	https://mcmorris.house.gov	20070104	20070104	1
+House	WA	6	Dicks, Norman D.	https://www.house.gov/dicks	20070104	20090103	10
+House	WA	7	McDermott, Jim	https://www.house.gov/mcdermott	20070104	20090103	10
+House	WA	8	Reichert, David G.	https://www.house.gov/reichert	20070104	20090103	10
+House	WA	9	Smith, Adam	https://www.house.gov/adamsmith	20070104	20090103	10
+House	WI	1	Ryan, Paul	https://www.house.gov/ryan	20070104	20090103	10
+House	WI	2	Baldwin, Tammy	https://tammybaldwin.house.gov	20070104	20090103	10
+House	WI	3	Kind, Ron	https://www.house.gov/kind	20070104	20090103	10
+House	WI	4	Moore, Gwen	https://www.house.gov/gwenmoore	20070104	20090103	10
+House	WI	5	Sensenbrenner, F. James	https://www.house.gov/sensenbrenner	20070104	20090103	10
+House	WI	6	Petri, Thomas	https://www.house.gov/petri	20070104	20090103	10
+House	WI	7	Obey, David R.	https://obey.house.gov	20070104	20090103	10
+House	WI	8	Green, Mark	https://www.house.gov/markgreen	20070104	20070104	1
+House	WI	8	Kagen, Steve	https://kagen.house.gov	20070401	20090103	9
+House	WV	1	Mollohan, Alan B.	https://www.house.gov/mollohan	20070104	20090103	10
+House	WV	2	Capito, Shelley Moore	https://capito.house.gov	20070104	20090103	10
+House	WV	3	Rahall, Nick	https://www.rahall.house.gov	20070104	20090103	10
+House	WY	0	Cubin, Barbara	https://www.house.gov/cubin	20070104	20090103	10

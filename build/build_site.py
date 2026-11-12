@@ -504,6 +504,9 @@ def main() -> None:
             # Set only for a member who left during the Congress: the date
             # their last term ended. Absent means still sitting.
             **({"left": member["left"]} if member.get("left") else {}),
+            # The year service ended, for a closed Congress's explorer
+            # (build_congress.py); a sitting member has none and shows "present".
+            **({"until": member["until"]} if member.get("until") else {}),
             "host": member["host"],
             "site": member["url"],
             "letters": len(letters),

@@ -59,6 +59,9 @@ URL_OVERRIDES = {
     "Brenda Jones": ("https://brendajones.house.gov",
                      "URL not in dataset; Wayback captures of brendajones.house.gov date "
                      "from 2018-12, during her tenure"),
+    "Carte Goodwin": ("https://goodwin.senate.gov",
+                      "URL not in dataset; Wayback captures of goodwin.senate.gov span "
+                      "2010-07-21 to 2010-11-08, matching his appointment"),
     "Erica Lee Carter": ("https://ericaleecarter.house.gov",
                          "URL not in dataset; Wayback captures span 2024-11 to 2024-12"),
 }
@@ -90,7 +93,7 @@ def bounds(n: int) -> tuple[str, str]:
 
 
 def norm(u: str | None) -> str:
-    return (u or "").rstrip("/").replace("http://", "https://")
+    return (u or "").strip().rstrip("/").replace("http://", "https://")
 
 
 def days(a: str, b: str) -> int:
@@ -146,15 +149,64 @@ def directory(n: int) -> list[dict]:
     return list(csv.DictReader(open(f, encoding="utf-8"), delimiter="\t")) if f.exists() else []
 
 
-def from_directory(listed: list[dict], p: dict, t: dict) -> tuple[str, str]:
-    """The one URL a chamber directory listed for this member's seat and surname."""
+# (state, folded surname) -> [(bioguide, given-name keys)], for every legislator.
+# Filled by roster(); lets a listing be told apart from a relative's in the same seat.
+KIN: dict[tuple[str, str], list[tuple[str, set]]] = {}
+
+
+def given_keys(p: dict) -> set:
+    """First three letters of each name a legislator goes by: first, middle, nickname."""
+    n = p["name"]
+    names = [n.get("first", ""), n.get("middle", ""), n.get("nickname", ""),
+             (n.get("official_full") or "").split(" ")[0]]
+    return {fold(x)[:3] for x in names if len(fold(x)) >= 2}
+
+
+def fill_kin(people: list) -> None:
+    KIN.clear()
+    for p in people:
+        for st in {t["state"] for t in p["terms"]}:
+            KIN.setdefault((st, fold(p["name"]["last"])), []).append((p["id"]["bioguide"], given_keys(p)))
+
+
+def listed_given(name: str) -> set:
+    """Given-name keys in a listing: 'Carson, Julia' / 'Julia Carson' -> {'jul'};
+    'Clay Jr., William "Lacy"' -> {'wil', 'lac'}."""
+    g = name.split(",", 1)[1] if "," in name else name.rsplit(" ", 1)[0]
+    return {fold(w)[:3] for w in re.split(r'[\s."]+', g) if len(fold(w)) >= 2}
+
+
+def someone_else(d: dict, p: dict, t: dict) -> bool:
+    """The listing names a different legislator of this surname and state: a parent, child or
+    sibling in the same seat (Julia and André Carson, Michael and Gus Bilirakis). A listing
+    carrying any name this member goes by is theirs: Wm. Lacy Clay is 'William "Lacy"'."""
+    g = listed_given(d["name_listed"])
+    if not g or g & given_keys(p):
+        return False
+    me = p["id"]["bioguide"]
+    return any(g & keys for bid, keys in KIN.get((t["state"], fold(p["name"]["last"])), []) if bid != me)
+
+
+def seat_listings(listed: list[dict], p: dict, t: dict) -> dict[str, tuple[str, str]]:
+    """{url: (first_seen, last_seen)} the directory listed for this member's seat and surname."""
     ch = chamber(t["type"])
     # any part of a compound surname: listed as "Mary Bono", recorded as "Bono Mack"
     parts = [fold(x) for x in re.split(r"[\s-]+", p["name"]["last"]) if len(fold(x)) >= 2]
-    hits = {d["url"]: d for d in listed
-            if d["chamber"] == ch and d["state"] == t["state"]
-            and (ch == "Senate" or d["district"] == str(t.get("district", "")))
-            and any(x in fold(d["name_listed"]) for x in parts)}
+    out: dict[str, tuple[str, str]] = {}
+    for d in listed:
+        if (d["chamber"] == ch and d["state"] == t["state"]
+                and (ch == "Senate" or d["district"] == str(t.get("district", "")))
+                and any(x in fold(d["name_listed"]) for x in parts)
+                and not someone_else(d, p, t)):
+            a, b = out.get(d["url"], (d["first_seen"], d["last_seen"]))
+            out[d["url"]] = (min(a, d["first_seen"]), max(b, d["last_seen"]))
+    return out
+
+
+def from_directory(listed: list[dict], p: dict, t: dict) -> tuple[str, str]:
+    """The URL(s) a chamber directory listed for this member's seat and surname."""
+    ch = chamber(t["type"])
+    hits = {u: {"first_seen": a, "last_seen": b} for u, (a, b) in seat_listings(listed, p, t).items()}
     if not hits:
         return "", ""
     first = min(d["first_seen"] for d in hits.values())
@@ -164,9 +216,38 @@ def from_directory(listed: list[dict], p: dict, t: dict) -> tuple[str, str]:
     return " | ".join(urls), f"URL not in dataset; listed in the {ch} member directory as archived {when}"
 
 
+def same_site(a: str, b: str) -> bool:
+    """https://www.house.gov/pombo/pombo.htm and https://house.gov/pombo are one site."""
+    k = lambda u: re.sub(r"^https?://(www\.)?", "", u.lower()).rstrip("/")
+    a, b = k(a), k(b)
+    return a == b or a.startswith(b + "/") or b.startswith(a + "/")
+
+
+def also_listed(listed: list[dict], p: dict, t: dict, urls: list) -> tuple[list, str]:
+    """Directory URLs for this seat and surname that the source's URLs do not cover.
+
+    A member's site often moved within a Congress -- www.house.gov/name to
+    name.house.gov, www.senate.gov/~name to name.senate.gov -- and the source
+    records one address. Letters were published at whichever was live, so both
+    are kept and looked up (issue #16).
+    """
+    hits = seat_listings(listed, p, t)
+    extra: list = []
+    for x in sorted(hits, key=lambda x: hits[x][0]):       # hayes.house.gov = www.hayes.house.gov
+        if not any(same_site(x, s) for s in urls + extra):
+            extra.append(x)
+    if not extra:
+        return [], ""
+    when = "; ".join(f"{x} as archived {a}" + (f"–{b}" if b != a else "")
+                     for x in extra for a, b in [hits[x]])
+    return extra, (f"URL changed during this Congress: the {chamber(t['type'])} member directory "
+                   f"also lists {when}")
+
+
 def roster(n: int, cur: list, hist: list, today: str) -> list[dict]:
     S, E = bounds(n)
     listed = directory(n)
+    fill_kin(cur + hist)
     curids = {p["id"]["bioguide"] for p in cur}
     # The day this Congress actually convened: the most common term start in it.
     convened = Counter(t["start"] for p in cur + hist for t in p["terms"]
@@ -214,6 +295,11 @@ def roster(n: int, cur: list, hist: list, today: str) -> list[dict]:
                 urls, src = u.split(" | "), why
         if not urls and later and later[0].get("url"):
             urls, src = [norm(later[0]["url"])], "URL not in dataset for this term; taken from next term"
+        if urls and listed:
+            extra, why = also_listed(listed, p, tl, urls)
+            if extra:
+                urls += extra
+                src = "; ".join(x for x in (src, why) if x)
 
         st, en = max(first["start"], S), min(tl["end"], E)
         svc = []

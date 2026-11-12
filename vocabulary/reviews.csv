@@ -1,0 +1,306 @@
+candidate,letters,decision,target,abbreviation,kind,broader,reason,status
+Admin,63,merge,The Administration,,organization,Executive Office of the President,"""the admin"": the executive branch, unnamed",accepted
+Senate,59,merge,United States Senate,,organization,Congress,the chamber as a whole,accepted
+Administration,56,merge,The Administration,,organization,Executive Office of the President,"the executive branch, unnamed",accepted
+Google,49,merge,Google,,organization,Companies,company,accepted
+Amazon,46,merge,Amazon,,organization,Companies,company,accepted
+Conferees,46,merge,Conference committees,,organization,Congressional committees,conferees on a bill,accepted
+Hagel,46,officeholder,Department of Defense,,,,"Chuck Hagel, Secretary of Defense 2013-2015",accepted
+Facebook,43,merge,Meta (Facebook),,organization,Companies,Facebook is Meta's former name,accepted
+Army,42,merge,Department of the Army,,organization,Department of Defense,the Army,accepted
+Ndaa Conferees,39,merge,Conference committees,,organization,Congressional committees,NDAA conferees,accepted
+Congress,37,merge,United States Congress,,organization,Congress,Congress as a whole,accepted
+Salazar,37,officeholder,Department of the Interior,,,,"Ken Salazar, Secretary of the Interior 2009-2013",accepted
+Jewell,36,officeholder,Department of the Interior,,,,"Sally Jewell, Secretary of the Interior 2013-2017",accepted
+Meta,36,merge,Meta (Facebook),,organization,Companies,company,accepted
+Secstate,35,merge,Department of State,,,,Secretary of State,accepted
+Grassley,34,member,G000386,,,,"Chuck Grassley, as a committee chair",accepted
+Carson,33,officeholder,Department of Housing and Urban Development,,,,"Ben Carson, HUD Secretary 2017-2021",accepted
+Appropriations,32,merge,Appropriations committees,,organization,Congressional committees,the appropriators,accepted
+Mcdonald,32,officeholder,Department of Veterans Affairs,,,,"Bob McDonald, VA Secretary 2014-2017",accepted
+Governor Newsom,31,person,Gavin Newsom,,person,Governors,Governor of California,accepted
+Bush,30,officeholder,The President,,,,"checked: all 30 dated 2004-2008, ""Dear Mr. President"": George W. Bush; Rep. Cori Bush took office in 2021",accepted
+House And Senate Leadership,30,merge,Congressional leadership,,,,already a term,accepted
+Secnav,30,merge,Department of the Navy,,organization,Department of Defense,Secretary of the Navy,accepted
+Usaid,29,merge,United States Agency for International Development,USAID,organization,Independent agencies and commissions,USAID: United States Agency for International Development,accepted
+Gov Brown,28,person,Jerry Brown,,person,Governors,"checked: 21 of 22 from California members, ""The Honorable Edmund G. Brown Jr.""; one Oregon letter is to Kate Brown",accepted
+Secaf,28,merge,Department of the Air Force,,organization,Department of Defense,Secretary of the Air Force,accepted
+Wheeler,28,split,Federal Communications Commission@2014-2017;Environmental Protection Agency@2018-2021,,,,"checked: 2014-2016 ""Chairman Wheeler"" is Tom Wheeler (FCC, 8 letters); 2018-2021 ""Administrator Wheeler"" is Andrew Wheeler (EPA, 20)",accepted
+Air Force,26,merge,Department of the Air Force,,organization,Department of Defense,the Air Force,accepted
+Gov Desantis,26,person,Ron DeSantis,,,,Governor of Florida; a former member (D000621),accepted
+Ambassador Lighthizer,25,officeholder,Office of the US Trade Representative,,,,"Robert Lighthizer, USTR 2017-2021",accepted
+Census Bureau,24,merge,Census Bureau,,organization,Department of Commerce,agency,accepted
+Boehner,23,officeholder,The Speaker of the House,,,,"John Boehner, Speaker 2011-2015",accepted
+Corps,22,merge,Army Corps of Engineers,,,,the Corps,accepted
+Cpsc,22,merge,Consumer Product Safety Commission,CPSC,organization,Independent agencies and commissions,CPSC,accepted
+Navy,22,merge,Department of the Navy,,organization,Department of Defense,the Navy,accepted
+Regulators,22,merge,Financial regulators (several),,organization,Independent agencies and commissions,"checked: letters addressed to several financial regulators at once (OCC, Fed, Treasury)",accepted
+Desantis,21,person,Ron DeSantis,,,,Governor of Florida; a former member (D000621),accepted
+Gov Hochul,21,person,Kathy Hochul,,person,Governors,Governor of New York; a former member (H001062),accepted
+Governor,21,reject,,,,,no governor named,accepted
+Itc,21,merge,United States International Trade Commission,ITC,organization,Independent agencies and commissions,ITC,accepted
+Kelly,21,split,Department of Homeland Security@2017-2017;White House Chief of Staff@2018-2019,,organization,Executive Office of the President,"checked: John F. Kelly; 2017 as Homeland Security Secretary (14), 2018 as White House Chief of Staff, on security clearances (7)",accepted
+Lahood,21,officeholder,Department of Transportation,,,,"Ray LaHood, Transportation Secretary 2009-2013",accepted
+Nps,21,merge,National Park Service,NPS,organization,Department of the Interior,NPS,accepted
+Twitter,21,merge,Twitter (X),,organization,Companies,company,accepted
+Amtrak,20,merge,Amtrak,,organization,Government corporations,federally chartered passenger railroad,accepted
+Cbo,20,merge,Congressional Budget Office,CBO,organization,Congress,CBO,accepted
+Davis,20,member,D000136,,,,"checked: Waxman's letters to ""Chairman Davis"": Rep. Tom Davis, Government Reform chair; archived 2009",accepted
+Gov Abbott,20,person,Greg Abbott,,person,Governors,Governor of Texas,accepted
+Graham,20,member,G000359,,,,"checked: ""Chairman Graham"", ""The Honorable Lindsey O. Graham"": Senate Judiciary chair, 2018-2020",accepted
+Durbin,19,member,D000563,,,,Richard Durbin,accepted
+Fra,19,merge,Federal Railroad Administration,,organization,Department of Transportation,FRA,accepted
+Fta,19,merge,Federal Transit Administration,FTA,organization,Department of Transportation,FTA,accepted
+Gov Scott,19,person,Rick Scott,,person,Governors,"checked: 13 of 14 from Florida members, 2012-2017; Governor of Florida, later a senator (S001217)",accepted
+Gov Wolf,19,person,Tom Wolf,,person,Governors,Governor of Pennsylvania 2015-2023,accepted
+Leader Mcconnell,19,merge,Congressional leadership,,,,the leadership table already files McConnell here,accepted
+Pfizer,19,merge,Pfizer,,organization,Companies,company,accepted
+Pmg Dejoy,19,officeholder,United States Postal Service,,,,"Louis DeJoy, Postmaster General 2020-2025",accepted
+Pres,19,merge,The President,,,,abbreviation,accepted
+Cao,18,merge,Chief Administrative Officer of the House,CAO,organization,Congress,"checked: ""Dear Chief Administrative Officer Kiko"", ""Dear Ms. Szpindor"" (House CAOs)",accepted
+Hogan,18,person,Larry Hogan,,person,Governors,"checked: ""The Honorable Larry Hogan"", Governor of Maryland",accepted
+Phrma,18,merge,PhRMA,,organization,Associations and other organizations,pharmaceutical industry trade association,accepted
+Stb,18,merge,Surface Transportation Board,STB,organization,Independent agencies and commissions,STB,accepted
+Wells Fargo,18,merge,Wells Fargo,,organization,Companies,company,accepted
+Bor,17,merge,Bureau of Reclamation,,organization,Department of the Interior,BOR,accepted
+Carranza,17,officeholder,Small Business Administration,,,,"Jovita Carranza, SBA Administrator 2020-2021",accepted
+Center,17,reject,,,,,a fragment of a longer name,accepted
+Gates,17,officeholder,Department of Defense,,,,"checked: Robert Gates, Secretary of Defense; 15 of 17 dated 2007-2011, two later dates are probably first captures",accepted
+Osc,17,merge,Office of Special Counsel,OSC,organization,Independent agencies and commissions,"checked: addressed to Carolyn Lerner, Special Counsel, U.S. Office of Special Counsel; Hatch Act",accepted
+Secarmy,17,merge,Department of the Army,,organization,Department of Defense,Secretary of the Army,accepted
+Senators,17,merge,United States Senate,,organization,Congress,senators as a body,accepted
+Airlines,16,merge,Airlines (several),,organization,Companies,letters to several airlines at once,accepted
+Banks,16,merge,Banks (several),,organization,Companies,letters to several banks at once,accepted
+Boeing,16,merge,Boeing,,organization,Companies,company,accepted
+Finra,16,merge,FINRA,,organization,Associations and other organizations,self-regulatory organization for brokers,accepted
+Forest Service,16,merge,Forest Service,,organization,Department of Agriculture,agency,accepted
+Gov Lee,16,person,Bill Lee,,person,Governors,Governor of Tennessee,accepted
+Hsgac,16,merge,Senate Homeland Security and Governmental Affairs Committee,HSGAC,organization,Congressional committees,HSGAC,accepted
+Odni,16,merge,Office of the Director of National Intelligence,ODNI,organization,Independent agencies and commissions,ODNI,accepted
+Phmsa,16,merge,Pipeline and Hazardous Materials Safety Administration,PHMSA,organization,Department of Transportation,PHMSA,accepted
+Release,16,reject,,,,,"""press release"", not a recipient",accepted
+Appropriations Committee,15,merge,Appropriations committees,,organization,Congressional committees,House or Senate appropriations,accepted
+Dha,15,merge,Defense Health Agency,,organization,Department of Defense,DHA,accepted
+Dos,15,merge,Department of State,,,,DOS,accepted
+Financial Regulators,15,merge,Financial regulators (several),,organization,Independent agencies and commissions,"checked: letters addressed to several financial regulators at once (Fed, Treasury)",accepted
+Governor Evers,15,person,Tony Evers,,person,Governors,Governor of Wisconsin,accepted
+Newsom,15,person,Gavin Newsom,,person,Governors,Governor of California,accepted
+Rfk,15,officeholder,Department of Health and Human Services,,,,"Robert F. Kennedy Jr., HHS Secretary from 2025",accepted
+Tiktok,15,merge,TikTok,,organization,Companies,company,accepted
+Usfs,15,merge,Forest Service,USFS,organization,Department of Agriculture,USFS,accepted
+Coast Guard,14,merge,United States Coast Guard,,organization,Department of Homeland Security,agency,accepted
+Enr,14,merge,Senate Energy and Natural Resources Committee,ENR,organization,Congressional committees,ENR,accepted
+Leader Schumer,14,merge,Congressional leadership,,,,the leadership table already files Schumer here,accepted
+Of Defense,14,merge,Department of Defense,,,,"""Department of Defense"" cut short",accepted
+Reid,14,merge,Congressional leadership,,,,"Harry Reid, Senate leader; filed as McConnell and Schumer are",accepted
+Sasc,14,merge,Senate Armed Services Committee,SASC,organization,Congressional committees,SASC,accepted
+Usfws,14,merge,Fish and Wildlife Service,USFWS,organization,Department of the Interior,USFWS,accepted
+Apple,13,merge,Apple,,organization,Companies,company,accepted
+Ceg,13,member,G000386,,,,"checked: CEG is Charles E. Grassley; letters to and answering ""Senator Grassley"", Judiciary chair",accepted
+Chief Justice Roberts,13,officeholder,Supreme Court of the United States,,organization,Courts,"John Roberts, Chief Justice; the surname lead to Sen. Pat Roberts is wrong",accepted
+Cuomo,13,person,Andrew Cuomo,,person,Governors,Governor of New York 2011-2021,accepted
+Dos Dhs,13,reject,,,,,two agencies at once; the letters belong under each,accepted
+Farm Bill Conferees,13,merge,Conference committees,,organization,Congressional committees,farm bill conferees,accepted
+Goodlatte,13,member,G000289,,,,"Bob Goodlatte, Judiciary chair",accepted
+Gov Pritzker,13,person,JB Pritzker,,person,Governors,Governor of Illinois,accepted
+Governor Cuomo,13,person,Andrew Cuomo,,person,Governors,Governor of New York 2011-2021,accepted
+Hasc,13,merge,House Armed Services Committee,HASC,organization,Congressional committees,HASC,accepted
+Hochul,13,person,Kathy Hochul,,person,Governors,Governor of New York; a former member (H001062),accepted
+Houseleaders,13,merge,Congressional leadership,,,,already a term,accepted
+Kraninger,13,officeholder,Consumer Financial Protection Bureau,,,,"Kathy Kraninger, CFPB Director 2018-2021",accepted
+Mlb,13,merge,Major League Baseball,MLB,organization,Associations and other organizations,sports league,accepted
+Nsa,13,merge,National Security Agency,NSA,organization,Department of Defense,"checked: 12 of 13 are the agency (surveillance, SS7, SolarWinds); Markey's 2020 letter is to the National Security Advisor",accepted
+Nsa Sullivan,13,officeholder,National Security Advisor,,organization,Executive Office of the President,"Jake Sullivan, National Security Advisor 2021-2025",accepted
+Nunes,13,member,N000181,,,,"Devin Nunes, Intelligence chair",accepted
+Peters,13,member,P000595,,,,"checked: 11 of 13 to Sen. Gary Peters (HSGAC chair); one 2007 letter is to Transportation Secretary Mary Peters, one 2024 to a ""Director Peters""",accepted
+Sigtarp,13,merge,Special Inspector General for TARP,SIGTARP,organization,Inspectors general,SIGTARP,accepted
+Boem,12,merge,Bureau of Ocean Energy Management,BOEM,organization,Department of the Interior,BOEM,accepted
+Burton,12,member,B001149,,,,"checked: Waxman's letters to ""Chairman Burton"": Rep. Dan Burton, Government Reform chair",accepted
+Chu,12,officeholder,Department of Energy,,,,"checked: ""The Honorable Steven Chu, Secretary, U.S. Department of Energy""; the lead to Rep. Judy Chu is wrong",accepted
+Committee,12,reject,,,,,no committee named,accepted
+Dni,12,merge,Office of the Director of National Intelligence,DNI,organization,Independent agencies and commissions,the DNI,accepted
+Gov Rauner,12,person,Bruce Rauner,,person,Governors,Governor of Illinois 2015-2019,accepted
+Ioc,12,merge,International Olympic Committee,IOC,organization,Associations and other organizations,international sports body,accepted
+Mchugh,12,officeholder,Department of the Army,,organization,Department of Defense,"John McHugh, Secretary of the Army 2009-2015 (a former member)",accepted
+Ntia,12,merge,National Telecommunications and Information Administration,NTIA,organization,Department of Commerce,NTIA,accepted
+Of State Blinken,12,officeholder,Department of State,,,,"Antony Blinken, Secretary of State 2021-2025",accepted
+Oge,12,merge,Office of Government Ethics,OGE,organization,Independent agencies and commissions,OGE,accepted
+Rfk Jr,12,officeholder,Department of Health and Human Services,,,,"Robert F. Kennedy Jr., HHS Secretary from 2025",accepted
+Uscg,12,merge,United States Coast Guard,USCG,organization,Department of Homeland Security,USCG,accepted
+Alexander,11,member,A000360,,,,"checked: 10 of 11 to ""Chairman Lamar Alexander"" (HELP); one 2013 letter is to Gen. Keith Alexander (NSA)",accepted
+Bernanke,11,officeholder,Federal Reserve,,,,"Ben Bernanke, Fed Chair 2006-2014",accepted
+Cfius,11,merge,Committee on Foreign Investment in the United States,CFIUS,organization,Department of the Treasury,"CFIUS, chaired by Treasury",accepted
+Commissioner Rettig,11,officeholder,Internal Revenue Service,,,,"Charles Rettig, IRS Commissioner 2018-2022",accepted
+Congressional Leaders,11,merge,Congressional leadership,,,,already a term,accepted
+Darcy,11,officeholder,Army Corps of Engineers,,,,"Jo-Ellen Darcy, Assistant Secretary of the Army for Civil Works 2009-2017, over the Corps",accepted
+Dodig,11,merge,Department of Defense Inspector General,DoD IG,organization,Inspectors general,DoD IG,accepted
+Gov Edwards,11,person,John Bel Edwards,,person,Governors,Governor of Louisiana 2016-2024,accepted
+Help,11,merge,"Senate Health, Education, Labor and Pensions Committee",HELP,organization,Congressional committees,"checked: letters to HELP on OxyContin, Lyme disease, harassment hearings, Confucius Institutes",accepted
+Lighthizer,11,officeholder,Office of the US Trade Representative,,,,"Robert Lighthizer, USTR 2017-2021",accepted
+Lisa Jackson,11,officeholder,Environmental Protection Agency,,,,"Lisa P. Jackson, EPA Administrator 2009-2013",accepted
+Mckinsey,11,merge,McKinsey & Company,,organization,Companies,company,accepted
+Ncaa,11,merge,NCAA,,organization,Associations and other organizations,college athletics association,accepted
+Ndaa Conference,11,merge,Conference committees,,organization,Congressional committees,NDAA conference,accepted
+Ondcp,11,merge,Office of National Drug Control Policy,ONDCP,organization,Executive Office of the President,ONDCP,accepted
+Scott,11,hold,,,,,checked: Gov. Rick Scott and Rep. Bobby Scott (Education and Labor chair); needs a per-letter split,proposed
+Social Media,11,merge,Social media companies (several),,organization,Companies,letters to several platforms at once,accepted
+Solis,11,officeholder,Department of Labor,,,,"Hilda Solis, Labor Secretary 2009-2013 (a former member)",accepted
+Thompson,11,hold,,,,,"checked: three people: Rep. Bennie Thompson (Homeland Security, January 6 committee), HHS Secretary Tommy Thompson, and others; needs a per-letter split",proposed
+Usdot,11,merge,Department of Transportation,,,,USDOT,accepted
+Ambassador Tai,10,officeholder,Office of the US Trade Representative,,,,"Katherine Tai, USTR 2021-2025",accepted
+Benson,10,officeholder,Michigan Secretary of State,,organization,State and local government,"checked: ""The Honorable Jocelyn Benson, Michigan Secretary of State""",accepted
+Clapper,10,officeholder,Office of the Director of National Intelligence,,organization,Independent agencies and commissions,"James Clapper, DNI 2010-2017",accepted
+Eeoc,10,merge,Equal Employment Opportunity Commission,EEOC,organization,Independent agencies and commissions,EEOC,accepted
+Ercot,10,merge,ERCOT,,organization,Associations and other organizations,"Electric Reliability Council of Texas, the Texas grid operator",accepted
+Fws,10,merge,Fish and Wildlife Service,FWS,organization,Department of the Interior,FWS,accepted
+Geo Group,10,merge,GEO Group,,organization,Companies,private prison company,accepted
+House Ethics,10,merge,House Committee on Ethics,,organization,Congressional committees,House Ethics,accepted
+Hu Jintao,10,person,Hu Jintao,,person,Foreign leaders,President of China 2003-2013,accepted
+Issa,10,member,I000056,,,,"Darrell Issa, Oversight chair",accepted
+Mullin,10,officeholder,Department of Homeland Security,,,,"checked: ""The Honorable Markwayne Mullin, Secretary, U.S. Department of Homeland Security"", 2026; he left the Senate in March 2026",accepted
+Norfolk Southern,10,merge,Norfolk Southern,,organization,Companies,railroad company,accepted
+Rma,10,merge,Risk Management Agency,RMA,organization,Department of Agriculture,USDA's crop insurance agency,accepted
+Roberts And Thomas,10,officeholder,Supreme Court of the United States,,organization,Courts,Justices Roberts and Thomas,accepted
+Rogers,10,hold,,,,,"checked: Rep. Harold Rogers (appropriations), Rep. Mike Rogers, Adm. Michael Rogers (NSA); needs a per-letter split",proposed
+Walker,10,person,Scott Walker,,person,Governors,checked: 9 of 10 to Gov. Scott Walker of Wisconsin (BadgerCare); one 2006 letter is to Comptroller General David Walker (GAO),accepted
+Wolf,10,hold,,,,,"checked: Rep. Frank Wolf (appropriations), Acting DHS Secretary Chad Wolf, Gov. Tom Wolf; needs a per-letter split",proposed
+Wyden,10,member,W000779,,,,Ron Wyden,accepted
+Ceq,9,merge,Council on Environmental Quality,CEQ,organization,Executive Office of the President,CEQ: Council on Environmental Quality,accepted
+Epw,9,merge,Senate Environment and Public Works Committee,EPW,organization,Congressional committees,EPW: Senate Environment and Public Works Committee,accepted
+Equifax,9,merge,Equifax,,organization,Companies,company,accepted
+Hrsa,9,merge,Health Resources and Services Administration,HRSA,organization,Department of Health and Human Services,HRSA: Health Resources and Services Administration,accepted
+Mbs,9,person,Mohammed bin Salman,MBS,person,Foreign leaders,MBS: Mohammed bin Salman,accepted
+Nfl,9,merge,National Football League,NFL,organization,Associations and other organizations,NFL: National Football League,accepted
+Nprc,9,merge,National Personnel Records Center,NPRC,organization,National Archives and Records Administration,NPRC: National Personnel Records Center,accepted
+Orr,9,merge,Office of Refugee Resettlement,ORR,organization,Department of Health and Human Services,ORR: Office of Refugee Resettlement,accepted
+Samhsa,9,merge,Substance Abuse and Mental Health Services Administration,SAMHSA,organization,Department of Health and Human Services,SAMHSA: Substance Abuse and Mental Health Services Administration,accepted
+Swrcb,9,merge,California State Water Resources Control Board,SWRCB,organization,State and local government,SWRCB: California State Water Resources Control Board,accepted
+Att,8,merge,AT&T,AT&T,organization,Companies,AT&T: AT&T,accepted
+Cpuc,8,merge,California Public Utilities Commission,CPUC,organization,State and local government,CPUC: California Public Utilities Commission,accepted
+Fincen,8,merge,Financial Crimes Enforcement Network,FinCEN,organization,Department of the Treasury,FinCEN: Financial Crimes Enforcement Network,accepted
+Fomb,8,merge,Financial Oversight and Management Board for Puerto Rico,FOMB,organization,Independent agencies and commissions,FOMB: Financial Oversight and Management Board for Puerto Rico,accepted
+Frtib,8,merge,Federal Retirement Thrift Investment Board,FRTIB,organization,Independent agencies and commissions,FRTIB: Federal Retirement Thrift Investment Board,accepted
+Ngb,8,merge,National Guard Bureau,NGB,organization,Department of Defense,NGB: National Guard Bureau,accepted
+Openai,8,merge,OpenAI,,organization,Companies,company,accepted
+Uspto,8,merge,United States Patent and Trademark Office,USPTO,organization,Department of Commerce,USPTO: United States Patent and Trademark Office,accepted
+Acoe,7,merge,Army Corps of Engineers,ACOE,,,ACOE: Army Corps of Engineers,accepted
+Eia,7,merge,Energy Information Administration,EIA,organization,Department of Energy,EIA: Energy Information Administration,accepted
+Fifa,7,merge,FIFA,FIFA,organization,Associations and other organizations,FIFA: FIFA,accepted
+Fmc,7,merge,Federal Maritime Commission,FMC,organization,Independent agencies and commissions,FMC: Federal Maritime Commission,accepted
+Jct,7,merge,Joint Committee on Taxation,JCT,organization,Congressional committees,JCT: Joint Committee on Taxation,accepted
+Jetblue,7,merge,JetBlue,,organization,Companies,company,accepted
+Kroger,7,merge,Kroger,,organization,Companies,company,accepted
+Mohela,7,merge,MOHELA,MOHELA,organization,Companies,MOHELA: MOHELA,accepted
+Ntsb,7,merge,National Transportation Safety Board,NTSB,organization,Independent agencies and commissions,NTSB: National Transportation Safety Board,accepted
+Ogr,7,merge,House Committee on Oversight,OGR,organization,Congressional committees,OGR: House Committee on Oversight,accepted
+Pmg,7,merge,United States Postal Service,,,,shorthand for United States Postal Service,accepted
+Scotus,7,merge,Supreme Court of the United States,SCOTUS,organization,Courts,SCOTUS: Supreme Court of the United States,accepted
+Usccr,7,merge,United States Commission on Civil Rights,USCCR,organization,Independent agencies and commissions,USCCR: United States Commission on Civil Rights,accepted
+Verizon,7,merge,Verizon,,organization,Companies,company,accepted
+Acf,6,merge,Administration for Children and Families,ACF,organization,Department of Health and Human Services,ACF: Administration for Children and Families,accepted
+Asacw,6,merge,Army Corps of Engineers,ASA(CW),,,ASA(CW): Army Corps of Engineers,accepted
+Cisa,6,merge,Cybersecurity and Infrastructure Security Agency,CISA,organization,Department of Homeland Security,CISA: Cybersecurity and Infrastructure Security Agency,accepted
+Eda,6,merge,Economic Development Administration,EDA,organization,Department of Commerce,EDA: Economic Development Administration,accepted
+Gsk,6,merge,GSK,GSK,organization,Companies,GSK: GSK,accepted
+Icann,6,merge,ICANN,ICANN,organization,Associations and other organizations,ICANN: ICANN,accepted
+Loc,6,merge,Library of Congress,LOC,organization,Congress,LOC: Library of Congress,accepted
+Moderna,6,merge,Moderna,,organization,Companies,company,accepted
+Mylan,6,merge,Mylan,,organization,Companies,company,accepted
+Nara,6,merge,National Archives and Records Administration,NARA,organization,Independent agencies and commissions,NARA: National Archives and Records Administration,accepted
+Niaid,6,merge,National Institute of Allergy and Infectious Diseases,NIAID,organization,National Institutes of Health,NIAID: National Institute of Allergy and Infectious Diseases,accepted
+Nida,6,merge,National Institute on Drug Abuse,NIDA,organization,National Institutes of Health,NIDA: National Institute on Drug Abuse,accepted
+Nws,6,merge,National Weather Service,NWS,organization,National Oceanic and Atmospheric Administration,NWS: National Weather Service,accepted
+Pcaob,6,merge,Public Company Accounting Oversight Board,PCAOB,organization,Associations and other organizations,PCAOB: Public Company Accounting Oversight Board,accepted
+Pto,6,merge,United States Patent and Trademark Office,PTO,organization,Department of Commerce,PTO: United States Patent and Trademark Office,accepted
+Ttb,6,merge,Alcohol and Tobacco Tax and Trade Bureau,TTB,organization,Department of the Treasury,TTB: Alcohol and Tobacco Tax and Trade Bureau,accepted
+Tva,6,merge,Tennessee Valley Authority,TVA,organization,Government corporations,TVA: Tennessee Valley Authority,accepted
+Abc,5,merge,ABC News,ABC,organization,Companies,ABC: ABC News,accepted
+Achp,5,merge,Advisory Council on Historic Preservation,ACHP,organization,Independent agencies and commissions,ACHP: Advisory Council on Historic Preservation,accepted
+Assk,5,person,Aung San Suu Kyi,ASSK,person,Foreign leaders,ASSK: Aung San Suu Kyi,accepted
+Comcast,5,merge,Comcast,,organization,Companies,company,accepted
+Csx,5,merge,CSX,CSX,organization,Companies,CSX: CSX,accepted
+Dfc,5,merge,United States International Development Finance Corporation,DFC,organization,Independent agencies and commissions,DFC: United States International Development Finance Corporation,accepted
+Fmcsa,5,merge,Federal Motor Carrier Safety Administration,FMCSA,organization,Department of Transportation,FMCSA: Federal Motor Carrier Safety Administration,accepted
+Fns,5,merge,Food and Nutrition Service,FNS,organization,Department of Agriculture,FNS: Food and Nutrition Service,accepted
+Fsoc,5,merge,Financial Stability Oversight Council,FSOC,organization,Department of the Treasury,FSOC: Financial Stability Oversight Council,accepted
+Hsbc,5,merge,HSBC,HSBC,organization,Companies,HSBC: HSBC,accepted
+Icheic,5,merge,International Commission on Holocaust Era Insurance Claims,ICHEIC,organization,International organizations,ICHEIC: International Commission on Holocaust Era Insurance Claims,accepted
+Ihs,5,merge,Indian Health Service,IHS,organization,Department of Health and Human Services,IHS: Indian Health Service,accepted
+Msha,5,merge,Mine Safety and Health Administration,MSHA,organization,Department of Labor,MSHA: Mine Safety and Health Administration,accepted
+Nec,5,merge,National Economic Council,NEC,organization,Executive Office of the President,NEC: National Economic Council,accepted
+Sos,5,merge,Department of State,,,,shorthand for Department of State,accepted
+Uber,5,merge,Uber,,organization,Companies,company,accepted
+Unfccc,5,merge,United Nations Framework Convention on Climate Change,UNFCCC,organization,International organizations,UNFCCC: United Nations Framework Convention on Climate Change,accepted
+Walmart,5,merge,Walmart,,organization,Companies,company,accepted
+Youtube,5,merge,YouTube,,organization,Companies,company,accepted
+Aamc,4,merge,Association of American Medical Colleges,AAMC,organization,Associations and other organizations,AAMC: Association of American Medical Colleges,accepted
+Atsdr,4,merge,Agency for Toxic Substances and Disease Registry,ATSDR,organization,Centers for Disease Control,ATSDR: Agency for Toxic Substances and Disease Registry,accepted
+Bia,4,merge,Bureau of Indian Affairs,BIA,organization,Department of the Interior,BIA: Bureau of Indian Affairs,accepted
+Bpa,4,merge,Bonneville Power Administration,BPA,organization,Department of Energy,BPA: Bonneville Power Administration,accepted
+Carb,4,merge,California Air Resources Board,CARB,organization,State and local government,CARB: California Air Resources Board,accepted
+Cjs,4,merge,Appropriations committees,CJS,organization,Congressional committees,CJS: Appropriations committees,accepted
+Cvs,4,merge,CVS Health,CVS,organization,Companies,CVS: CVS Health,accepted
+Depsec,4,merge,Department of Defense,,,,shorthand for Department of Defense,accepted
+Edd,4,merge,California Employment Development Department,EDD,organization,State and local government,EDD: California Employment Development Department,accepted
+Kkr,4,merge,KKR,KKR,organization,Companies,KKR: KKR,accepted
+Merck,4,merge,Merck,,organization,Companies,company,accepted
+Navient,4,merge,Navient,,organization,Companies,company,accepted
+Nhl,4,merge,National Hockey League,NHL,organization,Associations and other organizations,NHL: National Hockey League,accepted
+Nmfs,4,merge,National Marine Fisheries Service,NMFS,organization,National Oceanic and Atmospheric Administration,NMFS: National Marine Fisheries Service,accepted
+Nycha,4,merge,New York City Housing Authority,NYCHA,organization,State and local government,NYCHA: New York City Housing Authority,accepted
+Nyse,4,merge,New York Stock Exchange,NYSE,organization,Companies,NYSE: New York Stock Exchange,accepted
+Ofccp,4,merge,Office of Federal Contract Compliance Programs,OFCCP,organization,Department of Labor,OFCCP: Office of Federal Contract Compliance Programs,accepted
+Oira,4,merge,Office of Information and Regulatory Affairs,OIRA,organization,Office of Management and Budget,OIRA: Office of Information and Regulatory Affairs,accepted
+Pjm,4,merge,PJM Interconnection,PJM,organization,Associations and other organizations,PJM: PJM Interconnection,accepted
+Pura,4,merge,Connecticut Public Utilities Regulatory Authority,PURA,organization,State and local government,PURA: Connecticut Public Utilities Regulatory Authority,accepted
+Sfc,4,merge,Senate Finance Committee,SFC,organization,Congressional committees,SFC: Senate Finance Committee,accepted
+Svac,4,merge,Senate Veterans' Affairs Committee,SVAC,organization,Congressional committees,SVAC: Senate Veterans' Affairs Committee,accepted
+Usaf,4,merge,Department of the Air Force,USAF,organization,Department of Defense,USAF: Department of the Air Force,accepted
+Usagm,4,merge,United States Agency for Global Media,USAGM,organization,Independent agencies and commissions,USAGM: United States Agency for Global Media,accepted
+Usde,4,merge,Department of Education,USDE,,,USDE: Department of Education,accepted
+Usopc,4,merge,United States Olympic & Paralympic Committee,USOPC,organization,Associations and other organizations,USOPC: United States Olympic & Paralympic Committee,accepted
+Vha,4,merge,Veterans Health Administration,VHA,organization,Department of Veterans Affairs,VHA: Veterans Health Administration,accepted
+Wam,4,merge,House Ways and Means Committee,W&M,organization,Congressional committees,W&M: House Ways and Means Committee,accepted
+Aaaai,3,merge,"American Academy of Allergy, Asthma & Immunology",AAAAI,organization,Associations and other organizations,"AAAAI: American Academy of Allergy, Asthma & Immunology",accepted
+Aaos,3,merge,American Academy of Orthopaedic Surgeons,AAOS,organization,Associations and other organizations,AAOS: American Academy of Orthopaedic Surgeons,accepted
+Abc News,3,merge,ABC News,,organization,Companies,company,accepted
+Acgme,3,merge,Accreditation Council for Graduate Medical Education,ACGME,organization,Associations and other organizations,ACGME: Accreditation Council for Graduate Medical Education,accepted
+Acog,3,merge,American College of Obstetricians and Gynecologists,ACOG,organization,Associations and other organizations,ACOG: American College of Obstetricians and Gynecologists,accepted
+Ahip,3,merge,America's Health Insurance Plans,AHIP,organization,Associations and other organizations,AHIP: America's Health Insurance Plans,accepted
+Alibaba,3,merge,Alibaba,,organization,Companies,company,accepted
+Bnsf,3,merge,BNSF Railway,BNSF,organization,Companies,BNSF: BNSF Railway,accepted
+Cfbp,3,merge,Consumer Financial Protection Bureau,CFPB,,,CFPB: Consumer Financial Protection Bureau,accepted
+Cigna,3,merge,Cigna,,organization,Companies,company,accepted
+Cno,3,merge,Department of the Navy,CNO,organization,Department of Defense,CNO: Department of the Navy,accepted
+Eoir,3,merge,Executive Office for Immigration Review,EOIR,organization,Department of Justice,EOIR: Executive Office for Immigration Review,accepted
+Fedex,3,merge,FedEx,,organization,Companies,company,accepted
+Fhwa,3,merge,Federal Highway Administration,FHWA,organization,Department of Transportation,FHWA: Federal Highway Administration,accepted
+Fio,3,merge,Federal Insurance Office,FIO,organization,Department of the Treasury,FIO: Federal Insurance Office,accepted
+Gilead,3,merge,Gilead,,organization,Companies,company,accepted
+Hfac,3,merge,House Foreign Affairs Committee,HFAC,organization,Congressional committees,HFAC: House Foreign Affairs Committee,accepted
+Imls,3,merge,Institute of Museum and Library Services,IMLS,organization,Independent agencies and commissions,IMLS: Institute of Museum and Library Services,accepted
+Isbe,3,merge,Illinois State Board of Education,ISBE,organization,State and local government,ISBE: Illinois State Board of Education,accepted
+Lyft,3,merge,Lyft,,organization,Companies,company,accepted
+Mit,3,merge,Massachusetts Institute of Technology,MIT,organization,Associations and other organizations,MIT: Massachusetts Institute of Technology,accepted
+Mms,3,merge,Minerals Management Service,MMS,organization,Department of the Interior,MMS: Minerals Management Service,accepted
+Moodys,3,merge,Moody's,,organization,Companies,company,accepted
+Msci,3,merge,MSCI,MSCI,organization,Companies,MSCI: MSCI,accepted
+Mta,3,merge,Metropolitan Transportation Authority (New York),MTA,organization,State and local government,MTA: Metropolitan Transportation Authority (New York),accepted
+Naic,3,merge,National Association of Insurance Commissioners,NAIC,organization,Associations and other organizations,NAIC: National Association of Insurance Commissioners,accepted
+Nbc,3,merge,NBC,NBC,organization,Companies,NBC: NBC,accepted
+Nist,3,merge,National Institute of Standards and Technology,NIST,organization,Department of Commerce,NIST: National Institute of Standards and Technology,accepted
+Nord,3,merge,National Organization for Rare Disorders,NORD,organization,Associations and other organizations,NORD: National Organization for Rare Disorders,accepted
+Nsc,3,merge,National Security Council,NSC,organization,Executive Office of the President,NSC: National Security Council,accepted
+Odjfs,3,merge,Ohio Department of Job and Family Services,ODJFS,organization,State and local government,ODJFS: Ohio Department of Job and Family Services,accepted
+Ostp,3,merge,Office of Science and Technology Policy,OSTP,organization,Executive Office of the President,OSTP: Office of Science and Technology Policy,accepted
+Ows,3,merge,Operation Warp Speed,OWS,organization,Department of Health and Human Services,OWS: Operation Warp Speed,accepted
+Panynj,3,merge,Port Authority of New York and New Jersey,PANYNJ,organization,State and local government,PANYNJ: Port Authority of New York and New Jersey,accepted
+Peotus,3,merge,The President,,,,shorthand for The President,accepted
+Pmi,3,merge,Philip Morris International,PMI,organization,Companies,PMI: Philip Morris International,accepted
+Prac,3,merge,Pandemic Response Accountability Committee,PRAC,organization,Inspectors general,PRAC: Pandemic Response Accountability Committee,accepted
+Purdue,3,merge,Purdue Pharma,,organization,Companies,company,accepted
+Reddit,3,merge,Reddit,,organization,Companies,company,accepted
+Sfops,3,merge,Appropriations committees,SFOPS,organization,Congressional committees,SFOPS: Appropriations committees,accepted
+Tigta,3,merge,Treasury Inspector General for Tax Administration,TIGTA,organization,Inspectors general,TIGTA: Treasury Inspector General for Tax Administration,accepted
+Uscp,3,merge,United States Capitol Police,USCP,organization,Congress,USCP: United States Capitol Police,accepted
+Ustp,3,merge,United States Trustee Program,USTP,organization,Department of Justice,USTP: United States Trustee Program,accepted

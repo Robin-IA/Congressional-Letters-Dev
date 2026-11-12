@@ -4,6 +4,11 @@ Letters published on sitting members of Congress's own websites and preserved by
 the Wayback Machine. Read `README.md` first for what the thing is; this file is
 for the decisions that are not visible from the code.
 
+**One explorer per Congress is being built (9 November 2026).** `EXPLORERS.md`
+has the instructions, the decisions and what is still open; `METHODOLOGY.md`
+has the method behind each step. This repository stays the development
+repository, and the explorers are published from it.
+
 ## Where it is published
 
 Two GitHub Pages sites, both serving the **`harvest-member-letters`** branch
@@ -151,7 +156,7 @@ check where each half came from.
   so one failing does not stop the others.
 - GitHub Pages allows **10 builds an hour** from a branch and every push is one.
   Batch edits rather than pushing each.
-- Tests: `python3 -m unittest discover -s tests`. 95 at the time of writing, and
+- Tests: `python3 -m unittest discover -s tests`. 114 at the time of writing, and
   several of them assert that something which *looks* like debris survives —
   that is the half of the subject cleaning which is easy to get wrong.
 
