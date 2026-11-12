@@ -12166,67 +12166,7 @@ O-department-of-education,altLabel,Department Of Ed,candidate,letters (1)
 O-office-of-the-us-trade-representative,altLabel,Us Trade Representative,candidate,letters (1)
 O-department-of-energy,altLabel,Dept Of Energy,candidate,letters (2)
 O-department-of-education,altLabel,Dept Ed,candidate,letters (1)
-U-admin,altLabel,Administrator,candidate,letters
-U-admin,altLabel,Admin ( ),candidate,letters
-U-senate,altLabel,U S Senate,candidate,letters
-U-hagel,possibleMember,M-H001028,candidate,rosters: the only member with this surname
-O-army,altLabel,Of Army,candidate,letters
-O-army,altLabel,U S Army,candidate,letters
-O-army,altLabel,Of The Army,candidate,letters
-O-army,altLabel,Us Army,candidate,letters
-U-grassley,possibleMember,M-G000386,candidate,rosters: the only member with this surname
-U-mcdonald,altLabel,Mcdonald'S,candidate,letters
-P-governor-newsom,altLabel,Gov Newsom,candidate,letters
-U-bush,possibleMember,M-B001224,candidate,rosters: the only member with this surname
-P-gov-brown,altLabel,Governor Brown,candidate,letters
-O-air-force,altLabel,Of Air Force,candidate,letters
-P-gov-desantis,altLabel,Governor Desantis,candidate,letters
-P-gov-desantis,possibleMember,M-D000621,candidate,rosters: the only member with this surname
-P-ambassador-lighthizer,altLabel,Amb Lighthizer,candidate,letters
-P-ambassador-lighthizer,altLabel,(Amb Lighthizer),candidate,letters
-O-census-bureau,altLabel,U S Census Bureau,candidate,letters
-O-census-bureau,altLabel,Us Census Bureau,candidate,letters
-U-boehner,possibleMember,M-B000589,candidate,rosters: the only member with this surname
-O-navy,altLabel,Of The Navy,candidate,letters
-O-navy,altLabel,Us Navy,candidate,letters
-U-governor,altLabel,Gov,candidate,letters
-U-desantis,altLabel,Desantis ( ),candidate,letters
-U-desantis,possibleMember,M-D000621,candidate,rosters: the only member with this surname
-P-gov-hochul,altLabel,Governor Hochul,candidate,letters
-P-gov-hochul,possibleMember,M-H001062,candidate,rosters: the only member with this surname
-P-gov-abbott,altLabel,Governor Abbott,candidate,letters
-U-durbin,possibleMember,M-D000563,candidate,rosters: the only member with this surname
-P-gov-scott,altLabel,Governor Scott,candidate,letters
-U-leader-mcconnell,possibleMember,M-M000355,candidate,rosters: the only member with this surname
-P-gov-wolf,altLabel,Governor Wolf,candidate,letters
-P-gov-wolf,possibleMember,M-W000672,candidate,rosters: the only member with this surname
-U-cao,possibleMember,M-C001079,candidate,rosters: the only member with this surname
-U-banks,possibleMember,M-B001299,candidate,rosters: the only member with this surname
-O-forest-service,altLabel,U S Forest Service,candidate,letters
-P-gov-lee,altLabel,Governor Lee,candidate,letters
-P-governor-evers,altLabel,Gov Evers,candidate,letters
-U-reid,possibleMember,M-R000146,candidate,rosters: the only member with this surname
-U-of-defense,altLabel,Defense,candidate,letters
-U-leader-schumer,possibleMember,M-S000148,candidate,rosters: the only member with this surname
-P-governor-cuomo,altLabel,Gov Cuomo,candidate,letters
-U-goodlatte,altLabel,Goodlatte ( ),candidate,letters
-U-goodlatte,possibleMember,M-G000289,candidate,rosters: the only member with this surname
-U-chief-justice-roberts,possibleMember,M-R000307,candidate,rosters: the only member with this surname
-U-nunes,possibleMember,M-N000181,candidate,rosters: the only member with this surname
-P-gov-pritzker,altLabel,Governor Pritzker,candidate,letters
-U-hochul,possibleMember,M-H001062,candidate,rosters: the only member with this surname
-U-burton,possibleMember,M-B001149,candidate,rosters: the only member with this surname
-U-chu,possibleMember,M-C001080,candidate,rosters: the only member with this surname
-U-mchugh,possibleMember,M-M000472,candidate,rosters: the only member with this surname
-P-gov-rauner,altLabel,Governor Rauner,candidate,letters
-U-solis,possibleMember,M-S001153,candidate,rosters: the only member with this surname
-P-gov-edwards,altLabel,Governor Edwards,candidate,letters
-U-issa,possibleMember,M-I000056,candidate,rosters: the only member with this surname
-U-walker,possibleMember,M-W000819,candidate,rosters: the only member with this surname
 U-wolf,possibleMember,M-W000672,candidate,rosters: the only member with this surname
-U-wyden,possibleMember,M-W000779,candidate,rosters: the only member with this surname
-P-ambassador-tai,altLabel,Ambassador Tai ( ),candidate,letters
-P-ambassador-tai,altLabel,Amb Tai,candidate,letters
 U-perez,possibleMember,M-G000600,candidate,rosters: the only member with this surname
 P-governor-walker,altLabel,Gov Walker,candidate,letters
 P-governor-walker,possibleMember,M-W000819,candidate,rosters: the only member with this surname
@@ -12241,7 +12181,7 @@ U-blunt,possibleMember,M-B000575,candidate,rosters: the only member with this su
 U-castro,possibleMember,M-C001091,candidate,rosters: the only member with this surname
 P-gov-bullock,altLabel,Governor Bullock,candidate,letters
 U-alexander-and-murray,possibleMember,M-M001111,candidate,rosters: the only member with this surname
-P-governor-hogan,altLabel,Gov Hogan,candidate,letters
+P-gov-hogan,altLabel,Governor Hogan,candidate,letters
 U-gowdy,possibleMember,M-G000566,candidate,rosters: the only member with this surname
 P-gov-murphy,altLabel,Governor Murphy,candidate,letters
 P-gov-murphy,altLabel,Gov Murphy!,candidate,letters
@@ -12279,7 +12219,6 @@ U-leahy,possibleMember,M-L000174,candidate,rosters: the only member with this su
 P-ambassador-kirk,altLabel,Amb Kirk,candidate,letters
 P-sen-wyden,possibleMember,M-W000779,candidate,rosters: the only member with this surname
 U-shelby,possibleMember,M-S000320,candidate,rosters: the only member with this surname
-U-nec,altLabel,Of Nec,candidate,letters
 U-doc-sec-ross,altLabel,Doc Secretary Ross,candidate,letters
 U-dni-coats,possibleMember,M-C000542,candidate,rosters: the only member with this surname
 U-sonny-perdue,possibleMember,M-P000612,candidate,rosters: the only member with this surname
@@ -12379,8 +12318,8 @@ P-sen-durbin,possibleMember,M-D000563,candidate,rosters: the only member with th
 U-levin-inhofe,possibleMember,M-I000024,candidate,rosters: the only member with this surname
 U-hagel-sec-shinseki,altLabel,Hagel Sec Shinseki,candidate,letters
 P-secretary-gibson,possibleMember,M-G000564,candidate,rosters: the only member with this surname
-U-camp,possibleMember,M-C000071,candidate,rosters: the only member with this surname
 U-cj-roberts,possibleMember,M-R000307,candidate,rosters: the only member with this surname
+U-camp,possibleMember,M-C000071,candidate,rosters: the only member with this surname
 U-uc-president-napolitano,possibleMember,M-N000179,candidate,rosters: the only member with this surname
 U-boehner-pelosi,possibleMember,M-P000197,candidate,rosters: the only member with this surname
 U-senators-landrieu-and-vitter,possibleMember,M-V000127,candidate,rosters: the only member with this surname
@@ -12483,6 +12422,461 @@ O-social-security-administration,exactMatch,http://www.wikidata.org/entity/Q2824
 O-national-institutes-of-health,exactMatch,http://www.wikidata.org/entity/Q390551,candidate,Wikidata search: United States National Institutes of Health — US government medical research agency
 O-bureau-of-land-management,exactMatch,http://www.wikidata.org/entity/Q1010556,candidate,Wikidata search: United States Bureau of Land Management — agency within the United States Department of the Interior
 O-nuclear-regulatory-commission,exactMatch,http://www.wikidata.org/entity/Q1320326,candidate,Wikidata search: Nuclear Regulatory Commission — government agency of the United States
+O-the-administration,altLabel,Admin,preferred,reviewed
+O-the-administration,altLabel,Administrator,preferred,reviewed
+O-the-administration,altLabel,Admin ( ),preferred,reviewed
+O-united-states-senate,altLabel,Senate,preferred,reviewed
+O-united-states-senate,altLabel,U S Senate,preferred,reviewed
+O-the-administration,altLabel,Administration,preferred,reviewed
+O-conference-committees,altLabel,Conferees,preferred,reviewed
+O-department-of-defense,officeHolderName,Hagel,preferred,reviewed
+O-meta-facebook,altLabel,Facebook,preferred,reviewed
+O-department-of-the-army,altLabel,Army,preferred,reviewed
+O-department-of-the-army,altLabel,Of Army,preferred,reviewed
+O-department-of-the-army,altLabel,U S Army,preferred,reviewed
+O-department-of-the-army,altLabel,Of The Army,preferred,reviewed
+O-department-of-the-army,altLabel,Us Army,preferred,reviewed
+O-conference-committees,altLabel,Ndaa Conferees,preferred,reviewed
+O-united-states-congress,altLabel,Congress,preferred,reviewed
+O-department-of-the-interior,officeHolderName,Salazar,preferred,reviewed
+O-department-of-the-interior,officeHolderName,Jewell,preferred,reviewed
+O-meta-facebook,altLabel,Meta,preferred,reviewed
+O-department-of-state,altLabel,Secstate,preferred,reviewed
+M-G000386,recipientName,Grassley,preferred,reviewed
+O-department-of-housing-and-urban-development,officeHolderName,Carson,preferred,reviewed
+O-appropriations-committees,altLabel,Appropriations,preferred,reviewed
+O-appropriations-committees,altLabel,Appropriations Committees,preferred,reviewed
+O-department-of-veterans-affairs,officeHolderName,Mcdonald,preferred,reviewed
+O-department-of-veterans-affairs,officeHolderName,Mcdonald'S,preferred,reviewed
+P-gavin-newsom,altLabel,Governor Newsom,preferred,reviewed
+P-gavin-newsom,altLabel,Gov Newsom,preferred,reviewed
+O-the-president,officeHolderName,Bush,preferred,reviewed
+O-congressional-leadership,altLabel,House And Senate Leadership,preferred,reviewed
+O-department-of-the-navy,altLabel,Secnav,preferred,reviewed
+O-united-states-agency-for-international-development,altLabel,Usaid,preferred,reviewed
+O-united-states-agency-for-international-development,abbreviation,USAID,preferred,reviewed
+P-jerry-brown,altLabel,Gov Brown,preferred,reviewed
+P-jerry-brown,altLabel,Governor Brown,preferred,reviewed
+O-department-of-the-air-force,altLabel,Secaf,preferred,reviewed
+O-federal-communications-commission,officeHolderName,Wheeler (2014-2017),preferred,reviewed
+O-environmental-protection-agency,officeHolderName,Wheeler (2018-2021),preferred,reviewed
+O-department-of-the-air-force,altLabel,Air Force,preferred,reviewed
+O-department-of-the-air-force,altLabel,Of Air Force,preferred,reviewed
+M-D000621,altLabel,Gov Desantis,preferred,reviewed
+M-D000621,altLabel,Governor Desantis,preferred,reviewed
+O-office-of-the-us-trade-representative,officeHolderName,Ambassador Lighthizer,preferred,reviewed
+O-office-of-the-us-trade-representative,officeHolderName,Amb Lighthizer,preferred,reviewed
+O-office-of-the-us-trade-representative,officeHolderName,(Amb Lighthizer),preferred,reviewed
+O-census-bureau,altLabel,U S Census Bureau,preferred,reviewed
+O-census-bureau,altLabel,Us Census Bureau,preferred,reviewed
+O-the-speaker-of-the-house,officeHolderName,Boehner,preferred,reviewed
+O-army-corps-of-engineers,altLabel,Corps,preferred,reviewed
+O-consumer-product-safety-commission,altLabel,Cpsc,preferred,reviewed
+O-consumer-product-safety-commission,abbreviation,CPSC,preferred,reviewed
+O-department-of-the-navy,altLabel,Navy,preferred,reviewed
+O-department-of-the-navy,altLabel,Of The Navy,preferred,reviewed
+O-department-of-the-navy,altLabel,Us Navy,preferred,reviewed
+O-financial-regulators-several,altLabel,Regulators,preferred,reviewed
+M-D000621,altLabel,Desantis,preferred,reviewed
+M-D000621,altLabel,Desantis ( ),preferred,reviewed
+P-kathy-hochul,altLabel,Gov Hochul,preferred,reviewed
+P-kathy-hochul,altLabel,Governor Hochul,preferred,reviewed
+O-united-states-international-trade-commission,altLabel,Itc,preferred,reviewed
+O-united-states-international-trade-commission,abbreviation,ITC,preferred,reviewed
+O-department-of-homeland-security,officeHolderName,Kelly (2017-2017),preferred,reviewed
+O-white-house-chief-of-staff,officeHolderName,Kelly (2018-2019),preferred,reviewed
+O-department-of-transportation,officeHolderName,Lahood,preferred,reviewed
+O-national-park-service,altLabel,Nps,preferred,reviewed
+O-national-park-service,abbreviation,NPS,preferred,reviewed
+O-twitter-x,altLabel,Twitter,preferred,reviewed
+O-congressional-budget-office,altLabel,Cbo,preferred,reviewed
+O-congressional-budget-office,abbreviation,CBO,preferred,reviewed
+M-D000136,recipientName,Davis,preferred,reviewed
+P-greg-abbott,altLabel,Gov Abbott,preferred,reviewed
+P-greg-abbott,altLabel,Governor Abbott,preferred,reviewed
+M-G000359,recipientName,Graham,preferred,reviewed
+M-D000563,recipientName,Durbin,preferred,reviewed
+O-federal-railroad-administration,altLabel,Fra,preferred,reviewed
+O-federal-transit-administration,altLabel,Fta,preferred,reviewed
+O-federal-transit-administration,abbreviation,FTA,preferred,reviewed
+M-S001217,altLabel,Gov Scott,preferred,reviewed
+M-S001217,altLabel,Governor Scott,preferred,reviewed
+P-tom-wolf,altLabel,Gov Wolf,preferred,reviewed
+P-tom-wolf,altLabel,Governor Wolf,preferred,reviewed
+O-congressional-leadership,altLabel,Leader Mcconnell,preferred,reviewed
+O-united-states-postal-service,officeHolderName,Pmg Dejoy,preferred,reviewed
+O-the-president,altLabel,Pres,preferred,reviewed
+O-chief-administrative-officer-of-the-house,altLabel,Cao,preferred,reviewed
+O-chief-administrative-officer-of-the-house,abbreviation,CAO,preferred,reviewed
+P-larry-hogan,altLabel,Hogan,preferred,reviewed
+O-phrma,altLabel,Phrma,preferred,reviewed
+O-surface-transportation-board,altLabel,Stb,preferred,reviewed
+O-surface-transportation-board,abbreviation,STB,preferred,reviewed
+O-bureau-of-reclamation,altLabel,Bor,preferred,reviewed
+O-bureau-of-reclamation,altLabel,Bureau Of Reclamation,preferred,reviewed
+O-small-business-administration,officeHolderName,Carranza,preferred,reviewed
+O-department-of-defense,officeHolderName,Gates,preferred,reviewed
+O-office-of-special-counsel,altLabel,Osc,preferred,reviewed
+O-office-of-special-counsel,abbreviation,OSC,preferred,reviewed
+O-department-of-the-army,altLabel,Secarmy,preferred,reviewed
+O-united-states-senate,altLabel,Senators,preferred,reviewed
+O-airlines-several,altLabel,Airlines,preferred,reviewed
+O-banks-several,altLabel,Banks,preferred,reviewed
+O-finra,altLabel,Finra,preferred,reviewed
+O-forest-service,altLabel,U S Forest Service,preferred,reviewed
+P-bill-lee,altLabel,Gov Lee,preferred,reviewed
+P-bill-lee,altLabel,Governor Lee,preferred,reviewed
+O-senate-homeland-security-and-governmental-affairs-committee,altLabel,Hsgac,preferred,reviewed
+O-senate-homeland-security-and-governmental-affairs-committee,abbreviation,HSGAC,preferred,reviewed
+O-office-of-the-director-of-national-intelligence,altLabel,Odni,preferred,reviewed
+O-office-of-the-director-of-national-intelligence,abbreviation,ODNI,preferred,reviewed
+O-pipeline-and-hazardous-materials-safety-administration,altLabel,Phmsa,preferred,reviewed
+O-pipeline-and-hazardous-materials-safety-administration,abbreviation,PHMSA,preferred,reviewed
+O-appropriations-committees,altLabel,Appropriations Committee,preferred,reviewed
+O-defense-health-agency,altLabel,Dha,preferred,reviewed
+O-department-of-state,altLabel,Dos,preferred,reviewed
+O-financial-regulators-several,altLabel,Financial Regulators,preferred,reviewed
+P-tony-evers,altLabel,Governor Evers,preferred,reviewed
+P-tony-evers,altLabel,Gov Evers,preferred,reviewed
+P-gavin-newsom,altLabel,Newsom,preferred,reviewed
+O-department-of-health-and-human-services,officeHolderName,Rfk,preferred,reviewed
+O-tiktok,altLabel,Tiktok,preferred,reviewed
+O-forest-service,altLabel,Usfs,preferred,reviewed
+O-forest-service,abbreviation,USFS,preferred,reviewed
+O-united-states-coast-guard,altLabel,Coast Guard,preferred,reviewed
+O-senate-energy-and-natural-resources-committee,altLabel,Enr,preferred,reviewed
+O-senate-energy-and-natural-resources-committee,abbreviation,ENR,preferred,reviewed
+O-congressional-leadership,altLabel,Leader Schumer,preferred,reviewed
+O-department-of-defense,altLabel,Of Defense,preferred,reviewed
+O-department-of-defense,altLabel,Defense,preferred,reviewed
+O-congressional-leadership,altLabel,Reid,preferred,reviewed
+O-senate-armed-services-committee,altLabel,Sasc,preferred,reviewed
+O-senate-armed-services-committee,abbreviation,SASC,preferred,reviewed
+O-fish-and-wildlife-service,altLabel,Usfws,preferred,reviewed
+O-fish-and-wildlife-service,abbreviation,USFWS,preferred,reviewed
+M-G000386,recipientName,Ceg,preferred,reviewed
+O-supreme-court-of-the-united-states,officeHolderName,Chief Justice Roberts,preferred,reviewed
+P-andrew-cuomo,altLabel,Cuomo,preferred,reviewed
+O-conference-committees,altLabel,Farm Bill Conferees,preferred,reviewed
+M-G000289,recipientName,Goodlatte,preferred,reviewed
+M-G000289,recipientName,Goodlatte ( ),preferred,reviewed
+P-jb-pritzker,altLabel,Gov Pritzker,preferred,reviewed
+P-jb-pritzker,altLabel,Governor Pritzker,preferred,reviewed
+P-andrew-cuomo,altLabel,Governor Cuomo,preferred,reviewed
+P-andrew-cuomo,altLabel,Gov Cuomo,preferred,reviewed
+O-house-armed-services-committee,altLabel,Hasc,preferred,reviewed
+O-house-armed-services-committee,abbreviation,HASC,preferred,reviewed
+P-kathy-hochul,altLabel,Hochul,preferred,reviewed
+O-congressional-leadership,altLabel,Houseleaders,preferred,reviewed
+O-consumer-financial-protection-bureau,officeHolderName,Kraninger,preferred,reviewed
+O-major-league-baseball,altLabel,Mlb,preferred,reviewed
+O-major-league-baseball,abbreviation,MLB,preferred,reviewed
+O-national-security-agency,altLabel,Nsa,preferred,reviewed
+O-national-security-agency,abbreviation,NSA,preferred,reviewed
+O-national-security-advisor,officeHolderName,Nsa Sullivan,preferred,reviewed
+M-N000181,recipientName,Nunes,preferred,reviewed
+M-P000595,recipientName,Peters,preferred,reviewed
+O-special-inspector-general-for-tarp,altLabel,Sigtarp,preferred,reviewed
+O-special-inspector-general-for-tarp,abbreviation,SIGTARP,preferred,reviewed
+O-bureau-of-ocean-energy-management,altLabel,Boem,preferred,reviewed
+O-bureau-of-ocean-energy-management,abbreviation,BOEM,preferred,reviewed
+M-B001149,recipientName,Burton,preferred,reviewed
+O-department-of-energy,officeHolderName,Chu,preferred,reviewed
+O-office-of-the-director-of-national-intelligence,altLabel,Dni,preferred,reviewed
+O-office-of-the-director-of-national-intelligence,abbreviation,DNI,preferred,reviewed
+P-bruce-rauner,altLabel,Gov Rauner,preferred,reviewed
+P-bruce-rauner,altLabel,Governor Rauner,preferred,reviewed
+O-international-olympic-committee,altLabel,Ioc,preferred,reviewed
+O-international-olympic-committee,abbreviation,IOC,preferred,reviewed
+O-department-of-the-army,officeHolderName,Mchugh,preferred,reviewed
+O-national-telecommunications-and-information-administration,altLabel,Ntia,preferred,reviewed
+O-national-telecommunications-and-information-administration,abbreviation,NTIA,preferred,reviewed
+O-department-of-state,officeHolderName,Of State Blinken,preferred,reviewed
+O-office-of-government-ethics,altLabel,Oge,preferred,reviewed
+O-office-of-government-ethics,abbreviation,OGE,preferred,reviewed
+O-department-of-health-and-human-services,officeHolderName,Rfk Jr,preferred,reviewed
+O-united-states-coast-guard,altLabel,Uscg,preferred,reviewed
+O-united-states-coast-guard,abbreviation,USCG,preferred,reviewed
+M-A000360,recipientName,Alexander,preferred,reviewed
+O-federal-reserve,officeHolderName,Bernanke,preferred,reviewed
+O-committee-on-foreign-investment-in-the-united-states,altLabel,Cfius,preferred,reviewed
+O-committee-on-foreign-investment-in-the-united-states,abbreviation,CFIUS,preferred,reviewed
+O-internal-revenue-service,officeHolderName,Commissioner Rettig,preferred,reviewed
+O-congressional-leadership,altLabel,Congressional Leaders,preferred,reviewed
+O-army-corps-of-engineers,officeHolderName,Darcy,preferred,reviewed
+O-department-of-defense-inspector-general,altLabel,Dodig,preferred,reviewed
+O-department-of-defense-inspector-general,abbreviation,DoD IG,preferred,reviewed
+P-john-bel-edwards,altLabel,Gov Edwards,preferred,reviewed
+P-john-bel-edwards,altLabel,Governor Edwards,preferred,reviewed
+O-senate-health-education-labor-and-pensions-committee,altLabel,Help,preferred,reviewed
+O-senate-health-education-labor-and-pensions-committee,abbreviation,HELP,preferred,reviewed
+O-office-of-the-us-trade-representative,officeHolderName,Lighthizer,preferred,reviewed
+O-environmental-protection-agency,officeHolderName,Lisa Jackson,preferred,reviewed
+O-mckinsey-company,altLabel,Mckinsey,preferred,reviewed
+O-ncaa,altLabel,Ncaa,preferred,reviewed
+O-conference-committees,altLabel,Ndaa Conference,preferred,reviewed
+O-office-of-national-drug-control-policy,altLabel,Ondcp,preferred,reviewed
+O-office-of-national-drug-control-policy,abbreviation,ONDCP,preferred,reviewed
+O-social-media-companies-several,altLabel,Social Media,preferred,reviewed
+O-department-of-labor,officeHolderName,Solis,preferred,reviewed
+O-department-of-transportation,altLabel,Usdot,preferred,reviewed
+O-office-of-the-us-trade-representative,officeHolderName,Ambassador Tai,preferred,reviewed
+O-office-of-the-us-trade-representative,officeHolderName,Ambassador Tai ( ),preferred,reviewed
+O-office-of-the-us-trade-representative,officeHolderName,Amb Tai,preferred,reviewed
+O-michigan-secretary-of-state,officeHolderName,Benson,preferred,reviewed
+O-office-of-the-director-of-national-intelligence,officeHolderName,Clapper,preferred,reviewed
+O-equal-employment-opportunity-commission,altLabel,Eeoc,preferred,reviewed
+O-equal-employment-opportunity-commission,abbreviation,EEOC,preferred,reviewed
+O-ercot,altLabel,Ercot,preferred,reviewed
+O-fish-and-wildlife-service,altLabel,Fws,preferred,reviewed
+O-fish-and-wildlife-service,abbreviation,FWS,preferred,reviewed
+O-geo-group,altLabel,Geo Group,preferred,reviewed
+O-house-committee-on-ethics,altLabel,House Ethics,preferred,reviewed
+M-I000056,recipientName,Issa,preferred,reviewed
+O-department-of-homeland-security,officeHolderName,Mullin,preferred,reviewed
+O-risk-management-agency,altLabel,Rma,preferred,reviewed
+O-risk-management-agency,abbreviation,RMA,preferred,reviewed
+O-supreme-court-of-the-united-states,officeHolderName,Roberts And Thomas,preferred,reviewed
+P-scott-walker,altLabel,Walker,preferred,reviewed
+M-W000779,recipientName,Wyden,preferred,reviewed
+O-council-on-environmental-quality,altLabel,Ceq,preferred,reviewed
+O-council-on-environmental-quality,abbreviation,CEQ,preferred,reviewed
+O-senate-environment-and-public-works-committee,altLabel,Epw,preferred,reviewed
+O-senate-environment-and-public-works-committee,abbreviation,EPW,preferred,reviewed
+O-health-resources-and-services-administration,altLabel,Hrsa,preferred,reviewed
+O-health-resources-and-services-administration,abbreviation,HRSA,preferred,reviewed
+P-mohammed-bin-salman,altLabel,Mbs,preferred,reviewed
+P-mohammed-bin-salman,abbreviation,MBS,preferred,reviewed
+O-national-football-league,altLabel,Nfl,preferred,reviewed
+O-national-football-league,abbreviation,NFL,preferred,reviewed
+O-national-personnel-records-center,altLabel,Nprc,preferred,reviewed
+O-national-personnel-records-center,abbreviation,NPRC,preferred,reviewed
+O-office-of-refugee-resettlement,altLabel,Orr,preferred,reviewed
+O-office-of-refugee-resettlement,abbreviation,ORR,preferred,reviewed
+O-substance-abuse-and-mental-health-services-administration,altLabel,Samhsa,preferred,reviewed
+O-substance-abuse-and-mental-health-services-administration,abbreviation,SAMHSA,preferred,reviewed
+O-california-state-water-resources-control-board,altLabel,Swrcb,preferred,reviewed
+O-california-state-water-resources-control-board,abbreviation,SWRCB,preferred,reviewed
+O-at-t,altLabel,Att,preferred,reviewed
+O-at-t,abbreviation,AT&T,preferred,reviewed
+O-california-public-utilities-commission,altLabel,Cpuc,preferred,reviewed
+O-california-public-utilities-commission,abbreviation,CPUC,preferred,reviewed
+O-financial-crimes-enforcement-network,altLabel,Fincen,preferred,reviewed
+O-financial-crimes-enforcement-network,abbreviation,FinCEN,preferred,reviewed
+O-financial-oversight-and-management-board-for-puerto-rico,altLabel,Fomb,preferred,reviewed
+O-financial-oversight-and-management-board-for-puerto-rico,abbreviation,FOMB,preferred,reviewed
+O-federal-retirement-thrift-investment-board,altLabel,Frtib,preferred,reviewed
+O-federal-retirement-thrift-investment-board,abbreviation,FRTIB,preferred,reviewed
+O-national-guard-bureau,altLabel,Ngb,preferred,reviewed
+O-national-guard-bureau,abbreviation,NGB,preferred,reviewed
+O-openai,altLabel,Openai,preferred,reviewed
+O-united-states-patent-and-trademark-office,altLabel,Uspto,preferred,reviewed
+O-united-states-patent-and-trademark-office,abbreviation,USPTO,preferred,reviewed
+O-army-corps-of-engineers,altLabel,Acoe,preferred,reviewed
+O-army-corps-of-engineers,abbreviation,ACOE,preferred,reviewed
+O-energy-information-administration,altLabel,Eia,preferred,reviewed
+O-energy-information-administration,abbreviation,EIA,preferred,reviewed
+O-fifa,altLabel,Fifa,preferred,reviewed
+O-fifa,abbreviation,FIFA,preferred,reviewed
+O-federal-maritime-commission,altLabel,Fmc,preferred,reviewed
+O-federal-maritime-commission,abbreviation,FMC,preferred,reviewed
+O-joint-committee-on-taxation,altLabel,Jct,preferred,reviewed
+O-joint-committee-on-taxation,abbreviation,JCT,preferred,reviewed
+O-jetblue,altLabel,Jetblue,preferred,reviewed
+O-mohela,altLabel,Mohela,preferred,reviewed
+O-mohela,abbreviation,MOHELA,preferred,reviewed
+O-national-transportation-safety-board,altLabel,Ntsb,preferred,reviewed
+O-national-transportation-safety-board,abbreviation,NTSB,preferred,reviewed
+O-house-committee-on-oversight,altLabel,Ogr,preferred,reviewed
+O-house-committee-on-oversight,abbreviation,OGR,preferred,reviewed
+O-united-states-postal-service,altLabel,Pmg,preferred,reviewed
+O-supreme-court-of-the-united-states,altLabel,Scotus,preferred,reviewed
+O-supreme-court-of-the-united-states,abbreviation,SCOTUS,preferred,reviewed
+O-united-states-commission-on-civil-rights,altLabel,Usccr,preferred,reviewed
+O-united-states-commission-on-civil-rights,abbreviation,USCCR,preferred,reviewed
+O-administration-for-children-and-families,altLabel,Acf,preferred,reviewed
+O-administration-for-children-and-families,abbreviation,ACF,preferred,reviewed
+O-army-corps-of-engineers,altLabel,Asacw,preferred,reviewed
+O-army-corps-of-engineers,abbreviation,ASA(CW),preferred,reviewed
+O-cybersecurity-and-infrastructure-security-agency,altLabel,Cisa,preferred,reviewed
+O-cybersecurity-and-infrastructure-security-agency,abbreviation,CISA,preferred,reviewed
+O-economic-development-administration,altLabel,Eda,preferred,reviewed
+O-economic-development-administration,abbreviation,EDA,preferred,reviewed
+O-gsk,altLabel,Gsk,preferred,reviewed
+O-gsk,abbreviation,GSK,preferred,reviewed
+O-icann,altLabel,Icann,preferred,reviewed
+O-icann,abbreviation,ICANN,preferred,reviewed
+O-library-of-congress,altLabel,Loc,preferred,reviewed
+O-library-of-congress,abbreviation,LOC,preferred,reviewed
+O-national-archives-and-records-administration,altLabel,Nara,preferred,reviewed
+O-national-archives-and-records-administration,abbreviation,NARA,preferred,reviewed
+O-national-institute-of-allergy-and-infectious-diseases,altLabel,Niaid,preferred,reviewed
+O-national-institute-of-allergy-and-infectious-diseases,abbreviation,NIAID,preferred,reviewed
+O-national-institute-on-drug-abuse,altLabel,Nida,preferred,reviewed
+O-national-institute-on-drug-abuse,abbreviation,NIDA,preferred,reviewed
+O-national-weather-service,altLabel,Nws,preferred,reviewed
+O-national-weather-service,abbreviation,NWS,preferred,reviewed
+O-public-company-accounting-oversight-board,altLabel,Pcaob,preferred,reviewed
+O-public-company-accounting-oversight-board,abbreviation,PCAOB,preferred,reviewed
+O-united-states-patent-and-trademark-office,altLabel,Pto,preferred,reviewed
+O-united-states-patent-and-trademark-office,abbreviation,PTO,preferred,reviewed
+O-alcohol-and-tobacco-tax-and-trade-bureau,altLabel,Ttb,preferred,reviewed
+O-alcohol-and-tobacco-tax-and-trade-bureau,abbreviation,TTB,preferred,reviewed
+O-tennessee-valley-authority,altLabel,Tva,preferred,reviewed
+O-tennessee-valley-authority,abbreviation,TVA,preferred,reviewed
+O-abc-news,altLabel,Abc,preferred,reviewed
+O-abc-news,altLabel,Abc News,preferred,reviewed
+O-abc-news,abbreviation,ABC,preferred,reviewed
+O-advisory-council-on-historic-preservation,altLabel,Achp,preferred,reviewed
+O-advisory-council-on-historic-preservation,abbreviation,ACHP,preferred,reviewed
+P-aung-san-suu-kyi,altLabel,Assk,preferred,reviewed
+P-aung-san-suu-kyi,abbreviation,ASSK,preferred,reviewed
+O-csx,altLabel,Csx,preferred,reviewed
+O-csx,abbreviation,CSX,preferred,reviewed
+O-united-states-international-development-finance-corporation,altLabel,Dfc,preferred,reviewed
+O-united-states-international-development-finance-corporation,abbreviation,DFC,preferred,reviewed
+O-federal-motor-carrier-safety-administration,altLabel,Fmcsa,preferred,reviewed
+O-federal-motor-carrier-safety-administration,abbreviation,FMCSA,preferred,reviewed
+O-food-and-nutrition-service,altLabel,Fns,preferred,reviewed
+O-food-and-nutrition-service,abbreviation,FNS,preferred,reviewed
+O-financial-stability-oversight-council,altLabel,Fsoc,preferred,reviewed
+O-financial-stability-oversight-council,abbreviation,FSOC,preferred,reviewed
+O-hsbc,altLabel,Hsbc,preferred,reviewed
+O-hsbc,abbreviation,HSBC,preferred,reviewed
+O-international-commission-on-holocaust-era-insurance-claims,altLabel,Icheic,preferred,reviewed
+O-international-commission-on-holocaust-era-insurance-claims,abbreviation,ICHEIC,preferred,reviewed
+O-indian-health-service,altLabel,Ihs,preferred,reviewed
+O-indian-health-service,abbreviation,IHS,preferred,reviewed
+O-mine-safety-and-health-administration,altLabel,Msha,preferred,reviewed
+O-mine-safety-and-health-administration,abbreviation,MSHA,preferred,reviewed
+O-national-economic-council,altLabel,Nec,preferred,reviewed
+O-national-economic-council,altLabel,Of Nec,preferred,reviewed
+O-national-economic-council,abbreviation,NEC,preferred,reviewed
+O-department-of-state,altLabel,Sos,preferred,reviewed
+O-united-nations-framework-convention-on-climate-change,altLabel,Unfccc,preferred,reviewed
+O-united-nations-framework-convention-on-climate-change,abbreviation,UNFCCC,preferred,reviewed
+O-youtube,altLabel,Youtube,preferred,reviewed
+O-association-of-american-medical-colleges,altLabel,Aamc,preferred,reviewed
+O-association-of-american-medical-colleges,abbreviation,AAMC,preferred,reviewed
+O-agency-for-toxic-substances-and-disease-registry,altLabel,Atsdr,preferred,reviewed
+O-agency-for-toxic-substances-and-disease-registry,abbreviation,ATSDR,preferred,reviewed
+O-bureau-of-indian-affairs,altLabel,Bia,preferred,reviewed
+O-bureau-of-indian-affairs,abbreviation,BIA,preferred,reviewed
+O-bonneville-power-administration,altLabel,Bpa,preferred,reviewed
+O-bonneville-power-administration,abbreviation,BPA,preferred,reviewed
+O-california-air-resources-board,altLabel,Carb,preferred,reviewed
+O-california-air-resources-board,abbreviation,CARB,preferred,reviewed
+O-appropriations-committees,altLabel,Cjs,preferred,reviewed
+O-appropriations-committees,abbreviation,CJS,preferred,reviewed
+O-cvs-health,altLabel,Cvs,preferred,reviewed
+O-cvs-health,abbreviation,CVS,preferred,reviewed
+O-department-of-defense,altLabel,Depsec,preferred,reviewed
+O-california-employment-development-department,altLabel,Edd,preferred,reviewed
+O-california-employment-development-department,abbreviation,EDD,preferred,reviewed
+O-kkr,altLabel,Kkr,preferred,reviewed
+O-kkr,abbreviation,KKR,preferred,reviewed
+O-national-hockey-league,altLabel,Nhl,preferred,reviewed
+O-national-hockey-league,abbreviation,NHL,preferred,reviewed
+O-national-marine-fisheries-service,altLabel,Nmfs,preferred,reviewed
+O-national-marine-fisheries-service,abbreviation,NMFS,preferred,reviewed
+O-new-york-city-housing-authority,altLabel,Nycha,preferred,reviewed
+O-new-york-city-housing-authority,abbreviation,NYCHA,preferred,reviewed
+O-new-york-stock-exchange,altLabel,Nyse,preferred,reviewed
+O-new-york-stock-exchange,abbreviation,NYSE,preferred,reviewed
+O-office-of-federal-contract-compliance-programs,altLabel,Ofccp,preferred,reviewed
+O-office-of-federal-contract-compliance-programs,abbreviation,OFCCP,preferred,reviewed
+O-office-of-information-and-regulatory-affairs,altLabel,Oira,preferred,reviewed
+O-office-of-information-and-regulatory-affairs,abbreviation,OIRA,preferred,reviewed
+O-pjm-interconnection,altLabel,Pjm,preferred,reviewed
+O-pjm-interconnection,abbreviation,PJM,preferred,reviewed
+O-connecticut-public-utilities-regulatory-authority,altLabel,Pura,preferred,reviewed
+O-connecticut-public-utilities-regulatory-authority,abbreviation,PURA,preferred,reviewed
+O-senate-finance-committee,altLabel,Sfc,preferred,reviewed
+O-senate-finance-committee,abbreviation,SFC,preferred,reviewed
+O-senate-veterans-affairs-committee,altLabel,Svac,preferred,reviewed
+O-senate-veterans-affairs-committee,abbreviation,SVAC,preferred,reviewed
+O-department-of-the-air-force,altLabel,Usaf,preferred,reviewed
+O-department-of-the-air-force,abbreviation,USAF,preferred,reviewed
+O-united-states-agency-for-global-media,altLabel,Usagm,preferred,reviewed
+O-united-states-agency-for-global-media,abbreviation,USAGM,preferred,reviewed
+O-department-of-education,altLabel,Usde,preferred,reviewed
+O-department-of-education,abbreviation,USDE,preferred,reviewed
+O-united-states-olympic-paralympic-committee,altLabel,Usopc,preferred,reviewed
+O-united-states-olympic-paralympic-committee,abbreviation,USOPC,preferred,reviewed
+O-veterans-health-administration,altLabel,Vha,preferred,reviewed
+O-veterans-health-administration,abbreviation,VHA,preferred,reviewed
+O-house-ways-and-means-committee,altLabel,Wam,preferred,reviewed
+O-house-ways-and-means-committee,abbreviation,W&M,preferred,reviewed
+O-american-academy-of-allergy-asthma-immunology,altLabel,Aaaai,preferred,reviewed
+O-american-academy-of-allergy-asthma-immunology,abbreviation,AAAAI,preferred,reviewed
+O-american-academy-of-orthopaedic-surgeons,altLabel,Aaos,preferred,reviewed
+O-american-academy-of-orthopaedic-surgeons,abbreviation,AAOS,preferred,reviewed
+O-accreditation-council-for-graduate-medical-education,altLabel,Acgme,preferred,reviewed
+O-accreditation-council-for-graduate-medical-education,abbreviation,ACGME,preferred,reviewed
+O-american-college-of-obstetricians-and-gynecologists,altLabel,Acog,preferred,reviewed
+O-american-college-of-obstetricians-and-gynecologists,abbreviation,ACOG,preferred,reviewed
+O-america-s-health-insurance-plans,altLabel,Ahip,preferred,reviewed
+O-america-s-health-insurance-plans,abbreviation,AHIP,preferred,reviewed
+O-bnsf-railway,altLabel,Bnsf,preferred,reviewed
+O-bnsf-railway,abbreviation,BNSF,preferred,reviewed
+O-consumer-financial-protection-bureau,altLabel,Cfbp,preferred,reviewed
+O-consumer-financial-protection-bureau,abbreviation,CFPB,preferred,reviewed
+O-department-of-the-navy,altLabel,Cno,preferred,reviewed
+O-department-of-the-navy,abbreviation,CNO,preferred,reviewed
+O-executive-office-for-immigration-review,altLabel,Eoir,preferred,reviewed
+O-executive-office-for-immigration-review,abbreviation,EOIR,preferred,reviewed
+O-fedex,altLabel,Fedex,preferred,reviewed
+O-federal-highway-administration,altLabel,Fhwa,preferred,reviewed
+O-federal-highway-administration,abbreviation,FHWA,preferred,reviewed
+O-federal-insurance-office,altLabel,Fio,preferred,reviewed
+O-federal-insurance-office,abbreviation,FIO,preferred,reviewed
+O-house-foreign-affairs-committee,altLabel,Hfac,preferred,reviewed
+O-house-foreign-affairs-committee,abbreviation,HFAC,preferred,reviewed
+O-institute-of-museum-and-library-services,altLabel,Imls,preferred,reviewed
+O-institute-of-museum-and-library-services,abbreviation,IMLS,preferred,reviewed
+O-illinois-state-board-of-education,altLabel,Isbe,preferred,reviewed
+O-illinois-state-board-of-education,abbreviation,ISBE,preferred,reviewed
+O-massachusetts-institute-of-technology,altLabel,Mit,preferred,reviewed
+O-massachusetts-institute-of-technology,abbreviation,MIT,preferred,reviewed
+O-minerals-management-service,altLabel,Mms,preferred,reviewed
+O-minerals-management-service,abbreviation,MMS,preferred,reviewed
+O-moody-s,altLabel,Moodys,preferred,reviewed
+O-msci,altLabel,Msci,preferred,reviewed
+O-msci,abbreviation,MSCI,preferred,reviewed
+O-metropolitan-transportation-authority-new-york,altLabel,Mta,preferred,reviewed
+O-metropolitan-transportation-authority-new-york,abbreviation,MTA,preferred,reviewed
+O-national-association-of-insurance-commissioners,altLabel,Naic,preferred,reviewed
+O-national-association-of-insurance-commissioners,abbreviation,NAIC,preferred,reviewed
+O-nbc,altLabel,Nbc,preferred,reviewed
+O-nbc,abbreviation,NBC,preferred,reviewed
+O-national-institute-of-standards-and-technology,altLabel,Nist,preferred,reviewed
+O-national-institute-of-standards-and-technology,abbreviation,NIST,preferred,reviewed
+O-national-organization-for-rare-disorders,altLabel,Nord,preferred,reviewed
+O-national-organization-for-rare-disorders,abbreviation,NORD,preferred,reviewed
+O-national-security-council,altLabel,Nsc,preferred,reviewed
+O-national-security-council,abbreviation,NSC,preferred,reviewed
+O-ohio-department-of-job-and-family-services,altLabel,Odjfs,preferred,reviewed
+O-ohio-department-of-job-and-family-services,abbreviation,ODJFS,preferred,reviewed
+O-office-of-science-and-technology-policy,altLabel,Ostp,preferred,reviewed
+O-office-of-science-and-technology-policy,abbreviation,OSTP,preferred,reviewed
+O-operation-warp-speed,altLabel,Ows,preferred,reviewed
+O-operation-warp-speed,abbreviation,OWS,preferred,reviewed
+O-port-authority-of-new-york-and-new-jersey,altLabel,Panynj,preferred,reviewed
+O-port-authority-of-new-york-and-new-jersey,abbreviation,PANYNJ,preferred,reviewed
+O-the-president,altLabel,Peotus,preferred,reviewed
+O-philip-morris-international,altLabel,Pmi,preferred,reviewed
+O-philip-morris-international,abbreviation,PMI,preferred,reviewed
+O-pandemic-response-accountability-committee,altLabel,Prac,preferred,reviewed
+O-pandemic-response-accountability-committee,abbreviation,PRAC,preferred,reviewed
+O-purdue-pharma,altLabel,Purdue,preferred,reviewed
+O-appropriations-committees,altLabel,Sfops,preferred,reviewed
+O-appropriations-committees,abbreviation,SFOPS,preferred,reviewed
+O-treasury-inspector-general-for-tax-administration,altLabel,Tigta,preferred,reviewed
+O-treasury-inspector-general-for-tax-administration,abbreviation,TIGTA,preferred,reviewed
+O-united-states-capitol-police,altLabel,Uscp,preferred,reviewed
+O-united-states-capitol-police,abbreviation,USCP,preferred,reviewed
+O-united-states-trustee-program,altLabel,Ustp,preferred,reviewed
+O-united-states-trustee-program,abbreviation,USTP,preferred,reviewed
 C-agriculture-and-food,broader,C-topics,preferred,local
 T-agriculture,broader,C-agriculture-and-food,preferred,local
 C-economy-and-finance,broader,C-topics,preferred,local
@@ -12629,11 +13023,227 @@ O-congressional-leadership,broader,C-congress,preferred,local
 O-the-speaker-of-the-house,broader,C-congress,preferred,local
 O-government-accountability-office,broader,C-congress,preferred,local
 O-government-publishing-office,broader,C-congress,preferred,local
+C-congressional-committees,broader,C-congress,preferred,local
+C-courts,broader,C-organizations,preferred,local
+C-government-corporations,broader,C-organizations,preferred,local
+C-state-and-local-government,broader,C-organizations,preferred,local
+C-companies,broader,C-organizations,preferred,local
+C-associations-and-other-organizations,broader,C-organizations,preferred,local
+C-international-organizations,broader,C-organizations,preferred,local
+C-governors,broader,C-people,preferred,local
+C-foreign-leaders,broader,C-people,preferred,local
 C-senators,broader,C-members-of-congress,preferred,local
 C-representatives,broader,C-members-of-congress,preferred,local
 C-organizations-not-yet-reviewed,broader,C-not-yet-reviewed,preferred,local
 C-people-not-yet-reviewed,broader,C-not-yet-reviewed,preferred,local
 C-recipients-not-yet-sorted,broader,C-not-yet-reviewed,preferred,local
+O-the-administration,broader,C-executive-office-of-the-president,preferred,local
+O-united-states-senate,broader,C-congress,preferred,local
+O-google,broader,C-companies,preferred,local
+O-amazon,broader,C-companies,preferred,local
+O-conference-committees,broader,C-congressional-committees,preferred,local
+O-meta-facebook,broader,C-companies,preferred,local
+O-department-of-the-army,broader,O-department-of-defense,preferred,local
+O-united-states-congress,broader,C-congress,preferred,local
+O-appropriations-committees,broader,C-congressional-committees,preferred,local
+P-gavin-newsom,broader,C-governors,preferred,local
+O-department-of-the-navy,broader,O-department-of-defense,preferred,local
+O-united-states-agency-for-international-development,broader,C-independent-agencies-and-commissions,preferred,local
+P-jerry-brown,broader,C-governors,preferred,local
+O-department-of-the-air-force,broader,O-department-of-defense,preferred,local
+O-census-bureau,broader,O-department-of-commerce,preferred,local
+O-consumer-product-safety-commission,broader,C-independent-agencies-and-commissions,preferred,local
+O-financial-regulators-several,broader,C-independent-agencies-and-commissions,preferred,local
+P-kathy-hochul,broader,C-governors,preferred,local
+O-united-states-international-trade-commission,broader,C-independent-agencies-and-commissions,preferred,local
+O-white-house-chief-of-staff,broader,C-executive-office-of-the-president,preferred,local
+O-national-park-service,broader,O-department-of-the-interior,preferred,local
+O-twitter-x,broader,C-companies,preferred,local
+O-amtrak,broader,C-government-corporations,preferred,local
+O-congressional-budget-office,broader,C-congress,preferred,local
+P-greg-abbott,broader,C-governors,preferred,local
+O-federal-railroad-administration,broader,O-department-of-transportation,preferred,local
+O-federal-transit-administration,broader,O-department-of-transportation,preferred,local
+P-tom-wolf,broader,C-governors,preferred,local
+O-pfizer,broader,C-companies,preferred,local
+O-chief-administrative-officer-of-the-house,broader,C-congress,preferred,local
+P-larry-hogan,broader,C-governors,preferred,local
+O-phrma,broader,C-associations-and-other-organizations,preferred,local
+O-surface-transportation-board,broader,C-independent-agencies-and-commissions,preferred,local
+O-wells-fargo,broader,C-companies,preferred,local
+O-bureau-of-reclamation,broader,O-department-of-the-interior,preferred,local
+O-office-of-special-counsel,broader,C-independent-agencies-and-commissions,preferred,local
+O-airlines-several,broader,C-companies,preferred,local
+O-banks-several,broader,C-companies,preferred,local
+O-boeing,broader,C-companies,preferred,local
+O-finra,broader,C-associations-and-other-organizations,preferred,local
+O-forest-service,broader,O-department-of-agriculture,preferred,local
+P-bill-lee,broader,C-governors,preferred,local
+O-senate-homeland-security-and-governmental-affairs-committee,broader,C-congressional-committees,preferred,local
+O-office-of-the-director-of-national-intelligence,broader,C-independent-agencies-and-commissions,preferred,local
+O-pipeline-and-hazardous-materials-safety-administration,broader,O-department-of-transportation,preferred,local
+O-defense-health-agency,broader,O-department-of-defense,preferred,local
+P-tony-evers,broader,C-governors,preferred,local
+O-tiktok,broader,C-companies,preferred,local
+O-united-states-coast-guard,broader,O-department-of-homeland-security,preferred,local
+O-senate-energy-and-natural-resources-committee,broader,C-congressional-committees,preferred,local
+O-senate-armed-services-committee,broader,C-congressional-committees,preferred,local
+O-fish-and-wildlife-service,broader,O-department-of-the-interior,preferred,local
+O-apple,broader,C-companies,preferred,local
+O-supreme-court-of-the-united-states,broader,C-courts,preferred,local
+P-andrew-cuomo,broader,C-governors,preferred,local
+P-jb-pritzker,broader,C-governors,preferred,local
+O-house-armed-services-committee,broader,C-congressional-committees,preferred,local
+O-major-league-baseball,broader,C-associations-and-other-organizations,preferred,local
+O-national-security-agency,broader,O-department-of-defense,preferred,local
+O-national-security-advisor,broader,C-executive-office-of-the-president,preferred,local
+O-special-inspector-general-for-tarp,broader,C-inspectors-general,preferred,local
+O-bureau-of-ocean-energy-management,broader,O-department-of-the-interior,preferred,local
+P-bruce-rauner,broader,C-governors,preferred,local
+O-international-olympic-committee,broader,C-associations-and-other-organizations,preferred,local
+O-national-telecommunications-and-information-administration,broader,O-department-of-commerce,preferred,local
+O-office-of-government-ethics,broader,C-independent-agencies-and-commissions,preferred,local
+O-committee-on-foreign-investment-in-the-united-states,broader,O-department-of-the-treasury,preferred,local
+O-department-of-defense-inspector-general,broader,C-inspectors-general,preferred,local
+P-john-bel-edwards,broader,C-governors,preferred,local
+O-senate-health-education-labor-and-pensions-committee,broader,C-congressional-committees,preferred,local
+O-mckinsey-company,broader,C-companies,preferred,local
+O-ncaa,broader,C-associations-and-other-organizations,preferred,local
+O-office-of-national-drug-control-policy,broader,C-executive-office-of-the-president,preferred,local
+O-social-media-companies-several,broader,C-companies,preferred,local
+O-michigan-secretary-of-state,broader,C-state-and-local-government,preferred,local
+O-equal-employment-opportunity-commission,broader,C-independent-agencies-and-commissions,preferred,local
+O-ercot,broader,C-associations-and-other-organizations,preferred,local
+O-geo-group,broader,C-companies,preferred,local
+O-house-committee-on-ethics,broader,C-congressional-committees,preferred,local
+P-hu-jintao,broader,C-foreign-leaders,preferred,local
+O-norfolk-southern,broader,C-companies,preferred,local
+O-risk-management-agency,broader,O-department-of-agriculture,preferred,local
+P-scott-walker,broader,C-governors,preferred,local
+O-council-on-environmental-quality,broader,C-executive-office-of-the-president,preferred,local
+O-senate-environment-and-public-works-committee,broader,C-congressional-committees,preferred,local
+O-equifax,broader,C-companies,preferred,local
+O-health-resources-and-services-administration,broader,O-department-of-health-and-human-services,preferred,local
+P-mohammed-bin-salman,broader,C-foreign-leaders,preferred,local
+O-national-football-league,broader,C-associations-and-other-organizations,preferred,local
+O-national-personnel-records-center,broader,O-national-archives-and-records-administration,preferred,local
+O-office-of-refugee-resettlement,broader,O-department-of-health-and-human-services,preferred,local
+O-substance-abuse-and-mental-health-services-administration,broader,O-department-of-health-and-human-services,preferred,local
+O-california-state-water-resources-control-board,broader,C-state-and-local-government,preferred,local
+O-at-t,broader,C-companies,preferred,local
+O-california-public-utilities-commission,broader,C-state-and-local-government,preferred,local
+O-financial-crimes-enforcement-network,broader,O-department-of-the-treasury,preferred,local
+O-financial-oversight-and-management-board-for-puerto-rico,broader,C-independent-agencies-and-commissions,preferred,local
+O-federal-retirement-thrift-investment-board,broader,C-independent-agencies-and-commissions,preferred,local
+O-national-guard-bureau,broader,O-department-of-defense,preferred,local
+O-openai,broader,C-companies,preferred,local
+O-united-states-patent-and-trademark-office,broader,O-department-of-commerce,preferred,local
+O-energy-information-administration,broader,O-department-of-energy,preferred,local
+O-fifa,broader,C-associations-and-other-organizations,preferred,local
+O-federal-maritime-commission,broader,C-independent-agencies-and-commissions,preferred,local
+O-joint-committee-on-taxation,broader,C-congressional-committees,preferred,local
+O-jetblue,broader,C-companies,preferred,local
+O-kroger,broader,C-companies,preferred,local
+O-mohela,broader,C-companies,preferred,local
+O-national-transportation-safety-board,broader,C-independent-agencies-and-commissions,preferred,local
+O-house-committee-on-oversight,broader,C-congressional-committees,preferred,local
+O-united-states-commission-on-civil-rights,broader,C-independent-agencies-and-commissions,preferred,local
+O-verizon,broader,C-companies,preferred,local
+O-administration-for-children-and-families,broader,O-department-of-health-and-human-services,preferred,local
+O-cybersecurity-and-infrastructure-security-agency,broader,O-department-of-homeland-security,preferred,local
+O-economic-development-administration,broader,O-department-of-commerce,preferred,local
+O-gsk,broader,C-companies,preferred,local
+O-icann,broader,C-associations-and-other-organizations,preferred,local
+O-library-of-congress,broader,C-congress,preferred,local
+O-moderna,broader,C-companies,preferred,local
+O-mylan,broader,C-companies,preferred,local
+O-national-archives-and-records-administration,broader,C-independent-agencies-and-commissions,preferred,local
+O-national-institute-of-allergy-and-infectious-diseases,broader,O-national-institutes-of-health,preferred,local
+O-national-institute-on-drug-abuse,broader,O-national-institutes-of-health,preferred,local
+O-national-weather-service,broader,O-national-oceanic-and-atmospheric-administration,preferred,local
+O-public-company-accounting-oversight-board,broader,C-associations-and-other-organizations,preferred,local
+O-alcohol-and-tobacco-tax-and-trade-bureau,broader,O-department-of-the-treasury,preferred,local
+O-tennessee-valley-authority,broader,C-government-corporations,preferred,local
+O-abc-news,broader,C-companies,preferred,local
+O-advisory-council-on-historic-preservation,broader,C-independent-agencies-and-commissions,preferred,local
+P-aung-san-suu-kyi,broader,C-foreign-leaders,preferred,local
+O-comcast,broader,C-companies,preferred,local
+O-csx,broader,C-companies,preferred,local
+O-united-states-international-development-finance-corporation,broader,C-independent-agencies-and-commissions,preferred,local
+O-federal-motor-carrier-safety-administration,broader,O-department-of-transportation,preferred,local
+O-food-and-nutrition-service,broader,O-department-of-agriculture,preferred,local
+O-financial-stability-oversight-council,broader,O-department-of-the-treasury,preferred,local
+O-hsbc,broader,C-companies,preferred,local
+O-international-commission-on-holocaust-era-insurance-claims,broader,C-international-organizations,preferred,local
+O-indian-health-service,broader,O-department-of-health-and-human-services,preferred,local
+O-mine-safety-and-health-administration,broader,O-department-of-labor,preferred,local
+O-national-economic-council,broader,C-executive-office-of-the-president,preferred,local
+O-uber,broader,C-companies,preferred,local
+O-united-nations-framework-convention-on-climate-change,broader,C-international-organizations,preferred,local
+O-walmart,broader,C-companies,preferred,local
+O-youtube,broader,C-companies,preferred,local
+O-association-of-american-medical-colleges,broader,C-associations-and-other-organizations,preferred,local
+O-agency-for-toxic-substances-and-disease-registry,broader,O-centers-for-disease-control,preferred,local
+O-bureau-of-indian-affairs,broader,O-department-of-the-interior,preferred,local
+O-bonneville-power-administration,broader,O-department-of-energy,preferred,local
+O-california-air-resources-board,broader,C-state-and-local-government,preferred,local
+O-cvs-health,broader,C-companies,preferred,local
+O-california-employment-development-department,broader,C-state-and-local-government,preferred,local
+O-kkr,broader,C-companies,preferred,local
+O-merck,broader,C-companies,preferred,local
+O-navient,broader,C-companies,preferred,local
+O-national-hockey-league,broader,C-associations-and-other-organizations,preferred,local
+O-national-marine-fisheries-service,broader,O-national-oceanic-and-atmospheric-administration,preferred,local
+O-new-york-city-housing-authority,broader,C-state-and-local-government,preferred,local
+O-new-york-stock-exchange,broader,C-companies,preferred,local
+O-office-of-federal-contract-compliance-programs,broader,O-department-of-labor,preferred,local
+O-office-of-information-and-regulatory-affairs,broader,O-office-of-management-and-budget,preferred,local
+O-pjm-interconnection,broader,C-associations-and-other-organizations,preferred,local
+O-connecticut-public-utilities-regulatory-authority,broader,C-state-and-local-government,preferred,local
+O-senate-finance-committee,broader,C-congressional-committees,preferred,local
+O-senate-veterans-affairs-committee,broader,C-congressional-committees,preferred,local
+O-united-states-agency-for-global-media,broader,C-independent-agencies-and-commissions,preferred,local
+O-united-states-olympic-paralympic-committee,broader,C-associations-and-other-organizations,preferred,local
+O-veterans-health-administration,broader,O-department-of-veterans-affairs,preferred,local
+O-house-ways-and-means-committee,broader,C-congressional-committees,preferred,local
+O-american-academy-of-allergy-asthma-immunology,broader,C-associations-and-other-organizations,preferred,local
+O-american-academy-of-orthopaedic-surgeons,broader,C-associations-and-other-organizations,preferred,local
+O-accreditation-council-for-graduate-medical-education,broader,C-associations-and-other-organizations,preferred,local
+O-american-college-of-obstetricians-and-gynecologists,broader,C-associations-and-other-organizations,preferred,local
+O-america-s-health-insurance-plans,broader,C-associations-and-other-organizations,preferred,local
+O-alibaba,broader,C-companies,preferred,local
+O-bnsf-railway,broader,C-companies,preferred,local
+O-cigna,broader,C-companies,preferred,local
+O-executive-office-for-immigration-review,broader,O-department-of-justice,preferred,local
+O-fedex,broader,C-companies,preferred,local
+O-federal-highway-administration,broader,O-department-of-transportation,preferred,local
+O-federal-insurance-office,broader,O-department-of-the-treasury,preferred,local
+O-gilead,broader,C-companies,preferred,local
+O-house-foreign-affairs-committee,broader,C-congressional-committees,preferred,local
+O-institute-of-museum-and-library-services,broader,C-independent-agencies-and-commissions,preferred,local
+O-illinois-state-board-of-education,broader,C-state-and-local-government,preferred,local
+O-lyft,broader,C-companies,preferred,local
+O-massachusetts-institute-of-technology,broader,C-associations-and-other-organizations,preferred,local
+O-minerals-management-service,broader,O-department-of-the-interior,preferred,local
+O-moody-s,broader,C-companies,preferred,local
+O-msci,broader,C-companies,preferred,local
+O-metropolitan-transportation-authority-new-york,broader,C-state-and-local-government,preferred,local
+O-national-association-of-insurance-commissioners,broader,C-associations-and-other-organizations,preferred,local
+O-nbc,broader,C-companies,preferred,local
+O-national-institute-of-standards-and-technology,broader,O-department-of-commerce,preferred,local
+O-national-organization-for-rare-disorders,broader,C-associations-and-other-organizations,preferred,local
+O-national-security-council,broader,C-executive-office-of-the-president,preferred,local
+O-ohio-department-of-job-and-family-services,broader,C-state-and-local-government,preferred,local
+O-office-of-science-and-technology-policy,broader,C-executive-office-of-the-president,preferred,local
+O-operation-warp-speed,broader,O-department-of-health-and-human-services,preferred,local
+O-port-authority-of-new-york-and-new-jersey,broader,C-state-and-local-government,preferred,local
+O-philip-morris-international,broader,C-companies,preferred,local
+O-pandemic-response-accountability-committee,broader,C-inspectors-general,preferred,local
+O-purdue-pharma,broader,C-companies,preferred,local
+O-reddit,broader,C-companies,preferred,local
+O-treasury-inspector-general-for-tax-administration,broader,C-inspectors-general,preferred,local
+O-united-states-capitol-police,broader,C-congress,preferred,local
+O-united-states-trustee-program,broader,O-department-of-justice,preferred,local
 M-M001085,broader,C-senators,preferred,local
 M-S000888,broader,C-senators,preferred,local
 M-S001141,broader,C-senators,preferred,local
@@ -14268,196 +14878,24 @@ M-W000831,broader,C-representatives,preferred,local
 M-B001322,broader,C-representatives,preferred,local
 M-R000621,broader,C-representatives,preferred,local
 M-M001235,broader,C-representatives,preferred,local
-U-admin,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-senate,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-O-administration,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
-U-google,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-conferees,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-hagel,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-amazon,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-facebook,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-O-army,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
-U-ndaa-conferees,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-congress,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-salazar,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-jewell,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-meta,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-secstate,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-grassley,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-carson,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-appropriations,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-mcdonald,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-P-governor-newsom,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
-U-bush,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-secnav,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-O-house-and-senate-leadership,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
-U-usaid,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-secaf,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-wheeler,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-P-gov-brown,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
-O-air-force,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
-P-gov-desantis,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
-P-ambassador-lighthizer,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
-O-census-bureau,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
-U-boehner,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-O-navy,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
-U-cpsc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-O-corps,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
-U-regulators,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-lahood,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-governor,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-itc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-nps,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-twitter,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-kelly,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-desantis,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-P-gov-hochul,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
-U-davis,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-cbo,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-amtrak,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-P-gov-abbott,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
-U-graham,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-pres,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-pfizer,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-durbin,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-P-gov-scott,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
-U-fra,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-leader-mcconnell,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-P-gov-wolf,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
-U-fta,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-pmg-dejoy,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-stb,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-phrma,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-wells-fargo,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-hogan,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-cao,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-O-center,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
-U-gates,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-osc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-senators,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-bor,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-carranza,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-secarmy,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-release,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-banks,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-O-forest-service,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
-U-odni,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-boeing,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-phmsa,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-O-airlines,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
-U-finra,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-hsgac,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-P-gov-lee,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
-U-dos,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-usfs,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-O-appropriations-committee,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
-U-dha,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-financial-regulators,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-tiktok,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-newsom,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-P-governor-evers,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
-U-rfk,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-O-coast-guard,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
-U-reid,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-of-defense,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-sasc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-enr,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-usfws,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-leader-schumer,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-ceg,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-peters,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-mlb,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-sigtarp,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-hasc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-nsa,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-P-governor-cuomo,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
-U-farm-bill-conferees,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-goodlatte,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-cuomo,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-chief-justice-roberts,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-kraninger,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-nunes,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-apple,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-P-gov-pritzker,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
-U-houseleaders,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-nsa-sullivan,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-dos-dhs,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-hochul,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-burton,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-O-committee,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
-U-chu,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-ntia,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-mchugh,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-dni,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-uscg,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-ioc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-boem,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-oge,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-P-gov-rauner,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
-O-of-state-blinken,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
-U-rfk-jr,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-bernanke,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-thompson,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-ncaa,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-solis,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-lisa-jackson,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-darcy,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-ondcp,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-ndaa-conference,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-scott,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-alexander,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-congressional-leaders,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-dodig,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-usdot,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-help,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-cfius,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-lighthizer,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-mckinsey,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-P-commissioner-rettig,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
-P-gov-edwards,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
-O-social-media,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
-U-issa,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-walker,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-hu-jintao,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-clapper,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-rma,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-norfolk-southern,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-wolf,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-rogers,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-wyden,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-fws,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-eeoc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-O-geo-group,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
-U-house-ethics,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-P-ambassador-tai,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
-U-roberts-and-thomas,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-ercot,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-benson,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-mullin,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-orr,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-nfl,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-ceq,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-fugate,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-samhsa,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-mabus,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-nga,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-hrsa,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-perez,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 P-governor-walker,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
 U-tavenner,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 P-ambassador-froman,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
 U-judiciary,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-swrcb,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-columbia-gas,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-equifax-ceo,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-equifax,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 P-amb-haley,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
-U-epw,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 P-secretary-wolf,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
 U-zuckerberg,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 P-gov-northam,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
-U-mbs,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-nprc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 P-gov-whitmer,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
 U-insurers,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-xavier-beccera,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
@@ -14474,47 +14912,28 @@ U-un-secretary-general,broader,C-recipients-not-yet-sorted,candidate,rule: unrev
 O-gop-leadership,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
 P-gov-bullock,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
 U-house,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-uspto,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-betsy-devos,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-fomb,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-att,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 P-secretary-duke,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
 U-alexander-and-murray,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-otting,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-P-governor-hogan,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+P-gov-hogan,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
 U-gowdy,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-fincen,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 P-gov-murphy,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
-U-cpuc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-frtib,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-acf-ovw-signed,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-mcaleenan,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-census,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-ngb,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-kendall,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-postmaster-dejoy,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 P-mayor-adams,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
-U-openai,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-secretary,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-miller,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-usccr,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-hatch,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 O-bank-of-america,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
 U-donovan,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-enbridge,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-scotus,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-eia,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-jct,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-ntsb,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-boehner-final-pdf,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-ogr,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-pmg,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-snyder,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-acoe,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-senate-leaders,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-verizon,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-jetblue,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-fifa,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-house-appropriations,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-brady,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-jeff-bezos,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
@@ -14523,17 +14942,14 @@ U-il-r-reps,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-dhs-doj-and-fbi,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-servicers,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 P-gov-baker,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
-U-kroger,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-uk-parliament,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-us-ambassador-nicaragua,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-credit-reporting-agencies,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-hasc-sasc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 P-gov-walz,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
 U-fudge,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-mohela,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-cbo-director-swagel,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-walgreens,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-fmc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-bisignano,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 O-commission,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
 U-leavitt,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
@@ -14542,32 +14958,24 @@ P-governor-schwarzenegger,broader,C-people-not-yet-reviewed,candidate,rule: unre
 U-abraham,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-eagleburger,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 O-u-s-secret-service,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
-U-loc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-maloney,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 P-rep-dreier,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
 U-locke,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-maloney,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-eda,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-icann,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 O-conference-committee,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
 U-def,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-subcommittee,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-nws,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-gina-mccarthy,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-john-kerry,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-jarvis,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 O-unitedhealth-group,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
 U-budget-conferees,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-banking,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-ttb,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-senate-approps,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 O-senate-appropriations-committee,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
-U-mylan,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 P-senator-markey,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
 U-exxonmobil,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-w-m,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-tva,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 O-governors,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
-U-pcaob,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-crapo,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-long,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 P-mr-sundar-pichai,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
@@ -14575,11 +14983,8 @@ P-mr-pichai,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
 P-ltg-semonite,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
 U-departments,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-education-secretary-devos,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-nara,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-canada,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-niaid,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-senate-thud-final,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-acf,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 P-administrator-wheeler,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
 P-gov-inslee,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
 U-banking-agencies,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
@@ -14597,19 +15002,13 @@ U-blackrock,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 P-gov-dewine,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
 U-secstate-blinken,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-dni-haines,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-asacw,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-moderna,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-admin-regan,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-nida,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-automakers,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 P-commissioner-califf,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
 U-santos,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-visa,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-chopra,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-ercot-winter-power-crisis,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-pto,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-gsk,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-cisa,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-cassidy,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-mountain-west-commissioner-nevarez,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-comer,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
@@ -14624,7 +15023,6 @@ O-office-of-compliance,broader,C-organizations-not-yet-reviewed,candidate,rule: 
 P-ambassador-tobias,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
 P-rep-waxman,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
 U-halliburton,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-icheic,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-u-s-ambassador-zoellick,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-novartis,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-education,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
@@ -14634,8 +15032,6 @@ U-transportation-conferees,broader,C-recipients-not-yet-sorted,candidate,rule: u
 U-leahy,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 P-ambassador-kirk,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
 P-sen-wyden,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
-U-csx,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-comcast,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-conference,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-assistant-secretary-darcy,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-smith,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
@@ -14643,9 +15039,7 @@ U-appropriations-subcommittee,broader,C-recipients-not-yet-sorted,candidate,rule
 U-asa-darcy,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-delta,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-jeh-johnson,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-walmart,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-t-i,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-abc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-judicial-conference,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 O-house-appropriations-committee,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
 U-dodaro,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
@@ -14655,16 +15049,12 @@ O-american-airlines,broader,C-organizations-not-yet-reviewed,candidate,rule: unr
 U-pmg-brennan,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 O-appropriations-leadership,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
 U-lhhs-approps,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-fmcsa,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-O-senate-finance-committee,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
 U-ryan,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-kinder-morgan,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-cruz,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-nec,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-e-c,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-mayor,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-mccabe,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-fsoc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-chamber-of-commerce,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-national-grid,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-doc-sec-ross,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
@@ -14674,10 +15064,8 @@ U-wilson,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-nys-bar,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-duke,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-sonny-perdue,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-hsbc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 O-united-airlines,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
 U-delay-of-kavanaugh-confirmation,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-assk,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-nadler,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 O-house-senate-leadership,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
 P-senator-warren,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
@@ -14687,19 +15075,12 @@ U-dea-ondcp-and-hhs,broader,C-recipients-not-yet-sorted,candidate,rule: unreview
 O-mtc-group,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
 U-aba,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 O-census-bureau-dir-dillingham,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
-U-youtube,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-indian-ambassador,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-msha,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-hsra-340b-enforcement-final,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-mnuchin4,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-unfccc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-ndaa-confereees-final,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-amtrak-fy21-pdf,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-dfc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-uber,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-pm-netanyahu,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-fns,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-ihs,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 P-chairwoman-maloney,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
 U-schiff,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 P-gov-edwards-pdf,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
@@ -14723,8 +15104,6 @@ U-manchin,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-trs-and-irs,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-steward,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-state1,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-sos,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-achp,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-assistant-secretary-bitter,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 P-commissioner-dudek,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
 U-paramount,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
@@ -14735,28 +15114,22 @@ U-under-secretary-kent,broader,C-recipients-not-yet-sorted,candidate,rule: unrev
 U-richardson,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-pomeroy,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-editor,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-bpa,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-mcdonnell,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-leaders,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 P-gov-daniels,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
 U-king-abdullah,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-house-conferees,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-nhl,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-merck,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 O-forest-service-chief-tidwell,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
 P-senator-grassley,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
 U-transocean,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-abbott-laboratories,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-cjs,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-munoz,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 O-ceos,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
 U-first-lady,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 O-delegation,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
-U-nmfs,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-leader-reid,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 P-gen-dunwoody,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
 U-melson-incomplete-gun-data,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-O-purdue-pharma,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
 U-hamburg,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-jones,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 O-democratic-leadership,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
@@ -14765,7 +15138,6 @@ P-gen-alexander,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
 U-donley,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-kathleen-sebelius,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-king,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-appropriations-committees,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 P-general-temple,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
 U-jo-ellen-darcy,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-rowe,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
@@ -14784,20 +15156,18 @@ U-gibson,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-baldwin,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-editor-nyt,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-branch-closures,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-sfc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 O-task-force,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
 O-bicameral-task-force,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
 U-inspectors-general,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-frieden-cdc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-cda,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 P-commissioner-goodell,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-cda,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 P-commissioner-koskinen,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
 U-sablan,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 P-gov-mcdonnell,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
 U-emmert,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-zuma,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-mexican-ambassador,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-usaf,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 P-sen-mcconnell,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
 U-education-secretary,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-finance,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
@@ -14807,8 +15177,6 @@ U-mastercard,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-prime-minister-trudeau,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-murkowski,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 O-park-service,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
-U-svac,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-oira,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-nsa-director-rogers,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-loan-servicers,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-chair,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
@@ -14817,10 +15185,8 @@ U-shuster,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-defazio-norton,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-driscoll,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 O-world-bank-president,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
-O-surface-transportation-board,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
 U-goldman-sachs,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-carlos-muniz,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-navient,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 O-office-of-women-minorities,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
 U-apollo,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-citigroup,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
@@ -14839,14 +15205,11 @@ U-amtrak-ceo,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-admin-mcmahon,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-senate-commerce,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-house-appropriators,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-wam,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-senate-help,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-house-and-senate-appropriators,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-usde,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-committees,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-ocr,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-carrion,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-depsec,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-twitter-ceo,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-pekoske,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-intuit,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
@@ -14854,8 +15217,6 @@ O-sasc-leadership,broader,C-organizations-not-yet-reviewed,candidate,rule: unrev
 U-upstart,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 O-corecivic-group,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
 O-postal-board-of-governors,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
-U-aamc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-cvs,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-uk-pm-boris-johnson,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-miami-international-airport,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-congressman-buchanan,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
@@ -14872,13 +15233,7 @@ U-un-secgen,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-financial-firms,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 O-union-pacific,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
 O-senate-house-leadership,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
-U-atsdr,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-pura,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-usagm,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-sens-grassley-ernst-004,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-nycha,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-edd,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-vha,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-catalyst,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 P-ambassador-cui,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
 U-usdasecperdue,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
@@ -14888,10 +15243,8 @@ U-pope-francis,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-col-kelly,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-uscp-and-saa,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-chamber,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-bia,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-major-credit-card-issusers,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 P-director-albence,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
-U-ofccp,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-cncs-ceo-barbara-stewart,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-walz,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-brown,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
@@ -14903,14 +15256,12 @@ U-irf-ambassador,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 O-embry-riddle-aeronautical-university,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
 U-dfc-ceo,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-cryptominers,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-kkr,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 O-silvergate-bank,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
 O-tesla-board,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
 U-airforce,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-bennet,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-dha-tricare-pharmacy-program,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 O-social-media-ceos,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
-U-usopc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-of-agriculture-tom-vilsack,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-google-final,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-census-director-santos,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
@@ -14935,10 +15286,7 @@ U-sasc-hasc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-ltg,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-bis,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-fifa-president,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-nyse,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-pjm,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-chief-moore-elkhorn,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-carb,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-greer,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-secmcmahon-251031,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-aag-dhillon,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
@@ -14952,7 +15300,6 @@ U-justice,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-rahall,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-abbas,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-cooper,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-O-abc-news,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
 U-stephen-johnson,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-gates-contract-interrogator-final,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-md-anderson,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
@@ -15075,7 +15422,6 @@ O-cvs-caremark-corporation,broader,C-organizations-not-yet-reviewed,candidate,ru
 U-express-scripts,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 O-pharmaceutical-care-management-association,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
 U-japan-ambassador,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-mit,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 O-center-for-creative-leadership,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
 O-amgen-inc,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
 U-astrazeneca-pharmaceuticals,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
@@ -15090,8 +15436,6 @@ O-merck-co,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
 U-takeda-pharmaceuticals,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-education-ig,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-walter-reed,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-cno,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-mms,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-gates-dadt,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-boxer,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-senators-reid-and-baucus,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
@@ -15110,9 +15454,6 @@ U-hill,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-becker-final,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-for-doj-ig,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-melson-whistleblowers-gillett,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-aaaai,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-aaos,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-acog,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 O-alzheimer-s-association,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
 O-american-cancer-society,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
 O-american-college-of-surgeons,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
@@ -15122,7 +15463,6 @@ O-american-medical-association,broader,C-organizations-not-yet-reviewed,candidat
 O-american-psychological-association,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
 O-heart-rhythm-society-inc,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
 U-narsad,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-nord,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 O-north-american-spine-society,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
 O-american-society-of-nephology,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
 O-banking-committee-leaders,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
@@ -15140,7 +15480,6 @@ U-defense-secretary,broader,C-recipients-not-yet-sorted,candidate,rule: unreview
 P-senator-leahy,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
 U-customs,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-citibank,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-odjfs,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-tricare,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-mica,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 O-natural-resources-committee,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
@@ -15148,9 +15487,7 @@ U-scotus-3-5-121,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-boehner-and-pelosi,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-dla-piper,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-cordray,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-gilead,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-landry,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-moodys,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-jscdr,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-chaffetz-afghanistan-corruption-hearing,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-hensarling-and-chariwoman-murray,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
@@ -15160,9 +15497,7 @@ O-army-corp,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
 U-of-labor,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 P-senator-reid,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
 P-adm-papp,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
-U-naic,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 P-sen-durbin,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
-U-ostp,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-ao-final-sequester-plan,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-john-koskinen,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-jones-dodson-book-denial,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
@@ -15183,20 +15518,18 @@ U-perez-march-31,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-chief-tidwell,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 O-senate-agriculture-committee,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
 U-admin-final,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-O-national-guard-bureau,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-cj-roberts,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-korean-president-park,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-tva-ceo-johnson,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-cantor-and-mccarthy,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-camp-and-chairman-lucas,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-camp,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-cj-roberts,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-uc-president-napolitano,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-fairpoint,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-boehner-pelosi,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-senate-0,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-gap-0,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-ways-means,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-nbc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-senators-landrieu-and-vitter,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-target,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-israel,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
@@ -15210,7 +15543,6 @@ O-united-states-trade-representative,broader,C-organizations-not-yet-reviewed,ca
 U-turing,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 O-compass-group,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
 U-usafa-superintendent,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-cigna,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-huerta,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-stl-vamc-director,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 O-airlines-for-america,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
@@ -15223,12 +15555,10 @@ O-dallas-police,broader,C-organizations-not-yet-reviewed,candidate,rule: unrevie
 U-culberson,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-financial-regulators-credit-suisse,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-vietnam,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-hfac,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-iranian-leaders,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-upton-and-pallone,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-alexander-murray,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-lamar-smith-final-signed,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-panynj,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-hagel-secretary-kerry-1,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-graves-loc-censorship-3,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 P-sen-vitter-tsca-feb2014,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
@@ -15241,8 +15571,6 @@ U-canadian-ambassador,broader,C-recipients-not-yet-sorted,candidate,rule: unrevi
 O-schools,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
 P-gen-everhart,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
 O-energy-and-commerce,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
-U-peotus,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-O-federal-highway-administration,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
 U-federal-agencies,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-bannon,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-mnuchin-acosta-and-hargan,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
@@ -15254,9 +15582,7 @@ U-admin-pruitt,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 O-chemical-safety-board,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
 P-commissioner-gottlieb,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
 P-senator-collins,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
-U-bnsf,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-dir-wray,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-nist,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-brock-long,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 P-sen-brown,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
 U-kushner,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
@@ -15274,7 +15600,6 @@ U-cambodian-ambassador,broader,C-recipients-not-yet-sorted,candidate,rule: unrev
 U-heather-wilson-usaf,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 O-deutsche-bank,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
 U-cwa,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-isbe,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-global-automakers,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 O-auto-alliance,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
 U-adminsitration,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
@@ -15306,20 +15631,13 @@ P-justice-ginsburg,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
 U-homan,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-bowser,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-capital-one,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-alibaba,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-lenders,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-congressional-negotiators,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-zoom,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-prac,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-eoir,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-fedex,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-defense-secretary-esper,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-inhofe-requesting-sasc-hearing,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-british-american-tobacco,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-pmi,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-msci,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-activision-blizzard,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-reddit,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-intel-ceo,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-nvidia-ceo,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-doc-ig,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
@@ -15328,7 +15646,6 @@ U-fta-final,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-christiansen,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-rules-cmt,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-walmart-and-amazon,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-sfops,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-us-ag-barr,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-shanahan,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-secnav-pnsy,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
@@ -15342,12 +15659,8 @@ U-transition,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-fta-final-002,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-us-hubbard,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-def-esper-final,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-purdue,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-nsc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-instacart,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-lyft,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-doordash,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-fhwa,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-stone,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-merkley-wyden-bonamici-blumenauer,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-congress-002,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
@@ -15373,9 +15686,7 @@ U-iso-ne,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-pallone,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-neal,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-ochca,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-tigta,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-kcva,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-mta,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-wicker,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-barrett-c130j-recapitalizaton-basing,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 P-governor-kelly,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
@@ -15386,8 +15697,6 @@ O-social-media-companies,broader,C-organizations-not-yet-reviewed,candidate,rule
 U-cuomo-fmap,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-extend-ui,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-mcaleenan-and-pompeo,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-ows,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-ahip,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 P-gov-ivey,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
 U-jeffrey-zients,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-cornyn-and-cruz,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
@@ -15447,7 +15756,6 @@ U-polis,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-texas-evap-0,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-local-officials,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-power,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-acgme,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-fauci-murphy-nc03-final,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-starbucks-final,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-indo-pacific,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
@@ -15456,7 +15764,6 @@ U-laplante,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-karlan-az-audit,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-market-manipulation-final,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 P-rep-delauro,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
-U-uscp,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 P-ambassador-knapper,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
 O-supreme-court,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
 U-ncga-brody-funding,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
@@ -15465,15 +15772,11 @@ U-trudeau,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 O-silicon-valley-bank,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
 U-seqens,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-admin-brooks-lasure,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-fio,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-ustp,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-prudential-regulators,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-susan-wiles,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-cfbp,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-ntia-bead,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-nps-director-sams,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-ambassadors,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-U-imls,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-delay-effective-date,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 P-commissioner-werfel-security-breaches,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
 U-tai-and-vilsack,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
@@ -15494,7 +15797,6 @@ U-cornell,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 U-admin-whitaker-cow,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
 P-commissioner-miller,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
 U-them,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
-O-bureau-of-reclamation,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
 P-chairwoman-rosenworcel,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
 P-governor-lamont,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
 U-pbm-reform2,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed

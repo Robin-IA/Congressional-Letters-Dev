@@ -535,11 +535,37 @@ def main() -> int:
             return (last.lower(), t_["label"].lower())
         return (re.sub(r"^the\s+", "", t_["label"], flags=re.I).lower(), "")
 
+    names_of = defaultdict(set)
+    for t_ in terms:
+        names_of[t_["term_id"]].add(t_["label"])
+    for r in relations:
+        if r["relation"] in ("altLabel", "abbreviation", "officeHolderName", "recipientName") \
+                and not re.search(r"\(\d{4}-\d{4}\)$", r["value"]):
+            names_of[r["term_id"]].add(r["value"])
+    # A split name ("Wheeler (2014-2017)") goes with its years.
+    for r in relations:
+        m = re.fullmatch(r"(.+) \((\d{4})-(\d{4})\)", r["value"])
+        if r["relation"] == "officeHolderName" and m:
+            names_of[r["term_id"]].add(f"{m.group(1)}@{m.group(2)}-{m.group(3)}")
+
+    # A name split by date matches only in its years, everywhere: the plain
+    # "wheeler" the hand-made tables gave both the FCC and the EPA goes.
+    dated = {v.split("@")[0].lower() for vs in names_of.values() for v in vs if "@" in v}
+    for tid_, vs in names_of.items():
+        names_of[tid_] = {v for v in vs if "@" in v or v.lower() not in dated}
+
     def node(tid, seen=()):
         t_ = term_by_id[tid]
         kids = [node(c, seen + (tid,)) for c in sorted(set(children.get(tid, [])), key=sort_key)
                 if c not in seen]
         n = {"id": tid, "label": t_["label"], "kind": t_["kind"]}
+        # Every name the letters use for an organization or person, so the
+        # home page can open exactly its letters: "Navy" and "Secnav" are the
+        # Department of the Navy.
+        if t_["kind"] in ("organization", "person", "unclassified"):
+            nm = names_of.get(tid)
+            if nm:
+                n["names"] = sorted(nm)
         if t_["status"] != "preferred":
             n["status"] = t_["status"]
         if int(t_["letters"] or 0):
