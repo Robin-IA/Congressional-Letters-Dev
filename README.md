@@ -8,6 +8,10 @@ commit. Nothing here is served by GitHub Pages.
 | --- | --- | --- | --- |
 | `pc-harvest-115-118.zip` | 11 November 2026, 18:05 | 268 of 385 | `C:\harvest` |
 | `pc-harvest-106-110.zip` | 11 November 2026, 22:05 | 111 of 111 | `C:\harvest-106-110` |
+| `pc-render-106-114-paths.zip` | 12 November 2026, 01:06 | 7,920 PDFs to render | `C:\render` |
+
+Both harvests are finished and returned. The render bundle is the PC's
+current job; see "Rendering" in `PC-CLAUDE.md`.
 
 **One folder per range.** `run_pc.py` works out its range from the single
 `harvest/letters-<range>-members.json` beside it, so two ranges must not share
