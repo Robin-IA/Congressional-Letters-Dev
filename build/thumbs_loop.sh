@@ -4,6 +4,7 @@
 #   build/thumbs_loop.sh                        # 115-118, 106-114, then paths
 #   build/thumbs_loop.sh 115-118 106-114 paths  # the same, said explicitly
 #   BATCH=200 build/thumbs_loop.sh        # renders per cycle (default 400)
+#   WORKERS=2 build/thumbs_loop.sh        # downloads at once (default 1)
 #
 # Each cycle turns every site the harvest has finished so far into a letter
 # list -- export from the cache, then parse_urls.py, both local and quick --
@@ -30,6 +31,8 @@ cd "$(dirname "$0")/.." || exit 1
 RANGES=("$@")
 [ ${#RANGES[@]} -eq 0 ] && RANGES=(115-118 106-114 paths)
 BATCH="${BATCH:-400}"
+# One while a harvest shares the connection; with no harvest running, 2.
+WORKERS="${WORKERS:-1}"
 # The renderer needs pypdfium2, pillow and pypdf; the harvest needs nothing.
 PY="${PY:-.venv/bin/python}"
 PAUSE="${PAUSE:-300}"
@@ -62,7 +65,7 @@ refresh() {   # $1 = range; writes $DIR/letters-parsed-$1.jsonl
         --out "$DIR/letters-parsed-$r.jsonl" >>"$LOG" 2>&1
 }
 
-say "=== thumbs loop: ${RANGES[*]}, $BATCH per cycle ==="
+say "=== thumbs loop: ${RANGES[*]}, $BATCH per cycle, $WORKERS workers ==="
 while true; do
     rendered_any=0
     for r in "${RANGES[@]}"; do
@@ -73,7 +76,7 @@ while true; do
         before=$(find thumbs -name '*.webp' | wc -l)
         out=$(caffeinate -i "$PY" build/thumbs.py \
                 --parsed "$DIR/letters-parsed-$r.jsonl" --thumbs thumbs \
-                --workers 1 --max "$BATCH" 2>&1 | tee -a "$LOG")
+                --workers "$WORKERS" --max "$BATCH" 2>&1 | tee -a "$LOG")
         left=$(echo "$out" | sed -n 's/.*, \([0-9,]*\) still to render.*/\1/p' \
                 | head -1 | tr -d ,)
         made=$(( $(find thumbs -name '*.webp' | wc -l) - before ))
