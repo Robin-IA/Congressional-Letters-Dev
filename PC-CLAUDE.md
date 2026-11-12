@@ -131,18 +131,50 @@ Each letter's PDF is downloaded once and gives four things, all in `C:\render2`:
 | Thumbnail | `thumbs\<digest>.webp` | yes |
 | Date the PDF states | `pdf-dates.jsonl` | yes |
 | Text of its first pages | `letter-text.jsonl` | yes |
-| The PDF | `pdfs\<digest>.pdf` | yes — the Mac OCRs them |
+| The PDF | `pdfs\<digest>.pdf` | no — keep on the PC |
+| OCR of PDFs with no text layer | `letter-ocr.jsonl` | yes |
 | Attempts that failed | `thumb-failures.jsonl` | yes |
 
 **Sending results back.** Push to a **new** branch, `pc-render-return-2`
 (`pc-render-return` already holds the first run): `thumbs` zipped in parts
 under 90 MB each (GitHub refuses a file over 100 MB; 7,662 thumbnails are about
-140 MB), and one zip of the three `.jsonl` files. Partial returns are fine.
+140 MB), and one zip of the four `.jsonl` files, `letter-ocr.jsonl` included. Partial returns are fine.
 The Mac merges with `build/pc/merge_render.py`, which copies only thumbnails
 it lacks, adds dates and text only for letters it has none for, and never
 replaces anything.
 
-**The PDFs** (about 3.5 GB) go back too, because the Mac runs Apple Vision OCR
-over them; without them it would download every one again. That is too much
-for a branch: use USB or Google Drive, as one folder or zip of `pdfs\`. If
-neither is to hand, say so rather than pushing 40 zips to GitHub.
+### OCR on the PC, with Tesseract (added 12 November 2026, 10:10)
+
+About two thirds of these PDFs are scans with no text layer. The PC reads
+them itself with Tesseract, so the PDFs (about 3.5 GB) do **not** need to come
+back to the Mac. Keep them on the PC; nothing on the Mac waits for them.
+
+1. Once: install Tesseract 5 (the UB Mannheim Windows build, which puts it in
+   `C:\Program Files\Tesseract-OCR`), with English. `tesseract --version`
+   should answer.
+2. Download
+   <https://github.com/Robin-IA/Congressional-Letters-Dev/raw/pc-bundle/ocr_tesseract.py>
+   into `C:\render2`, beside `run_render.py`.
+3. In a **second** PowerShell window, while rendering runs:
+   `cd C:\render2`, then `py ocr_tesseract.py --watch`.
+
+It reads only PDFs the renderer has already kept whose text layer is under 100
+characters: the first six pages at 300 dpi, the same rules the Mac uses with
+Apple Vision. It writes `letter-ocr.jsonl` beside the other files, one line per
+PDF, with `"engine": "tesseract-<version>"` so its text is never mistaken for
+the Mac's. With `--watch` it checks for new PDFs every 10 minutes and stops by
+itself once `render-pc.log` says rendering is over and every PDF is read.
+Ctrl-C is safe; run it again to carry on.
+
+**Workers.** It defaults to half the PC's cores, one Tesseract each, leaving
+the rest for the renderer, which mostly waits on downloads anyway.
+`--workers N` changes it. On the Mac, 4 workers read 47 PDFs a minute; the
+renderer keeps about 14 a minute, so OCR should keep up easily.
+
+**Checked on the Mac before sending:** 8 PDFs already read with Apple Vision,
+read again with this script. The words agreed 82–100%, median about 95%.
+Tesseract's `confidence` is on its own scale and is not comparable with
+Vision's.
+
+**Do not edit the script on the PC.** If it fails, say so in the return's
+README with the error, as with every other tool here.

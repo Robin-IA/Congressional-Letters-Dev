@@ -11,8 +11,9 @@ commit. Nothing here is served by GitHub Pages.
 | `pc-render-106-114-paths.zip` | 12 November 2026, 09:51 | 7,662 PDFs to render | `C:\render2` |
 
 Both harvests are finished and returned. The render bundle is the PC's
-current job, rebuilt at 09:51 on 12 November for a second run; see
-"Rendering" in `PC-CLAUDE.md`.
+current job, rebuilt at 09:51 on 12 November for a second run, with
+`ocr_tesseract.py` beside it to OCR the scans on the PC; see "Rendering" in
+`PC-CLAUDE.md`.
 
 **One folder per range.** `run_pc.py` works out its range from the single
 `harvest/letters-<range>-members.json` beside it, so two ranges must not share
