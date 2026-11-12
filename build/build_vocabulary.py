@@ -209,6 +209,8 @@ def wikidata_lead(label: str, cache: dict) -> dict | None:
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--no-wikidata", action="store_true")
+    ap.add_argument("--apply-proposed", action="store_true",
+                    help="preview: apply reviews.csv rows marked proposed as well as accepted")
     args = ap.parse_args()
 
     per_member, per_recipient, per_topic = explorer_counts()
@@ -384,6 +386,74 @@ def main() -> int:
                         f"Wikidata search: {hit['label']} — {hit['description']}"[:200])
         WIKIDATA_CACHE.write_text(json.dumps(cache, indent=1, ensure_ascii=False), encoding="utf-8")
 
+    # Reviews ------------------------------------------------------------------
+    # vocabulary/reviews.csv is made by hand: one row per reviewed candidate.
+    # Only rows marked "accepted" are applied (or "proposed" too, with
+    # --apply-proposed, to preview). A reviewed candidate stops being a term of
+    # its own: it becomes another name, an abbreviation or an office holder's
+    # name of the term it was decided to be, and its letters count there.
+    extra_hier = []
+    review_path = OUT / "reviews.csv"
+    reviews = list(csv.DictReader(review_path.open(encoding="utf-8"))) if review_path.exists() else []
+    wanted = {"accepted"} | ({"proposed"} if args.apply_proposed else set())
+    cand_by_label = {t_["label"]: t_ for t_ in terms if t_["status"] == "candidate"}
+    gone: set[str] = set()
+    applied = Counter()
+    for rv in reviews:
+        if rv["status"] not in wanted or rv["decision"] == "hold":
+            continue
+        cand = cand_by_label.get(rv["candidate"])
+        if not cand or cand["term_id"] in gone:
+            continue                       # gone from the data, or folded in already
+        gone.add(cand["term_id"])
+        applied[rv["decision"]] += 1
+        names = [cand["label"]] + [r["value"] for r in relations
+                                   if r["term_id"] == cand["term_id"] and r["relation"] == "altLabel"]
+        # Gone now, so a new term may take the same ID ("Census Bureau" the
+        # candidate becomes "Census Bureau" the agency).
+        terms.remove(cand)
+        ids.discard(cand["term_id"])
+        relations[:] = [r for r in relations if r["term_id"] != cand["term_id"]]
+        if rv["decision"] == "reject":
+            continue
+        if rv["decision"] == "member":
+            tid = f"M-{rv['target']}"
+            for nm in names:
+                rel(tid, "recipientName", nm, "preferred", "reviewed")
+            continue
+        target = next((t_ for t_ in terms if t_["label"] == rv["target"]
+                       and t_["status"] == "preferred"), None)
+        # An unreviewed term with the target's own name is the same thing:
+        # fold it in ("Surface Transportation Board" under "Stb").
+        twin = next((t_ for t_ in terms if t_["status"] == "candidate"
+                     and t_["label"].lower() == rv["target"].lower()), None)
+        twin_letters = 0
+        if twin:
+            names += [twin["label"]] + [r["value"] for r in relations
+                                        if r["term_id"] == twin["term_id"] and r["relation"] == "altLabel"]
+            twin_letters = int(twin["letters"] or 0)
+            terms.remove(twin)
+            ids.discard(twin["term_id"])
+            relations[:] = [r for r in relations if r["term_id"] != twin["term_id"]]
+            gone.add(twin["term_id"])
+        if target is None:
+            kind = rv["kind"] or "organization"
+            prefix = {"person": "P", "organization": "O"}.get(kind, "O")
+            add(f"{prefix}-{slug(rv['target'])}", rv["target"], kind,
+                "person" if kind == "person" else "body", "preferred", "reviewed")
+            target = terms[-1]
+            if rv["broader"]:
+                extra_hier.append({"term": rv["target"], "broader": rv["broader"]})
+        target["letters"] = int(target["letters"] or 0) + int(cand["letters"] or 0) + twin_letters
+        how = "officeHolderName" if rv["decision"] == "officeholder" else "altLabel"
+        for nm in names:
+            if nm != target["label"]:
+                rel(target["term_id"], how, nm, "preferred", "reviewed")
+        if rv["abbreviation"]:
+            rel(target["term_id"], "abbreviation", rv["abbreviation"], "preferred", "reviewed")
+    if gone:
+        print(f"  reviews applied: {dict(applied)}", file=sys.stderr)
+
     # The hierarchy --------------------------------------------------------------
     # vocabulary/hierarchy.csv is made by hand: each row a term and the term it
     # sits under. A label there that is not a term yet becomes a category.
@@ -393,7 +463,7 @@ def main() -> int:
         if t_["status"] == "preferred":
             by_label.setdefault(t_["label"], t_["term_id"])
     roots = []
-    hier = list(csv.DictReader((OUT / "hierarchy.csv").open(encoding="utf-8")))
+    hier = list(csv.DictReader((OUT / "hierarchy.csv").open(encoding="utf-8"))) + extra_hier
     for row in hier:
         for lab in (row["term"], row["broader"]):
             if lab and lab not in by_label:
@@ -452,6 +522,15 @@ def main() -> int:
             n["children"] = kids
         return n
     tree = [node(by_label[r]) for r in roots]
+
+    seen_rel = set()
+    deduped = []
+    for r in relations:
+        key = (r["term_id"], r["relation"], r["value"])
+        if key not in seen_rel:
+            seen_rel.add(key)
+            deduped.append(r)
+    relations[:] = deduped
 
     # Write ------------------------------------------------------------------------
     OUT.mkdir(exist_ok=True)
