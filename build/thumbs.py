@@ -302,7 +302,8 @@ def record_failure(path: Path, digest: str, why: str) -> None:
 
 
 def one(record: dict, thumbs: Path, pause: float, retries: int,
-        dates_path: Path, text_path: Path | None = None) -> str:
+        dates_path: Path, text_path: Path | None = None,
+        pdfs: Path | None = None) -> str:
     digest = record.get("digest") or ""
     if not digest:
         return "no-digest"
@@ -310,18 +311,29 @@ def one(record: dict, thumbs: Path, pause: float, retries: int,
     if out_path.exists():
         return "cached"
 
+    # KEEP THE PDF. Whatever comes after the thumbnail -- OCR at full
+    # resolution, a bigger render -- needs the document again, and without a
+    # copy that is a second download of every letter from the Wayback Machine.
+    # A PDF already kept is read from disk and costs Wayback nothing.
+    kept = pdfs / f"{digest}.pdf" if pdfs is not None else None
+
     last = "unknown"
     stamps = [record["timestamp"]]
     tried = 0
     for attempt in range(retries):
-        if pause:
+        local = kept is not None and tried == 0 and kept.exists()
+        if pause and not local:
             time.sleep(pause)
         try:
             at = stamps[min(tried, len(stamps) - 1)]
-            url = (f"https://web.archive.org/web/{at}id_/{record['url']}")
-            request = urllib.request.Request(url, headers=UA)
-            with urllib.request.urlopen(request, timeout=TIMEOUT) as response:
-                blob = response.read(MAX_BYTES + 1)
+            if local:
+                blob = kept.read_bytes()
+            else:
+                url = (f"https://web.archive.org/web/{at}id_/{record['url']}")
+                request = urllib.request.Request(url, headers=UA)
+                with urllib.request.urlopen(request,
+                                            timeout=TIMEOUT) as response:
+                    blob = response.read(MAX_BYTES + 1)
             if len(blob) > MAX_BYTES:
                 return "too-big"
             # IS THIS CAPTURE THE DOCUMENT? Two ways it can fail to be, and
@@ -352,6 +364,8 @@ def one(record: dict, thumbs: Path, pause: float, retries: int,
             else:
                 try:
                     render(blob, staged)
+                except ImportError:
+                    raise                 # the machine, not the letter
                 except Exception as exc:  # noqa: BLE001
                     bad = f"unreadable-{type(exc).__name__}"
             if bad:
@@ -389,6 +403,13 @@ def one(record: dict, thumbs: Path, pause: float, retries: int,
                     text_path.parent.mkdir(parents=True, exist_ok=True)
                     with text_path.open("a", encoding="utf-8") as handle:
                         handle.write(record_line + chr(10))
+            if kept is not None and not local:
+                # Only a capture that rendered is kept, so the folder holds
+                # documents and never a truncated or not-a-PDF capture.
+                pdfs.mkdir(parents=True, exist_ok=True)
+                part = kept.with_suffix(".pdf.part")
+                part.write_bytes(blob)
+                part.replace(kept)
             staged.replace(out_path)
             return "rendered" if tried == 0 else "rescued-from-another-capture"
         except urllib.error.HTTPError as exc:
@@ -433,6 +454,11 @@ def main() -> None:
                         default=root / "data" / "thumb-failures.jsonl",
                         help="letters that would not render; after "
                              f"{GIVE_UP_AFTER} tries they are skipped")
+    parser.add_argument("--pdfs", type=Path, default=root / "data" / "pdfs",
+                        help="keep each rendered PDF here as <digest>.pdf, "
+                             "and read from it instead of Wayback when present")
+    parser.add_argument("--no-keep-pdfs", action="store_true",
+                        help="do not keep the PDFs")
     parser.add_argument("--retry-failed", action="store_true",
                         help="attempt the ones already given up on")
     parser.add_argument("--max", type=int, default=0,
@@ -440,6 +466,20 @@ def main() -> None:
     parser.add_argument("--per-member", type=int, default=0,
                         help="cap per member, so breadth comes before depth")
     args = parser.parse_args()
+
+    # FAIL BEFORE FETCHING, NOT AFTER. Without the PDF libraries every render
+    # raises ModuleNotFoundError, which the loop below records as
+    # "unreadable-..." -- a terminal outcome, so each letter was given up on
+    # for good after one download. That happened on 11 November 2026 on a
+    # Python without them; use the repository's .venv.
+    try:
+        import PIL  # noqa: F401
+        import pypdf  # noqa: F401
+        import pypdfium2  # noqa: F401
+    except ImportError as exc:
+        sys.exit(f"{exc}: this Python ({sys.executable}) cannot render. "
+                 "Run with .venv/bin/python, or pip install -r "
+                 "requirements.txt.")
 
     args.thumbs.mkdir(parents=True, exist_ok=True)
 
@@ -528,7 +568,8 @@ def main() -> None:
     with cf.ThreadPoolExecutor(max_workers=args.workers) as pool:
         text_path = None if args.no_text else args.text
         futures = {pool.submit(one, j, args.thumbs, args.pause,
-                               args.retries, args.dates, text_path): j
+                               args.retries, args.dates, text_path,
+                               None if args.no_keep_pdfs else args.pdfs): j
                    for j in pending}
         for future in cf.as_completed(futures):
             try:
