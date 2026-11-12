@@ -96,7 +96,15 @@ def roster_members(n: int) -> list[dict]:
             served = row.get("served_this_congress") or ""
             m = re.findall(r"\d{4}-\d{2}-\d{2}", served)
             left = m[-1] if m and m[-1] < end else None
-            years = re.findall(r"\b(1[89]\d\d|20\d\d)\b", row.get("years_in_office") or "")
+            in_office = (row.get("years_in_office") or "").strip()
+            years = re.findall(r"\b(1[89]\d\d|20\d\d)\b", in_office)
+            # WHEN THEIR SERVICE ENDED, NOT "present". A member who served to
+            # the end of N and did not return has no "left" (that is for
+            # leaving during N), so the page called Sherrod Brown "1993-present"
+            # in the 118th. "years_in_office" ends in the last year or in
+            # "present", and only a sitting member gets the second.
+            until = (int(years[-1]) if years and not in_office.endswith("present")
+                     else None)
             name = row["name"].strip()
             out.append({
                 "bioguide": row["bioguide_id"],
@@ -108,6 +116,7 @@ def roster_members(n: int) -> list[dict]:
                 "party": row.get("party") or "",
                 "since": int(years[0]) if years else None,
                 **({"left": left} if left else {}),
+                **({"until": until} if until else {}),
                 "host": host,
                 "url": url,
             })
@@ -190,6 +199,12 @@ def page_files(n: int, dest: Path) -> None:
                 f'title="All Congresses">{short}</a>', "crumb")
     html = html.replace('src="../app.js?v=', 'src="app.js?v=')
     html = html.replace('href="../"', 'href="../"')  # federated home, once it exists
+    # The 119th's name for itself. Each Congress's own label already says
+    # which years it covers, so the per-Congress page drops "(2007-present)".
+    html = swap(html, "<title>Letters from Congress (2007-present) ·",
+                "<title>Letters from Congress ·", "head title")
+    html = swap(html, "<span>Letters from Congress (2007-present)</span>",
+                "<span>Letters from Congress</span>", "masthead")
     (dest / "index.html").write_text(html, encoding="utf-8")
 
     js = show("app.js")
@@ -210,6 +225,12 @@ def page_files(n: int, dest: Path) -> None:
     js = swap(js, "the 119th began are in the archive too",
               "the ${(INDEX.congress || {}).ordinal || '119th'} began are in the archive too",
               "about 2")
+    js = swap(js, "const service = m => `${m.since}–${m.left ? m.left.slice(0, 4) : 'present'}`;",
+              "const service = m => `${m.since}–${m.left ? m.left.slice(0, 4) : (m.until || 'present')}`;",
+              "service years")
+    if js.count("Letters from Congress (2007-present)") != 3:
+        raise SystemExit("template changed: page-title suffix")
+    js = js.replace("Letters from Congress (2007-present)", "Letters from Congress")
     (dest / "app.js").write_text(js, encoding="utf-8")
 
 
