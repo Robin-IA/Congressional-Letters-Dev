@@ -387,10 +387,10 @@ def main() -> int:
     # Write ------------------------------------------------------------------------
     OUT.mkdir(exist_ok=True)
     with (OUT / "terms.csv").open("w", encoding="utf-8", newline="") as fh:
-        w = csv.DictWriter(fh, fieldnames=list(terms[0]))
+        w = csv.DictWriter(fh, fieldnames=list(terms[0]), lineterminator="\n")
         w.writeheader(); w.writerows(terms)
     with (OUT / "relations.csv").open("w", encoding="utf-8", newline="") as fh:
-        w = csv.DictWriter(fh, fieldnames=list(relations[0]))
+        w = csv.DictWriter(fh, fieldnames=list(relations[0]), lineterminator="\n")
         w.writeheader(); w.writerows(relations)
     sources = [
         {"source": "Bioguide", "full_name": "Biographical Directory of the United States Congress",
@@ -409,7 +409,7 @@ def main() -> int:
          "uri_pattern": "", "license": "local"},
     ]
     with (OUT / "sources.csv").open("w", encoding="utf-8", newline="") as fh:
-        w = csv.DictWriter(fh, fieldnames=list(sources[0]))
+        w = csv.DictWriter(fh, fieldnames=list(sources[0]), lineterminator="\n")
         w.writeheader(); w.writerows(sources)
     by_term = defaultdict(list)
     for r in relations:
