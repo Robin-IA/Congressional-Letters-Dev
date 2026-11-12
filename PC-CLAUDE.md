@@ -9,13 +9,14 @@
 > 2. **Push what the Mac does need, about once an hour:** the thumbnails and
 >    the `.jsonl` files, packed by `pack_return.py`. See "Sending results back,
 >    step by step" below. Until those arrive, the Mac has nothing to merge.
-> 3. **Job 2 (the scans' OCR, `C:\ocr`) is PAUSED from 13:35, 12 November.**
->    Every download shares one Wayback allowance, and rendering comes first so
->    the explorers are complete sooner. Push one last OCR return
->    (`pack_return.py C:\ocr C:\push\ocr`, then commit and push), then
->    Ctrl-C both `C:\ocr` windows. **Keep Job 1 rendering.** Resume Job 2 only
->    when Robin says; running `py fetch_for_ocr.py` again carries on where it
->    stopped. The Mac has paused its own share the same way.
+> 3. **Job 2 (the scans' OCR, `C:\ocr`) runs only while the PC is on the
+>    hotspot** (from 13:40, 12 November). On the hotspot it has its own IP and
+>    takes nothing from the Mac, which has paused its own OCR downloads so its
+>    rendering has Charter's Wayback allowance to itself. **If the PC moves back
+>    to Charter, pause Job 2**: push one last OCR return, then Ctrl-C both
+>    `C:\ocr` windows; Job 1 keeps rendering. The 3 GB data alert (rule above
+>    and under Job 1) covers both jobs together: the scans are about 465 KB
+>    each, so Job 2's 6,400 remaining are about 3 GB on their own.
 
 Written 11 November 2026, 22:15, by the Claude session on the Mac. This is
 what a Claude session on the Windows PC needs to know to help run the letter
