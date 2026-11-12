@@ -1,5 +1,15 @@
 # For Claude on the PC
 
+> **Rules as of 12 November 2026, 11:55. These replace anything older below.**
+>
+> 1. **Do not push PDFs to GitHub.** Stop pushing to `pc-render-pdfs-2`, and
+>    do not start any other PDF branch. The PDFs stay on the PC. Nothing on the
+>    Mac uses them: the OCR is done on the PC, and every letter opens from
+>    the Wayback Machine.
+> 2. **Push what the Mac does need, about once an hour:** the thumbnails and
+>    the `.jsonl` files, packed by `pack_return.py`. See "Sending results back,
+>    step by step" below. Until those arrive, the Mac has nothing to merge.
+
 Written 11 November 2026, 22:15, by the Claude session on the Mac. This is
 what a Claude session on the Windows PC needs to know to help run the letter
 harvest. Robin is the person you are working with.
@@ -68,20 +78,59 @@ the fetch log said done.
 If the OCR in either folder falls behind its downloads, give `ocr_tesseract.py`
 `--workers 2` in each folder, or run Job 2 after Job 1.
 
-### What comes back, and what does not
+### Sending results back, step by step
 
-**No PDFs.** They stay on the PC. Nothing on the Mac needs them: the OCR is
-done here and the explorers open every letter from Wayback. Stop pushing to
-`pc-render-pdfs-2`.
+`pack_return.py` packs a work folder for GitHub: the thumbnails it has not sent
+before, in zips under 85 MB, plus one `data.zip` of every `.jsonl` and log as
+they stand. Never the PDFs. Download it once into each work folder:
+<https://github.com/Robin-IA/Congressional-Letters-Dev/raw/pc-bundle/pack_return.py>
 
-| Job | Branch | Contents |
+| Work folder | Push folder | Branch |
 | --- | --- | --- |
-| 1 | `pc-render-return-3` | `thumbs\` (zipped, under 90 MB a file), `pdf-dates.jsonl`, `letter-text.jsonl`, `letter-ocr.jsonl`, `thumb-failures.jsonl` |
-| 2 | `pc-ocr-return-106-115` | `letter-ocr.jsonl`, `fetch-failures.jsonl`, `fetch-pc.log` |
+| `C:\render2` (or `C:\render3`) | `C:\push\render` | `pc-render-return-2` |
+| `C:\ocr` | `C:\push\ocr` | `pc-ocr-return-106-115` |
 
-Batches are fine: every batch can carry the whole of each `.jsonl` so far, and
-the merge adds only what the Mac lacks. 500 thumbnails is about 9 MB; Job 2's
-OCR is a few MB in all. Give each push a short README with counts.
+**Once per push folder** (PowerShell). The `fetch` and `reset` lines are only
+for `pc-render-return-2`, which already exists; skip them for the OCR branch.
+
+```
+mkdir C:\push\render; cd C:\push\render
+git init -b pc-render-return-2
+git config core.autocrlf false
+Set-Content .gitattributes "* -text"
+git remote add origin https://github.com/Robin-IA/Congressional-Letters-Dev.git
+git fetch origin pc-render-return-2
+git reset --hard origin/pc-render-return-2
+```
+
+`core.autocrlf false` and `* -text` matter: a line-ending rewrite corrupts a
+zip without any error.
+
+**Every hour or so, for each job:**
+
+```
+py C:\render2\pack_return.py C:\render2 C:\push\render
+cd C:\push\render
+git add -A
+git commit -m "render return: N new thumbnails"
+git push origin pc-render-return-2
+```
+
+and for the OCR job:
+
+```
+py C:\ocr\pack_return.py C:\ocr C:\push\ocr
+cd C:\push\ocr
+git add -A
+git commit -m "OCR return: N records"
+git push origin pc-ocr-return-106-115
+```
+
+It prints the counts and writes them into `README.md`. It remembers what it
+sent in `packed-thumbs.txt`, so each push carries only new thumbnails, about
+9 MB per 500, and never reuses a zip name. Once both jobs are done, push one
+last time. The Mac merges straight from the branch with `merge_render.py`,
+which adds only what it lacks, so a thumbnail sent twice does no harm.
 
 ## What the PC is for
 
