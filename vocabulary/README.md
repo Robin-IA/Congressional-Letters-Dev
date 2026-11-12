@@ -10,11 +10,14 @@ It is not LCSH, which was judged not robust enough for letters. Where an outside
 authority does know a term, it is linked: Bioguide and Wikidata for members,
 Wikidata for federal bodies.
 
-**Generated, not hand-edited.** `python3 build/build_vocabulary.py` rebuilds every
-file here from the data and the hand-made tables. To change a term, change its
-source: the tables in `build/parse_urls.py` and `build/topics.py`, or the
-rosters. A reviewed decision that has no other home will get a file of its own
-here; that has not been needed yet.
+**Generated, except `hierarchy.csv`.** `python3 build/build_vocabulary.py`
+rebuilds every other file here from the data and the hand-made tables. To change
+a term, change its source: the tables in `build/parse_urls.py` and
+`build/topics.py`, or the rosters. **`hierarchy.csv` is made by hand** and is
+read, never written, by the build.
+
+**Browse it** on the home page, under "By topic":
+<https://robin-ia.github.io/Explorer-Letters/?view=topics>.
 
 ## What is in it (first build, 12 November 2026)
 
@@ -25,9 +28,32 @@ here; that has not been needed yet.
 | `person` | | 131 | recipients named with a title ("Gov Newsom", "Ambassador Lighthizer") |
 | `topic` | 64 | | the subjects `build/topics.py` tags letters with |
 | `unclassified` | | 977 | recipients the build could not sort: companies (Google, Amazon, Meta), bare surnames (Hagel, Grassley), fragments |
+| `category` | 25 | | the groups of the hierarchy below |
 
 The counts change with every build; `vocabulary.json` and the build's own
 summary are the current ones.
+
+## The hierarchy
+
+Four branches, each alphabetical at every level:
+
+- **Topics**, under eleven subject areas, nested where a topic is part of
+  another. Health › Public health › COVID-19, Opioids, Vaccines. Disasters ›
+  Wildfires.
+- **Organizations**, by the structure of the federal government. Executive
+  Office of the President; Executive departments, each with its agencies (the
+  FDA, CDC, CMS and NIH under Health and Human Services); Independent agencies
+  and commissions; Inspectors general; Congress.
+- **Members of Congress**, under Senators and Representatives, by surname. A
+  member who served in both chambers is under both.
+- **Not yet reviewed**, the candidates: organizations, people, and recipients
+  the build could not sort.
+
+`hierarchy.csv` places topics and organizations, one row per term and the term
+it sits under (`broader`). A label there that is not yet a term becomes a
+category. Members and candidates are placed by rule. A topic or organization
+missing from the file is placed at the top of its branch, and the build says
+so. `tree.json` is the hierarchy nested and sorted, for the home page.
 
 ## Statuses
 
@@ -47,7 +73,9 @@ summary are the current ones.
 | `terms.csv` | term: `term_id`, `label`, `kind`, `facet`, `status`, `source`, `uri`, `letters`, `note` |
 | `relations.csv` | relationship: `term_id`, `relation`, `value`, `status`, `source` |
 | `sources.csv` | vocabulary or dataset a term or relation comes from, with its license |
-| `vocabulary.json` | everything above, each term with its relations, for programs |
+| `hierarchy.csv` | term placed by hand: `term`, `broader` |
+| `tree.json` | the hierarchy, nested and sorted alphabetically |
+| `vocabulary.json` | everything above, each term with its relations, plus the tree, for programs |
 
 `letters` is how many letters in the published explorers carry the term: the
 member wrote them, the organization or person received them, the topic was
@@ -64,6 +92,7 @@ its ID changes; references should go through `vocabulary.json`.
 
 | Relation | Means |
 | --- | --- |
+| `broader` | the term or category this one sits under |
 | `altLabel` | another name or spelling for the term |
 | `abbreviation` | the abbreviation the letters use (FEMA) |
 | `exactMatch` | the same thing in another vocabulary: Wikidata, Bioguide |

@@ -384,6 +384,75 @@ def main() -> int:
                         f"Wikidata search: {hit['label']} — {hit['description']}"[:200])
         WIKIDATA_CACHE.write_text(json.dumps(cache, indent=1, ensure_ascii=False), encoding="utf-8")
 
+    # The hierarchy --------------------------------------------------------------
+    # vocabulary/hierarchy.csv is made by hand: each row a term and the term it
+    # sits under. A label there that is not a term yet becomes a category.
+    # Members and unreviewed candidates are placed by rule, not by hand.
+    by_label = {}
+    for t_ in terms:
+        if t_["status"] == "preferred":
+            by_label.setdefault(t_["label"], t_["term_id"])
+    roots = []
+    hier = list(csv.DictReader((OUT / "hierarchy.csv").open(encoding="utf-8")))
+    for row in hier:
+        for lab in (row["term"], row["broader"]):
+            if lab and lab not in by_label:
+                tid = f"C-{slug(lab)}"
+                add(tid, lab, "category", "group", "preferred", "local")
+                by_label[lab] = tid
+        if row["broader"]:
+            rel(by_label[row["term"]], "broader", by_label[row["broader"]])
+        elif row["term"] not in roots:
+            roots.append(row["term"])
+    placed = {r["term_id"] for r in relations if r["relation"] == "broader"}
+    unplaced = [t_["label"] for t_ in terms if t_["kind"] in ("topic", "organization")
+                and t_["status"] == "preferred" and t_["term_id"] not in placed]
+    if unplaced:
+        print(f"  not in hierarchy.csv, placed at the top of their kind: {unplaced}", file=sys.stderr)
+        for lab in unplaced:
+            kind = next(x["kind"] for x in terms if x["label"] == lab)
+            rel(by_label[lab], "broader", by_label["Topics" if kind == "topic" else "Organizations"])
+    chamber_cat = {"Senate": by_label["Senators"], "House": by_label["Representatives"]}
+    for b, m in rosters().items():
+        for ch in m["chambers"]:
+            if ch in chamber_cat:
+                rel(f"M-{b}", "broader", chamber_cat[ch])
+    cand_cat = {"organization": by_label["Organizations not yet reviewed"],
+                "person": by_label["People not yet reviewed"],
+                "unclassified": by_label["Recipients not yet sorted"]}
+    for t_ in terms:
+        if t_["status"] == "candidate":
+            rel(t_["term_id"], "broader", cand_cat[t_["kind"]], "candidate", "rule: unreviewed")
+
+    # A nested, alphabetical tree for browsing. Members sort by surname.
+    legs_last = {b: (l.get("name", {}).get("last") or "") for b, l in legs.items()}
+    term_by_id = {t_["term_id"]: t_ for t_ in terms}
+    children = defaultdict(list)
+    for r in relations:
+        if r["relation"] == "broader":
+            children[r["value"]].append(r["term_id"])
+
+    def sort_key(tid):
+        t_ = term_by_id[tid]
+        if t_["kind"] == "member":
+            last = legs_last.get(tid[2:]) or t_["label"].split()[-1]
+            return (last.lower(), t_["label"].lower())
+        return (re.sub(r"^the\s+", "", t_["label"], flags=re.I).lower(), "")
+
+    def node(tid, seen=()):
+        t_ = term_by_id[tid]
+        kids = [node(c, seen + (tid,)) for c in sorted(set(children.get(tid, [])), key=sort_key)
+                if c not in seen]
+        n = {"id": tid, "label": t_["label"], "kind": t_["kind"]}
+        if t_["status"] != "preferred":
+            n["status"] = t_["status"]
+        if int(t_["letters"] or 0):
+            n["letters"] = int(t_["letters"])
+        if kids:
+            n["children"] = kids
+        return n
+    tree = [node(by_label[r]) for r in roots]
+
     # Write ------------------------------------------------------------------------
     OUT.mkdir(exist_ok=True)
     with (OUT / "terms.csv").open("w", encoding="utf-8", newline="") as fh:
@@ -414,8 +483,11 @@ def main() -> int:
     by_term = defaultdict(list)
     for r in relations:
         by_term[r["term_id"]].append({k: r[k] for k in ("relation", "value", "status", "source")})
+    (OUT / "tree.json").write_text(json.dumps(tree, ensure_ascii=False, separators=(",", ":")),
+                                   encoding="utf-8")
     (OUT / "vocabulary.json").write_text(json.dumps(
-        {"terms": [{**t, "relations": by_term.get(t["term_id"], [])} for t in terms]},
+        {"terms": [{**t, "relations": by_term.get(t["term_id"], [])} for t in terms],
+         "tree": tree},
         ensure_ascii=False, indent=1), encoding="utf-8")
 
     tally = Counter((t["kind"], t["status"]) for t in terms)

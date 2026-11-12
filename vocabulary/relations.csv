@@ -12483,3 +12483,3038 @@ O-social-security-administration,exactMatch,http://www.wikidata.org/entity/Q2824
 O-national-institutes-of-health,exactMatch,http://www.wikidata.org/entity/Q390551,candidate,Wikidata search: United States National Institutes of Health — US government medical research agency
 O-bureau-of-land-management,exactMatch,http://www.wikidata.org/entity/Q1010556,candidate,Wikidata search: United States Bureau of Land Management — agency within the United States Department of the Interior
 O-nuclear-regulatory-commission,exactMatch,http://www.wikidata.org/entity/Q1320326,candidate,Wikidata search: Nuclear Regulatory Commission — government agency of the United States
+C-agriculture-and-food,broader,C-topics,preferred,local
+T-agriculture,broader,C-agriculture-and-food,preferred,local
+C-economy-and-finance,broader,C-topics,preferred,local
+T-banking,broader,C-economy-and-finance,preferred,local
+T-crypto,broader,T-banking,preferred,local
+T-inflation,broader,C-economy-and-finance,preferred,local
+T-jobs,broader,C-economy-and-finance,preferred,local
+T-small-business,broader,C-economy-and-finance,preferred,local
+T-taxes,broader,C-economy-and-finance,preferred,local
+T-trade,broader,C-economy-and-finance,preferred,local
+T-tariffs,broader,T-trade,preferred,local
+C-education-and-families,broader,C-topics,preferred,local
+T-childcare,broader,C-education-and-families,preferred,local
+T-education,broader,C-education-and-families,preferred,local
+T-student-loans,broader,T-education,preferred,local
+T-housing,broader,C-education-and-families,preferred,local
+T-social-security,broader,C-education-and-families,preferred,local
+C-environment-and-energy,broader,C-topics,preferred,local
+T-climate,broader,C-environment-and-energy,preferred,local
+T-energy,broader,C-environment-and-energy,preferred,local
+T-pollution,broader,C-environment-and-energy,preferred,local
+T-pfas,broader,T-pollution,preferred,local
+T-public-lands,broader,C-environment-and-energy,preferred,local
+T-water,broader,C-environment-and-energy,preferred,local
+T-wildlife,broader,C-environment-and-energy,preferred,local
+C-disasters-and-emergencies,broader,C-topics,preferred,local
+T-disasters,broader,C-disasters-and-emergencies,preferred,local
+T-wildfires,broader,T-disasters,preferred,local
+C-government-and-oversight,broader,C-topics,preferred,local
+T-appropriations,broader,C-government-and-oversight,preferred,local
+T-elections,broader,C-government-and-oversight,preferred,local
+T-ethics,broader,C-government-and-oversight,preferred,local
+T-federal-workforce,broader,C-government-and-oversight,preferred,local
+T-nominations,broader,C-government-and-oversight,preferred,local
+T-oversight,broader,C-government-and-oversight,preferred,local
+T-postal-service,broader,C-government-and-oversight,preferred,local
+T-regulation,broader,C-government-and-oversight,preferred,local
+C-health,broader,C-topics,preferred,local
+T-abortion,broader,C-health,preferred,local
+T-health-care,broader,C-health,preferred,local
+T-medicaid,broader,T-health-care,preferred,local
+T-medicare,broader,T-health-care,preferred,local
+T-prescription-drugs,broader,T-health-care,preferred,local
+T-mental-health,broader,C-health,preferred,local
+T-public-health,broader,C-health,preferred,local
+T-covid-19,broader,T-public-health,preferred,local
+T-opioids,broader,T-public-health,preferred,local
+T-vaccines,broader,T-public-health,preferred,local
+C-immigration-and-borders,broader,C-topics,preferred,local
+T-border,broader,C-immigration-and-borders,preferred,local
+T-immigration,broader,C-immigration-and-borders,preferred,local
+C-justice-and-civil-rights,broader,C-topics,preferred,local
+T-civil-rights,broader,C-justice-and-civil-rights,preferred,local
+T-guns,broader,C-justice-and-civil-rights,preferred,local
+T-policing,broader,C-justice-and-civil-rights,preferred,local
+T-prisons,broader,C-justice-and-civil-rights,preferred,local
+T-privacy,broader,C-justice-and-civil-rights,preferred,local
+C-security-and-foreign-affairs,broader,C-topics,preferred,local
+T-cybersecurity,broader,C-security-and-foreign-affairs,preferred,local
+T-defense,broader,C-security-and-foreign-affairs,preferred,local
+T-nuclear,broader,T-defense,preferred,local
+T-veterans,broader,T-defense,preferred,local
+T-foreign-aid,broader,C-security-and-foreign-affairs,preferred,local
+T-afghanistan,broader,C-security-and-foreign-affairs,preferred,local
+T-china,broader,C-security-and-foreign-affairs,preferred,local
+T-iran,broader,C-security-and-foreign-affairs,preferred,local
+T-israel-and-gaza,broader,C-security-and-foreign-affairs,preferred,local
+T-russia,broader,C-security-and-foreign-affairs,preferred,local
+T-ukraine,broader,C-security-and-foreign-affairs,preferred,local
+C-technology-and-infrastructure,broader,C-topics,preferred,local
+T-aviation,broader,C-technology-and-infrastructure,preferred,local
+T-broadband,broader,C-technology-and-infrastructure,preferred,local
+T-technology,broader,C-technology-and-infrastructure,preferred,local
+T-telecom,broader,C-technology-and-infrastructure,preferred,local
+T-transportation,broader,C-technology-and-infrastructure,preferred,local
+C-executive-office-of-the-president,broader,C-organizations,preferred,local
+O-the-president,broader,C-executive-office-of-the-president,preferred,local
+O-the-vice-president,broader,C-executive-office-of-the-president,preferred,local
+O-office-of-management-and-budget,broader,C-executive-office-of-the-president,preferred,local
+O-office-of-the-us-trade-representative,broader,C-executive-office-of-the-president,preferred,local
+C-executive-departments,broader,C-organizations,preferred,local
+O-department-of-agriculture,broader,C-executive-departments,preferred,local
+O-department-of-commerce,broader,C-executive-departments,preferred,local
+O-national-oceanic-and-atmospheric-administration,broader,O-department-of-commerce,preferred,local
+O-department-of-defense,broader,C-executive-departments,preferred,local
+O-army-corps-of-engineers,broader,O-department-of-defense,preferred,local
+O-department-of-education,broader,C-executive-departments,preferred,local
+O-department-of-energy,broader,C-executive-departments,preferred,local
+O-federal-energy-regulatory-commission,broader,O-department-of-energy,preferred,local
+O-department-of-health-and-human-services,broader,C-executive-departments,preferred,local
+O-centers-for-disease-control,broader,O-department-of-health-and-human-services,preferred,local
+O-centers-for-medicare-and-medicaid-services,broader,O-department-of-health-and-human-services,preferred,local
+O-food-and-drug-administration,broader,O-department-of-health-and-human-services,preferred,local
+O-national-institutes-of-health,broader,O-department-of-health-and-human-services,preferred,local
+O-department-of-homeland-security,broader,C-executive-departments,preferred,local
+O-citizenship-and-immigration-services,broader,O-department-of-homeland-security,preferred,local
+O-customs-and-border-protection,broader,O-department-of-homeland-security,preferred,local
+O-federal-emergency-management-agency,broader,O-department-of-homeland-security,preferred,local
+O-immigration-and-customs-enforcement,broader,O-department-of-homeland-security,preferred,local
+O-transportation-security-administration,broader,O-department-of-homeland-security,preferred,local
+O-department-of-housing-and-urban-development,broader,C-executive-departments,preferred,local
+O-department-of-the-interior,broader,C-executive-departments,preferred,local
+O-bureau-of-land-management,broader,O-department-of-the-interior,preferred,local
+O-department-of-justice,broader,C-executive-departments,preferred,local
+O-bureau-of-alcohol-tobacco-firearms-and-explosives,broader,O-department-of-justice,preferred,local
+O-bureau-of-prisons,broader,O-department-of-justice,preferred,local
+O-drug-enforcement-administration,broader,O-department-of-justice,preferred,local
+O-federal-bureau-of-investigation,broader,O-department-of-justice,preferred,local
+O-department-of-labor,broader,C-executive-departments,preferred,local
+O-occupational-safety-and-health-administration,broader,O-department-of-labor,preferred,local
+O-department-of-state,broader,C-executive-departments,preferred,local
+O-department-of-transportation,broader,C-executive-departments,preferred,local
+O-federal-aviation-administration,broader,O-department-of-transportation,preferred,local
+O-national-highway-traffic-safety-administration,broader,O-department-of-transportation,preferred,local
+O-department-of-the-treasury,broader,C-executive-departments,preferred,local
+O-internal-revenue-service,broader,O-department-of-the-treasury,preferred,local
+O-office-of-the-comptroller-of-the-currency,broader,O-department-of-the-treasury,preferred,local
+O-department-of-veterans-affairs,broader,C-executive-departments,preferred,local
+C-independent-agencies-and-commissions,broader,C-organizations,preferred,local
+O-central-intelligence-agency,broader,C-independent-agencies-and-commissions,preferred,local
+O-commodity-futures-trading-commission,broader,C-independent-agencies-and-commissions,preferred,local
+O-consumer-financial-protection-bureau,broader,C-independent-agencies-and-commissions,preferred,local
+O-election-assistance-commission,broader,C-independent-agencies-and-commissions,preferred,local
+O-environmental-protection-agency,broader,C-independent-agencies-and-commissions,preferred,local
+O-federal-communications-commission,broader,C-independent-agencies-and-commissions,preferred,local
+O-federal-deposit-insurance-corporation,broader,C-independent-agencies-and-commissions,preferred,local
+O-federal-election-commission,broader,C-independent-agencies-and-commissions,preferred,local
+O-federal-housing-finance-agency,broader,C-independent-agencies-and-commissions,preferred,local
+O-federal-reserve,broader,C-independent-agencies-and-commissions,preferred,local
+O-federal-trade-commission,broader,C-independent-agencies-and-commissions,preferred,local
+O-general-services-administration,broader,C-independent-agencies-and-commissions,preferred,local
+O-national-aeronautics-and-space-administration,broader,C-independent-agencies-and-commissions,preferred,local
+O-national-labor-relations-board,broader,C-independent-agencies-and-commissions,preferred,local
+O-nuclear-regulatory-commission,broader,C-independent-agencies-and-commissions,preferred,local
+O-office-of-personnel-management,broader,C-independent-agencies-and-commissions,preferred,local
+O-securities-and-exchange-commission,broader,C-independent-agencies-and-commissions,preferred,local
+O-small-business-administration,broader,C-independent-agencies-and-commissions,preferred,local
+O-social-security-administration,broader,C-independent-agencies-and-commissions,preferred,local
+O-united-states-postal-service,broader,C-independent-agencies-and-commissions,preferred,local
+C-inspectors-general,broader,C-organizations,preferred,local
+O-office-of-the-inspector-general,broader,C-inspectors-general,preferred,local
+C-congress,broader,C-organizations,preferred,local
+O-congressional-leadership,broader,C-congress,preferred,local
+O-the-speaker-of-the-house,broader,C-congress,preferred,local
+O-government-accountability-office,broader,C-congress,preferred,local
+O-government-publishing-office,broader,C-congress,preferred,local
+C-senators,broader,C-members-of-congress,preferred,local
+C-representatives,broader,C-members-of-congress,preferred,local
+C-organizations-not-yet-reviewed,broader,C-not-yet-reviewed,preferred,local
+C-people-not-yet-reviewed,broader,C-not-yet-reviewed,preferred,local
+C-recipients-not-yet-sorted,broader,C-not-yet-reviewed,preferred,local
+M-M001085,broader,C-senators,preferred,local
+M-S000888,broader,C-senators,preferred,local
+M-S001141,broader,C-senators,preferred,local
+M-S000320,broader,C-senators,preferred,local
+M-L000035,broader,C-senators,preferred,local
+M-H001015,broader,C-senators,preferred,local
+M-M000303,broader,C-senators,preferred,local
+M-K000352,broader,C-senators,preferred,local
+M-B000711,broader,C-senators,preferred,local
+M-F000062,broader,C-senators,preferred,local
+M-C000077,broader,C-senators,preferred,local
+M-A000109,broader,C-senators,preferred,local
+M-D000388,broader,C-senators,preferred,local
+M-L000304,broader,C-senators,preferred,local
+M-B000444,broader,C-senators,preferred,local
+M-R000460,broader,C-senators,preferred,local
+M-G000352,broader,C-senators,preferred,local
+M-M000019,broader,C-senators,preferred,local
+M-C001034,broader,C-senators,preferred,local
+M-C000813,broader,C-senators,preferred,local
+M-M001141,broader,C-senators,preferred,local
+M-A000069,broader,C-senators,preferred,local
+M-I000025,broader,C-senators,preferred,local
+M-G000386,broader,C-senators,preferred,local
+M-H000206,broader,C-senators,preferred,local
+M-C000858,broader,C-senators,preferred,local
+M-C000880,broader,C-senators,preferred,local
+M-F000442,broader,C-senators,preferred,local
+M-D000563,broader,C-senators,preferred,local
+M-B001233,broader,C-senators,preferred,local
+M-L000504,broader,C-senators,preferred,local
+M-R000307,broader,C-senators,preferred,local
+M-B000953,broader,C-senators,preferred,local
+M-B001066,broader,C-senators,preferred,local
+M-M000355,broader,C-senators,preferred,local
+M-B000780,broader,C-senators,preferred,local
+M-L000550,broader,C-senators,preferred,local
+M-K000105,broader,C-senators,preferred,local
+M-K000148,broader,C-senators,preferred,local
+M-M000702,broader,C-senators,preferred,local
+M-S000064,broader,C-senators,preferred,local
+M-S000663,broader,C-senators,preferred,local
+M-C001035,broader,C-senators,preferred,local
+M-L000261,broader,C-senators,preferred,local
+M-A000355,broader,C-senators,preferred,local
+M-W000288,broader,C-senators,preferred,local
+M-G000367,broader,C-senators,preferred,local
+M-B000611,broader,C-senators,preferred,local
+M-A000356,broader,C-senators,preferred,local
+M-C000567,broader,C-senators,preferred,local
+M-L000447,broader,C-senators,preferred,local
+M-B001126,broader,C-senators,preferred,local
+M-B000243,broader,C-senators,preferred,local
+M-H000463,broader,C-senators,preferred,local
+M-E000286,broader,C-senators,preferred,local
+M-D000432,broader,C-senators,preferred,local
+M-C000705,broader,C-senators,preferred,local
+M-H001028,broader,C-senators,preferred,local
+M-K000146,broader,C-senators,preferred,local
+M-G000445,broader,C-senators,preferred,local
+M-S000606,broader,C-senators,preferred,local
+M-L000123,broader,C-senators,preferred,local
+M-T000317,broader,C-senators,preferred,local
+M-B000468,broader,C-senators,preferred,local
+M-D000407,broader,C-senators,preferred,local
+M-R000146,broader,C-senators,preferred,local
+M-B000993,broader,C-senators,preferred,local
+M-S000148,broader,C-senators,preferred,local
+M-M001054,broader,C-senators,preferred,local
+M-V000126,broader,C-senators,preferred,local
+M-D000294,broader,C-senators,preferred,local
+M-N000102,broader,C-senators,preferred,local
+M-I000024,broader,C-senators,preferred,local
+M-S001142,broader,C-senators,preferred,local
+M-W000779,broader,C-senators,preferred,local
+M-S000709,broader,C-senators,preferred,local
+M-S000059,broader,C-senators,preferred,local
+M-R000122,broader,C-senators,preferred,local
+M-C000269,broader,C-senators,preferred,local
+M-C001040,broader,C-senators,preferred,local
+M-H000725,broader,C-senators,preferred,local
+M-T000254,broader,C-senators,preferred,local
+M-D000064,broader,C-senators,preferred,local
+M-J000177,broader,C-senators,preferred,local
+M-T000457,broader,C-senators,preferred,local
+M-F000439,broader,C-senators,preferred,local
+M-H001016,broader,C-senators,preferred,local
+M-G000365,broader,C-senators,preferred,local
+M-H000338,broader,C-senators,preferred,local
+M-B000382,broader,C-senators,preferred,local
+M-R000295,broader,C-senators,preferred,local
+M-W000154,broader,C-senators,preferred,local
+M-J000072,broader,C-senators,preferred,local
+M-L000174,broader,C-senators,preferred,local
+M-M001111,broader,C-senators,preferred,local
+M-G000333,broader,C-senators,preferred,local
+M-K000305,broader,C-senators,preferred,local
+M-F000061,broader,C-senators,preferred,local
+M-R000361,broader,C-senators,preferred,local
+M-B001210,broader,C-senators,preferred,local
+M-T000162,broader,C-senators,preferred,local
+M-E000285,broader,C-senators,preferred,local
+M-Y000033,broader,C-representatives,preferred,local
+M-C000052,broader,C-representatives,preferred,local
+M-E000268,broader,C-representatives,preferred,local
+M-R000258,broader,C-representatives,preferred,local
+M-A000055,broader,C-representatives,preferred,local
+M-C000868,broader,C-representatives,preferred,local
+M-B000013,broader,C-representatives,preferred,local
+M-H000621,broader,C-representatives,preferred,local
+M-B000420,broader,C-representatives,preferred,local
+M-S000672,broader,C-representatives,preferred,local
+M-H001014,broader,C-representatives,preferred,local
+M-D000312,broader,C-representatives,preferred,local
+M-F000010,broader,C-representatives,preferred,local
+M-S000018,broader,C-representatives,preferred,local
+M-P000099,broader,C-representatives,preferred,local
+M-S001044,broader,C-representatives,preferred,local
+M-S000275,broader,C-representatives,preferred,local
+M-K000306,broader,C-representatives,preferred,local
+M-H000413,broader,C-representatives,preferred,local
+M-T000460,broader,C-representatives,preferred,local
+M-H000528,broader,C-representatives,preferred,local
+M-O000164,broader,C-representatives,preferred,local
+M-D000429,broader,C-representatives,preferred,local
+M-M000249,broader,C-representatives,preferred,local
+M-W000738,broader,C-representatives,preferred,local
+M-M000725,broader,C-representatives,preferred,local
+M-P000197,broader,C-representatives,preferred,local
+M-L000551,broader,C-representatives,preferred,local
+M-T000057,broader,C-representatives,preferred,local
+M-P000419,broader,C-representatives,preferred,local
+M-L000090,broader,C-representatives,preferred,local
+M-S000810,broader,C-representatives,preferred,local
+M-E000215,broader,C-representatives,preferred,local
+M-C000100,broader,C-representatives,preferred,local
+M-L000397,broader,C-representatives,preferred,local
+M-F000030,broader,C-representatives,preferred,local
+M-C000670,broader,C-representatives,preferred,local
+M-R000004,broader,C-representatives,preferred,local
+M-D000424,broader,C-representatives,preferred,local
+M-T000188,broader,C-representatives,preferred,local
+M-C001036,broader,C-representatives,preferred,local
+M-G000021,broader,C-representatives,preferred,local
+M-S000344,broader,C-representatives,preferred,local
+M-M000508,broader,C-representatives,preferred,local
+M-B000410,broader,C-representatives,preferred,local
+M-R000386,broader,C-representatives,preferred,local
+M-D000492,broader,C-representatives,preferred,local
+M-W000215,broader,C-representatives,preferred,local
+M-B000287,broader,C-representatives,preferred,local
+M-M000206,broader,C-representatives,preferred,local
+M-D000373,broader,C-representatives,preferred,local
+M-R000486,broader,C-representatives,preferred,local
+M-N000179,broader,C-representatives,preferred,local
+M-W000187,broader,C-representatives,preferred,local
+M-K000357,broader,C-representatives,preferred,local
+M-M000714,broader,C-representatives,preferred,local
+M-H000789,broader,C-representatives,preferred,local
+M-R000487,broader,C-representatives,preferred,local
+M-L000274,broader,C-representatives,preferred,local
+M-M001139,broader,C-representatives,preferred,local
+M-B000918,broader,C-representatives,preferred,local
+M-B001234,broader,C-representatives,preferred,local
+M-C000059,broader,C-representatives,preferred,local
+M-B001228,broader,C-representatives,preferred,local
+M-R000409,broader,C-representatives,preferred,local
+M-S000030,broader,C-representatives,preferred,local
+M-C000830,broader,C-representatives,preferred,local
+M-P000005,broader,C-representatives,preferred,local
+M-B000461,broader,C-representatives,preferred,local
+M-F000116,broader,C-representatives,preferred,local
+M-C000994,broader,C-representatives,preferred,local
+M-H000981,broader,C-representatives,preferred,local
+M-D000197,broader,C-representatives,preferred,local
+M-U000038,broader,C-representatives,preferred,local
+M-U000038,broader,C-senators,preferred,local
+M-M000477,broader,C-representatives,preferred,local
+M-S000112,broader,C-representatives,preferred,local
+M-H000444,broader,C-representatives,preferred,local
+M-T000458,broader,C-representatives,preferred,local
+M-L000557,broader,C-representatives,preferred,local
+M-G000120,broader,C-representatives,preferred,local
+M-D000216,broader,C-representatives,preferred,local
+M-S001144,broader,C-representatives,preferred,local
+M-M000090,broader,C-representatives,preferred,local
+M-J000163,broader,C-representatives,preferred,local
+M-N000147,broader,C-representatives,preferred,local
+M-C000243,broader,C-representatives,preferred,local
+M-S000106,broader,C-representatives,preferred,local
+M-B000716,broader,C-representatives,preferred,local
+M-B000911,broader,C-representatives,preferred,local
+M-F000328,broader,C-representatives,preferred,local
+M-T000253,broader,C-representatives,preferred,local
+M-S000822,broader,C-representatives,preferred,local
+M-M000689,broader,C-representatives,preferred,local
+M-M000350,broader,C-representatives,preferred,local
+M-B000463,broader,C-representatives,preferred,local
+M-Y000031,broader,C-representatives,preferred,local
+M-D000114,broader,C-representatives,preferred,local
+M-C000107,broader,C-representatives,preferred,local
+M-M000720,broader,C-representatives,preferred,local
+M-G000336,broader,C-representatives,preferred,local
+M-W000267,broader,C-representatives,preferred,local
+M-F000238,broader,C-representatives,preferred,local
+M-M000628,broader,C-representatives,preferred,local
+M-R000435,broader,C-representatives,preferred,local
+M-W000314,broader,C-representatives,preferred,local
+M-D000275,broader,C-representatives,preferred,local
+M-D000299,broader,C-representatives,preferred,local
+M-S000303,broader,C-representatives,preferred,local
+M-H000324,broader,C-representatives,preferred,local
+M-K000220,broader,C-representatives,preferred,local
+M-B000490,broader,C-representatives,preferred,local
+M-C000640,broader,C-representatives,preferred,local
+M-M000523,broader,C-representatives,preferred,local
+M-L000287,broader,C-representatives,preferred,local
+M-I000055,broader,C-representatives,preferred,local
+M-I000055,broader,C-senators,preferred,local
+M-B000169,broader,C-representatives,preferred,local
+M-C000286,broader,C-representatives,preferred,local
+M-C000286,broader,C-senators,preferred,local
+M-D000168,broader,C-representatives,preferred,local
+M-N000159,broader,C-representatives,preferred,local
+M-L000321,broader,C-representatives,preferred,local
+M-U000014,broader,C-representatives,preferred,local
+M-A000014,broader,C-representatives,preferred,local
+M-M000797,broader,C-representatives,preferred,local
+M-L000169,broader,C-representatives,preferred,local
+M-N000172,broader,C-representatives,preferred,local
+M-B000652,broader,C-representatives,preferred,local
+M-G000041,broader,C-representatives,preferred,local
+M-L000111,broader,C-representatives,preferred,local
+M-C000345,broader,C-representatives,preferred,local
+M-S001148,broader,C-representatives,preferred,local
+M-R000515,broader,C-representatives,preferred,local
+M-J000283,broader,C-representatives,preferred,local
+M-L000342,broader,C-representatives,preferred,local
+M-G000535,broader,C-representatives,preferred,local
+M-B000518,broader,C-representatives,preferred,local
+M-H001022,broader,C-representatives,preferred,local
+M-D000096,broader,C-representatives,preferred,local
+M-C000873,broader,C-representatives,preferred,local
+M-S001145,broader,C-representatives,preferred,local
+M-P000444,broader,C-representatives,preferred,local
+M-W000273,broader,C-representatives,preferred,local
+M-C000794,broader,C-representatives,preferred,local
+M-B001232,broader,C-representatives,preferred,local
+M-H000323,broader,C-representatives,preferred,local
+M-E000282,broader,C-representatives,preferred,local
+M-M001138,broader,C-representatives,preferred,local
+M-E000250,broader,C-representatives,preferred,local
+M-L000552,broader,C-representatives,preferred,local
+M-P000584,broader,C-representatives,preferred,local
+M-S000364,broader,C-representatives,preferred,local
+M-V000108,broader,C-representatives,preferred,local
+M-M000481,broader,C-representatives,preferred,local
+M-R000385,broader,C-representatives,preferred,local
+M-S001143,broader,C-representatives,preferred,local
+M-B001203,broader,C-representatives,preferred,local
+M-B001149,broader,C-representatives,preferred,local
+M-P000171,broader,C-representatives,preferred,local
+M-H000807,broader,C-representatives,preferred,local
+M-H001030,broader,C-representatives,preferred,local
+M-C000191,broader,C-representatives,preferred,local
+M-M000934,broader,C-representatives,preferred,local
+M-M000934,broader,C-senators,preferred,local
+M-R000566,broader,C-representatives,preferred,local
+M-M001140,broader,C-representatives,preferred,local
+M-T000260,broader,C-representatives,preferred,local
+M-W000413,broader,C-representatives,preferred,local
+M-L000293,broader,C-representatives,preferred,local
+M-N000143,broader,C-representatives,preferred,local
+M-L000558,broader,C-representatives,preferred,local
+M-R000395,broader,C-representatives,preferred,local
+M-F000441,broader,C-representatives,preferred,local
+M-V000127,broader,C-representatives,preferred,local
+M-V000127,broader,C-senators,preferred,local
+M-L000371,broader,C-representatives,preferred,local
+M-J000070,broader,C-representatives,preferred,local
+M-T000058,broader,C-representatives,preferred,local
+M-M000388,broader,C-representatives,preferred,local
+M-C000735,broader,C-representatives,preferred,local
+M-B000072,broader,C-representatives,preferred,local
+M-J000110,broader,C-representatives,preferred,local
+M-O000085,broader,C-representatives,preferred,local
+M-N000015,broader,C-representatives,preferred,local
+M-M000312,broader,C-representatives,preferred,local
+M-F000339,broader,C-representatives,preferred,local
+M-M000627,broader,C-representatives,preferred,local
+M-T000266,broader,C-representatives,preferred,local
+M-M000133,broader,C-representatives,preferred,local
+M-M000133,broader,C-senators,preferred,local
+M-C001037,broader,C-representatives,preferred,local
+M-M000834,broader,C-representatives,preferred,local
+M-D000210,broader,C-representatives,preferred,local
+M-G000180,broader,C-representatives,preferred,local
+M-E000093,broader,C-representatives,preferred,local
+M-C000141,broader,C-representatives,preferred,local
+M-C000141,broader,C-senators,preferred,local
+M-W000784,broader,C-representatives,preferred,local
+M-H000874,broader,C-representatives,preferred,local
+M-B000208,broader,C-representatives,preferred,local
+M-C000984,broader,C-representatives,preferred,local
+M-M000941,broader,C-representatives,preferred,local
+M-A000357,broader,C-representatives,preferred,local
+M-B000081,broader,C-representatives,preferred,local
+M-S001045,broader,C-representatives,preferred,local
+M-H000676,broader,C-representatives,preferred,local
+M-E000092,broader,C-representatives,preferred,local
+M-C000071,broader,C-representatives,preferred,local
+M-B000134,broader,C-representatives,preferred,local
+M-U000031,broader,C-representatives,preferred,local
+M-S000597,broader,C-representatives,preferred,local
+M-S000770,broader,C-representatives,preferred,local
+M-S000770,broader,C-senators,preferred,local
+M-K000172,broader,C-representatives,preferred,local
+M-B000619,broader,C-representatives,preferred,local
+M-K000288,broader,C-representatives,preferred,local
+M-L000263,broader,C-representatives,preferred,local
+M-R000281,broader,C-representatives,preferred,local
+M-C000714,broader,C-representatives,preferred,local
+M-K000180,broader,C-representatives,preferred,local
+M-D000355,broader,C-representatives,preferred,local
+M-G000536,broader,C-representatives,preferred,local
+M-M000795,broader,C-representatives,preferred,local
+M-R000033,broader,C-representatives,preferred,local
+M-V000087,broader,C-representatives,preferred,local
+M-S000005,broader,C-representatives,preferred,local
+M-L000521,broader,C-representatives,preferred,local
+M-P000258,broader,C-representatives,preferred,local
+M-O000006,broader,C-representatives,preferred,local
+M-C000488,broader,C-representatives,preferred,local
+M-T000024,broader,C-representatives,preferred,local
+M-T000024,broader,C-senators,preferred,local
+M-G000132,broader,C-representatives,preferred,local
+M-S000465,broader,C-representatives,preferred,local
+M-M000316,broader,C-representatives,preferred,local
+M-D000046,broader,C-representatives,preferred,local
+M-B000575,broader,C-representatives,preferred,local
+M-B000575,broader,C-senators,preferred,local
+M-E000172,broader,C-representatives,preferred,local
+M-H000948,broader,C-representatives,preferred,local
+M-W000437,broader,C-representatives,preferred,local
+M-W000437,broader,C-senators,preferred,local
+M-T000193,broader,C-representatives,preferred,local
+M-P000323,broader,C-representatives,preferred,local
+M-S001147,broader,C-representatives,preferred,local
+M-T000074,broader,C-representatives,preferred,local
+M-H000605,broader,C-representatives,preferred,local
+M-C000494,broader,C-representatives,preferred,local
+M-E000226,broader,C-representatives,preferred,local
+M-J000255,broader,C-representatives,preferred,local
+M-P000523,broader,C-representatives,preferred,local
+M-B001135,broader,C-representatives,preferred,local
+M-B001135,broader,C-senators,preferred,local
+M-C000556,broader,C-representatives,preferred,local
+M-M000485,broader,C-representatives,preferred,local
+M-H001029,broader,C-representatives,preferred,local
+M-M001134,broader,C-representatives,preferred,local
+M-B000104,broader,C-representatives,preferred,local
+M-T000067,broader,C-representatives,preferred,local
+M-W000207,broader,C-representatives,preferred,local
+M-P000422,broader,C-representatives,preferred,local
+M-B000403,broader,C-representatives,preferred,local
+M-T000459,broader,C-representatives,preferred,local
+M-B000179,broader,C-representatives,preferred,local
+M-S001078,broader,C-representatives,preferred,local
+M-S001078,broader,C-senators,preferred,local
+M-B000220,broader,C-representatives,preferred,local
+M-A000210,broader,C-representatives,preferred,local
+M-L000554,broader,C-representatives,preferred,local
+M-S000097,broader,C-representatives,preferred,local
+M-S000522,broader,C-representatives,preferred,local
+M-R000465,broader,C-representatives,preferred,local
+M-P000034,broader,C-representatives,preferred,local
+M-F000349,broader,C-representatives,preferred,local
+M-P000096,broader,C-representatives,preferred,local
+M-R000462,broader,C-representatives,preferred,local
+M-P000149,broader,C-representatives,preferred,local
+M-F000372,broader,C-representatives,preferred,local
+M-H001032,broader,C-representatives,preferred,local
+M-M000639,broader,C-representatives,preferred,local
+M-M000639,broader,C-senators,preferred,local
+M-W000789,broader,C-representatives,preferred,local
+M-S000463,broader,C-representatives,preferred,local
+M-U000039,broader,C-representatives,preferred,local
+M-U000039,broader,C-senators,preferred,local
+M-B001231,broader,C-representatives,preferred,local
+M-G000152,broader,C-representatives,preferred,local
+M-F000257,broader,C-representatives,preferred,local
+M-L000155,broader,C-representatives,preferred,local
+M-K000210,broader,C-representatives,preferred,local
+M-M000309,broader,C-representatives,preferred,local
+M-A000022,broader,C-representatives,preferred,local
+M-M001137,broader,C-representatives,preferred,local
+M-C001038,broader,C-representatives,preferred,local
+M-N000002,broader,C-representatives,preferred,local
+M-W000792,broader,C-representatives,preferred,local
+M-T000326,broader,C-representatives,preferred,local
+M-O000159,broader,C-representatives,preferred,local
+M-V000081,broader,C-representatives,preferred,local
+M-F000440,broader,C-representatives,preferred,local
+M-M000087,broader,C-representatives,preferred,local
+M-R000053,broader,C-representatives,preferred,local
+M-S000248,broader,C-representatives,preferred,local
+M-E000179,broader,C-representatives,preferred,local
+M-L000480,broader,C-representatives,preferred,local
+M-K000078,broader,C-representatives,preferred,local
+M-G000212,broader,C-representatives,preferred,local
+M-M000590,broader,C-representatives,preferred,local
+M-S001149,broader,C-representatives,preferred,local
+M-B000586,broader,C-representatives,preferred,local
+M-M000472,broader,C-representatives,preferred,local
+M-W000099,broader,C-representatives,preferred,local
+M-H000627,broader,C-representatives,preferred,local
+M-R000569,broader,C-representatives,preferred,local
+M-S000480,broader,C-representatives,preferred,local
+M-L000556,broader,C-representatives,preferred,local
+M-Q000016,broader,C-representatives,preferred,local
+M-H000814,broader,C-representatives,preferred,local
+M-C000266,broader,C-representatives,preferred,local
+M-P000449,broader,C-representatives,preferred,local
+M-P000449,broader,C-senators,preferred,local
+M-H000074,broader,C-representatives,preferred,local
+M-O000163,broader,C-representatives,preferred,local
+M-G000210,broader,C-representatives,preferred,local
+M-S001004,broader,C-representatives,preferred,local
+M-H000666,broader,C-representatives,preferred,local
+M-B000589,broader,C-representatives,preferred,local
+M-K000009,broader,C-representatives,preferred,local
+M-K000336,broader,C-representatives,preferred,local
+M-J000284,broader,C-representatives,preferred,local
+M-K000016,broader,C-representatives,preferred,local
+M-B000944,broader,C-representatives,preferred,local
+M-B000944,broader,C-senators,preferred,local
+M-S000094,broader,C-representatives,preferred,local
+M-P000555,broader,C-representatives,preferred,local
+M-R000141,broader,C-representatives,preferred,local
+M-T000350,broader,C-representatives,preferred,local
+M-N000081,broader,C-representatives,preferred,local
+M-L000553,broader,C-representatives,preferred,local
+M-L000096,broader,C-representatives,preferred,local
+M-C000560,broader,C-representatives,preferred,local
+M-C000560,broader,C-senators,preferred,local
+M-W000194,broader,C-representatives,preferred,local
+M-W000210,broader,C-representatives,preferred,local
+M-I000047,broader,C-representatives,preferred,local
+M-L000491,broader,C-representatives,preferred,local
+M-W000793,broader,C-representatives,preferred,local
+M-W000791,broader,C-representatives,preferred,local
+M-B000574,broader,C-representatives,preferred,local
+M-D000191,broader,C-representatives,preferred,local
+M-H000762,broader,C-representatives,preferred,local
+M-B001227,broader,C-representatives,preferred,local
+M-F000043,broader,C-representatives,preferred,local
+M-B000644,broader,C-representatives,preferred,local
+M-K000270,broader,C-representatives,preferred,local
+M-P000263,broader,C-representatives,preferred,local
+M-H000712,broader,C-representatives,preferred,local
+M-W000268,broader,C-representatives,preferred,local
+M-G000439,broader,C-representatives,preferred,local
+M-S000394,broader,C-representatives,preferred,local
+M-S001146,broader,C-representatives,preferred,local
+M-K000008,broader,C-representatives,preferred,local
+M-M001120,broader,C-representatives,preferred,local
+M-H001031,broader,C-representatives,preferred,local
+M-C000846,broader,C-representatives,preferred,local
+M-T000461,broader,C-representatives,preferred,local
+M-T000461,broader,C-senators,preferred,local
+M-P000373,broader,C-representatives,preferred,local
+M-G000121,broader,C-representatives,preferred,local
+M-D000482,broader,C-representatives,preferred,local
+M-G000291,broader,C-representatives,preferred,local
+M-M000212,broader,C-representatives,preferred,local
+M-E000187,broader,C-representatives,preferred,local
+M-R000417,broader,C-representatives,preferred,local
+M-K000113,broader,C-representatives,preferred,local
+M-W000315,broader,C-representatives,preferred,local
+M-S000051,broader,C-representatives,preferred,local
+M-S000718,broader,C-representatives,preferred,local
+M-G000359,broader,C-representatives,preferred,local
+M-G000359,broader,C-senators,preferred,local
+M-D000595,broader,C-representatives,preferred,local
+M-D000595,broader,C-senators,preferred,local
+M-S000749,broader,C-representatives,preferred,local
+M-C000537,broader,C-representatives,preferred,local
+M-T000250,broader,C-representatives,preferred,local
+M-T000250,broader,C-senators,preferred,local
+M-J000082,broader,C-representatives,preferred,local
+M-D000533,broader,C-representatives,preferred,local
+M-W000119,broader,C-representatives,preferred,local
+M-H000615,broader,C-representatives,preferred,local
+M-C000503,broader,C-representatives,preferred,local
+M-G000309,broader,C-representatives,preferred,local
+M-B000996,broader,C-representatives,preferred,local
+M-T000038,broader,C-representatives,preferred,local
+M-F000262,broader,C-representatives,preferred,local
+M-S000044,broader,C-representatives,preferred,local
+M-T000424,broader,C-representatives,preferred,local
+M-J000174,broader,C-representatives,preferred,local
+M-H000067,broader,C-representatives,preferred,local
+M-S000250,broader,C-representatives,preferred,local
+M-B000213,broader,C-representatives,preferred,local
+M-A000215,broader,C-representatives,preferred,local
+M-B000755,broader,C-representatives,preferred,local
+M-L000043,broader,C-representatives,preferred,local
+M-D000399,broader,C-representatives,preferred,local
+M-E000063,broader,C-representatives,preferred,local
+M-G000377,broader,C-representatives,preferred,local
+M-T000238,broader,C-representatives,preferred,local
+M-P000583,broader,C-representatives,preferred,local
+M-H000636,broader,C-representatives,preferred,local
+M-R000170,broader,C-representatives,preferred,local
+M-S000851,broader,C-representatives,preferred,local
+M-J000032,broader,C-representatives,preferred,local
+M-C000653,broader,C-representatives,preferred,local
+M-G000544,broader,C-representatives,preferred,local
+M-S000583,broader,C-representatives,preferred,local
+M-D000217,broader,C-representatives,preferred,local
+M-B000617,broader,C-representatives,preferred,local
+M-F000392,broader,C-representatives,preferred,local
+M-B000400,broader,C-representatives,preferred,local
+M-A000217,broader,C-representatives,preferred,local
+M-O000107,broader,C-representatives,preferred,local
+M-R000568,broader,C-representatives,preferred,local
+M-G000410,broader,C-representatives,preferred,local
+M-J000126,broader,C-representatives,preferred,local
+M-H000172,broader,C-representatives,preferred,local
+M-C000722,broader,C-representatives,preferred,local
+M-C000116,broader,C-representatives,preferred,local
+M-B000229,broader,C-representatives,preferred,local
+M-P000326,broader,C-representatives,preferred,local
+M-S000185,broader,C-representatives,preferred,local
+M-S000453,broader,C-representatives,preferred,local
+M-G000280,broader,C-representatives,preferred,local
+M-G000289,broader,C-representatives,preferred,local
+M-B000556,broader,C-representatives,preferred,local
+M-M000933,broader,C-representatives,preferred,local
+M-B000657,broader,C-representatives,preferred,local
+M-W000672,broader,C-representatives,preferred,local
+M-D000136,broader,C-representatives,preferred,local
+M-C000380,broader,C-representatives,preferred,local
+M-S000033,broader,C-representatives,preferred,local
+M-S000033,broader,C-senators,preferred,local
+M-I000026,broader,C-representatives,preferred,local
+M-M000669,broader,C-representatives,preferred,local
+M-B001229,broader,C-representatives,preferred,local
+M-H000329,broader,C-representatives,preferred,local
+M-N000051,broader,C-representatives,preferred,local
+M-D000327,broader,C-representatives,preferred,local
+M-M000404,broader,C-representatives,preferred,local
+M-D000549,broader,C-representatives,preferred,local
+M-S000510,broader,C-representatives,preferred,local
+M-R000570,broader,C-representatives,preferred,local
+M-B001230,broader,C-representatives,preferred,local
+M-B001230,broader,C-senators,preferred,local
+M-K000188,broader,C-representatives,preferred,local
+M-K000259,broader,C-representatives,preferred,local
+M-B000177,broader,C-representatives,preferred,local
+M-P000265,broader,C-representatives,preferred,local
+M-O000007,broader,C-representatives,preferred,local
+M-G000545,broader,C-representatives,preferred,local
+M-S000244,broader,C-representatives,preferred,local
+M-M000844,broader,C-representatives,preferred,local
+M-W000654,broader,C-representatives,preferred,local
+M-R000011,broader,C-representatives,preferred,local
+M-C000962,broader,C-representatives,preferred,local
+M-C000174,broader,C-senators,preferred,local
+M-N000032,broader,C-senators,preferred,local
+M-B001237,broader,C-senators,preferred,local
+M-D000596,broader,C-senators,preferred,local
+M-C001043,broader,C-senators,preferred,local
+M-N000180,broader,C-senators,preferred,local
+M-C001042,broader,C-senators,preferred,local
+M-E000194,broader,C-senators,preferred,local
+M-C001041,broader,C-senators,preferred,local
+M-C001056,broader,C-senators,preferred,local
+M-A000121,broader,C-senators,preferred,local
+M-C000127,broader,C-senators,preferred,local
+M-B001236,broader,C-representatives,preferred,local
+M-B001236,broader,C-senators,preferred,local
+M-R000573,broader,C-representatives,preferred,local
+M-F000444,broader,C-representatives,preferred,local
+M-F000444,broader,C-senators,preferred,local
+M-H001034,broader,C-representatives,preferred,local
+M-S001150,broader,C-representatives,preferred,local
+M-S001150,broader,C-senators,preferred,local
+M-S001153,broader,C-representatives,preferred,local
+M-W000794,broader,C-representatives,preferred,local
+M-H000213,broader,C-representatives,preferred,local
+M-I000056,broader,C-representatives,preferred,local
+M-D000598,broader,C-representatives,preferred,local
+M-S001152,broader,C-representatives,preferred,local
+M-M001144,broader,C-representatives,preferred,local
+M-C001045,broader,C-representatives,preferred,local
+M-K000361,broader,C-representatives,preferred,local
+M-P000586,broader,C-representatives,preferred,local
+M-O000166,broader,C-representatives,preferred,local
+M-K000360,broader,C-representatives,preferred,local
+M-K000360,broader,C-senators,preferred,local
+M-J000285,broader,C-representatives,preferred,local
+M-P000587,broader,C-representatives,preferred,local
+M-K000359,broader,C-representatives,preferred,local
+M-L000562,broader,C-representatives,preferred,local
+M-R000572,broader,C-representatives,preferred,local
+M-K000358,broader,C-representatives,preferred,local
+M-M001143,broader,C-representatives,preferred,local
+M-C001049,broader,C-representatives,preferred,local
+M-A000358,broader,C-representatives,preferred,local
+M-G000546,broader,C-representatives,preferred,local
+M-R000571,broader,C-representatives,preferred,local
+M-O000165,broader,C-representatives,preferred,local
+M-F000443,broader,C-representatives,preferred,local
+M-G000547,broader,C-representatives,preferred,local
+M-I000057,broader,C-representatives,preferred,local
+M-T000462,broader,C-representatives,preferred,local
+M-S001155,broader,C-representatives,preferred,local
+M-C001044,broader,C-representatives,preferred,local
+M-H001033,broader,C-representatives,preferred,local
+M-S001154,broader,C-representatives,preferred,local
+M-P000585,broader,C-representatives,preferred,local
+M-A000359,broader,C-representatives,preferred,local
+M-L000559,broader,C-representatives,preferred,local
+M-B001235,broader,C-representatives,preferred,local
+M-W000795,broader,C-representatives,preferred,local
+M-C001048,broader,C-representatives,preferred,local
+M-M001142,broader,C-representatives,preferred,local
+M-D000597,broader,C-representatives,preferred,local
+M-S001151,broader,C-representatives,preferred,local
+M-F000445,broader,C-representatives,preferred,local
+M-C001046,broader,C-representatives,preferred,local
+M-L000560,broader,C-representatives,preferred,local
+M-C001047,broader,C-representatives,preferred,local
+M-C001047,broader,C-senators,preferred,local
+M-M001153,broader,C-senators,preferred,local
+M-P000590,broader,C-senators,preferred,local
+M-C001057,broader,C-senators,preferred,local
+M-D000601,broader,C-senators,preferred,local
+M-A000360,broader,C-senators,preferred,local
+M-B001244,broader,C-representatives,preferred,local
+M-R000575,broader,C-representatives,preferred,local
+M-D000602,broader,C-representatives,preferred,local
+M-R000574,broader,C-representatives,preferred,local
+M-F000448,broader,C-representatives,preferred,local
+M-G000551,broader,C-representatives,preferred,local
+M-C001050,broader,C-representatives,preferred,local
+M-N000181,broader,C-representatives,preferred,local
+M-S001156,broader,C-representatives,preferred,local
+M-M001152,broader,C-representatives,preferred,local
+M-B001240,broader,C-representatives,preferred,local
+M-B001247,broader,C-representatives,preferred,local
+M-H001035,broader,C-representatives,preferred,local
+M-M001148,broader,C-representatives,preferred,local
+M-F000447,broader,C-representatives,preferred,local
+M-D000600,broader,C-representatives,preferred,local
+M-M001146,broader,C-representatives,preferred,local
+M-M001145,broader,C-representatives,preferred,local
+M-G000550,broader,C-representatives,preferred,local
+M-B001249,broader,C-representatives,preferred,local
+M-S001157,broader,C-representatives,preferred,local
+M-B001245,broader,C-representatives,preferred,local
+M-C001055,broader,C-representatives,preferred,local
+M-K000362,broader,C-representatives,preferred,local
+M-E000287,broader,C-representatives,preferred,local
+M-C001052,broader,C-representatives,preferred,local
+M-C001058,broader,C-representatives,preferred,local
+M-A000361,broader,C-representatives,preferred,local
+M-R000576,broader,C-representatives,preferred,local
+M-V000128,broader,C-representatives,preferred,local
+M-V000128,broader,C-senators,preferred,local
+M-M001149,broader,C-representatives,preferred,local
+M-M001150,broader,C-representatives,preferred,local
+M-M001147,broader,C-representatives,preferred,local
+M-K000363,broader,C-representatives,preferred,local
+M-B001238,broader,C-representatives,preferred,local
+M-B001251,broader,C-representatives,preferred,local
+M-M001154,broader,C-representatives,preferred,local
+M-B001246,broader,C-representatives,preferred,local
+M-G000548,broader,C-representatives,preferred,local
+M-P000588,broader,C-representatives,preferred,local
+M-P000589,broader,C-representatives,preferred,local
+M-B001242,broader,C-representatives,preferred,local
+M-T000463,broader,C-representatives,preferred,local
+M-R000577,broader,C-representatives,preferred,local
+M-C001053,broader,C-representatives,preferred,local
+M-G000549,broader,C-representatives,preferred,local
+M-M001151,broader,C-representatives,preferred,local
+M-B001239,broader,C-representatives,preferred,local
+M-H001037,broader,C-representatives,preferred,local
+M-J000286,broader,C-representatives,preferred,local
+M-D000599,broader,C-representatives,preferred,local
+M-C000754,broader,C-representatives,preferred,local
+M-B001243,broader,C-representatives,preferred,local
+M-B001243,broader,C-senators,preferred,local
+M-H001036,broader,C-representatives,preferred,local
+M-N000182,broader,C-representatives,preferred,local
+M-B001241,broader,C-representatives,preferred,local
+M-B001248,broader,C-representatives,preferred,local
+M-C001051,broader,C-representatives,preferred,local
+M-B001250,broader,C-representatives,preferred,local
+M-S001163,broader,C-senators,preferred,local
+M-M001162,broader,C-senators,preferred,local
+M-O000167,broader,C-senators,preferred,local
+M-L000517,broader,C-representatives,preferred,local
+M-M001163,broader,C-representatives,preferred,local
+M-C001059,broader,C-representatives,preferred,local
+M-C001064,broader,C-representatives,preferred,local
+M-S001158,broader,C-representatives,preferred,local
+M-M001155,broader,C-representatives,preferred,local
+M-W000797,broader,C-representatives,preferred,local
+M-P000591,broader,C-representatives,preferred,local
+M-W000796,broader,C-representatives,preferred,local
+M-B001252,broader,C-representatives,preferred,local
+M-L000563,broader,C-representatives,preferred,local
+M-B001253,broader,C-representatives,preferred,local
+M-S001160,broader,C-representatives,preferred,local
+M-D000603,broader,C-representatives,preferred,local
+M-J000287,broader,C-representatives,preferred,local
+M-M001161,broader,C-representatives,preferred,local
+M-B001255,broader,C-representatives,preferred,local
+M-S001161,broader,C-representatives,preferred,local
+M-C001060,broader,C-representatives,preferred,local
+M-C001061,broader,C-representatives,preferred,local
+M-F000450,broader,C-representatives,preferred,local
+M-M001156,broader,C-representatives,preferred,local
+M-F000449,broader,C-representatives,preferred,local
+M-S001165,broader,C-representatives,preferred,local
+M-H001038,broader,C-representatives,preferred,local
+M-K000364,broader,C-representatives,preferred,local
+M-S001164,broader,C-representatives,preferred,local
+M-B001254,broader,C-representatives,preferred,local
+M-F000451,broader,C-representatives,preferred,local
+M-S001162,broader,C-representatives,preferred,local
+M-D000604,broader,C-representatives,preferred,local
+M-F000452,broader,C-representatives,preferred,local
+M-I000023,broader,C-representatives,preferred,local
+M-G000552,broader,C-representatives,preferred,local
+M-P000592,broader,C-representatives,preferred,local
+M-G000553,broader,C-representatives,preferred,local
+M-M001157,broader,C-representatives,preferred,local
+M-C001062,broader,C-representatives,preferred,local
+M-S001166,broader,C-representatives,preferred,local
+M-M001158,broader,C-representatives,preferred,local
+M-C001063,broader,C-representatives,preferred,local
+M-D000605,broader,C-representatives,preferred,local
+M-M001159,broader,C-representatives,preferred,local
+M-R000578,broader,C-representatives,preferred,local
+M-M001160,broader,C-representatives,preferred,local
+M-K000367,broader,C-senators,preferred,local
+M-M001170,broader,C-senators,preferred,local
+M-T000464,broader,C-senators,preferred,local
+M-C001070,broader,C-senators,preferred,local
+M-W000802,broader,C-senators,preferred,local
+M-C001071,broader,C-senators,preferred,local
+M-W000803,broader,C-senators,preferred,local
+M-B001261,broader,C-senators,preferred,local
+M-M001167,broader,C-representatives,preferred,local
+M-G000554,broader,C-representatives,preferred,local
+M-M001166,broader,C-representatives,preferred,local
+M-S001175,broader,C-representatives,preferred,local
+M-M001165,broader,C-representatives,preferred,local
+M-R000581,broader,C-representatives,preferred,local
+M-L000564,broader,C-representatives,preferred,local
+M-P000593,broader,C-representatives,preferred,local
+M-C001069,broader,C-representatives,preferred,local
+M-M001169,broader,C-representatives,preferred,local
+M-M001169,broader,C-senators,preferred,local
+M-B001257,broader,C-representatives,preferred,local
+M-C001066,broader,C-representatives,preferred,local
+M-B001260,broader,C-representatives,preferred,local
+M-M001164,broader,C-representatives,preferred,local
+M-K000366,broader,C-representatives,preferred,local
+M-J000288,broader,C-representatives,preferred,local
+M-B001262,broader,C-representatives,preferred,local
+M-H001042,broader,C-representatives,preferred,local
+M-H001042,broader,C-senators,preferred,local
+M-B001259,broader,C-representatives,preferred,local
+M-L000565,broader,C-representatives,preferred,local
+M-S001167,broader,C-representatives,preferred,local
+M-R000580,broader,C-representatives,preferred,local
+M-F000454,broader,C-representatives,preferred,local
+M-H001040,broader,C-representatives,preferred,local
+M-D000607,broader,C-representatives,preferred,local
+M-D000607,broader,C-senators,preferred,local
+M-C001072,broader,C-representatives,preferred,local
+M-E000289,broader,C-representatives,preferred,local
+M-B001258,broader,C-representatives,preferred,local
+M-Y000062,broader,C-representatives,preferred,local
+M-S001176,broader,C-representatives,preferred,local
+M-C001073,broader,C-representatives,preferred,local
+M-T000465,broader,C-representatives,preferred,local
+M-S001168,broader,C-representatives,preferred,local
+M-E000290,broader,C-representatives,preferred,local
+M-W000798,broader,C-representatives,preferred,local
+M-W000799,broader,C-representatives,preferred,local
+M-E000288,broader,C-representatives,preferred,local
+M-B001256,broader,C-representatives,preferred,local
+M-C001074,broader,C-representatives,preferred,local
+M-S001171,broader,C-representatives,preferred,local
+M-S001172,broader,C-representatives,preferred,local
+M-S001170,broader,C-representatives,preferred,local
+M-H001043,broader,C-representatives,preferred,local
+M-H001041,broader,C-representatives,preferred,local
+M-H001041,broader,C-senators,preferred,local
+M-C001067,broader,C-representatives,preferred,local
+M-H001039,broader,C-representatives,preferred,local
+M-G000555,broader,C-representatives,preferred,local
+M-G000555,broader,C-senators,preferred,local
+M-A000363,broader,C-representatives,preferred,local
+M-J000289,broader,C-representatives,preferred,local
+M-L000566,broader,C-representatives,preferred,local
+M-W000801,broader,C-representatives,preferred,local
+M-F000455,broader,C-representatives,preferred,local
+M-S001174,broader,C-representatives,preferred,local
+M-S001173,broader,C-representatives,preferred,local
+M-F000453,broader,C-representatives,preferred,local
+M-A000362,broader,C-representatives,preferred,local
+M-S001169,broader,C-representatives,preferred,local
+M-M001168,broader,C-representatives,preferred,local
+M-C001065,broader,C-representatives,preferred,local
+M-D000606,broader,C-representatives,preferred,local
+M-C001068,broader,C-representatives,preferred,local
+M-W000804,broader,C-representatives,preferred,local
+M-W000800,broader,C-representatives,preferred,local
+M-W000800,broader,C-senators,preferred,local
+M-K000365,broader,C-representatives,preferred,local
+M-B001265,broader,C-senators,preferred,local
+M-B001267,broader,C-senators,preferred,local
+M-C001088,broader,C-senators,preferred,local
+M-K000373,broader,C-senators,preferred,local
+M-L000572,broader,C-senators,preferred,local
+M-R000584,broader,C-senators,preferred,local
+M-B001266,broader,C-senators,preferred,local
+M-K000374,broader,C-senators,preferred,local
+M-B001268,broader,C-senators,preferred,local
+M-F000457,broader,C-senators,preferred,local
+M-H001049,broader,C-senators,preferred,local
+M-J000291,broader,C-senators,preferred,local
+M-S001181,broader,C-senators,preferred,local
+M-M001176,broader,C-senators,preferred,local
+M-W000805,broader,C-senators,preferred,local
+M-G000561,broader,C-senators,preferred,local
+M-M001183,broader,C-senators,preferred,local
+M-B001264,broader,C-representatives,preferred,local
+M-G000557,broader,C-representatives,preferred,local
+M-K000368,broader,C-representatives,preferred,local
+M-M001177,broader,C-representatives,preferred,local
+M-G000559,broader,C-representatives,preferred,local
+M-C001080,broader,C-representatives,preferred,local
+M-H001048,broader,C-representatives,preferred,local
+M-P000598,broader,C-representatives,preferred,local
+M-M001172,broader,C-representatives,preferred,local
+M-C001077,broader,C-representatives,preferred,local
+M-H001047,broader,C-representatives,preferred,local
+M-G000556,broader,C-representatives,preferred,local
+M-P000599,broader,C-representatives,preferred,local
+M-R000583,broader,C-representatives,preferred,local
+M-D000610,broader,C-representatives,preferred,local
+M-K000370,broader,C-representatives,preferred,local
+M-G000560,broader,C-representatives,preferred,local
+M-D000611,broader,C-representatives,preferred,local
+M-M001175,broader,C-representatives,preferred,local
+M-Q000023,broader,C-representatives,preferred,local
+M-H001044,broader,C-representatives,preferred,local
+M-S001179,broader,C-representatives,preferred,local
+M-S001188,broader,C-representatives,preferred,local
+M-J000290,broader,C-representatives,preferred,local
+M-G000558,broader,C-representatives,preferred,local
+M-C001079,broader,C-representatives,preferred,local
+M-F000456,broader,C-representatives,preferred,local
+M-C001075,broader,C-representatives,preferred,local
+M-C001075,broader,C-senators,preferred,local
+M-K000371,broader,C-representatives,preferred,local
+M-P000597,broader,C-representatives,preferred,local
+M-S001178,broader,C-representatives,preferred,local
+M-P000595,broader,C-representatives,preferred,local
+M-P000595,broader,C-senators,preferred,local
+M-P000594,broader,C-representatives,preferred,local
+M-L000569,broader,C-representatives,preferred,local
+M-S001177,broader,C-representatives,preferred,local
+M-H001045,broader,C-representatives,preferred,local
+M-K000369,broader,C-representatives,preferred,local
+M-A000364,broader,C-representatives,preferred,local
+M-L000567,broader,C-representatives,preferred,local
+M-H001046,broader,C-representatives,preferred,local
+M-H001046,broader,C-senators,preferred,local
+M-T000466,broader,C-representatives,preferred,local
+M-L000570,broader,C-representatives,preferred,local
+M-L000570,broader,C-senators,preferred,local
+M-T000468,broader,C-representatives,preferred,local
+M-M001174,broader,C-representatives,preferred,local
+M-M001178,broader,C-representatives,preferred,local
+M-T000469,broader,C-representatives,preferred,local
+M-O000169,broader,C-representatives,preferred,local
+M-M001171,broader,C-representatives,preferred,local
+M-L000568,broader,C-representatives,preferred,local
+M-M001173,broader,C-representatives,preferred,local
+M-R000585,broader,C-representatives,preferred,local
+M-D000609,broader,C-representatives,preferred,local
+M-A000365,broader,C-representatives,preferred,local
+M-K000372,broader,C-representatives,preferred,local
+M-B001263,broader,C-representatives,preferred,local
+M-S001180,broader,C-representatives,preferred,local
+M-D000608,broader,C-representatives,preferred,local
+M-T000467,broader,C-representatives,preferred,local
+M-C001081,broader,C-representatives,preferred,local
+M-P000596,broader,C-representatives,preferred,local
+M-R000582,broader,C-representatives,preferred,local
+M-O000168,broader,C-representatives,preferred,local
+M-C001076,broader,C-representatives,preferred,local
+M-N000183,broader,C-representatives,preferred,local
+M-P000600,broader,C-representatives,preferred,local
+M-C001078,broader,C-representatives,preferred,local
+M-L000571,broader,C-representatives,preferred,local
+M-L000571,broader,C-senators,preferred,local
+M-B001277,broader,C-senators,preferred,local
+M-R000595,broader,C-senators,preferred,local
+M-S001194,broader,C-senators,preferred,local
+M-C000542,broader,C-senators,preferred,local
+M-P000603,broader,C-senators,preferred,local
+M-H001061,broader,C-senators,preferred,local
+M-A000368,broader,C-senators,preferred,local
+M-L000577,broader,C-senators,preferred,local
+M-J000293,broader,C-senators,preferred,local
+M-R000591,broader,C-representatives,preferred,local
+M-B001274,broader,C-representatives,preferred,local
+M-S001185,broader,C-representatives,preferred,local
+M-C001087,broader,C-representatives,preferred,local
+M-G000567,broader,C-representatives,preferred,local
+M-W000809,broader,C-representatives,preferred,local
+M-G000565,broader,C-representatives,preferred,local
+M-Q000024,broader,C-representatives,preferred,local
+M-S001183,broader,C-representatives,preferred,local
+M-B001279,broader,C-representatives,preferred,local
+M-D000612,broader,C-representatives,preferred,local
+M-B001270,broader,C-representatives,preferred,local
+M-H001063,broader,C-representatives,preferred,local
+M-T000470,broader,C-representatives,preferred,local
+M-G000562,broader,C-representatives,preferred,local
+M-G000562,broader,C-senators,preferred,local
+M-C001083,broader,C-representatives,preferred,local
+M-S001186,broader,C-representatives,preferred,local
+M-N000185,broader,C-representatives,preferred,local
+M-W000806,broader,C-representatives,preferred,local
+M-R000593,broader,C-representatives,preferred,local
+M-W000808,broader,C-representatives,preferred,local
+M-W000807,broader,C-representatives,preferred,local
+M-A000366,broader,C-representatives,preferred,local
+M-R000590,broader,C-representatives,preferred,local
+M-W000810,broader,C-representatives,preferred,local
+M-S001189,broader,C-representatives,preferred,local
+M-H001050,broader,C-representatives,preferred,local
+M-L000573,broader,C-representatives,preferred,local
+M-W000811,broader,C-representatives,preferred,local
+M-D000613,broader,C-representatives,preferred,local
+M-K000378,broader,C-representatives,preferred,local
+M-H001059,broader,C-representatives,preferred,local
+M-S001182,broader,C-representatives,preferred,local
+M-R000592,broader,C-representatives,preferred,local
+M-B001275,broader,C-representatives,preferred,local
+M-Y000064,broader,C-representatives,preferred,local
+M-Y000064,broader,C-senators,preferred,local
+M-H001057,broader,C-representatives,preferred,local
+M-Y000063,broader,C-representatives,preferred,local
+M-P000602,broader,C-representatives,preferred,local
+M-M001184,broader,C-representatives,preferred,local
+M-R000588,broader,C-representatives,preferred,local
+M-L000574,broader,C-representatives,preferred,local
+M-K000375,broader,C-representatives,preferred,local
+M-H001052,broader,C-representatives,preferred,local
+M-B001271,broader,C-representatives,preferred,local
+M-H001058,broader,C-representatives,preferred,local
+M-A000367,broader,C-representatives,preferred,local
+M-C001089,broader,C-representatives,preferred,local
+M-C001085,broader,C-representatives,preferred,local
+M-C001086,broader,C-representatives,preferred,local
+M-H001053,broader,C-representatives,preferred,local
+M-L000576,broader,C-representatives,preferred,local
+M-N000186,broader,C-representatives,preferred,local
+M-P000601,broader,C-representatives,preferred,local
+M-E000291,broader,C-representatives,preferred,local
+M-B001272,broader,C-representatives,preferred,local
+M-G000570,broader,C-representatives,preferred,local
+M-R000594,broader,C-representatives,preferred,local
+M-P000604,broader,C-representatives,preferred,local
+M-A000369,broader,C-representatives,preferred,local
+M-H001055,broader,C-representatives,preferred,local
+M-T000471,broader,C-representatives,preferred,local
+M-G000569,broader,C-representatives,preferred,local
+M-H001054,broader,C-representatives,preferred,local
+M-G000564,broader,C-representatives,preferred,local
+M-H001051,broader,C-representatives,preferred,local
+M-B001276,broader,C-representatives,preferred,local
+M-H001062,broader,C-representatives,preferred,local
+M-J000292,broader,C-representatives,preferred,local
+M-S001187,broader,C-representatives,preferred,local
+M-R000586,broader,C-representatives,preferred,local
+M-G000563,broader,C-representatives,preferred,local
+M-L000575,broader,C-representatives,preferred,local
+M-L000575,broader,C-senators,preferred,local
+M-B001278,broader,C-representatives,preferred,local
+M-K000376,broader,C-representatives,preferred,local
+M-M001181,broader,C-representatives,preferred,local
+M-M001179,broader,C-representatives,preferred,local
+M-B001269,broader,C-representatives,preferred,local
+M-C001084,broader,C-representatives,preferred,local
+M-S001184,broader,C-representatives,preferred,local
+M-S001184,broader,C-senators,preferred,local
+M-D000615,broader,C-representatives,preferred,local
+M-G000566,broader,C-representatives,preferred,local
+M-M001182,broader,C-representatives,preferred,local
+M-N000184,broader,C-representatives,preferred,local
+M-F000459,broader,C-representatives,preferred,local
+M-D000616,broader,C-representatives,preferred,local
+M-B001273,broader,C-representatives,preferred,local
+M-F000458,broader,C-representatives,preferred,local
+M-F000461,broader,C-representatives,preferred,local
+M-C001082,broader,C-representatives,preferred,local
+M-F000460,broader,C-representatives,preferred,local
+M-R000589,broader,C-representatives,preferred,local
+M-H001060,broader,C-representatives,preferred,local
+M-G000568,broader,C-representatives,preferred,local
+M-D000617,broader,C-representatives,preferred,local
+M-H001056,broader,C-representatives,preferred,local
+M-D000614,broader,C-representatives,preferred,local
+M-R000587,broader,C-representatives,preferred,local
+M-M001180,broader,C-representatives,preferred,local
+M-W000817,broader,C-senators,preferred,local
+M-C001099,broader,C-senators,preferred,local
+M-K000383,broader,C-senators,preferred,local
+M-W000818,broader,C-senators,preferred,local
+M-H001069,broader,C-senators,preferred,local
+M-F000463,broader,C-senators,preferred,local
+M-B001288,broader,C-senators,preferred,local
+M-C001100,broader,C-senators,preferred,local
+M-C001098,broader,C-senators,preferred,local
+M-K000384,broader,C-senators,preferred,local
+M-B001289,broader,C-representatives,preferred,local
+M-C001095,broader,C-representatives,preferred,local
+M-C001095,broader,C-senators,preferred,local
+M-S001191,broader,C-representatives,preferred,local
+M-S001191,broader,C-senators,preferred,local
+M-L000578,broader,C-representatives,preferred,local
+M-H001068,broader,C-representatives,preferred,local
+M-B001287,broader,C-representatives,preferred,local
+M-C001094,broader,C-representatives,preferred,local
+M-S001193,broader,C-representatives,preferred,local
+M-V000129,broader,C-representatives,preferred,local
+M-B001285,broader,C-representatives,preferred,local
+M-C001097,broader,C-representatives,preferred,local
+M-N000187,broader,C-representatives,preferred,local
+M-R000599,broader,C-representatives,preferred,local
+M-T000472,broader,C-representatives,preferred,local
+M-L000579,broader,C-representatives,preferred,local
+M-V000130,broader,C-representatives,preferred,local
+M-P000608,broader,C-representatives,preferred,local
+M-E000293,broader,C-representatives,preferred,local
+M-Y000065,broader,C-representatives,preferred,local
+M-D000621,broader,C-representatives,preferred,local
+M-J000296,broader,C-representatives,preferred,local
+M-M001191,broader,C-representatives,preferred,local
+M-C001102,broader,C-representatives,preferred,local
+M-R000596,broader,C-representatives,preferred,local
+M-F000462,broader,C-representatives,preferred,local
+M-G000573,broader,C-representatives,preferred,local
+M-C001093,broader,C-representatives,preferred,local
+M-G000571,broader,C-representatives,preferred,local
+M-K000385,broader,C-representatives,preferred,local
+M-D000622,broader,C-representatives,preferred,local
+M-D000622,broader,C-senators,preferred,local
+M-S001190,broader,C-representatives,preferred,local
+M-E000292,broader,C-representatives,preferred,local
+M-D000619,broader,C-representatives,preferred,local
+M-B001286,broader,C-representatives,preferred,local
+M-W000813,broader,C-representatives,preferred,local
+M-B001284,broader,C-representatives,preferred,local
+M-M001189,broader,C-representatives,preferred,local
+M-B001282,broader,C-representatives,preferred,local
+M-M001192,broader,C-representatives,preferred,local
+M-K000379,broader,C-representatives,preferred,local
+M-C001101,broader,C-representatives,preferred,local
+M-D000620,broader,C-representatives,preferred,local
+M-K000380,broader,C-representatives,preferred,local
+M-B001280,broader,C-representatives,preferred,local
+M-N000127,broader,C-representatives,preferred,local
+M-W000812,broader,C-representatives,preferred,local
+M-S001195,broader,C-representatives,preferred,local
+M-D000618,broader,C-representatives,preferred,local
+M-D000618,broader,C-senators,preferred,local
+M-H001067,broader,C-representatives,preferred,local
+M-P000606,broader,C-representatives,preferred,local
+M-M001187,broader,C-representatives,preferred,local
+M-A000370,broader,C-representatives,preferred,local
+M-H001065,broader,C-representatives,preferred,local
+M-C001096,broader,C-representatives,preferred,local
+M-C001096,broader,C-senators,preferred,local
+M-K000382,broader,C-representatives,preferred,local
+M-N000188,broader,C-representatives,preferred,local
+M-L000580,broader,C-representatives,preferred,local
+M-H001066,broader,C-representatives,preferred,local
+M-M001188,broader,C-representatives,preferred,local
+M-J000294,broader,C-representatives,preferred,local
+M-M001185,broader,C-representatives,preferred,local
+M-C001092,broader,C-representatives,preferred,local
+M-W000815,broader,C-representatives,preferred,local
+M-B001281,broader,C-representatives,preferred,local
+M-J000295,broader,C-representatives,preferred,local
+M-B001283,broader,C-representatives,preferred,local
+M-M001190,broader,C-representatives,preferred,local
+M-M001190,broader,C-senators,preferred,local
+M-P000605,broader,C-representatives,preferred,local
+M-R000598,broader,C-representatives,preferred,local
+M-C001090,broader,C-representatives,preferred,local
+M-R000597,broader,C-representatives,preferred,local
+M-W000814,broader,C-representatives,preferred,local
+M-O000170,broader,C-representatives,preferred,local
+M-C001091,broader,C-representatives,preferred,local
+M-G000572,broader,C-representatives,preferred,local
+M-W000816,broader,C-representatives,preferred,local
+M-V000131,broader,C-representatives,preferred,local
+M-V000132,broader,C-representatives,preferred,local
+M-S000937,broader,C-representatives,preferred,local
+M-S001192,broader,C-representatives,preferred,local
+M-B001290,broader,C-representatives,preferred,local
+M-K000381,broader,C-representatives,preferred,local
+M-H001064,broader,C-representatives,preferred,local
+M-P000607,broader,C-representatives,preferred,local
+M-S001198,broader,C-senators,preferred,local
+M-P000612,broader,C-senators,preferred,local
+M-E000295,broader,C-senators,preferred,local
+M-T000476,broader,C-senators,preferred,local
+M-S001197,broader,C-senators,preferred,local
+M-R000605,broader,C-senators,preferred,local
+M-P000609,broader,C-representatives,preferred,local
+M-H001072,broader,C-representatives,preferred,local
+M-W000821,broader,C-representatives,preferred,local
+M-R000600,broader,C-representatives,preferred,local
+M-M001197,broader,C-representatives,preferred,local
+M-M001197,broader,C-senators,preferred,local
+M-G000574,broader,C-representatives,preferred,local
+M-G000574,broader,C-senators,preferred,local
+M-D000623,broader,C-representatives,preferred,local
+M-K000387,broader,C-representatives,preferred,local
+M-A000371,broader,C-representatives,preferred,local
+M-L000582,broader,C-representatives,preferred,local
+M-T000474,broader,C-representatives,preferred,local
+M-W000820,broader,C-representatives,preferred,local
+M-B001297,broader,C-representatives,preferred,local
+M-G000575,broader,C-representatives,preferred,local
+M-C001107,broader,C-representatives,preferred,local
+M-C001103,broader,C-representatives,preferred,local
+M-H001071,broader,C-representatives,preferred,local
+M-L000583,broader,C-representatives,preferred,local
+M-A000372,broader,C-representatives,preferred,local
+M-T000473,broader,C-representatives,preferred,local
+M-B001294,broader,C-representatives,preferred,local
+M-Y000066,broader,C-representatives,preferred,local
+M-B001295,broader,C-representatives,preferred,local
+M-L000585,broader,C-representatives,preferred,local
+M-C001108,broader,C-representatives,preferred,local
+M-A000374,broader,C-representatives,preferred,local
+M-G000577,broader,C-representatives,preferred,local
+M-M001196,broader,C-representatives,preferred,local
+M-P000611,broader,C-representatives,preferred,local
+M-M001194,broader,C-representatives,preferred,local
+M-B001293,broader,C-representatives,preferred,local
+M-T000475,broader,C-representatives,preferred,local
+M-D000624,broader,C-representatives,preferred,local
+M-L000581,broader,C-representatives,preferred,local
+M-E000294,broader,C-representatives,preferred,local
+M-K000388,broader,C-representatives,preferred,local
+M-Z000018,broader,C-representatives,preferred,local
+M-W000819,broader,C-representatives,preferred,local
+M-R000603,broader,C-representatives,preferred,local
+M-A000373,broader,C-representatives,preferred,local
+M-M001193,broader,C-representatives,preferred,local
+M-W000822,broader,C-representatives,preferred,local
+M-H001070,broader,C-representatives,preferred,local
+M-Z000017,broader,C-representatives,preferred,local
+M-R000602,broader,C-representatives,preferred,local
+M-D000625,broader,C-representatives,preferred,local
+M-S001196,broader,C-representatives,preferred,local
+M-K000386,broader,C-representatives,preferred,local
+M-D000626,broader,C-representatives,preferred,local
+M-R000604,broader,C-representatives,preferred,local
+M-E000296,broader,C-representatives,preferred,local
+M-C001106,broader,C-representatives,preferred,local
+M-B001296,broader,C-representatives,preferred,local
+M-R000601,broader,C-representatives,preferred,local
+M-H001073,broader,C-representatives,preferred,local
+M-B001291,broader,C-representatives,preferred,local
+M-L000584,broader,C-representatives,preferred,local
+M-B001292,broader,C-representatives,preferred,local
+M-C001105,broader,C-representatives,preferred,local
+M-P000610,broader,C-representatives,preferred,local
+M-N000189,broader,C-representatives,preferred,local
+M-G000576,broader,C-representatives,preferred,local
+M-M001195,broader,C-representatives,preferred,local
+M-J000297,broader,C-representatives,preferred,local
+M-J000300,broader,C-senators,preferred,local
+M-S001202,broader,C-senators,preferred,local
+M-H001075,broader,C-senators,preferred,local
+M-K000393,broader,C-senators,preferred,local
+M-S001203,broader,C-senators,preferred,local
+M-H001079,broader,C-senators,preferred,local
+M-H001076,broader,C-senators,preferred,local
+M-C001113,broader,C-senators,preferred,local
+M-O000171,broader,C-representatives,preferred,local
+M-B001302,broader,C-representatives,preferred,local
+M-L000589,broader,C-representatives,preferred,local
+M-K000389,broader,C-representatives,preferred,local
+M-P000613,broader,C-representatives,preferred,local
+M-C001112,broader,C-representatives,preferred,local
+M-G000585,broader,C-representatives,preferred,local
+M-B001300,broader,C-representatives,preferred,local
+M-C001110,broader,C-representatives,preferred,local
+M-B001303,broader,C-representatives,preferred,local
+M-B001303,broader,C-senators,preferred,local
+M-G000578,broader,C-representatives,preferred,local
+M-D000628,broader,C-representatives,preferred,local
+M-R000609,broader,C-representatives,preferred,local
+M-L000586,broader,C-representatives,preferred,local
+M-M001202,broader,C-representatives,preferred,local
+M-S001200,broader,C-representatives,preferred,local
+M-D000627,broader,C-representatives,preferred,local
+M-C001111,broader,C-representatives,preferred,local
+M-M001199,broader,C-representatives,preferred,local
+M-R000607,broader,C-representatives,preferred,local
+M-F000465,broader,C-representatives,preferred,local
+M-H001078,broader,C-representatives,preferred,local
+M-K000391,broader,C-representatives,preferred,local
+M-B001299,broader,C-representatives,preferred,local
+M-B001299,broader,C-senators,preferred,local
+M-H001074,broader,C-representatives,preferred,local
+M-M001198,broader,C-representatives,preferred,local
+M-M001198,broader,C-senators,preferred,local
+M-E000298,broader,C-representatives,preferred,local
+M-H001077,broader,C-representatives,preferred,local
+M-J000299,broader,C-representatives,preferred,local
+M-B001304,broader,C-representatives,preferred,local
+M-R000606,broader,C-representatives,preferred,local
+M-B001301,broader,C-representatives,preferred,local
+M-M001201,broader,C-representatives,preferred,local
+M-J000303,broader,C-representatives,preferred,local
+M-L000587,broader,C-representatives,preferred,local
+M-G000584,broader,C-representatives,preferred,local
+M-B001305,broader,C-representatives,preferred,local
+M-B001305,broader,C-senators,preferred,local
+M-B001298,broader,C-representatives,preferred,local
+M-G000583,broader,C-representatives,preferred,local
+M-R000608,broader,C-representatives,preferred,local
+M-R000608,broader,C-senators,preferred,local
+M-K000390,broader,C-representatives,preferred,local
+M-S001201,broader,C-representatives,preferred,local
+M-E000297,broader,C-representatives,preferred,local
+M-F000464,broader,C-representatives,preferred,local
+M-T000478,broader,C-representatives,preferred,local
+M-M001206,broader,C-representatives,preferred,local
+M-B001306,broader,C-representatives,preferred,local
+M-H001082,broader,C-representatives,preferred,local
+M-S001205,broader,C-representatives,preferred,local
+M-F000466,broader,C-representatives,preferred,local
+M-W000826,broader,C-representatives,preferred,local
+M-S001199,broader,C-representatives,preferred,local
+M-L000588,broader,C-representatives,preferred,local
+M-G000582,broader,C-representatives,preferred,local
+M-N000190,broader,C-representatives,preferred,local
+M-K000392,broader,C-representatives,preferred,local
+M-G000581,broader,C-representatives,preferred,local
+M-A000375,broader,C-representatives,preferred,local
+M-C001115,broader,C-representatives,preferred,local
+M-C001114,broader,C-representatives,preferred,local
+M-C001114,broader,C-senators,preferred,local
+M-T000477,broader,C-representatives,preferred,local
+M-M001200,broader,C-representatives,preferred,local
+M-G000580,broader,C-representatives,preferred,local
+M-J000298,broader,C-representatives,preferred,local
+M-G000579,broader,C-representatives,preferred,local
+M-C001109,broader,C-representatives,preferred,local
+M-K000377,broader,C-senators,preferred,local
+M-S001217,broader,C-senators,preferred,local
+M-L000594,broader,C-senators,preferred,local
+M-B001310,broader,C-senators,preferred,local
+M-H001089,broader,C-senators,preferred,local
+M-R000615,broader,C-senators,preferred,local
+M-S001211,broader,C-representatives,preferred,local
+M-H001090,broader,C-representatives,preferred,local
+M-C001124,broader,C-representatives,preferred,local
+M-H001087,broader,C-representatives,preferred,local
+M-G000061,broader,C-representatives,preferred,local
+M-C001123,broader,C-representatives,preferred,local
+M-P000618,broader,C-representatives,preferred,local
+M-R000616,broader,C-representatives,preferred,local
+M-L000593,broader,C-representatives,preferred,local
+M-N000191,broader,C-representatives,preferred,local
+M-C001121,broader,C-representatives,preferred,local
+M-H001081,broader,C-representatives,preferred,local
+M-W000823,broader,C-representatives,preferred,local
+M-S001210,broader,C-representatives,preferred,local
+M-S001214,broader,C-representatives,preferred,local
+M-M001207,broader,C-representatives,preferred,local
+M-S001206,broader,C-representatives,preferred,local
+M-H001092,broader,C-representatives,preferred,local
+M-M001208,broader,C-representatives,preferred,local
+M-S001204,broader,C-representatives,preferred,local
+M-F000467,broader,C-representatives,preferred,local
+M-A000378,broader,C-representatives,preferred,local
+M-F000469,broader,C-representatives,preferred,local
+M-G000586,broader,C-representatives,preferred,local
+M-C001117,broader,C-representatives,preferred,local
+M-U000040,broader,C-representatives,preferred,local
+M-B001307,broader,C-representatives,preferred,local
+M-P000615,broader,C-representatives,preferred,local
+M-W000824,broader,C-representatives,preferred,local
+M-D000629,broader,C-representatives,preferred,local
+M-T000482,broader,C-representatives,preferred,local
+M-P000617,broader,C-representatives,preferred,local
+M-T000483,broader,C-representatives,preferred,local
+M-M000687,broader,C-representatives,preferred,local
+M-G000592,broader,C-representatives,preferred,local
+M-S001208,broader,C-representatives,preferred,local
+M-S001208,broader,C-senators,preferred,local
+M-L000592,broader,C-representatives,preferred,local
+M-S001215,broader,C-representatives,preferred,local
+M-T000481,broader,C-representatives,preferred,local
+M-H001088,broader,C-representatives,preferred,local
+M-C001119,broader,C-representatives,preferred,local
+M-P000616,broader,C-representatives,preferred,local
+M-O000173,broader,C-representatives,preferred,local
+M-S001212,broader,C-representatives,preferred,local
+M-G000591,broader,C-representatives,preferred,local
+M-M001210,broader,C-representatives,preferred,local
+M-B001311,broader,C-representatives,preferred,local
+M-A000377,broader,C-representatives,preferred,local
+M-P000614,broader,C-representatives,preferred,local
+M-V000133,broader,C-representatives,preferred,local
+M-K000394,broader,C-representatives,preferred,local
+M-K000394,broader,C-senators,preferred,local
+M-M001203,broader,C-representatives,preferred,local
+M-S001207,broader,C-representatives,preferred,local
+M-H001080,broader,C-representatives,preferred,local
+M-T000484,broader,C-representatives,preferred,local
+M-L000590,broader,C-representatives,preferred,local
+M-R000613,broader,C-representatives,preferred,local
+M-O000172,broader,C-representatives,preferred,local
+M-D000630,broader,C-representatives,preferred,local
+M-B001308,broader,C-representatives,preferred,local
+M-J000020,broader,C-representatives,preferred,local
+M-G000588,broader,C-representatives,preferred,local
+M-H001083,broader,C-representatives,preferred,local
+M-D000631,broader,C-representatives,preferred,local
+M-H001085,broader,C-representatives,preferred,local
+M-M001204,broader,C-representatives,preferred,local
+M-K000395,broader,C-representatives,preferred,local
+M-J000302,broader,C-representatives,preferred,local
+M-R000610,broader,C-representatives,preferred,local
+M-C001122,broader,C-representatives,preferred,local
+M-T000480,broader,C-representatives,preferred,local
+M-J000301,broader,C-representatives,preferred,local
+M-B001309,broader,C-representatives,preferred,local
+M-R000612,broader,C-representatives,preferred,local
+M-G000590,broader,C-representatives,preferred,local
+M-C001120,broader,C-representatives,preferred,local
+M-T000479,broader,C-representatives,preferred,local
+M-G000589,broader,C-representatives,preferred,local
+M-W000827,broader,C-representatives,preferred,local
+M-F000468,broader,C-representatives,preferred,local
+M-E000299,broader,C-representatives,preferred,local
+M-R000614,broader,C-representatives,preferred,local
+M-G000587,broader,C-representatives,preferred,local
+M-A000376,broader,C-representatives,preferred,local
+M-M001209,broader,C-representatives,preferred,local
+M-L000591,broader,C-representatives,preferred,local
+M-R000611,broader,C-representatives,preferred,local
+M-C001118,broader,C-representatives,preferred,local
+M-S001209,broader,C-representatives,preferred,local
+M-W000825,broader,C-representatives,preferred,local
+M-S001216,broader,C-representatives,preferred,local
+M-S001213,broader,C-representatives,preferred,local
+M-T000165,broader,C-representatives,preferred,local
+M-M001205,broader,C-representatives,preferred,local
+M-T000278,broader,C-senators,preferred,local
+M-P000145,broader,C-senators,preferred,local
+M-H000273,broader,C-senators,preferred,local
+M-O000174,broader,C-senators,preferred,local
+M-W000790,broader,C-senators,preferred,local
+M-H000601,broader,C-senators,preferred,local
+M-P000619,broader,C-representatives,preferred,local
+M-C001054,broader,C-representatives,preferred,local
+M-M001212,broader,C-representatives,preferred,local
+M-O000019,broader,C-representatives,preferred,local
+M-C001128,broader,C-representatives,preferred,local
+M-K000397,broader,C-representatives,preferred,local
+M-S001135,broader,C-representatives,preferred,local
+M-J000305,broader,C-representatives,preferred,local
+M-B000825,broader,C-representatives,preferred,local
+M-C001039,broader,C-representatives,preferred,local
+M-F000472,broader,C-representatives,preferred,local
+M-D000032,broader,C-representatives,preferred,local
+M-C001127,broader,C-representatives,preferred,local
+M-G000593,broader,C-representatives,preferred,local
+M-S000168,broader,C-representatives,preferred,local
+M-W000788,broader,C-representatives,preferred,local
+M-B001312,broader,C-representatives,preferred,local
+M-C001116,broader,C-representatives,preferred,local
+M-G000596,broader,C-representatives,preferred,local
+M-K000396,broader,C-representatives,preferred,local
+M-H001091,broader,C-representatives,preferred,local
+M-M001215,broader,C-representatives,preferred,local
+M-F000446,broader,C-representatives,preferred,local
+M-N000192,broader,C-representatives,preferred,local
+M-M001211,broader,C-representatives,preferred,local
+M-M001214,broader,C-representatives,preferred,local
+M-Y000067,broader,C-representatives,preferred,local
+M-S000929,broader,C-representatives,preferred,local
+M-M000871,broader,C-representatives,preferred,local
+M-L000266,broader,C-representatives,preferred,local
+M-C001125,broader,C-representatives,preferred,local
+M-L000595,broader,C-representatives,preferred,local
+M-A000148,broader,C-representatives,preferred,local
+M-M001186,broader,C-representatives,preferred,local
+M-M001136,broader,C-representatives,preferred,local
+M-F000475,broader,C-representatives,preferred,local
+M-F000470,broader,C-representatives,preferred,local
+M-B001224,broader,C-representatives,preferred,local
+M-R000103,broader,C-representatives,preferred,local
+M-R000305,broader,C-representatives,preferred,local
+M-M001135,broader,C-representatives,preferred,local
+M-C001104,broader,C-representatives,preferred,local
+M-F000474,broader,C-representatives,preferred,local
+M-S001218,broader,C-representatives,preferred,local
+M-H001084,broader,C-representatives,preferred,local
+M-L000273,broader,C-representatives,preferred,local
+M-G000597,broader,C-representatives,preferred,local
+M-M000317,broader,C-representatives,preferred,local
+M-T000486,broader,C-representatives,preferred,local
+M-B001223,broader,C-representatives,preferred,local
+M-J000306,broader,C-representatives,preferred,local
+M-R000579,broader,C-representatives,preferred,local
+M-S001219,broader,C-representatives,preferred,local
+M-B001313,broader,C-representatives,preferred,local
+M-C001126,broader,C-representatives,preferred,local
+M-B000740,broader,C-representatives,preferred,local
+M-B000668,broader,C-representatives,preferred,local
+M-M000194,broader,C-representatives,preferred,local
+M-H001086,broader,C-representatives,preferred,local
+M-F000246,broader,C-representatives,preferred,local
+M-E000071,broader,C-representatives,preferred,local
+M-P000048,broader,C-representatives,preferred,local
+M-J000304,broader,C-representatives,preferred,local
+M-N000026,broader,C-representatives,preferred,local
+M-G000594,broader,C-representatives,preferred,local
+M-V000134,broader,C-representatives,preferred,local
+M-F000473,broader,C-representatives,preferred,local
+M-M001213,broader,C-representatives,preferred,local
+M-O000086,broader,C-representatives,preferred,local
+M-G000595,broader,C-representatives,preferred,local
+M-S001159,broader,C-representatives,preferred,local
+M-F000471,broader,C-representatives,preferred,local
+M-B001319,broader,C-senators,preferred,local
+M-B001320,broader,C-senators,preferred,local
+M-S001227,broader,C-senators,preferred,local
+M-R000618,broader,C-senators,preferred,local
+M-H001097,broader,C-senators,preferred,local
+M-V000137,broader,C-senators,preferred,local
+M-F000479,broader,C-senators,preferred,local
+M-S001220,broader,C-representatives,preferred,local
+M-C001132,broader,C-representatives,preferred,local
+M-C001133,broader,C-representatives,preferred,local
+M-K000401,broader,C-representatives,preferred,local
+M-D000633,broader,C-representatives,preferred,local
+M-M001225,broader,C-representatives,preferred,local
+M-F000480,broader,C-representatives,preferred,local
+M-K000400,broader,C-representatives,preferred,local
+M-G000598,broader,C-representatives,preferred,local
+M-L000604,broader,C-representatives,preferred,local
+M-P000620,broader,C-representatives,preferred,local
+M-C001134,broader,C-representatives,preferred,local
+M-B001314,broader,C-representatives,preferred,local
+M-M001216,broader,C-representatives,preferred,local
+M-F000476,broader,C-representatives,preferred,local
+M-L000596,broader,C-representatives,preferred,local
+M-L000597,broader,C-representatives,preferred,local
+M-M001217,broader,C-representatives,preferred,local
+M-M001218,broader,C-representatives,preferred,local
+M-C001129,broader,C-representatives,preferred,local
+M-M001219,broader,C-representatives,preferred,local
+M-T000487,broader,C-representatives,preferred,local
+M-N000193,broader,C-representatives,preferred,local
+M-J000309,broader,C-representatives,preferred,local
+M-R000617,broader,C-representatives,preferred,local
+M-B001315,broader,C-representatives,preferred,local
+M-S001225,broader,C-representatives,preferred,local
+M-H001093,broader,C-representatives,preferred,local
+M-M001220,broader,C-representatives,preferred,local
+M-I000058,broader,C-representatives,preferred,local
+M-S001221,broader,C-representatives,preferred,local
+M-J000307,broader,C-representatives,preferred,local
+M-T000488,broader,C-representatives,preferred,local
+M-A000379,broader,C-representatives,preferred,local
+M-B001316,broader,C-representatives,preferred,local
+M-E000235,broader,C-representatives,preferred,local
+M-D000230,broader,C-representatives,preferred,local
+M-F000477,broader,C-representatives,preferred,local
+M-E000246,broader,C-representatives,preferred,local
+M-N000194,broader,C-representatives,preferred,local
+M-J000308,broader,C-representatives,preferred,local
+M-K000398,broader,C-representatives,preferred,local
+M-M001226,broader,C-representatives,preferred,local
+M-M001229,broader,C-representatives,preferred,local
+M-V000136,broader,C-representatives,preferred,local
+M-L000598,broader,C-representatives,preferred,local
+M-S001222,broader,C-representatives,preferred,local
+M-D000632,broader,C-representatives,preferred,local
+M-G000599,broader,C-representatives,preferred,local
+M-L000599,broader,C-representatives,preferred,local
+M-M001221,broader,C-representatives,preferred,local
+M-W000828,broader,C-representatives,preferred,local
+M-L000600,broader,C-representatives,preferred,local
+M-K000402,broader,C-representatives,preferred,local
+M-L000601,broader,C-representatives,preferred,local
+M-R000619,broader,C-representatives,preferred,local
+M-M001222,broader,C-representatives,preferred,local
+M-S001223,broader,C-representatives,preferred,local
+M-B001317,broader,C-representatives,preferred,local
+M-H001094,broader,C-representatives,preferred,local
+M-C001135,broader,C-representatives,preferred,local
+M-S001226,broader,C-representatives,preferred,local
+M-L000602,broader,C-representatives,preferred,local
+M-D000530,broader,C-representatives,preferred,local
+M-A000380,broader,C-representatives,preferred,local
+M-M001223,broader,C-representatives,preferred,local
+M-F000478,broader,C-representatives,preferred,local
+M-O000175,broader,C-representatives,preferred,local
+M-M001224,broader,C-representatives,preferred,local
+M-S001224,broader,C-representatives,preferred,local
+M-L000603,broader,C-representatives,preferred,local
+M-D000594,broader,C-representatives,preferred,local
+M-L000605,broader,C-representatives,preferred,local
+M-C001130,broader,C-representatives,preferred,local
+M-C001131,broader,C-representatives,preferred,local
+M-H001095,broader,C-representatives,preferred,local
+M-M001228,broader,C-representatives,preferred,local
+M-K000399,broader,C-representatives,preferred,local
+M-M001227,broader,C-representatives,preferred,local
+M-B001318,broader,C-representatives,preferred,local
+M-G000600,broader,C-representatives,preferred,local
+M-V000135,broader,C-representatives,preferred,local
+M-W000829,broader,C-representatives,preferred,local
+M-H001096,broader,C-representatives,preferred,local
+M-M001244,broader,C-senators,preferred,local
+M-A000382,broader,C-senators,preferred,local
+M-S001232,broader,C-senators,preferred,local
+M-M001242,broader,C-senators,preferred,local
+M-H001104,broader,C-senators,preferred,local
+M-A000383,broader,C-senators,preferred,local
+M-M001243,broader,C-senators,preferred,local
+M-G000608,broader,C-senators,preferred,local
+M-J000312,broader,C-senators,preferred,local
+M-B001323,broader,C-representatives,preferred,local
+M-F000481,broader,C-representatives,preferred,local
+M-A000381,broader,C-representatives,preferred,local
+M-G000606,broader,C-representatives,preferred,local
+M-H001098,broader,C-representatives,preferred,local
+M-G000607,broader,C-representatives,preferred,local
+M-S001231,broader,C-representatives,preferred,local
+M-G000605,broader,C-representatives,preferred,local
+M-W000832,broader,C-representatives,preferred,local
+M-L000607,broader,C-representatives,preferred,local
+M-W000830,broader,C-representatives,preferred,local
+M-R000620,broader,C-representatives,preferred,local
+M-F000483,broader,C-representatives,preferred,local
+M-T000491,broader,C-representatives,preferred,local
+M-M001241,broader,C-representatives,preferred,local
+M-H001100,broader,C-representatives,preferred,local
+M-C001137,broader,C-representatives,preferred,local
+M-E000300,broader,C-representatives,preferred,local
+M-M001238,broader,C-representatives,preferred,local
+M-P000622,broader,C-representatives,preferred,local
+M-F000484,broader,C-representatives,preferred,local
+M-H001099,broader,C-representatives,preferred,local
+M-J000311,broader,C-representatives,preferred,local
+M-B001328,broader,C-representatives,preferred,local
+M-F000485,broader,C-representatives,preferred,local
+M-S001229,broader,C-representatives,preferred,local
+M-M001233,broader,C-representatives,preferred,local
+M-S001228,broader,C-representatives,preferred,local
+M-F000110,broader,C-representatives,preferred,local
+M-O000176,broader,C-representatives,preferred,local
+M-E000301,broader,C-representatives,preferred,local
+M-M001232,broader,C-representatives,preferred,local
+M-B001321,broader,C-representatives,preferred,local
+M-M001237,broader,C-representatives,preferred,local
+M-M001234,broader,C-representatives,preferred,local
+M-B001324,broader,C-representatives,preferred,local
+M-O000177,broader,C-representatives,preferred,local
+M-K000404,broader,C-representatives,preferred,local
+M-D000634,broader,C-representatives,preferred,local
+M-M001240,broader,C-representatives,preferred,local
+M-H001102,broader,C-representatives,preferred,local
+M-H001101,broader,C-representatives,preferred,local
+M-K000405,broader,C-representatives,preferred,local
+M-M001236,broader,C-representatives,preferred,local
+M-F000482,broader,C-representatives,preferred,local
+M-G000604,broader,C-representatives,preferred,local
+M-C001136,broader,C-representatives,preferred,local
+M-P000621,broader,C-representatives,preferred,local
+M-M001246,broader,C-representatives,preferred,local
+M-G000602,broader,C-representatives,preferred,local
+M-L000606,broader,C-representatives,preferred,local
+M-R000622,broader,C-representatives,preferred,local
+M-M001231,broader,C-representatives,preferred,local
+M-T000490,broader,C-representatives,preferred,local
+M-D000635,broader,C-representatives,preferred,local
+M-B001326,broader,C-representatives,preferred,local
+M-M001230,broader,C-representatives,preferred,local
+M-B001327,broader,C-representatives,preferred,local
+M-H001103,broader,C-representatives,preferred,local
+M-B001325,broader,C-representatives,preferred,local
+M-V000139,broader,C-representatives,preferred,local
+M-G000601,broader,C-representatives,preferred,local
+M-M001245,broader,C-representatives,preferred,local
+M-T000489,broader,C-representatives,preferred,local
+M-G000603,broader,C-representatives,preferred,local
+M-J000310,broader,C-representatives,preferred,local
+M-K000403,broader,C-representatives,preferred,local
+M-M001239,broader,C-representatives,preferred,local
+M-V000138,broader,C-representatives,preferred,local
+M-S001230,broader,C-representatives,preferred,local
+M-W000831,broader,C-representatives,preferred,local
+M-B001322,broader,C-representatives,preferred,local
+M-R000621,broader,C-representatives,preferred,local
+M-M001235,broader,C-representatives,preferred,local
+U-admin,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-senate,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-administration,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-google,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-conferees,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-hagel,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-amazon,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-facebook,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-army,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-ndaa-conferees,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-congress,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-salazar,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-jewell,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-meta,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-secstate,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-grassley,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-carson,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-appropriations,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-mcdonald,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-governor-newsom,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-bush,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-secnav,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-house-and-senate-leadership,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-usaid,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-secaf,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-wheeler,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-gov-brown,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+O-air-force,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+P-gov-desantis,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+P-ambassador-lighthizer,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+O-census-bureau,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-boehner,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-navy,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-cpsc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-corps,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-regulators,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-lahood,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-governor,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-itc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-nps,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-twitter,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-kelly,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-desantis,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-gov-hochul,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-davis,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-cbo,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-amtrak,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-gov-abbott,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-graham,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-pres,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-pfizer,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-durbin,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-gov-scott,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-fra,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-leader-mcconnell,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-gov-wolf,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-fta,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-pmg-dejoy,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-stb,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-phrma,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-wells-fargo,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-hogan,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-cao,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-center,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-gates,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-osc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-senators,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-bor,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-carranza,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-secarmy,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-release,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-banks,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-forest-service,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-odni,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-boeing,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-phmsa,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-airlines,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-finra,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-hsgac,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-gov-lee,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-dos,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-usfs,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-appropriations-committee,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-dha,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-financial-regulators,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-tiktok,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-newsom,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-governor-evers,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-rfk,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-coast-guard,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-reid,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-of-defense,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-sasc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-enr,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-usfws,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-leader-schumer,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-ceg,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-peters,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-mlb,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-sigtarp,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-hasc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-nsa,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-governor-cuomo,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-farm-bill-conferees,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-goodlatte,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-cuomo,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-chief-justice-roberts,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-kraninger,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-nunes,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-apple,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-gov-pritzker,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-houseleaders,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-nsa-sullivan,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-dos-dhs,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-hochul,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-burton,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-committee,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-chu,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-ntia,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-mchugh,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-dni,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-uscg,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-ioc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-boem,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-oge,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-gov-rauner,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+O-of-state-blinken,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-rfk-jr,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-bernanke,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-thompson,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-ncaa,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-solis,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-lisa-jackson,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-darcy,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-ondcp,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-ndaa-conference,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-scott,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-alexander,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-congressional-leaders,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-dodig,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-usdot,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-help,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-cfius,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-lighthizer,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-mckinsey,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-commissioner-rettig,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+P-gov-edwards,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+O-social-media,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-issa,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-walker,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-hu-jintao,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-clapper,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-rma,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-norfolk-southern,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-wolf,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-rogers,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-wyden,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-fws,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-eeoc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-geo-group,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-house-ethics,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-ambassador-tai,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-roberts-and-thomas,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-ercot,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-benson,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-mullin,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-orr,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-nfl,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-ceq,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-fugate,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-samhsa,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-mabus,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-nga,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-hrsa,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-perez,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-governor-walker,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-tavenner,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-ambassador-froman,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-judiciary,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-swrcb,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-columbia-gas,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-equifax-ceo,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-equifax,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-amb-haley,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-epw,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-secretary-wolf,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-zuckerberg,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-gov-northam,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-mbs,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-nprc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-gov-whitmer,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-insurers,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-xavier-beccera,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-house-admin,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-chairman,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-jpmorgan-chase,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-judiciary-committee,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+O-army-secretary-mchugh,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-agencies,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-blunt,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-commissioner-werfel,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-castro,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-un-secretary-general,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-gop-leadership,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+P-gov-bullock,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-house,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-uspto,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-betsy-devos,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-fomb,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-att,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-secretary-duke,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-alexander-and-murray,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-otting,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-governor-hogan,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-gowdy,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-fincen,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-gov-murphy,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-cpuc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-frtib,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-acf-ovw-signed,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-mcaleenan,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-census,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-ngb,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-kendall,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-postmaster-dejoy,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-mayor-adams,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-openai,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-secretary,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-miller,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-usccr,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-hatch,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-bank-of-america,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-donovan,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-enbridge,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-scotus,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-eia,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-jct,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-ntsb,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-boehner-final-pdf,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-ogr,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-pmg,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-snyder,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-acoe,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-senate-leaders,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-verizon,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-jetblue,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-fifa,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-house-appropriations,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-brady,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-jeff-bezos,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-mcgahn,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-il-r-reps,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-dhs-doj-and-fbi,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-servicers,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-gov-baker,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-kroger,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-uk-parliament,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-us-ambassador-nicaragua,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-credit-reporting-agencies,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-hasc-sasc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-gov-walz,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-fudge,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-mohela,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-cbo-director-swagel,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-walgreens,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-fmc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-bisignano,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-commission,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-leavitt,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-house-committee,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+P-governor-schwarzenegger,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-abraham,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-eagleburger,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-u-s-secret-service,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-loc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-rep-dreier,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-locke,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-maloney,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-eda,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-icann,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-conference-committee,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-def,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-subcommittee,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-nws,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-gina-mccarthy,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-john-kerry,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-jarvis,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-unitedhealth-group,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-budget-conferees,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-banking,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-ttb,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-senate-approps,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-senate-appropriations-committee,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-mylan,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-senator-markey,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-exxonmobil,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-w-m,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-tva,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-governors,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-pcaob,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-crapo,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-long,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-mr-sundar-pichai,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+P-mr-pichai,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+P-ltg-semonite,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-departments,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-education-secretary-devos,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-nara,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-canada,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-niaid,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-senate-thud-final,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-acf,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-administrator-wheeler,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+P-gov-inslee,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-banking-agencies,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-negotiators,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-general-guterres,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-jack-dorsey-twitter-ceo,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-gaynor,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-risch,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-corporations,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-isps,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-bezos,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-menezes,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-dni-ratcliffe,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-blackrock,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-gov-dewine,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-secstate-blinken,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-dni-haines,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-asacw,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-moderna,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-admin-regan,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-nida,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-automakers,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-commissioner-califf,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-santos,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-visa,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-chopra,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-ercot-winter-power-crisis,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-pto,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-gsk,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-cisa,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-cassidy,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-mountain-west-commissioner-nevarez,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-comer,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-turner,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-commissioner-makary,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+O-oil-executives,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-norton,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-veneman,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-kofi-annan,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-schwarzenegger,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-office-of-compliance,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+P-ambassador-tobias,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+P-rep-waxman,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-halliburton,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-icheic,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-u-s-ambassador-zoellick,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-novartis,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-education,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-council,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-mccain,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-transportation-conferees,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-leahy,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-ambassador-kirk,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+P-sen-wyden,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-csx,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-comcast,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-conference,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-assistant-secretary-darcy,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-smith,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-appropriations-subcommittee,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-asa-darcy,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-delta,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-jeh-johnson,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-walmart,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-t-i,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-abc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-judicial-conference,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-house-appropriations-committee,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-dodaro,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-national-guard,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-shelby,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-american-airlines,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-pmg-brennan,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-appropriations-leadership,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-lhhs-approps,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-fmcsa,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-senate-finance-committee,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-ryan,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-kinder-morgan,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-cruz,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-nec,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-e-c,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-mayor,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-mccabe,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-fsoc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-chamber-of-commerce,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-national-grid,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-doc-sec-ross,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-school-safety-commission,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-dni-coats,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-wilson,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-nys-bar,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-duke,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-sonny-perdue,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-hsbc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-united-airlines,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-delay-of-kavanaugh-confirmation,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-assk,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-nadler,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-house-senate-leadership,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+P-senator-warren,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-pe-firms,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-craigslist,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-dea-ondcp-and-hhs,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-mtc-group,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-aba,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-census-bureau-dir-dillingham,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-youtube,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-indian-ambassador,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-msha,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-hsra-340b-enforcement-final,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-mnuchin4,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-unfccc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-ndaa-confereees-final,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-amtrak-fy21-pdf,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-dfc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-uber,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-pm-netanyahu,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-fns,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-ihs,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-chairwoman-maloney,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-schiff,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-gov-edwards-pdf,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-ncaa-president,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-governor-abbot,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+P-chairman-gensler,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-menendez,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-sens-menendez-and-risch,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-bowser-and-contee,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-wyden-schumer,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-twitter-ceo-agrawal,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-india,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-doug-mckalip-docx,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-guzman,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-secretaries-austin-and-blinken,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-admin-guzman,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-michael-carvajal,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-mayorkas-blinken,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-teachers-and-principals,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-manchin,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-trs-and-irs,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-steward,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-state1,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-sos,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-achp,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-assistant-secretary-bitter,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-commissioner-dudek,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-paramount,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-deputy-postmaster-tulino,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-ust-omb-cdfi-fund,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-dni-gabbard,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-under-secretary-kent,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-richardson,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-pomeroy,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-editor,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-bpa,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-mcdonnell,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-leaders,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-gov-daniels,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-king-abdullah,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-house-conferees,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-nhl,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-merck,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-forest-service-chief-tidwell,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+P-senator-grassley,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-transocean,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-abbott-laboratories,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-cjs,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-munoz,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-ceos,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-first-lady,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-delegation,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-nmfs,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-leader-reid,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-gen-dunwoody,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-melson-incomplete-gun-data,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-purdue-pharma,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-hamburg,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-jones,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-democratic-leadership,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-him,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-gen-alexander,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-donley,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-kathleen-sebelius,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-king,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-appropriations-committees,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-general-temple,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-jo-ellen-darcy,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-rowe,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-boeing-ceo,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-supercommittee,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-upton,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-zinser,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-constituents,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-super-committee,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+P-gov-snyder,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+O-joint-committee,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-solis-youth-ag-employment,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-cnn,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-budget-committee,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-gibson,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-baldwin,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-editor-nyt,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-branch-closures,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-sfc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-task-force,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+O-bicameral-task-force,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-inspectors-general,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-frieden-cdc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-cda,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-commissioner-goodell,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+P-commissioner-koskinen,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-sablan,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-gov-mcdonnell,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-emmert,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-zuma,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-mexican-ambassador,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-usaf,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-sen-mcconnell,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-education-secretary,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-finance,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-pe-trump,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-wells-board,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-mastercard,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-prime-minister-trudeau,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-murkowski,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-park-service,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-svac,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-oira,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-nsa-director-rogers,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-loan-servicers,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-chair,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-congressman-lamborn,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-shuster,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-defazio-norton,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-driscoll,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-world-bank-president,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+O-surface-transportation-board,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-goldman-sachs,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-carlos-muniz,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-navient,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-office-of-women-minorities,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-apollo,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-citigroup,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-carl-icahn,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-asacw-james,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-cochran-leahy-blunt-murray,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-verma,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-deputy-ag-boente,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-royce,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-scott-pruitt,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-dodaro-epa-gao,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-rauner,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-sullivan,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-anthem,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-amtrak-ceo,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-admin-mcmahon,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-senate-commerce,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-house-appropriators,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-wam,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-senate-help,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-house-and-senate-appropriators,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-usde,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-committees,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-ocr,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-carrion,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-depsec,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-twitter-ceo,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-pekoske,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-intuit,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-sasc-leadership,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-upstart,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-corecivic-group,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+O-postal-board-of-governors,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-aamc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-cvs,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-uk-pm-boris-johnson,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-miami-international-airport,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-congressman-buchanan,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-azeri-president,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-zoom-ceo,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-who-director-general,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-saudi-king,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-usgs-director-reilly-final,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-stakeholders,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-verso-for-delegation-meeting,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-barsa,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-yale,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-un-secgen,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-financial-firms,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-union-pacific,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+O-senate-house-leadership,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-atsdr,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-pura,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-usagm,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-sens-grassley-ernst-004,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-nycha,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-edd,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-vha,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-catalyst,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-ambassador-cui,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-usdasecperdue,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-google-and-apple,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-robinhood,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-pope-francis,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-col-kelly,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-uscp-and-saa,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-chamber,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-bia,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-major-credit-card-issusers,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-director-albence,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-ofccp,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-cncs-ceo-barbara-stewart,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-walz,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-brown,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-gov-kemp,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+O-army-secretary,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-j-under-secretary,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-carnahan,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-irf-ambassador,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-embry-riddle-aeronautical-university,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-dfc-ceo,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-cryptominers,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-kkr,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-silvergate-bank,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+O-tesla-board,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-airforce,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-bennet,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-dha-tricare-pharmacy-program,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-social-media-ceos,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-usopc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-of-agriculture-tom-vilsack,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-google-final,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-census-director-santos,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-fidelity-investments-ceo,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-scotus-commission,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-special-envoy-john-kerry,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-haines,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-fully-reopen-nprc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-gov-whitmer-5-17,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-microsoft,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-big-tech,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-nomination-of-us-amb,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-governor-elect-youngkin,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-oap-monahan,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-house-saa,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-gov-hogan-mdh,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+O-capitol-police-board,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+P-governor-brian-kemp,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-binance-and-binance-us,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-doc-and-hhs,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-sasc-hasc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-ltg,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-bis,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-fifa-president,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-nyse,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-pjm,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-chief-moore-elkhorn,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-carb,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-greer,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-secmcmahon-251031,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-aag-dhillon,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-leader-thune,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-administrator-richardson,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+O-pres-bush-from-coalition,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-pres-and-congress,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-skelton,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-general-myers,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-justice,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-rahall,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-abbas,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-cooper,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-abc-news,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-stephen-johnson,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-gates-contract-interrogator-final,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-md-anderson,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-eric-thorson,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-giffords,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-ways-and-means,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-hoyer,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-usag,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-condi,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-davis-5,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-lewis,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-general-annan,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-knollenberg-and-rep-olver,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-battista,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-davis-3,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-davis-4,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-rep-obey,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-nicholson,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-of-state-condoleeza-rice,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-cal-epa,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-barton,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-regula,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-commissioner-bettman,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-comptroller-general-walker,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-comptroller-general-walker-2,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-comptroller-general-walker-3,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-dara-corrigan,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-dr-pane,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-gaos-david-m-walker,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-governor-johanns,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-h-marshall-jarrett,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-halliburton-ceo-david-lesar,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-harriet-miers,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-minister-schmidt,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-ondcp-director-john-walters,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-rep-shays,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-levitt,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-mineta,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-secretery-ridge,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-senators-collins-and-lieberman,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-senators-specter-and-leahy,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-subcommittee-chairman-shays,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-agencies-from-gao,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-cal-dooley,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-shays,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-goss,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-mls,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-nfl-commissioner-paul-tagliabue,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-of-state-rice,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+P-rep-barton,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+P-admiral-nash,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+P-ambassador-salleo-of-italy,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-ambassafor-portland,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-annan,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-army-surgeon-general,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-blakely,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-bliley,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-bolten,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-burton-2,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-davis-2,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-regula-and-rep-obey,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-chief-justice-rehnquist,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-commissioner-von-eschenbach,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+P-commissioner-von-eschenbach-2,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+O-defense-contract-audit-agency,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+P-dr-von-eschenbach,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-enron-chairman-cooper,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-enron-chairman-lay,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-gephardt,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-german-minister,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-governor-ridge,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-issc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-jeff-skilling,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-jeffrey-mcmahon,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-joshua-bolten,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-jp-morgan,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-mexican-presiden-vicente-fox,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-mlb-players-association,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+P-mr-franz-mutenfering,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-nsa-rice,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-nsa-rice-2,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-nussle-and-spratt,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-polish-parliament,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-regula-and-obey,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-rep-tauzin,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-ridge,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-runge,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-secretaries-oneill-and-evans,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-general-solana,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-o-neill,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-shalala,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-thompson-2,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-sen-lieberman,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+P-senator-lieberman,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+O-swift-and-company,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+O-swiss-government,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-presidnet,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-sept-11-commission,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-u-s-ambassador-allgeier,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-u-s-ambassador-portman,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-ubs-painewebber,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-ubs-painewebber-chairman-grano,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-focus-on-access,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-reexamination-of-thailand-decision,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-ustu,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-whitman,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-whitman-2,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-wolfensohn,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-wood,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-royal-society,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-regula-oct-2-2003,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-schwarzenegger-oct-22-2003,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-mr-musk,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-baucus,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-antitrust-division-plans,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-cerner-corporation,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+O-dept-of-energy-4,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+P-sen-charles-grassley,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+O-cvs-caremark-corporation,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-express-scripts,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-pharmaceutical-care-management-association,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-japan-ambassador,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-mit,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-center-for-creative-leadership,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+O-amgen-inc,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-astrazeneca-pharmaceuticals,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-boehringer,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-bristol-myers-squibb-company,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+O-eisai-corporation-of-america,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+O-eli-lilly-and-company,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+O-forest-laboratories-inc,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-glaxosmithkline,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-hoffman-la-roche-inc,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+O-merck-co,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-takeda-pharmaceuticals,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-education-ig,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-walter-reed,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-cno,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-mms,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-gates-dadt,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-boxer,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-senators-reid-and-baucus,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-chrysler,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-jp-morgan-chase,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-shulman,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-bishop,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-bolden,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-dodd,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-bloomberg,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-igs,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-bromwich,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-sen-reid,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-ray-lahood,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-hill,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-becker-final,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-for-doj-ig,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-melson-whistleblowers-gillett,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-aaaai,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-aaos,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-acog,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-alzheimer-s-association,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+O-american-cancer-society,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+O-american-college-of-surgeons,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+O-american-diabetes-association,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+O-american-hospital-association-inc,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+O-american-medical-association,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+O-american-psychological-association,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+O-heart-rhythm-society-inc,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-narsad,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-nord,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-north-american-spine-society,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+O-american-society-of-nephology,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+O-banking-committee-leaders,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+O-corps-asking,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-u-s-courts,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-jt-cmte,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-deficit-reduction-committee,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-grassley-from-eisen,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-parishioners,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-quality-associates-inc,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-for-impediments,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-japanese-amb,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-blank,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-defense-secretary,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-senator-leahy,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-customs,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-citibank,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-odjfs,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-tricare,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-mica,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-natural-resources-committee,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-scotus-3-5-121,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-boehner-and-pelosi,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-dla-piper,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-cordray,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-gilead,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-landry,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-moodys,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-jscdr,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-chaffetz-afghanistan-corruption-hearing,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-hensarling-and-chariwoman-murray,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-ace,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-gen-welsh,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+O-army-corp,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-of-labor,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-senator-reid,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+P-adm-papp,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-naic,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-sen-durbin,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-ostp,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-ao-final-sequester-plan,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-john-koskinen,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-jones-dodson-book-denial,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-hagel-rymer,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-ketchum,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-pc-acting-director,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-levin-inhofe,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-tavenner-serco-contract,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-hagel-sec-shinseki,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-kc-vamc-director-hill,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-hedstrom,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-magill,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-vlosich,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-air-force-secretary,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+P-secretary-gibson,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-rand-beers,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-perez-march-31,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-chief-tidwell,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-senate-agriculture-committee,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-admin-final,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-national-guard-bureau,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-korean-president-park,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-tva-ceo-johnson,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-cantor-and-mccarthy,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-camp-and-chairman-lucas,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-camp,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-cj-roberts,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-uc-president-napolitano,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-fairpoint,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-boehner-pelosi,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-senate-0,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-gap-0,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-ways-means,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-nbc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-senators-landrieu-and-vitter,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-target,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-israel,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-rodriguez,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-sen-grassley,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-metro-north,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-james,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-harvard,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-energy-bill-conferees,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+O-united-states-trade-representative,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-turing,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-compass-group,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-usafa-superintendent,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-cigna,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-huerta,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-stl-vamc-director,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-airlines-for-america,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-chaffetz,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-anti-abortion-extremists,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-defense-appropriations,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-senate-appropriations,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-meng,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-dallas-police,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-culberson,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-financial-regulators-credit-suisse,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-vietnam,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-hfac,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-iranian-leaders,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-upton-and-pallone,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-alexander-murray,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-lamar-smith-final-signed,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-panynj,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-hagel-secretary-kerry-1,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-graves-loc-censorship-3,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-sen-vitter-tsca-feb2014,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-hvac-final,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-murphy,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-gov-brown-0,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-rules,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-windstream,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-canadian-ambassador,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-schools,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+P-gen-everhart,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+O-energy-and-commerce,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-peotus,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-federal-highway-administration,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-federal-agencies,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-bannon,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-mnuchin-acosta-and-hargan,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-navy-sec,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-corecivic,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-finance-committee,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-apple-ceo-tim-cook,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-admin-pruitt,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-chemical-safety-board,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+P-commissioner-gottlieb,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+P-senator-collins,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-bnsf,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-dir-wray,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-nist,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-brock-long,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-sen-brown,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-kushner,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-joyce,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-deputy-secretary-sullivan,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-dag-rosenstein,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-andrew-wheeler,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-opioid-commission,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-kelly-and-homan,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-judge,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-richard-anderson,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-marriott,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-fisher,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-cambodian-ambassador,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-heather-wilson-usaf,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-deutsche-bank,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-cwa,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-isbe,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-global-automakers,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-auto-alliance,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-adminsitration,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-election-integrity-commission,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-honorable-gene-l-dodaro,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-nikki-haley,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-dreiband,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-enzi,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-w-ms,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-admin-green,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-admin-tps-nicaragua,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-kasich-final,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-senate-judiciary-committee,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-mda-director,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-house-appropriations-subcommittee,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-fsc-requesting-hearing,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-pa-dep-mcdonnell,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-governor-wolf-12-11,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+P-sen-cornyn,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-dorado,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-wheeler-final,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-emr-subcommittee,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-gen-esper,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+P-amb-kilic,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-al-sos-john-merrill,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-lahood-and-krishnamoorthi,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-u-of-oregon,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-justice-ginsburg,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-homan,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-bowser,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-capital-one,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-alibaba,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-lenders,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-congressional-negotiators,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-zoom,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-prac,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-eoir,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-fedex,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-defense-secretary-esper,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-inhofe-requesting-sasc-hearing,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-british-american-tobacco,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-pmi,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-msci,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-activision-blizzard,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-reddit,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-intel-ceo,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-nvidia-ceo,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-doc-ig,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-senate-passage,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-fta-final,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-christiansen,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-rules-cmt,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-walmart-and-amazon,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-sfops,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-us-ag-barr,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-shanahan,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-secnav-pnsy,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-banking-and-t-i,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-maryland-dol,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-board-of-public-works,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-dos-and-treasury,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-disney-ceo,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-chinese-ambassador,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-transition,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-fta-final-002,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-us-hubbard,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-def-esper-final,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-purdue,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-nsc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-instacart,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-lyft,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-doordash,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-fhwa,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-stone,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-merkley-wyden-bonamici-blumenauer,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-congress-002,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-chief-christiansen,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-comm-chairs,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-dem-leadership,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-brouillette-idaho-national-laboratory,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-mike-pompeo-icc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-grijalva-partisan-virtual-forums,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-usaid-admin-barsa,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-armed-services-committee,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-ndaa-conferees-final,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-apple-and-google,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-brazil-ambassador,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-fca,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-college-board,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+O-citizens-stamp-advisory-committee,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+P-mayor-de-blasio,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-eileen-sobeck,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-hasc-and-sasc,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-scotus-amicus-disclosure-final,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-iso-ne,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-pallone,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-neal,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-ochca,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-tigta,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-kcva,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-mta,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-wicker,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-barrett-c130j-recapitalizaton-basing,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-governor-kelly,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-ioc-coronavirus-signed,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-wheeler-signed,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-abbott,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-social-media-companies,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-cuomo-fmap,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-extend-ui,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-mcaleenan-and-pompeo,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-ows,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-ahip,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-gov-ivey,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-jeffrey-zients,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-cornyn-and-cruz,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-who,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-amb-antonov,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-tva-paradise-unit-18,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-ducey,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-doh,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-sfrc-chair-ranking,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-menendez-and-risch,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-unicef-director,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-secretaries-blinken-and-yellen,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-secstate-and-sectreas,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-baker,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-tenet,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-maximus,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-safegraph-and-placer-ai,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-scia-requesting-hearing,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-cerberus,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-realpage,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-austin1,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-mondelez-international,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-surface-transportation-board-eo,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-lauren-mcferran-nlrb,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-world-leaders-cuba-protestors,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-scott-reconciliation,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-american-people-debt-ceiling,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-commissioner-rettig-irs-backlog,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-brenda-mallory-nepa,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-senate-republicans-vaccine-mandate,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-usfws-cottonwood-rule,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-joe-biden-title-42,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-climate-related-investor-disclosure,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-chair-climate-disclosure-impact,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-banks-paid-abortion-travel,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-senate-republican-colleagues-omnibus,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-peotus-biden,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-mark-zuckerberg,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-enq-4-1-1,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-usaid-administrator-power,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-dhs-ag,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-mdol-002,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-administration-final,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+P-senator-manchin,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-roslynn-mauskopf,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-commissioner-magnus,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-lofgren,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-chevron,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-shell,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-unfccc-and-unsg,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-american-express,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-cardona1,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-secretary-pekoske,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-musk,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-senate-2,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-polis,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-texas-evap-0,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-local-officials,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-power,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-acgme,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-fauci-murphy-nc03-final,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-starbucks-final,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-indo-pacific,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-zients,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-laplante,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-karlan-az-audit,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-market-manipulation-final,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-rep-delauro,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-uscp,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-ambassador-knapper,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+O-supreme-court,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-ncga-brody-funding,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-evers,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-trudeau,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-silicon-valley-bank,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-seqens,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-admin-brooks-lasure,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-fio,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-ustp,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-prudential-regulators,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-susan-wiles,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-cfbp,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-ntia-bead,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-nps-director-sams,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-ambassadors,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-imls,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-delay-effective-date,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-commissioner-werfel-security-breaches,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-tai-and-vilsack,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-evan-gershkovich,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-ohio-jewish-communities,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-of-agriculture,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-sen-warner,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-potus1,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-boehringer-ingelheim,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-assistant-secretary-connor,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-airline-ceos,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-ncaa-president-baker,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-secaf-kendall,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-secretary-su,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-e-c-leaders,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-us-steel,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-cornell,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-admin-whitaker-cow,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-commissioner-miller,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-them,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-bureau-of-reclamation,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+P-chairwoman-rosenworcel,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+P-governor-lamont,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-pbm-reform2,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-amex,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-dudek,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-big-pharma-companies,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+O-air-force-secretary-meink,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-google-and-youtube,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-commissioner-bisignano,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-blanche,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-witkoff,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+O-ai-companies,broader,C-organizations-not-yet-reviewed,candidate,rule: unreviewed
+U-secs-noem-and-rubio,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-resumption-of-humanitarian-aid,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-education-secretary-mcmahon,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-lee,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-director-sonderling,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-pulte,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-mayor-frey,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
+U-aag-shumate-from-senators,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-nyu-langone,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+U-senate-judiciary,broader,C-recipients-not-yet-sorted,candidate,rule: unreviewed
+P-governor-spanberger,broader,C-people-not-yet-reviewed,candidate,rule: unreviewed
