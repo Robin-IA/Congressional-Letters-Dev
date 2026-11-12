@@ -98,6 +98,20 @@ h2.sec { font-family: var(--serif); font-size: 2.4rem; color: var(--red-deep); m
 .axis { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); gap: .8rem; border-top: 1px solid var(--hair); margin-top: .2rem; padding-top: .6rem; }
 .axis span { text-align: center; font-size: 1.2rem; color: var(--muted); }
 .axis small { display: block; font-size: 1.05rem; color: var(--faint); }
+/* The same chart, small, under the search box in the hero. */
+.herochart { margin-top: 2.4rem; }
+.herochart .minihead { font-size: 1.2rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); font-weight: 600; margin: 0 0 .6rem; }
+.herochart .chart { padding: 1rem 1.2rem .6rem; }
+.herochart .bars { height: 8rem; gap: .4rem; }
+.herochart .bars a .v { font-size: .95rem; margin-bottom: .2rem; }
+.herochart .axis { gap: .4rem; padding-top: .4rem; }
+.herochart .axis span { font-size: 1rem; }
+.herochart .axis small { display: none; }
+.herochart .note { margin-top: .6rem; font-size: 1.2rem; }
+@media (max-width: 720px) {
+  /* Fourteen ordinals do not fit under a phone-width chart: label every other bar. */
+  .herochart .axis span:nth-child(even) { visibility: hidden; }
+}
 
 /* Each Congress */
 .congresses { display: grid; grid-template-columns: repeat(auto-fill, minmax(27rem, 1fr)); gap: 1.4rem; }
@@ -235,6 +249,11 @@ footer a { color: #fff; text-decoration: underline; }
         <button type="submit">Search</button>
       </form>
       <p class="note">Search matches each letter’s subject, its recipient, its topics and the member’s name. Searching the words inside the letters comes once the text of every letter has been read.</p>
+      <div class="herochart">
+        <h2 class="minihead" id="timeline">Letters by Congress</h2>
+        <div class="chart" id="chart"></div>
+        <p class="note">Each letter is counted once, in the Congress in session on its date. Select a bar to open that Congress.</p>
+      </div>
       </div>
       <figure class="pages" id="pages" aria-label="First pages of letters from the collection"></figure>
     </div>
@@ -243,10 +262,7 @@ footer a { color: #fff; text-decoration: underline; }
   <main class="wrap">
     <div id="results"></div>
     <section id="list">
-      <h2 class="sec" id="by-congress">Letters by Congress</h2>
-      <p class="secnote">Each letter is counted once, in the Congress in session on its date. Select a bar to open that Congress.</p>
-      <div class="chart" id="chart"></div>
-      <h2 class="sec" id="each">Each Congress</h2>
+      <h2 class="sec" id="by-congress">Each Congress</h2>
       <p class="secnote">Every member of each Congress is listed in its explorer, including those whose sites held no letters.</p>
       <div class="congresses" id="congresses"><p class="status">Loading…</p></div>
       <p class="totals" id="totals"></p>
