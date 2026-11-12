@@ -107,9 +107,25 @@ stopped; that return (`pc-render-return`, `pc-render-pdfs`) is merged on the
 Mac, and this bundle leaves out those and everything else that already has a
 thumbnail. Do not resume the old `C:\render` folder — its letter list is stale.
 
-**The network.** This is about 3.5 GB of PDF downloads at ~465 KB each. The
-first run stopped because it was on a phone hotspot. Run it on Wi-Fi or a
-wired connection; a second IP buys nothing here, unlike the CDX harvest.
+**The network: the phone's hotspot, capped at 10 GB.** The run is about
+3.5 GB of PDF downloads, call it 4 GB with retries. The hotspot also gives the
+PC its own IP, so it does not compete with the Mac for Wayback's allowance.
+Two things must reach Robin straight away, in this session:
+
+- **The hotspot drops.** Downloads then fail as connection errors, and a batch
+  line in `render-pc.log` shows few or none rendered. Tell Robin before the
+  runner gives up after three empty batches.
+- **3 GB used.** Before starting, note the PC's counters with
+  `Get-NetAdapterStatistics | Select Name, ReceivedBytes, SentBytes` in
+  PowerShell, and check every half hour or so. When received plus sent has
+  grown by 3 GB, tell Robin and wait: Robin decides whether to carry on or move
+  the PC to the Charter Wi-Fi. The size of `C:\render2\pdfs` is a cross-check,
+  since the PDFs are nearly all of the traffic. The phone's own counter may
+  read a little higher.
+
+Moving networks loses nothing: Ctrl-C both windows, connect to the other
+network, run both commands again; finished letters are skipped. The return to
+GitHub (about 150 MB) can wait for Charter.
 
 1. Once, if not already done: `py -m pip install pypdfium2 pillow pypdf`.
 2. Download
