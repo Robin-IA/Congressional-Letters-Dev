@@ -95,40 +95,54 @@ The same for both ranges, and safe to repeat as often as you like:
 - Report numbers you measured, and say how you measured them. Two numbers in
   this project were published and turned out wrong because they were not.
 
-## Rendering (from 12 November 2026, 01:06)
+## Rendering (rebuilt 12 November 2026, 09:51 — the second run)
 
-Both harvests are done and merged. The PC's next job is thumbnails: the
-106th–114th and the `house.gov/<name>/` path letters, **7,920 PDFs**. The Mac
-renders only the 115th–118th meanwhile, so the two never render the same
-letter.
+Both harvests are done and merged. The PC's job is thumbnails for the
+106th–114th and the `house.gov/<name>/` path letters: **7,662 PDFs** (10,721
+letters). The Mac renders only the 115th–118th meanwhile, so the two never
+render the same letter.
 
-1. Once: `py -m pip install pypdfium2 pillow pypdf`. Unlike the harvester, the
-   renderer needs these.
+**This replaces the 01:06 bundle.** The first run rendered 172 before it was
+stopped; that return (`pc-render-return`, `pc-render-pdfs`) is merged on the
+Mac, and this bundle leaves out those and everything else that already has a
+thumbnail. Do not resume the old `C:\render` folder — its letter list is stale.
+
+**The network.** This is about 3.5 GB of PDF downloads at ~465 KB each. The
+first run stopped because it was on a phone hotspot. Run it on Wi-Fi or a
+wired connection; a second IP buys nothing here, unlike the CDX harvest.
+
+1. Once, if not already done: `py -m pip install pypdfium2 pillow pypdf`.
 2. Download
    <https://github.com/Robin-IA/Congressional-Letters-Dev/raw/pc-bundle/pc-render-106-114-paths.zip>
-   and unzip it into its own folder, `C:\render`.
-3. In PowerShell: `cd C:\render`, then `py run_render.py`.
+   and unzip it into a new folder, `C:\render2`.
+3. In PowerShell: `cd C:\render2`, then `$env:WORKERS=4`, then `py run_render.py`.
 
-It works in batches of 400 and logs one line per batch to `render-pc.log`.
-A batch takes about 35 minutes on the Mac at 2 workers, so expect the first
-line after that long. `$env:WORKERS=4` before the command goes faster if the
-503 share stays low. It stops by itself when nothing is left, or after 3
-batches in a row that render nothing. Ctrl-C is safe; run it again to carry on.
+It works in batches of 400 and logs one line per batch to `render-pc.log`. The
+first run measured 20 PDFs a minute, so a batch is about 20 minutes and the
+whole bundle about 6½ hours. The Mac, at 4 workers, does ~1,000 an hour; if the
+log shows many 503s or connection errors, drop to `$env:WORKERS=2`. It stops by
+itself when nothing is left, or after 3 batches in a row that render nothing.
+Ctrl-C is safe; run it again to carry on.
 
-Each letter's PDF is downloaded once and gives four things, all in `C:\render`:
+Each letter's PDF is downloaded once and gives four things, all in `C:\render2`:
 
 | What | Where | Back to the Mac |
 | --- | --- | --- |
 | Thumbnail | `thumbs\<digest>.webp` | yes |
 | Date the PDF states | `pdf-dates.jsonl` | yes |
 | Text of its first pages | `letter-text.jsonl` | yes |
-| The PDF | `pdfs\<digest>.pdf` | later, by USB or Drive, not GitHub |
+| The PDF | `pdfs\<digest>.pdf` | yes — the Mac OCRs them |
 | Attempts that failed | `thumb-failures.jsonl` | yes |
 
-**Sending results back.** Push to a branch named `pc-render-return`:
-`thumbs` zipped in parts under 90 MB each (GitHub refuses a file over 100 MB;
-7,920 thumbnails are about 150 MB), and one zip of the three `.jsonl` files.
-Partial returns are fine. The Mac merges with `build/pc/merge_render.py`,
-which copies only thumbnails it lacks, adds dates and text only for letters
-it has none for, and never replaces anything. The PDFs (about 4 GB) stay on
-the PC until they can travel by USB or Drive.
+**Sending results back.** Push to a **new** branch, `pc-render-return-2`
+(`pc-render-return` already holds the first run): `thumbs` zipped in parts
+under 90 MB each (GitHub refuses a file over 100 MB; 7,662 thumbnails are about
+140 MB), and one zip of the three `.jsonl` files. Partial returns are fine.
+The Mac merges with `build/pc/merge_render.py`, which copies only thumbnails
+it lacks, adds dates and text only for letters it has none for, and never
+replaces anything.
+
+**The PDFs** (about 3.5 GB) go back too, because the Mac runs Apple Vision OCR
+over them; without them it would download every one again. That is too much
+for a branch: use USB or Google Drive, as one folder or zip of `pdfs\`. If
+neither is to hand, say so rather than pushing 40 zips to GitHub.
