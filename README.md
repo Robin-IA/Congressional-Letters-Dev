@@ -1,6 +1,6 @@
 # Return from C:\ocr
 
-Packed 2026-11-12 12:48 by pack_return.py.
+Packed 2026-11-12 13:50 by pack_return.py.
 
 | | |
 | --- | --- |
@@ -8,8 +8,8 @@ Packed 2026-11-12 12:48 by pack_return.py.
 | thumbnails sent in all | 0 |
 | thumbnails new in this push | 0 |
 | letter-text.jsonl | 7,025 |
-| letter-ocr.jsonl | 451 |
-| fetch-failures.jsonl | 3,445 |
-| PDFs on the PC (not sent) | 651 |
+| letter-ocr.jsonl | 1,031 |
+| fetch-failures.jsonl | 5,921 |
+| PDFs on the PC (not sent) | 1,063 |
 
 `data.zip` holds every .jsonl and log as they stood; `thumbs-*.zip` hold the thumbnails, each sent once. No PDFs.
