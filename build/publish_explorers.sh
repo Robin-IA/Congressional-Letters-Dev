@@ -64,9 +64,10 @@ EOF
 
 for n in $(seq 106 119); do
   ord="${n}th"
+  # The home page is the starting point, so every explorer's description names it.
   publish "Explorer-Congressional-Letters-$n" \
-    "Letters from Congress: letters members of the $ord Congress published on their own websites, preserved by the Wayback Machine."
+    "Letters from Congress: letters members of the $ord Congress published on their own websites, preserved by the Wayback Machine. Start at the Letters from Congress home page, all letters from every Congress: https://robin-ia.github.io/Explorer-Letters/"
 done
 publish "Explorer-Letters" \
-  "Letters from Congress: every Congress's explorer in one place, searchable across all of them."
+  "Letters from Congress: start here. All letters from every Congress, 106th to 119th, that members published on their own websites, preserved by the Wayback Machine. Search across all of them, then open any Congress's explorer."
 say "=== all done ==="
