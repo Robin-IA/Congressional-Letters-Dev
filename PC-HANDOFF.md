@@ -1,7 +1,14 @@
 # PC handoff: running a letter harvest on a Windows PC
 
-**Prepared 11 November 2026** for the 115th–118th Congresses. The steps work
-for any range that has a `harvest/letters-<range>-members.json`.
+**Prepared 11 November 2026** for the 115th–118th Congresses; the 106th–110th
+was added at 22:05 the same day. The steps work for any range that has a
+`harvest/letters-<range>-members.json`.
+
+| Range | Runs on | Folder on the PC |
+| --- | --- | --- |
+| 115th–118th | PC | `C:\harvest` |
+| 106th–110th | PC | `C:\harvest-106-110` |
+| 111th–114th | Mac | — |
 
 ## What this is
 
@@ -120,6 +127,41 @@ where the time is going:
 py build\timing_report.py harvest\letters\cache\requests.jsonl --hours 2
 ```
 
+## A second range at once: the 106th–110th
+
+Split off the 106th–114th at 22:05 on 11 November. The Mac kept the
+111th–114th, which it was about to reach. The two member lists share no site,
+so neither machine fetches a site the other has. The Mac had reached none of
+the 106th–110th, so its bundle starts with an empty cache.
+
+1. Download
+   <https://github.com/Robin-IA/Congressional-Letters-Dev/raw/pc-bundle/pc-harvest-106-110.zip>
+   (23 KB, 111 sites).
+2. Unzip it into **its own folder**, `C:\harvest-106-110`, not `C:\harvest`.
+   `run_pc.py` takes its range from the single member list beside it, so two
+   ranges cannot share a folder.
+3. In PowerShell:
+
+   ```
+   cd C:\harvest-106-110
+   $env:WORKERS=6; py run_pc.py
+   ```
+
+   The first line should say `=== harvest 106-110 (PC): 111 sites to do ===`.
+
+It can run at the same time as the 115th–118th, in its own window, and each
+folder keeps its own cache. Both runs share the hotspot's IP, so 6 + 6 workers
+is twice the load the PC measured as fine. Watch the 503 share in each folder's
+timing report, and lower `WORKERS` on one run if refusals climb well past half
+of all requests.
+
+**Expect this range to fail more.** These are 1999–2009, when many members had
+no host of their own: their site was a path such as `house.gov/<name>/` or
+`senate.gov/~name`. The harvester's paged enumeration assumes a hostname, so
+those come back empty or fail on every pass. That is a known gap
+(EXPLORERS.md, "Paths on shared hosts"), not something to fix on the PC. When
+the runner stops with sites still failing, report the list.
+
 ## Bringing results back to the Mac
 
 Only the cache comes back. It is one file per site, so merging is copying
@@ -154,6 +196,15 @@ Or hand steps 2–5 to Claude Code in a session in this repository.
 **Thumbnails need nothing more.** If `build/thumbs_loop.sh` is running on the
 Mac, its next cycle rebuilds the letter list from the merged cache and renders
 the PC's letters along with the rest. The PC only harvests; it never renders.
+
+**Through GitHub instead.** The first return came this way, and it works for
+either range. Zip the folder's `harvest\letters\cache`, all of it including
+`requests.jsonl`. Push it as the only file on a branch named
+`pc-cache-<range>` of `Robin-IA/Congressional-Letters-Dev`, with a short README
+giving when it was built and how many sites are finished, failed and
+untouched. On the Mac, take the zip from that branch and merge it as above.
+Partial returns are fine and can be repeated: the merge never replaces a site
+the Mac has finished.
 The loop writes its own lists to `harvest/letters/loop/`, so steps 5 and 6 are
 still what produce the range's own `letters-parsed-<range>.jsonl`.
 
@@ -171,3 +222,19 @@ still what produce the range's own `letters-parsed-<range>.jsonl`.
 
 The runner and the bundle were tested on the Mac. They have not yet been run on
 Windows.
+
+## For Claude on the PC
+
+A Claude session on the PC should read
+[`PC-CLAUDE.md`](https://github.com/Robin-IA/Congressional-Letters-Dev/blob/pc-bundle/PC-CLAUDE.md)
+on the `pc-bundle` branch first. It repeats what is above for the PC's side,
+and adds the rules:
+
+- `Robin-IA/Congressional-Letters-Dev` is **public**. Push only data branches
+  (`pc-cache-*`) from the PC. Never push to `main` or `harvest-member-letters`,
+  and never merge anything: merging is Robin's call.
+- Do not edit `harvest.py`, `run_pc.py` or `timing_report.py` on the PC. If
+  something needs changing, say what and why; the Mac changes it through a pull
+  request and rebuilds the bundle.
+- Report numbers that were measured, and say how. Two numbers in this project
+  were published and turned out wrong because they were not.
