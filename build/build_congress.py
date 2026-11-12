@@ -54,7 +54,9 @@ PDF_DATES = ROOT / "data" / "pdf-dates.jsonl"
 THUMBS = ROOT / "thumbs"
 # Beside the dev repository, not in it: each becomes a repository of its own.
 OUT_ROOT = ROOT.parent / "explorers"
-TEMPLATE_REF = "iac-119th"   # the page and app.js to copy, with the 2025 dates
+# The page and script every explorer is stamped from: 119th/index.html and app.js
+# in this checkout. They were read from a local-only branch, iac-119th, which no PR
+# could reach; on 12 November they moved onto the main line so fixes go through review.
 
 
 def ordinal(n: int) -> str:
@@ -182,8 +184,7 @@ def sort_letters(congresses: set[int]):
 def page_files(n: int, dest: Path) -> None:
     """index.html and app.js from the template, made to say which Congress."""
     def show(path):
-        return subprocess.run(["git", "--no-optional-locks", "show", f"{TEMPLATE_REF}:{path}"],
-                              cwd=ROOT, capture_output=True, text=True, check=True).stdout
+        return (ROOT / path).read_text(encoding="utf-8")
 
     def swap(text, old, new, label):
         if text.count(old) != 1:
@@ -211,8 +212,8 @@ def page_files(n: int, dest: Path) -> None:
     (dest / "index.html").write_text(html, encoding="utf-8")
 
     js = show("app.js")
-    js = swap(js, "el('p', { class: 'hero' }, '119th Congress (2025-26)'),",
-              "el('p', { class: 'hero' }, (INDEX.congress || {}).label || '119th Congress (2025-26)'),",
+    js = swap(js, "el('h1', { class: 'hero' }, '119th Congress (2025-26)'),",
+              "el('h1', { class: 'hero' }, (INDEX.congress || {}).label || '119th Congress (2025-26)'),",
               "hero")
     js = swap(js, "el('p', { class: 'dates' }, 'January 3, 2025 – January 3, 2027'),",
               "el('p', { class: 'dates' }, (INDEX.congress || {}).dates || 'January 3, 2025 – January 3, 2027'),",

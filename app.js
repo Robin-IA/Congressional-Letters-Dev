@@ -147,7 +147,11 @@ function params() { return new URLSearchParams(location.search); }
 function go(next, replace = false) {
   const url = next.toString() ? `?${next}` : location.pathname;
   history[replace ? 'replaceState' : 'pushState']({}, '', url);
-  render();
+  // Rebuilding the view would otherwise drop focus to the top of the page.
+  const key = document.activeElement?.dataset?.key;
+  Promise.resolve(render()).then(() => {
+    if (key) document.querySelector(`[data-key="${key}"]`)?.focus();
+  });
 }
 
 function link(paramsObj, cls, ...kids) {
@@ -412,20 +416,20 @@ function viewMembers() {
         if (box) { box.focus(); box.setSelectionRange(box.value.length, box.value.length); }
       },
     }),
-    el('select', { onchange: e => setParam('chamber', e.target.value) },
+    el('select', { 'aria-label': 'Chamber', 'data-key': 'chamber', onchange: e => setParam('chamber', e.target.value) },
       el('option', { value: '', selected: !ch }, 'Both chambers'),
       el('option', { value: 'sen', selected: ch === 'sen' }, 'Senate'),
       el('option', { value: 'rep', selected: ch === 'rep' }, 'House')),
-    el('select', { onchange: e => setParam('party', e.target.value) },
+    el('select', { 'aria-label': 'Party', 'data-key': 'party', onchange: e => setParam('party', e.target.value) },
       el('option', { value: '', selected: !party }, 'Any party'),
       el('option', { value: 'Democrat', selected: party === 'Democrat' }, 'Democrat'),
       el('option', { value: 'Republican', selected: party === 'Republican' }, 'Republican'),
       el('option', { value: 'Independent', selected: party === 'Independent' }, 'Independent')),
-    el('select', { onchange: e => setParam('sort', e.target.value) },
+    el('select', { 'aria-label': 'Sort by', 'data-key': 'sort', onchange: e => setParam('sort', e.target.value) },
       el('option', { value: 'letters', selected: sort === 'letters' }, 'Most letters'),
       el('option', { value: 'name', selected: sort === 'name' }, 'By surname'),
       el('option', { value: 'state', selected: sort === 'state' }, 'By state')),
-    el('span', { class: 'count tab' },
+    el('span', { class: 'count tab', role: 'status' },
       `${num(list.length)} of ${num(MEMBERS.length)} members`),
   );
 
@@ -457,7 +461,8 @@ function viewMembers() {
   }
 
   const out = el('div', {},
-    el('p', { class: 'hero' }, '119th Congress (2025-26)'),
+    el('h1', { class: 'hero' }, '119th Congress (2025-26)'),
+    el('p', { class: 'dates' }, 'January 3, 2025 – January 3, 2027'),
     el('p', { class: 'sub' },
       el('b', {}, num(INDEX.letters)), ' letters published on ',
       el('b', {}, num(INDEX.members_with_letters)),
@@ -614,7 +619,7 @@ function viewRecipients() {
   }
 
   const out = el('div', {},
-    el('p', { class: 'hero' }, 'Who gets these letters'),
+    el('h1', { class: 'hero' }, 'Who gets these letters'),
     el('p', { class: 'sub' },
       el('b', {}, num(INDEX.recipients_total || all.length)),
       ' agencies, officials and companies have been written to',
@@ -634,7 +639,7 @@ function viewRecipients() {
           if (box) { box.focus(); box.setSelectionRange(box.value.length, box.value.length); }
         },
       }),
-      el('span', { class: 'count tab' }, `showing ${num(list.length)}`)),
+      el('span', { class: 'count tab', role: 'status' }, `showing ${num(list.length)}`)),
     grid);
   if (list.length > limit) {
     out.append(el('button', {
@@ -749,7 +754,7 @@ function viewTimeline() {
   const guessed = (INDEX.precisions || {})['captured-by'] || 0;
 
   return el('div', {},
-    el('p', { class: 'hero' }, 'Letters over time'),
+    el('h1', { class: 'hero' }, 'Letters over time'),
     el('p', { class: 'sub' },
       'Click any year to read what was sent that year. ',
       el('span', { class: 'muted' },
@@ -878,7 +883,7 @@ async function viewSearch(query) {
   if (!needle) {
     const picks = (INDEX.topics || []).slice(0, 18).map(([t]) => t);
     return el('div', {}, box,
-      el('p', { class: 'hero' }, 'What are you looking for?'),
+      el('h1', { class: 'hero' }, 'What are you looking for?'),
       el('p', { class: 'sub' },
         'Search ', el('b', {}, num(INDEX.letters)),
         ' letters by topic, by the agency they were sent to, or by who wrote them.'),
@@ -993,7 +998,7 @@ async function viewSearch(query) {
     })));
 
   const out = el('div', {}, box,
-    el('p', { class: 'hero' }, `“${query}”`),
+    el('h1', { class: 'hero' }, `“${query}”`),
     el('p', { class: 'sub' },
       data
         ? el('span', {}, el('b', {}, num(letterHits.length)), ' letters')
@@ -1056,7 +1061,7 @@ function viewAbout() {
     || (INDEX.recipients || []).reduce((s, [, n]) => s + n, 0))
     / Math.max(1, INDEX.letters)) * 100);
   return el('div', { class: 'prose' },
-    el('p', { class: 'hero' }, 'About these letters'),
+    el('h1', { class: 'hero' }, 'About these letters'),
 
     el('h3', {}, 'What this is'),
     el('p', {}, `Members of Congress write letters all the time — to government agencies,
@@ -1205,6 +1210,9 @@ async function render() {
   } catch (err) {
     body = el('div', { class: 'empty' }, 'Something went wrong. ',
       el('span', { class: 'small' }, String(err.message || err)));
+  }
+  for (const t of body.querySelectorAll('table.letters')) {
+    const wrap = el('div', { class: 'tablewrap' }); t.replaceWith(wrap); wrap.append(t);
   }
   $('#main').replaceChildren(body);
 
