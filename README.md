@@ -24,5 +24,7 @@ has the rest, from "Setting up the PC". Results come back the same way for
 both: zip that folder's `harvest\letters\cache`, and merge on the Mac with
 `build/pc/merge_pc_cache.py`.
 
+A Claude session on the PC should read `PC-CLAUDE.md` first.
+
 To rebuild on the Mac: `build/pc/make_bundle.sh <range>`, then replace that
 zip here.
