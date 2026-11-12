@@ -358,7 +358,7 @@ M-D000197,Diana DeGette,member,person,preferred,Bioguide,https://bioguide.congre
 M-D000216,Rosa L. DeLauro,member,person,preferred,Bioguide,https://bioguide.congress.gov/search/bio/D000216,458,House; Democrat; 106th-119th Congress
 M-D000217,Thomas DeLay,member,person,preferred,Bioguide,https://bioguide.congress.gov/search/bio/D000217,1,House; Republican; 106th-109th Congress
 M-D000595,Jim DeMint,member,person,preferred,Bioguide,https://bioguide.congress.gov/search/bio/D000595,11,"House, Senate; Republican; 106th-112th Congress"
-M-D000621,Ron DeSantis,member,person,preferred,Bioguide,https://bioguide.congress.gov/search/bio/D000621,30,House; Republican; 113th-115th Congress
+M-D000621,Ron DeSantis,member,person,preferred,Bioguide,https://bioguide.congress.gov/search/bio/D000621,77,House; Republican; 113th-115th Congress
 M-D000623,Mark DeSaulnier,member,person,preferred,Bioguide,https://bioguide.congress.gov/search/bio/D000623,154,House; Democrat; 114th-119th Congress
 M-D000294,Michael DeWine,member,person,preferred,Bioguide,https://bioguide.congress.gov/search/bio/D000294,0,Senate; Republican; 106th-109th Congress
 M-D000168,Nathan Deal,member,person,preferred,Bioguide,https://bioguide.congress.gov/search/bio/D000168,27,House; Republican; 106th-111th Congress
@@ -1332,7 +1332,7 @@ M-S000185,"Robert C. ""Bobby"" Scott",member,person,preferred,Bioguide,https://b
 M-S001157,David Scott,member,person,preferred,Bioguide,https://bioguide.congress.gov/search/bio/S001157,57,House; Democrat; 108th-119th Congress
 M-S001189,Austin Scott,member,person,preferred,Bioguide,https://bioguide.congress.gov/search/bio/S001189,58,House; Republican; 112th-119th Congress
 M-S001184,Tim Scott,member,person,preferred,Bioguide,https://bioguide.congress.gov/search/bio/S001184,262,"House, Senate; Republican; 112th-119th Congress"
-M-S001217,Rick Scott,member,person,preferred,Bioguide,https://bioguide.congress.gov/search/bio/S001217,57,Senate; Republican; 116th-119th Congress
+M-S001217,Rick Scott,member,person,preferred,Bioguide,https://bioguide.congress.gov/search/bio/S001217,76,Senate; Republican; 116th-119th Congress
 M-S001166,Shelley Sekula-Gibbs,member,person,preferred,Bioguide,https://bioguide.congress.gov/search/bio/S001166,0,House; Republican; 109th Congress
 M-S001224,Keith Self,member,person,preferred,Bioguide,https://bioguide.congress.gov/search/bio/S001224,0,House; Republican; 118th-119th Congress
 M-S001219,Joseph Sempolinski,member,person,preferred,Bioguide,https://bioguide.congress.gov/search/bio/S001219,1,House; Republican; 117th Congress
@@ -1572,36 +1572,36 @@ M-Y000066,David Young,member,person,preferred,Bioguide,https://bioguide.congress
 M-Z000017,Lee M. Zeldin,member,person,preferred,Bioguide,https://bioguide.congress.gov/search/bio/Z000017,105,House; Republican; 114th-117th Congress
 M-Z000018,Ryan K. Zinke,member,person,preferred,Bioguide,https://bioguide.congress.gov/search/bio/Z000018,9,House; Republican; 114th-119th Congress
 O-department-of-justice,Department of Justice,organization,government body,preferred,local,,2172,
-O-environmental-protection-agency,Environmental Protection Agency,organization,government body,preferred,local,,1156,
-O-department-of-defense,Department of Defense,organization,government body,preferred,local,,1233,
-O-department-of-health-and-human-services,Department of Health and Human Services,organization,government body,preferred,local,,1931,
+O-environmental-protection-agency,Environmental Protection Agency,organization,government body,preferred,local,,1187,
+O-department-of-defense,Department of Defense,organization,government body,preferred,local,,1314,
+O-department-of-health-and-human-services,Department of Health and Human Services,organization,government body,preferred,local,,1958,
 O-securities-and-exchange-commission,Securities and Exchange Commission,organization,government body,preferred,local,,255,
-O-internal-revenue-service,Internal Revenue Service,organization,government body,preferred,local,,524,
+O-internal-revenue-service,Internal Revenue Service,organization,government body,preferred,local,,535,
 O-office-of-management-and-budget,Office of Management and Budget,organization,government body,preferred,local,,525,
-O-department-of-homeland-security,Department of Homeland Security,organization,government body,preferred,local,,1602,
+O-department-of-homeland-security,Department of Homeland Security,organization,government body,preferred,local,,1626,
 O-department-of-agriculture,Department of Agriculture,organization,government body,preferred,local,,1484,
-O-department-of-veterans-affairs,Department of Veterans Affairs,organization,government body,preferred,local,,1077,
-O-department-of-state,Department of State,organization,government body,preferred,local,,1683,
-O-department-of-housing-and-urban-development,Department of Housing and Urban Development,organization,government body,preferred,local,,295,
-O-office-of-the-us-trade-representative,Office of the US Trade Representative,organization,government body,preferred,local,,366,
-O-department-of-education,Department of Education,organization,government body,preferred,local,,775,
-O-department-of-energy,Department of Energy,organization,government body,preferred,local,,363,
+O-department-of-veterans-affairs,Department of Veterans Affairs,organization,government body,preferred,local,,1109,
+O-department-of-state,Department of State,organization,government body,preferred,local,,1750,
+O-department-of-housing-and-urban-development,Department of Housing and Urban Development,organization,government body,preferred,local,,328,
+O-office-of-the-us-trade-representative,Office of the US Trade Representative,organization,government body,preferred,local,,412,
+O-department-of-education,Department of Education,organization,government body,preferred,local,,779,
+O-department-of-energy,Department of Energy,organization,government body,preferred,local,,375,
 O-department-of-the-treasury,Department of the Treasury,organization,government body,preferred,local,,1175,
-O-department-of-transportation,Department of Transportation,organization,government body,preferred,local,,526,
-O-department-of-the-interior,Department of the Interior,organization,government body,preferred,local,,571,
-O-department-of-labor,Department of Labor,organization,government body,preferred,local,,328,
+O-department-of-transportation,Department of Transportation,organization,government body,preferred,local,,558,
+O-department-of-the-interior,Department of the Interior,organization,government body,preferred,local,,644,
+O-department-of-labor,Department of Labor,organization,government body,preferred,local,,339,
 O-department-of-commerce,Department of Commerce,organization,government body,preferred,local,,490,
 O-food-and-drug-administration,Food and Drug Administration,organization,government body,preferred,local,,571,
 O-centers-for-disease-control,Centers for Disease Control,organization,government body,preferred,local,,320,
-O-federal-communications-commission,Federal Communications Commission,organization,government body,preferred,local,,667,
+O-federal-communications-commission,Federal Communications Commission,organization,government body,preferred,local,,675,
 O-federal-trade-commission,Federal Trade Commission,organization,government body,preferred,local,,410,
 O-federal-emergency-management-agency,Federal Emergency Management Agency,organization,government body,preferred,local,,491,
 O-government-accountability-office,Government Accountability Office,organization,government body,preferred,local,,460,
 O-central-intelligence-agency,Central Intelligence Agency,organization,government body,preferred,local,,11,
 O-federal-bureau-of-investigation,Federal Bureau of Investigation,organization,government body,preferred,local,,275,
 O-centers-for-medicare-and-medicaid-services,Centers for Medicare and Medicaid Services,organization,government body,preferred,local,,568,
-O-consumer-financial-protection-bureau,Consumer Financial Protection Bureau,organization,government body,preferred,local,,172,
-O-united-states-postal-service,United States Postal Service,organization,government body,preferred,local,,496,
+O-consumer-financial-protection-bureau,Consumer Financial Protection Bureau,organization,government body,preferred,local,,188,
+O-united-states-postal-service,United States Postal Service,organization,government body,preferred,local,,522,
 O-immigration-and-customs-enforcement,Immigration and Customs Enforcement,organization,government body,preferred,local,,181,
 O-citizenship-and-immigration-services,Citizenship and Immigration Services,organization,government body,preferred,local,,113,
 O-customs-and-border-protection,Customs and Border Protection,organization,government body,preferred,local,,155,
@@ -1613,8 +1613,8 @@ O-general-services-administration,General Services Administration,organization,g
 O-office-of-the-comptroller-of-the-currency,Office of the Comptroller of the Currency,organization,government body,preferred,local,,37,
 O-commodity-futures-trading-commission,Commodity Futures Trading Commission,organization,government body,preferred,local,,68,
 O-national-highway-traffic-safety-administration,National Highway Traffic Safety Administration,organization,government body,preferred,local,,59,
-O-federal-reserve,Federal Reserve,organization,government body,preferred,local,,204,
-O-army-corps-of-engineers,Army Corps of Engineers,organization,government body,preferred,local,,215,
+O-federal-reserve,Federal Reserve,organization,government body,preferred,local,,215,
+O-army-corps-of-engineers,Army Corps of Engineers,organization,government body,preferred,local,,261,
 O-federal-aviation-administration,Federal Aviation Administration,organization,government body,preferred,local,,303,
 O-federal-housing-finance-agency,Federal Housing Finance Agency,organization,government body,preferred,local,,70,
 O-federal-deposit-insurance-corporation,Federal Deposit Insurance Corporation,organization,government body,preferred,local,,51,
@@ -1628,14 +1628,14 @@ O-government-publishing-office,Government Publishing Office,organization,governm
 O-election-assistance-commission,Election Assistance Commission,organization,government body,preferred,local,,25,
 O-federal-energy-regulatory-commission,Federal Energy Regulatory Commission,organization,government body,preferred,local,,196,
 O-office-of-personnel-management,Office of Personnel Management,organization,government body,preferred,local,,144,
-O-small-business-administration,Small Business Administration,organization,government body,preferred,local,,441,
+O-small-business-administration,Small Business Administration,organization,government body,preferred,local,,458,
 O-social-security-administration,Social Security Administration,organization,government body,preferred,local,,185,
 O-national-institutes-of-health,National Institutes of Health,organization,government body,preferred,local,,123,
 O-bureau-of-land-management,Bureau of Land Management,organization,government body,preferred,local,,47,
 O-nuclear-regulatory-commission,Nuclear Regulatory Commission,organization,government body,preferred,local,,51,
-O-the-president,The President,organization,office,preferred,local,,6505,
-O-the-speaker-of-the-house,The Speaker of the House,organization,office,preferred,local,,494,
-O-congressional-leadership,Congressional leadership,organization,group,preferred,local,,1981,
+O-the-president,The President,organization,office,preferred,local,,6557,
+O-the-speaker-of-the-house,The Speaker of the House,organization,office,preferred,local,,517,
+O-congressional-leadership,Congressional leadership,organization,group,preferred,local,,2082,
 O-the-vice-president,The Vice President,organization,office,preferred,local,,153,
 T-covid-19,COVID-19,topic,subject,preferred,local,,2141,
 T-vaccines,Vaccines,topic,subject,preferred,local,,572,
@@ -1701,196 +1701,24 @@ T-appropriations,Appropriations,topic,subject,preferred,local,,1124,
 T-federal-workforce,Federal workforce,topic,subject,preferred,local,,207,
 T-nominations,Nominations,topic,subject,preferred,local,,275,
 T-regulation,Regulation,topic,subject,preferred,local,,534,
-U-admin,Admin,unclassified,recipient,candidate,letters,,63,a recipient as the file names give it; not reviewed
-U-senate,Senate,unclassified,recipient,candidate,letters,,59,a recipient as the file names give it; not reviewed
-O-administration,Administration,organization,recipient,candidate,letters,,56,a recipient as the file names give it; not reviewed
-U-google,Google,unclassified,recipient,candidate,letters,,49,a recipient as the file names give it; not reviewed
-U-conferees,Conferees,unclassified,recipient,candidate,letters,,46,a recipient as the file names give it; not reviewed
-U-hagel,Hagel,unclassified,recipient,candidate,letters,,46,a recipient as the file names give it; not reviewed
-U-amazon,Amazon,unclassified,recipient,candidate,letters,,46,a recipient as the file names give it; not reviewed
-U-facebook,Facebook,unclassified,recipient,candidate,letters,,43,a recipient as the file names give it; not reviewed
-O-army,Army,organization,recipient,candidate,letters,,42,a recipient as the file names give it; not reviewed
-U-ndaa-conferees,Ndaa Conferees,unclassified,recipient,candidate,letters,,39,a recipient as the file names give it; not reviewed
-U-congress,Congress,unclassified,recipient,candidate,letters,,37,a recipient as the file names give it; not reviewed
-U-salazar,Salazar,unclassified,recipient,candidate,letters,,37,a recipient as the file names give it; not reviewed
-U-jewell,Jewell,unclassified,recipient,candidate,letters,,36,a recipient as the file names give it; not reviewed
-U-meta,Meta,unclassified,recipient,candidate,letters,,36,a recipient as the file names give it; not reviewed
-U-secstate,Secstate,unclassified,recipient,candidate,letters,,35,a recipient as the file names give it; not reviewed
-U-grassley,Grassley,unclassified,recipient,candidate,letters,,34,a recipient as the file names give it; not reviewed
-U-carson,Carson,unclassified,recipient,candidate,letters,,33,a recipient as the file names give it; not reviewed
-U-appropriations,Appropriations,unclassified,recipient,candidate,letters,,32,a recipient as the file names give it; not reviewed
-U-mcdonald,Mcdonald,unclassified,recipient,candidate,letters,,32,a recipient as the file names give it; not reviewed
-P-governor-newsom,Governor Newsom,person,recipient,candidate,letters,,31,a recipient as the file names give it; not reviewed
-U-bush,Bush,unclassified,recipient,candidate,letters,,30,a recipient as the file names give it; not reviewed
-U-secnav,Secnav,unclassified,recipient,candidate,letters,,30,a recipient as the file names give it; not reviewed
-O-house-and-senate-leadership,House And Senate Leadership,organization,recipient,candidate,letters,,30,a recipient as the file names give it; not reviewed
-U-usaid,Usaid,unclassified,recipient,candidate,letters,,29,a recipient as the file names give it; not reviewed
-U-secaf,Secaf,unclassified,recipient,candidate,letters,,28,a recipient as the file names give it; not reviewed
-U-wheeler,Wheeler,unclassified,recipient,candidate,letters,,28,a recipient as the file names give it; not reviewed
-P-gov-brown,Gov Brown,person,recipient,candidate,letters,,28,a recipient as the file names give it; not reviewed
-O-air-force,Air Force,organization,recipient,candidate,letters,,26,a recipient as the file names give it; not reviewed
-P-gov-desantis,Gov Desantis,person,recipient,candidate,letters,,26,a recipient as the file names give it; not reviewed
-P-ambassador-lighthizer,Ambassador Lighthizer,person,recipient,candidate,letters,,25,a recipient as the file names give it; not reviewed
-O-census-bureau,Census Bureau,organization,recipient,candidate,letters,,24,a recipient as the file names give it; not reviewed
-U-boehner,Boehner,unclassified,recipient,candidate,letters,,23,a recipient as the file names give it; not reviewed
-O-navy,Navy,organization,recipient,candidate,letters,,22,a recipient as the file names give it; not reviewed
-U-cpsc,Cpsc,unclassified,recipient,candidate,letters,,22,a recipient as the file names give it; not reviewed
-O-corps,Corps,organization,recipient,candidate,letters,,22,a recipient as the file names give it; not reviewed
-U-regulators,Regulators,unclassified,recipient,candidate,letters,,22,a recipient as the file names give it; not reviewed
-U-lahood,Lahood,unclassified,recipient,candidate,letters,,21,a recipient as the file names give it; not reviewed
-U-governor,Governor,unclassified,recipient,candidate,letters,,21,a recipient as the file names give it; not reviewed
-U-itc,Itc,unclassified,recipient,candidate,letters,,21,a recipient as the file names give it; not reviewed
-U-nps,Nps,unclassified,recipient,candidate,letters,,21,a recipient as the file names give it; not reviewed
-U-twitter,Twitter,unclassified,recipient,candidate,letters,,21,a recipient as the file names give it; not reviewed
-U-kelly,Kelly,unclassified,recipient,candidate,letters,,21,a recipient as the file names give it; not reviewed
-U-desantis,Desantis,unclassified,recipient,candidate,letters,,21,a recipient as the file names give it; not reviewed
-P-gov-hochul,Gov Hochul,person,recipient,candidate,letters,,21,a recipient as the file names give it; not reviewed
-U-davis,Davis,unclassified,recipient,candidate,letters,,20,a recipient as the file names give it; not reviewed
-U-cbo,Cbo,unclassified,recipient,candidate,letters,,20,a recipient as the file names give it; not reviewed
-U-amtrak,Amtrak,unclassified,recipient,candidate,letters,,20,a recipient as the file names give it; not reviewed
-P-gov-abbott,Gov Abbott,person,recipient,candidate,letters,,20,a recipient as the file names give it; not reviewed
-U-graham,Graham,unclassified,recipient,candidate,letters,,20,a recipient as the file names give it; not reviewed
-U-pres,Pres,unclassified,recipient,candidate,letters,,19,a recipient as the file names give it; not reviewed
-U-pfizer,Pfizer,unclassified,recipient,candidate,letters,,19,a recipient as the file names give it; not reviewed
-U-durbin,Durbin,unclassified,recipient,candidate,letters,,19,a recipient as the file names give it; not reviewed
-P-gov-scott,Gov Scott,person,recipient,candidate,letters,,19,a recipient as the file names give it; not reviewed
-U-fra,Fra,unclassified,recipient,candidate,letters,,19,a recipient as the file names give it; not reviewed
-U-leader-mcconnell,Leader Mcconnell,unclassified,recipient,candidate,letters,,19,a recipient as the file names give it; not reviewed
-P-gov-wolf,Gov Wolf,person,recipient,candidate,letters,,19,a recipient as the file names give it; not reviewed
-U-fta,Fta,unclassified,recipient,candidate,letters,,19,a recipient as the file names give it; not reviewed
-U-pmg-dejoy,Pmg Dejoy,unclassified,recipient,candidate,letters,,19,a recipient as the file names give it; not reviewed
-U-stb,Stb,unclassified,recipient,candidate,letters,,18,a recipient as the file names give it; not reviewed
-U-phrma,Phrma,unclassified,recipient,candidate,letters,,18,a recipient as the file names give it; not reviewed
-U-wells-fargo,Wells Fargo,unclassified,recipient,candidate,letters,,18,a recipient as the file names give it; not reviewed
-U-hogan,Hogan,unclassified,recipient,candidate,letters,,18,a recipient as the file names give it; not reviewed
-U-cao,Cao,unclassified,recipient,candidate,letters,,18,a recipient as the file names give it; not reviewed
-O-center,Center,organization,recipient,candidate,letters,,17,a recipient as the file names give it; not reviewed
-U-gates,Gates,unclassified,recipient,candidate,letters,,17,a recipient as the file names give it; not reviewed
-U-osc,Osc,unclassified,recipient,candidate,letters,,17,a recipient as the file names give it; not reviewed
-U-senators,Senators,unclassified,recipient,candidate,letters,,17,a recipient as the file names give it; not reviewed
-U-bor,Bor,unclassified,recipient,candidate,letters,,17,a recipient as the file names give it; not reviewed
-U-carranza,Carranza,unclassified,recipient,candidate,letters,,17,a recipient as the file names give it; not reviewed
-U-secarmy,Secarmy,unclassified,recipient,candidate,letters,,17,a recipient as the file names give it; not reviewed
-U-release,Release,unclassified,recipient,candidate,letters,,16,a recipient as the file names give it; not reviewed
-U-banks,Banks,unclassified,recipient,candidate,letters,,16,a recipient as the file names give it; not reviewed
-O-forest-service,Forest Service,organization,recipient,candidate,letters,,16,a recipient as the file names give it; not reviewed
-U-odni,Odni,unclassified,recipient,candidate,letters,,16,a recipient as the file names give it; not reviewed
-U-boeing,Boeing,unclassified,recipient,candidate,letters,,16,a recipient as the file names give it; not reviewed
-U-phmsa,Phmsa,unclassified,recipient,candidate,letters,,16,a recipient as the file names give it; not reviewed
-O-airlines,Airlines,organization,recipient,candidate,letters,,16,a recipient as the file names give it; not reviewed
-U-finra,Finra,unclassified,recipient,candidate,letters,,16,a recipient as the file names give it; not reviewed
-U-hsgac,Hsgac,unclassified,recipient,candidate,letters,,16,a recipient as the file names give it; not reviewed
-P-gov-lee,Gov Lee,person,recipient,candidate,letters,,16,a recipient as the file names give it; not reviewed
-U-dos,Dos,unclassified,recipient,candidate,letters,,15,a recipient as the file names give it; not reviewed
-U-usfs,Usfs,unclassified,recipient,candidate,letters,,15,a recipient as the file names give it; not reviewed
-O-appropriations-committee,Appropriations Committee,organization,recipient,candidate,letters,,15,a recipient as the file names give it; not reviewed
-U-dha,Dha,unclassified,recipient,candidate,letters,,15,a recipient as the file names give it; not reviewed
-U-financial-regulators,Financial Regulators,unclassified,recipient,candidate,letters,,15,a recipient as the file names give it; not reviewed
-U-tiktok,Tiktok,unclassified,recipient,candidate,letters,,15,a recipient as the file names give it; not reviewed
-U-newsom,Newsom,unclassified,recipient,candidate,letters,,15,a recipient as the file names give it; not reviewed
-P-governor-evers,Governor Evers,person,recipient,candidate,letters,,15,a recipient as the file names give it; not reviewed
-U-rfk,Rfk,unclassified,recipient,candidate,letters,,15,a recipient as the file names give it; not reviewed
-O-coast-guard,Coast Guard,organization,recipient,candidate,letters,,14,a recipient as the file names give it; not reviewed
-U-reid,Reid,unclassified,recipient,candidate,letters,,14,a recipient as the file names give it; not reviewed
-U-of-defense,Of Defense,unclassified,recipient,candidate,letters,,14,a recipient as the file names give it; not reviewed
-U-sasc,Sasc,unclassified,recipient,candidate,letters,,14,a recipient as the file names give it; not reviewed
-U-enr,Enr,unclassified,recipient,candidate,letters,,14,a recipient as the file names give it; not reviewed
-U-usfws,Usfws,unclassified,recipient,candidate,letters,,14,a recipient as the file names give it; not reviewed
-U-leader-schumer,Leader Schumer,unclassified,recipient,candidate,letters,,14,a recipient as the file names give it; not reviewed
-U-ceg,Ceg,unclassified,recipient,candidate,letters,,13,a recipient as the file names give it; not reviewed
-U-peters,Peters,unclassified,recipient,candidate,letters,,13,a recipient as the file names give it; not reviewed
-U-mlb,Mlb,unclassified,recipient,candidate,letters,,13,a recipient as the file names give it; not reviewed
-U-sigtarp,Sigtarp,unclassified,recipient,candidate,letters,,13,a recipient as the file names give it; not reviewed
-U-hasc,Hasc,unclassified,recipient,candidate,letters,,13,a recipient as the file names give it; not reviewed
-U-nsa,Nsa,unclassified,recipient,candidate,letters,,13,a recipient as the file names give it; not reviewed
-P-governor-cuomo,Governor Cuomo,person,recipient,candidate,letters,,13,a recipient as the file names give it; not reviewed
-U-farm-bill-conferees,Farm Bill Conferees,unclassified,recipient,candidate,letters,,13,a recipient as the file names give it; not reviewed
-U-goodlatte,Goodlatte,unclassified,recipient,candidate,letters,,13,a recipient as the file names give it; not reviewed
-U-cuomo,Cuomo,unclassified,recipient,candidate,letters,,13,a recipient as the file names give it; not reviewed
-U-chief-justice-roberts,Chief Justice Roberts,unclassified,recipient,candidate,letters,,13,a recipient as the file names give it; not reviewed
-U-kraninger,Kraninger,unclassified,recipient,candidate,letters,,13,a recipient as the file names give it; not reviewed
-U-nunes,Nunes,unclassified,recipient,candidate,letters,,13,a recipient as the file names give it; not reviewed
-U-apple,Apple,unclassified,recipient,candidate,letters,,13,a recipient as the file names give it; not reviewed
-P-gov-pritzker,Gov Pritzker,person,recipient,candidate,letters,,13,a recipient as the file names give it; not reviewed
-U-houseleaders,Houseleaders,unclassified,recipient,candidate,letters,,13,a recipient as the file names give it; not reviewed
-U-nsa-sullivan,Nsa Sullivan,unclassified,recipient,candidate,letters,,13,a recipient as the file names give it; not reviewed
-U-dos-dhs,Dos Dhs,unclassified,recipient,candidate,letters,,13,a recipient as the file names give it; not reviewed
-U-hochul,Hochul,unclassified,recipient,candidate,letters,,13,a recipient as the file names give it; not reviewed
-U-burton,Burton,unclassified,recipient,candidate,letters,,12,a recipient as the file names give it; not reviewed
-O-committee,Committee,organization,recipient,candidate,letters,,12,a recipient as the file names give it; not reviewed
-U-chu,Chu,unclassified,recipient,candidate,letters,,12,a recipient as the file names give it; not reviewed
-U-ntia,Ntia,unclassified,recipient,candidate,letters,,12,a recipient as the file names give it; not reviewed
-U-mchugh,Mchugh,unclassified,recipient,candidate,letters,,12,a recipient as the file names give it; not reviewed
-U-dni,Dni,unclassified,recipient,candidate,letters,,12,a recipient as the file names give it; not reviewed
-U-uscg,Uscg,unclassified,recipient,candidate,letters,,12,a recipient as the file names give it; not reviewed
-U-ioc,Ioc,unclassified,recipient,candidate,letters,,12,a recipient as the file names give it; not reviewed
-U-boem,Boem,unclassified,recipient,candidate,letters,,12,a recipient as the file names give it; not reviewed
-U-oge,Oge,unclassified,recipient,candidate,letters,,12,a recipient as the file names give it; not reviewed
-P-gov-rauner,Gov Rauner,person,recipient,candidate,letters,,12,a recipient as the file names give it; not reviewed
-O-of-state-blinken,Of State Blinken,organization,recipient,candidate,letters,,12,a recipient as the file names give it; not reviewed
-U-rfk-jr,Rfk Jr,unclassified,recipient,candidate,letters,,12,a recipient as the file names give it; not reviewed
-U-bernanke,Bernanke,unclassified,recipient,candidate,letters,,11,a recipient as the file names give it; not reviewed
 U-thompson,Thompson,unclassified,recipient,candidate,letters,,11,a recipient as the file names give it; not reviewed
-U-ncaa,Ncaa,unclassified,recipient,candidate,letters,,11,a recipient as the file names give it; not reviewed
-U-solis,Solis,unclassified,recipient,candidate,letters,,11,a recipient as the file names give it; not reviewed
-U-lisa-jackson,Lisa Jackson,unclassified,recipient,candidate,letters,,11,a recipient as the file names give it; not reviewed
-U-darcy,Darcy,unclassified,recipient,candidate,letters,,11,a recipient as the file names give it; not reviewed
-U-ondcp,Ondcp,unclassified,recipient,candidate,letters,,11,a recipient as the file names give it; not reviewed
-U-ndaa-conference,Ndaa Conference,unclassified,recipient,candidate,letters,,11,a recipient as the file names give it; not reviewed
 U-scott,Scott,unclassified,recipient,candidate,letters,,11,a recipient as the file names give it; not reviewed
-U-alexander,Alexander,unclassified,recipient,candidate,letters,,11,a recipient as the file names give it; not reviewed
-U-congressional-leaders,Congressional Leaders,unclassified,recipient,candidate,letters,,11,a recipient as the file names give it; not reviewed
-U-dodig,Dodig,unclassified,recipient,candidate,letters,,11,a recipient as the file names give it; not reviewed
-U-usdot,Usdot,unclassified,recipient,candidate,letters,,11,a recipient as the file names give it; not reviewed
-U-help,Help,unclassified,recipient,candidate,letters,,11,a recipient as the file names give it; not reviewed
-U-cfius,Cfius,unclassified,recipient,candidate,letters,,11,a recipient as the file names give it; not reviewed
-U-lighthizer,Lighthizer,unclassified,recipient,candidate,letters,,11,a recipient as the file names give it; not reviewed
-U-mckinsey,Mckinsey,unclassified,recipient,candidate,letters,,11,a recipient as the file names give it; not reviewed
-P-commissioner-rettig,Commissioner Rettig,person,recipient,candidate,letters,,11,a recipient as the file names give it; not reviewed
-P-gov-edwards,Gov Edwards,person,recipient,candidate,letters,,11,a recipient as the file names give it; not reviewed
-O-social-media,Social Media,organization,recipient,candidate,letters,,11,a recipient as the file names give it; not reviewed
-U-issa,Issa,unclassified,recipient,candidate,letters,,10,a recipient as the file names give it; not reviewed
-U-walker,Walker,unclassified,recipient,candidate,letters,,10,a recipient as the file names give it; not reviewed
-U-hu-jintao,Hu Jintao,unclassified,recipient,candidate,letters,,10,a recipient as the file names give it; not reviewed
-U-clapper,Clapper,unclassified,recipient,candidate,letters,,10,a recipient as the file names give it; not reviewed
-U-rma,Rma,unclassified,recipient,candidate,letters,,10,a recipient as the file names give it; not reviewed
-U-norfolk-southern,Norfolk Southern,unclassified,recipient,candidate,letters,,10,a recipient as the file names give it; not reviewed
 U-wolf,Wolf,unclassified,recipient,candidate,letters,,10,a recipient as the file names give it; not reviewed
 U-rogers,Rogers,unclassified,recipient,candidate,letters,,10,a recipient as the file names give it; not reviewed
-U-wyden,Wyden,unclassified,recipient,candidate,letters,,10,a recipient as the file names give it; not reviewed
-U-fws,Fws,unclassified,recipient,candidate,letters,,10,a recipient as the file names give it; not reviewed
-U-eeoc,Eeoc,unclassified,recipient,candidate,letters,,10,a recipient as the file names give it; not reviewed
-O-geo-group,Geo Group,organization,recipient,candidate,letters,,10,a recipient as the file names give it; not reviewed
-U-house-ethics,House Ethics,unclassified,recipient,candidate,letters,,10,a recipient as the file names give it; not reviewed
-P-ambassador-tai,Ambassador Tai,person,recipient,candidate,letters,,10,a recipient as the file names give it; not reviewed
-U-roberts-and-thomas,Roberts And Thomas,unclassified,recipient,candidate,letters,,10,a recipient as the file names give it; not reviewed
-U-ercot,Ercot,unclassified,recipient,candidate,letters,,10,a recipient as the file names give it; not reviewed
-U-benson,Benson,unclassified,recipient,candidate,letters,,10,a recipient as the file names give it; not reviewed
-U-mullin,Mullin,unclassified,recipient,candidate,letters,,10,a recipient as the file names give it; not reviewed
-U-orr,Orr,unclassified,recipient,candidate,letters,,9,a recipient as the file names give it; not reviewed
-U-nfl,Nfl,unclassified,recipient,candidate,letters,,9,a recipient as the file names give it; not reviewed
-U-ceq,Ceq,unclassified,recipient,candidate,letters,,9,a recipient as the file names give it; not reviewed
 U-fugate,Fugate,unclassified,recipient,candidate,letters,,9,a recipient as the file names give it; not reviewed
-U-samhsa,Samhsa,unclassified,recipient,candidate,letters,,9,a recipient as the file names give it; not reviewed
 U-mabus,Mabus,unclassified,recipient,candidate,letters,,9,a recipient as the file names give it; not reviewed
 U-nga,Nga,unclassified,recipient,candidate,letters,,9,a recipient as the file names give it; not reviewed
-U-hrsa,Hrsa,unclassified,recipient,candidate,letters,,9,a recipient as the file names give it; not reviewed
 U-perez,Perez,unclassified,recipient,candidate,letters,,9,a recipient as the file names give it; not reviewed
 P-governor-walker,Governor Walker,person,recipient,candidate,letters,,9,a recipient as the file names give it; not reviewed
 U-tavenner,Tavenner,unclassified,recipient,candidate,letters,,9,a recipient as the file names give it; not reviewed
 P-ambassador-froman,Ambassador Froman,person,recipient,candidate,letters,,9,a recipient as the file names give it; not reviewed
 U-judiciary,Judiciary,unclassified,recipient,candidate,letters,,9,a recipient as the file names give it; not reviewed
-U-swrcb,Swrcb,unclassified,recipient,candidate,letters,,9,a recipient as the file names give it; not reviewed
 U-columbia-gas,Columbia Gas,unclassified,recipient,candidate,letters,,9,a recipient as the file names give it; not reviewed
 U-equifax-ceo,Equifax Ceo,unclassified,recipient,candidate,letters,,9,a recipient as the file names give it; not reviewed
-U-equifax,Equifax,unclassified,recipient,candidate,letters,,9,a recipient as the file names give it; not reviewed
 P-amb-haley,Amb Haley,person,recipient,candidate,letters,,9,a recipient as the file names give it; not reviewed
-U-epw,Epw,unclassified,recipient,candidate,letters,,9,a recipient as the file names give it; not reviewed
 P-secretary-wolf,Secretary Wolf,person,recipient,candidate,letters,,9,a recipient as the file names give it; not reviewed
 U-zuckerberg,Zuckerberg,unclassified,recipient,candidate,letters,,9,a recipient as the file names give it; not reviewed
 P-gov-northam,Gov Northam,person,recipient,candidate,letters,,9,a recipient as the file names give it; not reviewed
-U-mbs,Mbs,unclassified,recipient,candidate,letters,,9,a recipient as the file names give it; not reviewed
-U-nprc,Nprc,unclassified,recipient,candidate,letters,,9,a recipient as the file names give it; not reviewed
 P-gov-whitmer,Gov Whitmer,person,recipient,candidate,letters,,9,a recipient as the file names give it; not reviewed
 U-insurers,Insurers,unclassified,recipient,candidate,letters,,9,a recipient as the file names give it; not reviewed
 U-xavier-beccera,Xavier Beccera,unclassified,recipient,candidate,letters,,9,a recipient as the file names give it; not reviewed
@@ -1907,47 +1735,28 @@ U-un-secretary-general,Un Secretary General,unclassified,recipient,candidate,let
 O-gop-leadership,Gop Leadership,organization,recipient,candidate,letters,,8,a recipient as the file names give it; not reviewed
 P-gov-bullock,Gov Bullock,person,recipient,candidate,letters,,8,a recipient as the file names give it; not reviewed
 U-house,House,unclassified,recipient,candidate,letters,,8,a recipient as the file names give it; not reviewed
-U-uspto,Uspto,unclassified,recipient,candidate,letters,,8,a recipient as the file names give it; not reviewed
 U-betsy-devos,Betsy Devos,unclassified,recipient,candidate,letters,,8,a recipient as the file names give it; not reviewed
-U-fomb,Fomb,unclassified,recipient,candidate,letters,,8,a recipient as the file names give it; not reviewed
-U-att,Att,unclassified,recipient,candidate,letters,,8,a recipient as the file names give it; not reviewed
 P-secretary-duke,Secretary Duke,person,recipient,candidate,letters,,8,a recipient as the file names give it; not reviewed
 U-alexander-and-murray,Alexander And Murray,unclassified,recipient,candidate,letters,,8,a recipient as the file names give it; not reviewed
 U-otting,Otting,unclassified,recipient,candidate,letters,,8,a recipient as the file names give it; not reviewed
-P-governor-hogan,Governor Hogan,person,recipient,candidate,letters,,8,a recipient as the file names give it; not reviewed
+P-gov-hogan,Gov Hogan,person,recipient,candidate,letters,,8,a recipient as the file names give it; not reviewed
 U-gowdy,Gowdy,unclassified,recipient,candidate,letters,,8,a recipient as the file names give it; not reviewed
-U-fincen,Fincen,unclassified,recipient,candidate,letters,,8,a recipient as the file names give it; not reviewed
 P-gov-murphy,Gov Murphy,person,recipient,candidate,letters,,8,a recipient as the file names give it; not reviewed
-U-cpuc,Cpuc,unclassified,recipient,candidate,letters,,8,a recipient as the file names give it; not reviewed
-U-frtib,Frtib,unclassified,recipient,candidate,letters,,8,a recipient as the file names give it; not reviewed
 U-acf-ovw-signed,Acf Ovw Signed,unclassified,recipient,candidate,letters,,8,a recipient as the file names give it; not reviewed
 U-mcaleenan,Mcaleenan,unclassified,recipient,candidate,letters,,8,a recipient as the file names give it; not reviewed
 U-census,Census,unclassified,recipient,candidate,letters,,8,a recipient as the file names give it; not reviewed
-U-ngb,Ngb,unclassified,recipient,candidate,letters,,8,a recipient as the file names give it; not reviewed
 U-kendall,Kendall,unclassified,recipient,candidate,letters,,8,a recipient as the file names give it; not reviewed
 U-postmaster-dejoy,Postmaster Dejoy,unclassified,recipient,candidate,letters,,8,a recipient as the file names give it; not reviewed
 P-mayor-adams,Mayor Adams,person,recipient,candidate,letters,,8,a recipient as the file names give it; not reviewed
-U-openai,Openai,unclassified,recipient,candidate,letters,,8,a recipient as the file names give it; not reviewed
 U-secretary,Secretary,unclassified,recipient,candidate,letters,,7,a recipient as the file names give it; not reviewed
 U-miller,Miller,unclassified,recipient,candidate,letters,,7,a recipient as the file names give it; not reviewed
-U-usccr,Usccr,unclassified,recipient,candidate,letters,,7,a recipient as the file names give it; not reviewed
 U-hatch,Hatch,unclassified,recipient,candidate,letters,,7,a recipient as the file names give it; not reviewed
 O-bank-of-america,Bank Of America,organization,recipient,candidate,letters,,7,a recipient as the file names give it; not reviewed
 U-donovan,Donovan,unclassified,recipient,candidate,letters,,7,a recipient as the file names give it; not reviewed
 U-enbridge,Enbridge,unclassified,recipient,candidate,letters,,7,a recipient as the file names give it; not reviewed
-U-scotus,Scotus,unclassified,recipient,candidate,letters,,7,a recipient as the file names give it; not reviewed
-U-eia,Eia,unclassified,recipient,candidate,letters,,7,a recipient as the file names give it; not reviewed
-U-jct,Jct,unclassified,recipient,candidate,letters,,7,a recipient as the file names give it; not reviewed
-U-ntsb,Ntsb,unclassified,recipient,candidate,letters,,7,a recipient as the file names give it; not reviewed
 U-boehner-final-pdf,Boehner Final Pdf,unclassified,recipient,candidate,letters,,7,a recipient as the file names give it; not reviewed
-U-ogr,Ogr,unclassified,recipient,candidate,letters,,7,a recipient as the file names give it; not reviewed
-U-pmg,Pmg,unclassified,recipient,candidate,letters,,7,a recipient as the file names give it; not reviewed
 U-snyder,Snyder,unclassified,recipient,candidate,letters,,7,a recipient as the file names give it; not reviewed
-U-acoe,Acoe,unclassified,recipient,candidate,letters,,7,a recipient as the file names give it; not reviewed
 U-senate-leaders,Senate Leaders,unclassified,recipient,candidate,letters,,7,a recipient as the file names give it; not reviewed
-U-verizon,Verizon,unclassified,recipient,candidate,letters,,7,a recipient as the file names give it; not reviewed
-U-jetblue,Jetblue,unclassified,recipient,candidate,letters,,7,a recipient as the file names give it; not reviewed
-U-fifa,Fifa,unclassified,recipient,candidate,letters,,7,a recipient as the file names give it; not reviewed
 U-house-appropriations,House Appropriations,unclassified,recipient,candidate,letters,,7,a recipient as the file names give it; not reviewed
 U-brady,Brady,unclassified,recipient,candidate,letters,,7,a recipient as the file names give it; not reviewed
 U-jeff-bezos,Jeff Bezos,unclassified,recipient,candidate,letters,,7,a recipient as the file names give it; not reviewed
@@ -1956,17 +1765,14 @@ U-il-r-reps,Il R Reps,unclassified,recipient,candidate,letters,,7,a recipient as
 U-dhs-doj-and-fbi,"Dhs, Doj And Fbi",unclassified,recipient,candidate,letters,,7,a recipient as the file names give it; not reviewed
 U-servicers,Servicers,unclassified,recipient,candidate,letters,,7,a recipient as the file names give it; not reviewed
 P-gov-baker,Gov Baker,person,recipient,candidate,letters,,7,a recipient as the file names give it; not reviewed
-U-kroger,Kroger,unclassified,recipient,candidate,letters,,7,a recipient as the file names give it; not reviewed
 U-uk-parliament,Uk Parliament,unclassified,recipient,candidate,letters,,7,a recipient as the file names give it; not reviewed
 U-us-ambassador-nicaragua,Us Ambassador Nicaragua,unclassified,recipient,candidate,letters,,7,a recipient as the file names give it; not reviewed
 U-credit-reporting-agencies,Credit Reporting Agencies,unclassified,recipient,candidate,letters,,7,a recipient as the file names give it; not reviewed
 U-hasc-sasc,Hasc Sasc,unclassified,recipient,candidate,letters,,7,a recipient as the file names give it; not reviewed
 P-gov-walz,Gov Walz,person,recipient,candidate,letters,,7,a recipient as the file names give it; not reviewed
 U-fudge,Fudge,unclassified,recipient,candidate,letters,,7,a recipient as the file names give it; not reviewed
-U-mohela,Mohela,unclassified,recipient,candidate,letters,,7,a recipient as the file names give it; not reviewed
 U-cbo-director-swagel,Cbo Director Swagel,unclassified,recipient,candidate,letters,,7,a recipient as the file names give it; not reviewed
 U-walgreens,Walgreens,unclassified,recipient,candidate,letters,,7,a recipient as the file names give it; not reviewed
-U-fmc,Fmc,unclassified,recipient,candidate,letters,,7,a recipient as the file names give it; not reviewed
 U-bisignano,Bisignano,unclassified,recipient,candidate,letters,,7,a recipient as the file names give it; not reviewed
 O-commission,Commission,organization,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
 U-leavitt,Leavitt,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
@@ -1975,32 +1781,24 @@ P-governor-schwarzenegger,Governor Schwarzenegger,person,recipient,candidate,let
 U-abraham,Abraham,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
 U-eagleburger,Eagleburger,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
 O-u-s-secret-service,U S Secret Service,organization,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
-U-loc,Loc,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
+U-maloney,Maloney,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
 P-rep-dreier,Rep Dreier,person,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
 U-locke,Locke,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
-U-maloney,Maloney,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
-U-eda,Eda,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
-U-icann,Icann,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
 O-conference-committee,Conference Committee,organization,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
 U-def,Def,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
 U-subcommittee,Subcommittee,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
-U-nws,Nws,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
 U-gina-mccarthy,Gina Mccarthy,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
 U-john-kerry,John Kerry,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
 U-jarvis,Jarvis,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
 O-unitedhealth-group,Unitedhealth Group,organization,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
 U-budget-conferees,Budget Conferees,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
 U-banking,Banking,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
-U-ttb,Ttb,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
 U-senate-approps,Senate Approps,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
 O-senate-appropriations-committee,Senate Appropriations Committee,organization,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
-U-mylan,Mylan,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
 P-senator-markey,Senator Markey,person,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
 U-exxonmobil,Exxonmobil,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
 U-w-m,W&M,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
-U-tva,Tva,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
 O-governors,Governors,organization,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
-U-pcaob,Pcaob,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
 U-crapo,Crapo,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
 U-long,Long,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
 P-mr-sundar-pichai,Mr Sundar Pichai,person,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
@@ -2008,11 +1806,8 @@ P-mr-pichai,Mr Pichai,person,recipient,candidate,letters,,6,a recipient as the f
 P-ltg-semonite,Ltg Semonite,person,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
 U-departments,Departments,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
 U-education-secretary-devos,Education Secretary Devos,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
-U-nara,Nara,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
 U-canada,Canada,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
-U-niaid,Niaid,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
 U-senate-thud-final,Senate Thud Final,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
-U-acf,Acf,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
 P-administrator-wheeler,Administrator Wheeler,person,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
 P-gov-inslee,Gov Inslee,person,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
 U-banking-agencies,Banking Agencies,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
@@ -2030,19 +1825,13 @@ U-blackrock,Blackrock,unclassified,recipient,candidate,letters,,6,a recipient as
 P-gov-dewine,Gov Dewine,person,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
 U-secstate-blinken,Secstate Blinken,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
 U-dni-haines,Dni Haines,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
-U-asacw,Asacw,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
-U-moderna,Moderna,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
 U-admin-regan,Admin Regan,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
-U-nida,Nida,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
 U-automakers,Automakers,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
 P-commissioner-califf,Commissioner Califf,person,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
 U-santos,Santos,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
 U-visa,Visa,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
 U-chopra,Chopra,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
 U-ercot-winter-power-crisis,Ercot Winter Power Crisis,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
-U-pto,Pto,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
-U-gsk,Gsk,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
-U-cisa,Cisa,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
 U-cassidy,Cassidy,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
 U-mountain-west-commissioner-nevarez,Mountain West Commissioner Nevarez,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
 U-comer,Comer,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
@@ -2057,7 +1846,6 @@ O-office-of-compliance,Office Of Compliance,organization,recipient,candidate,let
 P-ambassador-tobias,Ambassador Tobias,person,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 P-rep-waxman,Rep Waxman,person,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 U-halliburton,Halliburton,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
-U-icheic,Icheic,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 U-u-s-ambassador-zoellick,U S Ambassador Zoellick,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 U-novartis,Novartis,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 U-education,Education,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
@@ -2067,8 +1855,6 @@ U-transportation-conferees,Transportation Conferees,unclassified,recipient,candi
 U-leahy,Leahy,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 P-ambassador-kirk,Ambassador Kirk,person,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 P-sen-wyden,Sen Wyden,person,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
-U-csx,Csx,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
-U-comcast,Comcast,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 U-conference,Conference,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 U-assistant-secretary-darcy,Assistant Secretary Darcy,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 U-smith,Smith,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
@@ -2076,9 +1862,7 @@ U-appropriations-subcommittee,Appropriations Subcommittee,unclassified,recipient
 U-asa-darcy,Asa Darcy,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 U-delta,Delta,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 U-jeh-johnson,Jeh Johnson,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
-U-walmart,Walmart,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 U-t-i,T&I,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
-U-abc,Abc,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 U-judicial-conference,Judicial Conference,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 O-house-appropriations-committee,House Appropriations Committee,organization,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 U-dodaro,Dodaro,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
@@ -2088,16 +1872,12 @@ O-american-airlines,American Airlines,organization,recipient,candidate,letters,,
 U-pmg-brennan,Pmg Brennan,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 O-appropriations-leadership,Appropriations Leadership,organization,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 U-lhhs-approps,Lhhs Approps,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
-U-fmcsa,Fmcsa,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
-O-senate-finance-committee,Senate Finance Committee,organization,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 U-ryan,Ryan,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 U-kinder-morgan,Kinder Morgan,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 U-cruz,Cruz,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
-U-nec,Nec,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 U-e-c,E&C,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 U-mayor,Mayor,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 U-mccabe,Mccabe,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
-U-fsoc,Fsoc,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 U-chamber-of-commerce,Chamber Of Commerce,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 U-national-grid,National Grid,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 U-doc-sec-ross,Doc Sec Ross,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
@@ -2107,10 +1887,8 @@ U-wilson,Wilson,unclassified,recipient,candidate,letters,,5,a recipient as the f
 U-nys-bar,Nys Bar,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 U-duke,Duke,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 U-sonny-perdue,Sonny Perdue,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
-U-hsbc,Hsbc,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 O-united-airlines,United Airlines,organization,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 U-delay-of-kavanaugh-confirmation,Delay Of Kavanaugh Confirmation,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
-U-assk,Assk,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 U-nadler,Nadler,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 O-house-senate-leadership,House Senate Leadership,organization,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 P-senator-warren,Senator Warren,person,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
@@ -2120,19 +1898,12 @@ U-dea-ondcp-and-hhs,"Dea, Ondcp, And Hhs",unclassified,recipient,candidate,lette
 O-mtc-group,Mtc Group,organization,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 U-aba,Aba,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 O-census-bureau-dir-dillingham,Census Bureau Dir Dillingham,organization,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
-U-youtube,Youtube,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 U-indian-ambassador,Indian Ambassador,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
-U-msha,Msha,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 U-hsra-340b-enforcement-final,Hsra 340B Enforcement Final,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 U-mnuchin4,Mnuchin4,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
-U-unfccc,Unfccc,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 U-ndaa-confereees-final,Ndaa Confereees Final,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 U-amtrak-fy21-pdf,Amtrak Fy21 Pdf,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
-U-dfc,Dfc,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
-U-uber,Uber,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 U-pm-netanyahu,Pm Netanyahu,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
-U-fns,Fns,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
-U-ihs,Ihs,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 P-chairwoman-maloney,Chairwoman Maloney,person,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 U-schiff,Schiff,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 P-gov-edwards-pdf,Gov Edwards Pdf,person,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
@@ -2156,8 +1927,6 @@ U-manchin,Manchin,unclassified,recipient,candidate,letters,,5,a recipient as the
 U-trs-and-irs,Trs And Irs,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 U-steward,Steward,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 U-state1,State1,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
-U-sos,Sos,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
-U-achp,Achp,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 U-assistant-secretary-bitter,Assistant Secretary Bitter,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 P-commissioner-dudek,Commissioner Dudek,person,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 U-paramount,Paramount,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
@@ -2168,28 +1937,22 @@ U-under-secretary-kent,Under Secretary Kent,unclassified,recipient,candidate,let
 U-richardson,Richardson,unclassified,recipient,candidate,letters,,5,a recipient as the file names give it; not reviewed
 U-pomeroy,Pomeroy,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-editor,Editor,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
-U-bpa,Bpa,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-mcdonnell,Mcdonnell,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-leaders,Leaders,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 P-gov-daniels,Gov Daniels,person,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-king-abdullah,King Abdullah,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-house-conferees,House Conferees,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
-U-nhl,Nhl,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
-U-merck,Merck,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 O-forest-service-chief-tidwell,Forest Service Chief Tidwell,organization,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 P-senator-grassley,Senator Grassley,person,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-transocean,Transocean,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-abbott-laboratories,Abbott Laboratories,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
-U-cjs,Cjs,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-munoz,Munoz,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 O-ceos,Ceos,organization,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-first-lady,First Lady,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 O-delegation,Delegation,organization,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
-U-nmfs,Nmfs,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-leader-reid,Leader Reid,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 P-gen-dunwoody,Gen Dunwoody,person,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-melson-incomplete-gun-data,Melson Incomplete Gun Data,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
-O-purdue-pharma,Purdue Pharma,organization,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-hamburg,Hamburg,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-jones,Jones,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 O-democratic-leadership,Democratic Leadership,organization,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
@@ -2198,7 +1961,6 @@ P-gen-alexander,Gen Alexander,person,recipient,candidate,letters,,4,a recipient 
 U-donley,Donley,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-kathleen-sebelius,Kathleen Sebelius,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-king,King,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
-U-appropriations-committees,Appropriations Committees,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 P-general-temple,General Temple,person,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-jo-ellen-darcy,Jo Ellen Darcy,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-rowe,Rowe,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
@@ -2217,20 +1979,18 @@ U-gibson,Gibson,unclassified,recipient,candidate,letters,,4,a recipient as the f
 U-baldwin,Baldwin,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-editor-nyt,Editor Nyt,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-branch-closures,Branch Closures,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
-U-sfc,Sfc,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 O-task-force,Task Force,organization,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 O-bicameral-task-force,Bicameral Task Force,organization,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-inspectors-general,Inspectors General,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-frieden-cdc,Frieden Cdc,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
-U-cda,Cda,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 P-commissioner-goodell,Commissioner Goodell,person,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
+U-cda,Cda,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 P-commissioner-koskinen,Commissioner Koskinen,person,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-sablan,Sablan,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 P-gov-mcdonnell,Gov Mcdonnell,person,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-emmert,Emmert,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-zuma,Zuma,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-mexican-ambassador,Mexican Ambassador,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
-U-usaf,Usaf,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 P-sen-mcconnell,Sen Mcconnell,person,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-education-secretary,Education Secretary,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-finance,Finance,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
@@ -2240,8 +2000,6 @@ U-mastercard,Mastercard,unclassified,recipient,candidate,letters,,4,a recipient 
 U-prime-minister-trudeau,Prime Minister Trudeau,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-murkowski,Murkowski,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 O-park-service,Park Service,organization,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
-U-svac,Svac,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
-U-oira,Oira,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-nsa-director-rogers,Nsa Director Rogers,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-loan-servicers,Loan Servicers,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-chair,Chair,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
@@ -2250,10 +2008,8 @@ U-shuster,Shuster,unclassified,recipient,candidate,letters,,4,a recipient as the
 U-defazio-norton,"Defazio, Norton",unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-driscoll,Driscoll,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 O-world-bank-president,World Bank President,organization,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
-O-surface-transportation-board,Surface Transportation Board,organization,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-goldman-sachs,Goldman Sachs,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-carlos-muniz,Carlos Muniz,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
-U-navient,Navient,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 O-office-of-women-minorities,Office Of Women Minorities,organization,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-apollo,Apollo,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-citigroup,Citigroup,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
@@ -2272,14 +2028,11 @@ U-amtrak-ceo,Amtrak Ceo,unclassified,recipient,candidate,letters,,4,a recipient 
 U-admin-mcmahon,Admin Mcmahon,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-senate-commerce,Senate Commerce,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-house-appropriators,House Appropriators,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
-U-wam,Wam,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-senate-help,Senate Help,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-house-and-senate-appropriators,House And Senate Appropriators,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
-U-usde,Usde,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-committees,Committees,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-ocr,Ocr,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-carrion,Carrion,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
-U-depsec,Depsec,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-twitter-ceo,Twitter Ceo,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-pekoske,Pekoske,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-intuit,Intuit,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
@@ -2287,8 +2040,6 @@ O-sasc-leadership,Sasc Leadership,organization,recipient,candidate,letters,,4,a 
 U-upstart,Upstart,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 O-corecivic-group,Corecivic Group,organization,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 O-postal-board-of-governors,Postal Board Of Governors,organization,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
-U-aamc,Aamc,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
-U-cvs,Cvs,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-uk-pm-boris-johnson,Uk Pm Boris Johnson,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-miami-international-airport,Miami International Airport,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-congressman-buchanan,Congressman Buchanan,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
@@ -2305,13 +2056,7 @@ U-un-secgen,Un Secgen,unclassified,recipient,candidate,letters,,4,a recipient as
 U-financial-firms,Financial Firms,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 O-union-pacific,Union Pacific,organization,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 O-senate-house-leadership,Senate & House Leadership,organization,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
-U-atsdr,Atsdr,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
-U-pura,Pura,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
-U-usagm,Usagm,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-sens-grassley-ernst-004,Sens Grassley Ernst (004),unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
-U-nycha,Nycha,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
-U-edd,Edd,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
-U-vha,Vha,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-catalyst,Catalyst,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 P-ambassador-cui,Ambassador Cui,person,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-usdasecperdue,Usdasecperdue,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
@@ -2321,10 +2066,8 @@ U-pope-francis,Pope Francis,unclassified,recipient,candidate,letters,,4,a recipi
 U-col-kelly,Col Kelly,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-uscp-and-saa,Uscp And Saa,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-chamber,Chamber,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
-U-bia,Bia,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-major-credit-card-issusers,Major Credit Card Issusers,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 P-director-albence,Director Albence,person,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
-U-ofccp,Ofccp,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-cncs-ceo-barbara-stewart,Cncs Ceo Barbara Stewart,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-walz,Walz,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-brown,Brown,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
@@ -2336,14 +2079,12 @@ U-irf-ambassador,Irf Ambassador,unclassified,recipient,candidate,letters,,4,a re
 O-embry-riddle-aeronautical-university,Embry Riddle Aeronautical University,organization,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-dfc-ceo,Dfc Ceo,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-cryptominers,Cryptominers,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
-U-kkr,Kkr,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 O-silvergate-bank,Silvergate Bank,organization,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 O-tesla-board,Tesla Board,organization,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-airforce,Airforce,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-bennet,Bennet,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-dha-tricare-pharmacy-program,Dha Tricare Pharmacy Program,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 O-social-media-ceos,Social Media Ceos,organization,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
-U-usopc,Usopc,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-of-agriculture-tom-vilsack,Of Agriculture Tom Vilsack,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-google-final,Google Final,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-census-director-santos,Census Director Santos,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
@@ -2368,10 +2109,7 @@ U-sasc-hasc,Sasc Hasc,unclassified,recipient,candidate,letters,,4,a recipient as
 U-ltg,Ltg,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-bis,Bis,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-fifa-president,Fifa President,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
-U-nyse,Nyse,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
-U-pjm,Pjm,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-chief-moore-elkhorn,Chief Moore Elkhorn,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
-U-carb,Carb,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-greer,Greer,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-secmcmahon-251031,Secmcmahon 251031,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
 U-aag-dhillon,Aag Dhillon,unclassified,recipient,candidate,letters,,4,a recipient as the file names give it; not reviewed
@@ -2385,7 +2123,6 @@ U-justice,Justice,unclassified,recipient,candidate,letters,,3,a recipient as the
 U-rahall,Rahall,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-abbas,Abbas,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-cooper,Cooper,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
-O-abc-news,Abc News,organization,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-stephen-johnson,Stephen Johnson,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-gates-contract-interrogator-final,Gates Contract Interrogator Final,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-md-anderson,Md Anderson,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
@@ -2508,7 +2245,6 @@ O-cvs-caremark-corporation,Cvs Caremark Corporation,organization,recipient,candi
 U-express-scripts,Express Scripts,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 O-pharmaceutical-care-management-association,Pharmaceutical Care Management Association,organization,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-japan-ambassador,Japan Ambassador,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
-U-mit,Mit,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 O-center-for-creative-leadership,Center For Creative Leadership,organization,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 O-amgen-inc,Amgen Inc,organization,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-astrazeneca-pharmaceuticals,Astrazeneca Pharmaceuticals,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
@@ -2523,8 +2259,6 @@ O-merck-co,Merck Co,organization,recipient,candidate,letters,,3,a recipient as t
 U-takeda-pharmaceuticals,Takeda Pharmaceuticals,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-education-ig,Education Ig,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-walter-reed,Walter Reed,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
-U-cno,Cno,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
-U-mms,Mms,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-gates-dadt,Gates Dadt,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-boxer,Boxer,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-senators-reid-and-baucus,Senators Reid And Baucus,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
@@ -2543,9 +2277,6 @@ U-hill,Hill,unclassified,recipient,candidate,letters,,3,a recipient as the file 
 U-becker-final,Becker Final,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-for-doj-ig,For Doj Ig,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-melson-whistleblowers-gillett,Melson Whistleblowers Gillett,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
-U-aaaai,Aaaai,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
-U-aaos,Aaos,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
-U-acog,Acog,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 O-alzheimer-s-association,Alzheimer S Association,organization,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 O-american-cancer-society,American Cancer Society,organization,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 O-american-college-of-surgeons,American College Of Surgeons,organization,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
@@ -2555,7 +2286,6 @@ O-american-medical-association,American Medical Association,organization,recipie
 O-american-psychological-association,American Psychological Association,organization,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 O-heart-rhythm-society-inc,Heart Rhythm Society Inc,organization,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-narsad,Narsad,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
-U-nord,Nord,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 O-north-american-spine-society,North American Spine Society,organization,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 O-american-society-of-nephology,American Society Of Nephology,organization,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 O-banking-committee-leaders,Banking Committee Leaders,organization,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
@@ -2573,7 +2303,6 @@ U-defense-secretary,Defense Secretary,unclassified,recipient,candidate,letters,,
 P-senator-leahy,Senator Leahy,person,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-customs,Customs,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-citibank,Citibank,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
-U-odjfs,Odjfs,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-tricare,Tricare,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-mica,Mica,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 O-natural-resources-committee,Natural Resources Committee,organization,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
@@ -2581,9 +2310,7 @@ U-scotus-3-5-121,Scotus 3 5 121,unclassified,recipient,candidate,letters,,3,a re
 U-boehner-and-pelosi,Boehner And Pelosi,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-dla-piper,Dla Piper,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-cordray,Cordray,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
-U-gilead,Gilead,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-landry,Landry,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
-U-moodys,Moodys,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-jscdr,Jscdr,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-chaffetz-afghanistan-corruption-hearing,Chaffetz Afghanistan Corruption Hearing,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-hensarling-and-chariwoman-murray,Hensarling And Chariwoman Murray,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
@@ -2593,9 +2320,7 @@ O-army-corp,Army Corp,organization,recipient,candidate,letters,,3,a recipient as
 U-of-labor,Of Labor,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 P-senator-reid,Senator Reid,person,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 P-adm-papp,Adm Papp,person,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
-U-naic,Naic,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 P-sen-durbin,Sen Durbin,person,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
-U-ostp,Ostp,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-ao-final-sequester-plan,Ao Final Sequester Plan,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-john-koskinen,John Koskinen,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-jones-dodson-book-denial,Jones Dodson Book Denial,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
@@ -2616,20 +2341,18 @@ U-perez-march-31,Perez March 31,unclassified,recipient,candidate,letters,,3,a re
 U-chief-tidwell,Chief Tidwell,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 O-senate-agriculture-committee,Senate Agriculture Committee,organization,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-admin-final,Admin Final,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
-O-national-guard-bureau,National Guard Bureau,organization,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
+U-cj-roberts,Cj Roberts,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-korean-president-park,Korean President Park,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-tva-ceo-johnson,Tva Ceo Johnson,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-cantor-and-mccarthy,Cantor And Mccarthy,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-camp-and-chairman-lucas,Camp And Chairman Lucas,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-camp,Camp,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
-U-cj-roberts,Cj Roberts,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-uc-president-napolitano,Uc President Napolitano,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-fairpoint,Fairpoint,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-boehner-pelosi,Boehner Pelosi,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-senate-0,Senate 0,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-gap-0,Gap 0,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-ways-means,Ways Means,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
-U-nbc,Nbc,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-senators-landrieu-and-vitter,Senators Landrieu And Vitter,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-target,Target,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-israel,Israel,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
@@ -2643,7 +2366,6 @@ O-united-states-trade-representative,United States Trade Representative,organiza
 U-turing,Turing,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 O-compass-group,Compass Group,organization,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-usafa-superintendent,Usafa Superintendent,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
-U-cigna,Cigna,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-huerta,Huerta,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-stl-vamc-director,Stl Vamc Director,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 O-airlines-for-america,Airlines For America,organization,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
@@ -2656,12 +2378,10 @@ O-dallas-police,Dallas Police,organization,recipient,candidate,letters,,3,a reci
 U-culberson,Culberson,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-financial-regulators-credit-suisse,Financial Regulators Credit Suisse,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-vietnam,Vietnam,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
-U-hfac,Hfac,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-iranian-leaders,Iranian Leaders,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-upton-and-pallone,Upton And Pallone,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-alexander-murray,Alexander & Murray,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-lamar-smith-final-signed,Lamar Smith Final Signed,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
-U-panynj,Panynj,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-hagel-secretary-kerry-1,Hagel Secretary Kerry 1,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-graves-loc-censorship-3,Graves Loc Censorship 3,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 P-sen-vitter-tsca-feb2014,Sen Vitter Tsca Feb2014,person,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
@@ -2674,8 +2394,6 @@ U-canadian-ambassador,Canadian Ambassador,unclassified,recipient,candidate,lette
 O-schools,Schools,organization,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 P-gen-everhart,Gen Everhart,person,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 O-energy-and-commerce,Energy And Commerce,organization,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
-U-peotus,Peotus,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
-O-federal-highway-administration,Federal Highway Administration,organization,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-federal-agencies,Federal Agencies,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-bannon,Bannon,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-mnuchin-acosta-and-hargan,"Mnuchin, Acosta, And Hargan",unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
@@ -2687,9 +2405,7 @@ U-admin-pruitt,Admin Pruitt,unclassified,recipient,candidate,letters,,3,a recipi
 O-chemical-safety-board,Chemical Safety Board,organization,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 P-commissioner-gottlieb,Commissioner Gottlieb,person,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 P-senator-collins,Senator Collins,person,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
-U-bnsf,Bnsf,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-dir-wray,Dir Wray,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
-U-nist,Nist,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-brock-long,Brock Long,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 P-sen-brown,Sen Brown,person,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-kushner,Kushner,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
@@ -2707,7 +2423,6 @@ U-cambodian-ambassador,Cambodian Ambassador,unclassified,recipient,candidate,let
 U-heather-wilson-usaf,Heather Wilson Usaf,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 O-deutsche-bank,Deutsche Bank,organization,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-cwa,Cwa,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
-U-isbe,Isbe,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-global-automakers,Global Automakers,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 O-auto-alliance,Auto Alliance,organization,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-adminsitration,Adminsitration,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
@@ -2739,20 +2454,13 @@ P-justice-ginsburg,Justice Ginsburg,person,recipient,candidate,letters,,3,a reci
 U-homan,Homan,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-bowser,Bowser,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-capital-one,Capital One,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
-U-alibaba,Alibaba,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-lenders,Lenders,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-congressional-negotiators,Congressional Negotiators,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-zoom,Zoom,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
-U-prac,Prac,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
-U-eoir,Eoir,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
-U-fedex,Fedex,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-defense-secretary-esper,Defense Secretary Esper,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-inhofe-requesting-sasc-hearing,Inhofe Requesting Sasc Hearing,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-british-american-tobacco,British American Tobacco,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
-U-pmi,Pmi,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
-U-msci,Msci,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-activision-blizzard,Activision Blizzard,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
-U-reddit,Reddit,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-intel-ceo,Intel Ceo,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-nvidia-ceo,Nvidia Ceo,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-doc-ig,Doc Ig,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
@@ -2761,7 +2469,6 @@ U-fta-final,Fta Final,unclassified,recipient,candidate,letters,,3,a recipient as
 U-christiansen,Christiansen,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-rules-cmt,Rules Cmt,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-walmart-and-amazon,Walmart And Amazon,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
-U-sfops,Sfops,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-us-ag-barr,Us Ag Barr,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-shanahan,Shanahan,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-secnav-pnsy,Secnav Pnsy,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
@@ -2775,12 +2482,8 @@ U-transition,Transition,unclassified,recipient,candidate,letters,,3,a recipient 
 U-fta-final-002,Fta Final (002),unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-us-hubbard,Us Hubbard,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-def-esper-final,Def Esper Final,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
-U-purdue,Purdue,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
-U-nsc,Nsc,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-instacart,Instacart,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
-U-lyft,Lyft,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-doordash,Doordash,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
-U-fhwa,Fhwa,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-stone,Stone,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-merkley-wyden-bonamici-blumenauer,Merkley Wyden Bonamici Blumenauer,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-congress-002,Congress 002,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
@@ -2806,9 +2509,7 @@ U-iso-ne,Iso Ne,unclassified,recipient,candidate,letters,,3,a recipient as the f
 U-pallone,Pallone,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-neal,Neal,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-ochca,Ochca,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
-U-tigta,Tigta,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-kcva,Kcva,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
-U-mta,Mta,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-wicker,Wicker,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-barrett-c130j-recapitalizaton-basing,Barrett C130J Recapitalizaton Basing,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 P-governor-kelly,Governor Kelly,person,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
@@ -2819,8 +2520,6 @@ O-social-media-companies,Social Media Companies,organization,recipient,candidate
 U-cuomo-fmap,Cuomo Fmap,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-extend-ui,Extend Ui,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-mcaleenan-and-pompeo,Mcaleenan And Pompeo,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
-U-ows,Ows,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
-U-ahip,Ahip,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 P-gov-ivey,Gov Ivey,person,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-jeffrey-zients,Jeffrey Zients,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-cornyn-and-cruz,Cornyn And Cruz,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
@@ -2880,7 +2579,6 @@ U-polis,Polis,unclassified,recipient,candidate,letters,,3,a recipient as the fil
 U-texas-evap-0,Texas Evap 0,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-local-officials,Local Officials,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-power,Power,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
-U-acgme,Acgme,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-fauci-murphy-nc03-final,Fauci Murphy (Nc03) (Final),unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-starbucks-final,Starbucks Final,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-indo-pacific,Indo Pacific,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
@@ -2889,7 +2587,6 @@ U-laplante,Laplante,unclassified,recipient,candidate,letters,,3,a recipient as t
 U-karlan-az-audit,Karlan Az Audit,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-market-manipulation-final,Market Manipulation Final,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 P-rep-delauro,Rep Delauro,person,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
-U-uscp,Uscp,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 P-ambassador-knapper,Ambassador Knapper,person,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 O-supreme-court,Supreme Court,organization,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-ncga-brody-funding,Ncga Brody Funding,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
@@ -2898,15 +2595,11 @@ U-trudeau,Trudeau,unclassified,recipient,candidate,letters,,3,a recipient as the
 O-silicon-valley-bank,Silicon Valley Bank,organization,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-seqens,Seqens,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-admin-brooks-lasure,Admin Brooks Lasure,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
-U-fio,Fio,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
-U-ustp,Ustp,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-prudential-regulators,Prudential Regulators,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-susan-wiles,Susan Wiles,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
-U-cfbp,Cfbp,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-ntia-bead,Ntia Bead,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-nps-director-sams,Nps Director Sams,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-ambassadors,Ambassadors,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
-U-imls,Imls,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-delay-effective-date,Delay Effective Date,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 P-commissioner-werfel-security-breaches,Commissioner Werfel Security Breaches,person,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-tai-and-vilsack,Tai And Vilsack,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
@@ -2927,7 +2620,6 @@ U-cornell,Cornell,unclassified,recipient,candidate,letters,,3,a recipient as the
 U-admin-whitaker-cow,Admin Whitaker Cow,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 P-commissioner-miller,Commissioner Miller,person,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-them,Them,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
-O-bureau-of-reclamation,Bureau Of Reclamation,organization,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 P-chairwoman-rosenworcel,Chairwoman Rosenworcel,person,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 P-governor-lamont,Governor Lamont,person,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-pbm-reform2,Pbm Reform2,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
@@ -2951,6 +2643,213 @@ U-aag-shumate-from-senators,Aag Shumate From Senators,unclassified,recipient,can
 U-nyu-langone,Nyu Langone,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 U-senate-judiciary,Senate Judiciary,unclassified,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
 P-governor-spanberger,Governor Spanberger,person,recipient,candidate,letters,,3,a recipient as the file names give it; not reviewed
+O-the-administration,The Administration,organization,body,preferred,reviewed,,119,
+O-united-states-senate,United States Senate,organization,body,preferred,reviewed,,76,
+O-google,Google,organization,body,preferred,reviewed,,49,
+O-amazon,Amazon,organization,body,preferred,reviewed,,46,
+O-conference-committees,Conference committees,organization,body,preferred,reviewed,,109,
+O-meta-facebook,Meta (Facebook),organization,body,preferred,reviewed,,79,
+O-department-of-the-army,Department of the Army,organization,body,preferred,reviewed,,71,
+O-united-states-congress,United States Congress,organization,body,preferred,reviewed,,37,
+O-appropriations-committees,Appropriations committees,organization,body,preferred,reviewed,,58,
+P-gavin-newsom,Gavin Newsom,person,person,preferred,reviewed,,46,
+O-department-of-the-navy,Department of the Navy,organization,body,preferred,reviewed,,55,
+O-united-states-agency-for-international-development,United States Agency for International Development,organization,body,preferred,reviewed,,29,
+P-jerry-brown,Jerry Brown,person,person,preferred,reviewed,,28,
+O-department-of-the-air-force,Department of the Air Force,organization,body,preferred,reviewed,,58,
+O-census-bureau,Census Bureau,organization,body,preferred,reviewed,,24,
+O-consumer-product-safety-commission,Consumer Product Safety Commission,organization,body,preferred,reviewed,,22,
+O-financial-regulators-several,Financial regulators (several),organization,body,preferred,reviewed,,37,
+P-kathy-hochul,Kathy Hochul,person,person,preferred,reviewed,,34,
+O-united-states-international-trade-commission,United States International Trade Commission,organization,body,preferred,reviewed,,21,
+O-white-house-chief-of-staff,White House Chief of Staff,organization,body,preferred,reviewed,,7,
+O-national-park-service,National Park Service,organization,body,preferred,reviewed,,21,
+O-twitter-x,Twitter (X),organization,body,preferred,reviewed,,21,
+O-amtrak,Amtrak,organization,body,preferred,reviewed,,20,
+O-congressional-budget-office,Congressional Budget Office,organization,body,preferred,reviewed,,20,
+P-greg-abbott,Greg Abbott,person,person,preferred,reviewed,,20,
+O-federal-railroad-administration,Federal Railroad Administration,organization,body,preferred,reviewed,,19,
+O-federal-transit-administration,Federal Transit Administration,organization,body,preferred,reviewed,,19,
+P-tom-wolf,Tom Wolf,person,person,preferred,reviewed,,19,
+O-pfizer,Pfizer,organization,body,preferred,reviewed,,19,
+O-chief-administrative-officer-of-the-house,Chief Administrative Officer of the House,organization,body,preferred,reviewed,,18,
+P-larry-hogan,Larry Hogan,person,person,preferred,reviewed,,18,
+O-phrma,PhRMA,organization,body,preferred,reviewed,,18,
+O-surface-transportation-board,Surface Transportation Board,organization,body,preferred,reviewed,,22,
+O-wells-fargo,Wells Fargo,organization,body,preferred,reviewed,,18,
+O-bureau-of-reclamation,Bureau of Reclamation,organization,body,preferred,reviewed,,20,
+O-office-of-special-counsel,Office of Special Counsel,organization,body,preferred,reviewed,,17,
+O-airlines-several,Airlines (several),organization,body,preferred,reviewed,,16,
+O-banks-several,Banks (several),organization,body,preferred,reviewed,,16,
+O-boeing,Boeing,organization,body,preferred,reviewed,,16,
+O-finra,FINRA,organization,body,preferred,reviewed,,16,
+O-forest-service,Forest Service,organization,body,preferred,reviewed,,31,
+P-bill-lee,Bill Lee,person,person,preferred,reviewed,,16,
+O-senate-homeland-security-and-governmental-affairs-committee,Senate Homeland Security and Governmental Affairs Committee,organization,body,preferred,reviewed,,16,
+O-office-of-the-director-of-national-intelligence,Office of the Director of National Intelligence,organization,body,preferred,reviewed,,38,
+O-pipeline-and-hazardous-materials-safety-administration,Pipeline and Hazardous Materials Safety Administration,organization,body,preferred,reviewed,,16,
+O-defense-health-agency,Defense Health Agency,organization,body,preferred,reviewed,,15,
+P-tony-evers,Tony Evers,person,person,preferred,reviewed,,15,
+O-tiktok,TikTok,organization,body,preferred,reviewed,,15,
+O-united-states-coast-guard,United States Coast Guard,organization,body,preferred,reviewed,,26,
+O-senate-energy-and-natural-resources-committee,Senate Energy and Natural Resources Committee,organization,body,preferred,reviewed,,14,
+O-senate-armed-services-committee,Senate Armed Services Committee,organization,body,preferred,reviewed,,14,
+O-fish-and-wildlife-service,Fish and Wildlife Service,organization,body,preferred,reviewed,,24,
+O-apple,Apple,organization,body,preferred,reviewed,,13,
+O-supreme-court-of-the-united-states,Supreme Court of the United States,organization,body,preferred,reviewed,,30,
+P-andrew-cuomo,Andrew Cuomo,person,person,preferred,reviewed,,26,
+P-jb-pritzker,JB Pritzker,person,person,preferred,reviewed,,13,
+O-house-armed-services-committee,House Armed Services Committee,organization,body,preferred,reviewed,,13,
+O-major-league-baseball,Major League Baseball,organization,body,preferred,reviewed,,13,
+O-national-security-agency,National Security Agency,organization,body,preferred,reviewed,,13,
+O-national-security-advisor,National Security Advisor,organization,body,preferred,reviewed,,13,
+O-special-inspector-general-for-tarp,Special Inspector General for TARP,organization,body,preferred,reviewed,,13,
+O-bureau-of-ocean-energy-management,Bureau of Ocean Energy Management,organization,body,preferred,reviewed,,12,
+P-bruce-rauner,Bruce Rauner,person,person,preferred,reviewed,,12,
+O-international-olympic-committee,International Olympic Committee,organization,body,preferred,reviewed,,12,
+O-national-telecommunications-and-information-administration,National Telecommunications and Information Administration,organization,body,preferred,reviewed,,12,
+O-office-of-government-ethics,Office of Government Ethics,organization,body,preferred,reviewed,,12,
+O-committee-on-foreign-investment-in-the-united-states,Committee on Foreign Investment in the United States,organization,body,preferred,reviewed,,11,
+O-department-of-defense-inspector-general,Department of Defense Inspector General,organization,body,preferred,reviewed,,11,
+P-john-bel-edwards,John Bel Edwards,person,person,preferred,reviewed,,11,
+O-senate-health-education-labor-and-pensions-committee,"Senate Health, Education, Labor and Pensions Committee",organization,body,preferred,reviewed,,11,
+O-mckinsey-company,McKinsey & Company,organization,body,preferred,reviewed,,11,
+O-ncaa,NCAA,organization,body,preferred,reviewed,,11,
+O-office-of-national-drug-control-policy,Office of National Drug Control Policy,organization,body,preferred,reviewed,,11,
+O-social-media-companies-several,Social media companies (several),organization,body,preferred,reviewed,,11,
+O-michigan-secretary-of-state,Michigan Secretary of State,organization,body,preferred,reviewed,,10,
+O-equal-employment-opportunity-commission,Equal Employment Opportunity Commission,organization,body,preferred,reviewed,,10,
+O-ercot,ERCOT,organization,body,preferred,reviewed,,10,
+O-geo-group,GEO Group,organization,body,preferred,reviewed,,10,
+O-house-committee-on-ethics,House Committee on Ethics,organization,body,preferred,reviewed,,10,
+P-hu-jintao,Hu Jintao,person,person,preferred,reviewed,,10,
+O-norfolk-southern,Norfolk Southern,organization,body,preferred,reviewed,,10,
+O-risk-management-agency,Risk Management Agency,organization,body,preferred,reviewed,,10,
+P-scott-walker,Scott Walker,person,person,preferred,reviewed,,10,
+O-council-on-environmental-quality,Council on Environmental Quality,organization,body,preferred,reviewed,,9,
+O-senate-environment-and-public-works-committee,Senate Environment and Public Works Committee,organization,body,preferred,reviewed,,9,
+O-equifax,Equifax,organization,body,preferred,reviewed,,9,
+O-health-resources-and-services-administration,Health Resources and Services Administration,organization,body,preferred,reviewed,,9,
+P-mohammed-bin-salman,Mohammed bin Salman,person,person,preferred,reviewed,,9,
+O-national-football-league,National Football League,organization,body,preferred,reviewed,,9,
+O-national-personnel-records-center,National Personnel Records Center,organization,body,preferred,reviewed,,9,
+O-office-of-refugee-resettlement,Office of Refugee Resettlement,organization,body,preferred,reviewed,,9,
+O-substance-abuse-and-mental-health-services-administration,Substance Abuse and Mental Health Services Administration,organization,body,preferred,reviewed,,9,
+O-california-state-water-resources-control-board,California State Water Resources Control Board,organization,body,preferred,reviewed,,9,
+O-at-t,AT&T,organization,body,preferred,reviewed,,8,
+O-california-public-utilities-commission,California Public Utilities Commission,organization,body,preferred,reviewed,,8,
+O-financial-crimes-enforcement-network,Financial Crimes Enforcement Network,organization,body,preferred,reviewed,,8,
+O-financial-oversight-and-management-board-for-puerto-rico,Financial Oversight and Management Board for Puerto Rico,organization,body,preferred,reviewed,,8,
+O-federal-retirement-thrift-investment-board,Federal Retirement Thrift Investment Board,organization,body,preferred,reviewed,,8,
+O-national-guard-bureau,National Guard Bureau,organization,body,preferred,reviewed,,11,
+O-openai,OpenAI,organization,body,preferred,reviewed,,8,
+O-united-states-patent-and-trademark-office,United States Patent and Trademark Office,organization,body,preferred,reviewed,,14,
+O-energy-information-administration,Energy Information Administration,organization,body,preferred,reviewed,,7,
+O-fifa,FIFA,organization,body,preferred,reviewed,,7,
+O-federal-maritime-commission,Federal Maritime Commission,organization,body,preferred,reviewed,,7,
+O-joint-committee-on-taxation,Joint Committee on Taxation,organization,body,preferred,reviewed,,7,
+O-jetblue,JetBlue,organization,body,preferred,reviewed,,7,
+O-kroger,Kroger,organization,body,preferred,reviewed,,7,
+O-mohela,MOHELA,organization,body,preferred,reviewed,,7,
+O-national-transportation-safety-board,National Transportation Safety Board,organization,body,preferred,reviewed,,7,
+O-house-committee-on-oversight,House Committee on Oversight,organization,body,preferred,reviewed,,7,
+O-united-states-commission-on-civil-rights,United States Commission on Civil Rights,organization,body,preferred,reviewed,,7,
+O-verizon,Verizon,organization,body,preferred,reviewed,,7,
+O-administration-for-children-and-families,Administration for Children and Families,organization,body,preferred,reviewed,,6,
+O-cybersecurity-and-infrastructure-security-agency,Cybersecurity and Infrastructure Security Agency,organization,body,preferred,reviewed,,6,
+O-economic-development-administration,Economic Development Administration,organization,body,preferred,reviewed,,6,
+O-gsk,GSK,organization,body,preferred,reviewed,,6,
+O-icann,ICANN,organization,body,preferred,reviewed,,6,
+O-library-of-congress,Library of Congress,organization,body,preferred,reviewed,,6,
+O-moderna,Moderna,organization,body,preferred,reviewed,,6,
+O-mylan,Mylan,organization,body,preferred,reviewed,,6,
+O-national-archives-and-records-administration,National Archives and Records Administration,organization,body,preferred,reviewed,,6,
+O-national-institute-of-allergy-and-infectious-diseases,National Institute of Allergy and Infectious Diseases,organization,body,preferred,reviewed,,6,
+O-national-institute-on-drug-abuse,National Institute on Drug Abuse,organization,body,preferred,reviewed,,6,
+O-national-weather-service,National Weather Service,organization,body,preferred,reviewed,,6,
+O-public-company-accounting-oversight-board,Public Company Accounting Oversight Board,organization,body,preferred,reviewed,,6,
+O-alcohol-and-tobacco-tax-and-trade-bureau,Alcohol and Tobacco Tax and Trade Bureau,organization,body,preferred,reviewed,,6,
+O-tennessee-valley-authority,Tennessee Valley Authority,organization,body,preferred,reviewed,,6,
+O-abc-news,ABC News,organization,body,preferred,reviewed,,8,
+O-advisory-council-on-historic-preservation,Advisory Council on Historic Preservation,organization,body,preferred,reviewed,,5,
+P-aung-san-suu-kyi,Aung San Suu Kyi,person,person,preferred,reviewed,,5,
+O-comcast,Comcast,organization,body,preferred,reviewed,,5,
+O-csx,CSX,organization,body,preferred,reviewed,,5,
+O-united-states-international-development-finance-corporation,United States International Development Finance Corporation,organization,body,preferred,reviewed,,5,
+O-federal-motor-carrier-safety-administration,Federal Motor Carrier Safety Administration,organization,body,preferred,reviewed,,5,
+O-food-and-nutrition-service,Food and Nutrition Service,organization,body,preferred,reviewed,,5,
+O-financial-stability-oversight-council,Financial Stability Oversight Council,organization,body,preferred,reviewed,,5,
+O-hsbc,HSBC,organization,body,preferred,reviewed,,5,
+O-international-commission-on-holocaust-era-insurance-claims,International Commission on Holocaust Era Insurance Claims,organization,body,preferred,reviewed,,5,
+O-indian-health-service,Indian Health Service,organization,body,preferred,reviewed,,5,
+O-mine-safety-and-health-administration,Mine Safety and Health Administration,organization,body,preferred,reviewed,,5,
+O-national-economic-council,National Economic Council,organization,body,preferred,reviewed,,5,
+O-uber,Uber,organization,body,preferred,reviewed,,5,
+O-united-nations-framework-convention-on-climate-change,United Nations Framework Convention on Climate Change,organization,body,preferred,reviewed,,5,
+O-walmart,Walmart,organization,body,preferred,reviewed,,5,
+O-youtube,YouTube,organization,body,preferred,reviewed,,5,
+O-association-of-american-medical-colleges,Association of American Medical Colleges,organization,body,preferred,reviewed,,4,
+O-agency-for-toxic-substances-and-disease-registry,Agency for Toxic Substances and Disease Registry,organization,body,preferred,reviewed,,4,
+O-bureau-of-indian-affairs,Bureau of Indian Affairs,organization,body,preferred,reviewed,,4,
+O-bonneville-power-administration,Bonneville Power Administration,organization,body,preferred,reviewed,,4,
+O-california-air-resources-board,California Air Resources Board,organization,body,preferred,reviewed,,4,
+O-cvs-health,CVS Health,organization,body,preferred,reviewed,,4,
+O-california-employment-development-department,California Employment Development Department,organization,body,preferred,reviewed,,4,
+O-kkr,KKR,organization,body,preferred,reviewed,,4,
+O-merck,Merck,organization,body,preferred,reviewed,,4,
+O-navient,Navient,organization,body,preferred,reviewed,,4,
+O-national-hockey-league,National Hockey League,organization,body,preferred,reviewed,,4,
+O-national-marine-fisheries-service,National Marine Fisheries Service,organization,body,preferred,reviewed,,4,
+O-new-york-city-housing-authority,New York City Housing Authority,organization,body,preferred,reviewed,,4,
+O-new-york-stock-exchange,New York Stock Exchange,organization,body,preferred,reviewed,,4,
+O-office-of-federal-contract-compliance-programs,Office of Federal Contract Compliance Programs,organization,body,preferred,reviewed,,4,
+O-office-of-information-and-regulatory-affairs,Office of Information and Regulatory Affairs,organization,body,preferred,reviewed,,4,
+O-pjm-interconnection,PJM Interconnection,organization,body,preferred,reviewed,,4,
+O-connecticut-public-utilities-regulatory-authority,Connecticut Public Utilities Regulatory Authority,organization,body,preferred,reviewed,,4,
+O-senate-finance-committee,Senate Finance Committee,organization,body,preferred,reviewed,,9,
+O-senate-veterans-affairs-committee,Senate Veterans' Affairs Committee,organization,body,preferred,reviewed,,4,
+O-united-states-agency-for-global-media,United States Agency for Global Media,organization,body,preferred,reviewed,,4,
+O-united-states-olympic-paralympic-committee,United States Olympic & Paralympic Committee,organization,body,preferred,reviewed,,4,
+O-veterans-health-administration,Veterans Health Administration,organization,body,preferred,reviewed,,4,
+O-house-ways-and-means-committee,House Ways and Means Committee,organization,body,preferred,reviewed,,4,
+O-american-academy-of-allergy-asthma-immunology,"American Academy of Allergy, Asthma & Immunology",organization,body,preferred,reviewed,,3,
+O-american-academy-of-orthopaedic-surgeons,American Academy of Orthopaedic Surgeons,organization,body,preferred,reviewed,,3,
+O-accreditation-council-for-graduate-medical-education,Accreditation Council for Graduate Medical Education,organization,body,preferred,reviewed,,3,
+O-american-college-of-obstetricians-and-gynecologists,American College of Obstetricians and Gynecologists,organization,body,preferred,reviewed,,3,
+O-america-s-health-insurance-plans,America's Health Insurance Plans,organization,body,preferred,reviewed,,3,
+O-alibaba,Alibaba,organization,body,preferred,reviewed,,3,
+O-bnsf-railway,BNSF Railway,organization,body,preferred,reviewed,,3,
+O-cigna,Cigna,organization,body,preferred,reviewed,,3,
+O-executive-office-for-immigration-review,Executive Office for Immigration Review,organization,body,preferred,reviewed,,3,
+O-fedex,FedEx,organization,body,preferred,reviewed,,3,
+O-federal-highway-administration,Federal Highway Administration,organization,body,preferred,reviewed,,6,
+O-federal-insurance-office,Federal Insurance Office,organization,body,preferred,reviewed,,3,
+O-gilead,Gilead,organization,body,preferred,reviewed,,3,
+O-house-foreign-affairs-committee,House Foreign Affairs Committee,organization,body,preferred,reviewed,,3,
+O-institute-of-museum-and-library-services,Institute of Museum and Library Services,organization,body,preferred,reviewed,,3,
+O-illinois-state-board-of-education,Illinois State Board of Education,organization,body,preferred,reviewed,,3,
+O-lyft,Lyft,organization,body,preferred,reviewed,,3,
+O-massachusetts-institute-of-technology,Massachusetts Institute of Technology,organization,body,preferred,reviewed,,3,
+O-minerals-management-service,Minerals Management Service,organization,body,preferred,reviewed,,3,
+O-moody-s,Moody's,organization,body,preferred,reviewed,,3,
+O-msci,MSCI,organization,body,preferred,reviewed,,3,
+O-metropolitan-transportation-authority-new-york,Metropolitan Transportation Authority (New York),organization,body,preferred,reviewed,,3,
+O-national-association-of-insurance-commissioners,National Association of Insurance Commissioners,organization,body,preferred,reviewed,,3,
+O-nbc,NBC,organization,body,preferred,reviewed,,3,
+O-national-institute-of-standards-and-technology,National Institute of Standards and Technology,organization,body,preferred,reviewed,,3,
+O-national-organization-for-rare-disorders,National Organization for Rare Disorders,organization,body,preferred,reviewed,,3,
+O-national-security-council,National Security Council,organization,body,preferred,reviewed,,3,
+O-ohio-department-of-job-and-family-services,Ohio Department of Job and Family Services,organization,body,preferred,reviewed,,3,
+O-office-of-science-and-technology-policy,Office of Science and Technology Policy,organization,body,preferred,reviewed,,3,
+O-operation-warp-speed,Operation Warp Speed,organization,body,preferred,reviewed,,3,
+O-port-authority-of-new-york-and-new-jersey,Port Authority of New York and New Jersey,organization,body,preferred,reviewed,,3,
+O-philip-morris-international,Philip Morris International,organization,body,preferred,reviewed,,3,
+O-pandemic-response-accountability-committee,Pandemic Response Accountability Committee,organization,body,preferred,reviewed,,3,
+O-purdue-pharma,Purdue Pharma,organization,body,preferred,reviewed,,7,
+O-reddit,Reddit,organization,body,preferred,reviewed,,3,
+O-treasury-inspector-general-for-tax-administration,Treasury Inspector General for Tax Administration,organization,body,preferred,reviewed,,3,
+O-united-states-capitol-police,United States Capitol Police,organization,body,preferred,reviewed,,3,
+O-united-states-trustee-program,United States Trustee Program,organization,body,preferred,reviewed,,3,
 C-topics,Topics,category,group,preferred,local,,0,
 C-agriculture-and-food,Agriculture and food,category,group,preferred,local,,0,
 C-economy-and-finance,Economy and finance,category,group,preferred,local,,0,
@@ -2969,6 +2868,16 @@ C-executive-departments,Executive departments,category,group,preferred,local,,0,
 C-independent-agencies-and-commissions,Independent agencies and commissions,category,group,preferred,local,,0,
 C-inspectors-general,Inspectors general,category,group,preferred,local,,0,
 C-congress,Congress,category,group,preferred,local,,0,
+C-congressional-committees,Congressional committees,category,group,preferred,local,,0,
+C-courts,Courts,category,group,preferred,local,,0,
+C-government-corporations,Government corporations,category,group,preferred,local,,0,
+C-state-and-local-government,State and local government,category,group,preferred,local,,0,
+C-companies,Companies,category,group,preferred,local,,0,
+C-associations-and-other-organizations,Associations and other organizations,category,group,preferred,local,,0,
+C-international-organizations,International organizations,category,group,preferred,local,,0,
+C-people,People,category,group,preferred,local,,0,
+C-governors,Governors,category,group,preferred,local,,0,
+C-foreign-leaders,Foreign leaders,category,group,preferred,local,,0,
 C-members-of-congress,Members of Congress,category,group,preferred,local,,0,
 C-senators,Senators,category,group,preferred,local,,0,
 C-representatives,Representatives,category,group,preferred,local,,0,

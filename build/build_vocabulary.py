@@ -92,6 +92,9 @@ def ordinal(n: int) -> str:
 
 # ------------------------------------------------------------------ the data
 
+RECIPIENT_YEARS: Counter = Counter()   # (recipient, year) -> letters, for split decisions
+
+
 def explorer_counts() -> tuple[Counter, Counter, Counter]:
     """Letters per member, per recipient, per topic, as the explorers publish them."""
     per_member, per_recipient, per_topic = Counter(), Counter(), Counter()
@@ -109,6 +112,7 @@ def explorer_counts() -> tuple[Counter, Counter, Counter]:
                 per_member[m["id"]] += 1
                 if r[col["recipient"]]:
                     per_recipient[r[col["recipient"]]] += 1
+                    RECIPIENT_YEARS[(r[col["recipient"]], (r[col["date"]] or "")[:4])] += 1
                 for t in re.split(r"[;,]", r[col["topics"]] or ""):
                     if t.strip():
                         per_topic[t.strip()] += 1
@@ -209,6 +213,8 @@ def wikidata_lead(label: str, cache: dict) -> dict | None:
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--no-wikidata", action="store_true")
+    ap.add_argument("--apply-proposed", action="store_true",
+                    help="preview: apply reviews.csv rows marked proposed as well as accepted")
     args = ap.parse_args()
 
     per_member, per_recipient, per_topic = explorer_counts()
@@ -384,6 +390,96 @@ def main() -> int:
                         f"Wikidata search: {hit['label']} — {hit['description']}"[:200])
         WIKIDATA_CACHE.write_text(json.dumps(cache, indent=1, ensure_ascii=False), encoding="utf-8")
 
+    # Reviews ------------------------------------------------------------------
+    # vocabulary/reviews.csv is made by hand: one row per reviewed candidate.
+    # Only rows marked "accepted" are applied (or "proposed" too, with
+    # --apply-proposed, to preview). A reviewed candidate stops being a term of
+    # its own: it becomes another name, an abbreviation or an office holder's
+    # name of the term it was decided to be, and its letters count there.
+    extra_hier = []
+    review_path = OUT / "reviews.csv"
+    reviews = list(csv.DictReader(review_path.open(encoding="utf-8"))) if review_path.exists() else []
+    wanted = {"accepted"} | ({"proposed"} if args.apply_proposed else set())
+    cand_by_label = {t_["label"]: t_ for t_ in terms if t_["status"] == "candidate"}
+    gone: set[str] = set()
+    applied = Counter()
+    for rv in reviews:
+        if rv["status"] not in wanted or rv["decision"] == "hold":
+            continue
+        cand = cand_by_label.get(rv["candidate"])
+        if not cand or cand["term_id"] in gone:
+            continue                       # gone from the data, or folded in already
+        gone.add(cand["term_id"])
+        applied[rv["decision"]] += 1
+        names = [cand["label"]] + [r["value"] for r in relations
+                                   if r["term_id"] == cand["term_id"] and r["relation"] == "altLabel"]
+        # Gone now, so a new term may take the same ID ("Census Bureau" the
+        # candidate becomes "Census Bureau" the agency).
+        terms.remove(cand)
+        ids.discard(cand["term_id"])
+        relations[:] = [r for r in relations if r["term_id"] != cand["term_id"]]
+        if rv["decision"] == "reject":
+            continue
+        if rv["decision"] == "split":
+            # One name, two people or offices, told apart by the letter's year:
+            # "Federal Communications Commission@2014-2017;Environmental
+            # Protection Agency@2018-2021". Letters outside every range stay
+            # uncounted rather than guessed.
+            for part in rv["target"].split(";"):
+                label, _, span = part.partition("@")
+                lo, _, hi = span.partition("-")
+                tgt = next((t_ for t_ in terms if t_["label"] == label.strip()
+                            and t_["status"] == "preferred"), None)
+                if tgt is None:
+                    add(f"O-{slug(label)}", label.strip(), rv["kind"] or "organization",
+                        "body", "preferred", "reviewed")
+                    tgt = terms[-1]
+                    if rv["broader"]:
+                        extra_hier.append({"term": label.strip(), "broader": rv["broader"]})
+                n = sum(c for (rec, yr), c in RECIPIENT_YEARS.items()
+                        if rec == cand["label"] and yr and lo <= yr <= (hi or lo))
+                tgt["letters"] = int(tgt["letters"] or 0) + n
+                rel(tgt["term_id"], "officeHolderName", f"{cand['label']} ({span})",
+                    "preferred", "reviewed")
+            continue
+        if rv["decision"] == "member":
+            tid = f"M-{rv['target']}"
+            for nm in names:
+                rel(tid, "recipientName", nm, "preferred", "reviewed")
+            continue
+        target = next((t_ for t_ in terms if t_["label"] == rv["target"]
+                       and t_["status"] == "preferred"), None)
+        # An unreviewed term with the target's own name is the same thing:
+        # fold it in ("Surface Transportation Board" under "Stb").
+        twin = next((t_ for t_ in terms if t_["status"] == "candidate"
+                     and t_["label"].lower() == rv["target"].lower()), None)
+        twin_letters = 0
+        if twin:
+            names += [twin["label"]] + [r["value"] for r in relations
+                                        if r["term_id"] == twin["term_id"] and r["relation"] == "altLabel"]
+            twin_letters = int(twin["letters"] or 0)
+            terms.remove(twin)
+            ids.discard(twin["term_id"])
+            relations[:] = [r for r in relations if r["term_id"] != twin["term_id"]]
+            gone.add(twin["term_id"])
+        if target is None:
+            kind = rv["kind"] or "organization"
+            prefix = {"person": "P", "organization": "O"}.get(kind, "O")
+            add(f"{prefix}-{slug(rv['target'])}", rv["target"], kind,
+                "person" if kind == "person" else "body", "preferred", "reviewed")
+            target = terms[-1]
+            if rv["broader"]:
+                extra_hier.append({"term": rv["target"], "broader": rv["broader"]})
+        target["letters"] = int(target["letters"] or 0) + int(cand["letters"] or 0) + twin_letters
+        how = "officeHolderName" if rv["decision"] == "officeholder" else "altLabel"
+        for nm in names:
+            if nm != target["label"]:
+                rel(target["term_id"], how, nm, "preferred", "reviewed")
+        if rv["abbreviation"]:
+            rel(target["term_id"], "abbreviation", rv["abbreviation"], "preferred", "reviewed")
+    if gone:
+        print(f"  reviews applied: {dict(applied)}", file=sys.stderr)
+
     # The hierarchy --------------------------------------------------------------
     # vocabulary/hierarchy.csv is made by hand: each row a term and the term it
     # sits under. A label there that is not a term yet becomes a category.
@@ -393,7 +489,7 @@ def main() -> int:
         if t_["status"] == "preferred":
             by_label.setdefault(t_["label"], t_["term_id"])
     roots = []
-    hier = list(csv.DictReader((OUT / "hierarchy.csv").open(encoding="utf-8")))
+    hier = list(csv.DictReader((OUT / "hierarchy.csv").open(encoding="utf-8"))) + extra_hier
     for row in hier:
         for lab in (row["term"], row["broader"]):
             if lab and lab not in by_label:
@@ -439,11 +535,37 @@ def main() -> int:
             return (last.lower(), t_["label"].lower())
         return (re.sub(r"^the\s+", "", t_["label"], flags=re.I).lower(), "")
 
+    names_of = defaultdict(set)
+    for t_ in terms:
+        names_of[t_["term_id"]].add(t_["label"])
+    for r in relations:
+        if r["relation"] in ("altLabel", "abbreviation", "officeHolderName", "recipientName") \
+                and not re.search(r"\(\d{4}-\d{4}\)$", r["value"]):
+            names_of[r["term_id"]].add(r["value"])
+    # A split name ("Wheeler (2014-2017)") goes with its years.
+    for r in relations:
+        m = re.fullmatch(r"(.+) \((\d{4})-(\d{4})\)", r["value"])
+        if r["relation"] == "officeHolderName" and m:
+            names_of[r["term_id"]].add(f"{m.group(1)}@{m.group(2)}-{m.group(3)}")
+
+    # A name split by date matches only in its years, everywhere: the plain
+    # "wheeler" the hand-made tables gave both the FCC and the EPA goes.
+    dated = {v.split("@")[0].lower() for vs in names_of.values() for v in vs if "@" in v}
+    for tid_, vs in names_of.items():
+        names_of[tid_] = {v for v in vs if "@" in v or v.lower() not in dated}
+
     def node(tid, seen=()):
         t_ = term_by_id[tid]
         kids = [node(c, seen + (tid,)) for c in sorted(set(children.get(tid, [])), key=sort_key)
                 if c not in seen]
         n = {"id": tid, "label": t_["label"], "kind": t_["kind"]}
+        # Every name the letters use for an organization or person, so the
+        # home page can open exactly its letters: "Navy" and "Secnav" are the
+        # Department of the Navy.
+        if t_["kind"] in ("organization", "person", "unclassified"):
+            nm = names_of.get(tid)
+            if nm:
+                n["names"] = sorted(nm)
         if t_["status"] != "preferred":
             n["status"] = t_["status"]
         if int(t_["letters"] or 0):
@@ -452,6 +574,15 @@ def main() -> int:
             n["children"] = kids
         return n
     tree = [node(by_label[r]) for r in roots]
+
+    seen_rel = set()
+    deduped = []
+    for r in relations:
+        key = (r["term_id"], r["relation"], r["value"])
+        if key not in seen_rel:
+            seen_rel.add(key)
+            deduped.append(r)
+    relations[:] = deduped
 
     # Write ------------------------------------------------------------------------
     OUT.mkdir(exist_ok=True)
