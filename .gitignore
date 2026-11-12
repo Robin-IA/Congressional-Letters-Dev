@@ -29,3 +29,7 @@ harvest/wayback/*.trial.csv
 harvest/wayback/*.log
 harvest/directories/cache/
 harvest/letters/cache/
+
+# congress-legislators JSON, fetched for build_vocabulary.py (14 MB; re-fetchable)
+data/legislators/
+data/vocabulary-wikidata-cache.json

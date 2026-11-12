@@ -112,6 +112,10 @@ def main() -> int:
     (out / "index.html").write_text(html.replace("hub.js?v=STAMP", f"hub.js?v={stamp}"),
                                     encoding="utf-8")
     shutil.copy2(src / "hub.js", out / "hub.js")
+    # The vocabulary's tree, for the "By topic" view (build_vocabulary.py).
+    tree = ROOT / "vocabulary" / "tree.json"
+    if tree.exists():
+        shutil.copy2(tree, out / "vocabulary-tree.json")
     # Images the page itself uses (the Capitol photograph), copied as they are.
     if (src / "img").exists():
         shutil.copytree(src / "img", out / "img", dirs_exist_ok=True)

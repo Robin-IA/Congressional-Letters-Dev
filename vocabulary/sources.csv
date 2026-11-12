@@ -1,0 +1,8 @@
+source,full_name,uri_pattern,license
+Bioguide,Biographical Directory of the United States Congress,https://bioguide.congress.gov/search/bio/{id},public domain (US government work)
+congress-legislators,unitedstates/congress-legislators,https://github.com/unitedstates/congress-legislators,CC0 1.0
+Wikidata,Wikidata,http://www.wikidata.org/entity/{id},CC0 1.0
+rosters,"This repository's per-Congress rosters, data/rosters/",,derived from congress-legislators
+topics.py,"This repository's topic tagger, build/topics.py",,local
+local,"Chosen by hand in this repository, after checking",,local
+letters,Recipients as the letters' file names give them,,local
