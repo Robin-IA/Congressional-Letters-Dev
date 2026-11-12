@@ -24,6 +24,12 @@ hour, lower `WORKERS` and tell Robin.
 The same job as `C:\render2`, rebuilt at 11:34 to leave out everything already
 rendered, including the PC's own 564.
 
+**If `C:\render2` is still running, keep it running and skip steps 1–2.** It is
+the same set of letters and skips what it has done; switching folders gains
+nothing. What matters is that its **thumbnails and `.jsonl` files come back**
+on `pc-render-return-2` (update that branch), not its PDFs: at 11:47 the PC had
+pushed 598 PDFs but the Mac had thumbnails for only 392 of them.
+
 1. Download
    <https://github.com/Robin-IA/Congressional-Letters-Dev/raw/pc-bundle/pc-render-106-114-paths.zip>
    and unzip it into a **new** folder, `C:\render3`. Do not resume `C:\render2`.
