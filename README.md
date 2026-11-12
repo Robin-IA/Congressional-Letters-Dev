@@ -4,13 +4,15 @@
 Machine during the second render run. Their thumbnails, OCR, text and dates are
 on `pc-render-return-2`. The first run's 172 PDFs are on `pc-render-pdfs`.
 
-**Partial — the run is still going. Batch 1 built 10:35, batch 2 at 11:00.**
+**Final for the PC. Batches at 10:35, 11:00 and 11:08; the render is handed
+back to the Mac, which fetches the remaining 7,270 itself.**
 
 | | |
 | --- | --- |
 | `pc-render-pdfs-2.zip` | **154** PDFs, 65.8 MB |
 | `pc-render-pdfs-3.zip` | **123** PDFs, 66.6 MB |
-| Total so far | **277** of 7,662 (3.6%) |
+| `pc-render-pdfs-4.zip` | **115** PDFs, 36.7 MB |
+| **Total** | **392** of 7,662 (5.1%) |
 
 Every file is named for its CDX digest and matches a thumbnail of the same name
 on `pc-render-return-2`. All were checked to begin with `%PDF`.
