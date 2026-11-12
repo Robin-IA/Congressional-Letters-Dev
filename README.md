@@ -4,13 +4,13 @@
 Machine during the second render run. Their thumbnails, OCR, text and dates are
 on `pc-render-return-2`. The first run's 172 PDFs are on `pc-render-pdfs`.
 
-**Built 12 November 2026, 10:35 local. Partial — the run is still going.**
+**Partial — the run is still going. Batch 1 built 10:35, batch 2 at 11:00.**
 
 | | |
 | --- | --- |
-| PDFs | **154** of 7,662 (2.0%) |
-| Zipped | 65.8 MB |
-| Average | 456 KB each |
+| `pc-render-pdfs-2.zip` | **154** PDFs, 65.8 MB |
+| `pc-render-pdfs-3.zip` | **123** PDFs, 66.6 MB |
+| Total so far | **277** of 7,662 (3.6%) |
 
 Every file is named for its CDX digest and matches a thumbnail of the same name
 on `pc-render-return-2`. All were checked to begin with `%PDF`.
@@ -28,9 +28,11 @@ lands here, that is worth a deliberate decision rather than a default.
 
 ## Batching
 
-Pushed as one zip at 154 files. Going forward the plan is batches of 500 PDFs,
-each split into 3 parts under 90 MB, since 500 at 456 KB is about 234 MB and
-GitHub refuses any single file over 100 MB.
+One zip per batch, sized by bytes rather than file count: each holds up to
+85 MB of PDFs, which is 120-190 files depending on how big they run. Sizing by
+count would not be safe -- PDFs have averaged anywhere from 350 KB to 747 KB
+across stretches of this run, so 190 files can be 87 MB or 142 MB, and GitHub
+refuses any single file over 100 MB.
 
 Pushed with git, not the contents API: the REST blob endpoint refuses anything
 much over 50 MB, answering HTTP 422. Built in a fresh local repository rather
