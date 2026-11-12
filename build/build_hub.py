@@ -29,12 +29,48 @@ import json
 import re
 import shutil
 import sys
+import urllib.parse
 from datetime import datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 EXPLORERS = ROOT.parent / "explorers"
 NAME = "Explorer-Letters"   # the page is titled "Letters from Congress"
+
+
+PER_CONGRESS = 4   # letters pictured on each Congress's card
+
+
+def samples(explorer: Path, n: int) -> list[dict]:
+    """A few real letters from one explorer, to show as pictures.
+
+    One letter each from the members with the most letters, taking the first
+    of theirs that has a thumbnail and says who it was to, so the pictures are
+    of different people and every caption has something to say. Chosen at
+    build time, the same way every build, from what the explorer holds.
+    """
+    idx = json.loads((explorer / "index.json").read_text(encoding="utf-8"))
+    col = {c: i for i, c in enumerate(idx["columns"])}
+    thumbs = explorer / "thumbs"
+    out = []
+    for m in sorted(idx["members"], key=lambda m: -(m.get("letters") or 0)):
+        path = explorer / idx.get("data_base", "payload/member/") / f"{m['id']}.json"
+        if not m.get("letters") or not path.exists():
+            continue
+        for r in json.loads(path.read_text(encoding="utf-8")):
+            digest = r[col["digest"]]
+            if (digest and r[col["recipient"]] and r[col["kind"]] == "pdf"
+                    and (thumbs / f"{digest}.webp").exists()):
+                out.append({"thumb": f"thumbs/{digest}.webp", "member": m["name"],
+                            "member_id": m["id"], "to": r[col["recipient"]],
+                            "subject": r[col["subject"]] or "",
+                            "date": r[col["date"]] or "",
+                            "url": f"https://web.archive.org/web/{r[col['timestamp']]}id_/"
+                                   + urllib.parse.quote(r[col["key"]], safe=":/?&=%#~+,;@!$'()*[]")})
+                break
+        if len(out) >= n:
+            break
+    return out
 
 
 def main() -> int:
@@ -55,7 +91,8 @@ def main() -> int:
             sys.exit(f"{idx} says Congress {k.get('number')}, not {m.group(1)}")
         entry = {"number": int(m.group(1)),
                  "label": f"{k.get('ordinal', m.group(1))} Congress",
-                 "path": f"../{d.name}/"}
+                 "path": f"../{d.name}/",
+                 "samples": samples(d, PER_CONGRESS)}
         # The Download data file, from export_csv.py. Linked only when it
         # exists; without it the card says "coming soon".
         csvs = sorted((d / "data").glob("letters-from-congress-*.csv"))
