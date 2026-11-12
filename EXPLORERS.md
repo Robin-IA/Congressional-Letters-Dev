@@ -40,6 +40,7 @@ the results.
 | 2026-11-09 | Letters on a caucus subdomain (`cpc.grijalva.house.gov`, `rsc.jordan.house.gov`) go to the parent address's holder, flagged `caucus`, and are **kept in the data but not published** (`UNPUBLISHED` in `build/address_holders.py`) until #24 is done. 255 rows, 126 distinct documents. About half the RSC's are letters to the caucus from outside groups. |
 | 2026-11-09 | Committee letters are wanted, credited to the chair as of the letter's date. Not yet harvested (#23). |
 | 2026-11-09 | **Each letter appears in exactly one explorer: the Congress in session on the letter's date.** No letter or thumbnail is stored twice. The alternative, every letter of a Congress's members, would repeat a long-serving member's letters in every Congress they served. |
+| 2026-11-12 | The federated explorer is **Letters from Congress**, folder and repository name `Letters-from-Congress`, published beside the explorers so `../Explorer-Congressional-Letters-<N>/` reaches each one. Each explorer's "All Congresses" link goes to `../Letters-from-Congress/`. Built by `build/build_hub.py`. |
 
 ## The pipeline for Congress N
 
@@ -254,7 +255,14 @@ every letter on the sitting members' sites.
 
 ## The federated explorer: requirements so far
 
-To be developed separately. What it has to do, as discussed on 9 November:
+What it has to do, as discussed on 9 November. **The first version was built
+on 12 November** (`build/build_hub.py`, page in `build/hub/`): it lists every
+Congress and searches across them, loading each explorer's `search.json`
+newest first, and gathers a member's Congresses into one card. Search matches
+subject, recipient, topics and member names, as the explorers' own search
+does; full text waits for the OCR and an index. Career pages and the
+cross-Congress views below are not built yet. PR #25 is an earlier mockup of
+the same page, from the 119th's data alone.
 
 - **List every Congress** with its dates and counts, read from each
   explorer's `index.json`. Counts are computed by the federated explorer from
@@ -284,4 +292,3 @@ To be developed separately. What it has to do, as discussed on 9 November:
   - Copied: copies drift apart, and the caching trap repeats per repository.
 - **OCR engine and the full-text index format** (step 5).
 - **Senate paths on shared hosts** (`senate.gov/~name`, step 4). The House paths are done.
-- **The federated explorer's repository name.**
