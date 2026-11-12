@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Letters from Congress, all Congresses (mockup) · Internet Archive</title>
+<meta name="description" content="Mockup of the federated Letters from Congress explorer: one entry point to an explorer per Congress, a timeline of letters across Congresses, and search across all of them.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='5' y='3' width='22' height='26' rx='1.5' fill='none' stroke='%232c2c2c' stroke-width='2.4'/%3E%3Cpath d='M10 10h12M10 15h12M10 20h7' stroke='%232c2c2c' stroke-width='2.2' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+/* The live explorer's tokens, so the mockup reads as the same site. */
+:root {
+  --page: #fbfbfd; --panel: #fff; --ink: #2b2b2b; --muted: #6e6e73; --faint: #96969b;
+  --bar: #2c2c2c; --link: #2f6bbd; --active: #4b64ff; --hair: #e4e4e8; --tint: #f4f4f7;
+  --sen: #2f6f9f; --hou: #7a4f9c;
+  --data: #4b64ff; --data-soft: #b9c3ff; --data-none: #dcdce2;
+  --ok: #2e7d4f; --warn: #a45d00;
+  --font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --serif: Georgia, "Times New Roman", serif;
+}
+html { font-size: 10px; -webkit-text-size-adjust: 100%; }
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; background: var(--page); color: var(--ink); font: 1.4rem/1.5 var(--font); }
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+button, input { font: inherit; color: inherit; }
+h1, h2, h3 { margin: 0; font-weight: inherit; font-size: inherit; }
+ul, ol { list-style: none; margin: 0; padding: 0; }
+p { margin: 0; }
+.tab { font-variant-numeric: tabular-nums; }
+.wrap { max-width: 104rem; margin: 0 auto; padding: 0 1.6rem; }
+header.bar { background: var(--bar); color: #fff; }
+header.bar .wrap { min-height: 5.6rem; display: flex; align-items: center; gap: 1.4rem; flex-wrap: wrap; padding-top: .7rem; padding-bottom: .7rem; }
+header.bar a.brand { display: flex; align-items: center; gap: 1rem; color: #fff; font-size: 1.6rem; font-weight: 500; }
+header.bar a.brand:hover { text-decoration: none; }
+header.bar .tag { font-size: 1.3rem; opacity: .75; }
+@media (max-width: 700px) { header.bar .tag { display: none; } }
+.mock { background: #fff6d6; border-bottom: 1px solid #ecd98f; color: #5a4a00; font-size: 1.3rem; }
+.mock .wrap { padding-top: .9rem; padding-bottom: .9rem; }
+main { max-width: 104rem; margin: 0 auto; padding: 3.2rem 1.6rem 4rem; }
+@media (min-width: 700px) { main, .wrap { padding-left: 2.4rem; padding-right: 2.4rem; } }
+.hero { font-family: var(--serif); font-size: 3rem; line-height: 1.25; letter-spacing: -.015em; margin-bottom: 1rem; }
+.lede { font-size: 1.55rem; color: var(--muted); max-width: 68rem; margin-bottom: 2.4rem; line-height: 1.55; }
+.lede b { color: var(--ink); font-weight: 600; }
+.label { font-size: 1.15rem; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; margin: 0 0 1.2rem; }
+section.block { margin-bottom: 4rem; }
+.panel { background: var(--panel); border: 1px solid var(--hair); border-radius: 6px; padding: 2rem 2.2rem; }
+.note { font-size: 1.25rem; color: var(--muted); margin-top: 1.2rem; max-width: 72rem; }
+
+/* Search */
+form.search { display: flex; max-width: 60rem; margin-bottom: 1rem; }
+form.search input { flex: 1; min-width: 0; height: 4.4rem; padding: 0 1.4rem; background: #fff; border: 1px solid #c9c9cf; border-right: 0; border-radius: 4px 0 0 4px; }
+form.search button { height: 4.4rem; padding: 0 2rem; background: var(--active); color: #fff; border: 0; border-radius: 0 4px 4px 0; cursor: pointer; }
+.tries { display: flex; flex-wrap: wrap; gap: .6rem; margin-bottom: 3.2rem; font-size: 1.25rem; color: var(--muted); align-items: center; }
+.pill { border: 1px solid var(--hair); background: #fff; border-radius: 999px; padding: .3rem 1.1rem; cursor: pointer; font-size: 1.25rem; }
+.pill:hover { border-color: #c6c6cc; }
+#results[hidden] { display: none; }
+#results .summary { font-size: 1.5rem; margin-bottom: 1.4rem; }
+#results .summary b { font-weight: 600; }
+.group { margin-top: 2rem; }
+.group h3 { font-family: var(--serif); font-size: 1.9rem; display: flex; gap: 1rem; align-items: baseline; flex-wrap: wrap; }
+.group h3 .ct { font-family: var(--font); font-size: 1.25rem; color: var(--muted); }
+.group h3 a { font-family: var(--font); font-size: 1.25rem; margin-left: auto; }
+.hits { margin-top: .8rem; border-top: 1px solid var(--hair); }
+.hits li { display: grid; grid-template-columns: 5.2rem 1fr; gap: .2rem 1.2rem; padding: .9rem 0; border-bottom: 1px solid var(--hair); }
+.hits .y { color: var(--muted); font-size: 1.25rem; padding-top: .1rem; }
+.hits .s { font-weight: 500; }
+.hits .m { grid-column: 2; font-size: 1.25rem; color: var(--muted); }
+.more { margin-top: .8rem; font-size: 1.25rem; }
+
+/* Charts: one series, one hue. Published/harvesting/planned is said in text
+   under each bar, never by colour alone. */
+.chart { position: relative; }
+.chart svg { display: block; width: 100%; height: auto; overflow: visible; }
+/* On a phone the chart keeps a readable size and scrolls inside its panel,
+   never the page. The tooltip sits above, so it is shown only on wider screens. */
+@media (max-width: 699px) {
+  .chart { overflow-x: auto; padding-top: 0; }
+  .chart svg { min-width: 620px; }
+  .chart .tip { display: none; }
+}
+.chart .gl { stroke: var(--hair); stroke-width: 1; }
+.chart .axis { fill: var(--muted); font-size: 11px; font-family: var(--font); }
+.chart .val { fill: var(--ink); font-size: 11px; font-family: var(--font); font-variant-numeric: tabular-nums; }
+.chart .bar { fill: var(--data); }
+.chart .bar.floor { fill: var(--data-soft); }
+.chart .hit { fill: transparent; cursor: pointer; }
+.chart .hit:focus { outline: none; }
+.chart g.col:hover .bar, .chart g.col:focus-within .bar { opacity: .82; }
+.chart .st { font-size: 10px; font-family: var(--font); fill: var(--muted); }
+.tip { position: absolute; pointer-events: none; background: #fff; border: 1px solid var(--hair); border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,.08); padding: .8rem 1rem; font-size: 1.25rem; line-height: 1.4; min-width: 18rem; z-index: 2; }
+.tip[hidden] { display: none; }
+.tip b { font-weight: 600; }
+.key { display: flex; gap: 1.6rem; flex-wrap: wrap; font-size: 1.2rem; color: var(--muted); margin-top: 1rem; }
+.key i { display: inline-block; width: 1.1rem; height: 1.1rem; border-radius: 2px; vertical-align: -1px; margin-right: .5rem; }
+
+/* Career */
+.career-controls { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; margin-bottom: 1.4rem; }
+.career-controls input { height: 3.8rem; padding: 0 1.2rem; border: 1px solid #c9c9cf; border-radius: 4px; width: 100%; max-width: 36rem; background: #fff; }
+#careerHead { font-family: var(--serif); font-size: 2rem; margin-bottom: .2rem; }
+#careerSub { color: var(--muted); font-size: 1.25rem; margin-bottom: 1rem; }
+
+/* Congress list */
+.congress { background: var(--panel); border: 1px solid var(--hair); border-radius: 6px; padding: 2rem 2.2rem; margin-bottom: 1.2rem; scroll-margin-top: 2rem; }
+.congress.flash { box-shadow: 0 0 0 3px var(--data-soft); }
+.congress .head { display: flex; gap: 1rem; align-items: baseline; flex-wrap: wrap; }
+.congress h3 { font-family: var(--serif); font-size: 2.2rem; letter-spacing: -.01em; }
+.congress h3 a { color: var(--ink); }
+.congress .dates { color: var(--muted); }
+.status { margin-left: auto; font-size: 1.15rem; text-transform: uppercase; letter-spacing: .06em; display: inline-flex; gap: .5rem; align-items: center; }
+.status.published { color: var(--ok); }
+.status.harvesting { color: var(--warn); }
+.status.planned { color: var(--faint); }
+.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 1rem; margin: 1.4rem 0 1rem; }
+.facts div { border-left: 3px solid var(--hair); padding-left: 1rem; }
+.facts .k { display: block; font-size: 1.15rem; color: var(--muted); }
+.facts .v { display: block; font-size: 1.8rem; font-variant-numeric: tabular-nums; }
+.congress .top { font-size: 1.25rem; color: var(--muted); }
+.congress .detail { font-size: 1.25rem; color: var(--muted); margin-top: .6rem; }
+.congress.planned { background: var(--tint); }
+.adds li { padding: .6rem 0 .6rem 2rem; position: relative; }
+.adds li::before { content: "→"; position: absolute; left: 0; color: var(--faint); }
+footer { border-top: 1px solid var(--hair); color: var(--muted); font-size: 1.2rem; padding: 1.8rem 0; }
+</style>
+</head>
+<body>
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="https://archive.org/" title="Internet Archive">
+      <svg width="28" height="28" viewBox="0 0 30 30" aria-hidden="true"><rect x="2" y="26" width="26" height="2.5" fill="#fff"/><rect x="2" y="4.5" width="26" height="2.5" fill="#fff"/><path d="M15 0 L28 4 H2 Z" fill="#fff"/><rect x="5" y="9" width="2.5" height="15" fill="#fff"/><rect x="11" y="9" width="2.5" height="15" fill="#fff"/><rect x="16.5" y="9" width="2.5" height="15" fill="#fff"/><rect x="22.5" y="9" width="2.5" height="15" fill="#fff"/></svg>
+      <span>Letters from Congress</span>
+    </a>
+    <span class="tag">Every Congress's explorer, in one place</span>
+  </div>
+</header>
+<div class="mock"><div class="wrap">
+  <b>Mockup.</b> This page shows how one explorer could link and search the per-Congress explorers. The figures are real,
+  but they come from today's corpus: letters on the websites of the 119th Congress's members. Only the 119th explorer exists so far.
+</div></div>
+
+<main>
+  <h1 class="hero">Letters from Congress, every Congress</h1>
+  <p class="lede" id="lede">Letters that members of Congress published on their own websites, preserved by the
+    Wayback Machine. Each Congress has its own explorer, and each letter sits in exactly one: the Congress in session on the day it was written.</p>
+
+  <form class="search" id="searchForm" role="search">
+    <input id="q" name="q" type="search" placeholder="Search every Congress: a topic, an agency, a member" aria-label="Search letters across every Congress" autocomplete="off">
+    <button type="submit">Search</button>
+  </form>
+  <div class="tries" id="tries"><span>Try:</span></div>
+
+  <section class="block" id="results" hidden aria-live="polite">
+    <p class="label">Search across every Congress</p>
+    <div class="panel">
+      <p class="summary" id="summary"></p>
+      <div class="chart" id="hitChart"></div>
+      <div id="groups"></div>
+    </div>
+  </section>
+
+  <section class="block" aria-labelledby="tl">
+    <p class="label" id="tl">Letters by Congress</p>
+    <div class="panel">
+      <div class="chart" id="timeline"></div>
+      <div class="key">
+        <span><i style="background:var(--data)"></i>Explorer published</span>
+        <span><i style="background:var(--data-soft)"></i>A floor: departed members' sites not yet harvested</span>
+      </div>
+      <p class="note">Each bar counts the letters dated within that Congress, 3 January to 3 January. Before 2017
+        the bars are mostly what today's members wrote early in their careers. Members who had left by 2025 add to
+        each Congress as its harvest runs: the 115th–118th are being harvested now. Select a bar to go to that Congress.</p>
+    </div>
+  </section>
+
+  <section class="block" aria-labelledby="cr">
+    <p class="label" id="cr">A member's letters across Congresses</p>
+    <div class="panel">
+      <div class="career-controls">
+        <label for="who" class="tab" style="font-size:1.25rem;color:var(--muted)">Member</label>
+        <input id="who" list="whoList" placeholder="Type a name, e.g. Bernard Sanders" autocomplete="off">
+        <datalist id="whoList"></datalist>
+      </div>
+      <p id="careerHead"></p>
+      <p id="careerSub"></p>
+      <div class="chart" id="career"></div>
+      <p class="note">In the full version this is a member's own page in the federated explorer: one career,
+        across every Congress and both chambers, with each letter opening from its own Congress's explorer.</p>
+    </div>
+  </section>
+
+  <section class="block" aria-labelledby="cl">
+    <p class="label" id="cl">The Congresses</p>
+    <div id="congresses"></div>
+  </section>
+
+  <section class="block" aria-labelledby="ad">
+    <p class="label" id="ad">What the full version adds</p>
+    <div class="panel">
+      <ul class="adds">
+        <li><b>Search over every explorer's index</b>, not the one 119th index this mockup reads. Each Congress publishes its own <code>search.json</code>; this page loads them only as a query needs them.</li>
+        <li><b>Full-text search</b> once the letters' text layer is indexed. Today's search matches titles, recipients, topics and members only.</li>
+        <li><b>Recipient pages across Congresses</b>: every letter to the EPA or to the President, wherever it falls.</li>
+        <li><b>Former members</b>: people who left before 2025 and are absent today, each with a career page.</li>
+        <li><b>Caucus and committee letters</b>, once they are reviewed and harvested. Caucus letters are kept but not shown; committee letters are not collected yet.</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">
+  A mockup built from the development repository, <a href="https://github.com/Robin-IA/Congressional-Letters-Dev">Robin-IA/Congressional-Letters-Dev</a>.
+  The plan behind it is in <a href="https://github.com/Robin-IA/Congressional-Letters-Dev/blob/harvest-member-letters/EXPLORERS.md">EXPLORERS.md</a>.
+  <span id="built"></span>
+</div></footer>
+
+<script>
+const $ = s => document.querySelector(s);
+const fmt = n => Number(n).toLocaleString('en-US');
+const ord = n => n + (['th','st','nd','rd'][(n % 100 - 20) % 10] || ['th','st','nd','rd'][n % 100] || 'th');
+const long = iso => new Date(iso + 'T12:00:00').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+// Search rows carry a year, not a date: the Congress whose first year is odd.
+const congressOfYear = y => Math.floor((y - 1787) / 2);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+
+let DATA, INDEX, SEARCH, MEMBERS = new Map();
+const byN = new Map();
+
+// ---- one-series bar chart, shared by the timeline, search hits and careers ----
+function bars(host, items, opts = {}) {
+  // items: [{n, value, floor, label, sub, tip}]
+  const W = 960, H = opts.height || 240, top = 22, bottom = opts.sub ? 44 : 26, left = 8, right = 8;
+  const max = Math.max(1, ...items.map(d => d.value));
+  const step = (W - left - right) / items.length, bw = Math.min(46, step - 6);
+  const y = v => top + (H - top - bottom) * (1 - v / max);
+  const nice = [0, .5, 1].map(f => Math.round(max * f));
+  let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(opts.aria || '')}">`;
+  for (const v of nice) s += `<line class="gl" x1="${left}" x2="${W - right}" y1="${y(v)}" y2="${y(v)}"/>`;
+  items.forEach((d, i) => {
+    const x = left + i * step + (step - bw) / 2, yy = y(d.value), h = (H - bottom) - yy;
+    const r = Math.min(4, h / 2);
+    s += `<g class="col" data-i="${i}">`;
+    if (d.value > 0) {
+      // rounded data-end only, anchored square to the baseline
+      s += `<path class="bar ${d.floor ? 'floor' : ''}" d="M${x},${H - bottom} V${yy + r} Q${x},${yy} ${x + r},${yy} H${x + bw - r} Q${x + bw},${yy} ${x + bw},${yy + r} V${H - bottom} Z"/>`;
+      if (opts.values !== false && (opts.labelAll || d.value === max || i === items.length - 1))
+        s += `<text class="val" x="${x + bw / 2}" y="${yy - 6}" text-anchor="middle">${fmt(d.value)}</text>`;
+    }
+    s += `<text class="axis" x="${x + bw / 2}" y="${H - bottom + 15}" text-anchor="middle">${esc(d.label)}</text>`;
+    if (opts.sub) s += `<text class="st" x="${x + bw / 2}" y="${H - bottom + 30}" text-anchor="middle">${esc(d.sub || '')}</text>`;
+    s += `<rect class="hit" x="${left + i * step}" y="0" width="${step}" height="${H}" tabindex="0" role="button" aria-label="${esc(d.aria || d.label)}"/>`;
+    s += `</g>`;
+  });
+  s += `</svg><div class="tip" hidden></div>`;
+  host.innerHTML = s;
+  // Where a narrow screen makes the chart scroll, open on the recent end.
+  host.scrollLeft = host.scrollWidth;
+  const tip = host.querySelector('.tip'), svg = host.querySelector('svg');
+  host.querySelectorAll('g.col').forEach(g => {
+    const d = items[+g.dataset.i], hit = g.querySelector('.hit');
+    const show = () => {
+      tip.innerHTML = d.tip; tip.hidden = false;
+      const hb = hit.getBoundingClientRect(), cb = host.getBoundingClientRect();
+      let left = hb.left - cb.left + hb.width / 2 - tip.offsetWidth / 2;
+      left = Math.max(0, Math.min(left, cb.width - tip.offsetWidth));
+      tip.style.left = left + 'px'; tip.style.top = '-8px'; tip.style.transform = 'translateY(-100%)';
+    };
+    hit.addEventListener('mouseenter', show); hit.addEventListener('focus', show);
+    hit.addEventListener('mouseleave', () => tip.hidden = true); hit.addEventListener('blur', () => tip.hidden = true);
+    if (opts.onPick) {
+      hit.addEventListener('click', () => opts.onPick(d));
+      hit.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); opts.onPick(d); } });
+    }
+  });
+}
+
+const STATUS = {
+  published: ['✓', 'Published'],
+  harvesting: ['◐', 'Harvesting'],
+  planned: ['○', 'Planned'],
+};
+
+function jump(n) {
+  const card = document.getElementById('c' + n);
+  if (!card) return;
+  card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  card.classList.add('flash'); setTimeout(() => card.classList.remove('flash'), 1400);
+}
+
+function drawTimeline() {
+  const cs = [...DATA.congresses].sort((a, b) => a.n - b.n);
+  bars($('#timeline'), cs.map(c => ({
+    n: c.n, value: c.letters, floor: c.status !== 'published',
+    label: ord(c.n), sub: `${STATUS[c.status][0]} ${c.start.slice(0, 4)}–${c.end.slice(2, 4)}`,
+    aria: `${ord(c.n)} Congress: ${fmt(c.letters)} letters, ${STATUS[c.status][1].toLowerCase()}`,
+    tip: `<b>${ord(c.n)} Congress</b><br>${long(c.start)} – ${long(c.end)}<br><b class="tab">${fmt(c.letters)}</b> letters from ${fmt(c.members)} of today's members<br>${STATUS[c.status][0]} ${esc(c.detail)}`,
+  })), { sub: true, height: 260, aria: 'Letters per Congress, 106th to 119th', onPick: d => jump(d.n) });
+}
+
+function drawCongresses() {
+  const host = $('#congresses');
+  host.innerHTML = DATA.congresses.map(c => {
+    const [icon, word] = STATUS[c.status];
+    const name = c.href ? `<a href="${c.href}">${ord(c.n)} Congress</a>` : `${ord(c.n)} Congress`;
+    const top = c.top.length ? `Most written to: ${c.top.map(([r, k]) => `${esc(r)} (${fmt(k)})`).join(', ')}` : 'No letters yet.';
+    const now = c.n === 119
+      ? `<p class="detail">Today's 119th explorer still holds every letter on these members' sites, ${fmt(DATA.total)} distinct letters in all; once the earlier explorers exist it keeps only the ${fmt(c.letters)} dated in the 119th.</p>`
+      : '';
+    return `<article class="congress ${c.status}" id="c${c.n}" aria-labelledby="h${c.n}">
+      <div class="head"><h3 id="h${c.n}">${name}</h3><span class="dates">${long(c.start)} – ${long(c.end)}</span>
+        <span class="status ${c.status}"><span aria-hidden="true">${icon}</span>${word}</span></div>
+      <div class="facts">
+        <div><span class="k">Letters dated in this Congress</span><span class="v">${fmt(c.letters)}</span></div>
+        <div><span class="k">From today's members</span><span class="v">${fmt(c.members)}</span></div>
+        <div><span class="k">Members on the roster</span><span class="v">${fmt(c.roster)}</span></div>
+      </div>
+      <p class="top">${top}</p>
+      <p class="detail">${icon} ${esc(c.detail)}${c.href ? ` · <a href="${c.href}">Open the explorer</a>` : ''}</p>${now}
+    </article>`;
+  }).join('');
+}
+
+// ---- search, over the 119th's index (the full version reads every Congress's) ----
+async function loadSearch() {
+  if (SEARCH) return SEARCH;
+  $('#summary').textContent = 'Loading the search index…';
+  const [idx, s] = await Promise.all([
+    INDEX || fetch('../119th/index.json').then(r => r.json()),
+    fetch('../119th/payload/search.json').then(r => r.json()),
+  ]);
+  INDEX = idx; SEARCH = s;
+  for (const m of INDEX.members) MEMBERS.set(m.id, m);
+  return SEARCH;
+}
+
+async function runSearch(q) {
+  q = (q || '').trim();
+  const box = $('#results');
+  const url = new URL(location.href);
+  if (q) url.searchParams.set('q', q); else url.searchParams.delete('q');
+  history.replaceState({}, '', url);
+  if (!q) { box.hidden = true; return; }
+  box.hidden = false;
+  try { await loadSearch(); } catch (e) { $('#summary').textContent = 'The search index could not be loaded.'; return; }
+  const needle = q.toLowerCase();
+  const memberHit = SEARCH.members.map(id => (MEMBERS.get(id)?.name || '').toLowerCase().includes(needle));
+  const groups = new Map();
+  let total = 0;
+  for (const row of SEARCH.rows) {
+    const rec = row[1] >= 0 ? SEARCH.recipients[row[1]] : '';
+    const text = `${row[4] || ''} ${rec} ${row[6] || ''}`.toLowerCase();
+    if (!memberHit[row[0]] && !text.includes(needle)) continue;
+    const n = congressOfYear(row[2]);
+    if (!groups.has(n)) groups.set(n, []);
+    groups.get(n).push(row); total++;
+  }
+  const ns = DATA.congresses.map(c => c.n).sort((a, b) => a - b);
+  $('#summary').innerHTML = total
+    ? `<b class="tab">${fmt(total)}</b> letters match “${esc(q)}”, across <b>${groups.size}</b> Congresses.`
+    : `No letters match “${esc(q)}”.`;
+  bars($('#hitChart'), ns.map(n => {
+    const k = (groups.get(n) || []).length;
+    return { n, value: k, label: ord(n), aria: `${ord(n)} Congress: ${fmt(k)} matches`,
+      tip: `<b>${ord(n)} Congress</b><br><b class="tab">${fmt(k)}</b> matching letters` };
+  }), { height: 150, values: total > 0, aria: `Matches for ${q} by Congress`,
+        onPick: d => document.getElementById('g' + d.n)?.scrollIntoView({ behavior: 'smooth' }) });
+  const LIMIT = 8;
+  $('#groups').innerHTML = [...groups.keys()].sort((a, b) => b - a).map(n => {
+    const rows = groups.get(n).sort((a, b) => b[2] - a[2]);
+    const c = byN.get(n);
+    const open = c && c.href ? `<a href="${c.href}?view=search&q=${encodeURIComponent(q)}">Open in the ${ord(n)} explorer</a>` : '';
+    return `<div class="group" id="g${n}"><h3>${ord(n)} Congress <span class="ct">${fmt(rows.length)} letters</span>${open}</h3>
+      <ol class="hits">${rows.slice(0, LIMIT).map(r => {
+        const id = SEARCH.members[r[0]], m = MEMBERS.get(id) || { name: id };
+        const rec = r[1] >= 0 ? SEARCH.recipients[r[1]] : '';
+        return `<li><span class="y tab">${r[2]}</span><a class="s" href="../119th/?member=${encodeURIComponent(id)}">${esc(r[4] || 'Untitled letter')}</a>
+          <span class="m">${esc(m.name)}${m.state ? ` (${m.state})` : ''}${rec ? ` to ${esc(rec)}` : ''}</span></li>`;
+      }).join('')}</ol>${rows.length > LIMIT ? `<p class="more">and ${fmt(rows.length - LIMIT)} more in the ${ord(n)}</p>` : ''}</div>`;
+  }).join('');
+}
+
+// ---- careers ----
+async function drawCareer(name) {
+  await loadSearch();
+  const m = INDEX.members.find(x => x.name.toLowerCase() === (name || '').toLowerCase());
+  if (!m) return;
+  const at = SEARCH.members.indexOf(m.id);
+  const per = new Map();
+  for (const row of SEARCH.rows) if (row[0] === at) { const n = congressOfYear(row[2]); per.set(n, (per.get(n) || 0) + 1); }
+  const ns = DATA.congresses.map(c => c.n).sort((a, b) => a - b);
+  const first = Math.min(...[...per.keys(), 119]);
+  const shown = ns.filter(n => n >= Math.min(first, 115));
+  $('#careerHead').innerHTML = `<a href="../119th/?member=${m.id}">${esc(m.name)}</a>`;
+  $('#careerSub').textContent = `${m.chamber === 'sen' ? 'Senator' : 'Representative'}, ${m.state}${m.district ? '-' + m.district : ''}, ${m.party} · in Congress since ${m.since} · ${fmt(m.letters)} letters on ${m.host.replace(/^www\./, '')}`;
+  bars($('#career'), shown.map(n => {
+    const k = per.get(n) || 0;
+    return { n, value: k, label: ord(n), aria: `${ord(n)} Congress: ${fmt(k)} letters`,
+      tip: `<b>${esc(m.name)}</b>, ${ord(n)} Congress<br><b class="tab">${fmt(k)}</b> letters` };
+  }), { height: 170, labelAll: true, aria: `${m.name}'s letters per Congress` });
+}
+
+(async function init() {
+  DATA = await fetch('data.json', { cache: 'no-cache' }).then(r => r.json());
+  for (const c of DATA.congresses) byN.set(c.n, c);
+  $('#built').textContent = `Figures built ${DATA.built}.`;
+  $('#lede').insertAdjacentHTML('beforeend', ` Today: <b>${fmt(DATA.total)}</b> letters, from the 107th Congress to the 119th.`);
+  drawTimeline(); drawCongresses();
+  for (const t of ['COVID-19', 'Department of Veterans Affairs', 'Federal Aviation Administration', 'broadband', 'Bernard Sanders']) {
+    const b = document.createElement('button'); b.type = 'button'; b.className = 'pill'; b.textContent = t;
+    b.onclick = () => { $('#q').value = t; runSearch(t); };
+    $('#tries').append(b);
+  }
+  $('#searchForm').addEventListener('submit', e => { e.preventDefault(); runSearch($('#q').value); });
+  INDEX = await fetch('../119th/index.json').then(r => r.json());
+  for (const m of INDEX.members) MEMBERS.set(m.id, m);
+  $('#whoList').innerHTML = [...INDEX.members].sort((a, b) => a.last.localeCompare(b.last))
+    .map(m => `<option value="${esc(m.name)}">`).join('');
+  $('#who').addEventListener('change', e => drawCareer(e.target.value));
+  const start = INDEX.members.find(m => m.id === 'S000033') || INDEX.members[0];
+  $('#who').value = start.name; drawCareer(start.name);
+  const q = new URL(location.href).searchParams.get('q');
+  if (q) { $('#q').value = q; runSearch(q); }
+})();
+</script>
+</body>
+</html>

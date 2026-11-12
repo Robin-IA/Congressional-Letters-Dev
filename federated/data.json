@@ -1,0 +1,343 @@
+{
+ "built": "2026-11-09",
+ "total": 72897,
+ "congresses": [
+  {
+   "n": 119,
+   "start": "2025-01-03",
+   "end": "2027-01-03",
+   "roster": 555,
+   "letters": 13353,
+   "members": 486,
+   "top": [
+    [
+     "The President",
+     651
+    ],
+    [
+     "Department of Health and Human Services",
+     291
+    ],
+    [
+     "Department of Homeland Security",
+     279
+    ]
+   ],
+   "status": "published",
+   "detail": "Explorer published",
+   "href": "../119th/"
+  },
+  {
+   "n": 118,
+   "start": "2023-01-03",
+   "end": "2025-01-03",
+   "roster": 554,
+   "letters": 16121,
+   "members": 419,
+   "top": [
+    [
+     "The President",
+     842
+    ],
+    [
+     "Department of Justice",
+     304
+    ],
+    [
+     "Department of Homeland Security",
+     269
+    ]
+   ],
+   "status": "harvesting",
+   "detail": "Harvesting departed members' sites: 28 of 385 addresses",
+   "href": null
+  },
+  {
+   "n": 117,
+   "start": "2021-01-03",
+   "end": "2023-01-03",
+   "roster": 557,
+   "letters": 16022,
+   "members": 367,
+   "top": [
+    [
+     "The President",
+     1293
+    ],
+    [
+     "Department of Justice",
+     359
+    ],
+    [
+     "Department of Homeland Security",
+     299
+    ]
+   ],
+   "status": "harvesting",
+   "detail": "Harvesting departed members' sites: 28 of 385 addresses",
+   "href": null
+  },
+  {
+   "n": 116,
+   "start": "2019-01-03",
+   "end": "2021-01-03",
+   "roster": 550,
+   "letters": 11891,
+   "members": 305,
+   "top": [
+    [
+     "The President",
+     548
+    ],
+    [
+     "Congressional leadership",
+     485
+    ],
+    [
+     "Department of Health and Human Services",
+     374
+    ]
+   ],
+   "status": "harvesting",
+   "detail": "Harvesting departed members' sites: 28 of 385 addresses",
+   "href": null
+  },
+  {
+   "n": 115,
+   "start": "2017-01-03",
+   "end": "2019-01-03",
+   "roster": 561,
+   "letters": 6282,
+   "members": 232,
+   "top": [
+    [
+     "The President",
+     462
+    ],
+    [
+     "Department of Justice",
+     138
+    ],
+    [
+     "Environmental Protection Agency",
+     138
+    ]
+   ],
+   "status": "harvesting",
+   "detail": "Harvesting departed members' sites: 28 of 385 addresses",
+   "href": null
+  },
+  {
+   "n": 114,
+   "start": "2015-01-03",
+   "end": "2017-01-03",
+   "roster": 547,
+   "letters": 3647,
+   "members": 198,
+   "top": [
+    [
+     "The President",
+     231
+    ],
+    [
+     "Department of Justice",
+     78
+    ],
+    [
+     "Department of State",
+     62
+    ]
+   ],
+   "status": "planned",
+   "detail": "Roster and Wayback lookups done; harvest not started",
+   "href": null
+  },
+  {
+   "n": 113,
+   "start": "2013-01-03",
+   "end": "2015-01-03",
+   "roster": 554,
+   "letters": 2327,
+   "members": 156,
+   "top": [
+    [
+     "The President",
+     185
+    ],
+    [
+     "Department of Justice",
+     64
+    ],
+    [
+     "Department of Health and Human Services",
+     39
+    ]
+   ],
+   "status": "planned",
+   "detail": "Roster and Wayback lookups done; harvest not started",
+   "href": null
+  },
+  {
+   "n": 112,
+   "start": "2011-01-03",
+   "end": "2013-01-03",
+   "roster": 552,
+   "letters": 1623,
+   "members": 106,
+   "top": [
+    [
+     "The President",
+     127
+    ],
+    [
+     "Department of Justice",
+     115
+    ],
+    [
+     "Department of Agriculture",
+     35
+    ]
+   ],
+   "status": "planned",
+   "detail": "Roster and Wayback lookups done; harvest not started",
+   "href": null
+  },
+  {
+   "n": 111,
+   "start": "2009-01-03",
+   "end": "2011-01-03",
+   "roster": 559,
+   "letters": 1120,
+   "members": 87,
+   "top": [
+    [
+     "The President",
+     52
+    ],
+    [
+     "Department of Health and Human Services",
+     50
+    ],
+    [
+     "Department of the Treasury",
+     30
+    ]
+   ],
+   "status": "planned",
+   "detail": "Roster and Wayback lookups done; harvest not started",
+   "href": null
+  },
+  {
+   "n": 110,
+   "start": "2007-01-03",
+   "end": "2009-01-03",
+   "roster": 554,
+   "letters": 240,
+   "members": 50,
+   "top": [
+    [
+     "Congressional leadership",
+     8
+    ],
+    [
+     "The President",
+     6
+    ],
+    [
+     "Department of Energy",
+     5
+    ]
+   ],
+   "status": "planned",
+   "detail": "Roster and Wayback lookups done; harvest not started",
+   "href": null
+  },
+  {
+   "n": 109,
+   "start": "2005-01-03",
+   "end": "2007-01-03",
+   "roster": 545,
+   "letters": 124,
+   "members": 23,
+   "top": [
+    [
+     "Department of State",
+     7
+    ],
+    [
+     "Department of Homeland Security",
+     3
+    ],
+    [
+     "The President",
+     2
+    ]
+   ],
+   "status": "planned",
+   "detail": "Roster and Wayback lookups done; harvest not started",
+   "href": null
+  },
+  {
+   "n": 108,
+   "start": "2003-01-03",
+   "end": "2005-01-03",
+   "roster": 544,
+   "letters": 140,
+   "members": 15,
+   "top": [
+    [
+     "National Aeronautics and Space Administration",
+     3
+    ],
+    [
+     "Laurel Beeler",
+     1
+    ],
+    [
+     "Bush",
+     1
+    ]
+   ],
+   "status": "planned",
+   "detail": "Roster and Wayback lookups done; harvest not started",
+   "href": null
+  },
+  {
+   "n": 107,
+   "start": "2001-01-03",
+   "end": "2003-01-03",
+   "roster": 550,
+   "letters": 7,
+   "members": 6,
+   "top": [
+    [
+     "The President",
+     1
+    ],
+    [
+     "Pres Bush From Coalition",
+     1
+    ],
+    [
+     "Department of Justice",
+     1
+    ]
+   ],
+   "status": "planned",
+   "detail": "Roster and Wayback lookups done; harvest not started",
+   "href": null
+  },
+  {
+   "n": 106,
+   "start": "1999-01-03",
+   "end": "2001-01-03",
+   "roster": 544,
+   "letters": 0,
+   "members": 0,
+   "top": [],
+   "status": "planned",
+   "detail": "Roster and Wayback lookups done; harvest not started",
+   "href": null
+  }
+ ]
+}
