@@ -112,6 +112,9 @@ def main() -> int:
     (out / "index.html").write_text(html.replace("hub.js?v=STAMP", f"hub.js?v={stamp}"),
                                     encoding="utf-8")
     shutil.copy2(src / "hub.js", out / "hub.js")
+    # Images the page itself uses (the Capitol photograph), copied as they are.
+    if (src / "img").exists():
+        shutil.copytree(src / "img", out / "img", dirs_exist_ok=True)
     (out / "hub.json").write_text(json.dumps(
         {"built": stamp, "congresses": congresses}, indent=1), encoding="utf-8")
     print(f"{len(congresses)} Congresses "
