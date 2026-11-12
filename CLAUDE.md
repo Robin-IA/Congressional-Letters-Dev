@@ -4,6 +4,11 @@ Letters published on sitting members of Congress's own websites and preserved by
 the Wayback Machine. Read `README.md` first for what the thing is; this file is
 for the decisions that are not visible from the code.
 
+**One explorer per Congress is being built (9 November 2026).** `EXPLORERS.md`
+has the instructions, the decisions and what is still open; `METHODOLOGY.md`
+has the method behind each step. This repository stays the development
+repository, and the explorers are published from it.
+
 ## Where it is published
 
 Two GitHub Pages sites, both serving the **`harvest-member-letters`** branch
