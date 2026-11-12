@@ -6,12 +6,14 @@
 
 FOLDER is what came back from the PC, laid out as run_render.py left it:
 thumbs/*.webp, pdf-dates.jsonl, letter-text.jsonl, thumb-failures.jsonl, and
-optionally pdfs/*.pdf. Any of them may be missing; a thumbnails-only return is
-fine.
+optionally pdfs/*.pdf and letter-ocr.jsonl (ocr_tesseract.py). Any of them may
+be missing; a thumbnails-only return is fine.
 
 Nothing here is ever replaced or removed:
   - a thumbnail or PDF is copied only if the Mac has none of that digest;
-  - a date or text line is appended only if the Mac has none for that digest;
+  - a date, text or OCR line is appended only if the Mac has none for that
+    digest. OCR lines go into data/letter-ocr.jsonl beside Apple Vision's and
+    keep their own "engine", so ocr_letters.py skips the PDFs they cover;
   - failure lines are appended for digests that still have no thumbnail, since
     each records a real attempt and thumbs.py counts them.
 Safe to run again on a later, larger return.
@@ -73,7 +75,7 @@ def main() -> int:
     have_thumb = {p.stem for p in (REPO / "thumbs").glob("*.webp")}
     have_thumb |= {f.stem for f in plan[0][0]}
     appends = []
-    for name in ("pdf-dates.jsonl", "letter-text.jsonl"):
+    for name in ("pdf-dates.jsonl", "letter-text.jsonl", "letter-ocr.jsonl"):
         lines = new_lines(src / name, digests_in(data / name))
         print(f"{name}: {len(lines):,} new lines")
         appends.append((data / name, lines))
