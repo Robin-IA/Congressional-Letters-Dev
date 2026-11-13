@@ -81,6 +81,15 @@ URL_CORRECTIONS = {
                        _W.format("curtweldon.house.gov, which it first lists in 2005", "www.house.gov/curtweldon 2003-02–2005-01")),
 }
 
+# Source parties that are wrong for a term, keyed (bioguide, term start). The
+# Biographical Directory is the evidence, quoted here, checked 2026-11-13.
+PARTY_CORRECTIONS = {
+    # The dataset gives "AL" (at-large, a district code) for his first term and
+    # "Popular Democrat" for his second. Bioguide: "elected as a Popular
+    # Democrat to the One Hundred Seventh Congress to a four-year term".
+    ("A000359", "2001-01-03"): "Popular Democrat",
+}
+
 COLUMNS = ["name", "bioguide_id", "party", "state", "chamber", "district",
            "website_at_the_time", "served_this_congress", "days_this_congress",
            "full_or_partial", "service_notes", "years_in_office",
@@ -266,8 +275,10 @@ def roster(n: int, cur: list, hist: list, today: str) -> list[dict]:
         # party within this Congress, with any switch dated
         parties: list = []
         for t in ts:
+            fixed = PARTY_CORRECTIONS.get((bid, t["start"]))
             for a in t.get("party_affiliations",
-                           [{"start": t["start"], "end": t["end"], "party": t.get("party", "")}]):
+                           [{"start": t["start"], "end": t["end"],
+                             "party": fixed or t.get("party", "")}]):
                 if a["start"] < E and a["end"] > S and (not parties or parties[-1][0] != a["party"]):
                     parties.append((a["party"], max(a["start"], S)))
         party = parties[0][0] + "".join(f" → {pa} ({d})" for pa, d in parties[1:])
