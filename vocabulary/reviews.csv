@@ -2,7 +2,7 @@ candidate,letters,decision,target,abbreviation,kind,broader,reason,status
 Admin,63,merge,The Administration,,organization,Executive Office of the President,"""the admin"": the executive branch, unnamed",accepted
 Senate,59,merge,United States Senate,,organization,Congress,the chamber as a whole,accepted
 Administration,56,merge,The Administration,,organization,Executive Office of the President,"the executive branch, unnamed",accepted
-Google,49,merge,Google,,organization,Tech sector,company,accepted
+Google,49,merge,Google,,organization,Tech industry,company,accepted
 Amazon,46,merge,Amazon,,organization,Companies,company,accepted
 Conferees,46,merge,Conference committees,,organization,Congressional committees,conferees on a bill,accepted
 Hagel,46,officeholder,Department of Defense,,,,"Chuck Hagel, Secretary of Defense 2013-2015",accepted
@@ -95,7 +95,7 @@ Of Defense,14,merge,Department of Defense,,,,"""Department of Defense"" cut shor
 Reid,14,merge,Congressional leadership,,,,"Harry Reid, Senate leader; filed as McConnell and Schumer are",accepted
 Sasc,14,merge,Senate Armed Services Committee,SASC,organization,Congressional committees,SASC,accepted
 Usfws,14,merge,Fish and Wildlife Service,USFWS,organization,Department of the Interior,USFWS,accepted
-Apple,13,merge,Apple,,organization,Tech sector,company,accepted
+Apple,13,merge,Apple,,organization,Tech industry,company,accepted
 Ceg,13,member,G000386,,,,"checked: CEG is Charles E. Grassley; letters to and answering ""Senator Grassley"", Judiciary chair",accepted
 Chief Justice Roberts,13,officeholder,Supreme Court of the United States,,organization,Courts,"John Roberts, Chief Justice; the surname lead to Sen. Pat Roberts is wrong",accepted
 Cuomo,13,person,Andrew Cuomo,,person,Governors,Governor of New York 2011-2021,accepted
@@ -167,7 +167,7 @@ Wolf,10,hold,,,,,"checked: Rep. Frank Wolf (appropriations), Acting DHS Secretar
 Wyden,10,member,W000779,,,,Ron Wyden,accepted
 Ceq,9,merge,Council on Environmental Quality,CEQ,organization,Executive Office of the President,CEQ: Council on Environmental Quality,accepted
 Epw,9,merge,Senate Environment and Public Works Committee,EPW,organization,Congressional committees,EPW: Senate Environment and Public Works Committee,accepted
-Equifax,9,merge,Equifax,,organization,Companies,company,accepted
+Equifax,9,merge,Equifax,,organization,Financial industry,company,accepted
 Hrsa,9,merge,Health Resources and Services Administration,HRSA,organization,Department of Health and Human Services,HRSA: Health Resources and Services Administration,accepted
 Mbs,9,person,Mohammed bin Salman,MBS,person,Foreign leaders,MBS: Mohammed bin Salman,accepted
 Nfl,9,merge,National Football League,NFL,organization,Associations and other organizations,NFL: National Football League,accepted
@@ -232,7 +232,7 @@ Sos,5,merge,Department of State,,,,shorthand for Department of State,accepted
 Uber,5,merge,Uber,,organization,Companies,company,accepted
 Unfccc,5,merge,United Nations Framework Convention on Climate Change,UNFCCC,organization,International organizations,UNFCCC: United Nations Framework Convention on Climate Change,accepted
 Walmart,5,merge,Walmart,,organization,Companies,company,accepted
-Youtube,5,merge,YouTube,,organization,Companies,company,accepted
+Youtube,5,merge,YouTube,,organization,Media platforms,company,accepted
 Aamc,4,merge,Association of American Medical Colleges,AAMC,organization,Associations and other organizations,AAMC: Association of American Medical Colleges,accepted
 Atsdr,4,merge,Agency for Toxic Substances and Disease Registry,ATSDR,organization,Centers for Disease Control,ATSDR: Agency for Toxic Substances and Disease Registry,accepted
 Bia,4,merge,Bureau of Indian Affairs,BIA,organization,Department of the Interior,BIA: Bureau of Indian Affairs,accepted
@@ -414,3 +414,10 @@ Citigroup,4,merge,Citigroup,,organization,Banking industry,checked: on Kushner l
 Chrysler,3,merge,Chrysler,,organization,Auto industry,"checked: 2009, 2012 (Eshoo and Waxman) and 2020; parent Fiat, then Fiat Chrysler Automobiles, then Stellantis",accepted
 Cnn,4,merge,CNN (Cable News Network),CNN,organization,Companies,checked: news network; 2012 and 2019,accepted
 "Dhs, Doj And Fbi",7,joint,Department of Homeland Security;Department of Justice;Federal Bureau of Investigation,,,,"checked: one joint letter of February 22, 2017, to DHS, DOJ and FBI",accepted
+Enron Chairman Cooper,3,merge,Enron,,organization,Energy sector,checked: files named Letter to Enron Chairman Cooper; Waxman,accepted
+Enron Chairman Lay,3,merge,Enron,,organization,Energy sector,checked: files named Letter to Enron Chairman Lay (Kenneth Lay); Waxman,accepted
+Express Scripts,3,merge,Express Scripts,,organization,Companies,checked: pharmacy benefit manager; 2010,accepted
+Fidelity Investments Ceo,4,merge,Fidelity Investments,,organization,Investment companies,"checked: letter to Fidelity Investments' CEO, 2022",accepted
+Equifax Ceo,9,merge,Equifax,,organization,Financial industry,checked: letters to Equifax's CEO,accepted
+Google And Youtube,3,joint,Google;YouTube,,,,"checked: Warren's letters to Google and YouTube on a Trump settlement, 2025-2026",accepted
+Google Final,4,merge,Google,,organization,Tech industry,"checked: files named Anti-Abortion Letter to Google Final, 2022",accepted

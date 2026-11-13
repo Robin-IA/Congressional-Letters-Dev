@@ -108,6 +108,10 @@ SUBJECTS: dict[str, tuple[str, ...]] = {
     "Small business": ("small business", "ppp", "sba loan"),
     "Jobs": ("jobs", "unemployment", "workforce", "labor", "wage", "union"),
     "Social Security": ("social security", "ssi", "ssdi"),
+    "Investing": ("investing", "investor", "mutual fund", "brokerage",
+                  "retirement savings", "retirement account", "index fund"),
+    "Credit reporting": ("credit report", "credit reporting", "credit score",
+                         "credit bureau", "consumer reporting agency"),
     "Crypto": ("crypto", "cryptocurrency", "bitcoin", "stablecoin", "ftx"),
 
     # security and justice
@@ -165,6 +169,8 @@ SUBJECTS: dict[str, tuple[str, ...]] = {
     "Childcare": ("childcare", "child care", "head start"),
     "Technology": ("artificial intelligence", "social media", "algorithm",
                    "big tech", "antitrust"),
+    "Media": ("media platform", "social media", "youtube", "streaming",
+              "television", "tv network"),
     "News media": ("news media", "journalist", "journalism", "newspaper",
                    "broadcaster", "cnn"),
     "Telecom": ("spectrum", "telecom", "robocall", "net neutrality"),
