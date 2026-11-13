@@ -1,5 +1,18 @@
 # For Claude on the PC
 
+> **Overnight, 13 November 2026, 00:30, from the Mac. This comes first.**
+>
+> - **Job 3 is the Mac's now.** The Mac started rendering
+>   `pc-render-all-missing` itself at 00:30. **Before shutting down:** stop
+>   `C:\render4`, and if it rendered anything, pack and push one last return
+>   to `pc-render-return-3`; the Mac merges it and skips what it already
+>   has. **Do not restart Job 3** in the morning.
+> - **Job 2 stays the PC's.** Push one last OCR return to
+>   `pc-ocr-return-106-115` before shutting down, and in the morning carry on
+>   with `C:\ocr` from where it stopped (it resumes; nothing to unzip again).
+>   Same rules as before: on the hotspot, and push a return about once an hour.
+> - Job 4 stays the Mac's, as below.
+
 > **New jobs as of 12 November 2026, 21:50, from the Mac.** Read this, then the
 > rules below, which still apply. Nothing in them is changed here.
 >
