@@ -16,6 +16,20 @@ OWNER=Robin-IA
 LOG=~/ia/explorers/publish.log
 say() { echo "$(date '+%H:%M:%S')  $*" | tee -a "$LOG"; }
 
+# Full-text search: every explorer's Pagefind index, from the text and OCR so
+# far, built just before publishing so no explorer goes out without one. A
+# failure stops the publish, because pushing an explorer without its
+# pagefind/ folder would take its search down. BUILD_SEARCH=0 skips it.
+if [ "${BUILD_SEARCH:-1}" != 0 ]; then
+  if python3 "$HERE/build_search.py" 106-119 >>"$LOG" 2>&1; then
+    say "full-text indexes built"
+    # The home page lists which explorers have an index; rebuild it now they do.
+    python3 "$HERE/build_hub.py" >>"$LOG" 2>&1 || { say "home page rebuild FAILED; not publishing"; exit 1; }
+  else
+    say "full-text index FAILED (see above); not publishing"; exit 1
+  fi
+fi
+
 publish() {   # $1 = folder name, $2 = description
   local name="$1" desc="$2"
   cd ~/ia/explorers/"$name" || { say "$name: no folder"; return 1; }
