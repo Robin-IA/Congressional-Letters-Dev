@@ -1,268 +1,125 @@
 # Pick this up on another machine
 
 Hand this file to Claude Code and say "continue the work". Everything it needs
-is here or in the clone.
+is here, in `CLAUDE.md` and `EXPLORERS.md`, or in the clone.
 
-**State as of 5 November 2026**, branch `harvest-member-letters` on `dev`
-(`git log -1` for the commit — a sha written here goes stale the next push):
+**State as of 12 November 2026**, branch `harvest-member-letters` on `dev`
+(`git log -1` for the commit; a sha written here goes stale the next push):
 
-| | |
-| --- | --- |
-| Letters | 69,650, from 514 of 539 sitting members, 2000–2026 |
-| Thumbnails rendered | **47,674 of 48,028 documents — 99%** |
-| Letters showing a preview | 69,120 of 69,565 PDF letters — 99% |
-| Still to render | **239** |
-| Given up on | 115 documents, recorded and skipped automatically |
-| Published site | **874.9 MB** of GitHub Pages' 1,024 MB limit — 85% |
-
-Live now, both serving `ddaf0c9ac` on the `harvest-member-letters` branch:
-<https://internetarchivecanada.github.io/congressional-letters/> ·
-<https://robin-ia.github.io/congressional-letters/>
-
-**The explorer is finished and working**, and the thumbnail render has all but
-finished too — 239 documents left of 48,028. Every letter without a picture
-shows "preview coming soon" and still opens, so that remainder has never had to
-finish for the site to be correct.
-
-The open work is no longer the render. It is the **backfill** — the members who
-have left, who the explorer has never seen — and the **per-Congress
-restructure**. Both are in [`BACKFILL.md`](BACKFILL.md) and section 8 below.
-
-Read [`CLAUDE.md`](CLAUDE.md) for why the project is built the way it is, and
-[`letters-from-congress` issue #2](https://github.com/internetarchivecanada/letters-from-congress/issues/2)
-for what to do next and in what order. **That one is on the private repository**
-— this repository has its own issues #1–#3, about the data files, and the
-numbers do not refer to the same things. This file is only about resuming.
+- **Published:** a home page and one explorer per Congress, 106th to 119th, on
+  two accounts (below). The home page computes its own totals; read them
+  there rather than from here.
+- **Checked:** WCAG 2.2 Level AA, security and code validity all pass
+  (`security-accessibility-checks.md`), and the pages' footers say so.
+- **Running on the Mac:** rendering, OCR, and an auto-publish loop that keeps
+  both accounts up to date (section 4).
+- **The PC** has handed its work back: harvest caches, renders and OCR come
+  back on `pc-*` branches, which the Mac merges automatically. `PC-HANDOFF.md`
+  has the PC's side.
 
 ---
 
-## 0. Four repositories. Develop in one of them.
+## 0. The repositories
 
-| Remote | Repository | What it is |
-| --- | --- | --- |
-| **`dev`** | **`Robin-IA/Congressional-Letters-Dev`** | **public, Pages — the working copy. Develop here.** |
-| `origin` | `internetarchivecanada/letters-from-congress` | private, no Pages. The handover record: PR #1, issue #2, and the internal decisions doc. **Frozen** |
-| `iac` | `internetarchivecanada/congressional-letters` | public, Pages. The live explorer, under review. **Frozen** |
-| `mine` | `Robin-IA/congressional-letters` | public, Pages. Your copy of the live explorer. **Frozen** |
+| Repository | What it is |
+| --- | --- |
+| **`Robin-IA/Congressional-Letters-Dev`** | **Develop here.** Methodology, scripts, data, templates, tests, decisions, issues. Remote `dev` in a clone. |
+| `Robin-IA/Explorer-Letters` · `internetarchivecanada/congressional-letters` | The home page, on each account. Built output. |
+| `Robin-IA/Explorer-Congressional-Letters-<N>` · `internetarchivecanada/Explorer-Congressional-Letters-<N>` | One explorer per Congress, on each account. Built output. |
+| `internetarchivecanada/letters-from-congress` | Private record of the original handover. Do not push to it. |
+| `Robin-IA/congressional-letters` | The first single-Congress explorer. Superseded. |
 
-**`iac` and `mine` are being reviewed by other people and must not change.**
-Development happens on `dev` and reaches them only when it is finished, as a
-deliberate push, once.
-
-**`origin` is frozen as the record of what was handed over.** It is the only
-repository that still holds `docs/keeping-it-current.md` and its generator
-`build/make_decisions_doc.py` — an internal decisions document. It is private,
-and that is where that document stays.
-
-**`dev` does not have those files, by construction.** It was made public on
-5 November so it could serve a Pages preview during development, and the three
-paths carrying that document were removed from **every commit** first, not
-merely deleted in a new one. A public repository publishes its history, so
-deleting a file forward would have published it anyway.
-
-So: **all new work goes to `dev`.** Before adding anything under `docs/`, or
-anything else not meant to be read by strangers, remember that this repository
-is now public and serves its own branch root over HTTP.
+**Never push to a built repository by hand.** Rebuild, then publish with
+`build/publish_explorers.sh`, which publishes to Robin-IA and then runs
+`build/publish_iac.sh` for Internet Archive Canada. Creating a repository is
+Robin's call.
 
 ## 1. Clone
 
 ```bash
 mkdir -p ~/ia && cd ~/ia
 gh repo clone Robin-IA/Congressional-Letters-Dev congressional-member-letters -- -b harvest-member-letters
-cd congressional-member-letters
+cd congressional-member-letters && git remote rename origin dev
 ```
 
-**`Congressional-Letters-Dev`**, and **not `main`**. `main` is the initial
-scaffold; the work has never been merged into it, and both Pages sites serve
-the branch.
+`harvest-member-letters` is the working branch, not `main`; every PR targets
+it. **Fetch before branching**: the Mac pipeline and the PC both push here.
 
-The other three repositories are frozen — see section 0. Of the names, the one
-that sounds like the main repository, `congressional-letters`, is the published
-mirror and the furthest behind. Clone the dev repo and the question does not
-arise.
-
-The clone brings all 47,688 thumbnail files, all 514 member files and the page
-itself. (47,674 of those match a document still in the corpus; 14 are leftovers
-from documents the harvest no longer lists, which cost nothing.) Open `index.html` and the explorer works immediately.
+The build writes the sites to `../explorers/` beside the clone, one folder per
+repository, and `publish_iac.sh` keeps a clone of the IAC home page at
+`~/ia/explorers-iac/`.
 
 ## 2. Install
 
 ```bash
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
+python3 -m unittest discover -s tests
 ```
+
+`requirements.txt` pins exact versions (Pillow 13, pypdf 7) because the
+versions in use on 12 November carried 54 known vulnerabilities. The Mac's own
+venv predates the pins: reinstall it when the renderer is not running.
 
 ## 3. Copy the data git does not carry
 
-Five files under `data/`, all gitignored. **The first is required** — the
-renderer reads it and will not start without it.
+The letters, text and thumbnails are not all tracked. Copy these across
+whole, from the machine that has them:
 
-| File | Size | What it is |
-| --- | --- | --- |
-| `letters-parsed.jsonl` | 51 MB | **Required.** One record per letter: URL, capture, digest, and the date, recipient and subject parsed from the filename |
-| `thumb-failures.jsonl` | 16 KB | **Copy this.** 202 recorded failures over 183 documents; 115 have hit the give-up threshold. Without it they are all retried, and they are the slow ones |
-| `pdf-dates.jsonl` | 1.5 MB | Dates read out of the PDFs so far |
-| `letter-text.jsonl` | 53 MB | Extracted text and a sha256 for 19,437 letters. Nothing reads it yet; see issue #1 |
-| `wrapper-targets.jsonl` | 40 KB | Progress of the download-wrapper chase, 113 of 6,711 |
-
-Copy the whole `data/` directory across. `data/cdx-cache/` is bigger than it
-was — it now holds the chamber directory pages (90 files) and
-`legislators-historical.json` as well — and **carrying it across is worth it**:
-with that cache, `build/chamber_rosters.py` and `build/backfill_roster.py` both
-run offline in seconds instead of re-reading 20 archived pages.
-
-**The hand-carry is not one problem but three, and each has an issue.** Copying
-five files by hand has gone wrong in a sister repository before — 452 records
-lost when a stale copy went the wrong way — so it is worth knowing which of
-these actually has to travel that way.
-
-| | Issue |
+| Path | What it is |
 | --- | --- |
-| The four small ones — `pdf-dates`, `thumb-failures`, `wrapper-targets`, `wrapper-resolved` — are **1.53 MB in total** and should simply be committed | [#1](https://github.com/Robin-IA/Congressional-Letters-Dev/issues/1) |
-| `letters-parsed.jsonl` is **derived**: carry the 28.75 MB `letters-raw.jsonl` and rebuild it with `build/parse_urls.py`, which needs no network | [#2](https://github.com/Robin-IA/Congressional-Letters-Dev/issues/2) |
-| `letter-text.jsonl` is 52 MB, irreplaceable, and read by nothing yet. It needs a home that is not this repository | [#3](https://github.com/Robin-IA/Congressional-Letters-Dev/issues/3) |
+| `harvest/letters/letters-raw-*.jsonl`, `letters-parsed-*.jsonl` | Each harvest's letters, raw from CDX and parsed. The parsed files are rebuilt from the raw ones with `parse_urls.py`, which needs no network. |
+| `data/letters-parsed.jsonl` | The original 2000–2026 corpus, parsed. **Its raw file, `data/letters-raw.jsonl`, is not on the Mac** (issue #2), so it cannot be re-parsed there. |
+| `data/letters-119-departed-parsed.jsonl` | The 119th's departed members, parsed. |
+| `data/pdf-dates.jsonl`, `data/letter-text.jsonl`, `data/letter-ocr.jsonl` | Dates, text and OCR read from the PDFs. Expensive to recreate: each meant a Wayback download. |
+| `data/thumb-failures.jsonl` | Renders that failed; without it the renderer retries the slow ones. |
+| `thumbs/` | Every rendered preview. Many are untracked. |
+| `data/cdx-cache/`, `harvest/*/cache/` | CDX answers, so a re-export runs offline. |
 
-Until those land, copy the whole `data/` directory. **Do not resolve any of them
-by committing the two large files**: they are 104 MB against about 149 MB of
-Pages headroom, which the remaining thumbnails also need.
+**Copy in one direction only, and check which side is newer first.** A stale
+copy carried over a newer one has already lost records in a sister repository,
+and on 12 November the Mac's `letter-text.jsonl` held twice the records the
+documentation expected.
 
-## 4. Resume the render
+## 4. The jobs on the Mac
 
-Only 239 documents are left, so this is now a short job rather than the main
-event. Skip to section 8 if the backfill is what you came for.
+Three run unattended in `~/ia/congressional-member-letters`. Start each from a
+**terminal**, not from inside a Claude session (anything a session starts dies
+with it), and keep the machine awake (`caffeinate`; the renderer already wraps
+itself).
 
-```bash
-caffeinate -i python3 build/thumbs.py --thumbs thumbs --workers 2 --pause 1.5
-```
+| Job | What it does | Log |
+| --- | --- | --- |
+| `build/thumbs_loop.sh 115-118 106-114 paths` | Renders previews behind the harvests, a cycle at a time | `harvest/letters/thumbs-loop.log` |
+| `python3 build/ocr_letters.py --watch` | OCRs scanned letters into `data/letter-ocr.jsonl` | `harvest/letters/ocr.log` |
+| `build/auto_publish.sh` | Every 15 minutes: merges the PC's return branches, and after a merge or 300 new thumbnails rebuilds every explorer and the home page and publishes to both accounts | `harvest/letters/auto-publish.log`, `~/ia/explorers/publish.log` |
 
-Four things in that line, each of which has gone wrong at least once:
+**This checkout builds from its own copy of the scripts and templates.** A
+change merged on GitHub reaches the sites only after the changed files here
+are brought to main (`git fetch dev` and check out those paths). Do it while
+`auto_publish.sh` is between rounds: no `build_congress`, `build_hub` or
+`publish_` process running.
 
-- **`--thumbs thumbs`.** The finished work arrives as `thumbs/` (tracked); the
-  script defaults to `payload/thumbs/` (gitignored, so empty on a fresh clone).
-  Without this flag it re-fetches all 47,688 PDFs it already has.
-- **`caffeinate -i`.** A sleeping machine freezes the job. On the Windows box
-  this cost five hours one night and about twenty-two another.
-- **`--workers 2 --pause 1.5`.** Two workers is what runs stably. Three bought
-  3/min and took network refusals from 29% of failures to 68%. Earlier, two
-  workers at a 0.75s pause for five days straight earned an outright HTTP 403
-  on the replay endpoint that took hours to clear.
-- Run it from a **terminal**, not from inside a Claude session. Anything
-  started from a session dies with it, which has happened three times.
+**Nothing else that fetches from the Wayback Machine should run beside the
+renderer.** They share one rate limit.
 
-**Check the first line before walking away:**
+## 5. Is it working?
 
-```
-48,028 distinct PDFs, 239 still to render
-  skipping 115 that have failed 3+ times
-```
+- **Render rate:** 15–20 a minute is healthy. The loop prints it; or count
+  `thumbs/` two minutes apart. Below that, look at the newest lines of
+  `data/thumb-failures.jsonl`: `truncated-by-the-crawl`, `unreadable-…`,
+  `not-pdf` and `http-404` are bad captures, nothing to fix; `URLError`,
+  `ConnectionResetError` and `http-429` are the network, so slow down rather
+  than retry harder. A `ModuleNotFoundError` means the wrong Python: use the
+  venv.
+- **Publishing:** each round ends with `=== all done ===` (Robin-IA) and
+  `IAC === internetarchivecanada done ===` in `~/ia/explorers/publish.log`.
+  A `PUSH FAILED` or `not pushing` line there says which repository.
+- **Live:** a site's `index.json` from Pages carries the new `stamp`. A Pages
+  build can sit queued for hours on GitHub's side; re-request it with
+  `gh api -X POST repos/<owner>/<repo>/pages/builds`.
 
-If that second number is near 48,000, stop it — `--thumbs` did not take and it
-is about to redo everything.
+## 6. Still open
 
-## 5. Publish what it renders
-
-The renderer writes straight into `thumbs/`, so there is no copy step.
-
-```bash
-python3 build/build_site.py --thumb-base thumbs/ --force
-git add -A && git commit -m "Publish previews" && git push dev harvest-member-letters
-```
-
-`--force` because the build refuses to shrink the corpus by more than a tenth
-without being told to, which is a guard worth keeping.
-
-Every 20–30 minutes is plenty. **GitHub Pages allows 10 builds an hour from a
-branch and every push is one**, so do not loop tighter than that.
-
-**Push `dev`, and nothing else.** That is what section 0 is about: the two
-public repos are under review by other people, and they serve Pages from the
-branch root where an internal document now sits. With 239 documents left there
-is no publishing loop to run anyway — one final build into `dev`, and the public
-repos get brought forward deliberately, once, by whoever decides what the public
-branch should contain and what happens to `docs/`.
-
-## 6. How to tell whether it is actually working
-
-`build/pending.py` counts and renders nothing:
-
-```bash
-python3 build/pending.py thumbs
-```
-
-Measure the live rate rather than reading the renderer's own progress line —
-that line is cumulative and divides by elapsed time including every hour the
-machine spent asleep, so it reports 2/min for a job doing 15/min.
-
-```bash
-a=$(find thumbs -name '*.webp' | wc -l); sleep 120
-echo $(( ($(find thumbs -name '*.webp' | wc -l) - a) / 2 ))/min
-```
-
-**15–20/min is healthy.** Below that, check whether the failures are about the
-network or about the letters:
-
-```bash
-tail -30 data/thumb-failures.jsonl
-```
-
-`truncated-by-the-crawl`, `unreadable-PdfiumError`, `not-pdf` and `http-404`
-are bad captures — a patch of poor data, nothing to fix. `URLError`,
-`ConnectionResetError` and `http-429` are the network, and if they dominate,
-slow down rather than retrying harder.
-
-Across the whole render the documents won: of 202 recorded failures, 84 are
-the network (`URLError` 77, `ConnectionResetError` 6, `http-403` 1) and 118 are
-the documents themselves (`truncated-by-the-crawl` 68, `unreadable-PdfiumError`
-26, `http-404` 16, `not-pdf` 7, `too-big` 1). So most of what is left is bad
-data rather than a throttle to wait out.
-
-To check whether the Wayback replay endpoint is refusing us, fetch eight real
-PDFs in a row. **A single request proves nothing** — after the 403 lifted, six
-single fetches returned five good PDFs while the renderer sat doing nothing for
-nine minutes, because the endpoint had stopped refusing and started stalling
-connections instead.
-
-## 7. The render, as good as finished
-
-It will not reach 48,028. 115 documents have been given up on and 239 remain to
-try, so the ceiling is about 47,900 of 48,028 — **99.7%**, against the 4–8%
-unrenderable this file once expected. The early estimate was pessimistic
-because the first 1,400 attempts were not a representative sample.
-
-"Finished" means the queue is empty. That is close enough that it is no longer
-what the project is waiting on.
-
-## 8. Still open, in rough order of value
-
-- **The backfill — [`BACKFILL.md`](BACKFILL.md).** 1,213 member sites the
-  explorer has never touched, from the chambers' own archived directories,
-  2003–2026. 778 are queryable hostnames and 435 are path-keyed
-  `house.gov/<name>` sites with a harvester of their own. Both passes are
-  written, guarded and trialled; neither has been run at scale. This is the
-  work. Expect overnight.
-- **The per-Congress restructure.** A front page with search, then one page per
-  Congress — 111th through 119th, reverse chronological back to 2010, each
-  labelled with its years (119th Congress, 2025–2026). Not started. It depends
-  on the backfill for honesty: a Congress-shaped page implies a completeness
-  the sitting roster alone cannot deliver, so either run the backfill first or
-  label each tab with what it actually covers.
-- **The download-wrapper chase**, `build/resolve_wrappers.py`, is parked at 113
-  of 6,711. Worth roughly 3,000 more letters. It competes with the backfill for
-  the same Wayback budget, so do not run them together.
-- **Full-text search.** About half these PDFs carry a usable text layer and
-  `data/letter-text.jsonl` already holds the text for 19,437 of them, taken from
-  the same download as the thumbnail. Nobody has built an index. See issue #1 in
-  `Robin-IA/congressional-letters`. NARA's own crawl items carry extracted-text
-  files beside the WARCs — the same index, already built — but they are
-  access-restricted. The reasoning is in `docs/keeping-it-current.md`, which
-  lives only on the private `origin` repository — not in this one.
-- **The published site is at 874.9 MB of Pages' 1,024 MB limit.** Measured from
-  `git ls-files`, not estimated: 48,239 tracked files, of which `thumbs/` is
-  854.2 MB. That leaves about **149 MB**, and previews average 18.8 KB — so
-  room for roughly **8,000 more thumbnails** before Pages refuses to publish.
-  The backfill expects more letters than that. This is now a near-term
-  constraint on the work, not a tidiness complaint about where files live.
-- **Why the archive.org item swallows zips.** A zip uploaded there returns 200
-  from S3 and then never appears, twice, with the task queue empty. Solving it
-  would let the thumbnails move off the Pages repository, which is where they do
-  not really belong — and that is now a constraint, not a tidiness complaint.
+`CLAUDE.md` keeps the list, under "Open". The issues on
+`Robin-IA/Congressional-Letters-Dev` have the detail.

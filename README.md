@@ -1,107 +1,81 @@
-# Letters from Congress (2007-present)
+# Letters from Congress
 
-### → **[Development preview](https://robin-ia.github.io/Congressional-Letters-Dev/)**
+### → **[Letters from Congress](https://internetarchivecanada.github.io/congressional-letters/)** · [Robin-IA copy](https://robin-ia.github.io/Explorer-Letters/)
 
-*Picking this up on another machine? → [PICKUP.md](PICKUP.md) · Working notes → [CLAUDE.md](CLAUDE.md)*
+*Picking this up on another machine? → [PICKUP.md](PICKUP.md) · Working notes → [CLAUDE.md](CLAUDE.md) · Building the explorers → [EXPLORERS.md](EXPLORERS.md)*
 
 Letters that members of Congress published on their own websites, preserved by
-the Wayback Machine, and organised by Congress: a home page listing every
-Congress from the 110th (2007) forward, and below it, one explorer per
-Congress — who each member wrote to, and when.
+the Wayback Machine, organised by Congress: a home page that searches across
+every Congress from the 106th (1999) to the 119th, and one explorer per
+Congress below it, showing who each member wrote to, and when. Each letter
+appears in exactly one explorer, the Congress in session on its date, and
+opens from the Wayback Machine.
 
-**This repository is where it is being built.** The preview above is its only
-site. There is no published copy or mirror yet; one will come when the work is
-ready and has been approved. Push to this repository only — see `CLAUDE.md`.
+**This is the development repository.** The methodology, scripts, data,
+templates, tests, decisions and issues live here; the sites are built from it
+and published by script. Nothing published is edited by hand.
 
-## Where it stands
+## Where it is published
 
-| Congress | State |
-| --- | --- |
-| **119th (2025-26)** | **Built** — 73,354 letters from 529 of 555 members, including the 16 who left office during it. Previews for the departed members' letters are still being rendered |
-| 110th – 118th | Placeholders on the home page, not yet built |
+The same build is published to two accounts, every time:
 
-The 119th explorer is the work that began as
-[congressional-letters](https://internetarchivecanada.github.io/congressional-letters/),
-which covered the members sitting in 2026. That explorer is unchanged and stays
-as it is; this repository builds on it.
+| | Internet Archive Canada | Robin-IA |
+| --- | --- | --- |
+| Home page | <https://internetarchivecanada.github.io/congressional-letters/> | <https://robin-ia.github.io/Explorer-Letters/> |
+| One Congress | `internetarchivecanada.github.io/Explorer-Congressional-Letters-<N>/` | `robin-ia.github.io/Explorer-Congressional-Letters-<N>/` |
 
-## How the site is laid out
+Each is its own GitHub repository serving Pages from `main`, tagged
+`explorers`, `democracys-library`, `congress` and `letters-from-congress`.
+Every explorer's description and "All Congresses" link lead back to its
+account's home page.
 
-One static site on GitHub Pages, serving the `harvest-member-letters` branch
-from the repository root. No server, no database.
+**Checked 12 November 2026:** the home page and the explorers meet WCAG 2.2
+Level AA and pass the security and code validity checks
+([report](security-accessibility-checks.md)).
+
+## What is in this repository
 
 | Path | What it is |
 | --- | --- |
-| `index.html` | The home page: the list of Congresses |
-| `119th/` | The 119th Congress explorer — `index.html`, `index.json` and `payload/` |
-| `119th/index.json` | Members, counts, facets, year histogram, and a cache stamp |
-| `119th/payload/member/<bioguide>.json` | One member's letters, fetched when that member is opened |
-| `119th/payload/search.json` | Every letter's description, so search works from a cold load |
-| `app.js` | The explorer, shared by every Congress's folder |
-| `thumbs/<digest>.webp` | Rendered first pages, shared by every Congress |
-| `explorer.html` | Forwards to `119th/` — the 119th lived here for a day |
+| `build/hub/` | The home page: `index.html`, `hub.js`, images. Built by `build/build_hub.py`. |
+| `119th/index.html`, `app.js` | **The explorer template.** Every Congress's explorer is stamped from these by `build/build_congress.py`, which swaps in its name, dates and links. `119th/` is also this repository's own Pages preview. |
+| `build/` | The pipeline: harvesting, parsing, rendering, OCR, building and publishing. |
+| `data/rosters/` | Who served in each Congress, 106th to 119th, with their dates. |
+| `harvest/` | Per-Congress harvest inputs and logs; the letter files themselves are not tracked. |
+| `vocabulary/` | The Letters from Congress vocabulary of subjects. |
+| `METHODOLOGY.md`, `EXPLORERS.md` | The method behind each step, and how to run and publish it. |
 
-Each future Congress gets a folder of its own beside `119th/`, with its own
-`index.json` and `payload/`, reading the same `app.js` and `thumbs/`. A letter
-captured once is rendered once, however many Congresses it appears in.
+The built sites are not here: each lives in its own repository.
 
-Every explorer view is a link, because the URL is the whole state:
-`119th/?member=W000817`, `?to=Department%20of%20Justice`, `?year=2020`,
-`?view=recipients`, `?view=search&q=opioid`. A query sent to the home page is
-forwarded to `119th/`, so links made before the home page existed still work.
+## Building and publishing
 
-To run it locally, serve the repository root:
+`EXPLORERS.md` has every step and its checks. In short, from a checkout with
+the harvest data in place:
 
 ```bash
-python3 -m http.server 8947
+python3 build/build_congress.py 106-119 --copy-thumbs   # one explorer per Congress, into ../explorers/
+python3 build/export_csv.py                             # each explorer's Download data CSV
+python3 build/build_hub.py                              # the home page
+build/publish_explorers.sh                              # publish to Robin-IA, then build/publish_iac.sh to IAC
 ```
 
-## Building the 119th
+On the Mac this runs unattended: `build/auto_publish.sh` merges the PC's
+returns as they arrive and republishes both accounts after each merge or 300
+new thumbnails, beside `build/thumbs_loop.sh` (rendering) and
+`build/ocr_letters.py --watch` (OCR). `CLAUDE.md` has what that means for
+changes merged here.
 
 ```bash
 python3 -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
-```
-
-`pypdfium2` and `pillow` do the rendering, `pypdf` reads dates and text.
-`internetarchive` is only needed by `build/upload_item.py`, which is not in the
-serving path.
-
-```bash
-python3 build/harvest.py --workers 5      # CDX per member site; resumable
-python3 build/resolve_wrappers.py         # chase download pages to the file
-python3 build/parse_urls.py               # URLs -> date, recipient, subject
-python3 build/thumbs.py --thumbs thumbs   # render first pages into thumbs/
-python3 build/build_site.py --thumb-base ../thumbs/ --force
+pip install -r requirements.txt          # pinned; pypdfium2 and pillow render, pypdf reads dates and text
 python3 -m unittest discover -s tests
 ```
-
-- **`--thumbs thumbs`** — without it the renderer looks in `payload/thumbs/`,
-  which is gitignored and empty on a fresh clone, and re-fetches every PDF
-  already rendered.
-- **`--thumb-base ../thumbs/`** — relative to the page in `119th/`, which is
-  how the browser resolves it.
-- **`--force`** — the build otherwise refuses to shrink the corpus by more than
-  a tenth, a guard worth keeping.
-
-`build_site.py` writes into `119th/` by default. It must run again after any
-thumbnail pass, because `index.json` records which thumbnails existed.
-
-`harvest.py` caches **raw** CDX rows and cleans on the way out, so a newly
-discovered kind of junk costs a re-filter rather than another pass over every
-host. Querying is hours; filtering is seconds.
-
-`thumbs.py` and `resolve_wrappers.py` take days, are resumable, and neither has
-to finish for the explorer to be correct. Both are deliberately slow — two
-workers and a pause, because four earned a rate limit that outlasted the run
-that earned it. The renderer walks across all members by position on each
-member's own page, so every member's opening screen fills together.
 
 ### Members who left during the Congress
 
 `harvest.py` builds its roster from `legislators-current.json`, so a member who
 resigned, died or moved to another post during the Congress is not in it.
-They are harvested from a roster of their own and built in beside the rest:
+They are harvested from a roster of their own:
 
 ```bash
 python3 build/harvest.py --members-in data/congress119-departed.json \
@@ -110,21 +84,13 @@ python3 build/harvest.py --members-in data/congress119-departed.json \
 python3 build/parse_urls.py --raw data/letters-119-departed.jsonl \
   --members data/congress119-departed.json \
   --out data/letters-119-departed-parsed.jsonl
-python3 build/build_site.py --thumb-base ../thumbs/ --force \
-  --also-members data/congress119-departed.json \
-  --also-parsed  data/letters-119-departed-parsed.jsonl
 ```
 
-The roster carries each member's `left` date. The explorer shows them as
-"Left office", gives their years of service as an end year rather than
-"present", and links their site to the Wayback Machine's copy from the day they
-left, because the address usually belongs to someone else by now.
-
-The departed are kept out of `data/members.json` on purpose: `harvest.py`
-rewrites that file from the current roster, and would drop them.
-
-For members who left **before** a Congress began — the material for the 110th to
-118th — see [BACKFILL.md](BACKFILL.md).
+`build_congress.py` reads `data/letters-119-departed-parsed.jsonl` beside the
+other harvests. The roster carries each member's `left` date: the explorer
+shows them as "Left office", gives an end year rather than "present", and
+links their site to the Wayback Machine's copy from the day they left,
+because the address usually belongs to someone else by now.
 
 ## Why this material needs an archive
 
@@ -203,12 +169,12 @@ salutation and the opening argument. It is legible, and a visitor learns more
 from it than from anything a parser could write, which is why a member's
 letters are shown as a wall of documents before they are shown as a table.
 
-They are WebP at quality 72, named by capture digest, and served from `thumbs/`
-in this repository — 854 MB across 47,688 files, most of GitHub Pages' 1 GB
-limit. That leaves room for roughly 8,000 more, fewer than the earlier
-Congresses will need. Moving them to an archive.org item is the way out, and is
-blocked on an unexplained fault: a zip uploaded to the item returns 200 and
-never appears. See `CLAUDE.md`.
+They are WebP at quality 72, named by capture digest, and each explorer serves
+its own from its repository's `thumbs/`, under that repository's 1 GB Pages
+limit. A letter's thumbnail is stored once, in the one explorer that holds the
+letter. Moving them to an archive.org item would be the way past that limit,
+and is blocked on an unexplained fault: a zip uploaded to the item returns
+200 and never appears. See `CLAUDE.md`.
 
 ## Four traps in this pipeline
 
@@ -242,9 +208,10 @@ another. Results are cached per host and a re-run retries only what failed.
 - **Most dates are upper bounds.** Where neither the filename nor the PDF
   states a date, a letter is placed at the first Wayback capture that saw it,
   and shown as "by March 2016" rather than as a day.
-- **The 119th explorer holds everything on its members' sites**, back to 2000 —
-  the way an end-of-Congress harvest captures a whole site, old pages included.
-  A letter from 2012 by a member still sitting in 2025 appears there.
+- **Each letter is in one explorer**, the Congress in session on its date. A
+  letter dated before a member's first Congress, or from an address another
+  member held, is credited by the rules in `EXPLORERS.md` and `METHODOLOGY.md`,
+  and flagged where it is an inference.
 
 `build/ia_search.py` is vendored from `collection-analysis` and carries that
 project's notes on these endpoints.
