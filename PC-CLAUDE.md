@@ -10,22 +10,21 @@
 >   `C:\render4` and run it the way Job 1 ran (`run_render.py`). If Job 1 is
 >   still running, push its last return and stop it first, or the two render
 >   the same letters.
-> - **Job 4 is the 116th–119th scans' OCR.** `pc-ocr-116-119.zip` holds
->   **7,198 scans** with a preview but no text layer and no OCR. Unzip it into
->   `C:\ocr2` and run it the way Job 2 runs (`fetch_for_ocr.py`, then
->   `ocr_tesseract.py`). Job 2 keeps the 106th–115th; the two do not overlap.
-> - **Size.** At about 465 KB a PDF, Job 3 is about 3.2 GB of downloads and
->   Job 4 about 3.3 GB. That is well past the 3 GB alert and most of the
->   hotspot's 10 GB, so check with Robin which connection each runs on.
-> - **The Mac has stopped downloading.** Its render finished at 20:05 and its
->   OCR is idle, so the reason for keeping Job 2 off Charter (leaving the Mac
->   its allowance) no longer holds. Whether to change that rule is Robin's
->   call.
+> - **Job 4 (the 116th–119th scans' OCR) is the Mac's, not the PC's.**
+>   Decided 12 November, 22:00: the Mac fetches and OCRs those 7,198 scans
+>   itself. **Do not run `pc-ocr-116-119.zip`**; it stays on this branch only
+>   as a record. The PC's jobs are Job 2 (the 106th–115th scans) and Job 3.
+> - **Size.** At about 465 KB a PDF, Job 3 is about 3.2 GB of downloads. That
+>   is past the 3 GB alert and a third of the hotspot's 10 GB, so check with
+>   Robin which connection it runs on.
+> - **The Mac is downloading again** from 22:00, fetching Job 4's scans on
+>   Charter. If Job 3 runs on Charter too, the two share one IP and one
+>   Wayback allowance: keep the PC to `--workers 2` there, or run it on the
+>   hotspot.
 > - **Results come back as before**, packed by `pack_return.py`, on these
->   branches exactly: **Job 3 on `pc-render-return-3`**, **Job 4 on
->   `pc-ocr-return-116-119`**. The Mac's auto-publish job merges only branches
->   it knows by name: it already watches `pc-render-return-3`, and
->   `pc-ocr-return-116-119` is added on the Mac's side. It publishes what it
+>   branches exactly: **Job 3 on `pc-render-return-3`**, Job 2 on
+>   `pc-ocr-return-106-115` as before. The Mac's auto-publish job merges only
+>   branches it knows by name, and watches both. It publishes what it
 >   merges, and every publish rebuilds full-text search, so new OCR becomes
 >   searchable on its own.
 
