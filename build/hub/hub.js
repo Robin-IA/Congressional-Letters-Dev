@@ -693,55 +693,31 @@ function showAbout() {
   const ok = [...HUB.congresses].sort((a, b) => a.number - b.number)
     .map(c => [c, INDEXES.get(c.number)]).filter(([, i]) => i && !i.failed);
   const letters = ok.reduce((s, [, i]) => s + (i.letters || 0), 0);
-  const people = everyMember();
-  const wrote = people.filter(p => p.letters).length;
+  const wrote = everyMember().filter(p => p.letters).length;
   const first = ok[0] && (ok[0][1].congress || {});
   const last = ok.length && (ok[ok.length - 1][1].congress || {});
   const built = ok.map(([, i]) => i.built).filter(Boolean).sort().pop();
   fill(out, el('section', { class: 'about' },
     el('h2', { class: 'sec' }, 'About Letters from Congress'),
 
-    el('h3', {}, 'What this is'),
-    el('p', {}, `Members of Congress write letters all the time — to government agencies,
-      to companies, to the President, to each other — asking questions, making demands,
-      pushing for answers. Many of them post those letters on their own websites.`),
-    el('p', {}, `This is a collection of ${num(letters)} of those letters, written by
-      ${num(wrote)} of the ${num(people.length)} people who served in Congress from the
-      ${first.ordinal || ''} Congress to the ${last.ordinal || ''}. Each Congress has its own
-      explorer; this page searches across all of them, and sorts them by topic and by member.`),
+    el('p', {}, `Letters that members of Congress published on their own websites — to
+      government agencies, companies, the President and each other — as the Wayback
+      Machine archived them: ${num(letters)} letters from ${num(wrote)} members, from the
+      ${first.ordinal || ''} Congress to the ${last.ordinal || ''}. Each Congress has its
+      own explorer; this page searches across them all, by `,
+      el('a', { href: '?view=topics' }, 'topic'), ' and by ',
+      el('a', { href: '?view=by-member' }, 'member'), '.'),
 
-    el('h3', {}, 'Why the archive matters here'),
-    el('p', {}, `When a member of Congress leaves office, their website doesn’t stay up.
-      The next person to hold the seat gets the same web address, and everything that was
-      there before is gone. The Wayback Machine archived those sites as they were, and
-      that’s where these letters come from — so for many of them, the archive is the only
-      copy left anywhere.`),
-
-    el('h3', {}, 'How the letters are sorted'),
-    el('p', {}, 'The ', el('a', { href: '?view=topics' }, 'topic list'), ` has six sections:
-      the Congress Members who wrote the letters; the Committees they wrote for; the
-      Government officials they wrote to, by branch of government; the Topics the letters
-      are about; Companies and organizations; and Foreign and international recipients.
-      A letter is filed under a committee when it is written on the committee’s stationery,
-      read from its letterhead, or addressed to the committee.`),
-    el('p', {}, `Recipients and subjects come mostly from the letter’s file name, which
-      staffers write for people to read, and from the text of the letter where it can be
-      read. Where a file was named something vague, you’ll see something vague. We’d rather
-      show you that than make something up.`),
+    el('h3', {}, 'Why the archive matters'),
+    el('p', {}, `When a member of Congress leaves office, their website may not remain.
+      The Wayback Machine archived these sites, so for many of these letters the archive
+      is the only copy left.`),
 
     el('h3', {}, 'What’s missing'),
-    el('p', {}, `Only what was archived. This is what the Wayback Machine holds of what
-      members published — not a complete record of what Congress sent.`),
-    el('p', {}, `Only letters posted on members’ own websites, and found by looking for the
-      word “letter” in the file name or web address. A letter posted as an unnamed
-      attachment won’t show up here, and neither will news items that only announce a
-      letter was sent.`),
-    el('p', {}, `Older Congresses are thinner: fewer letters from those years were
-      posted online and archived.`),
+    el('p', {}, `Only letters the Wayback Machine archived and we have found so far. Older
+      Congresses have fewer.`),
 
     el('h3', {}, 'Each Congress, and its data'),
-    el('p', {}, `Each explorer’s About page explains how its dates were found and what it
-      misses, and has that Congress’s letters to download as a spreadsheet (CSV).`),
     el('table', { class: 'members' }, el('thead', {}, el('tr', {},
         el('th', { scope: 'col' }, 'Congress'), el('th', { scope: 'col', class: 'n' }, 'Letters'),
         el('th', { scope: 'col' }, 'About and data'))),
@@ -754,13 +730,9 @@ function showAbout() {
           el('td', {}, el('a', { href: congressLink(c, 'view=about') },
             `About the ${k.ordinal || c.number} Congress`)));
       }))),
-    built ? el('p', { class: 'secnote' }, `Last updated ${built}.`) : null,
 
-    el('h3', {}, 'Credits'),
-    el('p', {}, `Built at the Internet Archive from the Wayback Machine’s archive of
-      congressional websites, as part of Democracy’s Library. The letters themselves are
-      public records; every one links back to the archived original so you can read it
-      yourself.`)));
+    el('p', {}, 'Built at the Internet Archive from the Wayback Machine’s archive of ',
+      `congressional websites, for Democracy’s Library.${built ? ` Updated ${built}.` : ''}`)));
 }
 
 // ------------------------------------------------------------- boot

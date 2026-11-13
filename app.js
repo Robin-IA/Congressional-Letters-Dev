@@ -1183,127 +1183,45 @@ async function viewSearch(query) {
 }
 
 function viewAbout() {
-  const precisions = INDEX.precisions || {};
-  const captured = precisions['captured-by'] || 0;
-  const scanned = precisions['scanned'] || 0;
-  // INDEX.recipients is only the 200 shown, so summing it undercounts: it
-  // reported 36% where the real figure is 46%.
-  const named = Math.round(((INDEX.with_recipient
-    || (INDEX.recipients || []).reduce((s, [, n]) => s + n, 0))
-    / Math.max(1, INDEX.letters)) * 100);
+  const k = INDEX.congress || {};
   return el('div', { class: 'prose' },
     el('h1', { class: 'hero' }, 'About these letters'),
 
-    el('h3', {}, 'What this is'),
-    el('p', {}, `Members of Congress write letters all the time — to government agencies,
-      to companies, to the President — asking questions, making demands, pushing for
-      answers. Most of them post those letters on their own websites.`),
-    el('p', {}, `This is a collection of ${num(INDEX.letters)} of them, from
-      ${num(INDEX.members_with_letters)} members, going back to ${(INDEX.span || [])[0]}.
-      You can browse by who wrote them, by who they were sent to, or by year.`),
+    el('p', {}, `Letters that members of the ${k.ordinal || '119th'} Congress published on
+      their own websites — to government agencies, companies, the President and each
+      other — as the Wayback Machine archived them: ${num(INDEX.letters)} letters from
+      ${num(INDEX.members_with_letters)} members.`),
 
-    el('h3', {}, 'Why the archive matters here'),
-    el('p', {}, `When a member of Congress leaves office, their website doesn’t stay up.
-      The next person to hold the seat gets the same web address, and everything that was
-      there before is gone.`),
-    el('p', {}, `Two examples we hit while building this: portman.senate.gov and
-      braun.senate.gov. Neither loads any more. But the Wayback Machine archived them, and
-      that’s where these letters come from — so for a lot of this, the archive is
-      the only copy left anywhere.`),
+    el('h3', {}, 'Why the archive matters'),
+    el('p', {}, `When a member of Congress leaves office, their website may not remain.
+      The Wayback Machine archived these sites, so for many of these letters the archive
+      is the only copy left.`),
 
-    el('h3', {}, 'Where the descriptions come from'),
-    el('p', {}, `The short description next to each letter isn’t taken from inside the
-      letter. It comes from the name of the file.`),
-    el('p', {}, `That works better than it sounds, because staffers name these files for
-      people to read. A file called`),
-    el('p', {}, el('code', {},
-      'warren-markey-letter-to-hhs-re-vaccine-distribution.pdf')),
-    el('p', {}, `tells you who signed it, who got it, and what it was about. That’s where
-      the names and subjects on this site come from.`),
-    el('p', {}, `It also means the descriptions are rough. Where a file was named something
-      vague, you’ll see something vague. We’d rather show you that than make
-      something up.`),
-    el('p', {}, `We used to say here that most of these letters were scans with no
-      readable text in them. That was wrong — it came from checking 21 files.
-      Checking 50 properly, about two thirds of them do have readable text
-      inside. Searching those words is something we haven’t built yet, but it
-      is possible, and this page will say so when it exists.`),
-
-    el('h3', {}, 'About the dates'),
-    el('p', {}, `Some letters have the date right in the filename, and those are exact.`),
-    scanned
-      ? el('p', {}, `For ${num(scanned)} others, we read the date out of the PDF itself —
-          when the file was created. For a scanned letter that’s usually the day it was
-          scanned and posted, which is normally the same day it was sent, but it can be a
-          little later.`)
-      : null,
-    el('p', {}, `And for ${num(captured)} letters we have no date at all, so we show when the
-      Wayback Machine first saw the file — written as “by March 2016”. The
-      letter existed by then. It may be older.`),
+    el('h3', {}, 'Where the details come from'),
+    el('p', {}, `Who a letter went to and what it is about come mostly from the file’s
+      name, which staff write for people to read, and from the letter’s text where it can
+      be read. Where a file was named something vague, the description is vague too.`),
+    el('p', {}, `Dates come from the file name or the PDF where they can. Where there is
+      no date, we show when the Wayback Machine first saw the file, written as
+      “by March 2016”: the letter existed by then.`),
 
     el('h3', {}, 'What’s missing'),
-    el('p', {}, `Only what was archived. This is what the Wayback Machine holds of what
-      Congress published — not a complete record of what Congress sent.`),
-    el('p', {}, `Only members of the 119th Congress.${
-      INDEX.members.some(m => m.left)
-        ? ` That includes the ${num(INDEX.members.filter(m => m.left).length)} who left
-      office during it, and the letters they had published by the time they went.`
-        : ''} Members who left before
-      the 119th began are in the archive too, and they’re the ones most at risk of
-      being forgotten — but matching them to the websites they used to have is a
-      bigger job, and we haven’t done it yet.`),
-    el('p', {}, `Only letters with the word “letter” somewhere in the file name or
-      web address. One posted as an unnamed attachment won’t show up here.`),
-    el('p', {}, `Only the letter itself — not pages about it. A lot of what
-      turns up in a search for “letter” is a news item announcing that a letter
-      was sent, or a download page that just forwards you to the file. Opening
-      either one gets you the member’s website, not the letter. We took out
-      20,241 of those.`),
-    el('p', {}, `Some letters went with them. About 6,700 of those download
-      pages were the only copy we had, and we are working through them one at a
-      time, following each one to the file behind it and putting the letter
-      back. That is slow going, so the count above will rise.`),
-    el('p', {}, `Only about ${named}% of files name who the letter went to. The rest just say
-      what it was about, so those show no recipient.`),
-    el('p', {}, `No newsletters — which takes some doing, since “newsletter”
-      has “letter” inside it. For one senator, 784 of the 1,204 matching files were
-      newsletters.`),
+    el('p', {}, `Only letters the Wayback Machine archived and we have found so far. A letter
+      posted without “letter” in its file name or web address is not here yet.`),
 
     // The data download lives here, not on the home page's cards (EXPLORERS.md,
     // 2026-11-13). export_csv.py writes it beside each explorer's index.json.
-    ...((INDEX.congress || {}).ordinal ? [
+    ...(k.ordinal ? [
       el('h3', { id: 'download' }, 'Download the data'),
-      el('p', {}, `Every letter in this explorer as one spreadsheet (CSV), one row per letter: `
-        + 'the member, their party, state and district, the date, the recipient, the topics, '
-        + 'the subject, and links to the letter on the Wayback Machine.'),
       el('p', {}, el('a', {
-        href: `data/letters-from-congress-${INDEX.congress.ordinal}.csv`, download: '',
-      }, `Download the ${INDEX.congress.ordinal} Congress data (${num(INDEX.letters)} letters, CSV)`)),
+        href: `data/letters-from-congress-${k.ordinal}.csv`, download: '',
+      }, `Download the ${k.ordinal} Congress data (${num(INDEX.letters)} letters, CSV)`),
+        ': one row per letter, with the member, date, recipient, topics, subject and its ',
+        'Wayback Machine links.'),
     ] : []),
 
-    el('h3', {}, 'By the numbers'),
-    el('table', {}, el('tbody', {},
-      el('tr', {}, el('td', {}, 'Letters'),
-        el('td', { class: 'n' }, num(INDEX.letters))),
-      el('tr', {}, el('td', {}, 'Members of Congress'),
-        el('td', { class: 'n' },
-          `${num(INDEX.members_with_letters)} of ${num(INDEX.members_total)}`)),
-      // There used to be a "Scanned documents" and a "Press releases" row
-      // here, split on the capture's content type. Both were wrong: only
-      // about three quarters of the PDFs are scans, and the 85 files counted
-      // as press releases were letters whose web server simply gave them the
-      // wrong type. Press releases are not in this collection at all now.
-      el('tr', {}, el('td', {}, 'People and agencies written to'),
-        el('td', { class: 'n' }, num(INDEX.recipients_total
-          || (INDEX.recipients || []).length))),
-      el('tr', {}, el('td', {}, 'Previews made so far'),
-        el('td', { class: 'n' }, num(INDEX.thumbs || 0))),
-      el('tr', {}, el('td', {}, 'Last updated'), el('td', { class: 'n' }, INDEX.built)))),
-
-    el('h3', {}, 'Credits'),
-    el('p', {}, 'Built at the Internet Archive from the Wayback Machine’s archive of ',
-      'congressional websites. The letters themselves are public records; every one links ',
-      'back to the archived original so you can read it yourself.'),
+    el('p', {}, 'Built at the Internet Archive from the Wayback Machine’s ',
+      `archive of congressional websites. Updated ${INDEX.built}.`),
   );
 }
 

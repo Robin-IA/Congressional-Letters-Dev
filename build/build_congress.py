@@ -354,12 +354,6 @@ def page_files(n: int, dest: Path) -> None:
               "title")
     js = swap(js, " · Letters from Congress (2007-present)';",
               " · Letters from Congress (2007-present)`;", "title close")
-    js = swap(js, "`Only members of the 119th Congress.${",
-              "`Only letters written during the ${(INDEX.congress || {}).ordinal || '119th'} Congress, by its members.${",
-              "about")
-    js = swap(js, "the 119th began are in the archive too",
-              "the ${(INDEX.congress || {}).ordinal || '119th'} began are in the archive too",
-              "about 2")
     js = swap(js, "const service = m => `${m.since}–${m.left ? m.left.slice(0, 4) : 'present'}`;",
               "const service = m => `${m.since}–${m.left ? m.left.slice(0, 4) : (m.until || 'present')}`;",
               "service years")
