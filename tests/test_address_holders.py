@@ -151,6 +151,16 @@ class Attribute(unittest.TestCase):
         self.assertEqual(who("https://shea-porter.house.gov/x.pdf", "2012-06-01"),
                          ("S001170", "after_service"))
 
+    def test_a_later_holders_reposted_letter_is_theirs(self):
+        # levin.house.gov: Sander Levin to 2019, Mike Levin from 2023. Mike
+        # Levin's 2019 letter, first captured there in 2023, is his.
+        url = "https://levin.house.gov/imo/media/doc/2019-03-12 letter.pdf"
+        a = attribute(IDX, url, "2019-03-12", "20230623000000")
+        self.assertEqual((a.bioguide_id, a.attribution), ("L000593", "earlier_office"))
+        # Captured in the gap itself, the earlier holder's after_service stands.
+        b = attribute(IDX, url, "2019-03-12", "20190401000000")
+        self.assertEqual((b.bioguide_id, b.attribution), ("L000263", "after_service"))
+
     def test_a_caucus_subdomain_goes_to_its_parents_holder_flagged(self):
         self.assertEqual(who("https://cpc.grijalva.house.gov/x.pdf", "2014-12-09"),
                          ("G000551", "caucus"))

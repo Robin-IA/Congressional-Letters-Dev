@@ -371,8 +371,10 @@ def main() -> None:
         # was scanned.
         best = record.get("date")
         precision = record.get("date_precision")
+        # date_rejected: build_congress.py found the letter's date impossible
+        # for whoever held the address, so the PDF's own date is not used either.
         if not best:
-            from_pdf = pdf_dates.get(digest or "")
+            from_pdf = None if record.get("date_rejected") else pdf_dates.get(digest or "")
             if from_pdf:
                 best, precision = from_pdf, "scanned"
             else:
