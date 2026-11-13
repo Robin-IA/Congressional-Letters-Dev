@@ -1,36 +1,79 @@
 # Letters from Congress — working notes
 
-Letters published on sitting members of Congress's own websites and preserved by
-the Wayback Machine. Read `README.md` first for what the thing is; this file is
-for the decisions that are not visible from the code.
+Letters that members of Congress published on their own websites, preserved by
+the Wayback Machine, organised by Congress. Read `README.md` first for what the
+thing is; this file is for the decisions that are not visible from the code.
 
-**One explorer per Congress is being built (9 November 2026).** `EXPLORERS.md`
-has the instructions, the decisions and what is still open; `METHODOLOGY.md`
-has the method behind each step. This repository stays the development
-repository, and the explorers are published from it.
+**One explorer per Congress, 106th to 119th, and a home page over all of them.**
+`EXPLORERS.md` has the build instructions, the decisions and what is still
+open; `METHODOLOGY.md` has the method behind each step. This repository is the
+development repository: everything is built and tested here, and the sites are
+published from it by script. Nothing published is edited by hand.
 
 ## Where it is published
 
-Two GitHub Pages sites, both serving the **`harvest-member-letters`** branch
-from its root:
+The same build goes to two accounts, every time (`build/publish_explorers.sh`,
+then `build/publish_iac.sh`):
 
-- <https://internetarchivecanada.github.io/congressional-letters/> — public
-- <https://robin-ia.github.io/congressional-letters/> — working copy
-
-**Neither serves `main`.** `main` is the initial scaffold and the work has never
-been merged into it. Pages points at the branch in both repositories.
-
-Three remotes, and they are not interchangeable:
-
-| Remote | Repository | Role |
+| | Robin-IA | Internet Archive Canada |
 | --- | --- | --- |
-| `mine` | `Robin-IA/congressional-letters` | working copy, Pages |
-| `origin` | `internetarchivecanada/letters-from-congress` | **private**, holds PR #1, no Pages |
-| `iac` | `internetarchivecanada/congressional-letters` | public mirror, Pages |
+| Home page | [`Explorer-Letters`](https://robin-ia.github.io/Explorer-Letters/) | [`congressional-letters`](https://internetarchivecanada.github.io/congressional-letters/) |
+| Each Congress | `Explorer-Congressional-Letters-<N>` | `Explorer-Congressional-Letters-<N>` |
 
-`letters-from-congress` is private and Pages from a private repository needs a
-paid plan. That is the whole reason the public mirror exists as a separate
-repository rather than by opening that one up.
+Each explorer's "All Congresses" link goes to its own account's home page, so
+the IAC copies differ from Robin-IA's in two files: `index.html` (that link)
+and `README.md` (its own address). `publish_iac.sh` makes that change on the
+way across and never rewrites IAC history. The IAC home page lives at the
+address the first explorer was published at, so it also keeps forwarding for
+that explorer's old links (`?member=…`, `119th/`, `explorer.html`).
+
+**Nothing is pushed to an explorer repository by hand.** Every one is built
+output: rebuild, then publish with the scripts. Creating a repository, on
+either account, is Robin's call.
+
+**The Mac runs the pipeline unattended.** `build/auto_publish.sh` loops in
+`~/ia/congressional-member-letters`: it merges the PC's return branches as
+they arrive, and after a merge or 300 new thumbnails it rebuilds every
+explorer and the home page and publishes to both accounts. Beside it run
+`build/thumbs_loop.sh` (rendering) and `build/ocr_letters.py --watch` (OCR).
+**That checkout builds from its own copy of the scripts and templates**, so a
+change merged here reaches the sites only once those files there are brought
+to main. On 12 November an out-of-date copy there twice republished an old
+home page over a new one.
+
+**This repository's own Pages site** serves `harvest-member-letters` at
+<https://robin-ia.github.io/Congressional-Letters-Dev/>. Its `119th/` is the
+explorer template every Congress is stamped from (see below), not a published
+explorer.
+
+Other repositories, kept as records:
+
+| Repository | What it is |
+| --- | --- |
+| `internetarchivecanada/letters-from-congress` | Private. The original handover: PR #1, issue #2, and `docs/keeping-it-current.md`, which stays there. |
+| `Robin-IA/congressional-letters` | The first single-Congress explorer. Superseded. |
+
+## The explorer template
+
+Every explorer is stamped from `119th/index.html` and `app.js` in this
+repository by `build/build_congress.py`, which swaps in each Congress's name,
+dates and links. A swap that no longer matches stops the build rather than
+publishing a page that says the wrong Congress. Until 12 November the
+template was read from `iac-119th`, a branch that existed on one laptop only;
+it moved here so a fix to the explorers goes through a PR (#59).
+
+**A change to either file reaches every explorer on the next build.** Bump
+`app.js?v=` in `119th/index.html` whenever `app.js` changes.
+
+## Accessibility and security
+
+The home page and the explorers pass WCAG 2.2 Level AA, the security checks
+and the code validity checks (`security-accessibility-checks.md`, checked 12
+November 2026), and their footers say so. **The note is a claim**: a change to
+the pages needs the explorer-checks skill re-run, and a run that stops
+passing takes the note down. `--faint` is dark for a reason, the filter
+controls are named and keep focus, and the counts are `role="status"`; the
+report has the rest.
 
 ## The corpus rule
 
@@ -50,7 +93,7 @@ A URL containing "letter" is not the letter, twice over:
 `build/resolve_wrappers.py` chases the remainder. It is parked at 113 of 6,711;
 it competes with the renderer for the same Wayback budget, so run one at a time.
 
-## Everything is served from this repository, not from the archive.org item
+## Everything is served from the explorer repositories, not from an archive.org item
 
 The ETD arrangement — bulk data on an item, streamed client-side — is what this
 was built to do, and the item will not take it.
@@ -64,7 +107,8 @@ this item returns 200 from S3 and then never appears**, twice, with the queue
 empty. That is unexplained and is the thing to fix if anyone wants the item back
 in the path.
 
-So `thumbs/` and `payload/member/` are both tracked and served by Pages.
+So each explorer repository tracks its own `thumbs/` and `payload/member/`,
+and Pages serves them; each repository has its own 1 GB limit.
 `thumb_base` and `data_base` in `index.json` are one field each when it moves
 back.
 
@@ -81,10 +125,13 @@ Both take days, both are resumable, **neither has to finish** for the explorer
 to be correct.
 
 ```bash
-python3 build/thumbs.py --thumbs thumbs     # see the trap below
-python3 build/publish_thumbs.py             # payload/thumbs -> thumbs/
-python3 build/build_site.py --thumb-base thumbs/ --force
+build/thumbs_loop.sh 115-118 106-114 paths   # render behind the harvests, a cycle at a time
+build/auto_publish.sh                        # merge the PC's returns, rebuild, publish both accounts
 ```
+
+Run them from a terminal, not from inside a Claude session: anything a session
+starts dies with it. And do not run anything else that fetches from the
+Wayback Machine beside the renderer; they share one rate limit.
 
 **The trap when moving machines.** `thumbs/` is tracked and arrives with a
 clone; `payload/thumbs/` is gitignored and arrives empty. `thumbs.py` checks
@@ -152,8 +199,12 @@ check where each half came from.
 
 - **Branch and open a PR; never commit to `main`.** Pushing a branch needs no
   permission. Merging is Robin's call.
-- Push to all three remotes, `mine` first, then `origin`, then `iac`. Unchained,
-  so one failing does not stop the others.
+- **Push branches to this repository only.** The sites are published by
+  `publish_explorers.sh` and `publish_iac.sh`, never by pushing to them.
+- **Fetch before branching.** The Mac pipeline and the PC both push here.
+- Two-digit-year filename dates (`090501`) are ambiguous; `parse_urls.py`
+  reads them the way that fits the capture and the member's first year, taken
+  from `data/rosters/`, not the harvest rosters' `since` (#58, #60).
 - GitHub Pages allows **10 builds an hour** from a branch and every push is one.
   Batch edits rather than pushing each.
 - Tests: `python3 -m unittest discover -s tests`. 114 at the time of writing, and
@@ -162,8 +213,12 @@ check where each half came from.
 
 ## Open
 
-- The renderer is part-way through 48,113 documents. It is the only thing
-  between here and complete coverage; the budget no longer binds.
+- Rendering and OCR are running (see above); the PC handed back 7,920 path
+  PDFs it did not render, and the Mac is working through them.
+- The main 2000-2026 corpus has not been re-parsed with the date fix: its raw
+  file, `data/letters-raw.jsonl`, is not on the Mac (issue #2).
 - `resolve_wrappers.py` at 113 of 6,711 — worth perhaps 3,000 more letters.
-- Full-text search: the text is there and nobody has built an index. Issue #1.
-- Why the item swallows zips.
+- Full-text search: the text and OCR are there and nobody has built an index.
+- The Mac's venv predates the pinned `requirements.txt` (Pillow 13, pypdf 7);
+  reinstall it when the renderer is not running.
+- Why the archive.org item swallows zips.

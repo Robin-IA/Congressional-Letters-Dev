@@ -4,7 +4,7 @@ Hand this file to Claude Code on the studio and say "run the backfill", or work
 through it by hand. Everything it needs is here or in the clone.
 
 **Prepared 5 November 2026**, branch `harvest-member-letters` on `dev`
-(`Robin-IA/Congressional-Letters-Dev` — the private working copy).
+(`Robin-IA/Congressional-Letters-Dev`, the development repository, public).
 
 **This file is the mechanics. The sequence and the acceptance criteria are
 [issue #2](https://github.com/internetarchivecanada/letters-from-congress/issues/2)** — what each pass is for,
@@ -42,15 +42,16 @@ gh repo clone Robin-IA/Congressional-Letters-Dev congressional-backfill -- -b ha
 cd congressional-backfill
 ```
 
-**`Congressional-Letters-Dev`, not either `congressional-letters`.** The two
-repos with that name are public, serve GitHub Pages, are under review by other
-people, and do not have this work. `Congressional-Letters-Dev` is private,
-carries everything, and is where development happens. Clone it and the question
-does not arise.
+**`Congressional-Letters-Dev`, not either `congressional-letters`.** Those two
+are published sites: `internetarchivecanada/congressional-letters` is the
+Letters from Congress home page, and `Robin-IA/congressional-letters` the
+superseded first explorer. Neither is pushed to by hand. `Congressional-Letters-Dev`
+carries everything and is where development happens; it is public, so
+anything committed here is published, history included. Clone it and the
+question does not arise.
 
-`internetarchivecanada/letters-from-congress` also has this work and is also
-private, but it is frozen as the record of what was handed over. Do not push to
-it.
+`internetarchivecanada/letters-from-congress` is private and frozen as the
+record of what was handed over. Do not push to it.
 
 If you would rather work in an existing clone, add the remote:
 

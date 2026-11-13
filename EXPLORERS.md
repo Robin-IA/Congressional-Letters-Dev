@@ -12,10 +12,12 @@ the results.
 | --- | --- |
 | `Robin-IA/Congressional-Letters-Dev` | **The development repository.** Methodology, scripts, data, tests, decisions and issues all live here. Everything is tested here first, then published out to the explorers. |
 | `Robin-IA/Explorer-Congressional-Letters-<N>` | **One explorer per Congress**, e.g. `Explorer-Congressional-Letters-119`. Built output only: never edited by hand, always published from dev by script. Public, because Pages needs it, and started with fresh history. |
-| Federated explorer (name to be decided) | One explorer over all of them: lists the Congresses, searches across every explorer, has member pages spanning a career. Developed separately; requirements below. |
+| `Robin-IA/Explorer-Letters` | **Letters from Congress, the home page** over all of them: lists the Congresses, searches across every explorer. Built by `build/build_hub.py`; requirements below. |
+| `internetarchivecanada/Explorer-Congressional-Letters-<N>`, `internetarchivecanada/congressional-letters` | **The same sites on Internet Archive Canada**, published from the same build every time (`build/publish_iac.sh`). The home page there is `congressional-letters`, the address the first explorer was published at. |
 
-- **Everything is built under Robin-IA first, for testing.** Nothing goes to
-  `internetarchivecanada` until Robin says so.
+- **Everything is built under Robin-IA first, then published to
+  `internetarchivecanada` from the same build.** Robin approved publishing to
+  Internet Archive Canada on 12 November 2026.
 - **Creating a repository is Robin's call.** Ask before creating each new
   `Explorer-Congressional-Letters-<N>` repository. Publishing to one that
   already exists is routine.
@@ -43,6 +45,9 @@ the results.
 | 2026-11-12 | The federated explorer is **Letters from Congress**, repository and folder **`Explorer-Letters`**, published beside the explorers so `../Explorer-Congressional-Letters-<N>/` reaches each one. Each explorer's "All Congresses" link goes to `../Explorer-Letters/`. Built by `build/build_hub.py`. Not `Letters-from-Congress`: under Robin-IA that name still forwards to the private `internetarchivecanada/letters-from-congress`, which it was moved to, and reusing it would break that forwarding. |
 | 2026-11-12 | **Images are public domain, from Wikidata or Wikimedia Commons**, or our own thumbnails of the letters. Before one is used: its license is read on its Commons page (public domain or CC0), its credit line is shown as the source asks, and the page and the commit name the file. Self-hosted, never hot-linked. The first is the home page's banner, *East Front of the U.S. Capitol at Sunrise* (Architect of the Capitol, public domain; their terms ask for the credit "Architect of the Capitol" and no implied endorsement). Wikidata's own image for the Capitol (Q54109, P18) is a different public-domain photograph of the West Front. |
 | 2026-11-12 | Letter subjects use **a controlled vocabulary of their own, the Letters from Congress vocabulary** (`vocabulary/`, built by `build/build_vocabulary.py`): members by Bioguide ID with Wikidata, the organizations and people letters are written to, and topics. Started from what the letters already carry; the words inside the letters are added once the OCR is done. Not LCSH, which is not robust enough for letters. Unreviewed terms and every searched-for Wikidata match are `candidate`, never fact (#40). |
+| 2026-11-12 | **Published to Internet Archive Canada** as well as Robin-IA, at Robin's request: 14 explorer repositories under `internetarchivecanada`, and `congressional-letters` replaced by the home page as a new commit on its history, keeping forwarding for its old links. Every publish now goes to both (`publish_iac.sh`, PR #61). |
+| 2026-11-12 | **The explorer template moved onto the main line** (`119th/index.html`, `app.js`), from `iac-119th`, a branch on one laptop, so fixes to the explorers go through review (PR #59). |
+| 2026-11-12 | Ambiguous two-digit-year filename dates are read the way that fits the capture and the member's first year (PR #60, fixing #58). |
 
 ## The pipeline for Congress N
 
@@ -227,13 +232,17 @@ every letter on the sitting members' sites.
 
 ### 8. Publish
 
-1. Build into a working copy of `Explorer-Congressional-Letters-<N>`. Its
-   `thumb_base` is `thumbs/` and the page loads `app.js` from the same
-   repository, until the shared-app question below is settled.
-2. **Bump `app.js?v=` in `index.html`** whenever `app.js` changes. Every file
-   a build rewrites carries `index.json`'s `stamp`. These are the
+1. Build: `build_congress.py N --copy-thumbs`, `export_csv.py`, `build_hub.py`.
+   Each explorer is built into its working copy in `../explorers/`; its
+   `thumb_base` is `thumbs/` and it carries its own `app.js`, stamped from
+   the template.
+2. **Bump `app.js?v=` in `119th/index.html`** whenever `app.js` changes.
+   Every file a build rewrites carries `index.json`'s `stamp`. These are the
    caching traps in `CLAUDE.md`.
-3. Commit and push. That publishes it on Pages.
+3. Publish: `build/publish_explorers.sh` commits and pushes each explorer and
+   the home page to Robin-IA, then runs `build/publish_iac.sh`, which
+   publishes the same build to Internet Archive Canada. On the Mac,
+   `build/auto_publish.sh` runs all of this unattended.
 4. **Check the live site, not the working copy:**
    - `index.json` from Pages has the new `stamp`.
    - Five member pages open and list letters.
@@ -256,6 +265,10 @@ every letter on the sitting members' sites.
   block it.
 
 ## Published
+
+**Since 12 November every publish goes to both accounts**, Robin-IA and
+Internet Archive Canada, from the same build; `~/ia/explorers/publish.log`
+records each one. The table below is the first publish, kept as a record.
 
 **12 November 2026, first publish**, under Robin-IA, from the build of 11:59.
 Every repository is public, with Pages serving `main` from its root. They
