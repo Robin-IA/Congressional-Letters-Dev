@@ -91,8 +91,12 @@ itself).
 | Job | What it does | Log |
 | --- | --- | --- |
 | `build/thumbs_loop.sh 115-118 106-114 paths` | Renders previews behind the harvests, a cycle at a time | `harvest/letters/thumbs-loop.log` |
-| `python3 build/ocr_letters.py --watch` | OCRs scanned letters into `data/letter-ocr.jsonl` | `harvest/letters/ocr.log` |
+| `caffeinate -is .venv/bin/python -u build/ocr_letters.py --watch 2>&1 \| tee -a harvest/letters/ocr.log` | OCRs scanned letters into `data/letter-ocr.jsonl` | `harvest/letters/ocr.log` |
 | `build/auto_publish.sh` | Every 15 minutes: merges the PC's return branches, and after a merge or 300 new thumbnails rebuilds every explorer and the home page and publishes to both accounts | `harvest/letters/auto-publish.log`, `~/ia/explorers/publish.log` |
+
+The OCR watcher reports on stderr, so its log needs the `2>&1`. Started
+without it on 12 November, the log stayed empty for a day while the watcher
+worked. `data/letter-ocr.jsonl` is the record of what was read either way.
 
 **This checkout builds from its own copy of the scripts and templates.** A
 change merged on GitHub reaches the sites only after the changed files here
