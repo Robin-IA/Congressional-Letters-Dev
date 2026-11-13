@@ -86,9 +86,102 @@ def human(day: str) -> str:
     return f"{months[int(m) - 1]} {int(d)}, {y}"
 
 
+WAYBACK_LOOKUPS = ROOT / "harvest" / "wayback"
+WAYBACK_PREFIX = "https://web.archive.org/web/"
+
+
+def wayback_record(n: int) -> dict[str, dict]:
+    """What the Wayback Machine holds of each member's website during N.
+
+    From harvest/wayback/congress<N>-wayback.csv, the home-page lookup made
+    for every member before any letter was searched for. The page shows it
+    for a member with no letters, so it says the site was looked at and how
+    often it was archived, rather than leaving a blank.
+
+    ``days`` is how many days the site was captured inside N's dates; 0 means
+    the lookup found nothing in the window. A member with no row, or no
+    website in the roster, gets no record, and the page says only that no
+    letters were found.
+    """
+    path = WAYBACK_LOOKUPS / f"congress{n}-wayback.csv"
+    if not path.exists():
+        return {}
+    out = {}
+    with path.open(encoding="utf-8") as handle:
+        for row in csv.DictReader(handle):
+            if row.get("lookup") not in ("found", "none in window"):
+                continue
+            days = int(row.get("days_captured") or 0) if row["lookup"] == "found" else 0
+            rec = {"days": days}
+            # Into an href on the page: only a Wayback capture URL.
+            for key, col in (("first", "wayback_first"), ("last", "wayback_last")):
+                url = (row.get(col) or "").strip()
+                if days and url.startswith(WAYBACK_PREFIX):
+                    rec[key] = url
+            out[row["bioguide_id"]] = rec
+    return out
+
+
+def site_addresses(url: str) -> list[str]:
+    """The addresses a roster's website field names, as the harvests key them.
+
+    A host (``pelosi.house.gov``), or for the shared hosts of the early
+    Congresses the first path segment (``house.gov/hastert``,
+    ``senate.gov/~stevens``). The field can hold several, separated by "|".
+    """
+    out = []
+    for part in (url or "").split("|"):
+        a = re.sub(r"^https?://", "", part.strip().lower())
+        a = re.sub(r"^www\.", "", a).rstrip("/")
+        if not a:
+            continue
+        host, _, path = a.partition("/")
+        out.append(f"{host}/{path.split('/')[0]}"
+                   if host in ("house.gov", "senate.gov") and path else host)
+    return out
+
+
+_SEARCHED: set[str] | None = None
+
+
+def searched_addresses() -> set[str]:
+    """Every address a letter harvest has actually queried.
+
+    A site that was archived but never searched must not be described as
+    searched: in the 106th that is 196 members, whose sites were paths on
+    house.gov or senate.gov that no harvest covered (#79). Read from the
+    harvest caches (not committed; present in the pipeline folder) and the
+    original 119th harvest's roster. A cache that recorded an error does not
+    count. With no caches at all, nothing counts as searched, and the page
+    falls back to saying only that the site was archived.
+    """
+    global _SEARCHED
+    if _SEARCHED is not None:
+        return _SEARCHED
+    found: set[str] = set()
+    for folder in (ROOT / "harvest" / "letters" / "cache",
+                   ROOT / "data" / "cdx-cache",
+                   ROOT / "data" / "cdx-cache" / "paths"):
+        for path in folder.glob("*.json"):
+            try:
+                cached = json.loads(path.read_text(encoding="utf-8"))
+            except (OSError, ValueError):
+                continue
+            if isinstance(cached, dict) and "error" not in cached:
+                found.update(site_addresses(path.stem.replace("__", "/")))
+    for roster in (ROOT / "data" / "members.json",
+                   ROOT / "data" / "congress119-departed-queried.json"):
+        if roster.exists():
+            for m in json.loads(roster.read_text(encoding="utf-8")):
+                found.update(site_addresses(m.get("host") or ""))
+    _SEARCHED = found
+    return found
+
+
 def roster_members(n: int) -> list[dict]:
     """N's roster in the shape build_site.py reads members.json in."""
     path = ROSTERS / f"congress{n}-roster.csv"
+    wayback = wayback_record(n)
     start, end = bounds(n)
     out = []
     with path.open(encoding="utf-8") as handle:
@@ -121,6 +214,11 @@ def roster_members(n: int) -> list[dict]:
                 **({"until": until} if until else {}),
                 "host": host,
                 "url": url,
+                **({"wayback": {
+                    **wayback[row["bioguide_id"]],
+                    "searched": any(a in searched_addresses()
+                                    for a in site_addresses(url))}}
+                   if row["bioguide_id"] in wayback else {}),
             })
     # A member who served twice in one Congress appears twice; keep the first.
     seen, unique = set(), []

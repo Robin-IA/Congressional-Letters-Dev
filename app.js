@@ -115,9 +115,55 @@ const service = m => `${m.since}–${m.left ? m.left.slice(0, 4) : 'present'}`;
 
 // A departed member's site is usually gone or someone else's by now, so link
 // the Wayback Machine's copy as of the day they left rather than the address.
-const siteHref = m => (m.left
+// Better still, the last capture inside this Congress, from the build's
+// Wayback lookup (#79): the site as it was while the member served in it.
+const siteHref = m => (m.wayback && m.wayback.last) || (m.left
   ? `https://web.archive.org/web/${m.left.replaceAll('-', '')}/${m.site}`
   : m.site);
+// The address to show: the whole of it, since an early member's host alone
+// is just "www.house.gov".
+// A roster can list two sites ("a | b"); show the first.
+const siteName = m => (m.site
+  ? m.site.split('|')[0].trim().replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '')
+  : m.host);
+
+// A member with no letters still had a website. Say what the Wayback Machine
+// holds of it during this Congress (build_congress.py's wayback_record), and
+// whether a harvest searched it, so an empty page reads as "looked, found
+// none" or "not searched yet", never as a blank (#79). `first` and `last` are
+// capture URLs, checked at build time to be on web.archive.org; `searched` is
+// true only when a harvest queried the site's address.
+const captureDay = url => {
+  const d = (url.match(/\/web\/(\d{8})/) || [])[1];
+  return d ? `${MONTHS[+d.slice(4, 6) - 1]} ${+d.slice(6, 8)}, ${d.slice(0, 4)}` : 'capture';
+};
+function archivedSite(m) {
+  const wb = m.wayback;
+  const name = siteName(m);
+  const out = (url, text) => el('a', { href: url, target: '_blank', rel: 'noopener' }, text);
+  if (!wb) {
+    return m.site
+      ? el('p', {}, 'Their website: ',
+        el('a', { href: siteHref(m), target: '_blank', rel: 'noopener' }, name), '.')
+      : el('p', {}, 'No website is recorded for this member in this Congress.');
+  }
+  if (!wb.days) {
+    return el('p', {}, `The Wayback Machine holds no capture of ${name} from this Congress.`);
+  }
+  const captures = [];
+  if (wb.first) captures.push(out(wb.first, `first capture, ${captureDay(wb.first)}`));
+  if (wb.last && wb.last !== wb.first) {
+    captures.push(' · ', out(wb.last, `last capture, ${captureDay(wb.last)}`));
+  }
+  return el('p', {},
+    `The Wayback Machine archived ${name} on ${num(wb.days)} `
+    + `${wb.days === 1 ? 'day' : 'days'} during this Congress. `
+    + (wb.searched
+      ? 'We searched everything it holds from the site for files named as letters. '
+      : 'Its letters have not been searched yet: no harvest has reached this address. ')
+    + 'See the archived site: ',
+    ...captures, '.');
+}
 
 function partyClass(party) {
   const p = (party || '').toLowerCase();
@@ -435,8 +481,11 @@ function viewMembers() {
 
   // Say what the order means. The count is how many letters we ARCHIVED, not
   // how many a member wrote, and an unlabelled ranking reads as the latter.
+  const none = MEMBERS.length - INDEX.members_with_letters;
   const orderNote = {
-    letters: 'Ordered by how many letters have been archived.',
+    letters: 'Ordered by how many letters have been archived.'
+      + (none > 0 ? ` The ${num(none)} members with no letters found come last; `
+        + 'each one’s page links to their website as archived during this Congress.' : ''),
     name: 'In alphabetical order by surname.',
     state: 'Grouped by state.',
   }[sort];
@@ -456,7 +505,12 @@ function viewMembers() {
           : null),
       m.top.length
         ? el('span', { class: 'with' }, `wrote to ${m.top.slice(0, 2).join(', ')}`)
-        : el('span', { class: 'with faint' }, 'no recipients named in filenames'),
+        : el('span', { class: 'with faint' }, m.letters
+          ? 'no recipients named in filenames'
+          : m.wayback && m.wayback.days
+            ? `no letters found · site archived on ${num(m.wayback.days)} `
+              + `${m.wayback.days === 1 ? 'day' : 'days'}`
+            : 'no letters found'),
     ));
   }
 
@@ -490,7 +544,8 @@ function viewMembers() {
 async function viewMember(id) {
   const m = byId.get(id);
   if (!m) return el('div', { class: 'empty' }, 'No such member.');
-  const rows = await lettersOf(id);
+  // No member file is written for a member with no letters; don't ask for it.
+  const rows = m.letters ? await lettersOf(id) : [];
   if (!rows.length) {
     return el('div', {},
       link({ view: 'members' }, 'back', '← All members'),
@@ -498,8 +553,8 @@ async function viewMember(id) {
         el('div', { class: 'dhead' }, el('h2', {}, m.name),
           el('span', { class: 'meta' }, memberBadges(m)))),
       el('div', { class: 'empty' },
-        'No letters found on this member’s site. ',
-        el('a', { href: siteHref(m), target: '_blank', rel: 'noopener' }, m.host)));
+        el('p', {}, 'No letters were found on this member’s website from this Congress.'),
+        archivedSite(m)));
   }
 
   const p = params();
@@ -526,7 +581,9 @@ async function viewMember(id) {
         el('a', {
           href: siteHref(m), target: '_blank', rel: 'noopener',
           class: 'small', style: 'margin-left:auto',
-        }, m.host)),
+          title: m.wayback && m.wayback.last
+            ? 'The website as the Wayback Machine archived it during this Congress' : null,
+        }, siteName(m))),
       el('div', { class: 'stats' },
         el('div', {},
           el('span', { class: 'v tab' }, num(rows.length)),
@@ -560,7 +617,7 @@ async function viewMember(id) {
             `${num(dated)} of ${num(rows.length)} have an exact date`)),
         el('p', { class: 'note' },
           'These are the letters the Wayback Machine has archived from '
-          + `${m.host} — not necessarily everything this office published.`),
+          + `${siteName(m)} — not necessarily everything this office published.`),
         asList ? table(rows, { member: m }) : wall(rows)),
       el('div', {},
         el('div', { class: 'panel' },

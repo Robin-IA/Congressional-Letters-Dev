@@ -514,6 +514,10 @@ def main() -> None:
             "host": member["host"],
             # Into an href on the page: only an http(s) address, never javascript: or the like.
             "site": member["url"] if re.match(r"https?://", member.get("url") or "") else None,
+            # The Wayback Machine's captures of the site during this Congress
+            # (build_congress.py's wayback_record), shown for a member with no
+            # letters so the page says the site was looked at.
+            **({"wayback": member["wayback"]} if member.get("wayback") else {}),
             "letters": len(letters),
             "span": ([min(member_years), max(member_years)]
                      if member_years else None),
