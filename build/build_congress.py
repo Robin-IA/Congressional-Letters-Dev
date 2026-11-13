@@ -332,6 +332,8 @@ def page_files(n: int, dest: Path) -> None:
                 'class="home" href="../Explorer-Letters/?view=topics"', "home link")
     html = swap(html, 'class="crumb" href="../"',
                 'class="crumb" href="../Explorer-Letters/"', "crumb link")
+    html = swap(html, 'class="brand title" href="../"',
+                'class="brand title" href="../Explorer-Letters/"', "title link")
     # The 119th's name for itself. Each Congress's own label already says
     # which years it covers, so the per-Congress page drops "(2007-present)".
     html = swap(html, "<title>Letters from Congress (2007-present) ·",

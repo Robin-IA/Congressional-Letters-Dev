@@ -101,9 +101,9 @@ fwd = """<head>
 // the same parameters. The home page's own links use ?q= and ?term= only.
 (function () {
   var p = new URLSearchParams(location.search);
-  // ?view= is the home page's own too (topics, search, by-member), so only other views go.
+  // ?view= is the home page's own too (topics, search, by-member, about), so only other views go.
   var old = ['member', 'to', 'year', 'chamber', 'party', 'as', 'sort'];
-  var mine = ['topics', 'search', 'by-member'];
+  var mine = ['topics', 'search', 'by-member', 'about'];
   if (old.some(function (k) { return p.has(k); })
       || (p.has('view') && mine.indexOf(p.get('view')) < 0)) {
     location.replace('../Explorer-Congressional-Letters-119/' + location.search + location.hash);
