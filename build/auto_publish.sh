@@ -26,7 +26,9 @@ cd "$(dirname "$0")/.." || exit 1
 EVERY="${EVERY:-900}"
 MIN_NEW="${MIN_NEW:-300}"
 REMOTE="${REMOTE:-dev}"
-BRANCHES=(pc-render-return-2 pc-render-return-3 pc-ocr-return-106-115)
+# The PC's return branches, by name: a branch not listed here is never merged.
+# PC_BRANCHES (space-separated) replaces the list without editing this file.
+read -r -a BRANCHES <<< "${PC_BRANCHES:-pc-render-return-2 pc-render-return-3 pc-ocr-return-106-115 pc-ocr-return-116-119}"
 STATE=harvest/letters/auto-publish-state
 LOG=harvest/letters/auto-publish.log
 mkdir -p "$(dirname "$STATE")"; touch "$STATE"
