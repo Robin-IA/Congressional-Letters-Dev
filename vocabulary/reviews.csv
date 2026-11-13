@@ -1,22 +1,22 @@
 candidate,letters,decision,target,abbreviation,kind,broader,reason,status
 Admin,63,merge,The Administration,,organization,Executive Office of the President,"""the admin"": the executive branch, unnamed",accepted
-Senate,59,merge,United States Senate,,organization,Congress,the chamber as a whole,accepted
+Senate,59,merge,United States Senate,,organization,Legislative branch,the chamber as a whole,accepted
 Administration,56,merge,The Administration,,organization,Executive Office of the President,"the executive branch, unnamed",accepted
 Google,49,merge,Google,,organization,Tech industry,company,accepted
 Amazon,46,merge,Amazon,,organization,Companies,company,accepted
-Conferees,46,merge,Conference committees,,organization,Congressional committees,conferees on a bill,accepted
+Conferees,46,merge,Conference committees,,organization,Committees,conferees on a bill,accepted
 Hagel,46,officeholder,Department of Defense,,,,"Chuck Hagel, Secretary of Defense 2013-2015",accepted
 Facebook,43,merge,Meta (Facebook),,organization,Companies,Facebook is Meta's former name,accepted
 Army,42,merge,Department of the Army,,organization,Department of Defense,the Army,accepted
-Ndaa Conferees,39,merge,Conference committees,,organization,Congressional committees,NDAA conferees,accepted
-Congress,37,merge,United States Congress,,organization,Congress,Congress as a whole,accepted
+Ndaa Conferees,39,merge,Conference committees,,organization,Committees,NDAA conferees,accepted
+Congress,37,merge,United States Congress,,organization,Legislative branch,Congress as a whole,accepted
 Salazar,37,officeholder,Department of the Interior,,,,"Ken Salazar, Secretary of the Interior 2009-2013",accepted
 Jewell,36,officeholder,Department of the Interior,,,,"Sally Jewell, Secretary of the Interior 2013-2017",accepted
 Meta,36,merge,Meta (Facebook),,organization,Companies,company,accepted
 Secstate,35,merge,Department of State,,,,Secretary of State,accepted
 Grassley,34,member,G000386,,,,"Chuck Grassley, as a committee chair",accepted
 Carson,33,officeholder,Department of Housing and Urban Development,,,,"Ben Carson, HUD Secretary 2017-2021",accepted
-Appropriations,32,merge,Appropriations committees,,organization,Congressional committees,the appropriators,accepted
+Appropriations,32,merge,Appropriations committees,,organization,Committees,the appropriators,accepted
 Mcdonald,32,officeholder,Department of Veterans Affairs,,,,"Bob McDonald, VA Secretary 2014-2017",accepted
 Governor Newsom,31,person,Gavin Newsom,,person,Governors,Governor of California,accepted
 Bush,30,officeholder,The President,,,,"checked: all 30 dated 2004-2008, ""Dear Mr. President"": George W. Bush; Rep. Cori Bush took office in 2021",accepted
@@ -44,7 +44,7 @@ Lahood,21,officeholder,Department of Transportation,,,,"Ray LaHood, Transportati
 Nps,21,merge,National Park Service,NPS,organization,Department of the Interior,NPS,accepted
 Twitter,21,merge,Twitter (X),,organization,Companies,company,accepted
 Amtrak,20,merge,Amtrak,,organization,Government corporations,federally chartered passenger railroad,accepted
-Cbo,20,merge,Congressional Budget Office,CBO,organization,Congress,CBO,accepted
+Cbo,20,merge,Congressional Budget Office,CBO,organization,Legislative branch,CBO,accepted
 Davis,20,member,D000136,,,,"checked: Waxman's letters to ""Chairman Davis"": Rep. Tom Davis, Government Reform chair; archived 2009",accepted
 Gov Abbott,20,person,Greg Abbott,,person,Governors,Governor of Texas,accepted
 Graham,20,member,G000359,,,,"checked: ""Chairman Graham"", ""The Honorable Lindsey O. Graham"": Senate Judiciary chair, 2018-2020",accepted
@@ -57,7 +57,7 @@ Leader Mcconnell,19,merge,Congressional leadership,,,,the leadership table alrea
 Pfizer,19,merge,Pfizer,,organization,Companies,company,accepted
 Pmg Dejoy,19,officeholder,United States Postal Service,,,,"Louis DeJoy, Postmaster General 2020-2025",accepted
 Pres,19,merge,The President,,,,abbreviation,accepted
-Cao,18,merge,Chief Administrative Officer of the House,CAO,organization,Congress,"checked: ""Dear Chief Administrative Officer Kiko"", ""Dear Ms. Szpindor"" (House CAOs)",accepted
+Cao,18,merge,Chief Administrative Officer of the House,CAO,organization,Legislative branch,"checked: ""Dear Chief Administrative Officer Kiko"", ""Dear Ms. Szpindor"" (House CAOs)",accepted
 Hogan,18,person,Larry Hogan,,person,Governors,"checked: ""The Honorable Larry Hogan"", Governor of Maryland",accepted
 Phrma,18,merge,PhRMA,,organization,Associations and other organizations,pharmaceutical industry trade association,accepted
 Stb,18,merge,Surface Transportation Board,STB,organization,Independent agencies and commissions,STB,accepted
@@ -68,18 +68,18 @@ Center,17,reject,,,,,a fragment of a longer name,accepted
 Gates,17,officeholder,Department of Defense,,,,"checked: Robert Gates, Secretary of Defense; 15 of 17 dated 2007-2011, two later dates are probably first captures",accepted
 Osc,17,merge,Office of Special Counsel,OSC,organization,Independent agencies and commissions,"checked: addressed to Carolyn Lerner, Special Counsel, U.S. Office of Special Counsel; Hatch Act",accepted
 Secarmy,17,merge,Department of the Army,,organization,Department of Defense,Secretary of the Army,accepted
-Senators,17,merge,United States Senate,,organization,Congress,senators as a body,accepted
+Senators,17,merge,United States Senate,,organization,Legislative branch,senators as a body,accepted
 Airlines,16,merge,Airlines (several),,organization,Companies,letters to several airlines at once,accepted
 Banks,16,merge,Banks (several),,organization,Companies,letters to several banks at once,accepted
 Boeing,16,merge,Boeing,,organization,Air and space industry,company,accepted
 Finra,16,merge,FINRA,,organization,Associations and other organizations,self-regulatory organization for brokers,accepted
 Forest Service,16,merge,Forest Service,,organization,Department of Agriculture,agency,accepted
 Gov Lee,16,person,Bill Lee,,person,Governors,Governor of Tennessee,accepted
-Hsgac,16,merge,Senate Homeland Security and Governmental Affairs Committee,HSGAC,organization,Congressional committees,HSGAC,accepted
+Hsgac,16,merge,Senate Committee on Homeland Security and Governmental Affairs,HSGAC,organization,Senate committees,HSGAC,accepted
 Odni,16,merge,Office of the Director of National Intelligence,ODNI,organization,Independent agencies and commissions,ODNI,accepted
 Phmsa,16,merge,Pipeline and Hazardous Materials Safety Administration,PHMSA,organization,Department of Transportation,PHMSA,accepted
 Release,16,reject,,,,,"""press release"", not a recipient",accepted
-Appropriations Committee,15,merge,Appropriations committees,,organization,Congressional committees,House or Senate appropriations,accepted
+Appropriations Committee,15,merge,Appropriations committees,,organization,Committees,House or Senate appropriations,accepted
 Dha,15,merge,Defense Health Agency,,organization,Department of Defense,DHA,accepted
 Dos,15,merge,Department of State,,,,DOS,accepted
 Financial Regulators,15,merge,Financial regulators (several),,organization,Independent agencies and commissions,"checked: letters addressed to several financial regulators at once (Fed, Treasury)",accepted
@@ -89,22 +89,22 @@ Rfk,15,officeholder,Department of Health and Human Services,,,,"Robert F. Kenned
 Tiktok,15,merge,TikTok,,organization,Companies,company,accepted
 Usfs,15,merge,Forest Service,USFS,organization,Department of Agriculture,USFS,accepted
 Coast Guard,14,merge,United States Coast Guard,,organization,Department of Homeland Security,agency,accepted
-Enr,14,merge,Senate Energy and Natural Resources Committee,ENR,organization,Congressional committees,ENR,accepted
+Enr,14,merge,Senate Committee on Energy and Natural Resources,ENR,organization,Senate committees,ENR,accepted
 Leader Schumer,14,merge,Congressional leadership,,,,the leadership table already files Schumer here,accepted
 Of Defense,14,merge,Department of Defense,,,,"""Department of Defense"" cut short",accepted
 Reid,14,merge,Congressional leadership,,,,"Harry Reid, Senate leader; filed as McConnell and Schumer are",accepted
-Sasc,14,merge,Senate Armed Services Committee,SASC,organization,Congressional committees,SASC,accepted
+Sasc,14,merge,Senate Committee on Armed Services,SASC,organization,Senate committees,SASC,accepted
 Usfws,14,merge,Fish and Wildlife Service,USFWS,organization,Department of the Interior,USFWS,accepted
 Apple,13,merge,Apple,,organization,Tech industry,company,accepted
 Ceg,13,member,G000386,,,,"checked: CEG is Charles E. Grassley; letters to and answering ""Senator Grassley"", Judiciary chair",accepted
 Chief Justice Roberts,13,officeholder,Supreme Court of the United States,,organization,Courts,"John Roberts, Chief Justice; the surname lead to Sen. Pat Roberts is wrong",accepted
 Cuomo,13,person,Andrew Cuomo,,person,Governors,Governor of New York 2011-2021,accepted
 Dos Dhs,13,reject,,,,,two agencies at once; the letters belong under each,accepted
-Farm Bill Conferees,13,merge,Conference committees,,organization,Congressional committees,farm bill conferees,accepted
+Farm Bill Conferees,13,merge,Conference committees,,organization,Committees,farm bill conferees,accepted
 Goodlatte,13,member,G000289,,,,"Bob Goodlatte, Judiciary chair",accepted
 Gov Pritzker,13,person,JB Pritzker,,person,Governors,Governor of Illinois,accepted
 Governor Cuomo,13,person,Andrew Cuomo,,person,Governors,Governor of New York 2011-2021,accepted
-Hasc,13,merge,House Armed Services Committee,HASC,organization,Congressional committees,HASC,accepted
+Hasc,13,merge,House Committee on Armed Services,HASC,organization,House committees,HASC,accepted
 Hochul,13,person,Kathy Hochul,,person,Governors,Governor of New York; a former member (H001062),accepted
 Houseleaders,13,merge,Congressional leadership,,,,already a term,accepted
 Kraninger,13,officeholder,Consumer Financial Protection Bureau,,,,"Kathy Kraninger, CFPB Director 2018-2021",accepted
@@ -135,12 +135,12 @@ Congressional Leaders,11,merge,Congressional leadership,,,,already a term,accept
 Darcy,11,officeholder,Army Corps of Engineers,,,,"Jo-Ellen Darcy, Assistant Secretary of the Army for Civil Works 2009-2017, over the Corps",accepted
 Dodig,11,merge,Department of Defense Inspector General,DoD IG,organization,Inspectors general,DoD IG,accepted
 Gov Edwards,11,person,John Bel Edwards,,person,Governors,Governor of Louisiana 2016-2024,accepted
-Help,11,merge,"Senate Health, Education, Labor and Pensions Committee",HELP,organization,Congressional committees,"checked: letters to HELP on OxyContin, Lyme disease, harassment hearings, Confucius Institutes",accepted
+Help,11,merge,"Senate Committee on Health, Education, Labor, and Pensions",HELP,organization,Senate committees,"checked: letters to HELP on OxyContin, Lyme disease, harassment hearings, Confucius Institutes",accepted
 Lighthizer,11,officeholder,Office of the US Trade Representative,,,,"Robert Lighthizer, USTR 2017-2021",accepted
 Lisa Jackson,11,officeholder,Environmental Protection Agency,,,,"Lisa P. Jackson, EPA Administrator 2009-2013",accepted
 Mckinsey,11,merge,McKinsey & Company,,organization,Companies,company,accepted
 Ncaa,11,merge,NCAA,,organization,Associations and other organizations,college athletics association,accepted
-Ndaa Conference,11,merge,Conference committees,,organization,Congressional committees,NDAA conference,accepted
+Ndaa Conference,11,merge,Conference committees,,organization,Committees,NDAA conference,accepted
 Ondcp,11,merge,Office of National Drug Control Policy,ONDCP,organization,Executive Office of the President,ONDCP,accepted
 Scott,11,hold,,,,,checked: Gov. Rick Scott and Rep. Bobby Scott (Education and Labor chair); needs a per-letter split,proposed
 Social Media,11,merge,Social media companies (several),,organization,Companies,letters to several platforms at once,accepted
@@ -154,7 +154,7 @@ Eeoc,10,merge,Equal Employment Opportunity Commission,EEOC,organization,Independ
 Ercot,10,merge,ERCOT,,organization,Associations and other organizations,"Electric Reliability Council of Texas, the Texas grid operator",accepted
 Fws,10,merge,Fish and Wildlife Service,FWS,organization,Department of the Interior,FWS,accepted
 Geo Group,10,merge,GEO Group,,organization,Companies,private prison company,accepted
-House Ethics,10,merge,House Committee on Ethics,,organization,Congressional committees,House Ethics,accepted
+House Ethics,10,merge,House Committee on Ethics,,organization,House committees,House Ethics,accepted
 Hu Jintao,10,person,Hu Jintao,,person,Foreign leaders,President of China 2003-2013,accepted
 Issa,10,member,I000056,,,,"Darrell Issa, Oversight chair",accepted
 Mullin,10,officeholder,Department of Homeland Security,,,,"checked: ""The Honorable Markwayne Mullin, Secretary, U.S. Department of Homeland Security"", 2026; he left the Senate in March 2026",accepted
@@ -166,7 +166,7 @@ Walker,10,person,Scott Walker,,person,Governors,checked: 9 of 10 to Gov. Scott W
 Wolf,10,hold,,,,,"checked: Rep. Frank Wolf (appropriations), Acting DHS Secretary Chad Wolf, Gov. Tom Wolf; needs a per-letter split",proposed
 Wyden,10,member,W000779,,,,Ron Wyden,accepted
 Ceq,9,merge,Council on Environmental Quality,CEQ,organization,Executive Office of the President,CEQ: Council on Environmental Quality,accepted
-Epw,9,merge,Senate Environment and Public Works Committee,EPW,organization,Congressional committees,EPW: Senate Environment and Public Works Committee,accepted
+Epw,9,merge,Senate Committee on Environment and Public Works,EPW,organization,Senate committees,EPW: Senate Environment and Public Works Committee,accepted
 Equifax,9,merge,Equifax,,organization,Financial industry,company,accepted
 Hrsa,9,merge,Health Resources and Services Administration,HRSA,organization,Department of Health and Human Services,HRSA: Health Resources and Services Administration,accepted
 Mbs,9,person,Mohammed bin Salman,MBS,person,Foreign leaders,MBS: Mohammed bin Salman,accepted
@@ -187,12 +187,12 @@ Acoe,7,merge,Army Corps of Engineers,ACOE,,,ACOE: Army Corps of Engineers,accept
 Eia,7,merge,Energy Information Administration,EIA,organization,Department of Energy,EIA: Energy Information Administration,accepted
 Fifa,7,merge,FIFA,FIFA,organization,Associations and other organizations,FIFA: FIFA,accepted
 Fmc,7,merge,Federal Maritime Commission,FMC,organization,Independent agencies and commissions,FMC: Federal Maritime Commission,accepted
-Jct,7,merge,Joint Committee on Taxation,JCT,organization,Congressional committees,JCT: Joint Committee on Taxation,accepted
+Jct,7,merge,Joint Committee on Taxation,JCT,organization,Joint committees,JCT: Joint Committee on Taxation,accepted
 Jetblue,7,merge,JetBlue,,organization,Companies,company,accepted
 Kroger,7,merge,Kroger,,organization,Companies,company,accepted
 Mohela,7,merge,MOHELA,MOHELA,organization,Companies,MOHELA: MOHELA,accepted
 Ntsb,7,merge,National Transportation Safety Board,NTSB,organization,Independent agencies and commissions,NTSB: National Transportation Safety Board,accepted
-Ogr,7,merge,House Committee on Oversight,OGR,organization,Congressional committees,OGR: House Committee on Oversight,accepted
+Ogr,7,merge,House Committee on Oversight,OGR,organization,House committees,OGR: House Committee on Oversight,accepted
 Pmg,7,merge,United States Postal Service,,,,shorthand for United States Postal Service,accepted
 Scotus,7,merge,Supreme Court of the United States,SCOTUS,organization,Courts,SCOTUS: Supreme Court of the United States,accepted
 Usccr,7,merge,United States Commission on Civil Rights,USCCR,organization,Independent agencies and commissions,USCCR: United States Commission on Civil Rights,accepted
@@ -203,7 +203,7 @@ Cisa,6,merge,Cybersecurity and Infrastructure Security Agency,CISA,organization,
 Eda,6,merge,Economic Development Administration,EDA,organization,Department of Commerce,EDA: Economic Development Administration,accepted
 Gsk,6,merge,GSK,GSK,organization,Companies,GSK: GSK,accepted
 Icann,6,merge,ICANN,ICANN,organization,Associations and other organizations,ICANN: ICANN,accepted
-Loc,6,merge,Library of Congress,LOC,organization,Congress,LOC: Library of Congress,accepted
+Loc,6,merge,Library of Congress,LOC,organization,Legislative branch,LOC: Library of Congress,accepted
 Moderna,6,merge,Moderna,,organization,Companies,company,accepted
 Mylan,6,merge,Mylan,,organization,Companies,company,accepted
 Nara,6,merge,National Archives and Records Administration,NARA,organization,Independent agencies and commissions,NARA: National Archives and Records Administration,accepted
@@ -238,7 +238,7 @@ Atsdr,4,merge,Agency for Toxic Substances and Disease Registry,ATSDR,organizatio
 Bia,4,merge,Bureau of Indian Affairs,BIA,organization,Department of the Interior,BIA: Bureau of Indian Affairs,accepted
 Bpa,4,merge,Bonneville Power Administration,BPA,organization,Department of Energy,BPA: Bonneville Power Administration,accepted
 Carb,4,merge,California Air Resources Board,CARB,organization,State and local government,CARB: California Air Resources Board,accepted
-Cjs,4,merge,Appropriations committees,CJS,organization,Congressional committees,CJS: Appropriations committees,accepted
+Cjs,4,merge,Appropriations committees,CJS,organization,Committees,CJS: Appropriations committees,accepted
 Cvs,4,merge,CVS Health,CVS,organization,Companies,CVS: CVS Health,accepted
 Depsec,4,merge,Department of Defense,,,,shorthand for Department of Defense,accepted
 Edd,4,merge,California Employment Development Department,EDD,organization,State and local government,EDD: California Employment Development Department,accepted
@@ -253,14 +253,14 @@ Ofccp,4,merge,Office of Federal Contract Compliance Programs,OFCCP,organization,
 Oira,4,merge,Office of Information and Regulatory Affairs,OIRA,organization,Office of Management and Budget,OIRA: Office of Information and Regulatory Affairs,accepted
 Pjm,4,merge,PJM Interconnection,PJM,organization,Associations and other organizations,PJM: PJM Interconnection,accepted
 Pura,4,merge,Connecticut Public Utilities Regulatory Authority,PURA,organization,State and local government,PURA: Connecticut Public Utilities Regulatory Authority,accepted
-Sfc,4,merge,Senate Finance Committee,SFC,organization,Congressional committees,SFC: Senate Finance Committee,accepted
-Svac,4,merge,Senate Veterans' Affairs Committee,SVAC,organization,Congressional committees,SVAC: Senate Veterans' Affairs Committee,accepted
+Sfc,4,merge,Senate Committee on Finance,SFC,organization,Senate committees,SFC: Senate Finance Committee,accepted
+Svac,4,merge,Senate Committee on Veterans' Affairs,SVAC,organization,Senate committees,SVAC: Senate Veterans' Affairs Committee,accepted
 Usaf,4,merge,Department of the Air Force,USAF,organization,Department of Defense,USAF: Department of the Air Force,accepted
 Usagm,4,merge,United States Agency for Global Media,USAGM,organization,Independent agencies and commissions,USAGM: United States Agency for Global Media,accepted
 Usde,4,merge,Department of Education,USDE,,,USDE: Department of Education,accepted
 Usopc,4,merge,United States Olympic & Paralympic Committee,USOPC,organization,Associations and other organizations,USOPC: United States Olympic & Paralympic Committee,accepted
 Vha,4,merge,Veterans Health Administration,VHA,organization,Department of Veterans Affairs,VHA: Veterans Health Administration,accepted
-Wam,4,merge,House Ways and Means Committee,W&M,organization,Congressional committees,W&M: House Ways and Means Committee,accepted
+Wam,4,merge,House Committee on Ways and Means,W&M,organization,House committees,W&M: House Ways and Means Committee,accepted
 Aaaai,3,merge,"American Academy of Allergy, Asthma & Immunology",AAAAI,organization,Associations and other organizations,"AAAAI: American Academy of Allergy, Asthma & Immunology",accepted
 Aaos,3,merge,American Academy of Orthopaedic Surgeons,AAOS,organization,Associations and other organizations,AAOS: American Academy of Orthopaedic Surgeons,accepted
 Abc News,3,merge,ABC News,,organization,Companies,company,accepted
@@ -277,7 +277,7 @@ Fedex,3,merge,FedEx,,organization,Companies,company,accepted
 Fhwa,3,merge,Federal Highway Administration,FHWA,organization,Department of Transportation,FHWA: Federal Highway Administration,accepted
 Fio,3,merge,Federal Insurance Office,FIO,organization,Department of the Treasury,FIO: Federal Insurance Office,accepted
 Gilead,3,merge,Gilead,,organization,Companies,company,accepted
-Hfac,3,merge,House Foreign Affairs Committee,HFAC,organization,Congressional committees,HFAC: House Foreign Affairs Committee,accepted
+Hfac,3,merge,House Committee on Foreign Affairs,HFAC,organization,House committees,HFAC: House Foreign Affairs Committee,accepted
 Imls,3,merge,Institute of Museum and Library Services,IMLS,organization,Independent agencies and commissions,IMLS: Institute of Museum and Library Services,accepted
 Isbe,3,merge,Illinois State Board of Education,ISBE,organization,State and local government,ISBE: Illinois State Board of Education,accepted
 Lyft,3,merge,Lyft,,organization,Companies,company,accepted
@@ -300,9 +300,9 @@ Pmi,3,merge,Philip Morris International,PMI,organization,Companies,PMI: Philip M
 Prac,3,merge,Pandemic Response Accountability Committee,PRAC,organization,Inspectors general,PRAC: Pandemic Response Accountability Committee,accepted
 Purdue,3,merge,Purdue Pharma,,organization,Companies,company,accepted
 Reddit,3,merge,Reddit,,organization,Companies,company,accepted
-Sfops,3,merge,Appropriations committees,SFOPS,organization,Congressional committees,SFOPS: Appropriations committees,accepted
+Sfops,3,merge,Appropriations committees,SFOPS,organization,Committees,SFOPS: Appropriations committees,accepted
 Tigta,3,merge,Treasury Inspector General for Tax Administration,TIGTA,organization,Inspectors general,TIGTA: Treasury Inspector General for Tax Administration,accepted
-Uscp,3,merge,United States Capitol Police,USCP,organization,Congress,USCP: United States Capitol Police,accepted
+Uscp,3,merge,United States Capitol Police,USCP,organization,Legislative branch,USCP: United States Capitol Police,accepted
 Ustp,3,merge,United States Trustee Program,USTP,organization,Department of Justice,USTP: United States Trustee Program,accepted
 Boehner And Pelosi,3,joint,B000589;P000197,,member,,"checked: Speaker Boehner and Leader Pelosi; Schakowsky and others, 2012-2016",accepted
 Boehner Pelosi,3,joint,B000589;P000197,,member,,"checked: Speaker Boehner and Leader Pelosi; Huffman, 2014",accepted
@@ -350,15 +350,15 @@ Senator Leahy,3,member,L000174,,,,"checked: Patrick Leahy; posted by Leahy and W
 Senator Manchin,3,member,M001183,,,,"checked: Joe Manchin; an EPA reply posted by Manchin, 2021",accepted
 Senator Markey,6,member,M000133,,,,"checked: Edward Markey; replies posted by Markey, 2016-2022",accepted
 Senator Warren,5,member,W000817,,,,"checked: Elizabeth Warren; posted by Warren, 2019-2026",accepted
-Amb Haley,9,person,Nikki Haley,,person,Diplomats,"checked: Ambassador Nikki Haley, US Ambassador to the United Nations 2017-2018; letter on Libya, 2018",accepted
-Amb Antonov,3,person,Anatoly Antonov,,person,Diplomats,"checked: Anatoly Antonov, Russian Ambassador to the United States; 2021",accepted
-Amb Kilic,3,person,Serdar Kılıç,,person,Diplomats,"checked: Serdar Kılıç, Turkish Ambassador to the United States; letter on PPE donations, 2020",accepted
-Ambassador Cui,4,person,Cui Tiankai,,person,Diplomats,"checked: Cui Tiankai, Chinese Ambassador to the United States; 2020",accepted
-Ambassador Froman,9,person,Michael Froman,,person,Diplomats,"checked: Ambassador Michael Froman, U.S. Trade Representative; TPP letters, 2013-2016",accepted
-Ambassador Kirk,5,person,Ron Kirk,,person,Diplomats,"checked: Ambassador Ron Kirk, U.S. Trade Representative; Camp and Grassley, 2010-2011",accepted
-Ambassador Knapper,3,person,Marc Knapper,,person,Diplomats,"checked: Marc Knapper, U.S. Ambassador to Vietnam; 2022-2024",accepted
-Ambassador Salleo Of Italy,3,person,Ferdinando Salleo,,person,Diplomats,"checked: Ferdinando Salleo, Italian Ambassador to the United States; Waxman",accepted
-Ambassador Tobias,5,person,Randall Tobias,,person,Diplomats,"checked: Ambassador Randall Tobias, Global AIDS Coordinator; Waxman",accepted
+Amb Haley,9,person,Nikki Haley,,person,U.S. diplomats,"checked: Ambassador Nikki Haley, US Ambassador to the United Nations 2017-2018; letter on Libya, 2018",accepted
+Amb Antonov,3,person,Anatoly Antonov,,person,Foreign diplomats,"checked: Anatoly Antonov, Russian Ambassador to the United States; 2021",accepted
+Amb Kilic,3,person,Serdar Kılıç,,person,Foreign diplomats,"checked: Serdar Kılıç, Turkish Ambassador to the United States; letter on PPE donations, 2020",accepted
+Ambassador Cui,4,person,Cui Tiankai,,person,Foreign diplomats,"checked: Cui Tiankai, Chinese Ambassador to the United States; 2020",accepted
+Ambassador Froman,9,person,Michael Froman,,person,U.S. diplomats,"checked: Ambassador Michael Froman, U.S. Trade Representative; TPP letters, 2013-2016",accepted
+Ambassador Kirk,5,person,Ron Kirk,,person,U.S. diplomats,"checked: Ambassador Ron Kirk, U.S. Trade Representative; Camp and Grassley, 2010-2011",accepted
+Ambassador Knapper,3,person,Marc Knapper,,person,U.S. diplomats,"checked: Marc Knapper, U.S. Ambassador to Vietnam; 2022-2024",accepted
+Ambassador Salleo Of Italy,3,person,Ferdinando Salleo,,person,Foreign diplomats,"checked: Ferdinando Salleo, Italian Ambassador to the United States; Waxman",accepted
+Ambassador Tobias,5,person,Randall Tobias,,person,U.S. diplomats,"checked: Ambassador Randall Tobias, Global AIDS Coordinator; Waxman",accepted
 Gen Alexander,4,person,Keith Alexander,,person,Military officers,"checked: Gen. Keith Alexander, NSA Director; Wyden and Udall on FISA, 2012",accepted
 Gen Dunwoody,4,person,Ann Dunwoody,,person,Military officers,"checked: Gen. Ann Dunwoody, Army Materiel Command; Illinois-Iowa delegation, 2011",accepted
 Gen Everhart,3,person,Carlton Everhart II,,person,Military officers,"checked: Gen. Carlton Everhart, Air Mobility Command; Rickenbacker KC-135s, 2016",accepted

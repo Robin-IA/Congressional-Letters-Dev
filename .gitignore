@@ -36,6 +36,7 @@ harvest/letters/cache/
 # congress-legislators JSON, fetched for build_vocabulary.py (14 MB; re-fetchable)
 data/legislators/
 data/vocabulary-wikidata-cache.json
+data/letter-committees.json
 
 # Pagefind, installed with `npm ci` in build/search; only package.json and the lockfile are tracked.
 build/search/node_modules/
