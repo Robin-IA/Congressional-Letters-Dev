@@ -372,7 +372,8 @@ async function runSearch(query, term) {
         ? ((term.names || []).length
           ? ` · the letters they wrote, and those addressed to them as ${term.names.join(', ')}`
           : ' · the letters they wrote')
-        : (term.names || []).length > 1 ? ` · also written as ${term.names.filter(n => n !== term.label).map(n => n.replace(/@(\d{4})-(\d{4})$/, ' ($1–$2)')).join(', ')}` : '') : null,
+        : (term.names || []).length > 1 ? ` · also written as ${term.names.filter(n => n !== term.label).map(n => n.replace(/@(\d{4})-(\d{4})$/, ' ($1–$2)')).join(', ')}` : '',
+      ...seeAlso(term, ' · See also: ')) : null,
     status,
     ...groups.values(),
     term ? null : fullTextSection(query, run));
@@ -462,6 +463,15 @@ async function runSearch(query, term) {
 // search, which matches topics, recipients and member names.
 
 let TREE = null;
+
+// A term's related terms (vocabulary/related.csv), as links: "See also:
+// Citigroup" on Citibank, and the reverse.
+function seeAlso(node, lead) {
+  const see = node.see || [];
+  if (!see.length) return [];
+  return [lead, ...see.flatMap((s, i) => [i ? ', ' : '',
+    el('a', { href: `?term=${encodeURIComponent(s.id)}` }, s.label)])];
+}
 const MEMBERS_SECTION = 'C-members-of-congress';
 
 function treeNode(n, needle, depth) {
@@ -487,7 +497,8 @@ function treeNode(n, needle, depth) {
                          title: `Letters for ${n.label}` }, marked(n.label, needle));
   const line = [link,
     n.letters ? el('span', { class: 'n' }, `${num(n.letters)} letters`
-      + (n.kind === 'member' && n.to ? ` · ${num(n.to)} to them` : '')) : null];
+      + (n.kind === 'member' && n.to ? ` · ${num(n.to)} to them` : '')) : null,
+    (n.see || []).length ? el('span', { class: 'n' }, ...seeAlso(n, 'See also: ')) : null];
   if (kids.length) {
     return el('li', {}, el('details', { open: Boolean(needle) },
       el('summary', {}, ...line), el('ul', {}, ...kids)));

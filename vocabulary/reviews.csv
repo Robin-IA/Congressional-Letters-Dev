@@ -2,7 +2,7 @@ candidate,letters,decision,target,abbreviation,kind,broader,reason,status
 Admin,63,merge,The Administration,,organization,Executive Office of the President,"""the admin"": the executive branch, unnamed",accepted
 Senate,59,merge,United States Senate,,organization,Congress,the chamber as a whole,accepted
 Administration,56,merge,The Administration,,organization,Executive Office of the President,"the executive branch, unnamed",accepted
-Google,49,merge,Google,,organization,Companies,company,accepted
+Google,49,merge,Google,,organization,Tech sector,company,accepted
 Amazon,46,merge,Amazon,,organization,Companies,company,accepted
 Conferees,46,merge,Conference committees,,organization,Congressional committees,conferees on a bill,accepted
 Hagel,46,officeholder,Department of Defense,,,,"Chuck Hagel, Secretary of Defense 2013-2015",accepted
@@ -71,7 +71,7 @@ Secarmy,17,merge,Department of the Army,,organization,Department of Defense,Secr
 Senators,17,merge,United States Senate,,organization,Congress,senators as a body,accepted
 Airlines,16,merge,Airlines (several),,organization,Companies,letters to several airlines at once,accepted
 Banks,16,merge,Banks (several),,organization,Companies,letters to several banks at once,accepted
-Boeing,16,merge,Boeing,,organization,Companies,company,accepted
+Boeing,16,merge,Boeing,,organization,Air and space industry,company,accepted
 Finra,16,merge,FINRA,,organization,Associations and other organizations,self-regulatory organization for brokers,accepted
 Forest Service,16,merge,Forest Service,,organization,Department of Agriculture,agency,accepted
 Gov Lee,16,person,Bill Lee,,person,Governors,Governor of Tennessee,accepted
@@ -95,7 +95,7 @@ Of Defense,14,merge,Department of Defense,,,,"""Department of Defense"" cut shor
 Reid,14,merge,Congressional leadership,,,,"Harry Reid, Senate leader; filed as McConnell and Schumer are",accepted
 Sasc,14,merge,Senate Armed Services Committee,SASC,organization,Congressional committees,SASC,accepted
 Usfws,14,merge,Fish and Wildlife Service,USFWS,organization,Department of the Interior,USFWS,accepted
-Apple,13,merge,Apple,,organization,Companies,company,accepted
+Apple,13,merge,Apple,,organization,Tech sector,company,accepted
 Ceg,13,member,G000386,,,,"checked: CEG is Charles E. Grassley; letters to and answering ""Senator Grassley"", Judiciary chair",accepted
 Chief Justice Roberts,13,officeholder,Supreme Court of the United States,,organization,Courts,"John Roberts, Chief Justice; the surname lead to Sen. Pat Roberts is wrong",accepted
 Cuomo,13,person,Andrew Cuomo,,person,Governors,Governor of New York 2011-2021,accepted
@@ -401,3 +401,16 @@ Governor Walker,9,person,Scott Walker,,person,Governors,"checked: Governor of Wi
 Governor Wolf 12 11,3,person,Tom Wolf,,person,Governors,"checked: Governor of Pennsylvania; Pennsylvania members, letter of December 11",accepted
 Amtrak Ceo,4,merge,Amtrak,,organization,Government corporations,"checked: files named ""Letter to Amtrak CEO"", 2018-2020",accepted
 Amtrak Fy21 Pdf,5,merge,Amtrak,,organization,Government corporations,"checked: files named ""Letter to Amtrak FY21 PDF""; a letter to Amtrak, fiscal 2021",accepted
+Apple And Google,3,joint,Apple;Google,,,,"checked: letters to both, on apps and app stores, 2019-2026",accepted
+Google And Apple,4,joint,Google;Apple,,,,"checked: letters to both, 2019-2021",accepted
+Apple Ceo Tim Cook,3,joint,Apple;person:Tim Cook,,,,"checked: letters to Apple's CEO Tim Cook, 2018-2026",accepted
+Amex,3,merge,American Express,AMEX,organization,Banking industry,checked: AMEX: American Express; 2024-2025 (folds in the unreviewed American Express),accepted
+Boeing Ceo,4,merge,Boeing,,organization,Air and space industry,"checked: letters to Boeing's CEO, 2011-2012",accepted
+Bannon,3,person,Steve Bannon,,person,,"checked: Steve Bannon, White House chief strategist; on ethics, 2017, and Krishnamoorthi, 2018",accepted
+British American Tobacco,3,merge,British American Tobacco,,organization,Companies,"checked: tobacco company; on vaping and COVID-19, 2020",accepted
+Chevron,3,merge,Chevron,,organization,Oil and gas industry,"checked: oil company; on federal tax subsidies, 2022-2026",accepted
+Citibank,3,merge,Citibank,,organization,Banking industry,checked: Citigroup's bank; 2012-2025,accepted
+Citigroup,4,merge,Citigroup,,organization,Banking industry,checked: on Kushner loans (2018) and Arctic drilling (2022),accepted
+Chrysler,3,merge,Chrysler,,organization,Auto industry,"checked: 2009, 2012 (Eshoo and Waxman) and 2020; parent Fiat, then Fiat Chrysler Automobiles, then Stellantis",accepted
+Cnn,4,merge,CNN (Cable News Network),CNN,organization,Companies,checked: news network; 2012 and 2019,accepted
+"Dhs, Doj And Fbi",7,joint,Department of Homeland Security;Department of Justice;Federal Bureau of Investigation,,,,"checked: one joint letter of February 22, 2017, to DHS, DOJ and FBI",accepted

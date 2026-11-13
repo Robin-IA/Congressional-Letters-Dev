@@ -461,10 +461,18 @@ def main() -> int:
                     tid = f"M-{part}"
                     letters_to[tid] += int(cand["letters"] or 0)
                 else:
-                    tgt = next((t_ for t_ in terms if t_["label"] == part
+                    # "person:Tim Cook" or "organization:X" makes the term
+                    # if it does not exist yet; a bare label must exist.
+                    kind, _, label = part.partition(":") if ":" in part else ("", "", part)
+                    label = label.strip()
+                    tgt = next((t_ for t_ in terms if t_["label"] == label
                                 and t_["status"] == "preferred"), None)
+                    if tgt is None and kind in ("person", "organization"):
+                        add(f"{'P' if kind == 'person' else 'O'}-{slug(label)}", label, kind,
+                            "person" if kind == "person" else "body", "preferred", "reviewed")
+                        tgt = terms[-1]
                     if tgt is None:
-                        print(f"  review {rv['candidate']!r}: no term {part!r}", file=sys.stderr)
+                        print(f"  review {rv['candidate']!r}: no term {label!r}", file=sys.stderr)
                         continue
                     tid = tgt["term_id"]
                     tgt["letters"] = int(tgt["letters"] or 0) + int(cand["letters"] or 0)
@@ -508,6 +516,18 @@ def main() -> int:
     # vocabulary/hierarchy.csv is made by hand: each row a term and the term it
     # sits under. A label there that is not a term yet becomes a category.
     # Members and unreviewed candidates are placed by rule, not by hand.
+    # A related term no letter is addressed to (Stellantis, Chrysler's parent)
+    # is made here, so hierarchy.csv can place it; related.csv's "kind" says
+    # what to make. The links themselves are added below.
+    related_path = OUT / "related.csv"
+    related_rows = list(csv.DictReader(related_path.open(encoding="utf-8"))) \
+        if related_path.exists() else []
+    for row in related_rows:
+        if row.get("kind") in ("person", "organization") and not any(
+                t_["label"] == row["related"] and t_["status"] == "preferred" for t_ in terms):
+            add(f"{'P' if row['kind'] == 'person' else 'O'}-{slug(row['related'])}",
+                row["related"], row["kind"], "person" if row["kind"] == "person" else "body",
+                "preferred", "reviewed")
     by_label = {}
     for t_ in terms:
         if t_["status"] == "preferred":
@@ -524,6 +544,17 @@ def main() -> int:
             rel(by_label[row["term"]], "broader", by_label[row["broader"]])
         elif row["term"] not in roots:
             roots.append(row["term"])
+    # See also: vocabulary/related.csv, made by hand, one row per pair of
+    # related terms (Citibank and Citigroup), recorded both ways.
+    if related_rows:
+        for row in related_rows:
+            a, b = by_label.get(row["term"]), by_label.get(row["related"])
+            if not (a and b):
+                print(f"  related.csv: no term for {row['term']!r} or {row['related']!r}",
+                      file=sys.stderr)
+                continue
+            rel(a, "related", b, "preferred", "reviewed")
+            rel(b, "related", a, "preferred", "reviewed")
     placed = {r["term_id"] for r in relations if r["relation"] == "broader"}
     unplaced = [t_["label"] for t_ in terms if t_["kind"] in ("topic", "organization")
                 and t_["status"] == "preferred" and t_["term_id"] not in placed]
@@ -578,6 +609,10 @@ def main() -> int:
     for tid_, vs in names_of.items():
         names_of[tid_] = {v for v in vs if "@" in v or v.lower() not in dated}
 
+    related_of = defaultdict(set)
+    for r in relations:
+        if r["relation"] == "related" and r["value"] in term_by_id:
+            related_of[r["term_id"]].add(r["value"])
     recipient_names = defaultdict(set)
     for r in relations:
         if r["relation"] == "recipientName" and r["term_id"].startswith("M-"):
@@ -607,6 +642,8 @@ def main() -> int:
             n["status"] = t_["status"]
         if int(t_["letters"] or 0):
             n["letters"] = int(t_["letters"])
+        if related_of.get(tid):
+            n["see"] = [{"id": r, "label": term_by_id[r]["label"]} for r in sorted(related_of[tid])]
         if kids:
             n["children"] = kids
         return n
