@@ -35,8 +35,10 @@ p { margin: 0; }
 .page { min-height: 100vh; display: flex; flex-direction: column; }
 header.bar { background: var(--bar); color: #fff; }
 header.bar .wrap { min-height: 5.6rem; display: flex; align-items: center; gap: 1.4rem; flex-wrap: wrap; padding-top: .7rem; padding-bottom: .7rem; }
-header.bar a.brand { display: flex; align-items: center; gap: 1rem; color: #fff; font-size: 1.6rem; font-weight: 500; letter-spacing: -.01em; }
-header.bar a.brand:hover { text-decoration: none; }
+header.bar .brand { display: flex; align-items: center; gap: 1rem; color: #fff; font-size: 1.6rem; font-weight: 500; letter-spacing: -.01em; }
+header.bar .brand a { color: #fff; }
+header.bar .brand-logo:hover { text-decoration: none; }
+header.bar .brand-name:hover { text-decoration: underline; }
 header.bar .tag { font-size: 1.3rem; opacity: .75; }
 @media (max-width: 700px) { header.bar .tag { display: none; } }
 
@@ -83,10 +85,12 @@ form.search button { height: 4.2rem; padding: 0 2rem; background: var(--active);
 <div class="page">
   <header class="bar">
     <div class="wrap">
-      <a class="brand" href="https://archive.org/" title="Internet Archive">
-        <svg width="28" height="28" viewBox="0 0 30 30" aria-hidden="true"><rect x="2" y="26" width="26" height="2.5" fill="#fff"/><rect x="2" y="4.5" width="26" height="2.5" fill="#fff"/><path d="M15 1 3 4.5h24z" fill="#fff"/><rect x="5" y="8.5" width="2.75" height="16" fill="#fff"/><rect x="10.75" y="8.5" width="2.75" height="16" fill="#fff"/><rect x="16.5" y="8.5" width="2.75" height="16" fill="#fff"/><rect x="22.25" y="8.5" width="2.75" height="16" fill="#fff"/></svg>
-        <span>Letters from Congress (2007-present)</span>
-      </a>
+      <div class="brand">
+        <a class="brand-logo" href="https://archive.org/" title="Internet Archive">
+          <svg width="28" height="28" viewBox="0 0 30 30" aria-hidden="true"><rect x="2" y="26" width="26" height="2.5" fill="#fff"/><rect x="2" y="4.5" width="26" height="2.5" fill="#fff"/><path d="M15 1 3 4.5h24z" fill="#fff"/><rect x="5" y="8.5" width="2.75" height="16" fill="#fff"/><rect x="10.75" y="8.5" width="2.75" height="16" fill="#fff"/><rect x="16.5" y="8.5" width="2.75" height="16" fill="#fff"/><rect x="22.25" y="8.5" width="2.75" height="16" fill="#fff"/></svg>
+        </a>
+        <a class="brand-name" href="./">Letters from Congress (2007-present)</a>
+      </div>
       <span class="tag">Letters from members' own websites, archived by the Wayback Machine</span>
     </div>
   </header>
