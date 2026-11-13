@@ -21,11 +21,13 @@
 >   OCR is idle, so the reason for keeping Job 2 off Charter (leaving the Mac
 >   its allowance) no longer holds. Whether to change that rule is Robin's
 >   call.
-> - **Results come back as before**: `pack_return.py`, pushed on a
->   `pc-render-return-*` or `pc-ocr-return-*` branch. The Mac's auto-publish
->   job merges and publishes them without anyone's help, and every publish
->   now rebuilds full-text search, so new OCR becomes searchable on its own.
->   Tell the Mac the new branch names so it watches them.
+> - **Results come back as before**, packed by `pack_return.py`, on these
+>   branches exactly: **Job 3 on `pc-render-return-3`**, **Job 4 on
+>   `pc-ocr-return-116-119`**. The Mac's auto-publish job merges only branches
+>   it knows by name: it already watches `pc-render-return-3`, and
+>   `pc-ocr-return-116-119` is added on the Mac's side. It publishes what it
+>   merges, and every publish rebuilds full-text search, so new OCR becomes
+>   searchable on its own.
 
 > **Rules as of 12 November 2026, 11:55. These replace anything older below.**
 >
