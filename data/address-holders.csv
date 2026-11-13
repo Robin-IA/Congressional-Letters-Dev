@@ -59,7 +59,8 @@ baronhill.house.gov,https://baronhill.house.gov,H001030,Baron Hill,IN,House,9,20
 barr.house.gov,https://barr.house.gov,B001282,Andy Barr,KY,House,6,2013-01-03,2027-01-03,113 114 115 116 117 118 119,2013-01-04,2026-10-31,1,,
 barragan.house.gov,https://barragan.house.gov,B001300,Nanette Diaz Barragán,CA,House,44,2017-01-03,2027-01-03,115 116 117 118 119,2017-01-04,2026-10-27,1,,
 barrasso.senate.gov,https://barrasso.senate.gov | https://www.barrasso.senate.gov,B001261,John Barrasso,WY,Senate,,2007-06-25,2027-01-03,110 111 112 113 114 115 116 117 118 119,2007-06-28,2026-10-21,1,,
-barrett.house.gov,https://barrett.house.gov,B001321,Tom Barrett,MI,House,7,2025-01-03,2027-01-03,119,2025-01-03,2026-10-26,1,,
+barrett.house.gov,https://barrett.house.gov,B001239,James Barrett,SC,House,3,2007-01-04,2011-01-03,110 111,,,2,,B001321
+barrett.house.gov,https://barrett.house.gov,B001321,Tom Barrett,MI,House,7,2025-01-03,2027-01-03,119,2025-01-03,2026-10-26,2,B001239,
 barrow.house.gov,https://barrow.house.gov,B001252,John Barrow,GA,House,12,2005-01-04,2015-01-03,109 110 111 112 113,2005-05-20,2015-01-03,1,,
 barrymoore.house.gov,https://barrymoore.house.gov,M001212,Barry Moore,AL,House,1,2021-01-03,2027-01-03,117 118 119,2021-01-04,2026-11-07,1,,
 bartlett.house.gov,https://bartlett.house.gov | https://www.bartlett.house.gov,B000208,Roscoe G. Bartlett,MD,House,6,2001-01-03,2013-01-03,107 108 109 110 111 112,2001-12-15,2013-01-02,1,,
@@ -68,7 +69,8 @@ bass.house.gov,https://bass.house.gov,B001270,Karen Bass,CA,House,37,2013-01-03,
 baucus.senate.gov,https://baucus.senate.gov | https://www.baucus.senate.gov,B000243,Max Baucus,MT,Senate,,2001-01-03,2014-02-06,107 108 109 110 111 112 113,2001-01-10,2014-02-01,1,,
 baumgartner.house.gov,https://baumgartner.house.gov,B001322,Michael Baumgartner,WA,House,5,2025-01-03,2027-01-03,119,2025-01-03,2026-10-21,1,,
 bayh.senate.gov,https://bayh.senate.gov,B001233,Evan Bayh,IN,Senate,,1999-01-06,2011-01-03,106 107 108 109 110 111,1999-10-03,2010-12-31,1,,
-bean.house.gov,https://bean.house.gov,B001314,Aaron Bean,FL,House,4,2023-01-03,2027-01-03,118 119,2023-01-03,2026-10-21,1,,
+bean.house.gov,https://bean.house.gov,B001253,Melissa Bean,IL,House,8,2007-01-04,2011-01-03,110 111,,,2,,B001314
+bean.house.gov,https://bean.house.gov,B001314,Aaron Bean,FL,House,4,2023-01-03,2027-01-03,118 119,2023-01-03,2026-10-21,2,B001253,
 beatty.house.gov,https://beatty.house.gov,B001281,Joyce Beatty,OH,House,3,2013-01-03,2027-01-03,113 114 115 116 117 118 119,2013-01-06,2026-10-26,1,,
 becerra.house.gov,https://becerra.house.gov,B000287,Xavier Becerra,CA,House,34,2003-01-07,2017-01-24,108 109 110 111 112 113 114 115,2004-08-07,2017-01-19,1,,
 begich.house.gov,https://begich.house.gov,B001323,Nicholas J. Begich III,AK,House,0,2025-01-03,2027-01-03,119,2025-01-03,2026-11-01,1,,
@@ -1241,7 +1243,8 @@ issa.house.gov,https://issa.house.gov,I000056,Darrell Issa,CA,House,49,2013-01-0
 issa.house.gov,https://issa.house.gov,I000056,Darrell Issa,CA,House,48,2021-01-03,2027-01-03,117 118 119,2021-01-05,2026-11-03,1,,
 ivey.house.gov,https://ivey.house.gov,I000058,Glenn Ivey,MD,House,4,2023-01-03,2027-01-03,118 119,2023-01-03,2026-10-27,1,,
 jack.house.gov,https://jack.house.gov,J000311,Brian Jack,GA,House,3,2025-01-03,2027-01-03,119,2025-01-03,2026-10-21,1,,
-jackson.house.gov,https://jackson.house.gov,J000304,Ronny Jackson,TX,House,13,2021-01-03,2027-01-03,117 118 119,2021-01-03,2026-10-24,1,,
+jackson.house.gov,https://jackson.house.gov,J000283,Jesse L. Jackson Jr.,IL,House,2,2007-01-04,2012-11-21,110 111 112,,,2,,J000304
+jackson.house.gov,https://jackson.house.gov,J000304,Ronny Jackson,TX,House,13,2021-01-03,2027-01-03,117 118 119,2021-01-03,2026-10-24,2,J000283,
 jacksonlee.house.gov,https://jacksonlee.house.gov | https://www.jacksonlee.house.gov,J000032,Sheila Jackson Lee,TX,House,18,2003-01-07,2024-07-19,108 109 110 111 112 113 114 115 116 117 118,2003-03-23,2024-07-13,1,,
 jacobs.house.gov,https://jacobs.house.gov,J000020,Chris Jacobs,NY,House,27,2020-07-21,2023-01-03,116 117,2020-07-21,2023-01-03,1,,
 james.house.gov,https://james.house.gov,J000307,John James,MI,House,10,2023-01-03,2027-01-03,118 119,2023-01-03,2026-10-26,1,,
@@ -1527,7 +1530,8 @@ mikerogers.house.gov,https://mikerogers.house.gov,R000575,Mike Rogers,AL,House,3
 mikethompson.house.gov,https://mikethompson.house.gov,T000460,Mike Thompson,CA,House,4,2003-01-07,2027-01-03,108 109 110 111 112 113 114 115 116 117 118 119,2004-08-06,2026-10-23,1,,
 mikulski.senate.gov,https://mikulski.senate.gov | https://www.mikulski.senate.gov,M000702,Barbara A. Mikulski,MD,Senate,,1999-01-06,2017-01-03,106 107 108 109 110 111 112 113 114,1999-11-28,2016-12-29,1,,
 millender-mcdonald.house.gov,https://millender-mcdonald.house.gov,M000714,Juanita Millender-McDonald,CA,House,37,2005-01-04,2007-04-22,109 110,2006-08-20,2007-04-19,1,,
-miller.house.gov,https://miller.house.gov,M001205,Carol D. Miller,WV,House,1,2019-01-03,2027-01-03,116 117 118 119,2019-01-15,2026-10-22,1,,
+miller.house.gov,https://miller.house.gov,M001139,Gary G. Miller,CA,House,42,2007-01-04,2011-01-03,110 111,,,2,,M001205
+miller.house.gov,https://miller.house.gov,M001205,Carol D. Miller,WV,House,1,2019-01-03,2027-01-03,116 117 118 119,2019-01-15,2026-10-22,2,M001139,
 miller.senate.gov,https://miller.senate.gov,M001141,Zell Miller,GA,Senate,,2000-07-24,2005-01-03,106 107 108,2000-08-15,2005-01-03,1,,
 millermeeks.house.gov,https://millermeeks.house.gov,M001215,Mariannette Miller-Meeks,IA,House,1,2021-01-03,2027-01-03,117 118 119,2021-01-03,2026-10-24,1,,
 mills.house.gov,https://mills.house.gov,M001216,Cory Mills,FL,House,7,2023-01-03,2027-01-03,118 119,2023-01-03,2026-10-21,1,,
@@ -1972,8 +1976,9 @@ takano.house.gov,https://takano.house.gov,T000472,Mark Takano,CA,House,39,2013-0
 talent.senate.gov,https://talent.senate.gov,T000024,James Talent,MO,Senate,,2002-11-25,2007-01-03,107 108 109,2002-12-19,2006-12-28,1,,
 tammybaldwin.house.gov,https://tammybaldwin.house.gov,B001230,Tammy Baldwin,WI,House,2,2001-01-03,2013-01-03,107 108 109 110 111 112,2001-09-13,2013-01-02,1,,
 tancredo.house.gov,https://tancredo.house.gov,T000458,Thomas Tancredo,CO,House,6,2005-01-04,2009-01-03,109 110,2005-02-05,2009-01-03,1,,
-taylor.house.gov,https://taylor.house.gov,T000477,Scott Taylor,VA,House,2,2017-01-03,2019-01-03,115,2017-01-05,2019-01-03,2,,T000490
-taylor.house.gov,https://taylor.house.gov,T000490,David J. Taylor,OH,House,2,2025-01-03,2027-01-03,119,2025-01-03,2026-10-21,2,T000477,
+taylor.house.gov,https://taylor.house.gov,T000074,Gene Taylor,MS,House,4,2007-01-04,2011-01-03,110 111,,,3,,T000477
+taylor.house.gov,https://taylor.house.gov,T000477,Scott Taylor,VA,House,2,2017-01-03,2019-01-03,115,2017-01-05,2019-01-03,3,T000074,T000490
+taylor.house.gov,https://taylor.house.gov,T000490,David J. Taylor,OH,House,2,2025-01-03,2027-01-03,119,2025-01-03,2026-10-21,3,T000477,
 teague.house.gov,https://teague.house.gov,T000466,Harry Teague,NM,House,2,2009-01-06,2011-01-03,111,2009-01-14,2010-12-30,1,,
 teddeutch.house.gov,https://teddeutch.house.gov,D000610,Theodore E. Deutch,FL,House,22,2011-01-05,2022-09-30,112 113 114 115 116 117,2011-01-10,2022-09-30,1,,
 tenney.house.gov,https://tenney.house.gov,T000478,Claudia Tenney,NY,House,22,2017-01-03,2019-01-03,115,2017-01-08,2018-12-28,1,,
