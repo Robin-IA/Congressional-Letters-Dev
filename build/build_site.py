@@ -43,6 +43,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from topics import AGENCIES, SUBJECTS, tag as tag_topics  # noqa: E402
 from thumbs import SUFFIX  # noqa: E402
+import committees  # noqa: E402
 
 # Read as capitals, not as words. Agency abbreviations come from the topics
 # vocabulary so the two cannot drift; the rest are the ones this corpus
@@ -347,6 +348,7 @@ def main() -> None:
     # filename states outright. Measured on 14 letters whose filename gave a
     # date: all 14 PDFs carried one, 13 agreed within three days, median
     # difference zero.
+    committee_letters = committees.by_digest()
     pdf_dates: dict[str, str] = {}
     if args.pdf_dates.exists():
         with args.pdf_dates.open(encoding="utf-8") as handle:
@@ -432,11 +434,16 @@ def main() -> None:
             record["key"], record["timestamp"], kind, best,
             precision, recipient, subject,
             # A caucus letter carries its caucus as a topic (build_congress.py);
-            # a letter to a reviewed recipient carries that recipient's topics
+            # a letter on a committee's stationery carries the committee
+            # (committees.py reads the letterhead); a letter to a reviewed
+            # recipient carries that recipient's topics
             # (vocabulary/recipient-topics.csv: a letter to Chevron is about
             # Oil and gas whatever its file name says).
             ",".join(dict.fromkeys(
                 ([record["caucus"]] if record.get("caucus") else [])
+                + ([c] if (c := committees.committee_for(
+                    committee_letters.get(digest or ""),
+                    record.get("host") or record.get("key", ""))) else [])
                 + tag_topics(f"{subject or ''} {recipient or ''}")
                 + recipient_topics().get((recipient or "").lower(), []))),
             ",".join(record.get("cosigners") or []),

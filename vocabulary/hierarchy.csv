@@ -1,5 +1,25 @@
 term,broader
+Congress Members,
+Senators,Congress Members
+Representatives,Congress Members
+Committees,
+House committees,Committees
+Senate committees,Committees
+Joint committees,Committees
+Government officials,
+Executive branch,Government officials
+Judicial branch,Government officials
+Legislative branch,Government officials
+State and local government,Government officials
 Topics,
+Companies and organizations,
+Foreign and international,
+Not yet reviewed,
+Organizations not yet reviewed,Not yet reviewed
+People not yet reviewed,Not yet reviewed
+Recipients not yet sorted,Not yet reviewed
+U.S. diplomats,Executive branch
+Foreign diplomats,Foreign and international
 Agriculture and food,Topics
 Agriculture,Agriculture and food
 Economy and finance,Topics
@@ -77,13 +97,12 @@ Telecom,Technology and infrastructure
 Transportation,Technology and infrastructure
 Railroads,Technology and infrastructure
 Public transportation,Technology and infrastructure
-Organizations,
-Executive Office of the President,Organizations
+Executive Office of the President,Executive branch
 The President,Executive Office of the President
 The Vice President,Executive Office of the President
 Office of Management and Budget,Executive Office of the President
 Office of the US Trade Representative,Executive Office of the President
-Executive departments,Organizations
+Executive departments,Executive branch
 Department of Agriculture,Executive departments
 Department of Commerce,Executive departments
 National Oceanic and Atmospheric Administration,Department of Commerce
@@ -121,7 +140,7 @@ Department of the Treasury,Executive departments
 Internal Revenue Service,Department of the Treasury
 Office of the Comptroller of the Currency,Department of the Treasury
 Department of Veterans Affairs,Executive departments
-Independent agencies and commissions,Organizations
+Independent agencies and commissions,Executive branch
 Central Intelligence Agency,Independent agencies and commissions
 Commodity Futures Trading Commission,Independent agencies and commissions
 Consumer Financial Protection Bureau,Independent agencies and commissions
@@ -142,33 +161,21 @@ Securities and Exchange Commission,Independent agencies and commissions
 Small Business Administration,Independent agencies and commissions
 Social Security Administration,Independent agencies and commissions
 United States Postal Service,Independent agencies and commissions
-Inspectors general,Organizations
+Inspectors general,Executive branch
 Office of the Inspector General,Inspectors general
-Congress,Organizations
-Congressional leadership,Congress
-The Speaker of the House,Congress
-Government Accountability Office,Congress
-Government Publishing Office,Congress
-Congressional committees,Congress
-Courts,Organizations
-Government corporations,Organizations
-State and local government,Organizations
-Companies,Organizations
-Associations and other organizations,Organizations
-International organizations,Organizations
-People,
-Governors,People
-Foreign leaders,People
-Members of Congress,
-Senators,Members of Congress
-Representatives,Members of Congress
-Not yet reviewed,
-Organizations not yet reviewed,Not yet reviewed
-People not yet reviewed,Not yet reviewed
-Recipients not yet sorted,Not yet reviewed
-Diplomats,People
-Military officers,People
-International officials,People
+Congressional leadership,Legislative branch
+The Speaker of the House,Legislative branch
+Government Accountability Office,Legislative branch
+Government Publishing Office,Legislative branch
+Courts,Judicial branch
+Government corporations,Executive branch
+Companies,Companies and organizations
+Associations and other organizations,Companies and organizations
+International organizations,Foreign and international
+Governors,State and local government
+Foreign leaders,Foreign and international
+Military officers,Executive branch
+International officials,Foreign and international
 Oil and gas,Environment and energy
 Tobacco,Health
 Cars,Technology and infrastructure
@@ -179,8 +186,8 @@ Air and space industry,Companies
 Oil and gas industry,Energy sector
 Auto industry,Companies
 Stellantis,Auto industry
-Executive branch officials,People
-Business leaders,People
+Executive branch officials,Executive branch
+Business leaders,Companies and organizations
 Steve Bannon,Executive branch officials
 Tim Cook,Business leaders
 Energy sector,Companies

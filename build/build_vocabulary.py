@@ -57,6 +57,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "build"))
 import address_holders  # noqa: E402
+import committees  # noqa: E402
 import parse_urls  # noqa: E402
 import topics  # noqa: E402
 
@@ -512,6 +513,28 @@ def main() -> int:
     if gone:
         print(f"  reviews applied: {dict(applied)}", file=sys.stderr)
 
+    # Committees ------------------------------------------------------------------
+    # One term per committee, for the letters written on its stationery
+    # (committees.py reads the letterhead; build_site.py tags the letter with
+    # the committee's name) and the letters addressed to it (reviews.csv
+    # merges "Sasc" and "Hasc" into the same term). Placed by chamber.
+    committee_ids = {}
+    for label in committees.labels():
+        existing = next((t_ for t_ in terms if t_["label"] == label
+                         and t_["status"] == "preferred"), None)
+        if not existing and not per_topic.get(label):
+            continue
+        if not existing:
+            add(f"O-{slug(label)}", label, "organization", "government body",
+                "preferred", "local")
+            existing = terms[-1]
+        existing["letters"] = int(existing["letters"] or 0) + per_topic.get(label, 0)
+        committee_ids[existing["term_id"]] = label
+        if committees.informal(label):
+            rel(existing["term_id"], "altLabel", committees.informal(label), "preferred", "local")
+        extra_hier.append({"term": label,
+                           "broader": f"{committees.chamber(label)} committees"})
+
     # The hierarchy --------------------------------------------------------------
     # vocabulary/hierarchy.csv is made by hand: each row a term and the term it
     # sits under. A label there that is not a term yet becomes a category.
@@ -559,10 +582,10 @@ def main() -> int:
     unplaced = [t_["label"] for t_ in terms if t_["kind"] in ("topic", "organization")
                 and t_["status"] == "preferred" and t_["term_id"] not in placed]
     if unplaced:
-        print(f"  not in hierarchy.csv, placed at the top of their kind: {unplaced}", file=sys.stderr)
+        print(f"  not in hierarchy.csv, placed under Topics or Recipients not yet sorted: {unplaced}", file=sys.stderr)
         for lab in unplaced:
             kind = next(x["kind"] for x in terms if x["label"] == lab)
-            rel(by_label[lab], "broader", by_label["Topics" if kind == "topic" else "Organizations"])
+            rel(by_label[lab], "broader", by_label["Topics" if kind == "topic" else "Recipients not yet sorted"])
     chamber_cat = {"Senate": by_label["Senators"], "House": by_label["Representatives"]}
     for b, m in rosters().items():
         for ch in m["chambers"]:
@@ -638,6 +661,10 @@ def main() -> int:
             if nm:
                 n["names"] = sorted(nm)
                 n["to"] = letters_to[tid]
+        # A committee is also found by the letters on its stationery, which
+        # carry its name as a tag.
+        if tid in committee_ids:
+            n["tag"] = committee_ids[tid]
         if t_["status"] != "preferred":
             n["status"] = t_["status"]
         if int(t_["letters"] or 0):
