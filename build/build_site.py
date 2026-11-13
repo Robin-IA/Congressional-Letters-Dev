@@ -31,6 +31,7 @@ index.json so the page and the build cannot disagree about it.
 from __future__ import annotations
 
 import argparse
+import csv
 import json
 import re
 import sys
@@ -69,6 +70,33 @@ ACRONYMS = set(AGENCIES) | {
 MINOR = {"a", "an", "and", "as", "at", "but", "by", "for", "from", "in",
          "into", "nor", "of", "on", "or", "over", "per", "the", "to", "up",
          "via", "vs", "with"}
+
+
+_RECIPIENT_TOPICS: dict[str, list[str]] | None = None
+
+
+def recipient_topics() -> dict[str, list[str]]:
+    """Recipient name (lower case) -> the topics every letter to it carries.
+
+    vocabulary/recipient-topics.csv, made by hand: ``recipient`` is the name
+    as the letters give it (their recipient_canonical, as in Not yet
+    reviewed), ``topics`` the topic labels separated by ";". Topic labels must
+    be topics.SUBJECTS labels, so the vocabulary and hierarchy know them.
+    """
+    global _RECIPIENT_TOPICS
+    if _RECIPIENT_TOPICS is None:
+        _RECIPIENT_TOPICS = {}
+        path = Path(__file__).resolve().parents[1] / "vocabulary" / "recipient-topics.csv"
+        if path.exists():
+            with path.open(encoding="utf-8") as handle:
+                for row in csv.DictReader(handle):
+                    labels = [t.strip() for t in row["topics"].split(";") if t.strip()]
+                    unknown = [t for t in labels if t not in SUBJECTS]
+                    if unknown:
+                        raise SystemExit(f"recipient-topics.csv: {row['recipient']!r}: "
+                                         f"not a topic: {unknown}")
+                    _RECIPIENT_TOPICS[row["recipient"].strip().lower()] = labels
+    return _RECIPIENT_TOPICS
 
 
 def _split_vocabulary() -> set[str]:
@@ -403,9 +431,14 @@ def main() -> None:
         by_member[bioguide].append([
             record["key"], record["timestamp"], kind, best,
             precision, recipient, subject,
-            # A caucus letter carries its caucus as a topic (build_congress.py).
-            ",".join(([record["caucus"]] if record.get("caucus") else [])
-                     + tag_topics(f"{subject or ''} {recipient or ''}")),
+            # A caucus letter carries its caucus as a topic (build_congress.py);
+            # a letter to a reviewed recipient carries that recipient's topics
+            # (vocabulary/recipient-topics.csv: a letter to Chevron is about
+            # Oil and gas whatever its file name says).
+            ",".join(dict.fromkeys(
+                ([record["caucus"]] if record.get("caucus") else [])
+                + tag_topics(f"{subject or ''} {recipient or ''}")
+                + recipient_topics().get((recipient or "").lower(), []))),
             ",".join(record.get("cosigners") or []),
             digest,
         ])

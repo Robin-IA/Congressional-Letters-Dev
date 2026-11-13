@@ -2,7 +2,7 @@ candidate,letters,decision,target,abbreviation,kind,broader,reason,status
 Admin,63,merge,The Administration,,organization,Executive Office of the President,"""the admin"": the executive branch, unnamed",accepted
 Senate,59,merge,United States Senate,,organization,Congress,the chamber as a whole,accepted
 Administration,56,merge,The Administration,,organization,Executive Office of the President,"the executive branch, unnamed",accepted
-Google,49,merge,Google,,organization,Companies,company,accepted
+Google,49,merge,Google,,organization,Tech sector,company,accepted
 Amazon,46,merge,Amazon,,organization,Companies,company,accepted
 Conferees,46,merge,Conference committees,,organization,Congressional committees,conferees on a bill,accepted
 Hagel,46,officeholder,Department of Defense,,,,"Chuck Hagel, Secretary of Defense 2013-2015",accepted
@@ -71,7 +71,7 @@ Secarmy,17,merge,Department of the Army,,organization,Department of Defense,Secr
 Senators,17,merge,United States Senate,,organization,Congress,senators as a body,accepted
 Airlines,16,merge,Airlines (several),,organization,Companies,letters to several airlines at once,accepted
 Banks,16,merge,Banks (several),,organization,Companies,letters to several banks at once,accepted
-Boeing,16,merge,Boeing,,organization,Companies,company,accepted
+Boeing,16,merge,Boeing,,organization,Air and space industry,company,accepted
 Finra,16,merge,FINRA,,organization,Associations and other organizations,self-regulatory organization for brokers,accepted
 Forest Service,16,merge,Forest Service,,organization,Department of Agriculture,agency,accepted
 Gov Lee,16,person,Bill Lee,,person,Governors,Governor of Tennessee,accepted
@@ -95,7 +95,7 @@ Of Defense,14,merge,Department of Defense,,,,"""Department of Defense"" cut shor
 Reid,14,merge,Congressional leadership,,,,"Harry Reid, Senate leader; filed as McConnell and Schumer are",accepted
 Sasc,14,merge,Senate Armed Services Committee,SASC,organization,Congressional committees,SASC,accepted
 Usfws,14,merge,Fish and Wildlife Service,USFWS,organization,Department of the Interior,USFWS,accepted
-Apple,13,merge,Apple,,organization,Companies,company,accepted
+Apple,13,merge,Apple,,organization,Tech sector,company,accepted
 Ceg,13,member,G000386,,,,"checked: CEG is Charles E. Grassley; letters to and answering ""Senator Grassley"", Judiciary chair",accepted
 Chief Justice Roberts,13,officeholder,Supreme Court of the United States,,organization,Courts,"John Roberts, Chief Justice; the surname lead to Sen. Pat Roberts is wrong",accepted
 Cuomo,13,person,Andrew Cuomo,,person,Governors,Governor of New York 2011-2021,accepted
@@ -330,3 +330,87 @@ Hensarling And Chariwoman Murray,3,joint,H001036;M001111,,member,,"checked: Jeb 
 Cornyn And Cruz,3,joint,C001056;C001098,,member,,"checked: John Cornyn and Ted Cruz, Texas's senators; Gooden, 2020",accepted
 Cantor And Mccarthy,3,joint,C001046;M001165,,member,,"checked: Eric Cantor and Kevin McCarthy (not Karen or Carolyn), House majority leader and whip; Barr, 2014",accepted
 Camp And Chairman Lucas,3,joint,C000071;L000491,,member,,"checked: Dave Camp and Frank Lucas (not Kenneth), Ways and Means and Agriculture chairs; Barr, 2014",accepted
+Sen Brown,3,member,B000944,,,,"checked: Sherrod Brown (not Scott), Banking chair; on Bloom Raskin, posted by Brown, 2018-2020",accepted
+Sen Carper,3,member,C000174,,,,"checked: Tom Carper; letters from Mike Levin, John McCain, 2014-2023",accepted
+Sen Charles Grassley,3,member,G000386,,,,"checked: Chuck Grassley; posted by Grassley, 2010",accepted
+Sen Grassley,3,member,G000386,,,,"checked: Chuck Grassley; posted by Chuck Grassley, Dianne Feinstein, 2016-2021",accepted
+Senator Grassley,4,member,G000386,,,,"checked: Chuck Grassley; posted by Grassley, 2010-2016",accepted
+Sen Cornyn,3,member,C001056,,,,"checked: John Cornyn; posted by John Cornyn, Richard J. Durbin, Dianne Feinstein, 2018-2020",accepted
+Sen Durbin,3,member,D000563,,,,"checked: Richard Durbin; posted by Richard J. Durbin, Adam Kinzinger, 2012-2020",accepted
+Sen Lieberman,3,member,L000304,,,,checked: Joseph Lieberman; Waxman,accepted
+Senator Lieberman,3,member,L000304,,,,checked: Joseph Lieberman; Waxman,accepted
+Sen Mcconnell,4,member,M000355,,,,"checked: Mitch McConnell; Democratic leaders' letters posted by Patty Murray, Linda T. Sánchez, 2013-2016",accepted
+Sen Reid,3,member,R000146,,,,"checked: Harry Reid, majority leader; posted by Jeff Flake, Gary C. Peters, Don Young, 2010-2015",accepted
+Senator Reid,3,member,R000146,,,,"checked: Harry Reid, majority leader; on defense sequestration, posted by Brian P. Bilbray, John Abney Culberson, Lee Terry, 2012",accepted
+Sen Vitter Tsca Feb2014,3,member,V000127,,,,"checked: David Vitter, on the Toxic Substances Control Act, February 2014; Carper",accepted
+Sen Warner,3,member,W000805,,,,"checked: Mark Warner (not John); posted by Warner, 2024-2026",accepted
+Sen Wyden,5,member,W000779,,,,"checked: Ron Wyden; an Amazon reply posted by Wyden, and Jared Polis, 2012-2019",accepted
+Senator Collins,3,member,C001035,,,,"checked: Susan Collins; posted by Collins, 2020-2025",accepted
+Senator Leahy,3,member,L000174,,,,"checked: Patrick Leahy; posted by Leahy and Wyden, 2012-2015",accepted
+Senator Manchin,3,member,M001183,,,,"checked: Joe Manchin; an EPA reply posted by Manchin, 2021",accepted
+Senator Markey,6,member,M000133,,,,"checked: Edward Markey; replies posted by Markey, 2016-2022",accepted
+Senator Warren,5,member,W000817,,,,"checked: Elizabeth Warren; posted by Warren, 2019-2026",accepted
+Amb Haley,9,person,Nikki Haley,,person,Diplomats,"checked: Ambassador Nikki Haley, US Ambassador to the United Nations 2017-2018; letter on Libya, 2018",accepted
+Amb Antonov,3,person,Anatoly Antonov,,person,Diplomats,"checked: Anatoly Antonov, Russian Ambassador to the United States; 2021",accepted
+Amb Kilic,3,person,Serdar Kılıç,,person,Diplomats,"checked: Serdar Kılıç, Turkish Ambassador to the United States; letter on PPE donations, 2020",accepted
+Ambassador Cui,4,person,Cui Tiankai,,person,Diplomats,"checked: Cui Tiankai, Chinese Ambassador to the United States; 2020",accepted
+Ambassador Froman,9,person,Michael Froman,,person,Diplomats,"checked: Ambassador Michael Froman, U.S. Trade Representative; TPP letters, 2013-2016",accepted
+Ambassador Kirk,5,person,Ron Kirk,,person,Diplomats,"checked: Ambassador Ron Kirk, U.S. Trade Representative; Camp and Grassley, 2010-2011",accepted
+Ambassador Knapper,3,person,Marc Knapper,,person,Diplomats,"checked: Marc Knapper, U.S. Ambassador to Vietnam; 2022-2024",accepted
+Ambassador Salleo Of Italy,3,person,Ferdinando Salleo,,person,Diplomats,"checked: Ferdinando Salleo, Italian Ambassador to the United States; Waxman",accepted
+Ambassador Tobias,5,person,Randall Tobias,,person,Diplomats,"checked: Ambassador Randall Tobias, Global AIDS Coordinator; Waxman",accepted
+Gen Alexander,4,person,Keith Alexander,,person,Military officers,"checked: Gen. Keith Alexander, NSA Director; Wyden and Udall on FISA, 2012",accepted
+Gen Dunwoody,4,person,Ann Dunwoody,,person,Military officers,"checked: Gen. Ann Dunwoody, Army Materiel Command; Illinois-Iowa delegation, 2011",accepted
+Gen Everhart,3,person,Carlton Everhart II,,person,Military officers,"checked: Gen. Carlton Everhart, Air Mobility Command; Rickenbacker KC-135s, 2016",accepted
+Gen Welsh,3,person,Mark Welsh III,,person,Military officers,"checked: Gen. Mark Welsh, Air Force Chief of Staff; 2012-2014",accepted
+General Myers,3,person,Richard Myers,,person,Military officers,"checked: Gen. Richard Myers, Chairman of the Joint Chiefs; Skelton, 2005",accepted
+General Annan,3,person,Kofi Annan,,person,International officials,"checked: Secretary-General Kofi Annan, United Nations; Waxman (""General"" is from ""Secretary General"")",accepted
+General Guterres,6,person,António Guterres,,person,International officials,"checked: Secretary-General António Guterres, United Nations; Coons and Rubio, 2019",accepted
+General Solana,3,person,Javier Solana,,person,International officials,checked: Secretary-General Javier Solana; Waxman,accepted
+Gen Esper,3,person,Mark Esper,,person,,"2018, on Army Futures Command: Mark Esper was then Secretary of the Army, not a general; which category?",proposed
+General Temple,4,person,Merdith W. B. Temple,,person,Military officers,"Blunt, May 2012: probably Maj. Gen. Merdith Temple, acting Chief of Engineers; not confirmed",proposed
+Gov Baker,7,person,Charlie Baker,,person,Governors,"checked: Governor of Massachusetts; Massachusetts members, 2019-2020",accepted
+Gov Brown 0,3,person,Jerry Brown,,person,Governors,checked: Governor of California; California members (file Letter to Gov Brown_0),accepted
+Gov Bullock,8,person,Steve Bullock,,person,Governors,"checked: Governor of Montana; Montana members, 2015-2020",accepted
+Gov Crist,3,person,Charlie Crist,,person,Governors,"checked: Governor of Florida; Brown-Waite and Florida members, 2007-2010; later a member (C001111)",accepted
+Gov Daniels,4,person,Mitch Daniels,,person,Governors,"checked: Governor of Indiana; Indiana members, 2007-2010",accepted
+Gov Dewine,6,person,Mike DeWine,,person,Governors,"checked: Governor of Ohio; Ohio delegation, 2019-2025; a former senator (D000294)",accepted
+Gov Edwards Pdf,5,person,John Bel Edwards,,person,Governors,"checked: Governor of Louisiana; Louisiana members, 2020-2021",accepted
+Gov Hogan,8,person,Larry Hogan,,person,Governors,"checked: Governor of Maryland; Maryland members, 2018-2020",accepted
+Gov Hogan Mdh,4,person,Larry Hogan,,person,Governors,"checked: Governor of Maryland, on the Maryland Department of Health; 2021",accepted
+Gov Inslee,6,person,Jay Inslee,,person,Governors,"checked: Governor of Washington; Washington members and a North Dakota delegation letter, 2018-2022; a former member (I000026)",accepted
+Gov Ivey,3,person,Kay Ivey,,person,Governors,"checked: Governor of Alabama; Alabama members, 2020",accepted
+Gov Kemp,4,person,Brian Kemp,,person,Governors,"checked: Governor of Georgia; Georgia members, 2019-2022",accepted
+Governor Brian Kemp,4,person,Brian Kemp,,person,Governors,"checked: Governor of Georgia; Georgia members, 2022-2026",accepted
+Gov Mcdonnell,4,person,Bob McDonnell,,person,Governors,"checked: Governor of Virginia; Virginia members, on Medicaid expansion, 2012-2013",accepted
+Gov Murphy,8,person,Phil Murphy,,person,Governors,"checked: Governor of New Jersey; New Jersey delegation, 2018-2024",accepted
+Gov Northam,9,person,Ralph Northam,,person,Governors,"checked: Governor of Virginia; Virginia members, 2020-2021",accepted
+Gov Schwarzenegger,6,person,Arnold Schwarzenegger,,person,Governors,checked: Governor of California; Waxman,accepted
+Gov Snyder,4,person,Rick Snyder,,person,Governors,"checked: Governor of Michigan; Michigan members, on Flint, 2011-2017",accepted
+Gov Walz,7,person,Tim Walz,,person,Governors,"checked: Governor of Minnesota; Minnesota members, 2020-2025",accepted
+Gov Whitmer,9,person,Gretchen Whitmer,,person,Governors,"checked: Governor of Michigan; Michigan members, 2020-2022",accepted
+Gov Whitmer 5 17,4,person,Gretchen Whitmer,,person,Governors,"checked: Governor of Michigan; letter of May 17 on unemployment insurance, 2021",accepted
+Governor Abbot,5,person,Greg Abbott,,person,Governors,"checked: Governor of Texas (file spells it Abbot); Texas members on Operation Lone Star, 2020-2022",accepted
+Governor Elect Youngkin,4,person,Glenn Youngkin,,person,Governors,"checked: Governor-elect of Virginia, December 2021; Virginia members",accepted
+Governor Johanns,3,person,Mike Johanns,,person,Governors,checked: Governor of Nebraska; Waxman; later a senator (J000291),accepted
+Governor Kelly,3,person,Laura Kelly,,person,Governors,"checked: Governor of Kansas; Kansas delegation, 2020-2021",accepted
+Governor Lamont,3,person,Ned Lamont,,person,Governors,"checked: Governor of Connecticut; Connecticut members, on a USDA disaster designation, 2023",accepted
+Governor Ridge,3,person,Tom Ridge,,person,Governors,checked: Governor of Pennsylvania; Waxman; a House member before 1995,accepted
+Governor Spanberger,3,person,Abigail Spanberger,,person,Governors,"checked: Governor of Virginia from January 2026; Virginia Republican delegation, February 2026; a former member (S001209)",accepted
+Governor Walker,9,person,Scott Walker,,person,Governors,"checked: Governor of Wisconsin; Wisconsin members, on BadgerCare, 2014-2016",accepted
+Governor Wolf 12 11,3,person,Tom Wolf,,person,Governors,"checked: Governor of Pennsylvania; Pennsylvania members, letter of December 11",accepted
+Amtrak Ceo,4,merge,Amtrak,,organization,Government corporations,"checked: files named ""Letter to Amtrak CEO"", 2018-2020",accepted
+Amtrak Fy21 Pdf,5,merge,Amtrak,,organization,Government corporations,"checked: files named ""Letter to Amtrak FY21 PDF""; a letter to Amtrak, fiscal 2021",accepted
+Apple And Google,3,joint,Apple;Google,,,,"checked: letters to both, on apps and app stores, 2019-2026",accepted
+Google And Apple,4,joint,Google;Apple,,,,"checked: letters to both, 2019-2021",accepted
+Apple Ceo Tim Cook,3,joint,Apple;person:Tim Cook,,,,"checked: letters to Apple's CEO Tim Cook, 2018-2026",accepted
+Amex,3,merge,American Express,AMEX,organization,Banking industry,checked: AMEX: American Express; 2024-2025 (folds in the unreviewed American Express),accepted
+Boeing Ceo,4,merge,Boeing,,organization,Air and space industry,"checked: letters to Boeing's CEO, 2011-2012",accepted
+Bannon,3,person,Steve Bannon,,person,,"checked: Steve Bannon, White House chief strategist; on ethics, 2017, and Krishnamoorthi, 2018",accepted
+British American Tobacco,3,merge,British American Tobacco,,organization,Companies,"checked: tobacco company; on vaping and COVID-19, 2020",accepted
+Chevron,3,merge,Chevron,,organization,Oil and gas industry,"checked: oil company; on federal tax subsidies, 2022-2026",accepted
+Citibank,3,merge,Citibank,,organization,Banking industry,checked: Citigroup's bank; 2012-2025,accepted
+Citigroup,4,merge,Citigroup,,organization,Banking industry,checked: on Kushner loans (2018) and Arctic drilling (2022),accepted
+Chrysler,3,merge,Chrysler,,organization,Auto industry,"checked: 2009, 2012 (Eshoo and Waxman) and 2020; parent Fiat, then Fiat Chrysler Automobiles, then Stellantis",accepted
+Cnn,4,merge,CNN (Cable News Network),CNN,organization,Companies,checked: news network; 2012 and 2019,accepted
+"Dhs, Doj And Fbi",7,joint,Department of Homeland Security;Department of Justice;Federal Bureau of Investigation,,,,"checked: one joint letter of February 22, 2017, to DHS, DOJ and FBI",accepted

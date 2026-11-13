@@ -71,6 +71,7 @@ SUBJECTS: dict[str, tuple[str, ...]] = {
     "Mental health": ("mental health", "suicide", "behavioral health"),
     "Prescription drugs": ("prescription", "drug pricing", "insulin",
                            "pharmaceutical", "pbm"),
+    "Tobacco": ("tobacco", "cigarette", "vaping", "e-cigarette", "nicotine"),
     "Health care": ("health care", "healthcare", "hospital", "aca",
                     "affordable care"),
     "Abortion": ("abortion", "reproductive", "mifepristone", "roe"),
@@ -84,6 +85,8 @@ SUBJECTS: dict[str, tuple[str, ...]] = {
     "PFAS": ("pfas", "forever chemical", "pfoa", "pfos"),
     "Pollution": ("pollution", "contamination", "toxic", "superfund",
                   "clean air"),
+    "Oil and gas": ("oil and gas", "natural gas", "oil company", "petroleum",
+                    "gasoline", "gas price", "refinery", "fracking", "offshore drilling"),
     "Energy": ("energy", "electricity", "grid", "pipeline", "oil", "gas",
                "renewable", "solar", "wind power"),
     "Nuclear": ("nuclear", "radioactive", "uranium"),
@@ -111,7 +114,9 @@ SUBJECTS: dict[str, tuple[str, ...]] = {
     "Immigration": ("immigration", "immigrant", "asylum", "refugee", "daca",
                     "deportation", "visa", "border wall"),
     "Border": ("border", "border security", "migrant"),
-    "Guns": ("gun", "firearm", "atf rule", "assault weapon", "gun violence"),
+    # The ATF's name is read whole, so its "Tobacco" is not the topic.
+    "Guns": ("gun", "firearm", "atf rule", "assault weapon", "gun violence",
+             "alcohol tobacco firearms and explosives"),
     "Policing": ("police", "policing", "law enforcement"),
     "Prisons": ("prison", "incarceration", "bureau of prisons", "inmate"),
     "Civil rights": ("civil right", "voting right", "discrimination",
@@ -143,6 +148,13 @@ SUBJECTS: dict[str, tuple[str, ...]] = {
                   "digital divide"),
     "Transportation": ("transportation", "highway", "transit", "rail",
                        "amtrak", "bridge"),
+    # Amtrak is all three: Transportation, Railroads, Public transportation.
+    "Railroads": ("railroad", "railway", "rail", "amtrak", "passenger rail",
+                  "freight rail", "rail safety"),
+    "Public transportation": ("public transportation", "public transit",
+                              "transit", "amtrak", "commuter rail", "subway",
+                              "bus service"),
+    "Cars": ("car", "automobile", "automaker", "auto industry", "vehicle recall"),
     "Aviation": ("aviation", "airline", "airport", "faa certification",
                  "boeing"),
     "Postal Service": ("postal", "usps delay", "mail delivery"),
@@ -153,6 +165,8 @@ SUBJECTS: dict[str, tuple[str, ...]] = {
     "Childcare": ("childcare", "child care", "head start"),
     "Technology": ("artificial intelligence", "social media", "algorithm",
                    "big tech", "antitrust"),
+    "News media": ("news media", "journalist", "journalism", "newspaper",
+                   "broadcaster", "cnn"),
     "Telecom": ("spectrum", "telecom", "robocall", "net neutrality"),
 
     # government operations
@@ -237,13 +251,17 @@ def tag(text: str, limit: int = 4) -> list[str]:
     found: list[str] = []
     i = 0
     while i < len(words):
+        hit = None
         for phrase, label in INDEX.get(words[i], ()):
             size = len(phrase.split())
-            if " ".join(words[i:i + size]) == phrase:
-                if label not in found:
-                    found.append(label)
-                i += size - 1
-                break
+            # Every label of the longest matching phrase: "amtrak" is
+            # Transportation, Railroads and Public transportation at once.
+            if hit is None and " ".join(words[i:i + size]) == phrase:
+                hit = phrase
+            if phrase == hit and label not in found:
+                found.append(label)
+        if hit:
+            i += len(hit.split()) - 1
         i += 1
     return found[:limit]
 
