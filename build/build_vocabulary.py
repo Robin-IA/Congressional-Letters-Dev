@@ -409,6 +409,7 @@ def main() -> int:
     cand_by_label = {t_["label"]: t_ for t_ in terms if t_["status"] == "candidate"}
     gone: set[str] = set()
     applied = Counter()
+    letters_to = Counter()   # member term -> letters addressed to them, from reviews
     for rv in reviews:
         if rv["status"] not in wanted or rv["decision"] == "hold":
             continue
@@ -448,10 +449,27 @@ def main() -> int:
                 rel(tgt["term_id"], "officeHolderName", f"{cand['label']} ({span})",
                     "preferred", "reviewed")
             continue
-        if rv["decision"] == "member":
-            tid = f"M-{rv['target']}"
-            for nm in names:
-                rel(tid, "recipientName", nm, "preferred", "reviewed")
+        if rv["decision"] in ("member", "joint"):
+            # "member": the name is one member of Congress, by Bioguide ID.
+            # "joint": the letter was addressed to several at once ("Boehner
+            # and Pelosi"), so it belongs to each of them; the target lists
+            # them separated by ";", each a Bioguide ID or a reviewed term's
+            # label. Every target counts all of the name's letters.
+            for part in rv["target"].split(";"):
+                part = part.strip()
+                if re.fullmatch(r"[A-Z]\d{6}", part):
+                    tid = f"M-{part}"
+                    letters_to[tid] += int(cand["letters"] or 0)
+                else:
+                    tgt = next((t_ for t_ in terms if t_["label"] == part
+                                and t_["status"] == "preferred"), None)
+                    if tgt is None:
+                        print(f"  review {rv['candidate']!r}: no term {part!r}", file=sys.stderr)
+                        continue
+                    tid = tgt["term_id"]
+                    tgt["letters"] = int(tgt["letters"] or 0) + int(cand["letters"] or 0)
+                for nm in names:
+                    rel(tid, "recipientName", nm, "preferred", "reviewed")
             continue
         target = next((t_ for t_ in terms if t_["label"] == rv["target"]
                        and t_["status"] == "preferred"), None)
@@ -560,6 +578,11 @@ def main() -> int:
     for tid_, vs in names_of.items():
         names_of[tid_] = {v for v in vs if "@" in v or v.lower() not in dated}
 
+    recipient_names = defaultdict(set)
+    for r in relations:
+        if r["relation"] == "recipientName" and r["term_id"].startswith("M-"):
+            recipient_names[r["term_id"]].add(r["value"])
+
     def node(tid, seen=()):
         t_ = term_by_id[tid]
         kids = [node(c, seen + (tid,)) for c in sorted(set(children.get(tid, [])), key=sort_key)
@@ -572,6 +595,14 @@ def main() -> int:
             nm = names_of.get(tid)
             if nm:
                 n["names"] = sorted(nm)
+        # A member is found by the letters they wrote, and also by the letters
+        # reviews say were addressed to them ("Grassley", "Boehner and
+        # Pelosi"): only those reviewed names, never their own label.
+        if t_["kind"] == "member":
+            nm = recipient_names.get(tid)
+            if nm:
+                n["names"] = sorted(nm)
+                n["to"] = letters_to[tid]
         if t_["status"] != "preferred":
             n["status"] = t_["status"]
         if int(t_["letters"] or 0):

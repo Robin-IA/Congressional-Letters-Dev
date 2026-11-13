@@ -304,3 +304,29 @@ Sfops,3,merge,Appropriations committees,SFOPS,organization,Congressional committ
 Tigta,3,merge,Treasury Inspector General for Tax Administration,TIGTA,organization,Inspectors general,TIGTA: Treasury Inspector General for Tax Administration,accepted
 Uscp,3,merge,United States Capitol Police,USCP,organization,Congress,USCP: United States Capitol Police,accepted
 Ustp,3,merge,United States Trustee Program,USTP,organization,Department of Justice,USTP: United States Trustee Program,accepted
+Boehner And Pelosi,3,joint,B000589;P000197,,member,,"checked: Speaker Boehner and Leader Pelosi; Schakowsky and others, 2012-2016",accepted
+Boehner Pelosi,3,joint,B000589;P000197,,member,,"checked: Speaker Boehner and Leader Pelosi; Huffman, 2014",accepted
+Alexander And Murray,8,joint,A000360;M001111,,member,,"checked: Lamar Alexander and Patty Murray, HELP Committee chair and ranking member",accepted
+Alexander & Murray,3,joint,A000360;M001111,,member,,"checked: Lamar Alexander and Patty Murray, HELP Committee; Tester, 2017",accepted
+Wyden Schumer,5,joint,W000779;S000148,,member,,"checked: Ron Wyden and Charles Schumer; Bennet, 2021-2025",accepted
+Sens Menendez And Risch,5,joint,M000639;R000584,,member,,"checked: Sens. Robert Menendez (M000639, the senator, not the 118th-Congress representative) and James Risch, Foreign Relations; Cassidy, 2021",accepted
+Menendez And Risch,3,joint,M000639;R000584,,member,,"checked: Sens. Robert Menendez and James Risch, Foreign Relations; Cruz, 2021",accepted
+Sens Grassley Ernst (004),4,joint,G000386;E000295,,member,,"checked: Sens. Chuck Grassley and Joni Ernst; a response posted by Grassley, 2020",accepted
+"Defazio, Norton",4,joint,D000191;N000147,,member,,"checked: Peter DeFazio and Eleanor Holmes Norton, Transportation and Infrastructure; Davids, 2019",accepted
+Cochran Leahy Blunt Murray,4,joint,C000567;L000174;B000575;M001111,,member,,"checked: Thad Cochran, Patrick Leahy, Roy Blunt (not Blunt Rochester) and Patty Murray, Senate Appropriations; Tester, 2018",accepted
+Upton And Pallone,3,joint,U000031;P000034,,member,,"checked: Fred Upton and Frank Pallone, Energy and Commerce; Matsui, 2015",accepted
+Senators Specter And Leahy,3,joint,S000709;L000174,,member,,"checked: Arlen Specter and Patrick Leahy, Senate Judiciary; Waxman",accepted
+Senators Reid And Baucus,3,joint,R000146;B000243,,member,,"checked: Harry Reid and Max Baucus; Merkley, 2010",accepted
+Senators Landrieu And Vitter,3,joint,L000550;V000127,,member,,"checked: Mary Landrieu and David Vitter, Louisiana's senators; Scalise, 2014",accepted
+Senators Collins And Lieberman,3,joint,C001035;L000304,,member,,"checked: Susan Collins and Joseph Lieberman, Homeland Security and Governmental Affairs; Waxman",accepted
+Regula And Rep Obey,3,joint,R000141;O000007,,member,,"checked: Chairman Ralph Regula and Rep. David Obey, Appropriations; Waxman",accepted
+Regula And Obey,3,joint,R000141;O000007,,member,,"checked: Ralph Regula and David Obey, Appropriations; Waxman",accepted
+Nussle And Spratt,3,joint,N000172;S000749,,member,,"checked: Jim Nussle and John Spratt, House Budget; Waxman",accepted
+Merkley Wyden Bonamici Blumenauer,3,joint,M001176;W000779;B001278;B000574,,member,,"checked: Oregon's Jeff Merkley, Ron Wyden, Suzanne Bonamici and Earl Blumenauer; an inspector general's letter to them, 2020",accepted
+Levin Inhofe,3,joint,L000261;I000024,,member,,"checked: Carl Levin (not Sander) and James Inhofe, Armed Services; Blunt and McCaskill, 2014",accepted
+Lahood And Krishnamoorthi,3,joint,L000585;K000391,,member,,"checked: Darin LaHood (not Ray) and Raja Krishnamoorthi; posted by LaHood, 2018-2026",accepted
+Knollenberg And Rep Olver,3,joint,K000288;O000085,,member,,"checked: Chairman Joe Knollenberg and Rep. John Olver, Transportation-HUD Appropriations; Waxman",accepted
+Hensarling And Chariwoman Murray,3,joint,H001036;M001111,,member,,"checked: Jeb Hensarling and Patty Murray, co-chairs of the 2011 deficit committee; Welch, 2011",accepted
+Cornyn And Cruz,3,joint,C001056;C001098,,member,,"checked: John Cornyn and Ted Cruz, Texas's senators; Gooden, 2020",accepted
+Cantor And Mccarthy,3,joint,C001046;M001165,,member,,"checked: Eric Cantor and Kevin McCarthy (not Karen or Carolyn), House majority leader and whip; Barr, 2014",accepted
+Camp And Chairman Lucas,3,joint,C000071;L000491,,member,,"checked: Dave Camp and Frank Lucas (not Kenneth), Ways and Means and Agriculture chairs; Barr, 2014",accepted
