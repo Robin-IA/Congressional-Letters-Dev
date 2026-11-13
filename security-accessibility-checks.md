@@ -1,13 +1,13 @@
 # Security and accessibility checks
 
-**Status: passing.** All three checks passed on 2026-11-12 at commit `d428dfdc05`. Nothing is open. Advisory items below are optional.
+**Status: passing.** All three checks passed on 2026-11-12 at commit `155875d99d`. Nothing is open. Advisory items below are optional.
 
 > The checkout had uncommitted changes when this ran, so it describes a working tree, not a commit.
 
 | | |
 |---|---|
 | Explorer | https://github.com/Robin-IA/Congressional-Letters-Dev (pages served from its builds: Explorer-Letters and Explorer-Congressional-Letters-<N>) |
-| Commit | `d428dfdc05` on `explorer-checks` |
+| Commit | `155875d99d` on `explorer-checks` |
 | Date | 2026-11-12 |
 | Pages checked | `Explorer-Letters/`, `Explorer-Letters/?q=veterans`, `Explorer-Congressional-Letters-119/`, `Explorer-Congressional-Letters-119/?view=recipients`, `Explorer-Congressional-Letters-119/?view=timeline`, `Explorer-Congressional-Letters-119/?view=search&q=opioid`, `Explorer-Congressional-Letters-119/?view=about`, `Explorer-Congressional-Letters-119/?member=W000817`, `Explorer-Congressional-Letters-110/` |
 | Served from | http://127.0.0.1:8950/ |
@@ -28,7 +28,7 @@
 
 ## Standards met
 
-Checked 12 November 2026 at commit `d428dfdc05`, on the pages listed above:
+Checked 12 November 2026 at commit `155875d99d`, on the pages listed above:
 
 - **WCAG 2.2 Level AA**: every Level A and AA success criterion, by automated tests and a manual review of each criterion (checklists under each check below).
 - **WCAG 2.1 Level AA** and **WCAG 2.0 Level AA**, which WCAG 2.2 includes. 4.1.1 Parsing, dropped from 2.2 but still in 2.0 and 2.1, is covered by the code validity check (no HTML parse errors, no duplicate ids).
@@ -201,4 +201,4 @@ Optional. These items never block a pass.
 | `A-5406ea` | accessibility | Heading levels should only increase by one | `/Explorer-Congressional-Letters-119/ heading-order` |  | Ensure the order of headings is semantically correct See https://dequeuniversity.com/rules/axe/4.14/heading-order?application=axeAPI |
 | `A-d11ce6` | accessibility | Page should contain a level-one heading | `/Explorer-Congressional-Letters-119/ page-has-heading-one` |  | Ensure that the page, or at least one of its frames contains a level-one heading See https://dequeuniversity.com/rules/axe/4.14/page-has-heading-one?application=axeAPI |
 
-<!-- explorer-checks:state {"passing": true, "date": "2026-11-12", "commit": "d428dfdc054454f4e10afd51c44bc4963de8e53e", "open": [], "titles": {}} -->
+<!-- explorer-checks:state {"passing": true, "date": "2026-11-12", "commit": "155875d99d28fad4d2ddd997e571d768e02c8e13", "open": [], "titles": {}} -->
