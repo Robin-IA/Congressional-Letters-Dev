@@ -56,6 +56,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "build"))
+import address_holders  # noqa: E402
 import parse_urls  # noqa: E402
 import topics  # noqa: E402
 
@@ -313,6 +314,11 @@ def main() -> int:
         add(tid, label, "topic", "subject", "preferred", "local", "", per_topic.get(label, 0))
         for w in words:
             rel(tid, "matchWord", w, "preferred", "topics.py")
+
+    # Caucuses: a topic each, so By topic lists them and the tag finds them.
+    for label in sorted(set(address_holders.CAUCUSES.values())):
+        add(f"T-{slug(label)}", label, "topic", "caucus", "preferred", "local", "",
+            per_topic.get(label, 0))
 
     # Candidates: recipients nobody has reviewed ------------------------------
     # Spellings of one name are grouped: "Gov Newsom", "Governor Newsom".

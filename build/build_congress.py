@@ -200,7 +200,11 @@ def sort_letters(congresses: set[int]):
         if n not in congresses:
             continue
         flags[n][a.attribution] += 1
-        if a.attribution == "none" or a.attribution in ah.UNPUBLISHED:
+        if a.attribution == "caucus" and ah.caucus_name(rec["url"]):
+            # Published under the chair whose site hosts it, tagged with the
+            # caucus (decided 2026-11-12).
+            rec = {**rec, "caucus": ah.caucus_name(rec["url"])}
+        elif a.attribution == "none" or a.attribution in ah.UNPUBLISHED:
             continue
         by_congress[n].append((a.bioguide_id, a.attribution, rec))
     return by_congress, flags, total

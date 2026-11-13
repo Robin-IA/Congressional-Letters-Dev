@@ -13,6 +13,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "build"))
 
+import address_holders as ah  # noqa: E402
 from address_holders import (  # noqa: E402
     UNPUBLISHED,
     address_key,
@@ -174,6 +175,16 @@ class Attribute(unittest.TestCase):
     def test_the_day_a_seat_changes_hands_goes_to_the_incoming_holder(self):
         self.assertEqual(who("https://murphy.house.gov/a.pdf", "2023-01-03"), (GREG_MURPHY, "holder"))
 
+
+
+class CaucusNames(unittest.TestCase):
+    def test_named_caucuses_are_published_and_rsc_is_not(self):
+        self.assertEqual(ah.caucus_name("https://cpc.grijalva.house.gov/uploads/x.pdf"),
+                         "Congressional Progressive Caucus")
+        self.assertEqual(ah.caucus_name("http://www.bluedog.schrader.house.gov/a.pdf"),
+                         "Blue Dog Coalition")
+        self.assertEqual(ah.caucus_name("https://rsc.jordan.house.gov/a.pdf"), "")
+        self.assertEqual(ah.caucus_name("https://hireavet.denham.house.gov/a.pdf"), "")
 
 if __name__ == "__main__":
     unittest.main()

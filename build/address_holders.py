@@ -300,6 +300,30 @@ def attribute(idx: Index, url: str, date: str = "",
 # Attributions kept in the data but left out of every published explorer.
 UNPUBLISHED = {"caucus"}
 
+# Caucus sites published, by the subdomain's first label: credited to the
+# member whose site hosts them (the chair) and tagged with the caucus. Each
+# name as the caucus's own site or letters give it (checked 2026-11-12).
+# Not here, so still unpublished: rsc (its host is not the letter's chair,
+# and many are letters to it from outside groups), and hireavet, rwpc,
+# health, vrc and oversight-archive, not yet named from their own pages.
+CAUCUSES = {
+    "cpc": "Congressional Progressive Caucus",        # its letters
+    "cbc": "Congressional Black Caucus",              # its site's title
+    "bluedog": "Blue Dog Coalition",                  # its letters
+    "seecblog": "Sustainable Energy & Environment Coalition",  # its letters
+    "doctorscaucus": "GOP Doctors Caucus",            # its letters
+    "diabetes": "Diabetes Caucus",                    # its letters' filenames
+    "westerncaucus": "Congressional Western Caucus",  # its letters
+    "ndc": "New Democrat Coalition",                  # its letters
+    "esaworkinggroup": "Endangered Species Act Congressional Working Group",  # its site's title
+    "irc": "Immigration Reform Caucus",               # its site's title
+}
+
+
+def caucus_name(url: str) -> str:
+    """The caucus a letter's caucus subdomain belongs to, if it is published."""
+    return CAUCUSES.get(address_key(url).split(".", 1)[0], "")
+
 
 def caucus_parent(idx: Index, key: str) -> str:
     """The member address a caucus subdomain sits on, or "" if it is not one.

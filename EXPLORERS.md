@@ -50,6 +50,7 @@ the results.
 | 2026-11-12 | Ambiguous two-digit-year filename dates are read the way that fits the capture and the member's first year (PR #60, fixing #58). |
 | 2026-11-12 | **Every explorer says it covers only its own Congress**, and sends readers to the home page's search and By topic list for all of a member's letters. Asked for on every explorer, not explained on the 119th alone. |
 | 2026-11-12 | **A date nobody holding the address could have written on is set aside for the capture.** If a letter's date (from its filename or its PDF's metadata) finds no holder of the address, or a holder not in that Congress, and its capture does, it is placed and shown by its capture ("captured by"). This covers PDF dates that are a template's creation date and filename dates that were misread. Checked against the original 72,897 letters: 72,655 are now in an explorer. The other 242 are the 201 caucus letters (unpublished, #24) and 41 from 2008–2012 House sites missing from the address-holders table (taylor, miller, bean, jackson, barrett). |
+| 2026-11-12 | **Caucus letters are credited to the chair and tagged with the caucus** (Robin), for every caucus whose name its own site or letters confirm: `CAUCUSES` in `build/address_holders.py`, 10 caucuses, 124 letter rows. **The RSC is held** (#76): its host is not the letter's chair (rsc.scalise carries letters from before Scalise), and many of its letters are to it, not from it. Also held: five small hosts not yet named or not caucuses. 310 letters in all. |
 | 2026-11-12 | **A letter re-posted by a later holder of the same address is theirs.** When the date falls between two holders and the earlier one was not serving, but the next holder was serving on the date and the letter was captured during their tenure, it is the next holder's `earlier_office` letter, not the earlier holder's `after_service` one. Found on levin.house.gov: Mike Levin's letters, dated in 2019, were being attributed to Sander Levin. |
 
 ## The pipeline for Congress N
@@ -208,9 +209,11 @@ every letter on the sitting members' sites.
     capture (`METHODOLOGY.md` step 4).
 - **Credited by** `address_holders.attribute()`, at build time, never at
   harvest. A rebuild picks up new dates and roster fixes without a new harvest.
-- **Left out:** attribution `none`, and everything in `UNPUBLISHED`
-  (`caucus`, #24). They stay in the data, so a decision to publish them is a
-  rebuild, not a harvest.
+- **Left out:** attribution `none`, and `caucus` letters on a caucus not in
+  `CAUCUSES` (`build/address_holders.py`; #76). They stay in the data, so a
+  decision to publish them is a rebuild, not a harvest.
+- **Caucus letters** on a named caucus are published under the chair whose
+  site hosts them, with the caucus as a topic.
 - **Members:** everyone on Congress N's roster, with a count of zero where no
   letters were found. A member credited only with `after_service` letters is
   listed separately as a former holder (open, below).
@@ -333,7 +336,7 @@ the same page, from the 119th's data alone.
 
 ## Open
 
-- **Caucus letters** (#24): what it takes to publish them. Drop outside groups' letters to the RSC, dedupe it across its two hosts, and credit the chair on the letter's date.
+- **Caucus letters** (#24, #76): the RSC and five small hosts are still held. What it takes to publish the RSC: Drop outside groups' letters to the RSC, dedupe it across its two hosts, and credit the chair on the letter's date.
 - **Committee letters** (#23): rosters of committee sites and of their chairs and ranking members, then a harvest.
 - **A letter credited `after_service` to someone not on Congress N's
   roster**: list them in N's explorer as a former holder, or only in the
