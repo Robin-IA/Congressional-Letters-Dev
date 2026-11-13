@@ -11,6 +11,8 @@ commit. Nothing here is served by GitHub Pages.
 | `pc-render-106-114-paths.zip` | 12 November 2026, 11:34 | 7,260 PDFs to render | `C:\render3` |
 | `pack_return.py` | 12 November 2026, 11:55 | packs thumbnails and data for the return; never PDFs | each work folder |
 | `pc-ocr-106-115.zip` | 12 November 2026, 11:34 | 7,025 scans to fetch and OCR | `C:\ocr` |
+| `pc-render-all-missing.zip` | 12 November 2026, 21:44 | 6,860 PDFs to render (every letter in the explorers still without a preview; replaces `pc-render-106-114-paths.zip`) | `C:\render4` |
+| `pc-ocr-116-119.zip` | 12 November 2026, 21:45 | 7,198 scans to fetch and OCR (the 116th–119th; the 106th–115th stay with `pc-ocr-106-115.zip`) | `C:\ocr2` |
 
 Both harvests are finished and returned. The render bundle is the PC's
 current job, rebuilt at 09:51 on 12 November for a second run, with

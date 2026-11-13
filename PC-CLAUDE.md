@@ -1,5 +1,32 @@
 # For Claude on the PC
 
+> **New jobs as of 12 November 2026, 21:50, from the Mac.** Read this, then the
+> rules below, which still apply. Nothing in them is changed here.
+>
+> - **Job 3 replaces Job 1.** `pc-render-all-missing.zip` holds every PDF
+>   letter in the fourteen explorers that still has no preview: **6,860 PDFs**
+>   (9,814 letters), including whatever Job 1 did not finish, with the 934
+>   failures already recorded so they are not retried. Unzip it into
+>   `C:\render4` and run it the way Job 1 ran (`run_render.py`). If Job 1 is
+>   still running, push its last return and stop it first, or the two render
+>   the same letters.
+> - **Job 4 is the 116th–119th scans' OCR.** `pc-ocr-116-119.zip` holds
+>   **7,198 scans** with a preview but no text layer and no OCR. Unzip it into
+>   `C:\ocr2` and run it the way Job 2 runs (`fetch_for_ocr.py`, then
+>   `ocr_tesseract.py`). Job 2 keeps the 106th–115th; the two do not overlap.
+> - **Size.** At about 465 KB a PDF, Job 3 is about 3.2 GB of downloads and
+>   Job 4 about 3.3 GB. That is well past the 3 GB alert and most of the
+>   hotspot's 10 GB, so check with Robin which connection each runs on.
+> - **The Mac has stopped downloading.** Its render finished at 20:05 and its
+>   OCR is idle, so the reason for keeping Job 2 off Charter (leaving the Mac
+>   its allowance) no longer holds. Whether to change that rule is Robin's
+>   call.
+> - **Results come back as before**: `pack_return.py`, pushed on a
+>   `pc-render-return-*` or `pc-ocr-return-*` branch. The Mac's auto-publish
+>   job merges and publishes them without anyone's help, and every publish
+>   now rebuilds full-text search, so new OCR becomes searchable on its own.
+>   Tell the Mac the new branch names so it watches them.
+
 > **Rules as of 12 November 2026, 11:55. These replace anything older below.**
 >
 > 1. **Do not push PDFs to GitHub.** Stop pushing to `pc-render-pdfs-2`, and
