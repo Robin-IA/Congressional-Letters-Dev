@@ -26,6 +26,10 @@ ROOT = Path(__file__).resolve().parent.parent
 ROSTERS = ROOT / "data" / "rosters"
 WAYBACK = ROOT / "harvest" / "wayback"
 OUT = ROOT / "data" / "address-holders.csv"
+# Hosts a member used that their roster does not name: the roster gives
+# www.house.gov/<name>, and the letters sit on <name>.house.gov. Hand-kept,
+# each row with the capture that shows it, and only for the Congresses it covers.
+ALIASES = ROOT / "data" / "website-aliases.csv"
 CONGRESSES = range(106, 120)
 
 # Hosts several members used at once: the member's own path is the address.
@@ -111,6 +115,18 @@ def span(served: str) -> tuple[str, str]:
     return a.strip(), b.strip()
 
 
+def aliases(path: Path = ALIASES) -> dict[tuple[int, str], list[str]]:
+    """(congress, bioguide) -> extra website URLs, from data/website-aliases.csv."""
+    out: dict[tuple[int, str], list[str]] = defaultdict(list)
+    if path.exists():
+        with open(path, newline="", encoding="utf-8") as h:
+            for r in csv.DictReader(h):
+                a, _, b = r["congresses"].partition("-")
+                for n in range(int(a), int(b or a) + 1):
+                    out[(n, r["bioguide_id"])].append(r["alias_url"].strip())
+    return out
+
+
 def build(rows, lookups) -> list[Holding]:
     """Rule 2: a member holds an address during the Congresses whose roster
     gives it to them, and within those only during their service. A member who
@@ -121,8 +137,10 @@ def build(rows, lookups) -> list[Holding]:
     """
     # (address, bioguide) -> {congress: (from, to, row, urls)}
     terms: dict[tuple[str, str], dict[int, list]] = defaultdict(dict)
+    extra = aliases()
     for n, r in rows:
         urls = [u.strip() for u in r["website_at_the_time"].split("|") if u.strip()]
+        urls += [u for u in extra.get((n, r["bioguide_id"]), []) if u not in urls]
         a, b = span(r["served_this_congress"])
         moved = re.search(r"switched chamber (\d{4}-\d{2}-\d{2})", r.get("service_notes", ""))
         for u in urls:
