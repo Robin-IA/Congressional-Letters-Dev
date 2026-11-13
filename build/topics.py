@@ -143,6 +143,12 @@ SUBJECTS: dict[str, tuple[str, ...]] = {
                   "digital divide"),
     "Transportation": ("transportation", "highway", "transit", "rail",
                        "amtrak", "bridge"),
+    # Amtrak is all three: Transportation, Railroads, Public transportation.
+    "Railroads": ("railroad", "railway", "rail", "amtrak", "passenger rail",
+                  "freight rail", "rail safety"),
+    "Public transportation": ("public transportation", "public transit",
+                              "transit", "amtrak", "commuter rail", "subway",
+                              "bus service"),
     "Aviation": ("aviation", "airline", "airport", "faa certification",
                  "boeing"),
     "Postal Service": ("postal", "usps delay", "mail delivery"),
@@ -237,13 +243,17 @@ def tag(text: str, limit: int = 4) -> list[str]:
     found: list[str] = []
     i = 0
     while i < len(words):
+        hit = None
         for phrase, label in INDEX.get(words[i], ()):
             size = len(phrase.split())
-            if " ".join(words[i:i + size]) == phrase:
-                if label not in found:
-                    found.append(label)
-                i += size - 1
-                break
+            # Every label of the longest matching phrase: "amtrak" is
+            # Transportation, Railroads and Public transportation at once.
+            if hit is None and " ".join(words[i:i + size]) == phrase:
+                hit = phrase
+            if phrase == hit and label not in found:
+                found.append(label)
+        if hit:
+            i += len(hit.split()) - 1
         i += 1
     return found[:limit]
 
