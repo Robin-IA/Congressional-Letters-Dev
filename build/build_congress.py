@@ -166,14 +166,39 @@ def sort_letters(congresses: set[int]):
     by_congress: dict[int, list] = {n: [] for n in congresses}
     flags: dict[int, Counter] = {n: Counter() for n in congresses}
     total = 0
+    rosters: dict[int, set] = {}
+
+    def on_roster(n: int, bioguide: str) -> bool:
+        if n not in rosters:
+            try:
+                rosters[n] = {m["bioguide"] for m in roster_members(n)}
+            except Exception:  # noqa: BLE001 - a Congress with no roster file
+                rosters[n] = set()
+        return bioguide in rosters[n]
+
     for rec in all_letters():
         total += 1
         own = rec.get("date") or dates.get(rec.get("digest") or "")
+        a = ah.attribute(idx, rec["url"], own or "", rec.get("first_seen") or "")
+        if own and (a.attribution == "none"
+                    or not on_roster(congress_of(own), a.bioguide_id)):
+            # A date nobody holding the address could have written the
+            # letter on. From the PDF's metadata it is a template's creation
+            # date: Cotton's blinken_letter1.pdf says 2008, five years before
+            # he entered Congress, first captured 2023. From the filename it
+            # is a misread: "1.08.07.20 letter to doj" read as 2007-01-08,
+            # "letter-zone-7-23.03.24" as 2003-07-23. Either way the capture
+            # bounds it, so the letter is placed and shown by its capture,
+            # as one with no date would be, and says so ("captured by").
+            b = ah.attribute(idx, rec["url"], "", rec.get("first_seen") or "")
+            if b.attribution != "none":
+                own, a = "", b
+                rec = {**rec, "date": None, "date_best": rec.get("first_seen"),
+                       "date_precision": "captured-by", "date_rejected": True}
         best = own or rec.get("date_best")
         n = congress_of(best or "")
         if n not in congresses:
             continue
-        a = ah.attribute(idx, rec["url"], own or "", rec.get("first_seen") or "")
         flags[n][a.attribution] += 1
         if a.attribution == "none" or a.attribution in ah.UNPUBLISHED:
             continue
@@ -201,6 +226,8 @@ def page_files(n: int, dest: Path) -> None:
     html = html.replace('src="../app.js?v=', 'src="app.js?v=')
     # "All Congresses" goes to Letters from Congress, Explorer-Letters (build_hub.py), which is
     # published beside the explorers: robin-ia.github.io/<repo>/ for each.
+    html = swap(html, 'class="home" href="../?view=topics"',
+                'class="home" href="../Explorer-Letters/?view=topics"', "home link")
     html = swap(html, 'class="crumb" href="../"',
                 'class="crumb" href="../Explorer-Letters/"', "crumb link")
     # The 119th's name for itself. Each Congress's own label already says

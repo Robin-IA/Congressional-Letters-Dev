@@ -233,7 +233,10 @@ def attribute(idx: Index, url: str, date: str = "",
 
     In a span: that holder. Between two holders: the earlier, flagged
     ``after_service`` (decided 2026-11-09) unless that member was still in
-    office then, in the same chamber, at another address. Before the first
+    office then, in the same chamber, at another address; or, when the letter
+    was first captured in the later holder's span and that member was already
+    in Congress on its date, the later one, flagged ``earlier_office``
+    (decided 2026-11-12). Before the first
     holder: that holder, flagged ``earlier_office`` (decided 2026-11-09), if
     they were in Congress then in any chamber; otherwise ``none``. After the
     last: ``none``. On the day a seat changes hands both spans include it; the
@@ -269,7 +272,20 @@ def attribute(idx: Index, url: str, date: str = "",
         # is after service.
         serving = any(a <= d <= b and ch == last.chamber
                       for a, b, ch in getattr(idx, "service", {}).get(last.bioguide_id, []))
-        return Attribution(last.bioguide_id, "holder" if serving else "after_service", flag)
+        if serving:
+            return Attribution(last.bioguide_id, "holder", flag)
+        # The earlier holder had left. If the letter was first captured while
+        # the next holder held the address, and that member was already in
+        # Congress on its date, it is theirs, reposted from an earlier office:
+        # Mike Levin's 2019-22 letters, written at mikelevin.house.gov and
+        # captured at levin.house.gov after he took it in 2023, were going to
+        # Sander Levin, who left in 2019 (decided 2026-11-12).
+        nxt = min(later, key=lambda h: h.held_from)
+        cap = _iso(first_capture) if first_capture else ""
+        if (cap and cap >= nxt.held_from and
+                any(a <= d <= b for a, b, _ in getattr(idx, "service", {}).get(nxt.bioguide_id, []))):
+            return Attribution(nxt.bioguide_id, "earlier_office", flag)
+        return Attribution(last.bioguide_id, "after_service", flag)
     if later and not earlier:
         # Before the address's first holder, but written by that member in an
         # earlier office and reposted here: Baldwin's and Sanders's House
