@@ -1269,6 +1269,18 @@ function viewAbout() {
       has “letter” inside it. For one senator, 784 of the 1,204 matching files were
       newsletters.`),
 
+    // The data download lives here, not on the home page's cards (EXPLORERS.md,
+    // 2026-11-13). export_csv.py writes it beside each explorer's index.json.
+    ...((INDEX.congress || {}).ordinal ? [
+      el('h3', { id: 'download' }, 'Download the data'),
+      el('p', {}, `Every letter in this explorer as one spreadsheet (CSV), one row per letter: `
+        + 'the member, their party, state and district, the date, the recipient, the topics, '
+        + 'the subject, and links to the letter on the Wayback Machine.'),
+      el('p', {}, el('a', {
+        href: `data/letters-from-congress-${INDEX.congress.ordinal}.csv`, download: '',
+      }, `Download the ${INDEX.congress.ordinal} Congress data (${num(INDEX.letters)} letters, CSV)`)),
+    ] : []),
+
     el('h3', {}, 'By the numbers'),
     el('table', {}, el('tbody', {},
       el('tr', {}, el('td', {}, 'Letters'),
