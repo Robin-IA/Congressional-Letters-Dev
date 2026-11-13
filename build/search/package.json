@@ -1,0 +1,9 @@
+{
+  "name": "letters-from-congress-search",
+  "private": true,
+  "description": "Builds each explorer's full-text search index with Pagefind. Build time only; nothing here is served except the index it writes.",
+  "type": "module",
+  "dependencies": {
+    "pagefind": "1.5.2"
+  }
+}

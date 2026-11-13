@@ -851,6 +851,79 @@ async function viewYear(yearText) {
           id => link({ member: id }, null, byId.get(id)?.name || '—'), 14))));
 }
 
+// Full-text search, from the Pagefind index build/build_search.py writes into
+// this explorer's pagefind/ folder. Loaded only when someone searches, and
+// only once. An explorer built without the index (the template's own preview)
+// says so instead.
+let pagefindLoad = null;
+const pagefind = () => (pagefindLoad ??= import('./pagefind/pagefind.js').catch(() => null));
+
+// Pagefind escapes the letter's text and wraps matches in <mark>. Built as
+// nodes, not inserted as markup: the excerpt is split on its <mark> tags and
+// each piece decoded as text, so nothing in a letter can become markup.
+const decodeEntities = t => t.replace(/&(lt|gt|quot|#39|#x27|amp);/g,
+  m => ({ '&lt;': '<', '&gt;': '>', '&quot;': '"', '&#39;': "'", '&#x27;': "'", '&amp;': '&' })[m]);
+function excerptNodes(html) {
+  const out = [];
+  let marked = false;
+  for (const piece of String(html || '').split(/(<mark>|<\/mark>)/)) {
+    if (piece === '<mark>') { marked = true; continue; }
+    if (piece === '</mark>') { marked = false; continue; }
+    if (!piece) continue;
+    const text = decodeEntities(piece);
+    out.push(marked ? el('mark', {}, text) : text);
+  }
+  return out;
+}
+
+function fullTextResult(d) {
+  const m = d.meta || {};
+  const ids = (m.member_ids || '').split(';').filter(Boolean);
+  const names = (m.members || '').split('; ');
+  const who = ids.map((id, i) => link({ member: id }, null, names[i] || id));
+  const row = [];                       // when() reads a letter row by column
+  row[F.date] = m.date; row[F.precision] = m.precision;
+  const date = m.date ? when(row, true) : '';
+  return el('li', { class: 'fulltext' },
+    el('a', { href: d.url, target: '_blank', rel: 'noopener', class: 'ft-title' }, m.title || 'Letter'),
+    el('span', { class: 'ft-meta' },
+      ...who.flatMap((a, i) => (i ? [', ', a] : [a])),
+      m.recipient ? ` to ${m.recipient}` : '',
+      date ? ` · ${date}` : '',
+      m.source === 'ocr'
+        ? el('span', { class: 'chip', title: 'Read by OCR from a scanned page; the excerpt may contain misreadings' }, 'OCR')
+        : null),
+    el('p', { class: 'ft-excerpt' }, ...excerptNodes(d.excerpt)));
+}
+
+function fullTextPanel(query) {
+  const status = el('p', { class: 'small muted', role: 'status' }, 'Searching the text of the letters…');
+  const list = el('ol', { class: 'fulltext-list' });
+  const panel = el('div', { class: 'panel' },
+    el('h2', { class: 'panel-h' }, 'In the letters’ own words'), status, list);
+  (async () => {
+    const pf = await pagefind();
+    if (!pf) { status.textContent = 'Full-text search is not available for this explorer.'; return; }
+    const res = await pf.search(query);
+    const total = res.results.length;
+    status.textContent = total
+      ? `${num(total)} letters contain “${query}”. About two thirds of letters have readable text; scans are read by OCR.`
+      : `No letter’s text contains “${query}”. About two thirds of letters have readable text.`;
+    let next = 0;
+    const more = el('button', { class: 'more', type: 'button' });
+    const page = async () => {
+      const batch = await Promise.all(res.results.slice(next, next + 20).map(r => r.data()));
+      next += batch.length;
+      list.append(...batch.map(fullTextResult));
+      if (next < total) { more.textContent = `Show more — ${num(total - next)} more`; if (!more.isConnected) panel.append(more); }
+      else more.remove();
+    };
+    more.addEventListener('click', page);
+    if (total) await page();
+  })().catch(() => { status.textContent = 'Full-text search is unavailable right now.'; });
+  return panel;
+}
+
 async function viewSearch(query) {
   const needle = (query || '').trim().toLowerCase();
   const runSearch = text => {
@@ -1011,7 +1084,7 @@ async function viewSearch(query) {
         ' written to') : null,
       '. ',
       el('span', { class: 'faint' },
-        'This searches letter descriptions, not the words within the letters.')),
+        'Matches in letter descriptions are below; the text of the letters is searched under “In the letters’ own words”.')),
     nameHits.length
       ? el('div', { class: 'panel' }, el('h3', {}, 'Members'),
         el('div', { class: 'grid' }, ...nameHits.slice(0, 9).map(m =>
@@ -1024,6 +1097,7 @@ async function viewSearch(query) {
       ? el('div', { class: 'panel' }, el('h3', {}, 'Sent to'),
         rankList(recipientHits, name => link({ to: name }, null, name), 8))
       : null,
+    fullTextPanel(query),
     letterHits.length
       ? el('div', { class: 'panel' }, el('h3', {}, 'Letters'), table)
       : null);
