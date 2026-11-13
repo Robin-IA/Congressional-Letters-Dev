@@ -1,13 +1,13 @@
 # Security and accessibility checks
 
-**Status: not passing.** 1 of 3 checks have open items. Each one below has a recommended fix. Make the fixes, then re-run the explorer-checks skill. This file is replaced on every run.
+**Status: passing.** All three checks passed on 2026-11-12 at commit `155875d99d`. Nothing is open. Advisory items below are optional.
 
 > The checkout had uncommitted changes when this ran, so it describes a working tree, not a commit.
 
 | | |
 |---|---|
 | Explorer | https://github.com/Robin-IA/Congressional-Letters-Dev (pages served from its builds: Explorer-Letters and Explorer-Congressional-Letters-<N>) |
-| Commit | `ed2bffbbb1` on `explorer-checks` |
+| Commit | `155875d99d` on `explorer-checks` |
 | Date | 2026-11-12 |
 | Pages checked | `Explorer-Letters/`, `Explorer-Letters/?q=veterans`, `Explorer-Congressional-Letters-119/`, `Explorer-Congressional-Letters-119/?view=recipients`, `Explorer-Congressional-Letters-119/?view=timeline`, `Explorer-Congressional-Letters-119/?view=search&q=opioid`, `Explorer-Congressional-Letters-119/?view=about`, `Explorer-Congressional-Letters-119/?member=W000817`, `Explorer-Congressional-Letters-110/` |
 | Served from | http://127.0.0.1:8950/ |
@@ -23,8 +23,17 @@
 | Check | Result | Must fix | Needs review | Advisory |
 |---|---|---:|---:|---:|
 | Code validity | Pass | 0 | 0 | 12 |
-| Code security | **Not passing** | 0 | 0 | 32 |
+| Code security | Pass | 0 | 0 | 32 |
 | Accessibility (WCAG 2.2 AA) | Pass | 0 | 0 | 5 |
+
+## Standards met
+
+Checked 12 November 2026 at commit `155875d99d`, on the pages listed above:
+
+- **WCAG 2.2 Level AA**: every Level A and AA success criterion, by automated tests and a manual review of each criterion (checklists under each check below).
+- **WCAG 2.1 Level AA** and **WCAG 2.0 Level AA**, which WCAG 2.2 includes. 4.1.1 Parsing, dropped from 2.2 but still in 2.0 and 2.1, is covered by the code validity check (no HTML parse errors, no duplicate ids).
+- These are the web content requirements of **Section 508** (US federal; WCAG 2.0 AA) and **EN 301 549** clause 9 (WCAG 2.1 AA).
+- Security was checked against the OWASP Top 10:2025 risks and ASVS 5.0.0 chapters that apply to an explorer; each finding and checklist item names its category. That is not an ASVS verification at any level.
 
 ## What a pass means
 
@@ -38,14 +47,14 @@ No open items.
 
 No open items.
 
-<details><summary>Manual checklist (9 pass, 1 fail, 10 n/a)</summary>
+<details><summary>Manual checklist (10 pass, 0 fail, 10 n/a)</summary>
 
 | Item | Result | Note |
 |---|---|---|
 | No secrets | pass | No secret findings from the scanner; the build scripts read only public endpoints and carry no keys or tokens. |
 | Untrusted data is escaped | pass | Explorers and the home page build every node with createTextNode or setAttribute (no innerHTML of data). The federated/ mockup's three unescaped sinks are fixed (744c4b789); all ten sinks resolved above. |
 | URLs from data are safe | pass | Letter and thumbnail links use a fixed https://web.archive.org prefix. Member site links are written only if they start http(s) (build_site.py, 744c4b789); the mockup's links pass safeHref(). |
-| Harvested data is validated | fail | Site URLs are now checked, but parsed letter dates are not checked against the first capture or the member's years of service: 13 letters carry impossible dates (one after its own capture). Tracked as Robin-IA/Congressional-Letters-Dev#58 with the fix. |
+| Harvested data is validated | pass | Parsed letter dates are checked: a two-digit-year date is read the way that is not after the file's first capture and not before the member first served (parse_urls.py, PR #60, fixing #58), and a date after its own capture with no reading that fits is dropped for the capture date. Member site URLs a |
 | Third-party code is pinned | pass | No CDN scripts: the pages load only their own app.js / hub.js. |
 | No mixed content | pass | Everything the pages load is same-origin over https; outbound links to web.archive.org are https. |
 | Dependencies are pinned and maintained | pass | requirements.txt pins exact versions (744c4b789). Python 3.15 is current. |
@@ -108,14 +117,14 @@ No open items.
 | 1.3.2 Meaningful sequence | pass | DOM order matches reading order on the home page (text column, then letters) and in the explorers. |
 | 1.4.1 Use of color | pass | Selected explorer tab has an underline and aria-current; links in running text are now underlined; the chart uses one colour with labels. |
 | 1.4.11 Non-text contrast | pass | Explorer filter borders now #8a8a90, 3.4:1 (ed2bffbbb). Home page search border (#2c5aa0, 2px) and focus rings pass. |
-| 1.4.4 Resize text / 1.4.12 Text spacing | pass | At 640 px (200% of 1280) neither page scrolls sideways or clips, and at 320 px every checked view fits (measured in headless Chromium). |
+| 1.4.4 Resize text / 1.4.12 Text spacing | pass | At 640 px (200% of 1280) neither page scrolls sideways or clips, and at 320 px every checked view fits (measured in headless Chromium). Re-checked on the build at d428dfdc0. |
 | 2.4.4 Link purpose | pass | Member cards are named by member, chart links by Congress and count, site links by host. |
 | 2.4.6 Headings and labels | pass | Views have h1 titles, and the three dropdowns are named Chamber, Party and Sort by. |
 | 3.1.1 Language of page | pass | lang="en" on the home page and every explorer. |
 | 2.1.1 Keyboard | pass | Every control is a native link, button, input or select; the chart bars are links. |
 | 2.1.2 No keyboard trap | pass | No modals or embeds; tabbing moves through and out of every widget. |
 | 2.4.1 Bypass blocks | pass | No skip link, but header, nav, search, main and footer landmarks on both page types. |
-| 2.4.3 Focus order | pass | Order follows reading order, and changing a filter now returns focus to that control (verified: Chamber to Senate, focus stays on the Chamber dropdown). |
+| 2.4.3 Focus order | pass | Order follows reading order, and changing a filter now returns focus to that control (verified: Chamber to Senate, focus stays on the Chamber dropdown). Re-checked on the build at d428dfdc0. |
 | 2.4.7 Focus visible | pass | Home page: 3px outline on every link and button, ring shadow on the search box. Explorer: the browser focus ring on every control, checked by tabbing. |
 | 2.4.11 Focus not obscured | pass | A card focused further down the explorer lands at 401 px, clear of the sticky tab bar (bottom at 47 px). |
 | 2.5.8 Target size | pass | Topic links are now at least 24 px tall (ed2bffbbb); axe finds no target-size issue on any checked page. |
@@ -123,7 +132,7 @@ No open items.
 | 3.2.2 On input | pass | Changing a select filters in place (history.replaceState); it does not navigate away. |
 | 3.3.2 Labels or instructions | pass | Search boxes have an accessible name and an adjacent Search button (G167); the dropdowns are named, and each shows its current choice (Both chambers, Any party, Most letters) as its visible text. |
 | 4.1.2 Name, role, value | pass | View tabs are buttons carrying aria-current on the selected one; the letters/list toggle uses aria-pressed. |
-| 4.1.3 Status messages | pass | Home page search status and the explorer's members and recipients counts are role="status" (ed2bffbbb); verified they update in place. |
+| 4.1.3 Status messages | pass | Home page search status and the explorer's members and recipients counts are role="status" (ed2bffbbb); verified they update in place. Re-checked on the build at d428dfdc0. |
 | 1.2.2 Captions | n/a | No audio or video. |
 
 </details>
@@ -132,33 +141,9 @@ No open items.
 
 | Id | Item | Where | Why cleared |
 |---|---|---|---|
-| `A-251e8d` | Elements must meet minimum color contrast ratio thresholds | `/Explorer-Letters/ color-contrast` | Measured by hand on the fixed build. The hero text sits on a gradient (#f6e9ea to #faf7f2), not the image: kicker 8.5:1, h1 11.3:1, lede 13:1, note 5.1:1. The photo credit (figcaption) is white 11.5px on rgba(20,20,24,.72) (fixed in ed2bffbbb, was .55): over the photograph's lightest pixels that com |
+| `A-251e8d` | Elements must meet minimum color contrast ratio thresholds | `/Explorer-Letters/ color-contrast` | Measured by hand (unchanged since ed2bffbbb). The hero text sits on a gradient (#f6e9ea to #faf7f2), not the image: kicker 8.5:1, h1 11.3:1, lede 13:1, note 5.1:1. The photo credit (figcaption) is white 11.5px on rgba(20,20,24,.72) (fixed in ed2bffbbb, was .55): over the photograph's lightest pixels |
 
 </details>
-
-## Fixed since the last run
-
-- `A-155de5` Explorer search box and filter dropdowns have borders too faint to see
-- `A-251e8d` Elements must meet minimum color contrast ratio thresholds
-- `A-2942b7` Links must be distinguishable without relying on color
-- `A-3e6bb7` Links must be distinguishable without relying on color
-- `A-4a24ac` Elements must meet minimum color contrast ratio thresholds
-- `A-4c1f2b` Explorer filter count is not announced
-- `A-4cd8bb` Explorer views have no headings: the page title is a styled paragraph
-- `A-6500b2` Page scrolls sideways at 320 px wide
-- `A-8bd0c2` Home page search results are not announced
-- `A-bac58d` Page scrolls sideways at 320 px wide
-- `A-ccd44e` Select element must have an accessible name
-- `A-cf4f4f` Select element must have an accessible name
-- `A-dd0005` Changing a filter sends keyboard focus to the top of the page
-- `A-f3579e` All touch targets must be 24px large, or leave sufficient space
-- `S-11bd79` Use of weak SHA1 hash for security. Consider usedforsecurity=False
-- `S-3e1881` Use of weak SHA1 hash for security. Consider usedforsecurity=False
-- `S-47758c` Member website links are not checked for scheme
-- `S-4e8008` String rendered as markup or code (innerHTML)
-- `S-784cfb` String rendered as markup or code (innerHTML)
-- `S-bb0739` Use of weak SHA1 hash for security. Consider usedforsecurity=False
-- `S-fbe8a3` String rendered as markup or code (innerHTML)
 
 ## Advisory (49)
 
@@ -216,4 +201,4 @@ Optional. These items never block a pass.
 | `A-5406ea` | accessibility | Heading levels should only increase by one | `/Explorer-Congressional-Letters-119/ heading-order` |  | Ensure the order of headings is semantically correct See https://dequeuniversity.com/rules/axe/4.14/heading-order?application=axeAPI |
 | `A-d11ce6` | accessibility | Page should contain a level-one heading | `/Explorer-Congressional-Letters-119/ page-has-heading-one` |  | Ensure that the page, or at least one of its frames contains a level-one heading See https://dequeuniversity.com/rules/axe/4.14/page-has-heading-one?application=axeAPI |
 
-<!-- explorer-checks:state {"passing": false, "date": "2026-11-12", "commit": "ed2bffbbb1db636c4195bb7aa7463cf3a4482625", "open": [], "titles": {}} -->
+<!-- explorer-checks:state {"passing": true, "date": "2026-11-12", "commit": "155875d99d28fad4d2ddd997e571d768e02c8e13", "open": [], "titles": {}} -->
