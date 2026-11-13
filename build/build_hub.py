@@ -98,6 +98,9 @@ def main() -> int:
         csvs = sorted((d / "data").glob("letters-from-congress-*.csv"))
         if csvs:
             entry["download"] = f"../{d.name}/data/{csvs[-1].name}"
+        # Whether this explorer has a full-text index (build_search.py), so the
+        # page merges only the indexes that exist rather than probing for them.
+        entry["search"] = (d / "pagefind" / "pagefind-entry.json").exists()
         congresses.append(entry)
     if not congresses:
         sys.exit(f"no explorers under {args.explorers}")

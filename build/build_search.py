@@ -25,6 +25,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -56,7 +57,7 @@ def load_text(path: Path, source: str, into: dict) -> None:
                 into[digest] = (text, source)
 
 
-def records(explorer: Path, text: dict) -> list[dict]:
+def records(explorer: Path, text: dict, congress: int) -> list[dict]:
     index = json.loads((explorer / "index.json").read_text(encoding="utf-8"))
     col = {name: i for i, name in enumerate(index["columns"])}
     names = {m["id"]: m["name"] for m in index["members"]}
@@ -91,6 +92,9 @@ def records(explorer: Path, text: dict) -> list[dict]:
                 "members": "; ".join(names.get(b, b) for b in members),
                 "member_ids": ";".join(members),
                 "digest": digest,
+                # Which explorer the letter is in: the home page searches all
+                # of them at once and links each result into its own.
+                "congress": str(congress),
                 # OCR text has misreadings; the page says which a match came from.
                 "source": source,
             },
@@ -117,17 +121,25 @@ def main() -> int:
         if not (explorer / "index.json").exists():
             print(f"{n}th: no explorer built at {explorer}", file=sys.stderr)
             continue
-        recs = records(explorer, text)
+        recs = records(explorer, text, n)
         with tempfile.NamedTemporaryFile("w", suffix=".jsonl", delete=False, encoding="utf-8") as tmp:
             for r in recs:
                 tmp.write(json.dumps(r, ensure_ascii=False) + "\n")
-        out = explorer / "pagefind"
-        result = subprocess.run(["node", str(SEARCH / "index_records.mjs"), tmp.name, str(out)],
+        # Into a fresh folder, swapped in only once it is complete. Pagefind
+        # adds files and never removes a previous build's, so writing over
+        # the old index doubled it at every build; and a failed build should
+        # leave the last good index, not half of one.
+        out, fresh = explorer / "pagefind", explorer / "pagefind.new"
+        shutil.rmtree(fresh, ignore_errors=True)
+        result = subprocess.run(["node", str(SEARCH / "index_records.mjs"), tmp.name, str(fresh)],
                                 cwd=SEARCH, capture_output=True, text=True)
         Path(tmp.name).unlink()
         if result.returncode:
+            shutil.rmtree(fresh, ignore_errors=True)
             print(f"{n}th: index FAILED\n{result.stderr.strip()}", file=sys.stderr)
             return 1
+        shutil.rmtree(out, ignore_errors=True)
+        fresh.rename(out)
         size = sum(f.stat().st_size for f in out.rglob("*") if f.is_file()) / 1048576
         ocr = sum(1 for r in recs if r["meta"]["source"] == "ocr")
         print(f"{n}th: {len(recs):,} documents indexed ({ocr:,} from OCR), {size:.1f} MB", file=sys.stderr)
