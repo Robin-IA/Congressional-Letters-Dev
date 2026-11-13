@@ -403,7 +403,9 @@ def main() -> None:
         by_member[bioguide].append([
             record["key"], record["timestamp"], kind, best,
             precision, recipient, subject,
-            ",".join(tag_topics(f"{subject or ''} {recipient or ''}")),
+            # A caucus letter carries its caucus as a topic (build_congress.py).
+            ",".join(([record["caucus"]] if record.get("caucus") else [])
+                     + tag_topics(f"{subject or ''} {recipient or ''}")),
             ",".join(record.get("cosigners") or []),
             digest,
         ])
