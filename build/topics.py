@@ -191,6 +191,21 @@ SUBJECTS: dict[str, tuple[str, ...]] = {
     # Office; 'shipping' is any parcel. Added 14 November 2026 (#143).
     "Budgets": (),
     "Shipping": (),
+    "Social media": ("social media", "content moderation", "section 230",
+                     "platform moderation", "online platform"),
+    "Data centers": ("data center", "data centre", "hyperscale",
+                     "server farm"),
+    # Under Guns. The parent keeps the broad words; these take the argument,
+    # so a letter can be about guns and about which side of it.
+    "Gun control": ("gun control", "gun safety", "background check",
+                    "assault weapons ban", "red flag law", "magazine ban",
+                    "gun buyback"),
+    "Gun rights": ("second amendment", "gun rights", "right to keep and bear arms",
+                   "concealed carry", "law-abiding gun owner"),
+    "Gun violence": ("gun violence", "firearm death", "gun homicide",
+                     "shooting death", "gun suicide"),
+    "Mass shootings": ("mass shooting", "school shooting", "active shooter",
+                       "mass casualty shooting"),
     "Cannabis": ("cannabis", "marijuana", "hemp"),
     # Not the bare word "judiciary": it names the Judiciary Committees, and
     # 320 of 382 letters it tagged were committee correspondence (Peace
