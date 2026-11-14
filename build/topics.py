@@ -195,8 +195,18 @@ SUBJECTS: dict[str, tuple[str, ...]] = {
     # Not the bare word "judiciary": it names the Judiciary Committees, and
     # 320 of 382 letters it tagged were committee correspondence (Peace
     # Corps oversight, H-1B, ATF grants), not the courts. Measured 14 Nov 2026.
-    "Judiciary": ("judicial", "federal judge", "federal court",
-                  "circuit court", "district court", "supreme court"),
+    # Courts, not "Judiciary": the letters name particular courts far more
+    # often than they discuss the branch. Sub-topics can be split out of this
+    # later -- Supreme Court, circuit courts, immigration courts -- without
+    # the parent having to be renamed first.
+    #
+    # The bare words are deliberately absent. "judiciary" tagged the Judiciary
+    # Committees' correspondence as the courts: 382 letters, about 320 of them
+    # committee files; without it, 62, every sampled one about courts or judges
+    # (the Mac, #147). "court" alone appears in any letter about litigation.
+    "Courts": ("judicial", "federal judge", "federal court",
+               "circuit court", "district court", "supreme court",
+               "court of appeals", "appellate court"),
     "Violence against government officials": (
         "violence against judges", "violence against public officials",
         "violence against government officials", "violence against election",
