@@ -46,6 +46,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "build"))
 import address_holders as ah  # noqa: E402
 import last_updated  # noqa: E402
+import letter_text  # noqa: E402
 
 ROSTERS = ROOT / "data" / "rosters"
 PARSED = [ROOT / "data" / "letters-parsed.jsonl",
@@ -272,6 +273,12 @@ def sort_letters(congresses: set[int]):
     """Each letter's Congress and holder, for the Congresses asked for."""
     idx = ah.index(ah.load())
     dates = pdf_dates()
+    # Dates read from the letter by a person (vocabulary/letter-dates.csv,
+    # #134). They decide the Congress and the holder, not only the date the
+    # page shows: a scan posted at several addresses has a record for each,
+    # and each was placed by its own capture until 14 November 2026, so one
+    # letter dated 20 August 2020 sat in the 116th, 117th and 118th.
+    hand = letter_text.dates_by_hand()
     by_congress: dict[int, list] = {n: [] for n in congresses}
     flags: dict[int, Counter] = {n: Counter() for n in congresses}
     total = 0
@@ -287,9 +294,13 @@ def sort_letters(congresses: set[int]):
 
     for rec in all_letters():
         total += 1
+        read = hand.get(rec.get("digest") or "")
+        if read:
+            rec = {**rec, "date": read[0], "date_precision": read[1],
+                   "date_best": read[0], "dated_by": "hand"}
         own = rec.get("date") or dates.get(rec.get("digest") or "")
         a = ah.attribute(idx, rec["url"], own or "", rec.get("first_seen") or "")
-        if own and (a.attribution == "none"
+        if own and not read and (a.attribution == "none"
                     or not on_roster(congress_of(own), a.bioguide_id)):
             # A date nobody holding the address could have written the
             # letter on. From the PDF's metadata it is a template's creation
