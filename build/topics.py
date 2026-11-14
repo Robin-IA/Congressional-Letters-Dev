@@ -191,6 +191,17 @@ SUBJECTS: dict[str, tuple[str, ...]] = {
     # Office; 'shipping' is any parcel. Added 14 November 2026 (#143).
     "Budgets": (),
     "Shipping": (),
+    # The armed services, under Defense. The parent says a letter is about
+    # defence; these say which service. Each uses its own name rather than a
+    # own name. "navy" and "army" are kept bare: letters say "the Navy", not
+    # "the United States Navy", and the near-misses -- the Navy Yard, the Army
+    # Corps of Engineers -- belong to those services anyway. Army Corps keeps
+    # its own agency tag as well.
+    "Air Force": ("air force", "department of the air force"),
+    "Army": ("army", "department of the army", "army national guard"),
+    "Marine Corps": ("marine corps", "marines", "u.s. marines"),
+    "Navy": ("navy", "department of the navy", "naval"),
+    "Space Force": ("space force", "united states space force"),
     "Social media": ("social media", "content moderation", "section 230",
                      "platform moderation", "online platform"),
     "Data centers": ("data center", "data centre", "hyperscale",
