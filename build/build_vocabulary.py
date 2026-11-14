@@ -57,6 +57,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "build"))
 import address_holders  # noqa: E402
+import caucuses  # noqa: E402
 import committees  # noqa: E402
 import parse_urls  # noqa: E402
 import topics  # noqa: E402
@@ -317,7 +318,12 @@ def main() -> int:
             rel(tid, "matchWord", w, "preferred", "topics.py")
 
     # Caucuses: a topic each, so By topic lists them and the tag finds them.
-    for label in sorted(set(address_holders.CAUCUSES.values())):
+    # Those found by address (address_holders.CAUCUSES) always; those read
+    # from the letters (caucuses.py) once a letter is theirs.
+    by_address = set(address_holders.CAUCUSES.values())
+    caucus_labels = sorted(by_address | {lab for lab in caucuses.labels()
+                                         if per_topic.get(lab, 0)})
+    for label in caucus_labels:
         add(f"T-{slug(label)}", label, "topic", "caucus", "preferred", "local", "",
             per_topic.get(label, 0))
 
@@ -536,8 +542,9 @@ def main() -> int:
                            "broader": f"{committees.chamber(label)} committees"})
 
     # Caucuses sit together under Topics (hierarchy.csv's "Caucuses"), by rule,
-    # so a caucus added to address_holders.CAUCUSES is placed without a new row.
-    for label in sorted(set(address_holders.CAUCUSES.values())):
+    # so a caucus added to address_holders.CAUCUSES or caucuses.py is placed
+    # without a new row.
+    for label in caucus_labels:
         extra_hier.append({"term": label, "broader": "Caucuses"})
 
     # The hierarchy --------------------------------------------------------------

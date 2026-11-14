@@ -43,6 +43,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from topics import AGENCIES, SUBJECTS, tag as tag_topics  # noqa: E402
 from thumbs import SUFFIX  # noqa: E402
+import caucuses  # noqa: E402
 import committees  # noqa: E402
 
 # Read as capitals, not as words. Agency abbreviations come from the topics
@@ -349,6 +350,7 @@ def main() -> None:
     # date: all 14 PDFs carried one, 13 agreed within three days, median
     # difference zero.
     committee_letters = committees.by_digest()
+    caucus_letters = caucuses.by_digest()
     pdf_dates: dict[str, str] = {}
     if args.pdf_dates.exists():
         with args.pdf_dates.open(encoding="utf-8") as handle:
@@ -433,7 +435,8 @@ def main() -> None:
         by_member[bioguide].append([
             record["key"], record["timestamp"], kind, best,
             precision, recipient, subject,
-            # A caucus letter carries its caucus as a topic (build_congress.py);
+            # A caucus letter carries its caucus as a topic: by its address
+            # (build_congress.py) or by speaking as the caucus (caucuses.py);
             # a letter on a committee's stationery carries the committee
             # (committees.py reads the letterhead); a letter to a reviewed
             # recipient carries that recipient's topics
@@ -441,6 +444,7 @@ def main() -> None:
             # Oil and gas whatever its file name says).
             ",".join(dict.fromkeys(
                 ([record["caucus"]] if record.get("caucus") else [])
+                + (caucus_letters.get(digest or "") or [[]])[0]
                 + ([c] if (c := committees.committee_for(
                     committee_letters.get(digest or ""),
                     record.get("host") or record.get("key", ""))) else [])
