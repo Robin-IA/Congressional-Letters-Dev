@@ -63,6 +63,31 @@ class WaybackRecord(unittest.TestCase):
         self.assertEqual(got["B"], {"days": 0})
         self.assertNotIn("C", got)
 
+    def test_two_addresses_keep_the_one_counted_and_name_it(self):
+        # #112: the page must name the address its day count is of.
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "congress106-wayback.csv"
+            with path.open("w", newline="", encoding="utf-8") as handle:
+                w = csv.DictWriter(handle, fieldnames=[
+                    "bioguide_id", "url", "days_captured", "wayback_first",
+                    "wayback_last", "lookup"])
+                w.writeheader()
+                w.writerow({"bioguide_id": "A", "url": "https://brownback.senate.gov",
+                            "days_captured": "", "lookup": "none in window",
+                            "wayback_first": "", "wayback_last": ""})
+                w.writerow({"bioguide_id": "A", "url": "https://www.senate.gov/~brownback",
+                            "days_captured": "16", "lookup": "found",
+                            "wayback_first": "https://web.archive.org/web/19990127/x/",
+                            "wayback_last": ""})
+            saved = bc.WAYBACK_LOOKUPS
+            bc.WAYBACK_LOOKUPS = Path(tmp)
+            try:
+                got = bc.wayback_record(106)
+            finally:
+                bc.WAYBACK_LOOKUPS = saved
+        self.assertEqual(got["A"]["days"], 16)
+        self.assertEqual(got["A"]["site"], "https://www.senate.gov/~brownback")
+
 
 if __name__ == "__main__":
     unittest.main()

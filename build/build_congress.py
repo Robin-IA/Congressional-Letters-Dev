@@ -115,7 +115,9 @@ def wayback_record(n: int) -> dict[str, dict]:
             days = int(row.get("days_captured") or 0) if row["lookup"] == "found" else 0
             # The address measured, so the page names the site its count is
             # of (#112): with two addresses the kept row is often the second.
-            rec = {"days": days, "site": (row.get("url") or "").strip()}
+            rec = {"days": days}
+            if (row.get("url") or "").strip():
+                rec["site"] = row["url"].strip()
             # Into an href on the page: only a Wayback capture URL.
             for key, col in (("first", "wayback_first"), ("last", "wayback_last")):
                 url = (row.get(col) or "").strip()
