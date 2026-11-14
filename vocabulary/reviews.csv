@@ -163,7 +163,6 @@ Rma,10,merge,Risk Management Agency,RMA,organization,Department of Agriculture,U
 Roberts And Thomas,10,officeholder,Supreme Court of the United States,,organization,Courts,Justices Roberts and Thomas,accepted
 Rogers,10,hold,,,,,"checked: Rep. Harold Rogers (appropriations), Rep. Mike Rogers, Adm. Michael Rogers (NSA); needs a per-letter split",proposed
 Walker,10,person,Scott Walker,,person,Governors,checked: 9 of 10 to Gov. Scott Walker of Wisconsin (BadgerCare); one 2006 letter is to Comptroller General David Walker (GAO),accepted
-Wolf,10,hold,,,,,"checked: Rep. Frank Wolf (appropriations), Acting DHS Secretary Chad Wolf, Gov. Tom Wolf; needs a per-letter split",proposed
 Wyden,10,member,W000779,,,,Ron Wyden,accepted
 Ceq,9,merge,Council on Environmental Quality,CEQ,organization,Executive Office of the President,CEQ: Council on Environmental Quality,accepted
 Epw,9,merge,Senate Committee on Environment and Public Works,EPW,organization,Senate committees,EPW: Senate Environment and Public Works Committee,accepted
@@ -470,3 +469,39 @@ Fifa President,3,merge,FIFA,,organization,Associations and other organizations,"
 Tva Ceo Johnson,3,merge,Tennessee Valley Authority,,organization,Government corporations,"an executive's name or title: filed to the organization only (Robin, 2026-11-13)",accepted
 Dfc Ceo,3,merge,United States International Development Finance Corporation,,organization,Independent agencies and commissions,"an executive's name or title: filed to the organization only (Robin, 2026-11-13)",accepted
 Cncs Ceo Barbara Stewart,3,merge,Corporation for National and Community Service,,organization,Independent agencies and commissions,"an executive's name or title: filed to the organization only (Robin, 2026-11-13)",accepted
+Fugate,9,officeholder,Federal Emergency Management Agency,,,,"Craig Fugate, FEMA Administrator 2009-2017; letters 2009-2014 (batch 1, 2026-11-13: read the letters' address blocks)",accepted
+Mabus,9,officeholder,Department of the Navy,,,,"Ray Mabus, Secretary of the Navy 2009-2017 (batch 1, 2026-11-13: read the letters' address blocks)",accepted
+Perez,9,officeholder,Department of Labor,,,,"checked: ""The Honorable Thomas E. Perez, Secretary, U.S. Department of Labor""; letters 2013-2016 (batch 1, 2026-11-13: read the letters' address blocks)",accepted
+Tavenner,9,officeholder,Centers for Medicare and Medicaid Services,,,,"Marilyn Tavenner, CMS Administrator 2013-2015 (batch 1, 2026-11-13: read the letters' address blocks)",accepted
+Xavier Beccera,9,officeholder,Department of Health and Human Services,,,,"checked: ""The Honorable Xavier Becerra, Secretary of Health and Human Services"", 2021 (batch 1, 2026-11-13: read the letters' address blocks)",accepted
+Commissioner Werfel,8,officeholder,Internal Revenue Service,,,,"checked: ""The Honorable Daniel I. Werfel, Commissioner, Internal Revenue Service"" (batch 1, 2026-11-13: read the letters' address blocks)",accepted
+Castro,8,officeholder,Department of Housing and Urban Development,,,,"checked: ""Honorable Julian Castro, Secretary, U.S. Department of Housing and Urban Development"", 2014-2016 (batch 1, 2026-11-13: read the letters' address blocks)",accepted
+Betsy Devos,8,officeholder,Department of Education,,,,"checked: ""The Honorable Betsy DeVos, Secretary of Education"", 2017-2018 (batch 1, 2026-11-13: read the letters' address blocks)",accepted
+Secretary Duke,8,officeholder,Department of Homeland Security,,,,"Elaine Duke, Acting Secretary of Homeland Security, 2017 (batch 1, 2026-11-13: read the letters' address blocks)",accepted
+Secretary Wolf,9,officeholder,Department of Homeland Security,,,,"checked: ""The Honorable Chad Wolf, Acting Secretary, U.S. Department of Homeland Security"", 2019-2020 (batch 1, 2026-11-13: read the letters' address blocks)",accepted
+Mcaleenan,8,officeholder,Department of Homeland Security,,,,"checked: ""Dear Acting Secretary McAleenan"", 2019; the March 2019 letter on port-of-entry hours was to him as CBP Commissioner, part of DHS (batch 1, 2026-11-13: read the letters' address blocks)",accepted
+Otting,8,officeholder,Office of the Comptroller of the Currency,,,,"Joseph Otting, Comptroller of the Currency 2017-2020 (batch 1, 2026-11-13: read the letters' address blocks)",accepted
+Kendall,8,officeholder,Department of the Air Force,,,,"checked: ""The Honorable Frank Kendall, Secretary of the Air Force"", 2021-2023 (batch 1, 2026-11-13: read the letters' address blocks)",accepted
+Postmaster Dejoy,8,officeholder,United States Postal Service,,,,"checked: ""The Honorable Louis DeJoy, Postmaster General"", 2022-2024 (batch 1, 2026-11-13: read the letters' address blocks)",accepted
+Army Sec Mchugh,8,officeholder,Department of the Army,,,,"John McHugh, Secretary of the Army, 2011 (batch 1, 2026-11-13: read the letters' address blocks)",accepted
+Boehner Final Pdf,7,officeholder,The Speaker of the House,,,,"one letter of 2011-04-28 to Speaker Boehner, on three members' sites (batch 1, 2026-11-13: read the letters' address blocks)",accepted
+Wolf,10,split,Department of Homeland Security@2019-2020;Tom Wolf@2015-2015;Tom Wolf@2021-2023,,person,,"checked: Chad Wolf, Acting DHS Secretary, 2020; ""The Honorable Tom Wolf, Governor of Pennsylvania"", 2021; the 2015 refugee letter to Gov. Wolf; the 2012-2013 letters to Rep. Frank Wolf stay unfiled (batch 1, 2026-11-13: read the letters' address blocks)",accepted
+Nga,9,split,National Geospatial-Intelligence Agency@2018-2018;National Governors Association@2020-2025,,organization,,"checked: 2018 on the NGA West campus in north St. Louis; 2020 and 2025 ""National Governors Association""; the 2012 letter stays unfiled (batch 1, 2026-11-13: read the letters' address blocks)",accepted
+Un Secretary General,8,split,Ban Ki-moon@2007-2016;António Guterres@2017-2026,,person,International officials,"UN Secretary-General by year (batch 1, 2026-11-13: read the letters' address blocks)",accepted
+Columbia Gas,9,merge,Columbia Gas of Massachusetts,,organization,Energy sector,"checked: ""Mr. Steve Bryant, President, Columbia Gas of Massachusetts"", on the 2018 Merrimack Valley explosions (batch 1, 2026-11-13: read the letters' address blocks)",accepted
+Jpmorgan Chase,8,merge,JPMorgan Chase,,organization,Financial industry,"checked: ""JPMorgan Chase & Co."" (batch 1, 2026-11-13: read the letters' address blocks)",accepted
+Bank Of America,7,merge,Bank of America,,organization,Financial industry,"checked: ""Bank of America Corp."" (batch 1, 2026-11-13: read the letters' address blocks)",accepted
+Enbridge,7,merge,Enbridge,,organization,Energy sector,"checked: ""Enbridge Inc."", on the Weymouth compressor station and Line 5 (batch 1, 2026-11-13: read the letters' address blocks)",accepted
+House Admin,9,merge,Committee on House Administration,,organization,,"checked: ""Chairman, Committee on House Administration"" (batch 1, 2026-11-13: read the letters' address blocks)",accepted
+Census,8,merge,Census Bureau,,organization,,"checked: to the Commerce Secretary and the Census Director on the 2020 undercount (batch 1, 2026-11-13: read the letters' address blocks)",accepted
+Gop Leadership,8,merge,Congressional leadership,,organization,,"letters to the Republican leaders of Congress (batch 1, 2026-11-13: read the letters' address blocks)",accepted
+House,10,merge,United States House of Representatives,,organization,Legislative branch,"letters to the House or its leaders as a whole (batch 1, 2026-11-13: read the letters' address blocks)",accepted
+Acf Ovw Signed,8,joint,Administration for Children and Families;organization:Office on Violence Against Women,,,,"one 2020 letter to both, on two members' sites (batch 1, 2026-11-13: read the letters' address blocks)",accepted
+Blunt,8,member,B000575,,,,"checked: ""The Honorable Roy Blunt"", ""Chairman Roy Blunt, Senate Rules"" (batch 1, 2026-11-13: read the letters' address blocks)",accepted
+Gowdy,8,member,G000566,,,,"Trey Gowdy, Oversight chair 2017-2019; letters of 2018 (batch 1, 2026-11-13: read the letters' address blocks)",accepted
+Hatch,7,member,H000338,,,,"checked: ""The Honorable Orrin G. Hatch, Chairman, Committee on Finance"" (batch 1, 2026-11-13: read the letters' address blocks)",accepted
+Snyder,7,person,Rick Snyder,,person,Governors,"Governor of Michigan; all from Michigan members, 2011-2018 (batch 1, 2026-11-13: read the letters' address blocks)",accepted
+Mayor Adams,8,person,Eric Adams,,person,State and local government,"checked: ""The Honorable Eric Adams, Mayor of New York City"", 2022-2024 (batch 1, 2026-11-13: read the letters' address blocks)",accepted
+Chairman,8,reject,,,,,"no name: the letter's text says which chairman (batch 1, 2026-11-13: read the letters' address blocks)",accepted
+Secretary,7,reject,,,,,"no name: the letter's text says which secretary (batch 1, 2026-11-13: read the letters' address blocks)",accepted
+Agencies,8,reject,,,,,"several agencies at once; the letter's text names them (batch 1, 2026-11-13: read the letters' address blocks)",accepted
