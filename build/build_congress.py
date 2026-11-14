@@ -45,6 +45,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "build"))
 import address_holders as ah  # noqa: E402
+import last_updated  # noqa: E402
 
 ROSTERS = ROOT / "data" / "rosters"
 PARSED = [ROOT / "data" / "letters-parsed.jsonl",
@@ -346,6 +347,7 @@ def page_files(n: int, dest: Path) -> None:
                 "<title>Letters from Congress ·", "head title")
     html = swap(html, "<span>Letters from Congress (2007-present)</span>",
                 "<span>Letters from Congress</span>", "masthead")
+    html = last_updated.stamp(html, label="119th/index.html")
     (dest / "index.html").write_text(html, encoding="utf-8")
 
     js = show("app.js")

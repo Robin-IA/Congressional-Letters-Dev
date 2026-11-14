@@ -33,6 +33,8 @@ import urllib.parse
 from datetime import datetime
 from pathlib import Path
 
+import last_updated  # build/, beside this script
+
 ROOT = Path(__file__).resolve().parents[1]
 EXPLORERS = ROOT.parent / "explorers"
 NAME = "Explorer-Letters"   # the page is titled "Letters from Congress"
@@ -112,8 +114,9 @@ def main() -> int:
     html = (src / "index.html").read_text(encoding="utf-8")
     if html.count("hub.js?v=STAMP") != 1:
         sys.exit("build/hub/index.html: expected one hub.js?v=STAMP")
-    (out / "index.html").write_text(html.replace("hub.js?v=STAMP", f"hub.js?v={stamp}"),
-                                    encoding="utf-8")
+    html = last_updated.stamp(html.replace("hub.js?v=STAMP", f"hub.js?v={stamp}"),
+                              label="build/hub/index.html")
+    (out / "index.html").write_text(html, encoding="utf-8")
     shutil.copy2(src / "hub.js", out / "hub.js")
     # The vocabulary's tree, for the "By topic" view (build_vocabulary.py).
     tree = ROOT / "vocabulary" / "tree.json"
