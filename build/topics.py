@@ -199,7 +199,10 @@ SUBJECTS: dict[str, tuple[str, ...]] = {
     # its own agency tag as well.
     "Air Force": ("air force", "department of the air force"),
     "Army": ("army", "department of the army", "army national guard"),
-    "Marine Corps": ("marine corps", "marines", "u.s. marines"),
+    # Not "marines": tag() singularises it to "marine", which tagged marine
+    # sanctuaries, monuments and mammals as the Corps (60 of 76 letters,
+    # measured 14 Nov 2026). The dozen saying only "Marines" get hand rows.
+    "Marine Corps": ("marine corps", "usmc"),
     "Navy": ("navy", "department of the navy", "naval"),
     "Space Force": ("space force", "united states space force"),
     "Social media": ("social media", "content moderation", "section 230",
