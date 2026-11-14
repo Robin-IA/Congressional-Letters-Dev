@@ -191,6 +191,9 @@ SUBJECTS: dict[str, tuple[str, ...]] = {
     # Office; 'shipping' is any parcel. Added 14 November 2026 (#143).
     "Budgets": (),
     "Shipping": (),
+    "Cannabis": ("cannabis", "marijuana", "hemp"),
+    "Judiciary": ("judiciary", "judicial", "federal judge", "federal court",
+                  "circuit court", "district court", "supreme court"),
 
     # Named laws a letter cites. The name is the match word, so these are
     # found by rule as well as assigned by hand. Counted across all 17,519
@@ -292,11 +295,16 @@ INDEX = _build_index()
 WORD = re.compile(r"[a-z][a-z0-9'-]*")
 
 
-def tag(text: str, limit: int = 4) -> list[str]:
+def tag(text: str, limit: int = 8) -> list[str]:
     """The vocabulary terms a description is about, most specific first.
 
     Multi-word forms win over single words at the same position, so
     "social security" is one tag rather than two unrelated ones.
+
+    The limit was 4 and is 8 (Robin, 14 November 2026). Four was not enough:
+    a letter on Payments in Lieu of Taxes is about taxes, public lands and
+    appropriations before anything specific to it is reached, and letters
+    read by hand routinely earn three or four topics of their own.
     """
     if not text:
         return []
