@@ -105,7 +105,8 @@ SUBJECTS: dict[str, tuple[str, ...]] = {
     "Trade": ("trade", "export", "import", "usmca", "wto"),
     "Inflation": ("inflation", "cost of living", "price gouging", "prices"),
     "Banking": ("bank", "banking", "credit union", "fdic insurance"),
-    "Housing": ("housing", "mortgage", "rent", "homeless", "eviction"),
+    "Housing": ("housing", "mortgage", "rent", "homeless", "eviction",
+                "housing cost", "cost of housing", "unhoused"),
     "Student loans": ("student loan", "student debt", "tuition", "pell"),
     "Small business": ("small business", "ppp", "sba loan"),
     "Jobs": ("jobs", "unemployment", "workforce", "labor", "wage", "union"),
@@ -153,6 +154,7 @@ SUBJECTS: dict[str, tuple[str, ...]] = {
     "Broadband": ("broadband", "internet access", "rural broadband",
                   "digital divide"),
     "Transportation": ("transportation", "highway", "transit", "rail",
+                       "transportation cost", "cost of transportation",
                        "amtrak", "bridge"),
     # Amtrak is all three: Transportation, Railroads, Public transportation.
     "Railroads": ("railroad", "railway", "rail", "amtrak", "passenger rail",
@@ -191,6 +193,16 @@ SUBJECTS: dict[str, tuple[str, ...]] = {
     # Office; 'shipping' is any parcel. Added 14 November 2026 (#143).
     "Budgets": (),
     "Shipping": (),
+    # Costs and sub-topics. Each phrase is also a word of its parent, so a
+    # letter gets both: see "gun violence" under Guns. Without that the
+    # longer phrase wins alone and the parent is lost.
+    "Housing costs": ("housing cost", "cost of housing", "rent burden",
+                      "rental cost", "rising rent"),
+    "Unhoused": ("unhoused", "homeless", "homelessness", "encampment"),
+    "Health premiums": ("health premium", "insurance premium",
+                        "premium increase", "premium cost"),
+    "Transportation costs": ("transportation cost", "transit fare",
+                             "cost of transportation", "fuel cost"),
     # The bare word "affordable" is left out: 976 letters use it, many of
     # them about the Affordable Care Act or affordable housing, which are
     # their own topics. "affordability" and "cost of living" are the ones
