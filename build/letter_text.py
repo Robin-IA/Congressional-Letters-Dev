@@ -41,6 +41,7 @@ import committees  # noqa: E402  (TEXTS, SALUTE, OCRFIX: one reading of a letter
 ROOT = Path(__file__).resolve().parents[1]
 CACHE = ROOT / "data" / "letter-text-info.json"
 TITLES = ROOT / "vocabulary" / "letter-titles.csv"
+DATES = ROOT / "vocabulary" / "letter-dates.csv"
 RULES = "2026-11-13d"  # change when the rules change, so the cache is redone
 
 # -------------------------------------------------------------------- topics
@@ -107,6 +108,31 @@ def by_hand() -> dict[str, str]:
         return {}
     with TITLES.open(encoding="utf-8") as fh:
         return {r["digest"]: r["title"] for r in csv.DictReader(fh) if r.get("title")}
+
+
+# --------------------------------------------------------------------- dates
+
+def dates_by_hand() -> dict[str, tuple[str, str]]:
+    """digest -> (date, precision), read from the letter and written by hand.
+
+    The counterpart of by_hand() for dates. A letter puts its date on its
+    letterhead; until the text was read we took the date from the file name,
+    the PDF's metadata or the Wayback capture, and the first of those is not
+    the letter's date -- it is when the file was posted or named. Measured
+    against the letterhead, 768 letters given `day` precision from a file
+    name are contradicted by the letter, and 8,996 dated by capture state a
+    date of their own (#126).
+
+    A date is a reader's job in the same way a title is: the letter can say
+    "February 22, 2016" in its first paragraph while being dated 2 August
+    2016, so the first date in the text is not always the letter's. Each row
+    records in `source` where the date came from and what it replaced.
+    """
+    if not DATES.exists():
+        return {}
+    with DATES.open(encoding="utf-8") as fh:
+        return {r["digest"]: (r["date"], r.get("precision") or "day")
+                for r in csv.DictReader(fh) if r.get("date")}
 
 
 # -------------------------------------------------------------------- cache

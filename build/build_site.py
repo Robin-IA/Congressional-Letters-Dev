@@ -357,6 +357,10 @@ def main() -> None:
     caucus_letters = caucuses.by_digest()
     text_topics = letter_text.by_digest()
     hand_titles = letter_text.by_hand()
+    hand_dates = letter_text.dates_by_hand()
+    if hand_dates:
+        print(f"  {len(hand_dates):,} dates read from the letters",
+              file=sys.stderr)
     pdf_dates: dict[str, str] = {}
     if args.pdf_dates.exists():
         with args.pdf_dates.open(encoding="utf-8") as handle:
@@ -405,12 +409,19 @@ def main() -> None:
         # A title written by hand from the letter's text wins over the file
         # name's (vocabulary/letter-titles.csv, letter_text.py).
         subject = hand_titles.get(digest) or tidy_subject(record.get("subject"))
-        # Filename first, then what the PDF says about itself, then the
-        # capture. Only the first is the letter's own stated date; the
-        # second is when the file was made, which for a scan is when it
-        # was scanned.
+        # The letter's own date first, read from its text and written by
+        # hand (vocabulary/letter-dates.csv); then the file name, then what
+        # the PDF says about itself, then the capture.
+        #
+        # The file name is NOT the letter's own date, though it was called
+        # that here and in METHODOLOGY.md until 14 November 2026: it records
+        # when the file was posted or named. The PDF's own date is when the
+        # file was made, which for a scan is when it was scanned.
         best = record.get("date")
         precision = record.get("date_precision")
+        stated = hand_dates.get(digest or "")
+        if stated:
+            best, precision = stated
         # date_rejected: build_congress.py found the letter's date impossible
         # for whoever held the address, so the PDF's own date is not used either.
         if not best:
