@@ -403,7 +403,7 @@ Amtrak Ceo,4,merge,Amtrak,,organization,Government corporations,"checked: files 
 Amtrak Fy21 Pdf,5,merge,Amtrak,,organization,Government corporations,"checked: files named ""Letter to Amtrak FY21 PDF""; a letter to Amtrak, fiscal 2021",accepted
 Apple And Google,3,joint,Apple;Google,,,,"checked: letters to both, on apps and app stores, 2019-2026",accepted
 Google And Apple,4,joint,Google;Apple,,,,"checked: letters to both, 2019-2021",accepted
-Apple Ceo Tim Cook,3,joint,Apple;person:Tim Cook,,,,"checked: letters to Apple's CEO Tim Cook, 2018-2026",accepted
+Apple Ceo Tim Cook,4,merge,Apple,,organization,Tech industry,"checked: letters to Apple's CEO Tim Cook, 2018-2026; filed to Apple, no person term (Robin, 2026-11-13: the organization, not its CEO)",accepted
 Amex,3,merge,American Express,AMEX,organization,Banking industry,checked: AMEX: American Express; 2024-2025 (folds in the unreviewed American Express),accepted
 Boeing Ceo,4,merge,Boeing,,organization,Air and space industry,"checked: letters to Boeing's CEO, 2011-2012",accepted
 Bannon,3,person,Steve Bannon,,person,,"checked: Steve Bannon, White House chief strategist; on ethics, 2017, and Krishnamoorthi, 2018",accepted
@@ -438,3 +438,35 @@ American Psychological Association,3,merge,American Psychological Association,,o
 Heart Rhythm Society Inc,3,merge,Heart Rhythm Society,HRS,organization,Associations and other organizations,checked: Chuck Grassley's 2011-05-04 letter on its industry funding,accepted
 Idsa,3,merge,Infectious Diseases Society of America,IDSA,organization,Associations and other organizations,checked: Chuck Grassley's 2011-05-04 letter on its industry funding,accepted
 North American Spine Society,3,merge,North American Spine Society,NASS,organization,Associations and other organizations,checked: Chuck Grassley's 2011-05-04 letter on its industry funding,accepted
+Zuckerberg,3,merge,Meta (Facebook),,organization,Companies,"an executive's name or title: filed to the organization only (Robin, 2026-11-13)",accepted
+Mark Zuckerberg,3,merge,Meta (Facebook),,organization,Companies,"an executive's name or title: filed to the organization only (Robin, 2026-11-13)",accepted
+Bezos,3,merge,Amazon,,organization,Companies,"an executive's name or title: filed to the organization only (Robin, 2026-11-13)",accepted
+Jeff Bezos,3,merge,Amazon,,organization,Companies,"an executive's name or title: filed to the organization only (Robin, 2026-11-13)",accepted
+Mr Pichai,3,merge,Google,,organization,Tech industry,"an executive's name or title: filed to the organization only (Robin, 2026-11-13)",accepted
+Mr Sundar Pichai,3,merge,Google,,organization,Tech industry,"an executive's name or title: filed to the organization only (Robin, 2026-11-13)",accepted
+Jack Dorsey Twitter Ceo,3,merge,Twitter (X),,organization,Companies,"an executive's name or title: filed to the organization only (Robin, 2026-11-13)",accepted
+Twitter Ceo,3,merge,Twitter (X),,organization,Companies,"an executive's name or title: filed to the organization only (Robin, 2026-11-13)",accepted
+Twitter Ceo Agrawal,3,merge,Twitter (X),,organization,Companies,"an executive's name or title: filed to the organization only (Robin, 2026-11-13)",accepted
+Musk,3,split,Twitter (X)@2023-2024,,organization,,checked: 2023 letters on Twitter's election-integrity team and accessibility; the 2022 letter does not say which company and stays unfiled,accepted
+Richard Anderson,3,split,Amtrak@2017-2020,,organization,,checked: 2018 letters to Amtrak's CEO on the Southwest Chief; the 2024 letter is outside the range,accepted
+Halliburton,3,merge,Halliburton,,organization,Energy sector,"an executive's name or title: filed to the organization only (Robin, 2026-11-13)",accepted
+Halliburton Ceo David Lesar,3,merge,Halliburton,,organization,Energy sector,"an executive's name or title: filed to the organization only (Robin, 2026-11-13)",accepted
+Zoom,3,merge,Zoom,,organization,Tech industry,"an executive's name or title: filed to the organization only (Robin, 2026-11-13)",accepted
+Zoom Ceo,3,merge,Zoom,,organization,Tech industry,"an executive's name or title: filed to the organization only (Robin, 2026-11-13)",accepted
+Intel Ceo,3,merge,Intel,,organization,Tech industry,"an executive's name or title: filed to the organization only (Robin, 2026-11-13)",accepted
+Nvidia Ceo,3,merge,Nvidia,,organization,Tech industry,"an executive's name or title: filed to the organization only (Robin, 2026-11-13)",accepted
+Disney Ceo,3,merge,The Walt Disney Company,,organization,Companies,"an executive's name or title: filed to the organization only (Robin, 2026-11-13)",accepted
+Ubs Painewebber,3,merge,UBS PaineWebber,,organization,Financial industry,"an executive's name or title: filed to the organization only (Robin, 2026-11-13)",accepted
+Ubs Painewebber Chairman Grano,3,merge,UBS PaineWebber,,organization,Financial industry,"an executive's name or title: filed to the organization only (Robin, 2026-11-13)",accepted
+Jeff Skilling,3,merge,Enron,,organization,Energy sector,"checked: Enron's CEO, 2002",accepted
+Jeffrey Mcmahon,3,merge,Enron,,organization,Energy sector,"checked: Enron's president, 2002",accepted
+Commissioner Goodell,3,merge,National Football League,,organization,Associations and other organizations,"an executive's name or title: filed to the organization only (Robin, 2026-11-13)",accepted
+Nfl Commissioner Paul Tagliabue,3,merge,National Football League,,organization,Associations and other organizations,"an executive's name or title: filed to the organization only (Robin, 2026-11-13)",accepted
+Commissioner Bettman,3,merge,National Hockey League,,organization,Associations and other organizations,"an executive's name or title: filed to the organization only (Robin, 2026-11-13)",accepted
+Emmert,3,merge,NCAA,,organization,Associations and other organizations,"checked: Mark Emmert, NCAA president; letters on NCAA Title IX, 2014-2022",accepted
+Ncaa President,3,merge,NCAA,,organization,Associations and other organizations,"an executive's name or title: filed to the organization only (Robin, 2026-11-13)",accepted
+Ncaa President Baker,3,merge,NCAA,,organization,Associations and other organizations,"an executive's name or title: filed to the organization only (Robin, 2026-11-13)",accepted
+Fifa President,3,merge,FIFA,,organization,Associations and other organizations,"an executive's name or title: filed to the organization only (Robin, 2026-11-13)",accepted
+Tva Ceo Johnson,3,merge,Tennessee Valley Authority,,organization,Government corporations,"an executive's name or title: filed to the organization only (Robin, 2026-11-13)",accepted
+Dfc Ceo,3,merge,United States International Development Finance Corporation,,organization,Independent agencies and commissions,"an executive's name or title: filed to the organization only (Robin, 2026-11-13)",accepted
+Cncs Ceo Barbara Stewart,3,merge,Corporation for National and Community Service,,organization,Independent agencies and commissions,"an executive's name or title: filed to the organization only (Robin, 2026-11-13)",accepted
