@@ -92,10 +92,12 @@ say "=== all done ==="
 # 2026). Set it from the explorers just published: the sum of their letters,
 # the same total the home page shows.
 total=$(python3 -c '
-import json, glob
+import json, glob, os
 print(format(sum(json.load(open(f))["letters"]
-                 for f in glob.glob("Explorer-Congressional-Letters-*/index.json")), ","))' 2>/dev/null)
-if [ -n "$total" ] && gh repo edit "$OWNER/Congressional-Letters-Dev" --description \
+                 for f in glob.glob(os.path.expanduser("~/ia/explorers/Explorer-Congressional-Letters-*/index.json"))), ","))' 2>/dev/null)
+# publish() leaves the shell in the last repository's folder, so the glob is
+# absolute; a total of 0 means it found no explorers, never a real count.
+if [ -n "$total" ] && [ "$total" != 0 ] && gh repo edit "$OWNER/Congressional-Letters-Dev" --description \
      "Letters from Congress: explorer, harvest pipeline and the departed-member backfill. Working copy — development happens here. $total letters from members' own websites, preserved by the Wayback Machine." >/dev/null 2>&1; then
   say "Congressional-Letters-Dev: description says $total letters"
 else
