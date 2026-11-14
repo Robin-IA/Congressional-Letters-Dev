@@ -14,8 +14,13 @@ For a scan it lost the only way to its words, because ocr_letters.py reads
 where ``ocr_letters.py --watch`` picks them up on its next pass.
 
 WHICH CAPTURE. The one the renderer read: the ``captured`` timestamp in
-``data/letter-text.jsonl``, with the URL from the built explorers' member
-files. The bytes are checked against the ``sha256`` the renderer recorded,
+``data/letter-text.jsonl``, at the URL the Wayback Machine holds -- the
+``url`` the harvest observed, from ``data/letters-parsed.jsonl``. Not the
+explorers' ``key``: that is the letter's identity, lowercased and with any
+cache-busting hex prefix stripped from the file name, and the archive has
+never held that spelling of a prefixed file. Asking for it is a 404 (#102:
+4 of 4 failed scans that answered were a 404 by key and a PDF by url).
+The key is used only where no observed url is known. The bytes are checked against the ``sha256`` the renderer recorded,
 so what is kept is the very file the thumbnail was made from; a mismatch is
 logged and not kept. Letters in no explorer (unpublished: caucus, or no
 holder) are skipped.
@@ -40,6 +45,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 EXPLORERS = ROOT.parent / "explorers"
+PARSED = [ROOT / "data" / "letters-parsed.jsonl",
+          ROOT / "data" / "letters-119-departed-parsed.jsonl"]
 UA = {"User-Agent": "ia-congressional-member-letters/0.1 (fetch for OCR)"}
 
 
@@ -64,7 +71,23 @@ def congress_set(spec: str) -> set[int]:
     return out
 
 
-def targets(args) -> list[tuple[int, str, str, str, str]]:
+def observed_urls(digests: set[str]) -> dict[str, str]:
+    """digest -> a URL the harvest saw the Wayback Machine hold it under (#102)."""
+    out: dict[str, str] = {}
+    for path in PARSED:
+        for r in jsonl(path):
+            d = r.get("digest")
+            if d in digests and d not in out and r.get("url"):
+                out[d] = r["url"]
+    return out
+
+
+def replay(ts: str, url: str) -> str:
+    return (f"https://web.archive.org/web/{ts}id_/"
+            + urllib.parse.quote(url, safe=":/?&=%#~+,;@!$'()*[]"))
+
+
+def targets(args) -> list[tuple[int, str, str, str, str, str]]:
     text = {r["digest"]: r for r in jsonl(args.text) if r.get("digest")}
     ocr = {r["digest"] for r in jsonl(args.ocr) if r.get("digest")}
     have = {p.stem for p in args.pdfs.glob("*.pdf")}
@@ -77,7 +100,9 @@ def targets(args) -> list[tuple[int, str, str, str, str]]:
             key, digest = row[0], row[9]
             if digest in need and (digest not in where or n > where[digest][0]):
                 where[digest] = (n, key)
-    out = [(n, d, key, text[d].get("captured") or "", text[d].get("sha256") or "")
+    seen = observed_urls(set(where))
+    out = [(n, d, key, text[d].get("captured") or "", text[d].get("sha256") or "",
+            seen.get(d) or key)
            for d, (n, key) in where.items()]
     out.sort(key=lambda t: (-t[0], t[1]))
     print(f"{len(need):,} scans with no text and no local PDF; "
@@ -91,9 +116,8 @@ def targets(args) -> list[tuple[int, str, str, str, str]]:
 
 
 def fetch(item, pdfs: Path, tries: int = 3) -> tuple[str, str]:
-    n, digest, key, ts, sha = item
-    url = (f"https://web.archive.org/web/{ts}id_/"
-           + urllib.parse.quote(key, safe=":/?&=%#~+,;@!$'()*[]"))
+    n, digest, key, ts, sha, observed = item
+    url = replay(ts, observed)
     last = ""
     for attempt in range(tries):
         try:
