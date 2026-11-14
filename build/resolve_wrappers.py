@@ -192,9 +192,14 @@ def follow(entry: dict, pause: float, retries: int) -> dict:
     """Replay ``&download=1`` and chase it until there are bytes.
 
     The site's own meta-refresh writes ``&download=1`` with no ``?`` in front
-    of it. That is malformed, and it is also the URL that was actually
-    crawled — the ``?download=1`` spelling returns no captures at all — so it
-    is the one to ask for.
+    of it. That is malformed, and on Cantwell's site it is also the URL that
+    was actually crawled, so it is asked for first. **It is not the only
+    spelling crawled.** On the sites of senators who have left (Menendez,
+    Brown, Casey, Blunt, Inhofe and others) the crawler wrote ``?download=1``,
+    and that capture is a 302 to the PDF under ``/imo/media/doc/``. Asking only
+    for ``&`` recorded those letters as 404, never archived; 29 of 35 sampled
+    on 2026-11-13 were there under ``?``. So a 404 on ``&`` tries ``?`` before
+    it is believed, and only a 404 on both is recorded (``http-404-both``).
 
     **Redirects have to be followed by hand, and not every hop is the site's.**
     Asking for a capture at a timestamp that is not an exact capture gets a
@@ -214,9 +219,18 @@ def follow(entry: dict, pause: float, retries: int) -> dict:
     same bytes rather than fetching several thousand multi-megabyte files from
     one host twice.
     """
-    base = entry["wrapper"].split("?", 1)[0]
-    url = (f"https://web.archive.org/web/{entry['timestamp']}id_/"
-           f"{base}&download=1")
+    base = entry["wrapper"].split("?", 1)[0].split("&download=1", 1)[0]
+    answer = {}
+    for joint in ("&", "?"):
+        answer = _follow_url(entry, f"https://web.archive.org/web/{entry['timestamp']}id_/"
+                                    f"{base}{joint}download=1", pause, retries)
+        if answer.get("dead") != "http-404":
+            return answer
+    return {**answer, "dead": "http-404-both"}
+
+
+def _follow_url(entry: dict, url: str, pause: float, retries: int) -> dict:
+    """Chase one replay URL by hand until a response has a body."""
     opener = urllib.request.build_opener(NoRedirect)
 
     last = "unknown"
@@ -338,7 +352,9 @@ def read_jsonl(path: Path) -> list[dict]:
     if not path.exists():
         return []
     out = []
-    with path.open(encoding="utf-8") as handle:
+    # utf-8-sig: wrapper-targets.jsonl was once written with a BOM, which
+    # made its first line unreadable and so followed again on every run.
+    with path.open(encoding="utf-8-sig") as handle:
         for line in handle:
             try:
                 out.append(json.loads(line))
@@ -366,6 +382,9 @@ def main() -> None:
                         help="keep this low; see the module docstring")
     parser.add_argument("--pause", type=float, default=0.75)
     parser.add_argument("--retries", type=int, default=3)
+    parser.add_argument("--retry-404", action="store_true",
+                        help="follow again the wrappers recorded as a plain http-404, "
+                             "from before the ?download=1 spelling was tried")
     parser.add_argument("--max", type=int, default=0,
                         help="stop after following this many (0 = no limit)")
     parser.add_argument("--resolve-only", action="store_true",
@@ -384,6 +403,10 @@ def main() -> None:
 
     # ---- pass 2: follow ------------------------------------------------------
     known = {canonical(row["wrapper"]): row for row in read_jsonl(args.targets)}
+    if args.retry_404:
+        # Only the old, one-spelling 404s. Later lines in --targets win when it
+        # is read again, so the new answer replaces the old one.
+        known = {k: v for k, v in known.items() if v.get("dead") != "http-404"}
     todo = [e for e in orphans if canonical(e["wrapper"]) not in known]
     if args.resolve_only:
         todo = []
