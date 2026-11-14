@@ -185,6 +185,12 @@ SUBJECTS: dict[str, tuple[str, ...]] = {
     "Nominations": ("nomination", "nominee", "confirmation"),
     "Regulation": ("rulemaking", "proposed rule", "comment period",
                    "regulatory"),
+    # Assigned by hand only (vocabulary/letter-topics.csv), from reading
+    # the letter: no match words, because the obvious ones mislead. 'budget'
+    # names the Office of Management and Budget and the Congressional Budget
+    # Office; 'shipping' is any parcel. Added 14 November 2026 (#143).
+    "Budgets": (),
+    "Shipping": (),
 }
 
 # ------------------------------------------------------------- the agencies
