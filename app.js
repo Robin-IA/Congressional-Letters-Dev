@@ -122,10 +122,14 @@ const siteHref = m => (m.wayback && m.wayback.last) || (m.left
   : m.site);
 // The address to show: the whole of it, since an early member's host alone
 // is just "www.house.gov".
-// A roster can list two sites ("a | b"); show the first.
-const siteName = m => (m.site
-  ? m.site.split('|')[0].trim().replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '')
-  : m.host);
+// A roster can list two sites ("a | b"). Name the one the Wayback count is
+// of, so "archived X on N days" is about X (#112); failing that, the first.
+const siteName = m => {
+  const site = (m.wayback && m.wayback.site) || (m.site || '').split('|')[0];
+  return site.trim()
+    ? site.trim().replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '')
+    : m.host;
+};
 
 // A member with no letters still had a website. Say what the Wayback Machine
 // holds of it during this Congress (build_congress.py's wayback_record), and
