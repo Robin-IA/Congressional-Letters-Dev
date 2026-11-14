@@ -68,6 +68,8 @@ SUBJECTS: dict[str, tuple[str, ...]] = {
     "Opioids": ("opioid", "fentanyl", "overdose", "naloxone", "oxycontin"),
     "Medicare": ("medicare",),
     "Medicaid": ("medicaid", "chip"),
+    "Affordable Care Act": ("affordable care act", "obamacare", "aca", "ppaca"),
+    "Diabetes": ("diabetes", "diabetic", "prediabetes", "insulin"),
     "Mental health": ("mental health", "suicide", "behavioral health"),
     "Prescription drugs": ("prescription", "drug pricing", "insulin",
                            "pharmaceutical", "pbm"),

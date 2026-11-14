@@ -44,6 +44,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from topics import AGENCIES, SUBJECTS, tag as tag_topics  # noqa: E402
 from thumbs import SUFFIX  # noqa: E402
 import caucuses  # noqa: E402
+import letter_text  # noqa: E402
 import committees  # noqa: E402
 
 # Read as capitals, not as words. Agency abbreviations come from the topics
@@ -196,6 +197,9 @@ STOPWORDS = {
     "letter", "letters", "final", "signed", "copy", "pdf", "doc", "docx",
     "the", "a", "an", "and", "or", "for", "with", "from", "to", "of", "on",
     "in", "at", "by", "re", "fw", "cc", "v1", "v2", "draft", "attachment",
+    # Chuck Grassley's initials, on hundreds of his file names
+    # ("2011-05-04-ceg-letter-to-..."): the member column already says whose.
+    "ceg",
 }
 
 # Debris a file name carries that a reader has no use for. The example that
@@ -351,6 +355,8 @@ def main() -> None:
     # difference zero.
     committee_letters = committees.by_digest()
     caucus_letters = caucuses.by_digest()
+    text_topics = letter_text.by_digest()
+    hand_titles = letter_text.by_hand()
     pdf_dates: dict[str, str] = {}
     if args.pdf_dates.exists():
         with args.pdf_dates.open(encoding="utf-8") as handle:
@@ -396,7 +402,9 @@ def main() -> None:
         kind = ("pdf" if record["mimetype"].startswith("application/pdf")
                 else "page")
         recipient = record.get("recipient_canonical")
-        subject = tidy_subject(record.get("subject"))
+        # A title written by hand from the letter's text wins over the file
+        # name's (vocabulary/letter-titles.csv, letter_text.py).
+        subject = hand_titles.get(digest) or tidy_subject(record.get("subject"))
         # Filename first, then what the PDF says about itself, then the
         # capture. Only the first is the letter's own stated date; the
         # second is when the file was made, which for a scan is when it
@@ -449,6 +457,7 @@ def main() -> None:
                     committee_letters.get(digest or ""),
                     record.get("host") or record.get("key", ""))) else [])
                 + tag_topics(f"{subject or ''} {recipient or ''}")
+                + text_topics.get(digest or "", [])
                 + recipient_topics().get((recipient or "").lower(), []))),
             ",".join(record.get("cosigners") or []),
             digest,
