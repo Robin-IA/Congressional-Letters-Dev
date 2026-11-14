@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""A letter's health topics read from its text, and titles written by hand.
+"""A letter's topics read from its text, and titles written by hand.
 
 **Health topics from the text** (Robin, 2026-11-13): a letter that mentions
 Medicare, Medicaid or the Affordable Care Act carries that topic. The
@@ -41,7 +41,7 @@ import committees  # noqa: E402  (TEXTS, SALUTE, OCRFIX: one reading of a letter
 ROOT = Path(__file__).resolve().parents[1]
 CACHE = ROOT / "data" / "letter-text-info.json"
 TITLES = ROOT / "vocabulary" / "letter-titles.csv"
-RULES = "2026-11-13c"  # change when the rules change, so the cache is redone
+RULES = "2026-11-13d"  # change when the rules change, so the cache is redone
 
 # -------------------------------------------------------------------- topics
 
@@ -55,8 +55,43 @@ TEXT_TOPICS = {
     "Diabetes": re.compile(r"\bdiabet(?:es|ic)\b|\binsulin\b|\bprediabetes\b", re.I),
 }
 
+# More topics from the text (Robin, 2026-11-13: "read more topics from the
+# text and add them to the vocabulary"). Each needs three mentions of its own
+# distinctive words; samples read at exactly three were on the topic. The
+# broad words in topics.py ("gas", "school", "labor") are left out here, as
+# they turn up in ordinary prose.
+#
+# Not tagged from the text, because names and boilerplate set them off at
+# three mentions: Taxes ("taxpayer funds"), Housing and Agriculture (the
+# THUD subcommittee and the Department), Veterans (the VA's name), Postal
+# Service (post office boxes), Israel and Gaza (Rep. Steve Israel), Social
+# Security (citations of the Social Security Act), Tobacco (the ATF's name),
+# Tariffs ("Section 301" of the INA), and passing mentions for Russia,
+# China, Ukraine, Afghanistan, Guns, Prisons, Elections and Aviation. Those
+# want names taken out first, as AGENCY does for CMS.
+_W = lambda body: re.compile(r"\b(?:" + body + r")\b", re.I)
+TEXT_TOPICS.update({
+    "COVID-19": _W(r"covid(?:-?19)?|coronavirus|sars-cov-2"),
+    "Vaccines": _W(r"vaccines?|vaccinations?|immuni[sz]ations?"),
+    "Opioids": _W(r"opioids?|fentanyl|naloxone|oxycontin|opiates?"),
+    "Mental health": _W(r"mental health|behavioral health|suicides?"),
+    "Abortion": _W(r"abortions?|mifepristone"),
+    "Wildfires": _W(r"wildfires?|forest fires?"),
+    "PFAS": _W(r"pfas|pfoa|pfos|forever chemicals?"),
+    "Nuclear": _W(r"nuclear|uranium|radioactive"),
+    "Climate": _W(r"climate change|global warming|greenhouse gas(?:es)?|climate crisis"),
+    "Student loans": _W(r"student loans?|student debt|pell grants?"),
+    "Crypto": _W(r"crypto(?:currency|currencies)?|bitcoin|stablecoins?|digital assets?"),
+    "Immigration": _W(r"immigration|immigrants?|asylum|daca|deportations?|undocumented"),
+    "Iran": _W(r"iran|iranian|tehran"),
+    "Broadband": _W(r"broadband|digital divide"),
+    "Railroads": _W(r"railroads?|railways?|amtrak|freight rail|passenger rail"),
+    "Childcare": _W(r"child ?care|head start"),
+})
 
 MIN_MENTIONS = {"Diabetes": 2}
+MIN_MENTIONS.update({lab: 3 for lab in TEXT_TOPICS
+                     if lab not in ("Medicare", "Medicaid", "Affordable Care Act", "Diabetes")})
 
 
 def topics_in(text: str) -> list[str]:
@@ -116,7 +151,7 @@ def by_digest() -> dict[str, list[str]]:
 
 if __name__ == "__main__":
     info = by_digest()
-    print(f"{len(info)} letters with a health topic from their text", file=sys.stderr)
+    print(f"{len(info)} letters with a topic from their text", file=sys.stderr)
     for lab, n in Counter(t for e in info.values() for t in e).most_common():
         print(f"{n:7}  {lab}")
     print(f"{len(by_hand())} titles written by hand", file=sys.stderr)
