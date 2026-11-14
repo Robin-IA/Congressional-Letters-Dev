@@ -111,6 +111,7 @@ Department of Agriculture,Executive departments
 Department of Commerce,Executive departments
 National Oceanic and Atmospheric Administration,Department of Commerce
 Department of Defense,Executive departments
+National Geospatial-Intelligence Agency,Department of Defense
 Army Corps of Engineers,Department of Defense
 Department of Education,Executive departments
 Department of Energy,Executive departments
@@ -130,6 +131,7 @@ Department of Housing and Urban Development,Executive departments
 Department of the Interior,Executive departments
 Bureau of Land Management,Department of the Interior
 Department of Justice,Executive departments
+Office on Violence Against Women,Department of Justice
 "Bureau of Alcohol, Tobacco, Firearms and Explosives",Department of Justice
 Bureau of Prisons,Department of Justice
 Drug Enforcement Administration,Department of Justice
@@ -177,6 +179,7 @@ Companies,Companies and organizations
 Associations and other organizations,Companies and organizations
 International organizations,Foreign and international
 Governors,State and local government
+National Governors Association,State and local government
 Foreign leaders,Foreign and international
 Military officers,Executive branch
 International officials,Foreign and international
