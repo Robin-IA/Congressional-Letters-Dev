@@ -25,6 +25,13 @@ so what is kept is the very file the thumbnail was made from; a mismatch is
 logged and not kept. Letters in no explorer (unpublished: caucus, or no
 holder) are skipped.
 
+NEVER READ (--never-read, #116). A scan with a thumbnail but no text record
+at all: rendered before the renderer saved text (16 October 2026). It is
+fetched at the explorer's capture, checked against its Wayback digest (the
+SHA-1 of the file, since it has no recorded sha256), and its text layer is
+recorded in ``data/letter-text.jsonl`` before anything else. Only a scan
+whose layer is under ``--min-chars`` is then kept for OCR.
+
 Newest Congress first, the same order people search in. Resumable: a PDF
 already in ``data/pdfs/`` is skipped. Failures go to
 ``harvest/letters/fetch-pdfs-failures.jsonl`` and are retried on the next run.
@@ -33,6 +40,7 @@ It shares the Wayback budget with the renderer, so it defaults to 2 workers.
 from __future__ import annotations
 
 import argparse
+import base64
 import hashlib
 import json
 import sys
@@ -40,6 +48,7 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
+import threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
@@ -49,6 +58,8 @@ PARSED = [ROOT / "data" / "letters-parsed.jsonl",
           ROOT / "data" / "letters-119-departed-parsed.jsonl"]
 PARSED_GLOB = "harvest/letters/letters-parsed-*.jsonl"
 UA = {"User-Agent": "ia-congressional-member-letters/0.1 (fetch for OCR)"}
+THUMBS = ROOT / "thumbs"
+_text_lock = threading.Lock()
 
 
 def jsonl(path: Path):
@@ -97,18 +108,34 @@ def targets(args) -> list[tuple[int, str, str, str, str, str]]:
     have = {p.stem for p in args.pdfs.glob("*.pdf")}
     need = {d for d, r in text.items()
             if int(r.get("chars") or 0) < args.min_chars and d not in ocr and d not in have}
+    # NEVER READ (#116): a thumbnail, so the PDF was rendered, but no text
+    # record at all. The first render batch, on 16 October 2026, saved no
+    # text: 9,506 of the 9,732 such scans on 14 November. Asking for scans
+    # whose recorded text is short never reaches a scan with no record, so
+    # no job covered them. Only with --never-read: the PC's bundle
+    # (make_ocr_bundle.py) leaves it off and keeps its list of scans.
+    never: set[str] = set()
+    if getattr(args, "never_read", False):
+        never = {p.stem for p in THUMBS.rglob("*.webp")} - set(text) - ocr - have
+        need |= never
     where: dict[str, tuple[int, str]] = {}
     for f in EXPLORERS.glob("Explorer-Congressional-Letters-*/payload/member/*.json"):
         n = int(f.parts[-4].rsplit("-", 1)[1])
         for row in json.loads(f.read_text(encoding="utf-8")):
-            key, digest = row[0], row[9]
+            key, ts, digest = row[0], row[1], row[9]
             if digest in need and (digest not in where or n > where[digest][0]):
-                where[digest] = (n, key)
+                where[digest] = (n, key, ts)
     seen = observed_urls(set(where))
-    out = [(n, d, key, text[d].get("captured") or "", text[d].get("sha256") or "",
-            seen.get(d) or key)
-           for d, (n, key) in where.items()]
+    # A never-read scan has no renderer record, so no capture time or sha256
+    # of its own: the time is the explorer's (the capture the thumbnail was
+    # made from) and the check is the Wayback digest itself, in fetch().
+    out = [(n, d, key, (text.get(d) or {}).get("captured") or ts,
+            (text.get(d) or {}).get("sha256") or "", seen.get(d) or key)
+           for d, (n, key, ts) in where.items()]
     out.sort(key=lambda t: (-t[0], t[1]))
+    if never:
+        print(f"{len(never):,} of them never read (a thumbnail, no text record)",
+              file=sys.stderr)
     print(f"{len(need):,} scans with no text and no local PDF; "
           f"{len(out):,} are in an explorer, {len(need) - len(out):,} are not (skipped)",
           file=sys.stderr)
@@ -116,10 +143,31 @@ def targets(args) -> list[tuple[int, str, str, str, str, str]]:
     if only:
         out = [t for t in out if t[0] in only]
         print(f"  {len(out):,} of them in the {args.congresses} share", file=sys.stderr)
+    args.never = never
     return out
 
 
-def fetch(item, pdfs: Path, tries: int = 3) -> tuple[str, str]:
+def wayback_digest(blob: bytes) -> str:
+    """The CDX digest: base-32 SHA-1 of the bytes the archive holds."""
+    return base64.b32encode(hashlib.sha1(blob).digest()).decode("ascii")
+
+
+def record_text(blob: bytes, digest: str, ts: str, text_path: Path) -> int:
+    """The PDF's own text into letter-text.jsonl, as thumbs.py records it, so
+    ocr_letters.py reads only a never-read scan that really is a scan."""
+    import thumbs  # build/, beside this script; pypdf only when called
+    body = thumbs.extract_text(blob)
+    line = json.dumps({"digest": digest, "sha256": hashlib.sha256(blob).hexdigest(),
+                       "bytes": len(blob), "captured": ts, "chars": len(body),
+                       "text": body[:60000], "by": "fetch_pdfs"}, ensure_ascii=False)
+    with _text_lock:
+        with text_path.open("a", encoding="utf-8") as fh:
+            fh.write(line + "\n")
+    return len(body)
+
+
+def fetch(item, pdfs: Path, tries: int = 3, never: frozenset = frozenset(),
+          text_path: Path | None = None, min_chars: int = 100) -> tuple[str, str]:
     n, digest, key, ts, sha, observed = item
     url = replay(ts, observed)
     last = ""
@@ -132,6 +180,16 @@ def fetch(item, pdfs: Path, tries: int = 3) -> tuple[str, str]:
                 return digest, "not-pdf"
             if sha and hashlib.sha256(blob).hexdigest() != sha:
                 return digest, "sha256-mismatch"
+            if digest in never:
+                # No sha256 to check against: the Wayback digest is the file's
+                # own SHA-1, so a match is the very capture the thumbnail is of.
+                if wayback_digest(blob) != digest:
+                    return digest, "digest-mismatch"
+                # Its text first, before the PDF appears where ocr_letters.py
+                # --watch looks. A text layer of min_chars or more needs no
+                # OCR, and the PDF is not kept.
+                if record_text(blob, digest, ts, text_path) >= min_chars:
+                    return digest, "ok-text"
             part = pdfs / f"{digest}.pdf.part"
             part.write_bytes(blob)
             part.replace(pdfs / f"{digest}.pdf")
@@ -158,6 +216,9 @@ def main() -> int:
     ap.add_argument("--max", type=int, default=0)
     ap.add_argument("--congresses", default="",
                     help="only these Congresses, e.g. 116-119; the PC takes the rest")
+    ap.add_argument("--never-read", action="store_true",
+                    help="also fetch scans with a thumbnail but no text record (#116), "
+                         "record their text layer, and keep for OCR only those under --min-chars")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
 
@@ -167,14 +228,17 @@ def main() -> int:
     if args.dry_run or not todo:
         return 0
     args.pdfs.mkdir(parents=True, exist_ok=True)
-    started, done, ok = time.time(), 0, 0
+    started, done, ok, read = time.time(), 0, 0, 0
     with ThreadPoolExecutor(args.workers) as pool:
-        futs = [pool.submit(fetch, item, args.pdfs) for item in todo]
+        never = frozenset(args.never)
+        futs = [pool.submit(fetch, item, args.pdfs, 3, never, args.text, args.min_chars)
+                for item in todo]
         for fut in as_completed(futs):
             digest, status = fut.result()
             done += 1
-            if status == "ok":
+            if status in ("ok", "ok-text"):
                 ok += 1
+                read += status == "ok-text"
             else:
                 with args.failures.open("a", encoding="utf-8") as fh:
                     fh.write(json.dumps({"digest": digest, "why": status,
@@ -182,7 +246,8 @@ def main() -> int:
             if done % 50 == 0 or done == len(todo):
                 rate = done / max(1e-9, time.time() - started) * 3600
                 print(f"{time.strftime('%H:%M:%S')}  {done:,}/{len(todo):,}  "
-                      f"{ok:,} kept  {rate:,.0f}/hour", file=sys.stderr, flush=True)
+                      f"{ok:,} kept ({read:,} by their text layer, no OCR needed)  "
+                      f"{rate:,.0f}/hour", file=sys.stderr, flush=True)
     return 0
 
 
