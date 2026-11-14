@@ -579,3 +579,18 @@ Schwarzenegger,5,person,Arnold Schwarzenegger,,person,Governors,"checked: ""Gove
 U S Ambassador Zoellick,5,officeholder,Office of the US Trade Representative,,,,"checked: ""The Honorable Robert B. Zoellick, United States Trade Representative"", 2003-2004 (batch 2, 2026-11-13: read the letters' address blocks)",accepted
 Norton,5,split,Department of the Interior@2003-2005,,organization,,"checked: ""The Honorable Gale Norton, Secretary of the Interior"", 2003-2005; the DC Water letters to Rep. Eleanor Holmes Norton stay unfiled (batch 2, 2026-11-13: read the letters' address blocks)",accepted
 Novartis,5,merge,Novartis,,organization,Companies,"checked: ""Novartis"", 2010-2025; filed to the organization only (batch 2, 2026-11-13: read the letters' address blocks)",accepted
+Leadership,636,merge,Congressional leadership,,organization,,checked 20 of the 185 with text: every one is addressed to named congressional leaders in its salutation (Speaker Ryan and Leader Pelosi; Majority Leader Reid and Republican Leader McConnell; Chairman Frelinghuysen and Ranking Member Lowey),accepted
+House Leadership,103,merge,Congressional leadership,,organization,,"the House leadership, unnamed; same form as House And Senate Leadership",accepted
+Senate Leadership,74,merge,Congressional leadership,,organization,,"the Senate leadership, unnamed",accepted
+Dem Leadership,3,merge,Congressional leadership,,organization,,"the Democratic congressional leadership, unnamed; cf. Gop Leadership",accepted
+Sasc Leadership,4,merge,Senate Armed Services Committee,,organization,,the chair and ranking member of the Senate Armed Services Committee; Senate Armed Services Committee is an existing term,accepted
+Ai Companies,3,reject,,,,,"no company named. The three letters address the CEOs of Anthropic, OpenAI and xAI; those belong in the vocabulary as companies, not this phrase as an organization (#125)",accepted
+Social Media Companies,3,reject,,,,,no company named,accepted
+Social Media Ceos,4,reject,,,,,no company or person named,accepted
+Big Pharma Companies,3,reject,,,,,no company named,accepted
+Companies,2,reject,,,,,no company named,accepted
+Ceos,4,reject,,,,,no company or person named,accepted
+Media Executives,2,reject,,,,,no organization or person named,accepted
+Executives Climate Change Coverage,2,reject,,,,,"no organization named; 'climate change coverage' is the subject, not the recipient",accepted
+Appropriations Leadership,3,hold,,,,,"the chairs and ranking members of the Appropriations Committees, but which chamber is not stated; no House Committee on Appropriations term exists yet",proposed
+Republican Governors,2,hold,,,,,"may be the Republican Governors Association, a real body, or simply governors unnamed; not checked against the letters",proposed
