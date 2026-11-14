@@ -75,15 +75,21 @@ def explorer_hosts() -> set[str]:
                 if (row.get("in_explorer") or "").strip() == "yes"}
 
 
+# Where the legislators JSON is kept: data/legislators/ on the Mac (what
+# congress_roster.py reads), data/cdx-cache/ on the PC.
+LEGISLATORS = [ROOT / "data" / "legislators", CACHE]
+
+
 def people() -> list[dict]:
-    out = []
-    for name in ("legislators-historical.json", "legislators-current.json"):
-        path = CACHE / name
-        if path.exists():
-            out += json.loads(path.read_text(encoding="utf-8"))
-    if not out:
-        sys.exit(f"no legislators JSON in {CACHE}")
-    return out
+    for folder in LEGISLATORS:
+        out = []
+        for name in ("legislators-historical.json", "legislators-current.json"):
+            path = folder / name
+            if path.exists():
+                out += json.loads(path.read_text(encoding="utf-8"))
+        if out:
+            return out
+    sys.exit("no legislators JSON in " + " or ".join(str(f) for f in LEGISLATORS))
 
 
 def build(n: int) -> Path:
