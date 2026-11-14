@@ -439,6 +439,13 @@ rule below, for step 4 to call.
      site live before the source records it (`mccollum.house.gov`,
      `bobbyscott.house.gov`, Cole's `cole.house.gov` from 2007 while the
      rosters give `www.house.gov/cole` until 2011).
+   - After the last holder in the rosters, **when that holder was still in
+     office in the same chamber**: that holder, flagged `after_move`. Decided
+     14 November 2026 (Robin). These are letters left on a member's old path
+     after they moved to their own host: `senate.gov/~schumer` (captured
+     2003–05), `house.gov/waxman` (2007–08), `senate.gov/~levin`, `~wyden`,
+     `~craig`, and hosts the roster replaced (`zoelofgren.house.gov`,
+     `slaughter.house.gov`). 297 letters on 14 November, 108th–114th.
    - Otherwise, before the first holder or after the last: no holder.
      `attribution: none`, kept out of the explorer, as letters-from-congress#2
      sets for the backfill. That covers holders from before 1999, whom the
@@ -592,7 +599,7 @@ as soon as one is known.
 the letter's date rather than whoever holds the host today, and four fields
 added: `address`, `attribution` (`holder`, `after_service` or `none`),
 `dated_by` (`letter`, `pdf` or `capture`) and `by_capture`. `attribution` can
-also be `earlier_office` or `caucus` (step 3, rule 3). `none` and `caucus` stay
+also be `earlier_office`, `after_move` or `caucus` (step 3, rule 3). `none` and `caucus` stay
 out of the explorer, as letters-from-congress#2 set for the backfill. The 119th's
 departed file merges into it; it existed only because the harvest started
 from the sitting roster.

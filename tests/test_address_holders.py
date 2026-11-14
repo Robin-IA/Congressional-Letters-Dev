@@ -172,6 +172,16 @@ class Attribute(unittest.TestCase):
         self.assertEqual(caucus_parent(IDX, "murphy.house.gov"), "")
         self.assertEqual(caucus_parent(IDX, "nobody.house.gov"), "")
 
+    def test_a_letter_left_on_an_old_path_after_a_move_is_theirs(self):
+        # Schumer held senate.gov/~schumer to 2003, then schumer.senate.gov;
+        # Waxman held house.gov/waxman to 2007, then waxman.house.gov.
+        self.assertEqual(who("https://www.senate.gov/~schumer/x.pdf", "2004-06-01"),
+                         ("S000148", "after_move"))
+        self.assertEqual(who("https://www.house.gov/waxman/x.pdf", "2007-06-01"),
+                         ("W000215", "after_move"))
+        # After Waxman left Congress (2015), no one.
+        self.assertEqual(who("https://www.house.gov/waxman/x.pdf", "2016-06-01"), ("", "none"))
+
     def test_the_day_a_seat_changes_hands_goes_to_the_incoming_holder(self):
         self.assertEqual(who("https://murphy.house.gov/a.pdf", "2023-01-03"), (GREG_MURPHY, "holder"))
 

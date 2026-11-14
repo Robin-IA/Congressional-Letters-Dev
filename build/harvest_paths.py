@@ -57,6 +57,7 @@ import argparse
 import concurrent.futures as cf
 import csv
 import json
+import re
 import sys
 import time
 from pathlib import Path
@@ -139,11 +140,33 @@ def build_attribution(sites_file: Path, roster: Path) -> dict[str, dict]:
     return out
 
 
+def roster_paths(rosters: Path) -> set[str]:
+    """Every path site a Congress roster gives as a member's website (#79, #69).
+
+    ``member-sites.tsv`` came from the House directory and holds 435 paths;
+    the rosters name 683, including the Senate's ``senate.gov/~name`` sites,
+    which no harvest had searched. In the 106th that left 196 members whose
+    page said "archived" but whose site no one had looked through. Who wrote
+    a letter is not decided here: ``paths_letters.py`` credits each letter to
+    whoever held the path at the time, from the same rosters.
+    """
+    out: set[str] = set()
+    for f in sorted(rosters.glob("congress*-roster.csv")):
+        for r in csv.DictReader(f.open(encoding="utf-8")):
+            for u in (r.get("website_at_the_time") or "").split(" | "):
+                u = re.sub(r"^https?://(?:www\.)?", "", u.strip(), flags=re.I).rstrip("/")
+                if re.match(r"^(?:house|senate)\.gov/[^/]+$", u, re.I):
+                    out.add(u.lower())
+    return out
+
+
 def main() -> int:
     root = Path(__file__).resolve().parents[1]
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--sites", type=Path, default=root / "data" / "member-sites.tsv")
     ap.add_argument("--roster", type=Path, default=root / "data" / "members.json")
+    ap.add_argument("--rosters", type=Path, default=root / "data" / "rosters",
+                    help="Congress rosters: their path sites are searched too")
     ap.add_argument("--cache", type=Path,
                     default=root / "data" / "cdx-cache" / "paths")
     ap.add_argument("--out", type=Path,
@@ -160,6 +183,14 @@ def main() -> int:
 
     args.cache.mkdir(parents=True, exist_ok=True)
     attribution = build_attribution(args.sites, args.roster)
+    added = 0
+    for site in sorted(roster_paths(args.rosters)):
+        if site not in attribution:
+            attribution[site] = {"bioguide": "", "matched_host": "",
+                                 "attribution": "roster"}
+            added += 1
+    print("%d path sites from the rosters that the directory list lacks" % added,
+          file=sys.stderr)
 
     sites = sorted(s for s in attribution if s.split("/", 1)[1] not in NOT_A_MEMBER)
     skipped = len(attribution) - len(sites)
