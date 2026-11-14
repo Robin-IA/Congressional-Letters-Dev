@@ -47,6 +47,7 @@ ROOT = Path(__file__).resolve().parents[1]
 EXPLORERS = ROOT.parent / "explorers"
 PARSED = [ROOT / "data" / "letters-parsed.jsonl",
           ROOT / "data" / "letters-119-departed-parsed.jsonl"]
+PARSED_GLOB = "harvest/letters/letters-parsed-*.jsonl"
 UA = {"User-Agent": "ia-congressional-member-letters/0.1 (fetch for OCR)"}
 
 
@@ -74,7 +75,10 @@ def congress_set(spec: str) -> set[int]:
 def observed_urls(digests: set[str]) -> dict[str, str]:
     """digest -> a URL the harvest saw the Wayback Machine hold it under (#102)."""
     out: dict[str, str] = {}
-    for path in PARSED:
+    # Every parsed-letter file the explorers are built from, as
+    # build_congress.all_letters() reads them: the per-harvest files hold
+    # about 27,000 digests found nowhere else.
+    for path in [*PARSED, *sorted(ROOT.glob(PARSED_GLOB))]:
         for r in jsonl(path):
             d = r.get("digest")
             if d in digests and d not in out and r.get("url"):
