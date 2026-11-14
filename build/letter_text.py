@@ -42,6 +42,7 @@ ROOT = Path(__file__).resolve().parents[1]
 CACHE = ROOT / "data" / "letter-text-info.json"
 TITLES = ROOT / "vocabulary" / "letter-titles.csv"
 DATES = ROOT / "vocabulary" / "letter-dates.csv"
+TOPICS_BY_HAND = ROOT / "vocabulary" / "letter-topics.csv"
 RULES = "2026-11-13d"  # change when the rules change, so the cache is redone
 
 # -------------------------------------------------------------------- topics
@@ -108,6 +109,31 @@ def by_hand() -> dict[str, str]:
         return {}
     with TITLES.open(encoding="utf-8") as fh:
         return {r["digest"]: r["title"] for r in csv.DictReader(fh) if r.get("title")}
+
+
+# -------------------------------------------------------------- topics by hand
+
+def topics_by_hand() -> dict[str, list[str]]:
+    """digest -> [topics], read from the letter and written by hand.
+
+    topics_in() finds a topic when a letter says its distinctive words often
+    enough, which is right for Medicare or Diabetes and silent about anything
+    the rules do not name. A letter about the merchant category code for gun
+    retailers is about firearms, payment processing and the Second Amendment,
+    and no rule here knows that.
+
+    These are added to whatever the rules find rather than replacing them, so
+    a letter keeps the topics its text earns and gains the ones a reader saw.
+    """
+    if not TOPICS_BY_HAND.exists():
+        return {}
+    out: dict[str, list[str]] = {}
+    with TOPICS_BY_HAND.open(encoding="utf-8") as fh:
+        for row in csv.DictReader(fh):
+            tops = [t.strip() for t in (row.get("topics") or "").split(";") if t.strip()]
+            if row.get("digest") and tops:
+                out[row["digest"]] = tops
+    return out
 
 
 # --------------------------------------------------------------------- dates
