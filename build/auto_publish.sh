@@ -10,8 +10,13 @@
 #      only what the Mac lacks);
 #   2. if anything was merged, or the Mac's own renderer has made MIN_NEW more
 #      thumbnails since the last publish, rebuilds every explorer
-#      (build_congress.py --copy-thumbs), the Download data CSVs and the home
-#      page, and runs publish_explorers.sh.
+#      (build_congress.py --copy-thumbs), the Download data CSVs, the
+#      vocabulary and the home page, and runs publish_explorers.sh.
+#
+# The vocabulary is rebuilt because its counts come from the explorers just
+# built: new OCR can give a committee or caucus its first letter
+# (committees.py, caucuses.py), and without this the letter is tagged but the
+# term is missing from By topic until the next manual rebuild.
 #
 # Robin asked for this on 12 November 2026: share the explorers as complete as
 # possible while rendering and OCR continue, accepting repeat uploads. GitHub
@@ -62,6 +67,7 @@ while true; do
     say "publishing: $now thumbnails ($((now - last)) since the last publish)"
     if python3 build/build_congress.py 106-119 --copy-thumbs >>"$LOG" 2>&1 \
        && python3 build/export_csv.py >>"$LOG" 2>&1 \
+       && python3 build/build_vocabulary.py >>"$LOG" 2>&1 \
        && python3 build/build_hub.py >>"$LOG" 2>&1 \
        && bash build/publish_explorers.sh >>"$LOG" 2>&1; then
       remember thumbs-at-publish "$now"
