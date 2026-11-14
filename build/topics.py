@@ -192,7 +192,10 @@ SUBJECTS: dict[str, tuple[str, ...]] = {
     "Budgets": (),
     "Shipping": (),
     "Cannabis": ("cannabis", "marijuana", "hemp"),
-    "Judiciary": ("judiciary", "judicial", "federal judge", "federal court",
+    # Not the bare word "judiciary": it names the Judiciary Committees, and
+    # 320 of 382 letters it tagged were committee correspondence (Peace
+    # Corps oversight, H-1B, ATF grants), not the courts. Measured 14 Nov 2026.
+    "Judiciary": ("judicial", "federal judge", "federal court",
                   "circuit court", "district court", "supreme court"),
     "Violence against government officials": (
         "violence against judges", "violence against public officials",
