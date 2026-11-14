@@ -194,6 +194,12 @@ SUBJECTS: dict[str, tuple[str, ...]] = {
     "Cannabis": ("cannabis", "marijuana", "hemp"),
     "Judiciary": ("judiciary", "judicial", "federal judge", "federal court",
                   "circuit court", "district court", "supreme court"),
+    "Violence against government officials": (
+        "violence against judges", "violence against public officials",
+        "violence against government officials", "violence against election",
+        "threats against judges", "threats against public officials",
+        "threats against election officials", "threats against members of congress",
+        "political violence", "threatened with violence"),
 
     # Named laws a letter cites. The name is the match word, so these are
     # found by rule as well as assigned by hand. Counted across all 17,519
