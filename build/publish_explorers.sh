@@ -87,6 +87,21 @@ publish "Explorer-Letters" \
   "Letters from Congress: start here. All letters from every Congress, 106th to 119th, that members published on their own websites, preserved by the Wayback Machine. Search across all of them, then open any Congress's explorer."
 say "=== all done ==="
 
+# The development repository's description gives the collection's size, and
+# went stale at 69,650 while the explorers grew past 113,000 (14 November
+# 2026). Set it from the explorers just published: the sum of their letters,
+# the same total the home page shows.
+total=$(python3 -c '
+import json, glob
+print(format(sum(json.load(open(f))["letters"]
+                 for f in glob.glob("Explorer-Congressional-Letters-*/index.json")), ","))' 2>/dev/null)
+if [ -n "$total" ] && gh repo edit "$OWNER/Congressional-Letters-Dev" --description \
+     "Letters from Congress: explorer, harvest pipeline and the departed-member backfill. Working copy — development happens here. $total letters from members' own websites, preserved by the Wayback Machine." >/dev/null 2>&1; then
+  say "Congressional-Letters-Dev: description says $total letters"
+else
+  say "Congressional-Letters-Dev: description NOT updated"
+fi
+
 # The same build to Internet Archive Canada, so the two never drift apart:
 # auto_publish.sh calls this script every round and gets both. PUBLISH_IAC=0
 # publishes to Robin-IA only.
