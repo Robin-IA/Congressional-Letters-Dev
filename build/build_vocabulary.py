@@ -358,11 +358,17 @@ def main() -> int:
     surnames = defaultdict(set)
     for bid, m in rosters().items():
         surnames[m["name"].split()[-1].lower()].add(bid)
+    # A name someone has reviewed is a term whatever its count: Grassley's
+    # 2011 letter to Mental Health America is on two pages, under the
+    # MIN_CANDIDATE floor, and its review would otherwise apply to nothing.
+    review_file = OUT / "reviews.csv"
+    reviewed = ({name_key(r["candidate"]) for r in csv.DictReader(review_file.open(encoding="utf-8"))
+                 if r.get("status") == "accepted"} if review_file.exists() else set())
     cand = Counter()
     spellings = {}
     for key, forms in groups.items():
         total = sum(forms.values())
-        if total >= MIN_CANDIDATE:
+        if total >= MIN_CANDIDATE or key in reviewed:
             label = forms.most_common(1)[0][0]
             cand[label] = total
             spellings[label] = [f for f in forms if f != label]
