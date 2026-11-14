@@ -218,7 +218,7 @@ def overlaps(holdings: list[Holding]) -> list[tuple[Holding, Holding]]:
 @dataclass
 class Attribution:
     bioguide_id: str          # "" when attribution is none
-    attribution: str          # "holder", "after_service", "earlier_office" or "none"
+    attribution: str          # "holder", "after_service", "after_move", "earlier_office" or "none"
     by_capture: bool = False  # dated by capture on an address with more than one holder
 
 
@@ -257,7 +257,8 @@ def attribute(idx: Index, url: str, date: str = "",
     (decided 2026-11-12). Before the first
     holder: that holder, flagged ``earlier_office`` (decided 2026-11-09), if
     they were in Congress then in any chamber; otherwise ``none``. After the
-    last: ``none``. On the day a seat changes hands both spans include it; the
+    last: that holder, flagged ``after_move`` (decided 2026-11-14), if still
+    in office then in the same chamber; otherwise ``none``. On the day a seat changes hands both spans include it; the
     incoming holder wins, since a new term begins at noon.
     """
     key = address_key(url)
@@ -312,6 +313,16 @@ def attribute(idx: Index, url: str, date: str = "",
         first = min(later, key=lambda h: h.held_from)
         if any(a <= d <= b for a, b, _ in getattr(idx, "service", {}).get(first.bioguide_id, [])):
             return Attribution(first.bioguide_id, "earlier_office", flag)
+    if earlier and not later:
+        # After the address's last holder, while that member was still in
+        # office in the same chamber at another address: a letter left on the
+        # old path after they moved to their own host. Theirs, flagged
+        # (decided 2026-11-14): senate.gov/~schumer captured 2003-05,
+        # house.gov/waxman 2007-08, senate.gov/~levin, ~wyden, ~craig.
+        last = max(earlier, key=lambda h: h.held_to)
+        if any(a <= d <= b and ch == last.chamber
+               for a, b, ch in getattr(idx, "service", {}).get(last.bioguide_id, [])):
+            return Attribution(last.bioguide_id, "after_move", flag)
     return Attribution("", "none", flag)
 
 
