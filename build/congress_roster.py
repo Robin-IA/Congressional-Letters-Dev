@@ -76,6 +76,16 @@ URL_CORRECTIONS = {
     ("W000267", 109): ("https://www.house.gov/weldon | https://weldon.house.gov",
                        _W.format("www.house.gov/curtweldon, Curt Weldon's site",
                                  "www.house.gov/weldon 2005-01, then weldon.house.gov 2005-04–2006-12")),
+    # #69: members the source gives no URL, whose sites the Wayback Machine
+    # holds inside their own dates (checked 2026-11-14). Not Joel Hefley in
+    # the 106th: every 1999-2000 capture of www.house.gov/hefley is a 404,
+    # so the House had no page for him there; his site appears in 2001.
+    ("J000283", 106): ("https://www.house.gov/jackson",
+                       "URL not in dataset; www.house.gov/jackson is archived 1997 on, "
+                       "and the 110th roster gives it"),
+    ("B001237", 107): ("https://barkley.senate.gov",
+                       "URL not in dataset; barkley.senate.gov is archived 2002-2007; "
+                       "www.senate.gov/~barkley holds nothing"),
     # curtweldon.house.gov is first listed in 2005-04
     ("W000268", 108): ("https://www.house.gov/curtweldon",
                        _W.format("curtweldon.house.gov, which it first lists in 2005", "www.house.gov/curtweldon 2003-02–2005-01")),

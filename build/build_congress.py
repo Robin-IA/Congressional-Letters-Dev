@@ -118,7 +118,13 @@ def wayback_record(n: int) -> dict[str, dict]:
                 url = (row.get(col) or "").strip()
                 if days and url.startswith(WAYBACK_PREFIX):
                     rec[key] = url
-            out[row["bioguide_id"]] = rec
+            # A member with two addresses in a Congress has a row for each.
+            # Keep the one archived most, not whichever comes last: Akin
+            # (108th) and Musgrave (110th) read as "never archived" because
+            # their second address found nothing in the window.
+            have = out.get(row["bioguide_id"])
+            if have is None or days > have["days"]:
+                out[row["bioguide_id"]] = rec
     return out
 
 
