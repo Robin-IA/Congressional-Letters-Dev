@@ -535,6 +535,11 @@ def main() -> int:
         extra_hier.append({"term": label,
                            "broader": f"{committees.chamber(label)} committees"})
 
+    # Caucuses sit together under Topics (hierarchy.csv's "Caucuses"), by rule,
+    # so a caucus added to address_holders.CAUCUSES is placed without a new row.
+    for label in sorted(set(address_holders.CAUCUSES.values())):
+        extra_hier.append({"term": label, "broader": "Caucuses"})
+
     # The hierarchy --------------------------------------------------------------
     # vocabulary/hierarchy.csv is made by hand: each row a term and the term it
     # sits under. A label there that is not a term yet becomes a category.
