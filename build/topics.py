@@ -207,8 +207,12 @@ SUBJECTS: dict[str, tuple[str, ...]] = {
     # them about the Affordable Care Act or affordable housing, which are
     # their own topics. "affordability" and "cost of living" are the ones
     # that mean this.
-    "Affordability": ("affordability", "cost of living", "unaffordable",
-                      "household cost", "rising cost"),
+    # "rising cost" is left out: it begins one word earlier than "cost of
+    # living" and shadowed it, so a letter about the rising cost of living
+    # got Affordability and not Cost of living.
+    "Affordability": ("affordability", "unaffordable", "household cost"),
+    "Cost of living": ("cost of living", "cost-of-living adjustment",
+                       "col a increase", "purchasing power"),
     # The armed services, under Defense. The parent says a letter is about
     # defence; these say which service. Each uses its own name rather than a
     # own name. "navy" and "army" are kept bare: letters say "the Navy", not
