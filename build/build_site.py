@@ -359,6 +359,12 @@ def main() -> None:
     hand_titles = letter_text.by_hand()
     hand_dates = letter_text.dates_by_hand()
     hand_topics = letter_text.topics_by_hand()
+    # Like recipient-topics.csv: a label that is not a topic would publish
+    # as a stray term, so stop here and name it (the PC's hourly batches).
+    for digest, labels in hand_topics.items():
+        unknown = [t for t in labels if t not in SUBJECTS]
+        if unknown:
+            raise SystemExit(f"letter-topics.csv: {digest}: not a topic: {unknown}")
     if hand_dates:
         print(f"  {len(hand_dates):,} dates read from the letters",
               file=sys.stderr)
