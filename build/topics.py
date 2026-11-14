@@ -191,6 +191,12 @@ SUBJECTS: dict[str, tuple[str, ...]] = {
     # Office; 'shipping' is any parcel. Added 14 November 2026 (#143).
     "Budgets": (),
     "Shipping": (),
+    # The bare word "affordable" is left out: 976 letters use it, many of
+    # them about the Affordable Care Act or affordable housing, which are
+    # their own topics. "affordability" and "cost of living" are the ones
+    # that mean this.
+    "Affordability": ("affordability", "cost of living", "unaffordable",
+                      "household cost", "rising cost"),
     # The armed services, under Defense. The parent says a letter is about
     # defence; these say which service. Each uses its own name rather than a
     # own name. "navy" and "army" are kept bare: letters say "the Navy", not
