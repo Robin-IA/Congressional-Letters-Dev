@@ -7,7 +7,7 @@ Writes ~/Desktop/pc-ocr-<SHARE>/pc-ocr-<SHARE>.zip holding:
 
   fetch_for_ocr.py    downloads each scan from Wayback (standard library only)
   ocr_tesseract.py    reads each one with Tesseract
-  fetch-list.jsonl    the scans in this share: digest, key, timestamp, sha256
+  fetch-list.jsonl    the scans in this share: digest, key, url, timestamp, sha256
   letter-text.jsonl   digest and text-layer length only, which is how
                       ocr_tesseract.py picks the PDFs that need reading
 
@@ -47,8 +47,9 @@ def main() -> int:
     for name in ("fetch_for_ocr.py", "ocr_tesseract.py"):
         shutil.copy2(REPO / "build" / "pc" / name, bundle / name)
     with (bundle / "fetch-list.jsonl").open("w", encoding="utf-8", newline="\n") as fh:
-        for n, digest, key, ts, sha in items:
-            fh.write(json.dumps({"digest": digest, "key": key, "timestamp": ts,
+        for n, digest, key, ts, sha, url in items:
+            # url: the address the archive holds; key is identity only (#102)
+            fh.write(json.dumps({"digest": digest, "key": key, "url": url, "timestamp": ts,
                                  "sha256": sha, "congress": n}) + "\n")
     with (bundle / "letter-text.jsonl").open("w", encoding="utf-8", newline="\n") as fh:
         for _, digest, *_ in items:

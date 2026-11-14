@@ -5,7 +5,7 @@
 
 The PC's share of the scans that were rendered before PDFs were kept, so they
 have a thumbnail but no text. ``fetch-list.jsonl`` lists them, one per line:
-{digest, key, timestamp, sha256, congress}. Each PDF is downloaded once from
+{digest, key, url, timestamp, sha256, congress}. Each PDF is downloaded once from
 the exact capture the thumbnail was made from, checked against the sha256 the
 renderer recorded, and kept in ``pdfs\\<digest>.pdf``. ``ocr_tesseract.py
 --watch``, running beside it in a second window, reads each one and writes
@@ -61,10 +61,21 @@ def keep_awake(on: bool) -> None:
         ES_CONTINUOUS | (ES_SYSTEM_REQUIRED if on else 0))
 
 
+def asked(item: dict) -> str:
+    """The URL to ask for: the one the archive holds (``url``), not ``key``.
+
+    ``key`` is the letter's identity, with any hex prefix stripped from the
+    file name; the archive never held that spelling, so asking for it was a
+    404 for most of the scans once marked dead (#102). Older lists have no
+    ``url`` and fall back to ``key``.
+    """
+    return item.get("url") or item["key"]
+
+
 def fetch(item: dict) -> tuple[str, str]:
     digest = item["digest"]
     url = (f"https://web.archive.org/web/{item['timestamp']}id_/"
-           + urllib.parse.quote(item["key"], safe=":/?&=%#~+,;@!$'()*[]"))
+           + urllib.parse.quote(asked(item), safe=":/?&=%#~+,;@!$'()*[]"))
     try:
         with urllib.request.urlopen(urllib.request.Request(url, headers=UA),
                                     timeout=120) as r:
@@ -88,7 +99,11 @@ def main() -> int:
         sys.exit(f"{LIST.name} is missing: unzip the bundle into this folder.")
     items = [json.loads(line) for line in LIST.open(encoding="utf-8") if line.strip()]
     PDFS.mkdir(exist_ok=True)
-    # A 404 or 410 will not change on a retry; everything else might.
+    # A 404 or 410 will not change on a retry of the same URL; everything
+    # else might. A failure is final only for the URL that was asked: rows
+    # written before the list carried ``url`` asked for ``key`` and record no
+    # URL, so those letters are tried again at the address the archive holds.
+    now = {i["digest"]: asked(i) for i in items}
     final = set()
     if FAILURES.exists():
         for line in FAILURES.open(encoding="utf-8"):
@@ -96,7 +111,8 @@ def main() -> int:
                 row = json.loads(line)
             except Exception:  # noqa: BLE001
                 continue
-            if row.get("why") in ("http-404", "http-410", "not-pdf", "sha256-mismatch"):
+            if (row.get("why") in ("http-404", "http-410", "not-pdf", "sha256-mismatch")
+                    and row.get("asked") and row.get("asked") == now.get(row["digest"])):
                 final.add(row["digest"])
 
     say(f"=== fetch for OCR (PC): {len(items):,} scans, {WORKERS} workers ===")
@@ -121,7 +137,8 @@ def main() -> int:
                         if status in ("http-404", "http-410", "not-pdf", "sha256-mismatch"):
                             final.add(digest)
                         with FAILURES.open("a", encoding="utf-8") as fh:
-                            fh.write(json.dumps({"digest": digest, "why": status}) + "\n")
+                            fh.write(json.dumps({"digest": digest, "why": status,
+                                                 "asked": now.get(digest)}) + "\n")
                     if n % 100 == 0:
                         rate = n / max(1e-9, time.time() - started) * 3600
                         say(f"  {n:,}/{len(todo):,}  {kept:,} kept  {rate:,.0f}/hour")
