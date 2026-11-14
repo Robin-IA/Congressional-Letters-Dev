@@ -191,6 +191,45 @@ SUBJECTS: dict[str, tuple[str, ...]] = {
     # Office; 'shipping' is any parcel. Added 14 November 2026 (#143).
     "Budgets": (),
     "Shipping": (),
+
+    # Named laws a letter cites. The name is the match word, so these are
+    # found by rule as well as assigned by hand. Counted across all 17,519
+    # letters with text on 14 November 2026; each is cited by at least six.
+    "Jones Act": ('jones act', 'merchant marine act'),   # 10 letters
+    "CARES Act": ('cares act', 'coronavirus aid, relief, and economic security'),   # 349 letters
+    "National Defense Authorization Act": ('national defense authorization', 'ndaa'),   # 306 letters
+    "Clean Water Act": ('clean water act',),   # 240 letters
+    "Omnibus Crime Control and Safe Streets Act": ('safe streets act', 'omnibus crime control'),   # 185 letters
+    "Immigration and Nationality Act": ('immigration and nationality act',),   # 165 letters
+    "Freedom of Information Act": ('freedom of information act', 'foia'),   # 137 letters
+    "Clean Air Act": ('clean air act',),   # 131 letters
+    "Safe Drinking Water Act": ('safe drinking water act',),   # 131 letters
+    "Stafford Act": ('stafford act', 'stafford disaster relief'),   # 130 letters
+    "National Environmental Policy Act": ('national environmental policy act', 'nepa'),   # 119 letters
+    "American Rescue Plan Act": ('american rescue plan',),   # 116 letters
+    "Inflation Reduction Act": ('inflation reduction act',),   # 116 letters
+    "Endangered Species Act": ('endangered species act',),   # 110 letters
+    "Water Resources Development Act": ('water resources development act', 'wrda'),   # 97 letters
+    "Dodd-Frank Act": ('dodd-frank', 'dodd frank'),   # 90 letters
+    "Civil Rights Act": ('civil rights act',),   # 54 letters
+    "Higher Education Act": ('higher education act',),   # 53 letters
+    "Defense Production Act": ('defense production act',),   # 53 letters
+    "Administrative Procedure Act": ('administrative procedure act',),   # 51 letters
+    "American Recovery and Reinvestment Act": ('american recovery and reinvestment', 'arra'),   # 47 letters
+    "Families First Coronavirus Response Act": ('families first coronavirus response',),   # 45 letters
+    "Americans with Disabilities Act": ('americans with disabilities act',),   # 44 letters
+    "Controlled Substances Act": ('controlled substances act',),   # 43 letters
+    "Social Security Act": ('social security act',),   # 42 letters
+    "Elementary and Secondary Education Act": ('elementary and secondary education act', 'esea'),   # 38 letters
+    "Voting Rights Act": ('voting rights act',),   # 32 letters
+    "Congressional Review Act": ('congressional review act',),   # 32 letters
+    "International Emergency Economic Powers Act": ('international emergency economic powers', 'ieepa'),   # 32 letters
+    "Comprehensive Addiction and Recovery Act": ('comprehensive addiction and recovery',),   # 30 letters
+    "CHIPS and Science Act": ('chips and science act', 'chips act'),   # 29 letters
+    "Antiquities Act": ('antiquities act',),   # 25 letters
+    "Secure Rural Schools": ('secure rural schools',),   # 16 letters
+    "21st Century Cures Act": ('21st century cures',),   # 13 letters
+    "Wildfire Disaster Funding Act": ('wildfire disaster funding act',),   # 6 letters
 }
 
 # ------------------------------------------------------------- the agencies
