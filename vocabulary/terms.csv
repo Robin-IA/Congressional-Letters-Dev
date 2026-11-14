@@ -2885,3 +2885,8 @@ C-not-yet-reviewed,Not yet reviewed,category,group,preferred,local,,0,
 C-organizations-not-yet-reviewed,Organizations not yet reviewed,category,group,preferred,local,,0,
 C-people-not-yet-reviewed,People not yet reviewed,category,group,preferred,local,,0,
 C-recipients-not-yet-sorted,Recipients not yet sorted,category,group,preferred,local,,0,
+T-affordable-care-act,Affordable Care Act,topic,subject,preferred,local,,69,tagged from the text by letter_text.py; was in hierarchy.csv under Health care but not here
+T-railroads,Railroads,topic,subject,preferred,local,,58,tagged from the text by letter_text.py
+T-diabetes,Diabetes,topic,subject,preferred,local,,43,"tagged from the text by letter_text.py; needs two mentions, as one is usually a disease in a list"
+T-budgets,Budgets,topic,subject,preferred,local,,0,"federal budgets and spending negotiations; plural, because 'budget' is also a verb"
+T-shipping,Shipping,topic,subject,preferred,local,,0,"merchant shipping and maritime trade, e.g. the Jones Act build requirements"
