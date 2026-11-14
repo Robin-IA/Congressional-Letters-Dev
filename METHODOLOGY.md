@@ -580,14 +580,39 @@ at the crawl's 64,000-byte cap are bad captures. These filters live in
 
 ### Dating
 
+**This changed on 14 November 2026.** Until then every date came from a file
+name, a PDF's own metadata or a capture timestamp: the letters' text had not
+been read. With OCR finished for the 106th-115th scans (Job 2) and the
+116th-119th (Job 4), the letter itself can be asked, and it is the better
+source.
+
 The date `attribute()` is given, in order:
 
-1. **The letter's own date**, read from its URL or path (`parse_urls.py`:
-   31,081 letters today).
-2. **The date the PDF says it was made** (`data/pdf-dates.jsonl`, written by
-   the renderer: 715 more today, and it grows as rendering continues).
-3. **The first capture of the letter's URL**, which bounds the posting date
-   from above. Flagged `by_capture` on a shared address.
+1. **The date stated on the letter**, read from its text. A letter puts its
+   date on its letterhead; 95.3% of letters with text state one. This is the
+   letter's own date in the plain sense, and it outranks the rest.
+2. **The date in its URL or path** (`parse_urls.py`: 31,081 letters today).
+   *This was previously called "the letter's own date". It is not.* A file
+   name records when a file was posted or named. Measured against the
+   letterhead, **768 letters given `day` precision from a file name are
+   contradicted by the letter**: `capito…2017_2_21` against a letter dated
+   21 December 2017, `king…07-28-17` against one dated 1 August 2017 (#126).
+3. **The date the PDF says it was made** (`data/pdf-dates.jsonl`, written by
+   the renderer).
+4. **The first capture of the letter's URL**, which bounds the posting date
+   from above. Flagged `by_capture` on a shared address. **8,996 letters are
+   dated this way and state a date of their own in their text** (#126).
+
+**A fifth check, which no single source gives:** the addressees date the
+letter. A letter opening "Dear Speaker Ryan and Leader Pelosi" cannot
+postdate January 2019 whatever our record says. Among 115 letters resolved to
+named addressees, 12 carried a stored date on which an addressee could not
+have held their post; eleven of the twelve were `by_capture`. One, filed
+under 2025-04-01, is addressed to Majority Leader McConnell and Speaker Ryan
+and states 2 August 2016 — nine years out.
+
+Where a letter states no date, the order above falls through as before, and
+the source is recorded so a reader can tell which was used.
 
 Because the renderer adds PDF dates after the harvest, attributing at build
 time means a letter first credited by capture is re-credited by its own date
