@@ -358,6 +358,7 @@ def main() -> None:
     text_topics = letter_text.by_digest()
     hand_titles = letter_text.by_hand()
     hand_dates = letter_text.dates_by_hand()
+    hand_topics = letter_text.topics_by_hand()
     if hand_dates:
         print(f"  {len(hand_dates):,} dates read from the letters",
               file=sys.stderr)
@@ -469,6 +470,9 @@ def main() -> None:
                     record.get("host") or record.get("key", ""))) else [])
                 + tag_topics(f"{subject or ''} {recipient or ''}")
                 + text_topics.get(digest or "", [])
+                # topics a reader saw in the letter that no rule names
+                # (vocabulary/letter-topics.csv, letter_text.py)
+                + hand_topics.get(digest or "", [])
                 + recipient_topics().get((recipient or "").lower(), []))),
             ",".join(record.get("cosigners") or []),
             digest,
