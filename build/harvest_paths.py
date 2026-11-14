@@ -155,7 +155,10 @@ def roster_paths(rosters: Path) -> set[str]:
         for r in csv.DictReader(f.open(encoding="utf-8")):
             for u in (r.get("website_at_the_time") or "").split(" | "):
                 u = re.sub(r"^https?://(?:www\.)?", "", u.strip(), flags=re.I).rstrip("/")
-                if re.match(r"^(?:house|senate)\.gov/[^/]+$", u, re.I):
+                # wwwc.house.gov/<name>: the House's second server, which the
+                # rosters give for nine members in the 108th-112th (Bishop,
+                # Reyes, Musgrave, Regula ...). Missed until 14 November 2026.
+                if re.match(r"^(?:wwwc\.)?(?:house|senate)\.gov/[^/]+$", u, re.I):
                     out.add(u.lower())
     return out
 
