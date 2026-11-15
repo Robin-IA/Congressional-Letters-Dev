@@ -23,6 +23,15 @@ class Shields(unittest.TestCase):
         self.assertIn("Mexico", topics.tag("US Mexico border travel restrictions"))
         self.assertIn("Mexico", topics.tag("Mexico biotech corn"))
 
+    def test_chips_is_not_the_childrens_health_program(self):
+        # Medicaid's "chip" is CHIP, the Children's Health Insurance Program.
+        self.assertNotIn("Medicaid", topics.tag("CHIPS funding guidance to Secretary Raimondo"))
+        self.assertIn("CHIPS and Science Act", topics.tag("CHIPS Act funding"))
+        self.assertNotIn("Medicaid", topics.tag("Semiconductor chip manufacturing"))
+        self.assertNotIn("Medicaid", topics.tag("Chip Roy PPP flexibility"))
+        self.assertIn("Medicaid", topics.tag("CHIP reauthorization to Speaker Ryan"))
+        self.assertIn("Medicaid", topics.tag("Medicaid and CHIP"))
+
     def test_shields_are_not_topics(self):
         for phrase in topics.SHIELDS:
             self.assertEqual(topics.tag(phrase), [], phrase)

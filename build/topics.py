@@ -40,12 +40,16 @@ import sys
 # A naive "drop a trailing s" turns nexus into nexu and coronavirus into
 # coronaviru, both of which appeared in the first pass over real subjects.
 _KEEP_WHOLE = ("us", "is", "ss", "as", "ous")
+# Whole words kept as they are. "chips" is the semiconductor CHIPS Act; folded
+# to "chip" it matched Medicaid's "chip" (the Children's Health Insurance
+# Program) and tagged 77 CHIPS letters Medicaid (14 November 2026).
+_KEEP_EXACT = {"chips"}
 
 
 def singular(word: str) -> str:
     """Fold a plural onto its singular, conservatively."""
     w = word.lower()
-    if any(w.endswith(suffix) for suffix in _KEEP_WHOLE):
+    if w in _KEEP_EXACT or any(w.endswith(suffix) for suffix in _KEEP_WHOLE):
         return w
     if len(w) > 4 and w.endswith("ies"):
         return w[:-3] + "y"
@@ -470,6 +474,14 @@ SHIELDS: tuple[str, ...] = (
     "solar system",                    # astronomy, not solar power: 3
     "hydrogen sulfide",                # a pollutant, not hydrogen as fuel: 5
     "cuban american",                  # an American community, not Cuba: 2
+    # Medicaid's "chip" is the Children's Health Insurance Program; these
+    # chips are not (measured 14 November 2026: 124 letters tagged Medicaid
+    # without the word, most of them semiconductors or Rep. Chip Roy).
+    "chip roy", "rep chip",            # Representative Chip Roy (TX-21), and
+    "chip tx", "chip austin", "u s chip",   # his own files' names
+    "semiconductor chip", "memory chip", "ai chip", "computer chip",
+    "chip manufacturing", "chip vulnerability", "chip export", "chip shortage",
+    "amtrak chip",                     # an Amtrak grant program
 )
 
 
