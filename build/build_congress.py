@@ -47,6 +47,7 @@ sys.path.insert(0, str(ROOT / "build"))
 import address_holders as ah  # noqa: E402
 import last_updated  # noqa: E402
 import letter_text  # noqa: E402
+import build_site  # noqa: E402
 
 ROSTERS = ROOT / "data" / "rosters"
 PARSED = [ROOT / "data" / "letters-parsed.jsonl",
@@ -279,6 +280,16 @@ def sort_letters(congresses: set[int]):
     # and each was placed by its own capture until 14 November 2026, so one
     # letter dated 20 August 2020 sat in the 116th, 117th and 118th.
     hand = letter_text.dates_by_hand()
+    # A byte-identical sibling's better date (build_site.dates_from_siblings,
+    # #170), across every letter rather than one Congress at a time: the
+    # sibling that carries the date is usually in another Congress, filed by
+    # it, while this posting was filed by its capture. Applied here so the
+    # posting is placed by the date it will show. The order is the one Robin
+    # set on 14 November 2026: the letter's own date, then the file name (here
+    # a sibling's), then the PDF's metadata, then the capture.
+    siblings = build_site.dates_from_siblings(
+        json.dumps(r) for r in all_letters())
+    rank = build_site.PRECISION_RANK
     by_congress: dict[int, list] = {n: [] for n in congresses}
     flags: dict[int, Counter] = {n: Counter() for n in congresses}
     total = 0
@@ -298,6 +309,17 @@ def sort_letters(congresses: set[int]):
         if read:
             rec = {**rec, "date": read[0], "date_precision": read[1],
                    "date_best": read[0], "dated_by": "hand"}
+        else:
+            sib = siblings.get(rec.get("digest") or "")
+            cap = (rec.get("first_seen") or "")[:10]
+            # Never a date after this posting was already captured: the file
+            # existed by then, so a later date is not its date. 1,163 such
+            # promotions on 14 November 2026, up to nine years late -- mostly
+            # siblings re-uploaded in one batch with the upload date in the name.
+            if (sib and rank.get(sib[1], 4) < rank.get(rec.get("date_precision"), 4)
+                    and (not cap or sib[0] <= cap)):
+                rec = {**rec, "date": sib[0], "date_precision": sib[1],
+                       "date_best": sib[0], "date_source": "sibling"}
         own = rec.get("date") or dates.get(rec.get("digest") or "")
         a = ah.attribute(idx, rec["url"], own or "", rec.get("first_seen") or "")
         if own and not read and (a.attribution == "none"

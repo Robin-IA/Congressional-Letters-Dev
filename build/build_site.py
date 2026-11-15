@@ -502,8 +502,12 @@ def main() -> None:
             # than this posting does. See dates_from_siblings() for the rule
             # and why it is as timid as it is.
             sibling = sibling_dates.get(digest or "")
+            captured = (record.get("first_seen") or "")[:10]
+            # Never later than this posting's own first capture: the file
+            # existed by then (see build_congress.sort_letters).
             if sibling and (PRECISION_RANK.get(sibling[1], 4)
-                            < PRECISION_RANK.get(precision, 4)):
+                            < PRECISION_RANK.get(precision, 4)) and (
+                                not captured or sibling[0] <= captured):
                 best, precision = sibling
                 promoted += 1
         # date_rejected: build_congress.py found the letter's date impossible
