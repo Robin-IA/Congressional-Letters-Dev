@@ -345,7 +345,18 @@ SUBJECTS: dict[str, tuple[str, ...]] = {
     "Dental care": ('dental', 'oral health'),
     "Energy efficiency": ('energy efficiency', 'energy efficient', 'weatherization'),
     "Drought": ('drought',),
-    "Oceans": ('ocean', 'coastal restoration', 'marine ecosystem'),
+    # Not the bare word "ocean": it is a place name as often as a subject --
+    # Ocean County, Ocean City, Ocean Bay, Ocean Shores, Ocean Boulevard, about
+    # 15 of the 44 letters it tagged (measured 14 Nov 2026). These phrases are
+    # the ones the letters about the sea itself use.
+    "Oceans": ("ocean policy", "national ocean policy", "ocean program",
+               "ocean data", "ocean carbon", "ocean acidification",
+               "ocean caucus", "ocean conference", "ocean disposal",
+               "ocean observation", "ocean obs", "ocean task force",
+               "ocean priority", "ocean health", "ocean conservation",
+               "coastal ocean", "ocean and coastal", "atlantic ocean",
+               "pacific ocean", "arctic ocean", "coastal restoration",
+               "marine ecosystem"),
     "Flooding": ('flooding', 'floodwater', 'flood damage'),
     "Hurricanes": ('hurricane',),
     "Higher education": ('higher education', 'higher education act', 'postsecondary',
