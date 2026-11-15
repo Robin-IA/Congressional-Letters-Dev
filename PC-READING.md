@@ -116,10 +116,10 @@ Write CSV rows with `\n` line endings and append only, never reorder.
 
 ```bash
 python3 -m unittest discover -s tests
-python3 build/audit_dates.py
+python3 build/audit_dates.py --ocr-repo ../letters-from-congress-OCR
 ```
 
-Both must pass. The PR title follows the existing pattern ("Letters review:
+Both must pass. On the PC, `--ocr-repo` (or `LETTERS_OCR_REPO`) points the audit at the text repository; without it the audit sees only the PC's local text and reports most letters as unreadable (#332). The PR title follows the existing pattern ("Letters review:
 agency letters, round N (25 read from full text)"). The body lists copies,
 holds and gaps. If rows from a Mac batch land at the same time, the conflict
 is only appended rows, and the Mac resolves it by keeping both sets.
