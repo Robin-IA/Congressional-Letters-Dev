@@ -463,6 +463,13 @@ AGENCIES: dict[str, tuple[str, ...]] = {
 SHIELDS: tuple[str, ...] = (
     "new mexico", "new mexican",       # the state, not Mexico: 11 of 170 letters
     "mexican american",                # an American community, not Mexico: 4
+    # The same check run over the other 17 terms of #188. Measured across the
+    # letters we hold text for; only these four matched something that is not
+    # the subject.
+    "solarwinds",                      # the company in the 2020 breach, not solar: 3
+    "solar system",                    # astronomy, not solar power: 3
+    "hydrogen sulfide",                # a pollutant, not hydrogen as fuel: 5
+    "cuban american",                  # an American community, not Cuba: 2
 )
 
 

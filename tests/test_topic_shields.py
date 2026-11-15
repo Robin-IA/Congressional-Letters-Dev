@@ -30,3 +30,43 @@ class Shields(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestShieldsFromTheOtherSeventeenTerms(unittest.TestCase):
+    """The same check #189 ran on Mexico, applied to the rest of #188.
+
+    Of the seventeen other terms, four matched a phrase that is not the
+    subject. The rest were left alone: "national park service" really is
+    National parks, "transmission line" really is the Electric grid,
+    "pension benefit guaranty" really is Retirement, and "drone strike" is
+    still a drone.
+    """
+
+    def test_solarwinds_is_not_solar_power(self):
+        self.assertNotIn("Solar power",
+                         topics.tag("the SolarWinds breach, SolarWinds Orion, SolarWinds"))
+
+    def test_the_solar_system_is_not_solar_power(self):
+        self.assertNotIn("Solar power",
+                         topics.tag("the solar system, the solar system, our solar system"))
+
+    def test_solar_power_still_tags(self):
+        self.assertIn("Solar power",
+                      topics.tag("rooftop solar and solar panels and solar generation"))
+
+    def test_hydrogen_sulfide_is_not_hydrogen_fuel(self):
+        self.assertNotIn("Hydrogen",
+                         topics.tag("hydrogen sulfide emissions, hydrogen sulfide, "
+                                    "hydrogen sulfide monitoring"))
+
+    def test_hydrogen_still_tags(self):
+        self.assertIn("Hydrogen",
+                      topics.tag("clean hydrogen hubs, hydrogen production, hydrogen fuel"))
+
+    def test_cuban_american_is_a_community_not_a_country(self):
+        self.assertNotIn("Cuba",
+                         topics.tag("Cuban American voters, the Cuban American community, "
+                                    "Cuban American leaders"))
+
+    def test_cuba_still_tags(self):
+        self.assertIn("Cuba", topics.tag("the Cuba embargo and Cuba policy and travel to Cuba"))
