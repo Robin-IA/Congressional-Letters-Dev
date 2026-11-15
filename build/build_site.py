@@ -500,6 +500,7 @@ def main() -> None:
 
     sibling_dates = dates_from_siblings(parsed_lines())
     letterheads = letter_text.letterhead_by_digest()
+    salutations = letter_text.salutation_by_digest()
     promoted = from_letterhead = needs_review = 0
     review_digests: set[str] = set()
 
@@ -513,7 +514,8 @@ def main() -> None:
         digest = record.get("digest") or ""
         kind = ("pdf" if record["mimetype"].startswith("application/pdf")
                 else "page")
-        recipient = record.get("recipient_canonical")
+        # The file name's recipient, else the one the salutation names (#97).
+        recipient = record.get("recipient_canonical") or salutations.get(digest) or None
         # A title written by hand from the letter's text wins over the file
         # name's (vocabulary/letter-titles.csv, letter_text.py).
         subject = hand_titles.get(digest) or tidy_subject(record.get("subject"))
