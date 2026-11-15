@@ -53,6 +53,7 @@ ROOT = Path(__file__).resolve().parents[1]
 EXPLORERS = ROOT.parent / "explorers"
 
 DATE_BASIS = {
+    "letterhead": "stated in the letter itself",
     "day": "stated in the file name",
     "scanned": "stated in the PDF",
     "month": "month only, from the file name",

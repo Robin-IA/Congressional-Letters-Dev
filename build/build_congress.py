@@ -280,6 +280,10 @@ def sort_letters(congresses: set[int]):
     # and each was placed by its own capture until 14 November 2026, so one
     # letter dated 20 August 2020 sat in the 116th, 117th and 118th.
     hand = letter_text.dates_by_hand()
+    # The date the letter prints on itself (#186): source 1 of the dating
+    # order, read by rule for every letter with text. build_site.py shows it;
+    # here it also decides the Congress and holder, as for hand dates (#161).
+    letterheads = letter_text.letterhead_by_digest()
     # A byte-identical sibling's better date (build_site.dates_from_siblings,
     # #170), across every letter rather than one Congress at a time: the
     # sibling that carries the date is usually in another Congress, filed by
@@ -309,6 +313,22 @@ def sort_letters(congresses: set[int]):
         if read:
             rec = {**rec, "date": read[0], "date_precision": read[1],
                    "date_best": read[0], "dated_by": "hand"}
+        head = None if read else letterheads.get(rec.get("digest") or "")
+        if head and not (rec.get("first_seen") and head > rec["first_seen"][:10]):
+            # Only if someone held this address on that date. A letterhead
+            # naming a date no holder could have written on -- a misread
+            # year, a reposted old letter -- is not used, here or by
+            # build_site.py ('letterhead_rejected'), so the letter keeps the
+            # date it would otherwise have.
+            a = ah.attribute(idx, rec["url"], head, rec.get("first_seen") or "")
+            if a.attribution != "none" and on_roster(congress_of(head), a.bioguide_id):
+                rec = {**rec, "date": head, "date_precision": "letterhead",
+                       "date_best": head, "date_source": "letterhead"}
+                read = (head, "letterhead")   # settled: skip the checks below
+            else:
+                rec = {**rec, "letterhead_rejected": True}
+        if read:
+            pass
         else:
             sib = siblings.get(rec.get("digest") or "")
             cap = (rec.get("first_seen") or "")[:10]
