@@ -30,6 +30,12 @@ what, so each can be checked.
 
     python build/match_recipients.py              # counts and a sample
     python build/match_recipients.py --write      # append the rows to reviews.csv
+    python build/match_recipients.py --no-term    # names too rare to be candidates
+
+``--no-term`` works on the published recipients that have no term at all --
+named on fewer than three letters, so never made candidates. A reviewed name
+becomes a term whatever its count (build_vocabulary.py), so a row here files
+them the same way.
 """
 from __future__ import annotations
 
@@ -65,6 +71,7 @@ PLAIN = {"mr", "mrs", "ms", "dr", "drs", "messrs", "honorable", "hon", "the", "a
 MEMBER_TITLES = {"senator": "Senate", "representative": "House"}
 SUFFIX = {"jr", "sr", "ii", "iii", "iv"}
 HONORIFIC = {"mr", "mrs", "ms", "dr", "drs", "messrs"}
+RANK = {"assistant", "under", "deputy"}
 
 
 def people(label: str) -> list[tuple[str, str]]:
@@ -76,10 +83,15 @@ def people(label: str) -> list[tuple[str, str]]:
         words = [w for w in re.sub(r"[^a-z\-' ]+", " ", part.lower()).split() if w not in SUFFIX]
         if not words:
             continue
-        title = ""
+        title, rank = "", ""
         for w in words[:-1]:
-            if w in TITLE:
-                title = TITLE[w]
+            if w in RANK:
+                rank = w
+            elif w in TITLE:
+                # "Assistant Secretary James" is not "Secretary James": the
+                # rank stays part of the office.
+                title = (rank + " " if rank else "") + TITLE[w]
+                rank = ""
             elif w in HONORIFIC and not title:
                 title = "hon"
         surname = words[-1]
@@ -177,8 +189,16 @@ def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--write", action="store_true", help="append the rows to vocabulary/reviews.csv")
     ap.add_argument("--sample", type=int, default=25)
+    ap.add_argument("--no-term", action="store_true",
+                    help="match the published names that have no term, instead of the candidates")
     args = ap.parse_args()
     cand, members, reviews = load()
+    if args.no_term:
+        import progress  # noqa: PLC0415
+        from build_vocabulary import explorer_counts  # noqa: PLC0415
+        terms = progress.recipient_terms()
+        cand = {label: n for label, n in explorer_counts()[1].items()
+                if progress.filing(label, terms) == "no term"}
     idx = index(reviews)
     roster = roster_surnames()
     rows = []
@@ -189,7 +209,7 @@ def main() -> int:
         if m:
             (dec, tgt, kind, broader), why = m
             rows.append([label, n, dec, tgt, "", kind, broader, "matched by rule (match_recipients.py): " + why, "accepted"])
-    print(f"{len(rows)} of {len(cand)} unreviewed names matched, {sum(r[1] for r in rows):,} "
+    print(f"{len(rows)} of {len(cand)} {'no-term' if args.no_term else 'unreviewed'} names matched, {sum(r[1] for r in rows):,} "
           f"of {sum(cand.values()):,} letters")
     random.seed(97)
     for r in random.sample(rows, min(args.sample, len(rows))):

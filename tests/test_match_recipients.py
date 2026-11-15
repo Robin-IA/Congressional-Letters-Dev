@@ -50,6 +50,10 @@ class Match(unittest.TestCase):
         self.assertEqual(m("Senator Boxer"), ("member", "B000711"))
         self.assertIsNone(m("Congressman Smith"))
 
+    def test_rank_is_part_of_the_office(self):
+        self.assertIsNone(m("Assistant Secretary Blinken"))
+        self.assertIsNone(m("Under Secretary Thompson"))
+
     def test_title_alone_is_no_one(self):
         self.assertIsNone(m("Mr. Chairman"))
 
