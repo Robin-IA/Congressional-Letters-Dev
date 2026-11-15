@@ -586,6 +586,22 @@ been read. With OCR finished for the 106th-115th scans (Job 2) and the
 116th-119th (Job 4), the letter itself can be asked, and it is the better
 source.
 
+**The four tiers** (Robin, 15 November 2026). The order below is unchanged,
+but the bottom two are now reportable rather than silent:
+
+| tier | source | standing |
+|---|---|---|
+| 1 | the OCR of the letter itself | the primary source |
+| 2 | the file name the office gave it | confirm against the OCR |
+| 3 | the PDF's own metadata | **requires an issue** if nothing better exists |
+| 4 | the Wayback harvest | **never to be considered alone; requires an issue** |
+
+`build_site.py` counts every posting that lands in tier 3 or 4 and prints the
+total on each build, pointing at #191: **27,846 postings, 40.0%, across
+20,661 documents**. Nothing is dropped — a rough date beats none, and the tier
+is recorded in the `precision` field — but the gap is stated rather than left
+to be inferred.
+
 The date `attribute()` is given, in order:
 
 1. **The date stated on the letter**, read from its text. A letter puts its

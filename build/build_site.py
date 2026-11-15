@@ -481,7 +481,8 @@ def main() -> None:
 
     sibling_dates = dates_from_siblings(parsed_lines())
     letterheads = letter_text.letterhead_by_digest()
-    promoted = from_letterhead = 0
+    promoted = from_letterhead = needs_review = 0
+    review_digests: set[str] = set()
 
     for line in parsed_lines():
         record = json.loads(line)
@@ -541,8 +542,18 @@ def main() -> None:
             from_pdf = None if record.get("date_rejected") else pdf_dates.get(digest or "")
             if from_pdf:
                 best, precision = from_pdf, "scanned"
+                needs_review += 1
             else:
                 best = record.get("date_best")
+                needs_review += 1
+            # Tiers 3 and 4 of the dating order (Robin, 15 November 2026): a
+            # scan timestamp is when the paper went through the scanner and a
+            # harvest date is when the crawler first saw the file. Neither is
+            # the letter's date, and the harvest "should never be considered
+            # alone". Both are kept, because a rough date beats none, and both
+            # are counted here so the gap is reported rather than implied.
+            if digest:
+                review_digests.add(digest)
         year = int(best[:4]) if best else None
 
         # The capture digest is the content address of the letter, and
@@ -809,6 +820,10 @@ def main() -> None:
     if letterheads:
         print(f"  {from_letterhead:,} letters dated from their own letterhead "
               f"({len(letterheads):,} read)", file=sys.stderr)
+    if needs_review:
+        print(f"  {needs_review:,} postings ({needs_review / total:.1%}) across "
+              f"{len(review_digests):,} documents have no date better than a scan "
+              f"timestamp or a harvest, and need a reader (#191)", file=sys.stderr)
     if promoted:
         print(f"  {promoted:,} postings took a better date from a byte-identical "
               f"sibling ({len(sibling_dates):,} letters offered one)", file=sys.stderr)
