@@ -1500,3 +1500,522 @@ Secretaries,8,reject,,,,,"a greeting, no one named",accepted
 Senate Colleagues,8,reject,,,,,a greeting,accepted
 Steve,8,reject,,,,,a first name only,accepted
 Senators Warren,9,reject,,,,,OCR of a greeting,accepted
+Congressman Calvert,40,member,C000059,,,,matched by rule (match_recipients.py): rule 5: the one House member named calvert,accepted
+Chairman Powell,33,officeholder,Federal Reserve,,,,matched by rule (match_recipients.py): rule 1: chair powell,accepted
+Senator Brown,31,member,B000944,,,,matched by rule (match_recipients.py): rule 1: senator brown,accepted
+Representative Calvert,25,member,C000059,,,,matched by rule (match_recipients.py): rule 5: the one House member named calvert,accepted
+Representative Baldwin,18,member,B001230,,,,matched by rule (match_recipients.py): rule 1: representative baldwin,accepted
+Secretaries Pompeo,14,officeholder,Department of State,,,,matched by rule (match_recipients.py): rule 1: secretary pompeo,accepted
+Leader McConnell and Secretary Mnuchin,11,joint,Congressional leadership;Department of the Treasury,,,,matched by rule (match_recipients.py): rule 4: rule 1: leader mcconnell; rule 1: secretary mnuchin,accepted
+Mr. Fenton,10,officeholder,Federal Emergency Management Agency,,,,matched by rule (match_recipients.py): rule 2: fenton,accepted
+Senators Bennet and Hickenlooper,10,joint,B001267;H000273,,,,matched by rule (match_recipients.py): rule 4: rule 1: senator bennet; rule 5: the one Senate member named hickenlooper,accepted
+Congressman Simpson,10,member,S001148,,,,matched by rule (match_recipients.py): rule 5: the one House member named simpson,accepted
+Senator Daines and Senator Sheehy,10,joint,D000618;S001232,,,,matched by rule (match_recipients.py): rule 4: rule 1: senator daines; rule 5: the one Senate member named sheehy,accepted
+Senator Menendez,9,member,M000639,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named menendez,accepted
+Congressman Wolf,9,member,W000672,,,,matched by rule (match_recipients.py): rule 5: the one House member named wolf,accepted
+Senator Murray and Representative Hensarling,9,joint,H001036;M001111,,member,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Assistant Secretary James,9,officeholder,Department of the Air Force,,,,matched by rule (match_recipients.py): rule 1: secretary james,accepted
+Senator Young,9,member,Y000064,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named young,accepted
+Chairman Leahy and Chairwoman DeLauro,9,joint,L000174;House Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 4: rule 1: chair leahy; rule 1: chair delauro,accepted
+Mr. Bolten,8,officeholder,Office of Management and Budget,,,,matched by rule (match_recipients.py): rule 2: bolten,accepted
+Senator Murphy,8,member,M001169,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named murphy,accepted
+Chairman Upton and Chairman Goodlatte,8,joint,U000031;G000289,,,,matched by rule (match_recipients.py): rule 4: rule 1: chair upton; rule 1: chair goodlatte,accepted
+Senator Rosen and Senator Wicker,8,joint,R000608;W000437,,,,matched by rule (match_recipients.py): rule 4: rule 5: the one Senate member named rosen; rule 5: the one Senate member named wicker,accepted
+Chair Cole and Ranking Member Quigley,8,merge,House Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Secretary Kennedy and Secretary Burgum,8,joint,Department of Health and Human Services;Department of the Interior,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary kennedy; rule 1: secretary burgum,accepted
+Leader Thune,8,merge,Congressional leadership,,,,matched by rule (match_recipients.py): rule 1: leader thune,accepted
+Secretary McMahon and Director Vought,8,joint,Department of Education;Office of Management and Budget,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary mcmahon; rule 1: director vought,accepted
+Senator Murray,7,member,M001111,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named murray,accepted
+Senator Boxer,7,member,B000711,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named boxer,accepted
+Mr. Levinson,7,officeholder,Department of Health and Human Services,,,,matched by rule (match_recipients.py): rule 2: levinson,accepted
+Senator Landrieu,7,member,L000550,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named landrieu,accepted
+Senators Inouye,7,member,I000025,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named inouye,accepted
+Leaders Reid and McConnell,7,merge,Congressional leadership,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Congresswoman Giffords,7,member,G000554,,,,matched by rule (match_recipients.py): rule 5: the one House member named giffords,accepted
+Congressman Sablan,7,member,S001177,,,,matched by rule (match_recipients.py): rule 5: the one House member named sablan,accepted
+Majority Leader Reid and Republican Leader McConnell,7,merge,Congressional leadership,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Secretary Lew and Commissioner Koskinen,7,joint,Department of the Treasury;Internal Revenue Service,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary lew; rule 1: commissioner koskinen,accepted
+Acting Commissioner Werfel,7,officeholder,Internal Revenue Service,,,,matched by rule (match_recipients.py): rule 1: commissioner werfel,accepted
+Senator Schumer,7,member,S000148,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named schumer,accepted
+Senators Grassley,7,member,G000386,,,,matched by rule (match_recipients.py): rule 1: senator grassley,accepted
+Secretary Jewell and Director Ashe,7,joint,Department of the Interior;Fish and Wildlife Service,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary jewell; rule 1: director ashe,accepted
+Secretaries Johnson and Kerry,7,joint,Department of Homeland Security;Department of State,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary johnson; rule 1: secretary kerry,accepted
+Senator Toomey,7,member,T000461,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named toomey,accepted
+Senator Ernst,7,member,E000295,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named ernst,accepted
+Acting Administrator Wheeler and Secretary Chao,7,joint,Environmental Protection Agency;Department of Transportation,,,,matched by rule (match_recipients.py): rule 4: rule 1: administrator wheeler; rule 1: secretary chao,accepted
+Senator Brown and Representative Neal,7,joint,B000944;N000015,,,,matched by rule (match_recipients.py): rule 4: rule 1: senator brown; rule 5: the one House member named neal,accepted
+Attorney General Sessions and Secretary Tillerson,7,joint,Department of Justice;Department of State,,,,matched by rule (match_recipients.py): rule 4: rule 1: general sessions; rule 1: secretary tillerson,accepted
+Senator Thune,7,member,T000250,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named thune,accepted
+Representative Napolitano,7,member,N000179,,,,matched by rule (match_recipients.py): rule 5: the one House member named napolitano,accepted
+Speaker Pelosi and Leaders McConnell,7,merge,Congressional leadership,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Vice President Pence and Secretary Azar,7,joint,The Vice President;Department of Health and Human Services,,,,matched by rule (match_recipients.py): rule 4: rule 1: president pence; rule 1: secretary azar,accepted
+Acting Director Albence,7,officeholder,Immigration and Customs Enforcement,,,,matched by rule (match_recipients.py): rule 1: director albence,accepted
+Congressman Courtney,7,member,C001069,,,,matched by rule (match_recipients.py): rule 1: representative courtney,accepted
+Representative Curtis,7,member,C001114,,,,matched by rule (match_recipients.py): rule 5: the one House member named curtis,accepted
+Dr. Tedros,7,merge,World Health Organization,,,,matched by rule (match_recipients.py): rule 2: tedros,accepted
+Acting Director Young,7,officeholder,Office of Management and Budget,,,,matched by rule (match_recipients.py): rule 1: director young,accepted
+Secretary Yellen and Secretary Blinken,7,joint,Department of State;Department of the Treasury,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Representative Pelosi,7,member,P000197,,,,matched by rule (match_recipients.py): rule 5: the one House member named pelosi,accepted
+Chairman Price and Ranking Minority Member Diaz-Balart,7,merge,House Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Congressman Wenstrup,7,member,W000815,,,,matched by rule (match_recipients.py): rule 1: representative wenstrup,accepted
+Representatives Perlmutter,7,member,P000593,,,,matched by rule (match_recipients.py): rule 5: the one House member named perlmutter,accepted
+Chairwoman Baldwin and Ranking Member Capito,7,merge,Senate Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Acting Commissioner Dudek,7,officeholder,Social Security Administration,,,,matched by rule (match_recipients.py): rule 1: commissioner dudek,accepted
+Chair Murkowski and Ranking Member Merkley,7,merge,Senate Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Attorney General Bondi and Secretary Hegseth,7,joint,Department of Justice;Department of Defense,,,,matched by rule (match_recipients.py): rule 4: rule 1: general bondi; rule 1: secretary hegseth,accepted
+Mr. Lew,6,officeholder,Department of the Treasury,,,,matched by rule (match_recipients.py): rule 2: lew,accepted
+Representative Lantos,6,member,L000090,,,,matched by rule (match_recipients.py): rule 5: the one House member named lantos,accepted
+Congressman Larson,6,member,L000557,,,,matched by rule (match_recipients.py): rule 1: representative larson,accepted
+Senator Salazar,6,member,S001163,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named salazar,accepted
+Senator Cantwell,6,member,C000127,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named cantwell,accepted
+Chairwoman DeLauro and Ranking Member Kingston,6,merge,House Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Representative Reichert,6,member,R000578,,,,matched by rule (match_recipients.py): rule 5: the one House member named reichert,accepted
+Senators Grassley and Enzi,6,joint,G000386;E000285,,,,matched by rule (match_recipients.py): rule 4: rule 1: senator grassley; rule 5: the one Senate member named enzi,accepted
+Senator Gillibrand,6,member,G000555,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named gillibrand,accepted
+Speaker Boehner and Majority Leader Cantor,6,merge,Congressional leadership,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Mr. Horowitz,6,officeholder,Department of Justice,,,,matched by rule (match_recipients.py): rule 2: horowitz,accepted
+Senator Murray and Congressman Hensarling,6,joint,H001036;M001111,,member,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Co-Chair Hensarling and Co-Chair Murray,6,joint,H001036;M001111,,member,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Representative Denham,6,member,D000612,,,,matched by rule (match_recipients.py): rule 5: the one House member named denham,accepted
+Mr. James,6,officeholder,Army Corps of Engineers,,,,matched by rule (match_recipients.py): rule 1: hon james,accepted
+General Bostick,6,officeholder,Army Corps of Engineers,,,,matched by rule (match_recipients.py): rule 1: general bostick,accepted
+Senator Baldwin,6,member,B001230,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named baldwin,accepted
+Secretary Jewell and Secretary Pritzker,6,joint,Department of the Interior;Department of Commerce,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary jewell; rule 1: secretary pritzker,accepted
+Speaker Boehner and House Majority Leader Cantor,6,merge,Congressional leadership,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Senators Markey,6,member,M000133,,,,matched by rule (match_recipients.py): rule 1: senator markey,accepted
+Representative Lamborn,6,member,L000564,,,,matched by rule (match_recipients.py): rule 1: representative lamborn,accepted
+Mr. Slavitt,6,officeholder,Centers for Medicare and Medicaid Services,,,,matched by rule (match_recipients.py): rule 2: slavitt,accepted
+Senators Cruz,6,member,C001098,,,,matched by rule (match_recipients.py): rule 1: senator cruz,accepted
+Senators Collins and Baldwin,6,joint,C001035;B001230,,,,matched by rule (match_recipients.py): rule 4: rule 1: senator collins; rule 5: the one Senate member named baldwin,accepted
+Senator Shelby and Senator Mikulski,6,merge,Senate Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Ms. Brennan,6,officeholder,United States Postal Service,,,,matched by rule (match_recipients.py): rule 2: brennan,accepted
+Speaker Ryan and Leader McCarthy,6,merge,Congressional leadership,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Senator Vitter,6,member,V000127,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named vitter,accepted
+Senator Gardner,6,member,G000562,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named gardner,accepted
+Chairman Upton and Ranking Member Pallone,6,joint,U000031;P000034,,member,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Secretaries Tillerson,6,officeholder,Department of State,,,,matched by rule (match_recipients.py): rule 1: secretary tillerson,accepted
+Senators Collins,6,member,C001035,,,,matched by rule (match_recipients.py): rule 1: senator collins,accepted
+Secretary Nielsen and Secretary Acosta,6,joint,Department of Homeland Security;Department of Labor,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary nielsen; rule 1: secretary acosta,accepted
+Secretaries Perdue and Zinke,6,joint,Department of Agriculture;Department of the Interior,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary perdue; rule 1: secretary zinke,accepted
+Acting Secretary Wolf and Secretary Pompeo,6,joint,Department of Homeland Security;Department of State,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary wolf; rule 1: secretary pompeo,accepted
+Mr. Carvajal,6,officeholder,Bureau of Prisons,,,,matched by rule (match_recipients.py): rule 2: carvajal,accepted
+Secretary Azar and Acting Secretary Wolf,6,joint,Department of Health and Human Services;Department of Homeland Security,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary azar; rule 1: secretary wolf,accepted
+Secretary Ross and Dr. Dillingham,6,joint,Department of Commerce;Census Bureau,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary ross; rule 1: hon dillingham,accepted
+Secretary Ross and Director Dillingham,6,joint,Department of Commerce;Census Bureau,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary ross; rule 1: director dillingham,accepted
+Secretary Esper and Secretary McCarthy,6,joint,Department of Defense;Department of the Army,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary esper; rule 1: secretary mccarthy,accepted
+Senator McSally,6,member,M001197,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named mcsally,accepted
+Secretary Janet Yellen and Secretary Antony Blinken,6,joint,Department of State;Department of the Treasury,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Ambassador Tai and Secretary Raimondo,6,joint,Department of Commerce;Office of the US Trade Representative,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Leaders McCarthy & McConnell,6,merge,Congressional leadership,,,,matched by rule (match_recipients.py): rule 4: rule 1: leader mccarthy; rule 1: leader mcconnell,accepted
+Secretary Austin and Secretary Kendall,6,joint,Department of Defense;Department of the Air Force,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary austin; rule 1: secretary kendall,accepted
+Secretary Cardona and Attorney General Garland,6,joint,Department of Education;Department of Justice,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary cardona; rule 1: general garland,accepted
+Chair Durbin,6,merge,Senate Committee on the Judiciary,,,,matched by rule (match_recipients.py): rule 1: chair durbin,accepted
+Secretary Haaland and Secretary Vilsack,6,joint,Department of the Interior;Department of Agriculture,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Chair Pingree and Ranking Member Joyce,6,merge,House Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Congressman Ed Case,6,member,C001055,,,,matched by rule (match_recipients.py): rule 1: representative case,accepted
+Representative Simpson,6,member,S001148,,,,matched by rule (match_recipients.py): rule 5: the one House member named simpson,accepted
+Chairman Heinrich and Ranking Member Hoeven,6,merge,Senate Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Chair Van Hollen and Ranking Member Hagerty,6,merge,Senate Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Secretaries Mayorkas and Su,6,joint,Department of Homeland Security;Department of Labor,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary mayorkas; rule 1: secretary su,accepted
+Senator Warner,6,member,W000805,,,,matched by rule (match_recipients.py): rule 1: senator warner,accepted
+Chair Womack and Ranking Member Quigley,6,merge,House Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Attorney General Bondi and Director Patel,6,joint,Department of Justice;Federal Bureau of Investigation,,,,matched by rule (match_recipients.py): rule 4: rule 1: general bondi; rule 1: director patel,accepted
+Mr. Lyons,6,officeholder,Immigration and Customs Enforcement,,,,matched by rule (match_recipients.py): rule 2: lyons,accepted
+Secretary Rollins and Secretary Burgum,6,joint,Department of Agriculture;Department of the Interior,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary rollins; rule 1: secretary burgum,accepted
+Chair Kennedy and Ranking Member Murray,6,merge,Senate Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+General Ashcroft,5,officeholder,Department of Justice,,,,matched by rule (match_recipients.py): rule 1: general ashcroft,accepted
+Representative Dreier,5,member,D000492,,,,matched by rule (match_recipients.py): rule 1: representative dreier,accepted
+Rep Slaughter,5,member,S000480,,,,matched by rule (match_recipients.py): rule 5: the one House member named slaughter,accepted
+Senator Inouye and Senator Cochran,5,merge,Senate Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Senator Begich,5,member,B001265,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named begich,accepted
+Speaker Pelosi & Majority Leader Hoyer,5,merge,Congressional leadership,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Representatives Polis,5,member,P000598,,,,matched by rule (match_recipients.py): rule 1: representative polis,accepted
+Senator Mikulski,5,member,M000702,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named mikulski,accepted
+Chairman Inouye and Ranking Member Cochran,5,merge,Senate Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Representative Olson,5,member,O000168,,,,matched by rule (match_recipients.py): rule 1: representative olson,accepted
+Secretary Donley and General Welsh,5,merge,Department of the Air Force,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary donley; rule 1: general welsh,accepted
+Congresswoman Capps,5,member,C001036,,,,matched by rule (match_recipients.py): rule 5: the one House member named capps,accepted
+Chairwoman Cantwell,5,merge,"Senate Committee on Commerce, Science, and Transportation",,,,matched by rule (match_recipients.py): rule 1: chair cantwell,accepted
+Senator Heitkamp,5,member,H001069,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named heitkamp,accepted
+Commissioner Colvin,5,officeholder,Social Security Administration,,,,matched by rule (match_recipients.py): rule 1: commissioner colvin,accepted
+Majority Leader Reid and Minority Leader Mitch McConnell,5,merge,Congressional leadership,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Secretary Lew and Secretary Duncan,5,joint,Department of the Treasury;Department of Education,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary lew; rule 1: secretary duncan,accepted
+Mr. Attorney General Holder,5,officeholder,Department of Justice,,,,matched by rule (match_recipients.py): rule 1: general holder,accepted
+Representative Palazzo,5,member,P000601,,,,matched by rule (match_recipients.py): rule 1: representative palazzo,accepted
+Representative Rothfus,5,member,R000598,,,,matched by rule (match_recipients.py): rule 5: the one House member named rothfus,accepted
+Majority Leader McConnell and Speaker Ryan,5,merge,Congressional leadership,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Congressman Issa,5,member,I000056,,,,matched by rule (match_recipients.py): rule 5: the one House member named issa,accepted
+Senator Wicker,5,member,W000437,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named wicker,accepted
+Congresswoman Duckworth and Congresswoman Clark,5,joint,D000622;C001101,,,,matched by rule (match_recipients.py): rule 4: rule 5: the one House member named duckworth; rule 5: the one House member named clark,accepted
+Ms. Kraninger,5,officeholder,Consumer Financial Protection Bureau,,,,matched by rule (match_recipients.py): rule 2: kraninger,accepted
+Secretary Azar and Secretary Nielsen,5,joint,Department of Health and Human Services;Department of Homeland Security,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary azar; rule 1: secretary nielsen,accepted
+Senators Brown and Portman,5,joint,B000944;P000449,,,,matched by rule (match_recipients.py): rule 4: rule 1: senator brown; rule 5: the one Senate member named portman,accepted
+Chairman Shelby and Ranking Member Leahy,5,merge,Senate Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Chair Collins and Ranking Member Reed,5,merge,Senate Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Representative Newhouse,5,member,N000189,,,,matched by rule (match_recipients.py): rule 1: representative newhouse,accepted
+Acting Secretary McCarthy,5,officeholder,Department of the Army,,,,matched by rule (match_recipients.py): rule 1: secretary mccarthy,accepted
+Senator Warren and Representative Cummings,5,joint,W000817;C000984,,,,matched by rule (match_recipients.py): rule 4: rule 1: senator warren; rule 5: the one House member named cummings,accepted
+Speaker Pelosi and Chairwoman Lowey,5,joint,P000197;House Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 4: rule 1: speaker pelosi; rule 1: chair lowey,accepted
+Senators Bennet and Cassidy,5,joint,B001267;C001075,,,,matched by rule (match_recipients.py): rule 4: rule 1: senator bennet; rule 1: senator cassidy,accepted
+Secretary Pompeo and Acting Secretary Wolf,5,joint,Department of State;Department of Homeland Security,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary pompeo; rule 1: secretary wolf,accepted
+Secretary Perdue and Secretary Bernhardt,5,joint,Department of Agriculture;Department of the Interior,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary perdue; rule 1: secretary bernhardt,accepted
+Secretary Perdue and Ambassador Lighthizer,5,joint,Office of the US Trade Representative;Department of Agriculture,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Speaker Pelosi and Leaders McCarthy,5,merge,Congressional leadership,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Senator Susan Collins and Senator Bob Casey,5,joint,C001035;C001070,,,,matched by rule (match_recipients.py): rule 4: rule 1: senator collins; rule 5: the one Senate member named casey,accepted
+Minority Leader Schumer,5,merge,Congressional leadership,,,,matched by rule (match_recipients.py): rule 1: leader schumer,accepted
+Vice President Pence and Administrator Gaynor,5,joint,The Vice President;Federal Emergency Management Agency,,,,matched by rule (match_recipients.py): rule 4: rule 1: president pence; rule 1: administrator gaynor,accepted
+Mr. Dickson,5,officeholder,Federal Aviation Administration,,,,matched by rule (match_recipients.py): rule 2: dickson,accepted
+Secretary Pompeo and Secretary Chao,5,joint,Department of State;Department of Transportation,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary pompeo; rule 1: secretary chao,accepted
+Senator Lankford,5,member,L000575,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named lankford,accepted
+Commissioner Hahn and Director Redfield,5,joint,Food and Drug Administration;Centers for Disease Control,,,,matched by rule (match_recipients.py): rule 4: rule 1: commissioner hahn; rule 1: director redfield,accepted
+Secretary Azar and Dr. Redfield,5,joint,Department of Health and Human Services;Centers for Disease Control,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary azar; rule 1: hon redfield,accepted
+Representative Lynch,5,member,L000562,,,,matched by rule (match_recipients.py): rule 5: the one House member named lynch,accepted
+Senators Inhofe and Duckworth,5,joint,I000024;D000622,,,,matched by rule (match_recipients.py): rule 4: rule 1: senator inhofe; rule 5: the one Senate member named duckworth,accepted
+Chairwoman Lowey and Ranking Member Rogers,5,merge,House Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Chairman Neal and Ranking Member Brady,5,merge,House Committee on Ways and Means,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Secretary Becerra and Director Walensky,5,joint,Department of Health and Human Services;Centers for Disease Control,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary becerra; rule 1: director walensky,accepted
+Attorney General Garland and Secretary Becerra,5,joint,Department of Justice;Department of Health and Human Services,,,,matched by rule (match_recipients.py): rule 4: rule 1: general garland; rule 1: secretary becerra,accepted
+Senators Carper and Duckworth,5,joint,C000174;D000622,,,,matched by rule (match_recipients.py): rule 4: rule 1: senator carper; rule 5: the one Senate member named duckworth,accepted
+Chairman Baldwin and Ranking Member Hoeven,5,merge,Senate Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+C hair Shaheen and Ranking Member Moran,5,merge,Senate Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Leader McCarthy and Leader McConnell,5,merge,Congressional leadership,,,,matched by rule (match_recipients.py): rule 4: rule 1: leader mccarthy; rule 1: leader mcconnell,accepted
+Secretary Mayorkas and Secretary Becerra,5,joint,Department of Homeland Security;Department of Health and Human Services,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary mayorkas; rule 1: secretary becerra,accepted
+Congresswoman Omar,5,member,O000173,,,,matched by rule (match_recipients.py): rule 5: the one House member named omar,accepted
+Chairwoman Feinstein & Ranking Member Kennedy,5,merge,Senate Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Chairman DeLauro and Ranking Member Granger,5,merge,House Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Secretary Haaland and Director Stone-Manning,5,joint,Department of the Interior;Bureau of Land Management,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary haaland; rule 1: director stone-manning,accepted
+Director Young and Secretary Becerra,5,joint,Office of Management and Budget;Department of Health and Human Services,,,,matched by rule (match_recipients.py): rule 4: rule 1: director young; rule 1: secretary becerra,accepted
+Secretary Mayorkas and Administrator Criswell,5,joint,Department of Homeland Security;Federal Emergency Management Agency,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary mayorkas; rule 1: administrator criswell,accepted
+Secretaries Becerra,5,officeholder,Department of Health and Human Services,,,,matched by rule (match_recipients.py): rule 1: secretary becerra,accepted
+Secretary Haaland and Director Young,5,joint,Department of the Interior;Office of Management and Budget,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary haaland; rule 1: director young,accepted
+Senators Brown and Vance,5,joint,B000944;V000137,,,,matched by rule (match_recipients.py): rule 4: rule 1: senator brown; rule 5: the one Senate member named vance,accepted
+Secretaries Blinken,5,officeholder,Department of State,,,,matched by rule (match_recipients.py): rule 1: secretary blinken,accepted
+President Baker,5,merge,NCAA,,organization,Associations and other organizations,matched by rule (match_recipients.py): rule 1: president baker,accepted
+Speaker Johnson and Democratic Leader Jeffries,5,merge,Congressional leadership,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Senator Padilla,5,member,P000145,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named padilla,accepted
+Dr. Oz,5,officeholder,Centers for Medicare and Medicaid Services,,,,matched by rule (match_recipients.py): rule 2: oz,accepted
+Secretary Rubio and Attorney General Bondi,5,joint,Department of State;Department of Justice,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary rubio; rule 1: general bondi,accepted
+Acting Secretary Carter,5,officeholder,Department of Defense,,,,matched by rule (match_recipients.py): rule 1: secretary carter,accepted
+Administrator Zeldin and Secretary Wright,5,joint,Environmental Protection Agency;Department of Energy,,,,matched by rule (match_recipients.py): rule 4: rule 1: administrator zeldin; rule 1: secretary wright,accepted
+Secretary Lutnick and Ambassador Greer,5,joint,Department of Commerce;Office of the US Trade Representative,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary lutnick; rule 1: ambassador greer,accepted
+Secretary Kennedy and Director Vought,5,joint,Department of Health and Human Services;Office of Management and Budget,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary kennedy; rule 1: director vought,accepted
+Secretary Rollins and Chief Schultz,5,joint,Department of Agriculture;Forest Service,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary rollins; rule 1: chief schultz,accepted
+Secretary Kennedy and Commissioner Makary,5,joint,Department of Health and Human Services;Food and Drug Administration,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary kennedy; rule 1: commissioner makary,accepted
+Senator Brownback,4,member,B000953,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named brownback,accepted
+Ms. Whitman,4,officeholder,Environmental Protection Agency,,,,matched by rule (match_recipients.py): rule 2: whitman,accepted
+Representative Culberson,4,member,C001048,,,,matched by rule (match_recipients.py): rule 5: the one House member named culberson,accepted
+Chairman Lewis & Ranking Member Obey,4,merge,House Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Chairman Lewis and Ranking Member Obey,4,merge,House Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Congresswoman Pelosi,4,member,P000197,,,,matched by rule (match_recipients.py): rule 5: the one House member named pelosi,accepted
+Congressman Holt,4,member,H001032,,,,matched by rule (match_recipients.py): rule 5: the one House member named holt,accepted
+Chairman Nussle and Chairman Pombo,4,joint,House Committee on the Budget;House Committee on Natural Resources,,,,matched by rule (match_recipients.py): rule 4: rule 1: chair nussle; rule 1: chair pombo,accepted
+Senators Inhofe,4,member,I000024,,,,matched by rule (match_recipients.py): rule 1: senator inhofe,accepted
+Representative Pearce,4,member,P000588,,,,matched by rule (match_recipients.py): rule 5: the one House member named pearce,accepted
+Senator Akaka,4,member,A000069,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named akaka,accepted
+General Mukasey,4,officeholder,Department of Justice,,,,matched by rule (match_recipients.py): rule 1: general mukasey,accepted
+Senator Reid and Senator McConnell,4,merge,Congressional leadership,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Congressman Burgess,4,member,B001248,,,,matched by rule (match_recipients.py): rule 5: the one House member named burgess,accepted
+Senator Lugar,4,member,L000504,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named lugar,accepted
+Senators Kerry,4,member,K000148,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named kerry,accepted
+Representative LoBiondo,4,member,L000554,,,,matched by rule (match_recipients.py): rule 1: representative lobiondo,accepted
+Senators Levin and McCain,4,merge,Senate Committee on Armed Services,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Representative Frank,4,member,F000339,,,,matched by rule (match_recipients.py): rule 5: the one House member named frank,accepted
+Chairwoman Schapiro,4,officeholder,Securities and Exchange Commission,,,,matched by rule (match_recipients.py): rule 1: chair schapiro,accepted
+Leader Reid and Leader McConnell,4,merge,Congressional leadership,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Ms. Darcy,4,officeholder,Army Corps of Engineers,,,,matched by rule (match_recipients.py): rule 2: darcy,accepted
+Senators Baucus and Grassley,4,merge,Senate Committee on Finance,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Senator Wyden and Senator Udall,4,joint,W000779;U000039,,,,matched by rule (match_recipients.py): rule 4: rule 1: senator wyden; rule 1: senator udall,accepted
+Secretary Napolitano and Secretary LaHood,4,joint,Department of Homeland Security;Department of Transportation,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary napolitano; rule 1: secretary lahood,accepted
+Representative Bachmann,4,member,B001256,,,,matched by rule (match_recipients.py): rule 5: the one House member named bachmann,accepted
+Representative Hensarling,4,member,H001036,,,,matched by rule (match_recipients.py): rule 5: the one House member named hensarling,accepted
+Attorney General Holder and Secretary Sebelius,4,joint,Department of Justice;Department of Health and Human Services,,,,matched by rule (match_recipients.py): rule 4: rule 1: general holder; rule 1: secretary sebelius,accepted
+Senator Shaheen and Senator Portman,4,joint,S001181;P000449,,,,matched by rule (match_recipients.py): rule 4: rule 1: senator shaheen; rule 5: the one Senate member named portman,accepted
+Congressman Larsen,4,member,L000560,,,,matched by rule (match_recipients.py): rule 5: the one House member named larsen,accepted
+Mr. White,4,officeholder,Securities and Exchange Commission,,,,matched by rule (match_recipients.py): rule 2: white,accepted
+Secretaries Kerry And Lew,4,joint,Department of State;Department of the Treasury,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Congressman Barber,4,member,B001279,,,,matched by rule (match_recipients.py): rule 1: representative barber,accepted
+Chairman Murray and Ranking Member Collins,4,merge,Senate Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Senator Kaine,4,member,K000384,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named kaine,accepted
+Secretary Kerry and Secretary Johnson,4,joint,Department of State;Department of Homeland Security,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary kerry; rule 1: secretary johnson,accepted
+Secretary Sebelius and Administrator Tavenner,4,joint,Department of Health and Human Services;Centers for Medicare and Medicaid Services,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary sebelius; rule 1: administrator tavenner,accepted
+Ms. Colvin,4,officeholder,Social Security Administration,,,,matched by rule (match_recipients.py): rule 2: colvin,accepted
+Congresswoman Fudge,4,member,F000455,,,,matched by rule (match_recipients.py): rule 5: the one House member named fudge,accepted
+Congresswoman Speier,4,member,S001175,,,,matched by rule (match_recipients.py): rule 1: representative speier,accepted
+Representatives Renacci,4,member,R000586,,,,matched by rule (match_recipients.py): rule 5: the one House member named renacci,accepted
+Senator Coons,4,member,C001088,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named coons,accepted
+Congressman Ribble,4,member,R000587,,,,matched by rule (match_recipients.py): rule 5: the one House member named ribble,accepted
+Secretaries Kerry and Johnson,4,joint,Department of State;Department of Homeland Security,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary kerry; rule 1: secretary johnson,accepted
+Representative Lieu,4,member,L000582,,,,matched by rule (match_recipients.py): rule 5: the one House member named lieu,accepted
+Secretary Kerry and Administrator McCarthy,4,joint,Department of State;Environmental Protection Agency,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary kerry; rule 1: administrator mccarthy,accepted
+Senators Rubio,4,member,R000595,,,,matched by rule (match_recipients.py): rule 1: senator rubio,accepted
+Representative Buchanan and Representative Kind,4,joint,B001260;K000188,,,,matched by rule (match_recipients.py): rule 4: rule 1: representative buchanan; rule 5: the one House member named kind,accepted
+Secretary Johnson and Secretary Kerry,4,joint,Department of Homeland Security;Department of State,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary johnson; rule 1: secretary kerry,accepted
+Senators Boozman and Cotton and Representatives Crawford and Womack,4,joint,B001236;C001095;C001087;W000809,,,,matched by rule (match_recipients.py): rule 4: rule 5: the one Senate member named boozman; rule 5: the one Senate member named cotton; rule 5: the one House member named crawford; rule 5: the one House member named womack,accepted
+Mr. Trump,4,merge,The President,,,,matched by rule (match_recipients.py): rule 2: trump,accepted
+Senators Warren and Sanders,4,joint,W000817;S000033,,,,matched by rule (match_recipients.py): rule 4: rule 1: senator warren; rule 1: senator sanders,accepted
+Senator Warren and Senator Gardner,4,joint,W000817;G000562,,,,matched by rule (match_recipients.py): rule 4: rule 1: senator warren; rule 5: the one Senate member named gardner,accepted
+Chairman Moran and Vice Chairwoman Shaheen,4,merge,Senate Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Attorney General Sessions and Director Comey,4,joint,Department of Justice;Federal Bureau of Investigation,,,,matched by rule (match_recipients.py): rule 4: rule 1: general sessions; rule 1: director comey,accepted
+Senator Markey and Senator Brown,4,joint,M000133;B000944,,,,matched by rule (match_recipients.py): rule 4: rule 1: senator markey; rule 1: senator brown,accepted
+Administrator Pruitt and Secretary Azar,4,joint,Environmental Protection Agency;Department of Health and Human Services,,,,matched by rule (match_recipients.py): rule 4: rule 1: administrator pruitt; rule 1: secretary azar,accepted
+Senators Daines and King,4,joint,D000618;K000383,,,,matched by rule (match_recipients.py): rule 4: rule 1: senator daines; rule 1: senator king,accepted
+Senators Collins and Casey,4,joint,C001035;C001070,,,,matched by rule (match_recipients.py): rule 4: rule 1: senator collins; rule 5: the one Senate member named casey,accepted
+Ms. George,4,officeholder,Treasury Inspector General for Tax Administration,,,,matched by rule (match_recipients.py): rule 2: george,accepted
+Senators Collins and Warner,4,joint,C001035;W000805,,,,matched by rule (match_recipients.py): rule 4: rule 1: senator collins; rule 1: senator warner,accepted
+Chair Clayton,4,officeholder,Securities and Exchange Commission,,,,matched by rule (match_recipients.py): rule 1: chair clayton,accepted
+Secretary Mnuchin and Secretary Azar,4,joint,Department of the Treasury;Department of Health and Human Services,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary mnuchin; rule 1: secretary azar,accepted
+Secretary Tillerson and Acting Secretary Duke,4,joint,Department of State;Department of Homeland Security,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary tillerson; rule 1: secretary duke,accepted
+Ms. Ivanka Trump,4,merge,The President,,,,matched by rule (match_recipients.py): rule 2: trump,accepted
+Senator McConnell and Senator Schumer,4,merge,Congressional leadership,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Secretary Mnuchin and Secretary DeVos,4,joint,Department of the Treasury;Department of Education,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary mnuchin; rule 1: secretary devos,accepted
+Representative Gianforte,4,member,G000584,,,,matched by rule (match_recipients.py): rule 5: the one House member named gianforte,accepted
+Lieutenant General Semonite and Assistant Secretary James,4,merge,Army Corps of Engineers,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Secretary Ross and Secretary Pompeo,4,joint,Department of Commerce;Department of State,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary ross; rule 1: secretary pompeo,accepted
+Secretary Perdue and Secretary Acosta,4,joint,Department of Agriculture;Department of Labor,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary perdue; rule 1: secretary acosta,accepted
+Mr. Cuffari,4,officeholder,Department of Homeland Security,,,,matched by rule (match_recipients.py): rule 2: cuffari,accepted
+Administrator Gaynor and Secretary Esper,4,joint,Federal Emergency Management Agency;Department of Defense,,,,matched by rule (match_recipients.py): rule 4: rule 1: administrator gaynor; rule 1: secretary esper,accepted
+Dr. Redfield and Dr. Kadlec,4,joint,Centers for Disease Control;Department of Health and Human Services,,,,matched by rule (match_recipients.py): rule 4: rule 1: hon redfield; rule 2: kadlec,accepted
+Secretary Azar and Director Redfield,4,joint,Department of Health and Human Services;Centers for Disease Control,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary azar; rule 1: director redfield,accepted
+Secretaries Azar and DeVos,4,joint,Department of Health and Human Services;Department of Education,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary azar; rule 1: secretary devos,accepted
+Senator Schatz,4,member,S001194,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named schatz,accepted
+Commissioner Rettig and Secretary Mnuchin,4,joint,Department of the Treasury;Internal Revenue Service,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Attorney General Barr and Director Wray,4,joint,Department of Justice;Federal Bureau of Investigation,,,,matched by rule (match_recipients.py): rule 4: rule 1: general barr; rule 1: director wray,accepted
+Representative Stevens,4,member,S001215,,,,matched by rule (match_recipients.py): rule 5: the one House member named stevens,accepted
+Senator Coons and Congresswoman Chu,4,joint,C001088;C001080,,,,matched by rule (match_recipients.py): rule 4: rule 5: the one Senate member named coons; rule 5: the one House member named chu,accepted
+Chair DeFazio,4,merge,House Committee on Transportation and Infrastructure,,,,matched by rule (match_recipients.py): rule 1: chair defazio,accepted
+Acting Secretary Bernhardt,4,officeholder,Department of the Interior,,,,matched by rule (match_recipients.py): rule 1: secretary bernhardt,accepted
+Chief Moore and Secretary Haaland,4,joint,Forest Service;Department of the Interior,,,,matched by rule (match_recipients.py): rule 4: rule 1: chief moore; rule 1: secretary haaland,accepted
+Secretary Becerra and Commissioner Rettig,4,joint,Department of Health and Human Services;Internal Revenue Service,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary becerra; rule 1: commissioner rettig,accepted
+Senator Bennet and Senator Young,4,joint,B001267;Y000064,,,,matched by rule (match_recipients.py): rule 4: rule 1: senator bennet; rule 5: the one Senate member named young,accepted
+Senators Durbin,4,member,D000563,,,,matched by rule (match_recipients.py): rule 1: senator durbin,accepted
+Commissioner Kijakazi,4,officeholder,Social Security Administration,,,,matched by rule (match_recipients.py): rule 1: commissioner kijakazi,accepted
+Chair Van Hollen and Ranking Member Hyde-Smith,4,merge,Senate Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Secretary Becerra and Commissioner Califf,4,joint,Department of Health and Human Services;Food and Drug Administration,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary becerra; rule 1: commissioner califf,accepted
+Chairman Murray and Ranking Member Blunt,4,merge,Senate Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Attorney General Garland and Secretary Haaland,4,joint,Department of Justice;Department of the Interior,,,,matched by rule (match_recipients.py): rule 4: rule 1: general garland; rule 1: secretary haaland,accepted
+Secretary Mayorkas and Secretary Buttigieg,4,joint,Department of Homeland Security;Department of Transportation,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary mayorkas; rule 1: secretary buttigieg,accepted
+Leader Schumer and Minority Leader McConnell,4,merge,Congressional leadership,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Senator Warnock,4,member,W000790,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named warnock,accepted
+Congressman Ken Calvert,4,member,C000059,,,,matched by rule (match_recipients.py): rule 5: the one House member named calvert,accepted
+General Spellmon,4,officeholder,Army Corps of Engineers,,,,matched by rule (match_recipients.py): rule 1: general spellmon,accepted
+Congresswoman Nancy Pelosi,4,member,P000197,,,,matched by rule (match_recipients.py): rule 5: the one House member named pelosi,accepted
+Chairman Quigley and Ranking Member Womack,4,merge,House Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Chairwoman Baldwin & Ranking Member Hoeven,4,merge,Senate Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Chairman Merkley & Ranking Member Murkowski,4,merge,Senate Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Secretary Vilsack and Administrator Power,4,joint,Department of Agriculture;United States Agency for International Development,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary vilsack; rule 1: administrator power,accepted
+Senators Cantwell and Grassley,4,joint,C000127;G000386,,,,matched by rule (match_recipients.py): rule 4: rule 5: the one Senate member named cantwell; rule 1: senator grassley,accepted
+Senator Hoeven,4,member,H001061,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named hoeven,accepted
+Senators Booker and Young,4,joint,B001288;Y000064,,,,matched by rule (match_recipients.py): rule 4: rule 5: the one Senate member named booker; rule 5: the one Senate member named young,accepted
+Rep Delauro,4,member,D000216,,,,matched by rule (match_recipients.py): rule 5: the one House member named delauro,accepted
+Congressman Walberg,4,member,W000798,,,,matched by rule (match_recipients.py): rule 5: the one House member named walberg,accepted
+Senator Booker,4,member,B001288,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named booker,accepted
+Senator Merkley and Representative Bonamici,4,joint,M001176;B001278,,,,matched by rule (match_recipients.py): rule 4: rule 1: senator merkley; rule 5: the one House member named bonamici,accepted
+Chair Baldwin and Ranking Member Moore Capito,4,merge,Senate Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Secretary Mayorkas and Director Wray,4,joint,Department of Homeland Security;Federal Bureau of Investigation,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary mayorkas; rule 1: director wray,accepted
+Senator Van Hollen and Representative Sarbanes,4,joint,V000128;S001168,,,,matched by rule (match_recipients.py): rule 4: rule 5: the one Senate member named hollen; rule 5: the one House member named sarbanes,accepted
+Director Vought and Secretary McMahon,4,joint,Office of Management and Budget;Department of Education,,,,matched by rule (match_recipients.py): rule 4: rule 1: director vought; rule 1: secretary mcmahon,accepted
+Secretary Kennedy and Administrator Oz,4,joint,Department of Health and Human Services;Centers for Medicare and Medicaid Services,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary kennedy; rule 1: administrator oz,accepted
+Secretary Noem and Secretary Chavez-DeRemer,4,joint,Department of Homeland Security;Department of Labor,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary noem; rule 1: secretary chavez-deremer,accepted
+Secretary Bessent and Director Vought,4,joint,Department of the Treasury;Office of Management and Budget,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary bessent; rule 1: director vought,accepted
+Rep Tauzin,3,member,T000058,,,,matched by rule (match_recipients.py): rule 5: the one House member named tauzin,accepted
+Secretary General Annan,3,person,Kofi Annan,,person,International officials,matched by rule (match_recipients.py): rule 1: general annan,accepted
+Rep Barton,3,member,B000213,,,,matched by rule (match_recipients.py): rule 5: the one House member named barton,accepted
+Secretary Ridge and Administrator Leavitt,3,joint,Department of Homeland Security;Environmental Protection Agency,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary ridge; rule 1: administrator leavitt,accepted
+Rep Shays,3,member,S001144,,,,matched by rule (match_recipients.py): rule 5: the one House member named shays,accepted
+Rep Obey,3,member,O000007,,,,matched by rule (match_recipients.py): rule 5: the one House member named obey,accepted
+Senator Frist,3,member,F000439,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named frist,accepted
+Senators Grassley and Baucus,3,merge,Senate Committee on Finance,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Senators Frist and Reid,3,joint,F000439;R000146,,,,matched by rule (match_recipients.py): rule 4: rule 5: the one Senate member named frist; rule 1: senator reid,accepted
+Representative Herger,3,member,H000528,,,,matched by rule (match_recipients.py): rule 5: the one House member named herger,accepted
+Defense Secretary Gates,3,officeholder,Department of Defense,,,,matched by rule (match_recipients.py): rule 1: secretary gates,accepted
+Senators Obama and McCain,3,joint,O000167;M000303,,,,matched by rule (match_recipients.py): rule 4: rule 5: the one Senate member named obama; rule 1: senator mccain,accepted
+Chairman Conyers and Representative Smith,3,merge,House Committee on the Judiciary,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Congresswoman Eshoo,3,member,E000215,,,,matched by rule (match_recipients.py): rule 5: the one House member named eshoo,accepted
+Representatives McNerney and Bilbray,3,joint,M001166;B000461,,,,matched by rule (match_recipients.py): rule 4: rule 5: the one House member named mcnerney; rule 5: the one House member named bilbray,accepted
+Congressman Kingston,3,member,K000220,,,,matched by rule (match_recipients.py): rule 5: the one House member named kingston,accepted
+Senators Conrad and Gregg,3,joint,C000705;G000445,,,,matched by rule (match_recipients.py): rule 4: rule 5: the one Senate member named conrad; rule 5: the one Senate member named gregg,accepted
+Representative McHugh,3,member,M000472,,,,matched by rule (match_recipients.py): rule 5: the one House member named mchugh,accepted
+Administrator Fugate and Secretary Darcy,3,joint,Federal Emergency Management Agency;Army Corps of Engineers,,,,matched by rule (match_recipients.py): rule 4: rule 1: administrator fugate; rule 1: secretary darcy,accepted
+Secretary Sebelius and Attorney General Holder,3,joint,Department of Health and Human Services;Department of Justice,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary sebelius; rule 1: general holder,accepted
+Secretary Vilsack and Administrator Jackson,3,joint,Department of Agriculture;Environmental Protection Agency,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary vilsack; rule 1: administrator jackson,accepted
+Representative Burgess,3,member,B001248,,,,matched by rule (match_recipients.py): rule 5: the one House member named burgess,accepted
+Representative Giffords,3,member,G000554,,,,matched by rule (match_recipients.py): rule 5: the one House member named giffords,accepted
+Secretaries Clinton And Gates,3,joint,Department of State;Department of Defense,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary clinton; rule 1: secretary gates,accepted
+Congressman Blumenauer,3,member,B000574,,,,matched by rule (match_recipients.py): rule 5: the one House member named blumenauer,accepted
+Chairwoman Mikulski and Ranking Member Shelby,3,merge,Senate Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Congressman Manzullo,3,member,M001138,,,,matched by rule (match_recipients.py): rule 5: the one House member named manzullo,accepted
+Representative Lofgren,3,member,L000397,,,,matched by rule (match_recipients.py): rule 5: the one House member named lofgren,accepted
+Secretaries Locke and Salazar,3,joint,Department of Commerce;Department of the Interior,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary locke; rule 1: secretary salazar,accepted
+Speaker Pelosi & Chairman Brady,3,joint,P000197;House Committee on Ways and Means,,,,matched by rule (match_recipients.py): rule 4: rule 1: speaker pelosi; rule 1: chair brady,accepted
+Chairman Obey & Ranking Member Lewis,3,merge,House Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Ms. Collins,3,officeholder,National Institutes of Health,,,,matched by rule (match_recipients.py): rule 1: hon collins,accepted
+Under Secretary Carter,3,officeholder,Department of Defense,,,,matched by rule (match_recipients.py): rule 1: secretary carter,accepted
+Mr. Cordray,3,officeholder,Consumer Financial Protection Bureau,,,,matched by rule (match_recipients.py): rule 2: cordray,accepted
+Ms. Tavenner,3,officeholder,Centers for Medicare and Medicaid Services,,,,matched by rule (match_recipients.py): rule 2: tavenner,accepted
+Congressman Welch,3,member,W000800,,,,matched by rule (match_recipients.py): rule 5: the one House member named welch,accepted
+Representative Gosar,3,member,G000565,,,,matched by rule (match_recipients.py): rule 1: representative gosar,accepted
+Senator Hagan,3,member,H001049,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named hagan,accepted
+Representative Cooper,3,member,C000754,,,,matched by rule (match_recipients.py): rule 5: the one House member named cooper,accepted
+Secretary Clinton and Secretary Napolitano,3,joint,Department of State;Department of Homeland Security,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary clinton; rule 1: secretary napolitano,accepted
+Senator Sessions,3,member,S001141,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named sessions,accepted
+Congressman Richmond,3,member,R000588,,,,matched by rule (match_recipients.py): rule 5: the one House member named richmond,accepted
+Secretary Sebelius and Dr. Frieden,3,joint,Department of Health and Human Services;Centers for Disease Control,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary sebelius; rule 1: hon frieden,accepted
+Congressman Hensarling,3,member,H001036,,,,matched by rule (match_recipients.py): rule 5: the one House member named hensarling,accepted
+Attorney General Holder and Chairwoman Ramirez,3,joint,Department of Justice;Federal Trade Commission,,,,matched by rule (match_recipients.py): rule 4: rule 1: general holder; rule 1: chair ramirez,accepted
+Senator Grassley and Senator Hatch,3,joint,G000386;H000338,,,,matched by rule (match_recipients.py): rule 4: rule 1: senator grassley; rule 1: senator hatch,accepted
+Representatives Barber,3,member,B001279,,,,matched by rule (match_recipients.py): rule 1: representative barber,accepted
+Mr. Koskinen,3,officeholder,Internal Revenue Service,,,,matched by rule (match_recipients.py): rule 2: koskinen,accepted
+Rep Gosar,3,member,G000565,,,,matched by rule (match_recipients.py): rule 1: representative gosar,accepted
+Senators Blumenthal and Murphy and Congressman Larson,3,joint,B001277;M001169;L000557,,,,matched by rule (match_recipients.py): rule 4: rule 1: senator blumenthal; rule 5: the one Senate member named murphy; rule 1: representative larson,accepted
+Senator Mikulski and Senator Shelby,3,merge,Senate Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Congresswoman Lofgren,3,member,L000397,,,,matched by rule (match_recipients.py): rule 5: the one House member named lofgren,accepted
+Representatives Boehner,3,member,B000589,,,,matched by rule (match_recipients.py): rule 5: the one House member named boehner,accepted
+Chairman Gensler and Chairman White,3,merge,Securities and Exchange Commission,,,,matched by rule (match_recipients.py): rule 4: rule 1: chair gensler; rule 1: chair white,accepted
+Representative Lujan Grisham,3,member,L000580,,,,matched by rule (match_recipients.py): rule 5: the one House member named grisham,accepted
+Mr. George,3,officeholder,Treasury Inspector General for Tax Administration,,,,matched by rule (match_recipients.py): rule 2: george,accepted
+Secretary Lew and Acting Commissioner Werfel,3,joint,Department of the Treasury;Internal Revenue Service,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary lew; rule 1: commissioner werfel,accepted
+Senator Ayotte,3,member,A000368,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named ayotte,accepted
+Mr. Huerta,3,officeholder,Federal Aviation Administration,,,,matched by rule (match_recipients.py): rule 2: huerta,accepted
+Senator Feinstein and Senator Boxer,3,joint,F000062;B000711,,,,matched by rule (match_recipients.py): rule 4: rule 1: senator feinstein; rule 5: the one Senate member named boxer,accepted
+Secretary James and General Welsh,3,merge,Department of the Air Force,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary james; rule 1: general welsh,accepted
+Secretary Johnson and Attorney General Lynch,3,joint,Department of Homeland Security;Department of Justice,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary johnson; rule 1: general lynch,accepted
+Chairman Grassley and Senator Leahy,3,merge,Senate Committee on the Judiciary,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Mr. Simons,3,officeholder,Federal Trade Commission,,,,matched by rule (match_recipients.py): rule 2: simons,accepted
+Senators Blumenthal and Daines,3,joint,B001277;D000618,,,,matched by rule (match_recipients.py): rule 4: rule 1: senator blumenthal; rule 1: senator daines,accepted
+Senators Warren and Daines,3,joint,W000817;D000618,,,,matched by rule (match_recipients.py): rule 4: rule 1: senator warren; rule 1: senator daines,accepted
+Defense Secretary Carter,3,officeholder,Department of Defense,,,,matched by rule (match_recipients.py): rule 1: secretary carter,accepted
+Attorney General Lynch and Director Comey,3,joint,Department of Justice;Federal Bureau of Investigation,,,,matched by rule (match_recipients.py): rule 4: rule 1: general lynch; rule 1: director comey,accepted
+Subcommittee Chairman Graham,3,member,G000359,,,,matched by rule (match_recipients.py): rule 1: chair graham,accepted
+Leader McConnell and Speaker Ryan,3,merge,Congressional leadership,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Majority Leader Mitch McConnell,3,merge,Congressional leadership,,,,matched by rule (match_recipients.py): rule 1: leader mcconnell,accepted
+Representatives Buchanan and Sanchez,3,joint,B001260;S000030,,,,matched by rule (match_recipients.py): rule 4: rule 1: representative buchanan; rule 5: the one House member named sanchez,accepted
+Representative Buchanan,3,member,B001260,,,,matched by rule (match_recipients.py): rule 1: representative buchanan,accepted
+Director Donovan and Secretary Burwell,3,joint,Office of Management and Budget;Department of Health and Human Services,,,,matched by rule (match_recipients.py): rule 4: rule 1: director donovan; rule 1: secretary burwell,accepted
+Senator Isakson,3,member,I000055,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named isakson,accepted
+Senator Burr and Senator Tillis,3,joint,B001135;T000476,,,,matched by rule (match_recipients.py): rule 4: rule 1: senator burr; rule 5: the one Senate member named tillis,accepted
+Senators Hatch,3,member,H000338,,,,matched by rule (match_recipients.py): rule 1: senator hatch,accepted
+Hagel Secretary Kerry 1,3,officeholder,Department of State,,,,matched by rule (match_recipients.py): rule 1: secretary kerry,accepted
+Senators Mcconnell And Reid,3,merge,Congressional leadership,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Representative Schrader,3,member,S001180,,,,matched by rule (match_recipients.py): rule 1: representative schrader,accepted
+Congressman Messer,3,member,M001189,,,,matched by rule (match_recipients.py): rule 5: the one House member named messer,accepted
+Congressman Hardy,3,member,H001070,,,,matched by rule (match_recipients.py): rule 5: the one House member named hardy,accepted
+Representative Renacci,3,member,R000586,,,,matched by rule (match_recipients.py): rule 5: the one House member named renacci,accepted
+Congressman Renacci,3,member,R000586,,,,matched by rule (match_recipients.py): rule 5: the one House member named renacci,accepted
+Representative Kaptur,3,member,K000009,,,,matched by rule (match_recipients.py): rule 5: the one House member named kaptur,accepted
+Representative Hanna,3,member,H001051,,,,matched by rule (match_recipients.py): rule 5: the one House member named hanna,accepted
+Mr. Mnuchin,3,officeholder,Department of the Treasury,,,,matched by rule (match_recipients.py): rule 2: mnuchin,accepted
+Secretary Tillerson and Secretary Ross,3,joint,Department of State;Department of Commerce,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary tillerson; rule 1: secretary ross,accepted
+Senators McConnell,3,member,M000355,,,,matched by rule (match_recipients.py): rule 1: senator mcconnell,accepted
+Senator Markey and Representative Donovan,3,joint,M000133;D000625,,,,matched by rule (match_recipients.py): rule 4: rule 1: senator markey; rule 5: the one House member named donovan,accepted
+Senators McConnell and Schumer,3,merge,Congressional leadership,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Leaders McConnell,3,merge,Congressional leadership,,,,matched by rule (match_recipients.py): rule 1: leader mcconnell,accepted
+Interim Chief Christiansen,3,officeholder,Forest Service,,,,matched by rule (match_recipients.py): rule 1: chief christiansen,accepted
+Secretaries Ross and Zinke,3,joint,Department of Commerce;Department of the Interior,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary ross; rule 1: secretary zinke,accepted
+Senator Cortez Masto,3,member,C001113,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named masto,accepted
+Secretary Perdue and Chief Tooke,3,joint,Department of Agriculture;Forest Service,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary perdue; rule 1: chief tooke,accepted
+Senator Duckworth,3,member,D000622,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named duckworth,accepted
+Chairman Cochran and Ranking Member Leahy,3,merge,Senate Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Ms. Verma,3,officeholder,Centers for Medicare and Medicaid Services,,,,matched by rule (match_recipients.py): rule 2: verma,accepted
+Senator Alexander,3,member,A000360,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named alexander,accepted
+Representatives Herrera Beutler,3,member,H001056,,,,matched by rule (match_recipients.py): rule 5: the one House member named beutler,accepted
+Secretary Tillerson and Secretary Chao,3,joint,Department of State;Department of Transportation,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary tillerson; rule 1: secretary chao,accepted
+Chairman Graham and Vice Chairman Leahy,3,joint,G000359;L000174,,,,matched by rule (match_recipients.py): rule 4: rule 1: chair graham; rule 1: chair leahy,accepted
+Secretary Nielsen and Secretary Azar,3,joint,Department of Homeland Security;Department of Health and Human Services,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary nielsen; rule 1: secretary azar,accepted
+Representatives Larson and Courtney,3,joint,L000557;C001069,,,,matched by rule (match_recipients.py): rule 4: rule 1: representative larson; rule 1: representative courtney,accepted
+Senators Cornyn and Feinstein,3,joint,C001056;F000062,,,,matched by rule (match_recipients.py): rule 4: rule 1: senator cornyn; rule 1: senator feinstein,accepted
+Chairman Tom Cole and Ranking Member Rosa L. DeLauro,3,merge,House Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Senator Fischer,3,member,F000463,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named fischer,accepted
+Representative Norton,3,member,N000147,,,,matched by rule (match_recipients.py): rule 5: the one House member named norton,accepted
+Congressman Brat and Congresswoman Titus,3,joint,B001290;T000468,,,,matched by rule (match_recipients.py): rule 4: rule 5: the one House member named brat; rule 5: the one House member named titus,accepted
+Representative Loudermilk,3,member,L000583,,,,matched by rule (match_recipients.py): rule 5: the one House member named loudermilk,accepted
+Representative Fudge,3,member,F000455,,,,matched by rule (match_recipients.py): rule 5: the one House member named fudge,accepted
+Senator Warren and Congressman Cummings,3,joint,W000817;C000984,,,,matched by rule (match_recipients.py): rule 4: rule 1: senator warren; rule 5: the one House member named cummings,accepted
+Defense Secretary Esper,3,officeholder,Department of Defense,,,,matched by rule (match_recipients.py): rule 1: secretary esper,accepted
+Secretary Mcaleenan,3,officeholder,Department of Homeland Security,,,,matched by rule (match_recipients.py): rule 1: secretary mcaleenan,accepted
+Secretary Azar and Secretary Pompeo,3,joint,Department of Health and Human Services;Department of State,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary azar; rule 1: secretary pompeo,accepted
+Secretaries Perry and Nielsen,3,joint,Department of Energy;Department of Homeland Security,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary perry; rule 1: secretary nielsen,accepted
+Secretary Perdue and Chief Christiansen,3,joint,Department of Agriculture;Forest Service,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary perdue; rule 1: chief christiansen,accepted
+Secretary Pompeo and Acting Secretary McAleenan,3,joint,Department of State;Department of Homeland Security,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary pompeo; rule 1: secretary mcaleenan,accepted
+Secretary Bernhardt and Secretary Perdue,3,joint,Department of the Interior;Department of Agriculture,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary bernhardt; rule 1: secretary perdue,accepted
+Mr. Vought,3,officeholder,Office of Management and Budget,,,,matched by rule (match_recipients.py): rule 2: vought,accepted
+Secretaries Esper and Bernhardt,3,joint,Department of Defense;Department of the Interior,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary esper; rule 1: secretary bernhardt,accepted
+Secretary Elaine Chao,3,officeholder,Department of Transportation,,,,matched by rule (match_recipients.py): rule 1: secretary chao,accepted
+Director Calabria and Secretary Mnuchin,3,joint,Federal Housing Finance Agency;Department of the Treasury,,,,matched by rule (match_recipients.py): rule 4: rule 1: director calabria; rule 1: secretary mnuchin,accepted
+Secretary Mnuchin and Secretary Bernhardt,3,joint,Department of the Treasury;Department of the Interior,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary mnuchin; rule 1: secretary bernhardt,accepted
+Attorney General Barr and Acting Secretary McAleenan,3,joint,Department of Justice;Department of Homeland Security,,,,matched by rule (match_recipients.py): rule 4: rule 1: general barr; rule 1: secretary mcaleenan,accepted
+Senator Hirono,3,member,H001042,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named hirono,accepted
+Secretaries Mnuchin and Bernhardt,3,joint,Department of the Treasury;Department of the Interior,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary mnuchin; rule 1: secretary bernhardt,accepted
+Secretary Chao and Administrator Dickson,3,joint,Department of Transportation;Federal Aviation Administration,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary chao; rule 1: administrator dickson,accepted
+Acting Secretary Esper,3,officeholder,Department of Defense,,,,matched by rule (match_recipients.py): rule 1: secretary esper,accepted
+Secretary Mnuchin and Ambassador Lighthizer,3,joint,Department of the Treasury;Office of the US Trade Representative,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary mnuchin; rule 1: ambassador lighthizer,accepted
+Senator Cotton,3,member,C001095,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named cotton,accepted
+Senate Majority Leader McConnell,3,merge,Congressional leadership,,,,matched by rule (match_recipients.py): rule 1: leader mcconnell,accepted
+Representative Steil,3,member,S001213,,,,matched by rule (match_recipients.py): rule 5: the one House member named steil,accepted
+Representative Neguse,3,member,N000191,,,,matched by rule (match_recipients.py): rule 5: the one House member named neguse,accepted
+Chairs DeLauro and Ranking Member Cole,3,merge,House Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Secretary Pompeo and Attorney General Barr,3,joint,Department of State;Department of Justice,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary pompeo; rule 1: general barr,accepted
+Representative Huffman and Representative McClintock,3,joint,H001068;M001177,,,,matched by rule (match_recipients.py): rule 4: rule 1: representative huffman; rule 5: the one House member named mcclintock,accepted
+Leader McConnell and Speaker Pelosi,3,merge,Congressional leadership,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Mr. Bezos & Mr. Jassy,3,merge,Amazon,,,,matched by rule (match_recipients.py): rule 4: rule 1: hon bezos; rule 1: hon jassy,accepted
+Senator Warren and Chairwoman Maloney,3,joint,W000817;M000087,,,,matched by rule (match_recipients.py): rule 4: rule 1: senator warren; rule 1: chair maloney,accepted
+Senator Sanders and Representative DeFazio,3,joint,S000033;D000191,,,,matched by rule (match_recipients.py): rule 4: rule 1: senator sanders; rule 5: the one House member named defazio,accepted
+Majority Leader Schumer and Republican Leader McConnell,3,merge,Congressional leadership,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Senator Michael Bennet,3,member,B001267,,,,matched by rule (match_recipients.py): rule 1: senator bennet,accepted
+Leader Schumer and Senator Manchin,3,joint,Congressional leadership;M001183,,,,matched by rule (match_recipients.py): rule 4: rule 1: leader schumer; rule 1: senator manchin,accepted
+Dr. Collins and Dr. Fauci,3,joint,National Institutes of Health;National Institute of Allergy and Infectious Diseases,,,,matched by rule (match_recipients.py): rule 4: rule 1: hon collins; rule 1: hon fauci,accepted
+Senator Tester and Senator Daines,3,joint,T000464;D000618,,,,matched by rule (match_recipients.py): rule 4: rule 1: senator tester; rule 1: senator daines,accepted
+Usaid Administrator Power,3,officeholder,United States Agency for International Development,,,,matched by rule (match_recipients.py): rule 1: administrator power,accepted
+Dr. Walensky and Adminstrator Pekoske,3,joint,Centers for Disease Control;Transportation Security Administration,,,,matched by rule (match_recipients.py): rule 4: rule 2: walensky; rule 2: pekoske,accepted
+Secretary Walsh and Secretary Vilsack,3,joint,Department of Labor;Department of Agriculture,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary walsh; rule 1: secretary vilsack,accepted
+Representative Craig,3,member,C001119,,,,matched by rule (match_recipients.py): rule 5: the one House member named craig,accepted
+Commissioner Rettig and Ms. Collins,3,joint,Internal Revenue Service;National Institutes of Health,,,,matched by rule (match_recipients.py): rule 4: rule 1: commissioner rettig; rule 1: hon collins,accepted
+Secretary Mayorkas and Director Walensky,3,joint,Department of Homeland Security;Centers for Disease Control,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary mayorkas; rule 1: director walensky,accepted
+Dr. Walensky,3,officeholder,Centers for Disease Control,,,,matched by rule (match_recipients.py): rule 2: walensky,accepted
+House Speaker Pelosi,3,member,P000197,,,,matched by rule (match_recipients.py): rule 1: speaker pelosi,accepted
+Secretary Mayorkas and Attorney General Garland,3,joint,Department of Justice;Department of Homeland Security,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Chair Carper and Ranking Member Capito,3,merge,Senate Committee on Environment and Public Works,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Chair McCollum and Ranking Member Calvert,3,merge,House Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Chairman DeLauro and Ranking Minority Member Granger,3,merge,House Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Chairman Cartwright and Ranking Minority Member Aderholt,3,merge,House Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Chair Cantwell and Senator Grassley,3,joint,"Senate Committee on Commerce, Science, and Transportation;G000386",,,,matched by rule (match_recipients.py): rule 4: rule 1: chair cantwell; rule 1: senator grassley,accepted
+Representative Webster,3,member,W000806,,,,matched by rule (match_recipients.py): rule 1: representative webster,accepted
+Chair Marcy Kaptur and Ranking Member Mike Simpson,3,merge,House Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Secretary Haaland and Commissioner Touton,3,joint,Department of the Interior;Bureau of Reclamation,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary haaland; rule 1: commissioner touton,accepted
+Governor Youngkin,3,person,Glenn Youngkin,,person,Governors,matched by rule (match_recipients.py): rule 1: governor youngkin,accepted
+Assistant Secretary Connor and Lieutenant General Spellmon,3,merge,Army Corps of Engineers,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary connor; rule 1: general spellmon,accepted
+Chairwoman DeLauro & Ranking Member Granger,3,merge,House Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Representative Comer,3,member,C001108,,,,matched by rule (match_recipients.py): rule 5: the one House member named comer,accepted
+Senator Marshall and Representative Comer,3,joint,M001198;C001108,,,,matched by rule (match_recipients.py): rule 4: rule 5: the one Senate member named marshall; rule 5: the one House member named comer,accepted
+Attorney General Merrick Garland,3,officeholder,Department of Justice,,,,matched by rule (match_recipients.py): rule 1: general garland,accepted
+Secretary Raimondo and Administrator Spinrad,3,joint,Department of Commerce;National Oceanic and Atmospheric Administration,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary raimondo; rule 1: administrator spinrad,accepted
+Senator Lee and Congressman Steube,3,joint,L000577;S001214,,,,matched by rule (match_recipients.py): rule 4: rule 5: the one Senate member named lee; rule 5: the one House member named steube,accepted
+Speaker Pelosi and Chair DeLauro,3,joint,P000197;House Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 4: rule 1: speaker pelosi; rule 1: chair delauro,accepted
+Congressman DesJarlais,3,member,D000616,,,,matched by rule (match_recipients.py): rule 5: the one House member named desjarlais,accepted
+Secretary Becerra and Secretary Walsh,3,joint,Department of Health and Human Services;Department of Labor,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary becerra; rule 1: secretary walsh,accepted
+Senators Bennet and Boozman,3,joint,B001267;B001236,,,,matched by rule (match_recipients.py): rule 4: rule 1: senator bennet; rule 5: the one Senate member named boozman,accepted
+Secretary Fudge and Secretary McDonough,3,joint,Department of Housing and Urban Development;Department of Veterans Affairs,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary fudge; rule 1: secretary mcdonough,accepted
+Chairwoman Murray and Ranking Member Kennedy,3,merge,Senate Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Tai And Vilsack,3,joint,Office of the US Trade Representative;Department of Agriculture,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Commissioner Werfel and Secretary Yellen,3,joint,Department of the Treasury;Internal Revenue Service,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Congressman Beyer,3,member,B001292,,,,matched by rule (match_recipients.py): rule 5: the one House member named beyer,accepted
+Senators Young and Schatz and Representatives Kilmer and Flood,3,joint,Y000064;S001194;K000381;F000474,,,,matched by rule (match_recipients.py): rule 4: rule 5: the one Senate member named young; rule 5: the one Senate member named schatz; rule 5: the one House member named kilmer; rule 5: the one House member named flood,accepted
+Secretary Buttigieg and Director Young,3,joint,Department of Transportation;Office of Management and Budget,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary buttigieg; rule 1: director young,accepted
+Secretary Su,3,officeholder,Department of Labor,,,,matched by rule (match_recipients.py): rule 1: secretary su,accepted
+Secretaries Blinken And Austin,3,joint,Department of State;Department of Defense,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary blinken; rule 1: secretary austin,accepted
+Chairman Cole & Ranking Member DeLauro,3,merge,House Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Leader Schumer and Senators Rounds,3,joint,Congressional leadership;R000605,,,,matched by rule (match_recipients.py): rule 4: rule 1: leader schumer; rule 5: the one Senate member named rounds,accepted
+Senator Feinstein and Speaker Emerita Pelosi,3,joint,F000062;P000197,,,,matched by rule (match_recipients.py): rule 4: rule 1: senator feinstein; rule 1: speaker pelosi,accepted
+Chair Graves and Ranking Member Larsen,3,merge,House Committee on Transportation and Infrastructure,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Mr. McDonald,3,officeholder,Department of Veterans Affairs,,,,matched by rule (match_recipients.py): rule 2: mcdonald,accepted
+Secretary McMahon and Secretary Bessent,3,joint,Department of Education;Department of the Treasury,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary mcmahon; rule 1: secretary bessent,accepted
+Chairman Grassley and Ranking Member Durbin,3,merge,Senate Committee on the Judiciary,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Senator Hickenlooper,3,member,H000273,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named hickenlooper,accepted
+Secretary Burgum and Secretary Hegseth,3,joint,Department of the Interior;Department of Defense,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary burgum; rule 1: secretary hegseth,accepted
+Chairwoman Capito and Ranking Member Baldwin,3,merge,Senate Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Secs Noem And Rubio,3,joint,Department of Homeland Security;Department of State,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Education Secretary Mcmahon,3,officeholder,Department of Education,,,,matched by rule (match_recipients.py): rule 1: secretary mcmahon,accepted
+Secretaries Noem And Rubio,3,joint,Department of Homeland Security;Department of State,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
+Secretary Noem and Attorney General Bondi,3,joint,Department of Homeland Security;Department of Justice,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary noem; rule 1: general bondi,accepted
+Representative Lawler,3,member,L000599,,,,matched by rule (match_recipients.py): rule 5: the one House member named lawler,accepted
+Senator Moreno,3,member,M001242,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named moreno,accepted
+Secretary Bessent and Ambassador Greer,3,joint,Department of the Treasury;Office of the US Trade Representative,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary bessent; rule 1: ambassador greer,accepted
