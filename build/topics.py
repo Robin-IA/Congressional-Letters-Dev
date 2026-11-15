@@ -420,17 +420,22 @@ SUBJECTS: dict[str, tuple[str, ...]] = {
     # 11,272 letters we hold text for and checked against LCDGT and
     # FAST before adoption (Robin). "Hispanic Americans" is LCDGT's
     # own authorized form, not "LatinX".
+    # Plain words, not regular expressions: tag() matches whole words after
+    # singular() (so "americans" finds "american" and "disabilities"
+    # "disability"), and a pattern like 'americans?' never matches. Not bare
+    # "senior", which is senior officials as often as older people.
     "Crime": ('crime', 'violent crime', 'criminal justice'),
-    "Sexual assault": ('sexual assault', 'sexual abuse', '\\brape\\b', 'rape kit', 'sexual violence'),
+    "Sexual assault": ('sexual assault', 'sexual abuse', 'rape', 'rape kit', 'sexual violence'),
     "Human trafficking": ('human trafficking', 'sex trafficking', 'trafficking victim'),
     "Child abuse": ('child abuse', 'child sexual abuse', 'abused children', 'child exploitation'),
     "Victim services": ('victims of crime act', 'victim services', 'victim compensation'),
-    "Asian Americans": ('asian americans?', 'aapi', 'pacific islanders?'),
-    "Black Americans": ('african americans?', 'black americans?'),
-    "Hispanic Americans": ('hispanic americans?', 'latino', 'latina'),
+    "Asian Americans": ('asian american', 'asian-american', 'aapi', 'pacific islander'),
+    "Black Americans": ('african american', 'african-american', 'black american'),
+    "Hispanic Americans": ('hispanic american', 'hispanic-american', 'latino', 'latina'),
     "LGBTQ people": ('lgbtq', 'transgender', 'same-sex'),
-    "People with disabilities": ('people with disabilit', 'individuals with disabilit', 'americans with disabilit'),
-    "Older adults": ('older adults?', 'older people', '\\bseniors\\b'),
+    "People with disabilities": ('people with disability', 'individuals with disability',
+                                 'persons with disability', 'americans with disability'),
+    "Older adults": ('older adult', 'older american', 'older people', 'senior citizen'),
 
 }
 
