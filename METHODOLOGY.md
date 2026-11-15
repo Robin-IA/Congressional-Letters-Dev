@@ -677,6 +677,19 @@ A fourth was settled by the calendar: a letter headed 12 January 2024 says the
 fires began "Tuesday, January 7th", and 7 January fell on a Tuesday in 2025
 and a Sunday in 2024. The audit makes that check itself.
 
+**A letter can carry two letterhead dates, and the later one is taken.**
+The letter to the Office of Personnel Management about the employee
+productivity emails is headed both 14 and 17 March 2025: it was drafted,
+held and re-dated before it went. The later date is when it was sent, which
+is what we are recording, and in that case the capture agrees with it.
+
+A Quill file name should never settle this. Several offices draft in Quill,
+whose file names carry a generation timestamp — `version 1 03 31 2023 @ 11
+06 am` — and `parse_urls.py` reads that as the date. Measured against the
+letterheads we can read, **a Quill date is wrong 54.2% of the time (77 of
+142) against 11.0% for every other kind of file name**, with a median gap of
+six days: the draft, not the letter (#182).
+
 **Some letters carry no date at all**, and the capture is a poor substitute.
 Two were dated to the month from their own contents: a Dear Colleague on the
 Syrian chemical weapons attack refers in the past to Secretary Kerry before
