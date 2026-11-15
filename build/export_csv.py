@@ -167,6 +167,7 @@ def main() -> int:
             for r in json.loads(path.read_text(encoding="utf-8")):
                 topics = split_list(r[col["topics"]])[:3]
                 key, ts, prec = r[col["key"]], r[col["timestamp"]], r[col["precision"]]
+                link = (r[col["url"]] if "url" in col else "") or ""   # #107: the observed address
                 rows.append({
                     **common,
                     "letter_date": iso_date(r[col["date"]], prec),
@@ -177,8 +178,8 @@ def main() -> int:
                     "topic_3": topics[2] if len(topics) > 2 else "",
                     "cosigners": "; ".join(split_list(r[col["cosigners"]])),
                     "subject": r[col["subject"]] or "",
-                    "pdf_url": f"https://web.archive.org/web/{ts}id_/{encoded(key)}",
-                    "original_url": encoded(key if "://" in key else f"https://{key}"),
+                    "pdf_url": f"https://web.archive.org/web/{ts}id_/{encoded(link or key)}",  # #107
+                    "original_url": encoded((link or key) if "://" in (link or key) else f"https://{link or key}"),
                     "wayback_timestamp": ts,
                     "digest": r[col["digest"]] or "",
                 })

@@ -60,8 +60,11 @@ const get = (row, field) => row[F[field]];
 
 // The letter as the Wayback Machine serves it. `id_` asks for the original
 // bytes rather than a rewritten page, which for a PDF is what you want.
+// `key` is the letter's identity, not its address: it drops a cache-busting
+// prefix the archive needs (#107), so `url` carries the observed address
+// when it differs. Older payloads have no `url` column; they fall back.
 const waybackUrl = row =>
-  `https://web.archive.org/web/${get(row, 'timestamp')}id_/${get(row, 'key')}`;
+  `https://web.archive.org/web/${get(row, 'timestamp')}id_/${get(row, 'url') || get(row, 'key')}`;
 
 const thumbUrl = row => {
   const digest = get(row, 'digest');
