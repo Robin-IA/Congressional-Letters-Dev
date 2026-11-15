@@ -594,3 +594,87 @@ Media Executives,2,reject,,,,,no organization or person named,accepted
 Executives Climate Change Coverage,2,reject,,,,,"no organization named; 'climate change coverage' is the subject, not the recipient",accepted
 Appropriations Leadership,3,hold,,,,,"the chairs and ranking members of the Appropriations Committees, but which chamber is not stated; no House Committee on Appropriations term exists yet",proposed
 Republican Governors,2,hold,,,,,"may be the Republican Governors Association, a real body, or simply governors unnamed; not checked against the letters",proposed
+Jeh Johnson,5,officeholder,Department of Homeland Security,,,,"Jeh Johnson, Secretary of Homeland Security 2013-2017",accepted
+Duke,5,officeholder,Department of Homeland Security,,,,"checked: all 2017, Acting Secretary Elaine Duke (DACA, TPS, sensitive locations)",accepted
+Assistant Secretary Darcy,5,officeholder,Army Corps of Engineers,,,,"Jo-Ellen Darcy, Assistant Secretary of the Army (Civil Works) 2009-2017",accepted
+Asa Darcy,5,officeholder,Army Corps of Engineers,,,,"Jo-Ellen Darcy, Assistant Secretary of the Army (Civil Works); Table Rock, breakwater",accepted
+Jo Ellen Darcy,4,officeholder,Army Corps of Engineers,,,,"Jo-Ellen Darcy, Assistant Secretary of the Army (Civil Works) 2009-2017",accepted
+Dodaro,5,officeholder,Government Accountability Office,,,,"Gene Dodaro, Comptroller General 2008-",accepted
+Pmg Brennan,5,officeholder,United States Postal Service,,,,"Megan Brennan, Postmaster General 2015-2020",accepted
+Deputy Postmaster Tulino,5,officeholder,United States Postal Service,,,,"Doug Tulino, Deputy Postmaster General, 2025",accepted
+Dni Coats,5,officeholder,Office of the Director of National Intelligence,,,,"Dan Coats, DNI 2017-2019",accepted
+Dni Gabbard,5,officeholder,Office of the Director of National Intelligence,,,,"Tulsi Gabbard, DNI 2025-",accepted
+Sonny Perdue,5,officeholder,Department of Agriculture,,,,"Sonny Perdue, Secretary of Agriculture 2017-2021",accepted
+Wilson,5,officeholder,Department of the Air Force,,,,"checked: all to Secretary Wilson 2017-2019, Heather Wilson, Secretary of the Air Force (B-21, C-130H)",accepted
+Donley,4,officeholder,Department of the Air Force,,,,"Michael Donley, Secretary of the Air Force 2008-2013",accepted
+Army Secretary Mchugh,4,officeholder,Department of the Army,,,,"John McHugh, Secretary of the Army 2009-2015",accepted
+Census Bureau Dir Dillingham,5,officeholder,Census Bureau,,,,"Steven Dillingham, Census Director 2019-2021",accepted
+Mnuchin4,5,officeholder,Department of the Treasury,,,,"Steven Mnuchin, Secretary of the Treasury; the 4 is the file name's",accepted
+Hsra 340B Enforcement Final,5,merge,Health Resources and Services Administration,,,,"file name: letter to HRSA on 340B enforcement, misspelt",accepted
+Chairman Gensler,5,officeholder,Securities and Exchange Commission,,,,"Gary Gensler, SEC Chair 2021-2025",accepted
+Guzman,5,officeholder,Small Business Administration,,,,"Isabella Casillas Guzman, SBA Administrator 2021-2025",accepted
+Admin Guzman,5,officeholder,Small Business Administration,,,,"Isabella Casillas Guzman, SBA Administrator; Restaurant Revitalization Fund",accepted
+Michael Carvajal,5,officeholder,Bureau of Prisons,,,,"Michael Carvajal, BOP Director 2020-2022",accepted
+Assistant Secretary Bitter,5,officeholder,Department of State,,,,"Rena Bitter, Assistant Secretary for Consular Affairs; passport delays",accepted
+State1,5,merge,Department of State,,,,"file name ""letter to state""; the 1 is the file name's",accepted
+Commissioner Dudek,5,officeholder,Social Security Administration,,,,"Leland Dudek, Acting Commissioner 2025",accepted
+Under Secretary Kent,5,officeholder,Department of Education,,,,"Nicholas Kent, Under Secretary of Education 2025-; nursing loans",accepted
+Forest Service Chief Tidwell,4,officeholder,Forest Service,,,,"Tom Tidwell, Chief of the Forest Service 2009-2017",accepted
+Kathleen Sebelius,4,officeholder,Department of Health and Human Services,,,,"Kathleen Sebelius, Secretary of HHS 2009-2014",accepted
+Hamburg,4,officeholder,Food and Drug Administration,,,,"Margaret Hamburg, FDA Commissioner 2009-2015",accepted
+Doug Mckalip Docx,5,officeholder,Office of the US Trade Representative,,,,"Doug McKalip, USTR Chief Agricultural Negotiator 2022; "".docx"" is the file name's",accepted
+Donovan,7,split,Department of Housing and Urban Development@2009-2014;Department of Defense@2020-2020,,organization,,"checked: Shaun Donovan, HUD Secretary 2009-2014; Matthew Donovan, Under Secretary of Defense for Personnel and Readiness, 2020 (TBI)",accepted
+Council,5,merge,Council on Environmental Quality,,,,"checked: every file name is ""letter to council on environmental quality""",accepted
+Office Of Compliance,5,merge,Office of Congressional Workplace Rights,,organization,,"Office of Compliance, renamed Office of Congressional Workplace Rights in 2018",accepted
+Judicial Conference,5,merge,Judicial Conference of the United States,,organization,,already the name,accepted
+Judiciary Committee,8,split,Senate Committee on the Judiciary@2010-2010;House Committee on the Judiciary@2011-2024,,organization,,"checked: Risch 2010 RECA letter to the Senate committee; 2011 Kagan recusal letters to Chairman Smith; Morelle 2024 deepfakes bill",accepted
+House Appropriations Committee,5,merge,House Committee on Appropriations,,,,already the name,accepted
+Senate Finance Committee,5,merge,Senate Committee on Finance,,,,already the name,accepted
+E&C,5,merge,House Committee on Energy and Commerce,,,,abbreviation,accepted
+T&I,5,merge,House Committee on Transportation and Infrastructure,,,,abbreviation,accepted
+Appropriations Subcommittee,5,merge,Appropriations committees,,,,file names name the subcommittee,accepted
+Lhhs Approps,5,merge,Appropriations committees,,,,"Labor-HHS appropriations subcommittee",accepted
+Transportation Conferees,5,merge,Conference committees,,,,conferees on the transportation bill,accepted
+House Conferees,4,merge,Conference committees,,,,conferees,accepted
+Ndaa Confereees Final,5,merge,Conference committees,,,,"NDAA conferees; misspelt in the file name",accepted
+Conference,5,merge,Conference committees,,,,"checked: letters to the conference on a bill (TRICARE, renewables)",accepted
+Leaders,4,merge,Congressional leadership,,,,"letters to the leaders (fiscal cliff)",accepted
+Pres Bush,4,merge,The President,,,,President George W. Bush,accepted
+Leader Reid,4,member,R000146,,,,Harry Reid as Majority Leader,accepted
+Mccain,5,member,M000303,,,,"John McCain; includes replies to him posted on his own site",accepted
+Leahy,5,member,L000174,,,,"Patrick Leahy, Judiciary chair",accepted
+Shelby,5,member,S000320,,,,"Richard Shelby, Banking chair",accepted
+Cruz,5,member,C001098,,,,Ted Cruz,accepted
+Nadler,5,member,N000002,,,,"Jerrold Nadler, Judiciary",accepted
+Menendez,5,member,M000639,,,,"Robert Menendez, Foreign Relations chair 2021",accepted
+Manchin,5,member,M001183,,,,"Joe Manchin, Energy and Natural Resources chair",accepted
+Schiff,5,member,S001150,,,,"Adam Schiff, Intelligence chair",accepted
+Chairwoman Maloney,5,member,M000087,,,,"Carolyn Maloney, Oversight chair 2019-2023",accepted
+Ryan,5,member,R000570,,,,"checked: Paul Ryan, Ways and Means chair 2015, then Speaker",accepted
+Pomeroy,4,member,P000422,,,,"Earl Pomeroy; letters from health associations to him, 2003",accepted
+Secretaries Austin And Blinken,5,joint,Department of Defense;Department of State,,,,Afghanistan withdrawal,accepted
+"Mayorkas, Blinken",5,joint,Department of Homeland Security;Department of State,,,,Afghanistan,accepted
+"Dea, Ondcp, And Hhs",5,joint,Drug Enforcement Administration;Office of National Drug Control Policy;Department of Health and Human Services,,,,marijuana for research,accepted
+Trs And Irs,5,joint,Department of the Treasury;Internal Revenue Service,,,,"""Trs"" is Treasury; IRS Direct File",accepted
+Ust Omb Cdfi Fund,5,joint,Department of the Treasury;Office of Management and Budget,,,,"Treasury (CDFI Fund) and OMB",accepted
+Bowser And Contee,5,joint,person:Muriel Bowser;organization:Metropolitan Police Department of the District of Columbia,,,,"Mayor Bowser and Chief Contee, 2022",accepted
+Delta,5,merge,Delta Air Lines,,organization,Companies,company,accepted
+American Airlines,5,merge,American Airlines,,organization,Companies,company,accepted
+United Airlines,5,merge,United Airlines,,organization,Companies,company,accepted
+Kinder Morgan,5,merge,Kinder Morgan,,organization,Companies,company,accepted
+National Grid,5,merge,National Grid,,organization,Companies,company,accepted
+Craigslist,5,merge,Craigslist,,organization,Companies,company,accepted
+Abbott Laboratories,4,merge,Abbott Laboratories,,organization,Companies,company,accepted
+Transocean,4,merge,Transocean,,organization,Companies,company,accepted
+Paramount,5,merge,Paramount Global,,organization,Companies,company,accepted
+Steward,5,merge,Steward Health Care,,organization,Companies,"checked: Steward hospitals, 2024",accepted
+Mtc Group,5,merge,Management & Training Corporation,,organization,Companies,"prison operator, coronavirus letters 2020",accepted
+Pe Firms,5,merge,Private equity firms (several),,organization,Companies,letters to several firms at once,accepted
+Insurers,9,merge,Insurers (several),,organization,Companies,letters to several insurers at once,accepted
+Chamber Of Commerce,5,merge,U.S. Chamber of Commerce,,organization,,"Kraninger, noncompete rule, DPA",accepted
+Canada,7,merge,Government of Canada,,organization,,a government,accepted
+Indian Ambassador,5,merge,Embassy of India,,organization,,Exercise Malabar,accepted
+Pm Netanyahu,5,person,Benjamin Netanyahu,,person,,Prime Minister of Israel,accepted
+Delay Of Kavanaugh Confirmation,5,reject,,,,,"not a recipient: ""urging delay of Kavanaugh confirmation""",accepted
+Him,4,reject,,,,,not a recipient: a pronoun in the file name,accepted
+Teachers And Principals,5,reject,,,,,"Congressional Art Competition notices, not letters to officials",accepted
