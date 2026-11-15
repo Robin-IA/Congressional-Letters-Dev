@@ -455,9 +455,24 @@ AGENCIES: dict[str, tuple[str, ...]] = {
 }
 
 
+# Phrases that contain a topic's word but are not that topic. Matched like
+# any other phrase -- the longest wins -- and they tag nothing, so their words
+# are used up: "new mexico" is a state, and its "mexico" must not tag Mexico.
+# A match word cannot say "but not in this phrase"; a shield can. Each entry
+# says what it shields and why (measured 14 November 2026).
+SHIELDS: tuple[str, ...] = (
+    "new mexico", "new mexican",       # the state, not Mexico: 11 of 170 letters
+    "mexican american",                # an American community, not Mexico: 4
+)
+
+
 def _build_index() -> dict[str, list[tuple[str, str]]]:
-    """first-word -> [(normalised phrase, label)], longest phrases first."""
+    """first-word -> [(normalised phrase, label)], longest phrases first.
+    A shield's label is None: it matches, and tags nothing."""
     index: dict[str, list[tuple[str, str]]] = {}
+    for form in SHIELDS:
+        words = [singular(w) for w in form.split()]
+        index.setdefault(words[0], []).append((" ".join(words), None))
     for mapping in (SUBJECTS, AGENCIES):
         for label, forms in mapping.items():
             for form in forms:
@@ -498,7 +513,7 @@ def tag(text: str, limit: int = 8) -> list[str]:
             # Transportation, Railroads and Public transportation at once.
             if hit is None and " ".join(words[i:i + size]) == phrase:
                 hit = phrase
-            if phrase == hit and label not in found:
+            if phrase == hit and label is not None and label not in found:
                 found.append(label)
         if hit:
             i += len(hit.split()) - 1
