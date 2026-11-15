@@ -86,6 +86,12 @@ URL_CORRECTIONS = {
     ("B001237", 107): ("https://barkley.senate.gov",
                        "URL not in dataset; barkley.senate.gov is archived 2002-2007; "
                        "www.senate.gov/~barkley holds nothing"),
+    # The dataset gives clerk.house.gov, the Clerk's page for the vacant seat
+    # after he resigned on 2025-01-20 to be National Security Advisor -- which
+    # made him the holder of the Clerk's site for those seventeen days.
+    ("W000823", 119): ("https://waltz.house.gov",
+                       "dataset gives clerk.house.gov, the Clerk's page for the vacant "
+                       "seat after he resigned 2025-01-20; his own site was waltz.house.gov"),
     # curtweldon.house.gov is first listed in 2005-04
     ("W000268", 108): ("https://www.house.gov/curtweldon",
                        _W.format("curtweldon.house.gov, which it first lists in 2005", "www.house.gov/curtweldon 2003-02–2005-01")),
