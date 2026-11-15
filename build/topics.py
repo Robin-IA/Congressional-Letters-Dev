@@ -312,6 +312,32 @@ SUBJECTS: dict[str, tuple[str, ...]] = {
     # "Surveillance" lists "foreign intelligence surveillance act" so a FISA
     # letter carries both, and "Higher education" lists "higher education act"
     # for the same reason.
+
+    # Read from the agency letters of November 2026. Each of these was a
+    # subject I had been bending an existing term around -- Cuba as
+    # "Foreign aid", drones as "Aviation", pensions as "Investing" -- which
+    # is the thing the vocabulary rule exists to stop. The count beside each
+    # is the letters mentioning it three or more times, the bar the text
+    # rules already use.
+    "Mexico": ('mexico', 'mexican'),
+    "Sanctions": ('sanctions', 'sanctioned entity', 'ofac'),
+    "National parks": ('national park', 'park service'),
+    "Solar power": ('solar', 'photovoltaic'),
+    "Retirement": ('pension', 'pensions', '401(k)', 'retirement savings', 'annuitant'),
+    "Drones": ('drone', 'drones', 'unmanned aerial', 'unmanned aircraft'),
+    "Firefighters": ('firefighter', 'fire brigade', 'volunteer fire'),
+    "Electric grid": ('electric grid', 'transmission line', 'grid reliability'),
+    "Hydrogen": ('hydrogen',),
+    "Cuba": ('cuba', 'cuban'),
+    "Whales": ('whale', 'whales', 'right whale', 'humpback'),
+    "Shipbuilding": ('shipbuilding', 'shipyard'),
+    "Title X": ('title x',),
+    "Afghan refugees": ('afghan nationals', 'afghan refugees', 'afghan allies'),
+    "Wild horses": ('wild horse', 'wild horses', 'burro', 'burros'),
+    "Hate crimes": ('hate crime', 'hate crimes'),
+    "Nuclear waste": ('nuclear waste', 'spent nuclear fuel', 'spent fuel',
+                      'radioactive waste', 'yucca mountain'),
+    "Child labor": ('child labor', 'child labour'),
     "Artificial intelligence": ('artificial intelligence', 'generative ai', 'ai model',
                                 'deepfake', 'large language model'),
     "Chemical weapons": ('chemical weapon', 'nerve agent', 'sarin', 'chemical attack'),
