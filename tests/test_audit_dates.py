@@ -107,3 +107,74 @@ class TestWeekdayCrossCheck(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestLetterheadDate(unittest.TestCase):
+    """The extractor that makes the letterhead a source, not just a check.
+
+    Scored against the 405 day-precision dates read by hand: a date for 355
+    of them, agreeing with 352 (99.2%). The cases below are the shapes it
+    must read and, more importantly, the ones it must refuse.
+    """
+
+    def test_a_plain_letterhead(self):
+        self.assertEqual(
+            ad.letterhead_date("June 25, 2020 The Honorable Nancy Pelosi "
+                               "Speaker Dear Speaker Pelosi: We write"),
+            "2020-06-25")
+
+    def test_the_date_may_follow_the_address_block(self):
+        self.assertEqual(
+            ad.letterhead_date("The Honorable Tom Vilsack Secretary U.S. "
+                               "Department of Agriculture October 25, 2011 "
+                               "Dear Secretary Vilsack: I am writing"),
+            "2011-10-25")
+
+    def test_a_date_after_the_salutation_is_not_a_letterhead(self):
+        """A date the letter cites is not the date of the letter."""
+        self.assertIsNone(
+            ad.letterhead_date("Dear Secretary Azar: We write about the rule "
+                               "you signed on May 29, 2020 and have not published"))
+
+    def test_two_different_dates_before_the_salutation_are_refused(self):
+        """A Re: line or a hoisted footnote; which is the letterhead is a reader's call."""
+        self.assertIsNone(
+            ad.letterhead_date("Re: the inauguration of January 20, 2025 "
+                               "May 16, 2025 To Whom It May Concern: I pen this"))
+
+    def test_the_same_date_twice_is_still_one_date(self):
+        self.assertEqual(
+            ad.letterhead_date("March 5, 2024 March 5, 2024 Dear Mr Moynihan, As members"),
+            "2024-03-05")
+
+    def test_no_salutation_means_no_letterhead(self):
+        self.assertIsNone(
+            ad.letterhead_date("November 29, 2023 We write to express our opposition "
+                               "to attaching any short-term reauthorization"))
+
+    def test_an_impossible_year_is_refused(self):
+        """The FCC letter on cell phones in flight OCRs its 2013 as 2073."""
+        self.assertIsNone(
+            ad.letterhead_date("December 12, 2073 The Honorable Tom Wheeler "
+                               "Dear Chairman Wheeler, We respectfully ask"))
+
+    def test_a_placeholder_day_is_not_a_date(self):
+        """18 letters went out with the day unfilled (#180)."""
+        self.assertIsNone(
+            ad.letterhead_date("August XX, 2017 The Honorable Chuck Grassley "
+                               "Dear Chairman Grassley, One of the most important"))
+
+    def test_no_date_at_all(self):
+        self.assertIsNone(ad.letterhead_date("Dear Colleague: We are all shocked"))
+
+
+class TestCaptureGuard(unittest.TestCase):
+    """A letter cannot be dated after the capture that holds it."""
+
+    def test_guard(self):
+        from build_site import _after
+        self.assertTrue(_after("2024-08-01", "20180612000000"))
+        self.assertFalse(_after("2018-05-01", "20180612000000"))
+        self.assertFalse(_after("2018-06-12", "20180612000000"))
+        self.assertFalse(_after("2024-08-01", None))
+        self.assertFalse(_after("2024-08-01", "2018"))

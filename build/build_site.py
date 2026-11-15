@@ -191,7 +191,19 @@ def recase(word: str) -> str:
 
 # How good a date is, best first. Used to decide when one posting of a letter
 # can take another posting's date.
-PRECISION_RANK = {"day": 0, "month": 1, "scanned": 2, "captured-by": 3}
+PRECISION_RANK = {"letterhead": 0, "day": 1, "month": 2, "scanned": 3, "captured-by": 4}
+
+
+def _after(iso: str, timestamp: str | None) -> bool:
+    """True when a date falls after the capture that holds it.
+
+    A file that existed when it was captured cannot be dated later, so a
+    letterhead reading later than its own capture has been misread. The same
+    guard the Mac added to the sibling dates in #171, applied here.
+    """
+    if not timestamp or len(timestamp) < 8:
+        return False
+    return iso > f"{timestamp[:4]}-{timestamp[4:6]}-{timestamp[6:8]}"
 
 
 def dates_from_siblings(lines) -> dict[str, tuple[str, str]]:
@@ -468,7 +480,8 @@ def main() -> None:
                 yield from handle
 
     sibling_dates = dates_from_siblings(parsed_lines())
-    promoted = 0
+    letterheads = letter_text.letterhead_by_digest()
+    promoted = from_letterhead = 0
 
     for line in parsed_lines():
         record = json.loads(line)
@@ -495,8 +508,17 @@ def main() -> None:
         best = record.get("date")
         precision = record.get("date_precision")
         stated = hand_dates.get(digest or "")
+        head = letterheads.get(digest or "")
         if stated:
             best, precision = stated
+        elif head and not _after(head, record.get("timestamp")):
+            # Source 1: what the letter says about itself. Ahead of the file
+            # name because a file name can be the date a draft was generated
+            # or filed rather than the date of the letter -- Quill names are
+            # wrong 54.2% of the time (#182) -- and the date a reader looks
+            # for is the one printed on the letterhead.
+            best, precision = head, "letterhead"
+            from_letterhead += 1
         else:
             # The same PDF posted at another address may carry a better date
             # than this posting does. See dates_from_siblings() for the rule
@@ -781,6 +803,9 @@ def main() -> None:
     print(f"  thumbs/*{SUFFIX}  {thumb_bytes / 1024:>8,.0f} KB   (payload)",
           file=sys.stderr)
     print(f"  page fetches payload from: {data_base}", file=sys.stderr)
+    if letterheads:
+        print(f"  {from_letterhead:,} letters dated from their own letterhead "
+              f"({len(letterheads):,} read)", file=sys.stderr)
     if promoted:
         print(f"  {promoted:,} postings took a better date from a byte-identical "
               f"sibling ({len(sibling_dates):,} letters offered one)", file=sys.stderr)
