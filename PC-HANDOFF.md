@@ -1,5 +1,7 @@
 # PC handoff: running a letter harvest on a Windows PC
 
+> **For the reading work the PC does now** (titles, dates, topics from the text), see [`PC-READING.md`](PC-READING.md). This file covers the November 2026 harvest bundle.
+
 **Prepared 11 November 2026** for the 115th–118th Congresses; the 106th–110th
 was added at 22:05 the same day. The steps work for any range that has a
 `harvest/letters-<range>-members.json`.
