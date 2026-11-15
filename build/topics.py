@@ -416,6 +416,22 @@ SUBJECTS: dict[str, tuple[str, ...]] = {
                          'tribal government', 'indigenous women'),
     "Drug trafficking": ('drug trafficking', 'drug trafficker', 'drug cartel',
                          'high intensity drug trafficking'),
+    # Crime and demographic terms, measured 15 Nov 2026 against the
+    # 11,272 letters we hold text for and checked against LCDGT and
+    # FAST before adoption (Robin). "Hispanic Americans" is LCDGT's
+    # own authorized form, not "LatinX".
+    "Crime": ('crime', 'violent crime', 'criminal justice'),
+    "Sexual assault": ('sexual assault', 'sexual abuse', '\\brape\\b', 'rape kit', 'sexual violence'),
+    "Human trafficking": ('human trafficking', 'sex trafficking', 'trafficking victim'),
+    "Child abuse": ('child abuse', 'child sexual abuse', 'abused children', 'child exploitation'),
+    "Victim services": ('victims of crime act', 'victim services', 'victim compensation'),
+    "Asian Americans": ('asian americans?', 'aapi', 'pacific islanders?'),
+    "Black Americans": ('african americans?', 'black americans?'),
+    "Hispanic Americans": ('hispanic americans?', 'latino', 'latina'),
+    "LGBTQ people": ('lgbtq', 'transgender', 'same-sex'),
+    "People with disabilities": ('people with disabilit', 'individuals with disabilit', 'americans with disabilit'),
+    "Older adults": ('older adults?', 'older people', '\\bseniors\\b'),
+
 }
 
 # ------------------------------------------------------------- the agencies
