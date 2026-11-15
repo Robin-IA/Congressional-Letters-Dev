@@ -678,3 +678,69 @@ Pm Netanyahu,5,person,Benjamin Netanyahu,,person,,Prime Minister of Israel,accep
 Delay Of Kavanaugh Confirmation,5,reject,,,,,"not a recipient: ""urging delay of Kavanaugh confirmation""",accepted
 Him,4,reject,,,,,not a recipient: a pronoun in the file name,accepted
 Teachers And Principals,5,reject,,,,,"Congressional Art Competition notices, not letters to officials",accepted
+Solis Youth Ag Employment,4,officeholder,Department of Labor,,,,"Hilda Solis, Secretary of Labor 2009-2013; youth agricultural employment",accepted
+Commissioner Koskinen,4,officeholder,Internal Revenue Service,,,,"John Koskinen, IRS Commissioner 2013-2017",accepted
+Frieden Cdc,4,officeholder,Centers for Disease Control,,,,"Tom Frieden, CDC Director 2009-2017; Ebola",accepted
+Zinser,4,officeholder,Department of Commerce,,,,"Todd Zinser, Commerce Inspector General; NOAA rulemaking, 2011",accepted
+Gibson,4,officeholder,Department of Veterans Affairs,,,,"checked: all 2014, Sloan Gibson, Acting Secretary of Veterans Affairs",accepted
+Doc Sec Ross,4,officeholder,Department of Commerce,,,,"Wilbur Ross, Secretary of Commerce 2017-2021",accepted
+Asacw James,4,officeholder,Army Corps of Engineers,,,,"R.D. James, Assistant Secretary of the Army (Civil Works) 2018-2021",accepted
+Verma,4,officeholder,Centers for Medicare and Medicaid Services,,,,"Seema Verma, CMS Administrator 2017-2021",accepted
+Deputy Ag Boente,4,officeholder,Department of Justice,,,,"Dana Boente, Acting Deputy Attorney General 2017; special counsel",accepted
+Scott Pruitt,4,officeholder,Environmental Protection Agency,,,,"Scott Pruitt, EPA Administrator 2017-2018",accepted
+Dodaro Epa Gao,4,officeholder,Government Accountability Office,,,,"Gene Dodaro, Comptroller General; a request about EPA",accepted
+Admin Mcmahon,4,officeholder,Small Business Administration,,,,"Linda McMahon, SBA Administrator 2017-2019",accepted
+Usdasecperdue,4,officeholder,Department of Agriculture,,,,"Sonny Perdue, Secretary of Agriculture",accepted
+Director Albence,4,officeholder,Immigration and Customs Enforcement,,,,"Matthew Albence, Acting ICE Director 2019-2020",accepted
+Carnahan,4,officeholder,General Services Administration,,,,"Robin Carnahan, GSA Administrator 2021-2025",accepted
+Usgs Director Reilly Final,4,officeholder,United States Geological Survey,,organization,Department of the Interior,"James Reilly, USGS Director 2018-2021",accepted
+Melson Incomplete Gun Data,4,officeholder,"Bureau of Alcohol, Tobacco, Firearms and Explosives",,,,"Kenneth Melson, Acting ATF Director 2009-2011",accepted
+Nsa Director Rogers,4,officeholder,National Security Agency,,,,"Adm. Michael Rogers, NSA Director 2014-2018",accepted
+Park Service,4,merge,National Park Service,,,,Oak Flat historic listing,accepted
+Barsa,4,officeholder,United States Agency for International Development,,,,"John Barsa, Acting USAID Administrator 2020",accepted
+Postal Board Of Governors,4,merge,United States Postal Service,,,,the Board of Governors,accepted
+Murkowski,4,member,M001153,,,,"Lisa Murkowski, Energy and Natural Resources chair",accepted
+Upton,4,member,U000031,,,,"Fred Upton, Energy and Commerce chair",accepted
+Shuster,4,member,S001154,,,,"Bill Shuster, Transportation and Infrastructure chair",accepted
+Royce,4,member,R000487,,,,"Ed Royce, Foreign Affairs chair",accepted
+Congressman Lamborn,4,member,L000564,,,,Doug Lamborn; letters to him posted on his site,accepted
+Baldwin,4,member,B001230,,,,"Tammy Baldwin; agency replies to her (Army, CMS)",accepted
+Congressman Buchanan,4,member,B001260,,,,Vern Buchanan; USTR's letter to him,accepted
+Sablan,4,member,S001177,,,,Gregorio Kilili Camacho Sablan,accepted
+Supercommittee,4,merge,Joint Select Committee on Deficit Reduction,,organization,Committees,"the 2011 ""supercommittee""",accepted
+Super Committee,4,merge,Joint Select Committee on Deficit Reduction,,organization,Committees,"the 2011 ""supercommittee""",accepted
+Energy And Commerce,4,merge,House Committee on Energy and Commerce,,,,already the name,accepted
+Senate Commerce,4,merge,"Senate Committee on Commerce, Science, and Transportation",,organization,Committees,already the name,accepted
+Senate Help,4,merge,"Senate Committee on Health, Education, Labor, and Pensions",,,,abbreviation,accepted
+Finance,4,merge,Senate Committee on Finance,,,,"checked: Senate letters (Collins-King, retirement) to the Finance Committee",accepted
+Joint Committee,4,merge,Joint Committee on Taxation,,,,"file names: ""joint committee on taxation""",accepted
+House Appropriators,4,merge,House Committee on Appropriations,,,,the committee's members,accepted
+House And Senate Appropriators,4,merge,Appropriations committees,,,,both committees,accepted
+House Senate Leadership,4,merge,Congressional leadership,,,,already a term,accepted
+Democratic Leadership,4,merge,Congressional leadership,,,,party leadership,accepted
+Wells Board,4,merge,Wells Fargo,,,,its board,accepted
+Mastercard,4,merge,Mastercard,,organization,Companies,company,accepted
+Goldman Sachs,4,merge,Goldman Sachs,,organization,Companies,company,accepted
+Apollo,4,merge,Apollo Global Management,,organization,Companies,company,accepted
+Anthem,4,merge,Anthem,,organization,Companies,company,accepted
+Intuit,4,merge,Intuit,,organization,Companies,company,accepted
+Upstart,4,merge,Upstart,,organization,Companies,company,accepted
+Corecivic Group,4,merge,CoreCivic,,organization,Companies,company,accepted
+Union Pacific,4,merge,Union Pacific,,organization,Companies,company,accepted
+Robinhood,4,merge,Robinhood,,organization,Companies,company,accepted
+Silvergate Bank,4,merge,Silvergate Bank,,organization,Companies,company,accepted
+Tesla Board,4,merge,Tesla,,organization,Companies,its board,accepted
+Verso For Delegation Meeting,4,merge,Verso Corporation,,organization,Companies,paper company; a delegation meeting request,accepted
+Carl Icahn,4,person,Carl Icahn,,person,,investor,accepted
+Yale,4,merge,Yale University,,organization,,a university,accepted
+Embry Riddle Aeronautical University,4,merge,Embry-Riddle Aeronautical University,,organization,,a university,accepted
+Prime Minister Trudeau,4,person,Justin Trudeau,,person,,Prime Minister of Canada,accepted
+Uk Pm Boris Johnson,4,person,Boris Johnson,,person,,Prime Minister of the United Kingdom,accepted
+Zuma,4,person,Jacob Zuma,,person,,President of South Africa,accepted
+Pope Francis,4,person,Pope Francis,,person,,already the name,accepted
+Azeri President,4,person,Ilham Aliyev,,person,,President of Azerbaijan,accepted
+Un Secgen,4,merge,United Nations,,organization,,the Secretary-General,accepted
+Who Director General,4,merge,World Health Organization,,organization,,the Director-General,accepted
+World Bank President,4,merge,World Bank,,organization,,its president,accepted
+Mexican Ambassador,4,merge,Embassy of Mexico,,organization,,the ambassador,accepted
+Branch Closures,4,reject,,,,,"not a recipient: ""questioning branch closures""",accepted
