@@ -82,7 +82,11 @@ function when(row, long = false) {
   if (!iso) return '—';
   const [y, m, d] = iso.split('-');
   const month = MONTHS[Number(m) - 1] || '';
-  if (precision === 'day') return long ? `${Number(d)} ${month} ${y}` : `${month} ${y}`;
+  // 'letterhead': the date the letter prints on itself (#186) -- a day, and
+  // the best kind; without this it read as a capture, "in the archive by".
+  if (precision === 'day' || precision === 'letterhead') {
+    return long ? `${Number(d)} ${month} ${y}` : `${month} ${y}`;
+  }
   if (precision === 'month') return `${month} ${y}`;
   return long ? `in the archive by ${Number(d)} ${month} ${y}` : `by ${month} ${y}`;
 }
@@ -566,8 +570,8 @@ async function viewMember(id) {
   const recipients = tally(rows, 'recipient');
   const counts = yearsOf(rows);
   const years = [...counts.keys()].sort();
-  const dated = rows.filter(r => get(r, 'precision') === 'day'
-    || get(r, 'precision') === 'month').length;
+  const dated = rows.filter(r => ['day', 'letterhead', 'month']
+    .includes(get(r, 'precision'))).length;
 
   const switchTo = next => {
     const q = params();
@@ -810,7 +814,7 @@ function viewTimeline() {
     }));
   }
 
-  const exact = (INDEX.precisions || {}).day || 0;
+  const exact = ((INDEX.precisions || {}).day || 0) + ((INDEX.precisions || {}).letterhead || 0);
   const fromPdf = (INDEX.precisions || {}).scanned || 0;
   const guessed = (INDEX.precisions || {})['captured-by'] || 0;
 

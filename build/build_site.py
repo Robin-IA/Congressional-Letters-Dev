@@ -511,7 +511,10 @@ def main() -> None:
         head = letterheads.get(digest or "")
         if stated:
             best, precision = stated
-        elif head and not _after(head, record.get("timestamp")):
+        elif (head and not _after(head, record.get("timestamp"))
+              and not record.get("letterhead_rejected")):
+            # letterhead_rejected: build_congress.py found no one holding the
+            # address on that date, and placed the letter by its other date.
             # Source 1: what the letter says about itself. Ahead of the file
             # name because a file name can be the date a draft was generated
             # or filed rather than the date of the letter -- Quill names are
