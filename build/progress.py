@@ -38,6 +38,7 @@ import argparse
 import csv
 import datetime
 import json
+import re
 import sys
 from collections import Counter, defaultdict
 from pathlib import Path
@@ -83,6 +84,9 @@ def filing(recipient: str, terms: dict) -> str:
     return "filed" if state == "preferred" else "not yet reviewed"
 
 
+REVIEWED_NAMES = ("officeHolderName", "recipientName")
+
+
 def recipient_terms() -> dict:
     """name_key of every term's label and alternate spellings -> its status,
     the reviewed one winning where a spelling belongs to two terms."""
@@ -94,10 +98,20 @@ def recipient_terms() -> dict:
         if out.get(k) != "preferred":
             out[k] = r["status"]
     for r in read_csv("relations.csv"):
-        if r["relation"] == "altLabel" and r["term_id"] in status_of:
+        if r["term_id"] not in status_of:
+            continue
+        if r["relation"] == "altLabel":
             k = name_key(r["value"])
-            if out.get(k) != "preferred":
-                out[k] = status_of[r["term_id"]]
+        elif r["relation"] in REVIEWED_NAMES:
+            # A reviews.csv decision files the name under a reviewed term
+            # without making it an altLabel: "Hagel" an office holder's name
+            # of the Department of Defense, "Grassley" a recipientName of
+            # his member term. A split carries its years: "Wheeler (2014-2017)".
+            k = name_key(re.sub(r"\s*\([^)]*\)$", "", r["value"]))
+        else:
+            continue
+        if out.get(k) != "preferred":
+            out[k] = status_of[r["term_id"]]
     return out
 
 

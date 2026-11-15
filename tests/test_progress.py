@@ -69,5 +69,29 @@ class Filed(unittest.TestCase):
         self.assertTrue(status(filed="filed")["done"])
 
 
+class ReviewedNames(unittest.TestCase):
+    """A name decided in reviews.csv as an office holder, a member or a split is filed."""
+
+    def test_officeholder_and_member_names_are_filed(self):
+        terms = {"terms.csv": [{"term_id": "O-dod", "label": "Department of Defense", "status": "preferred"},
+                               {"term_id": "M-G000386", "label": "Chuck Grassley", "status": "preferred"},
+                               {"term_id": "U-x", "label": "Thompson", "status": "candidate"}],
+                 "relations.csv": [{"term_id": "O-dod", "relation": "officeHolderName", "value": "Hagel"},
+                                   {"term_id": "O-dod", "relation": "officeHolderName", "value": "Wheeler (2018-2021)"},
+                                   {"term_id": "M-G000386", "relation": "recipientName", "value": "Grassley"},
+                                   {"term_id": "O-dod", "relation": "broader", "value": "Executive"}]}
+        real = progress.read_csv
+        progress.read_csv = lambda name: terms.get(name, [])
+        try:
+            t = progress.recipient_terms()
+        finally:
+            progress.read_csv = real
+        self.assertEqual(progress.filing("Hagel", t), "filed")
+        self.assertEqual(progress.filing("Wheeler", t), "filed")
+        self.assertEqual(progress.filing("Grassley", t), "filed")
+        self.assertEqual(progress.filing("Thompson", t), "not yet reviewed")
+        self.assertEqual(progress.filing("Executive", t), "no term")
+
+
 if __name__ == "__main__":
     unittest.main()
