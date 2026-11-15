@@ -178,3 +178,25 @@ class TestCaptureGuard(unittest.TestCase):
         self.assertFalse(_after("2018-06-12", "20180612000000"))
         self.assertFalse(_after("2024-08-01", None))
         self.assertFalse(_after("2024-08-01", "2018"))
+
+
+class TestOcrRepo(unittest.TestCase):
+    """--ocr-repo reads the shared text store for letters the local files lack."""
+
+    def test_repo_text_is_added(self):
+        import gzip
+        import json
+        import tempfile
+        long_text = "May 08, 2020 The Honorable Nancy Pelosi Speaker " + "word " * 80
+        with tempfile.TemporaryDirectory() as tmp:
+            (Path(tmp) / "text").mkdir()
+            with gzip.open(Path(tmp) / "text" / "116th.jsonl.gz", "wt", encoding="utf-8") as fh:
+                fh.write(json.dumps({"digest": "ZZTESTDIGESTNOTINCORPUS", "text": long_text}) + "\n")
+                fh.write(json.dumps({"digest": "ZZSHORTTEXT", "text": "too short"}) + "\n")
+            got = ad.load_text(tmp)
+        self.assertIn("ZZTESTDIGESTNOTINCORPUS", got)
+        self.assertTrue(got["ZZTESTDIGESTNOTINCORPUS"].startswith("May 08, 2020 The Honorable"))
+        self.assertNotIn("ZZSHORTTEXT", got)
+
+    def test_without_the_option_nothing_is_added(self):
+        self.assertNotIn("ZZTESTDIGESTNOTINCORPUS", ad.load_text())
