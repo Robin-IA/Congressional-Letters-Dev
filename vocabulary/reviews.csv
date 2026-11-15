@@ -731,7 +731,7 @@ Robinhood,4,merge,Robinhood,,organization,Companies,company,accepted
 Silvergate Bank,4,merge,Silvergate Bank,,organization,Companies,company,accepted
 Tesla Board,4,merge,Tesla,,organization,Companies,its board,accepted
 Verso For Delegation Meeting,4,merge,Verso Corporation,,organization,Companies,paper company; a delegation meeting request,accepted
-Carl Icahn,4,person,Carl Icahn,,person,,investor,accepted
+Carl Icahn,4,merge,Icahn Enterprises,,organization,Companies,"not a government official (Robin, 15 November): filed under his company; address blocks read, 2017-2018",accepted
 Yale,4,merge,Yale University,,organization,,a university,accepted
 Embry Riddle Aeronautical University,4,merge,Embry-Riddle Aeronautical University,,organization,,a university,accepted
 Prime Minister Trudeau,4,person,Justin Trudeau,,person,,Prime Minister of Canada,accepted
@@ -960,7 +960,7 @@ Governor Abbott,38,person,Greg Abbott,,person,Governors,salutation (#97),accepte
 Governor Schwarzenegger,40,person,Arnold Schwarzenegger,,person,Governors,salutation (#97),accepted
 Governor Rauner,29,person,Bruce Rauner,,person,Governors,salutation (#97),accepted
 Governor Wolf,30,person,Tom Wolf,,person,Governors,salutation (#97),accepted
-Mr. Musk,39,person,Elon Musk,,person,,salutation (#97),accepted
+Mr. Musk,39,split,Tesla@2014-2021;Twitter (X)@2022-2024;Department of Government Efficiency@2025-2025;Twitter (X)@2026-2026,,organization,,"not a person term (Robin: only government officials get one); address blocks read: Tesla CEO 2014-2021, Twitter/X 2022-2024 and 2026, DOGE chair 2025. Three Tesla letters of 2022-2023 fall in the Twitter range",accepted
 Chairmen and Ranking Members,74,reject,,,,,"addressed to several committees' leaders at once, no one named",accepted
 Member of Congress,100,reject,,,,,a greeting,accepted
 Commissioners,27,reject,,,,,a greeting,accepted
