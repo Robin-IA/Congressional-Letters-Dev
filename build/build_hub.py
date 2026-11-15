@@ -68,7 +68,7 @@ def samples(explorer: Path, n: int) -> list[dict]:
                             "subject": r[col["subject"]] or "",
                             "date": r[col["date"]] or "",
                             "url": f"https://web.archive.org/web/{r[col['timestamp']]}id_/"
-                                   + urllib.parse.quote(r[col["key"]], safe=":/?&=%#~+,;@!$'()*[]")})
+                                   + urllib.parse.quote((r[col["url"]] if "url" in col else "") or r[col["key"]], safe=":/?&=%#~+,;@!$'()*[]")})
                 break
         if len(out) >= n:
             break

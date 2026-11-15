@@ -35,6 +35,7 @@ import csv
 import json
 import re
 import sys
+import urllib.parse
 from collections import Counter, defaultdict
 from datetime import date as date_type, datetime
 from pathlib import Path
@@ -259,7 +260,25 @@ def dates_from_siblings(lines) -> dict[str, tuple[str, str]]:
 
 
 COLUMNS = ["key", "timestamp", "kind", "date", "precision", "recipient",
-           "subject", "topics", "cosigners", "digest"]
+           "subject", "topics", "cosigners", "digest", "url"]
+
+
+def link_url(record: dict) -> str:
+    """The address to replay the letter from, when ``key`` will not do (#107).
+
+    ``key`` is an identity: harvest.canonical() drops a cache-busting hex
+    prefix, a ``?download=`` and similar, and the Wayback Machine does not
+    forgive a removed path component. It does forgive scheme, ``www``,
+    case and percent-encoding, so the observed URL is written only when it
+    differs from ``key`` by more than those -- 6.5% of rows, not all of them.
+    """
+    url = record.get("url") or ""
+    light = re.sub(r"^https?://", "", url)
+    light = re.sub(r"^www\.", "", light)
+    light = re.sub(r":80(/|$)", r"\1", light)
+    if not url or urllib.parse.unquote(light).rstrip("/").lower() == record.get("key"):
+        return ""
+    return light
 
 # Words that say nothing about a letter and make a subject read like debris.
 STOPWORDS = {
@@ -599,6 +618,7 @@ def main() -> None:
                 + recipient_topics().get((recipient or "").lower(), []))),
             ",".join(record.get("cosigners") or []),
             digest,
+            link_url(record),
         ])
 
         if recipient:

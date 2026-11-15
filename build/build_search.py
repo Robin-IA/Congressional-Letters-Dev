@@ -81,7 +81,8 @@ def records(explorer: Path, text: dict, congress: int) -> list[dict]:
         out.append({
             # The result opens the letter itself, from the Wayback Machine,
             # the same link the explorer's own letter cards use.
-            "url": f"https://web.archive.org/web/{row[col['timestamp']]}id_/{row[col['key']]}",
+            "url": f"https://web.archive.org/web/{row[col['timestamp']]}id_/"
+                   f"{(row[col['url']] if 'url' in col else '') or row[col['key']]}",  # #107
             "content": content,
             "language": "en",
             "meta": {
