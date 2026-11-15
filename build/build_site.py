@@ -521,6 +521,7 @@ def main() -> None:
     sibling_dates = dates_from_siblings(parsed_lines())
     letterheads = letter_text.letterhead_by_digest()
     salutations = letter_text.salutation_by_digest()
+    hand_recipients = letter_text.recipients_by_hand()
     promoted = from_letterhead = needs_review = 0
     review_digests: set[str] = set()
 
@@ -535,7 +536,9 @@ def main() -> None:
         kind = ("pdf" if record["mimetype"].startswith("application/pdf")
                 else "page")
         # The file name's recipient, else the one the salutation names (#97).
-        recipient = record.get("recipient_canonical") or None
+        # A recipient read from the letter's address block wins (#357), then
+        # the file name's, then the salutation's.
+        recipient = hand_recipients.get(digest) or record.get("recipient_canonical") or None
         if not recipient and salutations.get(digest):
             # "Dear Congressman Smith" on Chris Smith's own site is a letter
             # to Chris Smith: the posting member settles a surname that a

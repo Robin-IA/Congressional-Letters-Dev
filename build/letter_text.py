@@ -43,6 +43,7 @@ CACHE = ROOT / "data" / "letter-text-info.json"
 TITLES = ROOT / "vocabulary" / "letter-titles.csv"
 DATES = ROOT / "vocabulary" / "letter-dates.csv"
 TOPICS_BY_HAND = ROOT / "vocabulary" / "letter-topics.csv"
+RECIPIENTS_BY_HAND = ROOT / "vocabulary" / "letter-recipients.csv"
 RULES = "2026-11-13d"  # change when the rules change, so the cache is redone
 
 # -------------------------------------------------------------------- topics
@@ -137,6 +138,24 @@ def topics_by_hand() -> dict[str, list[str]]:
 
 
 # --------------------------------------------------------------------- dates
+
+
+def recipients_by_hand() -> dict[str, str]:
+    """digest -> the recipient a reader found in the letter's address block (#357).
+
+    vocabulary/letter-recipients.csv (digest, recipient, source). For names
+    that mean a different person in each letter -- "Dear Mr. Smith" is
+    Equifax's CEO in one and Chase's in another -- so ``reviews.csv``, which
+    decides by name, cannot file them. The recipient is the office or the
+    organization, never a private person (Robin, 15 November 2026). It wins
+    over the file name and the salutation.
+    """
+    if not RECIPIENTS_BY_HAND.exists():
+        return {}
+    with RECIPIENTS_BY_HAND.open(encoding="utf-8", newline="") as fh:
+        return {r["digest"]: r["recipient"].strip() for r in csv.DictReader(fh)
+                if r.get("digest") and (r.get("recipient") or "").strip()}
+
 
 def dates_by_hand() -> dict[str, tuple[str, str]]:
     """digest -> (date, precision), read from the letter and written by hand.
