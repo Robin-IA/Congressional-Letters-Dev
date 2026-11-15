@@ -78,8 +78,8 @@ Immigration,Immigration and borders
 Justice and civil rights,Topics
 Civil rights,Justice and civil rights
 Guns,Justice and civil rights
-Policing,Justice and civil rights
-Prisons,Justice and civil rights
+Policing,Crime
+Prisons,Crime
 Privacy,Justice and civil rights
 Security and foreign affairs,Topics
 Cybersecurity,Security and foreign affairs
@@ -252,7 +252,7 @@ Social media,Technology and infrastructure
 Data centers,Technology
 Gun control,Guns
 Gun rights,Guns
-Gun violence,Guns
+Gun violence,Crime
 Mass shootings,Guns
 Air Force,Defense
 Army,Defense
@@ -305,9 +305,9 @@ Build Back Better Act,Economy and finance
 HEROES Act,Economy and finance
 Surveillance,Justice and civil rights
 Foreign Intelligence Surveillance Act,Justice and civil rights
-Domestic violence,Justice and civil rights
+Domestic violence,Crime
 Native Americans,Justice and civil rights
-Drug trafficking,Justice and civil rights
+Drug trafficking,Crime
 Mexico,Foreign and international
 Sanctions,Security and foreign affairs
 National parks,Environment and energy
@@ -323,6 +323,17 @@ Shipbuilding,Technology and infrastructure
 Title X,Health
 Afghan refugees,Immigration and borders
 Wild horses,Wildlife
-Hate crimes,Justice and civil rights
+Hate crimes,Crime
 Nuclear waste,Nuclear
 Child labor,Jobs
+Crime,Justice and civil rights
+Sexual assault,Crime
+Human trafficking,Crime
+Child abuse,Crime
+Victim services,Crime
+Asian Americans,Justice and civil rights
+Black Americans,Justice and civil rights
+Hispanic Americans,Justice and civil rights
+LGBTQ people,Justice and civil rights
+People with disabilities,Justice and civil rights
+Older adults,Justice and civil rights
