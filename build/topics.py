@@ -303,6 +303,89 @@ SUBJECTS: dict[str, tuple[str, ...]] = {
     "Secure Rural Schools": ('secure rural schools',),   # 16 letters
     "21st Century Cures Act": ('21st century cures',),   # 13 letters
     "Wildfire Disaster Funding Act": ('wildfire disaster funding act',),   # 6 letters
+    # Read from the letters themselves, November 2026. Every term below was
+    # needed by a letter in the 145-letter class-noun pool (#164): the subject
+    # was plainly on the page and no existing term carried it.
+    #
+    # Where a parent and a named law share a subject, the parent repeats the
+    # law's phrase, because tag() keeps only the longest phrase at a position:
+    # "Surveillance" lists "foreign intelligence surveillance act" so a FISA
+    # letter carries both, and "Higher education" lists "higher education act"
+    # for the same reason.
+    "Artificial intelligence": ('artificial intelligence', 'generative ai', 'ai model',
+                                'deepfake', 'large language model'),
+    "Chemical weapons": ('chemical weapon', 'nerve agent', 'sarin', 'chemical attack'),
+    "Syria": ('syria', 'syrian', 'assad'),
+    "Venezuela": ('venezuela', 'venezuelan'),
+    "War powers": ('war powers', 'authorization for use of military force',
+                   'declare war'),
+    "Government shutdown": ('government shutdown', 'federal shutdown',
+                            'lapse in appropriations', 'furloughed'),
+    "Senate procedure": ('parliamentarian', 'filibuster', 'cloture', 'senate rule'),
+    "Impeachment": ('impeachment', 'impeach'),
+    "Space program": ('nasa', 'space shuttle', 'astronaut', 'space station',
+                      'space telescope'),
+    "Scientific research": ('scientific research', 'research funding',
+                            'research workforce', 'national science foundation',
+                            'principal investigator'),
+    "Ports": ('port authority', 'seaport', 'cargo port'),
+    "Nutrition assistance": ('snap benefit', 'supplemental nutrition assistance',
+                             'food stamp', 'school meal', 'child nutrition',
+                             'food bank', 'wic program'),
+    "Food safety": ('food safety', 'meat inspection', 'food safety and inspection'),
+    "Fisheries": ('fishery', 'fisheries', 'fishermen', 'lobster', 'aquaculture'),
+    "Family planning": ('family planning', 'contraception', 'contraceptive', 'title x'),
+    "Hyde Amendment": ('hyde amendment',),
+    "Maternal health": ('maternal health', 'postpartum', 'pregnant worker',
+                        'pregnancy discrimination'),
+    "Medical research": ('medical research', 'biomedical research', 'clinical trial',
+                         'national institutes of health'),
+    "Telehealth": ('telehealth', 'telemedicine'),
+    "Hospitals": ('hospital',),
+    "Dental care": ('dental', 'oral health'),
+    "Energy efficiency": ('energy efficiency', 'energy efficient', 'weatherization'),
+    "Drought": ('drought',),
+    # Not the bare word "ocean": it is a place name as often as a subject --
+    # Ocean County, Ocean City, Ocean Bay, Ocean Shores, Ocean Boulevard, about
+    # 15 of the 44 letters it tagged (measured 14 Nov 2026). These phrases are
+    # the ones the letters about the sea itself use.
+    "Oceans": ("ocean policy", "national ocean policy", "ocean program",
+               "ocean data", "ocean carbon", "ocean acidification",
+               "ocean caucus", "ocean conference", "ocean disposal",
+               "ocean observation", "ocean obs", "ocean task force",
+               "ocean priority", "ocean health", "ocean conservation",
+               "coastal ocean", "ocean and coastal", "atlantic ocean",
+               "pacific ocean", "arctic ocean", "coastal restoration",
+               "marine ecosystem"),
+    "Flooding": ('flooding', 'floodwater', 'flood damage'),
+    "Hurricanes": ('hurricane',),
+    "Higher education": ('higher education', 'higher education act', 'postsecondary',
+                         'community college', 'historically black college', 'hbcu',
+                         'minority serving institution'),
+    "Title IX": ('title ix',),
+    "College sports": ('college athletic', 'college sport', 'student athlete',
+                       'name, image, and likeness'),
+    "Museums": ('smithsonian', 'museum'),
+    "Supply chains": ('supply chain',),
+    "Gig work": ('gig worker', 'gig economy', 'independent contractor'),
+    "Unemployment": ('unemployment insurance', 'unemployment benefit', 'jobless claim'),
+    "Nonprofits": ('nonprofit', 'non-profit', 'charitable organization'),
+    "Restaurants": ('restaurant',),
+    "Child tax credit": ('child tax credit',),
+    "Low-Income Housing Tax Credit": ('low-income housing tax credit', 'housing credit',
+                                      'lihtc'),
+    "Build Back Better Act": ('build back better',),
+    "HEROES Act": ('heroes act',),
+    "Surveillance": ('surveillance', 'section 702', 'warrantless', 'wiretap',
+                     'foreign intelligence surveillance act', 'fisa'),
+    "Foreign Intelligence Surveillance Act": ('foreign intelligence surveillance act',
+                                              'fisa'),
+    "Domestic violence": ('domestic violence', 'sexual assault',
+                          'intimate partner violence', 'violence against women'),
+    "Native Americans": ('native american', 'american indian', 'alaska native',
+                         'tribal government', 'indigenous women'),
+    "Drug trafficking": ('drug trafficking', 'drug trafficker', 'drug cartel',
+                         'high intensity drug trafficking'),
 }
 
 # ------------------------------------------------------------- the agencies
