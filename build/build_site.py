@@ -189,6 +189,63 @@ def recase(word: str) -> str:
         return word[0].upper() + word[1:] if word[0].isalpha() else word
     return word[:1].upper() + word[1:]
 
+# How good a date is, best first. Used to decide when one posting of a letter
+# can take another posting's date.
+PRECISION_RANK = {"day": 0, "month": 1, "scanned": 2, "captured-by": 3}
+
+
+def dates_from_siblings(lines) -> dict[str, tuple[str, str]]:
+    """digest -> (date, precision) a letter's other postings agree on.
+
+    The digest is a hash of the PDF, so two records sharing one are the same
+    document, posted at two addresses. The same document has one date -- but
+    only one member may have put that date in the file name, and the postings
+    at the addresses that did not are dated by their capture, which is an
+    upper bound rather than a date. 3,913 postings of 2,216 letters are
+    dated worse than a byte-identical sibling; 1,495 of them sit more than a
+    year out, and the worst by 7,980 days.
+
+    The rule is deliberately timid, because a date in a file name can itself
+    be wrong (#126 counts 768 contradicted by their own letterheads):
+
+    * a posting is only promoted to a **strictly better precision**, never
+      sideways;
+    * and only when **every** posting at that better precision agrees on the
+      date. 6,913 letters have day-precision siblings that contradict each
+      other, and not one of them is touched here -- disagreement among file
+      names is a question for a reader, not something to resolve by picking.
+
+    A date read from the letter itself (vocabulary/letter-dates.csv) still
+    outranks this, as it outranks everything.
+    """
+    by_digest: dict[str, list[tuple[int, str]]] = defaultdict(list)
+    for line in lines:
+        try:
+            r = json.loads(line)
+        except ValueError:
+            continue
+        digest, date = r.get("digest"), (r.get("date_best") or "")[:10]
+        if digest and date:
+            by_digest[digest].append(
+                (PRECISION_RANK.get(r.get("date_precision"), 4), date))
+
+    out: dict[str, tuple[str, str]] = {}
+    rank_name = {v: k for k, v in PRECISION_RANK.items()}
+    for digest, seen in by_digest.items():
+        if len(seen) < 2:
+            continue
+        best = min(rank for rank, _ in seen)
+        if best >= PRECISION_RANK["captured-by"]:
+            continue                       # nothing here beats a capture
+        agreed = {date for rank, date in seen if rank == best}
+        if len(agreed) != 1:
+            continue                       # the good postings disagree: leave them
+        if not any(rank > best for rank, _ in seen):
+            continue                       # nothing to promote
+        out[digest] = (agreed.pop(), rank_name[best])
+    return out
+
+
 COLUMNS = ["key", "timestamp", "kind", "date", "precision", "recipient",
            "subject", "topics", "cosigners", "digest"]
 
@@ -316,8 +373,14 @@ def main() -> None:
     # every Congress and stay in thumbs/ at the root.
     parser.add_argument("--out", type=Path, default=root / "119th",
                         help="the Congress's folder, where index.json is written")
-    parser.add_argument("--payload", type=Path, default=root / "119th" / "payload",
-                        help="per-member files and the search index")
+    # Default None, not a path: --payload follows --out unless it is given
+    # explicitly (resolved just below). It used to default to the repo's own
+    # 119th/payload whatever --out said, so building to a scratch directory
+    # still overwrote the committed payload -- 514 member files rewritten and
+    # a dozen deleted, which looks exactly like an intentional commit.
+    parser.add_argument("--payload", type=Path, default=None,
+                        help="per-member files and the search index "
+                             "(default: <out>/payload)")
     parser.add_argument("--pdf-dates", type=Path,
                         default=root / "data" / "pdf-dates.jsonl")
     parser.add_argument("--force", action="store_true",
@@ -331,6 +394,8 @@ def main() -> None:
                              "them at the rate they are rendered, so they are "
                              "served from thumbs/ in the repository for now")
     args = parser.parse_args()
+    if args.payload is None:
+        args.payload = args.out / "payload"
 
     thumbs_dir = args.thumbs or (args.payload / "thumbs")
     if args.item:
@@ -402,6 +467,9 @@ def main() -> None:
             with path.open(encoding="utf-8") as handle:
                 yield from handle
 
+    sibling_dates = dates_from_siblings(parsed_lines())
+    promoted = 0
+
     for line in parsed_lines():
         record = json.loads(line)
         bioguide = record.get("bioguide")
@@ -429,6 +497,15 @@ def main() -> None:
         stated = hand_dates.get(digest or "")
         if stated:
             best, precision = stated
+        else:
+            # The same PDF posted at another address may carry a better date
+            # than this posting does. See dates_from_siblings() for the rule
+            # and why it is as timid as it is.
+            sibling = sibling_dates.get(digest or "")
+            if sibling and (PRECISION_RANK.get(sibling[1], 4)
+                            < PRECISION_RANK.get(precision, 4)):
+                best, precision = sibling
+                promoted += 1
         # date_rejected: build_congress.py found the letter's date impossible
         # for whoever held the address, so the PDF's own date is not used either.
         if not best:
@@ -700,6 +777,9 @@ def main() -> None:
     print(f"  thumbs/*{SUFFIX}  {thumb_bytes / 1024:>8,.0f} KB   (payload)",
           file=sys.stderr)
     print(f"  page fetches payload from: {data_base}", file=sys.stderr)
+    if promoted:
+        print(f"  {promoted:,} postings took a better date from a byte-identical "
+              f"sibling ({len(sibling_dates):,} letters offered one)", file=sys.stderr)
     print(f"\n{total:,} letters, "
           f"{index['members_with_letters']:,} of {index['members_total']:,} "
           f"members, {index['span'][0] if index['span'] else '?'}"
