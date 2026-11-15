@@ -39,6 +39,7 @@ data/vocabulary-wikidata-cache.json
 data/letter-committees.json
 data/letter-caucuses.json
 data/letter-text-info.json
+data/letterhead-dates.json
 
 # Pagefind, installed with `npm ci` in build/search; only package.json and the lockfile are tracked.
 build/search/node_modules/

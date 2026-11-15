@@ -83,6 +83,46 @@ def weekdays(text):
             for m in WEEKDAY.finditer(text)]
 
 
+def letterhead_date(text: str) -> str | None:
+    """The date on the letterhead, or None when it cannot be read with confidence.
+
+    Source 1 of the dating order: what the letter says about itself. Used by
+    build_site.py through letter_text.letterhead_by_digest(), which caches it.
+
+    Conservative on purpose. It declines unless
+
+    * a salutation is found, so there is somewhere for the letterhead to end;
+    * at least one date sits before it;
+    * and every date before it is the same date. Where they differ the letter
+      is citing something above its own salutation -- a Re: line naming an
+      inauguration, a footnote the OCR hoisted to the top -- and which one is
+      the letterhead is a reader's judgement, not a rule's.
+
+    It does not check that the date precedes the capture; build_site.py does
+    that, because only it knows the capture.
+
+    Scored against the 405 day-precision dates read by hand: it produced a
+    date for 355 of them and agreed with 352, 99.2%. All three disagreements
+    are letters whose letterhead states a year that cannot be right -- the
+    Jackson confirmation, the Eaton fire, the Speaker-Designate -- and a hand
+    date outranks this, so those three keep the year a reader gave them.
+    """
+    sal = SALUTE.search(text)
+    if not sal:
+        return None
+    head = {iso for pos, iso, _ in found(text) if pos < sal.start()}
+    if len(head) != 1:
+        return None
+    iso = head.pop()
+    try:
+        year = date.fromisoformat(iso).year
+    except ValueError:
+        return None
+    # The corpus runs 2000-2026. A letterhead outside this is an OCR misread,
+    # like the FCC letter whose 2013 came out as 2073.
+    return iso if 1995 <= year <= 2027 else None
+
+
 def load_text():
     out = {}
     for p in committees.TEXTS:

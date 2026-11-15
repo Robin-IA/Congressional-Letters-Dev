@@ -591,6 +591,17 @@ The date `attribute()` is given, in order:
 1. **The date stated on the letter**, read from its text. A letter puts its
    date on its letterhead; 95.3% of letters with text state one. This is the
    letter's own date in the plain sense, and it outranks the rest.
+
+   **Read automatically since 15 November 2026**, not only where a reader has
+   got to it. `audit_dates.letterhead_date()` reads the letterhead and
+   `letter_text.letterhead_by_digest()` caches it; a date written by hand in
+   `vocabulary/letter-dates.csv` still outranks both. It reads a letterhead on
+   **10,210 of the 11,272 letters whose text we hold (90.5%)** and dates
+   **13,584 postings**, which carry `letterhead` as their precision.
+
+   Robin, 15 November 2026: *"Let's go with letterhead FIRST as that is the
+   intent. The Quill system may be when it was archived or entered into the
+   system. It should be SECONDARY to what is in the OCR of the letter."*
 2. **The date in its URL or path** (`parse_urls.py`: 31,081 letters today).
    *This was previously called "the letter's own date". It is not.* A file
    name records when a file was posted or named. Measured against the
@@ -682,6 +693,18 @@ The letter to the Office of Personnel Management about the employee
 productivity emails is headed both 14 and 17 March 2025: it was drafted,
 held and re-dated before it went. The later date is when it was sent, which
 is what we are recording, and in that case the capture agrees with it.
+
+**What the automatic reading refuses.** It declines unless a salutation is
+found, at least one date sits before it, and every date before it is the
+same date. Where they differ the letter is citing something above its own
+salutation and the choice is a reader's. It also refuses a year outside
+1995–2027, and `build_site.py` drops any letterhead later than the capture
+that holds it — the guard the Mac added to the sibling dates in #171.
+
+Scored against the 405 day-precision dates read by hand, it produced a date
+for 355 and agreed with 352, **99.2%**. All three disagreements are the
+letters whose letterhead states a year that cannot be right, and a hand date
+outranks it, so those keep the year a reader gave them.
 
 A Quill file name should never settle this. Several offices draft in Quill,
 whose file names carry a generation timestamp — `version 1 03 31 2023 @ 11

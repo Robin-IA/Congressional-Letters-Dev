@@ -168,6 +168,60 @@ def _stamp() -> list:
                       for p in committees.TEXTS if p.exists()]
 
 
+LETTERHEADS = ROOT / "data" / "letterhead-dates.json"
+
+
+def letterhead_by_digest() -> dict[str, str]:
+    """digest -> the date the letter puts on its own letterhead.
+
+    Source 1 of the dating order, applied to every letter whose text we hold
+    rather than only to the ones a reader has got to. The reading is
+    audit_dates.letterhead_date(); this caches it, because it scans every
+    letter's text and the result only changes when the text does.
+
+    Robin, 15 November 2026: "Let's go with letterhead FIRST as that is the
+    intent." A file name can be the date a draft was generated or filed --
+    Quill names are wrong 54.2% of the time against the letterhead (#182) --
+    and the date a reader searches for is the one printed on the letter.
+
+    The caller applies the rule that a letter cannot postdate its own
+    capture; this function does not know the capture.
+    """
+    stamp = _stamp()
+    if LETTERHEADS.exists():
+        try:
+            cached = json.loads(LETTERHEADS.read_text(encoding="utf-8"))
+            if cached.get("stamp") == stamp:
+                return cached["dates"]
+        except (ValueError, KeyError):
+            pass
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import audit_dates  # noqa: PLC0415 - imported here to keep the module light
+
+    out: dict[str, str] = {}
+    seen = set()
+    for path in committees.TEXTS:
+        if not path.exists():
+            continue
+        with path.open(encoding="utf-8-sig") as fh:
+            for line in fh:
+                try:
+                    r = json.loads(line)
+                except ValueError:
+                    continue
+                d, t = r.get("digest"), r.get("text") or ""
+                if not d or d in seen or len(t) < 200:
+                    continue
+                seen.add(d)
+                iso = audit_dates.letterhead_date(re.sub(r"\s+", " ", t).strip())
+                if iso:
+                    out[d] = iso
+    tmp = LETTERHEADS.with_suffix(".tmp")
+    tmp.write_text(json.dumps({"stamp": stamp, "dates": out}), encoding="utf-8")
+    tmp.replace(LETTERHEADS)
+    return out
+
+
 def by_digest() -> dict[str, list[str]]:
     """digest -> [topics] for every letter whose text names one."""
     if CACHE.exists():
