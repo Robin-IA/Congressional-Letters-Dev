@@ -27,7 +27,8 @@ What this script is for
 -----------------------
 It writes ``data/member-sites.tsv``: one row per member website, the years it
 was listed, and whether our own roster knows about it. The rows where
-``in_explorer`` is ``no`` are the backfill queue.
+``in_explorer`` is ``no`` are the backfill queue; ``refresh_member_sites.py``
+keeps that column current as harvested sites are published.
 
 Feed those hosts to ``harvest.py``. This script establishes the roster; the
 captures come from the CDX API, which is what the rest of the pipeline reads.
