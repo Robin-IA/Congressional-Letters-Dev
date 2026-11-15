@@ -6,8 +6,16 @@ enough to matter, so this prints, for each letter, every date the text
 contains, where it sits relative to "Dear ...", and what we recorded.
 
     py -I audit_dates.py [digest12 ...]
+    py -I audit_dates.py --ocr-repo ../letters-from-congress-OCR [digest12 ...]
+
+A machine without the Mac's two large text files (data/letter-text.jsonl and
+data/letter-ocr.jsonl in full) sees only part of the corpus and reports the
+rest as unreadable. --ocr-repo (or the LETTERS_OCR_REPO environment variable)
+names a checkout of Robin-IA/letters-from-congress-OCR, the private store of
+every letter's text; its text/*.jsonl.gz fills in the letters the local files
+lack. Text already held locally wins, so the option only adds.
 """
-import csv, json, re, sys
+import csv, gzip, json, os, re, sys
 from datetime import date
 from pathlib import Path
 
@@ -123,25 +131,35 @@ def letterhead_date(text: str) -> str | None:
     return iso if 1995 <= year <= 2027 else None
 
 
-def load_text():
+def _add_text(out, lines):
+    for line in lines:
+        try:
+            r = json.loads(line)
+        except ValueError:
+            continue
+        d, t = r.get("digest"), r.get("text") or ""
+        if d and len(t) > 200 and d not in out:
+            out[d] = re.sub(r"\s+", " ", t).strip()
+
+
+def load_text(ocr_repo=None):
     out = {}
     for p in committees.TEXTS:
         if not p.exists():
             continue
         with p.open(encoding="utf-8-sig") as fh:
-            for line in fh:
-                try:
-                    r = json.loads(line)
-                except ValueError:
-                    continue
-                d, t = r.get("digest"), r.get("text") or ""
-                if d and len(t) > 200 and d not in out:
-                    out[d] = re.sub(r"\s+", " ", t).strip()
+            _add_text(out, fh)
+    # The shared text store, for what the local files lack: one record per
+    # scan, filed by the first Congress that publishes it.
+    if ocr_repo:
+        for p in sorted(Path(ocr_repo, "text").glob("*.jsonl.gz")):
+            with gzip.open(p, "rt", encoding="utf-8") as fh:
+                _add_text(out, fh)
     return out
 
 
-def main(only):
-    texts = load_text()
+def main(only, ocr_repo=None):
+    texts = load_text(ocr_repo or os.environ.get("LETTERS_OCR_REPO"))
     recorded = {r["digest"]: (r["date"], r.get("precision") or "day", r.get("source") or "")
                 for r in csv.DictReader(
                     (ROOT / "vocabulary" / "letter-dates.csv").open(encoding="utf-8"))}
@@ -236,4 +254,12 @@ def main(only):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1:])
+    args = sys.argv[1:]
+    repo = None
+    if "--ocr-repo" in args:
+        i = args.index("--ocr-repo")
+        if i + 1 >= len(args):
+            sys.exit("--ocr-repo needs the path to a letters-from-congress-OCR checkout")
+        repo = args[i + 1]
+        del args[i:i + 2]
+    main(args, repo)
