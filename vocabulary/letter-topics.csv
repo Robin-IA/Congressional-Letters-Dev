@@ -72,7 +72,7 @@ LQELZYMXCWBS3FLFMXAEBOAK35SM42GC,Housing;Immigration;Transportation,read from th
 REOJDSJRBKSKMTW5K4IHIDEVTYYAGPZB,Immigration,read from the letter
 4GUCGG364QZAQW664LZFXSIITTGSFREM,Disasters;Housing,read from the letter
 N5CJH7KJNM4CLM5E55HENJUFP4LDM43H,Gun violence;Public health,read from the letter
-U5ZQP67X2VJSRMLAB46FOI3M5NQI35KM,Jobs,read from the letter
+U5ZQP67X2VJSRMLAB46FOI3M5NQI35KM,Jobs;Retirement,read from the letter
 AT42F4J2ITF6P2OS237S5GJ3SPRFGHPH,Agriculture;COVID-19,read from the letter
 N7FLKQF2KHMIT7H6IOTQGBYUW2GS7CHI,Energy;COVID-19,read from the letter
 QIVJV42RN7D77BAWCAXFNW47GBOCDQQO,Jobs;COVID-19,read from the letter
@@ -90,7 +90,7 @@ L5QLG65T4XHC4UMNXT5LOADAS6S55IBR,Jobs;COVID-19,read from the letter
 J3OERKJ2SYFFBU7L5WZA3336KJZZFRNG,Jobs;COVID-19,read from the letter
 G2UZCIQHCVYVQ33XEUDWJSWUVTBSULNX,Wildlife;Endangered Species Act;Appropriations,read from the letter
 OFTJ2IIATA4NJL7ZEFAPSOUIOOKGYLJO,COVID-19;Taxes,read from the letter
-DIN4R7QLCGONCLLYRHSGJO7OJUDRCBLK,Defense;Policing,read from the letter
+DIN4R7QLCGONCLLYRHSGJO7OJUDRCBLK,Defense;Policing;Drones,read from the letter
 ILCXIKBICIVRT2RMFVU3FLOPQGROBYHE,COVID-19;Budgets,read from the letter
 MW6VHCVQEMBP7W5CMILPUZ4MCGTGQVXW,COVID-19;Appropriations,read from the letter
 EFCROWUBFOQWDESUO2LRN46MFLW74ICL,Syria;Chemical weapons;War powers,read from the text of the letter
@@ -149,10 +149,10 @@ SNV23GPJGPJROV4XPR4IMP43HMQYQNJS,Vaccines;COVID-19;Foreign aid,read from the tex
 O3ZY4K5GCP4Y63VJSSAV5NSFASAMKFVG,Higher education;Scientific research,read from the text of the letter
 BHZSEG3ATV4CZZJ2VMVMZAMT4ZJKHBWA,Small business;COVID-19;Supply chains,read from the text of the letter
 GPEIUFFOYDDM6RJ563NVXTCYZCT3LALZ,Hyde Amendment;Abortion;Appropriations,read from the text of the letter
-CZWKRZUMKDWT2G4RVML65OTWSPRGUIYP,Defense;Appropriations;Navy,read from the text of the letter
+CZWKRZUMKDWT2G4RVML65OTWSPRGUIYP,Defense;Appropriations;Navy;Drones,read from the text of the letter
 X4QOOA2WG4MQKNXCJIZLB5EKBK2SYGDS,Housing;Housing costs;COVID-19;CARES Act,read from the text of the letter
-TXQC5D2ZOJPTWHKUEVJPVSFGV6QVPYHK,Family planning;Abortion;Appropriations,read from the text of the letter
-5YWHBCRFCHFR6AGSXJXYIOJH5EZK5BWL,Family planning;Abortion;Appropriations,read from the text of the letter
+TXQC5D2ZOJPTWHKUEVJPVSFGV6QVPYHK,Family planning;Abortion;Appropriations;Title X,read from the text of the letter
+5YWHBCRFCHFR6AGSXJXYIOJH5EZK5BWL,Family planning;Abortion;Appropriations;Title X,read from the text of the letter
 7FOAXUKDIWYUABRP5GH3OUNWOTWCRRU4,CHIPS and Science Act;Supply chains;Scientific research;China,read from the text of the letter
 IWF56BNGSI2GG46YFWRBRXNV2B2WNJOO,Agriculture;Immigration;Jobs,read from the text of the letter
 Y7N5O7R3YQBV4MFHFLQOF5F76ZCMGP6A,Veterans;National Defense Authorization Act;Health care,read from the text of the letter
@@ -162,7 +162,7 @@ E5LFKRBBSHVM2BBN7BIYJFBKTIWFWUFX,Gun violence;Mass shootings;Gun control;Guns,re
 HDHU4QMXGIA777MFH7YU5TD64AMDHQAR,Telehealth;Medicare;Medicaid;COVID-19,read from the text of the letter
 HB3U6UNEDRRW3YNG5FS24IMYF2L4XCOY,Nutrition assistance;Education;COVID-19;Families First Coronavirus Response Act,read from the text of the letter
 FGZKZUXWAQGHYF6XPYJUXUM63XDWHVHM,Opioids;Drug trafficking;Controlled Substances Act,read from the text of the letter
-T77WZDVPYXGJPNFFCKT67CSIQILC6MFF,Fisheries;Wildlife;Oceans,read from the text of the letter
+T77WZDVPYXGJPNFFCKT67CSIQILC6MFF,Fisheries;Wildlife;Oceans;Whales,read from the text of the letter
 TPCDKYSH4TPCFTJYPX3JGOE6QUOR2UUP,Opioids;Drug trafficking;Controlled Substances Act,read from the text of the letter
 564CM6D6GCPUZHBMOZBNISQ4B45YKLBX,COVID-19;Public health,read from the text of the letter
 5Y4A73ODZAAADYXL2DZZ6IT5LNQP2MYT,Opioids;Social media;Drug trafficking,read from the text of the letter
@@ -259,7 +259,7 @@ IELJBKHBWVDDAJSFAT35D7SN4G2EWEU5,Taxes;CARES Act;COVID-19,read from the text of 
 3PUCUQN64BEOIVYXTDXYAGGUZOZ3OEOX,Civil rights;Public health;Regulation,read from the text of the letter
 BGEA7XHRVJ3GJ6YOG5BJHF35QHKQGM47,Dental care;Medicare;Health care,read from the text of the letter
 UD4IASWCZDTAG3LDZCNWBC2MSLBDBI3G,Education;COVID-19;Budgets,read from the text of the letter
-EXKGN2YCNBOF655QBXGOM7ODKQUNAFI2,Aviation;Venezuela;Civil rights,read from the text of the letter
+EXKGN2YCNBOF655QBXGOM7ODKQUNAFI2,Aviation;Venezuela;Civil rights;Cuba,read from the text of the letter
 2EXRHGOSNTF5LZKOZSYQZ55H6KCAPH54,Regulation;COVID-19;Small business,read from the text of the letter
 FWDFFROKFSVRXBK23ZOUMWVRUIT4SFTL,COVID-19;Veterans;Oversight,read from the text of the letter
 7ZOX3UKSLL2ABECAMAXIPGXXR5CS4ACC,Small business;COVID-19;CARES Act,read from the text of the letter
@@ -272,9 +272,9 @@ EMACMVQLDO6MGT6XO6LD2YICLLCILYDP,Climate;Oversight;Ethics,read from the text of 
 ZDCN5B7EGQOSAAOWPD2HR7RQUPUWZ644,Investing;COVID-19;Regulation,read from the text of the letter
 PAPVIATX3NMYUGCLE475UDLHOHM3K3UJ,Public lands;Water;Regulation,read from the text of the letter
 DQB4KGMZUMUGUMUA55F4BHNCOR4QRCHE,Immigration;Appropriations,read from the text of the letter
-VOAYB3HRF5YWHTVIFQWCRJNLAI2XI7WV,Wildlife;Public lands,read from the text of the letter
-FYIGBSHY2C2HSNTNK46C6X3P4IYXDNJ2,Investing;Regulation,read from the text of the letter
-32HZWCSWAAT23XYRX4AHDWUUP4X6E7XJ,Cost of living;Social Security;Oversight,read from the text of the letter
+VOAYB3HRF5YWHTVIFQWCRJNLAI2XI7WV,Wildlife;Public lands;Wild horses,read from the text of the letter
+FYIGBSHY2C2HSNTNK46C6X3P4IYXDNJ2,Investing;Regulation;Retirement,read from the text of the letter
+32HZWCSWAAT23XYRX4AHDWUUP4X6E7XJ,Cost of living;Social Security;Oversight;Retirement,read from the text of the letter
 RXY743QJRA2VPCGHGE7YQ33ISH7NIDGV,Oil and gas;Cost of living;Regulation,read from the text of the letter
 7LDAB4CX2PSEL2YYQMMMAH7CYPS7Z45D,Oil and gas;Oversight;Public lands,read from the text of the letter
 U5JZMRRI4HJOOIJPGE5A3FOS5JK2F3EQ,Oversight;Courts,read from the text of the letter
@@ -282,7 +282,7 @@ X7J4EEXIALXXQICEHEHQECJP5TOTPCKN,Fisheries;COVID-19;Oceans,read from the text of
 XV4KHJ4RZTQSSEX36WM7VKM6FIB3Y3LM,Aviation;Regulation,read from the text of the letter
 RWY5MKJP2NIALKWRTVAUQUF4CAU3I2WL,Federal workforce;Public transportation;COVID-19,read from the text of the letter
 GH7JDGDHABVAZMCMNMJ6JVXEAGCUVFO7,Guns;Gun rights;Regulation,read from the text of the letter
-4Q7Q2KT66TBHEOU6Q3J5UKWBIYVHELKP,Jobs;Food safety;Agriculture,read from the text of the letter
+4Q7Q2KT66TBHEOU6Q3J5UKWBIYVHELKP,Jobs;Food safety;Agriculture;Child labor,read from the text of the letter
 JQR5DLLKFPN54MS7SFL5RO4AKQ3BJ7SO,Social Security;COVID-19;Health care,read from the text of the letter
 GIJZLAFNRK6ANIM3Z3FFZSNOLMCBKYMI,Medical research;COVID-19;Prescription drugs,read from the text of the letter
 7ER76AYJ5UH3QNL44WLPZWSX74N7PD52,Crypto;Banking;Regulation,read from the text of the letter
@@ -295,7 +295,7 @@ QU3GBXDT2657MXRP6DBTW6MQYUYISIIO,Regulation;Courts;Credit reporting,read from th
 XEF6DUVJYY4MKXK2BMNPUJVYN674HNDN,Oil and gas;Border;Public lands,read from the text of the letter
 GW6XYJJ67WUUARAWA4DVE22OLBNRA7OS,Violence against government officials;Gun violence;Oversight,read from the text of the letter
 WHZFKFN2GWP46HEIVHSCWNDUNFNF2TLH,Immigration;Border;Oversight,read from the text of the letter
-PT32FTZP6IRXFVSKJKAPT45VLVTFK4J3,Civil rights;Foreign aid,read from the text of the letter
+PT32FTZP6IRXFVSKJKAPT45VLVTFK4J3,Civil rights;Foreign aid;Mexico,read from the text of the letter
 MBX4XPUITABF5LX6QZQ2BC7Z2HQHIX2B,Housing;Banking;Housing costs,read from the text of the letter
 4WBE7IOOD7WXCK25L4BWCRVHUKY6AMZG,Medicare;Hospitals;Health care,read from the text of the letter
 UZJ33T76N474ZWT64A7H2QODGE3VOPA6,Public lands;Water;Regulation,read from the text of the letter
@@ -310,7 +310,7 @@ EMPYSAQGLXGORSOXI2TT4ETJISBFQ2GL,Education;CARES Act;COVID-19,read from the text
 ZKASYBIVYTNNJQRJB3XAEK7HODD7FN7S,Broadband;Telecom;Regulation,read from the text of the letter
 2TJTNDDANWN6MZ3TCPGFKGPNVGB5TK7B,Maternal health;Medicaid;COVID-19,read from the text of the letter
 DEA2A5NADI2PTXFR7Y23CYMUM6OGYEUG,Oversight;Federal workforce,read from the text of the letter
-2CXMVLWKYPUMDP2ULPWPUOYIJWRWAMTN,Tariffs;Trade;Energy;Jobs,read from the text of the letter
+2CXMVLWKYPUMDP2ULPWPUOYIJWRWAMTN,Tariffs;Trade;Energy;Jobs;Solar power,read from the text of the letter
 CK6NPJTRM4XSW6HQJFFQ3I4T22AYSD7Q,Regulation;COVID-19;Public lands,read from the text of the letter
 GNMI24S4FEH5GPZGS5QWIYIAUUDRAWEK,Federal workforce;Veterans;COVID-19,read from the text of the letter
 KQS4UJXVAPKVIMFGQNXIGPC6HUA7AIHS,Small business;COVID-19;Banking;CARES Act,read from the text of the letter
@@ -329,9 +329,9 @@ LIJKJ7CWE7QG3XSEXIMYU5V2UOW5FECG,Oversight;Courts,read from the text of the lett
 LBHMQ376NYVZYEJMPLGWXY45L74XDIME,Social Security;Privacy;Oversight,read from the text of the letter
 YNOVKHMIWMPTUTWGRJ5N523JBLV3CKJ2,Banking;Small business;Regulation,read from the text of the letter
 EJSBSRO4VI3ZIOCDBHYDVLWHJQBI7JID,Guns;Gun rights;Regulation;Privacy,read from the text of the letter
-WEEP622SDZG5TFW7YBMQHKZC4BKYQXJ3,Energy;Climate;Regulation,read from the text of the letter
+WEEP622SDZG5TFW7YBMQHKZC4BKYQXJ3,Energy;Climate;Regulation;Electric grid,read from the text of the letter
 7JGXS7JFIA6WCR7DN2LVLZZQ6WGISWBO,Immigration;Jobs;Federal workforce,read from the text of the letter
-KHIN6HFJJM7KVH7GJT6BPJ4FZ34MMUZT,Wildlife;Public lands,read from the text of the letter
+KHIN6HFJJM7KVH7GJT6BPJ4FZ34MMUZT,Wildlife;Public lands;Wild horses,read from the text of the letter
 NG3SMGQ6DRHQLBFNGZ3IDYR23STCXZNX,Oversight;Civil rights,read from the text of the letter
 BBQH2C2M3QPMICKTTOLKJKPXPQL7SJNC,Prisons;Federal workforce;Jobs,read from the text of the letter
 CUCWSTXWE2NFPHGQXH4EQKKL22D6CKVN,Federal workforce;COVID-19;Jobs,read from the text of the letter
@@ -347,7 +347,7 @@ OHJROKFILDS3T4VBWDTXTZO4YZMNEGS7,Ethics;Investing;Regulation,read from the text 
 UPCQFDKVWQSMSKLYVQONNQ5C5PMUS74W,COVID-19;Oversight;Supply chains,read from the text of the letter
 AJR62DCN76JZERCIE6HWRVETFJPOXMMB,Public lands;Regulation,read from the text of the letter
 6WJYCL7G6RDI7Y34GMIUGPA7NZXBCO3I,Prisons;Federal workforce,read from the text of the letter
-C7H4QCDLOO52QUYLYMM4EIGE2B6AUJIL,Family planning;Abortion;Regulation,read from the text of the letter
+C7H4QCDLOO52QUYLYMM4EIGE2B6AUJIL,Family planning;Abortion;Regulation;Title X,read from the text of the letter
 MF73BHEH4ZRMN5ZBMIA67RURPBE4QRYW,Agriculture;CARES Act;COVID-19,read from the text of the letter
 GFNHOQVJ6SUQNFKRQXJUALTKYJCYQWYK,Taxes;CARES Act;COVID-19,read from the text of the letter
 NW5K6TJEN42E7V7D3M2L5PYN73IM4R4E,Defense;Higher education;Veterans,read from the text of the letter
@@ -396,7 +396,7 @@ I7E3WE2GEACYZQVRE5OT4PGPUGTS2RFY,Student loans;Higher education;Telecom,read fro
 AUBFOWYMDTU37OAOE3IFCODXKSUUOQHB,Aviation;Jobs,read from the text of the letter
 52M7CLNGVDZAHNQDWITU5BL6OIEE2T5Y,Childcare;COVID-19;Supply chains,read from the text of the letter
 X54WDH6FJD23N5BO5R4VL27W3RIQGGQW,Vaccines;COVID-19;Foreign aid,read from the text of the letter
-N2AZVPUARPP6PK3EKJCIKS4EJVEZ3F3E,Civil rights;COVID-19;Policing,read from the text of the letter
+N2AZVPUARPP6PK3EKJCIKS4EJVEZ3F3E,Civil rights;COVID-19;Policing;Hate crimes,read from the text of the letter
 A2HZD2BEZPIGQPUZ7EZUND3QGOTDKFKV,COVID-19;Oversight;Public health,read from the text of the letter
 J65OGBGZZN5LDOHL2RJT3MHAH6LYSSW4,Agriculture;COVID-19;CARES Act,read from the text of the letter
 RE2IYYEYC737H53WPDF6FY647TVH6OM2,Veterans;Taxes;CARES Act;COVID-19,read from the text of the letter
@@ -410,11 +410,11 @@ U343JQSDKSYEVOPASQ5ACB6E34TSOUT2,Education;COVID-19;Disasters,read from the text
 PYOOZBLUXJPN2WK2TFGAA2UL7NVCVQLY,Broadband;Telecom;Regulation,read from the text of the letter
 MTXY6Z6GA52IFUGUNGFZ4SQDGXVFOHI7,Maternal health;Medicare;Health care,read from the text of the letter
 GS7MUS253XLXTDNAM3D7VYAC34YL2JFZ,Budgets;Appropriations,read from the text of the letter
-75NKVZVQSW2MCUXPVBRLVQG6DVD2ACLC,China;Civil rights;Trade;Technology,read from the text of the letter
+75NKVZVQSW2MCUXPVBRLVQG6DVD2ACLC,China;Civil rights;Trade;Technology;Drones,read from the text of the letter
 4U4ILSHV7FYJLFOJQZSO662L6VGXIAY7,Appropriations;Ethics,read from the text of the letter
 Y3XO37MMNFG2RO5E42KYQG62GHUOSK3O,Taxes;Energy;American Rescue Plan Act;Cost of living,read from the text of the letter
 T3FRXDGHWSYLDVIK4Q6UYBZJFEEVN3MF,Small business;COVID-19;CARES Act,read from the text of the letter
-ZE4D5JCM2XYYAYNA62QDY5SHVIZRVOQR,Energy;Regulation;Supply chains,read from the text of the letter
+ZE4D5JCM2XYYAYNA62QDY5SHVIZRVOQR,Energy;Regulation;Supply chains;Electric grid,read from the text of the letter
 A5Q344F46KG3FA66VHXSPMVN4IM5NJKA,Unhoused;Housing;Appropriations,read from the text of the letter
 GCSNPCTKE5SCHAWWWFIHBKAD2OBDYNDC,Trade;Agriculture;Climate,read from the text of the letter
 52VF6KCPFHJHZWM2MIVTBWP3HAPPEOOH,COVID-19;Public health;Medical research,read from the text of the letter
@@ -443,9 +443,9 @@ HXEQLHVQYOZ6QOEDCYIHV5ZIBG3B4TW6,Housing;Housing costs;Energy efficiency;Regulat
 TNDHOYNWLRVIUEZHMXMDTXE5PBMPFHZA,Cars;Regulation;Disasters,read from the text of the letter
 ADFSZGOGO4SJ6QFHVOFJOP45E6NNKESN,Ethics;Investing;Regulation,read from the text of the letter
 KSRGHZ2WLBSSDXOU7YWVNDBUH7GKNMXR,Crypto;Banking;Oversight,read from the text of the letter
-LMAONL6N4J6RCHZEF76LRW7YUJ4KVOSP,Jobs;Regulation;Disasters,read from the text of the letter
+LMAONL6N4J6RCHZEF76LRW7YUJ4KVOSP,Jobs;Regulation;Disasters;Firefighters,read from the text of the letter
 ZRRRWA5HMEHMC5WHB7QOCQPZJERPVVWJ,Policing;Oversight;Civil rights,read from the text of the letter
-AFBQFTV7V2NPT5FDSFB3J7QVMTPRARB6,Foreign aid;COVID-19;Trade,read from the text of the letter
+AFBQFTV7V2NPT5FDSFB3J7QVMTPRARB6,Foreign aid;COVID-19;Trade;Cuba,read from the text of the letter
 ZZWGGX72NI5EY7CECTECZJTXUCTR3TFZ,COVID-19;Regulation;Cost of living,read from the text of the letter
 IBELTQYPBMS6GFSQWQ6ISMSRB7X6DYGS,COVID-19;Public health;Appropriations,read from the text of the letter
 RUNXO736L2EP2N64HMIVBQLKUW74FPU7,Agriculture;COVID-19;Supply chains,read from the text of the letter
@@ -464,9 +464,9 @@ S6R2YMAUSAQLDYIC3UXSZXAHQQZIG4NH,CHIPS and Science Act;Small business;Jobs,read 
 EFOTMAWIF4DYFN2VJ375VGNQD6WGK4QP,Native Americans;Policing;Appropriations,read from the text of the letter
 GYU4VRNPEA7X5IHPEQMVFX52GYWMO37A,Taxes;Banking;Privacy,read from the text of the letter
 5D72KN67ZYX4JP5WLRW3564YKSFWT52A,Small business;COVID-19;CARES Act,read from the text of the letter
-T7FZMKEO27DFWUVSRR2CEV246UCW4UVJ,Energy;Climate;Pollution,read from the text of the letter
+T7FZMKEO27DFWUVSRR2CEV246UCW4UVJ,Energy;Climate;Pollution;Hydrogen,read from the text of the letter
 4DUMXVNS2OQHCBL4HPLEY53VHDGYZJ36,Housing;Civil rights;Unhoused,read from the text of the letter
-G5RSXYF27FLDK3UGAWVDW3T72ICV3UQL,Trade;Agriculture,read from the text of the letter
+G5RSXYF27FLDK3UGAWVDW3T72ICV3UQL,Trade;Agriculture;Mexico,read from the text of the letter
 5RVPT7KIJECYVFRDF34RRZNUKXITI2HA,COVID-19;Regulation;Small business,read from the text of the letter
 5VSNSL5672RBOLNGKKOES47DYRPXVGN6,Climate;Investing;Regulation,read from the text of the letter
 OHFZQ3Z4GBVIJJKN3ZMASBJS24KLJZ4E,Taxes;Oversight,read from the text of the letter
@@ -475,19 +475,19 @@ SH7LWEN6SXXZUWOXMETZY4D46BTPUZSV,Agriculture;Jobs;Regulation;Immigration,read fr
 JRJG7XWJLKUQIF47BWPVCWQ64LAHXH55,Cars;Regulation,read from the text of the letter
 U7VYWDQAPJRTIXICOEL75NUDIPPSJA27,Aviation;Jobs,read from the text of the letter
 UI4BNCNUR4LUTXRIMMUT5OOHMK5IGUUO,Water;Clean Water Act;Agriculture,read from the text of the letter
-CYP46QZDAKFTLPM63MPSXWETKMBVZVJY,Aviation;Oversight;Technology,read from the text of the letter
+CYP46QZDAKFTLPM63MPSXWETKMBVZVJY,Aviation;Oversight;Technology;Drones,read from the text of the letter
 UZFLW462TUX5VGE6HVKNWYTYKMEQ2ACC,Social Security;Federal workforce,read from the text of the letter
 LLYIACY7MOSGG67YCLSG3VQBJYVJOKY7,Banking;COVID-19;Credit reporting,read from the text of the letter
 LSVXZNZIDXQHJJAOMKKY4HHMGQWWZGJZ,Guns;Regulation,read from the text of the letter
 WIWC63KYQ5NAL7KAEE5KS6YEKDA7C5QQ,Oil and gas;National Environmental Policy Act;Regulation,read from the text of the letter
 CED4ZQ4Q4XEW5CLD5SNCZET6QBLBTDAF,Immigration;Courts,read from the text of the letter
-DIUOVVVPZQCDZOKCWFNFNDR6ZQTAM2CO,Public lands;Energy;Regulation,read from the text of the letter
+DIUOVVVPZQCDZOKCWFNFNDR6ZQTAM2CO,Public lands;Energy;Regulation;Solar power,read from the text of the letter
 LFXBZHSLUOEA6XWC7FBF36JVXELOERTL,COVID-19;Oversight;Health care,read from the text of the letter
-TQMOBQPM7SBRT2MOSQUPCVRCZDDLN6XB,Public lands;Federal workforce;Jobs,read from the text of the letter
+TQMOBQPM7SBRT2MOSQUPCVRCZDDLN6XB,Public lands;Federal workforce;Jobs;National parks,read from the text of the letter
 C5EXJRN5ZPT2BME2YOSKSU2HZ5HTN3SY,Prisons;COVID-19;Policing,read from the text of the letter
 BSQKTDBP26PRXU2TWDQZUPPJVSO6TZPO,Opioids;COVID-19;Health care,read from the text of the letter
 NYQFMZDETSODTFUP5CP76X4C6BC7VTCS,Medical research;Higher education;Scientific research,read from the text of the letter
-SSXX7R32EZOHWTKOYU2QPGPEAA7VA2H7,Wildlife;Oceans;Endangered Species Act,read from the text of the letter
+SSXX7R32EZOHWTKOYU2QPGPEAA7VA2H7,Wildlife;Oceans;Endangered Species Act;Whales,read from the text of the letter
 BK6FMTQL2MHUY4HL7XA33IZAAO7RLST2,Banking;Civil rights;Dodd-Frank Act;Small business,read from the text of the letter
 TY77P6BB3SDAROK4FMZR4W2HOFXBGG6W,Housing;Housing costs;Regulation,read from the text of the letter
 P445CI6HVNS7I262QUEKAGB35NXJXORS,Elections;Social media;Media,read from the text of the letter
@@ -505,7 +505,7 @@ L63LCL4THZEIEPYDJC6266ONOSKY2NIT,Defense;COVID-19;Health care,read from the text
 IZ4THUKDLM5BPXOYWPGOA43MH5CNND53,Agriculture;Regulation;Pollution,read from the text of the letter
 YKJOLDKOFGKRZIDUPQZ7NT4AP7E6WVUY,Postal Service;Oversight;Elections,read from the text of the letter
 PGEDBSZ7HF6VPBDVPRBL43V255XXREF7,Cybersecurity;Education,read from the text of the letter
-QHZDD77WPCKOJ5ISTLTUJK6B6ZNKCFSN,Disasters;Flooding;Public lands,read from the text of the letter
+QHZDD77WPCKOJ5ISTLTUJK6B6ZNKCFSN,Disasters;Flooding;Public lands;National parks,read from the text of the letter
 TMBU544EOPHTIUHQGH3BZL4KEBFHFS6V,Agriculture;COVID-19;Housing,read from the text of the letter
 U535P25IKGWDNBLFHZXL5AA3UU7WLPI2,Broadband;Telecom,read from the text of the letter
 YAJI2KJXYCB33IEY3QWQPLE7M2CNZQKB,Medicare;Health care;Regulation,read from the text of the letter
@@ -519,7 +519,7 @@ J46GPIDIWKX6FH7ND33YHJEQF6S4GOIZ,Disasters;Flooding;Housing,read from the text o
 BGQUVY2CVBABMAKVC3FT3KT5S6MN4HI2,Trade;Agriculture;Tariffs,read from the text of the letter
 6WW3IHJVD7ZT6VJGCSMOPMLZ7AVEUABI,Vaccines;COVID-19;Medical research,read from the text of the letter
 5THFTEB4KW2HOUXHYCDT5XKXRIPP6TP7,Investing;Oversight;Social media,read from the text of the letter
-QFCJCZ5PUZLFHQJZYEMJM5PWWU437UBG,Guns;Gun violence;Drug trafficking;Foreign aid,read from the text of the letter
+QFCJCZ5PUZLFHQJZYEMJM5PWWU437UBG,Guns;Gun violence;Drug trafficking;Foreign aid;Mexico,read from the text of the letter
 U2Y7V3L3XWWMVU5IDSSOW4TMFYCNGZPE,Vaccines;COVID-19;Oversight,read from the text of the letter
 KEIAT4XQSTNBU4KBUZWJ2JSVJU5QLV3R,Jobs;Education,read from the text of the letter
 TMMPKAQ27SKLTXZGAXHSID2MTA5QM5KX,Technology;Civil rights;Regulation,read from the text of the letter
@@ -542,5 +542,105 @@ R7COWUHNCHYLAHXTF4QHDP7IXTZMBDGO,Public lands;Oceans;Oversight,read from the tex
 MQ2C4DWDYOE2M6F3JF4EKZ24FNBWAWGZ,Housing;Housing costs;Investing,read from the text of the letter
 JYJWQEUPDG6UII2XLWN2JE4G4VD4WAPX,Investing;Regulation;Oil and gas,read from the text of the letter
 MLBQ5IHR7JCCRSVGFIPCOAYE5NIFORMR,Banking;Oversight;Regulation,read from the text of the letter
-ISWDFHE7GD4XSCAA3RAWSLRWZVXNMWI4,Jobs;Regulation;Disasters,read from the text of the letter
+ISWDFHE7GD4XSCAA3RAWSLRWZVXNMWI4,Jobs;Regulation;Disasters;Firefighters,read from the text of the letter
 LZ4YPSPBVSHS2KKGJ7USRHFUYY2HCVDS,Elections;Social media;Regulation,read from the text of the letter
+7XKSMLHRA7QMROIOXI6SWT47MCRWYJNH,Immigration;Jobs;Oversight,read from the text of the letter
+XAWZ57GDAYA4WTR6GJG4S55VZNJTZLTZ,Domestic violence;Civil rights;Foreign aid,read from the text of the letter
+ZTBMURPM7OM2IITGN2E5TXZH6BP7GBYU,Cannabis;Controlled Substances Act;Medical research,read from the text of the letter
+WX4TQSJ5YUCMIQ5LAMJOPWUZJOBZPDKB,Vaccines;COVID-19;Medicare,read from the text of the letter
+MWCFOZHURIMEGPKP7FWHEAQOKGBVFYZK,Agriculture;COVID-19;CARES Act,read from the text of the letter
+F2A5EJ6GVDXAJVH4N5ERJNCOEMEFK6VF,Nuclear;Energy;Foreign aid;Russia;Solar power,read from the text of the letter
+QS3JJXSGEKTBV5RO7FXCIJ2YLNJ3RBII,Defense;War powers;Foreign aid,read from the text of the letter
+EJ3NSIPXD2MJ4C6AQZR5NQNHQJ6G7A3T,Veterans;Taxes,read from the text of the letter
+PDIBCY4LZAZCESZDRPRXPRAD4C4VY22S,Oversight;Scientific research;Oceans,read from the text of the letter
+TKJVZKNSWIBVGIXPCCOVCF65T4G2EGQR,Postal Service;Oversight,read from the text of the letter
+A745IIVXPTIEHRG34JOCKQ5RON2WHE2H,Student loans;Higher education;Higher Education Act,read from the text of the letter
+UK2ZYVQWERPUFCN7HSYXIRJW3YIB6GZJ,Railroads;Transportation;Appropriations,read from the text of the letter
+XR4XJ5C2HLHO6USQFKDE5HXFLV6T3OHS,Hurricanes;Disasters;Education,read from the text of the letter
+L4VUHLGNGLN6AP6EBO5AE2ZF2G4C7G5E,Broadband;Telecom,read from the text of the letter
+6XQTF2STHYTS3K4NHJZZYTEBR45RI3AN,Affordable Care Act;Health care;Disasters,read from the text of the letter
+YD33RCQER5DVODKHTTQJQO3RGW264TMP,Agriculture;Disasters;Appropriations;Flooding,read from the text of the letter
+IDJQB373JZ272YQVQAMX4MLNC6EAB6UT,Oversight;Disasters,read from the text of the letter
+NKPESJQJL6PS4RFW66EYQ3O2IIH7NRY5,Native Americans;Policing;Appropriations,read from the text of the letter
+ED6G4TMSF7YGJ466WXZRR3U6DESJ57G2,Taxes;COVID-19;American Rescue Plan Act,read from the text of the letter
+RYROSTG5X375O4YBJW6JQD4TH3CVAR3R,Small business;Civil rights,read from the text of the letter
+AJCEGXNGH7R2O4DNOIG7QBZ6ZGCI3Z2K,Energy;Oversight;Appropriations,read from the text of the letter
+VGGBJVLAW7KLB4GIQMVO5N5AZOZXTBRD,Disasters;Housing;Flooding,read from the text of the letter
+HFPE5YBIR36K5CQWGTOVBUPCC2G2Y3NW,Trade;Agriculture;Tariffs,read from the text of the letter
+HEAGOJIYYVWODSMNDIVJFGPGJN2X7TQZ,Opioids;Prescription drugs;Public health,read from the text of the letter
+VQ6NFWD56DBFJJEGPVGF53HFLP7HSITP,Investing;Regulation;Ethics,read from the text of the letter
+G35CRB5SLKG3UF7QRG7CFZV44SDNZ6YB,Broadband;Native Americans;Telecom,read from the text of the letter
+FPIDGSACJZ6EF32G5VGH5WJZB3J6UNXJ,Public health;Appropriations;Maternal health,read from the text of the letter
+7JSX5AVTVOFNH7GDBH45BVLMNXHGKO4S,Investing;Regulation;Climate;Retirement,read from the text of the letter
+YTNEGOMCQSYZY6FSZGSTTIWKEICJZHIH,Housing;Regulation;Technology,read from the text of the letter
+B3UBXOBOIPOIYIT2IW54MQRSAAH5K6AN,Aviation;Technology;Regulation;Drones,read from the text of the letter
+KDFNLYGGRL3DWAFL3IUXJ56L4APRPYIM,Wildlife;Water;Appropriations;Fisheries,read from the text of the letter
+IYHKTTVKUBFP747D3P2DHTDTQ2E4L57F,Banking;Oversight;Courts,read from the text of the letter
+XVZHRGYACIEGXFTYOP7IMNP62ITZ4V7H,Social Security;Regulation;Courts,read from the text of the letter
+FPKBCZVQIXFUGHMUTMCLN7QZM2IWPWW7,Banking;Inflation,read from the text of the letter
+4RZIVTESOZMSS5UTINANWIRGJ5TZK4WA,Guns;Gun violence;Policing,read from the text of the letter
+VV65VN3UIEFCRQ6UCVFLLLRNMD7HSPZI,Oil and gas;COVID-19;Regulation,read from the text of the letter
+FR6RU5NB35LBJFGKDU2LJF67KKO7NVB4,Immigration;Immigration and Nationality Act,read from the text of the letter
+JAJRYMVA6DNXZIUXWFOGFIHTLA27XOIE,Ethics;Public lands;Oversight,read from the text of the letter
+7GYHEC5CKNW3LV2H5PKBIMP2CHG2EVWD,Oversight;Investing;Ethics,read from the text of the letter
+N2MKZSJWYODARYSCY5ONCPUZ4SL5KNSQ,Veterans;Federal workforce;Jobs,read from the text of the letter
+2KNMBZOCAKTKFNAIK6N35N7GQ5WHLIGS,Prisons,read from the text of the letter
+HXNV4MZONHSNLDW5IAG7FJNSIYE7HRGM,Medical research;Higher education;Health care,read from the text of the letter
+5EAMNIZUAOX753LH5LERSO4NISVPVLK4,Opioids;Telehealth;Health care,read from the text of the letter
+M2GH3FB3MDWDP5JT3PBMDWZHHICKUBK6,Disasters;Climate;Federal workforce,read from the text of the letter
+6NSYJFKZQB3IY6WVFGADAN5DAABFHTZI,Cars;Privacy;Dodd-Frank Act;Small business,read from the text of the letter
+ZJTCJOES62DXFN74ZPW74NND4GS6SVGS,Housing;Banking;Civil rights,read from the text of the letter
+7NLT4FKX6G4GES4TOZFXRFB6VJ4MFOTH,Nuclear;Public lands;Transportation;Nuclear waste,read from the text of the letter
+52I3CJII6RDWHXOVVBVTZH7XEBW37QNG,Cars;Childcare;Civil rights,read from the text of the letter
+VN4RLH7ANDQHARMXBW2WTQREI26MWBQ5,Education;Appropriations;Elementary and Secondary Education Act,read from the text of the letter
+VJYJJTVSM6YK45ME5NRGWE4HZV2CPY6F,Banking;Regulation,read from the text of the letter
+5HK7KCXHRF4FCN2DHGBDXH7OTUEXKYYU,Investing;Regulation;Oil and gas,read from the text of the letter
+GGMCKH4JF6M2EVPGEWOKHKSCYHYPNXJ6,Banking;Oversight,read from the text of the letter
+APBPSU5EZNF7TLF7TFLMJMTHIWTRSGFL,Jobs;Appropriations,read from the text of the letter
+TTE3FNRGHM5LNHPF2HSVN6X6WZI4YOJQ,Jobs;Oversight,read from the text of the letter
+74O36ONYMY4VCEOLPPVQMBM4NUSIXCB6,Aviation;Appropriations,read from the text of the letter
+WUWLJ7DSXWE5SRUYYZANOE6CEQ46ZGVG,Climate,read from the text of the letter
+37JP5E5AOGYB23IFET7LQK4EJ7J2BT7C,Climate,read from the text of the letter
+CMXVVHHJDHCHVW5XTGGRTMFE6JN6A3IY,Space program;Higher education;Appropriations,read from the text of the letter
+ZBLV6VPZKNH7BLW432N2CFIRIEUQHP3U,Health care;Oversight;Technology,read from the text of the letter
+TSCTUNS4NPNRKRDRX5XXJJA625UA6T4F,Energy;Oversight;American Recovery and Reinvestment Act,read from the text of the letter
+IWJUFGHMFAUA2HQ7PBQEBT4IWOAUS6OJ,Prescription drugs;Ethics;Health care,read from the text of the letter
+NNBM3DM4EACL32ASB4QCBY7SHU7MNLVO,Prescription drugs;Ethics;Health care,read from the text of the letter
+VGDPCAPLSREVW3KUNLJ22I3K6ZPMI4EE,Federal workforce;Oversight,read from the text of the letter
+LRGBHFK33BTMKJS4XPN2ASKKGPWEGD7L,Artificial intelligence;Elections;Regulation,read from the text of the letter
+C37PIRGD2GKMNSAK7WNFAHC2L6CHKLXA,COVID-19;Oversight,read from the text of the letter
+3TIDHIEZOEZIDT7HIUGAJ5RH275HUGPQ,Air Force;Ethics;Defense;Nuclear,read from the text of the letter
+NZU5QY5ESPNDCPPOIMDKFVBKA6ZXDUVS,Nuclear;Public lands;Oversight;Nuclear waste,read from the text of the letter
+PRNFUXMZGLZY2MCQYZ2IIWLYURXMOAG4,Prisons;Climate;Public health,read from the text of the letter
+QQEZPB5DLUYNCI6MNJMG3SUZ46TGMB6S,Defense;Oversight,read from the text of the letter
+EQGPEN6XSI2VCMBT6TMA7ERMHCFHQABO,Crypto;Banking;Oversight,read from the text of the letter
+ZNV655G5YWGSOVPKPX7QPSST5G75AOIK,Railroads;Regulation;Supply chains,read from the text of the letter
+ERNVZCQ3WPPTZPM2SEKVQXVIWRMBGSID,Public lands;Climate;Oversight,read from the text of the letter
+KLAIWXEP2XLEV3KGC2XWGUXNYHDPDCIO,Student loans;Higher education;Civil rights,read from the text of the letter
+7CAAYLCK3FPY4ASXKUKXIRN64FD52H7C,Aviation;Jobs;CARES Act,read from the text of the letter
+QS2FFQ2R3I3NNACAOPN6NGGHW2IBRLLB,Immigration;Afghanistan;Afghan refugees,read from the text of the letter
+EFTKPDXTSGFPMDJT5XJMKVKFFRY2WJCS,Water;Pollution;Fisheries,read from the text of the letter
+I6CEDEXGV4ISZUMQQB5FQS3RNYUTX7GQ,Cannabis;Controlled Substances Act;Courts,read from the text of the letter
+T4Q6E7UAJLE5AJ2ASQ5QK6SZPTJWZD33,Civil rights;Health care,read from the text of the letter
+XCSOAPZL53QKQ5DC65YGONJWQ2JJL7ZQ,Agriculture;COVID-19;CARES Act,read from the text of the letter
+4JRHQAT6YHEG3UZV3RWHAHPIQOLULSTZ,Crypto;Taxes;Regulation,read from the text of the letter
+ILHJKOOPARKQN5S2GUKZCAF6HWY3Q3DF,Abortion;Defense;Health care,read from the text of the letter
+JR2YG3NUOQUVWJ2WAQY3NFPQWAHVRNGE,Veterans;Oversight;Jobs,read from the text of the letter
+QIQCPEECGH43MEYGVKMTBK5GKLCZ3PKP,Ethics;Oversight,read from the text of the letter
+PUKI4BB62EGY6VQ2S7YFOU7ZRHJZQCIQ,Postal Service;Oversight;Elections,read from the text of the letter
+WYFDZTJUMWPPT7IDCXDC2IVKRKHLDIT2,Student loans;Veterans;Oversight,read from the text of the letter
+NYRYKVBUUQBC3FMJQK3ZV7DUFFYUM25P,Disasters;Transportation;Regulation,read from the text of the letter
+AHEZBGLMACHYL6AK7LV4V3VFO6YC4REJ,Disasters;Regulation,read from the text of the letter
+GYEJ4BNLHG73JNGCTXGCMWV2QIQQ6KNO,Broadband;Telecom;Regulation,read from the text of the letter
+OKHEXBUTBMYWGN2CW7K6MZSGR2PT4VIE,Medicare;COVID-19;Public health,read from the text of the letter
+USWOUIFFP2WX5VAC6M2JYDARH4VV5SJ5,Wildlife;Oceans;Regulation;Whales,read from the text of the letter
+XTX4AGKPGWIWLR6RLHUGKMBNHPJWY3ME,Broadband;Appropriations;Regulation,read from the text of the letter
+GW75GO4GOSDH4HBCJW7FR76GE6FL66IS,Pollution;Public lands;National parks,read from the text of the letter
+FBJ3AEDFSQY4KVDX22UHWTSC3ECHXHAX,Taxes;Unemployment;Oversight,read from the text of the letter
+PKDJTMZRJVICYFBAE4YVOEE5WQOX53PD,Small business;COVID-19;Oversight,read from the text of the letter
+FWNSDG5C5J2GGD6F66G4KJMGBAJZYDVH,Nuclear;Energy,read from the text of the letter
+YYTBWA3JELHSN6KOAY76PIMX3FSZDGND,Housing;Unhoused;Regulation,read from the text of the letter
+G4GQUCZ3HCLICBBFWF53BRYLOSULJ7HT,Trade;Agriculture;Jobs,read from the text of the letter
+HO2DTXGRMLIX6END3APPU2VIYF6YCRZB,Abortion;Prescription drugs;Regulation,read from the text of the letter
+X7Q543T7Q6I6PNWXGU5MGHRLYHG3J2UP,Banking;Investing;Oversight,read from the text of the letter
+6DYO42Q67WQ4XLBEIIY763BLQSAWAS5W,PFAS;Water;Defense;Pollution,read from the text of the letter
