@@ -14,7 +14,7 @@ N6VGZMQA3HMAFQOEBUL4TMRAKCBJRC73,2005-04-14,day,"the letterhead; was 2025-02-06 
 V72CYB3M462VKLBJ6WKIUH55PVUKSZIS,2015-03-24,day,the letterhead; was 2016-09-07 (captured-by); to Speaker Boehner (Speaker 2011-2015) and Minority Leader Pelosi; the 114th Congress had just begun
 7QW3R7B5CJAJWF5GYCPEOBPZG2OKHUBR,2013-02-11,day,"the letterhead; was 2014-09-12 (captured-by); to Speaker Boehner and Majority Leader Cantor, who held those posts together 2011-2014; the writer calls himself a new Member"
 PAGCPCCCSLZL5H7IHVZ3775LTMPYK5G3,2015-03-17,day,"the letterhead; was 2015-09-11 (captured-by); to Speaker Boehner, Chairman Upton and Ranking Member Pallone of Energy and Commerce, all in post in March 2015"
-SUZ4QX5EJ35IRQBUD3KPF7HXCIBFDDIV,2020-05-08,day,"the letterhead; was 2020-06-28 (captured-by); to Speaker Pelosi and Republican Leader McCarthy, drafting the next COVID-19 package"
+SUZ4QX5EJ35IRQBUD3KPF7HXCIBFDDIV,2020-06-25,day,the letterhead. The 8 May 2020 first recorded here is a footnote citation (an SBA Inspector General report) that the OCR hoisted above the letterhead; was 2020-06-28 (captured-by)
 Y3TIIPAIKFFU33KPGIHVAFWVWSYJJMBC,2020-08-10,day,the letterhead; was 2020-09-23 (captured-by); to Speaker Pelosi and Leader McCarthy during the stimulus negotiations
 YSDSOA7R27FQ2YKCEHQONHUIZXJCHFEZ,2020-06-01,day,the letterhead; was 2020-08-06 (captured-by)
 ZJA23ZHONX6BIY7QLSHJPDAOJ3UTCVL3,2020-07-28,day,the letterhead; was 2020-08-05 (captured-by)
@@ -135,3 +135,10 @@ B6CVMDTXVNQ6QVRIJLTLZC7QH2EDJN72,2021-07-15,day,the letterhead; was 2024-07-01 (
 BSZ3HNVCNMRCAZAWHKSCY6MRWANLOTLR,2022-06-06,day,the letterhead; was 2022-06-06 (day)
 GYX2EBDSCW5X5DZUDGMEHXVHMRTHSHJ3,2025-06-25,day,the letterhead; was 2025-07-23 (captured-by)
 XVINFTGC65FBNXCS2ADXMD5DLPGNX2FV,2021-07-16,day,the letterhead; was 2021-07-20 (captured-by)
+YVXXGHC44VEDXVHYS7NNZA4WEPKAO4EH,2022-02-10,day,the letterhead; was 2024-03-12 (captured-by)
+334DVLUNQQYKYMFZH7IP6MLSH4GFDQO7,2022-04-13,day,"the day is the letterhead's, the year is not. The letterhead reads 2021, but the letter calls Ketanji Brown Jackson Justice-designate (confirmed 7 April 2022, sworn in 30 June 2022) and refers to the September 2021 S.B. 8 order in the past tense; was 2022-05-06 (captured-by)"
+EFCROWUBFOQWDESUO2LRN46MFLW74ICL,2013-09-01,month,the letter carries no date. It refers in the past tense to Secretary Kerry before the Senate Foreign Relations Committee (3 September 2013) and expects the UN inspectors' report in the coming week (delivered 16 September 2013); was 2014-02-28 (captured-by)
+T77WZDVPYXGJPNFFCKT67CSIQILC6MFF,2022-09-01,month,"the letter carries no date. Its own footnote links to a file posted under /2022/09/, and it answers the Seafood Watch recommendation of 6 September 2022; was 2022-10-02 (captured-by)"
+3HEHHYU3RX6LHIZME6EE4HDH5FZTBO4K,2022-11-21,day,"the letterhead reads 2023 and cannot: the letter asks about FY2023 appropriations still being finalised, and addresses DeLauro as Chair of Appropriations, which she was only in the 117th Congress. The stored 2022-11-21 was right; recorded here so the decision survives a re-parse"
+MAS36JCXZMKFNTJAIKKUSMCNMJPNQJVB,2025-01-12,day,"the letterhead reads 2024 and cannot: the letter dates the fires to Tuesday 7 January, and 7 January fell on a Tuesday in 2025 and a Sunday in 2024. It also addresses Tom Cole as Chair of Appropriations, which he became in April 2024. The stored 2025-01-12 was right; recorded here so the decision survives a re-parse"
+N5PWAYOCGMT6M3BPIVQ3WQMPKG3ZOUKY,2023-01-02,day,"the letterhead reads 2022 and cannot: it is addressed to the Speaker-Designate and to Minority Leader Jeffries about the rules package of the 118th Congress, which convened 3 January 2023. The stored 2023-01-02 was right; recorded here so the decision survives a re-parse"
