@@ -4105,3 +4105,72 @@ Universal Health Services,1,merge,Universal Health Services,,organization,Compan
 Washington State Department of Health,1,merge,Washington State Department of Health,,organization,,#357: an organization named in a letter's address block; a government body,accepted
 White House COVID-19 Response Team,1,merge,White House COVID-19 Response Team,,organization,,#357: an organization named in a letter's address block; a government body,accepted
 Zions Bank,1,merge,Zions Bank,,organization,Companies,#357: an organization named in a letter's address block,accepted
+Acting Assistant Secretary Mullen,11,officeholder,Department of Defense,,,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
+Acting Chair Lee,10,officeholder,Securities and Exchange Commission,,,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
+Acting Director Chapman,8,officeholder,Department of Justice,,,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
+Acting Director Fairweather,7,officeholder,Office of Management and Budget,,,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
+Acting Director Richardson,7,officeholder,"Bureau of Alcohol, Tobacco, Firearms and Explosives",,,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
+Acting Inspector General O’Donnell,15,officeholder,Department of Defense,,,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
+Acting Secretary Cochran,15,officeholder,Department of Health and Human Services,,,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
+Administrator Batory,13,officeholder,Federal Railroad Administration,,,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
+Administrator Elliott,7,officeholder,Pipeline and Hazardous Materials Safety Administration,,,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
+Administrator Ferro,6,officeholder,Federal Motor Carrier Safety Administration,,,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
+Administrator Shea,11,merge,Animal and Plant Health Inspection Service,,organization,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
+Administrator Williams,10,officeholder,Federal Transit Administration,,,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
+Ambassador Blickenstorter,9,merge,Embassy of Switzerland,,organization,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
+Ambassador Haley,18,merge,United States Mission to the United Nations,,organization,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
+Ambassador Thomas-Greenfield,15,merge,United States Mission to the United Nations,,organization,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
+Ambassador Hillman,7,officeholder,Government of Canada,,,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
+Ambassador Michalak,6,officeholder,Department of State,,,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
+Ambassador Qin,7,merge,Embassy of the People's Republic of China,,organization,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
+Assistant Secretary Castillo,9,officeholder,Economic Development Administration,,,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
+Chair Hagerty and Ranking Member Reed,7,officeholder,Senate Committee on Appropriations,,,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
+Chair Sinema and Ranking Member Boozman,7,officeholder,Senate Committee on Appropriations,,,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
+Chair Yang,8,officeholder,Equal Employment Opportunity Commission,,,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
+Chairman Cox,10,officeholder,Securities and Exchange Commission,,,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
+Chairman Elliott,8,officeholder,Surface Transportation Board,,,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
+Chairman Hastings and Ranking Member Markey,6,officeholder,House Committee on Natural Resources,,,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
+Chairman Lieberman,6,officeholder,Senate Committee on Homeland Security and Governmental Affairs,,,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
+Chairman Okun,6,officeholder,United States International Trade Commission,,,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
+Chairman Williamson,9,officeholder,United States International Trade Commission,,,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
+Chairman Principi,12,merge,Defense Base Closure and Realignment Commission,,organization,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
+Chairman Reed and Ranking Member Murkowski,6,officeholder,Senate Committee on Appropriations,,,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
+Chairman Simmons,6,officeholder,House Committee on Homeland Security,,,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
+Colonel Pantano,6,officeholder,Army Corps of Engineers,,,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
+Commissioner McDonald,7,merge,New York State Department of Transportation,,organization,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
+Commissioner Redeker,10,merge,Connecticut Department of Transportation,,organization,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
+Deputy Administrator Shulman,7,officeholder,National Highway Traffic Safety Administration,,,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
+Deputy Director Chow,7,merge,Hawaii Department of Transportation,,organization,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
+Director Das,10,officeholder,Financial Crimes Enforcement Network,,,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
+Director Holmes,16,merge,Virginia Department of Housing and Community Development,,organization,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
+Director Sams,14,officeholder,National Park Service,,,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
+Director Zients,9,officeholder,Office of Management and Budget,,,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
+Governor Parnell,6,person,Sean Parnell,,person,Governors,"#349: Governor of Alaska, address blocks read",accepted
+Inspector General Fine,24,officeholder,Department of Justice,,,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
+Inspector General Hull,8,officeholder,United States Postal Service,,,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
+President Mountford,13,merge,Infant Nutrition Council of America,,organization,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
+President Reynolds,7,officeholder,California Public Utilities Commission,,,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
+Secretary Bose,6,officeholder,Federal Energy Regulatory Commission,,,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
+Secretary Mullin,12,officeholder,Department of Homeland Security,,,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
+Secretary Vilsack and Ambassador Froman,6,joint,Department of Agriculture;Office of the US Trade Representative,,,,#349: address blocks read on every letter,accepted
+Ambassador Kirk and Secretary Vilsack,6,joint,Office of the US Trade Representative;Department of Agriculture,,,,#349: address blocks read on every letter,accepted
+Secretary of State LaRose,7,merge,Ohio Secretary of State,,organization,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
+Under Secretary Lawrence,7,officeholder,Department of Veterans Affairs,,,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
+President Kabila and Prime Minister Matata Ponyo,9,merge,Government of the Democratic Republic of the Congo,,organization,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
+Director Thompson,19,split,Census Bureau@2014-2017;Federal Housing Finance Agency@2022-2025,,organization,,"#349: address blocks and dates read: John Thompson, Census 2014-2017; Sandra Thompson, FHFA 2022-2025",accepted
+Chairman Thompson,11,split,House Committee on Homeland Security@2009-2022;House Committee on Agriculture@2023-2026,,organization,,"#349: address blocks and dates read: Bennie Thompson, Homeland Security; G.T. Thompson, Agriculture 2023-",accepted
+Under Secretary Brown,12,split,Federal Emergency Management Agency@2003-2005;Department of Veterans Affairs@2019-2026,,organization,,"#349: address blocks and dates read: Michael Brown, FEMA 2003-2005; the VA's Under Secretary for Memorial Affairs",accepted
+Director Klein,11,split,Bureau of Ocean Energy Management@2023-2025;Department of Health and Human Services@2026-2026,,organization,,"#349: address blocks and dates read: Elizabeth Klein, BOEM; Roger Klein, AHRQ 2026",accepted
+Director Ratcliffe,14,split,Office of the Director of National Intelligence@2020-2021;Central Intelligence Agency@2025-2026,,organization,,"#349: address blocks and dates read: John Ratcliffe, DNI 2020-2021, CIA 2025-",accepted
+Chairman Crapo,8,split,"Senate Committee on Banking, Housing, and Urban Affairs@2018-2020;Senate Committee on Finance@2025-2026",,organization,,"#349: address blocks and dates read: Banking chair 2017-2021, Finance chair 2025-",accepted
+Chairman Hatch,12,split,Senate Committee on the Judiciary@2003-2004;Senate Committee on Finance@2015-2018,,organization,,"#349: address blocks and dates read: Judiciary chair 2003-2005, Finance chair 2015-2019",accepted
+Chairman Wicker,15,split,"Senate Committee on Commerce, Science, and Transportation@2019-2020;Senate Committee on Armed Services@2025-2026",,organization,,"#349: address blocks and dates read: Commerce chair 2019-2021, Armed Services chair 2025-",accepted
+Administrator Feinberg,11,split,Gulf Coast Claims Facility@2010-2011;Federal Railroad Administration@2016-2016,,organization,,"#349: address blocks and dates read: Kenneth Feinberg, Gulf Coast Claims Facility; Sarah Feinberg, FRA",accepted
+Ambassador Power,10,split,United States Mission to the United Nations@2013-2016;United States Agency for International Development@2021-2024,,organization,,"#349: address blocks and dates read: Samantha Power, UN ambassador 2013-2017, USAID 2021-2025",accepted
+Under Secretary Jacobs,7,split,National Oceanic and Atmospheric Administration@2020-2020;Department of Veterans Affairs@2024-2024;National Oceanic and Atmospheric Administration@2026-2026,,organization,,"#349: address blocks and dates read: Neil Jacobs, NOAA; the VA's Under Secretary for Benefits",accepted
+Director Hall,9,split,Fish and Wildlife Service@2007-2008;Congressional Budget Office@2015-2018,,organization,,"#349: address blocks and dates read: Dale Hall, FWS; Keith Hall, CBO",accepted
+Miller,7,split,House Committee on Education and the Workforce@2007-2008;House Committee on Veterans' Affairs@2014-2014,,organization,,"#349: address blocks and dates read: George Miller, Education and Labor chair; Jeff Miller, Veterans' Affairs chair",accepted
+Chairman Scott,8,split,House Committee on the Judiciary@2007-2010;House Committee on Education and the Workforce@2019-2022,,organization,,"#349: address blocks and dates read: Bobby Scott, Judiciary subcommittee chair, then Education and Labor chair",accepted
+Representatives Gingrey and Green,12,joint,G000550;G000410,,,,#349: one letter to each of Phil Gingrey and Gene Green,accepted
+Congressman Levin,9,member,L000263,,,,"#349: Sander M. Levin, address block read",accepted
+California Department of Motor Vehicles,2,merge,California Department of Motor Vehicles,,organization,,#357: a state agency named in an address block,accepted
