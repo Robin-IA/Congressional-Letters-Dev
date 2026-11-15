@@ -13,7 +13,11 @@
 #      passed and any letter, text, OCR, thumbnail or vocabulary file changed
 #      since the last publish, rebuilds every explorer
 #      (build_congress.py --copy-thumbs), the Download data CSVs, the
-#      vocabulary and the home page, and runs publish_explorers.sh.
+#      vocabulary and the home page, writes the progress report
+#      (build/progress.py -> PROGRESS.md and progress.csv in the
+#      letters-from-congress-OCR checkout, from the explorers just built,
+#      so it describes what is about to go live), and runs
+#      publish_explorers.sh. A failed report does not stop a publish.
 #
 # The vocabulary is rebuilt because its counts come from the explorers just
 # built: new OCR can give a committee or caucus its first letter
@@ -99,6 +103,7 @@ while true; do
        && python3 build/export_csv.py >>"$LOG" 2>&1 \
        && python3 build/build_vocabulary.py >>"$LOG" 2>&1 \
        && python3 build/build_hub.py >>"$LOG" 2>&1 \
+       && { python3 build/progress.py >>"$LOG" 2>&1 || say "progress report FAILED; publishing anyway"; } \
        && bash build/publish_explorers.sh >>"$LOG" 2>&1; then
       remember thumbs-at-publish "$now"
       failed=$(grep -c "PUSH FAILED\|not pushing" <(tail -40 "$LOG"))
