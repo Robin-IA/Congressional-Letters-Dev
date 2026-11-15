@@ -744,3 +744,225 @@ Who Director General,4,merge,World Health Organization,,organization,,the Direct
 World Bank President,4,merge,World Bank,,organization,,its president,accepted
 Mexican Ambassador,4,merge,Embassy of Mexico,,organization,,the ambassador,accepted
 Branch Closures,4,reject,,,,,"not a recipient: ""questioning branch closures""",accepted
+Secretary Perdue,334,officeholder,Department of Agriculture,,,,"salutation (#97): Sonny Perdue, 2017-2021",accepted
+Secretary Vilsack,320,officeholder,Department of Agriculture,,,,"salutation (#97): Tom Vilsack, 2009-2017, 2021-2025",accepted
+Secretary Rollins,78,officeholder,Department of Agriculture,,,,"salutation (#97): Brooke Rollins, 2025-",accepted
+Secretary Blinken,295,officeholder,Department of State,,,,"salutation (#97): Antony Blinken, 2021-2025",accepted
+Secretary Pompeo,178,officeholder,Department of State,,,,"salutation (#97): Mike Pompeo, 2018-2021",accepted
+Secretary Kerry,108,officeholder,Department of State,,,,"salutation (#97): John Kerry, 2013-2017",accepted
+Secretary Rubio,109,officeholder,Department of State,,,,"salutation (#97): Marco Rubio, 2025-",accepted
+Secretary Clinton,66,officeholder,Department of State,,,,"salutation (#97): Hillary Clinton, 2009-2013",accepted
+Secretary Tillerson,62,officeholder,Department of State,,,,"salutation (#97): Rex Tillerson, 2017-2018",accepted
+Secretary Rice,46,officeholder,Department of State,,,,"salutation (#97): Condoleezza Rice, 2005-2009",accepted
+Secretary Powell,27,officeholder,Department of State,,,,"salutation (#97): Colin Powell, 2001-2005",accepted
+Secretary Buttigieg,286,officeholder,Department of Transportation,,,,"salutation (#97): Pete Buttigieg, 2021-2025",accepted
+Secretary Chao,218,officeholder,Department of Transportation,,,,"salutation (#97): Elaine Chao, 2017-2021",accepted
+Secretary Foxx,68,officeholder,Department of Transportation,,,,"salutation (#97): Anthony Foxx, 2013-2017",accepted
+Secretary LaHood,62,officeholder,Department of Transportation,,,,"salutation (#97): Ray LaHood, 2009-2013",accepted
+Secretary Duffy,27,officeholder,Department of Transportation,,,,"salutation (#97): Sean Duffy, 2025-",accepted
+Secretary Azar,283,officeholder,Department of Health and Human Services,,,,"salutation (#97): Alex Azar, 2018-2021",accepted
+Secretary Becerra,259,officeholder,Department of Health and Human Services,,,,"salutation (#97): Xavier Becerra, 2021-2025",accepted
+Secretary Kennedy,131,officeholder,Department of Health and Human Services,,,,"salutation (#97): Robert F. Kennedy Jr., 2025-",accepted
+Secretary Leavitt,128,officeholder,Department of Health and Human Services,,,,"salutation (#97): Mike Leavitt, 2005-2009",accepted
+Secretary Sebelius,66,officeholder,Department of Health and Human Services,,,,"salutation (#97): Kathleen Sebelius, 2009-2014",accepted
+Secretary Burwell,64,officeholder,Department of Health and Human Services,,,,"salutation (#97): Sylvia Burwell, 2014-2017",accepted
+Secretary Thompson,26,officeholder,Department of Health and Human Services,,,,"salutation (#97): Tommy Thompson, 2001-2005",accepted
+Secretary Mayorkas,209,officeholder,Department of Homeland Security,,,,"salutation (#97): Alejandro Mayorkas, 2021-2025",accepted
+Secretary Noem,116,officeholder,Department of Homeland Security,,,,"salutation (#97): Kristi Noem, 2025-",accepted
+Secretary Napolitano,64,officeholder,Department of Homeland Security,,,,"salutation (#97): Janet Napolitano, 2009-2013",accepted
+Secretary Johnson,53,officeholder,Department of Homeland Security,,,,"salutation (#97): Jeh Johnson, 2013-2017",accepted
+Secretary Kelly,48,officeholder,Department of Homeland Security,,,,"salutation (#97): John Kelly, 2017",accepted
+Acting Secretary Wolf,58,officeholder,Department of Homeland Security,,,,"salutation (#97): Chad Wolf, acting 2019-2021",accepted
+Secretary Yellen,149,officeholder,Department of the Treasury,,,,"salutation (#97): Janet Yellen, 2021-2025",accepted
+Secretary Mnuchin,116,officeholder,Department of the Treasury,,,,"salutation (#97): Steven Mnuchin, 2017-2021",accepted
+Secretary Bessent,44,officeholder,Department of the Treasury,,,,"salutation (#97): Scott Bessent, 2025-",accepted
+Secretary Geithner,34,officeholder,Department of the Treasury,,,,"salutation (#97): Timothy Geithner, 2009-2013",accepted
+Secretary Lew,30,officeholder,Department of the Treasury,,,,"salutation (#97): Jack Lew, 2013-2017",accepted
+Secretary Austin,143,officeholder,Department of Defense,,,,"salutation (#97): Lloyd Austin, 2021-2025",accepted
+Secretary Hegseth,95,officeholder,Department of Defense,,,,"salutation (#97): Pete Hegseth, 2025-",accepted
+Secretary Hagel,64,officeholder,Department of Defense,,,,"salutation (#97): Chuck Hagel, 2013-2015",accepted
+Secretary Carter,64,officeholder,Department of Defense,,,,"salutation (#97): Ash Carter, 2015-2017",accepted
+Secretary Esper,60,officeholder,Department of Defense,,,,"salutation (#97): Mark Esper, 2019-2020",accepted
+Secretary Gates,47,officeholder,Department of Defense,,,,"salutation (#97): Robert Gates, 2006-2011",accepted
+Secretary Panetta,44,officeholder,Department of Defense,,,,"salutation (#97): Leon Panetta, 2011-2013",accepted
+Secretary Mattis,43,officeholder,Department of Defense,,,,"salutation (#97): Jim Mattis, 2017-2019",accepted
+Secretary Rumsfeld,35,officeholder,Department of Defense,,,,"salutation (#97): Donald Rumsfeld, 2001-2006",accepted
+Secretary DeVos,147,officeholder,Department of Education,,,,"salutation (#97): Betsy DeVos, 2017-2021",accepted
+Secretary Cardona,127,officeholder,Department of Education,,,,"salutation (#97): Miguel Cardona, 2021-2025",accepted
+Secretary McMahon,69,officeholder,Department of Education,,,,"salutation (#97): Linda McMahon, 2025-",accepted
+Secretary Duncan,46,officeholder,Department of Education,,,,"salutation (#97): Arne Duncan, 2009-2016",accepted
+Secretary Granholm,116,officeholder,Department of Energy,,,,"salutation (#97): Jennifer Granholm, 2021-2025",accepted
+Secretary Moniz,48,officeholder,Department of Energy,,,,"salutation (#97): Ernest Moniz, 2013-2017",accepted
+Secretary Chu,45,officeholder,Department of Energy,,,,"salutation (#97): Steven Chu, 2009-2013",accepted
+Secretary Haaland,87,officeholder,Department of the Interior,,,,"salutation (#97): Deb Haaland, 2021-2025",accepted
+Secretary Salazar,69,officeholder,Department of the Interior,,,,"salutation (#97): Ken Salazar, 2009-2013",accepted
+Secretary Zinke,67,officeholder,Department of the Interior,,,,"salutation (#97): Ryan Zinke, 2017-2019",accepted
+Secretary Burgum,52,officeholder,Department of the Interior,,,,"salutation (#97): Doug Burgum, 2025-",accepted
+Secretary Jewell,45,officeholder,Department of the Interior,,,,"salutation (#97): Sally Jewell, 2013-2017",accepted
+Secretary Bernhardt,32,officeholder,Department of the Interior,,,,"salutation (#97): David Bernhardt, 2019-2021",accepted
+Secretary Raimondo,135,officeholder,Department of Commerce,,,,"salutation (#97): Gina Raimondo, 2021-2025",accepted
+Secretary Ross,99,officeholder,Department of Commerce,,,,"salutation (#97): Wilbur Ross, 2017-2021",accepted
+Secretary Pritzker,31,officeholder,Department of Commerce,,,,"salutation (#97): Penny Pritzker, 2013-2017",accepted
+Secretary Lutnick,32,officeholder,Department of Commerce,,,,"salutation (#97): Howard Lutnick, 2025-",accepted
+Secretary Solis,44,officeholder,Department of Labor,,,,"salutation (#97): Hilda Solis, 2009-2013",accepted
+Secretary Perez,40,officeholder,Department of Labor,,,,"salutation (#97): Tom Perez, 2013-2017",accepted
+Secretary Scalia,32,officeholder,Department of Labor,,,,"salutation (#97): Eugene Scalia, 2019-2021",accepted
+Secretary Chavez-DeRemer,38,officeholder,Department of Labor,,,,"salutation (#97): Lori Chavez-DeRemer, 2025-",accepted
+Secretary McDonough,96,officeholder,Department of Veterans Affairs,,,,"salutation (#97): Denis McDonough, 2021-2025",accepted
+Secretary Shinseki,65,officeholder,Department of Veterans Affairs,,,,"salutation (#97): Eric Shinseki, 2009-2014",accepted
+Secretary McDonald,78,officeholder,Department of Veterans Affairs,,,,"salutation (#97): Bob McDonald, 2014-2017",accepted
+Secretary Wilkie,48,officeholder,Department of Veterans Affairs,,,,"salutation (#97): Robert Wilkie, 2018-2021",accepted
+Secretary Nicholson,46,officeholder,Department of Veterans Affairs,,,,"salutation (#97): Jim Nicholson, 2005-2007",accepted
+Secretary Shulkin,30,officeholder,Department of Veterans Affairs,,,,"salutation (#97): David Shulkin, 2017-2018",accepted
+Secretary Collins,28,officeholder,Department of Veterans Affairs,,,,"salutation (#97): Doug Collins, 2025-",accepted
+Secretary Carson,74,officeholder,Department of Housing and Urban Development,,,,"salutation (#97): Ben Carson, 2017-2021",accepted
+Secretary Turner,28,officeholder,Department of Housing and Urban Development,,,,"salutation (#97): Scott Turner, 2025-",accepted
+Secretary Kendall,46,officeholder,Department of the Air Force,,,,"salutation (#97): Frank Kendall, 2021-2025",accepted
+Secretary Barrett,31,officeholder,Department of the Air Force,,,,"salutation (#97): Barbara Barrett, 2019-2021",accepted
+Secretary McHugh,33,officeholder,Department of the Army,,,,"salutation (#97): John McHugh, 2009-2015",accepted
+Administrator Regan,193,officeholder,Environmental Protection Agency,,,,"salutation (#97): Michael Regan, 2021-2024",accepted
+Administrator McCarthy,110,officeholder,Environmental Protection Agency,,,,"salutation (#97): Gina McCarthy, 2013-2017",accepted
+Administrator Zeldin,67,officeholder,Environmental Protection Agency,,,,"salutation (#97): Lee Zeldin, 2025-",accepted
+Administrator Jackson,55,officeholder,Environmental Protection Agency,,,,"salutation (#97): Lisa Jackson, 2009-2013",accepted
+Administrator Pruitt,55,officeholder,Environmental Protection Agency,,,,"salutation (#97): Scott Pruitt, 2017-2018",accepted
+Administrator Johnson,33,officeholder,Environmental Protection Agency,,,,"salutation (#97): Stephen Johnson, 2005-2009",accepted
+Administrator Brooks-LaSure,134,officeholder,Centers for Medicare and Medicaid Services,,,,"salutation (#97): Chiquita Brooks-LaSure, 2021-2025",accepted
+Administrator Verma,108,officeholder,Centers for Medicare and Medicaid Services,,,,"salutation (#97): Seema Verma, 2017-2021",accepted
+Administrator Tavenner,46,officeholder,Centers for Medicare and Medicaid Services,,,,"salutation (#97): Marilyn Tavenner, 2013-2015",accepted
+Acting Administrator Slavitt,41,officeholder,Centers for Medicare and Medicaid Services,,,,"salutation (#97): Andy Slavitt, acting 2015-2017",accepted
+Administrator Carranza,98,officeholder,Small Business Administration,,,,"salutation (#97): Jovita Carranza, 2020-2021",accepted
+Administrator Guzman,83,officeholder,Small Business Administration,,,,"salutation (#97): Isabella Guzman, 2021-2025",accepted
+Administrator Whitaker,70,officeholder,Federal Aviation Administration,,,,"salutation (#97): Michael Whitaker, 2023-2025",accepted
+Administrator Huerta,38,officeholder,Federal Aviation Administration,,,,"salutation (#97): Michael Huerta, 2013-2018",accepted
+Administrator Blakey,26,officeholder,Federal Aviation Administration,,,,"salutation (#97): Marion Blakey, 2002-2007",accepted
+Administrator Criswell,59,officeholder,Federal Emergency Management Agency,,,,"salutation (#97): Deanne Criswell, 2021-2025",accepted
+Administrator Gaynor,45,officeholder,Federal Emergency Management Agency,,,,"salutation (#97): Pete Gaynor, 2019-2021",accepted
+Administrator Fugate,34,officeholder,Federal Emergency Management Agency,,,,"salutation (#97): Craig Fugate, 2009-2017",accepted
+Attorney General Garland,181,officeholder,Department of Justice,,,,"salutation (#97): Merrick Garland, 2021-2025",accepted
+Attorney General Barr,101,officeholder,Department of Justice,,,,"salutation (#97): William Barr, 2019-2020",accepted
+Attorney General Holder,99,officeholder,Department of Justice,,,,"salutation (#97): Eric Holder, 2009-2015",accepted
+Attorney General Bondi,85,officeholder,Department of Justice,,,,"salutation (#97): Pam Bondi, 2025-",accepted
+Attorney General Sessions,74,officeholder,Department of Justice,,,,"salutation (#97): Jeff Sessions, 2017-2018",accepted
+Attorney General Lynch,57,officeholder,Department of Justice,,,,"salutation (#97): Loretta Lynch, 2015-2017",accepted
+Attorney General Ashcroft,36,officeholder,Department of Justice,,,,"salutation (#97): John Ashcroft, 2001-2005",accepted
+Mr. Attorney General,42,officeholder,Department of Justice,,,,salutation (#97): the Attorney General,accepted
+Chairman Pai,149,officeholder,Federal Communications Commission,,,,"salutation (#97): Ajit Pai, 2017-2021",accepted
+Chairman Wheeler,60,officeholder,Federal Communications Commission,,,,"salutation (#97): Tom Wheeler, 2013-2017",accepted
+Chairwoman Rosenworcel,37,officeholder,Federal Communications Commission,,,,"salutation (#97): Jessica Rosenworcel, 2021-2025",accepted
+Chair Gensler,65,officeholder,Securities and Exchange Commission,,,,"salutation (#97): Gary Gensler, 2021-2025",accepted
+Chair White,28,officeholder,Securities and Exchange Commission,,,,"salutation (#97): Mary Jo White, 2013-2017",accepted
+Chair Khan,45,officeholder,Federal Trade Commission,,,,"salutation (#97): Lina Khan, 2021-2025",accepted
+Chairman Simons,32,officeholder,Federal Trade Commission,,,,"salutation (#97): Joseph Simons, 2018-2021",accepted
+Chairman Bernanke,27,officeholder,Federal Reserve,,,,"salutation (#97): Ben Bernanke, 2006-2014",accepted
+Director Cordray,27,officeholder,Consumer Financial Protection Bureau,,,,"salutation (#97): Richard Cordray, 2012-2017",accepted
+Postmaster General DeJoy,75,officeholder,United States Postal Service,,,,"salutation (#97): Louis DeJoy, 2020-2025",accepted
+Mr. Dodaro,120,officeholder,Government Accountability Office,,,,"salutation (#97): Gene Dodaro, Comptroller General",accepted
+Comptroller General Dodaro,43,officeholder,Government Accountability Office,,,,salutation (#97): Gene Dodaro,accepted
+Director Wray,32,officeholder,Federal Bureau of Investigation,,,,"salutation (#97): Christopher Wray, 2017-2025",accepted
+Chief Tidwell,32,officeholder,Forest Service,,,,"salutation (#97): Tom Tidwell, 2009-2017",accepted
+Chief Moore,35,officeholder,Forest Service,,,,"salutation (#97): Randy Moore, 2021-2025",accepted
+Chief Christiansen,28,officeholder,Forest Service,,,,"salutation (#97): Vicki Christiansen, 2018-2021",accepted
+Ambassador Schwab,34,officeholder,Office of the US Trade Representative,,,,"salutation (#97): Susan Schwab, 2006-2009",accepted
+Ambassador Zoellick,30,officeholder,Office of the US Trade Representative,,,,"salutation (#97): Robert Zoellick, 2001-2005",accepted
+Dr. von Eschenbach,47,officeholder,Food and Drug Administration,,,,"salutation (#97): Andrew von Eschenbach, 2005-2009",accepted
+Commissioner Hamburg,33,officeholder,Food and Drug Administration,,,,"salutation (#97): Margaret Hamburg, 2009-2015",accepted
+Mr. President,2609,merge,The President,,,,salutation (#97): the President,accepted
+President Bush,119,merge,The President,,,,salutation (#97): George W. Bush,accepted
+Mr. Vice President,28,merge,The Vice President,,,,salutation (#97): the Vice President,accepted
+Vice President Pence,75,merge,The Vice President,,,,"salutation (#97): Mike Pence, 2017-2021",accepted
+Mr. Secretary-General,53,merge,United Nations,,,,salutation (#97): the UN Secretary-General,accepted
+Leader McConnell,257,merge,Congressional leadership,,,,salutation (#97),accepted
+Majority Leader McConnell,234,merge,Congressional leadership,,,,salutation (#97),accepted
+Speaker Pelosi and Leader McCarthy,203,merge,Congressional leadership,,,,salutation (#97),accepted
+Speaker Pelosi and Minority Leader McCarthy,152,merge,Congressional leadership,,,,salutation (#97),accepted
+Majority Leader Schumer,124,merge,Congressional leadership,,,,salutation (#97),accepted
+Leader McConnell and Leader Schumer,116,merge,Congressional leadership,,,,salutation (#97),accepted
+Majority Leader McConnell and Minority Leader Schumer,114,merge,Congressional leadership,,,,salutation (#97),accepted
+Speaker Boehner and Leader Pelosi,68,merge,Congressional leadership,,,,salutation (#97),accepted
+Majority Leader Schumer and Minority Leader McConnell,66,merge,Congressional leadership,,,,salutation (#97),accepted
+Majority Leader Reid,65,merge,Congressional leadership,,,,salutation (#97),accepted
+Speaker Pelosi and Majority Leader Hoyer,60,merge,Congressional leadership,,,,salutation (#97),accepted
+Speaker Boehner and Minority Leader Pelosi,38,merge,Congressional leadership,,,,salutation (#97),accepted
+Leader Schumer and Leader McConnell,34,merge,Congressional leadership,,,,salutation (#97),accepted
+Speaker Hastert,33,merge,Congressional leadership,,,,salutation (#97),accepted
+Majority Leader Reid and Minority Leader McConnell,32,merge,Congressional leadership,,,,salutation (#97),accepted
+Speaker Pelosi and Leader Hoyer,32,merge,Congressional leadership,,,,salutation (#97),accepted
+Speaker Pelosi and Leader Schumer,42,merge,Congressional leadership,,,,salutation (#97),accepted
+Speaker Ryan and Leader Pelosi,29,merge,Congressional leadership,,,,salutation (#97),accepted
+Chairman Cole and Ranking Member DeLauro,2803,merge,House Committee on Appropriations,,,,salutation (#97),accepted
+Chair DeLauro and Ranking Member Granger,1709,merge,House Committee on Appropriations,,,,salutation (#97),accepted
+Chairwoman Granger and Ranking Member DeLauro,1160,merge,House Committee on Appropriations,,,,salutation (#97),accepted
+Chairwoman DeLauro and Ranking Member Granger,331,merge,House Committee on Appropriations,,,,salutation (#97),accepted
+Chair Cole and Ranking Member DeLauro,229,merge,House Committee on Appropriations,,,,salutation (#97),accepted
+Chair Granger and Ranking Member DeLauro,110,merge,House Committee on Appropriations,,,,salutation (#97),accepted
+Chairman Regula and Ranking Member Obey,122,merge,House Committee on Appropriations,,,,salutation (#97),accepted
+Chairwoman DeLauro and Ranking Member Cole,63,merge,House Committee on Appropriations,,,,salutation (#97),accepted
+Chairman Price and Ranking Member Diaz-Balart,63,merge,House Committee on Appropriations,,,,salutation (#97),accepted
+Chairman Cole and Ranking Member Quigley,56,merge,House Committee on Appropriations,,,,salutation (#97),accepted
+Chairman Calvert and Ranking Member McCollum,50,merge,House Committee on Appropriations,,,,salutation (#97),accepted
+Chairman Simpson and Ranking Member Kaptur,37,merge,House Committee on Appropriations,,,,salutation (#97),accepted
+Chairman Womack and Ranking Member Quigley,41,merge,House Committee on Appropriations,,,,salutation (#97),accepted
+Chairman Aderholt and Ranking Member DeLauro,36,merge,House Committee on Appropriations,,,,salutation (#97),accepted
+Chairwoman Kaptur and Ranking Member Simpson,29,merge,House Committee on Appropriations,,,,salutation (#97),accepted
+Chairman Simpson and Ranking Member Pingree,32,merge,House Committee on Appropriations,,,,salutation (#97),accepted
+Chairman Blunt and Ranking Member Murray,119,merge,Senate Committee on Appropriations,,,,salutation (#97),accepted
+Chair Murray and Ranking Member Blunt,40,merge,Senate Committee on Appropriations,,,,salutation (#97),accepted
+Chairman Murkowski and Ranking Member Udall,38,merge,Senate Committee on Appropriations,,,,salutation (#97),accepted
+Chairman Shelby and Vice Chairman Leahy,31,merge,Senate Committee on Appropriations,,,,salutation (#97),accepted
+Chairman Leahy and Vice Chairman Shelby,27,merge,Senate Committee on Appropriations,,,,salutation (#97),accepted
+Chair Murray and Vice Chair Collins,33,merge,Senate Committee on Appropriations,,,,salutation (#97),accepted
+Chair Baldwin and Ranking Member Capito,33,merge,Senate Committee on Appropriations,,,,salutation (#97),accepted
+Chair Shaheen and Ranking Member Moran,29,merge,Senate Committee on Appropriations,,,,salutation (#97),accepted
+Chairman DeFazio and Ranking Member Graves,183,merge,House Committee on Transportation and Infrastructure,,,,salutation (#97),accepted
+Chair DeFazio and Ranking Member Graves,134,merge,House Committee on Transportation and Infrastructure,,,,salutation (#97),accepted
+Chairman Oberstar and Ranking Member Mica,27,merge,House Committee on Transportation and Infrastructure,,,,salutation (#97),accepted
+Chairman Alexander and Ranking Member Murray,49,merge,"Senate Committee on Health, Education, Labor, and Pensions",,,,salutation (#97),accepted
+Congressman Waxman,152,member,W000215,,,,salutation (#97): a letter to this member,accepted
+Mr. Waxman,146,member,W000215,,,,salutation (#97): a letter to this member,accepted
+Representative Waxman,109,member,W000215,,,,salutation (#97): a letter to this member,accepted
+Chairman Waxman,43,member,W000215,,,,salutation (#97): a letter to this member,accepted
+Senator Daines,74,member,D000618,,,,salutation (#97): a letter to this member,accepted
+Senator Bennet,83,member,B001267,,,,salutation (#97): a letter to this member,accepted
+Chairman Leahy,80,member,L000174,,,,salutation (#97): a letter to this member,accepted
+Senator Wyden,61,member,W000779,,,,salutation (#97): a letter to this member,accepted
+Congressman Dreier,61,member,D000492,,,,salutation (#97): a letter to this member,accepted
+Chairman Burton,55,member,B001149,,,,salutation (#97): a letter to this member,accepted
+Chairman Inhofe,54,member,I000024,,,,salutation (#97): a letter to this member,accepted
+Congressman LoBiondo,47,member,L000554,,,,salutation (#97): a letter to this member,accepted
+Chairman Shelby,43,member,S000320,,,,salutation (#97): a letter to this member,accepted
+Senator Cassidy,41,member,C001075,,,,salutation (#97): a letter to this member,accepted
+Representative Rouzer,40,member,R000603,,,,salutation (#97): a letter to this member,accepted
+Congressman Rouzer,28,member,R000603,,,,salutation (#97): a letter to this member,accepted
+Chairman Goodlatte,38,member,G000289,,,,salutation (#97): a letter to this member,accepted
+Chairman Reed,36,member,R000122,,,,salutation (#97): a letter to this member,accepted
+Congressman Barr,31,member,B001282,,,,salutation (#97): a letter to this member,accepted
+Senator McCain,30,member,M000303,,,,salutation (#97): a letter to this member,accepted
+Congresswoman Baldwin,30,member,B001230,,,,salutation (#97): a letter to this member,accepted
+Chairman Cochran,29,member,C000567,,,,salutation (#97): a letter to this member,accepted
+Chairman Grassley,28,member,G000386,,,,salutation (#97): a letter to this member,accepted
+Senator McConnell,34,member,M000355,,,,salutation (#97): a letter to this member,accepted
+Congressman Guest,33,member,G000591,,,,salutation (#97): a letter to this member,accepted
+Chair Murray,31,member,M001111,,,,salutation (#97): a letter to this member,accepted
+Secretary Mnuchin and Administrator Carranza,115,joint,Department of the Treasury;Small Business Administration,,,,salutation (#97),accepted
+Secretary Azar and Administrator Verma,106,joint,Department of Health and Human Services;Centers for Medicare and Medicaid Services,,,,salutation (#97),accepted
+Secretary Mayorkas and Secretary Blinken,33,joint,Department of Homeland Security;Department of State,,,,salutation (#97),accepted
+Secretary Blinken and Secretary Mayorkas,28,joint,Department of Homeland Security;Department of State,,,,salutation (#97),accepted
+Secretary Yellen and Commissioner Rettig,29,joint,Department of the Treasury;Internal Revenue Service,,,,salutation (#97),accepted
+Secretary Mnuchin and Commissioner Rettig,27,joint,Department of the Treasury;Internal Revenue Service,,,,salutation (#97),accepted
+Secretary Noem and Acting Director Lyons,34,joint,Department of Homeland Security;Immigration and Customs Enforcement,,,,salutation (#97),accepted
+Mr. Zuckerberg,140,merge,Meta (Facebook),,,,salutation (#97): its chief executive,accepted
+Mr. Pichai,78,merge,Google,,,,salutation (#97): its chief executive,accepted
+Mr. Bezos,56,merge,Amazon,,,,salutation (#97): its chief executive,accepted
+Mr. Jassy,56,merge,Amazon,,,,salutation (#97): its chief executive,accepted
+Governor DeSantis,80,person,Ron DeSantis,,person,Governors,salutation (#97),accepted
+Governor Hochul,60,person,Kathy Hochul,,person,Governors,salutation (#97),accepted
+Governor Abbott,38,person,Greg Abbott,,person,Governors,salutation (#97),accepted
+Governor Schwarzenegger,40,person,Arnold Schwarzenegger,,person,Governors,salutation (#97),accepted
+Governor Rauner,29,person,Bruce Rauner,,person,Governors,salutation (#97),accepted
+Governor Wolf,30,person,Tom Wolf,,person,Governors,salutation (#97),accepted
+Mr. Musk,39,person,Elon Musk,,person,,salutation (#97),accepted
+Chairmen and Ranking Members,74,reject,,,,,"addressed to several committees' leaders at once, no one named",accepted
+Member of Congress,100,reject,,,,,a greeting,accepted
+Commissioners,27,reject,,,,,a greeting,accepted
+Mr. Ambassador,40,reject,,,,,"a greeting, no one named",accepted
+Madame Secretary,27,reject,,,,,"a greeting, no one named",accepted
