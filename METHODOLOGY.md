@@ -614,6 +614,58 @@ and states 2 August 2016 — nine years out.
 Where a letter states no date, the order above falls through as before, and
 the source is recorded so a reader can tell which was used.
 
+#### Reading a letterhead is not the same as reading the first date
+
+Source 1 is "the date stated on the letter", and the first pass took that to
+mean the first date in the text. That is right about four letters in five and
+wrong in ways a reader notices and a rule does not. `build/audit_dates.py`
+checks every hand-written date against the whole letter and reports the
+disagreements; run it after any batch of reading.
+
+It looks for three things.
+
+**A letterhead sits before the salutation.** Dates after "Dear …" are dates
+the letter cites, not its own. One letter on the SBA Affiliation Rule was
+recorded as 8 May 2020 because the OCR hoisted a footnote — a citation of an
+Inspector General report — above the letterhead. The letter is dated 25 June
+2020. Finding the salutation matters as much as finding the date: several
+letters open "Leader Schumer:" or "Speaker Pelosi," with no "Dear" at all,
+and one opens with a Re: line and "To Whom It May Concern". Miss the
+salutation and the whole body reads as competing letterheads.
+
+**The letterhead can be wrong.** Three letters state a year that cannot be
+right, each caught by something else in the letter:
+
+- one commends the confirmation of "Associate Justice-designate Ketanji Brown
+  Jackson" and refers to the September 2021 S.B. 8 order in the past, under a
+  letterhead reading 13 April **2021** — it is 2022;
+- one asks about FY2023 appropriations "as you continue working to finalize"
+  them and addresses DeLauro as Chair of Appropriations, which she was only in
+  the 117th Congress, under a letterhead reading November **2023** — it is 2022;
+- one is addressed to the Speaker-Designate about the rules package of the
+  118th Congress under a letterhead reading 2 January **2022** — it is 2023.
+
+A fourth was settled by the calendar: a letter headed 12 January 2024 says the
+fires began "Tuesday, January 7th", and 7 January fell on a Tuesday in 2025
+and a Sunday in 2024. The audit makes that check itself.
+
+**Some letters carry no date at all**, and the capture is a poor substitute.
+Two were dated to the month from their own contents: a Dear Colleague on the
+Syrian chemical weapons attack refers in the past to Secretary Kerry before
+Senate Foreign Relations (3 September 2013) and expects the UN inspectors'
+report "in the coming week" (16 September 2013), so September 2013 rather
+than the February 2014 capture; a letter to retailers about Maine lobster
+footnotes a file posted under `/2022/09/` and answers a recommendation of
+6 September 2022, so September 2022 rather than the October capture. Both are
+written with `month` precision, which the site already understands.
+
+A letter whose date question has been settled this way is marked
+`date_audited` in `vocabulary/letters-reviewed.csv`, and the audit counts it
+without reprinting it; clearing the column makes it speak again. Letters with
+no OCR text are listed by digest rather than skipped, because a check that
+reports the same number whether or not it could read the input is worse than
+no check — see #168.
+
 Because the renderer adds PDF dates after the harvest, attributing at build
 time means a letter first credited by capture is re-credited by its own date
 as soon as one is known.
