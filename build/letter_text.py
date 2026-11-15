@@ -222,6 +222,79 @@ def letterhead_by_digest() -> dict[str, str]:
     return out
 
 
+
+# Recipients from the salutation (#97) -----------------------------------------
+# A file name names its recipient on 44% of letters; the salutation names one
+# on nine in ten that have text. Used only where the file name gave none
+# (build_site.py). Checked 15 November 2026 on 30 random letters with no
+# recipient: 27 named one and every one was the letter's addressee; one was
+# cut at a comma ("Dear Chairman Cole, Ranking Member DeLauro"); the other 3
+# were greetings ("Dear Sirs", "Dear Mr. Secretary") and are left blank,
+# because they name no one. A letter written TO a member ("Dear
+# Representative Young") is recorded as such (#175).
+GENERIC = {"colleague", "colleagues", "friend", "friends", "sir", "sirs", "madam", "sir or madam",
+           "madam or sir", "sir/madam", "sir and madam", "representative", "senator", "member",
+           "members", "mr. secretary", "madam secretary", "mr. chairman", "madam chair",
+           "madam chairwoman", "mr. chair", "chairman", "chair", "chairwoman", "secretary",
+           "administrator", "commissioner", "director", "mr. speaker", "madam speaker",
+           "ranking member", "leader", "governor", "mayor", "ambassador", "general",
+           "attorney general", "judge", "colleague and friend", "all", "team", "reader",
+           "editor", "supporter", "neighbor", "constituent", "fellow", "fellow american",
+           "fellow americans", "mr", "mrs", "ms", "dr", "senators", "representatives",
+           "chairmen", "chairs", "conferees", "leaders", "members of congress"}
+SALUTATION = re.compile(r"\bdear\b\s*([^:,\n;]{2,80})[:,;]", re.I)
+
+
+def salutation_recipient(text: str) -> str:
+    """The recipient a letter's salutation names, or ''."""
+    m = SALUTATION.search(text[:3000])
+    if not m:
+        return ""
+    v = re.sub(r"\s+", " ", m.group(1)).strip(" .-")
+    v = re.sub(r"^(?:the\s+)?(?:honorable|hon\.?)\s+", "", v, flags=re.I)
+    if not re.match(r"[A-Za-z]", v) or len(v) > 70 or v.lower().rstrip(".") in GENERIC:
+        return ""
+    if re.search(r"\d|@|http|www\.", v):
+        return ""
+    return v
+
+
+SALUTATIONS = ROOT / "data" / "letter-salutations.json"
+SALUTATION_RULES = "2026-11-15a"
+
+
+def salutation_by_digest() -> dict[str, str]:
+    """digest -> the recipient the letter's salutation names; cached like the letterheads."""
+    stamp = [SALUTATION_RULES] + _stamp()[1:]
+    if SALUTATIONS.exists():
+        try:
+            cached = json.loads(SALUTATIONS.read_text(encoding="utf-8"))
+            if cached.get("stamp") == stamp:
+                return cached["recipients"]
+        except (ValueError, KeyError):
+            pass
+    out: dict[str, str] = {}
+    for path in committees.TEXTS:
+        if not path.exists():
+            continue
+        with path.open(encoding="utf-8-sig") as fh:
+            for line in fh:
+                try:
+                    r = json.loads(line)
+                except ValueError:
+                    continue
+                d, t = r.get("digest"), r.get("text") or ""
+                if not d or d in out or len(t) < 200:
+                    continue
+                who = salutation_recipient(t)
+                if who:
+                    out[d] = who
+    tmp = SALUTATIONS.with_suffix(".tmp")
+    tmp.write_text(json.dumps({"stamp": stamp, "recipients": out}), encoding="utf-8")
+    tmp.replace(SALUTATIONS)
+    return out
+
+
 def by_digest() -> dict[str, list[str]]:
     """digest -> [topics] for every letter whose text names one."""
     if CACHE.exists():
