@@ -614,6 +614,34 @@ and states 2 August 2016 — nine years out.
 Where a letter states no date, the order above falls through as before, and
 the source is recorded so a reader can tell which was used.
 
+#### One posting of a letter can date another
+
+The digest is a hash of the PDF, so two records sharing one are the same
+document posted at two addresses. The same document has one date — but only
+one member may have put that date in the file name, and the postings at the
+addresses that did not are dated by their capture, which bounds the date from
+above rather than being it.
+
+**3,913 postings of 2,216 letters are dated worse than a byte-identical
+sibling.** 1,495 of them sit more than a year out and the worst by 7,980 days.
+`dates_from_siblings()` in `build_site.py` lets a posting take the better
+date, between the letter's own text and the file name in the order above.
+
+The rule is deliberately timid, because a file-name date can itself be wrong —
+#126 counts 768 contradicted by their own letterheads:
+
+- a posting is promoted only to a **strictly better precision**, never
+  sideways;
+- and only when **every** posting at that better precision agrees on the date.
+  **6,913 letters have day-precision siblings that contradict each other**, and
+  not one of them is touched: disagreement between two file names is a
+  question for a reader, not something to settle by picking.
+
+Measured over the whole corpus, this moves 3,898 postings (the other 15 are on
+letters whose date has since been read from the text, which outranks it):
+`captured-by` falls from 21,158 to 18,639, and `day` rises from 27,709 to
+29,931.
+
 #### Reading a letterhead is not the same as reading the first date
 
 Source 1 is "the date stated on the letter", and the first pass took that to
