@@ -2019,3 +2019,134 @@ Secretary Noem and Attorney General Bondi,3,joint,Department of Homeland Securit
 Representative Lawler,3,member,L000599,,,,matched by rule (match_recipients.py): rule 5: the one House member named lawler,accepted
 Senator Moreno,3,member,M001242,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named moreno,accepted
 Secretary Bessent and Ambassador Greer,3,joint,Department of the Treasury;Office of the US Trade Representative,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary bessent; rule 1: ambassador greer,accepted
+Administrator Fernandez,19,officeholder,Department of Commerce,,,,"salutation (#97): John Fernandez, EDA 2009-2011",accepted
+Chairman Oberman,15,officeholder,Surface Transportation Board,,,,"salutation (#97): Martin Oberman, 2019-2023",accepted
+Chairman Johanson,12,officeholder,United States International Trade Commission,,,,"salutation (#97): David Johanson, 2016-2018",accepted
+Vice Chair Barr,11,officeholder,Federal Reserve,,,,"salutation (#97): Michael Barr, Vice Chair for Supervision 2022-2025",accepted
+Acting Director English and Director Mulvaney,10,officeholder,Consumer Financial Protection Bureau,,,,salutation (#97): the 2017 dispute over the CFPB's acting director,accepted
+Administrator Green,10,officeholder,United States Agency for International Development,,,,"salutation (#97): Mark Green, 2017-2020",accepted
+Acting Director Memoli,10,officeholder,National Institutes of Health,,,,"salutation (#97): Matthew Memoli, acting 2025",accepted
+Director Kupor,10,officeholder,Office of Personnel Management,,,,"salutation (#97): Scott Kupor, 2025-",accepted
+Dr. Runge,9,officeholder,National Highway Traffic Safety Administration,,,,"salutation (#97): Jeffrey Runge, 2001-2005",accepted
+Chairman Battista,9,officeholder,National Labor Relations Board,,,,"salutation (#97): Robert Battista, 2002-2007",accepted
+UC Board of Regents,9,merge,University of California,,organization,,salutation (#97): the Regents,accepted
+President Napolitano,8,merge,University of California,,organization,,"salutation (#97): Janet Napolitano, President 2013-2020",accepted
+Secretary Harvey,9,officeholder,Department of the Army,,,,"salutation (#97): Francis Harvey, 2004-2007",accepted
+Administrator Murphy,9,officeholder,General Services Administration,,,,"salutation (#97): Emily Murphy, 2017-2021",accepted
+Secretary Bunch,9,officeholder,Smithsonian Institution,,organization,,"salutation (#97): Lonnie Bunch, Secretary 2019-",accepted
+Chairman Glick,9,officeholder,Federal Energy Regulatory Commission,,,,"salutation (#97): Richard Glick, 2021-2023",accepted
+Assistant Secretary Davidson,9,officeholder,Department of Commerce,,,,"salutation (#97): Alan Davidson, NTIA 2022-2025",accepted
+Commissioner Crawford,8,officeholder,Food and Drug Administration,,,,"salutation (#97): Lester Crawford, 2004-2005",accepted
+President-Elect Obama,8,merge,The President,,,,salutation (#97): as President-elect,accepted
+General Grass,8,officeholder,National Guard Bureau,,,,"salutation (#97): Gen. Frank Grass, 2012-2016",accepted
+Dr. Chan,8,merge,World Health Organization,,,,"salutation (#97): Margaret Chan, Director-General 2007-2017",accepted
+Chairman Kearns,8,officeholder,United States International Trade Commission,,,,"salutation (#97): Jason Kearns, 2020-2022",accepted
+Administrator Ducheneaux,8,officeholder,Department of Agriculture,,,,"salutation (#97): Zach Ducheneaux, FSA 2021-2025",accepted
+Judge Mauskopf,8,officeholder,Administrative Office of the United States Courts,,organization,,"salutation (#97): Roslynn Mauskopf, Director 2021-",accepted
+Director Deese,8,officeholder,National Economic Council,,,,"salutation (#97): Brian Deese, 2021-2023",accepted
+Director V ought,8,officeholder,Office of Management and Budget,,,,salutation (#97): Russell Vought (OCR spacing),accepted
+Chairman Ferguson,8,officeholder,Federal Trade Commission,,,,"salutation (#97): Andrew Ferguson, 2025-",accepted
+Acting Director Ezell,8,officeholder,Office of Personnel Management,,,,"salutation (#97): Charles Ezell, acting 2025",accepted
+Acting Attorney General Blanche,8,officeholder,Department of Justice,,,,"salutation (#97): Todd Blanche, 2025",accepted
+General Reno,7,officeholder,Department of Justice,,,,"salutation (#97): Attorney General Janet Reno, 1993-2001",accepted
+Comptroller General Walker,7,officeholder,Government Accountability Office,,,,"salutation (#97): David Walker, 1998-2008",accepted
+Secretary Gutierrez,7,officeholder,Department of Commerce,,,,"salutation (#97): Carlos Gutierrez, 2005-2009",accepted
+Secretary Spellings,7,officeholder,Department of Education,,,,"salutation (#97): Margaret Spellings, 2005-2009",accepted
+Director Mayorkas,7,officeholder,Citizenship and Immigration Services,,,,"salutation (#97): Alejandro Mayorkas, 2009-2013",accepted
+Admiral Papp,7,officeholder,United States Coast Guard,,,,"salutation (#97): Adm. Robert Papp, Commandant 2010-2014",accepted
+Admiral Schultz,7,officeholder,United States Coast Guard,,,,"salutation (#97): Adm. Karl Schultz, Commandant 2018-2022",accepted
+Acting Secretary Gibson,7,officeholder,Department of Veterans Affairs,,,,"salutation (#97): Sloan Gibson, acting 2014",accepted
+Administrator Contreras-Sweet,7,officeholder,Small Business Administration,,,,"salutation (#97): Maria Contreras-Sweet, 2014-2017",accepted
+Chairman Bay,7,officeholder,Federal Energy Regulatory Commission,,,,"salutation (#97): Norman Bay, 2015-2017",accepted
+Commissioner McAleenan,7,officeholder,Customs and Border Protection,,,,"salutation (#97): Kevin McAleenan, 2018-2019",accepted
+Acting Commissioner Morgan,7,officeholder,Customs and Border Protection,,,,"salutation (#97): Mark Morgan, acting 2019-2021",accepted
+Secretary Brouillette,7,officeholder,Department of Energy,,,,"salutation (#97): Dan Brouillette, 2019-2021",accepted
+Acting Chair Slaughter,7,officeholder,Federal Trade Commission,,,,"salutation (#97): Rebecca Slaughter, acting 2021",accepted
+Acting Director Rowe,7,officeholder,United States Secret Service,,,,"salutation (#97): Ronald Rowe, acting 2024-2025",accepted
+Acting Administrator Ehikian,7,officeholder,General Services Administration,,,,"salutation (#97): Stephen Ehikian, acting 2025",accepted
+Secretary Driscoll,7,officeholder,Department of the Army,,,,"salutation (#97): Daniel Driscoll, 2025-",accepted
+Secretary Bodman,6,officeholder,Department of Energy,,,,"salutation (#97): Samuel Bodman, 2005-2009",accepted
+Director Paulison,6,officeholder,Federal Emergency Management Agency,,,,"salutation (#97): David Paulison, 2005-2009",accepted
+Director DeMarco,6,officeholder,Federal Housing Finance Agency,,,,"salutation (#97): Edward DeMarco, acting 2009-2014",accepted
+Administrator Szabo,6,officeholder,Federal Railroad Administration,,,,"salutation (#97): Joseph Szabo, 2009-2015",accepted
+Chairman Neumayr,7,officeholder,Council on Environmental Quality,,,,"salutation (#97): Mary Neumayr, 2019-2021",accepted
+Majority Leader Cantor,7,merge,Congressional leadership,,,,"salutation (#97): Eric Cantor, 2011-2014",accepted
+Deputy Attorney General,7,officeholder,Department of Justice,,,,salutation (#97): the Deputy Attorney General,accepted
+Members of the Financial Stability Oversight Council,7,merge,Financial Stability Oversight Council,,,,salutation (#97): its members,accepted
+Senate Conferees,8,merge,Conference committees,,,,salutation (#97): conferees,accepted
+Secretary Blinken and Ambassador Thomas-Greenfield,7,merge,Department of State,,,,salutation (#97): Blinken and the UN ambassador,accepted
+Chairman Womack and Ranking Member Clyburn,8,merge,House Committee on Appropriations,,,,salutation (#97): the committee's leaders,accepted
+Chairman Obey and Ranking Member Walsh,7,merge,House Committee on Appropriations,,,,salutation (#97): the committee's leaders,accepted
+Chairman Dicks and Ranking Member Simpson,7,merge,House Committee on Appropriations,,,,salutation (#97): the committee's leaders,accepted
+Chairman Dent and Ranking Member Bishop,7,merge,House Committee on Appropriations,,,,salutation (#97): the committee's leaders,accepted
+Chairman Culberson and Ranking Member Honda,7,merge,House Committee on Appropriations,,,,salutation (#97): the committee's leaders,accepted
+Chairwoman Granger and Ranking Member Visclosky,7,merge,House Committee on Appropriations,,,,salutation (#97): the committee's leaders,accepted
+Chairman Quigley and Ranking Member Graves,7,merge,House Committee on Appropriations,,,,salutation (#97): the committee's leaders,accepted
+Chairman Diaz-Balart and Ranking Member Lee,7,merge,House Committee on Appropriations,,,,salutation (#97): the committee's leaders,accepted
+Chairman Rogers and Ranking Member Meng,7,merge,House Committee on Appropriations,,,,salutation (#97): the committee's leaders,accepted
+Chairman Olver and Ranking Member Latham,6,merge,House Committee on Appropriations,,,,salutation (#97): the committee's leaders,accepted
+Chairman Wolf,10,merge,House Committee on Appropriations,,,,salutation (#97): the committee's leaders,accepted
+Chairman Simpson,10,merge,House Committee on Appropriations,,,,salutation (#97): the committee's leaders,accepted
+Chairman Moran and Ranking Member Van Hollen,8,merge,Senate Committee on Appropriations,,,,salutation (#97): the committee's leaders,accepted
+Chairmen Byrd and Feinstein and Ranking Members Cochran and Allard,7,merge,Senate Committee on Appropriations,,,,salutation (#97): the committee's leaders,accepted
+Chairman Capito and Ranking Member Tester,7,merge,Senate Committee on Appropriations,,,,salutation (#97): the committee's leaders,accepted
+Chairman Heinrich and Ranking Member Boozman,7,merge,Senate Committee on Appropriations,,,,salutation (#97): the committee's leaders,accepted
+Chairman Thompson and Ranking Member Scott,11,merge,House Committee on Agriculture,,,,salutation (#97): the committee's leaders,accepted
+Chairman Peterson,7,merge,House Committee on Agriculture,,,,salutation (#97): the committee's leaders,accepted
+Chairwoman Stabenow and Ranking Member Cochran,7,merge,"Senate Committee on Agriculture, Nutrition, and Forestry",,,,salutation (#97): the committee's leaders,accepted
+Chairwoman Stabenow and Ranking Member Boozman,7,merge,"Senate Committee on Agriculture, Nutrition, and Forestry",,,,salutation (#97): the committee's leaders,accepted
+Chairman Boozman and Ranking Member Klobuchar,7,merge,"Senate Committee on Agriculture, Nutrition, and Forestry",,,,salutation (#97): the committee's leaders,accepted
+Chairman Roberts,10,merge,"Senate Committee on Agriculture, Nutrition, and Forestry",,,,salutation (#97): the committee's leaders,accepted
+Chairman Johnson and Ranking Member Peters,7,merge,Senate Committee on Homeland Security and Governmental Affairs,,,,salutation (#97): the committee's leaders,accepted
+Chair Murray and Ranking Member Burr,7,merge,"Senate Committee on Health, Education, Labor, and Pensions",,,,salutation (#97): the committee's leaders,accepted
+Chairman Kennedy,7,merge,"Senate Committee on Health, Education, Labor, and Pensions",,,,salutation (#97): the committee's leaders,accepted
+Chairman Boxer and Ranking Member Inhofe,6,merge,Senate Committee on Environment and Public Works,,,,salutation (#97): the committee's leaders,accepted
+Chairwoman Boxer and Ranking Member Inhofe,6,merge,Senate Committee on Environment and Public Works,,,,salutation (#97): the committee's leaders,accepted
+Chairman Barrasso,8,merge,Senate Committee on Environment and Public Works,,,,salutation (#97): the committee's leaders,accepted
+Chairman Skelton,6,merge,House Committee on Armed Services,,,,salutation (#97): the committee's leaders,accepted
+Chairman McKeon,7,merge,House Committee on Armed Services,,,,salutation (#97): the committee's leaders,accepted
+Chairman Oberstar,7,merge,House Committee on Transportation and Infrastructure,,,,salutation (#97): the committee's leaders,accepted
+Chairman Mica,7,merge,House Committee on Transportation and Infrastructure,,,,salutation (#97): the committee's leaders,accepted
+Chairman Nunes,7,merge,House Permanent Select Committee on Intelligence,,,,salutation (#97): the committee's leaders,accepted
+Chairman Comer,7,merge,House Committee on Oversight,,,,salutation (#97): the committee's leaders,accepted
+Chairman Spratt,7,merge,House Committee on the Budget,,,,salutation (#97): the committee's leaders,accepted
+Chairman Nadler,7,merge,House Committee on the Judiciary,,,,salutation (#97): the committee's leaders,accepted
+Chairman Tester,8,merge,Senate Committee on Veterans' Affairs,,,,salutation (#97): the committee's leaders,accepted
+Chairman Barton and Representative Dingell,9,merge,House Committee on Energy and Commerce,,,,salutation (#97): the committee's leaders,accepted
+Chairman Barton and Ranking Member Dingell,6,merge,House Committee on Energy and Commerce,,,,salutation (#97): the committee's leaders,accepted
+Acting Secretary Wolf and Minister Blair,9,joint,Department of Homeland Security;Government of Canada,,,,salutation (#97),accepted
+Administrator Regan and Acting Assistant Secretary Pinkham,9,joint,Environmental Protection Agency;Army Corps of Engineers,,,,salutation (#97),accepted
+Secretary Blinken and National Security Advisor Sullivan,9,joint,Department of State;National Security Advisor,,,,salutation (#97),accepted
+Deputy Secretary Hicks and Deputy Director Dixon,9,joint,Department of Defense;Office of the Director of National Intelligence,,,,salutation (#97),accepted
+Director Mueller and General Alexander,7,joint,Federal Bureau of Investigation;National Security Agency,,,,salutation (#97),accepted
+Speaker Ryan and Chairman Brady,7,joint,Congressional leadership;House Committee on Ways and Means,,,,salutation (#97),accepted
+Chairmen Hatch and Brady,7,joint,Senate Committee on Finance;House Committee on Ways and Means,,,,salutation (#97),accepted
+Chairman Brady and Chairman Hatch,11,joint,Senate Committee on Finance;House Committee on Ways and Means,,,,salutation (#97),accepted
+Acting Secretary Shanahan and Administrator Wheeler,7,joint,Department of Defense;Environmental Protection Agency,,,,salutation (#97),accepted
+Attorney General Barr and Acting Director Lombardo,7,joint,"Department of Justice;Bureau of Alcohol, Tobacco, Firearms and Explosives",,,,salutation (#97),accepted
+Secretary Mayorkas and Acting Director Lechleitner,7,joint,Department of Homeland Security;Immigration and Customs Enforcement,,,,salutation (#97),accepted
+Chairmen Inhofe and Smith,7,joint,Senate Committee on Armed Services;House Committee on Armed Services,,,,salutation (#97),accepted
+Majority Leader Thune and Chairman Crapo,7,joint,Congressional leadership;Senate Committee on Finance,,,,salutation (#97),accepted
+Mayor de Blasio,15,person,Bill de Blasio,,person,,salutation (#97),accepted
+Attorney General Harris,7,person,Kamala Harris,,person,,salutation (#97),accepted
+Governor Cooper,7,person,Roy Cooper,,person,Governors,salutation (#97),accepted
+Governor Whitman,6,person,Christine Todd Whitman,,person,Governors,salutation (#97),accepted
+Governor Kaine,6,person,Tim Kaine,,person,Governors,salutation (#97),accepted
+President von der Leyen,7,merge,European Commission,,organization,,salutation (#97),accepted
+Congressman Bilirakis,7,member,B001257,,,,salutation (#97): a letter to this member,accepted
+Senator Murkowski,6,member,M001153,,,,salutation (#97): a letter to this member,accepted
+Henry,17,reject,,,,,"a greeting or a first name, no one named",accepted
+Jim,7,reject,,,,,"a greeting or a first name, no one named",accepted
+Board Members,7,reject,,,,,"a greeting or a first name, no one named",accepted
+Commission Members,7,reject,,,,,"a greeting or a first name, no one named",accepted
+Madam Administrator,7,reject,,,,,"a greeting or a first name, no one named",accepted
+Inspectors General,7,reject,,,,,"a greeting or a first name, no one named",accepted
+Ladies and Gentlemen,6,reject,,,,,"a greeting or a first name, no one named",accepted
+Congressmen,6,reject,,,,,"a greeting or a first name, no one named",accepted
+Mr. Chainnan,6,reject,,,,,"a greeting or a first name, no one named",accepted
+brother,6,reject,,,,,"a greeting or a first name, no one named",accepted
+John,6,reject,,,,,"a greeting or a first name, no one named",accepted
+Democratic Colleagues,6,reject,,,,,"a greeting or a first name, no one named",accepted
+Frank,6,reject,,,,,"a greeting or a first name, no one named",accepted
+Mark,6,reject,,,,,"a greeting or a first name, no one named",accepted
+Insurance Provider,7,reject,,,,,"a greeting or a first name, no one named",accepted
