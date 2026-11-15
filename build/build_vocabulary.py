@@ -330,6 +330,10 @@ def main() -> int:
     # Candidates: recipients nobody has reviewed ------------------------------
     # Spellings of one name are grouped: "Gov Newsom", "Governor Newsom".
     known = {lab.lower() for lab in orgs}
+    # A member's own name is their term, not a candidate: build_site.py sets
+    # it as the recipient of a letter addressed to the member who posted it
+    # ("Dear Congressman Smith" on Chris Smith's site, #350).
+    known |= {t_["label"].lower() for t_ in terms if t_["term_id"].startswith("M-")}
     # A spelling whose key is a known organization's, or one of its spellings',
     # is another name for it ("Dept Of Ed" for the Department of Education):
     # recorded as a candidate altLabel there, not as a new term.
