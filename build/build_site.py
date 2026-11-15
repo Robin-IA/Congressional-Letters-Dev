@@ -259,6 +259,26 @@ def dates_from_siblings(lines) -> dict[str, tuple[str, str]]:
     return out
 
 
+
+MEMBER_SALUTATION = re.compile(
+    r"^(?:the\s+)?(?:honorable\s+)?(?:senator|sen\.?|congressman|congresswoman|representative|rep\.?|"
+    r"chairman|chairwoman|chair|ranking member|mr\.?|ms\.?|mrs\.?)\s+(.+)$", re.I)
+
+
+def poster_if_named(salutation: str, poster: str) -> str:
+    """The posting member's name when a one-person salutation names them by
+    title and surname ("Congressman Smith" on Christopher H. Smith's site),
+    else ''."""
+    m = MEMBER_SALUTATION.match(salutation.strip())
+    if not m or re.search(r"\band\b|,|&", m.group(1), re.I):
+        return ""
+    words = [w for w in re.sub(r"[^\w\s'-]", " ", poster).split()
+             if w.lower().strip(".") not in ("jr", "sr", "ii", "iii", "iv")]
+    named = m.group(1).split()
+    if words and named and named[-1].lower().strip(".") == words[-1].lower():
+        return poster
+    return ""
+
 COLUMNS = ["key", "timestamp", "kind", "date", "precision", "recipient",
            "subject", "topics", "cosigners", "digest", "url"]
 
@@ -515,7 +535,13 @@ def main() -> None:
         kind = ("pdf" if record["mimetype"].startswith("application/pdf")
                 else "page")
         # The file name's recipient, else the one the salutation names (#97).
-        recipient = record.get("recipient_canonical") or salutations.get(digest) or None
+        recipient = record.get("recipient_canonical") or None
+        if not recipient and salutations.get(digest):
+            # "Dear Congressman Smith" on Chris Smith's own site is a letter
+            # to Chris Smith: the posting member settles a surname that a
+            # name alone cannot (#349). Otherwise the salutation as written.
+            recipient = poster_if_named(salutations[digest], members[bioguide]["name"]) \
+                or salutations[digest]
         # A title written by hand from the letter's text wins over the file
         # name's (vocabulary/letter-titles.csv, letter_text.py).
         subject = hand_titles.get(digest) or tidy_subject(record.get("subject"))
