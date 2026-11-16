@@ -575,6 +575,19 @@ def main() -> int:
         extra_hier.append({"term": label,
                            "broader": f"{committees.chamber(label)} committees"})
 
+    # Companies and other organizations a letter is filed under by hand
+    # (vocabulary/letter-topics.csv). Robin, 15 November 2026: a letter to
+    # several companies' CEOs is filed under each company, and the company,
+    # never the CEO, is the topic. The label is the organization's own, so
+    # the letter opens from that organization's page by its tag.
+    filed_ids = set()
+    for t_ in terms:
+        if (t_["kind"] == "organization" and t_["status"] == "preferred"
+                and t_["term_id"] not in committee_ids and per_topic.get(t_["label"])):
+            t_["letters"] = int(t_["letters"] or 0) + per_topic[t_["label"]]
+            committee_ids[t_["term_id"]] = t_["label"]
+            filed_ids.add(t_["term_id"])
+
     # Caucuses sit together under Topics (hierarchy.csv's "Caucuses"), by rule,
     # so a caucus added to address_holders.CAUCUSES or caucuses.py is placed
     # without a new row.
@@ -711,6 +724,8 @@ def main() -> int:
         # carry its name as a tag.
         if tid in committee_ids:
             n["tag"] = committee_ids[tid]
+            if tid in filed_ids:
+                n["filed"] = True
         if t_["status"] != "preferred":
             n["status"] = t_["status"]
         if int(t_["letters"] or 0):

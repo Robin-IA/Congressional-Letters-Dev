@@ -477,8 +477,11 @@ def main() -> None:
     hand_topics = letter_text.topics_by_hand()
     # Like recipient-topics.csv: a label that is not a topic would publish
     # as a stray term, so stop here and name it (the PC's hourly batches).
+    # A reviewed organization is also a topic a letter can be filed under
+    # (a company named in its address block; Robin, 15 November 2026).
+    filed_orgs = letter_text.organizations_to_file_under()
     for digest, labels in hand_topics.items():
-        unknown = [t for t in labels if t not in SUBJECTS]
+        unknown = [t for t in labels if t not in SUBJECTS and t not in filed_orgs]
         if unknown:
             raise SystemExit(f"letter-topics.csv: {digest}: not a topic: {unknown}")
     if hand_dates:
