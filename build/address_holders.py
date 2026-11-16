@@ -20,7 +20,7 @@ import sys
 from collections import defaultdict
 from dataclasses import dataclass, field
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import unquote, urlparse
 
 ROOT = Path(__file__).resolve().parent.parent
 ROSTERS = ROOT / "data" / "rosters"
@@ -31,6 +31,13 @@ OUT = ROOT / "data" / "address-holders.csv"
 # each row with the capture that shows it, and only for the Congresses it covers.
 ALIASES = ROOT / "data" / "website-aliases.csv"
 CONGRESSES = range(106, 120)
+# congress-legislators, for service before the rosters begin (#533). Gitignored
+# (fetched for build_vocabulary.py); without it, service starts at the 106th.
+LEGISLATORS = ROOT / "data" / "legislators"
+# The rosters, and so the address holdings, start with the 106th Congress,
+# which convened 6 January 1999 (its terms began on the 3rd). Career terms
+# fill in only the service before that day, the 3rd to the 5th included.
+ROSTERS_BEGIN = "1999-01-06"
 
 # Hosts several members used at once: the member's own path is the address.
 SHARED_HOSTS = {"house.gov", "wwwc.house.gov", "senate.gov"}
@@ -56,7 +63,8 @@ def address_key(url: str) -> str:
     host = host[4:] if host.startswith("www.") else host
     if host not in SHARED_HOSTS:
         return host
-    parts = [s for s in p.path.split("/") if s]
+    # decoded, so senate.gov/%7Eschumer is senate.gov/~schumer (#533)
+    parts = [s for s in unquote(p.path).split("/") if s]
     if not parts:
         return host
     if parts[0].lower() == "senators" and len(parts) > 1:
@@ -229,12 +237,59 @@ class Index(dict):
     service: dict[str, list[tuple[str, str, str]]]
 
 
-def index(holdings: list[Holding]) -> Index:
+def career_terms(path: Path = LEGISLATORS) -> dict[str, list[tuple[str, str, str]]]:
+    """bioguide -> (start, end, chamber) for each term served before the rosters
+    begin, from congress-legislators; {} when the files are absent.
+
+    The holdings only reach back to the 106th, so without these a member's
+    1997-98 letter reposted on their 1999 site (Bonior, Waxman, Bennett) found
+    no service and went to ``none`` (#533). Terms are cut at ROSTERS_BEGIN so
+    that nothing from the 106th on changes: there, service still comes only
+    from the address holdings.
+    """
+    import json
+    out: dict[str, list[tuple[str, str, str]]] = defaultdict(list)
+    for name in ("legislators-current.json", "legislators-historical.json"):
+        f = path / name
+        if not f.exists():
+            continue
+        try:
+            people = json.loads(f.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            continue
+        for p in people:
+            bid = p.get("id", {}).get("bioguide")
+            terms = sorted((t.get("start", ""), t.get("end", ""),
+                            "Senate" if t.get("type") == "sen" else "House")
+                           for t in (p.get("terms", []) if bid else []))
+            terms = [t for t in terms if t[0] and t[1]]
+            for i, (a, b, ch) in enumerate(terms):
+                # Re-elected members serve without a break, but the data dates
+                # some terms from the day Congress convened: the 105th ends
+                # 1999-01-03 and the 106th starts 1999-01-06. Close such gaps
+                # (a week at most) so 4-5 January 1999 is still in office.
+                nxt = terms[i + 1][0] if i + 1 < len(terms) else ""
+                if nxt > b and _days(b, nxt) <= 7:
+                    b = nxt
+                if a < ROSTERS_BEGIN:
+                    out[bid].append((a, min(b, ROSTERS_BEGIN), ch))
+    return out
+
+
+def _days(a: str, b: str) -> int:
+    from datetime import date
+    return (date.fromisoformat(b) - date.fromisoformat(a)).days
+
+
+def index(holdings: list[Holding], careers: dict | None = None) -> Index:
+    """``careers`` defaults to career_terms(); pass {} for the holdings alone."""
     idx = Index()
     idx.service = defaultdict(list)
     for h in holdings:
         idx.setdefault(h.address, []).append(h)
         idx.service[h.bioguide_id].append((h.held_from, h.held_to, h.chamber))
+    for bid, terms in (career_terms() if careers is None else careers).items():
+        idx.service[bid].extend(terms)
     for hs in idx.values():
         hs.sort(key=lambda h: (h.held_from, h.held_to))
     return idx
