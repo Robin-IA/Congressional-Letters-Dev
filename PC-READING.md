@@ -121,10 +121,14 @@ Write CSV rows with `\n` line endings and append only, never reorder.
      `;`). The two groups, wrote and received, are kept apart.
   2. **A government official** (a Secretary, an Administrator, the President,
      a governor, a judge). File it **under the member or members who wrote it**,
-     **under the official's own name in the matching area of the topic list**
+     **under the official's office** in the matching area of the topic list
      (Government officials: Executive Office of the President, a department or
      agency, Judicial branch, State and local government), and **under its
-     subjects**.
+     subjects**. The official gets **no person term of their own** (Robin,
+     15 November 2026): the name is recorded on the office as an
+     `officeholder` decision in `reviews.csv` ("Hagel" → Department of
+     Defense), or as a `split` by year where one name held several offices.
+     The title still names the official: "to Secretary Hagel".
   3. **A CEO, or anyone writing for a company or organization.** Never file a
      personal name. File under the **member or members who wrote it**, then the
      **company or organization**, then the **topics**. A private citizen gets
