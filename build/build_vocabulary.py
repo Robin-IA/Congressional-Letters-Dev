@@ -229,6 +229,17 @@ def main() -> int:
 
     def add(term_id, label, kind, facet, status, source, uri="", letters=0, note=""):
         if term_id in ids:
+            # An unreviewed candidate with the same name is this term: a
+            # per-letter recipient can publish a committee's own name
+            # ("Senate Committee on Rules and Administration") before the
+            # committee term is made. Make it the term rather than fail.
+            twin = next((t_ for t_ in terms if t_["term_id"] == term_id), None)
+            if twin and twin["status"] == "candidate" and twin["label"].lower() == label.lower():
+                twin.update(label=label, kind=kind, facet=facet, status=status, source=source,
+                            uri=uri or twin["uri"], letters=int(twin["letters"] or 0) + int(letters or 0),
+                            note=note)
+                terms.remove(twin); terms.append(twin)
+                return
             raise SystemExit(f"duplicate term_id {term_id}")
         ids.add(term_id)
         terms.append({"term_id": term_id, "label": label, "kind": kind, "facet": facet,
@@ -238,6 +249,23 @@ def main() -> int:
     def rel(term_id, relation, value, status="preferred", source="local"):
         relations.append({"term_id": term_id, "relation": relation, "value": value,
                           "status": status, "source": source})
+
+
+    def promote_or_add(label, kind, facet):
+        """The reviewed term for a label a decision names. An unreviewed
+        candidate with the same name becomes it -- per-letter recipients
+        publish committee names, so "House Committee on the Judiciary" can
+        already be a candidate with the very id a new term would take."""
+        twin = next((t_ for t_ in terms if t_["status"] == "candidate"
+                     and t_["label"].lower() == label.lower()), None)
+        if twin:
+            twin.update(status="preferred", source="reviewed", kind=kind, facet=facet)
+            return twin
+        tid = f"{'P' if kind == 'person' else 'O'}-{slug(label)}"
+        while tid in ids:
+            tid += "-2"
+        add(tid, label, kind, facet, "preferred", "reviewed")
+        return terms[-1]
 
     # Members ---------------------------------------------------------------
     legs = legislators()
@@ -455,9 +483,7 @@ def main() -> int:
                 tgt = next((t_ for t_ in terms if t_["label"] == label.strip()
                             and t_["status"] == "preferred"), None)
                 if tgt is None:
-                    add(f"O-{slug(label)}", label.strip(), rv["kind"] or "organization",
-                        "body", "preferred", "reviewed")
-                    tgt = terms[-1]
+                    tgt = promote_or_add(label.strip(), rv["kind"] or "organization", "body")
                     if rv["broader"]:
                         extra_hier.append({"term": label.strip(), "broader": rv["broader"]})
                 n = sum(c for (rec, yr), c in RECIPIENT_YEARS.items()
@@ -485,9 +511,7 @@ def main() -> int:
                     tgt = next((t_ for t_ in terms if t_["label"] == label
                                 and t_["status"] == "preferred"), None)
                     if tgt is None and kind in ("person", "organization"):
-                        add(f"{'P' if kind == 'person' else 'O'}-{slug(label)}", label, kind,
-                            "person" if kind == "person" else "body", "preferred", "reviewed")
-                        tgt = terms[-1]
+                        tgt = promote_or_add(label, kind, "person" if kind == "person" else "body")
                     if tgt is None:
                         print(f"  review {rv['candidate']!r}: no term {label!r}", file=sys.stderr)
                         continue
