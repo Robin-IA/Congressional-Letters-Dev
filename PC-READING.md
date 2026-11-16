@@ -1,6 +1,6 @@
 # For Claude on the PC: where the reading work lives
 
-**Updated 15 November 2026.** Read this first in any new session on the PC,
+**Updated 15 November 2026** (reading is one pass per letter, section 5). Read this first in any new session on the PC,
 whatever model it runs. A session that starts fresh does not remember this
 setup. That includes switching models, for example to Sonnet.
 
@@ -64,6 +64,34 @@ letter.
 
 ## 5. What "done" means, and the files a PR touches
 
+### One pass per letter (Robin, 15 November 2026)
+
+Reading is **one process**. Each letter is taken all the way through, in this
+order, in the same batch and the same PR. The recipient is **not** a separate
+pass or a separate PR (the earlier recipient-only PRs, #405 and #408, are the
+last of that kind).
+
+1. **Read the text** (OCR or text layer) against the letter, not the file name.
+2. **Find the recipient** in the address block, then the salutation, then the
+   body. File it by the three kinds in section 6: Congress "As recipient",
+   an official under the office, a company or organization as a topic, and a
+   private citizen under no name. One row in `letter-recipients.csv`;
+   several offices at once is a `joint` row in `reviews.csv`; several
+   companies go in `letter-topics.csv`.
+3. **Find who wrote it, and where it files.** Check that the posting member
+   signed it or is among its signers. A letter written *to* the member is
+   titled with its sender (#175). The Congress follows from the letter's date
+   and who held the posting address then (the holder check). Say in the note
+   when the signers and the posting member differ.
+4. **Write the title** in our form, "Subject — to whom, D Month YYYY", with
+   the recipient from step 2 (an office or company, never a CEO's name).
+5. **Settle the date** by the dating order (#172): the letterhead, then the
+   file name, then the PDF metadata, then review. Refuse a date that leaves the
+   posting with no holder (#239).
+6. **Choose the subjects** from the recipient where it implies them (a letter
+   to an airline is about Airlines; `recipient-topics.csv`) and from what the
+   letter discusses. Only labels in `SUBJECTS`, plus reviewed organizations.
+
 A letter is done when all of these hold:
 
 - it has text;
@@ -81,7 +109,9 @@ Each batch is one PR, which appends rows to these files in the dev repository:
 | `vocabulary/letter-titles.csv` | `digest,title,source` | Form: **"Subject — to whom, D Month YYYY"**, e.g. "Funding the Sea Grant program in 2019 — to Chairman Moran and Ranking Member Shaheen, 11 April 2018". A letter to a company is filed under the company, with no CEO's name in the "to" part. |
 | `vocabulary/letter-topics.csv` | `digest,topics,source` | `;`-separated, **only labels already in `SUBJECTS`** in `build/topics.py`. Check every label before writing it. |
 | `vocabulary/letter-dates.csv` | `digest,date,precision,source` | Only when the letter's own date differs from the published date. The source says why, e.g. "the letterhead; was 2018-09-19 (captured-by)". |
-| `vocabulary/letters-reviewed.csv` | `digest,reviewed,title,date,topics,filing,note,date_audited` | One row per letter read. `date` is `yes` if you added a date row, otherwise `unchanged`. |
+| `vocabulary/letter-recipients.csv` | `digest,recipient,source` | One row per letter: the reviewed term from step 2 (an office, a committee, a member's name, or a company's label). Not for a private citizen. |
+| `vocabulary/reviews.csv` | `candidate,letters,decision,…` | Only when step 2 needs a decision the vocabulary lacks: a `joint` row for several offices at once, or a `merge` row for a company not yet reviewed. |
+| `vocabulary/letters-reviewed.csv` | `digest,reviewed,title,date,topics,filing,note,date_audited` | One row per letter read. `date` is `yes` if you added a date row, otherwise `unchanged`; `filing` is `yes` if you added a recipient row. |
 | `letters-vocabulary-needs/letters.csv` | `digest,title,date,topics,proposed_subjects,issue,note` | For a letter that needs a subject the vocabulary lacks. It stays here and goes in none of the files above. Also comment on #221. |
 
 Write CSV rows with `\n` line endings and append only, never reorder.
