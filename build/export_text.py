@@ -50,6 +50,8 @@ sys.path.insert(0, str(ROOT / "build"))
 import build_congress as bc  # noqa: E402
 
 MIN_CHARS = 100
+# OCR this many times the text layer's length replaces it: the layer is missing pages (#252)
+PARTIAL_RATIO = 1.5
 CONGRESSES = range(106, 120)
 
 # The buckets of #116, in the order COVERAGE.md lists them.
@@ -99,9 +101,13 @@ def best_texts() -> tuple[dict, dict, dict]:
         ocr_chars[d] = max(ocr_chars[d], chars)
         have = best.get(d)
         # The text layer wins, unless it holds U+FFFD (glyphs with no Unicode
-        # map, usually accented surnames) and the OCR does not (#122).
-        if have and have["source"] == "text-layer" and not (
-                "\ufffd" in have["text"] and "\ufffd" not in (r.get("text") or "")):
+        # map, usually accented surnames) and the OCR does not (#122), or it
+        # covers only part of the letter: some PDFs carry text on the
+        # signature page only, the letter itself a scanned image (#252). OCR
+        # half again as long as the layer means pages the layer is missing.
+        damaged = bool(have) and "\ufffd" in have["text"] and "\ufffd" not in (r.get("text") or "")
+        partial = bool(have) and chars >= PARTIAL_RATIO * have["chars"]
+        if have and have["source"] == "text-layer" and not (damaged or partial):
             continue
         replaces_damaged = bool(have) and have["source"] == "text-layer"
         if chars >= MIN_CHARS and (replaces_damaged or chars > (have or {}).get("chars", -1)):
