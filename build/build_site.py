@@ -208,6 +208,32 @@ def _after(iso: str, timestamp: str | None) -> bool:
     return iso > f"{timestamp[:4]}-{timestamp[4:6]}-{timestamp[6:8]}"
 
 
+def earliest_captures(lines) -> dict[str, str]:
+    """digest -> the earliest capture (YYYY-MM-DD) of any posting of that file.
+
+    The file existed by then, wherever it was posted, so no date for any of
+    its postings can be later (#652). Each posting otherwise knows only its
+    own capture: Bost's road-safety letters, one file at five bost.house.gov
+    paths captured in 2021, 2024 and 2025, were published in three Congresses;
+    Dove Creek's letter, captured in 2023, was dated October 2024 from the
+    /wp-content/uploads/2024/10/ folder it was re-uploaded to.
+    """
+    out: dict[str, str] = {}
+    for line in lines:
+        try:
+            r = json.loads(line)
+        except ValueError:
+            continue
+        digest = r.get("digest")
+        seen = (r.get("first_seen") or "")[:10]
+        if not seen and len(r.get("timestamp") or "") >= 8:
+            ts = r["timestamp"]
+            seen = f"{ts[:4]}-{ts[4:6]}-{ts[6:8]}"
+        if digest and seen and (digest not in out or seen < out[digest]):
+            out[digest] = seen
+    return out
+
+
 def dates_from_siblings(lines) -> dict[str, tuple[str, str]]:
     """digest -> (date, precision) a letter's other postings agree on.
 
@@ -568,6 +594,7 @@ def main() -> None:
         if stated:
             best, precision = stated
         elif (head and not _after(head, record.get("timestamp"))
+              and not (record.get("earliest_capture") and head > record["earliest_capture"])
               and not record.get("letterhead_rejected")):
             # letterhead_rejected: build_congress.py found no one holding the
             # address on that date, and placed the letter by its other date.
@@ -583,7 +610,7 @@ def main() -> None:
             # than this posting does. See dates_from_siblings() for the rule
             # and why it is as timid as it is.
             sibling = sibling_dates.get(digest or "")
-            captured = (record.get("first_seen") or "")[:10]
+            captured = record.get("earliest_capture") or (record.get("first_seen") or "")[:10]
             # Never later than this posting's own first capture: the file
             # existed by then (see build_congress.sort_letters).
             if sibling and (PRECISION_RANK.get(sibling[1], 4)
