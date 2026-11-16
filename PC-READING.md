@@ -231,12 +231,50 @@ python3 -m unittest discover -s tests
 python3 build/audit_dates.py --ocr-repo ../letters-from-congress-OCR
 ```
 
+On the PC, `audit_dates.py` cannot run the **holder check** for letters whose
+postings are not in the PC's checkout (the 119th, for example). That is
+expected: **the Mac runs the holder check on every PC PR as it merges it**
+(`fold.sh`), and refuses the merge if a date leaves a posting with no holder.
+Say "holder check not run on the PC" in the PR and go on; nothing else is
+needed.
+
+**The PC never rebuilds the vocabulary** (`build_vocabulary.py`). It writes
+the hand files (`letter-*.csv`, `reviews.csv`, the holds file), and the Mac
+rebuilds the vocabulary and explorers when it publishes. A new term exists
+once its `reviews.csv` row is merged, whether or not the vocabulary has been
+rebuilt; check `reviews.csv` and `vocabulary/terms.csv` before asking for one.
+
 Both must pass, and the PR body must say **how many letters were held for
 vocabulary** and how many recipients have no term, with the #221 and #357
 comments linked. "0 held" is written out, not left blank. On the PC, `--ocr-repo` (or `LETTERS_OCR_REPO`) points the audit at the text repository; without it the audit sees only the PC's local text and reports most letters as unreadable (#332). The PR title follows the existing pattern ("Letters review:
 agency letters, round N (25 read from full text)"). The body lists copies,
 holds and gaps. If rows from a Mac batch land at the same time, the conflict
 is only appended rows, and the Mac resolves it by keeping both sets.
+
+## 7a. Label every issue and PR (Robin, 16 November 2026)
+
+Every issue and every PR the PC opens gets **at least one topic label**, set
+when it is created: `gh issue create … --label "reading,vocabulary"` or
+`gh pr create … --label reading`. Use as many as fit. Labels are only added,
+never removed. Use only these (`gh label list` shows them):
+
+| Label | Use it for |
+| --- | --- |
+| `reading` | A reading batch PR; a letter that needs to be read again |
+| `vocabulary` | A term request ("New vocabulary term needed"), holds, recipients, subjects, `reviews.csv` |
+| `dates` | Letters with no date in their text (the #191 issues), refused dates, holder-check problems |
+| `OCR` | Text missing, cut off or unreadable; OCR batches and returns |
+| `harvest` | Member sites, URLs, captures, letters not found or not in PDF |
+| `quality control` | Checking, reconciling, duplicates, letters that are not letters |
+| `methodologies` | A rule or criterion that needs deciding |
+| `process documentation` | Changes to this file or to how the work is handed over |
+| `search` / `explorer` | How letters are found; the published pages |
+| `bug` / `enhancement` | Code that is wrong / a new feature |
+
+Typical sets: a reading batch PR is `reading` (plus `vocabulary` if it adds
+`reviews.csv` rows); a term request is `vocabulary`; an index of term
+requests is `vocabulary`; an undated-letters issue is `dates` and `reading`;
+an OCR-gap issue is `OCR`. Do not use `important`; that is Robin's.
 
 ## 8. What the PC does not do
 
