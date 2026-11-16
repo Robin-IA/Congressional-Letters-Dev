@@ -4363,3 +4363,24 @@ European Union leaders,1,joint,organization:European Commission;organization:Eur
 Mayor Smith,1,officeholder,Mayor of Meridian (Mississippi),,organization,,"Meridian, Mississippi: Mayor Jimmie Smith (#462)",accepted
 University of Florida,1,merge,University of Florida,,organization,Colleges and universities,new term requested by the PC (#468); its Board of Trustees is the university's,accepted
 University of Florida Board of Trustees,1,merge,University of Florida,,organization,Colleges and universities,the university's board (#468),accepted
+"Luka, Inc. (Replika)",1,merge,"Luka, Inc. (Replika)",,organization,Companies,"new term requested by the PC (#420-#439), placed by Robin's hierarchy, 16 November 2026",accepted
+PowerSchool,1,merge,PowerSchool,,organization,Companies,"new term requested by the PC (#420-#439), placed by Robin's hierarchy, 16 November 2026",accepted
+Bain Capital,1,merge,Bain Capital,,organization,Companies,"new term requested by the PC (#420-#439), placed by Robin's hierarchy, 16 November 2026",accepted
+AMPYR Energy,1,merge,AMPYR Energy,,organization,Companies,"new term requested by the PC (#420-#439), placed by Robin's hierarchy, 16 November 2026",accepted
+NYU Langone Health,1,merge,NYU Langone Health,,organization,Nonprofits,"new term requested by the PC (#420-#439), placed by Robin's hierarchy, 16 November 2026",accepted
+National Association of Unclaimed Property Administrators,1,merge,National Association of Unclaimed Property Administrators,NAUPA,organization,Associations and other organizations,"new term requested by the PC (#420-#439), placed by Robin's hierarchy, 16 November 2026",accepted
+National Association of State Treasurers,1,merge,National Association of State Treasurers,NAST,organization,Associations and other organizations,"new term requested by the PC (#420-#439), placed by Robin's hierarchy, 16 November 2026",accepted
+Financial Clerk of the Senate,1,merge,Financial Clerk of the Senate,,organization,Legislative branch,"new term requested by the PC (#420-#439), placed by Robin's hierarchy, 16 November 2026",accepted
+Pennsylvania Public Utility Commission,1,merge,Pennsylvania Public Utility Commission,,organization,Pennsylvania state government agencies,"new term requested by the PC (#420-#439), placed by Robin's hierarchy, 16 November 2026",accepted
+Pennsylvania State University,1,merge,Pennsylvania State University,Penn State,organization,Colleges and universities,"new term requested by the PC (#420-#439), placed by Robin's hierarchy, 16 November 2026",accepted
+Mayor of Vicksburg (Mississippi),1,merge,Mayor of Vicksburg (Mississippi),,organization,Mississippi local government and agencies,"new term requested by the PC (#420-#439), placed by Robin's hierarchy, 16 November 2026",accepted
+Mayor of Fredericksburg (Texas),1,merge,Mayor of Fredericksburg (Texas),,organization,Texas local government and agencies,"new term requested by the PC (#420-#439), placed by Robin's hierarchy, 16 November 2026",accepted
+Lucas County Board of Commissioners (Ohio),1,merge,Lucas County Board of Commissioners (Ohio),,organization,Ohio local government and agencies,"new term requested by the PC (#420-#439), placed by Robin's hierarchy, 16 November 2026",accepted
+Queens Public Library,1,merge,Queens Public Library,,organization,New York local government and agencies,"new term requested by the PC (#420-#439), placed by Robin's hierarchy, 16 November 2026",accepted
+President of Iraq,1,merge,President of Iraq,,organization,Foreign governments,"new term requested by the PC (#420-#439), placed by Robin's hierarchy, 16 November 2026",accepted
+Legislative Yuan of Taiwan,1,merge,Legislative Yuan of Taiwan,,organization,Foreign governments,"new term requested by the PC (#420-#439), placed by Robin's hierarchy, 16 November 2026",accepted
+PowerSchool and Bain Capital,1,joint,organization:PowerSchool;organization:Bain Capital,,organization,,"both companies (#421, #422)",accepted
+National Association of Unclaimed Property Administrators and National Association of State Treasurers,1,joint,organization:National Association of Unclaimed Property Administrators;organization:National Association of State Treasurers,,organization,,"both associations (#425, #426)",accepted
+Mayor Flaggs,1,officeholder,Mayor of Vicksburg (Mississippi),,organization,,"Vicksburg, Mississippi: Mayor George Flaggs Jr. (#434)",accepted
+Mayor Hoover,1,officeholder,Mayor of Fredericksburg (Texas),,organization,,"Fredericksburg, Texas: Mayor Jeryl Hoover (#435)",accepted
+Speaker Han and the heads of Taiwan's parties,1,officeholder,Legislative Yuan of Taiwan,,organization,,"Speaker Han Kuo-yu of the Legislative Yuan, with party leaders (#439)",accepted
