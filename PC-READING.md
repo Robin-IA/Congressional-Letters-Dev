@@ -217,6 +217,12 @@ Write CSV rows with `\n` line endings and append only, never reorder.
      issue): the proposed subject, the held letters' digests and titles, and
      one line from the text showing why.
 
+  **The PC recommends a term; the Mac adds it.** A term request says the
+  term, the held letters, and *where it would file* (for example "State of
+  Ohio › local government"). The Mac writes the term, places it in the
+  hierarchy (`hierarchy.csv`, creating the state or group entries it needs),
+  files the held letters and closes the request.
+
   Vocabulary changes go in their own PR to `build/topics.py`. Match words are
   plain lowercase words, never regex. The same goes for a **recipient with no
   term** (a company, a state office, a foreign official): list it in the PR
