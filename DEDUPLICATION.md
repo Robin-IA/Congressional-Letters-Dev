@@ -62,7 +62,13 @@ bodies match word for word.
 | 4 | Grassley to the American Heart Association, 4 May 2011 | `LPGAN4HK`, `D5AXGHTA` (file name `-2`) | 0.917. Same date and addressee, but the request changed: the first says nothing was posted and asks whether the AHA supports disclosure; the `-2` revision says the AHA has begun listing sponsors and asks about the funding's purpose |
 | 4 | Schatz and others to Equifax, Experian and TransUnion, 29 Jan 2019 | `I55JMZ3U`, `ELW4RO46` (`v2`) | 0.953. v2 adds Cortez Masto and Menendez as signers, and two sentences |
 | 4 | The TitleMax letter, draft and sent (#183) | | A draft and the sent version |
-| 5 | "On EPA's Proposed Rule for Mercury Emissions — to Administrator Leavitt, 24 June 2004" | `QLAN4KHE`, `5LG7T4HP` | 0.029. Two different letters under one title |
+| 3 | Waxman to the FAA on Santa Monica Airport, 26 May 2000 | `BFKGU4XF`, `WJU74CF2` | 0.569, yet the same letter: one copy also carries the FAA's reply of 19 July 2000. **An enclosure or a reply drags the score down.** Compare the letter portion. The fuller copy is the primary. |
+| 3 | Bomb threats against Jewish community centers, 7 Mar 2017 | `TXBNL3SV`, `XYNTT3DA` | 0.802. The same signed letter, but OCR reads the two-column signature pages in a different order and one copy stops early |
+| 4 or 3 | Ebola, to President Obama, 8 Oct 2014 | `JIU3SNAV` (unsigned, typed), `VEBRFFDK` (signed, on letterhead) | The same body and the same 26 signers. **A signed copy and an unsigned or typed one**: a version until Robin decides (§6) |
+| 5 | Barbara Lee for Democratic Caucus chair, 27 Nov 2018 | `M4VIBMRI`, `Z4XS7BXJ` | 0.182. Two Dear Colleagues on one day: one from three former CBC chairs, one from Adam Smith |
+| 5 | Withholding a member's pay in the shutdown, 1 Oct 2025 | `2MOPPHCQ` (Bilirakis), `EVUSVOYY` (Estes) | 0.578, and nearly word for word. **The same wording from different senders makes different letters**: each member's own letter about their own pay |
+| 5 | The UN Arms Trade Treaty, 15 Oct 2013 | `2ZUWDJJH` (Senate), `LTMFZ7GE` (House) | 0.743. Companion letters from each chamber: the same date and addressee, different signers and wording |
+| — | The mercury rule, to Administrator Leavitt, June 2004 | `5LG7T4HP` (the letter), `QLAN4KHE` (its co-signer list) | 0.029. The second file is the letter's signer list, posted separately. It is not a letter (§5a), so it goes to Robin, not dedup. |
 
 ## 3. How to compare two texts
 
@@ -77,8 +83,16 @@ bodies match word for word.
    - **0.90–0.99:** read the differences. If they are only OCR noise, a dropped
      line or a missing page, it is level 3. If wording or signers change, it
      is level 4.
-   - **< 0.90:** read both. Usually level 5, or a level 3 copy whose text is
-     badly truncated or unreadable.
+   - **< 0.90:** read both. Of the 28 shared titles in this band (#139), 19
+     were the same letter, 4 were versions and only 5 were different letters.
+     The low scores came from:
+     - an enclosure or the agency's reply in one copy;
+     - signature pages read in a different column order;
+     - a letterhead or footer present in one copy only;
+     - a signed copy against a typed one.
+
+     So compare the **letter portion** (from the date through the close),
+     not the whole file.
 4. **Check the letter's facts, not only its words:** the date (the letter's
    own, §5 of PC-READING), the addressee and the signature block. A different
    date or addressee makes a different letter, whatever the similarity.
