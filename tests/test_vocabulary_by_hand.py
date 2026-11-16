@@ -63,7 +63,8 @@ class ByHand(unittest.TestCase):
     def test_topics_are_topics(self):
         self.check_rows("letter-topics.csv", ["digest", "topics"])
         for digest, labels in letter_text.topics_by_hand().items():
-            unknown = [t for t in labels if t not in build_site.SUBJECTS]
+            unknown = [t for t in labels if t not in build_site.SUBJECTS
+                       and t not in letter_text.organizations_to_file_under()]
             self.assertEqual(unknown, [], f"letter-topics.csv: {digest}: not a topic")
 
     def test_recipient_topics_are_topics(self):
