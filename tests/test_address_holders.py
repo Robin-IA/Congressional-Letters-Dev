@@ -196,5 +196,32 @@ class CaucusNames(unittest.TestCase):
         self.assertEqual(ah.caucus_name("https://rsc.jordan.house.gov/a.pdf"), "")
         self.assertEqual(ah.caucus_name("https://hireavet.denham.house.gov/a.pdf"), "")
 
+
+@unittest.skipUnless((ah.LEGISLATORS / "legislators-historical.json").exists(),
+                     "congress-legislators not fetched (data/legislators/ is gitignored)")
+class BeforeTheRosters(unittest.TestCase):
+    """#533: a 1997-98 letter on a member's 1999 site is theirs, from an
+    earlier office, once career terms reach back before the 106th."""
+
+    def test_bonior_1998(self):
+        url = "http://www.davidbonior.house.gov:80/reform/letters/050498lt.pdf"
+        self.assertEqual(who(url, "1998-05-04"), ("B000619", "earlier_office"))
+        bare = index(HOLDINGS, careers={})
+        self.assertEqual(attribute(bare, url, "1998-05-04").attribution, "none")
+
+    def test_waxman_between_congresses(self):
+        # The 105th ended 3 January 1999 and the data starts the 106th on the 6th.
+        url = "http://waxman.house.gov/UploadedFiles/Letter_on_the_Majoritys_Proposed_Committee_Rules.pdf"
+        self.assertEqual(who(url, "1999-01-05"), ("W000215", "earlier_office"))
+
+    def test_an_encoded_tilde_is_the_same_address(self):
+        self.assertEqual(address_key("http://www.senate.gov/%7Eschumer/a.pdf"), "senate.gov/~schumer")
+
+    def test_terms_stop_where_the_rosters_begin(self):
+        for terms in ah.career_terms().values():
+            for a, b, _ in terms:
+                self.assertLessEqual(b, ah.ROSTERS_BEGIN)
+
+
 if __name__ == "__main__":
     unittest.main()
