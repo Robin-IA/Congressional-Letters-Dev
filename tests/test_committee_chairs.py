@@ -40,6 +40,15 @@ class Chairs(unittest.TestCase):
         self.assertEqual(aging["115"], "C001035")   # Susan Collins
         self.assertEqual(aging["119"], "S001217")   # Rick Scott
 
+    def test_subcommittee_chairs(self):
+        rows = list(csv.DictReader((ROOT / "data" / "subcommittee-chairs.csv").open(encoding="utf-8")))
+        self.assertGreater(len(rows), 2000)
+        for r in rows:
+            self.assertRegex(r["bioguide"], r"^[A-Z]\d{6}$", r)
+        # Coons chaired State-Foreign Operations appropriations in the 117th (#379)
+        self.assertTrue(any(r["congress"] == "117" and r["bioguide"] == "C001088"
+                            and r["committee"] == "Senate Committee on Appropriations" for r in rows))
+
 
 if __name__ == "__main__":
     unittest.main()

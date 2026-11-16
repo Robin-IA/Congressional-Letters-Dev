@@ -25,3 +25,11 @@ The years are the table's. A Congress lists every chair who served in it, so a m
 - An edition shows the chair on its print date, so a mid-Congress change is missed when no edition falls after it. For example, Paul Ryan chaired Ways and Means in 2015; the 114th's only edition (February 2016) shows Kevin Brady.
 - House Administration and Ethics are missing in some Congresses.
 - Select committees (Intelligence) and subcommittees are not included.
+
+## Subcommittee chairs
+
+`data/subcommittee-chairs.csv` has the columns `chamber, committee, subcommittee, chair, bioguide, congress, source`: 2,240 rows covering the 106th–119th.
+
+They come from the same standing-committee sections. Inside each committee, after `SUBCOMMITTEES`, each subcommittee's heading is followed by its chair. To build it, download each edition's `*-SENATECOMMITTEES.htm` into `sen/`, then run `sub_parse.py`, `sub_parse_txt.py` (2024 and 2026), and `sub_build.py`.
+
+Subcommittee names can be cut short where a heading runs over three lines; only the parent committee is used for filing. 41 chairs are unmatched, mostly names with a nickname or two members sharing a surname.
