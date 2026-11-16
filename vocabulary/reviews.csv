@@ -4737,3 +4737,5 @@ Mayor of the District of Columbia,1,merge,Mayor of the District of Columbia,,org
 Bowser,1,officeholder,Mayor of the District of Columbia,,organization,,recipient named in the held letter (#534),accepted
 The Carlyle Group And Ohio Tax Credit Authority,1,joint,organization:The Carlyle Group;organization:Ohio Tax Credit Authority,,organization,,the letter is addressed to each (#538; #537),accepted
 New York City Police Department And New York City Department of Transportation,1,joint,organization:New York City Police Department;organization:New York City Department of Transportation,,organization,,the letter is addressed to each (#539; #540),accepted
+Charleston County Sheriff's Office (South Carolina),1,merge,Charleston County Sheriff's Office (South Carolina),,organization,South Carolina local government and agencies,"new term requested by the PC (#574); placed by the Mac, 16 November 2026",accepted
+Graziano,1,officeholder,Charleston County Sheriff's Office (South Carolina),,organization,,recipient named in the held letter (#574),accepted
