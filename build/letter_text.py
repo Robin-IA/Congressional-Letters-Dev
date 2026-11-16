@@ -114,6 +114,28 @@ def by_hand() -> dict[str, str]:
 
 # -------------------------------------------------------------- topics by hand
 
+REVIEWS = ROOT / "vocabulary" / "reviews.csv"
+
+
+def organizations_to_file_under() -> set[str]:
+    """The reviewed organizations a letter can carry as a topic by hand.
+
+    Robin, 15 November 2026: a letter to companies is filed under each company
+    named in it (Delta, United, American and Southwest for one letter to four
+    airline CEOs), and the company is the topic, never its chief executive.
+    Only an organization reviews.csv accepts qualifies, so a misspelt name
+    stops the build rather than publishing a stray term.
+
+    There is no cap on these. tag() keeps at most 8 topics from a file name,
+    but hand topics are added on top of whatever it finds; and a letter naming
+    four or more companies carries every one of them (Robin, 15 November 2026).
+    """
+    with REVIEWS.open(encoding="utf-8") as fh:
+        return {r["target"].strip() for r in csv.DictReader(fh)
+                if r.get("decision") == "merge" and r.get("kind") == "organization"
+                and r.get("status") == "accepted" and (r.get("target") or "").strip()}
+
+
 def topics_by_hand() -> dict[str, list[str]]:
     """digest -> [topics], read from the letter and written by hand.
 

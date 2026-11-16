@@ -46,6 +46,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "build"))
 from build_vocabulary import name_key  # noqa: E402
+import filed_orgs  # noqa: E402
 EXPLORERS = ROOT.parent / "explorers"
 VOCAB = ROOT / "vocabulary"
 MIN_CHARS = 100
@@ -192,12 +193,17 @@ def main() -> int:
     titles = {r["digest"]: r["title"] for r in read_csv("letter-titles.csv")}
     dates = {r["digest"] for r in read_csv("letter-dates.csv")}
     terms = recipient_terms()
+    company_tags = {filed_orgs.tag_of(lab) for lab in filed_orgs.nongov_labels()}
     filings = {n: Counter() for n in CONGRESSES}
 
     per = {n: Counter() for n in CONGRESSES}
     scans: dict[str, dict] = {}
     for n, member, digest, subject, topics, recipient in published(args.explorers):
-        f = filing(recipient, terms)
+        # A letter filed under a company by topic is filed (filed_orgs.py).
+        if any(t.strip() in company_tags for t in re.split(r"[;,]", topics or "")):
+            f = "filed"
+        else:
+            f = filing(recipient, terms)
         filings[n][f] += 1
         s = status(digest, topics, chars, ocr, reviewed, titles, dates, f)
         per[n]["letters"] += 1

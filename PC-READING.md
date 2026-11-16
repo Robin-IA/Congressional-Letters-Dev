@@ -107,6 +107,58 @@ Write CSV rows with `\n` line endings and append only, never reorder.
 - **Copies** (#224): note "another scan of <digest>". Same title, same topics.
 - **Text that is only part of the letter** (#252), such as a signature page,
   footers or a middle page: skip the letter and add it to #252.
+- **Recipients: three kinds, three ways to file** (Robin, 15 November 2026;
+  #352, #357, #391). Read the address block, never guess, and sort the
+  recipient into one of these. A letter is filed only when its recipient is a
+  reviewed term, so this decides what goes in `vocabulary/letter-recipients.csv`
+  (`digest,recipient,source`) and `vocabulary/reviews.csv`.
+  1. **A member or committee of Congress** (a chair and ranking member, the
+     Speaker, a leader, a senator). File the letter **"As recipient"** (#352):
+     in that Congress's session **under the author** (the member who wrote or
+     posted it), **under the recipient** member, marked "As recipient", and
+     under that Congress on the **topics page**. A letter to several members is
+     a `joint` decision in `reviews.csv` (target = Bioguide IDs separated by
+     `;`). The two groups, wrote and received, are kept apart.
+  2. **A government official** (a Secretary, an Administrator, the President,
+     a governor, a judge). File it **under the member or members who wrote it**,
+     **under the official's office** in the matching area of the topic list
+     (Government officials: Executive Office of the President, a department or
+     agency, Judicial branch, State and local government), and **under its
+     subjects**. The official gets **no person term of their own** (Robin,
+     15 November 2026): the name is recorded on the office as an
+     `officeholder` decision in `reviews.csv` ("Hagel" → Department of
+     Defense), or as a `split` by year where one name held several offices.
+     The title still names the official: "to Secretary Hagel".
+  3. **A CEO, or anyone writing for a company or organization.** Never file a
+     personal name. File under the **member or members who wrote it**, then the
+     **company or organization**, then the **topics**. A private citizen gets
+     no person term either; the name stays searchable in the text (#357).
+
+  The title follows: "to Secretary Austin" for an official, "to the chief
+  executive of United Airlines" or the company's name for a CEO, never the
+  CEO's name. Where the address block does not say who the recipient is, list
+  the letter in the PR and leave it.
+
+  **How kind 3 is recorded** (`build/filed_orgs.py`, from the Mac):
+  - **One company:** put the company's reviewed label in
+    `letter-recipients.csv`, for example `<digest>,Equifax,<source>`. The
+    build then files the letter under the company **as a topic** and
+    publishes it with **no recipient**, because only government officials
+    are shown as recipients. A name in `reviews.csv` that resolves only to
+    companies ("Mr. Bastian" → Delta Air Lines) is handled the same way.
+  - **Several companies** (one letter to four airline CEOs): `letter-recipients.csv`
+    takes one row per letter, so add **each company's label to the letter's
+    row in `letter-topics.csv`**, after its subjects. The 8-subject cap does
+    not apply to these: four or more companies are all kept.
+  - **A company the vocabulary lacks:** add a `reviews.csv` row first:
+    `merge`, kind `organization`, broader `Companies`, `Nonprofits` or
+    `Associations and other organizations`. Without one, the build stops on
+    the unknown label in `letter-topics.csv`, and a `letter-recipients.csv`
+    row is shown as a recipient and not filed under the company. This is a
+    vocabulary change, so it goes in its own PR, as with subjects.
+  - **A member and a company together** ("Chairman Wicker and Mr.
+    Zuckerberg"): the member stays the recipient (kind 1), and the company
+    is added as a topic.
 - **New subjects** are never added during reading. Hold the letter in
   `letters-vocabulary-needs/letters.csv` and comment on #221. Vocabulary
   changes go in their own PR to `build/topics.py`. Match words are plain
