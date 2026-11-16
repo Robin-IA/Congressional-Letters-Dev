@@ -46,6 +46,7 @@ from topics import AGENCIES, SUBJECTS, tag as tag_topics  # noqa: E402
 from thumbs import SUFFIX  # noqa: E402
 import caucuses  # noqa: E402
 import letter_text  # noqa: E402
+import filed_orgs  # noqa: E402
 import committees  # noqa: E402
 
 # Read as capitals, not as words. Agency abbreviations come from the topics
@@ -477,8 +478,11 @@ def main() -> None:
     hand_topics = letter_text.topics_by_hand()
     # Like recipient-topics.csv: a label that is not a topic would publish
     # as a stray term, so stop here and name it (the PC's hourly batches).
+    # A reviewed organization is also a topic a letter can be filed under
+    # (a company named in its address block; Robin, 15 November 2026).
+    org_labels = letter_text.organizations_to_file_under()
     for digest, labels in hand_topics.items():
-        unknown = [t for t in labels if t not in SUBJECTS]
+        unknown = [t for t in labels if t not in SUBJECTS and t not in org_labels]
         if unknown:
             raise SystemExit(f"letter-topics.csv: {digest}: not a topic: {unknown}")
     if hand_dates:
@@ -625,9 +629,15 @@ def main() -> None:
         if bool(digest) and (thumbs_dir / f"{digest}{SUFFIX}").exists():
             thumbed += 1
 
+        # A company, nonprofit or association is a topic, not a recipient:
+        # the letter is filed under each one, and only government officials
+        # are shown as recipients (filed_orgs.py; Robin, 15 November 2026).
+        companies, only_companies = filed_orgs.companies_for(recipient, year)
+        shown = None if only_companies else recipient
+
         by_member[bioguide].append([
             record["key"], record["timestamp"], kind, best,
-            precision, recipient, subject,
+            precision, shown, subject,
             # A caucus letter carries its caucus as a topic: by its address
             # (build_congress.py) or by speaking as the caucus (caucuses.py);
             # a letter on a committee's stationery carries the committee
@@ -645,13 +655,15 @@ def main() -> None:
                 + text_topics.get(digest or "", [])
                 # topics a reader saw in the letter that no rule names
                 # (vocabulary/letter-topics.csv, letter_text.py)
-                + hand_topics.get(digest or "", [])
-                + recipient_topics().get((recipient or "").lower(), []))),
+                + [filed_orgs.tag_of(t) for t in hand_topics.get(digest or "", [])]
+                + recipient_topics().get((recipient or "").lower(), [])
+                + [filed_orgs.tag_of(c) for c in companies])),
             ",".join(record.get("cosigners") or []),
             digest,
             link_url(record),
         ])
 
+        recipient = shown
         if recipient:
             recipients[recipient] += 1
             per_member_recipients[bioguide][recipient] += 1
