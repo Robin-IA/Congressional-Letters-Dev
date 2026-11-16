@@ -155,6 +155,50 @@ Each batch is one PR, which appends rows to these files in the dev repository:
 Write CSV rows with `\n` line endings and append only, never reorder.
 `source` is "read from the text of the letter (the PC)".
 
+## 5a. What is a letter (Robin, 16 November 2026; #411)
+
+Decide this **before** titling, dating or filing. It applies to every format.
+
+**A letter must have:**
+
+1. **An addressee**: a person, a company or an organization. A salutation, an
+   inside address or "Dear Colleague" shows it.
+2. **A member of Congress as signer.** A **printed name is enough**. If there
+   is **no printed name, there must be a signature**, which stands in for the
+   name. If the signer is not a member, is it signed **on behalf of a
+   committee or caucus**? If so, **are the members listed?**
+
+**Preferred, not required:** a date in the letter (undated: #506, never from
+metadata, harvest or file name alone) and a named recipient (a letter plainly
+directed at someone but naming no one follows #498).
+
+**The file name is evidence**, a hint about letter, date, author and subject to
+check against the text, never the whole test.
+
+| # | Question | Yes | No |
+|---|---|---|---|
+| 1 | Is it a PDF? | Go to 2 | Open an issue (#242, #243) |
+| 2 | Addressed to a person, company or organization? | Go to 3 | Open an issue, or #498 for a member's letter with no addressee |
+| 3 | Signed, by printed name or by signature, by a member? | A letter. Go to 6 | Go to 4 |
+| 4 | Signed on behalf of a committee or caucus? | Go to 5 | Written to Congress (#175), or not a letter (`letters-discarded/`) |
+| 5 | Are the members listed? | A letter, filed with the members listed | Open an issue |
+| 6 | Does the text give a date and a named recipient? | Fill both in | Still a letter: #506 or #498 |
+
+- **OCR text shows a printed name, a signer title and a close. It never shows
+  a signature.** Where the text has none of these, the signature question
+  needs the rendered page: render it and read it.
+- **Non-PDF items and any that fail or half meet a criterion get an issue**
+  (label `quality control`) listing the digest or URL, the format, the
+  criterion and what was read. Nothing is filed until it is resolved, and
+  nothing is silently dropped.
+- **Screening.** The signals (salutation, date, signer title, inside address,
+  close, letterhead, committee or caucus named) are measured on #411. A
+  salutation plus a close or signer title passes (91.4% of held scans). A scan
+  that fails is **read or rendered by a person**, never discarded by the
+  pattern, because most sampled failures were real letters.
+- **File-name check.** Compare what a file name suggests with what the text
+  says. The text stays the rule for date and author.
+
 ## 6. The rules that matter most
 
 - **Date order** (#172): the letterhead first, then the file name, then the PDF
@@ -328,3 +372,4 @@ an OCR-gap issue is `OCR`. Do not use `important`; that is Robin's.
 | #239 | Older letters re-posted later, and refused dates |
 | #242 / #243 | Letters in Word or HTML, not PDF (survey, then conversion) |
 | #252 | Text layers that cover only part of a letter |
+| #411 | What is a letter: the criteria in section 5a, in any format |
