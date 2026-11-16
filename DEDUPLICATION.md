@@ -39,6 +39,7 @@ roughly 7% of the corpus. The checksum misses them all.
 
 | Level | Relationship | Detected by | What happens |
 |---|---|---|---|
+| **0** | **One file, several URLs for it**: tracking parameters (`?utm_…`), `?download=`, and a site's download page wrapping the PDF | `harvest.canonical()` at harvest time; `resolve_wrappers.py` for wrappers | Collapsed before a digest is ever recorded, so the PDF stands in for its wrapper (#98) |
 | **1** | **Byte-identical**: one file posted at several URLs | same digest | Already one letter. Its postings are listed under it, and each posting member is credited. |
 | **2** | **Text-identical**: the same letter in different files | same normalised-text hash | Duplicates: one letter, one primary (§4) |
 | **3** | **Near-identical**: the same letter, with differences only from OCR or extraction (noise, a dropped line, a missing page) | similarity ≥ 0.95 (§3), **and** the same date, addressee and signers | Duplicates, as level 2 |
@@ -51,6 +52,19 @@ copy has its own recipient, so each is its own letter (level 5), even when the
 bodies match word for word.
 
 ## 2. Worked examples (16 November 2026)
+
+### From closed and open issues
+
+| Level | Issue | What it shows |
+|---|---|---|
+| 0 | #98, download wrappers | 564 letters were first captured only as a site's download page. `resolve_wrappers.py` followed each page to its PDF, and `canonical()` keeps the PDF over the wrapper, so the page and the file are one letter. |
+| 1 | #170, dates from a byte-identical sibling | One PDF posted by Shaheen and Baldwin (`ZHDSI6DF`), dated from the file name at one address and by capture at the others. **3,913 postings of 2,216 letters were dated worse than a byte-identical sibling** until the digest was used to share the best date. Level 1 dedup is also how a date travels. |
+| 1 | #126 and #139, one file and two capture dates | Warren's site moved `/imo/media/doc/` to `/wp-content/uploads/`, so `7RKLT4QP` was captured in 2023 and again in 2026. One digest, so one letter; neither capture is its date. |
+| 2 + 5 | #138, the Visa letters | One title covered three digests. `UP3TCZWK` and `ZHGVQVQD` are the same 5,198-character joint letter led by Stefanik (level 2). `5WAYSRG2` is Burchett's own 951-character letter, with the same date and addressee (level 5). Robin's rule from that case: **if the bodies differ, the titles must.** |
+| 4 | #183, the TitleMax letter, draft and sent | `B3P2UUSH` (the draft: "March XX, 2023", "[ADDRESS BLOCK]") and `C3N75OU4` (the sent letter, 14 March 2023, to Director Chopra). Similarity 0.809, all of it from the unfilled template. **A version**: still open for Robin |
+| 4 | #180, unfilled templates | 18 letters were published with placeholders ("XX", "[ADDRESS BLOCK]"). Each is checked for a sent version in the corpus; where one exists, the pair is level 4. |
+
+### From the shared-title audit (#139)
 
 | Level | Example | Digests | Evidence |
 |---|---|---|---|
@@ -164,7 +178,7 @@ not settled, goes on a **"Duplicate letter"** issue, as #542 asks.
 
 ## Related
 
-#139 (the shared titles these examples came from), #224 (14 near-identical
+#98 (download wrappers), #126 and #170 (dates through level 1), #138 (Visa), #139 (the shared titles these examples came from), #224 (14 near-identical
 pairs), #183 (draft and sent), #180 (unfilled templates, a kind of version),
 #41 (a cosigned letter credited to each signer), #411 (the file name as
 evidence), #542 (the monthly harvest).
