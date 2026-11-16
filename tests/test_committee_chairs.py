@@ -17,7 +17,9 @@ class Chairs(unittest.TestCase):
             self.assertRegex(r["bioguide"], r"^[A-Z]\d{6}$", r)
             self.assertTrue(106 <= int(r["congress"]) <= 119)
             self.assertTrue(r["committee"].startswith(r["chamber"] + " Committee on")
-                            or r["committee"] == "Committee on House Administration", r["committee"])
+                            or r["committee"] == "Committee on House Administration"
+                            or r["committee"].startswith((r["chamber"] + " Select", r["chamber"] + " Special",
+                                                          r["chamber"] + " Permanent Select")), r["committee"])
 
     def test_murkowski_chaired_energy(self):
         rows = list(csv.DictReader((ROOT / "data" / "committee-chairs.csv").open(encoding="utf-8")))
@@ -31,6 +33,12 @@ class Chairs(unittest.TestCase):
                if r["committee"] == "House Committee on Ways and Means"}
         self.assertEqual(got["115"], "B000755")   # Kevin Brady
         self.assertEqual(got["117"], "N000015")   # Richard E. Neal
+
+    def test_select_committees(self):
+        rows = list(csv.DictReader((ROOT / "data" / "committee-chairs.csv").open(encoding="utf-8")))
+        aging = {r["congress"]: r["bioguide"] for r in rows if r["committee"] == "Senate Special Committee on Aging"}
+        self.assertEqual(aging["115"], "C001035")   # Susan Collins
+        self.assertEqual(aging["119"], "S001217")   # Rick Scott
 
 
 if __name__ == "__main__":
