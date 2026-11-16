@@ -216,6 +216,13 @@ SUBJECTS: dict[str, tuple[str, ...]] = {
     # Office; 'shipping' is any parcel. Added 14 November 2026 (#143).
     "Budgets": (),
     "Shipping": (),
+    # Requested by Robin, 15 November 2026, for the airline-CEO letters of
+    # Daines and Tester. No match words: "airline" already tags Aviation, and
+    # a state's name is on every letterhead from that state, so tagging by
+    # word would file each senator's whole output under the home state.
+    "Airlines": (),
+    "Tennessee": (),
+    "Montana": (),
     # Costs and sub-topics. Each phrase is also a word of its parent, so a
     # letter gets both: see "gun violence" under Guns. Without that the
     # longer phrase wins alone and the parent is lost.

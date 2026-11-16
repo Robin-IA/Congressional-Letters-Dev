@@ -80,9 +80,16 @@ URL_CORRECTIONS = {
     # holds inside their own dates (checked 2026-11-14). Not Joel Hefley in
     # the 106th: every 1999-2000 capture of www.house.gov/hefley is a 404,
     # so the House had no page for him there; his site appears in 2001.
-    ("J000283", 106): ("https://www.house.gov/jackson",
-                       "URL not in dataset; www.house.gov/jackson is archived 1997 on, "
-                       "and the 110th roster gives it"),
+    # #13: his only archived site in the 106th is the campaign site, which
+    # holds letters he wrote as a member (the 1998-03-19 letter to President
+    # Clinton on AGOA; 1999 Dear Colleagues). www.house.gov/jackson is a 404
+    # from 2000-08 to 2002-12 and archived only from 2003-04; the captures
+    # once credited here (1999-02-02 to 2000-12-27) were Sheila Jackson
+    # Lee's house.gov/jacksonlee, matched by an unanchored prefix query.
+    ("J000283", 106): ("https://www.jessejacksonjr.org",
+                       "URL not in dataset; www.jessejacksonjr.org (his campaign site) is "
+                       "archived 1998-06 on and holds his letters; www.house.gov/jackson "
+                       "has no capture before 2003 (#13)"),
     ("B001237", 107): ("https://barkley.senate.gov",
                        "URL not in dataset; barkley.senate.gov is archived 2002-2007; "
                        "www.senate.gov/~barkley holds nothing"),

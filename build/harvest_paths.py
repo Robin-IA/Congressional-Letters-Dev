@@ -59,6 +59,7 @@ import csv
 import json
 import re
 import sys
+import urllib.parse
 import time
 from pathlib import Path
 
@@ -74,6 +75,20 @@ NOT_A_MEMBER = {"cgi-bin", "include_content", "bin", "cgi"}
 
 RETRIES = 3
 CACHE_METHOD = "prefix-v1"
+
+
+def own(site: str, row: dict) -> bool:
+    """Whether a captured URL is under this site's own path.
+
+    Wayback's index drops a path's trailing slash, so ``house.gov/jackson/*``
+    also returns ``house.gov/jackson_lee`` and ``house.gov/jacksonlee``, and
+    ``house.gov/john/*`` returns John Lewis's and John Peterson's letters. A
+    row counts only when its first path segment is the site's own (#13).
+    """
+    want = site.rstrip("/").split("/", 1)[1].lower().lstrip("~")
+    path = re.sub(r"^[a-z]+://[^/]+", "", row.get("url", ""), flags=re.I).split("?")[0]
+    first = urllib.parse.unquote(path).lstrip("/").split("/")[0].lower().lstrip("~")
+    return first == want
 
 
 def cache_name(site: str) -> str:
@@ -229,7 +244,7 @@ def main() -> int:
                       % (done, len(todo), site, result["error"][:60]), file=sys.stderr)
             else:
                 rows = result.get("rows", [])
-                kept = [r for r in rows if harvest.keep(r)]
+                kept = [r for r in rows if own(site, r) and harvest.keep(r)]
                 print("  [%d/%d] %-40s %4d letters (of %d rows)"
                       % (done, len(todo), site, len(kept), len(rows)), file=sys.stderr)
 
@@ -240,7 +255,8 @@ def main() -> int:
         cached = harvest.read_cache(args.cache / cache_name(site))
         if not cached or "error" in cached:
             continue
-        kept = harvest.clean([r for r in cached.get("rows", []) if harvest.keep(r)])
+        kept = harvest.clean([r for r in cached.get("rows", [])
+                              if own(site, r) and harvest.keep(r)])
         if kept:
             sites_with += 1
         meta = attribution[site]

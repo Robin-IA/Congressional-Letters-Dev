@@ -170,7 +170,7 @@ def main(only, ocr_repo=None):
             if (r.get("date_audited") or "").strip().lower() == "yes":
                 settled.add(r["digest"])
     short = {d[:12]: d for d in reviewed}
-    stored = {}
+    stored, first = {}, {}
     for line in (ROOT / "data" / "letters-parsed.jsonl").open(encoding="utf-8"):
         try:
             r = json.loads(line)
@@ -178,6 +178,9 @@ def main(only, ocr_repo=None):
             continue
         stored.setdefault(r["digest"],
                           ((r.get("date_best") or "")[:10], r.get("date_precision") or ""))
+        seen_at = (r.get("first_seen") or "")[:10]
+        if seen_at and (r["digest"] not in first or seen_at < first[r["digest"]]):
+            first[r["digest"]] = seen_at
     targets = [short[k] for k in (only or sorted(short)) if k in short]
 
     clean = flagged = quiet = 0
@@ -197,7 +200,15 @@ def main(only, ocr_repo=None):
         body = [x for x in dates if x[0] >= cut]
         rec = recorded.get(full, (None, None, ""))[0]
         was, wasprec = stored.get(full, ("", ""))
-        effective = rec or was
+        # The date a letter is published under, as build_congress.py works it
+        # out: a hand date, else the letterhead the rule reads (source 1 of the
+        # dating order) unless that postdates the letter's first capture, else
+        # the date parsed from the file. Comparing the letterhead with the
+        # parsed date alone flags every letter the build has already put right:
+        # on 15 November 2026, 224 of 225 letters flagged this way.
+        rule = letterhead_date(t)
+        seen_at = first.get(full, "")
+        effective = rec or (rule if rule and (not seen_at or rule <= seen_at) else was)
         wd = weekdays(t)
 
         why = []

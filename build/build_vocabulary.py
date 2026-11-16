@@ -59,6 +59,7 @@ sys.path.insert(0, str(ROOT / "build"))
 import address_holders  # noqa: E402
 import caucuses  # noqa: E402
 import committees  # noqa: E402
+import filed_orgs  # noqa: E402
 import parse_urls  # noqa: E402
 import topics  # noqa: E402
 
@@ -229,6 +230,17 @@ def main() -> int:
 
     def add(term_id, label, kind, facet, status, source, uri="", letters=0, note=""):
         if term_id in ids:
+            # An unreviewed candidate with the same name is this term: a
+            # per-letter recipient can publish a committee's own name
+            # ("Senate Committee on Rules and Administration") before the
+            # committee term is made. Make it the term rather than fail.
+            twin = next((t_ for t_ in terms if t_["term_id"] == term_id), None)
+            if twin and twin["status"] == "candidate" and twin["label"].lower() == label.lower():
+                twin.update(label=label, kind=kind, facet=facet, status=status, source=source,
+                            uri=uri or twin["uri"], letters=int(twin["letters"] or 0) + int(letters or 0),
+                            note=note)
+                terms.remove(twin); terms.append(twin)
+                return
             raise SystemExit(f"duplicate term_id {term_id}")
         ids.add(term_id)
         terms.append({"term_id": term_id, "label": label, "kind": kind, "facet": facet,
@@ -238,6 +250,23 @@ def main() -> int:
     def rel(term_id, relation, value, status="preferred", source="local"):
         relations.append({"term_id": term_id, "relation": relation, "value": value,
                           "status": status, "source": source})
+
+
+    def promote_or_add(label, kind, facet):
+        """The reviewed term for a label a decision names. An unreviewed
+        candidate with the same name becomes it -- per-letter recipients
+        publish committee names, so "House Committee on the Judiciary" can
+        already be a candidate with the very id a new term would take."""
+        twin = next((t_ for t_ in terms if t_["status"] == "candidate"
+                     and t_["label"].lower() == label.lower()), None)
+        if twin:
+            twin.update(status="preferred", source="reviewed", kind=kind, facet=facet)
+            return twin
+        tid = f"{'P' if kind == 'person' else 'O'}-{slug(label)}"
+        while tid in ids:
+            tid += "-2"
+        add(tid, label, kind, facet, "preferred", "reviewed")
+        return terms[-1]
 
     # Members ---------------------------------------------------------------
     legs = legislators()
@@ -455,9 +484,7 @@ def main() -> int:
                 tgt = next((t_ for t_ in terms if t_["label"] == label.strip()
                             and t_["status"] == "preferred"), None)
                 if tgt is None:
-                    add(f"O-{slug(label)}", label.strip(), rv["kind"] or "organization",
-                        "body", "preferred", "reviewed")
-                    tgt = terms[-1]
+                    tgt = promote_or_add(label.strip(), rv["kind"] or "organization", "body")
                     if rv["broader"]:
                         extra_hier.append({"term": label.strip(), "broader": rv["broader"]})
                 n = sum(c for (rec, yr), c in RECIPIENT_YEARS.items()
@@ -485,9 +512,7 @@ def main() -> int:
                     tgt = next((t_ for t_ in terms if t_["label"] == label
                                 and t_["status"] == "preferred"), None)
                     if tgt is None and kind in ("person", "organization"):
-                        add(f"{'P' if kind == 'person' else 'O'}-{slug(label)}", label, kind,
-                            "person" if kind == "person" else "body", "preferred", "reviewed")
-                        tgt = terms[-1]
+                        tgt = promote_or_add(label, kind, "person" if kind == "person" else "body")
                     if tgt is None:
                         print(f"  review {rv['candidate']!r}: no term {label!r}", file=sys.stderr)
                         continue
@@ -550,6 +575,35 @@ def main() -> int:
             rel(existing["term_id"], "altLabel", committees.informal(label), "preferred", "local")
         extra_hier.append({"term": label,
                            "broader": f"{committees.chamber(label)} committees"})
+
+    # Companies and other organizations a letter is filed under by hand
+    # (vocabulary/letter-topics.csv). Robin, 15 November 2026: a letter to
+    # several companies' CEOs is filed under each company, and the company,
+    # never the CEO, is the topic. The label is the organization's own, so
+    # the letter opens from that organization's page by its tag.
+    filed_ids = set()
+    # A company that letters now reach only by topic (filed_orgs.py blanks a
+    # company recipient) has no candidate left for its review to apply to,
+    # so its term is made here, under the review's broader term.
+    org_broader = {}
+    for rv in reviews:
+        if rv["status"] == "accepted" and rv.get("broader"):
+            for part in rv["target"].split(";"):
+                lab = part.partition("@")[0].split(":", 1)[-1].strip()
+                org_broader.setdefault(lab, rv["broader"])
+    have = {t_["label"] for t_ in terms if t_["status"] == "preferred"}
+    for label in sorted(filed_orgs.nongov_labels()):
+        if per_topic.get(filed_orgs.tag_of(label)) and label not in have:
+            promote_or_add(label, "organization", "body")
+            if org_broader.get(label):
+                extra_hier.append({"term": label, "broader": org_broader[label]})
+    for t_ in terms:
+        if (t_["kind"] == "organization" and t_["status"] == "preferred"
+                and t_["term_id"] not in committee_ids
+                and per_topic.get(tag := filed_orgs.tag_of(t_["label"]))):
+            t_["letters"] = int(t_["letters"] or 0) + per_topic[tag]
+            committee_ids[t_["term_id"]] = tag
+            filed_ids.add(t_["term_id"])
 
     # Caucuses sit together under Topics (hierarchy.csv's "Caucuses"), by rule,
     # so a caucus added to address_holders.CAUCUSES or caucuses.py is placed
@@ -687,6 +741,8 @@ def main() -> int:
         # carry its name as a tag.
         if tid in committee_ids:
             n["tag"] = committee_ids[tid]
+            if tid in filed_ids:
+                n["filed"] = True
         if t_["status"] != "preferred":
             n["status"] = t_["status"]
         if int(t_["letters"] or 0):
