@@ -501,7 +501,7 @@ Blunt,8,member,B000575,,,,"checked: ""The Honorable Roy Blunt"", ""Chairman Roy 
 Gowdy,8,member,G000566,,,,"Trey Gowdy, Oversight chair 2017-2019; letters of 2018 (batch 1, 2026-11-13: read the letters' address blocks)",accepted
 Hatch,7,member,H000338,,,,"checked: ""The Honorable Orrin G. Hatch, Chairman, Committee on Finance"" (batch 1, 2026-11-13: read the letters' address blocks)",accepted
 Snyder,7,officeholder,Governor of Michigan,,organization,,"Governor of Michigan; all from Michigan members, 2011-2018 (batch 1, 2026-11-13: read the letters' address blocks); governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
-Mayor Adams,8,person,Eric Adams,,person,,"checked: ""The Honorable Eric Adams, Mayor of New York City"", 2022-2024 (batch 1, 2026-11-13: read the letters' address blocks)",accepted
+Mayor Adams,8,officeholder,Mayor of New York City,,organization,,"checked: ""The Honorable Eric Adams, Mayor of New York City"", 2022-2024 (batch 1, 2026-11-13: read the letters' address blocks); officials are filed under the office (Robin, 16 November 2026)",accepted
 Chairman,8,reject,,,,,"no name: the letter's text says which chairman (batch 1, 2026-11-13: read the letters' address blocks)",accepted
 Secretary,7,reject,,,,,"no name: the letter's text says which secretary (batch 1, 2026-11-13: read the letters' address blocks)",accepted
 Agencies,8,reject,,,,,"several agencies at once; the letter's text names them (batch 1, 2026-11-13: read the letters' address blocks)",accepted
@@ -3636,7 +3636,7 @@ Representatives Wenstrup,1,member,W000815,,,,matched by rule (match_recipients.p
 Director Rohit Chopra,1,officeholder,Consumer Financial Protection Bureau,,,,matched by rule (match_recipients.py): rule 1: director chopra,accepted
 Congressman Gaetz,1,member,G000578,,,,matched by rule (match_recipients.py): rule 5: the one House member named gaetz,accepted
 For Rep Tlaib,1,member,T000481,,,,matched by rule (match_recipients.py): rule 5: the one House member named tlaib,accepted
-Nyc Mayor Adams,1,person,Eric Adams,,person,,matched by rule (match_recipients.py): rule 1: mayor adams,accepted
+Nyc Mayor Adams,1,officeholder,Mayor of New York City,,organization,,"matched by rule (match_recipients.py): rule 1: mayor adams; officials are filed under the office (Robin, 16 November 2026)",accepted
 Administrator Chiquita Brooks-LaSure,1,officeholder,Centers for Medicare and Medicaid Services,,,,matched by rule (match_recipients.py): rule 1: administrator brooks-lasure,accepted
 Secretary Raimondo and Secretary Becerra,1,joint,Department of Commerce;Department of Health and Human Services,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary raimondo; rule 1: secretary becerra,accepted
 Representative Houlahan,1,member,H001085,,,,matched by rule (match_recipients.py): rule 5: the one House member named houlahan,accepted
@@ -4425,3 +4425,25 @@ Governor DeWine and the Ohio Department of Transportation,1,joint,organization:G
 Attorney General James and Commissioner Rosa,1,joint,organization:New York Attorney General;organization:New York State Education Department,,organization,,addressed to both offices (#476-#484),accepted
 Fairfax County Planning Commission,1,merge,Fairfax County Planning Commission,,organization,Virginia local government and agencies,new term for #488 (Beyer's letter),accepted
 Maritime Administration,1,merge,Maritime Administration,MARAD,organization,Department of Transportation,new term for #488 (Collins and King's letter),accepted
+Governor Pataki,1,officeholder,Governor of New York,,organization,,"governors are filed under the office (Robin, 16 November 2026); dates checked in the explorers",accepted
+Governor Easley,1,officeholder,Governor of North Carolina,,organization,,"governors are filed under the office (Robin, 16 November 2026); dates checked in the explorers",accepted
+Governor Perry,1,officeholder,Governor of Texas,,organization,,"governors are filed under the office (Robin, 16 November 2026); dates checked in the explorers",accepted
+Governor Blanco,1,officeholder,Governor of Louisiana,,organization,,"governors are filed under the office (Robin, 16 November 2026); dates checked in the explorers",accepted
+Governor Fitial,1,officeholder,Governor of the Northern Mariana Islands,,organization,,"governors are filed under the office (Robin, 16 November 2026); dates checked in the explorers",accepted
+Governor Torres,1,officeholder,Governor of the Northern Mariana Islands,,organization,,"governors are filed under the office (Robin, 16 November 2026); dates checked in the explorers",accepted
+Governor Inos,1,officeholder,Governor of the Northern Mariana Islands,,organization,,"governors are filed under the office (Robin, 16 November 2026); dates checked in the explorers",accepted
+Governor Gregoire,1,officeholder,Governor of Washington,,organization,,"governors are filed under the office (Robin, 16 November 2026); dates checked in the explorers",accepted
+Governor Rendell,1,officeholder,Governor of Pennsylvania,,organization,,"governors are filed under the office (Robin, 16 November 2026); dates checked in the explorers",accepted
+Governor Branstad,1,officeholder,Governor of Iowa,,organization,,"governors are filed under the office (Robin, 16 November 2026); dates checked in the explorers",accepted
+Governor Hickenlooper,1,officeholder,Governor of Colorado,,organization,,"governors are filed under the office (Robin, 16 November 2026); dates checked in the explorers",accepted
+Governor Malloy,1,officeholder,Governor of Connecticut,,organization,,"governors are filed under the office (Robin, 16 November 2026); dates checked in the explorers",accepted
+Governor Greitens,1,officeholder,Governor of Missouri,,organization,,"governors are filed under the office (Robin, 16 November 2026); dates checked in the explorers",accepted
+Governor Martinez,1,officeholder,Governor of New Mexico,,organization,,"governors are filed under the office (Robin, 16 November 2026); dates checked in the explorers",accepted
+Governor Mcmaster,1,officeholder,Governor of South Carolina,,organization,,"governors are filed under the office (Robin, 16 November 2026); dates checked in the explorers",accepted
+Governor Holcomb,1,officeholder,Governor of Indiana,,organization,,"governors are filed under the office (Robin, 16 November 2026); dates checked in the explorers",accepted
+Governor Tarullo,3,officeholder,Federal Reserve,,organization,,"Daniel Tarullo, a member of the Federal Reserve Board of Governors, 2009-2017 (letters 2012-2013)",accepted
+Governor Leavitt,3,split,Governor of Utah@2003-2003;Environmental Protection Agency@2004-2005,,organization,,"Mike Leavitt: Governor of Utah until November 2003, then EPA Administrator",accepted
+Governor Wolf and Secretary Levine,1,joint,organization:Governor of Pennsylvania;organization:Pennsylvania Department of Health,,organization,,"Governor Wolf and Health Secretary Rachel Levine, November 2020",accepted
+Pennsylvania Department of Health,1,merge,Pennsylvania Department of Health,,organization,Pennsylvania state government agencies,the state health department,accepted
+Governor Kathy Hochul and Mayor Bill De Blasio,1,joint,organization:Governor of New York;organization:Mayor of New York City,,organization,,September 2021,accepted
+Mayor of New York City,1,merge,Mayor of New York City,,organization,New York local government and agencies,"the office; mayors' names are its office holders' (Robin, 16 November 2026)",accepted
