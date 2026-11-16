@@ -150,6 +150,7 @@ Each batch is one PR, which appends rows to these files in the dev repository:
 | `vocabulary/reviews.csv` | `candidate,letters,decision,…` | Only when step 2 needs a decision the vocabulary lacks: a `joint` row for several offices at once, or a `merge` row for a company not yet reviewed. |
 | `vocabulary/letters-reviewed.csv` | `digest,reviewed,title,date,topics,filing,note,date_audited` | One row per letter read. `date` is `yes` if you added a date row, otherwise `unchanged`; `filing` is `yes` if you added a recipient row. |
 | `letters-vocabulary-needs/letters.csv` | `digest,title,date,topics,proposed_subjects,issue,note` | For a letter that needs a subject the vocabulary lacks. It stays here and goes in none of the files above. Also comment on #221. |
+| `letters-discarded/letters.csv` | `digest,title,reason,issue,decided` | A posting that is **not a letter** (resolution, newsletter, exhibit, "Dear Employer" reference), once Robin has decided it. It goes in none of the other files and is not read again. |
 
 Write CSV rows with `\n` line endings and append only, never reorder.
 `source` is "read from the text of the letter (the PC)".
@@ -169,8 +170,10 @@ Write CSV rows with `\n` line endings and append only, never reorder.
 - **Not every PDF is a member's letter.** An agency reply, an association's
   letter to a member, a CBO letter or a newspaper page is titled with its
   sender ("— CBO Director Elmendorf to Chairman Baucus …") and noted (#175).
-  A page that is not a letter at all (a draft resolution, a newsletter) is
-  skipped and listed in the PR for a filing decision.
+  A page that is not a letter at all (a draft resolution, a newsletter, a
+  "Dear Employer" reference) goes in **`letters-discarded/letters.csv`**
+  (digest, title, reason, issue, decided; Robin, 16 November 2026) once
+  Robin has decided it, and is listed in the PR. It is not read again.
 - **Copies** (#224): note "another scan of <digest>". Same title, same topics.
 - **Text that is only part of the letter** (#252), such as a signature page,
   footers or a middle page: skip the letter and add it to #252.
