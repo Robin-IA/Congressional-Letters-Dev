@@ -4313,3 +4313,9 @@ Department of State and Department of Justice,1,joint,Department of State;Depart
 Department of Justice and Federal Trade Commission,1,joint,Department of Justice;Federal Trade Commission,,organization,,checked: the addressees of 1 letter(s) read by the PC from their salutations,accepted
 Department of Commerce and Office of the US Trade Representative,1,joint,Department of Commerce;Office of the US Trade Representative,,organization,,checked: the addressees of 1 letter(s) read by the PC from their salutations,accepted
 "Chairmen Wicker, Cotton and Risch",1,joint,organization:Senate Committee on Armed Services;organization:Senate Select Committee on Intelligence;organization:Senate Committee on Foreign Relations,,organization,,"the three Senate chairs, by committee, 27 March 2025 (Signal chat hearings; #429)",accepted
+Herb Conaway,1,member,C001136,,person,,address block read (#97): the member the letter is addressed to,accepted
+Joe Manchin,1,member,M001183,,person,,address block read (#97): the member the letter is addressed to,accepted
+United Airlines and JetBlue,1,joint,organization:United Airlines;organization:JetBlue,,organization,,addressed to these offices at once (#97),accepted
+Department of Education and Department of Justice,1,joint,organization:Department of Education;organization:Department of Justice,,organization,,addressed to these offices at once (#97),accepted
+Department of Homeland Security and Department of State,1,joint,organization:Department of Homeland Security;organization:Department of State,,organization,,addressed to these offices at once (#97),accepted
+Department of Transportation and Federal Aviation Administration,1,joint,organization:Department of Transportation;organization:Federal Aviation Administration,,organization,,addressed to these offices at once (#97),accepted
