@@ -98,9 +98,13 @@ def best_texts() -> tuple[dict, dict, dict]:
             continue
         ocr_chars[d] = max(ocr_chars[d], chars)
         have = best.get(d)
-        if have and have["source"] == "text-layer":
+        # The text layer wins, unless it holds U+FFFD (glyphs with no Unicode
+        # map, usually accented surnames) and the OCR does not (#122).
+        if have and have["source"] == "text-layer" and not (
+                "\ufffd" in have["text"] and "\ufffd" not in (r.get("text") or "")):
             continue
-        if chars >= MIN_CHARS and chars > (have or {}).get("chars", -1):
+        replaces_damaged = bool(have) and have["source"] == "text-layer"
+        if chars >= MIN_CHARS and (replaces_damaged or chars > (have or {}).get("chars", -1)):
             best[d] = {"digest": d, "source": "ocr", "engine": r.get("engine"),
                        "chars": chars, "confidence": r.get("confidence"),
                        "text": r.get("text") or ""}

@@ -37,7 +37,12 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def text_chars(path: Path) -> dict[str, int]:
-    """digest -> characters of text layer the renderer found (last line wins)."""
+    """digest -> characters of text layer the renderer found (last line wins).
+
+    A layer holding U+FFFD counts as 0: the PDF's fonts carry no Unicode map
+    for some glyphs, so pypdf gives replacement characters, and they fall on
+    accented surnames (Velázquez, Sánchez, Cárdenas). OCR reads them (#122).
+    """
     out: dict[str, int] = {}
     if path.exists():
         for line in path.open(encoding="utf-8"):
@@ -46,7 +51,8 @@ def text_chars(path: Path) -> dict[str, int]:
             except Exception:  # noqa: BLE001 - a half-written last line
                 continue
             if row.get("digest"):
-                out[row["digest"]] = int(row.get("chars") or 0)
+                damaged = "\ufffd" in (row.get("text") or "")
+                out[row["digest"]] = 0 if damaged else int(row.get("chars") or 0)
     return out
 
 
