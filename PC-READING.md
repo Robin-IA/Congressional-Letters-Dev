@@ -86,6 +86,26 @@ last of that kind).
      never the person; file under the company or organization.
    - **Many companies or organizations named** (a letter to ten insurers):
      each one is filed, and the 8-subject limit does not apply.
+   - **No addressee** (no address block or salutation, or only "To Whom It
+     May Concern"; Robin, 16 November 2026, #498). Do not guess and do not
+     hold it. In order:
+     1. The **author** is the letterhead, or the signer when they differ
+        (then the letterhead is the organization).
+     2. Read the recipient from the address block, the salutation, then the
+        body, as above.
+     3. If none can be read and the letter sits on a **member's website**
+        whose member is **not the author**, that member is the recipient:
+        "As recipient, from Rep./Sen. X's website" (#352). The `source` in
+        `letter-recipients.csv` says "from Rep. X's website (the posting
+        member); the author is Y", and the title names the sender ("… —
+        Mayor of Gilman to Representative Emmer, 10 March 2025").
+     4. If the **member is the author** (an open letter, a notice to
+        constituents), no recipient is filed; it files under its author.
+        *Pending Robin's confirmation.*
+     5. **Omit** letters to unnamed employers ("Dear Employer"), which are
+        references or personnel letters, not correspondence to file.
+     6. A **named** addressee whose office cannot be established ("Dear Mr.
+        Hall") is not this case: hold it with an issue.
 3. **Find who wrote it, and where it files.** Check that the posting member
    signed it or is among its signers. A letter written *to* the member is
    titled with its sender (#175). The Congress follows from the letter's date
