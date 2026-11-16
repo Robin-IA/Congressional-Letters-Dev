@@ -53,8 +53,14 @@ def load_text(path: Path, source: str, into: dict) -> None:
             except ValueError:
                 continue  # a half-written last line while OCR is still running
             digest, text = row.get("digest"), (row.get("text") or "").strip()
-            if digest and len(text) >= MIN_CHARS and len(text) > len(into.get(digest, ("",))[0]):
+            if digest and len(text) >= MIN_CHARS and rank(text) > rank(into.get(digest, ("",))[0]):
                 into[digest] = (text, source)
+
+
+def rank(text: str) -> tuple[bool, int]:
+    """Text without U+FFFD first (#122: a text layer whose fonts have no
+    Unicode map loses accented surnames), then the longer."""
+    return ("\ufffd" not in text, len(text))
 
 
 def records(explorer: Path, text: dict, congress: int) -> list[dict]:
