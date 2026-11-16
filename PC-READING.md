@@ -251,6 +251,31 @@ agency letters, round N (25 read from full text)"). The body lists copies,
 holds and gaps. If rows from a Mac batch land at the same time, the conflict
 is only appended rows, and the Mac resolves it by keeping both sets.
 
+## 7a. Label every issue and PR (Robin, 16 November 2026)
+
+Every issue and every PR the PC opens gets **at least one topic label**, set
+when it is created: `gh issue create … --label "reading,vocabulary"` or
+`gh pr create … --label reading`. Use as many as fit. Labels are only added,
+never removed. Use only these (`gh label list` shows them):
+
+| Label | Use it for |
+| --- | --- |
+| `reading` | A reading batch PR; a letter that needs to be read again |
+| `vocabulary` | A term request ("New vocabulary term needed"), holds, recipients, subjects, `reviews.csv` |
+| `dates` | Letters with no date in their text (the #191 issues), refused dates, holder-check problems |
+| `OCR` | Text missing, cut off or unreadable; OCR batches and returns |
+| `harvest` | Member sites, URLs, captures, letters not found or not in PDF |
+| `quality control` | Checking, reconciling, duplicates, letters that are not letters |
+| `methodologies` | A rule or criterion that needs deciding |
+| `process documentation` | Changes to this file or to how the work is handed over |
+| `search` / `explorer` | How letters are found; the published pages |
+| `bug` / `enhancement` | Code that is wrong / a new feature |
+
+Typical sets: a reading batch PR is `reading` (plus `vocabulary` if it adds
+`reviews.csv` rows); a term request is `vocabulary`; an index of term
+requests is `vocabulary`; an undated-letters issue is `dates` and `reading`;
+an OCR-gap issue is `OCR`. Do not use `important`; that is Robin's.
+
 ## 8. What the PC does not do
 
 - It does not publish or build explorers. The Mac's publish loop does that
