@@ -71,7 +71,9 @@ def text_chars(path: Path) -> dict[str, int]:
             except Exception:  # noqa: BLE001 - a half-written last line
                 continue
             if row.get("digest"):
-                out[row["digest"]] = int(row.get("chars") or 0)
+                # a layer with U+FFFD has lost glyphs (accented names): OCR it (#122)
+                damaged = "\ufffd" in (row.get("text") or "")
+                out[row["digest"]] = 0 if damaged else int(row.get("chars") or 0)
     return out
 
 
@@ -165,6 +167,11 @@ def main() -> int:
     ap.add_argument("--tesseract", help="path to tesseract(.exe)")
     ap.add_argument("--lang", default="eng")
     ap.add_argument("--min-chars", type=int, default=100)
+    ap.add_argument("--assume-no-text", action="store_true",
+                    help="OCR PDFs that --text has no record of, as if their text "
+                         "layer were empty (for a folder of new fetches with no "
+                         "letter-text.jsonl; #168). Without it they are counted "
+                         "and reported, not read.")
     ap.add_argument("--pages", type=int, default=6)
     ap.add_argument("--dpi", type=int, default=300)
     ap.add_argument("--workers", type=int, default=max(1, (os.cpu_count() or 2) // 2))
@@ -186,13 +193,22 @@ def main() -> int:
     while True:
         chars = text_chars(args.text)
         done = done_digests(args.out)
-        todo = sorted(p for p in args.pdfs.glob("*.pdf")
-                      if p.stem not in done and p.stem in chars
-                      and chars[p.stem] < args.min_chars)
+        pending = [p for p in args.pdfs.glob("*.pdf") if p.stem not in done]
+        # A digest --text has never seen is not "plenty of text": say how many
+        # there are, and read them only when asked to (#168). Silently skipping
+        # them printed "0 PDFs to read (0 already read)" for two hours with
+        # 172 PDFs in the folder.
+        unknown = [p for p in pending if p.stem not in chars]
+        todo = sorted(p for p in pending
+                      if (p.stem in chars and chars[p.stem] < args.min_chars)
+                      or (args.assume_no_text and p.stem not in chars))
         if args.max:
             todo = todo[: max(0, args.max - total)]
         print(f"{time.strftime('%H:%M:%S')}  {engine}, {args.workers} workers: "
-              f"{len(todo):,} PDFs to read ({len(done):,} already read)",
+              f"{len(todo):,} PDFs to read ({len(done):,} already read)"
+              + (f"; {len(unknown):,} present but missing from {args.text.name}"
+                 + ("" if args.assume_no_text else " (skipped: --assume-no-text reads them)")
+                 if unknown else ""),
               file=sys.stderr, flush=True)
         started = time.time()
         with ProcessPoolExecutor(args.workers) as pool:
