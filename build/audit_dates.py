@@ -47,12 +47,19 @@ SLASH = re.compile(r"\b(\d{1,2})/(\d{1,2})/(\d{2,4})\b")
 # May Concern". A salutation we fail to find puts the whole body in front of
 # the cut, which is what made three letters look as though their letterhead
 # disagreed with itself.
+_TITLE = (r"(?:Majority |Minority |Republican |Democratic )?"
+          r"(?:Leader|Speaker|Senator|Chairman|Chairwoman|Chair|"
+          r"Congressman|Congresswoman|Governor|Secretary|Administrator|"
+          r"Commissioner|President)")
+# A title and a name, or several joined by "and" ("Chair DeLauro and Ranking
+# Member Granger,"; "President Trump, Sir," #473).
 SALUTE = re.compile(
     r"\bDear\b|\bTo [Ww]hom\b|\bMadam\b|\bMr\. President\b|"
-    r"\b(?:Majority |Minority |Republican |Democratic )?"
-    r"(?:Leader|Speaker|Senator|Chairman|Chairwoman|Chair|Congressman|"
-    r"Congresswoman|Governor|Secretary|Administrator|Commissioner)"
-    r"\s+[A-Z][A-Za-z'-]+\s*[,:]", re.I)
+    r"\b" + _TITLE + r"\s+[A-Z][A-Za-z'-]+"
+    r"(?:\s+and\s+(?:" + _TITLE + r"|Ranking Member)\s+[A-Z][A-Za-z'-]+)*\s*[,:]", re.I)
+# A dateline directly above an inside address, for a letter with no
+# salutation at all (#473): the date, then within 200 characters a ZIP code.
+DATELINE_THEN_ADDRESS = re.compile(r"\b\d{5}(?:-\d{4})?\b")
 WEEKDAY = re.compile(r"\b(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)\s*,?\s*"
                      r"(" + "|".join(m[:3] for m in MONTHS) + r")[a-z]*\.?\s+"
                      r"(\d{1,2})(?:st|nd|rd|th)?\b", re.I)
@@ -117,7 +124,18 @@ def letterhead_date(text: str) -> str | None:
     """
     sal = SALUTE.search(text)
     if not sal:
-        return None
+        # No salutation (#473): accept only the first date, when it sits in
+        # the first 800 characters and an inside address (a ZIP code) follows
+        # it within 200 characters.
+        dates = found(text)
+        if not dates or dates[0][0] > 800:
+            return None
+        pos, iso, raw = dates[0]
+        after = text[pos + len(raw): pos + len(raw) + 200]
+        if not DATELINE_THEN_ADDRESS.search(after):
+            return None
+        year = date.fromisoformat(iso).year
+        return iso if 1995 <= year <= 2027 else None
     head = {iso for pos, iso, _ in found(text) if pos < sal.start()}
     if len(head) != 1:
         return None
