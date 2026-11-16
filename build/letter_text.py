@@ -44,7 +44,7 @@ TITLES = ROOT / "vocabulary" / "letter-titles.csv"
 DATES = ROOT / "vocabulary" / "letter-dates.csv"
 TOPICS_BY_HAND = ROOT / "vocabulary" / "letter-topics.csv"
 RECIPIENTS_BY_HAND = ROOT / "vocabulary" / "letter-recipients.csv"
-RULES = "2026-11-13d"  # change when the rules change, so the cache is redone
+RULES = "2026-11-16a"  # change when the rules change, so the cache is redone
 
 # -------------------------------------------------------------------- topics
 
