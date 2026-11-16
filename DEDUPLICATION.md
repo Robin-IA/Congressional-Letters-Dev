@@ -2,7 +2,7 @@
 
 Draft, 16 November 2026. Robin asked for this after #139: "For duplication,
 are you using checksum? Let's write a deduplication methodology." The checksum
-is the first test, not the only one. This document sets out the five
+is the first test, not the only one. This document sets out the six
 relationships two files can have, how each is detected, and what is recorded.
 Each level comes with worked examples from the corpus.
 
@@ -35,7 +35,7 @@ new digest. Comparing **text** finds those:
 So about 5,100 digests are extra copies of letters already counted, which is
 roughly 7% of the corpus. The checksum misses them all.
 
-## 1. The five relationships
+## 1. The relationships, level 0 to 5
 
 | Level | Relationship | Detected by | What happens |
 |---|---|---|---|
