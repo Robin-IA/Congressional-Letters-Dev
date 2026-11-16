@@ -1218,7 +1218,8 @@ function viewAbout() {
 
     el('h3', {}, 'What’s missing'),
     el('p', {}, `Only letters the Wayback Machine archived and we have found so far. A letter
-      posted without “letter” in its file name or web address is not here yet.`),
+      posted without “letter” in its file name or web address is not here yet, and letters published as web pages or
+      Word files rather than PDFs are only partly here.`),
 
     // The data download lives here, not on the home page's cards (EXPLORERS.md,
     // 2026-11-13). export_csv.py writes it beside each explorer's index.json.
