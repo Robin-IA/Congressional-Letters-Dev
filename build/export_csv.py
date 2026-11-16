@@ -111,6 +111,8 @@ def seat_of(m: dict) -> str:
 def iso_date(date: str, precision: str) -> str:
     if not date:
         return ""
+    if precision == "year":
+        return date[:4]
     return date[:7] if precision == "month" else date[:10]
 
 
