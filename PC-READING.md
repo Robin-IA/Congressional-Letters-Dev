@@ -134,6 +134,27 @@ Write CSV rows with `\n` line endings and append only, never reorder.
   executive of United Airlines" or the company's name for a CEO, never the
   CEO's name. Where the address block does not say who the recipient is, list
   the letter in the PR and leave it.
+
+  **How kind 3 is recorded** (`build/filed_orgs.py`, from the Mac):
+  - **One company:** put the company's reviewed label in
+    `letter-recipients.csv`, for example `<digest>,Equifax,<source>`. The
+    build then files the letter under the company **as a topic** and
+    publishes it with **no recipient**, because only government officials
+    are shown as recipients. A name in `reviews.csv` that resolves only to
+    companies ("Mr. Bastian" → Delta Air Lines) is handled the same way.
+  - **Several companies** (one letter to four airline CEOs): `letter-recipients.csv`
+    takes one row per letter, so add **each company's label to the letter's
+    row in `letter-topics.csv`**, after its subjects. The 8-subject cap does
+    not apply to these: four or more companies are all kept.
+  - **A company the vocabulary lacks:** add a `reviews.csv` row first:
+    `merge`, kind `organization`, broader `Companies`, `Nonprofits` or
+    `Associations and other organizations`. Without one, the build stops on
+    the unknown label in `letter-topics.csv`, and a `letter-recipients.csv`
+    row is shown as a recipient and not filed under the company. This is a
+    vocabulary change, so it goes in its own PR, as with subjects.
+  - **A member and a company together** ("Chairman Wicker and Mr.
+    Zuckerberg"): the member stays the recipient (kind 1), and the company
+    is added as a topic.
 - **New subjects** are never added during reading. Hold the letter in
   `letters-vocabulary-needs/letters.csv` and comment on #221. Vocabulary
   changes go in their own PR to `build/topics.py`. Match words are plain
