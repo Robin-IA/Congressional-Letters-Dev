@@ -4259,3 +4259,31 @@ Secretary Vilsack and Ambassador Kirk,5,joint,Department of Agriculture;Office o
 Secretary Winter,5,officeholder,Department of the Navy,,,,#349: address blocks read on every letter,accepted
 Congressman Grijalva,5,member,G000551,,,,#349: address blocks read on every letter; a letter to this member,accepted
 Director Collins,6,split,National Institutes of Health@2015-2019;Department of Veterans Affairs@2020-2020,,organization,,"#349: Francis Collins, NIH; David Collins, Hampton VA Medical Center 2020",accepted
+Chairman Carr,5,officeholder,Federal Communications Commission,,,,#364/#349: a commission or agency chair; address blocks read on every letter,accepted
+Chair Carr,4,officeholder,Federal Communications Commission,,,,#364/#349: a commission or agency chair; address blocks read on every letter,accepted
+Chairman Wheeler and Commissioners of the FCC,5,officeholder,Federal Communications Commission,,,,#364/#349: a commission or agency chair; address blocks read on every letter,accepted
+Chairman Hoehn-Saric,5,officeholder,Consumer Product Safety Commission,,,,#364/#349: a commission or agency chair; address blocks read on every letter,accepted
+Chair Hoehn-Saric,4,officeholder,Consumer Product Safety Commission,,,,#364/#349: a commission or agency chair; address blocks read on every letter,accepted
+Chairman Svinicki,4,officeholder,Nuclear Regulatory Commission,,,,#364/#349: a commission or agency chair; address blocks read on every letter,accepted
+Chairman Kelliher,4,officeholder,Federal Energy Regulatory Commission,,,,#364/#349: a commission or agency chair; address blocks read on every letter,accepted
+Chairman Behnam,3,officeholder,Commodity Futures Trading Commission,,,,#364/#349: a commission or agency chair; address blocks read on every letter,accepted
+Chairman McFerran,3,officeholder,National Labor Relations Board,,,,#364/#349: a commission or agency chair; address blocks read on every letter,accepted
+Chairman Maffei,5,officeholder,Federal Maritime Commission,,,,#364/#349: a commission or agency chair; address blocks read on every letter,accepted
+Chairman Taub,4,merge,Postal Regulatory Commission,,organization,,#364/#349: a commission or agency chair; address blocks read on every letter,accepted
+Chair Kearns,4,officeholder,United States International Trade Commission,,,,#364/#349: a commission or agency chair; address blocks read on every letter,accepted
+Chairman Kearns and Commissioners,4,officeholder,United States International Trade Commission,,,,#364/#349: a commission or agency chair; address blocks read on every letter,accepted
+Chair Karpel,3,officeholder,United States International Trade Commission,,,,#364/#349: a commission or agency chair; address blocks read on every letter,accepted
+Chairman Schmidtlein,5,officeholder,United States International Trade Commission,,,,#364/#349: a commission or agency chair; address blocks read on every letter,accepted
+Chair Oberman,4,officeholder,Surface Transportation Board,,,,#364/#349: a commission or agency chair; address blocks read on every letter,accepted
+Chairman Carrion,4,merge,Financial Oversight and Management Board for Puerto Rico,,,,#364/#349: a commission or agency chair; address blocks read on every letter,accepted
+Chair Khan and Commissioners Phillips,4,officeholder,Federal Trade Commission,,,,#364/#349: a commission or agency chair; address blocks read on every letter,accepted
+Chair Khan and Assistant Attorney General Kanter,5,joint,Federal Trade Commission;Department of Justice,,,,#364/#349: a commission or agency chair; address blocks read on every letter,accepted
+Chairman Johanson and Assistant Secretary Wang,5,joint,United States International Trade Commission;Department of Commerce,,,,#364/#349: a commission or agency chair; address blocks read on every letter,accepted
+Chairman Johanson and Secretary Raimondo,3,joint,United States International Trade Commission;Department of Commerce,,,,#364/#349: a commission or agency chair; address blocks read on every letter,accepted
+Chairman Duato,5,merge,Johnson & Johnson,,,,#364/#349: a commission or agency chair; address blocks read on every letter,accepted
+Chairman Probst,4,merge,United States Olympic & Paralympic Committee,,,,#364/#349: a commission or agency chair; address blocks read on every letter,accepted
+Chairman Kaye,4,officeholder,Consumer Product Safety Commission,,,,#364/#349: a commission or agency chair; address blocks read on every letter,accepted
+Chairman Hanson,5,officeholder,Nuclear Regulatory Commission,,,,#364/#349: a commission or agency chair; address blocks read on every letter,accepted
+Chairman Barra,5,merge,General Motors,,,,#364/#349: a commission or agency chair; address blocks read on every letter,accepted
+Chairman Russ,4,merge,New York City Housing Authority,,,,#364/#349: a commission or agency chair; address blocks read on every letter,accepted
+Chair Dhillon,5,officeholder,Equal Employment Opportunity Commission,,,,#364/#349: a commission or agency chair; address blocks read on every letter,accepted
