@@ -116,5 +116,20 @@ class TestRefuses(unittest.TestCase):
         self.assertEqual(out["AAA"], ("2020-02-14", "day"))
 
 
+class EarliestCapture(unittest.TestCase):
+    """#652: one file's earliest capture, across every posting, bounds its date."""
+
+    def test_earliest_across_postings(self):
+        import json as _json
+        from build_site import earliest_captures
+        lines = [_json.dumps(r) for r in (
+            {"digest": "X", "first_seen": "2025-04-07"},
+            {"digest": "X", "first_seen": "2021-06-24"},
+            {"digest": "X", "timestamp": "20240629063809"},
+            {"digest": "Y", "timestamp": "20230323053227"},
+        )]
+        self.assertEqual(earliest_captures(lines), {"X": "2021-06-24", "Y": "2023-03-23"})
+
+
 if __name__ == "__main__":
     unittest.main()
