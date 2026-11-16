@@ -37,5 +37,32 @@ class DamagedTextLayer(unittest.TestCase):
             self.assertEqual(chars["Y"], len(GOOD))
 
 
+class PartialTextLayer(unittest.TestCase):
+    """#252: a layer with only the signature page loses to OCR of the whole letter."""
+
+    def test_export_prefers_fuller_ocr(self):
+        import export_text
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d)
+            (root / "data").mkdir()
+            layer = "Sincerely, United States Senator " * 5           # 160 chars
+            full = "Dear Administrator Martinez: " * 20 + layer      # the whole letter
+            (root / "data" / "letter-text.jsonl").write_text(
+                json.dumps({"digest": "P", "chars": len(layer), "text": layer}) + "\n"
+                + json.dumps({"digest": "Q", "chars": len(full), "text": full}) + "\n", encoding="utf-8")
+            (root / "data" / "letter-ocr.jsonl").write_text(
+                json.dumps({"digest": "P", "chars": len(full), "text": full}) + "\n"
+                + json.dumps({"digest": "Q", "chars": len(full) + 10, "text": full + "x" * 10}) + "\n",
+                encoding="utf-8")
+            old = export_text.ROOT
+            export_text.ROOT = root
+            try:
+                best, _, _ = export_text.best_texts()
+            finally:
+                export_text.ROOT = old
+            self.assertEqual(best["P"]["source"], "ocr")         # partial layer replaced
+            self.assertEqual(best["Q"]["source"], "text-layer")  # a full layer still wins
+
+
 if __name__ == "__main__":
     unittest.main()
