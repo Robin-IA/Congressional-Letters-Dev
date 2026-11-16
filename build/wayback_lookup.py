@@ -129,9 +129,19 @@ def lookup(url: str, start: str, end: str, pause: float) -> dict:
         return {"query": "home page", "lookup": "error"}
     (ok, redirect), how = good(rows), "home page"
     if not ok and not redirect:
-        rows = cached({**base, "url": tgt, "matchType": "prefix", "limit": "5000"}, pause)
+        rows = cached({**base, "fl": "timestamp,statuscode,mimetype,original",
+                       "url": tgt, "matchType": "prefix", "limit": "5000"}, pause)
         if rows is None:
             return {"query": "prefix", "lookup": "error"}
+        if path_keyed:
+            # The index drops the trailing slash, so the prefix house.gov/jackson/
+            # also matches house.gov/jacksonlee: Sheila Jackson Lee's captures
+            # were credited to Jesse Jackson Jr. in the 106th (#13). Keep only
+            # captures under the site's own first path segment.
+            seg = tgt.rstrip("/").split("/", 1)[1].lower().lstrip("~")
+            rows = [r for r in rows if len(r) >= 4 and urllib.parse.unquote(
+                re.sub(r"^[a-z]+://[^/]+", "", r[3], flags=re.I)).split("?")[0]
+                .lstrip("/").split("/")[0].lower().lstrip("~") == seg]
         (ok, _), redirect, how = good(rows), [], "prefix"
     every = sorted(set(ok) | set(redirect))
     if not every:
