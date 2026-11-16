@@ -231,6 +231,19 @@ python3 -m unittest discover -s tests
 python3 build/audit_dates.py --ocr-repo ../letters-from-congress-OCR
 ```
 
+On the PC, `audit_dates.py` cannot run the **holder check** for letters whose
+postings are not in the PC's checkout (the 119th, for example). That is
+expected: **the Mac runs the holder check on every PC PR as it merges it**
+(`fold.sh`), and refuses the merge if a date leaves a posting with no holder.
+Say "holder check not run on the PC" in the PR and go on; nothing else is
+needed.
+
+**The PC never rebuilds the vocabulary** (`build_vocabulary.py`). It writes
+the hand files (`letter-*.csv`, `reviews.csv`, the holds file), and the Mac
+rebuilds the vocabulary and explorers when it publishes. A new term exists
+once its `reviews.csv` row is merged, whether or not the vocabulary has been
+rebuilt; check `reviews.csv` and `vocabulary/terms.csv` before asking for one.
+
 Both must pass, and the PR body must say **how many letters were held for
 vocabulary** and how many recipients have no term, with the #221 and #357
 comments linked. "0 held" is written out, not left blank. On the PC, `--ocr-repo` (or `LETTERS_OCR_REPO`) points the audit at the text repository; without it the audit sees only the PC's local text and reports most letters as unreadable (#332). The PR title follows the existing pattern ("Letters review:
