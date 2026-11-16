@@ -91,6 +91,9 @@ function when(row, long = false) {
     return long ? `${Number(d)} ${month} ${y}` : `${month} ${y}`;
   }
   if (precision === 'month') return `${month} ${y}`;
+  // 'year': a date the letter does not print but its content fixes to a year,
+  // marked approximate (an undated funding request names its fiscal year).
+  if (precision === 'year') return `about ${y}`;
   return long ? `in the archive by ${Number(d)} ${month} ${y}` : `by ${month} ${y}`;
 }
 
