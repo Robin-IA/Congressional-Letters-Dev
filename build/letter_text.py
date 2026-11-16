@@ -136,6 +136,50 @@ def organizations_to_file_under() -> set[str]:
                 and r.get("status") == "accepted" and (r.get("target") or "").strip()}
 
 
+SMALL_WORDS = {"a", "an", "the", "and", "but", "or", "nor", "for", "so", "yet",
+               "at", "by", "in", "of", "on", "to", "up", "as", "via", "vs", "per",
+               "from", "with", "into", "onto", "over"}
+
+
+def title_form(title: str) -> str:
+    """A hand title as a title (Robin, 16 November 2026): "On" and the subject
+    in title case, then the rest unchanged.
+
+        "Record-high fertilizer prices — to President Biden, 5 April 2022"
+        -> "On Record-High Fertilizer Prices — to President Biden, 5 April 2022"
+
+    Applied when the site is built, so the titles file needs no rewrite and a
+    title already written this way is left as it is. A word with a capital or
+    a digit after its first letter (H.R., COVID-19, K-12, iPhone) is kept.
+    """
+    if not title or " — " not in title:
+        return title
+    subject, rest = title.split(" — ", 1)
+    words = subject.split()
+    if not words:
+        return title
+    if words[0] == "On":
+        return title
+    if words[0] in ("The", "A", "An"):
+        words[0] = words[0].lower()
+
+    def cap(w: str, first: bool) -> str:
+        def part(x: str) -> str:
+            if not x or any(c.isupper() for c in x[1:]) or any(c.isdigit() for c in x):
+                return x
+            i = next((k for k, c in enumerate(x) if c.isalpha()), None)
+            if i is None:
+                return x
+            return x[:i] + x[i].upper() + x[i + 1:]
+        if not first and w in SMALL_WORDS:
+            return w
+        return "-".join(part(x) for x in w.split("-"))
+
+    out = [w if k == 0 and w in ("the", "a", "an") else cap(w, k == 0)
+           for k, w in enumerate(words)]
+    return "On " + " ".join(out) + " — " + rest
+
+
 def topics_by_hand() -> dict[str, list[str]]:
     """digest -> [topics], read from the letter and written by hand.
 

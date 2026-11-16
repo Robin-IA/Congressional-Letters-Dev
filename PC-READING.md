@@ -74,20 +74,37 @@ last of that kind).
 1. **Read the text** (OCR or text layer) against the letter, not the file name.
 2. **Find the recipient** in the address block, then the salutation, then the
    body. File it by the three kinds in section 6: Congress "As recipient",
-   an official under the office, a company or organization as a topic, and a
+   an official under the office (with the official's name kept searchable:
+   in the title, and as an `officeholder` name on the office term; no person
+   term, Robin, 16 November 2026), a company or organization as a topic, and a
    private citizen under no name. One row in `letter-recipients.csv`;
    several offices at once is a `joint` row in `reviews.csv`; several
    companies go in `letter-topics.csv`.
+   - **A member of Congress as recipient:** marked "As recipient", and filed
+     under the recipient's name **in addition to** the authors (#352).
+   - **Any other personal name** (a CEO, a staff member, a private citizen):
+     never the person; file under the company or organization.
+   - **Many companies or organizations named** (a letter to ten insurers):
+     each one is filed, and the 8-subject limit does not apply.
 3. **Find who wrote it, and where it files.** Check that the posting member
    signed it or is among its signers. A letter written *to* the member is
    titled with its sender (#175). The Congress follows from the letter's date
    and who held the posting address then (the holder check). Say in the note
    when the signers and the posting member differ.
-4. **Write the title** in our form, "Subject — to whom, D Month YYYY", with
-   the recipient from step 2 (an office or company, never a CEO's name).
-5. **Settle the date** by the dating order (#172): the letterhead, then the
-   file name, then the PDF metadata, then review. Refuse a date that leaves the
-   posting with no holder (#239).
+4. **Write the title as a title** (Robin, 16 November 2026): **"On Subject —
+   to whom, D Month YYYY"**, the subject in title case, for example "On
+   Additional Nashville Flights for the NCAA Division I Football Championship —
+   to airline CEOs, 18 December 2025". The recipient comes from step 2 (an
+   office or company, never a CEO's name). Titles written in the older form
+   ("Subject — …") are converted when the site is built
+   (`letter_text.title_form`), so either is accepted, but write new ones this way.
+5. **Settle the date** by the dating order (#172). **Always take the date
+   from the letter's own text (the OCR)**: the letterhead or dateline first.
+   Refuse a date that leaves the posting with no holder (#239).
+   **If the text gives no date**, and the only dates are the PDF metadata,
+   a Quill file-name date (#182) or the Wayback harvest date, do not settle
+   for them: **file an issue** listing those letters, with the dates
+   available and why each is weak. Link it from #191, and name it in the PR.
 6. **Choose the subjects** from the recipient where it implies them (a letter
    to an airline is about Airlines; `recipient-topics.csv`) and from what the
    letter discusses. Only labels in `SUBJECTS`, plus reviewed organizations.
@@ -106,7 +123,7 @@ Each batch is one PR, which appends rows to these files in the dev repository:
 
 | File | Row | Rules |
 | --- | --- | --- |
-| `vocabulary/letter-titles.csv` | `digest,title,source` | Form: **"Subject — to whom, D Month YYYY"**, e.g. "Funding the Sea Grant program in 2019 — to Chairman Moran and Ranking Member Shaheen, 11 April 2018". A letter to a company is filed under the company, with no CEO's name in the "to" part. |
+| `vocabulary/letter-titles.csv` | `digest,title,source` | Form: **"On Subject — to whom, D Month YYYY"**, e.g. "On Funding the Sea Grant Program in 2019 — to Chairman Moran and Ranking Member Shaheen, 11 April 2018". A letter to a company is filed under the company, with no CEO's name in the "to" part. |
 | `vocabulary/letter-topics.csv` | `digest,topics,source` | `;`-separated, **only labels already in `SUBJECTS`** in `build/topics.py`. Check every label before writing it. |
 | `vocabulary/letter-dates.csv` | `digest,date,precision,source` | Only when the letter's own date differs from the published date. The source says why, e.g. "the letterhead; was 2018-09-19 (captured-by)". |
 | `vocabulary/letter-recipients.csv` | `digest,recipient,source` | One row per letter: the reviewed term from step 2 (an office, a committee, a member's name, or a company's label). Not for a private citizen. |

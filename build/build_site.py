@@ -551,7 +551,8 @@ def main() -> None:
                 or salutations[digest]
         # A title written by hand from the letter's text wins over the file
         # name's (vocabulary/letter-titles.csv, letter_text.py).
-        subject = hand_titles.get(digest) or tidy_subject(record.get("subject"))
+        # Written as a title, "On ..." (letter_text.title_form; Robin, 16 November 2026).
+        subject = letter_text.title_form(hand_titles.get(digest) or "") or tidy_subject(record.get("subject"))
         # The letter's own date first, read from its text and written by
         # hand (vocabulary/letter-dates.csv); then the file name, then what
         # the PDF says about itself, then the capture.
