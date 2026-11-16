@@ -18,16 +18,16 @@ Grassley,34,member,G000386,,,,"Chuck Grassley, as a committee chair",accepted
 Carson,33,officeholder,Department of Housing and Urban Development,,,,"Ben Carson, HUD Secretary 2017-2021",accepted
 Appropriations,32,merge,Appropriations committees,,organization,Committees,the appropriators,accepted
 Mcdonald,32,officeholder,Department of Veterans Affairs,,,,"Bob McDonald, VA Secretary 2014-2017",accepted
-Governor Newsom,31,person,Gavin Newsom,,person,Governors,Governor of California,accepted
+Governor Newsom,31,officeholder,Governor of California,,organization,,"Governor of California; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
 Bush,30,officeholder,The President,,,,"checked: all 30 dated 2004-2008, ""Dear Mr. President"": George W. Bush; Rep. Cori Bush took office in 2021",accepted
 House And Senate Leadership,30,merge,Congressional leadership,,,,already a term,accepted
 Secnav,30,merge,Department of the Navy,,organization,Department of Defense,Secretary of the Navy,accepted
 Usaid,29,merge,United States Agency for International Development,USAID,organization,Independent agencies and commissions,USAID: United States Agency for International Development,accepted
-Gov Brown,28,person,Jerry Brown,,person,Governors,"checked: 21 of 22 from California members, ""The Honorable Edmund G. Brown Jr.""; one Oregon letter is to Kate Brown",accepted
+Gov Brown,28,officeholder,Governor of California,,organization,,"checked: 21 of 22 from California members, ""The Honorable Edmund G. Brown Jr.""; one Oregon letter is to Kate Brown; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
 Secaf,28,merge,Department of the Air Force,,organization,Department of Defense,Secretary of the Air Force,accepted
 Wheeler,28,split,Federal Communications Commission@2014-2017;Environmental Protection Agency@2018-2021,,,,"checked: 2014-2016 ""Chairman Wheeler"" is Tom Wheeler (FCC, 8 letters); 2018-2021 ""Administrator Wheeler"" is Andrew Wheeler (EPA, 20)",accepted
 Air Force,26,merge,Department of the Air Force,,organization,Department of Defense,the Air Force,accepted
-Gov Desantis,26,person,Ron DeSantis,,,,Governor of Florida; a former member (D000621),accepted
+Gov Desantis,26,officeholder,Governor of Florida,,organization,,"Governor of Florida; a former member (D000621); governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
 Ambassador Lighthizer,25,officeholder,Office of the US Trade Representative,,,,"Robert Lighthizer, USTR 2017-2021",accepted
 Census Bureau,24,merge,Census Bureau,,organization,Department of Commerce,agency,accepted
 Boehner,23,officeholder,The Speaker of the House,,,,"John Boehner, Speaker 2011-2015",accepted
@@ -35,8 +35,8 @@ Corps,22,merge,Army Corps of Engineers,,,,the Corps,accepted
 Cpsc,22,merge,Consumer Product Safety Commission,CPSC,organization,Independent agencies and commissions,CPSC,accepted
 Navy,22,merge,Department of the Navy,,organization,Department of Defense,the Navy,accepted
 Regulators,22,merge,Financial regulators (several),,organization,Independent agencies and commissions,"checked: letters addressed to several financial regulators at once (OCC, Fed, Treasury)",accepted
-Desantis,21,person,Ron DeSantis,,,,Governor of Florida; a former member (D000621),accepted
-Gov Hochul,21,person,Kathy Hochul,,person,Governors,Governor of New York; a former member (H001062),accepted
+Desantis,21,officeholder,Governor of Florida,,organization,,"Governor of Florida; a former member (D000621); governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Gov Hochul,21,officeholder,Governor of New York,,organization,,"Governor of New York; a former member (H001062); governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
 Governor,21,reject,,,,,no governor named,accepted
 Itc,21,merge,United States International Trade Commission,ITC,organization,Independent agencies and commissions,ITC,accepted
 Kelly,21,split,Department of Homeland Security@2017-2017;White House Chief of Staff@2018-2019,,organization,Executive Office of the President,"checked: John F. Kelly; 2017 as Homeland Security Secretary (14), 2018 as White House Chief of Staff, on security clearances (7)",accepted
@@ -46,19 +46,19 @@ Twitter,21,merge,Twitter (X),,organization,Companies,company,accepted
 Amtrak,20,merge,Amtrak,,organization,Government corporations,federally chartered passenger railroad,accepted
 Cbo,20,merge,Congressional Budget Office,CBO,organization,Legislative branch,CBO,accepted
 Davis,20,member,D000136,,,,"checked: Waxman's letters to ""Chairman Davis"": Rep. Tom Davis, Government Reform chair; archived 2009",accepted
-Gov Abbott,20,person,Greg Abbott,,person,Governors,Governor of Texas,accepted
+Gov Abbott,20,officeholder,Governor of Texas,,organization,,"Governor of Texas; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
 Graham,20,member,G000359,,,,"checked: ""Chairman Graham"", ""The Honorable Lindsey O. Graham"": Senate Judiciary chair, 2018-2020",accepted
 Durbin,19,member,D000563,,,,Richard Durbin,accepted
 Fra,19,merge,Federal Railroad Administration,,organization,Department of Transportation,FRA,accepted
 Fta,19,merge,Federal Transit Administration,FTA,organization,Department of Transportation,FTA,accepted
-Gov Scott,19,person,Rick Scott,,person,Governors,"checked: 13 of 14 from Florida members, 2012-2017; Governor of Florida, later a senator (S001217)",accepted
-Gov Wolf,19,person,Tom Wolf,,person,Governors,Governor of Pennsylvania 2015-2023,accepted
+Gov Scott,19,officeholder,Governor of Florida,,organization,,"checked: 13 of 14 from Florida members, 2012-2017; Governor of Florida, later a senator (S001217); governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Gov Wolf,19,officeholder,Governor of Pennsylvania,,organization,,"Governor of Pennsylvania 2015-2023; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
 Leader Mcconnell,19,merge,Congressional leadership,,,,the leadership table already files McConnell here,accepted
 Pfizer,19,merge,Pfizer,,organization,Companies,company,accepted
 Pmg Dejoy,19,officeholder,United States Postal Service,,,,"Louis DeJoy, Postmaster General 2020-2025",accepted
 Pres,19,merge,The President,,,,abbreviation,accepted
 Cao,18,merge,Chief Administrative Officer of the House,CAO,organization,Legislative branch,"checked: ""Dear Chief Administrative Officer Kiko"", ""Dear Ms. Szpindor"" (House CAOs)",accepted
-Hogan,18,person,Larry Hogan,,person,Governors,"checked: ""The Honorable Larry Hogan"", Governor of Maryland",accepted
+Hogan,18,officeholder,Governor of Maryland,,organization,,"checked: ""The Honorable Larry Hogan"", Governor of Maryland; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
 Phrma,18,merge,PhRMA,,organization,Associations and other organizations,pharmaceutical industry trade association,accepted
 Stb,18,merge,Surface Transportation Board,STB,organization,Independent agencies and commissions,STB,accepted
 Wells Fargo,18,merge,Wells Fargo,,organization,Companies,company,accepted
@@ -74,7 +74,7 @@ Banks,16,merge,Banks (several),,organization,Companies,letters to several banks 
 Boeing,16,merge,Boeing,,organization,Air and space industry,company,accepted
 Finra,16,merge,FINRA,,organization,Associations and other organizations,self-regulatory organization for brokers,accepted
 Forest Service,16,merge,Forest Service,,organization,Department of Agriculture,agency,accepted
-Gov Lee,16,person,Bill Lee,,person,Governors,Governor of Tennessee,accepted
+Gov Lee,16,officeholder,Governor of Tennessee,,organization,,"Governor of Tennessee; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
 Hsgac,16,merge,Senate Committee on Homeland Security and Governmental Affairs,HSGAC,organization,Senate committees,HSGAC,accepted
 Odni,16,merge,Office of the Director of National Intelligence,ODNI,organization,Independent agencies and commissions,ODNI,accepted
 Phmsa,16,merge,Pipeline and Hazardous Materials Safety Administration,PHMSA,organization,Department of Transportation,PHMSA,accepted
@@ -83,8 +83,8 @@ Appropriations Committee,15,merge,Appropriations committees,,organization,Commit
 Dha,15,merge,Defense Health Agency,,organization,Department of Defense,DHA,accepted
 Dos,15,merge,Department of State,,,,DOS,accepted
 Financial Regulators,15,merge,Financial regulators (several),,organization,Independent agencies and commissions,"checked: letters addressed to several financial regulators at once (Fed, Treasury)",accepted
-Governor Evers,15,person,Tony Evers,,person,Governors,Governor of Wisconsin,accepted
-Newsom,15,person,Gavin Newsom,,person,Governors,Governor of California,accepted
+Governor Evers,15,officeholder,Governor of Wisconsin,,organization,,"Governor of Wisconsin; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Newsom,15,officeholder,Governor of California,,organization,,"Governor of California; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
 Rfk,15,officeholder,Department of Health and Human Services,,,,"Robert F. Kennedy Jr., HHS Secretary from 2025",accepted
 Tiktok,15,merge,TikTok,,organization,Companies,company,accepted
 Usfs,15,merge,Forest Service,USFS,organization,Department of Agriculture,USFS,accepted
@@ -98,14 +98,14 @@ Usfws,14,merge,Fish and Wildlife Service,USFWS,organization,Department of the In
 Apple,13,merge,Apple,,organization,Tech industry,company,accepted
 Ceg,13,member,G000386,,,,"checked: CEG is Charles E. Grassley; letters to and answering ""Senator Grassley"", Judiciary chair",accepted
 Chief Justice Roberts,13,officeholder,Supreme Court of the United States,,organization,Courts,"John Roberts, Chief Justice; the surname lead to Sen. Pat Roberts is wrong",accepted
-Cuomo,13,person,Andrew Cuomo,,person,Governors,Governor of New York 2011-2021,accepted
+Cuomo,13,officeholder,Governor of New York,,organization,,"Governor of New York 2011-2021; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
 Dos Dhs,13,reject,,,,,two agencies at once; the letters belong under each,accepted
 Farm Bill Conferees,13,merge,Conference committees,,organization,Committees,farm bill conferees,accepted
 Goodlatte,13,member,G000289,,,,"Bob Goodlatte, Judiciary chair",accepted
-Gov Pritzker,13,person,JB Pritzker,,person,Governors,Governor of Illinois,accepted
-Governor Cuomo,13,person,Andrew Cuomo,,person,Governors,Governor of New York 2011-2021,accepted
+Gov Pritzker,13,officeholder,Governor of Illinois,,organization,,"Governor of Illinois; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Governor Cuomo,13,officeholder,Governor of New York,,organization,,"Governor of New York 2011-2021; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
 Hasc,13,merge,House Committee on Armed Services,HASC,organization,House committees,HASC,accepted
-Hochul,13,person,Kathy Hochul,,person,Governors,Governor of New York; a former member (H001062),accepted
+Hochul,13,officeholder,Governor of New York,,organization,,"Governor of New York; a former member (H001062); governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
 Houseleaders,13,merge,Congressional leadership,,,,already a term,accepted
 Kraninger,13,officeholder,Consumer Financial Protection Bureau,,,,"Kathy Kraninger, CFPB Director 2018-2021",accepted
 Mlb,13,merge,Major League Baseball,MLB,organization,Associations and other organizations,sports league,accepted
@@ -119,7 +119,7 @@ Burton,12,member,B001149,,,,"checked: Waxman's letters to ""Chairman Burton"": R
 Chu,12,officeholder,Department of Energy,,,,"checked: ""The Honorable Steven Chu, Secretary, U.S. Department of Energy""; the lead to Rep. Judy Chu is wrong",accepted
 Committee,12,reject,,,,,no committee named,accepted
 Dni,12,merge,Office of the Director of National Intelligence,DNI,organization,Independent agencies and commissions,the DNI,accepted
-Gov Rauner,12,person,Bruce Rauner,,person,Governors,Governor of Illinois 2015-2019,accepted
+Gov Rauner,12,officeholder,Governor of Illinois,,organization,,"Governor of Illinois 2015-2019; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
 Ioc,12,merge,International Olympic Committee,IOC,organization,Associations and other organizations,international sports body,accepted
 Mchugh,12,officeholder,Department of the Army,,organization,Department of Defense,"John McHugh, Secretary of the Army 2009-2015 (a former member)",accepted
 Ntia,12,merge,National Telecommunications and Information Administration,NTIA,organization,Department of Commerce,NTIA,accepted
@@ -134,7 +134,7 @@ Commissioner Rettig,11,officeholder,Internal Revenue Service,,,,"Charles Rettig,
 Congressional Leaders,11,merge,Congressional leadership,,,,already a term,accepted
 Darcy,11,officeholder,Army Corps of Engineers,,,,"Jo-Ellen Darcy, Assistant Secretary of the Army for Civil Works 2009-2017, over the Corps",accepted
 Dodig,11,merge,Department of Defense Inspector General,DoD IG,organization,Inspectors general,DoD IG,accepted
-Gov Edwards,11,person,John Bel Edwards,,person,Governors,Governor of Louisiana 2016-2024,accepted
+Gov Edwards,11,officeholder,Governor of Louisiana,,organization,,"Governor of Louisiana 2016-2024; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
 Help,11,merge,"Senate Committee on Health, Education, Labor, and Pensions",HELP,organization,Senate committees,"checked: letters to HELP on OxyContin, Lyme disease, harassment hearings, Confucius Institutes",accepted
 Lighthizer,11,officeholder,Office of the US Trade Representative,,,,"Robert Lighthizer, USTR 2017-2021",accepted
 Lisa Jackson,11,officeholder,Environmental Protection Agency,,,,"Lisa P. Jackson, EPA Administrator 2009-2013",accepted
@@ -148,7 +148,7 @@ Solis,11,officeholder,Department of Labor,,,,"Hilda Solis, Labor Secretary 2009-
 Thompson,11,hold,,,,,"checked: three people: Rep. Bennie Thompson (Homeland Security, January 6 committee), HHS Secretary Tommy Thompson, and others; needs a per-letter split",proposed
 Usdot,11,merge,Department of Transportation,,,,USDOT,accepted
 Ambassador Tai,10,officeholder,Office of the US Trade Representative,,,,"Katherine Tai, USTR 2021-2025",accepted
-Benson,10,officeholder,Michigan Secretary of State,,organization,State and local government,"checked: ""The Honorable Jocelyn Benson, Michigan Secretary of State""",accepted
+Benson,10,officeholder,Michigan Secretary of State,,organization,,"checked: ""The Honorable Jocelyn Benson, Michigan Secretary of State""",accepted
 Clapper,10,officeholder,Office of the Director of National Intelligence,,organization,Independent agencies and commissions,"James Clapper, DNI 2010-2017",accepted
 Eeoc,10,merge,Equal Employment Opportunity Commission,EEOC,organization,Independent agencies and commissions,EEOC,accepted
 Ercot,10,merge,ERCOT,,organization,Associations and other organizations,"Electric Reliability Council of Texas, the Texas grid operator",accepted
@@ -162,7 +162,7 @@ Norfolk Southern,10,merge,Norfolk Southern,,organization,Companies,railroad comp
 Rma,10,merge,Risk Management Agency,RMA,organization,Department of Agriculture,USDA's crop insurance agency,accepted
 Roberts And Thomas,10,officeholder,Supreme Court of the United States,,organization,Courts,Justices Roberts and Thomas,accepted
 Rogers,10,hold,,,,,"checked: Rep. Harold Rogers (appropriations), Rep. Mike Rogers, Adm. Michael Rogers (NSA); needs a per-letter split",proposed
-Walker,10,person,Scott Walker,,person,Governors,checked: 9 of 10 to Gov. Scott Walker of Wisconsin (BadgerCare); one 2006 letter is to Comptroller General David Walker (GAO),accepted
+Walker,10,split,Government Accountability Office@1998-2008;Governor of Wisconsin@2011-2018,,organization,,"2006-2008: Comptroller General David Walker (GAO); 2011-2018: Governor Scott Walker; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
 Wyden,10,member,W000779,,,,Ron Wyden,accepted
 Ceq,9,merge,Council on Environmental Quality,CEQ,organization,Executive Office of the President,CEQ: Council on Environmental Quality,accepted
 Epw,9,merge,Senate Committee on Environment and Public Works,EPW,organization,Senate committees,EPW: Senate Environment and Public Works Committee,accepted
@@ -173,9 +173,9 @@ Nfl,9,merge,National Football League,NFL,organization,Associations and other org
 Nprc,9,merge,National Personnel Records Center,NPRC,organization,National Archives and Records Administration,NPRC: National Personnel Records Center,accepted
 Orr,9,merge,Office of Refugee Resettlement,ORR,organization,Department of Health and Human Services,ORR: Office of Refugee Resettlement,accepted
 Samhsa,9,merge,Substance Abuse and Mental Health Services Administration,SAMHSA,organization,Department of Health and Human Services,SAMHSA: Substance Abuse and Mental Health Services Administration,accepted
-Swrcb,9,merge,California State Water Resources Control Board,SWRCB,organization,State and local government,SWRCB: California State Water Resources Control Board,accepted
+Swrcb,9,merge,California State Water Resources Control Board,SWRCB,organization,,SWRCB: California State Water Resources Control Board,accepted
 Att,8,merge,AT&T,AT&T,organization,Companies,AT&T: AT&T,accepted
-Cpuc,8,merge,California Public Utilities Commission,CPUC,organization,State and local government,CPUC: California Public Utilities Commission,accepted
+Cpuc,8,merge,California Public Utilities Commission,CPUC,organization,,CPUC: California Public Utilities Commission,accepted
 Fincen,8,merge,Financial Crimes Enforcement Network,FinCEN,organization,Department of the Treasury,FinCEN: Financial Crimes Enforcement Network,accepted
 Fomb,8,merge,Financial Oversight and Management Board for Puerto Rico,FOMB,organization,Independent agencies and commissions,FOMB: Financial Oversight and Management Board for Puerto Rico,accepted
 Frtib,8,merge,Federal Retirement Thrift Investment Board,FRTIB,organization,Independent agencies and commissions,FRTIB: Federal Retirement Thrift Investment Board,accepted
@@ -236,22 +236,22 @@ Aamc,4,merge,Association of American Medical Colleges,AAMC,organization,Associat
 Atsdr,4,merge,Agency for Toxic Substances and Disease Registry,ATSDR,organization,Centers for Disease Control,ATSDR: Agency for Toxic Substances and Disease Registry,accepted
 Bia,4,merge,Bureau of Indian Affairs,BIA,organization,Department of the Interior,BIA: Bureau of Indian Affairs,accepted
 Bpa,4,merge,Bonneville Power Administration,BPA,organization,Department of Energy,BPA: Bonneville Power Administration,accepted
-Carb,4,merge,California Air Resources Board,CARB,organization,State and local government,CARB: California Air Resources Board,accepted
+Carb,4,merge,California Air Resources Board,CARB,organization,,CARB: California Air Resources Board,accepted
 Cjs,4,merge,Appropriations committees,CJS,organization,Committees,CJS: Appropriations committees,accepted
 Cvs,4,merge,CVS Health,CVS,organization,Companies,CVS: CVS Health,accepted
 Depsec,4,merge,Department of Defense,,,,shorthand for Department of Defense,accepted
-Edd,4,merge,California Employment Development Department,EDD,organization,State and local government,EDD: California Employment Development Department,accepted
+Edd,4,merge,California Employment Development Department,EDD,organization,,EDD: California Employment Development Department,accepted
 Kkr,4,merge,KKR,KKR,organization,Companies,KKR: KKR,accepted
 Merck,4,merge,Merck,,organization,Companies,company,accepted
 Navient,4,merge,Navient,,organization,Companies,company,accepted
 Nhl,4,merge,National Hockey League,NHL,organization,Associations and other organizations,NHL: National Hockey League,accepted
 Nmfs,4,merge,National Marine Fisheries Service,NMFS,organization,National Oceanic and Atmospheric Administration,NMFS: National Marine Fisheries Service,accepted
-Nycha,4,merge,New York City Housing Authority,NYCHA,organization,State and local government,NYCHA: New York City Housing Authority,accepted
+Nycha,4,merge,New York City Housing Authority,NYCHA,organization,,NYCHA: New York City Housing Authority,accepted
 Nyse,4,merge,New York Stock Exchange,NYSE,organization,Companies,NYSE: New York Stock Exchange,accepted
 Ofccp,4,merge,Office of Federal Contract Compliance Programs,OFCCP,organization,Department of Labor,OFCCP: Office of Federal Contract Compliance Programs,accepted
 Oira,4,merge,Office of Information and Regulatory Affairs,OIRA,organization,Office of Management and Budget,OIRA: Office of Information and Regulatory Affairs,accepted
 Pjm,4,merge,PJM Interconnection,PJM,organization,Associations and other organizations,PJM: PJM Interconnection,accepted
-Pura,4,merge,Connecticut Public Utilities Regulatory Authority,PURA,organization,State and local government,PURA: Connecticut Public Utilities Regulatory Authority,accepted
+Pura,4,merge,Connecticut Public Utilities Regulatory Authority,PURA,organization,,PURA: Connecticut Public Utilities Regulatory Authority,accepted
 Sfc,4,merge,Senate Committee on Finance,SFC,organization,Senate committees,SFC: Senate Finance Committee,accepted
 Svac,4,merge,Senate Committee on Veterans' Affairs,SVAC,organization,Senate committees,SVAC: Senate Veterans' Affairs Committee,accepted
 Usaf,4,merge,Department of the Air Force,USAF,organization,Department of Defense,USAF: Department of the Air Force,accepted
@@ -278,22 +278,22 @@ Fio,3,merge,Federal Insurance Office,FIO,organization,Department of the Treasury
 Gilead,3,merge,Gilead,,organization,Companies,company,accepted
 Hfac,3,merge,House Committee on Foreign Affairs,HFAC,organization,House committees,HFAC: House Foreign Affairs Committee,accepted
 Imls,3,merge,Institute of Museum and Library Services,IMLS,organization,Independent agencies and commissions,IMLS: Institute of Museum and Library Services,accepted
-Isbe,3,merge,Illinois State Board of Education,ISBE,organization,State and local government,ISBE: Illinois State Board of Education,accepted
+Isbe,3,merge,Illinois State Board of Education,ISBE,organization,,ISBE: Illinois State Board of Education,accepted
 Lyft,3,merge,Lyft,,organization,Companies,company,accepted
 Mit,3,merge,Massachusetts Institute of Technology,MIT,organization,Associations and other organizations,MIT: Massachusetts Institute of Technology,accepted
 Mms,3,merge,Minerals Management Service,MMS,organization,Department of the Interior,MMS: Minerals Management Service,accepted
 Moodys,3,merge,Moody's,,organization,Companies,company,accepted
 Msci,3,merge,MSCI,MSCI,organization,Companies,MSCI: MSCI,accepted
-Mta,3,merge,Metropolitan Transportation Authority (New York),MTA,organization,State and local government,MTA: Metropolitan Transportation Authority (New York),accepted
+Mta,3,merge,Metropolitan Transportation Authority (New York),MTA,organization,,MTA: Metropolitan Transportation Authority (New York),accepted
 Naic,3,merge,National Association of Insurance Commissioners,NAIC,organization,Associations and other organizations,NAIC: National Association of Insurance Commissioners,accepted
 Nbc,3,merge,NBC,NBC,organization,Companies,NBC: NBC,accepted
 Nist,3,merge,National Institute of Standards and Technology,NIST,organization,Department of Commerce,NIST: National Institute of Standards and Technology,accepted
 Nord,3,merge,National Organization for Rare Disorders,NORD,organization,Nonprofits,NORD: National Organization for Rare Disorders; a patient charity (2026-11-13),accepted
 Nsc,3,merge,National Security Council,NSC,organization,Executive Office of the President,NSC: National Security Council,accepted
-Odjfs,3,merge,Ohio Department of Job and Family Services,ODJFS,organization,State and local government,ODJFS: Ohio Department of Job and Family Services,accepted
+Odjfs,3,merge,Ohio Department of Job and Family Services,ODJFS,organization,,ODJFS: Ohio Department of Job and Family Services,accepted
 Ostp,3,merge,Office of Science and Technology Policy,OSTP,organization,Executive Office of the President,OSTP: Office of Science and Technology Policy,accepted
 Ows,3,merge,Operation Warp Speed,OWS,organization,Department of Health and Human Services,OWS: Operation Warp Speed,accepted
-Panynj,3,merge,Port Authority of New York and New Jersey,PANYNJ,organization,State and local government,PANYNJ: Port Authority of New York and New Jersey,accepted
+Panynj,3,merge,Port Authority of New York and New Jersey,PANYNJ,organization,,PANYNJ: Port Authority of New York and New Jersey,accepted
 Peotus,3,merge,The President,,,,shorthand for The President,accepted
 Pmi,3,merge,Philip Morris International,PMI,organization,Companies,PMI: Philip Morris International,accepted
 Prac,3,merge,Pandemic Response Accountability Committee,PRAC,organization,Inspectors general,PRAC: Pandemic Response Accountability Committee,accepted
@@ -368,36 +368,36 @@ General Guterres,6,person,António Guterres,,person,International officials,"che
 General Solana,3,person,Javier Solana,,person,International officials,checked: Secretary-General Javier Solana; Waxman,accepted
 Gen Esper,3,person,Mark Esper,,person,,"2018, on Army Futures Command: Mark Esper was then Secretary of the Army, not a general; which category?",proposed
 General Temple,4,person,Merdith W. B. Temple,,person,Military officers,"Blunt, May 2012: probably Maj. Gen. Merdith Temple, acting Chief of Engineers; not confirmed",proposed
-Gov Baker,7,person,Charlie Baker,,person,Governors,"checked: Governor of Massachusetts; Massachusetts members, 2019-2020",accepted
-Gov Brown 0,3,person,Jerry Brown,,person,Governors,checked: Governor of California; California members (file Letter to Gov Brown_0),accepted
-Gov Bullock,8,person,Steve Bullock,,person,Governors,"checked: Governor of Montana; Montana members, 2015-2020",accepted
-Gov Crist,3,person,Charlie Crist,,person,Governors,"checked: Governor of Florida; Brown-Waite and Florida members, 2007-2010; later a member (C001111)",accepted
-Gov Daniels,4,person,Mitch Daniels,,person,Governors,"checked: Governor of Indiana; Indiana members, 2007-2010",accepted
-Gov Dewine,6,person,Mike DeWine,,person,Governors,"checked: Governor of Ohio; Ohio delegation, 2019-2025; a former senator (D000294)",accepted
-Gov Edwards Pdf,5,person,John Bel Edwards,,person,Governors,"checked: Governor of Louisiana; Louisiana members, 2020-2021",accepted
-Gov Hogan,8,person,Larry Hogan,,person,Governors,"checked: Governor of Maryland; Maryland members, 2018-2020",accepted
-Gov Hogan Mdh,4,person,Larry Hogan,,person,Governors,"checked: Governor of Maryland, on the Maryland Department of Health; 2021",accepted
-Gov Inslee,6,person,Jay Inslee,,person,Governors,"checked: Governor of Washington; Washington members and a North Dakota delegation letter, 2018-2022; a former member (I000026)",accepted
-Gov Ivey,3,person,Kay Ivey,,person,Governors,"checked: Governor of Alabama; Alabama members, 2020",accepted
-Gov Kemp,4,person,Brian Kemp,,person,Governors,"checked: Governor of Georgia; Georgia members, 2019-2022",accepted
-Governor Brian Kemp,4,person,Brian Kemp,,person,Governors,"checked: Governor of Georgia; Georgia members, 2022-2026",accepted
-Gov Mcdonnell,4,person,Bob McDonnell,,person,Governors,"checked: Governor of Virginia; Virginia members, on Medicaid expansion, 2012-2013",accepted
-Gov Murphy,8,person,Phil Murphy,,person,Governors,"checked: Governor of New Jersey; New Jersey delegation, 2018-2024",accepted
-Gov Northam,9,person,Ralph Northam,,person,Governors,"checked: Governor of Virginia; Virginia members, 2020-2021",accepted
-Gov Schwarzenegger,6,person,Arnold Schwarzenegger,,person,Governors,checked: Governor of California; Waxman,accepted
-Gov Snyder,4,person,Rick Snyder,,person,Governors,"checked: Governor of Michigan; Michigan members, on Flint, 2011-2017",accepted
-Gov Walz,7,person,Tim Walz,,person,Governors,"checked: Governor of Minnesota; Minnesota members, 2020-2025",accepted
-Gov Whitmer,9,person,Gretchen Whitmer,,person,Governors,"checked: Governor of Michigan; Michigan members, 2020-2022",accepted
-Gov Whitmer 5 17,4,person,Gretchen Whitmer,,person,Governors,"checked: Governor of Michigan; letter of May 17 on unemployment insurance, 2021",accepted
-Governor Abbot,5,person,Greg Abbott,,person,Governors,"checked: Governor of Texas (file spells it Abbot); Texas members on Operation Lone Star, 2020-2022",accepted
-Governor Elect Youngkin,4,person,Glenn Youngkin,,person,Governors,"checked: Governor-elect of Virginia, December 2021; Virginia members",accepted
-Governor Johanns,3,person,Mike Johanns,,person,Governors,checked: Governor of Nebraska; Waxman; later a senator (J000291),accepted
-Governor Kelly,3,person,Laura Kelly,,person,Governors,"checked: Governor of Kansas; Kansas delegation, 2020-2021",accepted
-Governor Lamont,3,person,Ned Lamont,,person,Governors,"checked: Governor of Connecticut; Connecticut members, on a USDA disaster designation, 2023",accepted
-Governor Ridge,3,person,Tom Ridge,,person,Governors,checked: Governor of Pennsylvania; Waxman; a House member before 1995,accepted
-Governor Spanberger,3,person,Abigail Spanberger,,person,Governors,"checked: Governor of Virginia from January 2026; Virginia Republican delegation, February 2026; a former member (S001209)",accepted
-Governor Walker,9,person,Scott Walker,,person,Governors,"checked: Governor of Wisconsin; Wisconsin members, on BadgerCare, 2014-2016",accepted
-Governor Wolf 12 11,3,person,Tom Wolf,,person,Governors,"checked: Governor of Pennsylvania; Pennsylvania members, letter of December 11",accepted
+Gov Baker,7,officeholder,Governor of Massachusetts,,organization,,"checked: Governor of Massachusetts; Massachusetts members, 2019-2020; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Gov Brown 0,3,officeholder,Governor of California,,organization,,"checked: Governor of California; California members (file Letter to Gov Brown_0); governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Gov Bullock,8,officeholder,Governor of Montana,,organization,,"checked: Governor of Montana; Montana members, 2015-2020; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Gov Crist,3,officeholder,Governor of Florida,,organization,,"checked: Governor of Florida; Brown-Waite and Florida members, 2007-2010; later a member (C001111); governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Gov Daniels,4,officeholder,Governor of Indiana,,organization,,"checked: Governor of Indiana; Indiana members, 2007-2010; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Gov Dewine,6,officeholder,Governor of Ohio,,organization,,"checked: Governor of Ohio; Ohio delegation, 2019-2025; a former senator (D000294); governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Gov Edwards Pdf,5,officeholder,Governor of Louisiana,,organization,,"checked: Governor of Louisiana; Louisiana members, 2020-2021; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Gov Hogan,8,officeholder,Governor of Maryland,,organization,,"checked: Governor of Maryland; Maryland members, 2018-2020; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Gov Hogan Mdh,4,officeholder,Governor of Maryland,,organization,,"checked: Governor of Maryland, on the Maryland Department of Health; 2021; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Gov Inslee,6,officeholder,Governor of Washington,,organization,,"checked: Governor of Washington; Washington members and a North Dakota delegation letter, 2018-2022; a former member (I000026); governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Gov Ivey,3,officeholder,Governor of Alabama,,organization,,"checked: Governor of Alabama; Alabama members, 2020; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Gov Kemp,4,officeholder,Governor of Georgia,,organization,,"checked: Governor of Georgia; Georgia members, 2019-2022; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Governor Brian Kemp,4,officeholder,Governor of Georgia,,organization,,"checked: Governor of Georgia; Georgia members, 2022-2026; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Gov Mcdonnell,4,officeholder,Governor of Virginia,,organization,,"checked: Governor of Virginia; Virginia members, on Medicaid expansion, 2012-2013; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Gov Murphy,8,officeholder,Governor of New Jersey,,organization,,"checked: Governor of New Jersey; New Jersey delegation, 2018-2024; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Gov Northam,9,officeholder,Governor of Virginia,,organization,,"checked: Governor of Virginia; Virginia members, 2020-2021; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Gov Schwarzenegger,6,officeholder,Governor of California,,organization,,"checked: Governor of California; Waxman; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Gov Snyder,4,officeholder,Governor of Michigan,,organization,,"checked: Governor of Michigan; Michigan members, on Flint, 2011-2017; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Gov Walz,7,officeholder,Governor of Minnesota,,organization,,"checked: Governor of Minnesota; Minnesota members, 2020-2025; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Gov Whitmer,9,officeholder,Governor of Michigan,,organization,,"checked: Governor of Michigan; Michigan members, 2020-2022; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Gov Whitmer 5 17,4,officeholder,Governor of Michigan,,organization,,"checked: Governor of Michigan; letter of May 17 on unemployment insurance, 2021; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Governor Abbot,5,officeholder,Governor of Texas,,organization,,"checked: Governor of Texas (file spells it Abbot); Texas members on Operation Lone Star, 2020-2022; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Governor Elect Youngkin,4,officeholder,Governor of Virginia,,organization,,"checked: Governor-elect of Virginia, December 2021; Virginia members; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Governor Johanns,3,officeholder,Governor of Nebraska,,organization,,"checked: Governor of Nebraska; Waxman; later a senator (J000291); governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Governor Kelly,3,officeholder,Governor of Kansas,,organization,,"checked: Governor of Kansas; Kansas delegation, 2020-2021; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Governor Lamont,3,officeholder,Governor of Connecticut,,organization,,"checked: Governor of Connecticut; Connecticut members, on a USDA disaster designation, 2023; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Governor Ridge,3,officeholder,Department of Homeland Security,,organization,,"letters of Oct 2001-Jun 2002, when Ridge headed the White House Office of Homeland Security, which became the Department of Homeland Security in 2003: filed under DHS (Robin, 16 November 2026)",accepted
+Governor Spanberger,3,officeholder,Governor of Virginia,,organization,,"checked: Governor of Virginia from January 2026; Virginia Republican delegation, February 2026; a former member (S001209); governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Governor Walker,9,officeholder,Governor of Wisconsin,,organization,,"checked: Governor of Wisconsin; Wisconsin members, on BadgerCare, 2014-2016; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Governor Wolf 12 11,3,officeholder,Governor of Pennsylvania,,organization,,"checked: Governor of Pennsylvania; Pennsylvania members, letter of December 11; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
 Amtrak Ceo,4,merge,Amtrak,,organization,Government corporations,"checked: files named ""Letter to Amtrak CEO"", 2018-2020",accepted
 Amtrak Fy21 Pdf,5,merge,Amtrak,,organization,Government corporations,"checked: files named ""Letter to Amtrak FY21 PDF""; a letter to Amtrak, fiscal 2021",accepted
 Apple And Google,3,joint,Apple;Google,,,,"checked: letters to both, on apps and app stores, 2019-2026",accepted
@@ -485,7 +485,7 @@ Kendall,8,officeholder,Department of the Air Force,,,,"checked: ""The Honorable 
 Postmaster Dejoy,8,officeholder,United States Postal Service,,,,"checked: ""The Honorable Louis DeJoy, Postmaster General"", 2022-2024 (batch 1, 2026-11-13: read the letters' address blocks)",accepted
 Army Sec Mchugh,8,officeholder,Department of the Army,,,,"John McHugh, Secretary of the Army, 2011 (batch 1, 2026-11-13: read the letters' address blocks)",accepted
 Boehner Final Pdf,7,officeholder,The Speaker of the House,,,,"one letter of 2011-04-28 to Speaker Boehner, on three members' sites (batch 1, 2026-11-13: read the letters' address blocks)",accepted
-Wolf,10,split,Department of Homeland Security@2019-2020;Tom Wolf@2015-2015;Tom Wolf@2021-2023,,person,,"checked: Chad Wolf, Acting DHS Secretary, 2020; ""The Honorable Tom Wolf, Governor of Pennsylvania"", 2021; the 2015 refugee letter to Gov. Wolf; the 2012-2013 letters to Rep. Frank Wolf stay unfiled (batch 1, 2026-11-13: read the letters' address blocks)",accepted
+Wolf,10,split,Department of Homeland Security@2019-2020;Governor of Pennsylvania@2015-2015;Governor of Pennsylvania@2021-2023,,organization,,"checked: Chad Wolf, Acting DHS Secretary, 2020; ""The Honorable Tom Wolf, Governor of Pennsylvania"", 2021; the 2015 refugee letter to Gov. Wolf; the 2012-2013 letters to Rep. Frank Wolf stay unfiled (batch 1, 2026-11-13: read the letters' address blocks)",accepted
 Nga,9,split,National Geospatial-Intelligence Agency@2018-2018;National Governors Association@2020-2025,,organization,,"checked: 2018 on the NGA West campus in north St. Louis; 2020 and 2025 ""National Governors Association""; the 2012 letter stays unfiled (batch 1, 2026-11-13: read the letters' address blocks)",accepted
 Un Secretary General,8,split,Ban Ki-moon@2007-2016;António Guterres@2017-2026,,person,International officials,"UN Secretary-General by year (batch 1, 2026-11-13: read the letters' address blocks)",accepted
 Columbia Gas,9,merge,Columbia Gas of Massachusetts,,organization,Energy sector,"checked: ""Mr. Steve Bryant, President, Columbia Gas of Massachusetts"", on the 2018 Merrimack Valley explosions (batch 1, 2026-11-13: read the letters' address blocks)",accepted
@@ -500,8 +500,8 @@ Acf Ovw Signed,8,joint,Administration for Children and Families;organization:Off
 Blunt,8,member,B000575,,,,"checked: ""The Honorable Roy Blunt"", ""Chairman Roy Blunt, Senate Rules"" (batch 1, 2026-11-13: read the letters' address blocks)",accepted
 Gowdy,8,member,G000566,,,,"Trey Gowdy, Oversight chair 2017-2019; letters of 2018 (batch 1, 2026-11-13: read the letters' address blocks)",accepted
 Hatch,7,member,H000338,,,,"checked: ""The Honorable Orrin G. Hatch, Chairman, Committee on Finance"" (batch 1, 2026-11-13: read the letters' address blocks)",accepted
-Snyder,7,person,Rick Snyder,,person,Governors,"Governor of Michigan; all from Michigan members, 2011-2018 (batch 1, 2026-11-13: read the letters' address blocks)",accepted
-Mayor Adams,8,person,Eric Adams,,person,State and local government,"checked: ""The Honorable Eric Adams, Mayor of New York City"", 2022-2024 (batch 1, 2026-11-13: read the letters' address blocks)",accepted
+Snyder,7,officeholder,Governor of Michigan,,organization,,"Governor of Michigan; all from Michigan members, 2011-2018 (batch 1, 2026-11-13: read the letters' address blocks); governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Mayor Adams,8,person,Eric Adams,,person,,"checked: ""The Honorable Eric Adams, Mayor of New York City"", 2022-2024 (batch 1, 2026-11-13: read the letters' address blocks)",accepted
 Chairman,8,reject,,,,,"no name: the letter's text says which chairman (batch 1, 2026-11-13: read the letters' address blocks)",accepted
 Secretary,7,reject,,,,,"no name: the letter's text says which secretary (batch 1, 2026-11-13: read the letters' address blocks)",accepted
 Agencies,8,reject,,,,,"several agencies at once; the letter's text names them (batch 1, 2026-11-13: read the letters' address blocks)",accepted
@@ -575,7 +575,7 @@ Commissioner Makary,6,officeholder,Food and Drug Administration,,,,"checked: ""T
 Oil Executives,6,merge,Oil companies (several),,organization,Oil and gas industry,"checked: one 2026 letter on Venezuela sent to several oil companies (Shell, Halliburton, BP ...) (batch 2, 2026-11-13: read the letters' address blocks)",accepted
 Rep Waxman,5,member,W000215,,,,"checked: letters to Rep. Henry Waxman, 2002 (batch 2, 2026-11-13: read the letters' address blocks)",accepted
 Veneman,5,officeholder,Department of Agriculture,,,,"checked: ""The Honorable Ann M. Veneman, Secretary, U.S. Department of Agriculture"", 2003-2004 (batch 2, 2026-11-13: read the letters' address blocks)",accepted
-Schwarzenegger,5,person,Arnold Schwarzenegger,,person,Governors,"checked: ""Governor Arnold Schwarzenegger"", California, 2003-2008 (batch 2, 2026-11-13: read the letters' address blocks)",accepted
+Schwarzenegger,5,officeholder,Governor of California,,organization,,"checked: ""Governor Arnold Schwarzenegger"", California, 2003-2008 (batch 2, 2026-11-13: read the letters' address blocks); governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
 U S Ambassador Zoellick,5,officeholder,Office of the US Trade Representative,,,,"checked: ""The Honorable Robert B. Zoellick, United States Trade Representative"", 2003-2004 (batch 2, 2026-11-13: read the letters' address blocks)",accepted
 Norton,5,split,Department of the Interior@2003-2005,,organization,,"checked: ""The Honorable Gale Norton, Secretary of the Interior"", 2003-2005; the DC Water letters to Rep. Eleanor Holmes Norton stay unfiled (batch 2, 2026-11-13: read the letters' address blocks)",accepted
 Novartis,5,merge,Novartis,,organization,Companies,"checked: ""Novartis"", 2010-2025; filed to the organization only (batch 2, 2026-11-13: read the letters' address blocks)",accepted
@@ -627,21 +627,21 @@ Donovan,7,split,Department of Housing and Urban Development@2009-2014;Department
 Council,5,merge,Council on Environmental Quality,,,,"checked: every file name is ""letter to council on environmental quality""",accepted
 Office Of Compliance,5,merge,Office of Congressional Workplace Rights,,organization,,"Office of Compliance, renamed Office of Congressional Workplace Rights in 2018",accepted
 Judicial Conference,5,merge,Judicial Conference of the United States,,organization,,already the name,accepted
-Judiciary Committee,8,split,Senate Committee on the Judiciary@2010-2010;House Committee on the Judiciary@2011-2024,,organization,,"checked: Risch 2010 RECA letter to the Senate committee; 2011 Kagan recusal letters to Chairman Smith; Morelle 2024 deepfakes bill",accepted
+Judiciary Committee,8,split,Senate Committee on the Judiciary@2010-2010;House Committee on the Judiciary@2011-2024,,organization,,checked: Risch 2010 RECA letter to the Senate committee; 2011 Kagan recusal letters to Chairman Smith; Morelle 2024 deepfakes bill,accepted
 House Appropriations Committee,5,merge,House Committee on Appropriations,,,,already the name,accepted
 Senate Finance Committee,5,merge,Senate Committee on Finance,,,,already the name,accepted
 E&C,5,merge,House Committee on Energy and Commerce,,,,abbreviation,accepted
 T&I,5,merge,House Committee on Transportation and Infrastructure,,,,abbreviation,accepted
 Appropriations Subcommittee,5,merge,Appropriations committees,,,,file names name the subcommittee,accepted
-Lhhs Approps,5,merge,Appropriations committees,,,,"Labor-HHS appropriations subcommittee",accepted
+Lhhs Approps,5,merge,Appropriations committees,,,,Labor-HHS appropriations subcommittee,accepted
 Transportation Conferees,5,merge,Conference committees,,,,conferees on the transportation bill,accepted
 House Conferees,4,merge,Conference committees,,,,conferees,accepted
-Ndaa Confereees Final,5,merge,Conference committees,,,,"NDAA conferees; misspelt in the file name",accepted
+Ndaa Confereees Final,5,merge,Conference committees,,,,NDAA conferees; misspelt in the file name,accepted
 Conference,5,merge,Conference committees,,,,"checked: letters to the conference on a bill (TRICARE, renewables)",accepted
-Leaders,4,merge,Congressional leadership,,,,"letters to the leaders (fiscal cliff)",accepted
+Leaders,4,merge,Congressional leadership,,,,letters to the leaders (fiscal cliff),accepted
 Pres Bush,4,merge,The President,,,,President George W. Bush,accepted
 Leader Reid,4,member,R000146,,,,Harry Reid as Majority Leader,accepted
-Mccain,5,member,M000303,,,,"John McCain; includes replies to him posted on his own site",accepted
+Mccain,5,member,M000303,,,,John McCain; includes replies to him posted on his own site,accepted
 Leahy,5,member,L000174,,,,"Patrick Leahy, Judiciary chair",accepted
 Shelby,5,member,S000320,,,,"Richard Shelby, Banking chair",accepted
 Cruz,5,member,C001098,,,,Ted Cruz,accepted
@@ -656,7 +656,7 @@ Secretaries Austin And Blinken,5,joint,Department of Defense;Department of State
 "Mayorkas, Blinken",5,joint,Department of Homeland Security;Department of State,,,,Afghanistan,accepted
 "Dea, Ondcp, And Hhs",5,joint,Drug Enforcement Administration;Office of National Drug Control Policy;Department of Health and Human Services,,,,marijuana for research,accepted
 Trs And Irs,5,joint,Department of the Treasury;Internal Revenue Service,,,,"""Trs"" is Treasury; IRS Direct File",accepted
-Ust Omb Cdfi Fund,5,joint,Department of the Treasury;Office of Management and Budget,,,,"Treasury (CDFI Fund) and OMB",accepted
+Ust Omb Cdfi Fund,5,joint,Department of the Treasury;Office of Management and Budget,,,,Treasury (CDFI Fund) and OMB,accepted
 Bowser And Contee,5,joint,person:Muriel Bowser;organization:Metropolitan Police Department of the District of Columbia,,,,"Mayor Bowser and Chief Contee, 2022",accepted
 Delta,5,merge,Delta Air Lines,,organization,Companies,company,accepted
 American Airlines,5,merge,American Airlines,,organization,Companies,company,accepted
@@ -954,12 +954,12 @@ Mr. Zuckerberg,140,merge,Meta (Facebook),,,,salutation (#97): its chief executiv
 Mr. Pichai,78,merge,Google,,,,salutation (#97): its chief executive,accepted
 Mr. Bezos,56,merge,Amazon,,,,salutation (#97): its chief executive,accepted
 Mr. Jassy,56,merge,Amazon,,,,salutation (#97): its chief executive,accepted
-Governor DeSantis,80,person,Ron DeSantis,,person,Governors,salutation (#97),accepted
-Governor Hochul,60,person,Kathy Hochul,,person,Governors,salutation (#97),accepted
-Governor Abbott,38,person,Greg Abbott,,person,Governors,salutation (#97),accepted
-Governor Schwarzenegger,40,person,Arnold Schwarzenegger,,person,Governors,salutation (#97),accepted
-Governor Rauner,29,person,Bruce Rauner,,person,Governors,salutation (#97),accepted
-Governor Wolf,30,person,Tom Wolf,,person,Governors,salutation (#97),accepted
+Governor DeSantis,80,officeholder,Governor of Florida,,organization,,"salutation (#97); governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Governor Hochul,60,officeholder,Governor of New York,,organization,,"salutation (#97); governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Governor Abbott,38,officeholder,Governor of Texas,,organization,,"salutation (#97); governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Governor Schwarzenegger,40,officeholder,Governor of California,,organization,,"salutation (#97); governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Governor Rauner,29,officeholder,Governor of Illinois,,organization,,"salutation (#97); governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Governor Wolf,30,officeholder,Governor of Pennsylvania,,organization,,"salutation (#97); governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
 Mr. Musk,39,split,Tesla@2014-2021;Twitter (X)@2022-2024;Department of Government Efficiency@2025-2025;Twitter (X)@2026-2026,,organization,,"not a person term (Robin: only government officials get one); address blocks read: Tesla CEO 2014-2021, Twitter/X 2022-2024 and 2026, DOGE chair 2025. Three Tesla letters of 2022-2023 fall in the Twitter range",accepted
 Chairmen and Ranking Members,74,reject,,,,,"addressed to several committees' leaders at once, no one named",accepted
 Member of Congress,100,reject,,,,,a greeting,accepted
@@ -1221,21 +1221,21 @@ Mr. Scharf,12,merge,Wells Fargo,,,,salutation (#97): its chief executive,accepte
 Mr. Chew,14,merge,TikTok,,,,salutation (#97): its chief executive,accepted
 Commissioner Manfred,19,merge,Major League Baseball,,,,salutation (#97): its chief executive,accepted
 Mr. Hayward,13,merge,BP,,organization,Companies,salutation (#97): its chief executive,accepted
-Governor Hogan,25,person,Larry Hogan,,person,Governors,salutation (#97),accepted
-Governor Inslee,25,person,Jay Inslee,,person,Governors,salutation (#97),accepted
-Governor Baker,23,person,Charlie Baker,,person,Governors,salutation (#97),accepted
-Governor Whitmer,23,person,Gretchen Whitmer,,person,Governors,salutation (#97),accepted
-Governor Pritzker,21,person,JB Pritzker,,person,Governors,salutation (#97),accepted
-Governor Walz,21,person,Tim Walz,,person,Governors,salutation (#97),accepted
-Governor Murphy,18,person,Phil Murphy,,person,Governors,salutation (#97),accepted
-Governor Ducey,17,person,Doug Ducey,,person,Governors,salutation (#97),accepted
-Governor Edwards,17,person,John Bel Edwards,,person,Governors,salutation (#97),accepted
-Governor Quinn,14,person,Pat Quinn,,person,Governors,salutation (#97),accepted
-Governor Parson,14,person,Mike Parson,,person,Governors,salutation (#97),accepted
-Governor Reynolds,13,person,Kim Reynolds,,person,Governors,salutation (#97),accepted
-Governor DeWine,13,person,Mike DeWine,,person,Governors,salutation (#97),accepted
-Governor Snyder,12,person,Rick Snyder,,person,Governors,salutation (#97),accepted
-Governor Polis,12,person,Jared Polis,,person,Governors,salutation (#97),accepted
+Governor Hogan,25,officeholder,Governor of Maryland,,organization,,"salutation (#97); governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Governor Inslee,25,officeholder,Governor of Washington,,organization,,"salutation (#97); governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Governor Baker,23,officeholder,Governor of Massachusetts,,organization,,"salutation (#97); governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Governor Whitmer,23,officeholder,Governor of Michigan,,organization,,"salutation (#97); governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Governor Pritzker,21,officeholder,Governor of Illinois,,organization,,"salutation (#97); governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Governor Walz,21,officeholder,Governor of Minnesota,,organization,,"salutation (#97); governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Governor Murphy,18,officeholder,Governor of New Jersey,,organization,,"salutation (#97); governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Governor Ducey,17,officeholder,Governor of Arizona,,organization,,"salutation (#97); governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Governor Edwards,17,officeholder,Governor of Louisiana,,organization,,"salutation (#97); governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Governor Quinn,14,officeholder,Governor of Illinois,,organization,,"salutation (#97); governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Governor Parson,14,officeholder,Governor of Missouri,,organization,,"salutation (#97); governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Governor Reynolds,13,officeholder,Governor of Iowa,,organization,,"salutation (#97); governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Governor DeWine,13,officeholder,Governor of Ohio,,organization,,"salutation (#97); governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Governor Snyder,12,officeholder,Governor of Michigan,,organization,,"salutation (#97); governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Governor Polis,12,officeholder,Governor of Colorado,,organization,,"salutation (#97); governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
 Senator Hatch,25,member,H000338,,,,salutation (#97): a letter to this member,accepted
 Senator Feinstein,24,member,F000062,,,,salutation (#97): a letter to this member,accepted
 Congressman Webster,24,member,W000806,,,,salutation (#97): a letter to this member,accepted
@@ -1446,12 +1446,12 @@ Mr. Merlo,8,merge,CVS Health,,,,salutation (#97): its chief executive,accepted
 Mr. Sloan,9,merge,Wells Fargo,,,,salutation (#97): its chief executive,accepted
 Mr. Schultz,8,merge,Starbucks,,organization,Companies,salutation (#97): its chief executive,accepted
 President Emmert,9,merge,NCAA,,,,salutation (#97): its chief executive,accepted
-Governor Kemp,11,person,Brian Kemp,,person,Governors,salutation (#97),accepted
-Governor Strickland,10,person,Ted Strickland,,person,Governors,salutation (#97),accepted
-Governor McCrory,9,person,Pat McCrory,,person,Governors,salutation (#97),accepted
-Governor Ivey,9,person,Kay Ivey,,person,Governors,salutation (#97),accepted
-Governor Christie,8,person,Chris Christie,,person,Governors,salutation (#97),accepted
-Governor-elect Schwarzenegger,9,person,Arnold Schwarzenegger,,person,Governors,salutation (#97),accepted
+Governor Kemp,11,officeholder,Governor of Georgia,,organization,,"salutation (#97); governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Governor Strickland,10,officeholder,Governor of Ohio,,organization,,"salutation (#97); governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Governor McCrory,9,officeholder,Governor of North Carolina,,organization,,"salutation (#97); governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Governor Ivey,9,officeholder,Governor of Alabama,,organization,,"salutation (#97); governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Governor Christie,8,officeholder,Governor of New Jersey,,organization,,"salutation (#97); governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Governor-elect Schwarzenegger,9,officeholder,Governor of California,,organization,,"salutation (#97); governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
 Mayor Bloomberg,9,person,Michael Bloomberg,,person,,salutation (#97),accepted
 President al-Bashir,12,person,Omar al-Bashir,,person,,salutation (#97),accepted
 Senator Lautenberg,10,member,L000123,,,,salutation (#97): a letter to this member,accepted
@@ -1981,7 +1981,7 @@ Chair Cantwell and Senator Grassley,3,joint,"Senate Committee on Commerce, Scien
 Representative Webster,3,member,W000806,,,,matched by rule (match_recipients.py): rule 1: representative webster,accepted
 Chair Marcy Kaptur and Ranking Member Mike Simpson,3,merge,House Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
 Secretary Haaland and Commissioner Touton,3,joint,Department of the Interior;Bureau of Reclamation,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary haaland; rule 1: commissioner touton,accepted
-Governor Youngkin,3,person,Glenn Youngkin,,person,Governors,matched by rule (match_recipients.py): rule 1: governor youngkin,accepted
+Governor Youngkin,3,officeholder,Governor of Virginia,,organization,,"matched by rule (match_recipients.py): rule 1: governor youngkin; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
 Assistant Secretary Connor and Lieutenant General Spellmon,3,merge,Army Corps of Engineers,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary connor; rule 1: general spellmon,accepted
 Chairwoman DeLauro & Ranking Member Granger,3,merge,House Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
 Representative Comer,3,member,C001108,,,,matched by rule (match_recipients.py): rule 5: the one House member named comer,accepted
@@ -2129,9 +2129,9 @@ Chairmen Inhofe and Smith,7,joint,Senate Committee on Armed Services;House Commi
 Majority Leader Thune and Chairman Crapo,7,joint,Congressional leadership;Senate Committee on Finance,,,,salutation (#97),accepted
 Mayor de Blasio,15,person,Bill de Blasio,,person,,salutation (#97),accepted
 Attorney General Harris,7,person,Kamala Harris,,person,,salutation (#97),accepted
-Governor Cooper,7,person,Roy Cooper,,person,Governors,salutation (#97),accepted
-Governor Whitman,6,person,Christine Todd Whitman,,person,Governors,salutation (#97),accepted
-Governor Kaine,6,person,Tim Kaine,,person,Governors,salutation (#97),accepted
+Governor Cooper,7,officeholder,Governor of North Carolina,,organization,,"salutation (#97); governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Governor Whitman,6,officeholder,Environmental Protection Agency,,organization,,letters of 2002: Whitman was EPA Administrator,accepted
+Governor Kaine,6,officeholder,Governor of Virginia,,organization,,"salutation (#97); governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
 President von der Leyen,7,merge,European Commission,,organization,,salutation (#97),accepted
 Congressman Bilirakis,7,member,B001257,,,,salutation (#97): a letter to this member,accepted
 Senator Murkowski,6,member,M001153,,,,salutation (#97): a letter to this member,accepted
@@ -2404,7 +2404,7 @@ Secretary Mattis and Secretary Tillerson,2,joint,Department of Defense;Departmen
 Senators Cornyn and Murphy,2,joint,C001056;M001169,,,,matched by rule (match_recipients.py): rule 4: rule 1: senator cornyn; rule 1: senator murphy,accepted
 Congressman Zeldin,2,member,Z000017,,,,matched by rule (match_recipients.py): rule 5: the one House member named zeldin,accepted
 Senators Tillis and Cotton,2,joint,T000476;C001095,,,,matched by rule (match_recipients.py): rule 4: rule 5: the one Senate member named tillis; rule 1: senator cotton,accepted
-Mr. Lamont,2,person,Ned Lamont,,person,Governors,matched by rule (match_recipients.py): rule 2: lamont,accepted
+Mr. Lamont,2,reject,,,,,"2017, before Ned Lamont was governor (2019): a private citizen, no term",accepted
 Senator Hatch and Leader Schumer,2,joint,H000338;Congressional leadership,,,,matched by rule (match_recipients.py): rule 4: rule 1: senator hatch; rule 1: leader schumer,accepted
 Congressman Foster,2,member,F000454,,,,matched by rule (match_recipients.py): rule 5: the one House member named foster,accepted
 Secretaries Tillerson and Mattis,2,joint,Department of State;Department of Defense,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary tillerson; rule 1: secretary mattis,accepted
@@ -2467,7 +2467,7 @@ Secretary Esper and Acting Secretary McAleenan,2,joint,Department of Defense;Dep
 Chairman McCollum & Ranking Member Calvert,2,merge,House Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
 Inspector General Horowitz and Director Wray,2,joint,Department of Justice;Federal Bureau of Investigation,,,,matched by rule (match_recipients.py): rule 4: rule 1: general horowitz; rule 1: director wray,accepted
 House Speaker Nancy Pelosi,2,member,P000197,,,,matched by rule (match_recipients.py): rule 1: speaker pelosi,accepted
-Governor Andrew Cuomo,2,person,Andrew Cuomo,,person,Governors,matched by rule (match_recipients.py): rule 1: governor cuomo,accepted
+Governor Andrew Cuomo,2,officeholder,Governor of New York,,organization,,"matched by rule (match_recipients.py): rule 1: governor cuomo; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
 Chair Quigley and Ranking Member Graves,2,merge,House Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
 Secretary Mnuchin & Attorney General Barr,2,joint,Department of the Treasury;Department of Justice,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary mnuchin; rule 1: general barr,accepted
 Rep. Cleaver,2,member,C001061,,,,matched by rule (match_recipients.py): rule 5: the one House member named cleaver,accepted
@@ -2490,7 +2490,7 @@ Speaker Pelosi and Ranking Member McCarthy,2,merge,Congressional leadership,,,,m
 Secretary Esper and Secretary Pompeo,2,joint,Department of Defense;Department of State,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary esper; rule 1: secretary pompeo,accepted
 Secretary Chao and Administrator Wheeler,2,joint,Environmental Protection Agency;Department of Transportation,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
 Deputy Director Albence and Acting Secretary Wolf,2,joint,Department of Homeland Security;Immigration and Customs Enforcement,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
-Governor Ron DeSantis,2,person,Ron DeSantis,,person,Governors,matched by rule (match_recipients.py): rule 1: governor desantis,accepted
+Governor Ron DeSantis,2,officeholder,Governor of Florida,,organization,,"matched by rule (match_recipients.py): rule 1: governor desantis; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
 "Pelosi, Mccarthy",2,merge,Congressional leadership,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
 Representatives Bustos,2,member,B001286,,,,matched by rule (match_recipients.py): rule 5: the one House member named bustos,accepted
 FDA Commissioner Hahn,2,officeholder,Food and Drug Administration,,,,matched by rule (match_recipients.py): rule 1: commissioner hahn,accepted
@@ -2580,7 +2580,7 @@ Senate Majority Leader Schumer,2,merge,Congressional leadership,,,,matched by ru
 Chairwoman Slaughter,2,officeholder,Federal Trade Commission,,,,matched by rule (match_recipients.py): rule 1: chair slaughter,accepted
 Speaker Pelosi and Senate Majority Leader Schumer,2,merge,Congressional leadership,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
 Sen Capito,2,member,C001047,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named capito,accepted
-Governor Newsom3,2,person,Gavin Newsom,,person,Governors,matched by rule (match_recipients.py): rule 1: governor newsom,accepted
+Governor Newsom3,2,officeholder,Governor of California,,organization,,"matched by rule (match_recipients.py): rule 1: governor newsom; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
 Senators Schatz and Young and Representatives Kilmer,2,joint,S001194;Y000064;K000381,,,,matched by rule (match_recipients.py): rule 4: rule 1: senator schatz; rule 1: senator young; rule 5: the one House member named kilmer,accepted
 Senator Booker and Senator Young,2,joint,B001288;Y000064,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
 Senators Murray and Burr,2,merge,"Senate Committee on Health, Education, Labor, and Pensions",,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
@@ -2601,7 +2601,7 @@ Secretaries Mayorkas and Blinken,2,joint,Department of Homeland Security;Departm
 Secretary Yellen and Secretary Fudge,2,joint,Department of the Treasury;Department of Housing and Urban Development,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary yellen; rule 1: secretary fudge,accepted
 Representatives Welch and Gooden,2,joint,W000800;G000589,,,,matched by rule (match_recipients.py): rule 4: rule 1: representative welch; rule 5: the one House member named gooden,accepted
 Secretary Blinken and Attorney General Garland,2,joint,Department of State;Department of Justice,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary blinken; rule 1: general garland,accepted
-Governor Gavin Newsom,2,person,Gavin Newsom,,person,Governors,matched by rule (match_recipients.py): rule 1: governor newsom,accepted
+Governor Gavin Newsom,2,officeholder,Governor of California,,organization,,"matched by rule (match_recipients.py): rule 1: governor newsom; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
 Representative Stansbury,2,member,S001218,,,,matched by rule (match_recipients.py): rule 5: the one House member named stansbury,accepted
 Chairman Bishop and Ranking Member Harris,2,merge,House Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
 Chair Quigley and Ranking Member Womack,2,merge,House Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
@@ -2688,7 +2688,7 @@ Congressman Steube,2,member,S001214,,,,matched by rule (match_recipients.py): ru
 Senator Curtis and Senator Klobuchar,2,joint,C001114;K000367,,,,matched by rule (match_recipients.py): rule 4: rule 5: the one Senate member named curtis; rule 5: the one Senate member named klobuchar,accepted
 Representative Oberstar,1,member,O000006,,,,matched by rule (match_recipients.py): rule 5: the one House member named oberstar,accepted
 Attorney General Reno,1,officeholder,Department of Justice,,,,matched by rule (match_recipients.py): rule 1: general reno,accepted
-Mr. Daniels,1,person,Mitch Daniels,,person,Governors,matched by rule (match_recipients.py): rule 2: daniels,accepted
+Mr. Daniels,1,officeholder,Office of Management and Budget,,organization,,letter of July 2002: Daniels was OMB Director,accepted
 Senator Burns,1,member,B001126,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named burns,accepted
 Congressman Kolbe,1,member,K000306,,,,matched by rule (match_recipients.py): rule 5: the one House member named kolbe,accepted
 Senator Ashcroft,1,member,A000356,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named ashcroft,accepted
@@ -2879,7 +2879,7 @@ Leader Pelosi and Minority Whip Hoyer,1,merge,Congressional leadership,,,,matche
 Secretary Duncan and Secretary Sebelius,1,joint,Department of Education;Department of Health and Human Services,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary duncan; rule 1: secretary sebelius,accepted
 Wyden And Udall,1,joint,W000779;U000039,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
 Mr. Darcy,1,officeholder,Army Corps of Engineers,,,,matched by rule (match_recipients.py): rule 1: hon darcy,accepted
-Dr. Lamont,1,person,Ned Lamont,,person,Governors,matched by rule (match_recipients.py): rule 2: lamont,accepted
+Dr. Lamont,1,reject,,,,,"2011, before Ned Lamont was governor (2019): a private citizen, no term",accepted
 Senator Franken and Senator Tester,1,joint,F000457;T000464,,,,matched by rule (match_recipients.py): rule 4: rule 1: senator franken; rule 1: senator tester,accepted
 Chairwoman Murray and Chairman Hensarling,1,joint,H001036;M001111,,member,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
 Chairman Stabenow and Ranking Member Roberts,1,merge,"Senate Committee on Agriculture, Nutrition, and Forestry",,organization,Committees,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
@@ -2946,7 +2946,7 @@ Senators Chambliss,1,member,C000286,,,,matched by rule (match_recipients.py): ru
 Senators Crapo and Kerry,1,joint,C000880;K000148,,,,matched by rule (match_recipients.py): rule 4: rule 1: senator crapo; rule 1: senator kerry,accepted
 Representative Paulsen,1,member,P000594,,,,matched by rule (match_recipients.py): rule 5: the one House member named paulsen,accepted
 Congressman Connolly,1,member,C001078,,,,matched by rule (match_recipients.py): rule 5: the one House member named connolly,accepted
-Governor Cuomo[1],1,person,Andrew Cuomo,,person,Governors,matched by rule (match_recipients.py): rule 1: governor cuomo,accepted
+Governor Cuomo[1],1,officeholder,Governor of New York,,organization,,"matched by rule (match_recipients.py): rule 1: governor cuomo; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
 Representative Hensarling and Senator Murray,1,joint,H001036;M001111,,member,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
 Senators Casey and Hutchison,1,joint,C001070;H001016,,,,matched by rule (match_recipients.py): rule 4: rule 5: the one Senate member named casey; rule 1: senator hutchison,accepted
 Mr. Geithner and Mr. Lew,1,merge,Department of the Treasury,,,,matched by rule (match_recipients.py): rule 4: rule 2: geithner; rule 1: hon lew,accepted
@@ -3153,7 +3153,7 @@ Congressman Cooper,1,member,C000754,,,,matched by rule (match_recipients.py): ru
 Representatives Cooper and Lummis,1,joint,C000754;L000571,,,,matched by rule (match_recipients.py): rule 4: rule 1: representative cooper; rule 5: the one House member named lummis,accepted
 Secretary Foxx and Director Donovan,1,joint,Department of Transportation;Office of Management and Budget,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary foxx; rule 1: director donovan,accepted
 Congresswoman Castor,1,member,C001066,,,,matched by rule (match_recipients.py): rule 5: the one House member named castor,accepted
-Governor Rick Snyder,1,person,Rick Snyder,,person,Governors,matched by rule (match_recipients.py): rule 1: governor snyder,accepted
+Governor Rick Snyder,1,officeholder,Governor of Michigan,,organization,,"matched by rule (match_recipients.py): rule 1: governor snyder; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
 Secretaries Jewell and Pritzker,1,joint,Department of the Interior;Department of Commerce,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
 Secretary Vilsack and Secretary Castro,1,joint,Department of Agriculture;Department of Housing and Urban Development,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary vilsack; rule 1: secretary castro,accepted
 Representatives Blackburn,1,member,B001243,,,,matched by rule (match_recipients.py): rule 5: the one House member named blackburn,accepted
@@ -3506,7 +3506,7 @@ Attorney General Garland and Administrator Guzman,1,joint,Department of Justice;
 Chairman Durbin and Senator Grassley,1,merge,Senate Committee on the Judiciary,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
 Senator Casey and Senator Grassley,1,joint,C001070;G000386,,,,matched by rule (match_recipients.py): rule 4: rule 5: the one Senate member named casey; rule 1: senator grassley,accepted
 Senator Grassley and Senator Ossoff,1,joint,G000386;O000174,,,,matched by rule (match_recipients.py): rule 4: rule 1: senator grassley; rule 5: the one Senate member named ossoff,accepted
-Governor Youngkin 0,1,person,Glenn Youngkin,,person,Governors,matched by rule (match_recipients.py): rule 1: governor youngkin,accepted
+Governor Youngkin 0,1,officeholder,Governor of Virginia,,organization,,"matched by rule (match_recipients.py): rule 1: governor youngkin; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
 Administrator Brooks-LaSure and Director Walensky,1,joint,Centers for Medicare and Medicaid Services;Centers for Disease Control,,,,matched by rule (match_recipients.py): rule 4: rule 1: administrator brooks-lasure; rule 1: director walensky,accepted
 Senator Peters,1,member,P000595,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named peters,accepted
 Chairwoman Shaheen and Vice Chairman Moran,1,merge,Senate Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
@@ -3590,7 +3590,7 @@ Senators Schumer,1,member,S000148,,,,matched by rule (match_recipients.py): rule
 Chair Van Hollen and Senator Hagerty,1,merge,Senate Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
 Attorney General Garland and Postmaster General DeJoy,1,joint,Department of Justice;United States Postal Service,,,,matched by rule (match_recipients.py): rule 4: rule 1: general garland; rule 1: general dejoy,accepted
 Administrator Regan and Director Young,1,joint,Environmental Protection Agency;Office of Management and Budget,,,,matched by rule (match_recipients.py): rule 4: rule 1: administrator regan; rule 1: director young,accepted
-Mr. Kemp,1,person,Brian Kemp,,person,Governors,matched by rule (match_recipients.py): rule 2: kemp,accepted
+Mr. Kemp,1,officeholder,Governor of Georgia,,organization,,"matched by rule (match_recipients.py): rule 2: kemp; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
 Secretary Wormuth and General Hokanson,1,joint,Department of the Army;National Guard Bureau,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary wormuth; rule 1: general hokanson,accepted
 Chair Heinrich and Senator Hoeven,1,merge,Senate Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
 Chair Schatz and Ranking Member Cindy Hyde-Smith,1,merge,Senate Committee on Appropriations,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
@@ -3636,7 +3636,7 @@ Representatives Wenstrup,1,member,W000815,,,,matched by rule (match_recipients.p
 Director Rohit Chopra,1,officeholder,Consumer Financial Protection Bureau,,,,matched by rule (match_recipients.py): rule 1: director chopra,accepted
 Congressman Gaetz,1,member,G000578,,,,matched by rule (match_recipients.py): rule 5: the one House member named gaetz,accepted
 For Rep Tlaib,1,member,T000481,,,,matched by rule (match_recipients.py): rule 5: the one House member named tlaib,accepted
-Nyc Mayor Adams,1,person,Eric Adams,,person,State and local government,matched by rule (match_recipients.py): rule 1: mayor adams,accepted
+Nyc Mayor Adams,1,person,Eric Adams,,person,,matched by rule (match_recipients.py): rule 1: mayor adams,accepted
 Administrator Chiquita Brooks-LaSure,1,officeholder,Centers for Medicare and Medicaid Services,,,,matched by rule (match_recipients.py): rule 1: administrator brooks-lasure,accepted
 Secretary Raimondo and Secretary Becerra,1,joint,Department of Commerce;Department of Health and Human Services,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary raimondo; rule 1: secretary becerra,accepted
 Representative Houlahan,1,member,H001085,,,,matched by rule (match_recipients.py): rule 5: the one House member named houlahan,accepted
@@ -3779,7 +3779,7 @@ Senate Leader Thune,1,merge,Congressional leadership,,,,matched by rule (match_r
 Secretary of Transportation Duffy,1,officeholder,Department of Transportation,,,,matched by rule (match_recipients.py): rule 1: secretary duffy,accepted
 Acting Director Lyons and Director Patel,1,joint,Immigration and Customs Enforcement;Federal Bureau of Investigation,,,,matched by rule (match_recipients.py): rule 4: rule 1: director lyons; rule 1: director patel,accepted
 Director Lyons,1,officeholder,Immigration and Customs Enforcement,,,,matched by rule (match_recipients.py): rule 1: director lyons,accepted
-Minnesota Governor Walz,1,person,Tim Walz,,person,Governors,matched by rule (match_recipients.py): rule 1: governor walz,accepted
+Minnesota Governor Walz,1,officeholder,Governor of Minnesota,,organization,,"matched by rule (match_recipients.py): rule 1: governor walz; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
 Mr. Greer,1,officeholder,Office of the US Trade Representative,,,,matched by rule (match_recipients.py): rule 2: greer,accepted
 Director Patel and Acting Director Lyons,1,joint,Federal Bureau of Investigation;Immigration and Customs Enforcement,,,,matched by rule (match_recipients.py): rule 4: rule 1: director patel; rule 1: director lyons,accepted
 Secretary Chavez-DeRemer and Director Vought,1,joint,Department of Labor;Office of Management and Budget,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary chavez-deremer; rule 1: director vought,accepted
@@ -3827,7 +3827,7 @@ Chairwoman Shelley Moore Capito and Ranking Member Tammy Baldwin,1,merge,Senate 
 Senator Armstrong,1,member,A000383,,,,matched by rule (match_recipients.py): rule 5: the one Senate member named armstrong,accepted
 Senator Justice and Senator Bennet,1,joint,J000312;B001267,,,,matched by rule (match_recipients.py): rule 4: rule 5: the one Senate member named justice; rule 1: senator bennet,accepted
 Secretary Kennedy and Dr. Oz,1,joint,Department of Health and Human Services;Centers for Medicare and Medicaid Services,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
-Governor Mike DeWine,1,person,Mike DeWine,,person,Governors,matched by rule (match_recipients.py): rule 1: governor dewine,accepted
+Governor Mike DeWine,1,officeholder,Governor of Ohio,,organization,,"matched by rule (match_recipients.py): rule 1: governor dewine; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
 Secretary Kennedy and Attorney General Blanche,1,joint,Department of Health and Human Services;Department of Justice,,,,matched by rule (match_recipients.py): rule 4: rule 1: secretary kennedy; rule 1: general blanche,accepted
 Acting Secretary Roth,10,officeholder,Department of the Air Force,,,,"salutation (#97): John Roth, acting Secretary of the Air Force 2021",accepted
 Acting Director DeMarco,6,officeholder,Federal Housing Finance Agency,,,,"salutation (#97): Edward DeMarco, acting 2009-2014",accepted
@@ -3963,8 +3963,8 @@ High School Art Department,4,reject,,,,,"a greeting, a first name or a group wit
 School Administrator,4,reject,,,,,"a greeting, a first name or a group with no one named",accepted
 Superintendent,4,reject,,,,,"a greeting, a first name or a group with no one named",accepted
 Chairman Martin,45,officeholder,Federal Communications Commission,,,,"#349, address blocks read: every letter 2006-2008 is to Kevin J. Martin, FCC Chairman 2005-2009",accepted
-Governor Scott,41,person,"Rick Scott, Governor of Florida",,person,Governors,"#349, address blocks read: 2011-2018, all to Rick Scott, Governor of Florida (The Capitol, Tallahassee)",accepted
-Governor Brown,47,split,Jerry Brown@2012-2018;Kate Brown@2020-2021,,person,Governors,"#349, address blocks read: Edmund G. (Jerry) Brown Jr., Governor of California, 2012-2018; Kate Brown, Governor of Oregon, 2020-2021",accepted
+Governor Scott,41,officeholder,Governor of Florida,,organization,,"#349, address blocks read: 2011-2018, all to Rick Scott, Governor of Florida (The Capitol, Tallahassee); governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Governor Brown,47,split,Governor of California@2012-2018;Governor of Oregon@2020-2021,,organization,,"#349, address blocks read: Edmund G. (Jerry) Brown Jr., Governor of California, 2012-2018; Kate Brown, Governor of Oregon, 2020-2021",accepted
 Director Mulvaney,38,officeholder,Office of Management and Budget,,,,"#349, address blocks read: 2017-2020 to Mick Mulvaney, OMB Director; one, 23 May 2018, is to him as acting CFPB Director",accepted
 Chairman Alexander,26,split,"Senate Committee on Health, Education, Labor, and Pensions@2015-2019;Senate Committee on Appropriations@2020-2020",,organization,,"#349, address blocks read: Lamar Alexander as HELP chair 2015-2019 (some jointly with House Education and the Workforce); as Energy and Water appropriations chair 2020",accepted
 Chairman Rogers,27,split,House Committee on Appropriations@2011-2016;House Committee on Armed Services@2024-2026,,organization,,"#349, address blocks read: Hal Rogers, Appropriations chair, 2011-2016; Mike Rogers, Armed Services chair, 2024-2026",accepted
@@ -4145,7 +4145,7 @@ Director Das,10,officeholder,Financial Crimes Enforcement Network,,,,"#349: addr
 Director Holmes,16,merge,Virginia Department of Housing and Community Development,,organization,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
 Director Sams,14,officeholder,National Park Service,,,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
 Director Zients,9,officeholder,Office of Management and Budget,,,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
-Governor Parnell,6,person,Sean Parnell,,person,Governors,"#349: Governor of Alaska, address blocks read",accepted
+Governor Parnell,6,officeholder,Governor of Alaska,,organization,,"#349: Governor of Alaska, address blocks read; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
 Inspector General Fine,24,officeholder,Department of Justice,,,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
 Inspector General Hull,8,officeholder,United States Postal Service,,,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
 President Mountford,13,merge,Infant Nutrition Council of America,,organization,,"#349: address blocks read on every letter (or all but one, OCR noise)",accepted
@@ -4236,8 +4236,8 @@ Director Gabbard,6,officeholder,Office of the Director of National Intelligence,
 Director Morton,5,officeholder,Immigration and Customs Enforcement,,,,#349: address blocks read on every letter,accepted
 Education,5,officeholder,Department of Education,,,,#349: address blocks read on every letter,accepted
 General Lengyel and Lieutenant General Rice,6,officeholder,National Guard Bureau,,,,#349: address blocks read on every letter,accepted
-Governor Deal,5,person,Nathan Deal,,person,Governors,#349: address blocks read on every letter; a governor,accepted
-Governor Ige,6,person,David Ige,,person,Governors,#349: address blocks read on every letter; a governor,accepted
+Governor Deal,5,officeholder,Governor of Georgia,,organization,,"#349: address blocks read on every letter; a governor; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
+Governor Ige,6,officeholder,Governor of Hawaii,,organization,,"#349: address blocks read on every letter; a governor; governors are filed under the office, the name kept as an office holder's (Robin, 16 November 2026)",accepted
 Inspector General Fong,6,officeholder,Department of Agriculture,,,,#349: address blocks read on every letter,accepted
 Judge Bates and Judge Bybee,6,officeholder,Judicial Conference of the United States,,,,#349: address blocks read on every letter,accepted
 Justice Alito,6,officeholder,Supreme Court of the United States,,,,#349: address blocks read on every letter,accepted
@@ -4292,7 +4292,7 @@ House and Senate Committees on Appropriations,1,joint,House Committee on Appropr
 Department of Energy and Environmental Protection Agency,1,joint,Department of Energy;Environmental Protection Agency,,organization,,checked: the addressees of 1 letter(s) read by the PC (Secretary Wright and Administrator Zeldin),accepted
 "Department of Homeland Security, Bureau of Prisons and Immigration and Customs Enforcement",1,joint,Department of Homeland Security;Bureau of Prisons;Immigration and Customs Enforcement,,organization,,checked: the addressees of 1 letter(s) read by the PC (Secretary Noem and the acting BOP and ICE directors),accepted
 "Department of the Interior, Department of Agriculture, Council on Environmental Quality and Office of Management and Budget",1,joint,Department of the Interior;Department of Agriculture;Council on Environmental Quality;Office of Management and Budget,,organization,,"checked: the addressees of 1 letter(s) read by the PC (Secretaries Haaland and Vilsack, CEQ Chair Mallory and OMB Director Young)",accepted
-The President and Gavin Newsom,1,joint,The President;Gavin Newsom,,organization,,checked: the addressees of 1 letter(s) read by the PC (President Biden and Governor Newsom),accepted
+The President and Gavin Newsom,1,joint,The President;organization:Governor of California,,organization,,checked: the addressees of 1 letter(s) read by the PC (President Biden and Governor Newsom),accepted
 Department of Homeland Security and Customs and Border Protection,1,joint,Department of Homeland Security;Customs and Border Protection,,organization,,checked: the addressees of 1 letter(s) read by the PC (Secretary Mayorkas and Acting Commissioner Miller),accepted
 "Department of the Treasury, Federal Reserve and Small Business Administration",1,joint,Department of the Treasury;Federal Reserve;Small Business Administration,,organization,,"checked: the addressees of 1 letter(s) read by the PC (Secretary Mnuchin, Chairman Powell and Administrator Carranza)",accepted
 House and Senate Committees on Armed Services,1,joint,House Committee on Armed Services;Senate Committee on Armed Services,,organization,,"checked: the addressees of 1 letter(s) read by the PC (Chairman Reed, Ranking Member Inhofe, Chairman Smith and Ranking Member Rodgers)",accepted
