@@ -293,10 +293,13 @@ def sort_letters(congresses: set[int]):
     # a sibling's), then the PDF's metadata, then the capture.
     siblings = build_site.dates_from_siblings(
         json.dumps(r) for r in all_letters())
+    # The earliest capture of each FILE, across all its postings (#652).
+    earliest = build_site.earliest_captures(json.dumps(r) for r in all_letters())
     rank = build_site.PRECISION_RANK
     by_congress: dict[int, list] = {n: [] for n in congresses}
     flags: dict[int, Counter] = {n: Counter() for n in congresses}
     total = 0
+    flags_bound = [0, 0]   # postings re-dated to the earliest capture; left alone (#652)
     rosters: dict[int, set] = {}
 
     def on_roster(n: int, bioguide: str) -> bool:
@@ -313,8 +316,10 @@ def sort_letters(congresses: set[int]):
         if read:
             rec = {**rec, "date": read[0], "date_precision": read[1],
                    "date_best": read[0], "dated_by": "hand"}
+        bound = earliest.get(rec.get("digest") or "") or (rec.get("first_seen") or "")[:10]
+        rec = {**rec, "earliest_capture": bound}
         head = None if read else letterheads.get(rec.get("digest") or "")
-        if head and not (rec.get("first_seen") and head > rec["first_seen"][:10]):
+        if head and not (bound and head > bound):
             # Only if someone held this address on that date. A letterhead
             # naming a date no holder could have written on -- a misread
             # year, a reposted old letter -- is not used, here or by
@@ -331,7 +336,7 @@ def sort_letters(congresses: set[int]):
             pass
         else:
             sib = siblings.get(rec.get("digest") or "")
-            cap = (rec.get("first_seen") or "")[:10]
+            cap = bound
             # Never a date after this posting was already captured: the file
             # existed by then, so a later date is not its date. 1,163 such
             # promotions on 14 November 2026, up to nine years late -- mostly
@@ -341,6 +346,22 @@ def sort_letters(congresses: set[int]):
                 rec = {**rec, "date": sib[0], "date_precision": sib[1],
                        "date_best": sib[0], "date_source": "sibling"}
         own = rec.get("date") or dates.get(rec.get("digest") or "")
+        own_capture = (rec.get("first_seen") or "")[:10]
+        if not read and bound and (own[:10] > bound if own else own_capture > bound):
+            # Later than the file's earliest capture anywhere (#652): a date
+            # from this posting's own capture, a re-upload folder, a file name
+            # or the PDF. The earliest capture bounds it instead -- unless no
+            # one held this address then (a member re-posting another's
+            # letter), when the posting keeps its own capture as before.
+            b = ah.attribute(idx, rec["url"], "", bound)
+            if b.attribution != "none" and on_roster(congress_of(bound), b.bioguide_id):
+                own = ""
+                rec = {**rec, "date": None, "date_best": bound, "first_seen": bound,
+                       "date_precision": "captured-by", "date_rejected": True,
+                       "date_after_capture": True}
+                flags_bound[0] += 1
+            else:
+                flags_bound[1] += 1
         a = ah.attribute(idx, rec["url"], own or "", rec.get("first_seen") or "")
         if own and not read and (a.attribution == "none"
                     or not on_roster(congress_of(own), a.bioguide_id)):
@@ -369,6 +390,8 @@ def sort_letters(congresses: set[int]):
         elif a.attribution == "none" or a.attribution in ah.UNPUBLISHED:
             continue
         by_congress[n].append((a.bioguide_id, a.attribution, rec))
+    print(f"  {flags_bound[0]:,} postings dated after their file's earliest capture "
+          f"re-dated to it; {flags_bound[1]:,} left (no holder then) (#652)", file=sys.stderr)
     return by_congress, flags, total
 
 
