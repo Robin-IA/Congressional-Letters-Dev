@@ -59,6 +59,7 @@ sys.path.insert(0, str(ROOT / "build"))
 import address_holders  # noqa: E402
 import caucuses  # noqa: E402
 import committees  # noqa: E402
+import filed_orgs  # noqa: E402
 import parse_urls  # noqa: E402
 import topics  # noqa: E402
 
@@ -581,11 +582,27 @@ def main() -> int:
     # never the CEO, is the topic. The label is the organization's own, so
     # the letter opens from that organization's page by its tag.
     filed_ids = set()
+    # A company that letters now reach only by topic (filed_orgs.py blanks a
+    # company recipient) has no candidate left for its review to apply to,
+    # so its term is made here, under the review's broader term.
+    org_broader = {}
+    for rv in reviews:
+        if rv["status"] == "accepted" and rv.get("broader"):
+            for part in rv["target"].split(";"):
+                lab = part.partition("@")[0].split(":", 1)[-1].strip()
+                org_broader.setdefault(lab, rv["broader"])
+    have = {t_["label"] for t_ in terms if t_["status"] == "preferred"}
+    for label in sorted(filed_orgs.nongov_labels()):
+        if per_topic.get(filed_orgs.tag_of(label)) and label not in have:
+            promote_or_add(label, "organization", "body")
+            if org_broader.get(label):
+                extra_hier.append({"term": label, "broader": org_broader[label]})
     for t_ in terms:
         if (t_["kind"] == "organization" and t_["status"] == "preferred"
-                and t_["term_id"] not in committee_ids and per_topic.get(t_["label"])):
-            t_["letters"] = int(t_["letters"] or 0) + per_topic[t_["label"]]
-            committee_ids[t_["term_id"]] = t_["label"]
+                and t_["term_id"] not in committee_ids
+                and per_topic.get(tag := filed_orgs.tag_of(t_["label"]))):
+            t_["letters"] = int(t_["letters"] or 0) + per_topic[tag]
+            committee_ids[t_["term_id"]] = tag
             filed_ids.add(t_["term_id"])
 
     # Caucuses sit together under Topics (hierarchy.csv's "Caucuses"), by rule,
