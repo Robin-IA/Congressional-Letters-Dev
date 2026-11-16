@@ -168,9 +168,10 @@ Write CSV rows with `\n` line endings and append only, never reorder.
      `;`). The two groups, wrote and received, are kept apart.
   2. **A government official** (a Secretary, an Administrator, the President,
      a governor, a judge). File it **under the member or members who wrote it**,
-     **under the official's office** in the matching area of the topic list
-     (Government officials: Executive Office of the President, a department or
-     agency, Judicial branch, State and local government), and **under its
+     **under the official's office** in the matching area of the browse
+     (Executive branch: the Executive Office of the President or a federal
+     agency; Legislative branch; Judicial branch; or, for a governor or a state
+     or local office, Topics › State and local government › the state), and **under its
      subjects**. The official gets **no person term of their own** (Robin,
      15 November 2026): the name is recorded on the office as an
      `officeholder` decision in `reviews.csv` ("Hagel" → Department of
