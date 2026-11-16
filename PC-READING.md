@@ -189,10 +189,23 @@ Write CSV rows with `\n` line endings and append only, never reorder.
   - **A member and a company together** ("Chairman Wicker and Mr.
     Zuckerberg"): the member stays the recipient (kind 1), and the company
     is added as a topic.
-- **New subjects** are never added during reading. Hold the letter in
-  `letters-vocabulary-needs/letters.csv` and comment on #221. Vocabulary
-  changes go in their own PR to `build/topics.py`. Match words are plain
-  lowercase words, never regex.
+- **New subjects** are never added during reading, and a letter is **never
+  bent onto a subject that does not fit** to avoid a hold. When the letter's
+  subject is not in `SUBJECTS`:
+  1. **Move the letter to the holds folder:** a row in
+     `letters-vocabulary-needs/letters.csv`, with the proposed subject. A held
+     letter goes in none of the other files until the subject exists.
+  2. **File the request** as a comment on #221 (the vocabulary-request
+     issue): the proposed subject, the held letters' digests and titles, and
+     one line from the text showing why.
+
+  Vocabulary changes go in their own PR to `build/topics.py`. Match words are
+  plain lowercase words, never regex. The same goes for a **recipient with no
+  term** (a company, a state office, a foreign official): list it in the PR
+  and on #357, and leave the letter unfiled rather than filing it somewhere
+  else. Between 15 and 16 November, ten PC batches (#369 to #415) filed no
+  holds at all, and their letters had to be read again for subjects and
+  recipients.
 
 ## 7. Before opening a PR
 
@@ -201,7 +214,9 @@ python3 -m unittest discover -s tests
 python3 build/audit_dates.py --ocr-repo ../letters-from-congress-OCR
 ```
 
-Both must pass. On the PC, `--ocr-repo` (or `LETTERS_OCR_REPO`) points the audit at the text repository; without it the audit sees only the PC's local text and reports most letters as unreadable (#332). The PR title follows the existing pattern ("Letters review:
+Both must pass, and the PR body must say **how many letters were held for
+vocabulary** and how many recipients have no term, with the #221 and #357
+comments linked. "0 held" is written out, not left blank. On the PC, `--ocr-repo` (or `LETTERS_OCR_REPO`) points the audit at the text repository; without it the audit sees only the PC's local text and reports most letters as unreadable (#332). The PR title follows the existing pattern ("Letters review:
 agency letters, round N (25 read from full text)"). The body lists copies,
 holds and gaps. If rows from a Mac batch land at the same time, the conflict
 is only appended rows, and the Mac resolves it by keeping both sets.
