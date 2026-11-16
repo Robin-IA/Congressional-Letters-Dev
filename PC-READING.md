@@ -211,6 +211,15 @@ check against the text, never the whole test.
 - **The letterhead year can be a typo.** If the letter cites later events (a
   hearing, a bill, a fiscal year), date it from the content and say so in the
   source.
+- **An undated funding request is dated to a year** (Robin, 16 November
+  2026). A community project funding (earmark) request that prints no date but
+  names fiscal year N was written in the spring of year N−1: of 57 dated
+  requests naming their year, every fiscal year from FY2023 to FY2027 fell in
+  March–May of the year before. Record precision `year`, marked approximate:
+  the date column holds the letter's first capture in year N−1 (or 30 June),
+  so it sorts and places correctly; the explorers show only "about N−1".
+  Check the text first: many "undated" requests have a dateline the OCR
+  garbled ("March 3I, 2023"), and those take the day.
 - **Not every PDF is a member's letter.** An agency reply, an association's
   letter to a member, a CBO letter or a newspaper page is titled with its
   sender ("— CBO Director Elmendorf to Chairman Baucus …") and noted (#175).
