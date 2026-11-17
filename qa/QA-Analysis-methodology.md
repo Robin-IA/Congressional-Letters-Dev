@@ -38,10 +38,12 @@ letter needs a term that does not exist:
 - **The Mac adds it**: a `reviews.csv` merge row with its kind and `broader`
   node, and a `hierarchy.csv` row (building a state chain if needed), then
   files the letter in the same PR (Robin, 17 November 2026).
-- **The PC holds the letter**: a row in `letters-vocabulary-needs/letters.csv`
-  and **one issue per missing term**, titled "New vocabulary term needed:
-  <term>", label `vocabulary`. The Mac adds the term, files the held letters
-  and closes the issue.
+- **The PC holds the letter**: a row in `letters-vocabulary-needs/letters.csv`.
+  Missing **names** go in **one issue per batch**, "Reading batch N: names
+  needed" (Robin, 17 November 2026); a missing **topic subject** gets its own
+  issue, "New subject needed: <subject>". Both are labelled `vocabulary`. The
+  Mac adds the terms in one vocabulary PR, files the held letters and closes
+  the issues.
 
 A letter is never filed under a nearby term to avoid a hold.
 

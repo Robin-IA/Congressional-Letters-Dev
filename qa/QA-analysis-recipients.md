@@ -22,7 +22,8 @@ address block, then the salutation, then the body. Write **one**
   `organization` or `office`, a `broader` node in the house form: "Florida
   Attorney General", "Governor of X", "Embassy of X", "U.S. Embassy in X",
   "Mayor of X", "X state government agencies", "X local government and
-  agencies"); the PC holds and files a term issue.
+  agencies"); the PC holds the letter and lists the name on the batch's "names needed"
+  issue.
 - A label never ends in a parenthetical ("Mayor of Chicago", not "Mayor of
   Chicago (Illinois)"): the matcher strips it.
 - An official's name is kept searchable as an `officeholder` row on the office,
