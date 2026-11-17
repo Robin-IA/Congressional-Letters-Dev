@@ -23,7 +23,13 @@ posting that is not a letter, whoever posted it:
 - a **resolution** (a town board, a legislative conference; #496);
 - a **newsletter** or report to constituents;
 - **bill text**, a Federal Register page, a floor statement or remarks;
-- an **issue brief**, a report or an instruction sheet;
+- an **issue brief**, a report, a research memorandum or an instruction sheet;
+- **testimony or a statement** submitted for a hearing or roundtable, even when
+  headed "To:" a member, and a sworn **declaration** (PC batch 60, #1238);
+- a **ceremonial greeting** with no addressee ("I send my warmest greetings
+  to all those celebrating …") and a **web page** such as a welcome message;
+- a **template** or sample letter with blank fields;
+- **vendor quotes**, schedules and forms sent with a funding request;
 - an **exhibit**: a bank statement, a check, a wire record, e-mail printouts,
   interview notes, a deposition, interrogatory answers, database printouts
   (the Government Reform files on #515);
