@@ -158,10 +158,16 @@ The PC reads the 116th–119th by PC-READING and never merges or files a held
 letter. For each batch it sends a PR and up to two issues; Robin passes on
 their numbers. **Handle them in this order**, every time, from the OCR:
 
-1. **The batch PR** ("Reading batch N: …"): `bash build/mac/fold.sh <PR>`
-   (tests, holder check, merge, sync). On CONFLICT, `resolve_append.sh <PR>`.
-   It refuses a PR that touches code; read such a PR before merging it.
-   Check the PR says how many letters were held and lists its issues.
+1. **The batch PR** ("Reading batch N: …"). **First check for overlap**:
+   compare the PR's digests with the letters already read or discarded on
+   `harvest-member-letters`. If the Mac has decided any of them since the PC
+   made its list (17 November 2026: 47 of PR 1298's 100), the Mac's decision
+   stands: fold through a branch of your own that drops the PC's rows for
+   those letters (#1299), and say so on the PR and its issues. Then
+   `bash build/mac/fold.sh <PR>` (tests, holder check, merge, sync). On
+   CONFLICT, `resolve_append.sh <PR>`. It refuses a PR that touches code;
+   read such a PR before merging it. Check the PR says how many letters were
+   held and lists its issues.
 2. **"Reading batch N: vocabulary needed"** (names and subjects):
    - **Names**: add each as a `reviews.csv` merge row (kind, `broader` in the
      house form, QA-analysis-recipients) and a `hierarchy.csv` row, building a
@@ -188,6 +194,16 @@ their numbers. **Handle them in this order**, every time, from the OCR:
    that it waits on Robin. (Bundled PDFs are settled: one record for the
    whole bundle, QA-analysis-text step 4, #1226.)
 6. After the next publish, the PC's pick list sees the batch as done.
+
+**Reading in the PC's range.** When the Mac decides letters left on issues
+that fall in the 116th–119th, say so on the PC's current batch issue before
+starting, and publish soon after merging, so the PC's next pick list leaves
+them out.
+
+**The holder check** (`fold.sh`) accepts a date whose posting goes to a
+named caucus's chair, and a true date older than the poster's holding of the
+address, placed by first capture (`address_holders.place`, posted later,
+#239, #1284). It refuses only a date that leaves a posting with no one.
 
 ## Issues: only for what cannot be resolved
 
@@ -257,4 +273,4 @@ branch and PR, so the PC's pick list and the QA status stay current.
 | 22 | 1282 | 196 | 6 short of 4 subjects or 2 topics (noted); 75 new terms, 9 joint, 7 dates; 4 discarded (a Warren report, a forwarded email, a blank grant-request form, and FEMA to North Dakota on Drayton by test 2 after the search was read by hand); the service organizations' Military Lending Act letter linked to McCaskill's |
 | 23 | 1283 | 197 | Royce-McCaul-Duncan letter on Carter's site kept at its capture date (#1284); 2 short of 4 subjects or 2 topics (noted); 54 new terms, 14 joint, 6 dates; 2 discarded by test 2 after the search was read by hand (a Tampa Bay Defense Alliance op-ed on Castor's site; an Education Department letter to state school chiefs on Toomey's); the IACHR hearing notice linked to the territories' delegates' letter; 1 partial |
 | issues | 1288 | 40 | the 99 letters left undecided on 26 questionable-letter issues: 40 filed, 52 discarded (test 1 or test 2, each test-2 discard after the supplement search was read by hand), 8 kept as supplements and linked, 5 partials (#252), 2 bundles (#1226) |
-| bundles | (this PR) | 19 | the bundle rule (#1226): 8 bundles that waited on it filed, and 11 the PC had filed under their first letter re-read, each as one record for the whole bundle with a "Bundle:" note; 77 new terms |
+| bundles | 1293 | 19 | the bundle rule (#1226): 8 bundles that waited on it filed, and 11 the PC had filed under their first letter re-read, each as one record for the whole bundle with a "Bundle:" note; 77 new terms |
