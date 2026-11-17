@@ -199,7 +199,7 @@ Each batch is one PR, which appends rows to these files in the dev repository:
 | `vocabulary/letter-recipients.csv` | `digest,recipient,source` | One row per letter: the reviewed term from step 2 (an office, a committee, a member's name, or a company's label). Not for a private citizen. |
 | `vocabulary/reviews.csv` | `candidate,letters,decision,…` | Only when step 2 needs a decision the vocabulary lacks: a `joint` row for several offices at once, or a `merge` row for a company not yet reviewed. |
 | `vocabulary/letters-reviewed.csv` | `digest,reviewed,title,date,topics,filing,note,date_audited` | One row per letter read. `date` is `yes` if you added a date row, otherwise `unchanged`; `filing` is `yes` if you added a recipient row. |
-| `letters-vocabulary-needs/letters.csv` | `digest,title,date,topics,proposed_subjects,issue,note` | For a letter that needs a subject the vocabulary lacks. It stays here and goes in none of the files above. Also comment on #221. |
+| `letters-vocabulary-needs/letters.csv` | `digest,title,date,topics,proposed_subjects,issue,note` | For a letter that needs a subject the vocabulary lacks. It stays here and goes in none of the files above. Also open a vocabulary-request issue for the term (§6). |
 | `letters-discarded/letters.csv` | `digest,title,reason,issue,decided` | A posting that is **not a letter** (resolution, newsletter, exhibit, "Dear Employer" reference), or a letter between other parties with **no relation to a member or a member's letter**, once Robin has decided it. Discards are for discussion, not removal. It goes in none of the other files and is not read again. |
 
 Write CSV rows with `\n` line endings and append only, never reorder.
@@ -339,9 +339,12 @@ check against the text, never the whole test.
   1. **Move the letter to the holds folder:** a row in
      `letters-vocabulary-needs/letters.csv`, with the proposed subject. A held
      letter goes in none of the other files until the subject exists.
-  2. **File the request** as a comment on #221 (the vocabulary-request
-     issue): the proposed subject, the held letters' digests and titles, and
-     one line from the text showing why.
+  2. **Open an issue for the request**, one per term, titled "New
+     vocabulary term needed: <term>" and labelled `vocabulary`: the term,
+     where it would file, the held letters' digests, titles and dates, and
+     one line from the text showing why. Not a comment on #221: Robin,
+     16 November 2026, "It should file an issue with the vocabulary request
+     and move a letter to folder for holds."
 
   **The PC recommends a term; the Mac adds it.** A term request says the
   term, the held letters, and *where it would file* (for example "State of
@@ -378,8 +381,8 @@ once its `reviews.csv` row is merged, whether or not the vocabulary has been
 rebuilt; check `reviews.csv` and `vocabulary/terms.csv` before asking for one.
 
 Both must pass, and the PR body must say **how many letters were held for
-vocabulary** and how many recipients have no term, with the #221 and #357
-comments linked. "0 held" is written out, not left blank. On the PC, `--ocr-repo` (or `LETTERS_OCR_REPO`) points the audit at the text repository; without it the audit sees only the PC's local text and reports most letters as unreadable (#332). The PR title follows the existing pattern ("Letters review:
+vocabulary** and how many recipients have no term, with the vocabulary-request
+issues and the #357 comments linked. "0 held" is written out, not left blank. On the PC, `--ocr-repo` (or `LETTERS_OCR_REPO`) points the audit at the text repository; without it the audit sees only the PC's local text and reports most letters as unreadable (#332). The PR title follows the existing pattern ("Letters review:
 agency letters, round N (25 read from full text)"). The body lists copies,
 holds and gaps. If rows from a Mac batch land at the same time, the conflict
 is only appended rows, and the Mac resolves it by keeping both sets.
@@ -426,7 +429,7 @@ an OCR-gap issue is `OCR`. Do not use `important`; that is Robin's.
 | #172 | The dating order |
 | #175 | Letters written to Congress, not from it |
 | #204 | The PC's agency letters |
-| #221 | Proposed new subjects, with their held letters |
+| #221 | Proposed new subjects, with their held letters (history; new requests are their own issues, §6) |
 | #224 | Duplicate letters |
 | #239 | Older letters re-posted later, and refused dates |
 | #242 / #243 | Letters in Word or HTML, not PDF (survey, then conversion) |
