@@ -506,6 +506,21 @@ SUBJECTS: dict[str, tuple[str, ...]] = {
     "Turkey": (),
     "Taiwan": (),
     "Western Sahara": (),
+    # Hand-filed only (#221; Robin, 16 November 2026): subjects the readers
+    # asked for. No match words, so no letter is tagged by them automatically.
+    "Arts and culture": (),
+    "National symbols": (),
+    "Government records": (),
+    "Labor rights": (),
+    "House procedure": (),
+    "Resignations from Congress": (),
+    "Death penalty": (),
+    "Pardons": (),
+    "Bankruptcy": (),
+    "Gambling": (),
+    "Intellectual property": (),
+    "Coast Guard": (),
+    "Food and beverages": (),
 }
 
 # ------------------------------------------------------------- the agencies
