@@ -7,7 +7,9 @@ least 4 per letter, no upper limit, names counting (Robin, 17 November 2026).
 **Written 17 November 2026.** This is the Mac's reading work. The PC's is
 [PC-READING.md](PC-READING.md), whose rules for recipients, dates, titles and
 subjects apply here too. Read this first in a new session, or after the
-tokens reset (Robin: 12:45 AM and 5:45 AM EST).
+tokens reset (Robin: 12:45 AM and ; commit the rebuilt
+ with the next batch PR (the tests check name subjects
+against it, and a stale copy refuses new committees and agencies);5:45 AM EST).
 
 **What and why.** Robin, 17 November 2026: "Let's do the 106-115th letters of
 unfiled letters in the Mac's range" and "Just file issues for anything you can
@@ -209,4 +211,5 @@ branch and PR, so the PC's pick list and the QA status stay current.
 | 16 | 1261 | 194 | 11 new terms, 10 joint, 3 dates; 5 discarded (2 not letters; 3 test-2 letters after the search was read by hand); a tribal letter naming the Nevada delegation kept; 1 partial |
 | 17 | 1262 | 198 | 14 new terms, 6 joint, 4 dates; 2 discarded (floor remarks; asylum attorneys' letter to Kelly by test 2) |
 | 18 | 1263 | 194 | 7 new terms, 10 joint, 6 dates; 3 discarded by test 2 after the search was read by hand; 2 bundles to #1226; 1 partial |
-| 19 | (this PR) | 196 | 4 new terms, 7 joint, 1 date; 4 discarded (a press release, a booklet, a form; FEMA's letter to North Dakota by test 2) |
+| 19 | 1265 | 196 | 4 new terms, 7 joint, 1 date; 4 discarded (a press release, a booklet, a form; FEMA's letter to North Dakota by test 2) |
+| 20 | (this PR) | 198 | first batch under QA-Analysis-methodology: 190 with 4+ subjects, 8 under 4 (noted for review); 57 new terms (names count); 15 joint, 4 dates; 1 discarded; 1 partial |
