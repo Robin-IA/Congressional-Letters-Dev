@@ -7,8 +7,12 @@
 Writes PROGRESS.md (one table, by Congress) and progress.csv (one row per
 scan, so the next batch can be picked from what is not done).
 
-WHAT "DONE" MEANS (Robin, 14 November 2026). A letter is done when all of
-these hold:
+WHAT "DONE" MEANS (Robin, 17 November 2026, replacing 14 November). A letter
+is done when it has OCR, is a letter, has authorship, has a recipient (if
+applicable), has a date (if determined), has subjects and names per the
+instructions, has a title in the established form, and is published and
+filed where it needs to be. **A discard is not done**: it falls under issues.
+In the steps below:
 
   text            its text layer or its OCR is at least MIN_CHARS (100)
                   characters, so there is something to read
@@ -21,11 +25,19 @@ these hold:
   date settled    its date was read from the letter (vocabulary/letter-dates.csv)
                   or the reader confirmed the date it had (reviewed: date=yes or
                   unchanged) -- the dating rule of #172
-  subjects        it carries at least one topic as published
-  filed           its recipient is a reviewed term of the vocabulary -- not
-                  in Not yet reviewed (a candidate), not missing a term, and
-                  not missing a recipient (Robin: anything in Not yet reviewed
-                  is not complete)
+  a letter        not discarded (letters-discarded/letters.csv), and not a
+                  true duplicate: a copy one member posted again of a letter
+                  they already posted (DEDUPLICATION.md), noted "copy of
+                  <digest>" or "another scan of <digest>". A duplicate is a
+                  potential discard and needs further review (Robin,
+                  17 November 2026); a letter shared by different members is
+                  not a duplicate.
+  subjects        at least 4 subjects, at least 2 of them topics, as read
+                  (letter-topics.csv, the recipient counting when it is an
+                  organization or office; qa/QA-analysis-subject-analysis.md)
+  filed           its recipient, if it has one, is a reviewed term -- not in
+                  Not yet reviewed (a candidate) and not missing a term. A
+                  letter the reader found has no addressee is filed.
 
 The counts are of letters as the explorers publish them, so a scan posted by
 two members counts twice, as a reader would find it twice. Whether a letter
@@ -61,8 +73,9 @@ STEPS = [
     ("title_confirmed", "Title confirmed", "the reader confirmed or wrote the title"),
     ("title_process", "Title in our form", "a hand title in the form \"subject — to whom\" (letter-titles.csv)"),
     ("date_settled", "Date settled", "read from the letter (letter-dates.csv) or confirmed by the reader"),
-    ("subjects", "Subjects", "at least one topic as published"),
-    ("filed", "Filed", "its recipient is a reviewed term, not in Not yet reviewed"),
+    ("letter", "A letter", "not discarded and not a true duplicate: both fall under issues"),
+    ("subjects", "Subjects", "at least 4 subjects, at least 2 of them topics"),
+    ("filed", "Filed", "its recipient, if it has one, is a reviewed term"),
     ("done", "Done", "all of the above"),
 ]
 
@@ -117,8 +130,15 @@ def recipient_terms() -> dict:
     return out
 
 
+def subjects_ok(hand: list, recipient: str, subject_list: set, org_labels: set) -> bool:
+    """At least 4 subjects, at least 2 of them topics (Robin, 17 November 2026)."""
+    names = set(hand) | ({recipient} if recipient in org_labels else set())
+    return len(names) >= 4 and sum(1 for t in hand if t in subject_list) >= 2
+
+
 def status(digest: str, topics: str, chars: dict, ocr: set, reviewed: dict,
-           titles: dict, dates: set, filed: str = "filed") -> dict:
+           titles: dict, dates: set, filed: str = "filed",
+           discarded: frozenset = frozenset(), subjects: bool | None = None) -> dict:
     """The steps one published letter has passed."""
     r = reviewed.get(digest) or {}
     s = {
@@ -128,11 +148,12 @@ def status(digest: str, topics: str, chars: dict, ocr: set, reviewed: dict,
         "title_confirmed": (r.get("title") or "").lower() == "yes",
         "title_process": title_in_form(titles.get(digest, "")),
         "date_settled": digest in dates or (r.get("date") or "").lower() in ("yes", "unchanged"),
-        "subjects": bool((topics or "").strip()),
+        "letter": digest not in discarded,
+        "subjects": bool((topics or "").strip()) if subjects is None else subjects,
         "filed": filed == "filed",
     }
-    s["done"] = all(s[k] for k in ("text", "reviewed", "title_confirmed", "title_process",
-                                   "date_settled", "subjects", "filed"))
+    s["done"] = all(s[k] for k in ("text", "reviewed", "letter", "title_confirmed",
+                                   "title_process", "date_settled", "subjects", "filed"))
     return s
 
 
@@ -177,6 +198,10 @@ def published(explorers: Path):
         at = {c: i for i, c in enumerate(cols)}
         for f in sorted((d / "payload" / "member").glob("*.json")):
             for row in json.loads(f.read_text(encoding="utf-8")):
+                # A copy on the page of a member the letter was addressed to
+                # (#352) is not another letter.
+                if "direction" in at and row[at["direction"]] == "received":
+                    continue
                 yield (n, f.stem, row[at["digest"]], row[at["subject"]], row[at["topics"]],
                        row[at["recipient"]])
 
@@ -199,6 +224,30 @@ def main() -> int:
                     if r == letter_text.NO_RECIPIENT}
     company_tags = {filed_orgs.tag_of(lab) for lab in filed_orgs.nongov_labels()}
     filings = {n: Counter() for n in CONGRESSES}
+    discarded = frozenset(r["digest"] for r in csv.DictReader(
+        (ROOT / "letters-discarded" / "letters.csv").open(encoding="utf-8", newline="")))
+    hand_topics = {r["digest"]: [t for t in r["topics"].split(";") if t]
+                   for r in read_csv("letter-topics.csv")}
+    hand_rec = letter_text.recipients_by_hand()
+    # True duplicates (DEDUPLICATION.md; Robin, 17 November 2026): a read
+    # letter noted as a copy of another that the same member also posted.
+    # Potential discards: not done, and under issues.
+    copy_of = {}
+    for r in read_csv("letters-reviewed.csv"):
+        m = re.search(r"(?i)(?:another scan of|copy of|duplicate of)\s+`?([A-Z2-7]{8,32})", r["note"])
+        if m:
+            copy_of[r["digest"]] = m.group(1)
+    posters: dict[str, set] = defaultdict(set)
+    for n, member, digest, *_ in published(args.explorers):
+        posters[digest].add(member)
+    def same_poster(d: str, other: str) -> bool:
+        return any(o.startswith(other) and posters[d] & posters[o] for o in posters)
+    duplicates = frozenset(d for d, o in copy_of.items() if same_poster(d, o))
+    discarded = discarded | duplicates
+    import topics as topics_mod  # noqa: E402
+    subject_list = set(topics_mod.SUBJECTS)
+    org_labels = {r["label"] for r in read_csv("terms.csv")
+                  if r.get("kind") in ("organization", "office") and r.get("status") == "preferred"}
 
     per = {n: Counter() for n in CONGRESSES}
     scans: dict[str, dict] = {}
@@ -208,10 +257,16 @@ def main() -> int:
             f = "filed"
         elif digest in no_recipient:
             f = "filed"
+        elif digest in reviewed and not (recipient or "").strip():
+            # Recipient "if applicable" (17 November): a read letter with none
+            # shown -- a company filed by topic, or no addressee -- is filed.
+            f = "filed"
         else:
             f = filing(recipient, terms)
         filings[n][f] += 1
-        s = status(digest, topics, chars, ocr, reviewed, titles, dates, f)
+        s = status(digest, topics, chars, ocr, reviewed, titles, dates, f, discarded,
+                   subjects_ok(hand_topics.get(digest, []), hand_rec.get(digest, ""),
+                               subject_list, org_labels))
         per[n]["letters"] += 1
         for k, v in s.items():
             per[n][k] += v

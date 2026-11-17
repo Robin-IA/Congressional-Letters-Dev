@@ -13,6 +13,13 @@ Robin's, 17 November 2026** (#496, #515). They build on "This will be the
 place to put letters that aren't letters" (16 November) and the Fried letter
 (#1207).
 
+
+**Duplicates are a type of discard** (Robin, 17 November 2026, #1308; reviewed on #1309). A
+member's second copy of a letter they already posted, found clearly by the
+duplication check (DEDUPLICATION.md), is recorded here with a reason
+beginning "duplicate:" and the primary copy it repeats. Like every discard, it
+is not done and falls under issues.
+
 ## The discard criteria
 
 Ask the two questions in order. A posting that passes both is kept and read.

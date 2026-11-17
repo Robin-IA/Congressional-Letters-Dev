@@ -127,12 +127,24 @@ per Congress, one row per posting, rebuilt at each publish by
 `build/qa_status.py`. Columns: Congress, Letter URL, Letter name (original),
 Discarded (Y/N), Letter Name Fix, Authors (`;`), Subjects (`;`), Dates,
 Recipients, OCR (Y/N), Filed? (Filed / Hold / Unprocessed / Needs Review),
-Issue (Y/N). A discarded posting is Filed with Discarded = Y.
+Issue (Y/N).
 
-- **Filed**: read, every step done, recorded.
+**What constitutes done** (Robin, 17 November 2026): a letter **has OCR, is
+a letter, has authorship, has a recipient (if applicable), has a date (if
+determined), has subjects and names per the instructions (at least 4, at
+least 2 topics), has a title following the established protocol, and is
+published and filed where it needs to be.** A **discard is not done**: it
+falls under issues, and is never marked Filed unless it is taken out of
+discarded status and the rest of the work is complete. A **true duplicate**
+(one member's second copy of a letter, DEDUPLICATION.md) is a potential
+discard and needs further review in the same way (#1308).
+
+- **Filed**: done, as above. Exactly the letters `build/progress.py` counts
+  as done (`qa_status.py` reads its `done` column).
 - **Hold**: waiting on a vocabulary term or a decision.
 - **Unprocessed**: not yet read.
 - **Needs Review**: read, but short of a requirement (fewer than 4 subjects or
-  fewer than 2 topics,
-  #1266), or set aside as partial or unreadable (#252). A bundle is filed
-  as one record (QA-analysis-text step 4).
+  2 topics, #1266; a title, date or recipient term missing); set aside as
+  partial or unreadable (#252); **discarded** (Discarded = Y, Issue = Y); or a
+  **true duplicate** (Issue = Y). A bundle is filed as one record
+  (QA-analysis-text step 4).

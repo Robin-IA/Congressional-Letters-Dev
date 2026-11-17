@@ -142,7 +142,20 @@ The other copies keep their postings, since each is still a capture at its
 own URL, and point to the primary. A shared letter has no primary: every
 member's posting is the letter, from that member.
 
-## 5. What is recorded (proposed)
+## 5. What is recorded
+
+**A clear duplicate is a type of discard** (Robin, 17 November 2026, #1308; reviewed on #1309).
+When the check above clearly finds a true duplicate (the same member posted
+both files; similarity at least 0.99, or at least 0.95 with the same title,
+date and addressee), the non-primary copy is recorded in
+`letters-discarded/letters.csv` with a reason beginning "duplicate:" and the
+primary it repeats, and in `vocabulary/letter-duplicates.csv`. The primary
+stays. A pair the check cannot settle (under 0.95, or a different title) is a
+**potential discard**: not done, Needs Review, with an issue, until it is
+read. First run, 17 November 2026: of 230 copies noted by readers, 145 were
+shared letters (different members, kept), 48 were clear duplicates
+(discarded), and 16 wait on a reading.
+
 
 - **`vocabulary/letter-duplicates.csv`**: one row per non-primary copy of a
   **true duplicate**, plus the version links (level 4).
