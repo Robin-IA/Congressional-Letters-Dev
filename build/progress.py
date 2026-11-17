@@ -193,6 +193,9 @@ def main() -> int:
     titles = {r["digest"]: r["title"] for r in read_csv("letter-titles.csv")}
     dates = {r["digest"] for r in read_csv("letter-dates.csv")}
     terms = recipient_terms()
+    # A reader's decision that a letter has no recipient files it (#502).
+    no_recipient = {d for d, r in letter_text.recipients_by_hand().items()
+                    if r == letter_text.NO_RECIPIENT}
     company_tags = {filed_orgs.tag_of(lab) for lab in filed_orgs.nongov_labels()}
     filings = {n: Counter() for n in CONGRESSES}
 
@@ -201,6 +204,8 @@ def main() -> int:
     for n, member, digest, subject, topics, recipient in published(args.explorers):
         # A letter filed under a company by topic is filed (filed_orgs.py).
         if any(t.strip() in company_tags for t in re.split(r"[;,]", topics or "")):
+            f = "filed"
+        elif digest in no_recipient:
             f = "filed"
         else:
             f = filing(recipient, terms)

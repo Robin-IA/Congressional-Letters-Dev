@@ -100,8 +100,17 @@ last of that kind).
         member); the author is Y", and the title names the sender ("… —
         Mayor of Gilman to Representative Emmer, 10 March 2025").
      4. If the **member is the author** (an open letter, a notice to
-        constituents), no recipient is filed; it files under its author.
-        *Pending Robin's confirmation.*
+        constituents, students or "stakeholders"), write the recipient as
+        **`(no recipient)`** in `letter-recipients.csv`: the letter files
+        under its author, shows no recipient, and counts as filed. The title
+        still says whom it addresses ("— to high school students").
+        Confirmed by Robin, 17 November 2026 (#502). A letter to a
+        **private person** is written the same way.
+     4a. A **Dear Colleague** letter to the members of one chamber files under
+        the chamber: **United States Senate** or **United States House of
+        Representatives** (Robin, 17 November 2026, #502). A letter to
+        "the conferees" or to named chairs and ranking members files under
+        their committees (a joint row when there are several).
      5. **Omit** letters to unnamed employers ("Dear Employer"), which are
         references or personnel letters, not correspondence to file.
      6. A **named** addressee whose office cannot be established ("Dear Mr.
