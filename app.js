@@ -316,6 +316,21 @@ function topicTags(row) {
     link({ view: 'search', q: t }, 'topic', t));
 }
 
+// Notes joining this letter to another by hand (vocabulary/letter-related.csv):
+// "Supports" on a supporting document, "Supporting document" on the letter it
+// supports. Each names the other letter and opens its PDF.
+const relatedNotes = row => (INDEX.related || {})[get(row, 'digest')] || [];
+
+function relatedLine(row, linked) {
+  const notes = relatedNotes(row);
+  if (!notes.length) return null;
+  return el('span', { class: 'related' }, ...notes.flatMap(([label, title, url], i) => [
+    i ? ' · ' : '', `${label}: `,
+    // The picture view's card is itself a link, and a link cannot hold one.
+    linked ? el('a', { href: url, target: '_blank', rel: 'noopener' }, title) : title,
+  ]));
+}
+
 function shot(row) {
   const src = thumbUrl(row);
   const subject = get(row, 'subject');
@@ -352,6 +367,7 @@ function shot(row) {
     (() => { const t = topicTags(row); return t && t.length ? el('span', { class: 'topics' }, t) : null; })(),
     el('span', { class: 'when' }, when(row),
       recipient && subject ? ` · ${recipient}` : ''),
+    relatedLine(row, false),
   );
 }
 
@@ -386,7 +402,8 @@ function table(rows, opts = {}) {
           : el('span', { class: 'faint' }, 'not named')),
       el('td', { class: 'sub2' },
         get(row, 'subject') || el('span', { class: 'faint' }, '—'),
-        (() => { const t = topicTags(row); return t && t.length ? el('span', { class: 'topics' }, t) : null; })()),
+        (() => { const t = topicTags(row); return t && t.length ? el('span', { class: 'topics' }, t) : null; })(),
+        relatedLine(row, true)),
       el('td', {},
         el('a', {
           href: waybackUrl(row), target: '_blank', rel: 'noopener',

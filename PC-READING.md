@@ -200,7 +200,7 @@ Each batch is one PR, which appends rows to these files in the dev repository:
 | `vocabulary/reviews.csv` | `candidate,letters,decision,…` | Only when step 2 needs a decision the vocabulary lacks: a `joint` row for several offices at once, or a `merge` row for a company not yet reviewed. |
 | `vocabulary/letters-reviewed.csv` | `digest,reviewed,title,date,topics,filing,note,date_audited` | One row per letter read. `date` is `yes` if you added a date row, otherwise `unchanged`; `filing` is `yes` if you added a recipient row. |
 | `letters-vocabulary-needs/letters.csv` | `digest,title,date,topics,proposed_subjects,issue,note` | For a letter that needs a subject the vocabulary lacks. It stays here and goes in none of the files above. Also comment on #221. |
-| `letters-discarded/letters.csv` | `digest,title,reason,issue,decided` | A posting that is **not a letter** (resolution, newsletter, exhibit, "Dear Employer" reference), once Robin has decided it. It goes in none of the other files and is not read again. |
+| `letters-discarded/letters.csv` | `digest,title,reason,issue,decided` | A posting that is **not a letter** (resolution, newsletter, exhibit, "Dear Employer" reference), or a letter between other parties with **no relation to a member or a member's letter**, once Robin has decided it. Discards are for discussion, not removal. It goes in none of the other files and is not read again. |
 
 Write CSV rows with `\n` line endings and append only, never reorder.
 `source` is "read from the text of the letter (the PC)".
