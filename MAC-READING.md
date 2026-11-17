@@ -1,5 +1,9 @@
 # For Claude on the Mac: reading the 106th–115th, step by step
 
+**The rules are the QA-Analysis-methodology** (`qa/QA-Analysis-methodology.md`
+and its step documents); this file is how the Mac applies them. Subjects: at
+least 4 per letter, no upper limit, names counting (Robin, 17 November 2026).
+
 **Written 17 November 2026.** This is the Mac's reading work. The PC's is
 [PC-READING.md](PC-READING.md), whose rules for recipients, dates, titles and
 subjects apply here too. Read this first in a new session, or after the
@@ -162,8 +166,9 @@ Name the digest, the posting member and file, and what was read.
 Not after every batch. Publish after every 5 batches or so, or when Robin asks,
 with the command in the handoff (build_congress 106-119, export_csv,
 build_vocabulary, build_hub, progress, publish_explorers). Then run
-`export_text.py` and push `progress.csv` to `letters-from-congress-OCR` by
-branch and PR, so the PC's pick list stays current.
+`export_text.py` and `build/qa_status.py` (the per-Congress QA status CSVs),
+and push `progress.csv` and `qa-status/` to `letters-from-congress-OCR` by
+branch and PR, so the PC's pick list and the QA status stay current.
 
 ## Rules learned in batch 1 (PR 1221)
 

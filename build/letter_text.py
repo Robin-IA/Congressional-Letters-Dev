@@ -146,9 +146,18 @@ def organizations_to_file_under() -> set[str]:
     four or more companies carries every one of them (Robin, 15 November 2026).
     """
     with REVIEWS.open(encoding="utf-8") as fh:
-        return {r["target"].strip() for r in csv.DictReader(fh)
-                if r.get("decision") == "merge" and r.get("kind") == "organization"
-                and r.get("status") == "accepted" and (r.get("target") or "").strip()}
+        out = {r["target"].strip() for r in csv.DictReader(fh)
+               if r.get("decision") == "merge" and r.get("kind") in ("organization", "office")
+               and r.get("status") == "accepted" and (r.get("target") or "").strip()}
+    # Names count as subjects (Robin, 17 November 2026; qa/QA-analysis-subject-
+    # analysis.md): any committee, agency, office or organization the
+    # vocabulary already holds, not only those added through reviews.csv.
+    terms = ROOT / "vocabulary" / "terms.csv"
+    if terms.exists():
+        with terms.open(encoding="utf-8") as fh:
+            out |= {r["label"] for r in csv.DictReader(fh)
+                    if r.get("kind") in ("organization", "office") and r.get("status") == "preferred"}
+    return out
 
 
 SMALL_WORDS = {"a", "an", "the", "and", "but", "or", "nor", "for", "so", "yet",

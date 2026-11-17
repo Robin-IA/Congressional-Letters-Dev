@@ -164,6 +164,7 @@ def write(batch: Path, rows_path: Path) -> None:
     key = progress.name_key
     reviews = list(csv.DictReader(open("vocabulary/reviews.csv", encoding="utf-8")))
     accepted = {key(r["candidate"]) for r in reviews if r.get("status") == "accepted"}
+    accepted_labels = {r["target"] for r in reviews if r.get("status") == "accepted" and r.get("decision") == "merge"}
     hier = list(csv.DictReader(open("vocabulary/hierarchy.csv", encoding="utf-8")))
     nodes = {h["term"] for h in hier} | {h["broader"] for h in hier if h["broader"]}
     labels_kind = {}
@@ -177,7 +178,8 @@ def write(batch: Path, rows_path: Path) -> None:
         return label == "(no recipient)" or known_terms.get(key(label)) == "preferred" or key(label) in accepted
 
     batch_d = {o["digest"]: o for o in json.load(open(batch))}
-    T, P, R, D, V, NEWR, NEWH, unresolved, partial, notletter, DISC = ([] for _ in range(11))
+    T, P, R, D, V, NEWR, NEWH, unresolved, partial, notletter, DISC, under4 = ([] for _ in range(12))
+    org_labels_all = {lab for lab, k in labels_kind.items() if k in ("organization", "office")} | accepted_labels
     for line in open(rows_path, encoding="utf-8"):
         if not line.strip():
             continue
@@ -244,7 +246,7 @@ def write(batch: Path, rows_path: Path) -> None:
                          "reason": "a recipient read from the letter's address block (Mac reading, 106th-115th)",
                          "status": "accepted"})
             NEWH.append({"term": lab, "broader": b})
-            accepted.add(key(lab)); nodes.add(lab)
+            accepted.add(key(lab)); nodes.add(lab); accepted_labels.add(lab)
         if not placed:
             unresolved.append((d, f"new term: no place {b!r} in the hierarchy")); continue
         if not rec and len(nts) == 1 and not o.get("joint"):
@@ -277,13 +279,19 @@ def write(batch: Path, rows_path: Path) -> None:
             unresolved.append((d, f"subjects not in SUBJECTS: {bad}")); continue
         if not tops:
             unresolved.append((d, "no subject")); continue
-        comps = [c for c in o.get("companies", []) if c]
-        badc = [c for c in comps if not known(c)]
+        # "names" (organizations, committees, agencies, offices, laws as terms)
+        # count as subjects; "companies" is the older field name (QA-analysis-
+        # subject-analysis, Robin 17 November 2026).
+        comps = list(dict.fromkeys(c for c in (o.get("names") or []) + (o.get("companies") or []) if c))
+        badc = [c for c in comps if not known(c) or c not in org_labels_all | accepted_labels]
         if badc:
             unresolved.append((d, f"companies not terms: {badc}")); continue
         post = (batch_d[d]["postings"] or [{}])[0]
         T.append({"digest": d, "title": o["title"], "source": SRC})
-        P.append({"digest": d, "topics": ";".join(tops[:8] + comps), "source": SRC})
+        P.append({"digest": d, "topics": ";".join(dict.fromkeys(tops + comps)), "source": SRC})
+        n_subjects = len(set(tops) | set(comps) | ({rec} if rec and rec != "(no recipient)" and rec in org_labels_all else set()))
+        if n_subjects < 4:
+            under4.append((d, n_subjects))
         R.append({"digest": d, "recipient": rec, "source": (o.get("recipient_source") or "read from the letter's address block (the Mac)")})
         date = o.get("date") or ""
         # A month or a year alone is stored as a full date the build can sort:
@@ -329,7 +337,12 @@ def write(batch: Path, rows_path: Path) -> None:
     add("vocabulary/letter-dates.csv", D)
     add("vocabulary/letters-reviewed.csv", V)
     add("letters-discarded/letters.csv", DISC)
-    report = {"filed": len(T), "dates": len(D), "new_terms": [r["candidate"] for r in NEWR if r["decision"] == "merge"],
+    # Under 4 subjects: filed, but marked for review (QA-analysis-subject-analysis).
+    low = {d for d, _ in under4}
+    for v in V:
+        if v["digest"] in low:
+            v["note"] = ("needs review: fewer than 4 subjects; " + v["note"])[:400]
+    report = {"under4": under4, "filed": len(T), "dates": len(D), "new_terms": [r["candidate"] for r in NEWR if r["decision"] == "merge"],
               "joint": len([r for r in NEWR if r["decision"] == "joint"]),
               "partial": partial, "notletter": notletter, "unresolved": unresolved}
     json.dump(report, open(str(rows_path) + ".report.json", "w"), indent=1, ensure_ascii=False)

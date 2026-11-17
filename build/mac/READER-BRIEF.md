@@ -1,5 +1,8 @@
 # Reading brief: Letters from Congress, 106th–115th (the Mac)
 
+The rules behind each step are the QA-Analysis-methodology (`qa/`). This brief
+is how a reader applies them.
+
 You read letters that members of Congress posted on their websites, and you
 write one JSON line per letter. Read each letter's `text` (OCR or PDF text
 layer) **against the letter itself, never the file name alone**. Do every step
@@ -20,7 +23,7 @@ to the path you are given. Fields:
  "joint": null or ["<bioguide id or exact label>", ...],
  "new_term": null or {"label": "...", "kind": "organization"|"office", "broader": "<exact hierarchy node>"},
  "topics": ["<exact subject>", ...],
- "companies": ["<exact organization label>", ...],
+ "names": ["<exact organization, committee, agency or office label>", ...],
  "date": "YYYY-MM-DD" or "",
  "precision": "day" | "month" | "year",
  "date_source": "the letterhead" | "the dateline" | "content: ..." | "file name: ..." | ...,
@@ -71,7 +74,7 @@ letters.
      term), never the person. Several offices: `joint` with their labels.
    - A company or organization, or its CEO: the organization's label, never
      the person. Several companies: `recipient` the first, the others in
-     `companies`.
+     `names`.
    - "Dear Colleague" to one chamber: "United States Senate" or "United States
      House of Representatives".
    - No addressee and the member wrote it (open letter, notice to constituents),
@@ -107,9 +110,20 @@ letters.
    Equifax"). Example:
    "On Funding the Sea Grant Program — to Chairman Moran and Ranking Member
    Shaheen, 11 April 2018". No date known: end at the recipient.
-6. **Subjects**: 1–8, **only exact lines of `subjects.txt`**. Choose what the
-   letter is about. If nothing fits at all, use the nearest broad one and say
-   so in `note` — do not invent a subject.
+6. **Subjects: at least 4, no upper limit** (Robin, 17 November 2026;
+   `qa/QA-analysis-subject-analysis.md`). Two kinds:
+   - `topics`: what the letter is **primarily about**, only exact lines of
+     `subjects.txt`. Keep to its main matters. If nothing fits, use the
+     nearest and say so in `note`; do not invent one.
+   - `names`: every organization, company, nonprofit, committee, agency or
+     office the letter names as a party or subject, and laws or bills that are
+     vocabulary terms, as exact labels from `terms.csv` (kind organization or
+     office, status preferred) or `reviews.csv`. A person is never a name: a
+     CEO or staff member goes under the organization, an official under the
+     office. A name not in the vocabulary goes in `new_term` (a list is
+     allowed) and in `names`.
+   - The recipient counts toward the 4 when it is an organization or office.
+     Fewer than 4 after a second look: say why in `note`.
 
 Be accurate rather than fast. Do not fetch anything from the web. Write the
 output file, then reply with only: the count of each status and any letters
