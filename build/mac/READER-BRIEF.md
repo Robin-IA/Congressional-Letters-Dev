@@ -36,6 +36,11 @@ for that line. Before writing, check that the words of each title appear in
 that same letter's text: the writer refuses a title that does not match
 (batch 3: two readers wrote another part's letters over their own digests).
 
+**Keep any helper script in a folder of your own**, named for your part
+(e.g. `/tmp/reader-b4-2/`), never a shared name such as `/tmp/show.py`:
+in batch 3 readers overwrote each other's helper and printed the wrong
+letters.
+
 ## Steps for each letter
 
 1. **Is it a letter?** It needs an addressee (person, office, company,
