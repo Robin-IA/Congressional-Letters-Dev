@@ -137,7 +137,10 @@ batch N" PR.
    `notletter` in `letters-discarded/letters.csv` itself, in the batch PR:
    **the Mac decides discards** (Robin, 17 November 2026). Check each one
    against the two tests before writing: unreadable text is `unsure` (OCR),
-   not a discard. Partials (`status: partial`) go on #252 and into
+   not a discard. A test-2 discard that the search holds back: read each
+   candidate it names. If none cites the letter, set `"supplement_checked":
+   true` on its line, with what was read in `note`, and write again. If one
+   does, file the letter and link it in `letter-related.csv`. Partials (`status: partial`) go on #252 and into
    `skip.txt`. Also decide any open "Reading batch N: proposed discards"
    issue from the PC the same way, then comment and close it.
 
