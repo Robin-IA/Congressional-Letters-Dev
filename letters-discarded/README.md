@@ -1,18 +1,66 @@
 # Discarded postings
 
-Postings that are **not letters**, and are not to be filed as letters: an
-employer reference ("Dear Employer"), a resolution, a newsletter, bill text,
-an issue brief, a bank statement or other exhibit. Robin, 16 November 2026:
-"This will be the place to put letters that aren't letters."
+A posting goes here when it fails either test below. **The criteria are
+Robin's, 17 November 2026** (#496, #515). They build on "This will be the
+place to put letters that aren't letters" (16 November) and the Fried letter
+(#1207).
 
-It also holds **letters with no relation to Congress**: a letter between
-other parties that names no member or district and that no member's letter
-cites (Robin, 17 November 2026, #1207). A letter that a member's letter does
-cite stays, linked to it in `vocabulary/letter-related.csv`.
+## The discard criteria
 
-**Discards are for discussion.** A row here takes the posting out of the
-reading, not out of the collection. Robin wants the discards discussed before
-anything is removed or hidden from the explorers.
+Ask the two questions in order. A posting that passes both is kept and read.
+
+### 1. Is it a letter?
+
+By the test in PC-READING.md §5a: an addressee, and a signer. **Discard** a
+posting that is not a letter, whoever posted it:
+
+- a **press or news release**, even one that quotes a member's letter in
+  full (the letter is filed where it is posted as a letter; #515);
+- a **resolution** (a town board, a legislative conference; #496);
+- a **newsletter** or report to constituents;
+- **bill text**, a Federal Register page, a floor statement or remarks;
+- an **issue brief**, a report or an instruction sheet;
+- an **exhibit**: a bank statement, a check, a wire record, e-mail printouts,
+  interview notes, a deposition, interrogatory answers, database printouts
+  (the Government Reform files on #515);
+- a "**Dear Employer**" reference (#498).
+
+### 2. Does it belong to Congress?
+
+A letter is **kept** if any one of these holds:
+
+1. **It is by a member of Congress, or by a congressional group**: a
+   committee, a caucus, a delegation or another group of members.
+2. **It is to a member or congressional group, or names one**: a letter
+   written to a member (#175), or one that refers to a member or a member's
+   district.
+3. **It is a supplement to a member's letter**: an enclosure, a reply, or a
+   document the member's letter cites. It is linked to that letter in
+   `vocabulary/letter-related.csv` (the USGS letter Cantwell cited; #1207).
+
+A letter for which **none** holds is **discarded**: correspondence between
+other parties that a member happened to post (the Florida agriculture
+department's letter to the Army Corps; #1207).
+
+### Not reasons to discard
+
+- **No text, or text too damaged to read.** The posting needs a fetch and
+  OCR (#122, #559), not a decision. Discard it only once it has been read.
+- **Only part of a letter** (a signature page, a middle page). It goes on
+  #252.
+- **A duplicate.** It follows DEDUPLICATION.md.
+- **No date, or no named recipient.** It is filed anyway (PC-READING step B5,
+  #498, #502).
+
+## Who decides
+
+**Discards are for discussion.** A reader who finds a posting that fails a
+test **proposes** it: the PC in its PR under "Proposed discards", the Mac on
+#1222. Robin decides. The Mac then writes the row here. A row takes the
+posting out of the reading, not out of the collection; nothing is removed or
+hidden from the explorers without Robin.
+
+## The file
 
 `letters.csv`, one row per posting:
 
@@ -20,7 +68,7 @@ anything is removed or hidden from the explorers.
 | --- | --- |
 | `digest` | the scan's digest |
 | `title` | what the posting is, in a few words |
-| `reason` | why it is not a letter |
+| `reason` | which test it fails, and why |
 | `issue` | the issue where it was decided |
 | `decided` | who decided, and when |
 

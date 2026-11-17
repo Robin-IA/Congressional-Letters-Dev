@@ -49,11 +49,13 @@ second visit (section 5).
    - Yes → go to 3.
    - Only part of a letter (a signature page, one middle page) → add it to
      #252 and go to the next letter. Write no rows.
-   - Not a letter (resolution, newsletter, bill text, exhibit, "Dear
-     Employer"), or a letter between other parties with no tie to a member
-     or a member's letter → list it in the PR under "Proposed discards" and
-     go to the next letter. Robin decides; do not write it to
-     `letters-discarded/` yourself.
+   - Fails the **discard criteria** in `letters-discarded/README.md`: not a
+     letter (a press release, resolution, newsletter, bill text, exhibit,
+     "Dear Employer"), or a letter that is not by a member or congressional
+     group, not to or about one, and not a supplement to a member's letter
+     → list it in the PR under "Proposed discards" and go to the next
+     letter. Robin decides; do not write it to `letters-discarded/` yourself.
+     No text is **not** a reason to discard: it needs OCR.
    - Not sure → hold it (step 7) with the reason.
 3. **Recipient.** Read the address block, then the salutation, then the body.
    Then write **one** `letter-recipients.csv` row:
