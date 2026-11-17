@@ -6373,3 +6373,26 @@ Paul D. Ryan and Kevin Brady,1,joint,R000570;B000755,,member,,"checked: the addr
 Department of the Treasury and Department of Education,1,joint,Department of the Treasury;Department of Education,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
 Department of the Treasury Inspector General,1,merge,Department of the Treasury Inspector General,,office,Department of the Treasury,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Boy Scouts of America,1,merge,Boy Scouts of America,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Department of Homeland Security and Office of Management and Budget,1,joint,Department of Homeland Security;Office of Management and Budget,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+California Congressional Delegation,1,merge,California Congressional Delegation,,office,Legislative branch,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Office of Management and Budget and Department of Veterans Affairs,1,joint,Office of Management and Budget;Department of Veterans Affairs,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Commission on Evidence-Based Policymaking,1,merge,Commission on Evidence-Based Policymaking,,organization,Federal agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+"Gerald E. Connolly, Peter T. King and James R. Langevin",1,joint,C001078;K000210;L000559,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+President of Turkey,1,merge,President of Turkey,,office,Foreign governments,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Metropolitan Water District of Southern California,1,merge,Metropolitan Water District of Southern California,,organization,California local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+"The President, Department of the Treasury and National Economic Council",1,joint,The President;Department of the Treasury;National Economic Council,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+LSV Asset Management,1,merge,LSV Asset Management,,organization,Investment companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+"Securities and Exchange Commission, Department of Justice and Federal Trade Commission",1,joint,Securities and Exchange Commission;Department of Justice;Federal Trade Commission,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Vornado Realty Trust,1,merge,Vornado Realty Trust,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Elizabeth Warren and Stephen Knight,1,joint,W000817;K000387,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Cory Gardner and Margaret Wood Hassan,1,joint,G000562;H001076,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Ted Lieu and James P. McGovern,1,joint,L000582;M000312,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Southwest Washington Regional Transportation Council,1,merge,Southwest Washington Regional Transportation Council,,organization,Washington local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Office of the US Trade Representative and Department of the Treasury,1,joint,Office of the US Trade Representative;Department of the Treasury,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Charlie Crist and Jeff Denham,1,joint,C001111;D000612,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Oregon State Treasurer,1,merge,Oregon State Treasurer,,office,Oregon state officials,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+President of the Oregon Senate,1,merge,President of the Oregon Senate,,office,Oregon state officials,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Speaker of the Oregon House of Representatives,1,merge,Speaker of the Oregon House of Representatives,,office,Oregon state officials,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+"Governor of Oregon, Oregon State Treasurer, President of the Oregon Senate and Speaker of the Oregon House of Representatives",1,joint,Governor of Oregon;Oregon State Treasurer;President of the Oregon Senate;Speaker of the Oregon House of Representatives,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Empire State Development,1,merge,Empire State Development,,organization,New York state government agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Newspapers of New England,1,merge,Newspapers of New England,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
