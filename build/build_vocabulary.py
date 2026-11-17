@@ -45,6 +45,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import hashlib
 import re
 import sys
 import time
@@ -241,6 +242,18 @@ def main() -> int:
                             note=note)
                 terms.remove(twin); terms.append(twin)
                 return
+            if twin and twin["label"].lower() != label.lower():
+                # Two different labels whose slugs agree for 60 characters:
+                # long joint recipients ("Department of Agriculture and
+                # Department of the Interior and ..."). The later one keeps a
+                # stable id from its full label; every existing id stays.
+                term_id = term_id[:51] + "-" + hashlib.sha1(label.encode("utf-8")).hexdigest()[:8]
+                if term_id not in ids:
+                    ids.add(term_id)
+                    terms.append({"term_id": term_id, "label": label, "kind": kind, "facet": facet,
+                                  "status": status, "source": source, "uri": uri,
+                                  "letters": letters, "note": note})
+                    return
             raise SystemExit(f"duplicate term_id {term_id}")
         ids.add(term_id)
         terms.append({"term_id": term_id, "label": label, "kind": kind, "facet": facet,
