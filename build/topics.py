@@ -463,6 +463,20 @@ SUBJECTS: dict[str, tuple[str, ...]] = {
                                  'persons with disability', 'americans with disability'),
     "Older adults": ('older adult', 'older american', 'older people', 'senior citizen'),
 
+    # Hand-filed only (#221; Robin, 16 November 2026): subjects the readers
+    # asked for. No match words, so no letter is tagged by them automatically.
+    "Iraq": (),
+    "Homeland security": (),
+    "Terrorism": (),
+    "Intelligence": (),
+    "Detained Americans": (),
+    "West Bank": (),
+    "Sudan": (),
+    "Armenia": (),
+    "Honduras": (),
+    "Haiti": (),
+    "Caribbean": (),
+    "Passports": (),
 }
 
 # ------------------------------------------------------------- the agencies
