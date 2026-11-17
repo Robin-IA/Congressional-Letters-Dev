@@ -405,16 +405,21 @@ last of that kind).
    to an airline is about Airlines; `recipient-topics.csv`) and from what the
    letter discusses. Only labels in `SUBJECTS`, plus reviewed organizations.
 
-A letter is done when all of these hold:
+A letter is done when (Robin, 17 November 2026; qa/QA-Analysis-methodology.md,
+"Status values"):
 
-- it has text;
-- it has been read against that text;
-- its title is confirmed and written in our form;
-- its date is settled;
-- it has subjects;
-- every recipient and name in it is a reviewed term (a letter with no
-  addressee is `(no recipient)` and is done). A letter still in "Not yet
-  reviewed" is not done.
+- it has text (OCR or a text layer);
+- it is a letter: not discarded, and not a true duplicate (one member's second
+  copy, a potential discard needing review);
+- its authorship is established;
+- its recipient, if it has one, is a reviewed term (a letter with no addressee
+  is `(no recipient)`);
+- its date is settled, if it can be determined;
+- it has **at least 4 subjects, at least 2 of them topics**, names included;
+- its title is confirmed and in the established form;
+- it is published and filed where it needs to be.
+
+A discard or a duplicate is never done: it falls under issues.
 
 Each batch is one PR, which appends rows to these files in the dev repository:
 

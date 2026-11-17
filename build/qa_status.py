@@ -10,12 +10,18 @@ with the columns Robin set on 17 November 2026:
   Congress, Letter URL, Letter name (original), Discarded, Letter Name Fix,
   Authors, Subjects, Dates, Recipients, OCR, Filed?, Issue
 
-Filed? is one of:
-  Filed         read and recorded (a discarded posting is Filed with Discarded=Y)
-  Hold          waiting on a vocabulary term (letters-vocabulary-needs)
-  Needs Review  read but short of a requirement (fewer than 4 subjects or 2
-                topics), or set
-                aside as partial, bundled or unreadable (build/mac/skip.txt)
+Filed? is one of (Robin, 17 November 2026: what constitutes done):
+  Filed         done: has OCR, is a letter, has authorship, a recipient if
+                applicable, a date if determined, at least 4 subjects with 2
+                topics, a title in the established form, and is published and
+                filed. Filed here is exactly "done" in progress.py.
+  Hold          held for a term or a decision (letters-vocabulary-needs)
+  Needs Review  read but short of a requirement (subjects, title, recipient
+                term), set aside as partial or unreadable (build/mac/skip.txt),
+                DISCARDED (Discarded=Y, Issue=Y), or a TRUE DUPLICATE, one
+                member's second copy of a letter, a potential discard needing
+                further review (Issue=Y). Neither is ever Filed until taken
+                out of that status and the rest of the work is complete.
   Unprocessed   not yet read
 Issue is Y when an issue is recorded against the letter: a hold's issue, a
 discard's issue, a set-aside (#252, #1226), or an issue number in its reviewed
@@ -48,6 +54,8 @@ def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--out", type=Path, default=OCR_REPO / "qa-status")
     ap.add_argument("--congress", default="106-119")
+    ap.add_argument("--progress", type=Path, default=OCR_REPO / "progress.csv",
+                    help="progress.py's progress.csv, whose done column Filed follows")
     args = ap.parse_args()
     lo, _, hi = args.congress.partition("-")
     congresses = range(int(lo), int(hi or lo) + 1)
@@ -65,6 +73,18 @@ def main() -> None:
     sys.path.insert(0, str(ROOT / "build"))
     import topics as topics_mod  # noqa: E402
     subject_list = set(topics_mod.SUBJECTS)
+    terms = rows_of(ROOT / "vocabulary/terms.csv")
+    org_labels = {r["label"] for r in terms if r.get("kind") in ("organization", "office")
+                  and r.get("status") == "preferred"}
+    known = ({r["label"] for r in terms if r.get("status") == "preferred"}
+             | {r["candidate"] for r in rows_of(ROOT / "vocabulary/reviews.csv") if r.get("status") == "accepted"})
+    prog = rows_of(args.progress)
+    done = {r["digest"]: r.get("done") == "True" for r in prog}
+    # progress.py's "letter" step is false for a discard and for a true
+    # duplicate (a potential discard, Robin, 17 November 2026): both are under
+    # issues.
+    not_letter = {r["digest"] for r in prog if r.get("letter") == "False"}
+    direction = {r["digest"]: r["direction"] for r in rows_of(ROOT / "vocabulary/letter-direction.csv")}
 
     args.out.mkdir(parents=True, exist_ok=True)
     totals = {}
@@ -81,22 +101,29 @@ def main() -> None:
                     continue
                 key, ts, _kind, date, _prec, recipient, _subject, tops, cosigners, digest, url = row[:11]
                 authors = [names.get(mid, mid)] + [c for c in (cosigners or "").split(",") if c]
+                if direction.get(digest) in ("to", "neither"):
+                    # Written to Congress, or no member at either end (#175): the
+                    # author is the sender the title names ("— AARP to Senator
+                    # Collins"), never the member who posted it.
+                    m = re.search(r" — (.+?) to ", titles.get(digest, ""))
+                    authors = [m.group(1)] if m else []
                 subj = list(dict.fromkeys([t for t in (tops or "").split(",") if t] + topics.get(digest, [])))
                 rec = recipients.get(digest) or recipient or ""
                 if digest in discarded:
-                    status = "Filed"
+                    status = "Needs Review"   # a discard is not done (17 November 2026)
                 elif digest in held:
                     status = "Hold"
                 elif digest in skip:
                     status = "Needs Review"
                 elif digest in reviewed:
-                    n_subj = len(set(topics.get(digest, [])) | ({rec} if rec and rec != "(no recipient)" else set()))
-                    n_top = sum(1 for t in topics.get(digest, []) if t in subject_list)
-                    status = "Filed" if n_subj >= 4 and n_top >= 2 else "Needs Review"
+                    # Filed is exactly progress.py's "done" (Robin's definition,
+                    # 17 November 2026), read from progress.csv, so the two
+                    # never disagree.
+                    status = "Filed" if done.get(digest) else "Needs Review"
                 else:
                     status = "Unprocessed"
                 note = (reviewed.get(digest) or {}).get("note", "")
-                issue = bool((held.get(digest) or {}).get("issue") or (discarded.get(digest) or {}).get("issue")
+                issue = bool(digest in discarded or digest in not_letter or (held.get(digest) or {}).get("issue")
                              or digest in skip or re.search(r"#\d{2,}", note))
                 out_rows.append({
                     "Congress": n,
