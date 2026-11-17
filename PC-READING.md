@@ -349,6 +349,12 @@ Decide this **before** titling, dating or filing. It applies to every format.
    name. If the signer is not a member, is it signed **on behalf of a
    committee or caucus**? If so, **are the members listed?**
 
+**Not signed by a member?** It is still kept when it belongs to Congress
+another way: written to a member or congressional group, naming one, or
+supplementing a member's letter. A letter with none of these, and anything
+that is not a letter, follows the **discard criteria** in
+`letters-discarded/README.md` (Robin, 17 November 2026).
+
 **Preferred, not required:** a date in the letter (undated: #506, never from
 metadata, harvest or file name alone) and a named recipient (a letter plainly
 directed at someone but naming no one follows #498).
@@ -361,7 +367,8 @@ check against the text, never the whole test.
 | 1 | Is it a PDF? | Go to 2 | Open an issue (#242, #243) |
 | 2 | Addressed to a person, company or organization? | Go to 3 | Open an issue, or #498 for a member's letter with no addressee |
 | 3 | Signed, by printed name or by signature, by a member? | A letter. Go to 6 | Go to 4 |
-| 4 | Signed on behalf of a committee or caucus? | Go to 5 | Written to Congress (#175), or not a letter (`letters-discarded/`) |
+| 4 | Signed on behalf of a committee or caucus? | Go to 5 | Go to 4a |
+| 4a | Written **to** a member or congressional group, or **names** one, or a **supplement** to a member's letter (enclosure, reply, a document the letter cites)? | Kept: titled with its sender (#175); a supplement is linked in `letter-related.csv` | Propose it as a discard (test 2 of `letters-discarded/README.md`) |
 | 5 | Are the members listed? | A letter, filed with the members listed | Open an issue |
 | 6 | Does the text give a date and a named recipient? | Fill both in | Still a letter: #506 or #498 |
 
