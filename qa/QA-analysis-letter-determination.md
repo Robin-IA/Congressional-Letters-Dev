@@ -11,7 +11,8 @@ name or title. Robin's criteria (16–17 November 2026; #411, #496, #515,
 A letter has **an addressee** (a person, office, company or organization:
 an inside address, a salutation, "Dear Colleague") and **a signer** (a printed
 name, or a signature standing in for it). A date and a named recipient are
-preferred, not required.
+preferred, not required. The addressee is where the recipient comes from
+([QA-analysis-recipients](QA-analysis-recipients.md)).
 
 **Not a letter, whoever posted it** → discard:
 - a press or news release, even one quoting a member's letter in full;

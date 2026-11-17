@@ -64,17 +64,22 @@ letters.
      constituent group) IS kept: title it with the sender ("— Secretary
      Chu to Senator Boxer, 3 May 2010") and say so in `note`.
    - Cannot tell: `status: "unsure"` with the reason in `note`.
-2. **Recipient** — address block, then salutation, then body. Pick ONE:
+2. **Recipient** — address block, then salutation, then body
+   (qa/QA-analysis-recipients.md). Members, committees and caucuses are
+   "As recipient"; everyone else is also a name. Pick ONE:
    - A member of Congress: their full name as in `vocabulary/terms.csv`
      (kind `member`). Several members: `joint` = their bioguide IDs (from
      terms.csv `term_id` "M-<id>"; give the id without "M-"), `recipient` "".
-   - A committee, or its chair and ranking member: the committee's label.
+   - A committee's members named (a chair and ranking member): `joint` = their
+     bioguide IDs, and the committee's label in `names`. A committee or caucus
+     with no member named: the committee's label as `recipient`.
    - A federal, state, local or foreign **official**: the **office** label
      (Secretary Austin → "Department of Defense"; Governor of Ohio → the governor
      term), never the person. Several offices: `joint` with their labels.
+     Also list every office in `names` (a recipient outside Congress is a name).
    - A company or organization, or its CEO: the organization's label, never
-     the person. Several companies: `recipient` the first, the others in
-     `names`.
+     the person. Several companies: `recipient` the first, and **every** one
+     (the first too) in `names`.
    - "Dear Colleague" to one chamber: "United States Senate" or "United States
      House of Representatives".
    - No addressee and the member wrote it (open letter, notice to constituents),
@@ -123,7 +128,8 @@ letters.
      CEO or staff member goes under the organization, an official under the
      office. A name not in the vocabulary goes in `new_term` (a list is
      allowed) and in `names`.
-   - The recipient counts toward the 4 when it is an organization or office.
+   - A recipient outside Congress is a name: list it in `names` too (it counts
+     toward the 4). A member, committee or caucus recipient does not count.
      Names never count toward the 2 topics.
      Short of 4, or of 2 topics, after a second look: say why in `note`.
 

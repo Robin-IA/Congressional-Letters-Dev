@@ -6,15 +6,17 @@ for anyone doing the work: the PC, the Mac, a person, or any model.** Written
 (PC batches 1–60, Mac 106th–115th batches 1–19).
 
 Each step has its own document. Follow them **in order, for one letter at a
-time, all the way through**: one pass, no second visit. Steps 0–6 are
-REQUIRED for every letter.
+time, all the way through**: one pass, no second visit. Steps 0–2 and 4–6 are
+REQUIRED for every letter. Step 3 is not a separate requirement: the
+recipient is a criterion of step 1 and, except for Congress, a name in step 4
+(Robin, 17 November 2026).
 
 | Step | Document | Decides |
 | --- | --- | --- |
 | 0 | [QA-analysis-text](QA-analysis-text.md) | Is the text good enough to read? Partial, garbled, upside-down, bundled? |
 | 1 | [QA-analysis-letter-determination](QA-analysis-letter-determination.md) | Is it a letter? Is it congressional, to a member, or a supplement to a member's letter? Otherwise it is discarded. |
 | 2 | [QA-analysis-authorship](QA-analysis-authorship.md) | Who wrote it; which members it files under. |
-| 3 | [QA-analysis-recipients](QA-analysis-recipients.md) | Whom it is to, filed by office, company or member. |
+| 3 | [QA-analysis-recipients](QA-analysis-recipients.md) | Whom it is to: members, committees and caucuses "As recipient"; everyone else a name under its organization or office. |
 | 4 | [QA-analysis-subject-analysis](QA-analysis-subject-analysis.md) | **At least 4 subjects, at least 2 of them topics**: topics, plus the organizations, companies, committees, laws and bills it names. |
 | 5 | [QA-analysis-dates](QA-analysis-dates.md) | Its date, and how sure. |
 | 6 | [QA-analysis-titles](QA-analysis-titles.md) | Its standardized title ("Letter Name Fix"). |
