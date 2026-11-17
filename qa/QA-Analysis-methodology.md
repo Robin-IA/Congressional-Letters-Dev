@@ -73,7 +73,9 @@ file, and what was read.
    file's first capture.
 5. The tests pass: `python3 -m unittest discover -s tests` must say OK.
 6. The holder check passes at merge (`fold.sh`): every date leaves the posting
-   with a member who held the address.
+   with a member who held the address, and each author held office (and any
+   committee post the letter claims) on its date (QA-analysis-authorship
+   step 5).
 7. Every discard was decided from the OCR, by both tests, with the supplement
    search for test 2.
 
