@@ -321,13 +321,12 @@ function topicTags(row) {
 // supports. Each names the other letter and opens its PDF.
 const relatedNotes = row => (INDEX.related || {})[get(row, 'digest')] || [];
 
-function relatedLine(row, linked) {
+function relatedLine(row) {
   const notes = relatedNotes(row);
   if (!notes.length) return null;
   return el('span', { class: 'related' }, ...notes.flatMap(([label, title, url], i) => [
     i ? ' · ' : '', `${label}: `,
-    // The picture view's card is itself a link, and a link cannot hold one.
-    linked ? el('a', { href: url, target: '_blank', rel: 'noopener' }, title) : title,
+    el('a', { href: url, target: '_blank', rel: 'noopener' }, title),
   ]));
 }
 
@@ -367,14 +366,18 @@ function shot(row) {
     (() => { const t = topicTags(row); return t && t.length ? el('span', { class: 'topics' }, t) : null; })(),
     el('span', { class: 'when' }, when(row),
       recipient && subject ? ` · ${recipient}` : ''),
-    relatedLine(row, false),
   );
 }
 
 function wall(rows) {
   const limit = shown || WALL;
   const box = el('div', { class: 'wall' },
-    ...rows.slice(0, limit).map(shot));
+    // A card is itself a link, and a link cannot hold another, so a related
+    // note sits just under its card rather than inside it.
+    ...rows.slice(0, limit).map(row => {
+      const note = relatedLine(row);
+      return note ? el('div', { class: 'shotwrap' }, shot(row), note) : shot(row);
+    }));
   const out = el('div', {}, box);
   if (rows.length > limit) {
     out.append(el('button', {
@@ -403,7 +406,7 @@ function table(rows, opts = {}) {
       el('td', { class: 'sub2' },
         get(row, 'subject') || el('span', { class: 'faint' }, '—'),
         (() => { const t = topicTags(row); return t && t.length ? el('span', { class: 'topics' }, t) : null; })(),
-        relatedLine(row, true)),
+        relatedLine(row)),
       el('td', {},
         el('a', {
           href: waybackUrl(row), target: '_blank', rel: 'noopener',
