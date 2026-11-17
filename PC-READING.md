@@ -53,8 +53,9 @@ second visit (section 5).
      letter (a press release, resolution, newsletter, bill text, exhibit,
      "Dear Employer"), or a letter that is not by a member or congressional
      group, not to or about one, and not a supplement to a member's letter
-     → list it in the PR under "Proposed discards" and go to the next
-     letter. Robin decides; do not write it to `letters-discarded/` yourself.
+     → add it to the batch's **"Proposed discards" issue** and go to the
+     next letter. Write no rows, and do not write `letters-discarded/`
+     yourself: the Mac decides, by the criteria, and records it.
      No text is **not** a reason to discard: it needs OCR.
    - Not sure → hold it (step 7) with the reason.
 3. **Recipient.** Read the address block, then the salutation, then the body.
@@ -129,8 +130,12 @@ second visit (section 5).
 2. Commit only the CSV files. No code, no `batch-<N>.txt`.
 3. Push the branch and open **one** PR:
    `gh pr create --base harvest-member-letters --label reading`.
+   - If any letter was proposed as a discard: **one issue** titled
+     "Reading batch N: proposed discards", labels `quality control` and
+     `reading`, listing each digest, the posting member, what it is, and
+     which test it fails. Link it from the PR.
    - Title: "Reading batch N: X of 500 letters filed, Y held".
-   - Body: filed, held (with the term issues linked), proposed discards,
+   - Body: filed, held (with the term issues linked), the discards issue,
      #252 partials, and "holder check not run on the PC".
 4. Tell Robin the PR number and the term issue numbers. **Never merge.**
 5. Start the next batch at A1. The pick list skips this batch's letters
@@ -331,7 +336,7 @@ Each batch is one PR, which appends rows to these files in the dev repository:
 | `vocabulary/reviews.csv` | `candidate,letters,decision,…` | Only when step 2 needs a decision the vocabulary lacks: a `joint` row for several offices at once, or a `merge` row for a company not yet reviewed. |
 | `vocabulary/letters-reviewed.csv` | `digest,reviewed,title,date,topics,filing,note,date_audited` | One row per letter read. `date` is `yes` if you added a date row, otherwise `unchanged`; `filing` is `yes` if you added a recipient row. |
 | `letters-vocabulary-needs/letters.csv` | `digest,title,date,topics,proposed_subjects,issue,note` | For a letter that needs a subject the vocabulary lacks. It stays here and goes in none of the files above. Also open a vocabulary-request issue for the term (§6). |
-| `letters-discarded/letters.csv` | `digest,title,reason,issue,decided` | Written by the Mac once Robin decides: a posting that is **not a letter**, or a letter between other parties with **no relation to a member or a member's letter**. The PC proposes discards in its PR (step B2). Discards are for discussion, not removal. |
+| `letters-discarded/letters.csv` | `digest,title,reason,issue,decided` | Written by the Mac, which decides discards by the criteria in `letters-discarded/README.md` (Robin, 17 November 2026). The PC proposes them in an issue (step B2) and never writes this file. |
 
 Write CSV rows with `\n` line endings and append only, never reorder.
 `source` is "read from the text of the letter (the PC)".
@@ -412,8 +417,8 @@ check against the text, never the whole test.
   letter to a member, a CBO letter or a newspaper page is titled with its
   sender ("— CBO Director Elmendorf to Chairman Baucus …") and noted (#175).
   A page that is not a letter at all (a draft resolution, a newsletter, a
-  "Dear Employer" reference) is listed in the PR under "Proposed discards"
-  (step B2). Once Robin decides, the Mac adds it to
+  "Dear Employer" reference) goes on the batch's "Proposed discards" issue
+  (step B2). The Mac decides and adds it to
   **`letters-discarded/letters.csv`**, and it is not read again.
 - **Copies** (#224): note "another scan of <digest>". Same title, same topics.
 - **Text that is only part of the letter** (#252), such as a signature page,

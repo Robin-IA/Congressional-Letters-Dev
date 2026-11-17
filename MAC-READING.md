@@ -133,11 +133,13 @@ batch N" PR.
    run `resolve_append.sh <PR>`. On anything else, read the message and fix
    the branch. Never force a merge.
 
-7. **Not letters** (the discard criteria in `letters-discarded/README.md`): add each `notletter` digest to `$W/skip.txt` and to
-   `build/mac/skip.txt` (commit it with the next batch). Then add a comment
-   to #1222 with the digest, what it is and why. Partials (`status: partial`)
-   go on #252. Robin decides discards; the Mac does not write
-   `letters-discarded/` without that decision.
+7. **Not letters** (the discard criteria in `letters-discarded/README.md`): the writer records each
+   `notletter` in `letters-discarded/letters.csv` itself, in the batch PR:
+   **the Mac decides discards** (Robin, 17 November 2026). Check each one
+   against the two tests before writing: unreadable text is `unsure` (OCR),
+   not a discard. Partials (`status: partial`) go on #252 and into
+   `skip.txt`. Also decide any open "Reading batch N: proposed discards"
+   issue from the PC the same way, then comment and close it.
 
 8. Go back to 1 with N+1.
 

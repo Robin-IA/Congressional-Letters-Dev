@@ -1,5 +1,9 @@
 # Discarded postings
 
+The discard folder: every posting taken out of the reading, with a link to find
+it again (`wayback_url`). Robin, 17 November 2026: "move them to the discards
+folder so we can find them later."
+
 A posting goes here when it fails either test below. **The criteria are
 Robin's, 17 November 2026** (#496, #515). They build on "This will be the
 place to put letters that aren't letters" (16 November) and the Fried letter
@@ -54,11 +58,16 @@ department's letter to the Army Corps; #1207).
 
 ## Who decides
 
-**Discards are for discussion.** A reader who finds a posting that fails a
-test **proposes** it: the PC in its PR under "Proposed discards", the Mac on
-#1222. Robin decides. The Mac then writes the row here. A row takes the
-posting out of the reading, not out of the collection; nothing is removed or
-hidden from the explorers without Robin.
+**The Mac decides, by these criteria** (Robin, 17 November 2026: "You make
+the discard decision"). The PC **proposes** a discard in an issue, one per
+reading batch ("Reading batch N: proposed discards"); the Mac reads it,
+decides each posting by the two tests, writes the rows here, comments its
+decision on the issue and closes it. The Mac's own readers' not-letters are
+decided and written in the same batch PR. A case the criteria do not settle
+goes to Robin in an issue.
+
+A row takes the posting out of the reading, not out of the collection:
+nothing is removed or hidden from the explorers by a row here.
 
 ## The file
 
@@ -71,6 +80,8 @@ hidden from the explorers without Robin.
 | `reason` | which test it fails, and why |
 | `issue` | the issue where it was decided |
 | `decided` | who decided, and when |
+| `posted_by` | the member whose site posted it (the first posting found) |
+| `wayback_url` | where to find it: the posting's capture on the Wayback Machine |
 
 A digest here is not read again: the reading pick skips it, as it skips the
 holds in `letters-vocabulary-needs/letters.csv`. Rows are added, never

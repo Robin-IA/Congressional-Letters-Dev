@@ -144,7 +144,7 @@ def write(batch: Path, rows_path: Path) -> None:
         return label == "(no recipient)" or known_terms.get(key(label)) == "preferred" or key(label) in accepted
 
     batch_d = {o["digest"]: o for o in json.load(open(batch))}
-    T, P, R, D, V, NEWR, NEWH, unresolved, partial, notletter = ([] for _ in range(10))
+    T, P, R, D, V, NEWR, NEWH, unresolved, partial, notletter, DISC = ([] for _ in range(11))
     for line in open(rows_path, encoding="utf-8"):
         if not line.strip():
             continue
@@ -156,7 +156,18 @@ def write(batch: Path, rows_path: Path) -> None:
         if st == "partial":
             partial.append(d); continue
         if st == "notletter":
-            notletter.append((d, o.get("title", ""), o.get("note", ""))); continue
+            # The Mac decides discards by letters-discarded/README.md (Robin,
+            # 17 November 2026), so a not-letter is recorded in this batch.
+            notletter.append((d, o.get("title", ""), o.get("note", "")))
+            note = o.get("note") or ""
+            test = "test 2, no relation to Congress" if note.lower().startswith("no relation") else "test 1, not a letter"
+            post = (batch_d[d]["postings"] or [{}])[0]
+            DISC.append({"digest": d, "title": o.get("title", ""), "reason": f"{test}: {note}"[:400],
+                         "issue": "", "decided": f"the Mac, by the discard criteria, {TODAY}",
+                         "posted_by": post.get("member", ""),
+                         "wayback_url": (f"https://web.archive.org/web/{post['capture']}id_/{post['file']}"
+                                         if post.get("capture") else "")})
+            continue
         if st == "unsure":
             unresolved.append((d, o.get("note") or "reader unsure")); continue
         rec = (o.get("recipient") or "").strip()
@@ -253,6 +264,7 @@ def write(batch: Path, rows_path: Path) -> None:
     add("vocabulary/letter-recipients.csv", R)
     add("vocabulary/letter-dates.csv", D)
     add("vocabulary/letters-reviewed.csv", V)
+    add("letters-discarded/letters.csv", DISC)
     report = {"filed": len(T), "dates": len(D), "new_terms": [r["candidate"] for r in NEWR if r["decision"] == "merge"],
               "joint": len([r for r in NEWR if r["decision"] == "joint"]),
               "partial": partial, "notletter": notletter, "unresolved": unresolved}
