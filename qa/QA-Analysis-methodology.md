@@ -30,6 +30,27 @@ files), [letters-discarded/README.md](../letters-discarded/README.md) (the
 discard folder), [METHODOLOGY.md](../METHODOLOGY.md) (harvest, roster,
 holders).
 
+## Roles
+
+The methodology is the same for everyone; what differs is what each role may
+change. Today the **PC** is the contributor and the **Mac** the maintainer.
+After this project the contributor role may be opened to Internet Archive staff
+or, with permission, the public (Robin, 17 November 2026), so the roles are
+defined by what they do, not by machine:
+
+| | Contributor (today: the PC; [PC-READING](../PC-READING.md)) | Maintainer (today: the Mac; [MAC-READING](../MAC-READING.md)) |
+| --- | --- | --- |
+| Reads letters by steps 0–6 | yes | yes |
+| Writes rows for letters it can file | yes, in a PR | yes |
+| Missing vocabulary | holds the letter; lists it on the batch's "vocabulary needed" issue | adds the term or subject and its place in the hierarchy |
+| Discards | proposes (holds the letter, lists it on the batch's discards issue) | decides by the criteria and records it |
+| Any other issue about a letter | holds the letter and files the issue | resolves the issue, files the letter, closes the issue |
+| Merges | never | after the tests and the holder check pass |
+
+A contributor needs only these documents, the text repository and the
+vocabulary files; everything that changes the vocabulary, the rules or the
+published explorers belongs to the maintainer.
+
 ## The vocabulary rule
 
 Every recipient and subject is a term of the controlled vocabulary. When a
