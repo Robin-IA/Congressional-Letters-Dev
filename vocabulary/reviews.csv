@@ -2976,7 +2976,7 @@ Judiciary Chairman Goodlatte,1,member,G000289,,,,matched by rule (match_recipien
 Representatives Gosar and Kirkpatrick,1,joint,G000565;K000368,,,,matched by rule (match_recipients.py): rule 4: rule 1: representative gosar; rule 5: the one House member named kirkpatrick,accepted
 Representatives Kirkpatrick and Gosar,1,joint,K000368;G000565,,,,matched by rule (match_recipients.py): rule 4: rule 5: the one House member named kirkpatrick; rule 1: representative gosar,accepted
 Senator Flake and Senator McCain,1,joint,F000444;M000303,,,,matched by rule (match_recipients.py): rule 4: rule 1: senator flake; rule 1: senator mccain,accepted
-Chairman Tester and Vice Chairman Barrasso,1,joint,Senate Committee on Veterans' Affairs;Senate Committee on Environment and Public Works,,,,matched by rule (match_recipients.py): rule 4: rule 1: chair tester; rule 1: chair barrasso,accepted
+Chairman Tester and Vice Chairman Barrasso,1,merge,Senate Committee on Indian Affairs,,,,"checked: Tester chaired Indian Affairs in 2014 with Barrasso as vice chairman, and Barrasso chaired it in 2015-2017 with Tester as vice chairman (data/committee-chairs.csv); the earlier split to Veterans' Affairs and EPW read each title as a different committee",accepted
 Senators Tester and Barrasso,1,joint,T000464;B001261,,,,matched by rule (match_recipients.py): rule 4: rule 1: senator tester; rule 5: the one Senate member named barrasso,accepted
 Representative Chaffetz,1,member,C001076,,,,matched by rule (match_recipients.py): rule 5: the one House member named chaffetz,accepted
 Senators Menendez and Isakson,1,joint,M000639;I000055,,,,matched by rule (match_recipients.py): rule 4: rule 1: senator menendez; rule 1: senator isakson,accepted
@@ -3089,7 +3089,7 @@ Assistant Secretary Jo-Ellen Darcy,1,officeholder,Army Corps of Engineers,,,,mat
 Sen Flake,1,member,F000444,,,,matched by rule (match_recipients.py): rule 1: senator flake,accepted
 Attorney General Lynch and Secretary Johnson,1,joint,Department of Homeland Security;Department of Justice,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
 Jewell And Ashe,1,joint,Department of the Interior;Fish and Wildlife Service,,,,matched by rule (match_recipients.py): rule 3: the same people as a decided name,accepted
-Chairman Barrasso and Vice Chairman Tester,1,joint,Senate Committee on Environment and Public Works;Senate Committee on Veterans' Affairs,,,,matched by rule (match_recipients.py): rule 4: rule 1: chair barrasso; rule 1: chair tester,accepted
+Chairman Barrasso and Vice Chairman Tester,1,merge,Senate Committee on Indian Affairs,,,,"checked: Tester chaired Indian Affairs in 2014 with Barrasso as vice chairman, and Barrasso chaired it in 2015-2017 with Tester as vice chairman (data/committee-chairs.csv); the earlier split to Veterans' Affairs and EPW read each title as a different committee",accepted
 Attorney General Lynch and Chairwoman Ramirez,1,joint,Department of Justice;Federal Trade Commission,,,,matched by rule (match_recipients.py): rule 4: rule 1: general lynch; rule 1: chair ramirez,accepted
 Chairman Wheeler and Attorney General Lynch,1,joint,Federal Communications Commission;Department of Justice,,,,matched by rule (match_recipients.py): rule 4: rule 1: chair wheeler; rule 1: general lynch,accepted
 Majority Leader McConnell and Chairman Grassley,1,joint,Congressional leadership;G000386,,,,matched by rule (match_recipients.py): rule 4: rule 1: leader mcconnell; rule 1: chair grassley,accepted
