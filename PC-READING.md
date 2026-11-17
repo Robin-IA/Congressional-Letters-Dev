@@ -1,12 +1,133 @@
 # For Claude on the PC: where the reading work lives
 
-**Updated 15 November 2026** (reading is one pass per letter, section 5). Read this first in any new session on the PC,
+**Updated 17 November 2026.** Read this first in any new session on the PC,
 whatever model it runs. A session that starts fresh does not remember this
 setup. That includes switching models, for example to Sonnet.
 
-The older [`PC-HANDOFF.md`](PC-HANDOFF.md) covers the November harvest bundle.
-This file covers the work the PC does now: reading letters from their text and
-recording titles, dates and topics.
+**Do the batch by the steps below, in order, and nothing else.** Sections 1
+to 9 are reference for the steps. If anything in them seems to disagree with
+the steps, follow the steps and tell Robin which line disagrees. If a letter
+fits none of the steps, do not invent a rule: hold it (step B7) and say why.
+
+## The batch, step by step
+
+### A. Start the batch
+
+1. `gh auth status` shows **Robin-IA**. If not, stop and tell Robin.
+2. Update both repositories:
+
+   ```bash
+   cd letters-from-congress-OCR && git pull && cd ..
+   cd Congressional-Letters-Dev && git fetch origin --prune
+   git checkout harvest-member-letters && git pull
+   ```
+
+3. Check that your previous batch has been merged:
+   `gh pr list --base harvest-member-letters --state open`.
+   An open PR of yours is fine; the pick list skips its letters.
+   Do **not** add to an old branch. Every batch starts a new branch.
+4. Make the branch: `git checkout -b pc-read-<N> origin/harvest-member-letters`
+   (N = the next batch number).
+5. Make the pick list:
+
+   ```bash
+   python3 build/pc/pick_list.py --phase ocr --size 500 > batch-<N>.txt
+   ```
+
+   Use `--phase ocr` until it says 0 left, then `--phase text` (section 4a).
+   It skips letters already read, held, discarded, or in an open PR. Keep
+   `batch-<N>.txt` out of the commit.
+
+### B. Each letter, one at a time
+
+Do every step for one letter before starting the next. One pass, no
+second visit (section 5).
+
+1. **Get the text:** the letter's record in `text/<Congress>th.jsonl.gz`.
+   If the text is garbled or cut off, render the page and read it.
+2. **Is it a letter?** (section 5a)
+   - Yes → go to 3.
+   - Only part of a letter (a signature page, one middle page) → add it to
+     #252 and go to the next letter. Write no rows.
+   - Not a letter (resolution, newsletter, bill text, exhibit, "Dear
+     Employer"), or a letter between other parties with no tie to a member
+     or a member's letter → list it in the PR under "Proposed discards" and
+     go to the next letter. Robin decides; do not write it to
+     `letters-discarded/` yourself.
+   - Not sure → hold it (step 7) with the reason.
+3. **Recipient.** Read the address block, then the salutation, then the body.
+   Then write **one** `letter-recipients.csv` row:
+
+   | What you find | Write |
+   | --- | --- |
+   | A member of Congress, or several | the member's term (several: a `joint` row in `reviews.csv`) |
+   | A committee, or its chair and ranking member | the committee's term |
+   | A federal, state or foreign official | the **office**, never the person ("to Secretary Austin" → Department of Defense) |
+   | A company or organization (or its CEO) | the company's term, never the person. Several companies: each one in `letter-topics.csv` |
+   | "Dear Colleague" to one chamber | `United States Senate` or `United States House of Representatives` |
+   | No addressee, and the posting member wrote it (open letter, notice to constituents) | `(no recipient)` |
+   | No addressee, and someone else wrote it to the posting member | the posting member, "As recipient, from Rep./Sen. X's website" |
+   | A private person | `(no recipient)`; the name stays in the title |
+
+   **Check the term exists** in `vocabulary/terms.csv` or `vocabulary/reviews.csv`.
+   If it does not → hold the letter (step 7). Never file it under a nearby term.
+4. **Author.** The posting member signed it, or is among the signers. If not
+   (an agency reply, a letter *to* the member), the title names the sender
+   ("— CBO Director Elmendorf to Chairman Baucus …") and the note says so (#175).
+5. **Date.** From the letter's own text: the letterhead or dateline. If it
+   has none, in this order, and stop at the first that works:
+   1. Read the scan again (Apple Vision text or re-OCR); a garbled dateline
+      ("March 3I, 2023") still counts.
+   2. The content: a dated event, an official in office, a fiscal year. Name it.
+   3. The file name, if it carries a date, never later than the first capture.
+      Source: "file name: <name>".
+   4. A funding request naming fiscal year N → year N−1, precision `year`.
+   5. None → **file it anyway** with no date row; the note says "date
+      approximate (#488)". **Never hold a letter for its date.**
+
+   Write a `letter-dates.csv` row only when your date differs from the
+   published one.
+6. **Title and subjects.**
+   - Title: **"On Subject — to whom, D Month YYYY"**, the subject in title
+     case; the "to whom" is the office or company, never a CEO's name.
+   - Subjects: up to 8, **only labels in `SUBJECTS`** in `build/topics.py`
+     (companies from step 3 do not count toward the 8). Check every label.
+   - If the letter's main subject is not in `SUBJECTS` → hold it (step 7).
+     Never bend it onto a subject that does not fit.
+7. **Hold** (only for a missing term or subject, or a letter you cannot
+   place): one row in `letters-vocabulary-needs/letters.csv` with the title,
+   date, subjects, the term or subject needed, and the reason. Write **none**
+   of the other rows for it. Then:
+   - **Open one issue per missing term**, not a comment on #221 or #357:
+     title "New vocabulary term needed: <term>", label `vocabulary`; say
+     where it would file ("Executive branch › Department of Agriculture") and
+     list every held letter's digest, title and date. If an issue for that
+     term is already open, add the letters to it as a comment instead.
+   - **Do not add the term yourself.** The Mac adds it, places it, files the
+     held letters and closes the issue.
+8. **Write the rows** for a letter that is not held, appended at the end of
+   each file with `\n` line endings: `letter-titles.csv`, `letter-topics.csv`,
+   `letter-recipients.csv`, `letter-dates.csv` (only if step 5 changed it),
+   and always one `letters-reviewed.csv` row (section 5, the table).
+
+### C. Finish the batch
+
+1. Run both checks; both must pass:
+
+   ```bash
+   python3 -m unittest discover -s tests
+   python3 build/audit_dates.py --ocr-repo ../letters-from-congress-OCR
+   ```
+
+2. Commit only the CSV files. No code, no `batch-<N>.txt`.
+3. Push the branch and open **one** PR:
+   `gh pr create --base harvest-member-letters --label reading`.
+   - Title: "Reading batch N: X of 500 letters filed, Y held".
+   - Body: filed, held (with the term issues linked), proposed discards,
+     #252 partials, and "holder check not run on the PC".
+4. Tell Robin the PR number and the term issue numbers. **Never merge.**
+5. Start the next batch at A1. The pick list skips this batch's letters
+   while its PR is open.
 
 ## 1. Accounts and access
 
@@ -69,11 +190,14 @@ pushes a fresh `progress.csv` after each publish. One row per scan
 (distinct file); the first Congress is the lowest in `congresses`.
 
 1. **Now: finish the OCR scans of the 116th–119th.** Pick list: `text=True`,
-   `reviewed=False`, `ocr=True`, first Congress 116 or later. About 1,800 are
-   left after batch 59 (2,305 before it). Keep the 500-letter batches.
+   `reviewed=False`, `ocr=True`, first Congress 116 or later
+   (`pick_list.py --phase ocr`). About 2,100 were left on 17 November,
+   counting newly harvested letters; the script prints the current count.
+   Keep the 500-letter batches.
 2. **Next: the text-layer letters of the 116th–119th**, newest Congress
    first (119th, then 118th, 117th, 116th). Pick list: `text=True`,
-   `reviewed=False`, `ocr=False`. About 30,800 letters. Their text is
+   `reviewed=False`, `ocr=False` (`pick_list.py --phase text`). About
+   30,600 letters. Their text is
    clean, so batches go faster.
 3. **Then:** whatever Robin assigns. The other large pile is the
    106th–115th OCR scans (about 23,000), which are in the Mac's range
@@ -146,7 +270,7 @@ last of that kind).
      5. **Omit** letters to unnamed employers ("Dear Employer"), which are
         references or personnel letters, not correspondence to file.
      6. A **named** addressee whose office cannot be established ("Dear Mr.
-        Hall") is not this case: hold it with an issue.
+        Hall") is not this case: hold it (step B7) and say so in the PR.
 3. **Find who wrote it, and where it files.** Check that the posting member
    signed it or is among its signers. A letter written *to* the member is
    titled with its sender (#175). The Congress follows from the letter's date
@@ -200,7 +324,7 @@ Each batch is one PR, which appends rows to these files in the dev repository:
 | `vocabulary/reviews.csv` | `candidate,letters,decision,…` | Only when step 2 needs a decision the vocabulary lacks: a `joint` row for several offices at once, or a `merge` row for a company not yet reviewed. |
 | `vocabulary/letters-reviewed.csv` | `digest,reviewed,title,date,topics,filing,note,date_audited` | One row per letter read. `date` is `yes` if you added a date row, otherwise `unchanged`; `filing` is `yes` if you added a recipient row. |
 | `letters-vocabulary-needs/letters.csv` | `digest,title,date,topics,proposed_subjects,issue,note` | For a letter that needs a subject the vocabulary lacks. It stays here and goes in none of the files above. Also open a vocabulary-request issue for the term (§6). |
-| `letters-discarded/letters.csv` | `digest,title,reason,issue,decided` | A posting that is **not a letter** (resolution, newsletter, exhibit, "Dear Employer" reference), or a letter between other parties with **no relation to a member or a member's letter**, once Robin has decided it. Discards are for discussion, not removal. It goes in none of the other files and is not read again. |
+| `letters-discarded/letters.csv` | `digest,title,reason,issue,decided` | Written by the Mac once Robin decides: a posting that is **not a letter**, or a letter between other parties with **no relation to a member or a member's letter**. The PC proposes discards in its PR (step B2). Discards are for discussion, not removal. |
 
 Write CSV rows with `\n` line endings and append only, never reorder.
 `source` is "read from the text of the letter (the PC)".
@@ -251,8 +375,8 @@ check against the text, never the whole test.
 
 ## 6. The rules that matter most
 
-- **Date order** (#172): the letterhead first, then the file name, then the PDF
-  metadata, then review.
+- **Date order** (#172): as in step B5: the letter's text, the content, the
+  file name, the funding rule, then file it anyway.
 - **A date can be refused.** A hand date also moves the letter to the right
   Congress and holder. If a member re-posted an older letter (a caucus site, a
   successor's site), a posting can have no holder on the letter's date. When
@@ -274,9 +398,9 @@ check against the text, never the whole test.
   letter to a member, a CBO letter or a newspaper page is titled with its
   sender ("— CBO Director Elmendorf to Chairman Baucus …") and noted (#175).
   A page that is not a letter at all (a draft resolution, a newsletter, a
-  "Dear Employer" reference) goes in **`letters-discarded/letters.csv`**
-  (digest, title, reason, issue, decided; Robin, 16 November 2026) once
-  Robin has decided it, and is listed in the PR. It is not read again.
+  "Dear Employer" reference) is listed in the PR under "Proposed discards"
+  (step B2). Once Robin decides, the Mac adds it to
+  **`letters-discarded/letters.csv`**, and it is not read again.
 - **Copies** (#224): note "another scan of <digest>". Same title, same topics.
 - **Text that is only part of the letter** (#252), such as a signature page,
   footers or a middle page: skip the letter and add it to #252.
@@ -310,8 +434,8 @@ check against the text, never the whole test.
 
   The title follows: "to Secretary Austin" for an official, "to the chief
   executive of United Airlines" or the company's name for a CEO, never the
-  CEO's name. Where the address block does not say who the recipient is, list
-  the letter in the PR and leave it.
+  CEO's name. Where the address block does not say who the recipient is,
+  follow the no-addressee rows of step B3.
 
   **How kind 3 is recorded** (`build/filed_orgs.py`, from the Mac):
   - **One company:** put the company's reviewed label in
@@ -324,12 +448,9 @@ check against the text, never the whole test.
     takes one row per letter, so add **each company's label to the letter's
     row in `letter-topics.csv`**, after its subjects. The 8-subject cap does
     not apply to these: four or more companies are all kept.
-  - **A company the vocabulary lacks:** add a `reviews.csv` row first:
-    `merge`, kind `organization`, broader `Companies`, `Nonprofits` or
-    `Associations and other organizations`. Without one, the build stops on
-    the unknown label in `letter-topics.csv`, and a `letter-recipients.csv`
-    row is shown as a recipient and not filed under the company. This is a
-    vocabulary change, so it goes in its own PR, as with subjects.
+  - **A company the vocabulary lacks:** hold the letter and open a term
+    issue (step B7). The Mac adds the company's `reviews.csv` row and files
+    the letter.
   - **A member and a company together** ("Chairman Wicker and Mr.
     Zuckerberg"): the member stays the recipient (kind 1), and the company
     is added as a topic.
@@ -352,11 +473,10 @@ check against the text, never the whole test.
   hierarchy (`hierarchy.csv`, creating the state or group entries it needs),
   files the held letters and closes the request.
 
-  Vocabulary changes go in their own PR to `build/topics.py`. Match words are
-  plain lowercase words, never regex. The same goes for a **recipient with no
-  term** (a company, a state office, a foreign official): list it in the PR
-  and on #357, and leave the letter unfiled rather than filing it somewhere
-  else. Between 15 and 16 November, ten PC batches (#369 to #415) filed no
+  The Mac makes the vocabulary PRs (`build/topics.py`, `reviews.csv`,
+  `hierarchy.csv`). The same goes for a **recipient with no term** (a
+  company, a state office, a foreign official): hold the letter and open its
+  term issue (step B7), rather than filing it somewhere else. Between 15 and 16 November, ten PC batches (#369 to #415) filed no
   holds at all, and their letters had to be read again for subjects and
   recipients.
 
@@ -381,8 +501,8 @@ once its `reviews.csv` row is merged, whether or not the vocabulary has been
 rebuilt; check `reviews.csv` and `vocabulary/terms.csv` before asking for one.
 
 Both must pass, and the PR body must say **how many letters were held for
-vocabulary** and how many recipients have no term, with the vocabulary-request
-issues and the #357 comments linked. "0 held" is written out, not left blank. On the PC, `--ocr-repo` (or `LETTERS_OCR_REPO`) points the audit at the text repository; without it the audit sees only the PC's local text and reports most letters as unreadable (#332). The PR title follows the existing pattern ("Letters review:
+vocabulary** and how many recipients have no term, with the term issues
+linked. "0 held" is written out, not left blank. On the PC, `--ocr-repo` (or `LETTERS_OCR_REPO`) points the audit at the text repository; without it the audit sees only the PC's local text and reports most letters as unreadable (#332). The PR title follows the existing pattern ("Letters review:
 agency letters, round N (25 read from full text)"). The body lists copies,
 holds and gaps. If rows from a Mac batch land at the same time, the conflict
 is only appended rows, and the Mac resolves it by keeping both sets.
@@ -429,7 +549,7 @@ an OCR-gap issue is `OCR`. Do not use `important`; that is Robin's.
 | #172 | The dating order |
 | #175 | Letters written to Congress, not from it |
 | #204 | The PC's agency letters |
-| #221 | Proposed new subjects, with their held letters (history; new requests are their own issues, §6) |
+| #221 | Proposed new subjects, with their held letters (history only; new requests are their own issues, step B7) |
 | #224 | Duplicate letters |
 | #239 | Older letters re-posted later, and refused dates |
 | #242 / #243 | Letters in Word or HTML, not PDF (survey, then conversion) |
