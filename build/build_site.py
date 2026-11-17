@@ -326,6 +326,34 @@ COLUMNS = ["key", "timestamp", "kind", "date", "precision", "recipient",
            "subject", "topics", "cosigners", "digest", "url"]
 
 
+# How each relation in vocabulary/letter-related.csv reads on the two letters
+# it joins: (on the first file, on the second).
+RELATION_LABELS = {"supports": ("Supports", "Supporting document")}
+
+
+def related_notes(by_member: dict, links: list) -> dict[str, list[list[str]]]:
+    """For each linked digest, [label, other letter's title, its Wayback URL].
+
+    Both ends must be in this Congress's explorer: the link opens the other
+    letter's PDF, as the letter's own row does, so a missing end gives no note
+    rather than a dead link.
+    """
+    k, t, s, d, u = (COLUMNS.index(c) for c in ("key", "timestamp", "subject", "digest", "url"))
+    at: dict[str, tuple[str, str]] = {}
+    for rows in by_member.values():
+        for row in rows:
+            if row[d] and row[d] not in at:
+                at[row[d]] = (row[s] or "the letter",
+                              f"https://web.archive.org/web/{row[t]}id_/{row[u] or row[k]}")
+    notes: dict[str, list[list[str]]] = {}
+    for digest, other, relation in links:
+        forward, back = RELATION_LABELS.get(relation, ("Related", "Related"))
+        if digest in at and other in at:
+            notes.setdefault(digest, []).append([forward, *at[other]])
+            notes.setdefault(other, []).append([back, *at[digest]])
+    return notes
+
+
 def link_url(record: dict) -> str:
     """The address to replay the letter from, when ``key`` will not do (#107).
 
@@ -873,6 +901,9 @@ def main() -> None:
                         "immigration", "veterans", "medicare", "climate",
                         "broadband", "tariff", "census", "social security"],
         "members": index_members,
+        # Letters joined by hand (vocabulary/letter-related.csv): digest ->
+        # [label, title, url] notes the page shows under the letter.
+        "related": related_notes(by_member, letter_text.related()),
     }
     # REFUSE TO SHRINK WITHOUT BEING TOLD TO. A build is normally an
     # improvement on the last one; a build that drops a tenth of the corpus is

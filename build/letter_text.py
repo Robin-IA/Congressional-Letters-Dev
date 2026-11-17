@@ -44,6 +44,7 @@ TITLES = ROOT / "vocabulary" / "letter-titles.csv"
 DATES = ROOT / "vocabulary" / "letter-dates.csv"
 TOPICS_BY_HAND = ROOT / "vocabulary" / "letter-topics.csv"
 RECIPIENTS_BY_HAND = ROOT / "vocabulary" / "letter-recipients.csv"
+RELATED = ROOT / "vocabulary" / "letter-related.csv"
 RULES = "2026-11-16a"  # change when the rules change, so the cache is redone
 
 # -------------------------------------------------------------------- topics
@@ -110,6 +111,20 @@ def by_hand() -> dict[str, str]:
         return {}
     with TITLES.open(encoding="utf-8") as fh:
         return {r["digest"]: r["title"] for r in csv.DictReader(fh) if r.get("title")}
+
+
+def related() -> list[tuple[str, str, str]]:
+    """Letter-to-letter links made by hand: (digest, related, relation).
+
+    vocabulary/letter-related.csv. "supports" says the first file is a
+    supporting document for the second: the USGS's request to the FCC that
+    Senator Cantwell posted beside her own letter citing it (#1207).
+    """
+    if not RELATED.exists():
+        return []
+    with RELATED.open(encoding="utf-8") as fh:
+        return [(r["digest"], r["related"], r.get("relation") or "related")
+                for r in csv.DictReader(fh) if r.get("digest") and r.get("related")]
 
 
 # -------------------------------------------------------------- topics by hand
