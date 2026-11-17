@@ -15,7 +15,7 @@ REQUIRED for every letter.
 | 1 | [QA-analysis-letter-determination](QA-analysis-letter-determination.md) | Is it a letter? Is it congressional, to a member, or a supplement to a member's letter? Otherwise it is discarded. |
 | 2 | [QA-analysis-authorship](QA-analysis-authorship.md) | Who wrote it; which members it files under. |
 | 3 | [QA-analysis-recipients](QA-analysis-recipients.md) | Whom it is to, filed by office, company or member. |
-| 4 | [QA-analysis-subject-analysis](QA-analysis-subject-analysis.md) | **At least 4 subjects**: topics, plus the organizations, companies, committees, laws and bills it names. |
+| 4 | [QA-analysis-subject-analysis](QA-analysis-subject-analysis.md) | **At least 4 subjects, at least 2 of them topics**: topics, plus the organizations, companies, committees, laws and bills it names. |
 | 5 | [QA-analysis-dates](QA-analysis-dates.md) | Its date, and how sure. |
 | 6 | [QA-analysis-titles](QA-analysis-titles.md) | Its standardized title ("Letter Name Fix"). |
 | 7 | this document, below | Record it; hold it or file an issue if needed; run the QA checks. |
@@ -70,7 +70,7 @@ file, and what was read.
    guard). A reader writing one letter's reading under another's digest is the
    failure this catches (Mac batch 3).
 2. Every recipient and subject is a vocabulary term or is added in the same PR.
-3. Every letter has **at least 4 subjects** (step 4).
+3. Every letter has **at least 4 subjects, at least 2 of them topics** (step 4).
 4. Every date is a full ISO date with a precision, and no later than the
    file's first capture.
 5. The tests pass: `python3 -m unittest discover -s tests` must say OK.
@@ -93,5 +93,6 @@ Issue (Y/N). A discarded posting is Filed with Discarded = Y.
 - **Filed**: read, every step done, recorded.
 - **Hold**: waiting on a vocabulary term or a decision.
 - **Unprocessed**: not yet read.
-- **Needs Review**: read, but short of a requirement (fewer than 4 subjects,
+- **Needs Review**: read, but short of a requirement (fewer than 4 subjects or
+  fewer than 2 topics,
   #1266), or set aside as partial, bundled or unreadable (#252, #1226).

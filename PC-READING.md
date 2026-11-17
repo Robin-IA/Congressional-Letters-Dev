@@ -98,8 +98,8 @@ second visit (section 5).
 6. **Title and subjects.**
    - Title: **"On Subject — to whom, D Month YYYY"**, the subject in title
      case; the "to whom" is the office or company, never a CEO's name.
-   - Subjects: **at least 4, no upper limit** (qa/QA-analysis-subject-
-     analysis.md). Topics are only labels in `SUBJECTS` in `build/topics.py`,
+   - Subjects: **at least 4, of which at least 2 are topics; no upper limit**
+     (qa/QA-analysis-subject-analysis.md). Topics are only labels in `SUBJECTS` in `build/topics.py`,
      for what the letter is primarily about. Names count as subjects: every
      organization, company, nonprofit, committee, agency or office it names,
      and laws or bills in the vocabulary, written in `letter-topics.csv` by
@@ -347,7 +347,7 @@ Each batch is one PR, which appends rows to these files in the dev repository:
 | File | Row | Rules |
 | --- | --- | --- |
 | `vocabulary/letter-titles.csv` | `digest,title,source` | Form: **"On Subject — to whom, D Month YYYY"**, e.g. "On Funding the Sea Grant Program in 2019 — to Chairman Moran and Ranking Member Shaheen, 11 April 2018". A letter to a company is filed under the company, with no CEO's name in the "to" part. |
-| `vocabulary/letter-topics.csv` | `digest,topics,source` | `;`-separated, **at least 4**: topics from `SUBJECTS` in `build/topics.py`, plus the organizations, committees, agencies, offices, and laws or bills the letter names, by exact vocabulary label (qa/QA-analysis-subject-analysis.md). Check every label before writing it. |
+| `vocabulary/letter-topics.csv` | `digest,topics,source` | `;`-separated, **at least 4, at least 2 of them topics**: topics from `SUBJECTS` in `build/topics.py`, plus the organizations, committees, agencies, offices, and laws or bills the letter names, by exact vocabulary label (qa/QA-analysis-subject-analysis.md). Check every label before writing it. |
 | `vocabulary/letter-dates.csv` | `digest,date,precision,source` | Only when the letter's own date differs from the published date. The source says why, e.g. "the letterhead; was 2018-09-19 (captured-by)". |
 | `vocabulary/letter-recipients.csv` | `digest,recipient,source` | One row per letter: the reviewed term from step 2 (an office, a committee, a member's name, or a company's label). Not for a private citizen. |
 | `vocabulary/reviews.csv` | `candidate,letters,decision,…` | Only when step 2 needs a decision the vocabulary lacks: a `joint` row for several offices at once, or a `merge` row for a company not yet reviewed. |

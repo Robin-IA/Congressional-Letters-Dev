@@ -290,8 +290,9 @@ def write(batch: Path, rows_path: Path) -> None:
         T.append({"digest": d, "title": o["title"], "source": SRC})
         P.append({"digest": d, "topics": ";".join(dict.fromkeys(tops + comps)), "source": SRC})
         n_subjects = len(set(tops) | set(comps) | ({rec} if rec and rec != "(no recipient)" and rec in org_labels_all else set()))
-        if n_subjects < 4:
-            under4.append((d, n_subjects))
+        n_topics = len(set(tops))
+        if n_subjects < 4 or n_topics < 2:
+            under4.append((d, n_subjects, n_topics))
         R.append({"digest": d, "recipient": rec, "source": (o.get("recipient_source") or "read from the letter's address block (the Mac)")})
         date = o.get("date") or ""
         # A month or a year alone is stored as a full date the build can sort:
@@ -337,11 +338,12 @@ def write(batch: Path, rows_path: Path) -> None:
     add("vocabulary/letter-dates.csv", D)
     add("vocabulary/letters-reviewed.csv", V)
     add("letters-discarded/letters.csv", DISC)
-    # Under 4 subjects: filed, but marked for review (QA-analysis-subject-analysis).
-    low = {d for d, _ in under4}
+    # Under 4 subjects or 2 topics: filed, but marked for review
+    # (QA-analysis-subject-analysis, Robin 17 November 2026).
+    low = {u[0] for u in under4}
     for v in V:
         if v["digest"] in low:
-            v["note"] = ("needs review: fewer than 4 subjects; " + v["note"])[:400]
+            v["note"] = ("needs review: fewer than 4 subjects or 2 topics; " + v["note"])[:400]
     report = {"under4": under4, "filed": len(T), "dates": len(D), "new_terms": [r["candidate"] for r in NEWR if r["decision"] == "merge"],
               "joint": len([r for r in NEWR if r["decision"] == "joint"]),
               "partial": partial, "notletter": notletter, "unresolved": unresolved}
