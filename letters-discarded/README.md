@@ -42,6 +42,13 @@ A letter is **kept** if any one of these holds:
    document the member's letter cites. It is linked to that letter in
    `vocabulary/letter-related.csv` (the USGS letter Cantwell cited; #1207).
 
+**Both tests are decided by reading the letter's OCR**, not its file name or
+title (Robin, 17 November 2026). Test 2's third point needs more than the
+letter itself: before a letter is discarded under test 2, the posting
+members' own letters are searched (their OCR) for any that cite it, as the
+Cantwell letter cited the USGS request. `mac_read.py write` does this search
+and leaves the letter out, for a closer reading, if anything turns up.
+
 A letter for which **none** holds is **discarded**: correspondence between
 other parties that a member happened to post (the Florida agriculture
 department's letter to the Army Corps; #1207).
