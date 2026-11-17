@@ -218,6 +218,21 @@ named caucus's chair, and a true date older than the poster's holding of the
 address, placed by first capture (`address_holders.place`, posted later,
 #239, #1284). It refuses only a date that leaves a posting with no one.
 
+**Done, discards and duplicates** (Robin, 17 November 2026, #1308, #1309).
+A letter is done when it has OCR, is a letter, has authorship, a recipient
+(if applicable), a date (if determined), at least 4 subjects with 2 topics, a
+title in our form, and is published and filed. `progress.py` counts exactly
+that, and `qa_status.py`'s Filed is read from it, so run `progress.py` before
+`qa_status.py` at every publish. A discard is never done or Filed. A
+**duplicate** (the same member posted the same letter twice) is a type of
+discard: after a batch, run the duplication check (DEDUPLICATION.md, section 3)
+on every note saying "copy of <digest>". A clear duplicate (same member;
+similarity at least 0.99, or 0.95 with the same title, date and addressee)
+goes in `letters-discarded/letters.csv` ("duplicate: …") and
+`vocabulary/letter-duplicates.csv`, and on a review issue (#1309); one the
+check cannot settle stays Needs Review until read. Copies by different
+members are shared letters and stay.
+
 ## Issues: only for what cannot be resolved
 
 Open one with label `reading` (plus `vocabulary`, `dates` or `quality control`

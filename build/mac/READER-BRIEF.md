@@ -50,6 +50,9 @@ letters.
 1. **Is it a letter?** It needs an addressee (person, office, company,
    organization; a salutation or inside address shows it) and a signer.
    - Only part of a letter (a signature page, a middle page, footers): `status: "partial"`.
+   - **The same letter as another file you can see** (same text, a re-upload):
+     file it normally and say "copy of <digest>" in `note`. The Mac's
+     duplication check decides whether it is a duplicate (DEDUPLICATION.md).
    - **Placeholders unfilled**: only the day blank ("July ___, 2018") on a
      signed, addressed letter, or "[DATE]" alone → file it normally, dated to
      the month. An unfinished draft (addressee or signers missing:

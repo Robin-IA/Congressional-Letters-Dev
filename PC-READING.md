@@ -39,6 +39,16 @@ Robin decided these today. Each is in the steps below and in `qa/`:
    places it by capture. Only correct a date that is wrong.
 6. **Re-run the pick list before each part of a batch** (section 4). The Mac
    decided 47 letters the PC later read from an old list.
+7. **What constitutes done** (#1308): it has OCR, is a letter, has
+   authorship, a recipient (if applicable), a date (if determined), at least
+   4 subjects with 2 topics, a title in our form, and is published and filed
+   (section 5). **A discard is never done or Filed**: it falls under issues.
+8. **Duplicates** (#1309): a letter the **same member** posted twice (a
+   re-upload, an old and new address) is a duplicate, a type of discard. Note
+   "copy of <digest>" on the second copy and list it on the batch's
+   "Proposed discards" issue; the Mac runs the duplication check
+   (DEDUPLICATION.md) and decides. The same letter on **different members'**
+   sites is a shared letter, not a duplicate: read and file each posting.
 
 ## The batch, step by step
 
@@ -519,7 +529,10 @@ check against the text, never the whole test.
   "Dear Employer" reference) goes on the batch's "Proposed discards" issue
   (step B2). The Mac decides and adds it to
   **`letters-discarded/letters.csv`**, and it is not read again.
-- **Copies** (#224): note "another scan of <digest>". Same title, same topics.
+- **Copies** (#224, #1309): note "copy of <digest>". Posted by the same
+  member, it is a duplicate: propose it as a discard (the Mac decides by
+  DEDUPLICATION.md, and every duplicate gets an issue for review). Posted by a
+  different member, it is a shared letter: same title, same topics, filed.
 - **Text that is only part of the letter** (#252), such as a signature page,
   footers or a middle page: skip the letter and add it to #252.
 - **Recipients: three kinds, three ways to file** (Robin, 15 November 2026;
