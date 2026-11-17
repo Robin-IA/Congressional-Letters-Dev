@@ -20,10 +20,37 @@ wrote the letter, and file it under its congressional authors.
 4. **Not by a member** (an agency reply, an organization, a constituent): the
    author is the sender, named in the title ("— Secretary Chao to Senator
    Rounds"); the letter is kept only through letter determination test 2.
-5. **Posting credited to the wrong member.** When the address was later taken
-   over by another member who re-posted their own older letters (Stephanie
-   Murphy on `murphy.house.gov`, credited to Tim Murphy), title it with the
-   real author and list it on #1249 until the attribution rule is settled.
+5. **Check that each author held office on the letter's date.** Required
+   for every letter. Compare the date (step 5) with the author's service:
+   - **In Congress?** The member's term at the posting address
+     (`data/address-holders.csv`) and their congressional career
+     (congress-legislators terms, in `address_holders.career_terms()`).
+   - **In the post the letter claims?** A letter signed as a committee's
+     chair or ranking member, or as a leader, must fall within that service:
+     `data/committee-chairs.csv` (#364; see `build/chairs/README.md` for its
+     limits: some mid-Congress changes are missed) and the leadership terms.
+
+   When the date falls **after the author left Congress, the address or the
+   post**, or **before they arrived**, one of three things is true. Find
+   which, from the OCR:
+   1. **The date is wrong**: a misread year, a file-name or upload date.
+      Re-date it (QA-analysis-dates); the holder check at merge refuses a date
+      that leaves the posting with no holder.
+   2. **Another member wrote it and re-posted it** on an address they took
+      over. The build credits a later holder's letter to them when the file
+      was first captured in their span, they were in Congress on its date, and
+      its OCR names them and not the earlier holder, or names neither and the
+      earlier holder had already left before the capture
+      (`address_holders.later_holder` / `reposted_by`, #1249: Stephanie
+      Murphy's letters on `murphy.house.gov` had been credited to Tim Murphy,
+      who had resigned). The 12 November 2026 rule does the same when the date
+      falls between two holders (Mike Levin at `levin.house.gov`).
+   3. **The member's own letter from an earlier office**, re-posted on a
+      later site (a House letter on a senator's site): credited to them,
+      flagged `earlier_office`.
+
+   If none fits, title the letter with its real author, say why in the note,
+   and file an issue (label `harvest` for a posting, `dates` for a date).
 6. **Names in the record.** Authors are members' vocabulary terms (by
    Bioguide ID). A signer who is not a member (a staff director, a CEO) is not
    an author term; their organization is a subject (step 4).
