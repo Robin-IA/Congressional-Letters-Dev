@@ -38,6 +38,19 @@ issue only for what it cannot resolve.
 Run the tools from the copies in the pipeline (`~/ia/congressional-member-letters/build/mac/`).
 They are synced there like any merged file.
 
+## The Wayback rule (Robin)
+
+**At most 2 Wayback workers in all**, across every machine, session and job
+(harvests, CDX queries, fetches, probes), each pausing **4–5 seconds**
+between requests, with the project User-Agent
+(`ia-congressional-member-letters/0.1`), and **1 after a 429 or 503**.
+Before starting anything that touches Wayback, check what is already
+running: `ps -axo pid,etime,command | grep -i -E 'harvest|catchup|fetch|cdx'`.
+The harvest sessions (the 2025 and 2024 catch-ups) use both workers while
+they run, so a new Wayback job waits for them. Reading, writing and folding
+need no Wayback. `build/pc/fetch_for_ocr.py` and the catch-up runner cap
+themselves at 2 (#67).
+
 ## Before the first batch of a session
 
 1. `gh auth status` shows **Robin-IA**.

@@ -655,6 +655,12 @@ an OCR-gap issue is `OCR`. Do not use `important`; that is Robin's.
   changes are separate PRs, and Robin reads them.
 - It does not push the text repository, which the Mac rewrites at each
   publish.
+- **It does not query or fetch from the Wayback Machine.** Reading needs only
+  the text repository. The Wayback rule (Robin) is **at most 2 workers in all,
+  across every machine and job, each pausing 4–5 seconds between requests,
+  and 1 after a 429 or 503**, and the Mac's harvests usually hold both. If a
+  scan must be fetched, ask Robin first. `build/pc/fetch_for_ocr.py` is capped
+  at 2 workers with a 4.5-second pause (#67), so it cannot break the rule.
 
 ## 9. Open issues to know
 

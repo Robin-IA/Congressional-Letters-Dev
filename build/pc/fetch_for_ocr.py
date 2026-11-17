@@ -1,7 +1,7 @@
 """Fetch scanned letters from the Wayback Machine on a Windows PC, for OCR.
 
     py fetch_for_ocr.py                 # in C:\\ocr, beside fetch-list.jsonl
-    $env:WORKERS=4; py fetch_for_ocr.py
+    $env:WORKERS=1; py fetch_for_ocr.py   # never more than 2 (Robin's rule)
 
 The PC's share of the scans that were rendered before PDFs were kept, so they
 have a thumbnail but no text. ``fetch-list.jsonl`` lists them, one per line:
@@ -40,7 +40,11 @@ LIST = HERE / "fetch-list.jsonl"
 PDFS = HERE / "pdfs"
 LOG = HERE / "fetch-pc.log"
 FAILURES = HERE / "fetch-failures.jsonl"
-WORKERS = int(os.environ.get("WORKERS", "6"))
+# Robin's rule: at most 2 Wayback workers in all, each pausing 4-5 s between
+# requests, and 1 after a 429 or 503 (#67, 17 November 2026). A higher
+# WORKERS setting is capped, not obeyed.
+WORKERS = min(2, int(os.environ.get("WORKERS", "2")))
+REQUEST_PAUSE = 4.5
 MAX_STUCK = 3
 PAUSE = 300
 UA = {"User-Agent": "ia-congressional-member-letters/0.1 (fetch for OCR)"}
@@ -73,6 +77,7 @@ def asked(item: dict) -> str:
 
 
 def fetch(item: dict) -> tuple[str, str]:
+    time.sleep(REQUEST_PAUSE)   # Robin's rule: 4-5 s between requests per worker
     digest = item["digest"]
     url = (f"https://web.archive.org/web/{item['timestamp']}id_/"
            + urllib.parse.quote(asked(item), safe=":/?&=%#~+,;@!$'()*[]"))
