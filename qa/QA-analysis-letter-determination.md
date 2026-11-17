@@ -30,6 +30,21 @@ preferred, not required. The addressee is where the recipient comes from
 letter in it passes test 2, and filed as one record (QA-analysis-text step 4;
 Robin, 17 November 2026, #1226).
 
+**Drafts** (Robin, 17 November 2026, #183, #180). A letter posted with its
+template placeholders unfilled is still a letter, and kept:
+- **Day left blank** ("July ___, 2018", "March XX, 2023") on a letter that is
+  otherwise signed and addressed: an ordinary letter, dated to the month
+  (QA-analysis-dates). Not a draft.
+- **Unfinished draft**: the addressee or the signers are missing: a
+  placeholder ("[ADDRESS BLOCK]", "[Company]", "[SIGNATURES]") or blank
+  signature lines with no names. A missing date alone ("[DATE]" on a signed,
+  addressed letter) is not a draft. Kept and **marked**: the title ends "— a draft"
+  (QA-analysis-titles) and the note begins "Draft:". Search the posting
+  member's letters for **the version that was sent**; when it is held, link
+  the two in `vocabulary/letter-related.csv` with relation `draft_of` (draft
+  first). The explorer then shows "Draft of: …" on the draft and "Sent
+  version: …" on the letter. A draft is never discarded for being a draft.
+
 **Still a letter**: a member's mail-merge or form letter to a class of people
 ("Dear Mayor/Chief", "Dear Recommender") is the member's correspondence; file
 it with no recipient.

@@ -19,6 +19,13 @@ original is the file's own name.
 - **A discard**: a few words saying what it is ("Senate resolution text
   objecting to UN Security Council Resolution 2334").
 
+## Drafts
+
+An unfinished draft (QA-analysis-letter-determination, "Drafts") is titled in
+the usual form with "— a draft" at the end: "On the True Cost of a Title
+Loan — to Director Chopra, March 2023 — a draft". A letter whose day alone
+was left blank is not a draft and takes no marker.
+
 ## Checks
 
 - Every word of substance in the title appears in the letter's own text
