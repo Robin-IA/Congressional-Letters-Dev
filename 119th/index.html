@@ -165,7 +165,9 @@ table.letters .who { width: 15rem; }
 table.letters { width: auto; max-width: 100%; }
 table.letters .sub2 { min-width: 20rem; max-width: 52rem; }
 .related { display: block; margin-top: .3rem; font-style: italic; }
-.shot .related { font-size: 1rem; }
+.shotwrap { display: flex; flex-direction: column; gap: .4rem; }
+.shotwrap > .shot { flex: 1; }
+.shotwrap > .related { margin-top: 0; font-size: 1rem; }
 table.letters td:last-child, table.letters th:last-child { width: 1%; white-space: nowrap; padding-left: 1.4rem; }
 
 .bars { display: flex; align-items: flex-end; gap: 1px; height: 11rem; margin: 1rem 0 .3rem; }
