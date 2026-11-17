@@ -185,3 +185,5 @@ branch and PR, so the PC's pick list stays current.
 | --- | --- | --- | --- |
 | 1 | 1221 | 198 | 17 new terms, 14 joint, 9 dates; 2 not letters to #1222 |
 | 2 | 1225 | 190 | 9 new terms, 10 joint, 5 dates; 3 not letters to #1222; 3 partial to #252; 3 unresolved (issues); 1 hex digest dropped |
+| 3 | 1241 | 195 | read twice (two readers mixed parts; caught by the title guard); 17 new terms; a supplement found by the search (HHS to TMC, linked to Cuellar's letter); 3 discarded |
+| 4 | (this PR) | 196 | 7 new terms, 9 joint; 3 discarded (the Smith statement, and two test-2 letters after the supplement search was checked by hand); 1 partial to #252 |
