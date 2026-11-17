@@ -152,6 +152,42 @@ batch N" PR.
 
 8. Go back to 1 with N+1.
 
+## What comes from the PC (the contributor), and what the Mac does
+
+The PC reads the 116th–119th by PC-READING and never merges or files a held
+letter. For each batch it sends a PR and up to two issues; Robin passes on
+their numbers. **Handle them in this order**, every time, from the OCR:
+
+1. **The batch PR** ("Reading batch N: …"): `bash build/mac/fold.sh <PR>`
+   (tests, holder check, merge, sync). On CONFLICT, `resolve_append.sh <PR>`.
+   It refuses a PR that touches code; read such a PR before merging it.
+   Check the PR says how many letters were held and lists its issues.
+2. **"Reading batch N: vocabulary needed"** (names and subjects):
+   - **Names**: add each as a `reviews.csv` merge row (kind, `broader` in the
+     house form, QA-analysis-recipients) and a `hierarchy.csv` row, building a
+     state chain where needed. A name that already exists under another label:
+     use that label.
+   - **Subjects**: add each to `build/topics.py` (hand-filed, no match words)
+     with its place in `hierarchy.csv`; if it is better served by an existing
+     subject or a name, say so on the issue.
+   - **File the held letters** from `letters-vocabulary-needs/letters.csv`
+     (their title, date and subjects are already read): recipient and topic
+     rows, a reviewed row, the hold row removed. One vocabulary PR for the
+     batch; comment what was added and where; close the issue.
+3. **"Reading batch N: proposed discards"**: decide each from its OCR by both
+   tests of QA-analysis-letter-determination, with the supplement search for
+   test 2. Discard: a `letters-discarded/` row with its Wayback link; kept:
+   file it like any held letter. Remove its hold row. One PR; comment each
+   decision; close the issue.
+4. **Any other issue the PC files about a letter** (unreadable text, a bundle,
+   wrong attribution, an unsettled date or author): resolve it (re-OCR, a
+   rule, a date from the content), file the letter, remove its hold, close
+   the issue.
+5. **Ask Robin only** when the rules do not settle it: a new kind of case, a
+   change to a rule, or a judgment the criteria leave open (bundled PDFs,
+   #1226). Say on the issue that it waits on Robin.
+6. After the next publish, the PC's pick list sees the batch as done.
+
 ## Issues: only for what cannot be resolved
 
 Open one with label `reading` (plus `vocabulary`, `dates` or `quality control`
