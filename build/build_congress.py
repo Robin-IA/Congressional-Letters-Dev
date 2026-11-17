@@ -45,6 +45,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "build"))
 import address_holders as ah  # noqa: E402
+import committees  # noqa: E402
 import last_updated  # noqa: E402
 import letter_text  # noqa: E402
 import build_site  # noqa: E402
@@ -300,6 +301,7 @@ def sort_letters(congresses: set[int]):
     flags: dict[int, Counter] = {n: Counter() for n in congresses}
     total = 0
     flags_bound = [0, 0]   # postings re-dated to the earliest capture; left alone (#652)
+    reposts: list = []     # (congress, index, later holder) to check by text (#1249)
     rosters: dict[int, set] = {}
 
     def on_roster(n: int, bioguide: str) -> bool:
@@ -389,7 +391,39 @@ def sort_letters(congresses: set[int]):
             rec = {**rec, "caucus": ah.caucus_name(rec["url"])}
         elif a.attribution == "none" or a.attribution in ah.UNPUBLISHED:
             continue
+        later = ah.later_holder(idx, rec["url"], best or "", rec.get("first_seen") or "", a)
+        if later:
+            reposts.append((n, len(by_congress[n]), later))
         by_congress[n].append((a.bioguide_id, a.attribution, rec))
+    # A later holder's own letters, re-posted on the address they took over
+    # (#1249): credited to them when the letter names them and not the member
+    # its date gives. Only these few letters' texts are read.
+    if reposts:
+        want = {by_congress[n][i][2].get("digest") for n, i, _ in reposts}
+        texts = {}
+        for path in committees.TEXTS:
+            if path.exists():
+                with path.open(encoding="utf-8-sig") as fh:
+                    for line in fh:
+                        if '"digest"' not in line:
+                            continue
+                        try:
+                            r = json.loads(line)
+                        except ValueError:
+                            continue
+                        if r.get("digest") in want and len(r.get("text") or "") > len(texts.get(r["digest"], "")):
+                            texts[r["digest"]] = r["text"]
+        moved = 0
+        for n, i, later in reposts:
+            bid, _att, rec = by_congress[n][i]
+            left = ah.left_before(idx, rec["url"], bid, rec.get("first_seen") or "")
+            if ah.reposted_by(idx, texts.get(rec.get("digest"), ""), later, bid, left):
+                by_congress[n][i] = (later, "earlier_office", rec)
+                flags[n]["earlier_office"] += 1
+                flags[n][_att] -= 1
+                moved += 1
+        print(f"  {moved:,} of {len(reposts):,} postings re-credited to the later holder who "
+              f"re-posted them (#1249)", file=sys.stderr)
     print(f"  {flags_bound[0]:,} postings dated after their file's earliest capture "
           f"re-dated to it; {flags_bound[1]:,} left (no holder then) (#652)", file=sys.stderr)
     return by_congress, flags, total
