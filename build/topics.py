@@ -477,6 +477,23 @@ SUBJECTS: dict[str, tuple[str, ...]] = {
     "Haiti": (),
     "Caribbean": (),
     "Passports": (),
+    # Hand-filed only (#221; Robin, 16 November 2026): subjects the readers
+    # asked for. No match words, so no letter is tagged by them automatically.
+    "Torture": (),
+    "Antisemitism": (),
+    "Religion": (),
+    "Holocaust restitution": (),
+    "Human rights": (),
+    "Adoption": (),
+    "Welfare": (),
+    "Census": (),
+    "Federal statistics": (),
+    "Animal welfare": (),
+    "Solid waste": (),
+    "Consumer product safety": (),
+    "Sports": (),
+    "Parks and recreation": (),
+    "Public facilities": (),
 }
 
 # ------------------------------------------------------------- the agencies
