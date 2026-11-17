@@ -575,6 +575,13 @@ def known_recipient(text: str) -> tuple[str, str] | None:
     return None
 
 
+# A Quill drafting timestamp ("quill letter l8028 ... version 1 03 31 2023 @
+# 11 06 am") is when a draft was generated, not when the letter was sent: it
+# disagrees with the letterhead 54% of the time, by days either way (#182).
+# Until the letterhead is read, such a date is kept to its month.
+QUILL_STAMP = re.compile(r"\bquill\b.*\bversion\s*\d+", re.I)
+
+
 def parse(record: dict, last_name: str,
           surnames: frozenset[str] = frozenset(), since: int | None = None) -> dict:
     key = record["key"]
@@ -672,8 +679,11 @@ def parse(record: dict, last_name: str,
     captured = record.get("timestamp", "")
     first_seen = (f"{captured[:4]}-{captured[4:6]}-{captured[6:8]}"
                   if len(captured) >= 8 else None)
+    if iso and QUILL_STAMP.search(slug):
+        # Robin, 17 November 2026 (#182): a Quill draft stamp is a month at best.
+        iso, date_source = iso[:7] + "-01", "quill-month"
     if iso:
-        best, precision = iso, ("month" if date_source == "path-month" else "day")
+        best, precision = iso, ("month" if date_source in ("path-month", "quill-month") else "day")
     elif first_seen:
         best, precision = first_seen, "captured-by"
     else:

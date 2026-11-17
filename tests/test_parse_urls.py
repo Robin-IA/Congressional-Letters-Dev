@@ -441,5 +441,19 @@ class EndToEnd(unittest.TestCase):
         self.assertIsNotNone(out["subject"])
 
 
+class QuillStamp(unittest.TestCase):
+    def test_a_quill_draft_stamp_is_kept_to_its_month(self):
+        # #182: the stamp is the draft's, not the letter's (letterhead 27 February).
+        out = parse(letter("example.house.gov/uploadedfiles/quill letter l8028 letter to cfpb "
+                           "1071 rulemaking version 1 03 31 2023 @ 11 06 am.pdf",
+                           timestamp="20230505000000"), "Example")
+        self.assertEqual((out["date_best"], out["date_precision"]), ("2023-03-01", "month"))
+
+    def test_an_ordinary_file_name_date_keeps_its_day(self):
+        out = parse(letter("example.house.gov/uploadedfiles/2023-03-31 letter to cfpb.pdf",
+                           timestamp="20230505000000"), "Example")
+        self.assertEqual(out["date_precision"], "day")
+
+
 if __name__ == "__main__":
     unittest.main()
