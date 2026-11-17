@@ -4,6 +4,10 @@ The discard folder: every posting taken out of the reading, with a link to find
 it again (`wayback_url`). Robin, 17 November 2026: "move them to the discards
 folder so we can find them later."
 
+The full step is [QA-analysis-letter-determination](../qa/QA-analysis-letter-determination.md),
+part of the QA-Analysis-methodology; this README keeps the summary and the
+file's format.
+
 A posting goes here when it fails either test below. **The criteria are
 Robin's, 17 November 2026** (#496, #515). They build on "This will be the
 place to put letters that aren't letters" (16 November) and the Fried letter

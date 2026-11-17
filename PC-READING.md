@@ -4,6 +4,11 @@
 whatever model it runs. A session that starts fresh does not remember this
 setup. That includes switching models, for example to Sonnet.
 
+**The rules for every step are the QA-Analysis-methodology** (`qa/`, Robin,
+17 November 2026): letter determination, authorship, recipients, subject
+analysis, dates and titles. The steps below are how the PC applies them; where
+they differ, the `qa/` documents win.
+
 **Do the batch by the steps below, in order, and nothing else.** Sections 1
 to 9 are reference for the steps. If anything in them seems to disagree with
 the steps, follow the steps and tell Robin which line disagrees. If a letter
@@ -93,8 +98,13 @@ second visit (section 5).
 6. **Title and subjects.**
    - Title: **"On Subject — to whom, D Month YYYY"**, the subject in title
      case; the "to whom" is the office or company, never a CEO's name.
-   - Subjects: up to 8, **only labels in `SUBJECTS`** in `build/topics.py`
-     (companies from step 3 do not count toward the 8). Check every label.
+   - Subjects: **at least 4, no upper limit** (qa/QA-analysis-subject-
+     analysis.md). Topics are only labels in `SUBJECTS` in `build/topics.py`,
+     for what the letter is primarily about. Names count as subjects: every
+     organization, company, nonprofit, committee, agency or office it names,
+     and laws or bills in the vocabulary, written in `letter-topics.csv` by
+     their exact vocabulary label. People go under their organization or
+     office. Check every label.
    - If the letter's main subject is not in `SUBJECTS` → hold it (step 7).
      Never bend it onto a subject that does not fit.
 7. **Hold** (only for a missing term or subject, or a letter you cannot
@@ -253,7 +263,7 @@ last of that kind).
    - **Any other personal name** (a CEO, a staff member, a private citizen):
      never the person; file under the company or organization.
    - **Many companies or organizations named** (a letter to ten insurers):
-     each one is filed, and the 8-subject limit does not apply.
+     each one is filed; there is no limit on subjects (QA-analysis-subject-analysis).
    - **No addressee** (no address block or salutation, or only "To Whom It
      May Concern"; Robin, 16 November 2026, #498). Do not guess and do not
      hold it. In order:
@@ -330,7 +340,7 @@ Each batch is one PR, which appends rows to these files in the dev repository:
 | File | Row | Rules |
 | --- | --- | --- |
 | `vocabulary/letter-titles.csv` | `digest,title,source` | Form: **"On Subject — to whom, D Month YYYY"**, e.g. "On Funding the Sea Grant Program in 2019 — to Chairman Moran and Ranking Member Shaheen, 11 April 2018". A letter to a company is filed under the company, with no CEO's name in the "to" part. |
-| `vocabulary/letter-topics.csv` | `digest,topics,source` | `;`-separated, **only labels already in `SUBJECTS`** in `build/topics.py`. Check every label before writing it. |
+| `vocabulary/letter-topics.csv` | `digest,topics,source` | `;`-separated, **at least 4**: topics from `SUBJECTS` in `build/topics.py`, plus the organizations, committees, agencies, offices, and laws or bills the letter names, by exact vocabulary label (qa/QA-analysis-subject-analysis.md). Check every label before writing it. |
 | `vocabulary/letter-dates.csv` | `digest,date,precision,source` | Only when the letter's own date differs from the published date. The source says why, e.g. "the letterhead; was 2018-09-19 (captured-by)". |
 | `vocabulary/letter-recipients.csv` | `digest,recipient,source` | One row per letter: the reviewed term from step 2 (an office, a committee, a member's name, or a company's label). Not for a private citizen. |
 | `vocabulary/reviews.csv` | `candidate,letters,decision,…` | Only when step 2 needs a decision the vocabulary lacks: a `joint` row for several offices at once, or a `merge` row for a company not yet reviewed. |
@@ -465,8 +475,8 @@ check against the text, never the whole test.
     companies ("Mr. Bastian" → Delta Air Lines) is handled the same way.
   - **Several companies** (one letter to four airline CEOs): `letter-recipients.csv`
     takes one row per letter, so add **each company's label to the letter's
-    row in `letter-topics.csv`**, after its subjects. The 8-subject cap does
-    not apply to these: four or more companies are all kept.
+    row in `letter-topics.csv`**, after its subjects. There is no limit on
+    subjects: four or more companies are all kept.
   - **A company the vocabulary lacks:** hold the letter and open a term
     issue (step B7). The Mac adds the company's `reviews.csv` row and files
     the letter.
