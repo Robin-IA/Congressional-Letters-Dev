@@ -168,7 +168,8 @@ Name the digest, the posting member and file, and what was read.
 Not after every batch. Publish after every 5 batches or so, or when Robin asks,
 with the command in the handoff (build_congress 106-119, export_csv,
 build_vocabulary, build_hub, progress, publish_explorers). Then run
-`export_text.py` and `build/qa_status.py` (the per-Congress QA status CSVs),
+`export_text.py` and `build/qa_status.py` (the per-Congress QA status CSVs).
+Commit the rebuilt `vocabulary/terms.csv` with the next batch PR,
 and push `progress.csv` and `qa-status/` to `letters-from-congress-OCR` by
 branch and PR, so the PC's pick list and the QA status stay current.
 
@@ -186,8 +187,10 @@ branch and PR, so the PC's pick list and the QA status stay current.
   another part's letters over their own digests. The writer now refuses a
   title whose words are mostly absent from the letter's text, and the prompt
   says to read only its own file. If many are refused, re-run that part.
-- The worktree's `vocabulary/terms.csv` is stale; the writer reads the
-  pipeline's instead. Do not commit a rebuilt `terms.csv`.
+- The writer reads the pipeline's built `vocabulary/terms.csv`. **Commit the
+  rebuilt `terms.csv` with the first batch after each publish**: the subjects
+  test checks name subjects against the committed copy, and a stale one refuses
+  new committees and agencies (batch 20; the PC's readers check it too).
 
 ## Where it stands
 
