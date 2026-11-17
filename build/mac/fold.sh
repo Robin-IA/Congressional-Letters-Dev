@@ -27,7 +27,10 @@ for rec in bc.all_letters():
     d = rec.get("digest")
     if d in hand:
         a = ah.place(idx, rec["url"], hand[d][0], ah._iso(rec.get("first_seen") or ""))
-        bad += a.attribution == "none" or a.attribution in ah.UNPUBLISHED
+        # A caucus copy is published under its chair when the caucus is named
+        # (address_holders.CAUCUSES); only an unnamed caucus host has no holder.
+        bad += a.attribution == "none" or (a.attribution in ah.UNPUBLISHED
+                                           and not ah.caucus_name(rec["url"]))
 print(f"{len(hand)} dates, {bad} without a holder")
 EOF
 )
