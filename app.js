@@ -685,9 +685,15 @@ async function viewMember(id) {
           el('span', { class: 'count tab' },
             `${num(dated)} of ${num(rows.length)} have an exact date`)),
         el('p', { class: 'note' },
-          'These are the letters the Wayback Machine has archived from '
-          + `${siteName(m)} — not necessarily everything this office published.`),
-        asList ? table(rows, { member: m }) : wall(rows)),
+          dir === 'received'
+            ? `Letters written to ${m.name}: those posted on ${siteName(m)}, and those `
+              + 'addressed to them that other members posted ("As recipient").'
+            : 'These are the letters the Wayback Machine has archived from '
+              + `${siteName(m)} — not necessarily everything this office published.`),
+        // A received copy may have been posted by another member, whom the row
+        // does not name; the list leaves its member column empty rather than
+        // naming this one.
+        asList ? table(rows, { member: dir === 'received' ? null : m }) : wall(rows)),
       el('div', {},
         el('div', { class: 'panel' },
           el('h3', {}, 'Who they wrote to'),
