@@ -196,6 +196,22 @@ def recase(word: str) -> str:
 PRECISION_RANK = {"letterhead": 0, "day": 1, "month": 2, "scanned": 3, "captured-by": 4}
 
 
+def pick_recipient(hand: str | None, canonical: str | None, salutation: str | None,
+                   poster: str) -> str | None:
+    """The letter's recipient: a reader's from the address block (#357), then
+    the file name's, then the salutation's. A reader's "(no recipient)"
+    (#502) is final: an open letter shows none, and nothing is guessed."""
+    if hand == letter_text.NO_RECIPIENT:
+        return None
+    recipient = hand or canonical or None
+    if not recipient and salutation:
+        # "Dear Congressman Smith" on Chris Smith's own site is a letter
+        # to Chris Smith: the posting member settles a surname that a
+        # name alone cannot (#349). Otherwise the salutation as written.
+        recipient = poster_if_named(salutation, poster) or salutation
+    return recipient
+
+
 def _after(iso: str, timestamp: str | None) -> bool:
     """True when a date falls after the capture that holds it.
 
@@ -568,13 +584,8 @@ def main() -> None:
         # The file name's recipient, else the one the salutation names (#97).
         # A recipient read from the letter's address block wins (#357), then
         # the file name's, then the salutation's.
-        recipient = hand_recipients.get(digest) or record.get("recipient_canonical") or None
-        if not recipient and salutations.get(digest):
-            # "Dear Congressman Smith" on Chris Smith's own site is a letter
-            # to Chris Smith: the posting member settles a surname that a
-            # name alone cannot (#349). Otherwise the salutation as written.
-            recipient = poster_if_named(salutations[digest], members[bioguide]["name"]) \
-                or salutations[digest]
+        recipient = pick_recipient(hand_recipients.get(digest), record.get("recipient_canonical"),
+                                   salutations.get(digest), members[bioguide]["name"])
         # A title written by hand from the letter's text wins over the file
         # name's (vocabulary/letter-titles.csv, letter_text.py).
         # Written as a title, "On ..." (letter_text.title_form; Robin, 16 November 2026).

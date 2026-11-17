@@ -206,6 +206,14 @@ def topics_by_hand() -> dict[str, list[str]]:
 # --------------------------------------------------------------------- dates
 
 
+# A reader's decision that a letter has no recipient: an open letter, a Dear
+# Colleague handled by chamber elsewhere, a letter to a private person
+# (Robin, 17 November 2026, #502). Written in letter-recipients.csv in place of
+# a recipient, so the build neither shows one nor guesses one from the file
+# name or the salutation, and progress counts the letter as filed.
+NO_RECIPIENT = "(no recipient)"
+
+
 def recipients_by_hand() -> dict[str, str]:
     """digest -> the recipient a reader found in the letter's address block (#357).
 

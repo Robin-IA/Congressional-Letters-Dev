@@ -39,5 +39,19 @@ class LetterRecipients(unittest.TestCase):
                 self.assertIn(t.strip(), topics.SUBJECTS, r["recipient"])
 
 
+class NoRecipient(unittest.TestCase):
+    """#502: a reader's "(no recipient)" shows none and guesses none."""
+
+    def test_open_letter_has_no_recipient(self):
+        import build_site
+        self.assertIsNone(build_site.pick_recipient(letter_text.NO_RECIPIENT, "Our Fellow Americans",
+                                                    "Dear Fellow Americans", "Rand Paul"))
+
+    def test_otherwise_the_usual_order(self):
+        import build_site
+        self.assertEqual(build_site.pick_recipient("Equifax", "Mr. Smith", None, "X"), "Equifax")
+        self.assertEqual(build_site.pick_recipient(None, "Department of Energy", None, "X"), "Department of Energy")
+
+
 if __name__ == "__main__":
     unittest.main()
