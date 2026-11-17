@@ -194,7 +194,10 @@ def write(batch: Path, rows_path: Path) -> None:
                  if w.lower() not in TITLE_STOP][:6]
         text = batch_d[d].get("text", "").lower()
         # Stems, not whole words: "requesting" matches "request" (batch 3).
-        if st == "file" and len(words) >= 3 and sum(w[:6] in text for w in words) / len(words) < 0.34:
+        # "title_checked": the Mac read the full OCR and the title is right;
+        # its words were in the middle the readers do not see (batch 5).
+        if (st == "file" and not o.get("title_checked") and len(words) >= 3
+                and sum(w[:6] in text for w in words) / len(words) < 0.34):
             unresolved.append((d, f"title does not match the letter's text: {o.get('title', '')[:80]!r}")); continue
         if st == "partial":
             partial.append(d); continue
