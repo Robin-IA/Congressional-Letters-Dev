@@ -521,6 +521,10 @@ SUBJECTS: dict[str, tuple[str, ...]] = {
     "Intellectual property": (),
     "Coast Guard": (),
     "Food and beverages": (),
+    # Hand-filed only (#221; Robin, 16 November 2026): subjects the readers
+    # asked for. No match words, so no letter is tagged by them automatically.
+    "Yemen": (),
+    "Foreign investment": (),
 }
 
 # ------------------------------------------------------------- the agencies
