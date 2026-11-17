@@ -111,11 +111,18 @@ second visit (section 5).
    place): one row in `letters-vocabulary-needs/letters.csv` with the title,
    date, subjects, the term or subject needed, and the reason. Write **none**
    of the other rows for it. Then:
-   - **Open one issue per missing term**, not a comment on #221 or #357:
-     title "New vocabulary term needed: <term>", label `vocabulary`; say
-     where it would file ("Executive branch › Department of Agriculture") and
-     list every held letter's digest, title and date. If an issue for that
-     term is already open, add the letters to it as a comment instead.
+   - **Missing names** (organizations, companies, nonprofits, committees,
+     agencies, offices, laws and bills, as recipients or subjects): **one
+     issue per batch**, titled "Reading batch N: names needed", label
+     `vocabulary` (Robin, 17 November 2026). It has one row per name: the
+     name, its kind (organization or office), where it would file
+     ("Executive branch › Department of Agriculture", "Companies"), and every
+     held letter's digest, title and date. If a name is already requested on
+     an open issue, add the letters there instead.
+   - **A missing topic subject** (something the letter is about that the
+     subject list lacks): one issue per subject, titled "New subject needed:
+     <subject>", label `vocabulary`, with where it would sit and the held
+     letters.
    - **Do not add the term yourself.** The Mac adds it, places it, files the
      held letters and closes the issue.
 8. **Write the rows** for a letter that is not held, appended at the end of
