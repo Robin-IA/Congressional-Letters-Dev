@@ -82,7 +82,7 @@ its Wayback link, written by the Mac.
 cover. Never hold it for a date or a missing addressee: those have rules.
 
 **File an issue** for anything that cannot be resolved: a missing term (PC),
-unreadable text needing OCR, a bundle, a rule that does not exist, or a
+unreadable text needing OCR, a rule that does not exist, or a
 posting credited to the wrong member. Name the digest, the posting member and
 file, and what was read.
 
@@ -123,4 +123,5 @@ Issue (Y/N). A discarded posting is Filed with Discarded = Y.
 - **Unprocessed**: not yet read.
 - **Needs Review**: read, but short of a requirement (fewer than 4 subjects or
   fewer than 2 topics,
-  #1266), or set aside as partial, bundled or unreadable (#252, #1226).
+  #1266), or set aside as partial or unreadable (#252). A bundle is filed
+  as one record (QA-analysis-text step 4).
