@@ -1,8 +1,9 @@
 # QA-analysis-subject-analysis (step 4, REQUIRED)
 
 Part of [QA-Analysis-methodology](QA-Analysis-methodology.md). Robin,
-17 November 2026: **at least 4 subjects per letter; no upper limit**, because
-names count as subjects. The old limit of 8 is removed.
+17 November 2026: **at least 4 subjects per letter, of which at least 2 are
+topics** (subjects from the subject list, in addition to names); **no upper
+limit**, because names count as subjects. The old limit of 8 is removed.
 
 ## What counts as a subject
 
@@ -29,9 +30,10 @@ office. Authors do not.
    [QA-analysis-authorship](QA-analysis-authorship.md) and
    [QA-analysis-recipients](QA-analysis-recipients.md) for which names are
    authors and recipients.
-3. **Count.** Fewer than 4: read again for names and matters you passed over.
-   A letter that truly has fewer than 4 (a one-line acknowledgment) says so in
-   its note and is marked **Needs Review**.
+3. **Count.** At least 4 in all, and at least 2 of them topics. Short of
+   either: read again for the matters and names you passed over. A letter
+   that truly falls short (a one-line acknowledgment) says so in its note and
+   is marked **Needs Review**.
 4. **Check every label** against the vocabulary (`terms.csv` preferred rows,
    `reviews.csv` accepted rows, the subject list).
 5. **Missing term or subject**:
@@ -47,5 +49,5 @@ office. Authors do not.
 
 ## Re-check of letters already filed
 
-Most letters filed before 17 November 2026 have fewer than 4 subjects
-(17,990 of 19,635). They are re-read under these rules on **#1266**.
+Most letters filed before 17 November 2026 fall short of these rules
+(#1266 has the counts). They are re-read under these rules on **#1266**.

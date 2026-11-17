@@ -110,7 +110,8 @@ letters.
    Equifax"). Example:
    "On Funding the Sea Grant Program — to Chairman Moran and Ranking Member
    Shaheen, 11 April 2018". No date known: end at the recipient.
-6. **Subjects: at least 4, no upper limit** (Robin, 17 November 2026;
+6. **Subjects: at least 4, of which at least 2 are `topics`; no upper limit**
+   (Robin, 17 November 2026;
    `qa/QA-analysis-subject-analysis.md`). Two kinds:
    - `topics`: what the letter is **primarily about**, only exact lines of
      `subjects.txt`. Keep to its main matters. If nothing fits, use the
@@ -123,7 +124,8 @@ letters.
      office. A name not in the vocabulary goes in `new_term` (a list is
      allowed) and in `names`.
    - The recipient counts toward the 4 when it is an organization or office.
-     Fewer than 4 after a second look: say why in `note`.
+     Names never count toward the 2 topics.
+     Short of 4, or of 2 topics, after a second look: say why in `note`.
 
 Be accurate rather than fast. Do not fetch anything from the web. Write the
 output file, then reply with only: the count of each status and any letters

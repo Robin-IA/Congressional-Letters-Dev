@@ -13,7 +13,8 @@ with the columns Robin set on 17 November 2026:
 Filed? is one of:
   Filed         read and recorded (a discarded posting is Filed with Discarded=Y)
   Hold          waiting on a vocabulary term (letters-vocabulary-needs)
-  Needs Review  read but short of a requirement (fewer than 4 subjects), or set
+  Needs Review  read but short of a requirement (fewer than 4 subjects or 2
+                topics), or set
                 aside as partial, bundled or unreadable (build/mac/skip.txt)
   Unprocessed   not yet read
 Issue is Y when an issue is recorded against the letter: a hold's issue, a
@@ -60,6 +61,10 @@ def main() -> None:
     held = {r["digest"]: r for r in rows_of(ROOT / "letters-vocabulary-needs/letters.csv")}
     skip = set((ROOT / "build/mac/skip.txt").read_text().split()) if (ROOT / "build/mac/skip.txt").exists() else set()
     ocr = {r["digest"]: r["ocr"] == "True" for r in rows_of(OCR_REPO / "progress.csv")}
+    import sys
+    sys.path.insert(0, str(ROOT / "build"))
+    import topics as topics_mod  # noqa: E402
+    subject_list = set(topics_mod.SUBJECTS)
 
     args.out.mkdir(parents=True, exist_ok=True)
     totals = {}
@@ -84,7 +89,8 @@ def main() -> None:
                     status = "Needs Review"
                 elif digest in reviewed:
                     n_subj = len(set(topics.get(digest, [])) | ({rec} if rec and rec != "(no recipient)" else set()))
-                    status = "Filed" if n_subj >= 4 else "Needs Review"
+                    n_top = sum(1 for t in topics.get(digest, []) if t in subject_list)
+                    status = "Filed" if n_subj >= 4 and n_top >= 2 else "Needs Review"
                 else:
                     status = "Unprocessed"
                 note = (reviewed.get(digest) or {}).get("note", "")
