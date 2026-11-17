@@ -40,10 +40,10 @@ office. Authors do not.
    - **Mac**: add it. A topic goes in `build/topics.py` with its place in the
      hierarchy; a name goes in `reviews.csv` (merge, kind, broader) and
      `hierarchy.csv`. File the letter in the same PR.
-   - **PC**: hold the letter (`letters-vocabulary-needs/letters.csv`). Missing
-     names go in one issue per batch ("Reading batch N: names needed"); a
-     missing topic subject gets its own issue ("New subject needed:
-     <subject>"). Label `vocabulary`.
+   - **PC**: hold the letter (`letters-vocabulary-needs/letters.csv`) and list
+     every missing name and subject on the batch's one issue, "Reading batch
+     N: vocabulary needed" (label `vocabulary`), names and subjects in their
+     own sections.
    - Subjects asked for repeatedly are proposed together (Puerto Rico, North
      Korea, NATO and others, #1250).
 
