@@ -208,7 +208,9 @@ def write(batch: Path, rows_path: Path) -> None:
                 # Test 2 needs more than the letter itself: it may be a
                 # supplement to one of the posting member's own letters (the
                 # USGS letter Cantwell cited; #1207). Search their letters' OCR.
-                cites = citing_letters(d, batch_d[d], o.get("title") or "")
+                # "supplement_checked": the Mac has read the search's
+                # candidates by hand and none cites this letter (batch 4).
+                cites = [] if o.get("supplement_checked") else citing_letters(d, batch_d[d], o.get("title") or "")
                 if cites:
                     notletter.pop()
                     unresolved.append((d, f"no relation by itself, but the posting members' letters may cite it: {cites[:5]}"))
