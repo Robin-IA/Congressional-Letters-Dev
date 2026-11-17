@@ -39,11 +39,10 @@ letter needs a term that does not exist:
   node, and a `hierarchy.csv` row (building a state chain if needed), then
   files the letter in the same PR (Robin, 17 November 2026).
 - **The PC holds the letter**: a row in `letters-vocabulary-needs/letters.csv`.
-  Missing **names** go in **one issue per batch**, "Reading batch N: names
-  needed" (Robin, 17 November 2026); a missing **topic subject** gets its own
-  issue, "New subject needed: <subject>". Both are labelled `vocabulary`. The
-  Mac adds the terms in one vocabulary PR, files the held letters and closes
-  the issues.
+  Missing **names and subjects** go in **one issue per batch**, "Reading batch
+  N: vocabulary needed", label `vocabulary`, in two sections (Robin,
+  17 November 2026). The Mac adds them in one vocabulary PR, files the held
+  letters and closes the issue.
 
 A letter is never filed under a nearby term to avoid a hold.
 

@@ -111,18 +111,21 @@ second visit (section 5).
    place): one row in `letters-vocabulary-needs/letters.csv` with the title,
    date, subjects, the term or subject needed, and the reason. Write **none**
    of the other rows for it. Then:
-   - **Missing names** (organizations, companies, nonprofits, committees,
-     agencies, offices, laws and bills, as recipients or subjects): **one
-     issue per batch**, titled "Reading batch N: names needed", label
-     `vocabulary` (Robin, 17 November 2026). It has one row per name: the
-     name, its kind (organization or office), where it would file
-     ("Executive branch › Department of Agriculture", "Companies"), and every
-     held letter's digest, title and date. If a name is already requested on
-     an open issue, add the letters there instead.
-   - **A missing topic subject** (something the letter is about that the
-     subject list lacks): one issue per subject, titled "New subject needed:
-     <subject>", label `vocabulary`, with where it would sit and the held
-     letters.
+   - **One vocabulary issue per batch**, titled "Reading batch N:
+     vocabulary needed", label `vocabulary` (Robin, 17 November 2026), with
+     two sections:
+     - **Names** (organizations, companies, nonprofits, committees, agencies,
+       offices, laws and bills, as recipients or subjects): one row per name,
+       with its kind (organization or office), where it would file
+       ("Executive branch › Department of Agriculture", "Companies"), and
+       every held letter's digest, title and date.
+     - **Subjects** (topics the subject list lacks): one row per subject, with
+       where it would sit (a topic group, such as "Health" or "Security and
+       foreign affairs"), one line from a letter showing why, and the held
+       letters.
+
+     If a name or subject is already requested on an open issue, add the
+     letters there instead.
    - **Do not add the term yourself.** The Mac adds it, places it, files the
      held letters and closes the issue.
 8. **Write the rows** for a letter that is not held, appended at the end of
