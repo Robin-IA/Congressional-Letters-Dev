@@ -98,6 +98,10 @@ def pick(n: int, out: Path, skip_file: str | None) -> None:
 
 # ------------------------------------------------------------------ write
 
+TITLE_STOP = {"letter", "senator", "secretary", "administrator", "chairman", "representative",
+              "members", "department", "ranking", "member", "committee", "leader", "january",
+              "february", "august", "september", "october", "november", "december"}
+
 STATE_NODE = re.compile(r"^(.+?) (state officials|state government agencies|local government and agencies|organizations)$")
 
 
@@ -144,7 +148,7 @@ def write(batch: Path, rows_path: Path) -> None:
         return label == "(no recipient)" or known_terms.get(key(label)) == "preferred" or key(label) in accepted
 
     batch_d = {o["digest"]: o for o in json.load(open(batch))}
-    T, P, R, D, V, NEWR, NEWH, unresolved, partial, notletter = ([] for _ in range(10))
+    T, P, R, D, V, NEWR, NEWH, unresolved, partial, notletter, DISC = ([] for _ in range(11))
     for line in open(rows_path, encoding="utf-8"):
         if not line.strip():
             continue
@@ -153,10 +157,30 @@ def write(batch: Path, rows_path: Path) -> None:
         if d not in batch_d:
             unresolved.append((d, "digest not in this batch")); continue
         st = o.get("status", "file")
+        # Guard (batch 3): a reader once wrote one part's digests over another
+        # part's letters. A title whose words are mostly absent from the
+        # letter's own text is refused. Garbled OCR can trip it; that letter
+        # is then left out and listed, never filed on a wrong reading.
+        words = [w.lower() for w in re.findall(r"[A-Za-z]{6,}", o.get("title") or "")
+                 if w.lower() not in TITLE_STOP][:6]
+        text = batch_d[d].get("text", "").lower()
+        if st == "file" and len(words) >= 3 and sum(w in text for w in words) / len(words) < 0.34:
+            unresolved.append((d, f"title does not match the letter's text: {o.get('title', '')[:80]!r}")); continue
         if st == "partial":
             partial.append(d); continue
         if st == "notletter":
-            notletter.append((d, o.get("title", ""), o.get("note", ""))); continue
+            # The Mac decides discards by letters-discarded/README.md (Robin,
+            # 17 November 2026), so a not-letter is recorded in this batch.
+            notletter.append((d, o.get("title", ""), o.get("note", "")))
+            note = o.get("note") or ""
+            test = "test 2, no relation to Congress" if note.lower().startswith("no relation") else "test 1, not a letter"
+            post = (batch_d[d]["postings"] or [{}])[0]
+            DISC.append({"digest": d, "title": o.get("title", ""), "reason": f"{test}: {note}"[:400],
+                         "issue": "", "decided": f"the Mac, by the discard criteria, {TODAY}",
+                         "posted_by": post.get("member", ""),
+                         "wayback_url": (f"https://web.archive.org/web/{post['capture']}id_/{post['file']}"
+                                         if post.get("capture") else "")})
+            continue
         if st == "unsure":
             unresolved.append((d, o.get("note") or "reader unsure")); continue
         rec = (o.get("recipient") or "").strip()
@@ -253,6 +277,7 @@ def write(batch: Path, rows_path: Path) -> None:
     add("vocabulary/letter-recipients.csv", R)
     add("vocabulary/letter-dates.csv", D)
     add("vocabulary/letters-reviewed.csv", V)
+    add("letters-discarded/letters.csv", DISC)
     report = {"filed": len(T), "dates": len(D), "new_terms": [r["candidate"] for r in NEWR if r["decision"] == "merge"],
               "joint": len([r for r in NEWR if r["decision"] == "joint"]),
               "partial": partial, "notletter": notletter, "unresolved": unresolved}
