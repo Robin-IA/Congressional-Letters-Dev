@@ -130,10 +130,19 @@ last of that kind).
 5. **Settle the date** by the dating order (#172). **Always take the date
    from the letter's own text (the OCR)**: the letterhead or dateline first.
    Refuse a date that leaves the posting with no holder (#239).
-   **If the text gives no date**, and the only dates are the PDF metadata,
-   a Quill file-name date (#182) or the Wayback harvest date, do not settle
-   for them: **file an issue** listing those letters, with the dates
-   available and why each is weak. Link it from #191, and name it in the PR.
+   **If the text gives no date** (Robin, 17 November 2026), in this order:
+   1. **OCR first.** A garbled or missing dateline is often the OCR's fault:
+      read the scan's Apple Vision text (or re-OCR it) before giving up.
+      Read a dateline whose remaining digits are clear ("March 3I, 2023").
+   2. **The content**, when it pins the year: a dated event, an official in
+      office, a fiscal year, "the 116th Congress". Name the evidence.
+   3. **The file name**, when it carries a date ("2019-03-12", "03.12.19",
+      "March 12 2019"), at the precision it gives, and never later than the
+      posting's first capture. Write `source` as "file name: <name>".
+   4. The funding-request rule (a fiscal year N gives year N−1, below).
+   5. Otherwise **file the letter anyway**: no `letter-dates.csv` row, so
+      the weak published date stands, and the `letters-reviewed.csv` note
+      says it is approximate (#488). Do not hold it.
 6. **Choose the subjects** from the recipient where it implies them (a letter
    to an airline is about Airlines; `recipient-topics.csv`) and from what the
    letter discusses. Only labels in `SUBJECTS`, plus reviewed organizations.
