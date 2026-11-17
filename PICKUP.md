@@ -63,6 +63,10 @@ venv predates the pins: reinstall it when the renderer is not running.
 
 ## 3. Copy the data git does not carry
 
+`data/pdf-dates.jsonl`, `data/thumb-failures.jsonl`, `data/wrapper-targets.jsonl`
+and `data/wrapper-resolved.jsonl` are **committed** and travel with the clone
+(Robin, 17 November 2026, #1): commit them again after a run that adds to them.
+
 The letters, text and thumbnails are not all tracked. Copy these across
 whole, from the machine that has them:
 
@@ -71,8 +75,7 @@ whole, from the machine that has them:
 | `harvest/letters/letters-raw-*.jsonl`, `letters-parsed-*.jsonl` | Each harvest's letters, raw from CDX and parsed. The parsed files are rebuilt from the raw ones with `parse_urls.py`, which needs no network. |
 | `data/letters-parsed.jsonl` | The original 2000–2026 corpus, parsed. **Its raw file, `data/letters-raw.jsonl`, is not on the Mac** (issue #2), so it cannot be re-parsed there. |
 | `data/letters-119-departed-parsed.jsonl` | The 119th's departed members, parsed. |
-| `data/pdf-dates.jsonl`, `data/letter-text.jsonl`, `data/letter-ocr.jsonl` | Dates, text and OCR read from the PDFs. Expensive to recreate: each meant a Wayback download. |
-| `data/thumb-failures.jsonl` | Renders that failed; without it the renderer retries the slow ones. |
+| `data/letter-text.jsonl`, `data/letter-ocr.jsonl` | Text and OCR read from the PDFs. Expensive to recreate: each meant a Wayback download. (The text also travels in the letters-from-congress-OCR repository.) |
 | `thumbs/` | Every rendered preview. Many are untracked. |
 | `data/cdx-cache/`, `harvest/*/cache/` | CDX answers, so a re-export runs offline. |
 
