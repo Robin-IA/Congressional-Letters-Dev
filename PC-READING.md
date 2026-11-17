@@ -421,7 +421,7 @@ check against the text, never the whole test.
      **under the official's office** in the matching area of the browse
      (Executive branch: the Executive Office of the President or a federal
      agency; Legislative branch; Judicial branch; or, for a governor or a state
-     or local office, Topics › State and local government › the state), and **under its
+     or local office, State and local government › the state), and **under its
      subjects**. The official gets **no person term of their own** (Robin,
      15 November 2026): the name is recorded on the office as an
      `officeholder` decision in `reviews.csv` ("Hagel" → Department of
