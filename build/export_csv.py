@@ -64,7 +64,7 @@ FIELDS = ["congress", "letter_date", "date_basis", "member_name", "bioguide_id",
           "chamber", "state", "district", "party", "party_history", "seat_history",
           "congresses_served", "recipient", "topic_1", "topic_2", "topic_3",
           "cosigners", "subject", "pdf_url", "original_url", "wayback_timestamp",
-          "digest"]
+          "digest", "direction"]
 
 
 def ordinal(n: int) -> str:
@@ -167,6 +167,8 @@ def main() -> int:
                 "congresses_served": "; ".join(str(c) for c in sorted(parties[m["id"]])),
             }
             for r in json.loads(path.read_text(encoding="utf-8")):
+                if r[11:12] == ["received"]:  # a copy on a recipient's page (#352)
+                    continue
                 topics = split_list(r[col["topics"]])[:3]
                 key, ts, prec = r[col["key"]], r[col["timestamp"]], r[col["precision"]]
                 link = (r[col["url"]] if "url" in col else "") or ""   # #107: the observed address
@@ -184,6 +186,9 @@ def main() -> int:
                     "original_url": encoded((link or key) if "://" in (link or key) else f"https://{link or key}"),
                     "wayback_timestamp": ts,
                     "digest": r[col["digest"]] or "",
+                    # from_congress, to_congress or neither (#175)
+                    "direction": {"to": "to_congress", "neither": "neither"}.get(
+                        (r[col["direction"]] if "direction" in col else "") or "", "from_congress"),
                 })
         rows.sort(key=lambda r: (r["letter_date"], r["member_name"], r["original_url"]))
         out = d / "data" / f"letters-from-congress-{ordinal(n)}.csv"

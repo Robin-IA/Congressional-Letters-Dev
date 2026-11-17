@@ -61,9 +61,18 @@ wrote the letter, and file it under its congressional authors.
 
    If none fits, title the letter with its real author, say why in the note,
    and file an issue (label `harvest` for a posting, `dates` for a date).
-6. **Names in the record.** Authors are members' vocabulary terms (by
+6. **Record the direction** (Robin, 17 November 2026, #175). *From
+   Congress*: a member or congressional group signed it (the default; no row).
+   *To Congress*: written to a member, committee, caucus or chamber by someone
+   else. *Neither*: no member at either end, kept as a supplement. To and
+   neither are rows in `vocabulary/letter-direction.csv`. Each member's page
+   lists **letters written**, **letters received** (to Congress posted on
+   their site, and letters addressed to them found elsewhere, "As recipient",
+   #352) and **other documents posted**; only letters written are counted as
+   the member's.
+7. **Names in the record.** Authors are members' vocabulary terms (by
    Bioguide ID). A signer who is not a member (a staff director, a CEO) is not
    an author term; their organization is a subject (step 4).
-7. **Consult** [QA-analysis-subject-analysis](QA-analysis-subject-analysis.md)
+8. **Consult** [QA-analysis-subject-analysis](QA-analysis-subject-analysis.md)
    for organization names, and [DEDUPLICATION.md](../DEDUPLICATION.md) when the
    same letter is on several members' sites (a shared, multi-author letter).

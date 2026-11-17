@@ -44,6 +44,7 @@ TITLES = ROOT / "vocabulary" / "letter-titles.csv"
 DATES = ROOT / "vocabulary" / "letter-dates.csv"
 TOPICS_BY_HAND = ROOT / "vocabulary" / "letter-topics.csv"
 RECIPIENTS_BY_HAND = ROOT / "vocabulary" / "letter-recipients.csv"
+DIRECTIONS = ROOT / "vocabulary" / "letter-direction.csv"
 RELATED = ROOT / "vocabulary" / "letter-related.csv"
 RULES = "2026-11-16a"  # change when the rules change, so the cache is redone
 
@@ -111,6 +112,38 @@ def by_hand() -> dict[str, str]:
         return {}
     with TITLES.open(encoding="utf-8") as fh:
         return {r["digest"]: r["title"] for r in csv.DictReader(fh) if r.get("title")}
+
+
+def directions() -> dict[str, str]:
+    """digest -> "to" (written to Congress) or "neither" (no member at either
+    end: an agency's or company's letter a member posted). A letter with no row
+    is from Congress, the default (Robin, 17 November 2026, #175).
+    """
+    if not DIRECTIONS.exists():
+        return {}
+    with DIRECTIONS.open(encoding="utf-8", newline="") as fh:
+        return {r["digest"]: r["direction"] for r in csv.DictReader(fh)
+                if r.get("digest") and r.get("direction") in ("to", "neither")}
+
+
+def member_recipients() -> dict[str, list[str]]:
+    """A recipient label that names members -> their Bioguide IDs: a member's
+    own term (terms.csv kind member) or a ``joint`` row of IDs in reviews.csv.
+    A letter to them is listed under each one "As recipient" (#352)."""
+    out: dict[str, list[str]] = {}
+    terms = ROOT / "vocabulary" / "terms.csv"
+    if terms.exists():
+        for r in csv.DictReader(terms.open(encoding="utf-8", newline="")):
+            if r.get("kind") == "member" and (r.get("term_id") or "").startswith("M-"):
+                out[r["label"]] = [r["term_id"][2:]]
+    reviews = ROOT / "vocabulary" / "reviews.csv"
+    if reviews.exists():
+        for r in csv.DictReader(reviews.open(encoding="utf-8", newline="")):
+            ids = [t for t in (r.get("target") or "").split(";") if t]
+            if (r.get("decision") == "joint" and r.get("status") == "accepted" and ids
+                    and all(re.fullmatch(r"[A-Z]\d{6}", t) for t in ids)):
+                out[r["candidate"]] = ids
+    return out
 
 
 def related() -> list[tuple[str, str, str]]:

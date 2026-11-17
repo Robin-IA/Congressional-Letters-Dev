@@ -18,6 +18,7 @@ to the path you are given. Fields:
 {"digest": "<full digest>",
  "status": "file" | "partial" | "notletter" | "unsure",
  "title": "On Subject in Title Case — to whom, D Month YYYY",
+ "direction": "from" | "to" | "neither",
  "recipient": "<exact vocabulary label>",
  "recipient_source": "short: where you read it (address block / salutation / ...)",
  "joint": null or ["<bioguide id or exact label>", ...],
@@ -113,6 +114,11 @@ letters.
      `recipient` to the same label. If you cannot place it, `status: "unsure"`.
 3. **Author.** Check the posting member signed it or is among the signers. If
    not, say who did in `note` and title it with the sender.
+   **Direction** (#175): `"from"` when a member or congressional group signed
+   it; `"to"` when it is written to a member, committee, caucus or chamber by
+   someone else (an agency reply, an organization, a constituent); `"neither"`
+   when no member is at either end (an agency's or company's letter a member
+   posted, kept as a supplement).
 4. **Date** — from the letter's own text: letterhead or dateline. Read through
    OCR damage ("March 3I, 2009" is 2009-03-31). If none:
    content that pins it (a dated event, "the 111th Congress", a fiscal year;

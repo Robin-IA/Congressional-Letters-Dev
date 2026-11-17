@@ -114,6 +114,8 @@ def explorer_counts() -> tuple[Counter, Counter, Counter]:
             if not path.exists():
                 continue
             for r in json.loads(path.read_text(encoding="utf-8")):
+                if r[11:12] == ["received"]:  # a copy on a recipient's page (#352)
+                    continue
                 per_member[m["id"]] += 1
                 if r[col["recipient"]]:
                     per_recipient[r[col["recipient"]]] += 1

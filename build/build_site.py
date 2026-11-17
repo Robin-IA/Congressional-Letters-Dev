@@ -323,7 +323,11 @@ def poster_if_named(salutation: str, poster: str) -> str:
     return ""
 
 COLUMNS = ["key", "timestamp", "kind", "date", "precision", "recipient",
-           "subject", "topics", "cosigners", "digest", "url"]
+           "subject", "topics", "cosigners", "digest", "url",
+           # "" from Congress; "to" written to Congress; "neither" no member at
+           # either end; "received" a copy on the page of a member the letter
+           # was addressed to (#175, #352)
+           "direction"]
 
 
 # How each relation in vocabulary/letter-related.csv reads on the two letters
@@ -601,6 +605,8 @@ def main() -> None:
     letterheads = letter_text.letterhead_by_digest()
     salutations = letter_text.salutation_by_digest()
     hand_recipients = letter_text.recipients_by_hand()
+    directions = letter_text.directions()
+    to_members = letter_text.member_recipients()
     promoted = from_letterhead = needs_review = 0
     review_digests: set[str] = set()
 
@@ -735,6 +741,7 @@ def main() -> None:
             ",".join(record.get("cosigners") or []),
             digest,
             link_url(record),
+            directions.get(digest or "", ""),
         ])
 
         recipient = shown
@@ -789,6 +796,28 @@ def main() -> None:
     before = {path.name for path in out_member.glob("*.json")}
     written: set[str] = set()
 
+    # A letter addressed to a member is also listed on that member's page,
+    # "As recipient" (Robin, 15 and 17 November 2026, #352, #175): a copy of
+    # the row marked "received". Not counted as theirs, and not added to the
+    # search index twice.
+    D, G = COLUMNS.index("direction"), COLUMNS.index("digest")
+    held = {b: {r[G] for r in rows_} for b, rows_ in by_member.items()}
+    received = 0
+    for poster, rows_ in list(by_member.items()):
+        for row in list(rows_):
+            if row[D] == "received" or not row[G]:
+                continue
+            label = hand_recipients.get(row[G]) or row[COLUMNS.index("recipient")] or ""
+            for mid in to_members.get(label, []):
+                if mid == poster or mid not in members or row[G] in held.setdefault(mid, set()):
+                    continue
+                copy = list(row)
+                copy[D] = "received"
+                by_member[mid].append(copy)
+                held[mid].add(row[G])
+                received += 1
+    print(f"  {received:,} letters also listed under a member they were addressed to (#352)")
+
     index_members = []
     for bioguide, member in members.items():
         letters = by_member.get(bioguide, [])
@@ -800,6 +829,8 @@ def main() -> None:
             if m_idx == len(search_members):
                 search_members.append(bioguide)
             for row_idx, row in enumerate(letters):
+                if row[D] == "received":
+                    continue
                 subject = row[COLUMNS.index("subject")]
                 recipient = row[COLUMNS.index("recipient")]
                 if not subject and not recipient:
@@ -846,7 +877,11 @@ def main() -> None:
             # (build_congress.py's wayback_record), shown for a member with no
             # letters so the page says the site was looked at.
             **({"wayback": member["wayback"]} if member.get("wayback") else {}),
-            "letters": len(letters),
+            # Letters written; letters to Congress posted here, and copies of
+            # letters addressed to this member, are counted apart (#175).
+            "letters": sum(1 for r in letters if not r[D]),
+            **({"received": n} if (n := sum(1 for r in letters if r[D] in ("to", "received"))) else {}),
+            **({"posted": n} if (n := sum(1 for r in letters if r[D] == "neither")) else {}),
             "span": ([min(member_years), max(member_years)]
                      if member_years else None),
             "top": [name for name, _ in

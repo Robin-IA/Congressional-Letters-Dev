@@ -122,6 +122,8 @@ def targets(args) -> list[tuple[int, str, str, str, str, str]]:
     for f in EXPLORERS.glob("Explorer-Congressional-Letters-*/payload/member/*.json"):
         n = int(f.parts[-4].rsplit("-", 1)[1])
         for row in json.loads(f.read_text(encoding="utf-8")):
+            if row[11:12] == ["received"]:  # a copy on a recipient's page (#352)
+                continue
             key, ts, digest = row[0], row[1], row[9]
             if digest in need and (digest not in where or n > where[digest][0]):
                 where[digest] = (n, key, ts)
