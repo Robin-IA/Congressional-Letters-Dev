@@ -34,6 +34,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import base64
 import re
 import sys
 from collections import Counter
@@ -582,8 +583,19 @@ def known_recipient(text: str) -> tuple[str, str] | None:
 QUILL_STAMP = re.compile(r"\bquill\b.*\bversion\s*\d+", re.I)
 
 
+def wayback_digest(digest: str) -> str:
+    """The Wayback Machine's base-32 SHA-1. A few CDX rows give the same SHA-1
+    as 40 hex characters; the vocabulary files refuse those (#1226, #1292), so
+    they are converted: the same hash, written the other way."""
+    if re.fullmatch(r"[0-9a-f]{40}", digest or ""):
+        return base64.b32encode(bytes.fromhex(digest)).decode()
+    return digest
+
+
 def parse(record: dict, last_name: str,
           surnames: frozenset[str] = frozenset(), since: int | None = None) -> dict:
+    if record.get("digest"):
+        record = {**record, "digest": wayback_digest(record["digest"])}
     key = record["key"]
     slug = readable(key)
     captured = record.get("timestamp", "")
