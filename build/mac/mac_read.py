@@ -193,7 +193,8 @@ def write(batch: Path, rows_path: Path) -> None:
         words = [w.lower() for w in re.findall(r"[A-Za-z]{6,}", o.get("title") or "")
                  if w.lower() not in TITLE_STOP][:6]
         text = batch_d[d].get("text", "").lower()
-        if st == "file" and len(words) >= 3 and sum(w in text for w in words) / len(words) < 0.34:
+        # Stems, not whole words: "requesting" matches "request" (batch 3).
+        if st == "file" and len(words) >= 3 and sum(w[:6] in text for w in words) / len(words) < 0.34:
             unresolved.append((d, f"title does not match the letter's text: {o.get('title', '')[:80]!r}")); continue
         if st == "partial":
             partial.append(d); continue
