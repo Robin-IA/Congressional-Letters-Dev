@@ -27,7 +27,7 @@ PC, 116th–119th) and [MAC-READING.md](../MAC-READING.md) (the Mac,
 106th–115th). Where they and these documents differ, **these documents win**,
 and the procedure is corrected.
 
-Related: [DEDUPLICATION.md](../DEDUPLICATION.md) (the same letter in several
+Related: [QA-issues-methodology](QA-issues-methodology.md) (what counts as an issue: one letter is enough, #81), [DEDUPLICATION.md](../DEDUPLICATION.md) (the same letter in several
 files), [letters-discarded/README.md](../letters-discarded/README.md) (the
 discard folder), [METHODOLOGY.md](../METHODOLOGY.md) (harvest, roster,
 holders).
