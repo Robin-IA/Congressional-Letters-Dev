@@ -1,0 +1,180 @@
+# For Claude on the Mac: reading the 106th–115th, step by step
+
+**Written 17 November 2026.** This is the Mac's reading work. The PC's is
+[PC-READING.md](PC-READING.md), whose rules for recipients, dates, titles and
+subjects apply here too. Read this first in a new session, or after the
+tokens reset (Robin: 12:45 AM and 5:45 AM EST).
+
+**What and why.** Robin, 17 November 2026: "Let's do the 106-115th letters of
+unfiled letters in the Mac's range" and "Just file issues for anything you can
+not resolve." On that day about 27,850 letters in the 106th–115th were not
+done: about 23,000 OCR scans and about 5,100 text-layer letters. The PC reads
+the 116th–119th; the Mac never picks a letter whose first Congress is past
+the 115th.
+
+**The difference from the PC:** the Mac **adds missing terms itself** and
+files the letter in the same PR. It holds nothing for vocabulary. It opens an
+issue only for what it cannot resolve.
+
+## Where things are
+
+| What | Where |
+| --- | --- |
+| Pipeline (the built vocabulary, the explorers) | `~/ia/congressional-member-letters` |
+| Dev clone that `fold.sh` merges in | `~/explorer-checks/Congressional-Letters-Dev` (remote `dev`) |
+| Worktree for writing a batch | `~/explorer-checks/wt-vocab` (remote `dev`) |
+| Text and `progress.csv` | `~/ia/letters-from-congress-OCR` |
+| The tools | `build/mac/` in this repository: `mac_read.py`, `fold.sh`, `resolve_append.sh` |
+| The readers' instructions | `build/mac/READER-BRIEF.md` |
+| Postings set aside as not letters | `build/mac/skip.txt` (one digest a line), listed on #1222 |
+| Working folder for batch files | `W=~/explorer-checks/mac-read` (`subjects.txt`, `skip.txt`, `bN*.json*`) |
+
+Run the tools from the copies in the pipeline (`~/ia/congressional-member-letters/build/mac/`).
+They are synced there like any merged file.
+
+## Before the first batch of a session
+
+1. `gh auth status` shows **Robin-IA**.
+2. Pull the text: `cd ~/ia/letters-from-congress-OCR && git pull`.
+3. Update the vocabulary build, so the writer checks against today's terms:
+   `cd ~/ia/congressional-member-letters && python3 build/build_vocabulary.py`.
+4. Make the working folder and the subject list:
+
+   ```bash
+   W=~/explorer-checks/mac-read; mkdir -p $W
+   M=~/ia/congressional-member-letters/build/mac
+   python3 $M/mac_read.py subjects $W/subjects.txt
+   cp $M/skip.txt $W/skip.txt   # if $W/skip.txt has newer lines, keep those
+   ```
+
+5. Check no Mac batch PR is open and unmerged:
+   `gh pr list -R Robin-IA/Congressional-Letters-Dev --state open`. Fold or
+   close it first, so its letters are not picked twice.
+
+## One batch (200 letters)
+
+N is the next batch number: one more than the last "Mac reading, 106th–115th,
+batch N" PR.
+
+1. **Pick and split** (in the pipeline):
+
+   ```bash
+   cd ~/ia/congressional-member-letters
+   python3 build/mac/mac_read.py pick 200 $W/bN.json $W/skip.txt
+   python3 build/mac/mac_read.py split $W/bN.json 4
+   ```
+
+   `pick` takes the most-posted letters first and skips anything read, held,
+   discarded or in `skip.txt`. It prints how many are left.
+
+2. **Read.** Start four Agent subagents **in one message**, model `sonnet`,
+   one per part, each with this prompt (k = 1 to 4):
+
+   > Follow the reading brief at
+   > /Users/robinfay/ia/congressional-member-letters/build/mac/READER-BRIEF.md
+   > exactly. Read it first. Working directory for vocabulary lookups:
+   > /Users/robinfay/ia/congressional-member-letters. Subjects list:
+   > /Users/robinfay/explorer-checks/mac-read/subjects.txt. Input letters:
+   > /Users/robinfay/explorer-checks/mac-read/bN-k.json (50 letters). Write
+   > your output to: /Users/robinfay/explorer-checks/mac-read/bN-k.jsonl. Do
+   > not modify any other file. Do not use git. Do not fetch from the web.
+
+   Wait for all four to report. Each takes about 3 minutes and about 150,000
+   tokens.
+
+3. **Check what they flag.** Read their reports. Then
+   `cat $W/bN-?.jsonl > $W/bN.jsonl` and look for these:
+   - **A letter to several offices** where only one proposed term was given
+     (batch 1: Faso to five state agencies). Edit that line so `new_term` is
+     a list of every missing office and `joint` names all of them.
+   - **A proposed term that already exists under another name.** Compare
+     each `new_term` with `vocabulary/terms.csv` (`grep -i`). Follow the house
+     forms: "Florida Attorney General", "Governor of Ohio", "Embassy of
+     France", "U.S. Embassy in Beijing".
+   - **A date the reader doubted.** The writer rejects nothing on dates; the
+     holder check at merge catches a date that leaves a posting with no holder.
+
+4. **Write** (in the worktree, on a new branch):
+
+   ```bash
+   cd ~/explorer-checks/wt-vocab && git fetch -q dev
+   git checkout -q -B mac-read-106-115-bN dev/harvest-member-letters
+   python3 ~/ia/congressional-member-letters/build/mac/mac_read.py write $W/bN.json $W/bN.jsonl
+   ```
+
+   It prints `filed`, `dates`, `new_terms`, `joint`, `notletter` and
+   `unresolved`. It checks every recipient, company and subject against the
+   **pipeline's** built vocabulary. A proposed term goes into `reviews.csv` (a
+   `merge` row) and `hierarchy.csv`. A missing state chain is built up to
+   State and local government. A letter with an older row is replaced, not
+   duplicated.
+   - **Unresolved**: fix the line in `bN.jsonl` (the right label, a subject
+     from `subjects.txt`) and run it again from step 4's `git checkout`. If you
+     cannot fix it, leave it out and open an issue (see below).
+
+5. **Test and open the PR:**
+
+   ```bash
+   python3 -m unittest discover -s tests          # must pass
+   git add vocabulary && git commit -m "Mac reading, 106th-115th, batch N: X letters filed"
+   git push -q dev mac-read-106-115-bN
+   gh pr create -R Robin-IA/Congressional-Letters-Dev --base harvest-member-letters \
+     --head mac-read-106-115-bN --label "reading,vocabulary" \
+     --title "Mac reading, 106th–115th, batch N: X letters filed" --body-file <body>
+   ```
+
+   The body gives the counts, the new terms, the dates changed and what was
+   left out. It ends with the Claude Code line. Never Robin's email.
+
+6. **Fold:** `bash ~/ia/congressional-member-letters/build/mac/fold.sh <PR>`.
+   It runs the tests and the holder check, merges, and syncs the files into
+   the pipeline. Expect "merged + synced … 0 without a holder". On CONFLICT
+   run `resolve_append.sh <PR>`. On anything else, read the message and fix
+   the branch. Never force a merge.
+
+7. **Not letters:** add each `notletter` digest to `$W/skip.txt` and to
+   `build/mac/skip.txt` (commit it with the next batch). Then add a comment
+   to #1222 with the digest, what it is and why. Partials (`status: partial`)
+   go on #252. Robin decides discards; the Mac does not write
+   `letters-discarded/` without that decision.
+
+8. Go back to 1 with N+1.
+
+## Issues: only for what cannot be resolved
+
+Open one with label `reading` (plus `vocabulary`, `dates` or `quality control`
+as fits) when:
+- a recipient cannot be identified or placed, even after reading the scan;
+- a letter needs a rule that does not exist yet (Robin decides rules);
+- the text is too damaged to read, and the PDF needs fetching and OCR
+  (`OCR` label; #122, #559).
+
+Name the digest, the posting member and file, and what was read.
+
+## Publishing
+
+Not after every batch. Publish after every 5 batches or so, or when Robin asks,
+with the command in the handoff (build_congress 106-119, export_csv,
+build_vocabulary, build_hub, progress, publish_explorers). Then run
+`export_text.py` and push `progress.csv` to `letters-from-congress-OCR` by
+branch and PR, so the PC's pick list stays current.
+
+## Rules learned in batch 1 (PR 1221)
+
+- Readers must see a letter's end as well as its beginning: `pick` keeps the
+  first 4,500 and last 1,500 characters of a long letter.
+- Titles name the official as addressed ("to Secretary Hagel"); the
+  recipient term is the office.
+- Subcommittees file under the full committee.
+- A letter *to* a member from someone else is kept, filed with the member
+  "As recipient" (a `joint` of Bioguide IDs for several), and titled with
+  the sender.
+- The worktree's `vocabulary/terms.csv` is stale; the writer reads the
+  pipeline's instead. Do not commit a rebuilt `terms.csv`.
+
+## Where it stands
+
+| Batch | PR | Filed | Notes |
+| --- | --- | --- | --- |
+| 1 | 1221 | 198 | 17 new terms, 14 joint, 9 dates; 2 not letters to #1222 |
+| 2 | — | — | read on 17 November; finish and fold it first if its PR is not merged |
