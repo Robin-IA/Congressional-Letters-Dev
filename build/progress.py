@@ -47,6 +47,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "build"))
 from build_vocabulary import name_key  # noqa: E402
 import filed_orgs  # noqa: E402
+import letter_text  # noqa: E402
 EXPLORERS = ROOT.parent / "explorers"
 VOCAB = ROOT / "vocabulary"
 MIN_CHARS = 100
