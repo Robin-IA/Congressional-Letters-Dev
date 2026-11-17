@@ -135,6 +135,22 @@ def aliases(path: Path = ALIASES) -> dict[tuple[int, str], list[str]]:
     return out
 
 
+def alias_starts(path: Path = ALIASES) -> dict[tuple[int, str, str], str]:
+    """(congress, bioguide, address) -> the date an alias begins, when its
+    ``from`` column gives one: an address taken over mid-Congress, as
+    murphy.house.gov was by Stephanie Murphy after Tim Murphy resigned
+    (2017-10-21; her home page there by 2018-05-17; #1249)."""
+    out: dict[tuple[int, str, str], str] = {}
+    if path.exists():
+        with open(path, newline="", encoding="utf-8") as h:
+            for r in csv.DictReader(h):
+                if (r.get("from") or "").strip():
+                    a, _, b = r["congresses"].partition("-")
+                    for n in range(int(a), int(b or a) + 1):
+                        out[(n, r["bioguide_id"], address_key(r["alias_url"]))] = r["from"].strip()
+    return out
+
+
 def build(rows, lookups) -> list[Holding]:
     """Rule 2: a member holds an address during the Congresses whose roster
     gives it to them, and within those only during their service. A member who
@@ -146,6 +162,7 @@ def build(rows, lookups) -> list[Holding]:
     # (address, bioguide) -> {congress: (from, to, row, urls)}
     terms: dict[tuple[str, str], dict[int, list]] = defaultdict(dict)
     extra = aliases()
+    starts = alias_starts()
     for n, r in rows:
         urls = [u.strip() for u in r["website_at_the_time"].split("|") if u.strip()]
         urls += [u for u in extra.get((n, r["bioguide_id"]), []) if u not in urls]
@@ -154,6 +171,8 @@ def build(rows, lookups) -> list[Holding]:
         for u in urls:
             key = (address_key(u), r["bioguide_id"])
             ua, ub, ur = a, b, r
+            if (n, r["bioguide_id"], key[0]) in starts:
+                ua = max(ua, starts[(n, r["bioguide_id"], key[0])])
             if moved:
                 # one row covers both chambers; each address only its own part
                 was = "House" if r["chamber"] == "Senate" else "Senate"
@@ -292,7 +311,74 @@ def index(holdings: list[Holding], careers: dict | None = None) -> Index:
         idx.service[bid].extend(terms)
     for hs in idx.values():
         hs.sort(key=lambda h: (h.held_from, h.held_to))
+    idx.names = {h.bioguide_id: h.name for h in holdings}
     return idx
+
+
+def later_holder(idx: Index, url: str, date: str, first_capture: str,
+                 current: "Attribution") -> str:
+    """The later holder who may have re-posted this letter, or "" (#1249).
+
+    The letter's date gives it to one holder, but its file was first captured
+    while a later holder held the address, and that later member was already
+    in Congress on the letter's date: Stephanie Murphy's 2017 letters, first
+    captured on murphy.house.gov in September 2018 after she took it over from
+    Tim Murphy. Whether it is theirs is settled by the letter's text
+    (reposted_by()), not here. Extends the gap rule of 12 November 2026
+    (attribute(), "earlier_office") to a date inside the earlier holder's span.
+    """
+    if current.attribution not in ("holder", "after_service") or not date or not first_capture:
+        return ""
+    b = attribute(idx, url, "", first_capture)
+    if not b.bioguide_id or b.bioguide_id == current.bioguide_id or b.attribution != "holder":
+        return ""
+    d = _iso(date)
+    if not any(x <= d <= y for x, y, _ in getattr(idx, "service", {}).get(b.bioguide_id, [])):
+        return ""
+    return b.bioguide_id
+
+
+def short_name(name: str) -> str:
+    """First and last name, lower case: "Stephanie N. Murphy" -> "stephanie murphy"."""
+    parts = [w for w in re.sub(r"[^A-Za-z .'-]", "", name or "").split() if len(w.strip(".")) > 1]
+    return f"{parts[0]} {parts[-1]}".lower() if len(parts) >= 2 else (name or "").lower()
+
+
+def _names_in(text: str, name: str) -> bool:
+    """The member's first and last name in the text, allowing a middle initial
+    or name between them ("Stephanie N. Murphy", "Stephanie Murphy")."""
+    first, _, last = short_name(name).partition(" ")
+    if not first or not last:
+        return False
+    # OCR runs the two together: "Stephanie/Murphy", "StephanielMurphy".
+    return re.search(rf"\b{re.escape(first)}(?:[\s/|.,l]{{1,3}}[a-z]+\.?)?[\s/|.,l]{{0,3}}{re.escape(last)}\b",
+                     text) is not None
+
+
+def left_before(idx: Index, url: str, bioguide: str, first_capture: str) -> bool:
+    """True when ``bioguide`` no longer held the address on the file's first
+    capture: the file appeared on the site after they had gone."""
+    cap = _iso(first_capture)
+    spans = [h for h in idx.get(address_key(url), []) if h.bioguide_id == bioguide]
+    return bool(cap and spans) and all(h.held_to < cap for h in spans)
+
+
+def reposted_by(idx: Index, text: str, later: str, current: str, left: bool = False) -> bool:
+    """True when the letter is the later holder's (#1249).
+
+    It names the later holder and not the one its date gives; or it names
+    neither (a garbled signature block) and the earlier holder had already
+    left the address before the file was first captured (``left``), so could
+    not have posted it: 14 of Stephanie Murphy's 2017 letters, first captured
+    on murphy.house.gov eleven months after Tim Murphy resigned.
+    """
+    t = re.sub(r"\s+", " ", (text or "").lower())
+    names = getattr(idx, "names", {})
+    later_named = _names_in(t, names.get(later, ""))
+    current_named = _names_in(t, names.get(current, ""))
+    if current_named:
+        return False
+    return later_named or left
 
 
 def attribute(idx: Index, url: str, date: str = "",

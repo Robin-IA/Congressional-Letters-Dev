@@ -89,8 +89,10 @@ class Attribute(unittest.TestCase):
         self.assertEqual(who("https://murphy.house.gov/a.pdf", "2010-05-01"), (TIM_MURPHY, "holder"))
         self.assertEqual(who("https://murphy.house.gov/a.pdf", "2020-05-01"), (STEPHANIE_MURPHY, "holder"))
         self.assertEqual(who("https://murphy.house.gov/a.pdf", "2024-05-01"), (GREG_MURPHY, "holder"))
-        # Tim Murphy resigned 2017-10-21; Stephanie Murphy arrived 2019-01-03
-        self.assertEqual(who("https://murphy.house.gov/a.pdf", "2018-05-01"), (TIM_MURPHY, "after_service"))
+        # Tim Murphy resigned 2017-10-21. Stephanie Murphy had taken the address
+        # over by 2018-05-17 (its home page then), not in 2019 as the roster has
+        # it: data/website-aliases.csv starts her there on 2017-10-22 (#1249).
+        self.assertEqual(who("https://murphy.house.gov/a.pdf", "2018-05-01"), (STEPHANIE_MURPHY, "holder"))
 
     def test_mikerogers_same_name_two_people(self):
         self.assertEqual(who("https://mikerogers.house.gov/x.pdf", "2013-06-01"), (ROGERS_MI, "holder"))
@@ -225,3 +227,26 @@ class BeforeTheRosters(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class RepostedByLaterHolder(unittest.TestCase):
+    """#1249: a later holder's letters re-posted on the address they took over."""
+
+    def test_short_name(self):
+        self.assertEqual(ah.short_name("Stephanie N. Murphy"), "stephanie murphy")
+        self.assertEqual(ah.short_name("Charles F. Bass"), "charles bass")
+
+    def test_named_later_holder_wins_only_when_the_earlier_is_not_named(self):
+        idx = ah.Index()
+        idx.names = {"A": "Tim Murphy", "B": "Stephanie N. Murphy"}
+        self.assertTrue(ah.reposted_by(idx, "Sincerely, Stephanie Murphy Member of Congress", "B", "A"))
+        self.assertFalse(ah.reposted_by(idx, "Tim Murphy and Stephanie Murphy", "B", "A"))
+        self.assertFalse(ah.reposted_by(idx, "Sincerely, Tim Murphy", "B", "A"))
+        self.assertFalse(ah.reposted_by(idx, "", "B", "A"))
+        self.assertTrue(ah.reposted_by(idx, "Sincerely, Stephanie N. Murphy", "B", "A"))
+        self.assertTrue(ah.reposted_by(idx, "Ron DeSantis StephanielMurphy Les Dunn", "B", "A"))
+        self.assertTrue(ah.reposted_by(idx, "Stephanie/Murphy Member of Congress", "B", "A"))
+        # Names neither: the later holder's only if the earlier had left before capture.
+        self.assertTrue(ah.reposted_by(idx, "garbled signatures", "B", "A", left=True))
+        self.assertFalse(ah.reposted_by(idx, "garbled signatures", "B", "A", left=False))
+        self.assertFalse(ah.reposted_by(idx, "Sincerely, Tim Murphy", "B", "A", left=True))
