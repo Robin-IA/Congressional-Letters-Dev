@@ -62,6 +62,38 @@ everywhere: the vocabulary files, the explorers and this repository.
 Stay in your own range, so the two machines never write rows for the same
 letter.
 
+## 4a. The PC's work order (Robin, 17 November 2026)
+
+Pull `letters-from-congress-OCR` before building a pick list: the Mac
+pushes a fresh `progress.csv` after each publish. One row per scan
+(distinct file); the first Congress is the lowest in `congresses`.
+
+1. **Now: finish the OCR scans of the 116th–119th.** Pick list: `text=True`,
+   `reviewed=False`, `ocr=True`, first Congress 116 or later. About 1,800 are
+   left after batch 59 (2,305 before it). Keep the 500-letter batches.
+2. **Next: the text-layer letters of the 116th–119th**, newest Congress
+   first (119th, then 118th, 117th, 116th). Pick list: `text=True`,
+   `reviewed=False`, `ocr=False`. About 30,800 letters. Their text is
+   clean, so batches go faster.
+3. **Then:** whatever Robin assigns. The other large pile is the
+   106th–115th OCR scans (about 23,000), which are in the Mac's range
+   (section 4).
+
+**Do not hold letters for a date or a missing addressee any more.**
+- Undated letters follow step 5: OCR first, then the content, then the
+  file name, then file the letter anyway.
+- A member's letter with no addressee gets `(no recipient)`, and a Dear
+  Colleague letter goes to its chamber (section 6, #502).
+- Hold a letter only for a missing vocabulary term or subject, as before,
+  with its issue.
+
+**Harvesting is the Mac's.**
+- The PC does not query Wayback for new letters.
+- The Mac is running the 2025–2026 catch-up and will run the monthly
+  harvest (#542) and the year-by-year re-check (#1054).
+- New letters reach the PC through `progress.csv` after the Mac publishes.
+  They are new rows with `reviewed=False`, picked up by the lists above.
+
 ## 5. What "done" means, and the files a PR touches
 
 ### One pass per letter (Robin, 15 November 2026)
