@@ -75,7 +75,8 @@ A letter is never filed under a nearby term to avoid a hold.
 `letter-titles.csv`, `letter-topics.csv`, `letter-recipients.csv`,
 `letter-dates.csv` (only when the date changes), `letters-reviewed.csv`
 (always), and `letter-related.csv` for a supplement or reply linked to a
-member's letter. A discarded posting gets a row in `letters-discarded/` with
+member's letter or a draft linked to its sent version, and
+`letter-direction.csv` for a letter not from Congress. A discarded posting gets a row in `letters-discarded/` with
 its Wayback link, written by the Mac.
 
 **Hold** a letter only for a missing term (PC) or a decision the rules do not
@@ -103,11 +104,21 @@ by the reader who held it.
    file's first capture.
 5. The tests pass: `python3 -m unittest discover -s tests` must say OK.
 6. The holder check passes at merge (`fold.sh`): every date leaves the posting
-   with a member who held the address, and each author held office (and any
+   with a member who held the address, a named caucus's chair, or (posted
+   later) the holder at first capture; and each author held office (and any
    committee post the letter claims) on its date (QA-analysis-authorship
    step 5).
 7. Every discard was decided from the OCR, by both tests, with the supplement
    search for test 2.
+8. Every bundle is one record whose note begins "Bundle:" and lists each
+   letter inside (QA-analysis-text step 4, #1226).
+9. Every unfinished draft is titled "— a draft", its note begins "Draft:",
+   and it is linked `draft_of` to its sent version when that is held
+   (QA-analysis-letter-determination, "Drafts"; #183, #180).
+10. Every letter not from Congress has its direction (`to` or `neither`) in
+    `vocabulary/letter-direction.csv` (QA-analysis-authorship step 6, #175).
+11. A true date older than the poster's holding of the address is kept, not
+    refused: the build places it by capture, `posted_later` (#239, #1284).
 
 ## Status values (the QA status CSVs)
 

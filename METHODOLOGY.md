@@ -450,6 +450,14 @@ rule below, for step 4 to call.
      `attribution: none`, kept out of the explorer, as letters-from-congress#2
      sets for the backfill. That covers holders from before 1999, whom the
      rosters do not record.
+   - **Except a date read from the letter that is older than anyone's holding
+     of the address** (another member's letter, a caucus's earlier letters, an
+     agency letter re-posted later): the letter keeps its true date, and the
+     posting goes to whoever held the address at the file's **first
+     capture**, flagged `posted_later` (`address_holders.place`). The same
+     when the date's Congress has no explorer (a 1998 letter Bonior posted in
+     2001 is placed in the 107th). Decided 17 November 2026 (Robin), #239,
+     #1284. The explorer shows "Posted later" beside it.
    - **A caucus site on a member's subdomain** (`cpc.grijalva.house.gov`,
      `rsc.jordan.house.gov`): whoever the parent address gives on the
      letter's date, flagged `caucus`. **Kept in the data and not published**,
@@ -756,7 +764,7 @@ as soon as one is known.
 the letter's date rather than whoever holds the host today, and four fields
 added: `address`, `attribution` (`holder`, `after_service` or `none`),
 `dated_by` (`letter`, `pdf` or `capture`) and `by_capture`. `attribution` can
-also be `earlier_office`, `after_move` or `caucus` (step 3, rule 3). `none` and `caucus` stay
+also be `earlier_office`, `after_move`, `posted_later` or `caucus` (step 3, rule 3). `none` and `caucus` stay
 out of the explorer, as letters-from-congress#2 set for the backfill. The 119th's
 departed file merges into it; it existed only because the harvest started
 from the sitting roster.

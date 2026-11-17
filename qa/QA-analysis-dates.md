@@ -30,7 +30,11 @@ in [METHODOLOGY.md](../METHODOLOGY.md) "Dating".
   YYYY-06-30 (or the first capture that year).
 - Never later than the file's first capture (#652).
 - The date must leave the posting with a member who held the address then
-  (the holder check at merge). A date that fails it is refused (#239); keep
-  it in the note.
+  (the holder check at merge). Since 17 November 2026 the true date is still recorded: when a date finds no holder because an
+  older letter was posted later (another member's letter, a caucus's earlier
+  letters, an agency letter a member re-posted), the build places the posting
+  by its first capture, flagged `posted_later` (Robin, 17 November 2026,
+  #239, #1284; QA-analysis-authorship step 5, case 4). A date that is simply
+  wrong (a misread year) is corrected from the content, never forced.
 - Write a `letter-dates.csv` row only when the date differs from the published
   one.

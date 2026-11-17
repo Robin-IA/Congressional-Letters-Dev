@@ -18,6 +18,28 @@ to 9 are reference for the steps. If anything in them seems to disagree with
 the steps, follow the steps and tell Robin which line disagrees. If a letter
 fits none of the steps, do not invent a rule: hold it (step B7) and say why.
 
+## What changed on 17 November 2026 (read before the next batch)
+
+Robin decided these today. Each is in the steps below and in `qa/`:
+
+1. **Recipients** (#349): a recipient is not a separate requirement. Members,
+   committees and caucuses are "As recipient"; a committee with no member
+   named goes under the committee. Every other recipient is a name, listed in
+   `letter-topics.csv` (QA-analysis-recipients).
+2. **Bundles** (#1226): several letters in one PDF are **one record** for the
+   whole bundle, with a note beginning "Bundle:". Do not hold a bundle, and
+   do not file it under its first letter (QA-analysis-text step 4).
+3. **Drafts** (#183, #180): a letter missing its addressee or signers is kept,
+   titled "— a draft", with a note beginning "Draft:". A blank date alone is
+   not a draft (QA-analysis-letter-determination, "Drafts").
+4. **Direction** (#175): a letter written *to* Congress, or with no member at
+   either end, gets a row in `vocabulary/letter-direction.csv` (step B4).
+5. **Older letters posted later** (#239, #1284): write the letter's true date
+   even when it is older than the poster's holding of the address. The build
+   places it by capture. Only correct a date that is wrong.
+6. **Re-run the pick list before each part of a batch** (section 4). The Mac
+   decided 47 letters the PC later read from an old list.
+
 ## The batch, step by step
 
 ### A. Start the batch
@@ -252,10 +274,15 @@ everywhere: the vocabulary files, the explorers and this repository.
 | Machine | Reads |
 | --- | --- |
 | PC | 116th–119th, plus the agency letters of #204 |
-| Mac | 106th–115th, most-posted first, 25 letters a batch |
+| Mac | 106th–115th, most-posted first, 200 letters a batch; and the letters left on issues, in any Congress |
 
 Stay in your own range, so the two machines never write rows for the same
-letter.
+letter. **Re-run the pick list before each part of a batch**, after pulling
+both repositories: never read on from a list made earlier (17 November 2026:
+the PC read 47 letters from a morning list that the Mac had decided that
+afternoon, and their rows had to be dropped). The pick list leaves out
+anything already read, held, discarded or in an open PR, but only as of the
+moment it runs.
 
 ## 4a. The PC's work order (Robin, 17 November 2026)
 
@@ -359,7 +386,8 @@ last of that kind).
    (`letter_text.title_form`), so either is accepted, but write new ones this way.
 5. **Settle the date** by the dating order (#172). **Always take the date
    from the letter's own text (the OCR)**: the letterhead or dateline first.
-   Refuse a date that leaves the posting with no holder (#239).
+   An older letter posted later keeps its true date (posted later, #239,
+   #1284; see "A date before the poster held the address" below).
    **If the text gives no date** (Robin, 17 November 2026), in this order:
    1. **OCR first.** A garbled or missing dateline is often the OCR's fault:
       read the scan's Apple Vision text (or re-OCR it) before giving up.
@@ -460,11 +488,13 @@ check against the text, never the whole test.
 
 - **Date order** (#172): as in step B5: the letter's text, the content, the
   file name, the funding rule, then file it anyway.
-- **A date can be refused.** A hand date also moves the letter to the right
-  Congress and holder. If a member re-posted an older letter (a caucus site, a
-  successor's site), a posting can have no holder on the letter's date. When
-  the holder check fails, drop the date row, keep the date in the
-  `letters-reviewed.csv` note, and cite #239. Never force a date.
+- **A date before the poster held the address** (Robin, 17 November 2026,
+  #239, #1284). If a member re-posted an older letter (a caucus site, a
+  successor's site, another member's letter, a 1998 letter posted in 2001),
+  write its **true date** anyway. The build places the posting by its first
+  capture under whoever held the address then, flagged "Posted later" on the
+  page. Only a date that is simply wrong (a misread year, a typo the content
+  contradicts) is corrected instead.
 - **The letterhead year can be a typo.** If the letter cites later events (a
   hearing, a bill, a fiscal year), date it from the content and say so in the
   source.
@@ -635,7 +665,6 @@ an OCR-gap issue is `OCR`. Do not use `important`; that is Robin's.
 | #204 | The PC's agency letters |
 | #221 | Proposed new subjects, with their held letters (history only; new requests are their own issues, step B7) |
 | #224 | Duplicate letters |
-| #239 | Older letters re-posted later, and refused dates |
 | #242 / #243 | Letters in Word or HTML, not PDF (survey, then conversion) |
 | #252 | Text layers that cover only part of a letter |
 | #411 | What is a letter: the criteria in section 5a, in any format |
