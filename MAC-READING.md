@@ -197,4 +197,5 @@ branch and PR, so the PC's pick list stays current.
 | 9 | 1254 | 197 | 11 new terms, 15 joint, 3 dates; 1 discarded (hearing talking points); 2 partial to #252; published after batch 8 (25.5% done) |
 | 10 | 1255 | 199 | 16 new terms, 11 joint, 4 dates; 1 discarded (an amicus brief); an open letter to Texas college presidents filed with no recipient |
 | 11 | 1256 | 196 | 9 new terms, 15 joint, 4 dates; 2 supplements kept and linked after the search (Hua Qu to Trump; governors on 1332 waivers); 3 discarded; 1 partial |
-| 12 | (this PR) | 200 | 8 new terms, 15 joint, 6 dates; a supplement found by the search (AFL-CIO to the SEC on Navient, linked to Warren's letter); no discards |
+| 12 | 1257 | 200 | 8 new terms, 15 joint, 6 dates; a supplement found by the search (AFL-CIO to the SEC on Navient, linked to Warren's letter); no discards |
+| 13 | (this PR) | 196 | 8 new terms, 8 joint, 4 dates; 3 discarded (a blank form; EPA's 2016 Bay-Delta comment and a UMWA Funds notice, both test 2 after the search was read by hand); 1 bundle to #1226 |
