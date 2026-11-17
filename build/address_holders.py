@@ -245,7 +245,7 @@ def overlaps(holdings: list[Holding]) -> list[tuple[Holding, Holding]]:
 @dataclass
 class Attribution:
     bioguide_id: str          # "" when attribution is none
-    attribution: str          # "holder", "after_service", "after_move", "earlier_office" or "none"
+    attribution: str          # "holder", "after_service", "after_move", "earlier_office", "posted_later" or "none"
     by_capture: bool = False  # dated by capture on an address with more than one holder
 
 
@@ -465,6 +465,27 @@ def attribute(idx: Index, url: str, date: str = "",
                for a, b, ch in getattr(idx, "service", {}).get(last.bioguide_id, [])):
             return Attribution(last.bioguide_id, "after_move", flag)
     return Attribution("", "none", flag)
+
+
+def place(idx: Index, url: str, date: str, first_capture: str) -> Attribution:
+    """attribute(), with the posted-later fallback for a letter's own date.
+
+    A letter read from its text can be older than anyone's holding of the
+    address it was found at: Carter's site carried the 2014 Royce-McCaul-Duncan
+    letter to Kerry, Bonior's carried Waxman's 1998 letters, Hensarling's RSC
+    pages carried 2002 RSC letters (#239, #1284). Its date is still its date.
+    When that date finds no holder, the posting goes to whoever held the
+    address when the file was first captured, flagged ``posted_later``: the
+    letter keeps its own date, and is placed by its capture (Robin,
+    17 November 2026).
+    """
+    a = attribute(idx, url, date, first_capture)
+    if a.attribution != "none" or not date or not first_capture:
+        return a
+    b = attribute(idx, url, "", first_capture)
+    if b.attribution in ("none", "caucus"):
+        return a
+    return Attribution(b.bioguide_id, "posted_later", b.by_capture)
 
 
 # Attributions kept in the data but left out of every published explorer.

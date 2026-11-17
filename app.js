@@ -321,13 +321,21 @@ function topicTags(row) {
 // supports. Each names the other letter and opens its PDF.
 const relatedNotes = row => (INDEX.related || {})[get(row, 'digest')] || [];
 
+// A letter dated before the posting member held the address it was found at:
+// another member's, or an older one, posted later (#239, #1284). It keeps its
+// own date and is placed by the file's first capture.
+const postedLater = row => (INDEX.posted_later || {})[get(row, 'digest')] || '';
+
 function relatedLine(row) {
   const notes = relatedNotes(row);
-  if (!notes.length) return null;
-  return el('span', { class: 'related' }, ...notes.flatMap(([label, title, url], i) => [
-    i ? ' · ' : '', `${label}: `,
-    el('a', { href: url, target: '_blank', rel: 'noopener' }, title),
-  ]));
+  const later = postedLater(row);
+  if (!notes.length && !later) return null;
+  return el('span', { class: 'related' },
+    ...(later ? [`Posted later: first captured on this site ${later}, after the letter's date`] : []),
+    ...notes.flatMap(([label, title, url], i) => [
+      (i || later) ? ' · ' : '', `${label}: `,
+      el('a', { href: url, target: '_blank', rel: 'noopener' }, title),
+    ]));
 }
 
 function shot(row) {

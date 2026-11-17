@@ -56,7 +56,9 @@ class ByHand(unittest.TestCase):
         for r in self.check_rows("letter-dates.csv", ["digest", "date", "precision"]):
             datetime.date.fromisoformat(r["date"])
             self.assertIn(r["precision"] or "day", PRECISIONS, r["digest"])
-            self.assertTrue(1990 <= int(r["date"][:4]) <= datetime.date.today().year,
+            # Older letters posted later are kept at their own date (#239,
+            # #1284): Coretta Scott King's 1986 letter, re-posted in 2017.
+            self.assertTrue(1980 <= int(r["date"][:4]) <= datetime.date.today().year,
                             f"letter-dates.csv: {r['digest']} dated {r['date']}")
         self.assertEqual(len(letter_text.dates_by_hand()), len(rows("letter-dates.csv")))
 

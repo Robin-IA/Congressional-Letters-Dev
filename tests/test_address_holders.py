@@ -164,6 +164,20 @@ class Attribute(unittest.TestCase):
         b = attribute(IDX, url, "2019-03-12", "20190401000000")
         self.assertEqual((b.bioguide_id, b.attribution), ("L000263", "after_service"))
 
+    def test_an_older_letter_posted_later_is_placed_by_its_capture(self):
+        # buddycarter.house.gov: Carter from 2015. The Royce-McCaul-Duncan
+        # letter of 17 September 2014, first captured there in 2018, finds no
+        # holder on its own date; place() gives it to Carter, posted_later
+        # (#239, #1284), while attribute() still says none.
+        from address_holders import place
+        url = "https://buddycarter.house.gov/uploadedfiles/9.17letter_to_sec._kerry.pdf"
+        self.assertEqual(attribute(IDX, url, "2014-09-17", "2018-09-19").attribution, "none")
+        p = place(IDX, url, "2014-09-17", "2018-09-19")
+        self.assertEqual((p.bioguide_id, p.attribution), ("C001103", "posted_later"))
+        # A date the address's holder covers is untouched.
+        q = place(IDX, url, "2018-01-10", "2018-09-19")
+        self.assertEqual((q.bioguide_id, q.attribution), ("C001103", "holder"))
+
     def test_a_caucus_subdomain_goes_to_its_parents_holder_flagged(self):
         self.assertEqual(who("https://cpc.grijalva.house.gov/x.pdf", "2014-12-09"),
                          ("G000551", "caucus"))

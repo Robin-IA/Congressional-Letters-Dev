@@ -31,7 +31,7 @@ wrote the letter, and file it under its congressional authors.
      limits: some mid-Congress changes are missed) and the leadership terms.
 
    When the date falls **after the author left Congress, the address or the
-   post**, or **before they arrived**, one of three things is true. Find
+   post**, or **before they arrived**, one of four things is true. Find
    which, from the OCR:
    1. **The date is wrong**: a misread year, a file-name or upload date.
       Re-date it (QA-analysis-dates); the holder check at merge refuses a date
@@ -48,6 +48,16 @@ wrote the letter, and file it under its congressional authors.
    3. **The member's own letter from an earlier office**, re-posted on a
       later site (a House letter on a senator's site): credited to them,
       flagged `earlier_office`.
+
+   4. **An older letter, posted later**: another member's letter, a
+      caucus's earlier letters carried from chair to chair, or an agency's or
+      company's letter, posted by a member who did not yet hold the address
+      on its date (Carter's copy of the 2014 Royce–McCaul–Duncan letter;
+      Bonior's of Waxman's 1998 letters). **Record its true date** (Robin,
+      17 November 2026, #239, #1284). The build places the posting by the
+      file's first capture, under whoever held the address then, flagged
+      `posted_later` (`address_holders.place`), and the explorer says
+      "Posted later". Title it with its real senders (step 2).
 
    If none fits, title the letter with its real author, say why in the note,
    and file an issue (label `harvest` for a posting, `dates` for a date).

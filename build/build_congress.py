@@ -380,8 +380,29 @@ def sort_letters(congresses: set[int]):
                 own, a = "", b
                 rec = {**rec, "date": None, "date_best": rec.get("first_seen"),
                        "date_precision": "captured-by", "date_rejected": True}
+        placed_by = ""
+        if own and read and (a.attribution == "none"
+                             or not on_roster(congress_of(own), a.bioguide_id)
+                             or congress_of(own) not in congresses):
+            # A date read from the letter that is older than anyone's holding
+            # of this address: another member's letter, or an older one,
+            # posted later (#239, #1284). It keeps its own date, and the
+            # posting is placed by its first capture, flagged posted_later
+            # (Robin, 17 November 2026).
+            # The same when the date's Congress has no explorer (a 1998
+            # Government Reform letter Bonior posted in 2001): placed by its
+            # capture rather than dropped.
+            cap = ah._iso(rec.get("first_seen") or "")
+            p = ah.place(idx, rec["url"], own, cap)
+            if p.attribution != "posted_later" and congress_of(own) not in congresses:
+                b = ah.attribute(idx, rec["url"], "", cap)
+                if b.attribution not in ("none", "caucus"):
+                    p = ah.Attribution(b.bioguide_id, "posted_later", b.by_capture)
+            if p.attribution == "posted_later" and on_roster(congress_of(cap), p.bioguide_id):
+                a, placed_by = p, cap
+                rec = {**rec, "posted_later": cap}
         best = own or rec.get("date_best")
-        n = congress_of(best or "")
+        n = congress_of(placed_by or best or "")
         if n not in congresses:
             continue
         flags[n][a.attribution] += 1
