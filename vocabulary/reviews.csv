@@ -6536,3 +6536,24 @@ Amgen,1,merge,Amgen,,organization,Companies,"a recipient read from the letter's 
 "Mitch McConnell, Charles E. Schumer, Paul D. Ryan, Nancy Pelosi and Kevin McCarthy",1,joint,M000355;S000148;R000570;P000197;M001165,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
 "Mitch McConnell, Michael B. Enzi, Lamar Alexander and Orrin G. Hatch",1,joint,M000355;E000285;A000360;H000338,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
 American Electric Power,1,merge,American Electric Power,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+"Department of Housing and Urban Development, Environmental Protection Agency and Department of Health and Human Services",1,joint,Department of Housing and Urban Development;Environmental Protection Agency;Department of Health and Human Services,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Suffolk County Legislature,1,merge,Suffolk County Legislature,,organization,New York local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+OptumRx,1,merge,OptumRx,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Virginia Association of Health Plans,1,merge,Virginia Association of Health Plans,,organization,Associations and other organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+White House Director of Trade and Industrial Policy,1,merge,White House Director of Trade and Industrial Policy,,office,Executive Office of the President,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Bureau of Engraving and Printing,1,merge,Bureau of Engraving and Printing,,organization,Department of the Treasury,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Federal Emergency Management Agency and Department of Transportation,1,joint,Federal Emergency Management Agency;Department of Transportation,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+"Mitch McConnell, Charles E. Schumer and Senate Committee on Appropriations",1,joint,M000355;S000148;Senate Committee on Appropriations,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+"Mitch McConnell, Lamar Alexander and Orrin G. Hatch",1,joint,M000355;A000360;H000338,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Department of Transportation and Environmental Protection Agency,1,joint,Department of Transportation;Environmental Protection Agency,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+"Mitch McConnell, Charles E. Schumer, Jon Tester and Steve Daines",1,joint,M000355;S000148;T000464;D000618,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+National Association of Broadcasters,1,merge,National Association of Broadcasters,,organization,Associations and other organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Montana State Auditor,1,merge,Montana State Auditor,,office,Montana state officials,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Education Corporation of America,1,merge,Education Corporation of America,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Mayor of Denver,1,merge,Mayor of Denver,,office,Colorado local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Embassy of Vietnam,1,merge,Embassy of Vietnam,,organization,Foreign governments,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Embassy of Thailand,1,merge,Embassy of Thailand,,organization,Foreign governments,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Government National Mortgage Association,1,merge,Government National Mortgage Association,,organization,Federal agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+New York Congressional Delegation,1,merge,New York Congressional Delegation,,organization,Legislative branch,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Trump for America,1,merge,Trump for America,,organization,Associations and other organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Department of Energy and Department of Homeland Security,1,joint,Department of Energy;Department of Homeland Security,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
