@@ -577,6 +577,9 @@ def main() -> None:
     members = {m["bioguide"]: m for m in member_rows}
 
     by_member: dict[str, list] = defaultdict(list)
+    # digest -> the first capture that placed it, for letters older than the
+    # posting member's holding of the address (build_congress, #239, #1284).
+    posted_later: dict[str, str] = {}
     recipients = Counter()
     years = Counter()
     kinds = Counter()
@@ -702,6 +705,8 @@ def main() -> None:
         companies, only_companies = filed_orgs.companies_for(recipient, year)
         shown = None if only_companies else recipient
 
+        if digest and record.get("posted_later"):
+            posted_later[digest] = record["posted_later"]
         by_member[bioguide].append([
             record["key"], record["timestamp"], kind, best,
             precision, shown, subject,
@@ -904,6 +909,9 @@ def main() -> None:
         # Letters joined by hand (vocabulary/letter-related.csv): digest ->
         # [label, title, url] notes the page shows under the letter.
         "related": related_notes(by_member, letter_text.related()),
+        # Letters dated before the posting member held the address: digest ->
+        # the first capture that placed the posting (#239, #1284).
+        "posted_later": posted_later,
     }
     # REFUSE TO SHRINK WITHOUT BEING TOLD TO. A build is normally an
     # improvement on the last one; a build that drops a tenth of the corpus is

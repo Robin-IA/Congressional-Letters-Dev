@@ -26,7 +26,7 @@ lt.DATES = Path(sys.argv[1]); hand = lt.dates_by_hand(); idx = ah.index(ah.load(
 for rec in bc.all_letters():
     d = rec.get("digest")
     if d in hand:
-        a = ah.attribute(idx, rec["url"], hand[d][0], rec.get("first_seen") or "")
+        a = ah.place(idx, rec["url"], hand[d][0], ah._iso(rec.get("first_seen") or ""))
         bad += a.attribution == "none" or a.attribution in ah.UNPUBLISHED
 print(f"{len(hand)} dates, {bad} without a holder")
 EOF
