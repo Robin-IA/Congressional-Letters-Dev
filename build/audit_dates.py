@@ -189,7 +189,15 @@ def main(only, ocr_repo=None):
                 settled.add(r["digest"])
     short = {d[:12]: d for d in reviewed}
     stored, first = {}, {}
-    for line in (ROOT / "data" / "letters-parsed.jsonl").open(encoding="utf-8"):
+    # The harvest's parsed postings live only on the Mac (data/ is not in the
+    # repository). Without them the audit compares each letter's text with
+    # its hand date alone, which is what a reading batch needs; the Mac checks
+    # the published date and the holder when it merges the PR.
+    parsed = ROOT / "data" / "letters-parsed.jsonl"
+    if not parsed.exists():
+        print("data/letters-parsed.jsonl is not on this machine: checking the "
+              "hand dates against the text only (the Mac checks the rest on merge).")
+    for line in (parsed.open(encoding="utf-8") if parsed.exists() else []):
         try:
             r = json.loads(line)
         except ValueError:
@@ -199,7 +207,7 @@ def main(only, ocr_repo=None):
         seen_at = (r.get("first_seen") or "")[:10]
         if seen_at and (r["digest"] not in first or seen_at < first[r["digest"]]):
             first[r["digest"]] = seen_at
-    targets = [short[k] for k in (only or sorted(short)) if k in short]
+    targets = [short[k[:12]] for k in (only or sorted(short)) if k[:12] in short]
 
     clean = flagged = quiet = 0
     notext = []

@@ -116,8 +116,13 @@ second visit (section 5).
 
    ```bash
    python3 -m unittest discover -s tests
-   python3 build/audit_dates.py --ocr-repo ../letters-from-congress-OCR
+   python3 build/audit_dates.py --ocr-repo ../letters-from-congress-OCR $(cat batch-<N>.txt)
    ```
+
+   The tests must pass. The audit is a report on this batch's letters, not
+   pass or fail: look again at each letter it flags, and fix the date row or
+   say in the PR why it stands. It does not need `data/letters-parsed.jsonl`,
+   which exists only on the Mac (say "holder check not run on the PC").
 
 2. Commit only the CSV files. No code, no `batch-<N>.txt`.
 3. Push the branch and open **one** PR:
