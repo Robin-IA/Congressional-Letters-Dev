@@ -1,68 +1,95 @@
-chamber,committee,thomas_id,side,url,congresses,source
-House,House Committee on Agriculture,HSAG,majority,https://agriculture.house.gov/,119,congress-legislators committees-current
-House,House Committee on Agriculture,HSAG,minority,https://republicans-agriculture.house.gov,119,congress-legislators committees-current
-House,House Committee on Appropriations,HSAP,majority,https://appropriations.house.gov/,119,congress-legislators committees-current
-House,House Committee on Appropriations,HSAP,minority,https://republicans-appropriations.house.gov/,119,congress-legislators committees-current
-House,House Committee on Armed Services,HSAS,majority,https://armedservices.house.gov/,119,congress-legislators committees-current
-House,House Committee on Armed Services,HSAS,minority,https://republicans-armedservices.house.gov/,119,congress-legislators committees-current
-House,House Committee on Education and Workforce,HSED,majority,https://edlabor.house.gov/,119,congress-legislators committees-current
-House,House Committee on Education and Workforce,HSED,minority,https://republicans-edlabor.house.gov/,119,congress-legislators committees-current
-House,House Committee on Energy and Commerce,HSIF,majority,https://energycommerce.house.gov/,119,congress-legislators committees-current
-House,House Committee on Energy and Commerce,HSIF,minority,https://republicans-energycommerce.house.gov/,119,congress-legislators committees-current
-House,House Committee on Ethics,HSSO,majority,https://ethics.house.gov/,119,congress-legislators committees-current
-House,House Committee on Financial Services,HSBA,majority,https://financialservices.house.gov/,119,congress-legislators committees-current
-House,House Committee on Financial Services,HSBA,minority,https://republicans-financialservices.house.gov/,119,congress-legislators committees-current
-House,House Committee on Foreign Affairs,HSFA,majority,https://foreignaffairs.house.gov/,119,congress-legislators committees-current
-House,House Committee on Foreign Affairs,HSFA,minority,https://republicans-foreignaffairs.house.gov/,119,congress-legislators committees-current
-House,House Committee on Homeland Security,HSHM,majority,https://homeland.house.gov/,119,congress-legislators committees-current
-House,House Committee on Homeland Security,HSHM,minority,https://republicans-homeland.house.gov/,119,congress-legislators committees-current
-House,House Committee on House Administration,HSHA,majority,https://cha.house.gov/,119,congress-legislators committees-current
-House,House Committee on House Administration,HSHA,minority,https://republicans-cha.house.gov/,119,congress-legislators committees-current
-House,House Committee on Natural Resources,HSII,majority,https://naturalresources.house.gov/,119,congress-legislators committees-current
-House,House Committee on Natural Resources,HSII,minority,https://republicans-naturalresources.house.gov/,119,congress-legislators committees-current
-House,House Committee on Oversight and Government Reform,HSGO,majority,https://oversight.house.gov/,119,congress-legislators committees-current
-House,House Committee on Oversight and Government Reform,HSGO,minority,https://republicans-oversight.house.gov/,119,congress-legislators committees-current
-House,House Committee on Rules,HSRU,majority,https://rules.house.gov/,119,congress-legislators committees-current
-House,House Committee on Rules,HSRU,minority,https://republicans-rules.house.gov/,119,congress-legislators committees-current
-House,"House Committee on Science, Space, and Technology",HSSY,majority,https://science.house.gov/,119,congress-legislators committees-current
-House,"House Committee on Science, Space, and Technology",HSSY,minority,https://republicans-science.house.gov/,119,congress-legislators committees-current
-House,House Committee on Small Business,HSSM,majority,https://smallbusiness.house.gov/,119,congress-legislators committees-current
-House,House Committee on Small Business,HSSM,minority,https://republicans-smallbusiness.house.gov/,119,congress-legislators committees-current
-House,House Committee on Transportation and Infrastructure,HSPW,majority,https://transportation.house.gov/,119,congress-legislators committees-current
-House,House Committee on Transportation and Infrastructure,HSPW,minority,https://republicans-transportation.house.gov/,119,congress-legislators committees-current
-House,House Committee on Veterans' Affairs,HSVR,majority,https://veterans.house.gov/,119,congress-legislators committees-current
-House,House Committee on Veterans' Affairs,HSVR,minority,https://republicans-veterans.house.gov/,119,congress-legislators committees-current
-House,House Committee on Ways and Means,HSWM,majority,https://waysandmeans.house.gov/,119,congress-legislators committees-current
-House,House Committee on Ways and Means,HSWM,minority,https://gop-waysandmeans.house.gov/,119,congress-legislators committees-current
-House,House Committee on the Budget,HSBU,majority,https://budget.house.gov/,119,congress-legislators committees-current
-House,House Committee on the Budget,HSBU,minority,https://democrats-budget.house.gov/,119,congress-legislators committees-current
-House,House Committee on the Judiciary,HSJU,majority,https://judiciary.house.gov/,119,congress-legislators committees-current
-House,House Committee on the Judiciary,HSJU,minority,https://republicans-judiciary.house.gov/,119,congress-legislators committees-current
-House,House Permanent Select Committee on Intelligence,HLIG,majority,https://intelligence.house.gov/,119,congress-legislators committees-current
-House,House Permanent Select Committee on Intelligence,HLIG,minority,https://republicans-intelligence.house.gov/,119,congress-legislators committees-current
-Joint,Commission on Security and Cooperation in Europe,JCSE,majority,http://www.csce.gov/,119,congress-legislators committees-current
-Joint,Joint Committee of Congress on the Library,JSLC,majority,https://cha.house.gov/jointcommittees/joint-committee-library,119,congress-legislators committees-current
-Joint,Joint Committee on Printing,JSPR,majority,https://cha.house.gov/jointcommittees/joint-committee-on-printing,119,congress-legislators committees-current
-Joint,Joint Committee on Taxation,JSTX,majority,https://www.jct.gov,119,congress-legislators committees-current
-Joint,Joint Economic Committee,JSEC,majority,http://www.jec.senate.gov/,119,congress-legislators committees-current
-Senate,"Senate Committee on Agriculture, Nutrition, and Forestry",SSAF,majority,http://www.agriculture.senate.gov/,119,congress-legislators committees-current
-Senate,Senate Committee on Appropriations,SSAP,majority,http://www.appropriations.senate.gov/,119,congress-legislators committees-current
-Senate,Senate Committee on Armed Services,SSAS,majority,http://www.armed-services.senate.gov/,119,congress-legislators committees-current
-Senate,"Senate Committee on Banking, Housing, and Urban Affairs",SSBK,majority,http://banking.senate.gov/,119,congress-legislators committees-current
-Senate,"Senate Committee on Commerce, Science, and Transportation",SSCM,majority,http://www.commerce.senate.gov/,119,congress-legislators committees-current
-Senate,Senate Committee on Energy and Natural Resources,SSEG,majority,http://www.energy.senate.gov/,119,congress-legislators committees-current
-Senate,Senate Committee on Environment and Public Works,SSEV,majority,http://www.epw.senate.gov/,119,congress-legislators committees-current
-Senate,Senate Committee on Finance,SSFI,majority,http://www.finance.senate.gov/,119,congress-legislators committees-current
-Senate,Senate Committee on Foreign Relations,SSFR,majority,http://www.foreign.senate.gov/,119,congress-legislators committees-current
-Senate,"Senate Committee on Health, Education, Labor, and Pensions",SSHR,majority,http://www.help.senate.gov/,119,congress-legislators committees-current
-Senate,Senate Committee on Homeland Security and Governmental Affairs,SSGA,majority,http://www.hsgac.senate.gov/,119,congress-legislators committees-current
-Senate,Senate Committee on Indian Affairs,SLIA,majority,http://www.indian.senate.gov/,119,congress-legislators committees-current
-Senate,Senate Committee on Rules and Administration,SSRA,majority,http://www.rules.senate.gov/,119,congress-legislators committees-current
-Senate,Senate Committee on Small Business and Entrepreneurship,SSSB,majority,http://www.sbc.senate.gov/,119,congress-legislators committees-current
-Senate,Senate Committee on Veterans' Affairs,SSVA,majority,http://www.veterans.senate.gov/,119,congress-legislators committees-current
-Senate,Senate Committee on the Budget,SSBU,majority,http://www.budget.senate.gov/,119,congress-legislators committees-current
-Senate,Senate Committee on the Judiciary,SSJU,majority,http://www.judiciary.senate.gov/,119,congress-legislators committees-current
-Senate,Senate Select Committee on Ethics,SLET,majority,http://www.ethics.senate.gov/,119,congress-legislators committees-current
-Senate,Senate Select Committee on Intelligence,SLIN,majority,http://www.intelligence.senate.gov/,119,congress-legislators committees-current
-Senate,Senate Special Committee on Aging,SPAG,majority,http://www.aging.senate.gov/,119,congress-legislators committees-current
-Senate,United States Senate Caucus on International Narcotics Control,SCNC,majority,http://www.drugcaucus.senate.gov/,119,congress-legislators committees-current
+chamber,committee,thomas_id,site,party,congresses,source,verified
+House,House Committee on Agriculture,HSAG,agriculture.house.gov,,119,congress-legislators committees-current,listed
+House,House Committee on Agriculture,HSAG,democrats-agriculture.house.gov,D,,pattern from the committee's host,no
+House,House Committee on Agriculture,HSAG,republicans-agriculture.house.gov,R,,congress-legislators committees-current (minority_url),listed
+House,House Committee on Appropriations,HSAP,appropriations.house.gov,,119,congress-legislators committees-current,listed
+House,House Committee on Appropriations,HSAP,democrats-appropriations.house.gov,D,,pattern from the committee's host,no
+House,House Committee on Appropriations,HSAP,republicans-appropriations.house.gov,R,,congress-legislators committees-current (minority_url),listed
+House,House Committee on Armed Services,HSAS,armedservices.house.gov,,119,congress-legislators committees-current,listed
+House,House Committee on Armed Services,HSAS,democrats-armedservices.house.gov,D,,pattern from the committee's host,no
+House,House Committee on Armed Services,HSAS,republicans-armedservices.house.gov,R,,congress-legislators committees-current (minority_url),listed
+House,House Committee on Education and Workforce,HSED,edlabor.house.gov,,119,congress-legislators committees-current,listed
+House,House Committee on Education and Workforce,HSED,edworkforce.house.gov,,119,"live site, 17 November 2026",yes
+House,House Committee on Education and Workforce,HSED,democrats-edlabor.house.gov,D,,pattern from the committee's host,no
+House,House Committee on Education and Workforce,HSED,democrats-edworkforce.house.gov,D,,pattern from the committee's host,no
+House,House Committee on Education and Workforce,HSED,republicans-edlabor.house.gov,R,,congress-legislators committees-current (minority_url),listed
+House,House Committee on Education and Workforce,HSED,republicans-edworkforce.house.gov,R,,pattern from the committee's host,no
+House,House Committee on Energy and Commerce,HSIF,energycommerce.house.gov,,119,congress-legislators committees-current,listed
+House,House Committee on Energy and Commerce,HSIF,democrats-energycommerce.house.gov,D,,pattern from the committee's host,no
+House,House Committee on Energy and Commerce,HSIF,republicans-energycommerce.house.gov,R,,congress-legislators committees-current (minority_url),listed
+House,House Committee on Ethics,HSSO,ethics.house.gov,,119,congress-legislators committees-current,listed
+House,House Committee on Ethics,HSSO,democrats-ethics.house.gov,D,,pattern from the committee's host,no
+House,House Committee on Ethics,HSSO,republicans-ethics.house.gov,R,,pattern from the committee's host,no
+House,House Committee on Financial Services,HSBA,financialservices.house.gov,,119,congress-legislators committees-current,listed
+House,House Committee on Financial Services,HSBA,democrats-financialservices.house.gov,D,,pattern from the committee's host,no
+House,House Committee on Financial Services,HSBA,republicans-financialservices.house.gov,R,,congress-legislators committees-current (minority_url),listed
+House,House Committee on Foreign Affairs,HSFA,foreignaffairs.house.gov,,119,congress-legislators committees-current,listed
+House,House Committee on Foreign Affairs,HSFA,democrats-foreignaffairs.house.gov,D,,pattern from the committee's host,no
+House,House Committee on Foreign Affairs,HSFA,republicans-foreignaffairs.house.gov,R,,congress-legislators committees-current (minority_url),listed
+House,House Committee on Homeland Security,HSHM,homeland.house.gov,,119,congress-legislators committees-current,listed
+House,House Committee on Homeland Security,HSHM,democrats-homeland.house.gov,D,,pattern from the committee's host,no
+House,House Committee on Homeland Security,HSHM,republicans-homeland.house.gov,R,,congress-legislators committees-current (minority_url),listed
+House,House Committee on House Administration,HSHA,cha.house.gov,,119,congress-legislators committees-current,listed
+House,House Committee on House Administration,HSHA,democrats-cha.house.gov,D,,pattern from the committee's host,no
+House,House Committee on House Administration,HSHA,republicans-cha.house.gov,R,,congress-legislators committees-current (minority_url),listed
+House,House Committee on Natural Resources,HSII,naturalresources.house.gov,,119,congress-legislators committees-current,listed
+House,House Committee on Natural Resources,HSII,democrats-naturalresources.house.gov,D,,pattern from the committee's host,no
+House,House Committee on Natural Resources,HSII,republicans-naturalresources.house.gov,R,,congress-legislators committees-current (minority_url),listed
+House,House Committee on Oversight and Government Reform,HSGO,oversight.house.gov,,119,congress-legislators committees-current,listed
+House,House Committee on Oversight and Government Reform,HSGO,democrats-oversight.house.gov,D,,pattern from the committee's host,no
+House,House Committee on Oversight and Government Reform,HSGO,oversightdemocrats.house.gov,D,119,"live site, 17 November 2026",yes
+House,House Committee on Oversight and Government Reform,HSGO,republicans-oversight.house.gov,R,,congress-legislators committees-current (minority_url),listed
+House,House Committee on Rules,HSRU,rules.house.gov,,119,congress-legislators committees-current,listed
+House,House Committee on Rules,HSRU,democrats-rules.house.gov,D,,pattern from the committee's host,no
+House,House Committee on Rules,HSRU,republicans-rules.house.gov,R,,congress-legislators committees-current (minority_url),listed
+House,"House Committee on Science, Space, and Technology",HSSY,science.house.gov,,119,congress-legislators committees-current,listed
+House,"House Committee on Science, Space, and Technology",HSSY,democrats-science.house.gov,D,,pattern from the committee's host,no
+House,"House Committee on Science, Space, and Technology",HSSY,republicans-science.house.gov,R,,congress-legislators committees-current (minority_url),listed
+House,House Committee on Small Business,HSSM,smallbusiness.house.gov,,119,congress-legislators committees-current,listed
+House,House Committee on Small Business,HSSM,democrats-smallbusiness.house.gov,D,,pattern from the committee's host,no
+House,House Committee on Small Business,HSSM,republicans-smallbusiness.house.gov,R,,congress-legislators committees-current (minority_url),listed
+House,House Committee on Transportation and Infrastructure,HSPW,transportation.house.gov,,119,congress-legislators committees-current,listed
+House,House Committee on Transportation and Infrastructure,HSPW,democrats-transportation.house.gov,D,,pattern from the committee's host,no
+House,House Committee on Transportation and Infrastructure,HSPW,republicans-transportation.house.gov,R,,congress-legislators committees-current (minority_url),listed
+House,House Committee on Veterans' Affairs,HSVR,veterans.house.gov,,119,congress-legislators committees-current,listed
+House,House Committee on Veterans' Affairs,HSVR,democrats-veterans.house.gov,D,,pattern from the committee's host,no
+House,House Committee on Veterans' Affairs,HSVR,republicans-veterans.house.gov,R,,congress-legislators committees-current (minority_url),listed
+House,House Committee on Ways and Means,HSWM,waysandmeans.house.gov,,119,congress-legislators committees-current,listed
+House,House Committee on Ways and Means,HSWM,democrats-waysandmeans.house.gov,D,,pattern from the committee's host,no
+House,House Committee on Ways and Means,HSWM,gop-waysandmeans.house.gov,R,,congress-legislators committees-current (minority_url),listed
+House,House Committee on Ways and Means,HSWM,republicans-waysandmeans.house.gov,R,,pattern from the committee's host,no
+House,House Committee on the Budget,HSBU,budget.house.gov,,119,congress-legislators committees-current,listed
+House,House Committee on the Budget,HSBU,democrats-budget.house.gov,D,,congress-legislators committees-current (minority_url),listed
+House,House Committee on the Budget,HSBU,republicans-budget.house.gov,R,,pattern from the committee's host,no
+House,House Committee on the Judiciary,HSJU,judiciary.house.gov,,119,congress-legislators committees-current,listed
+House,House Committee on the Judiciary,HSJU,democrats-judiciary.house.gov,D,,pattern from the committee's host,no
+House,House Committee on the Judiciary,HSJU,republicans-judiciary.house.gov,R,,congress-legislators committees-current (minority_url),listed
+House,House Permanent Select Committee on Intelligence,HLIG,intelligence.house.gov,,119,congress-legislators committees-current,listed
+House,House Permanent Select Committee on Intelligence,HLIG,democrats-intelligence.house.gov,D,,pattern from the committee's host,no
+House,House Permanent Select Committee on Intelligence,HLIG,republicans-intelligence.house.gov,R,,congress-legislators committees-current (minority_url),listed
+Joint,Commission on Security and Cooperation in Europe,JCSE,www.csce.gov,,119,congress-legislators committees-current,listed
+Joint,Joint Committee of Congress on the Library,JSLC,cha.house.gov/jointcommittees/joint-committee-library,,119,congress-legislators committees-current,listed
+Joint,Joint Committee on Printing,JSPR,cha.house.gov/jointcommittees/joint-committee-on-printing,,119,congress-legislators committees-current,listed
+Joint,Joint Committee on Taxation,JSTX,www.jct.gov,,119,congress-legislators committees-current,listed
+Joint,Joint Economic Committee,JSEC,www.jec.senate.gov,,119,congress-legislators committees-current,listed
+Senate,"Senate Committee on Agriculture, Nutrition, and Forestry",SSAF,www.agriculture.senate.gov,,119,congress-legislators committees-current,listed
+Senate,Senate Committee on Appropriations,SSAP,www.appropriations.senate.gov,,119,congress-legislators committees-current,listed
+Senate,Senate Committee on Armed Services,SSAS,www.armed-services.senate.gov,,119,congress-legislators committees-current,listed
+Senate,"Senate Committee on Banking, Housing, and Urban Affairs",SSBK,banking.senate.gov,,119,congress-legislators committees-current,listed
+Senate,"Senate Committee on Commerce, Science, and Transportation",SSCM,www.commerce.senate.gov,,119,congress-legislators committees-current,listed
+Senate,Senate Committee on Energy and Natural Resources,SSEG,www.energy.senate.gov,,119,congress-legislators committees-current,listed
+Senate,Senate Committee on Environment and Public Works,SSEV,www.epw.senate.gov,,119,congress-legislators committees-current,listed
+Senate,Senate Committee on Finance,SSFI,www.finance.senate.gov,,119,congress-legislators committees-current,listed
+Senate,Senate Committee on Foreign Relations,SSFR,www.foreign.senate.gov,,119,congress-legislators committees-current,listed
+Senate,"Senate Committee on Health, Education, Labor, and Pensions",SSHR,www.help.senate.gov,,119,congress-legislators committees-current,listed
+Senate,Senate Committee on Homeland Security and Governmental Affairs,SSGA,www.hsgac.senate.gov,,119,congress-legislators committees-current,listed
+Senate,Senate Committee on Indian Affairs,SLIA,www.indian.senate.gov,,119,congress-legislators committees-current,listed
+Senate,Senate Committee on Rules and Administration,SSRA,www.rules.senate.gov,,119,congress-legislators committees-current,listed
+Senate,Senate Committee on Small Business and Entrepreneurship,SSSB,www.sbc.senate.gov,,119,congress-legislators committees-current,listed
+Senate,Senate Committee on Veterans' Affairs,SSVA,www.veterans.senate.gov,,119,congress-legislators committees-current,listed
+Senate,Senate Committee on the Budget,SSBU,www.budget.senate.gov,,119,congress-legislators committees-current,listed
+Senate,Senate Committee on the Judiciary,SSJU,www.judiciary.senate.gov,,119,congress-legislators committees-current,listed
+Senate,Senate Select Committee on Ethics,SLET,www.ethics.senate.gov,,119,congress-legislators committees-current,listed
+Senate,Senate Select Committee on Intelligence,SLIN,www.intelligence.senate.gov,,119,congress-legislators committees-current,listed
+Senate,Senate Special Committee on Aging,SPAG,www.aging.senate.gov,,119,congress-legislators committees-current,listed
+Senate,United States Senate Caucus on International Narcotics Control,SCNC,www.drugcaucus.senate.gov,,119,congress-legislators committees-current,listed
