@@ -33,8 +33,16 @@ to the path you are given. Fields:
    organization; a salutation or inside address shows it) and a signer.
    - Only part of a letter (a signature page, a middle page, footers): `status: "partial"`.
    - Not a letter at all (a resolution, Senate Journal page, newsletter, bill
-     text, press release, report, exhibit, form): `status: "notletter"`, with
-     a short `title` saying what it is and the reason in `note`.
+     text, press release — even one quoting a letter in full — report,
+     exhibit, form): `status: "notletter"`, with a short `title` saying what
+     it is and the reason in `note`.
+   - A letter that is **not by** a member or congressional group (committee,
+     caucus, delegation), **not to or about** one (names no member or
+     district), and **not a supplement** to a member's letter (enclosure,
+     reply, or a document the member's letter cites): `status: "notletter"`,
+     `note` beginning "no relation to Congress:". The full criteria are in
+     `letters-discarded/README.md`.
+   - Unreadable text is **not** "notletter": use `unsure` with "needs OCR".
    - A letter **to** the member from someone else (agency reply, association,
      constituent group) IS kept: title it with the sender ("— Secretary
      Chu to Senator Boxer, 3 May 2010") and say so in `note`.

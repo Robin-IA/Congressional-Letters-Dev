@@ -132,7 +132,7 @@ batch N" PR.
    run `resolve_append.sh <PR>`. On anything else, read the message and fix
    the branch. Never force a merge.
 
-7. **Not letters:** add each `notletter` digest to `$W/skip.txt` and to
+7. **Not letters** (the discard criteria in `letters-discarded/README.md`): add each `notletter` digest to `$W/skip.txt` and to
    `build/mac/skip.txt` (commit it with the next batch). Then add a comment
    to #1222 with the digest, what it is and why. Partials (`status: partial`)
    go on #252. Robin decides discards; the Mac does not write
