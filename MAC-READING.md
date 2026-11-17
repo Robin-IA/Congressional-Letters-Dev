@@ -193,4 +193,5 @@ branch and PR, so the PC's pick list stays current.
 | 5 | 1248 | 199 | 10 new terms (incl. Prime Minister of Israel), 14 joint, 4 dates; 1 discarded (a hearing opening statement); 1 title hand-checked past the guard |
 | 6 | 1251 | 195 | 11 new terms, 8 joint, 4 dates; 4 discarded (a speech, a news release, Baldwin's guidelines sheet, a USDA letter by test 2); 1 partial to #252 |
 | 7 | 1252 | 199 | 12 new terms (Oregon state officers for a four-office joint letter), 11 joint, 6 dates; 1 discarded (a sign-on statement) |
-| 8 | (this PR) | 194 | 13 new terms, 11 joint, 4 dates; 6 discarded (a floor statement, blank forms and instruction sheets, an EPA letter by test 2); an upside-down scan rotated and OCR'd |
+| 8 | 1253 | 194 | 13 new terms, 11 joint, 4 dates; 6 discarded (a floor statement, blank forms and instruction sheets, an EPA letter by test 2); an upside-down scan rotated and OCR'd |
+| 9 | (this PR) | 197 | 11 new terms, 15 joint, 3 dates; 1 discarded (hearing talking points); 2 partial to #252; published after batch 8 (25.5% done) |
