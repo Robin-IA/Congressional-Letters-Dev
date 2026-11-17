@@ -68,22 +68,28 @@ second visit (section 5).
      and records it.
      No text is **not** a reason to discard: it needs OCR.
    - Not sure → hold it (step 7) with the reason.
-3. **Recipient.** Read the address block, then the salutation, then the body.
-   Then write **one** `letter-recipients.csv` row:
-
-   | What you find | Write |
-   | --- | --- |
-   | A member of Congress, or several | the member's term (several: a `joint` row in `reviews.csv`) |
-   | A committee, or its chair and ranking member | the committee's term |
-   | A federal, state or foreign official | the **office**, never the person ("to Secretary Austin" → Department of Defense) |
-   | A company or organization (or its CEO) | the company's term, never the person. Several companies: each one in `letter-topics.csv` |
-   | "Dear Colleague" to one chamber | `United States Senate` or `United States House of Representatives` |
-   | No addressee, and the posting member wrote it (open letter, notice to constituents) | `(no recipient)` |
-   | No addressee, and someone else wrote it to the posting member | the posting member, "As recipient, from Rep./Sen. X's website" |
-   | A private person | `(no recipient)`; the name stays in the title |
+3. **Recipient** (qa/QA-analysis-recipients.md; Robin, 17 November 2026).
+   Not a separate requirement: never hold a letter for want of one. Read the
+   address block, then the salutation, then the body:
+   - **Congress** (a member, several members, a committee or caucus): the
+     letter is listed under them **"As recipient"**. Members named → each
+     member (several: a `joint` row of Bioguide IDs). A committee or caucus
+     with no member named → the committee or caucus. No addressee, written
+     by others to the posting member → that member, "As recipient, from
+     Rep./Sen. X's website". "Dear Colleague" to one chamber → `United States
+     Senate` or `United States House of Representatives`.
+   - **Everyone else is a name**: an official → the **office**, never the
+     person ("to Secretary Austin" → Department of Defense); a company,
+     organization or nonprofit (or its CEO) → the organization. Put **each**
+     in `letter-topics.csv` with the other names (they count toward the 4
+     subjects), and the first in `letter-recipients.csv`.
+   - **No addressee, written by the member**, or a **private person** →
+     `(no recipient)` in `letter-recipients.csv`; the name stays in the title.
 
    **Check the term exists** in `vocabulary/terms.csv` or `vocabulary/reviews.csv`.
-   If it does not → hold the letter (step 7). Never file it under a nearby term.
+   If it does not → hold the letter and list it under **Names** on the
+   batch's vocabulary issue (step 7), as for any name. Never file it under a
+   nearby term.
 4. **Author.** The posting member signed it, or is among the signers. If not
    (an agency reply, a letter *to* the member), the title names the sender
    ("— CBO Director Elmendorf to Chairman Baucus …") and the note says so (#175).
@@ -281,7 +287,7 @@ last of that kind).
 
 1. **Read the text** (OCR or text layer) against the letter, not the file name.
 2. **Find the recipient** in the address block, then the salutation, then the
-   body. File it by the three kinds in section 6: Congress "As recipient",
+   body (qa/QA-analysis-recipients.md wins where this differs). File it by the kinds in section 6: Congress "As recipient",
    an official under the office (with the official's name kept searchable:
    in the title, and as an `officeholder` name on the office term; no person
    term, Robin, 16 November 2026), a company or organization as a topic, and a
@@ -362,8 +368,9 @@ A letter is done when all of these hold:
 - its title is confirmed and written in our form;
 - its date is settled;
 - it has subjects;
-- it is **filed**, meaning its recipient is a reviewed term. A letter still in
-  "Not yet reviewed" is not done.
+- every recipient and name in it is a reviewed term (a letter with no
+  addressee is `(no recipient)` and is done). A letter still in "Not yet
+  reviewed" is not done.
 
 Each batch is one PR, which appends rows to these files in the dev repository:
 
@@ -465,11 +472,12 @@ check against the text, never the whole test.
   footers or a middle page: skip the letter and add it to #252.
 - **Recipients: three kinds, three ways to file** (Robin, 15 November 2026;
   #352, #357, #391). Read the address block, never guess, and sort the
-  recipient into one of these. A letter is filed only when its recipient is a
-  reviewed term, so this decides what goes in `vocabulary/letter-recipients.csv`
-  (`digest,recipient,source`) and `vocabulary/reviews.csv`.
+  recipient into one of these. **Superseded in part on 17 November 2026**:
+  the recipient is not a separate requirement, every recipient outside
+  Congress is a name in `letter-topics.csv`, and a committee or caucus with no
+  member named is itself "As recipient" (qa/QA-analysis-recipients.md wins).
   1. **A member or committee of Congress** (a chair and ranking member, the
-     Speaker, a leader, a senator). File the letter **"As recipient"** (#352):
+     Speaker, a leader, a senator, a committee or caucus). File the letter **"As recipient"** (#352):
      in that Congress's session **under the author** (the member who wrote or
      posted it), **under the recipient** member, marked "As recipient", and
      under that Congress on the **topics page**. A letter to several members is

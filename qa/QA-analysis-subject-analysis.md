@@ -18,8 +18,10 @@ Two kinds, both recorded in `letter-topics.csv` (`;`-separated):
    a name subject: a CEO or staff member is filed under their organization;
    an official under the office.
 
-The recipient (step 3) counts toward the 4 when it is an organization or
-office. Authors do not.
+A recipient outside Congress (step 3) **is** one of these names: its
+organization, company, nonprofit, agency or office, listed with the others.
+A member, committee or caucus as recipient is "As recipient" and is not
+counted (a committee the letter names is still a name). Authors do not count.
 
 ## Steps
 
