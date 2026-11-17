@@ -172,6 +172,10 @@ branch and PR, so the PC's pick list stays current.
 - A letter *to* a member from someone else is kept, filed with the member
   "As recipient" (a `joint` of Bioguide IDs for several), and titled with
   the sender.
+- **Readers can read the wrong file.** In batch 3, two of four readers wrote
+  another part's letters over their own digests. The writer now refuses a
+  title whose words are mostly absent from the letter's text, and the prompt
+  says to read only its own file. If many are refused, re-run that part.
 - The worktree's `vocabulary/terms.csv` is stale; the writer reads the
   pipeline's instead. Do not commit a rebuilt `terms.csv`.
 

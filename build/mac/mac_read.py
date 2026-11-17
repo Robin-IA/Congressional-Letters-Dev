@@ -98,6 +98,10 @@ def pick(n: int, out: Path, skip_file: str | None) -> None:
 
 # ------------------------------------------------------------------ write
 
+TITLE_STOP = {"letter", "senator", "secretary", "administrator", "chairman", "representative",
+              "members", "department", "ranking", "member", "committee", "leader", "january",
+              "february", "august", "september", "october", "november", "december"}
+
 STATE_NODE = re.compile(r"^(.+?) (state officials|state government agencies|local government and agencies|organizations)$")
 
 
@@ -153,6 +157,15 @@ def write(batch: Path, rows_path: Path) -> None:
         if d not in batch_d:
             unresolved.append((d, "digest not in this batch")); continue
         st = o.get("status", "file")
+        # Guard (batch 3): a reader once wrote one part's digests over another
+        # part's letters. A title whose words are mostly absent from the
+        # letter's own text is refused. Garbled OCR can trip it; that letter
+        # is then left out and listed, never filed on a wrong reading.
+        words = [w.lower() for w in re.findall(r"[A-Za-z]{6,}", o.get("title") or "")
+                 if w.lower() not in TITLE_STOP][:6]
+        text = batch_d[d].get("text", "").lower()
+        if st == "file" and len(words) >= 3 and sum(w in text for w in words) / len(words) < 0.34:
+            unresolved.append((d, f"title does not match the letter's text: {o.get('title', '')[:80]!r}")); continue
         if st == "partial":
             partial.append(d); continue
         if st == "notletter":

@@ -27,6 +27,15 @@ to the path you are given. Fields:
  "note": "one line: anything a checker should know"}
 ```
 
+## Read only your own file
+
+Read **only** the input file you are given. The folder holds other readers'
+files (the whole batch, other parts, their outputs); never open them. Each
+output line's `digest` must be the digest of the letter whose text you read
+for that line. Before writing, check that the words of each title appear in
+that same letter's text: the writer refuses a title that does not match
+(batch 3: two readers wrote another part's letters over their own digests).
+
 ## Steps for each letter
 
 1. **Is it a letter?** It needs an addressee (person, office, company,
