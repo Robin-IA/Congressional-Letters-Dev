@@ -475,6 +475,25 @@ rule below, for step 4 to call.
    address redirects. `dingell.house.gov` redirects to `debbiedingell.house.gov`,
    a different member's site.
 
+### Names read from a page are checked, never trusted (#120)
+
+Decided 17 November 2026 (Robin). A name read from a web page or a letter
+can be **wrong, not just stale**: in January 2015 the RSC's own masthead
+called its chairman "Chairman Bob Flores", while the same site's biography
+page and its Twitter feed named Bill Flores (F000461). So:
+
+- **Check every name read from a page or a letter** (a masthead, a
+  letterhead, a signature, a salutation) against the rosters
+  (`data/rosters/`, by Bioguide ID) or, for anyone not a member, the
+  vocabulary. The same goes for an office, district or title read from text,
+  and for a chair or leadership post (`data/committee-chairs.csv`, keyed on
+  dates, not Congresses).
+- **A mismatch is a flag, not a fact.** Record both, in the note: "page says
+  Bob Flores; roster says Bill Flores (F000461)". Use the roster's identity.
+- **A page-derived name is never the only basis for crediting a letter.** A
+  letter is credited by who held its address (rule 3) and by authors who are
+  members' vocabulary terms (QA-analysis-authorship).
+
 ### Built, 9 November 2026
 
 **2,043 addresses in 2,120 rows; 49 held by more than one member**, 100 rows

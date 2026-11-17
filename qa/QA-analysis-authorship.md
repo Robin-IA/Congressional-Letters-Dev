@@ -72,7 +72,12 @@ wrote the letter, and file it under its congressional authors.
    the member's.
 7. **Names in the record.** Authors are members' vocabulary terms (by
    Bioguide ID). A signer who is not a member (a staff director, a CEO) is not
-   an author term; their organization is a subject (step 4).
+   an author term; their organization is a subject (step 4). **Check every
+   name, office, district or title read from the letter or a page against the
+   roster** (#120, Robin, 17 November 2026): a letterhead or masthead can be
+   wrong ("Chairman Bob Flores" for Bill Flores). On a mismatch, use the
+   roster's member and say both in the note ("letterhead says X; roster says
+   Y"). A name read from text is never the only basis for an author.
 8. **Consult** [QA-analysis-subject-analysis](QA-analysis-subject-analysis.md)
    for organization names, and [DEDUPLICATION.md](../DEDUPLICATION.md) when the
    same letter is on several members' sites (a shared, multi-author letter).
