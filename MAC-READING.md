@@ -252,4 +252,5 @@ branch and PR, so the PC's pick list and the QA status stay current.
 | 18 | 1263 | 194 | 7 new terms, 10 joint, 6 dates; 3 discarded by test 2 after the search was read by hand; 2 bundles to #1226; 1 partial |
 | 19 | 1265 | 196 | 4 new terms, 7 joint, 1 date; 4 discarded (a press release, a booklet, a form; FEMA's letter to North Dakota by test 2) |
 | 20 | 1272 | 198 | first batch under QA-Analysis-methodology: 190 with 4+ subjects, 8 under 4 (noted for review); 57 new terms (names count); 15 joint, 4 dates; 1 discarded; 1 partial |
-| 21 | (this PR) | 198 | under the 2-topic rule: 193 meet it, 5 short (noted); 52 new terms, 7 joint, 4 dates; 3 discarded (draft bill text; two letters by test 2 after the search was read by hand); 1 partial |
+| 21 | 1281 | 196 | under the 2-topic rule: 193 meet it, 5 short (noted); 52 new terms, 7 joint, 4 dates; 3 discarded (draft bill text; two letters by test 2 after the search was read by hand); 1 partial |
+| 22 | (this PR) | 196 | 6 short of 4 subjects or 2 topics (noted); 75 new terms, 9 joint, 7 dates; 4 discarded (a Warren report, a forwarded email, a blank grant-request form, and FEMA to North Dakota on Drayton by test 2 after the search was read by hand); the service organizations' Military Lending Act letter linked to McCaskill's |
