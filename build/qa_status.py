@@ -77,6 +77,8 @@ def main() -> None:
         for f in sorted(glob.glob(str(ex / "payload/member/*.json"))):
             mid = Path(f).stem
             for row in json.load(open(f)):
+                if row[11:12] == ["received"]:  # a copy on a recipient's page (#352)
+                    continue
                 key, ts, _kind, date, _prec, recipient, _subject, tops, cosigners, digest, url = row[:11]
                 authors = [names.get(mid, mid)] + [c for c in (cosigners or "").split(",") if c]
                 subj = list(dict.fromkeys([t for t in (tops or "").split(",") if t] + topics.get(digest, [])))

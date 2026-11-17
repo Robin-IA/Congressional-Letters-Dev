@@ -79,6 +79,8 @@ def pick(n: int, out: Path, skip_file: str | None) -> None:
         for f in glob.glob(f"{ex}/payload/member/*.json"):
             mid = Path(f).stem
             for row in json.load(open(f)):
+                if row[11:12] == ["received"]:  # a copy on a recipient's page (#352)
+                    continue
                 if row[9] in chosen:
                     posts.setdefault(row[9], []).append({
                         "congress": cong, "member": names.get(mid, mid), "bioguide": mid,
@@ -178,7 +180,7 @@ def write(batch: Path, rows_path: Path) -> None:
         return label == "(no recipient)" or known_terms.get(key(label)) == "preferred" or key(label) in accepted
 
     batch_d = {o["digest"]: o for o in json.load(open(batch))}
-    T, P, R, D, V, NEWR, NEWH, unresolved, partial, notletter, DISC, under4 = ([] for _ in range(12))
+    T, P, R, D, V, NEWR, NEWH, unresolved, partial, notletter, DISC, under4, DIR = ([] for _ in range(13))
     org_labels_all = {lab for lab, k in labels_kind.items() if k in ("organization", "office")} | accepted_labels
     for line in open(rows_path, encoding="utf-8"):
         if not line.strip():
@@ -305,6 +307,11 @@ def write(batch: Path, rows_path: Path) -> None:
         if changed:
             D.append({"digest": d, "date": date, "precision": o.get("precision") or "day",
                       "source": f"{o.get('date_source') or 'the letterhead'}; was {post.get('date_now')} ({post.get('precision_now')})"})
+        # Direction (#175): "to" written to Congress, "neither" no member at
+        # either end. From Congress, the default, writes no row.
+        if o.get("direction") in ("to", "neither"):
+            DIR.append({"digest": d, "direction": o["direction"],
+                        "source": "read from the letter (the Mac)"})
         V.append({"digest": d, "reviewed": TODAY, "title": "yes", "date": "yes" if changed else "unchanged",
                   "topics": "yes", "filing": "yes", "note": (o.get("note") or "")[:400], "date_audited": "yes"})
 
@@ -337,6 +344,7 @@ def write(batch: Path, rows_path: Path) -> None:
     add("vocabulary/letter-recipients.csv", R)
     add("vocabulary/letter-dates.csv", D)
     add("vocabulary/letters-reviewed.csv", V)
+    add("vocabulary/letter-direction.csv", DIR)
     add("letters-discarded/letters.csv", DISC)
     # Under 4 subjects or 2 topics: filed, but marked for review
     # (QA-analysis-subject-analysis, Robin 17 November 2026).

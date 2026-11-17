@@ -104,6 +104,11 @@ second visit (section 5).
 4. **Author.** The posting member signed it, or is among the signers. If not
    (an agency reply, a letter *to* the member), the title names the sender
    ("— CBO Director Elmendorf to Chairman Baucus …") and the note says so (#175).
+   **Direction** (#175): a letter *to* Congress (to a member, committee,
+   caucus or chamber, by someone else) gets a row `<digest>,to,<source>` in
+   `vocabulary/letter-direction.csv`; one with no member at either end gets
+   `<digest>,neither,<source>`. A letter from Congress, the usual case, gets no
+   row.
 5. **Date.** From the letter's own text: the letterhead or dateline. If it
    has none, in this order, and stop at the first that works:
    1. Read the scan again (Apple Vision text or re-OCR); a garbled dateline
@@ -392,6 +397,7 @@ Each batch is one PR, which appends rows to these files in the dev repository:
 | `vocabulary/letter-dates.csv` | `digest,date,precision,source` | Only when the letter's own date differs from the published date. The source says why, e.g. "the letterhead; was 2018-09-19 (captured-by)". |
 | `vocabulary/letter-recipients.csv` | `digest,recipient,source` | One row per letter: the reviewed term from step 2 (an office, a committee, a member's name, or a company's label). Not for a private citizen. |
 | `vocabulary/reviews.csv` | `candidate,letters,decision,…` | Only when step 2 needs a decision the vocabulary lacks: a `joint` row for several offices at once, or a `merge` row for a company not yet reviewed. |
+| `vocabulary/letter-direction.csv` | `digest,direction,source` | Only for a letter not from Congress: `to` (written to Congress) or `neither` (no member at either end), #175. |
 | `vocabulary/letters-reviewed.csv` | `digest,reviewed,title,date,topics,filing,note,date_audited` | One row per letter read. `date` is `yes` if you added a date row, otherwise `unchanged`; `filing` is `yes` if you added a recipient row. |
 | `letters-vocabulary-needs/letters.csv` | `digest,title,date,topics,proposed_subjects,issue,note` | For a letter that needs a subject the vocabulary lacks. It stays here and goes in none of the files above. Also open a vocabulary-request issue for the term (§6). |
 | `letters-discarded/letters.csv` | `digest,title,reason,issue,decided` | Written by the Mac, which decides discards by the criteria in `letters-discarded/README.md` (Robin, 17 November 2026). The PC proposes them in an issue (step B2) and never writes this file. |

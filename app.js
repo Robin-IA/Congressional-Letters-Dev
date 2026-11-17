@@ -587,8 +587,23 @@ async function viewMember(id) {
   const m = byId.get(id);
   if (!m) return el('div', { class: 'empty' }, 'No such member.');
   // No member file is written for a member with no letters; don't ask for it.
-  const rows = m.letters ? await lettersOf(id) : [];
-  if (!rows.length) {
+  const all = (m.letters || m.received || m.posted) ? await lettersOf(id) : [];
+  // Three lists (Robin, 17 November 2026, #175, #352): letters this member's
+  // office wrote; letters written to them (posted on their site, or found on
+  // another site and addressed to them, "As recipient"); and documents with no
+  // member at either end that the office posted.
+  const dirOf = r => get(r, 'direction') || '';
+  const groups = {
+    written: all.filter(r => !dirOf(r)),
+    received: all.filter(r => ['to', 'received'].includes(dirOf(r))),
+    posted: all.filter(r => dirOf(r) === 'neither'),
+  };
+  const LABELS = { written: 'Letters written', received: 'Letters received', posted: 'Other documents posted' };
+  const pdir = params().get('dir');
+  const dir = groups[pdir]?.length ? pdir
+    : ['written', 'received', 'posted'].find(k => groups[k].length) || 'written';
+  const rows = groups[dir];
+  if (!all.length) {
     return el('div', {},
       link({ view: 'members' }, 'back', '← All members'),
       el('div', { class: 'panel' },
@@ -601,8 +616,8 @@ async function viewMember(id) {
 
   const p = params();
   const asList = p.get('as') === 'list';
-  const recipients = tally(rows, 'recipient');
-  const counts = yearsOf(rows);
+  const recipients = tally(groups.written, 'recipient');
+  const counts = yearsOf(groups.written);
   const years = [...counts.keys()].sort();
   const dated = rows.filter(r => ['day', 'letterhead', 'month']
     .includes(get(r, 'precision'))).length;
@@ -628,13 +643,17 @@ async function viewMember(id) {
         }, siteName(m))),
       el('div', { class: 'stats' },
         el('div', {},
-          el('span', { class: 'v tab' }, num(rows.length)),
+          el('span', { class: 'v tab' }, num(groups.written.length)),
           el('span', { class: 'k' },
             years.length
               ? (years[0] === years[years.length - 1]
-                ? `Letters, ${years[0]}`
-                : `Letters, ${years[0]}–${years[years.length - 1]}`)
-              : 'Letters')),
+                ? `Letters written, ${years[0]}`
+                : `Letters written, ${years[0]}–${years[years.length - 1]}`)
+              : 'Letters written')),
+        groups.received.length
+          ? el('div', {}, el('span', { class: 'v tab' }, num(groups.received.length)),
+            el('span', { class: 'k' }, 'Letters received'))
+          : null,
         m.since
           ? el('div', {},
             el('span', { class: 'v tab' }, service(m)),
@@ -645,6 +664,14 @@ async function viewMember(id) {
       )),
     el('div', { class: 'cols' },
       el('div', {},
+        (groups.received.length || groups.posted.length)
+          ? el('div', { class: 'toggle dirs', role: 'group', 'aria-label': 'Which letters' },
+            ...['written', 'received', 'posted'].filter(k => groups[k].length).map(k =>
+              el('button', {
+                'aria-pressed': String(k === dir),
+                onclick: () => { const q = params(); if (k === 'written') q.delete('dir'); else q.set('dir', k); shown = 0; go(q); },
+              }, `${LABELS[k]} (${num(groups[k].length)})`)))
+          : null,
         el('div', { class: 'controls' },
           el('div', { class: 'toggle' },
             el('button', {
@@ -798,7 +825,7 @@ async function viewRecipient(name) {
     : MEMBERS.filter(m => m.top.includes(name));
 
   const loaded = await Promise.all(candidates.map(async m =>
-    [m, (await lettersOf(m.id)).filter(r => get(r, 'recipient') === name)]));
+    [m, (await lettersOf(m.id)).filter(r => get(r, 'direction') !== 'received' && get(r, 'recipient') === name)]));
   const pairs = loaded.filter(([, rows]) => rows.length)
     .sort((a, b) => b[1].length - a[1].length);
   const total = pairs.reduce((sum, [, rows]) => sum + rows.length, 0);
@@ -920,7 +947,7 @@ async function viewYear(yearText) {
     : MEMBERS.filter(m => m.span && m.span[0] <= year && year <= m.span[1]);
 
   const loaded = await Promise.all(candidates.map(async m =>
-    [m, (await lettersOf(m.id)).filter(r =>
+    [m, (await lettersOf(m.id)).filter(r => get(r, 'direction') !== 'received' &&
       (get(r, 'date') || '').startsWith(String(year)))]));
   const pairs = loaded.filter(([, rows]) => rows.length)
     .sort((a, b) => b[1].length - a[1].length);

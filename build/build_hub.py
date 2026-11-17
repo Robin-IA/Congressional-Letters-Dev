@@ -60,6 +60,8 @@ def samples(explorer: Path, n: int) -> list[dict]:
         if not m.get("letters") or not path.exists():
             continue
         for r in json.loads(path.read_text(encoding="utf-8")):
+            if r[11:12] == ["received"]:  # a copy on a recipient's page (#352)
+                continue
             digest = r[col["digest"]]
             if (digest and r[col["recipient"]] and r[col["kind"]] == "pdf"
                     and (thumbs / f"{digest}.webp").exists()):
