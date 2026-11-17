@@ -53,7 +53,9 @@ def pick(n: int, out: Path, skip_file: str | None) -> None:
         cs = [int(c) for c in r["congresses"].replace(";", " ").split() if c.isdigit()]
         if not cs or min(cs) > 115 or r["text"] != "True" or r["reviewed"] != "False":
             continue
-        if r["digest"] in taken:
+        if r["digest"] in taken or not re.fullmatch(r"[A-Z2-7]{32}", r["digest"]):
+            # A hex digest is not a Wayback digest, and the vocabulary files
+            # refuse it (batch 2); those letters wait on their issue.
             continue
         cand.append((-len(r["members"].split(";")), -max(cs), r["digest"], min(cs), r))
     cand.sort()
