@@ -58,9 +58,10 @@ second visit (section 5).
      letter (a press release, resolution, newsletter, bill text, exhibit,
      "Dear Employer"), or a letter that is not by a member or congressional
      group, not to or about one, and not a supplement to a member's letter
-     → add it to the batch's **"Proposed discards" issue** and go to the
-     next letter. Write no rows, and do not write `letters-discarded/`
-     yourself: the Mac decides, by the criteria, and records it.
+     → add it to the batch's **"Proposed discards" issue**, hold it (one
+     hold row with that issue's number) and go to the next letter. Do not
+     write `letters-discarded/` yourself: the Mac decides, by the criteria,
+     and records it.
      No text is **not** a reason to discard: it needs OCR.
    - Not sure → hold it (step 7) with the reason.
 3. **Recipient.** Read the address block, then the salutation, then the body.
@@ -141,8 +142,10 @@ wrong member, a date or authorship it cannot settle, and anything else it
 cannot resolve. It writes one row in `letters-vocabulary-needs/letters.csv`
 with the issue number and the reason, and no other rows for that letter. **The
 Mac resolves the issue and files the letter**, then closes the issue (Robin,
-17 November 2026). The PC never files a held letter itself. Proposed discards
-are the same: listed on their issue, no rows; the Mac decides and records them.
+17 November 2026). The PC never files a held letter itself. A **proposed discard** is
+held the same way, with the discards issue's number, so the pick list does not
+choose it again; the Mac decides it and moves it to `letters-discarded/` or
+files it.
 
 ### C. Finish the batch
 
