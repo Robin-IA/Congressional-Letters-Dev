@@ -98,6 +98,35 @@ def pick(n: int, out: Path, skip_file: str | None) -> None:
 
 # ------------------------------------------------------------------ write
 
+_ALL_TEXT: dict | None = None
+
+
+def citing_letters(digest: str, rec: dict, title: str) -> list[str]:
+    """Other letters by the same posting members whose OCR names this one's
+    distinctive words (its sender or subject), as a supplement check."""
+    global _ALL_TEXT
+    if _ALL_TEXT is None:
+        _ALL_TEXT = {}
+        for f in sorted((OCR / "text").glob("*.jsonl.gz")):
+            with gzip.open(f, "rt", encoding="utf-8") as fh:
+                for line in fh:
+                    r = json.loads(line)
+                    _ALL_TEXT[r["digest"]] = r["text"].lower()
+    members = {p.get("bioguide") for p in rec.get("postings", [])}
+    keys = [w.lower() for w in re.findall(r"[A-Za-z][A-Za-z'-]{6,}", title)
+            if w.lower() not in TITLE_STOP][:5]
+    if not keys:
+        return []
+    out = []
+    for r in csv.DictReader((OCR / "progress.csv").open(encoding="utf-8")):
+        if r["digest"] == digest or not (set(r["members"].split(";")) & members):
+            continue
+        t = _ALL_TEXT.get(r["digest"], "")
+        if sum(k in t for k in keys) >= max(2, len(keys) // 2 + 1):
+            out.append(r["digest"][:12])
+    return out
+
+
 TITLE_STOP = {"letter", "senator", "secretary", "administrator", "chairman", "representative",
               "members", "department", "ranking", "member", "committee", "leader", "january",
               "february", "august", "september", "october", "november", "december"}
@@ -174,6 +203,16 @@ def write(batch: Path, rows_path: Path) -> None:
             notletter.append((d, o.get("title", ""), o.get("note", "")))
             note = o.get("note") or ""
             test = "test 2, no relation to Congress" if note.lower().startswith("no relation") else "test 1, not a letter"
+            if test.startswith("test 2"):
+                # Test 2 needs more than the letter itself: it may be a
+                # supplement to one of the posting member's own letters (the
+                # USGS letter Cantwell cited; #1207). Search their letters' OCR.
+                cites = citing_letters(d, batch_d[d], o.get("title") or "")
+                if cites:
+                    notletter.pop()
+                    unresolved.append((d, f"no relation by itself, but the posting members' letters may cite it: {cites[:5]}"))
+                    continue
+                note += f" No letter by the posting members cites it (searched their OCR)."
             post = (batch_d[d]["postings"] or [{}])[0]
             DISC.append({"digest": d, "title": o.get("title", ""), "reason": f"{test}: {note}"[:400],
                          "issue": "", "decided": f"the Mac, by the discard criteria, {TODAY}",
