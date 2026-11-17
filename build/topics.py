@@ -525,6 +525,22 @@ SUBJECTS: dict[str, tuple[str, ...]] = {
     # asked for. No match words, so no letter is tagged by them automatically.
     "Yemen": (),
     "Foreign investment": (),
+    # Hand-filed only (#1250; Robin, 17 November 2026): asked for by the
+    # 106th-115th reading. U.S. territories is the group; the five territories
+    # are the subjects under it.
+    "Puerto Rico": (),
+    "Guam": (),
+    "U.S. Virgin Islands": (),
+    "Northern Marianas": (),
+    "American Samoa": (),
+    "North Korea": (),
+    "Nicaragua": (),
+    "Foster care": (),
+    "School safety": (),
+    "Assisted suicide": (),
+    "Foreign bribery": (),
+    "Invasive species": (),
+    "Currency": (),
 }
 
 # ------------------------------------------------------------- the agencies
