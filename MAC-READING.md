@@ -115,7 +115,8 @@ batch N" PR.
 5. **Test and open the PR:**
 
    ```bash
-   python3 -m unittest discover -s tests          # must pass
+   python3 -m unittest discover -s tests          # must say OK; read it, do not
+                                                  # chain on it (grep succeeds either way)
    git add vocabulary && git commit -m "Mac reading, 106th-115th, batch N: X letters filed"
    git push -q dev mac-read-106-115-bN
    gh pr create -R Robin-IA/Congressional-Letters-Dev --base harvest-member-letters \
@@ -177,4 +178,4 @@ branch and PR, so the PC's pick list stays current.
 | Batch | PR | Filed | Notes |
 | --- | --- | --- | --- |
 | 1 | 1221 | 198 | 17 new terms, 14 joint, 9 dates; 2 not letters to #1222 |
-| 2 | — | — | read on 17 November; finish and fold it first if its PR is not merged |
+| 2 | 1225 | 190 | 9 new terms, 10 joint, 5 dates; 3 not letters to #1222; 3 partial to #252; 3 unresolved (issues); 1 hex digest dropped |
