@@ -68,6 +68,12 @@ second visit (section 5).
      and records it.
      No text is **not** a reason to discard: it needs OCR.
    - Not sure → hold it (step 7) with the reason.
+   - **A bundle** (several letters in one file): read and file it as **one
+     record describing the whole bundle**, never under its first letter alone
+     (qa/QA-analysis-text.md step 4; Robin, 17 November 2026, #1226). Title
+     it for the bundle ("— NECA and others to …"), name every sender and
+     recipient organization, and begin the note "Bundle:" with each letter
+     inside listed (sender, recipient, date).
 3. **Recipient** (qa/QA-analysis-recipients.md; Robin, 17 November 2026).
    Not a separate requirement: never hold a letter for want of one. Read the
    address block, then the salutation, then the body:
@@ -147,7 +153,7 @@ second visit (section 5).
 ### Issues and holds
 
 **Whenever the PC files an issue about a letter, it holds the letter.** That
-covers missing vocabulary, unreadable text, a bundle, a posting credited to the
+covers missing vocabulary, unreadable text, a posting credited to the
 wrong member, a date or authorship it cannot settle, and anything else it
 cannot resolve. It writes one row in `letters-vocabulary-needs/letters.csv`
 with the issue number and the reason, and no other rows for that letter. **The

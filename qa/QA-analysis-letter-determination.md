@@ -26,6 +26,10 @@ preferred, not required. The addressee is where the recipient comes from
 - vendor quotes, schedules or forms sent with a funding request;
 - an exhibit (bank statement, check, e-mail printout, interview notes).
 
+**A bundle** (several letters in one file) is decided as a whole: kept if any
+letter in it passes test 2, and filed as one record (QA-analysis-text step 4;
+Robin, 17 November 2026, #1226).
+
 **Still a letter**: a member's mail-merge or form letter to a class of people
 ("Dear Mayor/Chief", "Dear Recommender") is the member's correspondence; file
 it with no recipient.

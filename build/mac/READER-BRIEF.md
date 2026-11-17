@@ -49,6 +49,14 @@ letters.
 1. **Is it a letter?** It needs an addressee (person, office, company,
    organization; a salutation or inside address shows it) and a signer.
    - Only part of a letter (a signature page, a middle page, footers): `status: "partial"`.
+   - **Several letters in one file** (a bundle: support packets, replies, a
+     letter with a press release or memo): `status: "file"`, ONE row for the
+     whole bundle. Title it for the bundle ("On Support for X — NECA and
+     others to Speaker Ryan and Representative Newhouse, <first letter's
+     date>"); put every sender and recipient organization in `names`; begin
+     `note` with "Bundle:" and list each letter (sender, recipient, date) and
+     any non-letter part. Discard only if no letter in it passes test 2
+     (qa/QA-analysis-text.md step 4).
    - Not a letter at all (a resolution, Senate Journal page, newsletter, bill
      text, press release — even one quoting a letter in full — report,
      exhibit, form): `status: "notletter"`, with a short `title` saying what

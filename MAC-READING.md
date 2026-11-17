@@ -179,13 +179,14 @@ their numbers. **Handle them in this order**, every time, from the OCR:
    test 2. Discard: a `letters-discarded/` row with its Wayback link; kept:
    file it like any held letter. Remove its hold row. One PR; comment each
    decision; close the issue.
-4. **Any other issue the PC files about a letter** (unreadable text, a bundle,
+4. **Any other issue the PC files about a letter** (unreadable text,
    wrong attribution, an unsettled date or author): resolve it (re-OCR, a
    rule, a date from the content), file the letter, remove its hold, close
    the issue.
 5. **Ask Robin only** when the rules do not settle it: a new kind of case, a
-   change to a rule, or a judgment the criteria leave open (bundled PDFs,
-   #1226). Say on the issue that it waits on Robin.
+   change to a rule, or a judgment the criteria leave open. Say on the issue
+   that it waits on Robin. (Bundled PDFs are settled: one record for the
+   whole bundle, QA-analysis-text step 4, #1226.)
 6. After the next publish, the PC's pick list sees the batch as done.
 
 ## Issues: only for what cannot be resolved
@@ -255,4 +256,5 @@ branch and PR, so the PC's pick list and the QA status stay current.
 | 21 | 1281 | 196 | under the 2-topic rule: 193 meet it, 5 short (noted); 52 new terms, 7 joint, 4 dates; 3 discarded (draft bill text; two letters by test 2 after the search was read by hand); 1 partial |
 | 22 | 1282 | 196 | 6 short of 4 subjects or 2 topics (noted); 75 new terms, 9 joint, 7 dates; 4 discarded (a Warren report, a forwarded email, a blank grant-request form, and FEMA to North Dakota on Drayton by test 2 after the search was read by hand); the service organizations' Military Lending Act letter linked to McCaskill's |
 | 23 | 1283 | 197 | Royce-McCaul-Duncan letter on Carter's site kept at its capture date (#1284); 2 short of 4 subjects or 2 topics (noted); 54 new terms, 14 joint, 6 dates; 2 discarded by test 2 after the search was read by hand (a Tampa Bay Defense Alliance op-ed on Castor's site; an Education Department letter to state school chiefs on Toomey's); the IACHR hearing notice linked to the territories' delegates' letter; 1 partial |
-| issues | (this PR) | 40 | the 99 letters left undecided on 26 questionable-letter issues: 40 filed, 52 discarded (test 1 or test 2, each test-2 discard after the supplement search was read by hand), 8 kept as supplements and linked, 5 partials (#252), 2 bundles (#1226) |
+| issues | 1288 | 40 | the 99 letters left undecided on 26 questionable-letter issues: 40 filed, 52 discarded (test 1 or test 2, each test-2 discard after the supplement search was read by hand), 8 kept as supplements and linked, 5 partials (#252), 2 bundles (#1226) |
+| bundles | (this PR) | 19 | the bundle rule (#1226): 8 bundles that waited on it filed, and 11 the PC had filed under their first letter re-read, each as one record for the whole bundle with a "Bundle:" note; 77 new terms |

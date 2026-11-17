@@ -21,9 +21,25 @@ judgment about a letter, make sure you are reading the whole of it.
      note it on **#252** and leave it unfiled until the full PDF is read.
    - Complete except the signature block (OCR stops at "Sincerely"): it is
      whole; file it, noting that the signers could not be checked.
-4. **Is it one letter?** A file holding several letters, a packet of support
-   letters, or a letter with a press release is a **bundle**: list it on
-   **#1226** and leave it unfiled until that rule is set.
+4. **Is it one letter?** A file holding several letters (a packet of support
+   letters, a set of replies, letters with a press release, memo, cost
+   estimates or petition pages) is a **bundle**. Robin, 17 November 2026
+   (#1226): **a bundle is read and filed as one record, describing the whole
+   bundle**:
+   - **Title** names the bundle: "On Support for H.R. 3144 — NECA and others
+     to Speaker Ryan and Representative Newhouse, 12 June 2017", dated by its
+     first letter.
+   - **Authors and recipients**: the posting member and any member who signed
+     or received a letter in it, as for any letter (QA-analysis-authorship,
+     QA-analysis-recipients).
+   - **Names**: every sender and recipient organization or office in it, with
+     the topics (QA-analysis-subject-analysis).
+   - **Note** begins "Bundle:" and lists each letter inside (sender, recipient,
+     date) and any non-letter part.
+   - **Letter determination** applies to the bundle as a whole: a press
+     release, memo, estimate or petition inside does not disqualify it; it is
+     discarded only when no letter in it passes test 2.
+   A bundle is not split into one record per letter.
 5. **Is the digest sound?** A 40-character hex digest is not a Wayback digest;
    such rows are skipped and listed on #1226.
 6. **Duplicates.** If the same letter is in another file, follow
