@@ -4,6 +4,10 @@
 whatever model it runs. A session that starts fresh does not remember this
 setup. That includes switching models, for example to Sonnet.
 
+**This is the contributor's guide** (QA-Analysis-methodology, "Roles"):
+written for the PC, and meant to serve Internet Archive staff or public
+contributors later.
+
 **The rules for every step are the QA-Analysis-methodology** (`qa/`, Robin,
 17 November 2026): letter determination, authorship, recipients, subject
 analysis, dates and titles. The steps below are how the PC applies them; where
