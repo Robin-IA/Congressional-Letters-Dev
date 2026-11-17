@@ -494,6 +494,18 @@ SUBJECTS: dict[str, tuple[str, ...]] = {
     "Sports": (),
     "Parks and recreation": (),
     "Public facilities": (),
+    # Hand-filed only (#221; Robin, 16 November 2026): subjects the readers
+    # asked for. No match words, so no letter is tagged by them automatically.
+    "Brazil": (),
+    "Ethiopia": (),
+    "Rwanda": (),
+    "Sri Lanka": (),
+    "El Salvador": (),
+    "Cyprus": (),
+    "Saudi Arabia": (),
+    "Turkey": (),
+    "Taiwan": (),
+    "Western Sahara": (),
 }
 
 # ------------------------------------------------------------- the agencies
