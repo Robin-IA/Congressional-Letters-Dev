@@ -192,4 +192,5 @@ branch and PR, so the PC's pick list stays current.
 | 4 | 1245 | 196 | 7 new terms, 9 joint; 3 discarded (the Smith statement, and two test-2 letters after the supplement search was checked by hand); 1 partial to #252 |
 | 5 | 1248 | 199 | 10 new terms (incl. Prime Minister of Israel), 14 joint, 4 dates; 1 discarded (a hearing opening statement); 1 title hand-checked past the guard |
 | 6 | 1251 | 195 | 11 new terms, 8 joint, 4 dates; 4 discarded (a speech, a news release, Baldwin's guidelines sheet, a USDA letter by test 2); 1 partial to #252 |
-| 7 | (this PR) | 199 | 12 new terms (Oregon state officers for a four-office joint letter), 11 joint, 6 dates; 1 discarded (a sign-on statement) |
+| 7 | 1252 | 199 | 12 new terms (Oregon state officers for a four-office joint letter), 11 joint, 6 dates; 1 discarded (a sign-on statement) |
+| 8 | (this PR) | 194 | 13 new terms, 11 joint, 4 dates; 6 discarded (a floor statement, blank forms and instruction sheets, an EPA letter by test 2); an upside-down scan rotated and OCR'd |
