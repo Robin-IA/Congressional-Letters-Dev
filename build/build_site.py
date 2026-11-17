@@ -328,7 +328,9 @@ COLUMNS = ["key", "timestamp", "kind", "date", "precision", "recipient",
 
 # How each relation in vocabulary/letter-related.csv reads on the two letters
 # it joins: (on the first file, on the second).
-RELATION_LABELS = {"supports": ("Supports", "Supporting document")}
+RELATION_LABELS = {"supports": ("Supports", "Supporting document"),
+                   # an unfinished draft and the letter as sent (#183, #180)
+                   "draft_of": ("Draft of", "Sent version")}
 
 
 def related_notes(by_member: dict, links: list) -> dict[str, list[list[str]]]:

@@ -116,7 +116,8 @@ def by_hand() -> dict[str, str]:
 def related() -> list[tuple[str, str, str]]:
     """Letter-to-letter links made by hand: (digest, related, relation).
 
-    vocabulary/letter-related.csv. "supports" says the first file is a
+    vocabulary/letter-related.csv. "draft_of" says the first file is an
+    unfinished draft of the second, the letter as sent (#183). "supports" says the first file is a
     supporting document for the second: the USGS's request to the FCC that
     Senator Cantwell posted beside her own letter citing it (#1207).
     """

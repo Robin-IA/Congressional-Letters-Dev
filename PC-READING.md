@@ -68,6 +68,11 @@ second visit (section 5).
      and records it.
      No text is **not** a reason to discard: it needs OCR.
    - Not sure → hold it (step 7) with the reason.
+   - **A draft** (the addressee or the signers missing: "[ADDRESS BLOCK]",
+     "[SIGNATURES]", blank signature lines): file it, with the title ending "— a draft" and the note
+     beginning "Draft:"; name the sent version in the note if you know it, and
+     the Mac links the two (qa/QA-analysis-letter-determination.md, "Drafts").
+     A letter with only its day left blank is not a draft.
    - **A bundle** (several letters in one file): read and file it as **one
      record describing the whole bundle**, never under its first letter alone
      (qa/QA-analysis-text.md step 4; Robin, 17 November 2026, #1226). Title

@@ -16,6 +16,12 @@ def row(digest, subject, ts="20200120113638", key="example.gov/a.pdf", url=""):
 
 
 class RelatedNotes(unittest.TestCase):
+    def test_a_draft_and_its_sent_version_point_at_each_other(self):
+        rows = {"M": [row("DRAFT", "TitleMax — a draft"), row("SENT", "TitleMax — to Director Chopra")]}
+        notes = build_site.related_notes(rows, [("DRAFT", "SENT", "draft_of")])
+        self.assertEqual(notes["DRAFT"][0][:2], ["Draft of", "TitleMax — to Director Chopra"])
+        self.assertEqual(notes["SENT"][0][:2], ["Sent version", "TitleMax — a draft"])
+
     def test_supports_reads_both_ways_and_links_the_pdf(self):
         rows = {"C000127": [row("USGS", "USGS request", key="s.gov/usgs.pdf"),
                             row("CANT", "Cantwell to Pai", ts="20190801000000",

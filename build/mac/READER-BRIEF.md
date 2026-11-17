@@ -49,6 +49,12 @@ letters.
 1. **Is it a letter?** It needs an addressee (person, office, company,
    organization; a salutation or inside address shows it) and a signer.
    - Only part of a letter (a signature page, a middle page, footers): `status: "partial"`.
+   - **Placeholders unfilled**: only the day blank ("July ___, 2018") on a
+     signed, addressed letter, or "[DATE]" alone → file it normally, dated to
+     the month. An unfinished draft (addressee or signers missing:
+     "[ADDRESS BLOCK]", "[SIGNATURES]", blank signature lines) → file it,
+     title ending "— a draft", note beginning "Draft:", and say in the note
+     if you can see which letter was sent (qa/QA-analysis-letter-determination.md).
    - **Several letters in one file** (a bundle: support packets, replies, a
      letter with a press release or memo): `status: "file"`, ONE row for the
      whole bundle. Title it for the bundle ("On Support for X — NECA and
