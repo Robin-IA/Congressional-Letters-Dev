@@ -202,4 +202,5 @@ branch and PR, so the PC's pick list stays current.
 | 14 | 1259 | 198 | 14 new terms (a Colorado local-government group built for Denver), 7 joint, 5 dates; 1 discarded; 1 partial; published after batch 13 (26.7% done) |
 | 15 | 1260 | 199 | 6 new terms, 10 joint, 2 dates; 1 discarded (Treasury's response to a SIGTARP draft, test 2 after the search was read by hand) |
 | 16 | 1261 | 194 | 11 new terms, 10 joint, 3 dates; 5 discarded (2 not letters; 3 test-2 letters after the search was read by hand); a tribal letter naming the Nevada delegation kept; 1 partial |
-| 17 | (this PR) | 198 | 14 new terms, 6 joint, 4 dates; 2 discarded (floor remarks; asylum attorneys' letter to Kelly by test 2) |
+| 17 | 1262 | 198 | 14 new terms, 6 joint, 4 dates; 2 discarded (floor remarks; asylum attorneys' letter to Kelly by test 2) |
+| 18 | (this PR) | 194 | 7 new terms, 10 joint, 6 dates; 3 discarded by test 2 after the search was read by hand; 2 bundles to #1226; 1 partial |
