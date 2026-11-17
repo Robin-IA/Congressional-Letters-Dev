@@ -63,6 +63,12 @@ unreadable text needing OCR, a bundle, a rule that does not exist, or a
 posting credited to the wrong member. Name the digest, the posting member and
 file, and what was read.
 
+**An issue holds its letter** (Robin, 17 November 2026). A reader who files an
+issue about a letter writes only its hold row (`letters-vocabulary-needs/
+letters.csv`, with the issue number) and no other rows. **The Mac resolves the
+issue, files the letter, and closes the issue.** A held letter is never filed
+by the reader who held it.
+
 **QA checks**, all of which must pass before a batch is merged:
 
 1. Every row's title matches its own letter's text (the writer's title

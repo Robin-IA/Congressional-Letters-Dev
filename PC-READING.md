@@ -107,8 +107,8 @@ second visit (section 5).
      office. Check every label.
    - If the letter's main subject is not in `SUBJECTS` → hold it (step 7).
      Never bend it onto a subject that does not fit.
-7. **Hold** (only for a missing term or subject, or a letter you cannot
-   place): one row in `letters-vocabulary-needs/letters.csv` with the title,
+7. **Hold** (for a missing term or subject, a letter you cannot place, or
+   any letter you file an issue about; see "Issues and holds" below): one row in `letters-vocabulary-needs/letters.csv` with the title,
    date, subjects, the term or subject needed, and the reason. Write **none**
    of the other rows for it. Then:
    - **One vocabulary issue per batch**, titled "Reading batch N:
@@ -132,6 +132,17 @@ second visit (section 5).
    each file with `\n` line endings: `letter-titles.csv`, `letter-topics.csv`,
    `letter-recipients.csv`, `letter-dates.csv` (only if step 5 changed it),
    and always one `letters-reviewed.csv` row (section 5, the table).
+
+### Issues and holds
+
+**Whenever the PC files an issue about a letter, it holds the letter.** That
+covers missing vocabulary, unreadable text, a bundle, a posting credited to the
+wrong member, a date or authorship it cannot settle, and anything else it
+cannot resolve. It writes one row in `letters-vocabulary-needs/letters.csv`
+with the issue number and the reason, and no other rows for that letter. **The
+Mac resolves the issue and files the letter**, then closes the issue (Robin,
+17 November 2026). The PC never files a held letter itself. Proposed discards
+are the same: listed on their issue, no rows; the Mac decides and records them.
 
 ### C. Finish the batch
 
@@ -157,7 +168,9 @@ second visit (section 5).
    - Title: "Reading batch N: X of 500 letters filed, Y held".
    - Body: filed, held (with the term issues linked), the discards issue,
      #252 partials, and "holder check not run on the PC".
-4. Tell Robin the PR number and the term issue numbers. **Never merge.**
+4. Tell Robin the PR number and the issue numbers (vocabulary, proposed
+   discards, any others). **Never merge**, and never file a held letter: the
+   Mac resolves each issue and files its letters.
 5. Start the next batch at A1. The pick list skips this batch's letters
    while its PR is open.
 
@@ -556,7 +569,7 @@ never removed. Use only these (`gh label list` shows them):
 | Label | Use it for |
 | --- | --- |
 | `reading` | A reading batch PR; a letter that needs to be read again |
-| `vocabulary` | A term request ("New vocabulary term needed"), holds, recipients, subjects, `reviews.csv` |
+| `vocabulary` | The batch's "Reading batch N: vocabulary needed" issue, holds, recipients, subjects, `reviews.csv` |
 | `dates` | Letters with no date in their text (the #191 issues), refused dates, holder-check problems |
 | `OCR` | Text missing, cut off or unreadable; OCR batches and returns |
 | `harvest` | Member sites, URLs, captures, letters not found or not in PDF |
