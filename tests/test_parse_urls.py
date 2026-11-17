@@ -457,3 +457,17 @@ class QuillStamp(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class HexDigest(unittest.TestCase):
+    def test_a_hex_sha1_becomes_the_wayback_base32_digest(self):
+        # #1292: Maloney's Trump Tower letter; the PDF's SHA-1 is the hex.
+        rec = letter("maloney.house.gov/files/nyc letter re trump tower reimbursement.pdf")
+        rec["digest"] = "319a64c40677f11fe6488cadd6fcdc85f5105330"
+        self.assertEqual(parse(rec, "Maloney")["digest"], "GGNGJRAGO7YR7ZSIRSW5N7G4QX2RAUZQ")
+
+    def test_a_base32_digest_is_left_alone(self):
+        rec = letter("maloney.house.gov/files/a letter.pdf")
+        rec["digest"] = "GGNGJRAGO7YR7ZSIRSW5N7G4QX2RAUZQ"
+        self.assertEqual(parse(rec, "Maloney")["digest"], "GGNGJRAGO7YR7ZSIRSW5N7G4QX2RAUZQ")
+
