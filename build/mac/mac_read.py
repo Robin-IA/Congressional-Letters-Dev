@@ -286,6 +286,12 @@ def write(batch: Path, rows_path: Path) -> None:
         P.append({"digest": d, "topics": ";".join(tops[:8] + comps), "source": SRC})
         R.append({"digest": d, "recipient": rec, "source": (o.get("recipient_source") or "read from the letter's address block (the Mac)")})
         date = o.get("date") or ""
+        # A month or a year alone is stored as a full date the build can sort:
+        # YYYY-MM-01 (month) and YYYY-06-30 (year), as PC-READING says (batch 18).
+        if re.fullmatch(r"\d{4}-\d{2}", date):
+            date, o["precision"] = date + "-01", "month"
+        elif re.fullmatch(r"\d{4}", date):
+            date, o["precision"] = date + "-06-30", "year"
         changed = bool(date) and date != post.get("date_now")
         if changed:
             D.append({"digest": d, "date": date, "precision": o.get("precision") or "day",
