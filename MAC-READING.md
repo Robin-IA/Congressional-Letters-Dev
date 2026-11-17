@@ -195,4 +195,5 @@ branch and PR, so the PC's pick list stays current.
 | 7 | 1252 | 199 | 12 new terms (Oregon state officers for a four-office joint letter), 11 joint, 6 dates; 1 discarded (a sign-on statement) |
 | 8 | 1253 | 194 | 13 new terms, 11 joint, 4 dates; 6 discarded (a floor statement, blank forms and instruction sheets, an EPA letter by test 2); an upside-down scan rotated and OCR'd |
 | 9 | 1254 | 197 | 11 new terms, 15 joint, 3 dates; 1 discarded (hearing talking points); 2 partial to #252; published after batch 8 (25.5% done) |
-| 10 | (this PR) | 199 | 16 new terms, 11 joint, 4 dates; 1 discarded (an amicus brief); an open letter to Texas college presidents filed with no recipient |
+| 10 | 1255 | 199 | 16 new terms, 11 joint, 4 dates; 1 discarded (an amicus brief); an open letter to Texas college presidents filed with no recipient |
+| 11 | (this PR) | 196 | 9 new terms, 15 joint, 4 dates; 2 supplements kept and linked after the search (Hua Qu to Trump; governors on 1332 waivers); 3 discarded; 1 partial |
