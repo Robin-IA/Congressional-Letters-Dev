@@ -49,6 +49,11 @@ template placeholders unfilled is still a letter, and kept:
 ("Dear Mayor/Chief", "Dear Recommender") is the member's correspondence; file
 it with no recipient.
 
+**Still a letter**: a member's **letter to the editor**, addressed to a
+newspaper (Robin, 18 November 2026, #1330); the newspaper is a name. A
+"welcome to my web page" message is a web page, discarded under test 1;
+one that says more than a welcome is read as a letter (#1332).
+
 ## Test 2: does it belong to Congress?
 
 A letter is **kept** if any one holds:
