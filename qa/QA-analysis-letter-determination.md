@@ -64,6 +64,17 @@ A letter is **kept** if any one holds:
 
 A letter for which **none** holds is discarded.
 
+**Campaign letters** (Robin, 17 November 2026, #411). A letter written as a
+candidate or by a campaign (campaign letterhead or site, "paid for by",
+fundraising, a campaign address) is **kept if it was written while its author
+was serving in Congress**, and read and filed like any letter, its note saying
+"campaign letter". One written **outside that service**, before the author
+took office or after they left, is **discarded** ("campaign letter outside
+congressional service"). Check the date against the author's service as in
+QA-analysis-authorship step 5; a campaign letter with no date is dated by the
+usual rules first, and is held for review, not discarded, if its date cannot
+be settled.
+
 ### The supplement search (required before any test-2 discard)
 
 The letter alone cannot show point 3. Search the OCR of every letter by the

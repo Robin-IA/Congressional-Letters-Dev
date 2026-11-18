@@ -70,6 +70,14 @@ A letter for which **none** holds is **discarded**: correspondence between
 other parties that a member happened to post (the Florida agriculture
 department's letter to the Army Corps; #1207).
 
+
+**Campaign letters** (Robin, 17 November 2026, #411): **discard** a campaign
+letter (campaign letterhead or site, "paid for by", fundraising) written
+**outside** its author's service in Congress, before they took office or after
+they left, with the reason "campaign letter outside congressional service".
+A campaign letter written **while** they served is kept and read, its note
+saying "campaign letter". A campaign letter whose date cannot be settled is
+held for review, not discarded.
 ### Not reasons to discard
 
 - **No text, or text too damaged to read.** The posting needs a fetch and
