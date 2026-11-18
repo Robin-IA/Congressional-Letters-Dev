@@ -4,7 +4,7 @@ Letters that members of Congress published on their own websites, preserved by
 the Wayback Machine, organised by Congress. Read `README.md` first for what the
 thing is; this file is for the decisions that are not visible from the code.
 
-**One explorer per Congress, 106th to 119th, and a home page over all of them.**
+**One explorer per Congress, 105th to 119th, and a home page over all of them.** The 105th (1997–98) is built from hand-read HTML letters as well as PDFs (#1330).
 `EXPLORERS.md` has the build instructions, the decisions and what is still
 open; `METHODOLOGY.md` has the method behind each step. This repository is the
 development repository: everything is built and tested here, and the sites are

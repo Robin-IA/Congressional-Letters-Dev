@@ -52,7 +52,7 @@ import build_congress as bc  # noqa: E402
 MIN_CHARS = 100
 # OCR this many times the text layer's length replaces it: the layer is missing pages (#252)
 PARTIAL_RATIO = 1.5
-CONGRESSES = range(106, 120)
+CONGRESSES = range(105, 120)
 
 # The buckets of #116, in the order COVERAGE.md lists them.
 BUCKETS = [

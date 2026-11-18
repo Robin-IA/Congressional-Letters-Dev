@@ -181,6 +181,25 @@ def directory(n: int) -> list[dict]:
     return list(csv.DictReader(open(f, encoding="utf-8"), delimiter="\t")) if f.exists() else []
 
 
+def cdx_urls(n: int) -> dict[str, tuple[list, str]]:
+    """bioguide -> (URLs, note) from data/rosters/cdx-urls-<n>.tsv: member paths that
+    answered a CDX query with captures inside this Congress. For the 105th, whose
+    chamber directories were first captured after it ended (#1330). Each row says
+    why the path is that member's."""
+    f = OUT / f"cdx-urls-{n}.tsv"
+    rows: dict[str, list] = {}
+    if f.exists():
+        for r in csv.DictReader(open(f, encoding="utf-8"), delimiter="\t"):
+            rows.setdefault(r["bioguide_id"], []).append(r)
+    out: dict[str, tuple[list, str]] = {}
+    for bid, rs in rows.items():
+        a = min(r["first_capture"][:8] for r in rs)
+        b = max(r["last_capture"][:8] for r in rs)
+        out[bid] = ([r["url"] for r in rs], f"URL not in dataset; {'paths' if len(rs) > 1 else 'path'} "
+                                            f"captured {a}–{b} (CDX, #1330)")
+    return out
+
+
 # (state, folded surname) -> [(bioguide, given-name keys)], for every legislator.
 # Filled by roster(); lets a listing be told apart from a relative's in the same seat.
 KIN: dict[tuple[str, str], list[tuple[str, set]]] = {}
@@ -279,6 +298,7 @@ def also_listed(listed: list[dict], p: dict, t: dict, urls: list) -> tuple[list,
 def roster(n: int, cur: list, hist: list, today: str) -> list[dict]:
     S, E = bounds(n)
     listed = directory(n)
+    found = cdx_urls(n)
     fill_kin(cur + hist)
     curids = {p["id"]["bioguide"] for p in cur}
     # The day this Congress actually convened: the most common term start in it.
@@ -327,6 +347,8 @@ def roster(n: int, cur: list, hist: list, today: str) -> list[dict]:
             u, why = from_directory(listed, p, tl)
             if u:
                 urls, src = u.split(" | "), why
+        if not urls and bid in found:
+            urls, src = found[bid][0], found[bid][1]
         if not urls and later and later[0].get("url"):
             urls, src = [norm(later[0]["url"])], "URL not in dataset for this term; taken from next term"
         if urls and listed:

@@ -726,12 +726,20 @@ SUBJECTS: dict[str, tuple[str, ...]] = {
     "Foreign bribery": (),
     "Invasive species": (),
     "Currency": (),
+    # Hand-filed only (#1330; 18 November 2026): laws and a bill the 105th
+    # Congress's HTML letters name. No match words, so no other letter changes.
+    "Government Performance and Results Act": (),
+    "School-to-Work Opportunities Act": (),
+    "Legal Timber Protection Act": (),
 }
 
 # A named law's phrase also tags its parent topic (and any topic its words
 # would otherwise hide: tag() keeps only the longest phrase at a position),
 # so "Violence Against Women Act" still carries Domestic violence (#1324).
 LAW_PARENTS: dict[str, tuple[str, ...]] = {
+    'Government Performance and Results Act': ('Oversight',),
+    'School-to-Work Opportunities Act': ('Jobs',),
+    'Legal Timber Protection Act': ('Trade',),
     'Consolidated Appropriations Act': ('Appropriations',),
     'Infrastructure Investment and Jobs Act': ('Transportation',),
     'Tax Cuts and Jobs Act': ('Taxes',),

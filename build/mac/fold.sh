@@ -25,7 +25,9 @@ import build_congress as bc, address_holders as ah, letter_text as lt
 lt.DATES = Path(sys.argv[1]); hand = lt.dates_by_hand(); idx = ah.index(ah.load()); bad = 0
 for rec in bc.all_letters():
     d = rec.get("digest")
-    if d in hand:
+    # A hand-read non-PDF letter (data/letters-nonpdf.jsonl, #1330) is credited
+    # to the author read from it, checked against the roster at build time.
+    if d in hand and not rec.get("format"):
         a = ah.place(idx, rec["url"], hand[d][0], ah._iso(rec.get("first_seen") or ""))
         # A caucus copy is published under its chair when the caucus is named
         # (address_holders.CAUCUSES); only an unnamed caucus host has no holder.

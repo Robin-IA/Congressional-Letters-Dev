@@ -54,7 +54,8 @@ def load_text(path: Path, source: str, into: dict) -> None:
                 continue  # a half-written last line while OCR is still running
             digest, text = row.get("digest"), (row.get("text") or "").strip()
             if digest and len(text) >= MIN_CHARS and rank(text) > rank(into.get(digest, ("",))[0]):
-                into[digest] = (text, source)
+                # A web page's or a Word file's own text (#1330) is not OCR.
+                into[digest] = (text, "text" if row.get("engine") in ("html", "word", "pdf-text") else source)
 
 
 def rank(text: str) -> tuple[bool, int]:

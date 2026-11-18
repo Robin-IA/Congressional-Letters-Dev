@@ -146,6 +146,9 @@ footer p.updated { margin: .8rem 0 0; }
 .shot:hover { border-color: var(--link); box-shadow: 0 2px 8px rgba(0,0,0,.09); }
 .shot .frame { aspect-ratio: 17/22; background: var(--tint); border: 1px solid var(--hair); overflow: hidden; display: flex; align-items: center; justify-content: center; }
 .shot .frame img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
+.shot .frame.text { align-items: stretch; justify-content: flex-start; background: var(--panel); }
+.shot .frame .excerpt { display: block; padding: .8rem; font-size: 1.05rem; line-height: 1.4; color: var(--ink); white-space: pre-line; overflow: hidden; text-align: left; }
+.shot .frame .excerpt .kind { display: block; margin-bottom: .4rem; font-size: 1rem; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
 .shot .frame .none { font-size: 1.1rem; color: var(--faint); text-align: center; padding: 1rem; line-height: 1.4; }
 .shot .cap { font-size: 1.15rem; line-height: 1.35; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
 .shot .when { font-size: 1.1rem; color: var(--faint); font-variant-numeric: tabular-nums; }
@@ -247,6 +250,6 @@ table.letters td:last-child, table.letters th:last-child { width: 1%; white-spac
      therefore showed figures the data no longer supported — 36% where
      index.json said 46%, and a "Press releases" row for a thing this
      collection had stopped containing. Bump this whenever app.js changes. -->
-<script type="module" src="../app.js?v=2026-11-13b"></script>
+<script type="module" src="../app.js?v=2026-11-18a"></script>
 </body>
 </html>

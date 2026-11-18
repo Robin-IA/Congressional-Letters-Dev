@@ -40,7 +40,7 @@ Level AA and pass the security and code validity checks
 | `build/hub/` | The home page: `index.html`, `hub.js`, images. Built by `build/build_hub.py`. |
 | `119th/index.html`, `app.js` | **The explorer template.** Every Congress's explorer is stamped from these by `build/build_congress.py`, which swaps in its name, dates and links. `119th/` is also this repository's own Pages preview. |
 | `build/` | The pipeline: harvesting, parsing, rendering, OCR, building and publishing. |
-| `data/rosters/` | Who served in each Congress, 106th to 119th, with their dates. |
+| `data/rosters/` | Who served in each Congress, 105th to 119th, with their dates. |
 | `harvest/` | Per-Congress harvest inputs and logs; the letter files themselves are not tracked. |
 | `vocabulary/` | The Letters from Congress vocabulary of subjects. |
 | `METHODOLOGY.md`, `EXPLORERS.md` | The method behind each step, and how to run and publish it. |

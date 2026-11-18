@@ -63,7 +63,7 @@ import letter_text  # noqa: E402
 EXPLORERS = ROOT.parent / "explorers"
 VOCAB = ROOT / "vocabulary"
 MIN_CHARS = 100
-CONGRESSES = range(106, 120)
+CONGRESSES = range(105, 120)
 
 # The columns of PROGRESS.md, in order, with what each counts.
 STEPS = [
