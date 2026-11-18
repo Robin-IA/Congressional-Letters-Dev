@@ -113,6 +113,7 @@ def write(batch: Path, rows_path: Path) -> None:
     import letter_text  # noqa: E402  (the pipeline's, reading its vocabulary)
     file_under = set(letter_text.organizations_to_file_under())
     added: set[str] = set()
+    laws: list[tuple[str, dict]] = []
     for line in rows_path.open(encoding="utf-8"):
         if not line.strip():
             continue
@@ -122,6 +123,10 @@ def write(batch: Path, rows_path: Path) -> None:
             bad.append((d, "not in this batch")); continue
         nts = o.get("new_term") or []
         nts = [nts] if isinstance(nts, dict) else nts
+        # A law the subject list lacks is collected for the Mac to add to
+        # topics.py (#1324), not filed as a name.
+        laws += [(d, nt) for nt in nts if (nt.get("kind") or "") == "law"]
+        nts = [nt for nt in nts if (nt.get("kind") or "") != "law"]
         for nt in nts:
             lab = re.sub(r"\s*\([^)]*\)$", "", (nt.get("label") or "").strip())
             if not lab or lab in known:
@@ -200,6 +205,8 @@ def write(batch: Path, rows_path: Path) -> None:
                       "unresolved": len(bad)}))
     for d, why in bad:
         print("  UNRESOLVED", d[:12], why)
+    for d, nt in laws:
+        print("  LAW PROPOSED", d[:12], nt.get("label"), "->", nt.get("broader"))
 
 
 if __name__ == "__main__":

@@ -20,8 +20,13 @@ subjects, at least 2 of them topics.**
 - **An organization that sent the letter** (a company, county, association
   or agency writing to Congress) **is a name**: it is a party to the letter.
   "Authors do not count" means members, who are authors, not subjects.
-- **Laws and bills** the vocabulary lacks are left out (say so in `note`);
-  readers cannot add subjects.
+- **Laws and bills** are topics: a named law the letter is about (181 were
+  added on 17 November 2026, #1324) is an exact line of `subjects.txt` like
+  any other topic. A law it only cites in passing is not a subject. A law the
+  list lacks goes in `new_term` as {label, kind: "law", broader: its parent
+  topic from `subjects.txt`}; it is collected for the Mac to add, not filed
+  yet, so do not count it toward the rule. Bills cited only by number are left
+  out (say so in `note`).
 
 Each input item has `title`, `subjects_now` (`;`-separated), `recipient_now`
 and `text` (head and tail of a long letter). Keep the existing subjects that
