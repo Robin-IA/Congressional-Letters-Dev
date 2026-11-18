@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """QA status CSVs: one per Congress, one row per posting (QA-Analysis-methodology).
 
-    python3 build/qa_status.py [--out DIR] [--congress 106-119]
+    python3 build/qa_status.py [--out DIR] [--congress 105-119]
 
 Run after build_congress.py, which writes the explorers this reads. Writes
 <DIR>/<N>th.csv (default: the letters-from-congress-OCR checkout's qa-status/)
@@ -53,7 +53,7 @@ def rows_of(path: Path) -> list[dict]:
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--out", type=Path, default=OCR_REPO / "qa-status")
-    ap.add_argument("--congress", default="106-119")
+    ap.add_argument("--congress", default="105-119")
     ap.add_argument("--progress", type=Path, default=OCR_REPO / "progress.csv",
                     help="progress.py's progress.csv, whose done column Filed follows")
     args = ap.parse_args()

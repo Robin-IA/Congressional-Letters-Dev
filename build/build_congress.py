@@ -52,7 +52,12 @@ import build_site  # noqa: E402
 
 ROSTERS = ROOT / "data" / "rosters"
 PARSED = [ROOT / "data" / "letters-parsed.jsonl",
-          ROOT / "data" / "letters-119-departed-parsed.jsonl"]
+          ROOT / "data" / "letters-119-departed-parsed.jsonl",
+          # Letters that are not PDFs, read by hand and filed (#1330: the 105th
+          # Congress's HTML letters; #242: a Word letter). Tracked, unlike the
+          # harvests: each row was written from a page read in full. The page
+          # shows them as text cards (build_site.py "excerpt").
+          ROOT / "data" / "letters-nonpdf.jsonl"]
 PARSED_GLOB = "harvest/letters/letters-parsed-*.jsonl"
 PDF_DATES = ROOT / "data" / "pdf-dates.jsonl"
 THUMBS = ROOT / "thumbs"

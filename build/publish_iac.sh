@@ -125,6 +125,6 @@ PY
 }
 
 say "=== publishing to $ORG ==="
-for n in $(seq 106 119); do publish_explorer "Explorer-Congressional-Letters-$n"; done
+for n in ${CONGRESSES:-$(seq 105 119)}; do publish_explorer "Explorer-Congressional-Letters-$n"; done
 publish_home
 say "=== $ORG done ==="

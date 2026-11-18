@@ -63,8 +63,11 @@ const get = (row, field) => row[F[field]];
 // `key` is the letter's identity, not its address: it drops a cache-busting
 // prefix the archive needs (#107), so `url` carries the observed address
 // when it differs. Older payloads have no `url` column; they fall back.
+// A letter that is a web page (it carries an excerpt, #1330) opens in the
+// ordinary replay, so the archived page shows with its images and the Wayback
+// Machine's own banner; `id_` would hand over the bare HTML.
 const waybackUrl = row =>
-  `https://web.archive.org/web/${get(row, 'timestamp')}id_/${get(row, 'url') || get(row, 'key')}`;
+  `https://web.archive.org/web/${get(row, 'timestamp')}${get(row, 'excerpt') ? '' : 'id_'}/${get(row, 'url') || get(row, 'key')}`;
 
 const thumbUrl = row => {
   const digest = get(row, 'digest');
@@ -350,7 +353,15 @@ function shot(row) {
     rel: 'noopener',
     title: get(row, 'key'),
   },
-    el('span', { class: 'frame' },
+    el('span', { class: get(row, 'excerpt') ? 'frame text' : 'frame' },
+      // A letter that is not a PDF has no picture: the card shows how it opens,
+      // from the text read off the archived page (#1330).
+      get(row, 'excerpt')
+        ? el('span', { class: 'excerpt' },
+          el('span', { class: 'kind' }, get(row, 'kind') === 'pdf' ? 'PDF, text read from it'
+            : /\.docx?$/i.test(get(row, 'key')) ? 'Word document' : 'Archived web page'),
+          get(row, 'excerpt'))
+        :
       // Asked for whether or not it has been rendered yet, and replaced by the
       // placeholder if it is not there. The alternative was for the build to
       // record which pictures exist, which tied every member file to the

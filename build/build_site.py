@@ -327,7 +327,36 @@ COLUMNS = ["key", "timestamp", "kind", "date", "precision", "recipient",
            # "" from Congress; "to" written to Congress; "neither" no member at
            # either end; "received" a copy on the page of a member the letter
            # was addressed to (#175, #352)
-           "direction"]
+           "direction",
+           # The opening of a letter that is not a PDF, so the page can show it
+           # as a text card in place of a thumbnail (#1330); "" for the rest.
+           "excerpt"]
+
+EXCERPT_CHARS = 420
+
+
+def nonpdf_excerpts(digests: set[str], store: Path) -> dict[str, str]:
+    """digest -> the opening of its text, from the OCR store (engine html, word
+    or pdf-text rows written when the letter was read). Only the few non-PDF
+    letters are asked for, so the store is scanned by digest before parsing."""
+    out: dict[str, str] = {}
+    if not digests or not store.exists():
+        return out
+    with store.open(encoding="utf-8") as handle:
+        for line in handle:
+            if line[12:44] not in digests:
+                continue
+            try:
+                row = json.loads(line)
+            except ValueError:
+                continue
+            text = (row.get("text") or "").strip()
+            if len(text) > len(out.get(row["digest"], "")):
+                out[row["digest"]] = text
+    for digest, text in out.items():
+        cut = text[:EXCERPT_CHARS]
+        out[digest] = cut + ("…" if len(text) > EXCERPT_CHARS else "")
+    return out
 
 
 # How each relation in vocabulary/letter-related.csv reads on the two letters
@@ -602,6 +631,11 @@ def main() -> None:
                 yield from handle
 
     sibling_dates = dates_from_siblings(parsed_lines())
+    # Letters that are not PDFs (data/letters-nonpdf.jsonl, #1330) carry a
+    # "format"; their opening lines are shown in place of a thumbnail.
+    excerpts = nonpdf_excerpts(
+        {json.loads(l).get("digest") or "" for l in parsed_lines() if '"format"' in l},
+        root / "data" / "letter-ocr.jsonl")
     letterheads = letter_text.letterhead_by_digest()
     salutations = letter_text.salutation_by_digest()
     hand_recipients = letter_text.recipients_by_hand()
@@ -742,6 +776,7 @@ def main() -> None:
             digest,
             link_url(record),
             directions.get(digest or "", ""),
+            excerpts.get(digest, "") if record.get("format") else "",
         ])
 
         recipient = shown

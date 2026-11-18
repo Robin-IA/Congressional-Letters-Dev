@@ -30,7 +30,7 @@ OUT = ROOT / "data" / "address-holders.csv"
 # www.house.gov/<name>, and the letters sit on <name>.house.gov. Hand-kept,
 # each row with the capture that shows it, and only for the Congresses it covers.
 ALIASES = ROOT / "data" / "website-aliases.csv"
-CONGRESSES = range(106, 120)
+CONGRESSES = range(105, 120)
 # congress-legislators, for service before the rosters begin (#533). Gitignored
 # (fetched for build_vocabulary.py); without it, service starts at the 106th.
 LEGISLATORS = ROOT / "data" / "legislators"

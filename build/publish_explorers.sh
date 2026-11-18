@@ -1,13 +1,14 @@
 #!/bin/bash
 # Publish the built explorers and the home page to GitHub Pages under Robin-IA.
 #
-#   python3 build/build_congress.py 106-119 --copy-thumbs
+#   python3 build/build_congress.py 105-119 --copy-thumbs
 #   python3 build/export_csv.py
 #   python3 build/build_hub.py
 #   build/publish_explorers.sh
 #
 # Creates a repository only if it does not exist (creating one is Robin's call:
-# run this only when asked). Refuses to push to a name that forwards to another
+# run this only when asked). CONGRESSES="105" publishes only those explorers
+# (and the home page), leaving the others as they are. Refuses to push to a name that forwards to another
 # repository, and checks the remote main is the commit just made.
 set -u
 HERE="$(cd "$(dirname "$0")" && pwd)"   # before the cd below, for publish_iac.sh
@@ -21,7 +22,7 @@ say() { echo "$(date '+%H:%M:%S')  $*" | tee -a "$LOG"; }
 # failure stops the publish, because pushing an explorer without its
 # pagefind/ folder would take its search down. BUILD_SEARCH=0 skips it.
 if [ "${BUILD_SEARCH:-1}" != 0 ]; then
-  if python3 "$HERE/build_search.py" 106-119 >>"$LOG" 2>&1; then
+  if python3 "$HERE/build_search.py" "${CONGRESSES_RANGE:-105-119}" >>"$LOG" 2>&1; then
     say "full-text indexes built"
     # The home page lists which explorers have an index; rebuild it now they do.
     python3 "$HERE/build_hub.py" >>"$LOG" 2>&1 || { say "home page rebuild FAILED; not publishing"; exit 1; }
@@ -77,14 +78,14 @@ EOF
     || say "$name: Pages already on, or could not be turned on (check)"
 }
 
-for n in $(seq 106 119); do
+for n in ${CONGRESSES:-$(seq 105 119)}; do
   ord="${n}th"
   # The home page is the starting point, so every explorer's description names it.
   publish "Explorer-Congressional-Letters-$n" \
     "Letters from Congress: letters members of the $ord Congress published on their own websites, preserved by the Wayback Machine. Start at the Letters from Congress home page, all letters from every Congress: https://robin-ia.github.io/Explorer-Letters/"
 done
 publish "Explorer-Letters" \
-  "Letters from Congress: start here. All letters from every Congress, 106th to 119th, that members published on their own websites, preserved by the Wayback Machine. Search across all of them, then open any Congress's explorer."
+  "Letters from Congress: start here. All letters from every Congress, 105th to 119th, that members published on their own websites, preserved by the Wayback Machine. Search across all of them, then open any Congress's explorer."
 say "=== all done ==="
 
 # The development repository's description gives the collection's size, and
