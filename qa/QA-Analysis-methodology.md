@@ -109,7 +109,8 @@ by the reader who held it.
    committee post the letter claims) on its date (QA-analysis-authorship
    step 5).
 7. Every discard was decided from the OCR, by both tests, with the supplement
-   search for test 2.
+   search for test 2; a campaign letter is discarded only when written
+   outside its author's service in Congress (#411).
 8. Every bundle is one record whose note begins "Bundle:" and lists each
    letter inside (QA-analysis-text step 4, #1226).
 9. Every unfinished draft is titled "— a draft", its note begins "Draft:",

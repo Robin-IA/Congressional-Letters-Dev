@@ -49,6 +49,9 @@ Robin decided these today. Each is in the steps below and in `qa/`:
    "Proposed discards" issue; the Mac runs the duplication check
    (DEDUPLICATION.md) and decides. The same letter on **different members'**
    sites is a shared letter, not a duplicate: read and file each posting.
+9. **Campaign letters** (#411): kept if written while the author served in
+   Congress ("campaign letter" in the note); proposed as a discard if written
+   before they took office or after they left (section 5a).
 
 ## The batch, step by step
 
@@ -483,6 +486,14 @@ check against the text, never the whole test.
 | 4a | Written **to** a member or congressional group, or **names** one, or a **supplement** to a member's letter (enclosure, reply, a document the letter cites)? | Kept: titled with its sender (#175); a supplement is linked in `letter-related.csv` | Propose it as a discard (test 2 of `letters-discarded/README.md`) |
 | 5 | Are the members listed? | A letter, filed with the members listed | Open an issue |
 | 6 | Does the text give a date and a named recipient? | Fill both in | Still a letter: #506 or #498 |
+
+**Campaign letters** (Robin, 17 November 2026, #411): a letter written as a
+candidate or by a campaign (campaign letterhead or site, "paid for by",
+fundraising) is **kept if it was written while its author served in
+Congress**: file it, with "campaign letter" in the note. Written before they
+took office or after they left: **propose it as a discard** ("campaign letter
+outside congressional service"). If its date cannot be settled, hold it for
+review.
 
 - **OCR text shows a printed name, a signer title and a close. It never shows
   a signature.** Where the text has none of these, the signature question

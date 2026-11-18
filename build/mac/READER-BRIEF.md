@@ -77,6 +77,11 @@ letters.
      reply, or a document the member's letter cites): `status: "notletter"`,
      `note` beginning "no relation to Congress:". The full criteria are in
      `letters-discarded/README.md`.
+   - **A campaign letter** (campaign letterhead or site, "paid for by",
+     fundraising): written while its author served in Congress → `file`, with
+     "campaign letter" in `note`; written before they took office or after
+     they left → `notletter`, `note` beginning "campaign letter outside
+     congressional service:"; date unsettled → `unsure` (#411).
    - Unreadable text is **not** "notletter": use `unsure` with "needs OCR".
    - A letter **to** the member from someone else (agency reply, association,
      constituent group) IS kept: title it with the sender ("— Secretary
