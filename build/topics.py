@@ -333,6 +333,191 @@ SUBJECTS: dict[str, tuple[str, ...]] = {
     "Secure Rural Schools": ('secure rural schools',),   # 16 letters
     "21st Century Cures Act": ('21st century cures',),   # 13 letters
     "Wildfire Disaster Funding Act": ('wildfire disaster funding act',),   # 6 letters
+    # Laws and bills the readers left out because the vocabulary lacked them
+    # (#1324, 17 November 2026): 181 named in reading notes. One letter is
+    # enough for a subject (#81). The count is letters whose text names the
+    # law; the parent in LAW_PARENTS is tagged with it.
+    'Consolidated Appropriations Act': ('consolidated appropriations act',),   # 888 letters
+    'Infrastructure Investment and Jobs Act': ('infrastructure investment and jobs act', 'bipartisan infrastructure law', 'bipartisan infrastructure bill', 'bipartisan infrastructure deal', 'iija'),   # 704 letters
+    'Tax Cuts and Jobs Act': ('tax cuts and jobs act', 'tcja'),   # 205 letters
+    'JCPOA': ('jcpoa', 'joint comprehensive plan of action', 'iran nuclear deal'),   # 201 letters
+    'NAFTA': ('nafta', 'north american free trade agreement'),   # 197 letters
+    'Public Health Service Act': ('public health service act',),   # 194 letters
+    'One Big Beautiful Bill Act': ('one big beautiful bill',),   # 179 letters
+    'FAA Reauthorization Act': ('faa reauthorization',),   # 144 letters
+    'Fair Labor Standards Act': ('fair labor standards act',),   # 143 letters
+    'Federal Food, Drug, and Cosmetic Act': ('food drug and cosmetic act',),   # 142 letters
+    'Privacy Act': ('privacy act of', 'the privacy act'),   # 124 letters
+    'Bipartisan Budget Act': ('bipartisan budget act',),   # 119 letters
+    'Global Magnitsky Act': ('magnitsky',),   # 114 letters
+    'Individuals with Disabilities Education Act': ('individuals with disabilities education act',),   # 111 letters
+    'Budget Control Act': ('budget control act',),   # 110 letters
+    'Comprehensive Environmental Response, Compensation, and Liability Act': ('cercla', 'comprehensive environmental response compensation'),   # 108 letters
+    'Violence Against Women Act': ('violence against women act', 'violence against women reauthorization', 'vawa'),   # 107 letters
+    'Foreign Agents Registration Act': ('foreign agents registration act', 'fara'),   # 106 letters
+    'USA PATRIOT Act': ('patriot act',),   # 106 letters
+    'Energy Policy Act': ('energy policy act',),   # 98 letters
+    'Trafficking Victims Protection Reauthorization Act': ('trafficking victims protection', 'tvpra'),   # 96 letters
+    'Rehabilitation Act': ('rehabilitation act',),   # 93 letters
+    'False Claims Act': ('false claims act',),   # 90 letters
+    'SUPPORT for Patients and Communities Act': ('support for patients and communities act', 'support act'),   # 90 letters
+    'Bank Secrecy Act': ('bank secrecy act',),   # 88 letters
+    'Energy Independence and Security Act': ('energy independence and security act',),   # 88 letters
+    'Employee Retirement Income Security Act': ('employee retirement income security act', 'erisa'),   # 85 letters
+    'Trade Act': ('trade act of',),   # 85 letters
+    'Every Student Succeeds Act': ('every student succeeds act', 'essa'),   # 81 letters
+    'Disaster Recovery Reform Act': ('disaster recovery reform act',),   # 79 letters
+    'Fair Housing Act': ('fair housing act',),   # 78 letters
+    'Paycheck Protection Program and Health Care Enhancement Act': ('paycheck protection program and health care enhancement act',),   # 77 letters
+    'Hatch Act': ('hatch act',),   # 74 letters
+    'Magnuson-Stevens Act': ('magnuson-stevens', 'magnuson stevens'),   # 71 letters
+    'Impoundment Control Act': ('impoundment control act',),   # 68 letters
+    'Family Smoking Prevention and Tobacco Control Act': ('family smoking prevention and tobacco control act',),   # 67 letters
+    'VA MISSION Act': ('va mission act', 'mission act of'),   # 63 letters
+    'Bipartisan Safer Communities Act': ('bipartisan safer communities act',),   # 62 letters
+    'PACT Act': ('honoring our pact act', 'pact act'),   # 60 letters
+    'Arms Trade Treaty': ('arms trade treaty',),   # 58 letters
+    "Countering America's Adversaries Through Sanctions Act": ('caatsa', "countering america's adversaries through sanctions act", 'countering america s adversaries through sanctions act'),   # 58 letters
+    'Workforce Innovation and Opportunity Act': ('workforce innovation and opportunity act', 'wioa'),   # 58 letters
+    'Coronavirus Preparedness and Response Supplemental Appropriations Act': ('coronavirus preparedness and response supplemental appropriations act',),   # 57 letters
+    'Full-Year Continuing Appropriations and Extensions Act': ('full-year continuing appropriations and extensions act',),   # 56 letters
+    'Great American Outdoors Act': ('great american outdoors act',),   # 55 letters
+    'National Firearms Act': ('national firearms act',),   # 53 letters
+    'Dream Act': ('dream act', 'american dream and promise act', 'dream and promise act'),   # 52 letters
+    'Federal Power Act': ('federal power act',),   # 51 letters
+    'Community Reinvestment Act': ('community reinvestment act',),   # 50 letters
+    'Gun Control Act': ('gun control act',),   # 50 letters
+    'Occupational Safety and Health Act': ('occupational safety and health act',),   # 49 letters
+    'Federal Advisory Committee Act': ('federal advisory committee act',),   # 48 letters
+    'Trade Expansion Act': ('trade expansion act',),   # 48 letters
+    'Federal Insecticide, Fungicide, and Rodenticide Act': ('fifra', 'federal insecticide fungicide'),   # 46 letters
+    'Federal Land Policy and Management Act': ('federal land policy and management act',),   # 45 letters
+    'Help America Vote Act': ('help america vote act',),   # 43 letters
+    'Communications Act of 1934': ('communications act of',),   # 41 letters
+    'Presidential Records Act': ('presidential records act',),   # 40 letters
+    'Medicare Access and CHIP Reauthorization Act': ('macra', 'medicare access and chip reauthorization'),   # 39 letters
+    'STOCK Act': ('stock act',),   # 39 letters
+    'Epstein Files Transparency Act': ('epstein files transparency act', 'epstein files'),   # 38 letters
+    'Bayh-Dole Act': ('bayh-dole', 'bayh dole'),   # 37 letters
+    'Communications Decency Act': ('communications decency act',),   # 37 letters
+    'PROMESA': ('promesa', 'puerto rico oversight management and economic stability act'),   # 36 letters
+    'WIIN Act': ('wiin act', 'water infrastructure improvements for the nation'),   # 36 letters
+    'Radiation Exposure Compensation Act': ('radiation exposure compensation act',),   # 34 letters
+    'Regulatory Flexibility Act': ('regulatory flexibility act',),   # 34 letters
+    'Fair Credit Reporting Act': ('fair credit reporting act',),   # 33 letters
+    'American Health Care Act': ('american health care act',),   # 32 letters
+    'Military Lending Act': ('military lending act',),   # 32 letters
+    'Natural Gas Act': ('natural gas act',),   # 32 letters
+    'Outer Continental Shelf Lands Act': ('outer continental shelf lands act',),   # 32 letters
+    'Carl D. Perkins Career and Technical Education Act': ('perkins career and technical education', 'carl d perkins', 'perkins v', 'perkins cte'),   # 30 letters
+    'Foreign Corrupt Practices Act': ('foreign corrupt practices act', 'fcpa'),   # 30 letters
+    'Telephone Consumer Protection Act': ('telephone consumer protection act',),   # 29 letters
+    'Personal Responsibility and Work Opportunity Reconciliation Act': ('personal responsibility and work opportunity', 'prwora'),   # 28 letters
+    'FIRRMA': ('firrma', 'foreign investment risk review modernization act'),   # 27 letters
+    'Federal Election Campaign Act': ('federal election campaign act',),   # 26 letters
+    'Medicare Modernization Act': ('medicare modernization act',),   # 25 letters
+    'American Taxpayer Relief Act': ('american taxpayer relief act',),   # 24 letters
+    'Comprehensive Addiction Resources Emergency Act': ('comprehensive addiction resources emergency',),   # 24 letters
+    'Alaska Native Claims Settlement Act': ('alaska native claims settlement act', 'ancsa'),   # 22 letters
+    'Employment Non-Discrimination Act': ('employment non-discrimination act', 'employment nondiscrimination act'),   # 22 letters
+    'American Relief Act': ('american relief act',),   # 20 letters
+    'Consumer Financial Protection Act': ('consumer financial protection act',),   # 20 letters
+    'America Invents Act': ('america invents act',),   # 19 letters
+    'Clery Act': ('clery act',),   # 18 letters
+    'Intelligence Authorization Act': ('intelligence authorization act',),   # 17 letters
+    'Taiwan Travel Act': ('taiwan travel act',),   # 17 letters
+    'Federal Vacancies Reform Act': ('federal vacancies reform act',),   # 16 letters
+    'Allow States and Victims to Fight Online Sex Trafficking Act': ('allow states and victims to fight online sex trafficking', 'fosta'),   # 14 letters
+    'Comprehensive Iran Sanctions, Accountability, and Divestment Act': ('cisada', 'comprehensive iran sanctions accountability'),   # 14 letters
+    'Pregnant Workers Fairness Act': ('pregnant workers fairness act',),   # 14 letters
+    'Asia Reassurance Initiative Act': ('asia reassurance initiative act',),   # 13 letters
+    'American Jobs Creation Act': ('american jobs creation act',),   # 12 letters
+    'Conscience Protection Act': ('conscience protection act',),   # 12 letters
+    'INF Treaty': ('inf treaty', 'intermediate-range nuclear forces treaty', 'intermediate range nuclear forces treaty'),   # 12 letters
+    'Iran Threat Reduction Act': ('iran threat reduction act', 'iran threat reduction and syria human rights act'),   # 12 letters
+    'STELA Reauthorization Act': ('stela reauthorization', 'satellite television extension and localism act'),   # 12 letters
+    'Tomato Suspension Agreement': ('tomato suspension agreement',),   # 12 letters
+    'CONNECT for Health Act': ('connect for health act',),   # 11 letters
+    'Prescription Drug User Fee Act': ('prescription drug user fee act', 'pdufa'),   # 11 letters
+    'Deborah Sampson Act': ('deborah sampson act',),   # 10 letters
+    'Dickey Amendment': ('dickey amendment',),   # 10 letters
+    'Ensuring Patient Access and Effective Drug Enforcement Act': ('ensuring patient access and effective drug enforcement act',),   # 10 letters
+    'PREP Act': ('public readiness and emergency preparedness act', 'prep act'),   # 10 letters
+    'Pregnancy Discrimination Act': ('pregnancy discrimination act',),   # 10 letters
+    'INVEST in America Act': ('invest in america act',),   # 9 letters
+    'Not Invisible Act': ('not invisible act',),   # 9 letters
+    'STOP School Violence Act': ('stop school violence act',),   # 9 letters
+    'Unlawful Internet Gambling Enforcement Act': ('unlawful internet gambling enforcement act', 'uigea'),   # 9 letters
+    'Veterans Court Improvement Act': ('veterans court improvement act',),   # 9 letters
+    'Healthy, Hunger-Free Kids Act': ('hunger-free kids act',),   # 8 letters
+    'Lifespan Respite Care Act': ('lifespan respite care',),   # 8 letters
+    'Mammography Quality Standards Reauthorization Act': ('mammography quality standards',),   # 8 letters
+    'Protecting Access to Medicare Act': ('protecting access to medicare act',),   # 8 letters
+    'Bridge Investment Act': ('bridge investment act',),   # 7 letters
+    'Nunn-McCurdy Act': ('nunn-mccurdy', 'nunn mccurdy'),   # 7 letters
+    'Taylor Force Act': ('taylor force act',),   # 7 letters
+    'Women, Peace, and Security Act': ('women peace and security act',),   # 7 letters
+    'Equal Access Act': ('equal access act',),   # 6 letters
+    'Fair RETIRE Act': ('fair retire act',),   # 6 letters
+    'Iran Freedom and Counter-Proliferation Act': ('iran freedom and counter-proliferation act',),   # 6 letters
+    'Nursing Home Fire Safety Act': ('nursing home fire safety act',),   # 6 letters
+    'Opioid Crisis Response Act': ('opioid crisis response act', 'crib act'),   # 6 letters
+    '21st Century Conservation Corps Act': ('st century conservation corps',),   # 5 letters
+    'Biological Weapons Convention': ('biological weapons convention',),   # 5 letters
+    'Miners Protection Act': ('miners protection act',),   # 5 letters
+    'National Apprenticeship Act': ('national apprenticeship act',),   # 5 letters
+    'Native American Suicide Prevention Act': ('native american suicide prevention act',),   # 5 letters
+    'Scientific Integrity Act': ('scientific integrity act',),   # 5 letters
+    'Senior Safe Act': ('senior safe act',),   # 5 letters
+    'Break the Cycle of Violence Act': ('break the cycle of violence act',),   # 4 letters
+    'Climate Corporate Data Accountability Act': ('climate corporate data accountability act',),   # 4 letters
+    'DETER Act': ('deter act', 'defending elections from threats by establishing redlines'),   # 4 letters
+    'Infrastructure 2.0 Act': ('infrastructure act',),   # 4 letters
+    'Quality Housing and Work Responsibility Act': ('quality housing and work responsibility act',),   # 4 letters
+    'SAFE Justice Act': ('safe justice act',),   # 4 letters
+    'Saracini Aviation Safety Act': ('saracini aviation safety act',),   # 4 letters
+    "Savanna's Act": ("savanna's act", 'savannas act'),   # 4 letters
+    'Ten-in-Ten Fuel Economy Act': ('ten-in-ten fuel economy act',),   # 4 letters
+    'Cybersecurity Disclosure Act': ('cybersecurity disclosure act',),   # 3 letters
+    'Doha Agreement': ('doha agreement', 'agreement with the taliban', 'us-taliban agreement'),   # 3 letters
+    'Fighting Fraud to Protect Care for Seniors Act': ('fighting fraud to protect care for seniors act',),   # 3 letters
+    'Interim Consolidated Storage Act': ('interim consolidated storage act',),   # 3 letters
+    'Medicare Advantage Quality Payment Relief Act': ('medicare advantage quality payment relief act',),   # 3 letters
+    'Nationwide Consumer and Fuel Retailer Choice Act': ('nationwide consumer and fuel retailer choice act',),   # 3 letters
+    'Partnership to Build America Act': ('partnership to build america act',),   # 3 letters
+    'Reclamation Recycling and Water Conservation Act': ('reclamation recycling and water conservation act',),   # 3 letters
+    'Supporting Grandparents Raising Grandchildren Act': ('supporting grandparents raising grandchildren act',),   # 3 letters
+    'TAILOR Act': ('tailor act',),   # 3 letters
+    'VA Website Accessibility Act': ('va website accessibility act',),   # 3 letters
+    'Advanced Air Mobility Coordination and Leadership Act': ('advanced air mobility coordination and leadership act',),   # 2 letters
+    'Boundary Waters Canoe Area Wilderness Act': ('boundary waters canoe area wilderness act',),   # 2 letters
+    'Digital Accountability and Transparency Act': ('digital accountability and transparency act',),   # 2 letters
+    'Earmark Elimination Act': ('earmark elimination act',),   # 2 letters
+    'Electronic Prescribing of Controlled Substances Act': ('epcs act', 'electronic prescribing of controlled substances'),   # 2 letters
+    'Keeping American Workers Paid and Employed Act': ('keeping american workers paid and employed act',),   # 2 letters
+    'Nuclear Energy Innovation and Modernization Act': ('nuclear energy innovation and modernization act', 'neima'),   # 2 letters
+    'Probation Officer Protection Act': ('probation officer protection act',),   # 2 letters
+    'STREET Act': ('smart technology for resilient efficient economic and reliable transportation',),   # 2 letters
+    'School Food Modernization Act': ('school food modernization act',),   # 2 letters
+    'Unclaimed Savings Bond Act': ('unclaimed savings bond act',),   # 2 letters
+    'A-PLUS Act': ('a-plus act',),   # 1 letters
+    'ACCESS Act': ('assessing critical core efforts to strengthen service',),   # 1 letters
+    'ANTI Drugs Act': ('anti drugs act',),   # 1 letters
+    'Appalachian Energy for National Security Act': ('appalachian energy for national security act',),   # 1 letters
+    'Bipartisan Health Care Stabilization Act': ('bipartisan health care stabilization act',),   # 1 letters
+    'CHIPPING IN Act': ('chipping in act',),   # 1 letters
+    'CHP Support Act': ('chp support act',),   # 1 letters
+    'Chemical and Biological Weapons Control and Warfare Elimination Act': ('chemical and biological weapons control and warfare elimination act', 'cbw act'),   # 1 letters
+    'Electronic Currency and Secure Hardware Act': ('electronic currency and secure hardware act', 'ecash act'),   # 1 letters
+    'Endangered Salmon and Fisheries Protection Act': ('endangered salmon and fisheries protection act',),   # 1 letters
+    'Ensuring Diplomats Safety Act': ('ensuring diplomats safety act',),   # 1 letters
+    "Improving Seniors' Access to Quality Benefits Act": ('improving seniors access to quality benefits act', "improving seniors' access to quality benefits act"),   # 1 letters
+    'Keep Innovation in America Act': ('keep innovation in america act',),   # 1 letters
+    'Keystone XL Pipeline Act': ('keystone xl pipeline act',),   # 1 letters
+    'NRC Survey Act': ('nrc survey act',),   # 1 letters
+    'National MEP Supply Chain Database Act': ('national mep supply chain database act',),   # 1 letters
+    'PACE Act': ('promoting affordable childcare for everyone',),   # 1 letters
+    'RACE for Children Act': ('race for children act',),   # 1 letters
     # Read from the letters themselves, November 2026. Every term below was
     # needed by a letter in the 145-letter class-noun pool (#164): the subject
     # was plainly on the page and no existing term carried it.
@@ -543,6 +728,194 @@ SUBJECTS: dict[str, tuple[str, ...]] = {
     "Currency": (),
 }
 
+# A named law's phrase also tags its parent topic (and any topic its words
+# would otherwise hide: tag() keeps only the longest phrase at a position),
+# so "Violence Against Women Act" still carries Domestic violence (#1324).
+LAW_PARENTS: dict[str, tuple[str, ...]] = {
+    'Consolidated Appropriations Act': ('Appropriations',),
+    'Infrastructure Investment and Jobs Act': ('Transportation',),
+    'Tax Cuts and Jobs Act': ('Taxes',),
+    'JCPOA': ('Iran', 'Nuclear'),
+    'NAFTA': ('Trade',),
+    'Public Health Service Act': ('Public health',),
+    'One Big Beautiful Bill Act': ('Taxes',),
+    'FAA Reauthorization Act': ('Aviation', 'FAA'),
+    'Fair Labor Standards Act': ('Labor rights',),
+    'Federal Food, Drug, and Cosmetic Act': ('Prescription drugs',),
+    'Privacy Act': ('Privacy',),
+    'Bipartisan Budget Act': ('Budgets',),
+    'Global Magnitsky Act': ('Sanctions',),
+    'Individuals with Disabilities Education Act': ('Education', 'People with disabilities'),
+    'Budget Control Act': ('Budgets',),
+    'Comprehensive Environmental Response, Compensation, and Liability Act': ('Pollution',),
+    'Violence Against Women Act': ('Domestic violence',),
+    'Foreign Agents Registration Act': ('Ethics',),
+    'USA PATRIOT Act': ('Surveillance',),
+    'Energy Policy Act': ('Energy',),
+    'Trafficking Victims Protection Reauthorization Act': ('Human trafficking',),
+    'Rehabilitation Act': ('People with disabilities',),
+    'False Claims Act': ('Oversight',),
+    'SUPPORT for Patients and Communities Act': ('Opioids',),
+    'Bank Secrecy Act': ('Banking',),
+    'Energy Independence and Security Act': ('Energy',),
+    'Employee Retirement Income Security Act': ('Retirement',),
+    'Trade Act': ('Trade',),
+    'Every Student Succeeds Act': ('Education',),
+    'Disaster Recovery Reform Act': ('Disasters',),
+    'Fair Housing Act': ('Housing',),
+    'Paycheck Protection Program and Health Care Enhancement Act': ('Small business',),
+    'Hatch Act': ('Ethics',),
+    'Magnuson-Stevens Act': ('Fisheries',),
+    'Impoundment Control Act': ('Budgets',),
+    'Family Smoking Prevention and Tobacco Control Act': ('Tobacco',),
+    'VA MISSION Act': ('Veterans',),
+    'Bipartisan Safer Communities Act': ('Guns',),
+    'PACT Act': ('Veterans',),
+    'Arms Trade Treaty': ('Defense',),
+    "Countering America's Adversaries Through Sanctions Act": ('Sanctions',),
+    'Workforce Innovation and Opportunity Act': ('Jobs',),
+    'Coronavirus Preparedness and Response Supplemental Appropriations Act': ('COVID-19', 'Appropriations'),
+    'Full-Year Continuing Appropriations and Extensions Act': ('Appropriations',),
+    'Great American Outdoors Act': ('Public lands',),
+    'National Firearms Act': ('Guns',),
+    'Dream Act': ('Immigration',),
+    'Federal Power Act': ('Electric grid',),
+    'Community Reinvestment Act': ('Banking',),
+    'Gun Control Act': ('Guns', 'Gun control'),
+    'Occupational Safety and Health Act': ('Labor rights',),
+    'Federal Advisory Committee Act': ('Oversight',),
+    'Trade Expansion Act': ('Tariffs',),
+    'Federal Insecticide, Fungicide, and Rodenticide Act': ('Pollution',),
+    'Federal Land Policy and Management Act': ('Public lands',),
+    'Help America Vote Act': ('Elections',),
+    'Communications Act of 1934': ('Telecom',),
+    'Presidential Records Act': ('Government records',),
+    'Medicare Access and CHIP Reauthorization Act': ('Medicare',),
+    'STOCK Act': ('Ethics',),
+    'Epstein Files Transparency Act': ('Oversight',),
+    'Bayh-Dole Act': ('Intellectual property',),
+    'Communications Decency Act': ('Social media',),
+    'PROMESA': ('Puerto Rico',),
+    'WIIN Act': ('Water',),
+    'Radiation Exposure Compensation Act': ('Nuclear',),
+    'Regulatory Flexibility Act': ('Regulation',),
+    'Fair Credit Reporting Act': ('Credit reporting',),
+    'American Health Care Act': ('Health care',),
+    'Military Lending Act': ('Banking', 'Defense'),
+    'Natural Gas Act': ('Oil and gas', 'Energy'),
+    'Outer Continental Shelf Lands Act': ('Oil and gas',),
+    'Carl D. Perkins Career and Technical Education Act': ('Education',),
+    'Foreign Corrupt Practices Act': ('Foreign bribery',),
+    'Telephone Consumer Protection Act': ('Telecom',),
+    'Personal Responsibility and Work Opportunity Reconciliation Act': ('Welfare',),
+    'FIRRMA': ('Foreign investment',),
+    'Federal Election Campaign Act': ('Campaign financing', 'Elections'),
+    'Medicare Modernization Act': ('Medicare',),
+    'American Taxpayer Relief Act': ('Taxes',),
+    'Comprehensive Addiction Resources Emergency Act': ('Opioids',),
+    'Alaska Native Claims Settlement Act': ('Native Americans',),
+    'Employment Non-Discrimination Act': ('LGBTQ people',),
+    'American Relief Act': ('Appropriations',),
+    'Consumer Financial Protection Act': ('Banking',),
+    'America Invents Act': ('Intellectual property',),
+    'Clery Act': ('Higher education',),
+    'Intelligence Authorization Act': ('Intelligence',),
+    'Taiwan Travel Act': ('Taiwan',),
+    'Federal Vacancies Reform Act': ('Nominations',),
+    'Allow States and Victims to Fight Online Sex Trafficking Act': ('Human trafficking',),
+    'Comprehensive Iran Sanctions, Accountability, and Divestment Act': ('Sanctions', 'Iran'),
+    'Pregnant Workers Fairness Act': ('Labor rights', 'Maternal health'),
+    'Asia Reassurance Initiative Act': ('China',),
+    'American Jobs Creation Act': ('Taxes',),
+    'Conscience Protection Act': ('Abortion',),
+    'INF Treaty': ('Russia',),
+    'Iran Threat Reduction Act': ('Sanctions', 'Iran'),
+    'STELA Reauthorization Act': ('Telecom',),
+    'Tomato Suspension Agreement': ('Trade',),
+    'CONNECT for Health Act': ('Telehealth',),
+    'Prescription Drug User Fee Act': ('Prescription drugs',),
+    'Deborah Sampson Act': ('Veterans',),
+    'Dickey Amendment': ('Gun violence',),
+    'Ensuring Patient Access and Effective Drug Enforcement Act': ('Opioids',),
+    'PREP Act': ('Public health',),
+    'Pregnancy Discrimination Act': ('Labor rights', 'Civil rights', 'Maternal health'),
+    'INVEST in America Act': ('Transportation',),
+    'Not Invisible Act': ('Native Americans',),
+    'STOP School Violence Act': ('School safety',),
+    'Unlawful Internet Gambling Enforcement Act': ('Gambling',),
+    'Veterans Court Improvement Act': ('Veterans',),
+    'Healthy, Hunger-Free Kids Act': ('Nutrition assistance',),
+    'Lifespan Respite Care Act': ('Older adults',),
+    'Mammography Quality Standards Reauthorization Act': ('Health care',),
+    'Protecting Access to Medicare Act': ('Medicare',),
+    'Bridge Investment Act': ('Transportation',),
+    'Nunn-McCurdy Act': ('Defense',),
+    'Taylor Force Act': ('Israel and Gaza',),
+    'Women, Peace, and Security Act': ('Human rights',),
+    'Equal Access Act': ('Education',),
+    'Fair RETIRE Act': ('Retirement',),
+    'Iran Freedom and Counter-Proliferation Act': ('Sanctions', 'Iran'),
+    'Nursing Home Fire Safety Act': ('Older adults',),
+    'Opioid Crisis Response Act': ('Opioids',),
+    '21st Century Conservation Corps Act': ('Public lands',),
+    'Biological Weapons Convention': ('Chemical weapons',),
+    'Miners Protection Act': ('Retirement',),
+    'National Apprenticeship Act': ('Jobs',),
+    'Native American Suicide Prevention Act': ('Native Americans', 'Mental health'),
+    'Scientific Integrity Act': ('Scientific research',),
+    'Senior Safe Act': ('Older adults',),
+    'Break the Cycle of Violence Act': ('Crime',),
+    'Climate Corporate Data Accountability Act': ('Climate',),
+    'DETER Act': ('Election integrity',),
+    'Infrastructure 2.0 Act': ('Transportation',),
+    'Quality Housing and Work Responsibility Act': ('Housing',),
+    'SAFE Justice Act': ('Prisons',),
+    'Saracini Aviation Safety Act': ('Aviation',),
+    "Savanna's Act": ('Native Americans',),
+    'Ten-in-Ten Fuel Economy Act': ('Cars',),
+    'Cybersecurity Disclosure Act': ('Cybersecurity',),
+    'Doha Agreement': ('Afghanistan',),
+    'Fighting Fraud to Protect Care for Seniors Act': ('Older adults',),
+    'Interim Consolidated Storage Act': ('Nuclear waste',),
+    'Medicare Advantage Quality Payment Relief Act': ('Medicare',),
+    'Nationwide Consumer and Fuel Retailer Choice Act': ('Oil and gas',),
+    'Partnership to Build America Act': ('Transportation',),
+    'Reclamation Recycling and Water Conservation Act': ('Water',),
+    'Supporting Grandparents Raising Grandchildren Act': ('Foster care',),
+    'TAILOR Act': ('Banking',),
+    'VA Website Accessibility Act': ('Veterans',),
+    'Advanced Air Mobility Coordination and Leadership Act': ('Aviation',),
+    'Boundary Waters Canoe Area Wilderness Act': ('Public lands',),
+    'Digital Accountability and Transparency Act': ('Oversight',),
+    'Earmark Elimination Act': ('Appropriations',),
+    'Electronic Prescribing of Controlled Substances Act': ('Opioids',),
+    'Keeping American Workers Paid and Employed Act': ('Small business',),
+    'Nuclear Energy Innovation and Modernization Act': ('Nuclear', 'Energy'),
+    'Probation Officer Protection Act': ('Crime',),
+    'STREET Act': ('Transportation',),
+    'School Food Modernization Act': ('Nutrition assistance',),
+    'Unclaimed Savings Bond Act': ('Investing',),
+    'A-PLUS Act': ('Education',),
+    'ACCESS Act': ('Health care',),
+    'ANTI Drugs Act': ('Drug trafficking',),
+    'Appalachian Energy for National Security Act': ('Energy',),
+    'Bipartisan Health Care Stabilization Act': ('Health care',),
+    'CHIPPING IN Act': ('Scientific research',),
+    'CHP Support Act': ('Energy',),
+    'Chemical and Biological Weapons Control and Warfare Elimination Act': ('Chemical weapons',),
+    'Electronic Currency and Secure Hardware Act': ('Currency',),
+    'Endangered Salmon and Fisheries Protection Act': ('Fisheries', 'Wildlife'),
+    'Ensuring Diplomats Safety Act': ('Foreign aid',),
+    "Improving Seniors' Access to Quality Benefits Act": ('Medicare',),
+    'Keep Innovation in America Act': ('Taxes',),
+    'Keystone XL Pipeline Act': ('Oil and gas', 'Energy'),
+    'NRC Survey Act': ('Nuclear',),
+    'National MEP Supply Chain Database Act': ('Supply chains',),
+    'PACE Act': ('Childcare',),
+    'RACE for Children Act': ('Medical research',),
+}
+
+
 # ------------------------------------------------------------- the agencies
 #
 # Abbreviation and full name index to the same label, so either finds the
@@ -624,6 +997,8 @@ def _build_index() -> dict[str, list[tuple[str, str]]]:
                 if not words:
                     continue
                 index.setdefault(words[0], []).append((" ".join(words), label))
+                for parent in LAW_PARENTS.get(label, ()):
+                    index[words[0]].append((" ".join(words), parent))
     for key in index:
         index[key].sort(key=lambda pair: -len(pair[0].split()))
     return index
