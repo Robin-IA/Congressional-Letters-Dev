@@ -1295,6 +1295,11 @@ function viewAbout() {
     el('p', {}, `Only letters the Wayback Machine archived and we have found so far. A letter
       posted without “letter” in its file name or web address is not here yet, and letters published as web pages or
       Word files rather than PDFs are only partly here.`),
+    // Robin's wording, 18 November 2026 (#1330).
+    el('p', {}, `While this explorer contains letters from Congress as archived in the
+      Wayback Machine, coverage is not complete. The further back in time we go, the less
+      digital content was produced and saved, limiting what the Wayback Machine could
+      archive.`),
 
     // The data download lives here, not on the home page's cards (EXPLORERS.md,
     // 2026-11-13). export_csv.py writes it beside each explorer's index.json.

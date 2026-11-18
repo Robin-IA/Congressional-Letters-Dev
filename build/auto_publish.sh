@@ -99,7 +99,7 @@ while true; do
   if [ -n "$why" ]; then
     touch "$SINCE"
     say "publishing ($why): $now thumbnails ($((now - last)) since the last publish)"
-    if python3 build/build_congress.py 105-119 --copy-thumbs >>"$LOG" 2>&1 \
+    if python3 build/build_congress.py 106-119 --copy-thumbs >>"$LOG" 2>&1 \
        && python3 build/export_csv.py >>"$LOG" 2>&1 \
        && python3 build/build_vocabulary.py >>"$LOG" 2>&1 \
        && python3 build/build_hub.py >>"$LOG" 2>&1 \

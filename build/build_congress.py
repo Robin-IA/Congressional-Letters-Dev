@@ -61,6 +61,12 @@ PARSED = [ROOT / "data" / "letters-parsed.jsonl",
 PARSED_GLOB = "harvest/letters/letters-parsed-*.jsonl"
 PDF_DATES = ROOT / "data" / "pdf-dates.jsonl"
 THUMBS = ROOT / "thumbs"
+# Congresses that hold only the hand-read letters of data/letters-nonpdf.jsonl.
+# The 105th (#1330): its roster exists but the address holdings start with the
+# 106th, and the 1997-98 letters already harvested stay where they are published
+# (placed by capture in the 106th-112th) until Robin decides whether the 105th
+# takes them. For every other letter these Congresses count as having no explorer.
+HAND_ONLY = {105}
 # Beside the dev repository, not in it: each becomes a repository of its own.
 OUT_ROOT = ROOT.parent / "explorers"
 # The page and script every explorer is stamped from: 119th/index.html and app.js
@@ -302,6 +308,7 @@ def sort_letters(congresses: set[int]):
     # The earliest capture of each FILE, across all its postings (#652).
     earliest = build_site.earliest_captures(json.dumps(r) for r in all_letters())
     rank = build_site.PRECISION_RANK
+    wanted_all = set(congresses)
     by_congress: dict[int, list] = {n: [] for n in congresses}
     flags: dict[int, Counter] = {n: Counter() for n in congresses}
     total = 0
@@ -309,7 +316,11 @@ def sort_letters(congresses: set[int]):
     reposts: list = []     # (congress, index, later holder) to check by text (#1249)
     rosters: dict[int, set] = {}
 
-    def on_roster(n: int, bioguide: str) -> bool:
+    def on_roster(n: int, bioguide: str, hand_read: bool = False) -> bool:
+        # A hand-only Congress's roster exists, but for any other letter the
+        # check answers as it did before that roster was written (#1330).
+        if n in HAND_ONLY and not hand_read:
+            return False
         if n not in rosters:
             try:
                 rosters[n] = {m["bioguide"] for m in roster_members(n)}
@@ -318,11 +329,32 @@ def sort_letters(congresses: set[int]):
         return bioguide in rosters[n]
 
     for rec in all_letters():
+        congresses = wanted_all
         total += 1
         read = hand.get(rec.get("digest") or "")
         if read:
             rec = {**rec, "date": read[0], "date_precision": read[1],
                    "date_best": read[0], "dated_by": "hand"}
+        if rec.get("format"):
+            # A letter read by hand from a page that is not a PDF (#1330): its
+            # author was read from the letter, so it is credited to them, not
+            # looked up by address. In the Congress of its date when they served
+            # in it and that Congress is built; otherwise placed by its capture,
+            # flagged posted later (Meehan's 1994 letter on his 1997 site).
+            bid, cap = rec["bioguide"], (rec.get("first_seen") or "")[:10]
+            n = congress_of(rec.get("date") or "")
+            if n in congresses and on_roster(n, bid, True):
+                att = "holder"
+            else:
+                n, att = congress_of(cap), "posted_later"
+                rec = {**rec, "posted_later": cap}
+            if n in congresses and on_roster(n, bid, True):
+                flags[n][att] += 1
+                by_congress[n].append((bid, att, rec))
+            continue
+        # Every other letter: the hand-only Congresses count as unbuilt, so
+        # its placement is what it was before they had an explorer.
+        congresses = wanted_all - HAND_ONLY
         bound = earliest.get(rec.get("digest") or "") or (rec.get("first_seen") or "")[:10]
         rec = {**rec, "earliest_capture": bound}
         head = None if read else letterheads.get(rec.get("digest") or "")
