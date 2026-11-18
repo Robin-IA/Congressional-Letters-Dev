@@ -69,6 +69,10 @@ def short(base: Path) -> list[tuple[str, int, int]]:
         d = r["digest"]
         if d in dis or d in skip:
             continue
+        # Already re-checked and genuinely short (the note says why): not
+        # picked again; it stays Needs Review (batch 2).
+        if "re-checked (#1266), still short" in (r.get("note") or ""):
+            continue
         h = tp.get(d, [])
         n = len(set(h) | ({rc[d]} if rc.get(d) in org else set()))
         t = sum(1 for x in h if x in SUBJECTS)
