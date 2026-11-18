@@ -1,6 +1,6 @@
 # For Claude on the PC: where the reading work lives
 
-**Updated 17 November 2026.** Read this first in any new session on the PC,
+**Updated 18 November 2026.** Read this first in any new session on the PC,
 whatever model it runs. A session that starts fresh does not remember this
 setup. That includes switching models, for example to Sonnet.
 
@@ -18,7 +18,29 @@ to 9 are reference for the steps. If anything in them seems to disagree with
 the steps, follow the steps and tell Robin which line disagrees. If a letter
 fits none of the steps, do not invent a rule: hold it (step B7) and say why.
 
-## What changed on 17 November 2026 (read before the next batch)
+## What changed on 18 November 2026 (read before the next batch)
+
+Pull first (`git pull`), so `build/topics.py` has today's subject list.
+
+1. **Laws are topics** (#1324): 181 named laws are now labels in `SUBJECTS`
+   ("Affordable Care Act", "Clean Water Act", ...), each placed under its parent
+   topic. A law the letter is **about** is a topic, written by its exact
+   label; a law it only cites in passing is not a subject. A law the list
+   lacks goes in the batch's "vocabulary needed" issue under **Names** (kind: law), with
+   its parent topic. **Do not hold a letter for a missing law** when it meets
+   the rule without it: file it, and list the law with the letter's digest.
+   A missing law does not count toward the 4 subjects.
+2. **Bills cited only by number** ("H.R. 1234" with no short title) are left
+   out of the subjects; say so in the note. Robin reviews them first, because
+   one number names different bills in different Congresses.
+3. **Letters to the editor** by a member are letters (Robin, 18 November
+   2026, #1330): kept and read, with the newspaper as a name.
+4. **"Welcome to my web page" letters** are discards (Robin, 18 November
+   2026, #1330, #1332), as the web-page rule of `letters-discarded/README.md`
+   already says: propose them on the batch's "Proposed discards" issue. One
+   that says more than a welcome (a position, a named addressee) is a letter.
+
+## What changed on 17 November 2026
 
 Robin decided these today. Each is in the steps below and in `qa/`:
 
