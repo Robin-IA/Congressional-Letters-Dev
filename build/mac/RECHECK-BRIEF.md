@@ -17,6 +17,9 @@ subjects, at least 2 of them topics.**
   `vocabulary/hierarchy.csv`}; no parenthetical at the end of a label.
 - **People are never names**: a CEO or official files under their
   organization or office. A member of Congress is never a name.
+- **An organization that sent the letter** (a company, county, association
+  or agency writing to Congress) **is a name**: it is a party to the letter.
+  "Authors do not count" means members, who are authors, not subjects.
 - **Laws and bills** the vocabulary lacks are left out (say so in `note`);
   readers cannot add subjects.
 
