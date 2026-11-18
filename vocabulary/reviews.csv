@@ -7068,3 +7068,20 @@ Quicken Loans,1,merge,Quicken Loans,,organization,Companies,"name needed by a le
 loanDepot,1,merge,loanDepot,,organization,Companies,"name needed by a letter held on #357, added by the Mac (17 November 2026)",accepted
 Flagstar Bank,1,merge,Flagstar Bank,,organization,Companies,"name needed by a letter held on #357, added by the Mac (17 November 2026)",accepted
 Caliber Home Loans,1,merge,Caliber Home Loans,,organization,Companies,"name needed by a letter held on #357, added by the Mac (17 November 2026)",accepted
+Florida National Guard,1,merge,Florida National Guard,,organization,Florida state government agencies,"a name read from the letter (#223, the Mac, 17 November 2026)",accepted
+International Association of Fairs and Expositions,1,merge,International Association of Fairs and Expositions,,organization,Associations and other organizations,"a name read from the letter (#223, the Mac, 17 November 2026)",accepted
+Hualapai Tribe,1,merge,Hualapai Tribe,,organization,Associations and other organizations,"a name read from the letter (#223, the Mac, 17 November 2026)",accepted
+Arizona Game and Fish Department,1,merge,Arizona Game and Fish Department,,organization,Arizona agencies and organizations,"a name read from the letter (#223, the Mac, 17 November 2026)",accepted
+Chicago Mercantile Exchange,1,merge,Chicago Mercantile Exchange,,organization,Companies,"a name read from the letter (#223, the Mac, 17 November 2026)",accepted
+State Farm,1,merge,State Farm,,organization,Companies,"a name read from the letter (#223, the Mac, 17 November 2026)",accepted
+Los Angeles County Sheriff's Department,1,merge,Los Angeles County Sheriff's Department,,organization,California local government and agencies,"a name read from the letter (#223, the Mac, 17 November 2026)",accepted
+California State Lands Commission,1,merge,California State Lands Commission,,organization,California state government agencies,"a name read from the letter (#223, the Mac, 17 November 2026)",accepted
+Minnesota Department of Human Services,1,merge,Minnesota Department of Human Services,,organization,Minnesota state government agencies,"a name read from the letter (#223, the Mac, 17 November 2026)",accepted
+Rhode Island Department of Environmental Management,1,merge,Rhode Island Department of Environmental Management,,organization,Rhode Island agencies and organizations,"a name read from the letter (#223, the Mac, 17 November 2026)",accepted
+Governor of Florida and Florida Attorney General,1,joint,Governor of Florida;Florida Attorney General,,,,"checked: the addressees named in the letter (#223, the Mac)",accepted
+Nancy Pelosi and Kevin McCarthy,1,joint,P000197;M001165,,member,,"checked: the addressees named in the letter (#223, the Mac)",accepted
+Jeff Flake and John McCain,1,joint,F000444;M000303,,member,,"checked: the addressees named in the letter (#223, the Mac)",accepted
+David E. Price and Mario Diaz-Balart,1,joint,P000523;D000600,,member,,"checked: the addressees named in the letter (#223, the Mac)",accepted
+Mike Johnson and Jason Smith,1,joint,J000299;S001195,,member,,"checked: the addressees named in the letter (#223, the Mac)",accepted
+"Nancy Pelosi, Mitch McConnell, Kevin McCarthy and Charles E. Schumer",1,joint,P000197;M000355;M001165;S000148,,member,,"checked: the addressees named in the letter (#223, the Mac)",accepted
+"Nancy Pelosi, Kevin McCarthy, Frank Pallone, Jr. and Cathy McMorris Rodgers",1,joint,P000197;M001165;P000034;M001159,,member,,"checked: the addressees named in the letter (#223, the Mac)",accepted
