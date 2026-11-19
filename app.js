@@ -1283,13 +1283,15 @@ function viewAbout() {
       The Wayback Machine archived these sites, so for many of these letters the archive
       is the only copy left.`),
 
-    el('h3', {}, 'Letters to members, and letters with several signers'),
-    el('p', {}, `Letters written to a member of Congress are here too, when the member
-      published them on their own website: a letter from an agency, a governor or a
-      constituent group to the member is listed under that member, as received.`),
-    el('p', {}, `A letter signed by several members is listed once for each member who
-      published it on their own website. Each co-author's copy is listed under that member,
-      so the same letter can appear more than once.`),
+    // Robin, #1371 (19 November 2026): explain the numbers.
+    el('h3', {}, 'How the letters are counted'),
+    el('p', {}, `A letter written by several members appears for each of them: every
+      co-author who published it on their own website has it listed under their name, so
+      the same letter can be counted more than once.`),
+    el('p', {}, `A letter written to a member of Congress is included when the member
+      published it on their own website. It is filed under that member, as recipient.`),
+    el('p', {}, `The numbers will continue to grow and change as regular harvests find
+      letters the Wayback Machine has newly archived, and as letters are read and filed.`),
 
     el('h3', {}, 'Where the details come from'),
     el('p', {}, `Who a letter went to and what it is about come mostly from the file’s
@@ -1308,6 +1310,9 @@ function viewAbout() {
       Wayback Machine, coverage is not complete. The further back in time we go, the less
       digital content was produced and saved, limiting what the Wayback Machine could
       archive.`),
+    el('p', {}, `Letters from Congress is incomplete: it holds only what members published on their websites and
+      what could be archived from the earliest days of the internet on. Letters in print are not included unless
+      they were digitized and published on a member's website.`),
 
     // The data download lives here, not on the home page's cards (EXPLORERS.md,
     // 2026-11-13). export_csv.py writes it beside each explorer's index.json.
