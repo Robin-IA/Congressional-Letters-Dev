@@ -18,11 +18,11 @@ MARKER = "<!-- last-updated -->"
 
 
 def line(when: datetime | None = None) -> str:
-    """<p class="updated">Last updated <time …>November 14, 2026, 11:17 AM PST</time></p>"""
+    """<p class="updated">Last updated: <time …>November 14, 2026, 11:17 AM PST</time></p>"""
     when = (when or datetime.now()).astimezone()
     hour = when.strftime("%I").lstrip("0")
     shown = f"{when:%B} {when.day}, {when.year}, {hour}:{when:%M %p %Z}"
-    return (f'<p class="updated">Last updated '
+    return (f'<p class="updated">Last updated: '
             f'<time datetime="{when.isoformat(timespec="minutes")}">{shown}</time>.</p>')
 
 

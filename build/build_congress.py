@@ -508,6 +508,8 @@ def page_files(n: int, dest: Path) -> None:
     # published beside the explorers: robin-ia.github.io/<repo>/ for each.
     html = swap(html, 'class="home" href="../?view=topics"',
                 'class="home" href="../Explorer-Letters/?view=topics"', "home link")
+    html = swap(html, 'class="footer-home" href="../"',
+                'class="footer-home" href="../Explorer-Letters/"', "footer home link")
     html = swap(html, 'class="crumb" href="../"',
                 'class="crumb" href="../Explorer-Letters/"', "crumb link")
     html = swap(html, 'class="brand title" href="../"',
