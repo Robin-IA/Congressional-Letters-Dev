@@ -18,7 +18,48 @@ to 9 are reference for the steps. If anything in them seems to disagree with
 the steps, follow the steps and tell Robin which line disagrees. If a letter
 fits none of the steps, do not invent a rule: hold it (step B7) and say why.
 
-## What changed on 18 November 2026 (read before the next batch)
+## What changed on 19 November 2026 (read before the next batch)
+
+Pull first (`git pull` on harvest-member-letters, and pull
+letters-from-congress-OCR), so you have today's `pick_list.py`, subject list
+and `progress.csv`.
+
+1. **Next: the 109th Congress** (Robin, 19 November 2026). After it, go on
+   through the 110th–114th in order. These are the Congresses furthest
+   behind, with under 15% of their letters reviewed. The 116th–119th
+   text-layer letters (about 29,800) wait until Robin says otherwise. This
+   replaces item 2 of section 4a, and moves the 106th–115th scans from the
+   Mac's range to yours, starting with the 109th.
+   ```
+   python3 build/pc/pick_list.py --congress 109 --size 600 > batch.txt
+   ```
+   `--congress` takes a Congress or a range (`109-114`, oldest first), and
+   picks OCR and text-layer letters alike. The 109th had 1,218 letters left on
+   19 November: 870 OCR scans and 350 text-layer.
+2. **The 109th is 2005–2006.** Member sites were mostly
+   `www.house.gov/<name>/` and `<name>.senate.gov`, and many letters are
+   scans, so their OCR is rougher than the 119th's text layers. Read the
+   letterhead and signature for the author and the date. The rules are the
+   same: one pass per letter, the subject rule, officials under their office,
+   and no holds for a date or a missing addressee.
+3. **`pick_list.py` names the repository now** (#1341, fixed in #1370). It
+   lists and fetches open PRs from `Robin-IA/Congressional-Letters-Dev`
+   whatever your remotes are called, and stops if a fetch fails. **Delete
+   your local workaround copy** and use the repository's.
+4. **Start each batch from a fresh base.** Create the batch branch from an
+   up-to-date `harvest-member-letters`, right before running the pick list.
+   Batch 66's branch was cut before #1361 merged, and brought back 28 held
+   rows for letters #1361 had already filed or discarded. The Mac removed
+   them in #1377. If the base moves while you read, merge it into your branch
+   before opening the PR, as you did for batches 66 and 67.
+5. **Keep batches at about 600.** Each batch's "vocabulary needed" issue has
+   to be worked by the Mac before its held letters can be filed. At 600 the
+   Mac keeps up; much larger and the holds pile up.
+6. **Headings renamed** (#1367): "Not yet reviewed" is now **Unfiled
+   letters**, with Unfiled (Organizations), Unfiled (Person) and Unfiled
+   (Recipients). Only the labels changed.
+
+## What changed on 18 November 2026
 
 Pull first (`git pull`), so `build/topics.py` has today's subject list.
 
@@ -308,8 +349,8 @@ everywhere: the vocabulary files, the explorers and this repository.
 
 | Machine | Reads |
 | --- | --- |
-| PC | 116th–119th, plus the agency letters of #204 |
-| Mac | 106th–115th, most-posted first, 200 letters a batch; and the letters left on issues, in any Congress |
+| PC | 109th–114th from 19 November (Robin), then 116th–119th; plus the agency letters of #204 |
+| Mac | 106th–108th and 115th, most-posted first, 200 letters a batch; and the letters left on issues, in any Congress |
 
 Stay in your own range, so the two machines never write rows for the same
 letter. **Re-run the pick list before each part of a batch**, after pulling
@@ -330,14 +371,14 @@ pushes a fresh `progress.csv` after each publish. One row per scan
    (`pick_list.py --phase ocr`). About 2,100 were left on 17 November,
    counting newly harvested letters; the script prints the current count.
    Keep the 500-letter batches.
-2. **Next: the text-layer letters of the 116th–119th**, newest Congress
+2. **Paused (19 November): the text-layer letters of the 116th–119th**, newest Congress
    first (119th, then 118th, 117th, 116th). Pick list: `text=True`,
    `reviewed=False`, `ocr=False` (`pick_list.py --phase text`). About
    30,600 letters. Their text is
    clean, so batches go faster.
-3. **Then:** whatever Robin assigns. The other large pile is the
-   106th–115th OCR scans (about 23,000), which are in the Mac's range
-   (section 4).
+3. **Now (19 November): the 109th, then the 110th–114th**, OCR and text
+   layer alike (`pick_list.py --congress 109`). See "What changed on
+   19 November 2026" at the top.
 
 **Do not hold letters for a date or a missing addressee any more.**
 - Undated letters follow step 5: OCR first, then the content, then the
