@@ -61,12 +61,11 @@ PARSED = [ROOT / "data" / "letters-parsed.jsonl",
 PARSED_GLOB = "harvest/letters/letters-parsed-*.jsonl"
 PDF_DATES = ROOT / "data" / "pdf-dates.jsonl"
 THUMBS = ROOT / "thumbs"
-# Congresses that hold only the hand-read letters of data/letters-nonpdf.jsonl.
-# The 105th (#1330): its roster exists but the address holdings start with the
-# 106th, and the 1997-98 letters already harvested stay where they are published
-# (placed by capture in the 106th-112th) until Robin decides whether the 105th
-# takes them. For every other letter these Congresses count as having no explorer.
-HAND_ONLY = {105}
+# Congresses that hold only the hand-read letters of data/letters-nonpdf.jsonl,
+# counting as unbuilt for every other letter. Empty since 19 November 2026:
+# the 105th held only its hand-read letters (#1330, option B) until Robin chose
+# option A (#1334), giving it every letter of 1997-98 and the address holdings.
+HAND_ONLY: set[int] = set()
 # Beside the dev repository, not in it: each becomes a repository of its own.
 OUT_ROOT = ROOT.parent / "explorers"
 # The page and script every explorer is stamped from: 119th/index.html and app.js

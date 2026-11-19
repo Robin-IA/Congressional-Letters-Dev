@@ -673,18 +673,18 @@ def main() -> int:
     unplaced = [t_["label"] for t_ in terms if t_["kind"] in ("topic", "organization")
                 and t_["status"] == "preferred" and t_["term_id"] not in placed]
     if unplaced:
-        print(f"  not in hierarchy.csv, placed under Topics or Recipients not yet sorted: {unplaced}", file=sys.stderr)
+        print(f"  not in hierarchy.csv, placed under Topics or Unfiled (Recipients): {unplaced}", file=sys.stderr)
         for lab in unplaced:
             kind = next(x["kind"] for x in terms if x["label"] == lab)
-            rel(by_label[lab], "broader", by_label["Topics" if kind == "topic" else "Recipients not yet sorted"])
+            rel(by_label[lab], "broader", by_label["Topics" if kind == "topic" else "Unfiled (Recipients)"])
     chamber_cat = {"Senate": by_label["Senators"], "House": by_label["Representatives"]}
     for b, m in rosters().items():
         for ch in m["chambers"]:
             if ch in chamber_cat:
                 rel(f"M-{b}", "broader", chamber_cat[ch])
-    cand_cat = {"organization": by_label["Organizations not yet reviewed"],
-                "person": by_label["People not yet reviewed"],
-                "unclassified": by_label["Recipients not yet sorted"]}
+    cand_cat = {"organization": by_label["Unfiled (Organizations)"],
+                "person": by_label["Unfiled (Person)"],
+                "unclassified": by_label["Unfiled (Recipients)"]}
     for t_ in terms:
         if t_["status"] == "candidate":
             rel(t_["term_id"], "broader", cand_cat[t_["kind"]], "candidate", "rule: unreviewed")

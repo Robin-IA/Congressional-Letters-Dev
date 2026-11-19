@@ -47,11 +47,18 @@ def taken_here() -> set[str]:
     return out
 
 
+# Named, not taken from a remote: on the PC `origin` is internetarchivecanada/
+# letters-from-congress, whose PR numbers are unrelated, and the dev repository
+# is the remote `dev` (#1341).
+REPO = "Robin-IA/Congressional-Letters-Dev"
+REPO_URL = f"https://github.com/{REPO}.git"
+
+
 def taken_in_open_prs() -> tuple[set[str], list[int]]:
     """Digests in the CSVs of every open PR against harvest-member-letters."""
     try:
         listing = subprocess.run(
-            ["gh", "pr", "list", "--base", "harvest-member-letters", "--state", "open",
+            ["gh", "pr", "list", "--repo", REPO, "--base", "harvest-member-letters", "--state", "open",
              "--json", "number,headRefName", "--limit", "100"],
             cwd=ROOT, capture_output=True, text=True, check=True).stdout
     except (OSError, subprocess.CalledProcessError) as exc:
@@ -60,8 +67,12 @@ def taken_in_open_prs() -> tuple[set[str], list[int]]:
     numbers = []
     for pr in json.loads(listing):
         ref = f"refs/pick/{pr['number']}"
-        subprocess.run(["git", "fetch", "-q", "origin", f"pull/{pr['number']}/head:{ref}"],
-                       cwd=ROOT, check=False)
+        # A PR that cannot be fetched stops the run: skipping it silently is
+        # what lets two batches be handed the same letters (#1341).
+        got = subprocess.run(["git", "fetch", "-q", REPO_URL, f"+pull/{pr['number']}/head:{ref}"],
+                             cwd=ROOT, capture_output=True, text=True)
+        if got.returncode != 0:
+            sys.exit(f"could not fetch PR #{pr['number']} from {REPO}: {got.stderr.strip()}")
         numbers.append(pr["number"])
         for f in FILES:
             shown = subprocess.run(["git", "show", f"{ref}:{f}"], cwd=ROOT,

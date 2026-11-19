@@ -30,13 +30,16 @@ OUT = ROOT / "data" / "address-holders.csv"
 # www.house.gov/<name>, and the letters sit on <name>.house.gov. Hand-kept,
 # each row with the capture that shows it, and only for the Congresses it covers.
 ALIASES = ROOT / "data" / "website-aliases.csv"
-CONGRESSES = range(106, 120)
+CONGRESSES = range(105, 120)
 # congress-legislators, for service before the rosters begin (#533). Gitignored
-# (fetched for build_vocabulary.py); without it, service starts at the 106th.
+# (fetched for build_vocabulary.py); without it, service starts at the 105th.
 LEGISLATORS = ROOT / "data" / "legislators"
-# The rosters, and so the address holdings, start with the 106th Congress,
-# which convened 6 January 1999 (its terms began on the 3rd). Career terms
-# fill in only the service before that day, the 3rd to the 5th included.
+# The address holdings start with the 105th Congress since Robin chose option A
+# (#1334, 19 November 2026), but career terms still fill in service up to the
+# 106th, which convened 6 January 1999 (its terms began on the 3rd): 76 members
+# of the 105th have no address in its roster (#1331), Bonior and Kucinich among
+# them, and their 1997-98 letters need that service to reach the 105th.
+# Kept at the 106th, the cut changes no placement in the 106th-119th.
 ROSTERS_BEGIN = "1999-01-06"
 
 # Hosts several members used at once: the member's own path is the address.
@@ -260,11 +263,11 @@ def career_terms(path: Path = LEGISLATORS) -> dict[str, list[tuple[str, str, str
     """bioguide -> (start, end, chamber) for each term served before the rosters
     begin, from congress-legislators; {} when the files are absent.
 
-    The holdings only reach back to the 106th, so without these a member's
-    1997-98 letter reposted on their 1999 site (Bonior, Waxman, Bennett) found
-    no service and went to ``none`` (#533). Terms are cut at ROSTERS_BEGIN so
-    that nothing from the 106th on changes: there, service still comes only
-    from the address holdings.
+    The holdings reach back to the 105th, but its roster lacks an address for
+    76 members, so without these a member's 1997-98 letter reposted on their
+    1999 site (Bonior, Waxman, Bennett) found no service and went to ``none``
+    (#533). Terms are cut at ROSTERS_BEGIN so that nothing from the 106th on
+    changes: there, service still comes only from the address holdings.
     """
     import json
     out: dict[str, list[tuple[str, str, str]]] = defaultdict(list)
