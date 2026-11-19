@@ -9868,3 +9868,352 @@ Tech Platforms,3,reject,,,,,"a file-name name that means a different recipient i
 Thompson,5,reject,,,,,"a file-name name that means a different recipient in each letter; every letter is filed by its own address block in letter-recipients.csv (#97, the Mac, 19 Nov 2026)",accepted
 Walter Reed,3,reject,,,,,"a file-name name that means a different recipient in each letter; every letter is filed by its own address block in letter-recipients.csv (#97, the Mac, 19 Nov 2026)",accepted
 Wisconsin Department of Veterans Affairs,3,reject,,,,,"a file-name name that means a different recipient in each letter; every letter is filed by its own address block in letter-recipients.csv (#97, the Mac, 19 Nov 2026)",accepted
+Southeastern Oklahoma Power Corporation,1,merge,Southeastern Oklahoma Power Corporation,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Aquarian Capital,1,merge,Aquarian Capital,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Gillings School of Global Public Health,1,merge,Gillings School of Global Public Health,,organization,Colleges and universities,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Honor Flight Network,1,merge,Honor Flight Network,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
+NORC at the University of Chicago,1,merge,NORC at the University of Chicago,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Vulcan Materials Company,1,merge,Vulcan Materials Company,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+VA Pittsburgh Healthcare System,1,merge,VA Pittsburgh Healthcare System,,organization,Department of Veterans Affairs,"a name read from the letter (#1266 re-check, the Mac)",accepted
+CareerSource Pinellas,1,merge,CareerSource Pinellas,,organization,Florida organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
+CareerSource Tampa Bay,1,merge,CareerSource Tampa Bay,,organization,Florida organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Tampa Bay Times,1,merge,Tampa Bay Times,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Oak Ridge National Laboratory,1,merge,Oak Ridge National Laboratory,,organization,Department of Energy,"a name read from the letter (#1266 re-check, the Mac)",accepted
+National Indian Health Board,1,merge,National Indian Health Board,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
+National Center for Urban Indian Health,1,merge,National Center for Urban Indian Health,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
+American Foreign Service Association,1,merge,American Foreign Service Association,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Pearl Jam,1,merge,Pearl Jam,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Springdale Water Utilities,1,merge,Springdale Water Utilities,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+City of Saline,1,merge,City of Saline,,organization,Michigan agencies and organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Woods Hole Oceanographic Institution,1,merge,Woods Hole Oceanographic Institution,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Reporters Without Borders,1,merge,Reporters Without Borders,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Committee to Protect Journalists,1,merge,Committee to Protect Journalists,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Illinois Institute of Art,1,merge,Illinois Institute of Art,,organization,Colleges and universities,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Maine Public Utilities Commission,1,merge,Maine Public Utilities Commission,,organization,Maine state government agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Rhode Island Public Utilities Commission,1,merge,Rhode Island Public Utilities Commission,,organization,Rhode Island agencies and organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
+"EA Engineering, Science, and Technology",1,merge,"EA Engineering, Science, and Technology",,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Libra Association,1,merge,Libra Association,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Office of Financial Research,1,merge,Office of Financial Research,,organization,Department of the Treasury,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Ministry of Social Policy of Ukraine,1,merge,Ministry of Social Policy of Ukraine,,organization,Foreign governments,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Central Maryland Transit Alliance,1,merge,Central Maryland Transit Alliance,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
+School Nutrition Association,1,merge,School Nutrition Association,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
+United Illuminating,1,merge,United Illuminating,,organization,Energy sector,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Town of Pembroke,1,merge,Town of Pembroke,,organization,North Carolina local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+University of North Carolina at Pembroke,1,merge,University of North Carolina at Pembroke,,organization,Colleges and universities,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Arizona Department of Health Services,1,merge,Arizona Department of Health Services,,organization,State of Arizona,"a name read from the letter (#1266 re-check, the Mac)",accepted
+National Council of Nonprofits,1,merge,National Council of Nonprofits,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Nonprofit Finance Fund,1,merge,Nonprofit Finance Fund,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Amalgamated Transit Union Local 689,1,merge,Amalgamated Transit Union Local 689,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
+City of Pontiac,1,merge,City of Pontiac,,organization,Michigan agencies and organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Clinton County Government Center,1,merge,Clinton County Government Center,,organization,New York local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Plattsburgh International Airport,1,merge,Plattsburgh International Airport,,organization,New York local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Allegheny Technologies Incorporated,1,merge,Allegheny Technologies Incorporated,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Ardagh Metal Packaging USA,1,merge,Ardagh Metal Packaging USA,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+BWAY,1,merge,BWAY,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+CP Industries,1,merge,CP Industries,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Crown Cork,1,merge,Crown Cork,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+The Giorgi Companies,1,merge,The Giorgi Companies,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+MacLean-Fogg,1,merge,MacLean-Fogg,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Precision Metal Services,1,merge,Precision Metal Services,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Silgan Containers,1,merge,Silgan Containers,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Innate Immunotherapeutics,1,merge,Innate Immunotherapeutics,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Town of Miami Lakes,1,merge,Town of Miami Lakes,,organization,Florida local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Royal Hawaiian Macadamia Nut,1,merge,Royal Hawaiian Macadamia Nut,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Build America Bureau,1,merge,Build America Bureau,,office,Department of Transportation,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Advisory Commission on Rakhine State,1,merge,Advisory Commission on Rakhine State,,organization,International organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
+City of Clewiston,1,merge,City of Clewiston,,organization,Florida local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+South Atlantic Division of the Army Corps of Engineers,1,merge,South Atlantic Division of the Army Corps of Engineers,,organization,Army Corps of Engineers,"a name read from the letter (#1266 re-check, the Mac)",accepted
+American Public Power Association,1,merge,American Public Power Association,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
+National Rural Electric Cooperative Association,1,merge,National Rural Electric Cooperative Association,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Grand Canyon State Electric Cooperative Association,1,merge,Grand Canyon State Electric Cooperative Association,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Christians Engaged,1,merge,Christians Engaged,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
+City of Phoenix,1,merge,City of Phoenix,,organization,Arizona local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Steven & Alexandra Cohen Foundation,1,merge,Steven & Alexandra Cohen Foundation,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Municipality of Anchorage,1,merge,Municipality of Anchorage,,organization,State of Alaska,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Port of Alaska,1,merge,Port of Alaska,,organization,State of Alaska,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Corn City Regional Fire District,1,merge,Corn City Regional Fire District,,organization,Ohio local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+"City of Nashville, Illinois",1,merge,"City of Nashville, Illinois",,organization,Illinois local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Washoe County,1,merge,Washoe County,,organization,Nevada local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Indian Customs,1,merge,Indian Customs,,organization,Government of India,"a name read from the letter (#1266 re-check, the Mac)",accepted
+City of Niles,1,merge,City of Niles,,organization,State of Michigan,"a name read from the letter (#1266 re-check, the Mac)",accepted
+United States Interagency Council on Homelessness,1,merge,United States Interagency Council on Homelessness,,organization,Federal agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Council of State Governments,1,merge,Council of State Governments,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Ralph H. Johnson VA Medical Center,1,merge,Ralph H. Johnson VA Medical Center,,organization,Department of Veterans Affairs,"a name read from the letter (#1266 re-check, the Mac)",accepted
+City of Greeley,1,merge,City of Greeley,,organization,Colorado local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Office of the Assistant Secretary for Transportation Policy,1,merge,Office of the Assistant Secretary for Transportation Policy,,office,Department of Transportation,"a name read from the letter (#1266 re-check, the Mac)",accepted
+City of Heath,1,merge,City of Heath,,organization,Ohio local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+"City of Franklin, Ohio",1,merge,"City of Franklin, Ohio",,organization,Ohio local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+City of Lima,1,merge,City of Lima,,organization,Ohio local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+City of Wooster,1,merge,City of Wooster,,organization,Ohio local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+"Hamilton County, Ohio",1,merge,"Hamilton County, Ohio",,organization,Ohio local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+City of East Liverpool,1,merge,City of East Liverpool,,organization,Ohio local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+City of Canton,1,merge,City of Canton,,organization,Ohio local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Franklin County Engineer,1,merge,Franklin County Engineer,,organization,Ohio local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Lake Development Authority,1,merge,Lake Development Authority,,organization,Ohio local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Presbyterian Church,1,merge,Presbyterian Church,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Port San Antonio,1,merge,Port San Antonio,,organization,Texas local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Joint Base San Antonio,1,merge,Joint Base San Antonio,,organization,Department of the Air Force,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Kansas Department of Transportation,1,merge,Kansas Department of Transportation,,organization,Kansas state government agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+City of Detroit,1,merge,City of Detroit,,organization,State of Michigan,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Definers,1,merge,Definers,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+America Rising,1,merge,America Rising,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Bulletin Intelligence,1,merge,Bulletin Intelligence,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Airborne Object Identification and Management Synchronization Group,1,merge,Airborne Object Identification and Management Synchronization Group,,organization,Department of Defense,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Unidentified Aerial Phenomena Task Force,1,merge,Unidentified Aerial Phenomena Task Force,,organization,Department of Defense,"a name read from the letter (#1266 re-check, the Mac)",accepted
+United States District Court for the District of Wyoming,1,merge,United States District Court for the District of Wyoming,,organization,Courts,"a name read from the letter (#1266 re-check, the Mac)",accepted
+United States Attorney's Office for the District of Wyoming,1,merge,United States Attorney's Office for the District of Wyoming,,organization,Department of Justice,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Wyoming Game and Fish Department,1,merge,Wyoming Game and Fish Department,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+General Services Administration Office of Inspector General,1,merge,General Services Administration Office of Inspector General,,office,General Services Administration,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Federal Mediation and Conciliation Service,1,merge,Federal Mediation and Conciliation Service,,organization,Federal agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Southwest Georgia Regional Commission,1,merge,Southwest Georgia Regional Commission,,organization,Georgia local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+North American Aerospace Defense Command,1,merge,North American Aerospace Defense Command,,organization,Department of Defense,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Air Force Space Command,1,merge,Air Force Space Command,,organization,Department of the Air Force,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Center for American Progress,1,merge,Center for American Progress,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
+United States Court of Appeals for the Federal Circuit,1,merge,United States Court of Appeals for the Federal Circuit,,organization,Courts,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Fort Polk,1,merge,Fort Polk,,organization,Department of Defense,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Prince William County,1,merge,Prince William County,,organization,Virginia local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Achievable Dream,1,merge,Achievable Dream,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
+XTO Energy,1,merge,XTO Energy,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Skanska Infrastructure Development,1,merge,Skanska Infrastructure Development,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+I-4 Mobility Partners,1,merge,I-4 Mobility Partners,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+OnlyFans,1,merge,OnlyFans,,organization,Tech industry,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Pacific Northwest Hydrogen Association,1,merge,Pacific Northwest Hydrogen Association,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Cherry Marketing Institute,1,merge,Cherry Marketing Institute,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Ryanair,1,merge,Ryanair,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+NEXTA,1,merge,NEXTA,,organization,Media platforms,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Letcher County Water and Sewer District,1,merge,Letcher County Water and Sewer District,,organization,State of Kentucky,"a name read from the letter (#1266 re-check, the Mac)",accepted
+City of Croswell,1,merge,City of Croswell,,organization,Michigan agencies and organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Henrico County,1,merge,Henrico County,,organization,Virginia local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Connecticut State Medical Society,1,merge,Connecticut State Medical Society,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
+"City of Birmingham, Michigan",1,merge,"City of Birmingham, Michigan",,organization,Michigan agencies and organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
+"City of Charleston, West Virginia",1,merge,"City of Charleston, West Virginia",,organization,West Virginia agencies and organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
+West Virginia Department of Transportation,1,merge,West Virginia Department of Transportation,,organization,West Virginia state government agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+"Grundy County, Missouri",1,merge,"Grundy County, Missouri",,organization,Missouri agencies and organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Grundy County Industrial Development Corporation,1,merge,Grundy County Industrial Development Corporation,,organization,Missouri agencies and organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
+City of Dos Palos,1,merge,City of Dos Palos,,organization,California local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Port of Portland,1,merge,Port of Portland,,organization,Oregon local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Northwest Natural,1,merge,Northwest Natural,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Resources for the Future,1,merge,Resources for the Future,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
+"City of Jackson, Michigan",1,merge,"City of Jackson, Michigan",,organization,Michigan agencies and organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
+City of Glendora,1,merge,City of Glendora,,organization,California local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+"St. Clair County, Illinois",1,merge,"St. Clair County, Illinois",,organization,Illinois local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Habitat for Humanity Idaho Falls Area,1,merge,Habitat for Humanity Idaho Falls Area,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Indian River State College,1,merge,Indian River State College,,organization,Colleges and universities,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Green Bay Austin Straubel International Airport,1,merge,Green Bay Austin Straubel International Airport,,organization,Wisconsin local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Welch Gas Cooperative Association,1,merge,Welch Gas Cooperative Association,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Tennessee Department of Human Services,1,merge,Tennessee Department of Human Services,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+City of Runaway Bay,1,merge,City of Runaway Bay,,organization,Texas local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Friends of the National WWII Memorial,1,merge,Friends of the National WWII Memorial,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Siena Heights University,1,merge,Siena Heights University,,organization,Colleges and universities,"a name read from the letter (#1266 re-check, the Mac)",accepted
+LSG Sky Chefs,1,merge,LSG Sky Chefs,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Gate Gourmet,1,merge,Gate Gourmet,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Lorain Police Department,1,merge,Lorain Police Department,,organization,Ohio local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+City of Elkins,1,merge,City of Elkins,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Missouri Chamber Foundation,1,merge,Missouri Chamber Foundation,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
+City of Twentynine Palms,1,merge,City of Twentynine Palms,,organization,California local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+City of Henderson,1,merge,City of Henderson,,organization,Nevada local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+City of Midway,1,merge,City of Midway,,organization,Florida local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+U.S. District Court for the Northern District of Illinois,1,merge,U.S. District Court for the Northern District of Illinois,,organization,Courts,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Capital District Law Enforcement Planning Council,1,merge,Capital District Law Enforcement Planning Council,,organization,Louisiana local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+International Investment Bank,1,merge,International Investment Bank,,organization,International organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Rural Utilities Service,1,merge,Rural Utilities Service,,organization,Department of Agriculture,"a name read from the letter (#1266 re-check, the Mac)",accepted
+"Charles County, Maryland",1,merge,"Charles County, Maryland",,organization,Maryland agencies and organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Choices Pregnancy Centers,1,merge,Choices Pregnancy Centers,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Hale County Healthcare Authority,1,merge,Hale County Healthcare Authority,,organization,State of Alabama,"a name read from the letter (#1266 re-check, the Mac)",accepted
+City of Trimont,1,merge,City of Trimont,,organization,Minnesota local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Tri-County Regional Planning Commission,1,merge,Tri-County Regional Planning Commission,,organization,Illinois local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Bradley University,1,merge,Bradley University,,organization,Colleges and universities,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Resource Advisory Committees,1,merge,Resource Advisory Committees,,organization,Department of Agriculture,"a name read from the letter (#1266 re-check, the Mac)",accepted
+City of Greenville,1,merge,City of Greenville,,organization,North Carolina local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+East Carolina University,1,merge,East Carolina University,,organization,Colleges and universities,"a name read from the letter (#1266 re-check, the Mac)",accepted
+American Legislative Exchange Council,1,merge,American Legislative Exchange Council,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Santa Clara County Housing Authority,1,merge,Santa Clara County Housing Authority,,organization,California local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Rancho California Water District,1,merge,Rancho California Water District,,organization,California local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Adrian Public Schools,1,merge,Adrian Public Schools,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Drager Early Education Center,1,merge,Drager Early Education Center,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+City of Pea Ridge,1,merge,City of Pea Ridge,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Pea Ridge Fire Department,1,merge,Pea Ridge Fire Department,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+City of Birmingham,1,merge,City of Birmingham,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+City of Willoughby,1,merge,City of Willoughby,,organization,Ohio local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+World Relief DuPage/Aurora,1,merge,World Relief DuPage/Aurora,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Borough of Chambersburg,1,merge,Borough of Chambersburg,,organization,Pennsylvania local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Red River Authority of Texas,1,merge,Red River Authority of Texas,,organization,Texas agencies and organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Oregon Nanoscience and Microtechnologies Institute,1,merge,Oregon Nanoscience and Microtechnologies Institute,,organization,Oregon agencies and organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
+City of Americus,1,merge,City of Americus,,organization,Georgia local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Atlantic Coast Conference,1,merge,Atlantic Coast Conference,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Big 12 Conference,1,merge,Big 12 Conference,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
+King William County,1,merge,King William County,,organization,Virginia local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+University of Kansas Cancer Center,1,merge,University of Kansas Cancer Center,,organization,Colleges and universities,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Stowers Institute for Medical Research,1,merge,Stowers Institute for Medical Research,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
+University of Kansas,1,merge,University of Kansas,,organization,Colleges and universities,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Bureau of Transportation Statistics,1,merge,Bureau of Transportation Statistics,,office,Department of Transportation,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Martin County Sheriff's Office,1,merge,Martin County Sheriff's Office,,organization,Florida local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Hunter Army Airfield,1,merge,Hunter Army Airfield,,organization,Department of Defense,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Environmental Protection Agency Office of Public Affairs,1,merge,Environmental Protection Agency Office of Public Affairs,,office,Environmental Protection Agency,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Museum of the History of Polish Jews,1,merge,Museum of the History of Polish Jews,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Pecos Valley Medical Center,1,merge,Pecos Valley Medical Center,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
+United States District Court for the Northern District of Illinois,1,merge,United States District Court for the Northern District of Illinois,,organization,Courts,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Transport Workers Union of America,1,merge,Transport Workers Union of America,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
+United States District Court for the Northern District of Florida,1,merge,United States District Court for the Northern District of Florida,,organization,Courts,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Bay County Board of County Commissioners,1,merge,Bay County Board of County Commissioners,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Retriev Technologies & Battery Solutions,1,merge,Retriev Technologies & Battery Solutions,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+City of Gladewater,1,merge,City of Gladewater,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+"Senate Appropriations Subcommittee on Military Construction, Veterans Affairs, and Related Agencies",1,merge,"Senate Appropriations Subcommittee on Military Construction, Veterans Affairs, and Related Agencies",,organization,Committees,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Village of Marathon,1,merge,Village of Marathon,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Missouri Department of Transportation,1,merge,Missouri Department of Transportation,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Massachusetts Emergency Management Agency,1,merge,Massachusetts Emergency Management Agency,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+City of Hazel Park,1,merge,City of Hazel Park,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+"Take The Lead, Inc.",1,merge,"Take The Lead, Inc.",,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Scipio Town,1,merge,Scipio Town,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Franklin Township,1,merge,Franklin Township,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+San Gabriel Valley Council of Governments,1,merge,San Gabriel Valley Council of Governments,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+California Department of Water Resources,1,merge,California Department of Water Resources,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+California Joint Legislative Budget Committee,1,merge,California Joint Legislative Budget Committee,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Senate Appropriations Subcommittee on Financial Services and General Government,1,merge,Senate Appropriations Subcommittee on Financial Services and General Government,,organization,Committees,"a name read from the letter (#1266 re-check, the Mac)",accepted
+National Hurricane Center,1,merge,National Hurricane Center,,organization,National Oceanic and Atmospheric Administration,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Knox County Regional Airport,1,merge,Knox County Regional Airport,,organization,Ohio local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+South Middlesex Opportunity Council,1,merge,South Middlesex Opportunity Council,,organization,Massachusetts agencies and organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Biloxi National Cemetery,1,merge,Biloxi National Cemetery,,organization,National Cemetery Administration,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Pratt & Whitney,1,merge,Pratt & Whitney,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+National Cattlemen's Beef Association,1,merge,National Cattlemen's Beef Association,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Incorporated Village of Rockville Centre,1,merge,Incorporated Village of Rockville Centre,,organization,New York local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Connecticut Laborers' District Council,1,merge,Connecticut Laborers' District Council,,organization,Connecticut organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Town of Lake Placid,1,merge,Town of Lake Placid,,organization,Florida local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Village of Schaumburg,1,merge,Village of Schaumburg,,organization,Illinois local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+National Community Pharmacists Association,1,merge,National Community Pharmacists Association,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Murphy Oil USA,1,merge,Murphy Oil USA,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Freedom House,1,merge,Freedom House,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Washington Department of Natural Resources,1,merge,Washington Department of Natural Resources,,organization,Washington agencies and organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Pike County Board of Commissioners,1,merge,Pike County Board of Commissioners,,organization,Ohio local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+McHenry County Jail,1,merge,McHenry County Jail,,organization,Illinois local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Hammond Northshore Regional Airport,1,merge,Hammond Northshore Regional Airport,,organization,Louisiana local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Nuclear Weapons Council,1,merge,Nuclear Weapons Council,,organization,Department of Defense,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Highwood Creek Outfitters,1,merge,Highwood Creek Outfitters,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+United States Coast Guard Academy,1,merge,United States Coast Guard Academy,,organization,Coast Guard,"a name read from the letter (#1266 re-check, the Mac)",accepted
+City of Wasco,1,merge,City of Wasco,,organization,California local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+City of Marion,1,merge,City of Marion,,organization,Iowa agencies and organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Marion Economic Development Corporation,1,merge,Marion Economic Development Corporation,,organization,Iowa agencies and organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Kenosha Police Department,1,merge,Kenosha Police Department,,organization,Wisconsin local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Aleph Midstream,1,merge,Aleph Midstream,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Vista Oil & Gas Argentina,1,merge,Vista Oil & Gas Argentina,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Martin County,1,merge,Martin County,,organization,Florida local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Pipeline Health,1,merge,Pipeline Health,,organization,Companies,"asked for by the PC (1359), added by the Mac",accepted
+Westlake Hospital,1,merge,Westlake Hospital,,organization,Illinois agencies and organizations,"asked for by the PC (1359), added by the Mac",accepted
+Roseburg VA Health Care System,1,merge,Roseburg VA Health Care System,,organization,Department of Veterans Affairs,"asked for by the PC (1359), added by the Mac",accepted
+King of Spain,1,merge,King of Spain,,office,Foreign governments,"asked for by the PC (1359), added by the Mac",accepted
+Embassy of Spain,1,merge,Embassy of Spain,,office,Foreign governments,"asked for by the PC (1359), added by the Mac",accepted
+Idaho Department of Parks and Recreation,1,merge,Idaho Department of Parks and Recreation,,organization,State of Idaho,"asked for by the PC (1359), added by the Mac",accepted
+Montana National Guard,1,merge,Montana National Guard,,organization,State of Montana,"asked for by the PC (1359), added by the Mac",accepted
+Tulsa County Drainage District 12,1,merge,Tulsa County Drainage District 12,,organization,State of Oklahoma,"asked for by the PC (1359), added by the Mac",accepted
+John Wood Community College,1,merge,John Wood Community College,,organization,Colleges and universities,"asked for by the PC (1359), added by the Mac",accepted
+National Association of Scholars,1,merge,National Association of Scholars,,organization,Associations and other organizations,"asked for by the PC (1359), added by the Mac",accepted
+Oklahoma State University,1,merge,Oklahoma State University,,organization,Colleges and universities,"asked for by the PC (1359), added by the Mac",accepted
+Columbus Municipal Airport,1,merge,Columbus Municipal Airport,,organization,Indiana agencies and organizations,"asked for by the PC (1359), added by the Mac",accepted
+Time Warner,1,merge,Time Warner,,organization,Companies,"asked for by the PC (1359), added by the Mac",accepted
+The New Yorker,1,merge,The New Yorker,,organization,Companies,"asked for by the PC (1359), added by the Mac",accepted
+Michigan Department of Health and Human Services,1,merge,Michigan Department of Health and Human Services,,organization,Michigan state government agencies,"asked for by the PC (1359), added by the Mac",accepted
+Whirlpool,1,merge,Whirlpool,,organization,Companies,"asked for by the PC (1359), added by the Mac",accepted
+Tomah Memorial Hospital,1,merge,Tomah Memorial Hospital,,organization,Wisconsin agencies and organizations,"asked for by the PC (1359), added by the Mac",accepted
+Kirkland and Ellis,1,merge,Kirkland and Ellis,,organization,Companies,"asked for by the PC (1359), added by the Mac",accepted
+Irwin County Detention Center,1,merge,Irwin County Detention Center,,organization,Companies,"asked for by the PC (1359), added by the Mac",accepted
+Federal Security Service,1,merge,Federal Security Service,,organization,Foreign governments,"asked for by the PC (1359), added by the Mac",accepted
+Ministry of Economy of Mexico,1,merge,Ministry of Economy of Mexico,,organization,Foreign governments,"asked for by the PC (1362), added by the Mac",accepted
+Starbucks Workers United,1,merge,Starbucks Workers United,,organization,Associations and other organizations,"asked for by the PC (1362), added by the Mac",accepted
+Embassy of El Salvador,1,merge,Embassy of El Salvador,,office,Foreign governments,"asked for by the PC (1362), added by the Mac",accepted
+Peregrine Energy,1,merge,Peregrine Energy,,organization,Companies,"asked for by the PC (1362), added by the Mac",accepted
+American Battle Monuments Commission,1,merge,American Battle Monuments Commission,,organization,Independent agencies and commissions,"asked for by the PC (1362), added by the Mac",accepted
+American Express Global Business Travel,1,merge,American Express Global Business Travel,,organization,Companies,"asked for by the PC (1362), added by the Mac",accepted
+CWT Holdings,1,merge,CWT Holdings,,organization,Companies,"asked for by the PC (1362), added by the Mac",accepted
+Ontario International Airport Authority,1,merge,Ontario International Airport Authority,,organization,California local government and agencies,"asked for by the PC (1362), added by the Mac",accepted
+University of Michigan,1,merge,University of Michigan,,organization,Colleges and universities,"asked for by the PC (1362), added by the Mac",accepted
+Clark Construction Group,1,merge,Clark Construction Group,,organization,Companies,"asked for by the PC (1362), added by the Mac",accepted
+NL Industries,1,merge,NL Industries,,organization,Companies,"asked for by the PC (1362), added by the Mac",accepted
+Microchip Technology,1,merge,Microchip Technology,,organization,Companies,"asked for by the PC (1362), added by the Mac",accepted
+JCI Jones Chemicals,1,merge,JCI Jones Chemicals,,organization,Companies,"asked for by the PC (1362), added by the Mac",accepted
+Aspect Energy,1,merge,Aspect Energy,,organization,Companies,"asked for by the PC (1362), added by the Mac",accepted
+Prime Minister of Australia,1,merge,Prime Minister of Australia,,office,Foreign governments,"asked for by the PC (1362), added by the Mac",accepted
+United States District Court for the Southern District of New York,1,merge,United States District Court for the Southern District of New York,,organization,Courts,"asked for by the PC (1362), added by the Mac",accepted
+University of Texas at Austin,1,merge,University of Texas at Austin,,organization,Colleges and universities,"asked for by the PC (1362), added by the Mac",accepted
+Planned Parenthood of Illinois,1,merge,Planned Parenthood of Illinois,,organization,Nonprofits,"asked for by the PC (1362), added by the Mac",accepted
+ChexSystems,1,merge,ChexSystems,,organization,Companies,"asked for by the PC (1362), added by the Mac",accepted
+College Ave,1,merge,College Ave,,organization,Companies,"asked for by the PC (1362), added by the Mac",accepted
+Amentum Holdings,1,merge,Amentum Holdings,,organization,Companies,"asked for by the PC (1362), added by the Mac",accepted
+Samaritan Health Services,1,merge,Samaritan Health Services,,organization,Nonprofits,"asked for by the PC (1362), added by the Mac",accepted
+Mountain Billy Gun Lab,1,merge,Mountain Billy Gun Lab,,organization,Companies,"asked for by the PC (1362), added by the Mac",accepted
+Wee1 Tactical,1,merge,Wee1 Tactical,,organization,Companies,"asked for by the PC (1362), added by the Mac",accepted
+True Medicine,1,merge,True Medicine,,organization,Companies,"asked for by the PC (1362), added by the Mac",accepted
+King of Kings Foundation,1,merge,King of Kings Foundation,,organization,Associations and other organizations,"asked for by the PC (1362), added by the Mac",accepted
+Prime Therapeutics,1,merge,Prime Therapeutics,,organization,Companies,"asked for by the PC (1362), added by the Mac",accepted
+MedImpact Healthcare Systems,1,merge,MedImpact Healthcare Systems,,organization,Companies,"asked for by the PC (1362), added by the Mac",accepted
+Optum,1,merge,Optum,,organization,Companies,"asked for by the PC (1362), added by the Mac",accepted
+White House Office of Records Management,1,merge,White House Office of Records Management,,organization,Executive Office of the President,"asked for by the PC (1362), added by the Mac",accepted
+Police Athletic League,1,merge,Police Athletic League,,organization,Associations and other organizations,"asked for by the PC (1362), added by the Mac",accepted
+Elevance Health,1,merge,Elevance Health,,organization,Companies,"asked for by the PC (1362), added by the Mac",accepted
+South Metro Fire Rescue,1,merge,South Metro Fire Rescue,,organization,Colorado local government and agencies,"asked for by the PC (1362), added by the Mac",accepted
+Douglas County Sheriff's Office,1,merge,Douglas County Sheriff's Office,,organization,Colorado local government and agencies,"asked for by the PC (1362), added by the Mac",accepted
+Arapahoe County Sheriff's Office,1,merge,Arapahoe County Sheriff's Office,,organization,Colorado local government and agencies,"asked for by the PC (1362), added by the Mac",accepted
+Hugging Face,1,merge,Hugging Face,,organization,Companies,"asked for by the PC (1362), added by the Mac",accepted
+American Society for Nondestructive Testing,1,merge,American Society for Nondestructive Testing,,organization,Associations and other organizations,"asked for by the PC (1362), added by the Mac",accepted
+Mi'kmaq Nation,1,merge,Mi'kmaq Nation,,organization,Native Americans,"asked for by the PC (1362), added by the Mac",accepted
+Georgia Institute of Technology,1,merge,Georgia Institute of Technology,,organization,Colleges and universities,"asked for by the PC (1362), added by the Mac",accepted
+Alliance of Specialty Medicine,1,merge,Alliance of Specialty Medicine,,organization,Associations and other organizations,"asked for by the PC (1362), added by the Mac",accepted
+Kalshi,1,merge,Kalshi,,organization,Companies,"asked for by the PC (1362), added by the Mac",accepted
+Broadview Processing Center,1,merge,Broadview Processing Center,,organization,Companies,"asked for by the PC (1362), added by the Mac",accepted
+Chester Water Authority,1,merge,Chester Water Authority,,organization,Pennsylvania local government and agencies,"asked for by the PC (1362), added by the Mac",accepted
+Hero's Bridge,1,merge,Hero's Bridge,,organization,Associations and other organizations,"asked for by the PC (1362), added by the Mac",accepted
+City of San Diego,1,merge,City of San Diego,,organization,California local government and agencies,"asked for by the PC (1362), added by the Mac",accepted
+Mayor of San Diego,1,merge,Mayor of San Diego,,office,California local government and agencies,"asked for by the PC (1362), added by the Mac",accepted
+ByHeart,1,merge,ByHeart,,organization,Companies,"asked for by the PC (1362), added by the Mac",accepted
+Warren Community College,1,merge,Warren Community College,,organization,Colleges and universities,"asked for by the PC (1362), added by the Mac",accepted
+Gaza Humanitarian Foundation,1,merge,Gaza Humanitarian Foundation,,organization,Associations and other organizations,"asked for by the PC (1362), added by the Mac",accepted
+Frostburg State University,1,merge,Frostburg State University,,organization,Colleges and universities,"asked for by the PC (1362), added by the Mac",accepted
+Friends of Lake Apopka,1,merge,Friends of Lake Apopka,,organization,Associations and other organizations,"asked for by the PC (1362), added by the Mac",accepted
+Oakland University,1,merge,Oakland University,,organization,Colleges and universities,"asked for by the PC (1362), added by the Mac",accepted
+Interpublic Group,1,merge,Interpublic Group,,organization,Companies,"asked for by the PC (1362), added by the Mac",accepted
+The Big West,1,merge,The Big West,,organization,Associations and other organizations,"asked for by the PC (1362), added by the Mac",accepted
+Disability Rights Michigan,1,merge,Disability Rights Michigan,,organization,Associations and other organizations,"asked for by the PC (1362), added by the Mac",accepted
+Abraxas Alliance,1,merge,Abraxas Alliance,,organization,Companies,"asked for by the PC (1362), added by the Mac",accepted
+Plan C,1,merge,Plan C,,organization,Associations and other organizations,"asked for by the PC (1362), added by the Mac",accepted
+Office of the National Cyber Director,1,merge,Office of the National Cyber Director,,organization,Executive Office of the President,"asked for by the PC (1362), added by the Mac",accepted
+Delaney Hall Detention Center,1,merge,Delaney Hall Detention Center,,organization,Companies,"asked for by the PC (1362), added by the Mac",accepted
+Legal Services Corporation,1,merge,Legal Services Corporation,,organization,Government corporations,"asked for by the PC (1362), added by the Mac",accepted
+MetroConnects,1,merge,MetroConnects,,organization,South Carolina local government and agencies,"asked for by the PC (1362), added by the Mac",accepted
+Fort Leonard Wood,1,merge,Fort Leonard Wood,,organization,Department of the Army,"asked for by the PC (1362), added by the Mac",accepted
+Eastie Farm,1,merge,Eastie Farm,,organization,Associations and other organizations,"asked for by the PC (1362), added by the Mac",accepted
+West Coast Seafood Processors Association,1,merge,West Coast Seafood Processors Association,,organization,Associations and other organizations,"asked for by the PC (1362), added by the Mac",accepted
+Hope Florida Foundation,1,merge,Hope Florida Foundation,,organization,Associations and other organizations,"asked for by the PC (1362), added by the Mac",accepted
+Georgia Southern University,1,merge,Georgia Southern University,,organization,Colleges and universities,"asked for by the PC (1362), added by the Mac",accepted
+John F. Kennedy Center for the Performing Arts,1,merge,John F. Kennedy Center for the Performing Arts,,organization,Federal agencies,"asked for by the PC (1362), added by the Mac",accepted
+Flock Safety,1,merge,Flock Safety,,organization,Companies,"asked for by the PC (1362), added by the Mac",accepted
+Colorado Department of Health Care Policy and Financing,1,merge,Colorado Department of Health Care Policy and Financing,,organization,Colorado agencies and organizations,"asked for by the PC (1362), added by the Mac",accepted
+Association of Los Angeles Deputy Sheriffs,1,merge,Association of Los Angeles Deputy Sheriffs,,organization,Associations and other organizations,"asked for by the PC (1362), added by the Mac",accepted
+Zillow,1,merge,Zillow,,organization,Companies,"asked for by the PC (1362), added by the Mac",accepted
+Redfin,1,merge,Redfin,,organization,Companies,"asked for by the PC (1362), added by the Mac",accepted
+University of Georgia Foundation,1,merge,University of Georgia Foundation,,organization,Colleges and universities,"asked for by the PC (1362), added by the Mac",accepted
+Institute of Education Sciences,1,merge,Institute of Education Sciences,,organization,Department of Education,"asked for by the PC (1362), added by the Mac",accepted
+TotalEnergies,1,merge,TotalEnergies,,organization,Companies,"asked for by the PC (1362), added by the Mac",accepted
+Hospital General de Castaner,1,merge,Hospital General de Castaner,,organization,Nonprofits,"asked for by the PC (1362), added by the Mac",accepted
+Chicago Board of Education,1,merge,Chicago Board of Education,,organization,Illinois local government and agencies,"asked for by the PC (1362), added by the Mac",accepted
+Suffolk County Community College,1,merge,Suffolk County Community College,,organization,Colleges and universities,"asked for by the PC (1362), added by the Mac",accepted
+"Community Health Centers, Inc.",1,merge,"Community Health Centers, Inc.",,organization,Nonprofits,"asked for by the PC (1362), added by the Mac",accepted
+Dalmark Group,1,merge,Dalmark Group,,organization,Companies,"asked for by the PC (1362), added by the Mac",accepted
+Quadrilateral Security Dialogue,1,merge,Quadrilateral Security Dialogue,,organization,International organizations,"asked for by the PC (1362), added by the Mac",accepted
+Association of Jesuit Colleges and Universities,1,merge,Association of Jesuit Colleges and Universities,,organization,Associations and other organizations,"asked for by the PC (1362), added by the Mac",accepted
+Queen's Health System,1,merge,Queen's Health System,,organization,Nonprofits,"asked for by the PC (1362), added by the Mac",accepted
+San Francisco Police Department,1,merge,San Francisco Police Department,,organization,California local government and agencies,"asked for by the PC (1362), added by the Mac",accepted
+Big Brothers Big Sisters Lone Star,1,merge,Big Brothers Big Sisters Lone Star,,organization,Associations and other organizations,"asked for by the PC (1362), added by the Mac",accepted
+United States Copyright Office,1,merge,United States Copyright Office,,organization,Legislative branch,"asked for by the PC (1362), added by the Mac",accepted
+Adams County Public Hospital District No. 3,1,merge,Adams County Public Hospital District No. 3,,organization,Washington local government and agencies,"asked for by the PC (1362), added by the Mac",accepted
+Palantir Technologies,1,merge,Palantir Technologies,,organization,Companies,"asked for by the PC (1362), added by the Mac",accepted
+Navy Federal Credit Union,1,merge,Navy Federal Credit Union,,organization,Companies,"asked for by the PC (1362), added by the Mac",accepted
+New Beginnings Reentry Services,1,merge,New Beginnings Reentry Services,,organization,Associations and other organizations,"asked for by the PC (1362), added by the Mac",accepted
+Louisiana Chamber of Commerce Foundation,1,merge,Louisiana Chamber of Commerce Foundation,,organization,Associations and other organizations,"asked for by the PC (1362), added by the Mac",accepted
+Oracle,1,merge,Oracle,,organization,Companies,"asked for by the PC (1362), added by the Mac",accepted
+Houston Land Bank,1,merge,Houston Land Bank,,organization,Texas local government and agencies,"asked for by the PC (1362), added by the Mac",accepted
+HomeSafe Alliance,1,merge,HomeSafe Alliance,,organization,Companies,"asked for by the PC (1362), added by the Mac",accepted
+Damian Family Care Centers,1,merge,Damian Family Care Centers,,organization,Nonprofits,"asked for by the PC (1362), added by the Mac",accepted
+KONZA Health,1,merge,KONZA Health,,organization,Companies,"asked for by the PC (1362), added by the Mac",accepted
+United States Institute of Peace,1,merge,United States Institute of Peace,,organization,Independent agencies and commissions,"asked for by the PC (1362), added by the Mac",accepted
+Borinquen Medical Centers,1,merge,Borinquen Medical Centers,,organization,Nonprofits,"asked for by the PC (1362), added by the Mac",accepted
+Savannah-Georgia Convention Center Authority,1,merge,Savannah-Georgia Convention Center Authority,,organization,Georgia local government and agencies,"asked for by the PC (1362), added by the Mac",accepted
+Camden County College,1,merge,Camden County College,,organization,Colleges and universities,"asked for by the PC (1362), added by the Mac",accepted
