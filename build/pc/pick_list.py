@@ -60,7 +60,7 @@ def taken_in_open_prs() -> tuple[set[str], list[int]]:
         listing = subprocess.run(
             ["gh", "pr", "list", "--repo", REPO, "--base", "harvest-member-letters", "--state", "open",
              "--json", "number,headRefName", "--limit", "100"],
-            cwd=ROOT, capture_output=True, text=True, check=True).stdout
+            cwd=ROOT, capture_output=True, text=True, encoding="utf-8", check=True).stdout
     except (OSError, subprocess.CalledProcessError) as exc:
         sys.exit(f"could not list open PRs ({exc}); is gh signed in as Robin-IA?")
     out: set[str] = set()
@@ -70,13 +70,17 @@ def taken_in_open_prs() -> tuple[set[str], list[int]]:
         # A PR that cannot be fetched stops the run: skipping it silently is
         # what lets two batches be handed the same letters (#1341).
         got = subprocess.run(["git", "fetch", "-q", REPO_URL, f"+pull/{pr['number']}/head:{ref}"],
-                             cwd=ROOT, capture_output=True, text=True)
+                             cwd=ROOT, capture_output=True, text=True,
+                             encoding="utf-8", errors="replace")
         if got.returncode != 0:
             sys.exit(f"could not fetch PR #{pr['number']} from {REPO}: {got.stderr.strip()}")
         numbers.append(pr["number"])
         for f in FILES:
+            # encoding="utf-8": the CSVs hold accented names, and text=True
+            # alone decodes with the locale encoding, which is cp1252 on
+            # Windows and stops the run on the first such name.
             shown = subprocess.run(["git", "show", f"{ref}:{f}"], cwd=ROOT,
-                                   capture_output=True, text=True)
+                                   capture_output=True, text=True, encoding="utf-8")
             if shown.returncode == 0:
                 out |= digests(shown.stdout)
     return out, numbers
