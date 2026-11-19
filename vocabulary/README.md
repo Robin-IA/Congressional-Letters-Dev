@@ -46,7 +46,7 @@ Four branches, each alphabetical at every level:
   and commissions; Inspectors general; Congress.
 - **Members of Congress**, under Senators and Representatives, by surname. A
   member who served in both chambers is under both.
-- **Not yet reviewed**, the candidates: organizations, people, and recipients
+- **Unfiled letters** (called Not yet reviewed until #1367), the candidates: organizations, people, and recipients
   the build could not sort.
 
 `hierarchy.csv` places topics and organizations, one row per term and the term
