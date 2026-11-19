@@ -3,12 +3,15 @@
 
     python3 build/pc/pick_list.py --phase ocr  --size 500 > batch.txt
     python3 build/pc/pick_list.py --phase text --size 500 > batch.txt
+    python3 build/pc/pick_list.py --congress 109 --size 600 > batch.txt
 
 Run it from the dev repository, on an up-to-date harvest-member-letters, after
 pulling letters-from-congress-OCR (PC-READING.md, step A).
 
 --phase ocr   the 116th-119th scans whose text is OCR (PC-READING 4a, item 1)
 --phase text  the 116th-119th text-layer letters, newest Congress first (item 2)
+--congress N  that Congress's letters, OCR and text layer alike, by first Congress
+              (a range such as 109-114 goes oldest first; Robin, 19 Nov 2026)
 
 A digest is left out when it is already:
 - read (vocabulary/letters-reviewed.csv),
@@ -88,10 +91,17 @@ def taken_in_open_prs() -> tuple[set[str], list[int]]:
 
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
-    ap.add_argument("--phase", choices=("ocr", "text"), required=True)
+    ap.add_argument("--phase", choices=("ocr", "text"))
+    ap.add_argument("--congress", help="a Congress or a range, e.g. 109 or 109-114")
     ap.add_argument("--size", type=int, default=500)
     ap.add_argument("--ocr-repo", type=Path, default=ROOT.parent / "letters-from-congress-OCR")
     args = ap.parse_args()
+    if not args.phase and not args.congress:
+        ap.error("give --phase or --congress")
+    wanted = None
+    if args.congress:
+        a, _, b = args.congress.partition("-")
+        wanted = range(int(a), int(b or a) + 1)
 
     progress = args.ocr_repo / "progress.csv"
     if not progress.exists():
@@ -104,18 +114,24 @@ def main() -> None:
     with progress.open(encoding="utf-8") as fh:
         for r in csv.DictReader(fh):
             first = min(int(c) for c in r["congresses"].replace(";", " ").split() if c.isdigit())
-            if first < 116 or r["text"] != "True" or r["reviewed"] != "False":
+            if r["text"] != "True" or r["reviewed"] != "False":
                 continue
-            if (r["ocr"] == "True") != (args.phase == "ocr"):
+            if wanted is not None:
+                if first not in wanted:
+                    continue
+            elif first < 116:
+                continue
+            if args.phase and (r["ocr"] == "True") != (args.phase == "ocr"):
                 continue
             if r["digest"] in taken:
                 continue
-            picks.append((-first, r["digest"]))
-    picks.sort()  # newest Congress first; digest order within one
+            picks.append((first if wanted is not None else -first, r["digest"]))
+    # --phase alone: newest Congress first. --congress: oldest first. Digest order within one.
+    picks.sort()
     left = len(picks)
     for _, d in picks[:args.size]:
         print(d)
-    print(f"{args.phase}: {left:,} left to read; picked {min(left, args.size):,}. "
+    print(f"{args.phase or 'congress ' + args.congress}: {left:,} left to read; picked {min(left, args.size):,}. "
           f"Skipped {len(taken):,} already read, held, discarded or in open PRs "
           f"({', '.join(f'#{n}' for n in prs) or 'none open'}).", file=sys.stderr)
 
