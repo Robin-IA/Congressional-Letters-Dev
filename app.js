@@ -1283,6 +1283,14 @@ function viewAbout() {
       The Wayback Machine archived these sites, so for many of these letters the archive
       is the only copy left.`),
 
+    el('h3', {}, 'Letters to members, and letters with several signers'),
+    el('p', {}, `Letters written to a member of Congress are here too, when the member
+      published them on their own website: a letter from an agency, a governor or a
+      constituent group to the member is listed under that member, as received.`),
+    el('p', {}, `A letter signed by several members is listed once for each member who
+      published it on their own website. Each co-author's copy is listed under that member,
+      so the same letter can appear more than once.`),
+
     el('h3', {}, 'Where the details come from'),
     el('p', {}, `Who a letter went to and what it is about come mostly from the file’s
       name, which staff write for people to read, and from the letter’s text where it can

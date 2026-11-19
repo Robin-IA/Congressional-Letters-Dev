@@ -752,6 +752,14 @@ function showAbout() {
       The Wayback Machine archived these sites, so for many of these letters the archive
       is the only copy left.`),
 
+    el('h3', {}, 'Letters to members, and letters with several signers'),
+    el('p', {}, `Letters written to a member of Congress are here too, when the member
+      published them on their own website: a letter from an agency, a governor or a
+      constituent group to the member is listed under that member, as received.`),
+    el('p', {}, `A letter signed by several members is listed once for each member who
+      published it on their own website. Each co-author's copy is listed under that member,
+      so the same letter can appear more than once.`),
+
     el('h3', {}, 'What’s missing'),
     el('p', {}, `Only letters the Wayback Machine archived and we have found so far. Older
       Congresses have fewer. A letter posted without “letter” in its file name or web
