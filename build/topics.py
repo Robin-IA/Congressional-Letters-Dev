@@ -726,6 +726,28 @@ SUBJECTS: dict[str, tuple[str, ...]] = {
     "Foreign bribery": (),
     "Invasive species": (),
     "Currency": (),
+    # Hand-filed only (PC batches 65-66, #1359 #1362, and the Mac's unresolved
+    # held letters; 19 November 2026): subjects and laws the letters needed.
+    "Airline Safety and Federal Aviation Administration Extension Act": (),
+    "National Emergencies Act": (),
+    "Child Protection Improvements Act": (),
+    "Sergei Magnitsky Rule of Law Accountability Act": (),
+    "Nuclear Waste Policy Act": (),
+    "Finland": (),
+    "Somaliland": (),
+    "Somalia": (),
+    "Mozambique": (),
+    "Argentina": (),
+    "Australia": (),
+    "India": (),
+    "Japan": (),
+    "Costa Rica": (),
+    "Panama": (),
+    "Madagascar": (),
+    "Mauritius": (),
+    "Seychelles": (),
+    "Peru": (),
+    "Children's Online Privacy Protection Act": (),
     # Hand-filed only (the PC's reading batches 61-64, #1343 #1349 #1350 #1356;
     # 19 November 2026): subjects and laws the held letters needed.
     "Indian Housing Block Grant": (),
