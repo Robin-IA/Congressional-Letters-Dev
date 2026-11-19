@@ -726,6 +726,9 @@ SUBJECTS: dict[str, tuple[str, ...]] = {
     "Foreign bribery": (),
     "Invasive species": (),
     "Currency": (),
+    # Hand-filed only (PC batch 67, #1373; 19 November 2026): subjects
+    # and laws the held letters needed.
+    "Rescissions Act of 2025": (),
     # Hand-filed only (PC batches 65-66, #1359 #1362, and the Mac's unresolved
     # held letters; 19 November 2026): subjects and laws the letters needed.
     "Airline Safety and Federal Aviation Administration Extension Act": (),
