@@ -363,7 +363,10 @@ def nonpdf_excerpts(digests: set[str], store: Path) -> dict[str, str]:
 # it joins: (on the first file, on the second).
 RELATION_LABELS = {"supports": ("Supports", "Supporting document"),
                    # an unfinished draft and the letter as sent (#183, #180)
-                   "draft_of": ("Draft of", "Sent version")}
+                   "draft_of": ("Draft of", "Sent version"),
+                   # a later page posted as its own file: Harkin's nebraska-leg-2.pdf
+                   # beside nebraska-leg-1.pdf, a signatories list beside its letter (#252)
+                   "part_of": ("Part of", "Other part")}
 
 
 def related_notes(by_member: dict, links: list) -> dict[str, list[list[str]]]:
