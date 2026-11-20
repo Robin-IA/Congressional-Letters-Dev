@@ -1,6 +1,6 @@
 # For Claude on the PC: where the reading work lives
 
-**Updated 18 November 2026.** Read this first in any new session on the PC,
+**Updated 20 November 2026.** Read this first in any new session on the PC,
 whatever model it runs. A session that starts fresh does not remember this
 setup. That includes switching models, for example to Sonnet.
 
@@ -18,7 +18,51 @@ to 9 are reference for the steps. If anything in them seems to disagree with
 the steps, follow the steps and tell Robin which line disagrees. If a letter
 fits none of the steps, do not invent a rule: hold it (step B7) and say why.
 
-## What changed on 19 November 2026 (read before the next batch)
+## What changed on 20 November 2026 (read before batch 68)
+
+Robin, 20 November 2026. Pull first (`git pull`), so you have
+`build/reading_view.py` and `build/pc/batch_texts.py`.
+
+1. **The PC reads on Sonnet now.** Nothing in the steps changes with the
+   model: read this file and the `qa/` documents once at the start of the
+   batch, as before.
+2. **Batch 68 is 3,000 letters, in one batch.** Reading this file once per
+   batch is the fixed cost, so batches are bigger. One branch, one pick list,
+   one PR, one "vocabulary needed" issue and one "proposed discards" issue for
+   the whole 3,000. This replaces "Keep batches at about 600" (item 5 of
+   19 November).
+   ```
+   python3 build/pc/pick_list.py --congress 109-114 --size 3000 > batch-68.txt
+   ```
+   On 20 November that picked all 1,218 letters left in the 109th, 1,599 of
+   the 110th and 183 of the 111th, out of 20,793 left in the 109th–114th. **Commit and push the
+   branch after every 500 letters or so**, so that a session cut off by a
+   limit loses nothing; the next session reads on from the first letter of
+   `batch-68.txt` with no rows yet. Open the PR once, at the end.
+3. **A lower text cap (a trial).** Get each letter's text from the batch's
+   texts file, not the whole record:
+   ```
+   python3 build/pc/batch_texts.py batch-68.txt > batch-68-texts.jsonl
+   ```
+   - A letter of **1 or 2 pages is read whole**.
+   - A letter of **3 or more pages is read to 75% of its characters**: the
+     **first page and the last page whole** (letterhead, date, address block,
+     signers), then the middle pages in order from page 2 until the 75% is
+     used. If the first and last pages alone are over 75%, both are still
+     read whole. A marker shows what is left out.
+   - Pages are the OCR's page breaks. A text layer has none, so every 2,500
+     characters counts as a page.
+   - **If that is not enough** to decide the letter (an author, recipient or
+     subject sits in the part left out), read the full record in
+     `letters-from-congress-OCR`, add "read in full: <why>" to the note, and
+     give the count in the PR body. **Robin raises the share** if it is
+     needed often; do not raise it yourself.
+
+   The rule is `build/reading_view.py`, and is written into
+   `qa/QA-analysis-text.md` step 1. On 20 November's 3,000 letters, 996 were
+   over 2 pages and are cut; the batch reads 87% of its characters.
+
+## What changed on 19 November 2026
 
 Pull first (`git pull` on harvest-member-letters, and pull
 letters-from-congress-OCR), so you have today's `pick_list.py`, subject list
@@ -52,7 +96,8 @@ and `progress.csv`.
    rows for letters #1361 had already filed or discarded. The Mac removed
    them in #1377. If the base moves while you read, merge it into your branch
    before opening the PR, as you did for batches 66 and 67.
-5. **Keep batches at about 600.** Each batch's "vocabulary needed" issue has
+5. **Keep batches at about 600.** *(Replaced on 20 November: batch 68 is
+   3,000 letters.)* Each batch's "vocabulary needed" issue has
    to be worked by the Mac before its held letters can be filed. At 600 the
    Mac keeps up; much larger and the holds pile up.
 6. **Headings renamed** (#1367): "Not yet reviewed" is now **Unfiled
@@ -138,20 +183,27 @@ Robin decided these today. Each is in the steps below and in `qa/`:
 5. Make the pick list:
 
    ```bash
-   python3 build/pc/pick_list.py --phase ocr --size 500 > batch-<N>.txt
+   python3 build/pc/pick_list.py --congress 109-114 --size 3000 > batch-<N>.txt
+   python3 build/pc/batch_texts.py batch-<N>.txt > batch-<N>-texts.jsonl
    ```
 
-   Use `--phase ocr` until it says 0 left, then `--phase text` (section 4a).
+   The range and the size are Robin's (20 November 2026: the 109th–114th,
+   3,000 a batch; section 4a). The texts file applies the reading cap
+   (step B1).
    It skips letters already read, held, discarded, or in an open PR. Keep
-   `batch-<N>.txt` out of the commit.
+   `batch-<N>.txt` and the texts file out of the commit.
 
 ### B. Each letter, one at a time
 
 Do every step for one letter before starting the next. One pass, no
 second visit (section 5).
 
-1. **Get the text:** the letter's record in `text/<Congress>th.jsonl.gz`.
-   If the text is garbled or cut off, render the page and read it.
+1. **Get the text:** the letter's line in `batch-<N>-texts.jsonl`. A letter
+   of 1–2 pages is whole; a longer one has its first and last pages whole and
+   the middle to 75% of the letter (20 November 2026). If what is given is not
+   enough to decide, read the full record in `text/<Congress>th.jsonl.gz` and
+   note "read in full: <why>". If the text is garbled or cut off, render the
+   page and read it.
 2. **Is it a letter?** (section 5a)
    - Yes → go to 3.
    - Only part of a letter (a signature page, one middle page) → add it to
@@ -292,9 +344,10 @@ files it.
      "Reading batch N: proposed discards", labels `quality control` and
      `reading`, listing each digest, the posting member, what it is, and
      which test it fails. Link it from the PR.
-   - Title: "Reading batch N: X of 500 letters filed, Y held".
+   - Title: "Reading batch N: X of 3,000 letters filed, Y held".
    - Body: filed, held (with the term issues linked), the discards issue,
-     #252 partials, and "holder check not run on the PC".
+     #252 partials, how many letters were "read in full" past the cap and
+     why, and "holder check not run on the PC".
 4. Tell Robin the PR number and the issue numbers (vocabulary, proposed
    discards, any others). **Never merge**, and never file a held letter: the
    Mac resolves each issue and files its letters.
@@ -378,7 +431,9 @@ pushes a fresh `progress.csv` after each publish. One row per scan
    clean, so batches go faster.
 3. **Now (19 November): the 109th, then the 110th–114th**, OCR and text
    layer alike (`pick_list.py --congress 109`). See "What changed on
-   19 November 2026" at the top.
+   19 November 2026" at the top. From batch 68 (20 November): 3,000 letters a
+   batch (`--congress 109-114 --size 3000`), read with the cap in "What
+   changed on 20 November 2026".
 
 **Do not hold letters for a date or a missing addressee any more.**
 - Undated letters follow step 5: OCR first, then the content, then the
