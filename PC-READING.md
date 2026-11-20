@@ -18,6 +18,28 @@ to 9 are reference for the steps. If anything in them seems to disagree with
 the steps, follow the steps and tell Robin which line disagrees. If a letter
 fits none of the steps, do not invent a rule: hold it (step B7) and say why.
 
+## Batch 69: 6,000 letters (Robin, 20 November 2026)
+
+Everything in the next section holds; only the size changes.
+
+1. **Batch 69 is 6,000 letters, in one batch**: one branch, one pick list,
+   one PR, one "vocabulary needed" issue, one "proposed discards" issue.
+2. **Make its pick list only after batch 68's PR is open.** The pick list
+   skips letters in open PRs, not letters on a branch, so a list made while
+   batch 68 is still being read hands out batch 68's letters again.
+   ```
+   git checkout -b pc-read-69 origin/harvest-member-letters
+   python3 build/pc/pick_list.py --congress 109-114 --size 6000 > batch-69.txt
+   python3 build/pc/batch_texts.py batch-69.txt > batch-69-texts.jsonl
+   ```
+3. **What to expect** (previewed on 20 November, assuming batch 68 takes
+   the first 3,000): the 111th (about 3,170) and the 112th (about 2,830).
+   All have text. About 2,090 are over 2 pages and are cut by the reading
+   cap; the batch reads 86% of its 26 million characters, about twice
+   batch 68's.
+4. **Commit and push about every 500 letters**, as for batch 68. Open the PR
+   once, at the end: "Reading batch 69: X of 6,000 letters filed, Y held".
+
 ## What changed on 20 November 2026 (read before batch 68)
 
 Robin, 20 November 2026. Pull first (`git pull`), so you have
