@@ -39,6 +39,7 @@ from __future__ import annotations
 
 import argparse
 import collections
+import re
 import datetime
 import gzip
 import json
@@ -52,6 +53,24 @@ import build_congress as bc  # noqa: E402
 MIN_CHARS = 100
 # OCR this many times the text layer's length replaces it: the layer is missing pages (#252)
 PARTIAL_RATIO = 1.5
+# A text layer whose characters are mostly not letters, or whose words are
+# few for its length, is a glyph stream with no usable character map ("/0/1/2/
+# i255..."), not text (#252, 19 November 2026). OCR with half again as many
+# real words replaces it, whatever the two lengths.
+GARBLED_LETTERS = 0.55
+GARBLED_WORDS = 0.35
+
+
+def real_words(text: str) -> int:
+    return len(re.findall(r"[A-Za-z]{3,}", text or ""))
+
+
+def garbled(text: str) -> bool:
+    n = len(text or "")
+    if not n:
+        return False
+    letters = sum(c.isalpha() for c in text)
+    return letters / n < GARBLED_LETTERS or real_words(text) / max(1, n / 6) < GARBLED_WORDS
 CONGRESSES = range(105, 120)
 
 # The buckets of #116, in the order COVERAGE.md lists them.
@@ -107,7 +126,9 @@ def best_texts() -> tuple[dict, dict, dict]:
         # half again as long as the layer means pages the layer is missing.
         damaged = bool(have) and "\ufffd" in have["text"] and "\ufffd" not in (r.get("text") or "")
         partial = bool(have) and chars >= PARTIAL_RATIO * have["chars"]
-        if have and have["source"] == "text-layer" and not (damaged or partial):
+        unreadable = (bool(have) and have["source"] == "text-layer" and garbled(have["text"])
+                      and real_words(r.get("text") or "") >= PARTIAL_RATIO * real_words(have["text"]))
+        if have and have["source"] == "text-layer" and not (damaged or partial or unreadable):
             continue
         replaces_damaged = bool(have) and have["source"] == "text-layer"
         if chars >= MIN_CHARS and (replaces_damaged or chars > (have or {}).get("chars", -1)):
