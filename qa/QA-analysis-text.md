@@ -4,9 +4,27 @@ Part of [QA-Analysis-methodology](QA-Analysis-methodology.md). Before any
 judgment about a letter, make sure you are reading the whole of it.
 
 1. **Get the text** from `letters-from-congress-OCR/text/<N>th.jsonl.gz`
-   (`source`: `text-layer` or `ocr`). A reader sees the first 4,500 and last
-   1,500 characters of a long letter, so the signers are not lost; open the
-   full record when a decision depends on the middle.
+   (`source`: `text-layer` or `ocr`). How much a reader is given:
+   - **The PC, from batch 68** (Robin, 20 November 2026; a trial,
+     `build/reading_view.py`, given by `build/pc/batch_texts.py`):
+     - a letter of **1 or 2 pages is read whole**;
+     - a letter of **3 or more pages is read to 75% of its characters**: the
+       **first and last pages whole**, because they carry the letterhead,
+       date, address block and signers, then the middle pages in order from
+       page 2 until the 75% is used. If the first and last pages alone pass
+       75%, both are still read whole.
+     - A page is an OCR page break. A text layer has none, so every 2,500
+       characters counts as a page (an OCR page's median is about 2,400).
+     - Why: the PC's batches stopped on usage limits. Bigger batches (3,000)
+       read the instructions once; the cap reads less of each long letter.
+       On the first 3,000 letters of the 109th–114th, 996 were over 2 pages
+       and the batch reads 87% of its characters.
+     - If it proves not enough, Robin raises the share.
+   - **The Mac's readers** (`build/mac/mac_read.py`, `recheck_subjects.py`)
+     still see the first 4,500 and last 1,500 characters of a letter over
+     6,000, so the signers are not lost.
+   - Either way, **open the full record when a decision depends on the part
+     left out**, and say so in the note ("read in full: <why>").
 2. **Is it readable?**
    - Garbled text (foreign-script noise, no word spaces, fragments) or a scan
      upside down: fetch the PDF once from the Wayback Machine (one worker,
