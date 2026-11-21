@@ -303,7 +303,22 @@ second visit (section 5).
      organization, company, nonprofit, committee, agency or office it names,
      and laws or bills in the vocabulary, written in `letter-topics.csv` by
      their exact vocabulary label. People go under their organization or
-     office. Check every label.
+     office -- **except a sitting member of Congress named for what they did
+     or said while in office** (Robin, 20 November 2026): file that member
+     under their own name, their exact `vocabulary/terms.csv` label (kind
+     `member`), the same as an organization. Check the letter's date falls
+     inside that member's Congress (the note column, or `data/rosters/`): a
+     mention of them from before or after their term is not this case, and
+     is held like any other name the vocabulary does not cover for it.
+     Check every label.
+   - **Every label must already be in the vocabulary.** A state, a person or
+     any other name that is not an exact label in `SUBJECTS`,
+     `vocabulary/terms.csv` or `vocabulary/reviews.csv` is never invented or
+     approximated -- not "State of New Mexico" for a letter about New
+     Mexico, not a bare surname. Hold the letter and ask for the term (step
+     7) instead. (Batch 68, #1405: 659 letters used an invented "State of
+     X" or a dropped person's name this way; fixed by hand, not a rule the
+     vocabulary ever had.)
    - If the letter's main subject is not in `SUBJECTS` → hold it (step 7).
      Never bend it onto a subject that does not fit.
 7. **Hold** (for a missing term or subject, a letter you cannot place, or
