@@ -196,6 +196,31 @@ def organizations_to_file_under() -> set[str]:
     return out
 
 
+def members_to_file_under() -> set[str]:
+    """A sitting member of Congress, named as the letter's own subject.
+
+    Robin, 20 November 2026: a letter about what a member did or said while
+    they held office is filed under that member by name -- "Nancy Pelosi" on
+    a letter about her Speakership, not dropped the way a private individual
+    would be. Unlike organizations_to_file_under(), this is every preferred
+    member term, not only ones a review accepted: a person is still never a
+    *new* term (file under their office instead, per the pc-vocab BRIEF), but
+    an existing member term is already the vocabulary's own.
+
+    This does not check whether the letter falls inside that member's own
+    term in Congress -- the letter's Congress isn't available here, and a
+    member can be named for something before or after their service too (a
+    retrospective, an obituary). That check is made by hand, against the
+    member's tenure in terms.csv or data/rosters/, when a topic is reviewed.
+    """
+    terms = ROOT / "vocabulary" / "terms.csv"
+    if not terms.exists():
+        return set()
+    with terms.open(encoding="utf-8") as fh:
+        return {r["label"] for r in csv.DictReader(fh)
+                if r.get("kind") == "member" and r.get("status") == "preferred"}
+
+
 SMALL_WORDS = {"a", "an", "the", "and", "but", "or", "nor", "for", "so", "yet",
                "at", "by", "in", "of", "on", "to", "up", "as", "via", "vs", "per",
                "from", "with", "into", "onto", "over"}
