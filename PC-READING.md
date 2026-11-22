@@ -40,6 +40,57 @@ Everything in the next section holds; only the size changes.
 4. **Commit and push about every 500 letters**, as for batch 68. Open the PR
    once, at the end: "Reading batch 69: X of 6,000 letters filed, Y held".
 
+## What changed on 22 November 2026 (lessons from batch 68, #1406)
+
+Robin, 22 November 2026. Batch 68 (PR #1405, 3,000 letters) ran into the
+points below.
+
+1. **The reduced reading rule, stated once**: letters of 6,500 characters or
+   fewer are read whole. For longer letters, read the first
+   `min(75% of the length, 8,000)` characters plus the last 1,500, and say in
+   the entry's note how many middle characters were not shown. A batch this
+   size is read in chunks of about 15 to 20 letters.
+2. **Letters that already have a row**: before appending anything, check
+   whether the digest already has a row in `letter-titles.csv` or
+   `letter-recipients.csv` (written earlier from the address-block work).
+   If it does, keep the existing row and drop yours -- do not append a
+   second one. `merge`-style appends that add a second row for an existing
+   digest break `test_letter_recipients` (one row per letter) and
+   `test_vocabulary_by_hand` (a digest listed twice). List every such letter
+   in the PR; where the existing row names a committee and the text names
+   members, say so and leave the decision to the Mac.
+3. **The date audit cannot take a whole batch on the command line.**
+   `python3 build/audit_dates.py --ocr-repo ../letters-from-congress-OCR
+   $(cat batch-<N>.txt)` fails with "Argument list too long" at 3,000
+   digests. Run it in chunks of 250 digests and add up the "to look at"
+   counts.
+4. **The test suite is slow.** `test_vocabulary_by_hand` alone can take ten
+   minutes or more, and a plain `unittest discover` run can hit a tool
+   timeout before it prints its summary. Run it in the background to a log
+   file, or one module at a time, and wait for the summary before opening
+   the PR.
+5. **Merging the base into a PR branch.** A background test run can hold
+   `vocabulary/reviews.csv` open, so `git merge` fails with "unable to
+   unlink". Let the tests finish before merging. After a failed merge the
+   incoming files show up as untracked -- check `git status` before
+   retrying. A merge conflict in `vocabulary/reviews.csv` is almost always
+   two appended blocks: keep both.
+6. **Smaller points:**
+   - A joint recipient must be every one a sitting member; a department, the
+     Federal Reserve or any other non-member recipient stays the single
+     recipient, and the others go in the note, not the recipient field.
+   - Do not use "Youth" as a subject. Some states have no subject term
+     (Vermont, North Dakota, South Dakota, Wyoming and others) -- leave the
+     state off rather than inventing one.
+   - Use `[to]` in the note when the sender is not a member and has no term.
+   - An undated letter takes the pdf date with a leading `~`. A letter dated
+     outside the batch's own Congress range (for example 1994, 1998 or 2009
+     in a 109th-111th batch) is filed anyway, with `~outside ...` in the
+     note.
+   - Write hold-issue bodies and the PR body from Python with `PYTHONUTF8=1`
+     on a Windows path: a bash heredoc piped into Python on the PC fails on
+     an emoji.
+
 ## What changed on 20 November 2026 (read before batch 68)
 
 Robin, 20 November 2026. Pull first (`git pull`), so you have
