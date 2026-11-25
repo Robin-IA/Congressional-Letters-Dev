@@ -10633,3 +10633,79 @@ Los Angeles County Metropolitan Transportation Authority,1,merge,Los Angeles Cou
 Fox News,1,merge,Fox News,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 President of the Massachusetts Senate,1,merge,President of the Massachusetts Senate,,office,Massachusetts state officials,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Rocky Mountain Health Plans,1,merge,Rocky Mountain Health Plans,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+"Mac Thornberry, Adam Smith, Rodney P. Frelinghuysen and Peter J. Visclosky",1,joint,T000238;S000510;F000372;V000108,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+"Paul D. Ryan, Kevin McCarthy and Harold Rogers",1,joint,R000570;M001165;R000395,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+"Johnny Isakson, Corrine Brown, Jeff Miller and Richard Blumenthal",1,joint,I000055;B000911;M001144;B001277,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+"Department of Defense, Department of the Air Force, National Guard Bureau and Air National Guard",1,joint,Department of Defense;Department of the Air Force;National Guard Bureau;Air National Guard,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+"Bill Shuster, James M. Inhofe, Peter A. DeFazio and Barbara Boxer",1,joint,S001154;I000024;D000191;B000711,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+"The President, Department of State, Department of Homeland Security, Office of Refugee Resettlement and Citizenship and Immigration Services",1,joint,The President;Department of State;Department of Homeland Security;Office of Refugee Resettlement;Citizenship and Immigration Services,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Arizona State Parks and Trails,1,merge,Arizona State Parks and Trails,,organization,Arizona agencies and organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Bears Ears Inter-Tribal Coalition,1,merge,Bears Ears Inter-Tribal Coalition,,organization,Associations and other organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Chuck Grassley and Patrick J. Leahy,1,joint,G000386;L000174,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+"Fred Upton, Lisa Murkowski, Frank Pallone, Jr. and Maria Cantwell",1,joint,U000031;M001153;P000034;C000127,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Defense Business Board,1,merge,Defense Business Board,,organization,Federal agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+"Mac Thornberry, Jason Chaffetz, Adam Smith and Elijah E. Cummings",1,joint,T000238;C001076;S000510;C000984,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Americans for Financial Reform,1,merge,Americans for Financial Reform,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Americans for Tax Reform,1,merge,Americans for Tax Reform,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+FreedomWorks,1,merge,FreedomWorks,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Competitive Enterprise Institute,1,merge,Competitive Enterprise Institute,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+"GEOCare, LLC",1,merge,"GEOCare, LLC",,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Harold Rogers and Nita M. Lowey,1,joint,R000395;L000480,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Land Trust Alliance,1,merge,Land Trust Alliance,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Missoula City Council,1,merge,Missoula City Council,,organization,Montana local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Council of Agriculture of Taiwan,1,merge,Council of Agriculture of Taiwan,,organization,Foreign governments,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Illinois Beef Association,1,merge,Illinois Beef Association,,organization,Associations and other organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Coalition for Safe and Affordable Food,1,merge,Coalition for Safe and Affordable Food,,organization,Associations and other organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Mesquite Chamber of Commerce,1,merge,Mesquite Chamber of Commerce,,organization,Associations and other organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Tom McClintock and Niki Tsongas,1,joint,M001177;T000465,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+"Paul D. Ryan, Nancy Pelosi, Harold Rogers and Nita M. Lowey",1,joint,R000570;P000197;R000395;L000480,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Women's Rural Entrepreneurial Network,1,merge,Women's Rural Entrepreneurial Network,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Legislative Assembly of El Salvador,1,merge,Legislative Assembly of El Salvador,,organization,Foreign governments,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Parsons Brinckerhoff,1,merge,Parsons Brinckerhoff,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Financial Times,1,merge,Financial Times,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Mental Illness Policy Org,1,merge,Mental Illness Policy Org,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+"Fish and Wildlife Service, Bureau of Reclamation and National Oceanic and Atmospheric Administration",1,joint,Fish and Wildlife Service;Bureau of Reclamation;National Oceanic and Atmospheric Administration,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Tom Cole and Rosa L. DeLauro,1,joint,C001053;D000216,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Adjutant General of New Jersey,1,merge,Adjutant General of New Jersey,,office,New Jersey state officials,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+350.org,1,merge,350.org,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Center for Biological Diversity,1,merge,Center for Biological Diversity,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Earthjustice,1,merge,Earthjustice,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Friends of the Earth,1,merge,Friends of the Earth,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Labor Network for Sustainability,1,merge,Labor Network for Sustainability,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+NC WARN,1,merge,NC WARN,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Army Corps of Engineers and Bureau of Reclamation,1,joint,Army Corps of Engineers;Bureau of Reclamation,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+"Lisa Murkowski, Fred Upton, Maria Cantwell and Bobby L. Rush",1,joint,M001153;U000031;C000127;R000515,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Americans United for Life Action,1,merge,Americans United for Life Action,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Expera Specialty Solutions,1,merge,Expera Specialty Solutions,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+United States Mission to the International Organizations in Vienna,1,merge,United States Mission to the International Organizations in Vienna,,office,Department of State,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+The Concord Coalition,1,merge,The Concord Coalition,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Texas Parks and Wildlife Department,1,merge,Texas Parks and Wildlife Department,,organization,Texas state government agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Louisiana Department of Wildlife and Fisheries,1,merge,Louisiana Department of Wildlife and Fisheries,,organization,Louisiana state government agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Mississippi Department of Marine Resources,1,merge,Mississippi Department of Marine Resources,,organization,Mississippi state government agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Alabama Department of Conservation and Natural Resources,1,merge,Alabama Department of Conservation and Natural Resources,,organization,Alabama state government agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+"Mac Thornberry, Rodney P. Frelinghuysen, Adam Smith and Peter J. Visclosky",1,joint,T000238;F000372;S000510;V000108,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+National Invasive Species Council,1,merge,National Invasive Species Council,,organization,Federal agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Doris Miller VA Medical Center,1,merge,Doris Miller VA Medical Center,,office,Department of Veterans Affairs,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+VA Great Lakes Health Care System,1,merge,VA Great Lakes Health Care System,,office,Department of Veterans Affairs,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Task Force for Business Stability Operations,1,merge,Task Force for Business Stability Operations,,office,Department of Defense,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Oklahoma City VA Medical Center,1,merge,Oklahoma City VA Medical Center,,office,Department of Veterans Affairs,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+California Allied Grower Group,1,merge,California Allied Grower Group,,organization,Associations and other organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+The Assembly of State Legislatures,1,merge,The Assembly of State Legislatures,,organization,Associations and other organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+VA Rocky Mountain Network,1,merge,VA Rocky Mountain Network,,office,Department of Veterans Affairs,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Conservative HQ,1,merge,Conservative HQ,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+American Conservative Union Foundation,1,merge,American Conservative Union Foundation,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Right on Crime,1,merge,Right on Crime,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Ministry of Foreign Affairs of Taiwan,1,merge,Ministry of Foreign Affairs of Taiwan,,office,Foreign governments,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Illinois Soybean Association,1,merge,Illinois Soybean Association,,organization,Associations and other organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+National Federation of Federal Employees,1,merge,National Federation of Federal Employees,,organization,Associations and other organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+California Department of Toxic Substances Control,1,merge,California Department of Toxic Substances Control,,organization,California state government agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+St. Louis County Council,1,merge,St. Louis County Council,,organization,Missouri local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Jefferson Barracks National Cemetery,1,merge,Jefferson Barracks National Cemetery,,organization,National Cemetery Administration,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+State SNAP Agencies,1,merge,State SNAP Agencies,,organization,State and local government,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+"Bob Goodlatte, John Conyers, Jr., Tom Marino and Henry C. ""Hank"" Johnson, Jr.",1,joint,G000289;C000714;M001179;J000288,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Missouri Division of Workforce Development,1,merge,Missouri Division of Workforce Development,,organization,Missouri state government agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+American Iron and Steel Institute,1,merge,American Iron and Steel Institute,,organization,Associations and other organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Concerned Veterans for America,1,merge,Concerned Veterans for America,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Consortium of Forensic Science Organizations,1,merge,Consortium of Forensic Science Organizations,,organization,Associations and other organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+354th Fighter Wing,1,merge,354th Fighter Wing,,organization,Federal agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+World Intellectual Property Organization,1,merge,World Intellectual Property Organization,,organization,International organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
