@@ -39,3 +39,6 @@ data/letterhead-dates.json
 
 # Pagefind, installed with `npm ci` in build/search; only package.json and the lockfile are tracked.
 build/search/node_modules/
+
+# Compiled from build/render_pdf.swift on each Mac.
+build/render_pdf
