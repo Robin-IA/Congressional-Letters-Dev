@@ -588,7 +588,10 @@ def main() -> None:
     # as a stray term, so stop here and name it (the PC's hourly batches).
     # A reviewed organization is also a topic a letter can be filed under
     # (a company named in its address block; Robin, 15 November 2026).
-    org_labels = letter_text.organizations_to_file_under()
+    # A sitting member named as the letter's own subject is a topic too
+    # (Robin, 20 November 2026; letter_text.members_to_file_under), as
+    # test_topics_are_topics already allows.
+    org_labels = letter_text.organizations_to_file_under() | letter_text.members_to_file_under()
     for digest, labels in hand_topics.items():
         unknown = [t for t in labels if t not in SUBJECTS and t not in org_labels]
         if unknown:
