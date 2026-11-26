@@ -75,6 +75,12 @@ footer p.updated { margin: 0 0 .8rem; }
 
 .controls { display: flex; flex-wrap: wrap; gap: .7rem; align-items: center; margin-bottom: 1.6rem; }
 .controls input[type=search] { flex: 1 1 20rem; min-width: 16rem; height: 3.4rem; padding: 0 1.1rem; border: 1px solid #8a8a90; border-radius: 3px; background: #fff; }
+.controls button.go { height: 3.4rem; padding: 0 1.5rem; background: var(--active); color: #fff; border-radius: 3px; }
+/* Jump links to each kind of result, at the top of a search (#1416). */
+.jump { margin: 0 0 1.4rem; padding: .8rem 1.1rem; background: var(--panel); border: 1px solid var(--hair); border-radius: 4px; }
+.jump a { font-weight: 600; }
+#sr-h:focus, .panel:focus { outline: 3px solid var(--active); outline-offset: 3px; }
+.panel > .controls:last-child { margin-bottom: 0; }
 .controls select { height: 3.4rem; padding: 0 .7rem; border: 1px solid #8a8a90; border-radius: 3px; background: #fff; }
 .count { margin-left: auto; color: var(--muted); font-size: 1.25rem; }
 
@@ -251,6 +257,6 @@ table.letters td:last-child, table.letters th:last-child { width: 1%; white-spac
      therefore showed figures the data no longer supported — 36% where
      index.json said 46%, and a "Press releases" row for a thing this
      collection had stopped containing. Bump this whenever app.js changes. -->
-<script type="module" src="../app.js?v=2026-11-18a"></script>
+<script type="module" src="../app.js?v=2026-11-26c"></script>
 </body>
 </html>
