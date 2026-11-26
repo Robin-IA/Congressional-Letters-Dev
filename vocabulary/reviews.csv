@@ -6733,11 +6733,11 @@ Public Citizen,1,merge,Public Citizen,,organization,Nonprofits,"a recipient read
 Union of Concerned Scientists,1,merge,Union of Concerned Scientists,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Ginnie Mae,1,merge,Ginnie Mae,,organization,Department of Housing and Urban Development,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 "Al Franken, Richard Blumenthal, Ron Wyden, Patrick J. Leahy and Edward J. Markey",1,joint,F000457;B001277;W000779;L000174;M000133,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
-Turtle Mountain Band of Chippewa Indians,1,merge,Turtle Mountain Band of Chippewa Indians,,organization,State and local government,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Turtle Mountain Band of Chippewa Indians,1,merge,Turtle Mountain Band of Chippewa Indians,,organization,North Dakota organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Economic Research Service,1,merge,Economic Research Service,,organization,Department of Agriculture,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 National Institute of Food and Agriculture,1,merge,National Institute of Food and Agriculture,,organization,Department of Agriculture,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Seattle-Tacoma International Airport,1,merge,Seattle-Tacoma International Airport,,organization,Washington local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
-Governor of Vermont,1,merge,Governor of Vermont,,office,State and local government,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Governor of Vermont,1,merge,Governor of Vermont,,office,Vermont state officials,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 "Governor of New Hampshire, Governor of Vermont and Governor of New York",1,joint,Governor of New Hampshire;Governor of Vermont;Governor of New York,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
 UBS,1,merge,UBS,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Metropolitan Transportation Commission,1,merge,Metropolitan Transportation Commission,,organization,California local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
@@ -6754,7 +6754,7 @@ Immigration and Customs Enforcement and Executive Office for Immigration Review,
 Embassy of Libya,1,merge,Embassy of Libya,,organization,Foreign governments,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 LendUp,1,merge,LendUp,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Klamath Tribe,1,merge,Klamath Tribe,,organization,Associations and other organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
-New Hampshire Fish and Game Department,1,merge,New Hampshire Fish and Game Department,,organization,State and local government,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+New Hampshire Fish and Game Department,1,merge,New Hampshire Fish and Game Department,,organization,New Hampshire state government agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Forest Service and Fish and Wildlife Service,1,joint,Forest Service;Fish and Wildlife Service,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
 "Congressional leadership, Senate Committee on Finance and House Committee on Ways and Means",1,joint,Congressional leadership;Senate Committee on Finance;House Committee on Ways and Means,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
 North Central Wisconsin Regional Planning Commission,1,merge,North Central Wisconsin Regional Planning Commission,,organization,Wisconsin organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
@@ -6881,7 +6881,7 @@ Consumer Mortgage Coalition,1,merge,Consumer Mortgage Coalition,,organization,As
 Charlie Crist and Roger Williams,1,joint,C001111;W000816,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
 "Department of State, Department of Justice and Department of Homeland Security",1,joint,Department of State;Department of Justice;Department of Homeland Security,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
 John B. Larson and Joe Courtney,1,joint,L000557;C001069,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
-Garfield County Commissioners,1,merge,Garfield County Commissioners,,organization,State and local government,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Garfield County Commissioners,1,merge,Garfield County Commissioners,,organization,Montana local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Department of the Treasury and Department of Health and Human Services,1,joint,Department of the Treasury;Department of Health and Human Services,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
 Kansas Secretary of State,1,merge,Kansas Secretary of State,,office,Kansas state officials,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 The Vice President and Kansas Secretary of State,1,joint,The Vice President;Kansas Secretary of State,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
@@ -7042,7 +7042,7 @@ Global War on Terror Memorial Foundation,1,merge,Global War on Terror Memorial F
 Lisa Murkowski and Maria Cantwell,1,joint,M001153;C000127,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
 University of Kentucky Center for Applied Energy Research,1,merge,University of Kentucky Center for Applied Energy Research,,organization,Colleges and universities,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Rain Carbon,1,merge,Rain Carbon,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
-City of Fargo,1,merge,City of Fargo,,organization,State and local government,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+City of Fargo,1,merge,City of Fargo,,organization,North Dakota local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Georgetown University,1,merge,Georgetown University,,organization,Colleges and universities,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 National Federation of Independent Business,1,merge,National Federation of Independent Business,,organization,Associations and other organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Biogenic CO2 Coalition,1,merge,Biogenic CO2 Coalition,,organization,Associations and other organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
@@ -7110,7 +7110,7 @@ Office of the National Coordinator for Health Information Technology,1,merge,Off
 United States Postal Service Office of Inspector General,1,merge,United States Postal Service Office of Inspector General,,office,Inspectors general,"a name read from the letter (#1266 re-check, the Mac)",accepted
 National Pork Producers Council,1,merge,National Pork Producers Council,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Disinformation Governance Board,1,merge,Disinformation Governance Board,,organization,Department of Homeland Security,"a name read from the letter (#1266 re-check, the Mac)",accepted
-City of Tupelo,1,merge,City of Tupelo,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+City of Tupelo,1,merge,City of Tupelo,,organization,Mississippi local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Outdoor Industry Association,1,merge,Outdoor Industry Association,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Colorado Wildlife Federation,1,merge,Colorado Wildlife Federation,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Green Bank Observatory,1,merge,Green Bank Observatory,,organization,National Science Foundation,"a name read from the letter (#1266 re-check, the Mac)",accepted
@@ -7124,17 +7124,17 @@ American Federation of Teachers,1,merge,American Federation of Teachers,,organiz
 Americans for Public Trust,1,merge,Americans for Public Trust,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Project Veritas,1,merge,Project Veritas,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Idaho Rural Water Association,1,merge,Idaho Rural Water Association,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
-Idaho Transportation Department,1,merge,Idaho Transportation Department,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Idaho Transportation Department,1,merge,Idaho Transportation Department,,organization,Idaho state government agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 "Morgan, Lewis & Bockius",1,merge,"Morgan, Lewis & Bockius",,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Winston & Strawn,1,merge,Winston & Strawn,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
-City of El Paso,1,merge,City of El Paso,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
-Maricopa County Attorney's Office,1,merge,Maricopa County Attorney's Office,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+City of El Paso,1,merge,City of El Paso,,organization,Texas local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Maricopa County Attorney's Office,1,merge,Maricopa County Attorney's Office,,organization,Arizona local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 American Institute of CPAs,1,merge,American Institute of CPAs,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Adams County Board of Commissioners,1,merge,Adams County Board of Commissioners,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Office for Civil Rights,1,merge,Office for Civil Rights,,office,Department of Education,"a name read from the letter (#1266 re-check, the Mac)",accepted
 CITGO,1,merge,CITGO,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Monsanto,1,merge,Monsanto,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
-Southern Nevada Water Authority,1,merge,Southern Nevada Water Authority,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Southern Nevada Water Authority,1,merge,Southern Nevada Water Authority,,organization,Nevada local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 National Employment Law Project,1,merge,National Employment Law Project,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
 WateReuse Association,1,merge,WateReuse Association,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Kentucky Capital Development Corporation,1,merge,Kentucky Capital Development Corporation,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
@@ -7188,22 +7188,22 @@ California Walnut Board,1,merge,California Walnut Board,,organization,California
 World Trade Organization,1,merge,World Trade Organization,,organization,International organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
 National School Boards Association,1,merge,National School Boards Association,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Panorama Education,1,merge,Panorama Education,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
-Fairfax County Public Schools,1,merge,Fairfax County Public Schools,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Fairfax County Public Schools,1,merge,Fairfax County Public Schools,,organization,Virginia local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Howard University,1,merge,Howard University,,organization,Colleges and universities,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Rumble,1,merge,Rumble,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Culper Research,1,merge,Culper Research,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
-Texas Secretary of State,1,merge,Texas Secretary of State,,office,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Texas Secretary of State,1,merge,Texas Secretary of State,,office,Texas state officials,"a name read from the letter (#1266 re-check, the Mac)",accepted
 UnionPay,1,merge,UnionPay,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
-Minnesota Secretary of State,1,merge,Minnesota Secretary of State,,office,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Minnesota Secretary of State,1,merge,Minnesota Secretary of State,,office,Minnesota state officials,"a name read from the letter (#1266 re-check, the Mac)",accepted
 SolarWinds,1,merge,SolarWinds,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Ralph Lauren Corporation,1,merge,Ralph Lauren Corporation,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Snap Inc.,1,merge,Snap Inc.,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Joint Base McGuire-Dix-Lakehurst,1,merge,Joint Base McGuire-Dix-Lakehurst,,organization,Department of Defense,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Virginia Commonwealth University,1,merge,Virginia Commonwealth University,,organization,Colleges and universities,"a name read from the letter (#1266 re-check, the Mac)",accepted
-Denver International Airport,1,merge,Denver International Airport,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Denver International Airport,1,merge,Denver International Airport,,organization,Colorado local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Israel Defense Forces,1,merge,Israel Defense Forces,,organization,Foreign governments,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Commission on Combating Drug Addiction and the Opioid Crisis,1,merge,Commission on Combating Drug Addiction and the Opioid Crisis,,organization,Executive Office of the President,"a name read from the letter (#1266 re-check, the Mac)",accepted
-New York City Health and Hospitals Corporation,1,merge,New York City Health and Hospitals Corporation,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+New York City Health and Hospitals Corporation,1,merge,New York City Health and Hospitals Corporation,,organization,New York local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Bureau of Industry and Security,1,merge,Bureau of Industry and Security,,organization,Department of Commerce,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Sullivan County Memorial Hospital,1,merge,Sullivan County Memorial Hospital,,organization,State of Missouri,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Natcast,1,merge,Natcast,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
@@ -7212,8 +7212,8 @@ INDA,1,merge,INDA,,organization,Associations and other organizations,"a name rea
 City of Goldsboro,1,merge,City of Goldsboro,,organization,North Carolina local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Goldsboro Police Department,1,merge,Goldsboro Police Department,,organization,North Carolina local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Chinese Communist Party,1,merge,Chinese Communist Party,,organization,Foreign political parties,"a name read from the letter (#1266 re-check, the Mac)",accepted
-Tacoma Public Utilities,1,merge,Tacoma Public Utilities,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
-Harris County,1,merge,Harris County,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Tacoma Public Utilities,1,merge,Tacoma Public Utilities,,organization,Washington local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Harris County,1,merge,Harris County,,organization,Texas local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Tennessee Gas Pipeline Company,1,merge,Tennessee Gas Pipeline Company,,organization,Energy sector,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Gulf of Mexico Fishery Management Council,1,merge,Gulf of Mexico Fishery Management Council,,organization,Federal agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Islamic Revolutionary Guard Corps,1,merge,Islamic Revolutionary Guard Corps,,organization,Foreign and international,"a name read from the letter (#1266 re-check, the Mac)",accepted
@@ -7332,7 +7332,7 @@ Human Rights Watch,1,merge,Human Rights Watch,,organization,Nonprofits,"a name r
 Scenic Rivers Development Alliance,1,merge,Scenic Rivers Development Alliance,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Pike County Economic Development District,1,merge,Pike County Economic Development District,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Texas State University,1,merge,Texas State University,,organization,Colleges and universities,"a name read from the letter (#1266 re-check, the Mac)",accepted
-New Hampshire Department of Environmental Services,1,merge,New Hampshire Department of Environmental Services,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+New Hampshire Department of Environmental Services,1,merge,New Hampshire Department of Environmental Services,,organization,New Hampshire state government agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Regional Plan Association,1,merge,Regional Plan Association,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Metropolitan Detention Center Brooklyn,1,merge,Metropolitan Detention Center Brooklyn,,organization,Bureau of Prisons,"a name read from the letter (#1266 re-check, the Mac)",accepted
 DIRECTV,1,merge,DIRECTV,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
@@ -7348,7 +7348,7 @@ LeadingAge,1,merge,LeadingAge,,organization,Nonprofits,"a name read from the let
 Financial Action Task Force,1,merge,Financial Action Task Force,,organization,International organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Crowley Fleck,1,merge,Crowley Fleck,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Donald J. Trump Foundation,1,merge,Donald J. Trump Foundation,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
-North Jersey District Water Supply Commission,1,merge,North Jersey District Water Supply Commission,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+North Jersey District Water Supply Commission,1,merge,North Jersey District Water Supply Commission,,organization,New Jersey local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Environmental Protection Agency Office of Inspector General,1,merge,Environmental Protection Agency Office of Inspector General,,office,Inspectors general,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Medline Industries,1,merge,Medline Industries,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Vantage Specialty Chemicals,1,merge,Vantage Specialty Chemicals,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
@@ -7362,7 +7362,7 @@ Chime Financial,1,merge,Chime Financial,,organization,Companies,"a name read fro
 MoGas Pipeline,1,merge,MoGas Pipeline,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 TRICARE,1,merge,TRICARE,,organization,Department of Defense,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Standing Rock Sioux Tribe,1,merge,Standing Rock Sioux Tribe,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
-Governor of North Dakota,1,merge,Governor of North Dakota,,office,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Governor of North Dakota,1,merge,Governor of North Dakota,,office,North Dakota state officials,"a name read from the letter (#1266 re-check, the Mac)",accepted
 National Cemetery Administration,1,merge,National Cemetery Administration,,organization,Department of Veterans Affairs,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Skydance Media,1,merge,Skydance Media,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Office of Foreign Assets Control,1,merge,Office of Foreign Assets Control,,organization,Department of the Treasury,"a name read from the letter (#1266 re-check, the Mac)",accepted
@@ -7418,8 +7418,8 @@ Heartland Institute,1,merge,Heartland Institute,,organization,Nonprofits,"a name
 Florida Public Transportation Association,1,merge,Florida Public Transportation Association,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
 American Foundation for Suicide Prevention,1,merge,American Foundation for Suicide Prevention,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Alliance for Renewable Clean Hydrogen Energy Systems,1,merge,Alliance for Renewable Clean Hydrogen Energy Systems,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
-Maricopa County Flood Control District,1,merge,Maricopa County Flood Control District,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
-County of Los Angeles,1,merge,County of Los Angeles,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Maricopa County Flood Control District,1,merge,Maricopa County Flood Control District,,organization,Arizona local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+County of Los Angeles,1,merge,County of Los Angeles,,organization,California local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Eco-Health Alliance,1,merge,Eco-Health Alliance,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Wuhan Institute of Virology,1,merge,Wuhan Institute of Virology,,organization,Foreign and international,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Defense Advanced Research Projects Agency,1,merge,Defense Advanced Research Projects Agency,,organization,Department of Defense,"a name read from the letter (#1266 re-check, the Mac)",accepted
@@ -7481,9 +7481,9 @@ National Rural Health Association,1,merge,National Rural Health Association,,org
 Montana Independent Bankers Association,1,merge,Montana Independent Bankers Association,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Prosecutors Against Gun Violence,1,merge,Prosecutors Against Gun Violence,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Congressional Prayer Caucus,1,merge,Congressional Prayer Caucus,,organization,Caucuses,"a name read from the letter (#1266 re-check, the Mac)",accepted
-Loudoun County Public Schools,1,merge,Loudoun County Public Schools,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Loudoun County Public Schools,1,merge,Loudoun County Public Schools,,organization,Virginia local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 William Marsh Rice University,1,merge,William Marsh Rice University,,organization,Colleges and universities,"a name read from the letter (#1266 re-check, the Mac)",accepted
-Houston Independent School District,1,merge,Houston Independent School District,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Houston Independent School District,1,merge,Houston Independent School District,,organization,Texas local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Asian Pacific Development Center,1,merge,Asian Pacific Development Center,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Colorado Asian Culture and Education Network,1,merge,Colorado Asian Culture and Education Network,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
 George W. Bush Presidential Library and Museum,1,merge,George W. Bush Presidential Library and Museum,,organization,Federal agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
@@ -7524,11 +7524,11 @@ New Jersey Office of Homeland Security and Preparedness,1,merge,New Jersey Offic
 Vet Voice Foundation,1,merge,Vet Voice Foundation,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Maximus,1,merge,Maximus,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Office of Postsecondary Education,1,merge,Office of Postsecondary Education,,office,Department of Education,"a name read from the letter (#1266 re-check, the Mac)",accepted
-Chicago Police Department,1,merge,Chicago Police Department,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
-North Coast Railroad Authority,1,merge,North Coast Railroad Authority,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Chicago Police Department,1,merge,Chicago Police Department,,organization,Illinois local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+North Coast Railroad Authority,1,merge,North Coast Railroad Authority,,organization,California local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 FTX,1,merge,FTX,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Continental Resources,1,merge,Continental Resources,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
-Massachusetts Department of Public Health,1,merge,Massachusetts Department of Public Health,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Massachusetts Department of Public Health,1,merge,Massachusetts Department of Public Health,,organization,Massachusetts state government agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Asian Pacific Policy and Planning Council,1,merge,Asian Pacific Policy and Planning Council,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Arizona Sheriffs Association,1,merge,Arizona Sheriffs Association,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Soyfoods Association of North America,1,merge,Soyfoods Association of North America,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
@@ -7537,16 +7537,16 @@ Asset and Infrastructure Review Commission,1,merge,Asset and Infrastructure Revi
 VA Black Hills Health Care System,1,merge,VA Black Hills Health Care System,,organization,Department of Veterans Affairs,"a name read from the letter (#1266 re-check, the Mac)",accepted
 VA Sioux Falls Health Care System,1,merge,VA Sioux Falls Health Care System,,organization,Department of Veterans Affairs,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Civilian Board of Contract Appeals,1,merge,Civilian Board of Contract Appeals,,organization,Independent agencies and commissions,"a name read from the letter (#1266 re-check, the Mac)",accepted
-Town of Kure Beach,1,merge,Town of Kure Beach,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Town of Kure Beach,1,merge,Town of Kure Beach,,organization,North Carolina local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Montana Stockgrowers Association,1,merge,Montana Stockgrowers Association,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Montana Public Lands Council,1,merge,Montana Public Lands Council,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
 ESO Solutions,1,merge,ESO Solutions,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Vista Equity Partners,1,merge,Vista Equity Partners,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Swords to Plowshares,1,merge,Swords to Plowshares,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Advisory Committee on Immunization Practices,1,merge,Advisory Committee on Immunization Practices,,organization,Centers for Disease Control,"a name read from the letter (#1266 re-check, the Mac)",accepted
-City of Stanley,1,merge,City of Stanley,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
-Port Canaveral,1,merge,Port Canaveral,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
-Port Everglades,1,merge,Port Everglades,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+City of Stanley,1,merge,City of Stanley,,organization,Idaho local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Port Canaveral,1,merge,Port Canaveral,,organization,Florida local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Port Everglades,1,merge,Port Everglades,,organization,Florida local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Maricopa Community Colleges,1,merge,Maricopa Community Colleges,,organization,Colleges and universities,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Akron-Canton Regional Foodbank,1,merge,Akron-Canton Regional Foodbank,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
 The Nature Conservancy,1,merge,The Nature Conservancy,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
@@ -7554,7 +7554,7 @@ Patriot Retirees Voluntary Employees' Beneficiary Association,1,merge,Patriot Re
 Government of India,1,merge,Government of India,,organization,Foreign governments,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Financial Crisis Inquiry Commission,1,merge,Financial Crisis Inquiry Commission,,organization,Independent agencies and commissions,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Minnesota Department of Education,1,merge,Minnesota Department of Education,,organization,Minnesota state government agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
-Harris County Flood Control District,1,merge,Harris County Flood Control District,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Harris County Flood Control District,1,merge,Harris County Flood Control District,,organization,Texas local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 The Wilderness Society,1,merge,The Wilderness Society,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Office of Legal Counsel,1,merge,Office of Legal Counsel,,office,Department of Justice,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Association of Public Health Laboratories,1,merge,Association of Public Health Laboratories,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
@@ -7649,7 +7649,7 @@ Rocky Mountain College of Art and Design,1,merge,Rocky Mountain College of Art a
 James Oberstar and John L. Mica,1,joint,O000006;M000689,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
 National Abstinence Clearinghouse,1,merge,National Abstinence Clearinghouse,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 "Norman D. Dicks, Dianne Feinstein, Lamar Alexander and Michael K. Simpson",1,joint,D000327;F000062;A000360;S001148,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
-City of Box Elder,1,merge,City of Box Elder,,organization,State and local government,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+City of Box Elder,1,merge,City of Box Elder,,organization,South Dakota local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Ministry of Foreign Affairs of Vietnam,1,merge,Ministry of Foreign Affairs of Vietnam,,office,Foreign governments,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Ball State University,1,merge,Ball State University,,organization,Colleges and universities,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Lane County Medical Society,1,merge,Lane County Medical Society,,organization,Associations and other organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
@@ -8765,21 +8765,21 @@ University of British Columbia,1,merge,University of British Columbia,,organizat
 Hawaii Department of Human Services,1,merge,Hawaii Department of Human Services,,organization,Hawaii state government agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 International Monetary Fund,1,merge,International Monetary Fund,,organization,International organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
 National Center for Missing and Exploited Children,1,merge,National Center for Missing and Exploited Children,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
-City of Gulfport,1,merge,City of Gulfport,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+City of Gulfport,1,merge,City of Gulfport,,organization,Mississippi local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Memorial Hospital at Gulfport,1,merge,Memorial Hospital at Gulfport,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Merit Health,1,merge,Merit Health,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Firequest International,1,merge,Firequest International,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 National Peach Council,1,merge,National Peach Council,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Queen's Medical Center,1,merge,Queen's Medical Center,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Blood Bank of Hawaii,1,merge,Blood Bank of Hawaii,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
-City and County of San Francisco,1,merge,City and County of San Francisco,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+City and County of San Francisco,1,merge,City and County of San Francisco,,organization,California local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 San Francisco Wholesale Produce Market,1,merge,San Francisco Wholesale Produce Market,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
-San Francisco Office of Economic and Workforce Development,1,merge,San Francisco Office of Economic and Workforce Development,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+San Francisco Office of Economic and Workforce Development,1,merge,San Francisco Office of Economic and Workforce Development,,organization,California local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 National Sheriffs' Association,1,merge,National Sheriffs' Association,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Aurora Chamber of Commerce,1,merge,Aurora Chamber of Commerce,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Community College of Aurora,1,merge,Community College of Aurora,,organization,Colleges and universities,"a name read from the letter (#1266 re-check, the Mac)",accepted
-DeSoto County Sheriff's Department,1,merge,DeSoto County Sheriff's Department,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
-Marshall County Sheriff's Office,1,merge,Marshall County Sheriff's Office,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+DeSoto County Sheriff's Department,1,merge,DeSoto County Sheriff's Department,,organization,Mississippi local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Marshall County Sheriff's Office,1,merge,Marshall County Sheriff's Office,,organization,Mississippi local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Federal Reserve Bank of St. Louis,1,merge,Federal Reserve Bank of St. Louis,,organization,Independent agencies and commissions,"a name read from the letter (#1266 re-check, the Mac)",accepted
 EPA Science Advisory Board,1,merge,EPA Science Advisory Board,,organization,Federal agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Brookdale Community College,1,merge,Brookdale Community College,,organization,Colleges and universities,"a name read from the letter (#1266 re-check, the Mac)",accepted
@@ -8812,13 +8812,13 @@ HealthFirst Bluegrass,1,merge,HealthFirst Bluegrass,,organization,Nonprofits,"a 
 Ute Mountain Ute Tribe,1,merge,Ute Mountain Ute Tribe,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
 United Against Nuclear Iran,1,merge,United Against Nuclear Iran,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Pueblo of Sandia,1,merge,Pueblo of Sandia,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
-Middle Rio Grande Conservancy District,1,merge,Middle Rio Grande Conservancy District,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Middle Rio Grande Conservancy District,1,merge,Middle Rio Grande Conservancy District,,organization,New Mexico local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 University of Idaho,1,merge,University of Idaho,,organization,Colleges and universities,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Tron,1,merge,Tron,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 ANSWER Coalition,1,merge,ANSWER Coalition,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
 University of Phoenix,1,merge,University of Phoenix,,organization,Colleges and universities,"a name read from the letter (#1266 re-check, the Mac)",accepted
-Idaho Office of Emergency Management,1,merge,Idaho Office of Emergency Management,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
-Big Lost River Irrigation District,1,merge,Big Lost River Irrigation District,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Idaho Office of Emergency Management,1,merge,Idaho Office of Emergency Management,,organization,Idaho state government agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Big Lost River Irrigation District,1,merge,Big Lost River Irrigation District,,organization,Idaho local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 National Fire Academy,1,merge,National Fire Academy,,organization,Federal Emergency Management Agency,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Emergency Management Institute,1,merge,Emergency Management Institute,,organization,Federal Emergency Management Agency,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Hanover County Board of Supervisors,1,merge,Hanover County Board of Supervisors,,organization,Virginia local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
@@ -9016,9 +9016,9 @@ Purgatoire River Water Conservancy District,1,merge,Purgatoire River Water Conse
 Whitebox Advisors,1,merge,Whitebox Advisors,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Public Health and Medical Professionals for Transparency,1,merge,Public Health and Medical Professionals for Transparency,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Ministry of Social Protection of Colombia,1,merge,Ministry of Social Protection of Colombia,,organization,Foreign governments,"a name read from the letter (#1266 re-check, the Mac)",accepted
-City of Utqiaġvik,1,merge,City of Utqiaġvik,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
-City of Wainwright,1,merge,City of Wainwright,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
-City of Atqasuk,1,merge,City of Atqasuk,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+City of Utqiaġvik,1,merge,City of Utqiaġvik,,organization,Alaska local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+City of Wainwright,1,merge,City of Wainwright,,organization,Alaska local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+City of Atqasuk,1,merge,City of Atqasuk,,organization,Alaska local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 xAI,1,merge,xAI,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Tehum Care Services,1,merge,Tehum Care Services,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 YesCare,1,merge,YesCare,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
@@ -9077,17 +9077,17 @@ Boulder City Planning Commission,1,merge,Boulder City Planning Commission,,organ
 Government of the District of Columbia,1,merge,Government of the District of Columbia,,organization,District of Columbia local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Entrepreneurs Foundation of Hawaii,1,merge,Entrepreneurs Foundation of Hawaii,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Eastman Kodak Company,1,merge,Eastman Kodak Company,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
-Borough of Bay Head,1,merge,Borough of Bay Head,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Borough of Bay Head,1,merge,Borough of Bay Head,,organization,New Jersey local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 CACI International,1,merge,CACI International,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Titan Corporation,1,merge,Titan Corporation,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Federal Home Loan Banks,1,merge,Federal Home Loan Banks,,organization,Government corporations,"a name read from the letter (#1266 re-check, the Mac)",accepted
-City of Gooding,1,merge,City of Gooding,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
-City of Portsmouth,1,merge,City of Portsmouth,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+City of Gooding,1,merge,City of Gooding,,organization,Idaho local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+City of Portsmouth,1,merge,City of Portsmouth,,organization,Ohio local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Shawnee State University,1,merge,Shawnee State University,,organization,Colleges and universities,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Ministry of Public Security,1,merge,Ministry of Public Security,,organization,Foreign and international,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Polaroid Corporation,1,merge,Polaroid Corporation,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Yocha Dehe Wintun Nation,1,merge,Yocha Dehe Wintun Nation,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
-San Miguel County,1,merge,San Miguel County,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+San Miguel County,1,merge,San Miguel County,,organization,Colorado local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Northern Cheyenne Tribe,1,merge,Northern Cheyenne Tribe,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Economic Recovery Task Force,1,merge,Economic Recovery Task Force,,organization,Executive Office of the President,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Oxitec,1,merge,Oxitec,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
@@ -9153,7 +9153,7 @@ City of Sumter,1,merge,City of Sumter,,organization,South Carolina local governm
 Enroll Michigan,1,merge,Enroll Michigan,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Arab Community Center for Economic and Social Services,1,merge,Arab Community Center for Economic and Social Services,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
 South Beaver Township Police Department,1,merge,South Beaver Township Police Department,,organization,Pennsylvania local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
-Vermont Public Service Board,1,merge,Vermont Public Service Board,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Vermont Public Service Board,1,merge,Vermont Public Service Board,,organization,Vermont state government agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Vote Forward,1,merge,Vote Forward,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
 America Votes,1,merge,America Votes,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
 New Georgia Project,1,merge,New Georgia Project,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
@@ -9226,22 +9226,22 @@ Fort Stewart,1,merge,Fort Stewart,,organization,Department of Defense,"a name re
 San Francisco Municipal Transportation Agency,1,merge,San Francisco Municipal Transportation Agency,,organization,California local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 National Low Income Housing Coalition,1,merge,National Low Income Housing Coalition,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Cargill,1,merge,Cargill,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
-Alabama Emergency Management Agency,1,merge,Alabama Emergency Management Agency,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Alabama Emergency Management Agency,1,merge,Alabama Emergency Management Agency,,organization,Alabama state government agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 University at Albany,1,merge,University at Albany,,organization,Colleges and universities,"a name read from the letter (#1266 re-check, the Mac)",accepted
-Casco Bay Island Transit District,1,merge,Casco Bay Island Transit District,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Casco Bay Island Transit District,1,merge,Casco Bay Island Transit District,,organization,Maine local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Association of Western Pulp and Paper Workers,1,merge,Association of Western Pulp and Paper Workers,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Ponderay Newsprint Company,1,merge,Ponderay Newsprint Company,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Los Alamos National Laboratory,1,merge,Los Alamos National Laboratory,,organization,Department of Energy National Laboratories,"a name read from the letter (#1266 re-check, the Mac)",accepted
-New Mexico Environment Department,1,merge,New Mexico Environment Department,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+New Mexico Environment Department,1,merge,New Mexico Environment Department,,organization,New Mexico state government agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Defense Nuclear Facilities Safety Board,1,merge,Defense Nuclear Facilities Safety Board,,organization,Independent agencies and commissions,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Maine Lobstermen's Association,1,merge,Maine Lobstermen's Association,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Maine Lobstering Union,1,merge,Maine Lobstering Union,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
 University of Maine,1,merge,University of Maine,,organization,Colleges and universities,"a name read from the letter (#1266 re-check, the Mac)",accepted
 City of Woodway,1,merge,City of Woodway,,organization,Texas local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
-Loramie Township,1,merge,Loramie Township,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Loramie Township,1,merge,Loramie Township,,organization,Ohio local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Merit Systems Protection Board,1,merge,Merit Systems Protection Board,,organization,Independent agencies and commissions,"a name read from the letter (#1266 re-check, the Mac)",accepted
 City of McFarland,1,merge,City of McFarland,,organization,California local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
-City of Lincoln Urban Development Department,1,merge,City of Lincoln Urban Development Department,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+City of Lincoln Urban Development Department,1,merge,City of Lincoln Urban Development Department,,organization,Nebraska local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Town of Murphy,1,merge,Town of Murphy,,organization,North Carolina local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 United Way of Southwest Michigan,1,merge,United Way of Southwest Michigan,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Virginia Department of Health,1,merge,Virginia Department of Health,,organization,Virginia state government agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
@@ -9354,7 +9354,7 @@ Minnesota Department of Health,1,merge,Minnesota Department of Health,,organizat
 New Jersey Legislature,1,merge,New Jersey Legislature,,organization,New Jersey state government agencies,"asked for by the PC (1343), added by the Mac",accepted
 New Mexico Department of Health,1,merge,New Mexico Department of Health,,organization,New Mexico state government agencies,"asked for by the PC (1343), added by the Mac",accepted
 North Carolina Department of Public Safety,1,merge,North Carolina Department of Public Safety,,organization,North Carolina state government agencies,"asked for by the PC (1343), added by the Mac",accepted
-North Dakota Public Service Commission,1,merge,North Dakota Public Service Commission,,organization,State and local government,"asked for by the PC (1343), added by the Mac",accepted
+North Dakota Public Service Commission,1,merge,North Dakota Public Service Commission,,organization,North Dakota state government agencies,"asked for by the PC (1343), added by the Mac",accepted
 Oklahoma City Water Utilities Trust,1,merge,Oklahoma City Water Utilities Trust,,organization,State of Oklahoma,"asked for by the PC (1343), added by the Mac",accepted
 Public Utilities Commission of Ohio,1,merge,Public Utilities Commission of Ohio,,organization,Ohio state government agencies,"asked for by the PC (1343), added by the Mac",accepted
 South Carolina Department of Health and Environmental Control,1,merge,South Carolina Department of Health and Environmental Control,,organization,South Carolina agencies and organizations,"asked for by the PC (1343), added by the Mac",accepted
@@ -9470,7 +9470,7 @@ Colorado Attorney General,1,merge,Colorado Attorney General,,office,Colorado sta
 Kansas City Area Transportation Authority,1,merge,Kansas City Area Transportation Authority,,organization,Missouri agencies and organizations,"asked for by the PC (1349), added by the Mac",accepted
 Oregon Employment Department,1,merge,Oregon Employment Department,,organization,Oregon state government agencies,"asked for by the PC (1349), added by the Mac",accepted
 Tradepoint Atlantic,1,merge,Tradepoint Atlantic,,organization,Companies,"asked for by the PC (1349), added by the Mac",accepted
-North Dakota Department of Mineral Resources,1,merge,North Dakota Department of Mineral Resources,,organization,State and local government,"asked for by the PC (1349), added by the Mac",accepted
+North Dakota Department of Mineral Resources,1,merge,North Dakota Department of Mineral Resources,,organization,North Dakota state government agencies,"asked for by the PC (1349), added by the Mac",accepted
 Muskogee City-County Port Authority,1,merge,Muskogee City-County Port Authority,,organization,State of Oklahoma,"asked for by the PC (1349), added by the Mac",accepted
 Florida Department of Economic Opportunity,1,merge,Florida Department of Economic Opportunity,,organization,Florida state government agencies,"asked for by the PC (1349), added by the Mac",accepted
 City of Norfolk,1,merge,City of Norfolk,,office,Virginia local government and agencies,"asked for by the PC (1349), added by the Mac",accepted
@@ -9736,8 +9736,8 @@ Sarasota County Board of County Commissioners,1,merge,Sarasota County Board of C
 Rocky Mountain Metropolitan Airport,1,merge,Rocky Mountain Metropolitan Airport,,organization,Colorado local government and agencies,"asked for by the PC (1356), added by the Mac",accepted
 Town of Princeville,1,merge,Town of Princeville,,organization,North Carolina local government and agencies,"asked for by the PC (1356), added by the Mac",accepted
 North Slope Borough,1,merge,North Slope Borough,,organization,State of Alaska,"asked for by the PC (1356), added by the Mac",accepted
-Ward County Highway Department,1,merge,Ward County Highway Department,,organization,State and local government,"asked for by the PC (1356), added by the Mac",accepted
-Southeast Arkansas Economic Development District,1,merge,Southeast Arkansas Economic Development District,,organization,State and local government,"asked for by the PC (1356), added by the Mac",accepted
+Ward County Highway Department,1,merge,Ward County Highway Department,,organization,North Dakota local government and agencies,"asked for by the PC (1356), added by the Mac",accepted
+Southeast Arkansas Economic Development District,1,merge,Southeast Arkansas Economic Development District,,organization,Arkansas local government and agencies,"asked for by the PC (1356), added by the Mac",accepted
 Central Arizona Project,1,merge,Central Arizona Project,,organization,Arizona local government and agencies,"asked for by the PC (1356), added by the Mac",accepted
 Metropolitan Washington Airports Authority,1,merge,Metropolitan Washington Airports Authority,,organization,Virginia local government and agencies,"asked for by the PC (1356), added by the Mac",accepted
 Government of China,1,merge,Government of China,,organization,Foreign governments,"asked for by the PC (1356), added by the Mac",accepted
@@ -9783,7 +9783,7 @@ Edison Electric Institute,1,merge,Edison Electric Institute,,organization,Energy
 Trump Mobile,1,merge,Trump Mobile,,organization,Companies,"a recipient read from the letter's address block (#97 held names, the Mac, 19 Nov 2026)",accepted
 Cloudflare,1,merge,Cloudflare,,organization,Tech industry,"a recipient read from the letter's address block (#97 held names, the Mac, 19 Nov 2026)",accepted
 Global Payments,1,merge,Global Payments,,organization,Companies,"a recipient read from the letter's address block (#97 held names, the Mac, 19 Nov 2026)",accepted
-Utah Higher Education Assistance Authority,1,merge,Utah Higher Education Assistance Authority,,organization,State and local government,"a recipient read from the letter's address block (#97 held names, the Mac, 19 Nov 2026)",accepted
+Utah Higher Education Assistance Authority,1,merge,Utah Higher Education Assistance Authority,,organization,Utah state government agencies,"a recipient read from the letter's address block (#97 held names, the Mac, 19 Nov 2026)",accepted
 Fraternal Order of Police,1,merge,Fraternal Order of Police,,organization,Associations and other organizations,"a recipient read from the letter's address block (#97 held names, the Mac, 19 Nov 2026)",accepted
 Health Care Service Corporation,1,merge,Health Care Service Corporation,,organization,Companies,"a recipient read from the letter's address block (#97 held names, the Mac, 19 Nov 2026)",accepted
 CONCACAF,1,merge,CONCACAF,,organization,Associations and other organizations,"a recipient read from the letter's address block (#97 held names, the Mac, 19 Nov 2026)",accepted
@@ -9883,7 +9883,7 @@ National Indian Health Board,1,merge,National Indian Health Board,,organization,
 National Center for Urban Indian Health,1,merge,National Center for Urban Indian Health,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
 American Foreign Service Association,1,merge,American Foreign Service Association,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Pearl Jam,1,merge,Pearl Jam,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
-Springdale Water Utilities,1,merge,Springdale Water Utilities,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Springdale Water Utilities,1,merge,Springdale Water Utilities,,organization,Arkansas local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 City of Saline,1,merge,City of Saline,,organization,Michigan agencies and organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Woods Hole Oceanographic Institution,1,merge,Woods Hole Oceanographic Institution,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Reporters Without Borders,1,merge,Reporters Without Borders,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
@@ -9962,7 +9962,7 @@ Airborne Object Identification and Management Synchronization Group,1,merge,Airb
 Unidentified Aerial Phenomena Task Force,1,merge,Unidentified Aerial Phenomena Task Force,,organization,Department of Defense,"a name read from the letter (#1266 re-check, the Mac)",accepted
 United States District Court for the District of Wyoming,1,merge,United States District Court for the District of Wyoming,,organization,Courts,"a name read from the letter (#1266 re-check, the Mac)",accepted
 United States Attorney's Office for the District of Wyoming,1,merge,United States Attorney's Office for the District of Wyoming,,organization,Department of Justice,"a name read from the letter (#1266 re-check, the Mac)",accepted
-Wyoming Game and Fish Department,1,merge,Wyoming Game and Fish Department,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Wyoming Game and Fish Department,1,merge,Wyoming Game and Fish Department,,organization,Wyoming state government agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 General Services Administration Office of Inspector General,1,merge,General Services Administration Office of Inspector General,,office,General Services Administration,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Federal Mediation and Conciliation Service,1,merge,Federal Mediation and Conciliation Service,,organization,Federal agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Southwest Georgia Regional Commission,1,merge,Southwest Georgia Regional Commission,,organization,Georgia local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
@@ -10001,14 +10001,14 @@ Habitat for Humanity Idaho Falls Area,1,merge,Habitat for Humanity Idaho Falls A
 Indian River State College,1,merge,Indian River State College,,organization,Colleges and universities,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Green Bay Austin Straubel International Airport,1,merge,Green Bay Austin Straubel International Airport,,organization,Wisconsin local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Welch Gas Cooperative Association,1,merge,Welch Gas Cooperative Association,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
-Tennessee Department of Human Services,1,merge,Tennessee Department of Human Services,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Tennessee Department of Human Services,1,merge,Tennessee Department of Human Services,,organization,Tennessee state government agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 City of Runaway Bay,1,merge,City of Runaway Bay,,organization,Texas local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Friends of the National WWII Memorial,1,merge,Friends of the National WWII Memorial,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Siena Heights University,1,merge,Siena Heights University,,organization,Colleges and universities,"a name read from the letter (#1266 re-check, the Mac)",accepted
 LSG Sky Chefs,1,merge,LSG Sky Chefs,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Gate Gourmet,1,merge,Gate Gourmet,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Lorain Police Department,1,merge,Lorain Police Department,,organization,Ohio local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
-City of Elkins,1,merge,City of Elkins,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+City of Elkins,1,merge,City of Elkins,,organization,Arkansas local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Missouri Chamber Foundation,1,merge,Missouri Chamber Foundation,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
 City of Twentynine Palms,1,merge,City of Twentynine Palms,,organization,California local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 City of Henderson,1,merge,City of Henderson,,organization,Nevada local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
@@ -10029,11 +10029,11 @@ East Carolina University,1,merge,East Carolina University,,organization,Colleges
 American Legislative Exchange Council,1,merge,American Legislative Exchange Council,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Santa Clara County Housing Authority,1,merge,Santa Clara County Housing Authority,,organization,California local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Rancho California Water District,1,merge,Rancho California Water District,,organization,California local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
-Adrian Public Schools,1,merge,Adrian Public Schools,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
-Drager Early Education Center,1,merge,Drager Early Education Center,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
-City of Pea Ridge,1,merge,City of Pea Ridge,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
-Pea Ridge Fire Department,1,merge,Pea Ridge Fire Department,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
-City of Birmingham,1,merge,City of Birmingham,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Adrian Public Schools,1,merge,Adrian Public Schools,,organization,Michigan local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Drager Early Education Center,1,merge,Drager Early Education Center,,organization,Michigan local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+City of Pea Ridge,1,merge,City of Pea Ridge,,organization,Arkansas local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Pea Ridge Fire Department,1,merge,Pea Ridge Fire Department,,organization,Arkansas local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+City of Birmingham,1,merge,City of Birmingham,,organization,Alabama local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 City of Willoughby,1,merge,City of Willoughby,,organization,Ohio local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 World Relief DuPage/Aurora,1,merge,World Relief DuPage/Aurora,,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Borough of Chambersburg,1,merge,Borough of Chambersburg,,organization,Pennsylvania local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
@@ -10055,20 +10055,20 @@ Pecos Valley Medical Center,1,merge,Pecos Valley Medical Center,,organization,No
 United States District Court for the Northern District of Illinois,1,merge,United States District Court for the Northern District of Illinois,,organization,Courts,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Transport Workers Union of America,1,merge,Transport Workers Union of America,,organization,Associations and other organizations,"a name read from the letter (#1266 re-check, the Mac)",accepted
 United States District Court for the Northern District of Florida,1,merge,United States District Court for the Northern District of Florida,,organization,Courts,"a name read from the letter (#1266 re-check, the Mac)",accepted
-Bay County Board of County Commissioners,1,merge,Bay County Board of County Commissioners,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Bay County Board of County Commissioners,1,merge,Bay County Board of County Commissioners,,organization,Florida local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Retriev Technologies & Battery Solutions,1,merge,Retriev Technologies & Battery Solutions,,organization,Companies,"a name read from the letter (#1266 re-check, the Mac)",accepted
-City of Gladewater,1,merge,City of Gladewater,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+City of Gladewater,1,merge,City of Gladewater,,organization,Texas local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 "Senate Appropriations Subcommittee on Military Construction, Veterans Affairs, and Related Agencies",1,merge,"Senate Appropriations Subcommittee on Military Construction, Veterans Affairs, and Related Agencies",,organization,Committees,"a name read from the letter (#1266 re-check, the Mac)",accepted
-Village of Marathon,1,merge,Village of Marathon,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
-Missouri Department of Transportation,1,merge,Missouri Department of Transportation,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
-Massachusetts Emergency Management Agency,1,merge,Massachusetts Emergency Management Agency,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
-City of Hazel Park,1,merge,City of Hazel Park,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Village of Marathon,1,merge,Village of Marathon,,organization,New York local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Missouri Department of Transportation,1,merge,Missouri Department of Transportation,,organization,Missouri state government agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Massachusetts Emergency Management Agency,1,merge,Massachusetts Emergency Management Agency,,organization,Massachusetts state government agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+City of Hazel Park,1,merge,City of Hazel Park,,organization,Michigan local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 "Take The Lead, Inc.",1,merge,"Take The Lead, Inc.",,organization,Nonprofits,"a name read from the letter (#1266 re-check, the Mac)",accepted
-Scipio Town,1,merge,Scipio Town,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
-Franklin Township,1,merge,Franklin Township,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
-San Gabriel Valley Council of Governments,1,merge,San Gabriel Valley Council of Governments,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
-California Department of Water Resources,1,merge,California Department of Water Resources,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
-California Joint Legislative Budget Committee,1,merge,California Joint Legislative Budget Committee,,organization,State and local government,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Scipio Town,1,merge,Scipio Town,,organization,Utah local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+Franklin Township,1,merge,Franklin Township,,organization,Ohio local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+San Gabriel Valley Council of Governments,1,merge,San Gabriel Valley Council of Governments,,organization,California local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+California Department of Water Resources,1,merge,California Department of Water Resources,,organization,California state government agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
+California Joint Legislative Budget Committee,1,merge,California Joint Legislative Budget Committee,,organization,California state government agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Senate Appropriations Subcommittee on Financial Services and General Government,1,merge,Senate Appropriations Subcommittee on Financial Services and General Government,,organization,Committees,"a name read from the letter (#1266 re-check, the Mac)",accepted
 National Hurricane Center,1,merge,National Hurricane Center,,organization,National Oceanic and Atmospheric Administration,"a name read from the letter (#1266 re-check, the Mac)",accepted
 Knox County Regional Airport,1,merge,Knox County Regional Airport,,organization,Ohio local government and agencies,"a name read from the letter (#1266 re-check, the Mac)",accepted
@@ -10587,7 +10587,7 @@ Connecticut State Bond Commission,1,merge,Connecticut State Bond Commission,,org
 Broadlane,1,merge,Broadlane,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Novation,1,merge,Novation,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Kansas Attorney General,1,merge,Kansas Attorney General,,office,Kansas state officials,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
-"City of St. Joseph, Michigan",1,merge,"City of St. Joseph, Michigan",,organization,State and local government,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+"City of St. Joseph, Michigan",1,merge,"City of St. Joseph, Michigan",,organization,Michigan local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Dayton Development Coalition,1,merge,Dayton Development Coalition,,organization,Associations and other organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Washington State Insurance Commissioner,1,merge,Washington State Insurance Commissioner,,office,Washington state officials,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Alabama Attorney General,1,merge,Alabama Attorney General,,office,Alabama state officials,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
@@ -10609,7 +10609,7 @@ Prudential Financial,1,merge,Prudential Financial,,organization,Companies,"a rec
 Walter Reed Army Medical Center,1,merge,Walter Reed Army Medical Center,,organization,Federal agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Russell Corporation,1,merge,Russell Corporation,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 FirstEnergy,1,merge,FirstEnergy,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
-Orlando-Orange County Expressway Authority,1,merge,Orlando-Orange County Expressway Authority,,organization,State and local government,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Orlando-Orange County Expressway Authority,1,merge,Orlando-Orange County Expressway Authority,,organization,Florida local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Embassy of the United States in Iraq,1,merge,Embassy of the United States in Iraq,,office,Federal agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Foreign Claims Settlement Commission,1,merge,Foreign Claims Settlement Commission,,organization,Federal agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 MedAssets,1,merge,MedAssets,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
@@ -10618,18 +10618,18 @@ Fox Insurance Company,1,merge,Fox Insurance Company,,organization,Companies,"a r
 President of the Senate of Puerto Rico,1,merge,President of the Senate of Puerto Rico,,office,State and local government,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Speaker of the House of Representatives of Puerto Rico,1,merge,Speaker of the House of Representatives of Puerto Rico,,office,State and local government,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Nuclear and Radiation Studies Board,1,merge,Nuclear and Radiation Studies Board,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
-Los Angeles Unified School District,1,merge,Los Angeles Unified School District,,organization,State and local government,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Los Angeles Unified School District,1,merge,Los Angeles Unified School District,,organization,California local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 The Jockey Club,1,merge,The Jockey Club,,organization,Associations and other organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 President of the Florida Senate,1,merge,President of the Florida Senate,,office,Florida state officials,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Speaker of the Florida House of Representatives,1,merge,Speaker of the Florida House of Representatives,,office,Florida state officials,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Chief Judge of the Maryland Court of Appeals,1,merge,Chief Judge of the Maryland Court of Appeals,,office,Maryland state officials,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 "Premier, Inc.",1,merge,"Premier, Inc.",,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
-Texas Sunset Advisory Commission,1,merge,Texas Sunset Advisory Commission,,organization,State and local government,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Texas Sunset Advisory Commission,1,merge,Texas Sunset Advisory Commission,,organization,Texas state government agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Racing Commissioners International,1,merge,Racing Commissioners International,,organization,Associations and other organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 National Thoroughbred Racing Association,1,merge,National Thoroughbred Racing Association,,organization,Associations and other organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Amerijet International,1,merge,Amerijet International,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 "Consorta, Inc.",1,merge,"Consorta, Inc.",,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
-Los Angeles County Metropolitan Transportation Authority,1,merge,Los Angeles County Metropolitan Transportation Authority,,organization,State and local government,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Los Angeles County Metropolitan Transportation Authority,1,merge,Los Angeles County Metropolitan Transportation Authority,,organization,California local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Fox News,1,merge,Fox News,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 President of the Massachusetts Senate,1,merge,President of the Massachusetts Senate,,office,Massachusetts state officials,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Rocky Mountain Health Plans,1,merge,Rocky Mountain Health Plans,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
@@ -11678,7 +11678,7 @@ TechNet,1,merge,TechNet,,organization,Associations and other organizations,"a re
 Information Technology Industry Council,1,merge,Information Technology Industry Council,,organization,Associations and other organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Caltrans District 11,1,merge,Caltrans District 11,,organization,California state government agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Hemlock Semiconductor Company,1,merge,Hemlock Semiconductor Company,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
-Clark County Sheriff's Office (Ohio),1,merge,Clark County Sheriff's Office (Ohio),,organization,State and local government,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Clark County Sheriff's Office (Ohio),1,merge,Clark County Sheriff's Office (Ohio),,organization,Ohio local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Tauber Oil Company,1,merge,Tauber Oil Company,,organization,Oil and gas industry,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 St. Louis County Prosecuting Attorney's Office,1,merge,St. Louis County Prosecuting Attorney's Office,,office,Missouri local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 David P. Joyce and Steny H. Hoyer,1,joint,J000295;H000874,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
@@ -11692,7 +11692,7 @@ Tammy Baldwin and Shelley Moore Capito,1,joint,B001230;C001047,,member,,"checked
 David Scott and Glenn Thompson,1,joint,S001157;T000467,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
 Clay County Sheriff's Office (Missouri),1,merge,Clay County Sheriff's Office (Missouri),,organization,Missouri local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 County of Solano,1,merge,County of Solano,,organization,California local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
-City of Frankfort (Kentucky),1,merge,City of Frankfort (Kentucky),,organization,State and local government,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+City of Frankfort (Kentucky),1,merge,City of Frankfort (Kentucky),,organization,Kentucky local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 PBF Energy,1,merge,PBF Energy,,organization,Oil and gas industry,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Community Economic Defense Project,1,merge,Community Economic Defense Project,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 City and County of Denver,1,merge,City and County of Denver,,organization,Colorado local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
@@ -12677,7 +12677,7 @@ National Association of State Energy Officials,1,merge,National Association of S
 New England Aquarium Corporation,1,merge,New England Aquarium Corporation,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 HealthRIGHT 360,1,merge,HealthRIGHT 360,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 San Francisco Board of Supervisors,1,merge,San Francisco Board of Supervisors,,office,California local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
-Lebanon Water Works Company,1,merge,Lebanon Water Works Company,,organization,State and local government,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Lebanon Water Works Company,1,merge,Lebanon Water Works Company,,organization,Kentucky local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Valisure,1,merge,Valisure,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 North Jersey Transportation Planning Authority,1,merge,North Jersey Transportation Planning Authority,,organization,New Jersey local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Virginia Coalfields Expressway Authority,1,merge,Virginia Coalfields Expressway Authority,,organization,Virginia state government agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
@@ -12975,7 +12975,7 @@ California Dairy Campaign,1,merge,California Dairy Campaign,,organization,Associ
 Friends of Ireland Caucus,1,merge,Friends of Ireland Caucus,,organization,Caucuses,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Baseball Writers' Association of America,1,merge,Baseball Writers' Association of America,,organization,Associations and other organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 University of Rhode Island,1,merge,University of Rhode Island,,organization,Colleges and universities,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
-City of Nashua,1,merge,City of Nashua,,organization,State and local government,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+City of Nashua,1,merge,City of Nashua,,organization,New Hampshire local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Mexican Senate,1,merge,Mexican Senate,,office,Foreign governments,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 U.S. Travel Insurance Association,1,merge,U.S. Travel Insurance Association,,organization,Associations and other organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Speaker of the Massachusetts House of Representatives,1,merge,Speaker of the Massachusetts House of Representatives,,office,Massachusetts state officials,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
@@ -13120,7 +13120,8 @@ Progress Residential,1,merge,Progress Residential,,organization,Companies,"a rec
 Beverly Hospital,1,merge,Beverly Hospital,,organization,Hospitals,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 The President and Prime Minister of the United Kingdom,1,joint,The President;Prime Minister of the United Kingdom,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
 UnitedHealthcare,1,merge,UnitedHealthcare,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
-Town of Afton (Wyoming),1,merge,Town of Afton (Wyoming),,organization,State and local government,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Town of Afton (Wyoming),1,merge,Town of Afton (Wyoming),,organization,Wyoming local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Town of Afton (Wyoming),1,merge,Town of Afton (Wyoming),,organization,Wyoming local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Wyoming Department of Environmental Quality,1,merge,Wyoming Department of Environmental Quality,,organization,Wyoming state government agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 New York City Department of Small Business Services,1,merge,New York City Department of Small Business Services,,organization,New York local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Georgia Department of Community Affairs,1,merge,Georgia Department of Community Affairs,,organization,Georgia state government agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
@@ -13170,12 +13171,12 @@ American Society of Appraisers,1,merge,American Society of Appraisers,,organizat
 Niles City School District,1,merge,Niles City School District,,organization,Ohio local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Niles Education Association,1,merge,Niles Education Association,,organization,Ohio organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Securly,1,merge,Securly,,organization,Tech industry,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
-Murray-Calloway Industrial Authority,1,merge,Murray-Calloway Industrial Authority,,organization,State and local government,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Murray-Calloway Industrial Authority,1,merge,Murray-Calloway Industrial Authority,,organization,Kentucky local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 "Southwest Community Health Center, Inc.",1,merge,"Southwest Community Health Center, Inc.",,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
-Central Crops Research Station,1,merge,Central Crops Research Station,,organization,State and local government,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Central Crops Research Station,1,merge,Central Crops Research Station,,organization,North Carolina state government agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 City of Bellaire,1,merge,City of Bellaire,,organization,Texas local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 The Center for Great Expectations,1,merge,The Center for Great Expectations,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
-Town of Montague,1,merge,Town of Montague,,organization,State and local government,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Town of Montague,1,merge,Town of Montague,,organization,Massachusetts local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Defense Innovation Board,1,merge,Defense Innovation Board,,organization,Federal agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 National Security Commission on Artificial Intelligence,1,merge,National Security Commission on Artificial Intelligence,,organization,Federal agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Minnesota Valley Transit Authority,1,merge,Minnesota Valley Transit Authority,,organization,Minnesota local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
@@ -13185,10 +13186,10 @@ Potomac Valley Hospital,1,merge,Potomac Valley Hospital,,organization,Hospitals,
 Chellie Pingree and David P. Joyce,1,joint,P000597;J000295,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
 Borough of Point Pleasant Beach,1,merge,Borough of Point Pleasant Beach,,organization,New Jersey local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Mansfield Nonprofit Housing Development Corporation,1,merge,Mansfield Nonprofit Housing Development Corporation,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
-Prince George's County Department of the Environment,1,merge,Prince George's County Department of the Environment,,organization,State and local government,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Prince George's County Department of the Environment,1,merge,Prince George's County Department of the Environment,,organization,Maryland local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 New York Botanical Garden,1,merge,New York Botanical Garden,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Town of Estes Park,1,merge,Town of Estes Park,,organization,Colorado local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
-City of Annapolis,1,merge,City of Annapolis,,organization,State and local government,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+City of Annapolis,1,merge,City of Annapolis,,organization,Maryland local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 MedStar St. Mary's Hospital,1,merge,MedStar St. Mary's Hospital,,organization,Hospitals,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Bristol County Sheriff's Office,1,merge,Bristol County Sheriff's Office,,office,Massachusetts local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Lieutenant Governor of Georgia,1,merge,Lieutenant Governor of Georgia,,office,Georgia state officials,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
@@ -13209,8 +13210,8 @@ Utah Farm Bureau Federation,1,merge,Utah Farm Bureau Federation,,organization,Ut
 Utah Department of Agriculture and Food,1,merge,Utah Department of Agriculture and Food,,organization,Utah state government agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Habitat for Humanity International,1,merge,Habitat for Humanity International,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 U.S. Attorney for the Eastern District of New York,1,merge,U.S. Attorney for the Eastern District of New York,,office,Department of Justice,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
-New Hampshire Department of Transportation,1,merge,New Hampshire Department of Transportation,,organization,State and local government,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
-Vermont Agency of Transportation,1,merge,Vermont Agency of Transportation,,organization,State and local government,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+New Hampshire Department of Transportation,1,merge,New Hampshire Department of Transportation,,organization,New Hampshire state government agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Vermont Agency of Transportation,1,merge,Vermont Agency of Transportation,,organization,Vermont state government agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 NonLethal Technologies,1,merge,NonLethal Technologies,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Los Angeles County Registrar-Recorder/County Clerk,1,merge,Los Angeles County Registrar-Recorder/County Clerk,,office,California local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 "National Security Advisor, Department of Defense, Department of State and Office of the Director of National Intelligence",1,joint,National Security Advisor;Department of Defense;Department of State;Office of the Director of National Intelligence,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
