@@ -8,14 +8,15 @@ to send them.
 
 There are two ways to reach us:
 
-- **Email** [info@archive.org](mailto:info@archive.org?subject=Democracy%27s%20Library%20Explorer),
-  the "Email us" link at the foot of every page. No account needed.
+- **Email** Robin Fay at
+  [robin.fay@archive.org](mailto:robin.fay@archive.org?subject=Letters%20from%20Congress),
+  who copies each report into a GitHub issue. No account needed.
 - **A GitHub issue** in this repository:
   [open one here](https://github.com/Robin-IA/Congressional-Letters-Dev/issues/new/choose).
   It needs a free GitHub account, and anyone can follow the issue as it is
   worked on.
 
-Both reach the same people. Use whichever suits you.
+Both end up in the same place. Use whichever suits you.
 
 ## Suggesting a correction or an addition
 
@@ -39,7 +40,7 @@ those should be here, tell us anyway.
 
 ### What happens next
 
-Each report becomes a GitHub issue (an email is copied into one) and is
+Each report becomes a GitHub issue (Robin copies an emailed one in) and is
 labelled by kind: `data`, `harvest`, `vocabulary`, `reading`, `dates`, `UX`,
 `accessibility` and so on. When the work is done it is labelled
 `needs testing` and checked on the published site before the issue is closed.

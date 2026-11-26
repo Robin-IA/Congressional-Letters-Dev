@@ -1,8 +1,8 @@
 blank_issues_enabled: true
 contact_links:
   - name: Email instead
-    url: mailto:info@archive.org?subject=Democracy%27s%20Library%20Explorer
-    about: No GitHub account? Email info@archive.org; it reaches the same people.
+    url: mailto:robin.fay@archive.org?subject=Letters%20from%20Congress
+    about: No GitHub account? Email Robin Fay at robin.fay@archive.org, who copies it into an issue.
   - name: How to contribute
     url: https://github.com/Robin-IA/Congressional-Letters-Dev/blob/harvest-member-letters/CONTRIBUTING.md
     about: What helps most in a report, and how changes to the code and data are made.
