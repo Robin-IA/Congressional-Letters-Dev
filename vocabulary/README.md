@@ -10,7 +10,7 @@ It is not LCSH, which was judged not robust enough for letters. Where an outside
 authority does know a term, it is linked: Bioguide and Wikidata for members,
 Wikidata for federal bodies.
 
-**Generated, except `hierarchy.csv`.** `python3 build/build_vocabulary.py`
+**Generated, except `hierarchy.csv` and `acronyms.csv`.** `python3 build/build_vocabulary.py`
 rebuilds every other file here from the data and the hand-made tables. To change
 a term, change its source: the tables in `build/parse_urls.py` and
 `build/topics.py`, or the rosters. **`hierarchy.csv` is made by hand** and is
@@ -74,6 +74,7 @@ so. `tree.json` is the hierarchy nested and sorted, for the home page.
 | `relations.csv` | relationship: `term_id`, `relation`, `value`, `status`, `source` |
 | `sources.csv` | vocabulary or dataset a term or relation comes from, with its license |
 | `hierarchy.csv` | term placed by hand: `term`, `broader` |
+| `acronyms.csv` | acronym given a meaning by hand, for the search page (#1448): `acronym`, `meaning`, `tag` (a topic or agency, or blank), `forms` (other words for it, separated by vertical bars). Read by `build_site.py` before the organizations' own abbreviations, which it takes precedence over. AI is artificial intelligence and SI superintelligence (Robin). |
 | `tree.json` | the hierarchy, nested and sorted alphabetically |
 | `vocabulary.json` | everything above, each term with its relations, plus the tree, for programs |
 
