@@ -1067,6 +1067,220 @@ function fullTextPanel(query) {
   return panel;
 }
 
+// ------------------------------------------------ vocabulary suggestions
+//
+// search.json carries the vocabulary as [tag, name, forms, broader] (#1449):
+// the tags letters are filed under, the other words that mean each one, and
+// the tag it sits under. Two uses here, both only ever offering something the
+// index has letters for:
+//
+//   Filed under — a search for a word the vocabulary knows ("coronavirus",
+//     "Environmental Protection Agency") names the tag it belongs to, so the
+//     letters tagged with it but not using that word can be reached. Broader
+//     and narrower tags are offered beside it.
+//   Did you mean — a search that finds little is checked, as a phrase and
+//     word by word, against the vocabulary, member and recipient names and the
+//     words in letter descriptions, for something one or two keystrokes away.
+
+const fold = s => (s || '').toLowerCase().normalize('NFKD')
+  .replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
+
+// Optimal string alignment distance, giving up once it passes `max`.
+function editDistance(a, b, max) {
+  if (Math.abs(a.length - b.length) > max) return max + 1;
+  let prev2 = null, prev = Array.from({ length: b.length + 1 }, (_, j) => j);
+  for (let i = 1; i <= a.length; i++) {
+    const cur = [i];
+    let best = i;
+    for (let j = 1; j <= b.length; j++) {
+      let d = Math.min(prev[j] + 1, cur[j - 1] + 1,
+        prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+      if (prev2 && i > 1 && j > 1 && a[i - 1] === b[j - 2] && a[i - 2] === b[j - 1]) {
+        d = Math.min(d, prev2[j - 2] + 1);
+      }
+      cur.push(d);
+      if (d < best) best = d;
+    }
+    if (best > max) return max + 1;
+    prev2 = prev; prev = cur;
+  }
+  return prev[b.length];
+}
+
+// How far off a word may be and still be a typo of it: none below five
+// letters, where one keystroke is usually a different word (ice, ira, va);
+// two from seven, which is what "fentynal" and "tarrifs" need.
+const slack = n => (n < 5 ? 0 : n < 7 ? 1 : 2);
+
+// The same test viewSearch applies, so a suggestion's count is what clicking
+// it will show.
+function rowMatches(data, row, needle) {
+  const recipient = row[1] >= 0 ? data.recipients[row[1]] : '';
+  return row[4].toLowerCase().includes(needle)
+    || recipient.toLowerCase().includes(needle)
+    || (row[6] || '').toLowerCase().includes(needle);
+}
+function countMatches(data, needle) {
+  let n = 0;
+  for (const row of data.rows) if (rowMatches(data, row, needle)) n++;
+  return n;
+}
+
+// Members by name, or by another name the vocabulary has for them.
+function membersNamed(data, needle) {
+  const aka = (data && data.aka) || {};
+  return MEMBERS.filter(m => m.name.toLowerCase().includes(needle)
+    || (aka[m.id] || []).some(a => a.toLowerCase().includes(needle)));
+}
+
+let VOCAB = null;   // built from SEARCH once, on the first search that needs it
+function vocabOf(data) {
+  if (VOCAB && VOCAB.data === data) return VOCAB;
+  const entries = (data.vocab || []).map(([tag, name, forms, broader]) =>
+    ({ tag, name, forms: forms || [], broader, narrower: [], count: 0 }));
+  const byTag = new Map(entries.map(e => [e.tag, e]));
+  for (const row of data.rows) {
+    for (const t of (row[6] || '').split(',')) {
+      const e = t && byTag.get(t);
+      if (e) e.count++;
+    }
+  }
+  for (const e of entries) {
+    const up = e.broader && byTag.get(e.broader);
+    if (up) up.narrower.push(e);
+  }
+  // Exact lookups. A tag outranks another tag's form: "Defense" is a topic
+  // and also one of the Department of Defense's names.
+  const exact = new Map();
+  for (const e of entries) {
+    for (const f of [e.name, ...e.forms]) {
+      const k = fold(f);
+      if (k.length >= 3 && !exact.has(k)) exact.set(k, e);
+    }
+  }
+  for (const e of entries) exact.set(fold(e.tag), e);
+
+  // Phrases a whole query might be a typo of, with how many letters each finds.
+  const phrases = new Map();
+  const addPhrase = (text, n) => {
+    const k = fold(text);
+    if (k.length < 5 || !n) return;
+    const was = phrases.get(k);
+    if (!was || was.n < n) phrases.set(k, { text, n });
+  };
+  for (const e of entries) {
+    addPhrase(e.tag, e.count);
+    if (e.name) addPhrase(e.name, e.count);
+    for (const f of e.forms) addPhrase(f, e.count);
+  }
+  for (const m of MEMBERS) {
+    addPhrase(m.name, m.letters || 1);
+    for (const a of (data.aka || {})[m.id] || []) addPhrase(a, m.letters || 1);
+  }
+  const recipientCounts = new Map();
+  for (const row of data.rows) {
+    if (row[1] >= 0) recipientCounts.set(row[1], (recipientCounts.get(row[1]) || 0) + 1);
+  }
+  for (const [i, n] of recipientCounts) addPhrase(data.recipients[i], n);
+
+  // Single words, for a query that is right but for one misspelled word.
+  const words = new Map();
+  const addWords = text => {
+    for (const w of fold(text).split(' ')) {
+      if (w.length >= 3) words.set(w, (words.get(w) || 0) + 1);
+    }
+  };
+  for (const row of data.rows) { addWords(row[4]); addWords(row[6]); }
+  for (const name of data.recipients) addWords(name);
+  for (const m of MEMBERS) {
+    addWords(m.name);
+    ((data.aka || {})[m.id] || []).forEach(addWords);
+  }
+  for (const e of entries) { addWords(e.name); e.forms.forEach(addWords); }
+
+  VOCAB = { data, entries, byTag, exact, phrases, words };
+  return VOCAB;
+}
+
+// The tag a query names, if it names one exactly.
+function filedUnder(data, query) {
+  const v = vocabOf(data);
+  const e = v.exact.get(fold(query));
+  return e && e.count ? e : null;
+}
+
+// The likeliest thing the visitor meant, or null. Only offered when it would
+// find letters, and never the query itself.
+function didYouMean(data, query) {
+  const v = vocabOf(data);
+  const q = fold(query);
+  if (!q) return null;
+
+  // The whole query against whole names and terms.
+  let best = null;
+  const max = slack(q.length);
+  if (max) {
+    for (const [k, p] of v.phrases) {
+      if (k === q) return null;   // it is already a name the index knows
+      const d = editDistance(q, k, max);
+      if (d <= max && (!best || d < best.d || (d === best.d && p.n > best.n))) {
+        best = { d, text: p.text, n: p.n };
+      }
+    }
+  }
+  if (best) {
+    const n = countMatches(data, best.text.toLowerCase());
+    if (n) return { text: best.text, n, what: 'letter' };
+    const m = membersNamed(data, best.text.toLowerCase()).length;
+    if (m) return { text: best.text, n: m, what: 'member' };
+  }
+
+  // Word by word: mend each word the index has never seen.
+  const fixed = q.split(' ').map(w => {
+    if (v.words.has(w) || slack(w.length) === 0) return w;
+    let pick = null;
+    for (const [cand, n] of v.words) {
+      const d = editDistance(w, cand, slack(w.length));
+      if (d <= slack(w.length) && (!pick || d < pick.d || (d === pick.d && n > pick.n))) {
+        pick = { d, cand, n };
+      }
+    }
+    return pick ? pick.cand : w;
+  }).join(' ');
+  if (fixed !== q) {
+    const n = countMatches(data, fixed);
+    if (n) return { text: fixed, n, what: 'letter' };
+    const m = membersNamed(data, fixed).length;
+    if (m) return { text: fixed, n: m, what: 'member' };
+  }
+  return null;
+}
+
+function vocabPanel(data, query) {
+  const e = filedUnder(data, query);
+  if (!e) return null;
+  const tagLink = (t, n) => el('span', {},
+    link({ view: 'search', q: t.tag }, null, t.tag),
+    el('span', { class: 'faint' }, ` (${num(n ?? t.count)})`));
+  const sameAsTag = fold(query) === fold(e.tag);
+  const up = e.broader ? vocabOf(data).byTag.get(e.broader) : null;
+  const down = e.narrower.filter(t => t.count).sort((a, b) => b.count - a.count);
+  if (sameAsTag && !up && !down.length && !e.name) return null;
+  return el('div', { class: 'note' },
+    sameAsTag
+      ? el('p', {}, el('b', {}, e.tag), e.name ? `: ${e.name}.` : ': a topic in the vocabulary.')
+      : el('p', {}, `Letters about “${query}” are filed under `,
+        el('b', {}, link({ view: 'search', q: e.tag }, null, e.tag)),
+        e.name && fold(e.name) !== fold(query) ? ` (${e.name})` : '',
+        ': ', el('b', {}, num(e.count)), e.count === 1 ? ' letter.' : ' letters.'),
+    up && up.count
+      ? el('p', { class: 'small' }, 'Broader: ', tagLink(up)) : null,
+    down.length
+      ? el('p', { class: 'small' }, 'Narrower: ',
+        ...down.slice(0, 12).flatMap((t, i) => [i ? ' · ' : '', tagLink(t)]))
+      : null);
+}
+
 async function viewSearch(query) {
   const needle = (query || '').trim().toLowerCase();
   const runSearch = text => {
@@ -1128,6 +1342,12 @@ async function viewSearch(query) {
   const loaded = await loadSearch();
   const data = loaded && !loaded.failed ? loaded : null;
   const failed = loaded && loaded.failed;
+  // Other names for members, from the vocabulary: "Bernie Sanders" (#1449).
+  if (data) {
+    for (const m of membersNamed(data, needle)) {
+      if (!nameHits.includes(m)) nameHits.push(m);
+    }
+  }
 
   // Shortcuts to a recipient's own page, counted over EVERY recipient rather
   // than the 200 the totals list carries. 3,970 of the 4,170 are outside that
@@ -1213,6 +1433,11 @@ async function viewSearch(query) {
           : null));
     })));
 
+  // Only worth the work, and only worth the visitor's attention, when the
+  // search came back thin.
+  const suggestion = data && letterHits.length < 5 && !nameHits.length
+    ? didYouMean(data, query) : null;
+
   const out = el('div', {}, box,
     el('h1', { class: 'hero' }, `“${query}”`),
     el('p', { class: 'sub' },
@@ -1228,6 +1453,13 @@ async function viewSearch(query) {
       '. ',
       el('span', { class: 'faint' },
         'Matches in letter descriptions are below; the text of the letters is searched under “In the letters’ own words”.')),
+    suggestion
+      ? el('p', { class: 'note' }, 'Did you mean ',
+        el('b', {}, link({ view: 'search', q: suggestion.text }, null, suggestion.text)),
+        '? ', el('span', { class: 'faint' },
+          `${num(suggestion.n)} ${suggestion.what}${suggestion.n === 1 ? '' : 's'}`))
+      : null,
+    data ? vocabPanel(data, query) : null,
     nameHits.length
       ? el('div', { class: 'panel' }, el('h3', {}, 'Members'),
         el('div', { class: 'grid' }, ...nameHits.slice(0, 9).map(m =>
