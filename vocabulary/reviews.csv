@@ -12874,7 +12874,7 @@ New York State Assembly,1,merge,New York State Assembly,,organization,New York s
 New York State Senate,1,merge,New York State Senate,,organization,New York state government agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 "Governor of New York, New York State Assembly and New York State Senate",1,joint,Governor of New York;New York State Assembly;New York State Senate,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
 "Office of the Director of National Intelligence, Central Intelligence Agency, National Security Agency and Defense Intelligence Agency",1,joint,Office of the Director of National Intelligence;Central Intelligence Agency;National Security Agency;Defense Intelligence Agency,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
-Manchester Police Department,1,merge,Manchester Police Department,,organization,State and local government,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Manchester Police Department,1,merge,Manchester Police Department,,organization,New Hampshire local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 New River YMCA,1,merge,New River YMCA,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Hanbury,1,merge,Hanbury,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 National Endowment for Democracy,1,merge,National Endowment for Democracy,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
@@ -13120,7 +13120,7 @@ Vimenti,1,merge,Vimenti,,organization,Nonprofits,"a recipient read from the lett
 Danville Area Community Center,1,merge,Danville Area Community Center,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 ActBlue,1,merge,ActBlue,,organization,Associations and other organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Town of Rye,1,merge,Town of Rye,,organization,New Hampshire local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
-Virgin Islands Water and Power Authority,1,merge,Virgin Islands Water and Power Authority,,organization,State and local government,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Virgin Islands Water and Power Authority,1,merge,Virgin Islands Water and Power Authority,,organization,U.S. Virgin Islands,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Central Oregon Disability Support Network,1,merge,Central Oregon Disability Support Network,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 City of Bennettsville Police Department (South Carolina),1,merge,City of Bennettsville Police Department (South Carolina),,organization,South Carolina local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Mineola Independent School District,1,merge,Mineola Independent School District,,organization,Texas local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
@@ -13160,7 +13160,7 @@ Congressional HIV/AIDS Caucus,1,merge,Congressional HIV/AIDS Caucus,,organizatio
 North Carolina Department of Insurance,1,merge,North Carolina Department of Insurance,,organization,North Carolina state government agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Town of Woodbridge,1,merge,Town of Woodbridge,,organization,Connecticut local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 City of Saint Louis,1,merge,City of Saint Louis,,organization,Missouri local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
-Virgin Islands Department of Health,1,merge,Virgin Islands Department of Health,,organization,State and local government,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Virgin Islands Department of Health,1,merge,Virgin Islands Department of Health,,organization,U.S. Virgin Islands,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Department of Homeland Security and Department of Education,1,joint,Department of Homeland Security;Department of Education,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
 Dane County Sheriff's Office,1,merge,Dane County Sheriff's Office,,organization,Wisconsin local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Mount Olive Township,1,merge,Mount Olive Township,,organization,New Jersey local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
@@ -13219,7 +13219,7 @@ Google DeepMind,1,merge,Google DeepMind,,organization,Companies,"a recipient rea
 American Fence Association,1,merge,American Fence Association,,organization,Associations and other organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 The Hummingbird Alliance,1,merge,The Hummingbird Alliance,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 John R. Curtis and Amy Klobuchar,1,joint,C001114;K000367,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
-Virgin Islands Department of Agriculture,1,merge,Virgin Islands Department of Agriculture,,office,State and local government,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Virgin Islands Department of Agriculture,1,merge,Virgin Islands Department of Agriculture,,office,U.S. Virgin Islands,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Triton Systems,1,merge,Triton Systems,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Luna Innovations,1,merge,Luna Innovations,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Lynntech,1,merge,Lynntech,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
