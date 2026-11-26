@@ -392,6 +392,166 @@ def related_notes(by_member: dict, links: list) -> dict[str, list[list[str]]]:
     return notes
 
 
+VOCABULARY = Path(__file__).resolve().parents[1] / "vocabulary"
+
+
+def search_vocabulary(search_rows: list) -> list[list]:
+    """The controlled vocabulary, cut down to what the search page needs (#1449).
+
+    One entry per tag a letter in this Congress actually carries:
+    ``[tag, name, forms, broader]``. ``tag`` is the string in a search row's
+    topics; ``name`` the organization's full name where the tag is an
+    abbreviation ("EPA" -> "Environmental Protection Agency"), else "";
+    ``forms`` the other words that mean it (topics.py's match words, the
+    organization's alternative names); ``broader`` the tag it sits under in
+    vocabulary/hierarchy.csv, if that is also a tag here.
+
+    The tags come from topics.py, the same table that tagged the letters, so a
+    suggestion can only ever name a tag the rows carry. The names and the
+    hierarchy come from the vocabulary files and are optional: without them the
+    page still maps "coronavirus" to COVID-19, it just has no broader terms.
+    """
+    present: Counter = Counter()
+    for row in search_rows:
+        for t in (row[6] or "").split(","):
+            if t:
+                present[t] += 1
+
+    names: dict[str, str] = {}
+    alt: dict[str, set[str]] = defaultdict(set)
+    terms_csv, relations_csv = VOCABULARY / "terms.csv", VOCABULARY / "relations.csv"
+    if terms_csv.exists() and relations_csv.exists():
+        with terms_csv.open(newline="", encoding="utf-8") as fh:
+            label_of = {r["term_id"]: r["label"] for r in csv.DictReader(fh)
+                        if r["status"] == "preferred"}
+        with relations_csv.open(newline="", encoding="utf-8") as fh:
+            relations = [r for r in csv.DictReader(fh) if r["status"] == "preferred"]
+        tag_of = {r["term_id"]: r["value"] for r in relations if r["relation"] == "taggedAs"}
+        for tid, t in tag_of.items():
+            if tid in label_of:
+                names[t] = label_of[tid]
+        for r in relations:
+            # officeHolderName is left out on purpose: "jackson" and "regan"
+            # are people first, and a search for one is not a search for EPA.
+            if r["term_id"] in tag_of and r["relation"] in ("altLabel", "abbreviation"):
+                alt[tag_of[r["term_id"]]].add(r["value"])
+
+    # hierarchy.csv is by label; an organization's row is under its full name.
+    by_label = {**{t: t for t in SUBJECTS}, **{n: t for t, n in names.items()}}
+    broader: dict[str, str] = {}
+    hierarchy = VOCABULARY / "hierarchy.csv"
+    if hierarchy.exists():
+        with hierarchy.open(newline="", encoding="utf-8") as fh:
+            for r in csv.DictReader(fh):
+                child, parent = by_label.get(r["term"]), by_label.get(r["broader"] or "")
+                if child and parent and child != parent:
+                    broader.setdefault(child, parent)
+
+    out: list[list] = []
+    for t in sorted(present, key=lambda t: (-present[t], t)):
+        forms = set(SUBJECTS.get(t, ())) | set(AGENCIES.get(t, ())) | alt.get(t, set())
+        forms = sorted({f for f in forms if f.lower() != t.lower()})
+        parent = broader.get(t, "")
+        out.append([t, names.get(t, ""), forms, parent if parent in present else ""])
+    return out
+
+
+WORDS = re.compile(r"[a-z0-9&]+")
+
+
+def search_acronyms(search_rows: list, search_recipients: list) -> dict[str, list[list]]:
+    """What a short search might stand for: acronym -> [[meaning, tag, forms], ...] (#1448).
+
+    A search for "ice" or "ai" matches every description with those letters in
+    it -- justice, service, said, Maine -- and buries the letters that use the
+    acronym. The page uses this to say what it stands for and to put those
+    letters first: tagged with ``tag``, or using the acronym as a word, or one
+    of ``forms``.
+
+    In order of precedence: vocabulary/acronyms.csv, made by hand, for
+    acronyms no organization stands behind ("AI", and "SI" for
+    superintelligence; Robin, #1448); the abbreviations of the vocabulary's
+    preferred organizations; topics.AGENCIES. Only acronyms this Congress's
+    letters use as a word, or whose tag they carry, are kept.
+    """
+    present = {t for row in search_rows for t in (row[6] or "").split(",") if t}
+    used: set[str] = set()
+    for row in search_rows:
+        used.update(WORDS.findall(row[4].lower()))
+    for name in search_recipients:
+        used.update(WORDS.findall(name.lower()))
+
+    out: dict[str, list[list]] = {}
+
+    def add(acronym: str, meaning: str, tag: str, forms) -> None:
+        key = acronym.strip().upper()
+        if not key or not meaning or key == meaning.strip().upper():
+            return
+        tag = tag if tag in present else ""
+        if not tag and key.lower() not in used:
+            return
+        forms = {f.lower() for f in forms if len(f) > len(key)} - {key.lower()}
+        for m in out.get(key, []):
+            # One meaning per thing: a second source for the same tag or name
+            # only adds words for it ("Homeland Security" is DHS's).
+            if m[0].lower() == meaning.lower() or (tag and m[1] == tag):
+                m[2] = sorted(set(m[2]) | forms)
+                return
+        out.setdefault(key, []).append([meaning, tag, sorted(forms)])
+
+    hand = VOCABULARY / "acronyms.csv"
+    if hand.exists():
+        with hand.open(newline="", encoding="utf-8") as fh:
+            for r in csv.DictReader(fh):
+                tag = (r.get("tag") or "").strip()
+                if tag and tag not in SUBJECTS and tag not in AGENCIES:
+                    raise SystemExit(f"acronyms.csv: {r['acronym']!r}: not a topic: {tag!r}")
+                forms = [f.strip() for f in (r.get("forms") or "").split("|") if f.strip()]
+                add(r["acronym"], r["meaning"].strip(), tag, [r["meaning"], *forms])
+
+    terms_csv, relations_csv = VOCABULARY / "terms.csv", VOCABULARY / "relations.csv"
+    if terms_csv.exists() and relations_csv.exists():
+        with terms_csv.open(newline="", encoding="utf-8") as fh:
+            label_of = {r["term_id"]: r["label"] for r in csv.DictReader(fh)
+                        if r["status"] == "preferred"}
+        with relations_csv.open(newline="", encoding="utf-8") as fh:
+            relations = [r for r in csv.DictReader(fh) if r["status"] == "preferred"]
+        tag_of = {r["term_id"]: r["value"] for r in relations if r["relation"] == "taggedAs"}
+        alts: dict[str, list[str]] = defaultdict(list)
+        for r in relations:
+            if r["relation"] == "altLabel":
+                alts[r["term_id"]].append(r["value"])
+        for r in relations:
+            if r["relation"] == "abbreviation" and r["term_id"] in label_of:
+                tid = r["term_id"]
+                add(r["value"], label_of[tid], tag_of.get(tid, ""), [label_of[tid], *alts[tid]])
+
+    for abbr, forms in AGENCIES.items():
+        if abbr.isupper():
+            add(abbr, max(forms, key=len).title().replace(" And ", " and ").replace(" Of ", " of ")
+                .replace(" For ", " for "), abbr, forms)
+    return out
+
+
+def member_names(bioguides) -> dict[str, list[str]]:
+    """Other names the vocabulary has for these members: Bioguide ID -> names.
+
+    From congress-legislators by way of vocabulary/relations.csv, so a search
+    for "Bernie Sanders" finds Bernard Sanders (#1449). Empty without the file.
+    """
+    wanted = {f"M-{b}": b for b in bioguides}
+    out: dict[str, list[str]] = {}
+    path = VOCABULARY / "relations.csv"
+    if not path.exists():
+        return out
+    with path.open(newline="", encoding="utf-8") as fh:
+        for r in csv.DictReader(fh):
+            if (r["relation"] == "altLabel" and r["status"] == "preferred"
+                    and r["term_id"] in wanted):
+                out.setdefault(wanted[r["term_id"]], []).append(r["value"])
+    return out
+
+
 def link_url(record: dict) -> str:
     """The address to replay the letter from, when ``key`` will not do (#107).
 
@@ -1020,7 +1180,13 @@ def main() -> None:
     search_path = args.payload / "search.json"
     search_path.write_text(json.dumps(
         {"members": search_members, "recipients": search_recipients,
-         "rows": search_rows}, ensure_ascii=False, separators=(",", ":")),
+         "rows": search_rows,
+         # Did-you-mean and "filed under" suggestions on the search page (#1449).
+         "vocab": search_vocabulary(search_rows),
+         "aka": member_names(m["id"] for m in index_members),
+         # What "ice" or "ai" stands for, so those letters come first (#1448).
+         "acronyms": search_acronyms(search_rows, search_recipients)},
+        ensure_ascii=False, separators=(",", ":")),
         encoding="utf-8")
     print(f"  search.json   {search_path.stat().st_size / 1024 / 1024:>8,.1f} MB "
           f"across {len(search_rows):,} letters   (payload)", file=sys.stderr)
