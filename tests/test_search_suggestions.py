@@ -57,17 +57,20 @@ NODE = shutil.which("node")
 HARNESS = r"""
 const fs = require('fs');
 const src = fs.readFileSync(process.argv[1], 'utf8');
-const a = src.indexOf('const fold = s =>'), b = src.indexOf('function vocabPanel');
+const a = src.indexOf('const fold = s =>'), b = src.indexOf('async function viewSearch');
 const MEMBERS = [{ id: 'S000033', name: 'Bernard Sanders', letters: 4 },
                  { id: 'W000817', name: 'Elizabeth Warren', letters: 9 }];
 const api = new Function('MEMBERS', src.slice(a, b)
-  + '\nreturn { didYouMean, filedUnder, membersNamed };')(MEMBERS);
+  + '\nreturn { didYouMean, filedUnder, membersNamed, acronymOf };')(MEMBERS);
 const data = JSON.parse(process.argv[2]);
 const out = {};
 for (const q of JSON.parse(process.argv[3])) {
   const d = api.didYouMean(data, q), f = api.filedUnder(data, q);
+  const acro = api.acronymOf(data, q);
   out[q] = { dym: d && d.text, filed: f && f.tag,
-             named: api.membersNamed(data, q.toLowerCase()).map(m => m.id) };
+             named: api.membersNamed(data, q.toLowerCase()).map(m => m.id),
+             means: acro && acro.list.map(m => m.meaning),
+             ranks: acro && data.rows.map(r => acro.rank(r[4], '', r[6] || '')) };
 }
 console.log(JSON.stringify(out));
 """
@@ -80,10 +83,15 @@ class PageSuggestions(unittest.TestCase):
     def ask(self, *queries):
         rows = [srow("Medicare payments", "Medicare"), srow("Medicare Advantage", "Medicare"),
                 srow("Fentanyl at the border", "Opioids"), srow("Covid relief", "COVID-19"),
-                srow("Tariffs on steel", "Tariffs")]
+                srow("Tariffs on steel", "Tariffs"),
+                # 5-9: the acronym cases (#1448)
+                srow("Justice for detainees", "ICE"), srow("Postal service delays"),
+                srow("Immigration and Customs Enforcement raids"),
+                srow("AI in hiring"), srow("Said the senator about aid")]
         data = {"members": ["S000033"], "recipients": [], "rows": rows,
                 "vocab": build_site.search_vocabulary(rows),
-                "aka": {"S000033": ["Bernie Sanders"]}}
+                "aka": {"S000033": ["Bernie Sanders"]},
+                "acronyms": build_site.search_acronyms(rows, [])}
         res = subprocess.run(
             [NODE, "-e", HARNESS, str(ROOT / "app.js"), json.dumps(data), json.dumps(queries)],
             capture_output=True, text=True, check=True)
@@ -108,11 +116,58 @@ class PageSuggestions(unittest.TestCase):
         self.assertEqual(got["pandemic"]["filed"], "COVID-19")
         self.assertEqual(got["fentanyl"]["filed"], "Opioids")
 
+    def test_an_acronym_says_what_it_stands_for(self):
+        got = self.ask("ice", "ICE", "ai", "medicare")
+        self.assertEqual(got["ice"]["means"], ["Immigration and Customs Enforcement"])
+        self.assertEqual(got["ICE"]["means"], got["ice"]["means"])
+        self.assertEqual(got["ai"]["means"], ["artificial intelligence"])
+        self.assertIsNone(got["medicare"]["means"])   # not an acronym
+
+    def test_letters_using_the_acronym_rank_before_letters_containing_it(self):
+        ice = self.ask("ice")["ice"]["ranks"]
+        self.assertEqual(ice[5], 0)   # tagged ICE (and "justice" does not matter)
+        self.assertEqual(ice[7], 1)   # spelled out
+        self.assertEqual(ice[6], 2)   # "service" only contains it
+        ai = self.ask("ai")["ai"]["ranks"]
+        self.assertEqual(ai[8], 1)    # "AI in hiring"
+        self.assertEqual(ai[9], 2)    # "said", "aid"
+
     def test_nickname_finds_the_member(self):
         got = self.ask("bernie sanders", "bernie sandres")
         self.assertEqual(got["bernie sanders"]["named"], ["S000033"])
         self.assertEqual(got["bernie sandres"]["dym"], "Bernie Sanders")
 
 
+class SearchAcronyms(unittest.TestCase):
+    def setUp(self):
+        self.rows = [srow("AI in hiring"), srow("Super intelligence risks, SI"),
+                     srow("Detention", "ICE"), srow("Postal service")]
+        self.acr = build_site.search_acronyms(self.rows, [])
+
+    def test_hand_kept_ai_and_si(self):
+        # Robin, #1448: AI is artificial intelligence, SI superintelligence.
+        self.assertEqual(self.acr["AI"][0][0], "artificial intelligence")
+        self.assertEqual(self.acr["SI"][0][0], "superintelligence")
+        self.assertIn("super intelligence", self.acr["SI"][0][2])
+
+    def test_agency_acronym_carries_its_tag(self):
+        meaning, tag, forms = self.acr["ICE"][0]
+        self.assertEqual((meaning, tag), ("Immigration and Customs Enforcement", "ICE"))
+        self.assertIn("immigration and customs enforcement", forms)
+
+    def test_one_meaning_per_tag(self):
+        acr = build_site.search_acronyms([srow("x", "DHS")], [])
+        self.assertEqual(len(acr["DHS"]), 1)
+
+    def test_only_acronyms_this_congress_uses(self):
+        self.assertNotIn("FEMA", self.acr)
+
+    def test_hand_file_tags_must_be_topics(self):
+        with open(build_site.VOCABULARY / "acronyms.csv", newline="", encoding="utf-8") as fh:
+            import csv
+            for r in csv.DictReader(fh):
+                if r["tag"]:
+                    self.assertTrue(r["tag"] in build_site.SUBJECTS or r["tag"] in build_site.AGENCIES,
+                                    r["tag"])
 if __name__ == "__main__":
     unittest.main()
