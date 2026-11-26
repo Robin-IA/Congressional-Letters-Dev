@@ -12364,7 +12364,7 @@ Lac Courte Oreilles Band of Lake Superior Chippewa Indians,1,merge,Lac Courte Or
 University of Colorado Boulder,1,merge,University of Colorado Boulder,,organization,Colleges and universities,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 University of Colorado Student Government,1,merge,University of Colorado Student Government,,organization,Colleges and universities,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Embassy of Kenya,1,merge,Embassy of Kenya,,organization,Foreign governments,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
-Unified Government of Kansas City and Wyandotte County,1,merge,Unified Government of Kansas City and Wyandotte County,,organization,State and local government,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Unified Government of Kansas City and Wyandotte County,1,merge,Unified Government of Kansas City and Wyandotte County,,organization,Kansas local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Treetop Development,1,merge,Treetop Development,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 "Dean Heller, Catherine Cortez Masto and Mark E. Amodei",1,joint,H001041;C001113;A000369,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
 Marathon Pharmaceuticals,1,merge,Marathon Pharmaceuticals,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
@@ -12537,12 +12537,12 @@ President of Cyprus,1,merge,President of Cyprus,,office,Foreign governments,"a r
 Association of California Water Agencies,1,merge,Association of California Water Agencies,,organization,Associations and other organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Coalition of 9/11 Responders,1,merge,Coalition of 9/11 Responders,,organization,Associations and other organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Michigan Department of Agriculture,1,merge,Michigan Department of Agriculture,,organization,Michigan agencies and organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
-Governor of Wyoming,1,merge,Governor of Wyoming,,office,State and local government,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Governor of Wyoming,1,merge,Governor of Wyoming,,office,Wyoming state officials,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Defenders of Wildlife,1,merge,Defenders of Wildlife,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 World Wildlife Fund,1,merge,World Wildlife Fund,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Governor of Colorado and Governor of Wyoming,1,joint,Governor of Colorado;Governor of Wyoming,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
 Fulbright & Jaworski,1,merge,Fulbright & Jaworski,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
-Wyoming Department of Environmental Quality,1,merge,Wyoming Department of Environmental Quality,,organization,State and local government,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Wyoming Department of Environmental Quality,1,merge,Wyoming Department of Environmental Quality,,organization,Wyoming state government agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Vice Premier of China,1,merge,Vice Premier of China,,office,Foreign governments,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 California League for Environmental Enforcement Now,1,merge,California League for Environmental Enforcement Now,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Center for Food Safety,1,merge,Center for Food Safety,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
@@ -12574,7 +12574,7 @@ Texas Independent Producers and Royalty Owners Association,1,merge,Texas Indepen
 Village of Wilmette,1,merge,Village of Wilmette,,organization,Illinois local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Veterans' Disability Benefits Commission,1,merge,Veterans' Disability Benefits Commission,,organization,Independent agencies and commissions,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 NASCAR,1,merge,NASCAR,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
-Berkeley County Office of Veterans Affairs,1,merge,Berkeley County Office of Veterans Affairs,,office,State and local government,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Berkeley County Office of Veterans Affairs,1,merge,Berkeley County Office of Veterans Affairs,,office,South Carolina local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Federal Judiciary Evaluation Committee,1,merge,Federal Judiciary Evaluation Committee,,organization,Associations and other organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Ralph Regula and David Obey,1,joint,R000141;O000007,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
 David Hobson and Peter J. Visclosky,1,joint,H000666;V000108,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
@@ -13121,7 +13121,7 @@ Beverly Hospital,1,merge,Beverly Hospital,,organization,Hospitals,"a recipient r
 The President and Prime Minister of the United Kingdom,1,joint,The President;Prime Minister of the United Kingdom,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
 UnitedHealthcare,1,merge,UnitedHealthcare,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Town of Afton (Wyoming),1,merge,Town of Afton (Wyoming),,organization,State and local government,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
-Wyoming Department of Environmental Quality,1,merge,Wyoming Department of Environmental Quality,,organization,State and local government,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Wyoming Department of Environmental Quality,1,merge,Wyoming Department of Environmental Quality,,organization,Wyoming state government agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 New York City Department of Small Business Services,1,merge,New York City Department of Small Business Services,,organization,New York local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Georgia Department of Community Affairs,1,merge,Georgia Department of Community Affairs,,organization,Georgia state government agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 CMA CGM,1,merge,CMA CGM,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
