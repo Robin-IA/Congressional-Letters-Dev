@@ -1,0 +1,21 @@
+name: Suggest a change
+description: A subject the vocabulary lacks, something hard to use, or an idea for the explorers.
+labels: ["UX"]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind of suggestion
+      options:
+        - A subject, agency or name the vocabulary lacks or files in the wrong place
+        - Something hard to use (keyboard, screen reader, reading, search)
+        - An idea for the explorers
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: The page you were on, what you did or wanted to do, and what happened.
+    validations:
+      required: true
