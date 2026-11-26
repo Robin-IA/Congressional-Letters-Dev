@@ -67,7 +67,7 @@ const out = {};
 for (const q of JSON.parse(process.argv[3])) {
   const d = api.didYouMean(data, q), f = api.filedUnder(data, q);
   const acro = api.acronymOf(data, q);
-  out[q] = { dym: d && d.text, filed: f && f.tag,
+  out[q] = { dym: d && d.texts.join(' or '), filed: f && f.tag,
              named: api.membersNamed(data, q.toLowerCase()).map(m => m.id),
              means: acro && acro.list.map(m => m.meaning),
              ranks: acro && data.rows.map(r => acro.rank(r[4], '', r[6] || '')) };
