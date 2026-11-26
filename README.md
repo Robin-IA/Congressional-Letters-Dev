@@ -2,7 +2,7 @@
 
 ### → **[Letters from Congress](https://internetarchivecanada.github.io/congressional-letters/)** · [Robin-IA copy](https://robin-ia.github.io/Explorer-Letters/)
 
-*Picking this up on another machine? → [PICKUP.md](PICKUP.md) · Working notes → [CLAUDE.md](CLAUDE.md) · Building the explorers → [EXPLORERS.md](EXPLORERS.md)*
+*Picking this up on another machine? → [PICKUP.md](PICKUP.md) · Working notes → [CLAUDE.md](CLAUDE.md) · Building the explorers → [EXPLORERS.md](EXPLORERS.md) · Suggesting a correction or a change → [CONTRIBUTING.md](CONTRIBUTING.md)*
 
 Letters that members of Congress published on their own websites, preserved by
 the Wayback Machine, organised by Congress: a home page that searches across

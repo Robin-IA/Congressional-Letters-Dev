@@ -1,0 +1,39 @@
+name: Correct a letter
+description: Something about a letter is wrong, or it is not a letter at all.
+title: "Correction: "
+labels: ["data", "quality control"]
+body:
+  - type: markdown
+    attributes:
+      value: Thank you. One letter per report, please, unless the same mistake runs through several.
+  - type: input
+    id: link
+    attributes:
+      label: Link to the letter
+      description: The letter's link, or the explorer page it is on.
+      placeholder: https://robin-ia.github.io/Explorer-Congressional-Letters-119/?member=...
+    validations:
+      required: true
+  - type: dropdown
+    id: what
+    attributes:
+      label: What is wrong
+      multiple: true
+      options:
+        - The date
+        - Who wrote it
+        - Who it was sent to
+        - Its subject or title
+        - Its topics
+        - It is not a letter (a press release, a web page, a blank or broken document)
+        - It is a duplicate of another letter
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: should
+    attributes:
+      label: What it should say
+      description: And, if you can, how you know (the letter itself says so, say).
+    validations:
+      required: true

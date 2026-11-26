@@ -1,0 +1,23 @@
+name: Missing letter or member
+description: A letter, or a member's letters, that should be here and are not.
+title: "Missing: "
+labels: ["harvest"]
+body:
+  - type: input
+    id: member
+    attributes:
+      label: Member of Congress
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Where the letter or letters are
+      description: An address on the member's website or in the Wayback Machine, if you have one.
+  - type: textarea
+    id: about
+    attributes:
+      label: What is missing
+      description: A single letter (roughly when, and who it was to), or a website or page we did not find.
+    validations:
+      required: true
