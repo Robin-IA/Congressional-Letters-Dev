@@ -1356,9 +1356,25 @@ async function viewSearch(query) {
     go(next);
   };
 
-  const box = el('div', { class: 'controls' },
+  // A form, so Enter searches at once rather than waiting out the typing
+  // delay, and then takes the visitor to the results (#1416).
+  const box = el('form', {
+    class: 'controls', role: 'search',
+    onsubmit: e => {
+      e.preventDefault();
+      clearTimeout(window.__st);
+      const v = $('#bigsearch').value.trim();
+      const next = new URLSearchParams();
+      next.set('view', 'search');
+      if (v) next.set('q', v);
+      shown = 0;
+      history.pushState({}, '', `?${next}`);
+      render().then(() => $('#sr-h')?.focus());
+    },
+  },
     el('input', {
       type: 'search', value: query || '', id: 'bigsearch',
+      'aria-label': 'Search letters',
       placeholder: 'Search letters — a topic, an agency, a member’s name',
       oninput: e => {
         const v = e.target.value;
@@ -1373,7 +1389,8 @@ async function viewSearch(query) {
           });
         }, 220);
       },
-    }));
+    }),
+    el('button', { type: 'submit', class: 'go' }, 'Search'));
 
   if (!needle) {
     const picks = (INDEX.topics || []).slice(0, 18).map(([t]) => t);
@@ -1468,7 +1485,11 @@ async function viewSearch(query) {
       }
     }
   }
-  letterHits.sort((a, b) => a[7] - b[7] || (b[2] || 0) - (a[2] || 0) || (b[4] - a[4]));
+  // Letters whose description matches come before those matched only by
+  // recipient or topic tag (#1416), after the acronym's own ranking (#1448).
+  const bySubject = h => (h[3].toLowerCase().includes(needle) ? 0 : 1);
+  letterHits.sort((a, b) => a[7] - b[7] || bySubject(a) - bySubject(b)
+    || (b[2] || 0) - (a[2] || 0) || (b[4] - a[4]));
 
   const limit = shown || 60;
   const visible = letterHits.slice(0, limit);
@@ -1524,8 +1545,62 @@ async function viewSearch(query) {
   const suggestion = data && letterHits.length < 5 && !nameHits.length
     ? didYouMean(data, query) : null;
 
+  // Topics the search names (#1416): tags in this Congress's vocabulary whose
+  // name, or another word for them, contains the query.
+  // A word must start with the query: "ice" is not in Justice or Service.
+  const wordStart = new RegExp(`(^|[^a-z0-9])${fold(needle).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}`);
+  const topicHits = data && fold(needle).length >= 2 ? vocabOf(data).entries
+    .filter(e => e.count && [e.tag, e.name, ...e.forms].some(f => f && wordStart.test(fold(f))))
+    .sort((a, b) => (fold(a.tag) === fold(needle) ? -1 : 0) - (fold(b.tag) === fold(needle) ? -1 : 0)
+      || b.count - a.count)
+    : [];
+  const topicsPanel = topicHits.length
+    ? el('div', { class: 'panel', id: 'sr-topics' }, el('h2', { class: 'panel-h' }, 'Topics'),
+      el('div', { class: 'controls' }, ...topicHits.slice(0, 16).map(e =>
+        link({ view: 'search', q: e.tag }, 'pill', e.tag, el('span', { class: 'faint' }, ` ${num(e.count)}`)))))
+    : null;
+  const membersPanel = nameHits.length
+    ? el('div', { class: 'panel', id: 'sr-members' }, el('h2', { class: 'panel-h' }, 'Members'),
+      el('div', { class: 'grid' }, ...nameHits.slice(0, 9).map(m =>
+        link({ member: m.id }, 'card',
+          el('span', { class: 'top' }, el('span', { class: 'nm' }, m.name),
+            el('span', { class: 'ct tab' }, num(m.letters))),
+          el('span', { class: 'meta' }, memberBadges(m))))))
+    : null;
+  const lettersPanel = letterHits.length
+    ? el('div', { class: 'panel', id: 'sr-letters' }, el('h2', { class: 'panel-h' }, 'Letters'), table,
+      letterHits.length > limit
+        ? el('button', { class: 'more', onclick: () => { shown = limit + 120; render(); } },
+          `Show more — ${num(letterHits.length - limit)} more letters`)
+        : null)
+    : null;
+  const sentPanel = recipientHits.length
+    ? el('div', { class: 'panel', id: 'sr-to' }, el('h2', { class: 'panel-h' }, 'Sent to'),
+      rankList(recipientHits, name => link({ to: name }, null, name), 8))
+    : null;
+  const ftPanel = fullTextPanel(query);
+  ftPanel.id = 'sr-ft';
+  // Subjects first; members first when the search is someone's name (#1416).
+  const nameFirst = nameHits.length > 0;
+  const ordered = nameFirst
+    ? [[membersPanel, 'Members', nameHits.length], [topicsPanel, 'Topics', topicHits.length]]
+    : [[topicsPanel, 'Topics', topicHits.length], [membersPanel, 'Members', nameHits.length]];
+  ordered.push([lettersPanel, 'Letters', letterHits.length], [sentPanel, 'Sent to', recipientHits.length],
+    [ftPanel, 'In the letters’ own words', null]);
+  const shownPanels = ordered.filter(([panel]) => panel);
+  const jump = shownPanels.length > 1
+    ? el('nav', { class: 'jump', 'aria-label': 'Search results' }, 'Jump to: ',
+      ...shownPanels.flatMap(([panel, label, n], i) => [i ? ' · ' : '',
+        el('a', { href: `#${panel.id}`, onclick: e => {
+          e.preventDefault();
+          panel.scrollIntoView({ block: 'start' });
+          panel.setAttribute('tabindex', '-1');
+          panel.focus({ preventScroll: true });
+        } }, n === null ? label : `${label} (${num(n)})`)]))
+    : null;
+
   const out = el('div', {}, box,
-    el('h1', { class: 'hero' }, `“${query}”`),
+    el('h1', { class: 'hero', id: 'sr-h', tabindex: '-1' }, `“${query}”`),
     el('p', { class: 'sub' },
       data
         ? el('span', {}, el('b', {}, num(letterHits.length)), ' letters')
@@ -1538,38 +1613,17 @@ async function viewSearch(query) {
         ' written to') : null,
       '. ',
       el('span', { class: 'faint' },
-        'Matches in letter descriptions are below; the text of the letters is searched under “In the letters’ own words”.')),
+        'Matches in letter descriptions come first; the text of the letters is searched under “In the letters’ own words”.')),
     suggestion
       ? el('p', { class: 'note' }, 'Did you mean ',
         el('b', {}, link({ view: 'search', q: suggestion.text }, null, suggestion.text)),
         '? ', el('span', { class: 'faint' },
           `${num(suggestion.n)} ${suggestion.what}${suggestion.n === 1 ? '' : 's'}`))
       : null,
+    jump,
     acro ? acronymNote(acro, letterHits, query, loose >= 4000) : null,
     data ? vocabPanel(data, query, !!acro) : null,
-    nameHits.length
-      ? el('div', { class: 'panel' }, el('h3', {}, 'Members'),
-        el('div', { class: 'grid' }, ...nameHits.slice(0, 9).map(m =>
-          link({ member: m.id }, 'card',
-            el('span', { class: 'top' }, el('span', { class: 'nm' }, m.name),
-              el('span', { class: 'ct tab' }, num(m.letters))),
-            el('span', { class: 'meta' }, memberBadges(m))))))
-      : null,
-    recipientHits.length
-      ? el('div', { class: 'panel' }, el('h3', {}, 'Sent to'),
-        rankList(recipientHits, name => link({ to: name }, null, name), 8))
-      : null,
-    fullTextPanel(query),
-    letterHits.length
-      ? el('div', { class: 'panel' }, el('h3', {}, 'Letters'), table)
-      : null);
-
-  if (letterHits.length > limit) {
-    out.append(el('button', {
-      class: 'more',
-      onclick: () => { shown = limit + 120; render(); },
-    }, `Show more — ${num(letterHits.length - limit)} more letters`));
-  }
+    ...shownPanels.map(([panel]) => panel));
   if (failed) {
     out.append(el('p', { class: 'note' },
       'The search index could not be loaded, so only member and recipient names '
