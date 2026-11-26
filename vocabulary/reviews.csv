@@ -12854,3 +12854,101 @@ CKE Restaurants,1,merge,CKE Restaurants,,organization,Companies,"a recipient rea
 White House Visitors Office,1,merge,White House Visitors Office,,office,Executive Office of the President,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Quinn Emanuel,1,merge,Quinn Emanuel,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Cypress Bay High School,1,merge,Cypress Bay High School,,organization,Florida local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Denver Housing Authority,1,merge,Denver Housing Authority,,organization,Colorado local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+John Thune and Bill Nelson,1,joint,T000250;N000032,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Illinois Guardianship and Advocacy Commission,1,merge,Illinois Guardianship and Advocacy Commission,,organization,Illinois state government agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+"Richard J. Durbin, Mark Kirk, Tammy Duckworth and Department of Veterans Affairs",1,joint,D000563;K000360;D000622;Department of Veterans Affairs,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+VitaminSea Seaweed,1,merge,VitaminSea Seaweed,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Office of the United Nations High Commissioner for Human Rights,1,merge,Office of the United Nations High Commissioner for Human Rights,,office,International organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Rob Bishop and Raúl M. Grijalva,1,joint,B001250;G000551,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+John Thune and Bill Shuster,1,joint,T000250;S001154,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+"Mitch McConnell, Harry Reid, Kevin McCarthy and Nancy Pelosi",1,joint,M000355;R000146;M001165;P000197,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+North Carolina State Education Assistance Authority,1,merge,North Carolina State Education Assistance Authority,,organization,North Carolina state government agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Restaurant Associates,1,merge,Restaurant Associates,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Virgin America,1,merge,Virgin America,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+"Fred Upton and Frank Pallone, Jr.",1,joint,U000031;P000034,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+"Department of Justice, Department of Homeland Security and Department of State",1,joint,Department of Justice;Department of Homeland Security;Department of State,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+"Paul D. Ryan, Fred Upton and John Kline",1,joint,R000570;U000031;K000363,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+American Association for the Advancement of Science,1,merge,American Association for the Advancement of Science,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+LA 24,1,merge,LA 24,,organization,Associations and other organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Friends of the LA River,1,merge,Friends of the LA River,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Office of Management and Budget and Department of Energy,1,joint,Office of Management and Budget;Department of Energy,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+"Department of Health and Human Services, Department of Justice, Department of the Treasury and Internal Revenue Service",1,joint,Department of Health and Human Services;Department of Justice;Department of the Treasury;Internal Revenue Service,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Cook County,1,merge,Cook County,,organization,Illinois local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Lake County (Illinois),1,merge,Lake County (Illinois),,organization,Illinois local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+DuPage County,1,merge,DuPage County,,organization,Illinois local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+McHenry County,1,merge,McHenry County,,organization,Illinois local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Kane County,1,merge,Kane County,,organization,Illinois local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Will County,1,merge,Will County,,organization,Illinois local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Grand Canyon Trust,1,merge,Grand Canyon Trust,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Mac Thornberry and Adam Smith,1,joint,T000238;S000510,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Washington County Emergency Management Agency,1,merge,Washington County Emergency Management Agency,,organization,Maine local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+"Paul D. Ryan, Nancy Pelosi, Mitch McConnell and Harry Reid",1,joint,R000570;P000197;M000355;R000146,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Lindsey Graham and Patrick J. Leahy,1,joint,G000359;L000174,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+IBM,1,merge,IBM,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+OneVoice,1,merge,OneVoice,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+"John A. Boehner, Mitch McConnell, Harry Reid and Nancy Pelosi",1,joint,B000589;M000355;R000146;P000197,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Americans for Responsible Solutions,1,merge,Americans for Responsible Solutions,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Association of Public Safety Communications Officials,1,merge,Association of Public Safety Communications Officials,,organization,Associations and other organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Office of Management and Budget and Office of Information and Regulatory Affairs,1,joint,Office of Management and Budget;Office of Information and Regulatory Affairs,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Commercial Fishermen's Association of Bodega Bay,1,merge,Commercial Fishermen's Association of Bodega Bay,,organization,Associations and other organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+City of St. Petersburg,1,merge,City of St. Petersburg,,organization,Florida local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+"Paul D. Ryan, Kevin McCarthy, Harold Rogers and Tom Cole",1,joint,R000570;M001165;R000395;C001053,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Iraq and Afghanistan Veterans of America,1,merge,Iraq and Afghanistan Veterans of America,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Caterpillar,1,merge,Caterpillar,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Medtronic,1,merge,Medtronic,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+DuPont,1,merge,DuPont,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+The Dow Chemical Company,1,merge,The Dow Chemical Company,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Siemens,1,merge,Siemens,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+United Technologies,1,merge,United Technologies,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+AdvaMed,1,merge,AdvaMed,,organization,Associations and other organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+"Federal Aviation Administration, Department of the Air Force and National Aeronautics and Space Administration",1,joint,Federal Aviation Administration;Department of the Air Force;National Aeronautics and Space Administration,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+New Jersey State Police,1,merge,New Jersey State Police,,organization,New Jersey state government agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+"Heating, Air-conditioning & Refrigeration Distributors International",1,merge,"Heating, Air-conditioning & Refrigeration Distributors International",,organization,Associations and other organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+National Association of Electrical Distributors,1,merge,National Association of Electrical Distributors,,organization,Associations and other organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+City of Galesburg,1,merge,City of Galesburg,,organization,Illinois local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Lynn A. Westmoreland and Carolyn B. Maloney,1,joint,W000796;M000087,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Santa Monica City Council,1,merge,Santa Monica City Council,,office,California local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+"Jason Chaffetz, Mark Meadows, Elijah E. Cummings and Gerald E. Connolly",1,joint,C001076;M001187;C000984;C001078,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+National Hispanic Leadership Agenda,1,merge,National Hispanic Leadership Agenda,,organization,Associations and other organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+"Thad Cochran, Harold Rogers, Barbara A. Mikulski and Nita M. Lowey",1,joint,C000567;R000395;M000702;L000480,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+School and Institutional Trust Lands Administration,1,merge,School and Institutional Trust Lands Administration,,organization,Utah state government agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Rob Bishop and Jason Chaffetz,1,joint,B001250;C001076,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Bill Shuster and Kevin Brady,1,joint,S001154;B000755,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+City of Rochelle,1,merge,City of Rochelle,,organization,Illinois local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Madison River Foundation,1,merge,Madison River Foundation,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+"John A. Boehner, Kevin McCarthy and Steve Scalise",1,joint,B000589;M001165;S001176,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+John Fleming and Jared Huffman,1,joint,F000456;H001068,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Federal Reserve Bank of Atlanta,1,merge,Federal Reserve Bank of Atlanta,,organization,Federal Reserve System,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Federal Reserve and Federal Reserve Bank of Atlanta,1,joint,Federal Reserve;Federal Reserve Bank of Atlanta,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+"Environmental Protection Agency, Department of Agriculture and Department of Energy",1,joint,Environmental Protection Agency;Department of Agriculture;Department of Energy,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+John Cornyn and Charles E. Schumer,1,joint,C001056;S000148,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+"Thad Cochran, Barbara A. Mikulski and Richard C. Shelby",1,joint,C000567;M000702;S000320,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Abengoa,1,merge,Abengoa,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Department of Energy and Department of the Treasury,1,joint,Department of Energy;Department of the Treasury,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Islamic Society of North America,1,merge,Islamic Society of North America,,organization,Associations and other organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Nuance Communications,1,merge,Nuance Communications,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Genesis Toys,1,merge,Genesis Toys,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Partnership to Protect Workplace Opportunity,1,merge,Partnership to Protect Workplace Opportunity,,organization,Associations and other organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Tom Price and Chris Van Hollen,1,joint,P000591;V000128,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+International Finance Corporation,1,merge,International Finance Corporation,,organization,International organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Horizon Lines,1,merge,Horizon Lines,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Customs and Border Protection and Maritime Administration,1,joint,Customs and Border Protection;Maritime Administration,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Takata,1,merge,Takata,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+"Thad Cochran, Barbara A. Mikulski, Susan M. Collins and Jack Reed",1,joint,C000567;M000702;C001035;R000122,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Fletcher Technical Community College,1,merge,Fletcher Technical Community College,,organization,Colleges and universities,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+South Central Louisiana Technical College,1,merge,South Central Louisiana Technical College,,organization,Colleges and universities,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Mayor of San Francisco,1,merge,Mayor of San Francisco,,office,California local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Shatterproof Foundation,1,merge,Shatterproof Foundation,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+American Society of Addiction Medicine,1,merge,American Society of Addiction Medicine,,organization,Associations and other organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+"Jason Chaffetz, Elijah E. Cummings, Fred Upton and Frank Pallone, Jr.",1,joint,C001076;C000984;U000031;P000034,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Insys Therapeutics,1,merge,Insys Therapeutics,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Seniors Foundation,1,merge,Seniors Foundation,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+America First Real Estate Group,1,merge,America First Real Estate Group,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Sampson Construction,1,merge,Sampson Construction,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+LEDIC Management Group,1,merge,LEDIC Management Group,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Office for Civil Rights and Civil Rights Division,1,joint,Office for Civil Rights;Civil Rights Division,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+"Mac Thornberry, Adam Smith, J. Randy Forbes and Joe Courtney",1,joint,T000238;S000510;F000445;C001069,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Thad Cochran and Richard J. Durbin,1,joint,C000567;D000563,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Vietnam Veterans of America,1,merge,Vietnam Veterans of America,,organization,Associations and other organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Mid-America Transportation Center,1,merge,Mid-America Transportation Center,,organization,Colleges and universities,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
