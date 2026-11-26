@@ -1085,6 +1085,29 @@ function fullTextPanel(query) {
 const fold = s => (s || '').toLowerCase().normalize('NFKD')
   .replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
 
+// Dotted initials count as one word, so "A.I." and "U.S." fold to the same
+// word as "AI" and "US" (#1461): a single letter and a period, immediately
+// followed by another letter, loses its period before the usual fold().
+const foldInitials = s => (s || '').replace(/\b([A-Za-z])\.(?=[A-Za-z])/g, '$1');
+const words = s => fold(foldInitials(s)).split(' ').filter(Boolean);
+
+// A name or a piece of text matches a search term only as a whole word or
+// phrase ("ai" is not inside Daines, Kaine or McCain, any more than "Robin"
+// is named "Bin"; "bernie sanders" still matches the whole name), unless the
+// term ends in "*", which asks for a word that starts with it instead
+// ("clai*" finds Claire). #1461.
+function wordMatch(text, rawNeedle) {
+  const s = (rawNeedle || '').trim();
+  if (!s) return false;
+  const prefix = s.endsWith('*');
+  const core = fold(foldInitials(prefix ? s.slice(0, -1) : s));
+  if (!core) return false;
+  const hay = words(text).join(' ');
+  const esc = core.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const re = prefix ? new RegExp(`(^| )${esc}`) : new RegExp(`(^| )${esc}( |$)`);
+  return re.test(hay);
+}
+
 // Optimal string alignment distance, giving up once it passes `max`.
 function editDistance(a, b, max) {
   if (Math.abs(a.length - b.length) > max) return max + 1;
@@ -1127,10 +1150,10 @@ function countMatches(data, needle) {
 }
 
 // Members by name, or by another name the vocabulary has for them.
-function membersNamed(data, needle) {
+function membersNamed(data, rawNeedle) {
   const aka = (data && data.aka) || {};
-  return MEMBERS.filter(m => m.name.toLowerCase().includes(needle)
-    || (aka[m.id] || []).some(a => a.toLowerCase().includes(needle)));
+  return MEMBERS.filter(m => wordMatch(m.name, rawNeedle)
+    || (aka[m.id] || []).some(a => wordMatch(a, rawNeedle)));
 }
 
 let VOCAB = null;   // built from SEARCH once, on the first search that needs it
@@ -1216,6 +1239,21 @@ function didYouMean(data, query) {
   const q = fold(query);
   if (!q) return null;
 
+  // Not a typo but the start of one: "immigra" is not misspelled, it is
+  // unfinished. Offer up to two whole words it is the prefix of, the most
+  // common first ("immigration" or "immigrants"), never the query itself,
+  // which wordMatch() already ruled out as a whole word. Tried before any
+  // edit-distance guess, since a real prefix is a surer signal than a typo
+  // that happens to be a few edits away (#1461).
+  if (q.length >= 4) {
+    const picks = [...v.words].filter(([w]) => w.length > q.length && w.startsWith(q))
+      .sort((a, b) => b[1] - a[1]).slice(0, 2).map(([w]) => w);
+    if (picks.length) {
+      const n = picks.reduce((s, t) => s + (countMatches(data, t) || membersNamed(data, t).length), 0);
+      if (n) return { texts: picks, n, what: 'letter' };
+    }
+  }
+
   // The whole query against whole names and terms.
   let best = null;
   const max = slack(q.length);
@@ -1230,9 +1268,9 @@ function didYouMean(data, query) {
   }
   if (best) {
     const n = countMatches(data, best.text.toLowerCase());
-    if (n) return { text: best.text, n, what: 'letter' };
+    if (n) return { texts: [best.text], n, what: 'letter' };
     const m = membersNamed(data, best.text.toLowerCase()).length;
-    if (m) return { text: best.text, n: m, what: 'member' };
+    if (m) return { texts: [best.text], n: m, what: 'member' };
   }
 
   // Word by word: mend each word the index has never seen.
@@ -1249,10 +1287,11 @@ function didYouMean(data, query) {
   }).join(' ');
   if (fixed !== q) {
     const n = countMatches(data, fixed);
-    if (n) return { text: fixed, n, what: 'letter' };
+    if (n) return { texts: [fixed], n, what: 'letter' };
     const m = membersNamed(data, fixed).length;
-    if (m) return { text: fixed, n: m, what: 'member' };
+    if (m) return { texts: [fixed], n: m, what: 'member' };
   }
+
   return null;
 }
 
@@ -1419,25 +1458,21 @@ async function viewSearch(query) {
           link({ view: 'timeline' }, null, 'By year'))));
   }
 
-  const nameHits = MEMBERS.filter(m => m.name.toLowerCase().includes(needle));
+  // A name or description matches a search term as a whole word, not a
+  // substring: "ai" is not inside Daines, Kaine or McCain, any more than
+  // "Robin" is named "Bin" (#1461). wordMatch() also treats "A.I." as "ai".
+  const nameHits = MEMBERS.filter(m => wordMatch(m.name, query));
 
   const loaded = await loadSearch();
   const data = loaded && !loaded.failed ? loaded : null;
   const failed = loaded && loaded.failed;
   // Other names for members, from the vocabulary: "Bernie Sanders" (#1449).
   if (data) {
-    for (const m of membersNamed(data, needle)) {
+    for (const m of membersNamed(data, query)) {
       if (!nameHits.includes(m)) nameHits.push(m);
     }
   }
-  // An acronym inside a member's name is not the acronym: "ai" is in Daines
-  // and Kaine. Keep only the members whose name has it as a word (#1448).
   const acro = acronymOf(data, query);
-  if (acro) {
-    const asWord = new RegExp(`(^|[^a-z0-9])${needle.replace(/[^a-z0-9]/g, '')}($|[^a-z0-9])`);
-    nameHits.splice(0, nameHits.length,
-      ...nameHits.filter(m => asWord.test(fold(m.name))));
-  }
 
   // Shortcuts to a recipient's own page, counted over EVERY recipient rather
   // than the 200 the totals list carries. 3,970 of the 4,170 are outside that
@@ -1452,7 +1487,7 @@ async function viewSearch(query) {
       const name = data.recipients[row[1]];
       // An acronym also finds the recipients that spell it out: "va" finds
       // the Department of Veterans Affairs.
-      if (!name.toLowerCase().includes(needle) && r(name) === 2) continue;
+      if (!wordMatch(name, query) && r(name) === 2) continue;
       tally.set(name, (tally.get(name) || 0) + 1);
     }
     // For an acronym, recipients that are what it stands for come first:
@@ -1460,7 +1495,7 @@ async function viewSearch(query) {
     recipientHits.push(...[...tally.entries()].sort((a, b) => r(a[0]) - r(b[0]) || b[1] - a[1]));
   } else {
     recipientHits.push(...(INDEX.recipients || [])
-      .filter(([name]) => name.toLowerCase().includes(needle)));
+      .filter(([name]) => wordMatch(name, query)));
   }
   const letterHits = [];
   let loose = 0;
@@ -1469,9 +1504,9 @@ async function viewSearch(query) {
       const recipient = rIdx >= 0 ? data.recipients[rIdx] : '';
       // Topics are matched too, so "FEMA" finds a letter whose description
       // never says FEMA but which the vocabulary tagged as being about it.
-      const hit = subject.toLowerCase().includes(needle)
-          || recipient.toLowerCase().includes(needle)
-          || (topics || '').toLowerCase().includes(needle);
+      const hit = wordMatch(subject, query)
+          || wordMatch(recipient, query)
+          || wordMatch(topics || '', query);
       // An acronym also finds the letters that spell it out, and the cap
       // applies only to the loose matches, so it can never cut off the
       // letters that use it ("ai" is inside 4,309 descriptions).
@@ -1616,7 +1651,9 @@ async function viewSearch(query) {
         'Matches in letter descriptions come first; the text of the letters is searched under “In the letters’ own words”.')),
     suggestion
       ? el('p', { class: 'note' }, 'Did you mean ',
-        el('b', {}, link({ view: 'search', q: suggestion.text }, null, suggestion.text)),
+        ...suggestion.texts.flatMap((t, i) => [
+          i ? ' or ' : '',
+          el('b', {}, link({ view: 'search', q: t }, null, t))]),
         '? ', el('span', { class: 'faint' },
           `${num(suggestion.n)} ${suggestion.what}${suggestion.n === 1 ? '' : 's'}`))
       : null,
