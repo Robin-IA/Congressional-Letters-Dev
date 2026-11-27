@@ -43,6 +43,22 @@ function wordMatch(text, rawNeedle) {
   return re.test(hay);
 }
 
+// A topic matches a search only as a whole word or phrase, like everything
+// else (#1461): "ai" is not Air Force, Foreign aid or Aviation. One allowance:
+// a plain plural is the same word, as topics.py's tagging already treats it,
+// so "vaccine" finds Vaccines and "tariffs" finds Tariff. A trailing "*" still
+// asks for a prefix.
+function topicMatch(name, rawNeedle) {
+  const s = (rawNeedle || '').trim();
+  if (wordMatch(name, s)) return true;
+  if (s.endsWith('*')) return false;
+  const core = fold(foldInitials(s));
+  if (core.length < 3) return false;
+  const forms = core.endsWith('es') ? [core.slice(0, -2), core.slice(0, -1)]
+    : core.endsWith('s') ? [core.slice(0, -1)] : [`${core}s`, `${core}es`];
+  return forms.some(f => wordMatch(name, f));
+}
+
 // What a short query might stand for, across every Congress's own acronyms
 // (search.json's `acronyms`, from vocabulary/acronyms.csv and the
 // vocabulary's abbreviations -- see build_site.py's search_acronyms, #1448).
@@ -420,18 +436,18 @@ function fullTextSection(query, run) {
 // The vocabulary terms a search names (#1416): topics and organizations whose
 // name, or another name for them, contains the query, with letters to show.
 // Exact names first, then names that start with it, then by letters.
-function topicsFor(needle) {
-  if (!TREE || (needle || '').replace(/[^a-z0-9]/g, '').length < 2) return [];
+function topicsFor(query, acro) {
+  if (!TREE || fold(query).length < 2) return [];
+  // An acronym also names what it stands for: "ai" is Artificial intelligence.
+  const meanings = new Set((acro ? acro.list : []).map(m => fold(m.meaning)));
   const out = [];
   const walk = nodes => {
     for (const n of nodes || []) {
       if ((n.kind === 'topic' || n.kind === 'organization') && n.status !== 'candidate' && n.letters) {
-        const names = [n.label, ...(n.names || [])].map(x => (x || '').replace(/@\d{4}-\d{4}$/, '').toLowerCase());
-        // A word must start with the query: "ice" is not in Justice or Service.
-        const rank = names.some(x => x === needle) ? 0
-          : names.some(x => x.startsWith(needle)) ? 1
-          : names.some(x => x.split(/[^a-z0-9]+/).some(w => w.startsWith(needle))
-            || x.includes(` ${needle}`)) ? 2 : -1;
+        const names = [n.label, ...(n.names || [])].map(x => (x || '').replace(/@\d{4}-\d{4}$/, ''));
+        // The topic itself first, then a topic with the word in its name.
+        const rank = names.some(x => fold(x) === fold(query) || meanings.has(fold(x))) ? 0
+          : names.some(x => topicMatch(x, query)) ? 1 : -1;
         if (rank >= 0) out.push([rank, n]);
       }
       walk(n.children);
@@ -500,12 +516,13 @@ async function runSearch(query, term, { focus = false } = {}) {
 
   const status = el('p', { class: 'status', role: 'status' }, `Searching ${newest.length} Congresses…`);
   const groups = new Map(newest.map(c => [c.number, el('div', { class: 'group' })]));
-  const topics = term ? [] : topicsFor(needle);
+  const topics = term ? [] : topicsFor(query, acro);
   const lettersCount = el('span', { class: 'ct' }, '');
 
   const topicsSec = topics.length ? el('section', { 'aria-labelledby': 'sr-topics' },
     el('h2', { class: 'sec', id: 'sr-topics' }, 'Topics'),
-    el('p', { class: 'secnote' }, 'Subjects and organizations in the vocabulary that match. Each opens all its letters, across every Congress.'),
+    el('p', { class: 'secnote' }, 'Subjects and organizations in the vocabulary named by your search. Each opens all its letters, across every Congress. ',
+      el('a', { href: '?view=topics' }, 'Browse all topics')),
     el('div', { class: 'chips topic-hits' }, ...topics.slice(0, 18).map(n =>
       el('a', { href: `?term=${encodeURIComponent(n.id)}` },
         marked(n.label, needle), el('span', { class: 'n' }, ` ${num(n.letters)}`)))),
@@ -541,7 +558,8 @@ async function runSearch(query, term, { focus = false } = {}) {
       [true, 'sr-letters', el('span', {}, 'Letters', lettersCount)],
       [true, 'ft-h', 'In the letters’ own words'],
     ].filter(([sec]) => sec).flatMap(([, id, label], i) =>
-      [i ? ' · ' : '', el('a', { href: `#${id}` }, label)]));
+      [i ? ' · ' : '', el('a', { href: `#${id}` }, label)]),
+    ' · ', el('a', { href: '?view=topics' }, 'Browse all topics'));
 
   fill(out,
     term ? null : el('h2', { class: 'results-h', id: 'sr-h', tabindex: '-1' },

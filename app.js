@@ -1108,6 +1108,22 @@ function wordMatch(text, rawNeedle) {
   return re.test(hay);
 }
 
+// A topic matches a search only as a whole word or phrase, like everything
+// else (#1461): "ai" is not Air Force, Foreign aid or Aviation. One allowance:
+// a plain plural is the same word, as topics.py's tagging already treats it,
+// so "vaccine" finds Vaccines and "tariffs" finds Tariff. A trailing "*" still
+// asks for a prefix.
+function topicMatch(name, rawNeedle) {
+  const s = (rawNeedle || '').trim();
+  if (wordMatch(name, s)) return true;
+  if (s.endsWith('*')) return false;
+  const core = fold(foldInitials(s));
+  if (core.length < 3) return false;
+  const forms = core.endsWith('es') ? [core.slice(0, -2), core.slice(0, -1)]
+    : core.endsWith('s') ? [core.slice(0, -1)] : [`${core}s`, `${core}es`];
+  return forms.some(f => wordMatch(name, f));
+}
+
 // Optimal string alignment distance, giving up once it passes `max`.
 function editDistance(a, b, max) {
   if (Math.abs(a.length - b.length) > max) return max + 1;
@@ -1582,17 +1598,24 @@ async function viewSearch(query) {
 
   // Topics the search names (#1416): tags in this Congress's vocabulary whose
   // name, or another word for them, contains the query.
-  // A word must start with the query: "ice" is not in Justice or Service.
-  const wordStart = new RegExp(`(^|[^a-z0-9])${fold(needle).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}`);
-  const topicHits = data && fold(needle).length >= 2 ? vocabOf(data).entries
-    .filter(e => e.count && [e.tag, e.name, ...e.forms].some(f => f && wordStart.test(fold(f))))
-    .sort((a, b) => (fold(a.tag) === fold(needle) ? -1 : 0) - (fold(b.tag) === fold(needle) ? -1 : 0)
-      || b.count - a.count)
+  // Whole words only (#1461), plus what an acronym stands for.
+  const meant = new Set((acro ? acro.list : []).flatMap(m => [m.tag, m.meaning]).filter(Boolean).map(fold));
+  const isIt = e => fold(e.tag) === fold(query) || meant.has(fold(e.tag)) || (e.name && meant.has(fold(e.name)));
+  const topicHits = data && fold(query).length >= 2 ? vocabOf(data).entries
+    .filter(e => e.count && (isIt(e) || [e.tag, e.name, ...e.forms].some(f => f && topicMatch(f, query))))
+    .sort((a, b) => (isIt(b) ? 1 : 0) - (isIt(a) ? 1 : 0) || b.count - a.count)
     : [];
+  // The vocabulary browser is on the home page; the footer's link to it is
+  // already addressed for this account by the build and publish scripts.
+  const browseTopics = () => {
+    const home = document.querySelector('a.home');
+    return home ? el('a', { href: home.getAttribute('href') }, 'Browse all topics') : null;
+  };
   const topicsPanel = topicHits.length
     ? el('div', { class: 'panel', id: 'sr-topics' }, el('h2', { class: 'panel-h' }, 'Topics'),
       el('div', { class: 'controls' }, ...topicHits.slice(0, 16).map(e =>
-        link({ view: 'search', q: e.tag }, 'pill', e.tag, el('span', { class: 'faint' }, ` ${num(e.count)}`)))))
+        link({ view: 'search', q: e.tag }, 'pill', e.tag, el('span', { class: 'faint' }, ` ${num(e.count)}`)))),
+      el('p', { class: 'small' }, browseTopics()))
     : null;
   const membersPanel = nameHits.length
     ? el('div', { class: 'panel', id: 'sr-members' }, el('h2', { class: 'panel-h' }, 'Members'),
@@ -1631,7 +1654,8 @@ async function viewSearch(query) {
           panel.scrollIntoView({ block: 'start' });
           panel.setAttribute('tabindex', '-1');
           panel.focus({ preventScroll: true });
-        } }, n === null ? label : `${label} (${num(n)})`)]))
+        } }, n === null ? label : `${label} (${num(n)})`)]),
+      ...(browseTopics() ? [' · ', browseTopics()] : []))
     : null;
 
   const out = el('div', {}, box,

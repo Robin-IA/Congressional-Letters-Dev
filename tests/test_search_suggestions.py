@@ -169,5 +169,50 @@ class SearchAcronyms(unittest.TestCase):
                 if r["tag"]:
                     self.assertTrue(r["tag"] in build_site.SUBJECTS or r["tag"] in build_site.AGENCIES,
                                     r["tag"])
+
+TOPIC_HARNESS = r"""
+const fs = require('fs');
+const out = {};
+for (const [file, start, end] of [[process.argv[1], 'const fold = s =>', 'async function viewSearch'],
+                                  [process.argv[2], 'const fold = s =>', 'function acronymLookup']]) {
+  const src = fs.readFileSync(file, 'utf8');
+  const code = src.slice(src.indexOf(start), src.indexOf(end));
+  const topicMatch = new Function('MEMBERS', code + '\nreturn topicMatch;')([]);
+  out[file] = JSON.parse(process.argv[3]).map(([name, q]) => topicMatch(name, q));
+}
+console.log(JSON.stringify(out));
+"""
+
+
+@unittest.skipUnless(NODE, "node is not installed")
+class TopicsAreWholeWords(unittest.TestCase):
+    """Topics in search results match the word itself, not part of one (#1461)."""
+
+    CASES = [
+        ("Department of the Air Force", "ai", False),   # Robin: partial matches are noise
+        ("Foreign aid", "ai", False),
+        ("Aviation", "ai", False),
+        ("ICE", "ice", True),                           # through its abbreviation, one of its names
+        ("Justice", "ice", False),
+        ("Vaccines", "vaccine", True),                  # a plain plural is the same word
+        ("Tariff", "tariffs", True),
+        ("Immigration", "imm*", True),                  # a trailing * asks for a prefix
+        ("Immigration", "imm", False),
+        ("Public health", "health", True),
+        ("Health care", "health care", True),
+        ("Pertaining matters", "ai", False),
+    ]
+
+    def test_both_pages_agree(self):
+        res = subprocess.run(
+            [NODE, "-e", TOPIC_HARNESS, str(ROOT / "app.js"), str(ROOT / "build/hub/hub.js"),
+             json.dumps([[n, q] for n, q, _ in self.CASES])],
+            capture_output=True, text=True, check=True)
+        got = json.loads(res.stdout)
+        for page, answers in got.items():
+            for (name, q, want), a in zip(self.CASES, answers):
+                self.assertEqual(a, want, f"{Path(page).name}: {q!r} in {name!r}")
+
+
 if __name__ == "__main__":
     unittest.main()
