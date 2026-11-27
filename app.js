@@ -1108,6 +1108,22 @@ function wordMatch(text, rawNeedle) {
   return re.test(hay);
 }
 
+// A topic matches a search only as a whole word or phrase, like everything
+// else (#1461): "ai" is not Air Force, Foreign aid or Aviation. One allowance:
+// a plain plural is the same word, as topics.py's tagging already treats it,
+// so "vaccine" finds Vaccines and "tariffs" finds Tariff. A trailing "*" still
+// asks for a prefix.
+function topicMatch(name, rawNeedle) {
+  const s = (rawNeedle || '').trim();
+  if (wordMatch(name, s)) return true;
+  if (s.endsWith('*')) return false;
+  const core = fold(foldInitials(s));
+  if (core.length < 3) return false;
+  const forms = core.endsWith('es') ? [core.slice(0, -2), core.slice(0, -1)]
+    : core.endsWith('s') ? [core.slice(0, -1)] : [`${core}s`, `${core}es`];
+  return forms.some(f => wordMatch(name, f));
+}
+
 // Optimal string alignment distance, giving up once it passes `max`.
 function editDistance(a, b, max) {
   if (Math.abs(a.length - b.length) > max) return max + 1;
@@ -1363,26 +1379,34 @@ function acronymLookup(data, query) {
   return { key: q.toUpperCase(), list, rank };
 }
 
-function acronymNote(acro, letterHits, query, capped) {
-  const first = letterHits.filter(h => h[7] < 2).length;
-  const rest = letterHits.length - first;
+// "artificial intelligence" -> "Artificial Intelligence", for a heading; the
+// small words stay small ("Immigration and Customs Enforcement").
+const titleCase = s => (s || '').replace(/\S+/g, (w, i) =>
+  i && /^(and|of|the|for|on|in|to|a|an|or|at|by)$/i.test(w) ? w.toLowerCase()
+    : w[0].toUpperCase() + w.slice(1));
+
+// The search heading: "Results for AI (Artificial Intelligence)" when the
+// search is an acronym (Robin, #1461), else "Search results for "...""
+function resultsHeading(query, acro) {
+  return acro ? `Results for ${acro.key} (${titleCase(acro.list[0].meaning)})`
+    : `Search results for “${(query || '').trim()}”`;
+}
+
+// Says what the acronym stands for and how many letters use it in that sense
+// (#1448). Since #1461 a search no longer finds the acronym inside other
+// words, so there is no "other" group to describe (Robin, #1461).
+function acronymNote(acro, query) {
+  // The heading says what it stands for; this names any other meanings, and
+  // offers the spelled-out search.
   const [top, ...others] = acro.list;
+  const alt = top.n && fold(top.tag || top.meaning) !== fold(query);
+  if (!others.length && !alt) return null;
   return el('div', { class: 'note' },
-    el('p', {}, el('b', {}, acro.key), ` stands for ${top.meaning}`,
-      others.length ? el('span', {}, ', or for ',
-        ...others.flatMap((m, i) => [i ? ', ' : '',
-          link({ view: 'search', q: m.meaning }, null, m.meaning)])) : null,
-      '. ',
-      first
-        ? el('span', {}, el('b', {}, num(first)),
-          first === 1 ? ' letter is' : ' letters are',
-          ` tagged with it, spell it out, or use “${acro.key}” as a word, and come first`,
-          rest ? el('span', {}, `; the ${capped ? `next ${num(rest)}` : `other ${num(rest)}`} only contain “${query.trim().toLowerCase()}” inside another word.`) : '.')
-        : `No letter here uses “${acro.key}” as a word or spells it out.`),
-    top.n && fold(top.tag || top.meaning) !== fold(query)
-      ? el('p', { class: 'small' }, 'Or search for ',
-        link({ view: 'search', q: top.tag || top.meaning }, null, top.tag || top.meaning), ' itself.')
-      : null);
+    others.length ? el('p', {}, `${acro.key} can also stand for `,
+      ...others.flatMap((m, i) => [i ? ', ' : '',
+        link({ view: 'search', q: m.meaning }, null, m.meaning)]), '.') : null,
+    alt ? el('p', { class: 'small' }, 'Or search for ',
+      link({ view: 'search', q: top.tag || top.meaning }, null, top.tag || top.meaning), ' itself.') : null);
 }
 
 async function viewSearch(query) {
@@ -1582,17 +1606,24 @@ async function viewSearch(query) {
 
   // Topics the search names (#1416): tags in this Congress's vocabulary whose
   // name, or another word for them, contains the query.
-  // A word must start with the query: "ice" is not in Justice or Service.
-  const wordStart = new RegExp(`(^|[^a-z0-9])${fold(needle).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}`);
-  const topicHits = data && fold(needle).length >= 2 ? vocabOf(data).entries
-    .filter(e => e.count && [e.tag, e.name, ...e.forms].some(f => f && wordStart.test(fold(f))))
-    .sort((a, b) => (fold(a.tag) === fold(needle) ? -1 : 0) - (fold(b.tag) === fold(needle) ? -1 : 0)
-      || b.count - a.count)
+  // Whole words only (#1461), plus what an acronym stands for.
+  const meant = new Set((acro ? acro.list : []).flatMap(m => [m.tag, m.meaning]).filter(Boolean).map(fold));
+  const isIt = e => fold(e.tag) === fold(query) || meant.has(fold(e.tag)) || (e.name && meant.has(fold(e.name)));
+  const topicHits = data && fold(query).length >= 2 ? vocabOf(data).entries
+    .filter(e => e.count && (isIt(e) || [e.tag, e.name, ...e.forms].some(f => f && topicMatch(f, query))))
+    .sort((a, b) => (isIt(b) ? 1 : 0) - (isIt(a) ? 1 : 0) || b.count - a.count)
     : [];
+  // The vocabulary browser is on the home page; the footer's link to it is
+  // already addressed for this account by the build and publish scripts.
+  const browseTopics = () => {
+    const home = document.querySelector('a.home');
+    return home ? el('a', { href: home.getAttribute('href') }, 'Browse all topics') : null;
+  };
   const topicsPanel = topicHits.length
     ? el('div', { class: 'panel', id: 'sr-topics' }, el('h2', { class: 'panel-h' }, 'Topics'),
       el('div', { class: 'controls' }, ...topicHits.slice(0, 16).map(e =>
-        link({ view: 'search', q: e.tag }, 'pill', e.tag, el('span', { class: 'faint' }, ` ${num(e.count)}`)))))
+        link({ view: 'search', q: e.tag }, 'pill', e.tag, el('span', { class: 'faint' }, ` ${num(e.count)}`)))),
+      el('p', { class: 'small' }, browseTopics()))
     : null;
   const membersPanel = nameHits.length
     ? el('div', { class: 'panel', id: 'sr-members' }, el('h2', { class: 'panel-h' }, 'Members'),
@@ -1631,11 +1662,12 @@ async function viewSearch(query) {
           panel.scrollIntoView({ block: 'start' });
           panel.setAttribute('tabindex', '-1');
           panel.focus({ preventScroll: true });
-        } }, n === null ? label : `${label} (${num(n)})`)]))
+        } }, n === null ? label : `${label} (${num(n)})`)]),
+      ...(browseTopics() ? [' · ', browseTopics()] : []))
     : null;
 
   const out = el('div', {}, box,
-    el('h1', { class: 'hero', id: 'sr-h', tabindex: '-1' }, `“${query}”`),
+    el('h1', { class: 'hero', id: 'sr-h', tabindex: '-1' }, acro ? resultsHeading(query, acro) : `“${query}”`),
     el('p', { class: 'sub' },
       data
         ? el('span', {}, el('b', {}, num(letterHits.length)), ' letters')
@@ -1658,7 +1690,7 @@ async function viewSearch(query) {
           `${num(suggestion.n)} ${suggestion.what}${suggestion.n === 1 ? '' : 's'}`))
       : null,
     jump,
-    acro ? acronymNote(acro, letterHits, query, loose >= 4000) : null,
+    acro ? acronymNote(acro, query) : null,
     data ? vocabPanel(data, query, !!acro) : null,
     ...shownPanels.map(([panel]) => panel));
   if (failed) {

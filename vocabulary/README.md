@@ -74,7 +74,7 @@ so. `tree.json` is the hierarchy nested and sorted, for the home page.
 | `relations.csv` | relationship: `term_id`, `relation`, `value`, `status`, `source` |
 | `sources.csv` | vocabulary or dataset a term or relation comes from, with its license |
 | `hierarchy.csv` | term placed by hand: `term`, `broader` |
-| `acronyms.csv` | acronym given a meaning by hand, for the search page (#1448): `acronym`, `meaning`, `tag` (a topic or agency, or blank), `forms` (other words for it, separated by vertical bars). Read by `build_site.py` before the organizations' own abbreviations, which it takes precedence over. AI is artificial intelligence and SI superintelligence (Robin). |
+| `acronyms.csv` | acronym given a meaning by hand, for the search page (#1448): `acronym`, `meaning`, `tag` (a topic or agency, or blank), `forms` (other words for it, separated by vertical bars). Read by `build_site.py` before the organizations' own abbreviations, which it takes precedence over. AI is artificial intelligence and SI superintelligence; a search for AI also finds superintelligence (Robin, #1461). |
 | `tree.json` | the hierarchy, nested and sorted alphabetically |
 | `vocabulary.json` | everything above, each term with its relations, plus the tree, for programs |
 
