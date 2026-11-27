@@ -87,7 +87,8 @@ class PageSuggestions(unittest.TestCase):
                 # 5-9: the acronym cases (#1448)
                 srow("Justice for detainees", "ICE"), srow("Postal service delays"),
                 srow("Immigration and Customs Enforcement raids"),
-                srow("AI in hiring"), srow("Said the senator about aid")]
+                srow("AI in hiring"), srow("Said the senator about aid"),
+                srow("Risks of superintelligence")]     # 10: AI also finds it (#1461)
         data = {"members": ["S000033"], "recipients": [], "rows": rows,
                 "vocab": build_site.search_vocabulary(rows),
                 "aka": {"S000033": ["Bernie Sanders"]},
@@ -131,6 +132,7 @@ class PageSuggestions(unittest.TestCase):
         ai = self.ask("ai")["ai"]["ranks"]
         self.assertEqual(ai[8], 1)    # "AI in hiring"
         self.assertEqual(ai[9], 2)    # "said", "aid"
+        self.assertEqual(ai[10], 1)   # superintelligence, with the AI letters (Robin, #1461)
 
     def test_nickname_finds_the_member(self):
         got = self.ask("bernie sanders", "bernie sandres")
@@ -149,6 +151,10 @@ class SearchAcronyms(unittest.TestCase):
         self.assertEqual(self.acr["AI"][0][0], "artificial intelligence")
         self.assertEqual(self.acr["SI"][0][0], "superintelligence")
         self.assertIn("super intelligence", self.acr["SI"][0][2])
+
+    def test_ai_also_finds_superintelligence(self):
+        self.assertIn("superintelligence", self.acr["AI"][0][2])
+        self.assertIn("super intelligence", self.acr["AI"][0][2])
 
     def test_agency_acronym_carries_its_tag(self):
         meaning, tag, forms = self.acr["ICE"][0]
@@ -169,5 +175,59 @@ class SearchAcronyms(unittest.TestCase):
                 if r["tag"]:
                     self.assertTrue(r["tag"] in build_site.SUBJECTS or r["tag"] in build_site.AGENCIES,
                                     r["tag"])
+
+TOPIC_HARNESS = r"""
+const fs = require('fs');
+const out = {};
+for (const [file, start, end] of [[process.argv[1], 'const fold = s =>', 'async function viewSearch'],
+                                  [process.argv[2], 'const fold = s =>', 'function acronymLookup']]) {
+  const src = fs.readFileSync(file, 'utf8');
+  const code = src.slice(src.indexOf(start), src.indexOf(end));
+  const topicMatch = new Function('MEMBERS', code + '\nreturn topicMatch;')([]);
+  out[file] = JSON.parse(process.argv[3]).map(([name, q]) => topicMatch(name, q));
+  const heading = new Function('MEMBERS', code + '\nreturn resultsHeading;')([]);
+  out[file + '#heading'] = [heading('ai', { key: 'AI', list: [{ meaning: 'artificial intelligence' }] }),
+    heading('ice', { key: 'ICE', list: [{ meaning: 'Immigration and Customs Enforcement' }] }),
+    heading('medicare', null)];
+}
+console.log(JSON.stringify(out));
+"""
+
+
+@unittest.skipUnless(NODE, "node is not installed")
+class TopicsAreWholeWords(unittest.TestCase):
+    """Topics in search results match the word itself, not part of one (#1461)."""
+
+    CASES = [
+        ("Department of the Air Force", "ai", False),   # Robin: partial matches are noise
+        ("Foreign aid", "ai", False),
+        ("Aviation", "ai", False),
+        ("ICE", "ice", True),                           # through its abbreviation, one of its names
+        ("Justice", "ice", False),
+        ("Vaccines", "vaccine", True),                  # a plain plural is the same word
+        ("Tariff", "tariffs", True),
+        ("Immigration", "imm*", True),                  # a trailing * asks for a prefix
+        ("Immigration", "imm", False),
+        ("Public health", "health", True),
+        ("Health care", "health care", True),
+        ("Pertaining matters", "ai", False),
+    ]
+
+    def test_both_pages_agree(self):
+        res = subprocess.run(
+            [NODE, "-e", TOPIC_HARNESS, str(ROOT / "app.js"), str(ROOT / "build/hub/hub.js"),
+             json.dumps([[n, q] for n, q, _ in self.CASES])],
+            capture_output=True, text=True, check=True)
+        got = json.loads(res.stdout)
+        for page in [k for k in got if k.endswith("#heading")]:
+            self.assertEqual(got.pop(page), [
+                "Results for AI (Artificial Intelligence)",          # Robin's wording, #1461
+                "Results for ICE (Immigration and Customs Enforcement)",
+                "Search results for “medicare”"], page)
+        for page, answers in got.items():
+            for (name, q, want), a in zip(self.CASES, answers):
+                self.assertEqual(a, want, f"{Path(page).name}: {q!r} in {name!r}")
+
+
 if __name__ == "__main__":
     unittest.main()
