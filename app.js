@@ -1379,27 +1379,34 @@ function acronymLookup(data, query) {
   return { key: q.toUpperCase(), list, rank };
 }
 
+// "artificial intelligence" -> "Artificial Intelligence", for a heading; the
+// small words stay small ("Immigration and Customs Enforcement").
+const titleCase = s => (s || '').replace(/\S+/g, (w, i) =>
+  i && /^(and|of|the|for|on|in|to|a|an|or|at|by)$/i.test(w) ? w.toLowerCase()
+    : w[0].toUpperCase() + w.slice(1));
+
+// The search heading: "Results for AI (Artificial Intelligence)" when the
+// search is an acronym (Robin, #1461), else "Search results for "...""
+function resultsHeading(query, acro) {
+  return acro ? `Results for ${acro.key} (${titleCase(acro.list[0].meaning)})`
+    : `Search results for “${(query || '').trim()}”`;
+}
+
 // Says what the acronym stands for and how many letters use it in that sense
 // (#1448). Since #1461 a search no longer finds the acronym inside other
 // words, so there is no "other" group to describe (Robin, #1461).
-function acronymNote(acro, letterHits, query) {
-  const first = letterHits.filter(h => h[7] < 2).length;
+function acronymNote(acro, query) {
+  // The heading says what it stands for; this names any other meanings, and
+  // offers the spelled-out search.
   const [top, ...others] = acro.list;
+  const alt = top.n && fold(top.tag || top.meaning) !== fold(query);
+  if (!others.length && !alt) return null;
   return el('div', { class: 'note' },
-    el('p', {}, el('b', {}, acro.key), ` stands for ${top.meaning}`,
-      others.length ? el('span', {}, ', or for ',
-        ...others.flatMap((m, i) => [i ? ', ' : '',
-          link({ view: 'search', q: m.meaning }, null, m.meaning)])) : null,
-      '. ',
-      first
-        ? el('span', {}, el('b', {}, num(first)),
-          first === 1 ? ' letter is' : ' letters are',
-          ` tagged with it, spell it out, or use “${acro.key}” as a word.`)
-        : `No letter here uses “${acro.key}” as a word or spells it out.`),
-    top.n && fold(top.tag || top.meaning) !== fold(query)
-      ? el('p', { class: 'small' }, 'Or search for ',
-        link({ view: 'search', q: top.tag || top.meaning }, null, top.tag || top.meaning), ' itself.')
-      : null);
+    others.length ? el('p', {}, `${acro.key} can also stand for `,
+      ...others.flatMap((m, i) => [i ? ', ' : '',
+        link({ view: 'search', q: m.meaning }, null, m.meaning)]), '.') : null,
+    alt ? el('p', { class: 'small' }, 'Or search for ',
+      link({ view: 'search', q: top.tag || top.meaning }, null, top.tag || top.meaning), ' itself.') : null);
 }
 
 async function viewSearch(query) {
@@ -1660,7 +1667,7 @@ async function viewSearch(query) {
     : null;
 
   const out = el('div', {}, box,
-    el('h1', { class: 'hero', id: 'sr-h', tabindex: '-1' }, `“${query}”`),
+    el('h1', { class: 'hero', id: 'sr-h', tabindex: '-1' }, acro ? resultsHeading(query, acro) : `“${query}”`),
     el('p', { class: 'sub' },
       data
         ? el('span', {}, el('b', {}, num(letterHits.length)), ' letters')
@@ -1683,7 +1690,7 @@ async function viewSearch(query) {
           `${num(suggestion.n)} ${suggestion.what}${suggestion.n === 1 ? '' : 's'}`))
       : null,
     jump,
-    acro ? acronymNote(acro, letterHits, query) : null,
+    acro ? acronymNote(acro, query) : null,
     data ? vocabPanel(data, query, !!acro) : null,
     ...shownPanels.map(([panel]) => panel));
   if (failed) {

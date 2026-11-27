@@ -59,6 +59,19 @@ function topicMatch(name, rawNeedle) {
   return forms.some(f => wordMatch(name, f));
 }
 
+// "artificial intelligence" -> "Artificial Intelligence", for a heading; the
+// small words stay small ("Immigration and Customs Enforcement").
+const titleCase = s => (s || '').replace(/\S+/g, (w, i) =>
+  i && /^(and|of|the|for|on|in|to|a|an|or|at|by)$/i.test(w) ? w.toLowerCase()
+    : w[0].toUpperCase() + w.slice(1));
+
+// The search heading: "Results for AI (Artificial Intelligence)" when the
+// search is an acronym (Robin, #1461), else "Search results for "...""
+function resultsHeading(query, acro) {
+  return acro ? `Results for ${acro.key} (${titleCase(acro.list[0].meaning)})`
+    : `Search results for “${(query || '').trim()}”`;
+}
+
 // What a short query might stand for, across every Congress's own acronyms
 // (search.json's `acronyms`, from vocabulary/acronyms.csv and the
 // vocabulary's abbreviations -- see build_site.py's search_acronyms, #1448).
@@ -107,19 +120,13 @@ function acronymLookup(perCongressData, query) {
 // Says what the acronym stands for and how many letters use it in that sense
 // (#1448). Since #1461 a search no longer finds the acronym inside other
 // words, so there is no "other" group to describe (Robin, #1461).
-function acronymNote(acro, matched) {
-  const [top, ...others] = acro.list;
-  return el('div', { class: 'panel acro-note' },
-    el('p', {}, el('b', {}, acro.key), ` stands for ${top.meaning}`,
-      others.length ? el('span', {}, ', or for ',
-        ...others.flatMap((m, i) => [i ? ', ' : '',
-          el('a', { href: `?q=${encodeURIComponent(m.meaning)}` }, m.meaning)])) : null,
-      '. ',
-      matched
-        ? el('span', {}, el('b', {}, num(matched)),
-          matched === 1 ? ' letter is' : ' letters are',
-          ` tagged with it, spell it out, or use “${acro.key}” as a word.`)
-        : `No letter here uses “${acro.key}” as a word or spells it out.`));
+function acronymNote(acro) {
+  // The heading says what it stands for; this names any other meanings.
+  const others = acro.list.slice(1);
+  return others.length ? el('div', { class: 'panel acro-note' },
+    el('p', {}, `${acro.key} can also stand for `,
+      ...others.flatMap((m, i) => [i ? ', ' : '',
+        el('a', { href: `?q=${encodeURIComponent(m.meaning)}` }, m.meaning)]), '.')) : null;
 }
 
 function el(tag, attrs = {}, ...kids) {
@@ -564,8 +571,8 @@ async function runSearch(query, term, { focus = false } = {}) {
 
   fill(out,
     term ? null : el('h2', { class: 'results-h', id: 'sr-h', tabindex: '-1' },
-      `Search results for “${query.trim()}”`),
-    acro ? acronymNote(acro, acroMatched) : null,
+      resultsHeading(query, acro)),
+    acro ? acronymNote(acro) : null,
     jump,
     nameFirst ? membersSec : topicsSec,
     nameFirst ? topicsSec : membersSec,
