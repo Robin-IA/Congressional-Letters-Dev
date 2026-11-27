@@ -366,7 +366,10 @@ RELATION_LABELS = {"supports": ("Supports", "Supporting document"),
                    "draft_of": ("Draft of", "Sent version"),
                    # a later page posted as its own file: Harkin's nebraska-leg-2.pdf
                    # beside nebraska-leg-1.pdf, a signatories list beside its letter (#252)
-                   "part_of": ("Part of", "Other part")}
+                   "part_of": ("Part of", "Other part"),
+                   # a member's later letter following up their earlier one,
+                   # which it names by date: "my letter of March 3" (#1289)
+                   "follows_up": ("Follows up", "Followed up by")}
 
 
 def related_notes(by_member: dict, links: list) -> dict[str, list[list[str]]]:

@@ -154,7 +154,8 @@ def related() -> list[tuple[str, str, str]]:
     supporting document for the second: the USGS's request to the FCC that
     Senator Cantwell posted beside her own letter citing it (#1207). "part_of"
     says the first file is a later page or the signatories list of the second,
-    posted as a file of its own (#252).
+    posted as a file of its own (#252). "follows_up" says the first is a later
+    letter that follows up the second, naming it by date (#1289).
     """
     if not RELATED.exists():
         return []
