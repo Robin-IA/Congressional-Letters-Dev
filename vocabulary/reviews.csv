@@ -13564,6 +13564,241 @@ CKE Restaurants,1,merge,CKE Restaurants,,organization,Companies,"a recipient rea
 White House Visitors Office,1,merge,White House Visitors Office,,office,Executive Office of the President,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Quinn Emanuel,1,merge,Quinn Emanuel,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Cypress Bay High School,1,merge,Cypress Bay High School,,organization,Florida local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+City of San Ramon,1,merge,City of San Ramon,,organization,California local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+City of Eutaw,1,merge,City of Eutaw,,organization,Alabama local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+City of Rockville,1,merge,City of Rockville,,organization,Maryland local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Latham & Watkins LLP,1,merge,Latham & Watkins LLP,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Town of Hamden,1,merge,Town of Hamden,,organization,Connecticut local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+"Tom Cole, Steve Womack and James E. Clyburn",1,joint,C001053;W000809;C000537,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Virgin Islands Department of Public Works,1,merge,Virgin Islands Department of Public Works,,organization,U.S. Virgin Islands,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Federal Trade Commission and Securities and Exchange Commission,1,joint,Federal Trade Commission;Securities and Exchange Commission,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Chuck Grassley and Richard J. Durbin,1,joint,G000386;D000563,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+City of Vinita Park,1,merge,City of Vinita Park,,organization,Missouri local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+EchoStar,1,merge,EchoStar,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+National Center for Simulation,1,merge,National Center for Simulation,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Municipality of Isabela,1,merge,Municipality of Isabela,,organization,Puerto Rico,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Northern Ireland Office,1,merge,Northern Ireland Office,,office,Foreign governments,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Niagara Frontier Transportation Authority,1,merge,Niagara Frontier Transportation Authority,,organization,New York local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+City of San Clemente,1,merge,City of San Clemente,,organization,California local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Borrego Water District,1,merge,Borrego Water District,,organization,California local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Rocket Companies,1,merge,Rocket Companies,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Mr. Cooper Group,1,merge,Mr. Cooper Group,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Center for Medicaid and CHIP Services,1,merge,Center for Medicaid and CHIP Services,,office,Centers for Medicare and Medicaid Services,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Centers for Medicare and Medicaid Services and Center for Medicaid and CHIP Services,1,joint,Centers for Medicare and Medicaid Services;Center for Medicaid and CHIP Services,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Crenshaw County Commission,1,merge,Crenshaw County Commission,,organization,Alabama local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Lisa Murkowski and Jeff Merkley,1,joint,M001153;M001176,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+New Hampshire Department of Energy,1,merge,New Hampshire Department of Energy,,office,State of New Hampshire,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+New Hampshire Community Loan Fund,1,merge,New Hampshire Community Loan Fund,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+New Hampshire Housing Finance Authority,1,merge,New Hampshire Housing Finance Authority,,organization,State of New Hampshire,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Montana Nonprofit Association,1,merge,Montana Nonprofit Association,,organization,Montana agencies and organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Federal Reserve and Securities and Exchange Commission,1,joint,Federal Reserve;Securities and Exchange Commission,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Touro University California,1,merge,Touro University California,,organization,Colleges and universities,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Town of Oyster Bay (New York),1,merge,Town of Oyster Bay (New York),,organization,New York local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+United States Agency for International Development Office of Inspector General,1,merge,United States Agency for International Development Office of Inspector General,,office,Inspectors general,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+United States Agency for International Development Office of Inspector General and Department of State Office of Inspector General,1,joint,United States Agency for International Development Office of Inspector General;Department of State Office of Inspector General,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+City of Dallas (North Carolina),1,merge,City of Dallas (North Carolina),,organization,North Carolina local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Mayor of China Grove (Texas),1,merge,Mayor of China Grove (Texas),,office,Texas local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Consumer Reports,1,merge,Consumer Reports,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+"University of Maryland, Baltimore County",1,merge,"University of Maryland, Baltimore County",,organization,Colleges and universities,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+"Tom Cole, Rosa L. DeLauro, Steve Womack and James E. Clyburn",1,joint,C001053;D000216;W000809;C000537,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Village of Manhattan (Illinois),1,merge,Village of Manhattan (Illinois),,organization,Illinois local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Upper Pine River Special Fire District,1,merge,Upper Pine River Special Fire District,,organization,Colorado local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Technology Association of Iowa,1,merge,Technology Association of Iowa,,organization,Iowa agencies and organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Joni Ernst and Edward J. Markey,1,joint,E000295;M000133,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+City of Jacinto City (Texas),1,merge,City of Jacinto City (Texas),,organization,Texas local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Mike Crapo and Ron Wyden,1,joint,C000880;W000779,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Association of State Criminal Investigative Agencies,1,merge,Association of State Criminal Investigative Agencies,,organization,Associations and other organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Tim Scott and Elizabeth Warren,1,joint,S001184;W000817,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Prime Healthcare,1,merge,Prime Healthcare,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+National Nurses Organizing Committee,1,merge,National Nurses Organizing Committee,,organization,Associations and other organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+MIT Lincoln Laboratory,1,merge,MIT Lincoln Laboratory,,organization,Associations and other organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Holland and Hart,1,merge,Holland and Hart,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Snohomish County Department of Emergency Management,1,merge,Snohomish County Department of Emergency Management,,organization,Washington local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+U.S. Semiquincentennial Commission,1,merge,U.S. Semiquincentennial Commission,,organization,Independent agencies and commissions,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Adani Group,1,merge,Adani Group,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Tom Cole and Robert B. Aderholt,1,joint,C001053;A000055,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Asante Health System,1,merge,Asante Health System,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Glenn Thompson and Angie Craig,1,joint,T000467;C001119,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+"Department of Homeland Security, Customs and Border Protection and Bureau of Land Management",1,joint,Department of Homeland Security;Customs and Border Protection;Bureau of Land Management,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+"Skadden, Arps, Slate, Meagher & Flom LLP",1,merge,"Skadden, Arps, Slate, Meagher & Flom LLP",,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Willkie Farr & Gallagher LLP,1,merge,Willkie Farr & Gallagher LLP,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+BayMark Health Services,1,merge,BayMark Health Services,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Department of Homeland Security and Texas Department of Public Safety,1,joint,Department of Homeland Security;Texas Department of Public Safety,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Office of Chemical Safety and Pollution Prevention,1,merge,Office of Chemical Safety and Pollution Prevention,,office,Environmental Protection Agency,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+John Kennedy and Andy Kim,1,joint,K000393;K000394,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+"Department of Commerce, Office of the US Trade Representative and Department of the Treasury",1,joint,Department of Commerce;Office of the US Trade Representative;Department of the Treasury,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Edesia Nutrition,1,merge,Edesia Nutrition,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Mana Nutrition,1,merge,Mana Nutrition,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+City of Chino Hills,1,merge,City of Chino Hills,,organization,California local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Miccosukee Tribe of Indians of Florida,1,merge,Miccosukee Tribe of Indians of Florida,,organization,Florida agencies and organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+John Thune and John Barrasso,1,joint,T000250;B001261,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Texas Christian University,1,merge,Texas Christian University,,organization,Colleges and universities,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Pender County Utilities,1,merge,Pender County Utilities,,organization,North Carolina local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Lower Cape Fear Water and Sewer Authority,1,merge,Lower Cape Fear Water and Sewer Authority,,organization,North Carolina local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Municipality of Barceloneta,1,merge,Municipality of Barceloneta,,organization,Puerto Rico,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Pierce County Board of Commissioners,1,merge,Pierce County Board of Commissioners,,organization,Georgia local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+"Mike Johnson, Hakeem S. Jeffries, Tom Cole and Rosa L. DeLauro",1,joint,J000299;J000294;C001053;D000216,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+City of Moab,1,merge,City of Moab,,organization,Utah local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Grand County,1,merge,Grand County,,organization,Utah local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Town of Pawleys Island,1,merge,Town of Pawleys Island,,organization,South Carolina local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Stratham Police Department,1,merge,Stratham Police Department,,organization,New Hampshire local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+City of Frisco,1,merge,City of Frisco,,organization,Texas local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Alvarez & Marsal,1,merge,Alvarez & Marsal,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+White House Designated Agency Ethics Official,1,merge,White House Designated Agency Ethics Official,,office,Executive Office of the President,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+"White House Counsel, Office of Government Ethics and White House Designated Agency Ethics Official",1,joint,White House Counsel;Office of Government Ethics;White House Designated Agency Ethics Official,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Village of Arlington Heights,1,merge,Village of Arlington Heights,,organization,Illinois local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+City of Solana Beach,1,merge,City of Solana Beach,,organization,California local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Office of the Inspector General of the Intelligence Community and Department of Homeland Security Office of Inspector General,1,joint,Office of the Inspector General of the Intelligence Community;Department of Homeland Security Office of Inspector General,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+HKN Energy Ltd.,1,merge,HKN Energy Ltd.,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Repsol Oil & Gas USA,1,merge,Repsol Oil & Gas USA,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+City of Sandusky,1,merge,City of Sandusky,,organization,Ohio local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+"Department of Energy, Department of Commerce, Department of the Interior and Office of the US Trade Representative",1,joint,Department of Energy;Department of Commerce;Department of the Interior;Office of the US Trade Representative,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+"Tom Cole, Harold Rogers, Rosa L. DeLauro and Grace Meng",1,joint,C001053;R000395;D000216;M001188,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+The President and AmeriCorps,1,joint,The President;AmeriCorps,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Harris County Public Health,1,merge,Harris County Public Health,,organization,Texas local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Marion County Sheriff's Office,1,merge,Marion County Sheriff's Office,,organization,South Carolina local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Consumer Financial Protection Bureau and Department of the Treasury,1,joint,Consumer Financial Protection Bureau;Department of the Treasury,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Klickitat Valley Health,1,merge,Klickitat Valley Health,,organization,Washington local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Office of Personnel Management and Office of Management and Budget,1,joint,Office of Personnel Management;Office of Management and Budget,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+City of Falls Church,1,merge,City of Falls Church,,organization,Virginia local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+County of Warren,1,merge,County of Warren,,organization,New Jersey local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+City of Carlsbad,1,merge,City of Carlsbad,,organization,California local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Village of Massapequa Park,1,merge,Village of Massapequa Park,,organization,New York local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+City of Watervliet,1,merge,City of Watervliet,,organization,New York local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+National Capital Planning Commission,1,merge,National Capital Planning Commission,,organization,Federal agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+"Office of Management and Budget, National Capital Planning Commission and National Park Service",1,joint,Office of Management and Budget;National Capital Planning Commission;National Park Service,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Erie County Water Authority,1,merge,Erie County Water Authority,,organization,New York local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+City of Starkville,1,merge,City of Starkville,,organization,Mississippi local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+"Department of Transportation, National Aeronautics and Space Administration, Department of the Air Force and Federal Aviation Administration",1,joint,Department of Transportation;National Aeronautics and Space Administration;Department of the Air Force;Federal Aviation Administration,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+City of Novi,1,merge,City of Novi,,organization,Michigan local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+UF Health Central Florida,1,merge,UF Health Central Florida,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Brattleboro Housing Authority,1,merge,Brattleboro Housing Authority,,organization,Vermont local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+First Liberty Building and Loan,1,merge,First Liberty Building and Loan,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Fayetteville State University,1,merge,Fayetteville State University,,organization,Colleges and universities,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+City of Fayetteville,1,merge,City of Fayetteville,,organization,North Carolina local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+DraftKings,1,merge,DraftKings,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+City of Brunswick,1,merge,City of Brunswick,,organization,Maryland local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Town of Smithsburg,1,merge,Town of Smithsburg,,organization,Maryland local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+"Department of Commerce, Department of the Treasury, Department of Transportation, Department of Homeland Security, National Economic Council and Office of the US Trade Representative",1,joint,Department of Commerce;Department of the Treasury;Department of Transportation;Department of Homeland Security;National Economic Council;Office of the US Trade Representative,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Federal Aviation Administration and Department of Defense,1,joint,Federal Aviation Administration;Department of Defense,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+City of Omaha,1,merge,City of Omaha,,organization,Nebraska local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+California Department of Social Services,1,merge,California Department of Social Services,,organization,California state government agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Harrisburg Redevelopment Authority,1,merge,Harrisburg Redevelopment Authority,,organization,Texas local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Genasys,1,merge,Genasys,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Town of Weymouth,1,merge,Town of Weymouth,,organization,Massachusetts local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Belmar Environmental Commission,1,merge,Belmar Environmental Commission,,organization,New Jersey local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Rutgers University,1,merge,Rutgers University,,organization,Colleges and universities,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Borough of Belmar,1,merge,Borough of Belmar,,organization,New Jersey local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+City and Borough of Sitka,1,merge,City and Borough of Sitka,,organization,Alaska local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+City of Everett,1,merge,City of Everett,,organization,Massachusetts local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Great Lakes Water Authority,1,merge,Great Lakes Water Authority,,organization,Michigan local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Chicago Police Memorial Foundation,1,merge,Chicago Police Memorial Foundation,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+"Paul, Weiss, Rifkind, Wharton & Garrison LLP",1,merge,"Paul, Weiss, Rifkind, Wharton & Garrison LLP",,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Town of Wallburg,1,merge,Town of Wallburg,,organization,North Carolina local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Thompson Center for Autism and Neurodevelopment,1,merge,Thompson Center for Autism and Neurodevelopment,,organization,Colleges and universities,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Acquisition Logistics,1,merge,Acquisition Logistics,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Arizona Department of Transportation,1,merge,Arizona Department of Transportation,,organization,Arizona agencies and organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Providence Health & Services,1,merge,Providence Health & Services,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Shelby County Government,1,merge,Shelby County Government,,organization,Tennessee local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+California Geologic Energy Management Division,1,merge,California Geologic Energy Management Division,,organization,California state government agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+General Services Administration and Social Security Administration,1,joint,General Services Administration;Social Security Administration,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Virgin Islands Waste Management Authority,1,merge,Virgin Islands Waste Management Authority,,organization,U.S. Virgin Islands,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+x.AI,1,merge,x.AI,,organization,Tech industry,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+City of Lauderhill,1,merge,City of Lauderhill,,organization,Florida local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Four Directions Native Vote,1,merge,Four Directions Native Vote,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+City of West Haven,1,merge,City of West Haven,,organization,Connecticut local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Wood County Special Education Co-Op,1,merge,Wood County Special Education Co-Op,,organization,Texas local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Steve Womack and James E. Clyburn,1,joint,W000809;C000537,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+TP-Link Technologies,1,merge,TP-Link Technologies,,organization,Tech industry,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Manassas Regional Airport,1,merge,Manassas Regional Airport,,organization,Virginia local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Belmont Police Department,1,merge,Belmont Police Department,,organization,New Hampshire local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+United States Attorney's Office for the District of New Hampshire,1,merge,United States Attorney's Office for the District of New Hampshire,,office,Department of Justice,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+DCH Health Care Authority,1,merge,DCH Health Care Authority,,organization,Alabama state government agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Intellexa Consortium,1,merge,Intellexa Consortium,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+City of Kannapolis,1,merge,City of Kannapolis,,organization,North Carolina local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Department of Government Efficiency and Department of Transportation,1,joint,Department of Government Efficiency;Department of Transportation,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+City of Tuscaloosa,1,merge,City of Tuscaloosa,,organization,Alabama local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Jicarilla Apache Nation,1,merge,Jicarilla Apache Nation,,organization,New Mexico agencies and organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Florida Natural Gas Association,1,merge,Florida Natural Gas Association,,organization,Associations and other organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Lake Apopka Natural Gas District,1,merge,Lake Apopka Natural Gas District,,organization,Florida local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Cory A. Booker and Andy Kim,1,joint,B001288;K000394,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+City of Fultondale,1,merge,City of Fultondale,,organization,Alabama local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Jefferson Healthcare,1,merge,Jefferson Healthcare,,organization,Washington local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Department of Homeland Security and White House Border Czar,1,joint,Department of Homeland Security;White House Border Czar,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Urban League of Greater Atlanta,1,merge,Urban League of Greater Atlanta,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+"Department of the Treasury, Department of Commerce, Department of State and Office of the US Trade Representative",1,joint,Department of the Treasury;Department of Commerce;Department of State;Office of the US Trade Representative,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+"Susan M. Collins, Jerry Moran, Tom Cole, Harold Rogers, Patty Murray, Chris Van Hollen, Rosa L. DeLauro and Grace Meng",1,joint,C001035;M000934;C001053;R000395;M001111;V000128;D000216;M001188,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+City of New Haven Police Department,1,merge,City of New Haven Police Department,,organization,Connecticut local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Turning Pointe Survivor Advocacy Center,1,merge,Turning Pointe Survivor Advocacy Center,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Mark E. Amodei and Lauren Underwood,1,joint,A000369;U000040,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Alabama Regional Medical Services,1,merge,Alabama Regional Medical Services,,organization,Alabama agencies and organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+"Ron Wyden, Frank Pallone, Jr. and Richard E. Neal",1,joint,W000779;P000034;N000015,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Salus Worldwide Solutions,1,merge,Salus Worldwide Solutions,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+University of Southern Mississippi,1,merge,University of Southern Mississippi,,organization,Colleges and universities,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+City of Cambridge,1,merge,City of Cambridge,,organization,Massachusetts local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+City of Hialeah,1,merge,City of Hialeah,,organization,Florida local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+County of Maui,1,merge,County of Maui,,organization,Hawaii local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Department of the Interior and Department of Health and Human Services,1,joint,Department of the Interior;Department of Health and Human Services,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Town of Moraga,1,merge,Town of Moraga,,organization,California local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Chatham Rock Island Incorporated,1,merge,Chatham Rock Island Incorporated,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Department of Energy and National Nuclear Security Administration,1,joint,Department of Energy;National Nuclear Security Administration,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+City of Tybee Island,1,merge,City of Tybee Island,,organization,Georgia local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Raleigh Boots on the Ground,1,merge,Raleigh Boots on the Ground,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+City of Quincy,1,merge,City of Quincy,,organization,Massachusetts local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+State Bar of Montana,1,merge,State Bar of Montana,,organization,Associations and other organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Plainfield Park District,1,merge,Plainfield Park District,,organization,Illinois local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Scarborough Town Council,1,merge,Scarborough Town Council,,organization,Maine agencies and organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+National Domestic Workers Alliance,1,merge,National Domestic Workers Alliance,,organization,Associations and other organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+National Nurses United,1,merge,National Nurses United,,organization,Associations and other organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Massachusetts Senior Care Association,1,merge,Massachusetts Senior Care Association,,organization,Associations and other organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Arc of Massachusetts,1,merge,Arc of Massachusetts,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Massachusetts Nurses Association,1,merge,Massachusetts Nurses Association,,organization,Associations and other organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+"Cindy Hyde-Smith, Kirsten E. Gillibrand, Steve Womack and James E. Clyburn",1,joint,H001079;G000555;W000809;C000537,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+United States Army Cadet Command,1,merge,United States Army Cadet Command,,organization,Department of Defense,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Monroe County School District,1,merge,Monroe County School District,,organization,Florida local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+"Suffolk County Fire, Rescue and Emergency Services",1,merge,"Suffolk County Fire, Rescue and Emergency Services",,organization,New York local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+"Virgin Islands Department of Sports, Parks & Recreation",1,merge,"Virgin Islands Department of Sports, Parks & Recreation",,organization,U.S. Virgin Islands,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Town of Malta,1,merge,Town of Malta,,organization,New York local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+International Pacific Halibut Commission,1,merge,International Pacific Halibut Commission,,organization,International organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Steve Daines and Lloyd Smucker,1,joint,D000618;S001199,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Town of Stillwater (New York),1,merge,Town of Stillwater (New York),,organization,New York local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Brighton Police Department (Alabama),1,merge,Brighton Police Department (Alabama),,organization,Alabama local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+DeepSeek,1,merge,DeepSeek,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+City of Gaithersburg (Maryland),1,merge,City of Gaithersburg (Maryland),,organization,Maryland local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+City of Clemmons (North Carolina),1,merge,City of Clemmons (North Carolina),,organization,North Carolina local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Department of Veterans Affairs and Department of Defense,1,joint,Department of Veterans Affairs;Department of Defense,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+"Department of State, United States Agency for International Development and U.S. Ambassador to Israel",1,joint,Department of State;United States Agency for International Development;U.S. Ambassador to Israel,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Shelley Moore Capito and Sheldon Whitehouse,1,joint,C001047;W000802,,member,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Sable Offshore Corp.,1,merge,Sable Offshore Corp.,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Department of the Interior and Bureau of Safety and Environmental Enforcement,1,joint,Department of the Interior;Bureau of Safety and Environmental Enforcement,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Sonoma County (California),1,merge,Sonoma County (California),,organization,California local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+TeleMessage,1,merge,TeleMessage,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Peralta Community College District,1,merge,Peralta Community College District,,organization,Colleges and universities,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Orange County Transportation Authority,1,merge,Orange County Transportation Authority,,organization,California local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+South Carolina Law Enforcement Division,1,merge,South Carolina Law Enforcement Division,,organization,South Carolina agencies and organizations,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Virgin Islands Department of Agriculture,1,merge,Virgin Islands Department of Agriculture,,organization,U.S. Virgin Islands,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Kings River Conservation District,1,merge,Kings River Conservation District,,organization,California local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Department of the Treasury and Financial Crimes Enforcement Network,1,joint,Department of the Treasury;Financial Crimes Enforcement Network,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Boys and Girls Clubs of Dane County,1,merge,Boys and Girls Clubs of Dane County,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Canadian Radio-television and Telecommunications Commission,1,merge,Canadian Radio-television and Telecommunications Commission,,organization,Foreign governments,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Government of Canada and Embassy of Canada,1,joint,Government of Canada;Embassy of Canada,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+City of Ferguson,1,merge,City of Ferguson,,organization,Missouri local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Elmira College,1,merge,Elmira College,,organization,Colleges and universities,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Acadia Healthcare,1,merge,Acadia Healthcare,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Charter Township of Commerce,1,merge,Charter Township of Commerce,,organization,Michigan local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Collier County Sheriff's Office,1,merge,Collier County Sheriff's Office,,organization,Florida local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Tallgrass Energy,1,merge,Tallgrass Energy,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Office of Management and Budget and Federal Emergency Management Agency,1,joint,Office of Management and Budget;Federal Emergency Management Agency,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+East Aldine Management District,1,merge,East Aldine Management District,,organization,Texas local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+City of Grand Prairie,1,merge,City of Grand Prairie,,organization,Texas local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Leggett Valley Fire Protection District,1,merge,Leggett Valley Fire Protection District,,organization,California local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+Montgomery County Precinct 4,1,merge,Montgomery County Precinct 4,,organization,Texas local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+City of Valley,1,merge,City of Valley,,organization,Nebraska local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+"Big Horn Valley Health Center, Inc.",1,merge,"Big Horn Valley Health Center, Inc.",,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+The President and Social Security Administration,1,joint,The President;Social Security Administration,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+Department of Justice Office of Inspector General and Office of Professional Responsibility,1,joint,Department of Justice Office of Inspector General;Office of Professional Responsibility,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
+TP-Link,1,merge,TP-Link,,organization,Companies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
+City of Jeannette,1,merge,City of Jeannette,,organization,Pennsylvania local government and agencies,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Compact for America Educational Foundation,1,merge,Compact for America Educational Foundation,,organization,Nonprofits,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 House Republican Policy Committee,1,merge,House Republican Policy Committee,,organization,Legislative branch,"a recipient read from the letter's address block (Mac reading, 106th-115th)",accepted
 Department of Veterans Affairs and Federal Bureau of Investigation,1,joint,Department of Veterans Affairs;Federal Bureau of Investigation,,,,"checked: the addressees named in the letter (Mac reading, 106th-115th)",accepted
