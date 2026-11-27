@@ -104,8 +104,10 @@ function acronymLookup(perCongressData, query) {
   return { key, list, rank };
 }
 
-function acronymNote(acro, matched, total) {
-  const rest = total - matched;
+// Says what the acronym stands for and how many letters use it in that sense
+// (#1448). Since #1461 a search no longer finds the acronym inside other
+// words, so there is no "other" group to describe (Robin, #1461).
+function acronymNote(acro, matched) {
   const [top, ...others] = acro.list;
   return el('div', { class: 'panel acro-note' },
     el('p', {}, el('b', {}, acro.key), ` stands for ${top.meaning}`,
@@ -116,8 +118,7 @@ function acronymNote(acro, matched, total) {
       matched
         ? el('span', {}, el('b', {}, num(matched)),
           matched === 1 ? ' letter is' : ' letters are',
-          ` tagged with it, spell it out, or use “${acro.key}” as a word, and come first`,
-          rest ? el('span', {}, `; the other ${num(rest)} only contain “${acro.key.toLowerCase()}” inside another word.`) : '.')
+          ` tagged with it, spell it out, or use “${acro.key}” as a word.`)
         : `No letter here uses “${acro.key}” as a word or spells it out.`));
 }
 
@@ -564,7 +565,7 @@ async function runSearch(query, term, { focus = false } = {}) {
   fill(out,
     term ? null : el('h2', { class: 'results-h', id: 'sr-h', tabindex: '-1' },
       `Search results for “${query.trim()}”`),
-    acro ? acronymNote(acro, acroMatched, acroCounted) : null,
+    acro ? acronymNote(acro, acroMatched) : null,
     jump,
     nameFirst ? membersSec : topicsSec,
     nameFirst ? topicsSec : membersSec,

@@ -1379,9 +1379,11 @@ function acronymLookup(data, query) {
   return { key: q.toUpperCase(), list, rank };
 }
 
-function acronymNote(acro, letterHits, query, capped) {
+// Says what the acronym stands for and how many letters use it in that sense
+// (#1448). Since #1461 a search no longer finds the acronym inside other
+// words, so there is no "other" group to describe (Robin, #1461).
+function acronymNote(acro, letterHits, query) {
   const first = letterHits.filter(h => h[7] < 2).length;
-  const rest = letterHits.length - first;
   const [top, ...others] = acro.list;
   return el('div', { class: 'note' },
     el('p', {}, el('b', {}, acro.key), ` stands for ${top.meaning}`,
@@ -1392,8 +1394,7 @@ function acronymNote(acro, letterHits, query, capped) {
       first
         ? el('span', {}, el('b', {}, num(first)),
           first === 1 ? ' letter is' : ' letters are',
-          ` tagged with it, spell it out, or use “${acro.key}” as a word, and come first`,
-          rest ? el('span', {}, `; the ${capped ? `next ${num(rest)}` : `other ${num(rest)}`} only contain “${query.trim().toLowerCase()}” inside another word.`) : '.')
+          ` tagged with it, spell it out, or use “${acro.key}” as a word.`)
         : `No letter here uses “${acro.key}” as a word or spells it out.`),
     top.n && fold(top.tag || top.meaning) !== fold(query)
       ? el('p', { class: 'small' }, 'Or search for ',
@@ -1682,7 +1683,7 @@ async function viewSearch(query) {
           `${num(suggestion.n)} ${suggestion.what}${suggestion.n === 1 ? '' : 's'}`))
       : null,
     jump,
-    acro ? acronymNote(acro, letterHits, query, loose >= 4000) : null,
+    acro ? acronymNote(acro, letterHits, query) : null,
     data ? vocabPanel(data, query, !!acro) : null,
     ...shownPanels.map(([panel]) => panel));
   if (failed) {
