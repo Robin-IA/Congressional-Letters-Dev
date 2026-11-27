@@ -70,6 +70,15 @@ A letter for which **none** holds is **discarded**: correspondence between
 other parties that a member happened to post (the Florida agriculture
 department's letter to the Army Corps; #1207).
 
+**A discard found to support a letter is restored** (Robin, #1289: "Doublecheck
+discards for connection to a letter. If found, connect the discard to the
+letter and process the discard, filing it."). It is linked to the letter in
+`vocabulary/letter-related.csv` and its row here is taken out, so the reading
+picks it up and files it. `build/mac/find_linked_letters.py discards` proposes
+candidates from the test-2 discards made before the citation search above; a
+reader confirms each, and `find_linked_letters.py apply` writes both changes.
+This is the one case in which a row leaves this file.
+
 
 **Campaign letters** (Robin, 17 November 2026, #411): **discard** a campaign
 letter (campaign letterhead or site, "paid for by", fundraising) written
