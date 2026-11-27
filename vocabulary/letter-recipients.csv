@@ -77,7 +77,6 @@ COY7RQ6SGHDR7D3GTGCQQXZ2VRICXL2U,Department of Veterans Affairs,"read from the t
 QFNOQVTFSIHXK4Y2T5KNJ34HGZM5BAUR,Department of Veterans Affairs,"address block read (#357): ""Dear Mr. Griffin"" is Department of Veterans Affairs"
 AOV5A2Z5WOYT3WWDPIG3LACQFV3MSTLJ,Department of Veterans Affairs,"address block read (#357): ""Dear Mr. Griffin"" is Department of Veterans Affairs"
 FDODHUQTDRSLFRHFET2ZGPPLDKJSJOOZ,Department of Veterans Affairs,"address block read (#357): ""Dear Mr. Sullivan"" is Department of Veterans Affairs"
-V4CVR2TVP3HQR3TWGWVMYCLJ4FZMOOPU,Department of Veterans Affairs,"address block read (#357): ""Dear Ms. Murphy"" is Department of Veterans Affairs"
 R4BMVHDLRD4UWK2V6QQ2MCMG7YT4K5Z3,Merck,"address block read (#357): ""Dear Mr. Clark"" is Merck"
 IOXJSEEUX77DFEXWZGTBSV6RJV7YYBYD,Houston-Galveston Area Council,"address block read (#357): ""Dear Mr. Clark"" is Houston-Galveston Area Council"
 ML7ZMBKDZCHDUCAKHB4Q3W75O5J4I4BK,Department of Housing and Urban Development,"read from the text of the letter (the Mac, parallel readers, 108th)"
@@ -369,7 +368,6 @@ U5UHTYB4A2SCAU6PAMPAQILRRSHGHWIK,Senate Committee on Appropriations,"#349, Robin
 XA34PCTFXLSDSKRDTY4FMIMYK6U2RYAM,Senate Committee on Appropriations,"#349, Robin's rule: the 115th Congress's only member named Moran (Jerry Moran, Senate); the address block names Senate Committee on Appropriations"
 QJ3BXHLSGATEKHFMQPAAC4JQ6WL3EU7G,House Committee on Energy and Commerce,"#349, Robin's rule: the 115th Congress's only member named Walden (Greg Walden, House); the address block names House Committee on Energy and Commerce"
 RNKI3WWVMBWB4OA2IE6XUYQZ55BIBFOH,Jason Chaffetz,"#349, Robin's rule: the 114th Congress's only member named Chaffetz; the address block names no committee"
-W4XYPB5L3YC3YP3VNXPJV2QV5JARXLGP,Senate Committee on Finance,"#349, Robin's rule: the 114th Congress's only member named Hatch (Orrin G. Hatch, Senate); the address block names Senate Committee on Finance"
 BSIBTXUD35VBX7TNFDVTHAJXX4RT5E3G,House Committee on Foreign Affairs,"#349, Robin's rule: the 114th Congress's only member named Royce (Edward R. Royce, House); the address block names House Committee on Foreign Affairs"
 LA2YYKCIQVQMC66G5MT37VJ2VPRD536D,Senate Committee on Appropriations,"#349, Robin's rule: the 114th Congress's only member named Moran (Jerry Moran, Senate); the address block names Senate Committee on Appropriations"
 SUP5PITJGBPYUUGMN7DTBBD6CWBVRMLY,House Committee on Appropriations,"#349, Robin's rule: the 114th Congress's only member named Culberson (John Abney Culberson, House); the address block names House Committee on Appropriations"
@@ -421,7 +419,6 @@ VG6HRPMJWRYGB33HKEEC4YUF7TT7QPAF,Senate Committee on Appropriations,"#364: Barba
 RPLCZOE6UET2JXQDG7UHCEG3EFZMIISM,Senate Committee on Homeland Security and Governmental Affairs,"#364: Ron Johnson chaired Senate Committee on Homeland Security and Governmental Affairs in the 115th Congress (data/committee-chairs.csv); the letter is to Chair Johnson, 2018-09-20"
 Y3X24HMTH2ZKDBPTSSOXXAIV4FDZRWNZ,House Committee on Ethics,"#364: Susan W. Brooks chaired House Committee on Ethics in the 115th Congress (data/committee-chairs.csv); the letter is to Chair Brooks, 2017-12-08"
 VVQ4OYA23ARDISTF7YI2QSCN5ZXEFYD3,House Committee on Natural Resources,"#364: Rob Bishop chaired House Committee on Natural Resources in the 115th Congress (data/committee-chairs.csv); the letter is to Chair Bishop, 2017-03-07"
-XCCKSXP2CKSFVMGVEWSJ2K2BGS7LQP7Z,House Committee on Natural Resources,"#364: Rob Bishop chaired House Committee on Natural Resources in the 114th Congress (data/committee-chairs.csv); the letter is to Chair Bishop, 2015-04-23"
 PHNFDUATXDOAC6HS6VIPACGS5WR2FHOX,House Committee on Ways and Means,"#364: Kevin Brady chaired House Committee on Ways and Means in the 114th Congress (data/committee-chairs.csv); the letter is to Chair Brady, 2015-11-20"
 2G5S5HSPQY266NGLJ7KWSK3YNVN5OR2I,Senate Committee on Armed Services,"#364: Carl Levin chaired Senate Committee on Armed Services in the 113th Congress (data/committee-chairs.csv); the letter is to Chair Levin, 2014-11-10"
 54H7WQEB47WVRI5NFWNLITFX7J6AWFMR,House Committee on Oversight,"#364: Darrell E. Issa chaired House Committee on Oversight in the 113th Congress (data/committee-chairs.csv); the letter is to Chair Issa, 2013-07-23"
@@ -458,7 +455,6 @@ IZPU7JZ6S6AZHYETFDHUI3NEJ2Y6XXJ3,House Committee on the Budget,"#364: Paul Ryan 
 T4VI5J2E7BJUQBIJOAIZ2WME7ELGVKGK,House Committee on Homeland Security,"#364: Peter T. King chaired House Committee on Homeland Security in the 112th Congress (data/committee-chairs.csv); the letter is to Chair King, 2011-03-09"
 ZWEWPCDXGITPXZ3OY27TPLY5I6A5DXAL,House Committee on Appropriations,"#364: Tom Graves chaired House Committee on Appropriations in the 115th Congress (data/committee-chairs.csv); the letter is to Chair Graves, 2017-03-28"
 S2KY44BNPKYL2UYVZ22G2RSCBEFQS2NK,House Committee on Veterans' Affairs,"#364: Jeff Miller chaired House Committee on Veterans' Affairs in the 114th Congress (data/committee-chairs.csv); the letter is to Chair Miller, 2015-01-22"
-X3XCRJSQPSOYW7272BMNUBK2IE53L6Y3,House Committee on Veterans' Affairs,"#364: Jeff Miller chaired House Committee on Veterans' Affairs in the 114th Congress (data/committee-chairs.csv); the letter is to Chair Miller, 2015-07-10"
 GIG43ZKMCQW2YU3C5DQAIIJCEJSTVXF5,"Senate Committee on Commerce, Science, and Transportation","#364: Mark L. Pryor chaired Senate Committee on Commerce, Science, and Transportation in the 113th Congress (data/committee-chairs.csv); the letter is to Chair Pryor, 2013-03-08"
 QUGAD4NHCCNGSSH7M3E4ET2M3ND625C6,Senate Committee on Armed Services,"#364: Carl Levin chaired Senate Committee on Armed Services in the 113th Congress (data/committee-chairs.csv); the letter is to Chair Levin, 2013-05-13"
 CWBVMMIU2DRPKEVVOMDBST6TCP45DZM7,House Committee on Natural Resources,"#364: Rob Bishop chaired House Committee on Natural Resources in the 113th Congress (data/committee-chairs.csv); the letter is to Chair Bishop, 2014-03-24"
@@ -18351,7 +18347,6 @@ A5ISQL7ML5ABHTO7ODLDR6GBJFRPV7TR,Army Corps of Engineers,"address block read (#9
 SDZ5DHJXGI5ZH3DPUZ7FZXVUGQCSEUK7,American Council on Education,"address block read (#97 held names): President Mitchell, American Council on Education (Warnock 2023)"
 LYBOKRBCAGQGXZRSGHBEJ36N36KN4CY4,Department of State Office of Inspector General,"address block read (#97 held names): Four IGs in block order: State OIG (Shaw), DoD OIG (O'Donnell), USAID OIG (Ullom, filed to USAID: no OIG term), SIGAR (Sopko)"
 ORHSRIYKXPJLDXWSPKS76V5Q4QORJRL5,Harold Rogers,"address block read (#97 held names): Chairman Hal Rogers and Ranking Member Nita Lowey, House Appropriations, 114th Congress"
-WLU5M3UTUK4L5BZNCNPJGRNGFKR67PLH,Harold Rogers,"address block read (#97 held names): Chairman Hal Rogers and Ranking Member Nita Lowey, House Appropriations, 114th Congress"
 BQATQOQKOBJGKOBDLAQXERSIAF3QLBWC,Tom Cole,"address block read (#97 held names): Cole, DeLauro (House Appropriations), Murray, Collins (Senate Appropriations), 118th Congress, block order"
 M4GO5A2QKFB46MQY5RN7JFRWKXVYKTIQ,Twitch,"address block read (#97 held names): Emmett Shear, Twitch Interactive"
 D6INL36SMNM2QNUV4574PRFQ7JU63FMK,Department of Justice,"address block read (#97 held names): Deputy Attorney General James Cole, Department of Justice (not Tom Cole)"
@@ -18427,7 +18422,6 @@ H5P6ZXKQBRHE6ACROU62TPKHN6P6BVJ4,Health Care Service Corporation,"address block 
 YLWB4YWFOVYZLY5DJWAPBRVT4VGTLFD4,BitTorrent,"address block read (#97 held names): Justin Sun, CEO BitTorrent; Charles Wayn, CEO DLive"
 R6BEZOPAUYU6N2436ZNIRMII2F6BCACP,BitTorrent,"address block read (#97 held names): Justin Sun, CEO BitTorrent; Charles Wayn, CEO DLive"
 YOETP53ZBGUBDPV6J6OVTKRMFXOMC4YO,VA Greater Los Angeles Healthcare System,"address block read (#97 held names): Philip Thomas, CEO, Greater Los Angeles Healthcare System (VA); letter itself dated April 11, 2001"
-WSY62KEE43EJ2YK66SB622LY4GN3QBXJ,Windstream,"address block read (#97 held names): Tony Thomas, President and CEO, Windstream"
 23NWFJ2NO6B2YBUHEDXL5URQTNALFPKY,Elsinore Valley Municipal Water District,"address block read (#97 held names): Greg Thomas, General Manager, Elsinore Valley Municipal Water District; letter is from Canyon Lake Property Owners Association"
 RSTK3L4ZENYPTLEKQ76XZFBBOP2PCL7I,Clear Channel Outdoor,"address block read (#97 held names): Scott Wells, CEO, Clear Channel Outdoor, Inc."
 QOUGQVDC5RP4IXZEREQ3K3OHS7UCBW3X,Virginia Department of Conservation and Recreation,"address block read (#97 held names): Director Matthew Wells, Virginia Dept of Conservation and Recreation"
@@ -48490,3 +48484,393 @@ DRVKHLSQIRG5NVNIIEWBTBUO6XFBH64P,The President,address block and salutation
 AGM5MAUBBSSARYZIHYX2KBSUK4SWOXGQ,Susan M. Collins and Jack Reed,address block: Chairman Collins and Ranking Member Reed
 BLXZEILAEFDPRBBKEZQLS6JJDFSRPKWW,Environmental Protection Agency,address block and salutation
 DJAQPW55LIPFMFFVYFKHA5GNRG6IAKKA,John A. Boehner,address block and salutation
+UYTIKMZW2K3JSXPY56VJ4CIOLLPB6NUF,Office of Management and Budget,address block
+UYTYBTRNCKY4P4666O7KLGUUHJ5K6KF3,Robert B. Aderholt and Sam Farr,address block
+UYUKJSTCIQ6G7PQIAANBDGILEVKE2BPT,Department of State,address block
+UYWEWGS2W2WQCI54GSWGJM67RIYSHEDJ,Nuclear Regulatory Commission,address block
+UYXEZCSW5RNOLWM5ATDIYROXLKD64TZ6,American Wild Horse Preservation Campaign,address block
+UZ342O6CVN263GMTHJTG5OV7XMYNQAJY,Uniform Law Commission,address block
+UZKLTRLP2Z5G3USMOCARBRYONELX2Q4G,Office of Surface Mining Reclamation and Enforcement,address block
+UZOWW6Q5JV75RO6A2HYWWDAUU4POKUYR,United States Postal Service,address block
+UZVCPHCFKRFIKBSQRY7VANM2I2MAYVMC,Department of Health and Human Services,address block
+UZY5A3GSXIKJ35W2YQ4RH2YE3GIKPHXG,Texas Military Preparedness Commission,address block
+V2PDCBNRQXIMZEGHFPLZJ5UWKPKSZWTB,International Longshore and Warehouse Union,address block
+V2RHB7STUEL7ACZYYAWIDXLG4OR5KSFV,Drug Enforcement Administration,address block
+V35FJQELCVZ3QDGDVNV3R4KKCLLDYQKB,Department of Veterans Affairs,address block
+V3DJ4H7O243SOI45TLVG74QGN6YNQJKI,The White House,address block
+V3FK6FLWMZANHW7BSC5WZTEHOH2BWKOB,Embassy of the Democratic Republic of the Congo,address block
+V3HO6UGK37VK56ZUYKPJBIU55NI7ILU3,Compass Group,address block
+V3OXLH7IRLH3YAP76L4UBY26EO3WHVJK,Food and Drug Administration,address block
+V3R4UGGY4DGPH5HPLNHORBDI2IOR5LSI,Centers for Medicare and Medicaid Services,address block
+V3TAVJM5UWNE7N6T5PG7XIT2WV52ZBM5,The White House,address block
+V3WGGDYMY6PI22ZVDIVV4IBS4AU2NDBS,"Kay Granger, Nita M. Lowey, John R. Carter, Lucille Roybal-Allard, Tom Cole and Rosa L. DeLauro",address block
+V4AAWAFIURWB6ISODM7FKJVFB3IRCF7T,Department of Commerce and Department of Agriculture,address block
+V4CVR2TVP3HQR3TWGWVMYCLJ4FZMOOPU,Veterans Integrated Service Network 23,address block
+V4E6CCYWGC2BEIBLY7V2JI4B2JL3MHTB,Department of the Treasury,address block
+V4L3FFDMAEZL6K7IP5CP2VYDX6VILSA6,Department of Justice,address block
+V4XJV5Y6VAAUCSSPOBYF7RB6G7JWDFMN,Transportation Security Administration,address block
+V54XVQJDIPDR5C43CONKWD2VXAEPAWZV,Department of Defense,address block
+V5BYFVTHBRORG3TOS44H7SEJ73X6FQWD,Department of Veterans Affairs,address block
+V5EQRZVT7GAWCXDF5B4UFKIF4GNW7FGV,The White House,address block
+V5FZFRCALIWA5L3M36B6MZFUUPMD3ZIC,The White House,address block
+V5GNIFUYNHDE2XEQMB4TGLWKO23EYTT6,Lee M. Zeldin,salutation: Dear Representative Zeldin
+V5IWZ56D3WUVF6GU6UO5F7V3EBPHB4AH,Department of the Interior,address block
+V5QURLLACHDLIFCOHCSFNJAY7ZHLBGG5,Department of Veterans Affairs,address block
+V5SVDQUH3JL5V5ERRF3YHZXLZZGQW4NF,Department of Health and Human Services,address block
+V627ZFS5HYD2Q7RLQ5J3VVTHFXS5EQ7B,Office of the US Trade Representative,address block
+V63ZKH5ZYCIIQI2LLFPS6U7IOKA5QVVY,Department of Health and Human Services,address block
+V6AOXVQAKGXL2DFBGR6CGPXIKVEGREDZ,Department of Justice,address block
+V6EZH6VFOWNHSHVPALKKR43W5HYQD5KJ,National Aeronautics and Space Administration,address block
+V6M2ABPARV4QWGVNVWCYZODKL4YBE73B,Department of Veterans Affairs,address block
+V6MVQVECDPO5G7KYTQUUC2DIDPHNR6T3,"Bureau of Alcohol, Tobacco, Firearms and Explosives",address block
+V6YCLICP4QHSJUBC5TKMLX6OR5J5N6NM,Department of Justice,address block
+V7HJIRG2UAGZRJZ33HRJVDOYU3DD4Z4T,Chemical Safety and Hazard Investigation Board,address block
+V7KEKU2KFQCG55GMUVMWX7H2CN5KZINO,Department of Veterans Affairs Office of Inspector General and Office of Accountability Review,address block
+V7QSU5X3CBF54DIGACOFXRHB3GBU47P3,Mylan,address block
+VA6PHYMA7NZBGOKERF7XN7VZV4RSJID2,John A. Boehner and Bob Goodlatte,address block
+VAJ5UOVW2GKQFQXMAEUWLT3MQZBC4KTD,Kurt Schrader,address block
+VAKOEBK4HHCXVL4SHI2ABJPCYX2PB3VB,Department of Veterans Affairs,address block
+VAL22H7Q56SJSUUUY4A4WJ4OPGC5RZSB,"Bob Goodlatte, John Conyers, Jr., Tom Marino and Henry C. ""Hank"" Johnson, Jr.",address block
+VARXGGIZCQ2PS42HZHN2DVQ3TQVG57MF,Governor of California,address block
+VAS7Y7NRMTGMZHP6OZONPJBVG5N7WRG7,The President,address block
+VAVEOGNFWRHPP7YKKP6TOLC5VYQFQIFO,Boeing,address block
+VB23ABXWVZZGCQLVTRFIMAQZYK4AMQHR,Department of Energy,address block
+VB4IXDTZSTDGZ7QJVSVC42JYORVKLW3S,Department of Transportation,address block
+VBH5M46HGGT2QDTDM47XDBEHFDG36NBZ,Michael K. Simpson and Marcy Kaptur,address block
+VBOML7HQSOJYZO2ZZA7GFKEY3ET6EFLV,Army Corps of Engineers,address block / salutation
+VBXKHMMU54QCEM755TVJW5TTLSDB3ZSS,Tom Cole and Rosa L. DeLauro,address block
+VBYHV7EFAMAQWYVENOAX723OEXKHJ5JG,Department of Defense,address block
+VC3YIG2SWBTUDQDGG7GJH7ENKDZERX3K,Department of Defense,salutation
+VC4OL4ATYCP5VQYEQNPFSQVZPWH3QDMP,"Thad Cochran, Barbara A. Mikulski and Richard C. Shelby",address block
+VCIU3FI4WWWE5IIF73ELZHWX7NAZD2XG,Lamar Alexander and Dianne Feinstein,address block
+VCLTUPKLGLHHZCHVIBEEYUPBVB3K4MHK,United States Postal Service,salutation
+VCT2YWOZ6VIBKBRBUSN72H3W273BJOIN,Department of Transportation,address block
+VCVUOEQOVET36KRESSONLEPPP2LRIUYF,U.S. Attorney for the Central District of California,address block
+VDFCADISYJAQQF4WGZ7ERGHO5AZWKDR5,Federal Bureau of Investigation,address block
+VDYIX45WA24OPEDHUPJVEFWDPL6L7222,Food and Drug Administration,address block
+VEDZSPUIWSWPM7ZMMIDUZ7EBPRO2ZD3F,Federal Communications Commission,address block
+VEHGLIFU7I4QHHQVNWF4LNSI7XHYVQIO,Department of Justice,address block
+VEHLQVHXX7OI5GEXJMCRVZ7VTF7L73MJ,Department of Justice and Federal Bureau of Investigation,address block
+VEODN4Q42XXW3C6FUAVIHSIGG7R6QGRC,Department of Housing and Urban Development and Small Business Administration,address block
+VF4PAG5ZIFTQF7EKAVJ3RRU52ZT4PCSP,Dollar Tree,address block
+VFB3URRBHJTLFMHGORG2LSW5AP32DEZ7,Department of Justice,address block
+VFCOYDF65BDTODLJNGLDGFMH3OP44NPP,President of South Africa,address block
+VFQPP2CXSSDQZKXT3JNFQTXIWAY2SZ3C,(no recipient),address block
+VFUCRSHB7MAENU734TQ6GHIUVCDGYIMM,"Environmental Protection Agency, Department of Energy and Department of Agriculture",address block
+VFYSE7L5LCRY3LCNW7VRPNDBEHHG74RK,The President,address block
+VGNFRMR2JIEVR2GLFICLQYKCUHET2JR5,The President,address block
+VGOGACJ45RFMDM5EBCJDLVLMS3QMCJ5O,Department of Veterans Affairs,address block
+VGQ6TEHJXO73VPRLS5EJUJUTXFXL5OAX,Department of Education,address block
+VGTORKWL3HSFNXXOBM7CVRUOPWSEQX7F,John R. Carter and Lucille Roybal-Allard,address block
+VGTZ6VX3LFYP627RDPESQFAUH3AZVP2Z,The President,address block
+VGUCNM5P3LNSHLFCU2SJ5ABB44RAVRXL,"Fred Upton and Frank Pallone, Jr.",address block
+VGZ3UFS23YH36EB7AYZG2KGJ5VEH6BJ7,Kay Granger and Nita M. Lowey,address block
+VGZG76E4AJGPDSN3BLPDTZNRVYZHM3TR,Department of Commerce,address block
+VGZO7JW2UQHHLP5ZH2O2DBOPA33TVMJZ,Department of Homeland Security,address block
+VHPFAW4B625UB7HY75WPOAS37NDPTGBD,Department of Veterans Affairs,address block
+VHQ4ICQVZLJN7BOPY5UJBT4R2CJWSUCT,"Bob Goodlatte, John Conyers, Jr., Tom Marino and Henry C. ""Hank"" Johnson, Jr.",address block
+VI6PP6CONJ7PWSSJYKIO2VYLY2PU4AFK,Federal Aviation Administration,address block
+VIH32D6NTS3TZYHHHZ73RTNX6ZDC3KJM,Department of Health and Human Services,address block
+VITABAZVCMJLGNXRFLZW5BY7USKGH3XB,Drug Enforcement Administration,address block
+VIYYHWP4F4GY2GFIYO2WLGMP7OQ7H3Z7,Mitch McConnell,salutation
+VJ3OPJUTKPRYOLPDPLPQ67GUJI4XF3AN,National Panhellenic Conference,address block
+VJB5R6JJ3SGRBKO4MTECWINVIAWAOPTJ,BP,address block
+VJEZYW2AIDGHFXCGSATQ2QZAFDNOVERW,The President,address block
+VJH2UDKMMSLF77H4PTQAVK27OHU23DI6,John McCain and Jack Reed,address block
+VJJUK7KETLNJJHZ42O2M2IUQKTM76XEF,Bernard Sanders,salutation
+VJN3AYAYZU62Q4OCQGH63EBC457SEPWK,"John McCain, Mac Thornberry, Jack Reed and Adam Smith",address block
+VJPFM2PA5YU5QGYTK4CDS2WB6XKURANA,American College of Obstetricians and Gynecologists,address block
+VJVQLSSIE3CYRBLOOH6XIEJX7ZNGVYBB,Governor of Florida,address block
+VK3RNBAUPYE6OIRXUGAEVEEB3GYORA4D,Centers for Medicare and Medicaid Services,"address block: Acting Administrator Andy Slavitt, CMS"
+VKES6VJUG2RSIX63DDFIHGAEG4QINU6F,President of Israel,"address block: His Excellency Reuven Rivlin, President of the State of Israel"
+VKJ5TGZD4ZYUW3H4QYUKR3IUDHJUEIFD,The President,"address block: President Barack Obama, The White House"
+VKN6AIZEPFDCE2QQZTMHCLBCBNIKILNX,Paul D. Ryan and Sander M. Levin,"address block: Chairman Ryan and Ranking Member Levin, Committee on Ways and Means"
+VKP2KDSQ5LLVDDJ53QAGGML4APZVSZWQ,Department of Education,"address block: Secretary Arne Duncan, U.S. Department of Education"
+VL43RQE2BL4OBGUTR2IDQ6KDHJBAIVKZ,Jerry Moran,salutation: 'Dear Member of Congress' (generic); found on Sen. Moran's website
+VLF63MAE7Z36WR64XNXCUUCIYGXRQXKA,The President,"address block: The President, The White House"
+VLT4OBFUHWL5SJAXTHSZ6IW2X7MENEIN,Department of Agriculture,"address block: Secretary Tom Vilsack, US Department of Agriculture"
+VLYG5WV5RBSAGN7X3YJIYLSSFL7CHWCR,Government Accountability Office,"address block: The Honorable Gene L. Dodaro, Comptroller General, GAO"
+VM6XANCJ52Y7HTJGEVFXM7JKSC5XTSNT,Department of Defense,"address block: The Honorable Ashton B. Carter, Secretary of Defense"
+VM7F6T5DGAXAMCIQW3KULRTJYZY3T6WP,The President,"address block: President-Elect Donald J. Trump, Presidential Transition Headquarters"
+VMG7YFPS333QUAIUSPWUFLZBCTHSFE2F,Customs and Border Protection,"address block: The Honorable R. Gil Kerlikowske, Commissioner, U.S. Customs and Border Protection"
+VMMRXIHHASFH6MQBSMDZSNEYIYOPHBJZ,Steven M. Palazzo,salutation: Dear Congressman Palazzo
+VMSGQDRE7WAVCZAWPECQ3R7II5Y4WVYS,"Charles W. Dent and Sanford D. Bishop, Jr.","address block: Chairman Dent and Ranking Member Bishop, Subcommittee on Military Construction, Veterans Affairs and Related Agencies"
+VMU2P7BUYT4GDCKW45QYVCIJ252OSC5C,"Angus S. King, Jr.",salutation: Dear Senator King
+VN4DWOG6S4OHBZHIJCJFXWNHAOBCIMGN,Todd Young,salutation: Dear Congressman Young
+VN7I6MTDKQFAYKSF5APXFEBCEU2B2X2D,Paul D. Ryan,"address block: The Honorable Paul Ryan, Speaker, U.S. House of Representatives"
+VNCAPQOKMFRQC6EMZPV4X3SC5AQEKLBO,Department of the Interior,"address block: The Honorable Sally Jewell, Secretary, U.S. Department of the Interior"
+VNCP3YEZTZCT7SULJIG6VFD7E32WI6GK,Governor of Florida,salutation: Dear Governor Scott
+VNCPVLYT365AX3I3O7T5AASGTCR7EXYC,Department of the Treasury,"address block: The Honorable Jack Lew, Secretary, U.S. Department of the Treasury"
+VNMAYXNKITCDMPIJHWSSM6UWPV4J6TSW,Department of Defense,"address block: The Honorable Ashton B. Carter, Secretary, Department of Defense"
+VNN5IUVTQR4ZQBJJ73W4F74RWC57TDJ6,"Scott R. Tipton, Rob Bishop and Raúl M. Grijalva","salutation: Dear Congressman Tipton, Chairman Bishop and Ranking Member Grijalva"
+VNR6W44MKFRENI6HE7Z3FFGDHRDTP66P,The President,"address block: President Barack Obama, The White House"
+VNXOSGSCAGZHCLZPMSKU54WEPAFXMGPE,Michigan Department of Environmental Quality,"address block: The Honorable Keith Creagh, Director, Michigan Department of Environmental Quality"
+VO2RR6GZ6BCJNBNT5ECT3GLTLD4P22ZW,"Mitch McConnell, Harry Reid, Paul D. Ryan and Nancy Pelosi","salutation: Dear Majority Leader McConnell, Minority Leader Reid, Speaker Ryan and Minority Leader Pelosi"
+VO6ABOGXP3QYTT4NGR2UF4FP4FRDALT3,Department of State,"address block: The Honorable John F. Kerry, Secretary of State"
+VO6CMMOUDWYGSDE6K4NVAN6FSAK6DWXZ,Office of Management and Budget and Army Corps of Engineers,"address block: Director Donovan, OMB, and Assistant Secretary Darcy, Army Corps of Engineers (Civil Works)"
+VO7FTFG6QVBVKCEVPVAOZ2AZ7LYQ6JMT,Federal Trade Commission,"address block: The Honorable Edith Ramirez, Chairwoman, Federal Trade Commission"
+VOAZ5PEYQHBZEYZYHVW5IRDVTLOCC57Z,Cal-Am Properties,"address block: Cory Sukert, President, Cal-Am Properties, Inc."
+VOMHJTEDONF6MQUJ4OL3UDFXEM66HLFT,Office of Personnel Management,"address block: The Honorable Beth F. Cobert, Acting Director, U.S. Office of Personnel Management"
+VOSZ54472XUJ32CRHDTGFDIIAZVYMGRC,"Mike Kelly, Ron Kind, Jared Polis and David P. Roe","salutation: Dear Representatives Kelly, Kind, Polis and Roe"
+VP7RNACVUNM4I7GGXBO7H3WXBGGORFPX,Department of Transportation,"address block: The Honorable Anthony Foxx, Secretary, U.S. Department of Transportation"
+VPCM5RAUEW4IPLXWCGU4IGVOOZ43AWIJ,Federal Communications Commission,"address block: The Honorable Tom Wheeler, Chairman, Federal Communications Commission"
+VPPGX7KNIHSKLTOALYZ4LTGZHARAL37K,Department of Justice,"address block: The Honorable Eric H. Holder, Jr., Attorney General, U.S. Department of Justice"
+VPQFAZC32KEVCCHLRE2SVEWRJVTCXUWS,Vern Buchanan and Earl Blumenauer,salutation: Dear Representatives Buchanan and Blumenauer
+VPTZRHGRPPIDJSFDJMRSFBQKKTCQ7YAM,Richard C. Shelby and Barbara A. Mikulski,"address block: Chairman Shelby and Vice Chairwoman Mikulski, Subcommittee on Commerce, Justice, Science"
+VPV23PWBHOX35UHA4AK3ZXIU7W75NO66,Department of Veterans Affairs,"address block: The Honorable Robert A. McDonald, Secretary, U.S. Department of Veterans Affairs"
+VQ53SBSDZ2IRY7SYHM6ZMYCGI227VQHV,Paul D. Ryan and Kevin McCarthy,"address block: The Honorable Paul Ryan, Speaker, and The Honorable Kevin McCarthy, House Majority Leader"
+VQVIDTJNKGPMZNZV7Z7FM7LGYLMAAR5R,Doug Lamborn,"salutation: Congressman Lamborn (reply to his letter of July 17, 2015)"
+VRBQKH37XYWQAQ3JHTE66BQVWXPJLT4T,John Thune and Bill Shuster,"address block: Chairman Thune, Senate Commerce Committee, and Chairman Shuster, House Transportation and Infrastructure Committee"
+VSFZVR4VBB7TTZS45TCM3Q6CSGOYNFMH,Federal Energy Regulatory Commission,"address block: Chairman LaFleur and Commissioners Moeller, Clark, Bay and Honorable, FERC"
+VSGKDQTYWQCMRN22R6BSCGXB7E6N5QSR,Department of Veterans Affairs,"address block: The Honorable Robert A. McDonald, Secretary, Department of Veterans Affairs"
+VSI2HB5Z2Z5QRJHMNFSRWBDMU3CEIN2D,Department of Education,"address block: The Honorable John B. King Jr., Secretary, United States Department of Education"
+VSMLA5WBHFYXJ6PRCXF2HRANK5YQYEXP,Department of Defense,"address block: The Honorable Ashton Carter, Secretary of Defense"
+VSTF4XHXW5DGII3PMCCCFGP5RDTT2BHV,"Fred Upton, Frank Pallone, Jr., Tim Murphy and Eddie Bernice Johnson","address block: Chairman Upton, Ranking Member Pallone, Congressman Murphy and Congresswoman Johnson, Energy and Commerce Committee"
+VSVFTCVSKDT6OAIOGSWBZWQZ25SSTDME,"Richard Burr and Robert P. Casey, Jr.",salutation: Dear Senators Burr & Casey
+VTABQXGFQ2AXOVZS2FKBUSAFCRET7CAE,Department of Veterans Affairs,"address block: The Honorable Robert McDonald, Department of Veterans Affairs"
+VTBYG6EKBX4SRVNPGRJV36MC34FZ3NB3,The President,"address block: The President, The White House"
+VTDMBURZLSYCG66P5LR2RO27PYUCHWRV,United States House of Representatives,salutation: Dear Representative (addressed to the House as a whole)
+VTDZT2HNO6X5ZWZJK3OL3GMU6NTDB5CC,"Paul D. Ryan, Nancy Pelosi, Mitch McConnell and Harry Reid","salutation: Dear Speaker Ryan, Leader Pelosi, Leader McConnell, and Leader Reid"
+VTE2EKS66JT3KNZ4WB5DA6DGMGGPZQ7B,Harold Rogers and John Abney Culberson,address block (letterhead and salutation)
+VTZ6YD75ZG4WL6IDP5YOKCU5NHTQ7QAY,United States Congress,content: addressed generally to members of Congress (no specific salutation visible in the available text)
+VULKZEW7IBV55UXVVWEUUWEZ3A5TFWB5,Department of Housing and Urban Development,address block and salutation
+VUQWJ4BTAP63J2UJFF25D5IOUTTD6GK4,The President,salutation
+VUVDVK7N7YMHXC5H4IHUDENBHCM7NCBE,The President,salutation
+VUZRLSI4M7JFTTG7IG7IHHY7RRVB4VCP,Chuck Grassley and Claire McCaskill,address block and salutation
+VVQC2YDXHL3OPGG2MTPHKYVIVFVHCATE,Kevin Brady and Sander M. Levin,address block and salutation
+VWOZESHAVW6NCVKRN35USORZG22ORNIS,Tom Cole and Rosa L. DeLauro,address block and salutation
+VWWAFWAEEZYFLZBWRLM2KQSDX4CT5KQL,Department of Homeland Security,address block and salutation
+VXD65GTPJ77W7W64ZOV2DFZBZDYRJSSN,National Transportation Safety Board,address block and salutation
+VXJNZZDXTRKNLZTV63MQTG6ZIWDBOP4Q,John Cornyn and Charles E. Schumer,address block and salutation
+VXPVIRS37WUOFFSS4LPBOQ5S37DMDIKV,"Mitch McConnell, Harry Reid, Chuck Grassley and Patrick J. Leahy",address block and salutation
+VXZXZJPIBU7TBCN2FN5XHAHI3SXTVL3F,Richard C. Shelby,address block and salutation
+VY3WBBADV2DQWJOV35M5S5E4WS5NHY65,The Speaker of the House,address block and salutation
+VY64UGPT3S24RCG5NV3JDMTPTPMZWOBB,Department of State,address block and salutation
+VYAFYOFN6FXYVPS7USNWIHK66F4NYORQ,Department of Transportation,address block and salutation
+VYF27GHGDC6TX45LLEBH2AD3EIYPUQFQ,John Thune and Bill Nelson,address block and salutation
+VYLB5XZ33UDQJQIKNVXUMVMQYHFYZKFP,Department of Defense and Joint Chiefs of Staff,address block and salutation
+VYZYFSTPNUZ7FLFS3544OTHPBCZF62DI,The President,salutation
+VZ4XC4LN2EXVPH2XT4HJT2HHAL4U6JIG,Federal Bureau of Investigation,address block and salutation
+VZB6HMEBWVZS6DBNSIHYIESYIIOOSAHU,The President,salutation
+VZLE7QWE5IKQUFRLAXAAXQGYLWAAXNHE,The President,salutation
+VZMFIE4IU7FPWGWHR44NVUI34FFLGGEV,Department of the Air Force,address block and salutation
+W2HKABYCQBJAGL5WDHZXCMJD44ZLGAPZ,Walter B. Jones,salutation
+W3CEC55Z6GZPLFDCE6Q5G27U4EBXMHMK,Internal Revenue Service,address block and salutation
+W3KBWDVTKEH4I3CRW7BG2WE6AH2FIZRX,Port Authority of New York and New Jersey,address block and salutation
+W3RU4AVMFGCDALUZRG4IOVWILTSPVZID,Economic Development Administration,address block and salutation
+W3UXJZ5JXXUMD2WSSFJ4IFEYB27V6ZZR,Department of Education,address block and salutation
+W3W2E7AU2KZ3OT7GXPPNQ5PETK5Z3CQ7,Pennsylvania Department of Transportation,address block and salutation
+W3WWFFJWUAXD74WKS4YOD62VYAE5DXJF,Tom McClintock and Niki Tsongas,address block and salutation
+W42G2N7FBHKEGDHXWBXVKYRBPWTL5M43,University of Colorado,address block and salutation
+W44747RLCPX25J6JV7QJMVHMW7TA2IGN,Harold Rogers and Nita M. Lowey,address block and salutation
+W4DGKXQDVJEZROG2FIEHQPKEXIHDXZVD,John A. Boehner and Kevin McCarthy,address block and salutation
+W4M3HDFASJ6NOXD7JNDDZ2IFJCCUKR6J,United States House of Representatives,"salutation (""Dear Member of Congress""; a House vote is referenced)"
+W4MFAI25DGETVUYZBMLBA3JUDQ5RW4AQ,"Thad Cochran, Roy Blunt, Richard C. Shelby, Barbara A. Mikulski and Patty Murray",address block and salutation
+W4O2LIUEYA2QJGX5XR5HI5YUDGPPLJRW,Department of Agriculture,address block and salutation
+W4VGBVL7MDH5UKYRJ3DXBW6XJWZS5XZN,Office of the US Trade Representative,address block and salutation
+W4XYPB5L3YC3YP3VNXPJV2QV5JARXLGP,Orrin G. Hatch and Ron Wyden,address block and salutation
+W5C5PXGGJJBWVFKGQCUMGCV77FD4JCEO,United States Postal Service,address block and salutation
+W5FGTOWBEP4JU6MN4IDMY42ZGHWGZR6A,Department of Homeland Security,address block and salutation
+W5RCJJVAFFLITNFVHZFSHVUBCHXOXTZC,Richard M. Burr,salutation
+W5UOWML3FG37S5J6PSFPRFNNMLUQAPNM,Prime Minister of Serbia,address block and salutation
+W5V3QCRXMUYFM76GZG56U2BCGUHLIBHV,Department of State,address block and salutation
+W5VI5U6BK5I3QJRDHNCKOQ4CFVOF5LZY,Tom Cole and Rosa L. DeLauro,address block and salutation
+W5YW6YVSNVAIYVUSS6VIDMLVH6JMQ742,Department of Education and Department of Justice,address block and salutation
+W62AY4PLLKAKQPFQN4AX6C7ZUSUKPI5C,Harold Rogers and Nita M. Lowey,address block and salutation
+W634R4REFAO2CYFILM3UKI2PGVAFUT6W,Department of Homeland Security,address block and salutation
+W63R2EUN5VAAHJ2U6A6FLAUQ563IKQ2T,Michael B. Enzi and Bernard Sanders,address block and salutation
+W6D5G65GAA4W63FL3LJY3FCYPR5QBWJB,The President,salutation
+W6JLISXAPQHJ3XPP3UUMWW26RDDVVWIG,Social Security Administration,address block
+W6VQWCRV6NSS2MD6LBDM7ASDI33X76FG,Internal Revenue Service,address block
+W6WSLIJ4VM7HX4OPFZA3MYOPJNHLV5VZ,Food and Drug Administration,address block
+W742KS4BHD2Z5CLYLSK24UFMXR3L7Q4T,Social Security Administration,address block
+W7FDPRVDSHIBKRZHBHITZKLTBWE4ENGU,The President,address block
+W7FIGVK3V35L2WVCAPZRWXQ4AGF64XJ4,Environmental Protection Agency,address block
+W7P7P72N2NXH3TLXWDCRGVXKBZCX42BS,Department of Health and Human Services,address block
+W7WVGJFSWO663VZNRL6ZLH6FOLR4IM2I,Forest Service,address block
+WA4FROUHVYRL5MEUV46BAXI6EXAT7REF,National Basketball Association,address block
+WAIGSKJYQFP4W6G7ZUNATYZGBXM5CAYJ,Federal Emergency Management Agency,address block
+WAO7LEWI62BFVDCXCMUWFPSG2UJ2UE3L,Tim Murphy and Eddie Bernice Johnson,address block
+WBEDWONBDEIR2EJHLRN6RMYPBJQ5T62O,John B. Larson,salutation
+WBF75DS46DH6OLWQY2EOBPMUNYUB3NPK,The President,address block
+WBFSQQCRVTF4CQRVPEBBDOEAFCKJ6Q24,Department of Veterans Affairs,address block
+WBKFZWM4YXLSV5ELKROA2C5RCOWCELYT,Lynn Jenkins,salutation
+WBKZWKAREP23HOXVJMX6RLCCHSYCYOAE,Food and Drug Administration,address block
+WBNDDJ7QUQR22Z435TGQFH2QCBEPYXRI,Tennessee Valley Authority,address block
+WBPUF4335TWHVBR4RBQN3DUPNI2VPATL,Don Young,salutation
+WBS66F5NL2KR4JF7VY3IID7NIRYGWENK,Department of Veterans Affairs,address block
+WBU5LRUVGBI2JED4U5M7G45UV3ZB5OX4,Senate Committee on Appropriations,address block
+WBZAH5CMFJXKHJQ7UEA3MZYWRRJNEOXV,Department of Health and Human Services,address block
+WC2BXVU2WJN2YWEHVNXDFCGW5RQ52HBT,"Bob Goodlatte, Tom Marino, John Conyers, Jr. and Henry C. ""Hank"" Johnson, Jr.",address block
+WCKSVSOGFVKVA6SENRB5YBT6QGOTFQNW,The President,address block
+WCXHQW25PFDTKMFFDNNEYAMOB47R3P2U,European Union,address block
+WDFYUC45DLGCGOK6C6DCKW2XJJ3VBWWT,The President,address block
+WDMJDNZP4R62IOR55P6P3NA5SM5DHXIF,Department of Justice,address block
+WDN75EB7WHMKDWNNLAXT4JENTKSCSWOH,Federal Communications Commission,address block
+WE2NAFCEIKSNOC43K7CWDCQVZIBRQYPZ,Federal Emergency Management Agency,address block
+WENYBKWK42J4ISMAR7VJRF3XCUF64KF6,Department of Housing and Urban Development,address block
+WFJQZBDJLTSE44GS3UD7OZ2P6XDHJMXN,Embassy of the People's Republic of China,address block
+WFODQAGMDU4OKBZ76YUR4FUXAQOLSYMW,Embassy of the Democratic Republic of the Congo,address block
+WGDYOPFAEKGQZS5XPGLJB22VIYBZO73O,The President,address block
+WGE4XP7XCJSSPQ7HOHP5WBZV4N42L3XE,International Joint Commission,address block
+WGN5UIXPN7MCE5RFPPCXYMWHK5XW5HNL,David Vitter,salutation
+WGQ74MKY3DBUBAUIFE2YZKOGFBQM4CR2,The President,address block
+WGSRA4BBSL4SDMBIIX5R6EBSPXAXCHKS,John A. Boehner and Nancy Pelosi,address block
+WH4ZJE4XHX7DLMVTRS2433DF2TDEVYZE,The President,address block
+WHQYGAVPEIKW7Y4DF3MDOR4NVJPNJ5V6,Wells Fargo,address block
+WI22LOXFWQJD4IPQAZXNNMGIIMOMU6ZI,"Janice Hahn, Bill Huizenga and Peter A. DeFazio",address block
+WIAAKPTV4ARKT4EFZ2VOG6DEUCOIAX47,The President,address block
+WIEWL5KLF7EIX4MWH77JXDAG7NGNI42C,Elizabeth Warren and Steve Daines,address block
+WIMQAIAETQLOLETPVLMFUQLKNBF47GTH,Commodity Futures Trading Commission,address block
+WIPULFWZVEX3N6NZ2M2V7RWEKIYKXJYY,Lackawanna County Regional Planning Commission,address block
+WIVN3JVW4ZYJKQYYBTR3MITG44OHBIQ2,Environmental Protection Agency,address block
+WIZCMHJP2STPNJ5XNLP2XG6CMBQYFTER,Senate Committee on Appropriations,address block
+WJSNKS6S2ZX5MQLXAKLBCIAYS55CGYZM,Environmental Protection Agency,address block
+WJTRJSJPNTRCIJCVHFR5IZHQYYCPQO43,John A. Boehner and Nancy Pelosi,address block
+WKL3HRJPGQ6O3MJZVWP6DPVDEOB2KRCJ,Internal Revenue Service,address block and salutation
+WKMUO7PCEHVRYBX5DICWEQVK54W5EO4D,Government Accountability Office,address block and salutation
+WL37RHJYINHMBUESTQTFDJIB5Q5SY6KA,The President,salutation
+WLF2QSHYTXTD7KDAWJOUMJCT5FZEZLF3,K. Michael Conaway and Collin C. Peterson,address block and salutation
+WLH72VBVDPQFYCPAFWC5U6TOC2AE35LS,New York City Housing Authority,address block and salutation
+WLKQTDT2HRFDBYD34QH5JM3DRLAMSWQE,The President,salutation
+WLPDOOKGUGZOIAP2IGXMNVSM76JVBDDS,Internal Revenue Service,salutation
+WLU5M3UTUK4L5BZNCNPJGRNGFKR67PLH,Harold Rogers and Nita M. Lowey,address block and salutation
+WLVY5T3U4Y33LSM5LZQGVQRTW3ZMOZLY,The President,salutation
+WM3ILYULZ74P2P3ZCVLCDY6YWZHVRIZV,Department of Labor,salutation
+WM4KHAY5NW5BAOSC2VJWJWV7YBQGWQUI,Department of Justice,salutation
+WM5HOLIIK5RF4LEOQRHAZJPFUDQIOZXU,Novum Pharma,salutation
+WMHUCDQCQVWHU7SOIIXODFK5262YVCQO,Paul D. Ryan and Nancy Pelosi,address block and salutation
+WMMYANLOTGAOOBMSUBGIWI77Q4GSWK64,Department of Justice,salutation
+WMRONE4JQ567K6UWFLBGOPAWIDZ6QL4H,The President,salutation
+WMZ4T4KVOHNDF4RWDKYEUHG2B7TMXCHR,Environmental Protection Agency,salutation
+WNDQSYZEMPT7DYMMFCTW4GI3P3NZCZCD,"Fred Upton and Frank Pallone, Jr.",address block and salutation
+WNUL7BFGK2YET3MQ5FFR7ETEMHSCWEVI,Florida Department of Environmental Protection,salutation
+WOVFVAVRZKHSZU65GOHYPWY2MGRLELCY,Prime Minister of Israel,salutation
+WP57QRLFSRW7NPM2CWRIXHORMIWBQWO2,Department of Transportation and Department of Energy,address block and salutation
+WP75ZUGTZUA66RHCECMHMEHC2LRZYPTM,Office of Insular Affairs,salutation
+WPERFHKIDJNJLYGNM7UHVMETADUCWQAI,Consumer Financial Protection Bureau and Federal Housing Finance Agency,address block and salutation
+WPLGRPVTWDGCJLJAH7ZHEHLYD4HTLHUM,Department of Agriculture,salutation
+WPXYZ3EFN2SVEXKKC6DIMKW37GLOG3WH,Department of Transportation,salutation
+WPYHY2BN4QKR64ITH53R64WP6LTO7F6N,Mitch McConnell,salutation
+WQI5O6SEA2UXZTB7UCJ2FPZOFXHNR3TB,Chuck Grassley and Patrick J. Leahy,salutation
+WQIAKISDVZ5T6DNJ46VGH6MSH7NBSG7E,Jared Polis,salutation
+WQXM6AI4PCW65LPXDO2WWZ4GPQ6SMXLB,Rodney P. Frelinghuysen and Peter J. Visclosky,address block and salutation
+WROGV2QQXS6EEV666GEFA3U63H5LK5HJ,Department of Health and Human Services,salutation
+WRWI65JJ6GNHWNCRAMDWE6HKT6ASPJ6X,Office of Management and Budget,salutation
+WRYUVD7HVDQYJ6IRTLFTIOLD646MT2DD,Federal Energy Regulatory Commission,salutation
+WRZ6E7KVO5K6UZWTWQVOZSHWTIVWCWLQ,Corporation for National and Community Service,salutation
+WS5SGITI5PQNS6X73VWJVFQOR6MUN3JR,The President,salutation
+WSGPWET5PCWSLLLQIR7MNYJWCWCVJZYA,Small Business Administration,salutation
+WSUS2HMTGKNTSW4WJPPD6FO4OPCX5JXT,Department of the Air Force,salutation
+WSVCZRV6I377T5AZONN37B5GC4DZLACE,Bureau of Land Management,salutation
+WSY62KEE43EJ2YK66SB622LY4GN3QBXJ,Windstream,salutation
+WT3XWVC67H75ZU4OM5URHX732MQOA72Z,Library of Congress,salutation
+WT4UBR6H6UZX6BEPKYB6O2RY4S3EEDQ5,Department of Defense,salutation
+WTISTJ2KBQS2SRYJW3RPBS2DONTOJZQX,European Union,salutation
+WTMP6PUTJWGW6HXO6NIHQ5Z37W4CF3BM,President-elect of the United States,salutation
+WTWJP33LUQDNBWFSU5IELYM4KSSYGYCZ,Robert B. Aderholt and Sam Farr,address block and salutation
+WU3XFVBOK7UHT5J4AS3RS4CII5UR756S,Lamar Smith,salutation
+WUCWNE56XW37SNZXD3TTXN4XMRIF5PRQ,Department of State and United States Agency for International Development,address block and salutation
+WUEHM2XWOMYPAHI3VZK2XB6MU3DK6B6V,Equal Employment Opportunity Commission,salutation
+WUHQTY3CFQRZ6JC4HKADOSANHKR3L2YZ,"John A. Boehner, Nancy Pelosi, Kevin McCarthy and Steny H. Hoyer",address block and salutation
+WVCTTF5SX5SPD2P5SDSGC6L6U2TCJ5ED,Department of the Air Force,salutation
+WVRBCJOLW5NULP25CTHFRJCEVJ57T64J,William S. Middleton Memorial Veterans Hospital,salutation
+WW4OOP5XIUBQU23AONJQR77GKL4BAAHB,Office for Victims of Crime,salutation
+WW6YHAFKUSMJ3O5YY333TXBCHNSCEJOZ,The President,salutation (Dear President Obama)
+WXIRAQVJPYXZU2MCVSDZNJXRHL25QDR7,Department of Homeland Security,address block and salutation
+WXME6H5U2C4YRSTGGC4HNOBTOFPAKJOU,Department of Justice,address block and salutation
+WXTAZ5SRSPAMWW2XNBQJOHJJHS4ZTKIV,Fish and Wildlife Service,address block and salutation
+WY22OLAJGHCZG7HGEO2PWPLYXEURLMT2,Department of Labor,address block and salutation
+WY4NCDVU2JYDFYPE4CWPK76THLDLLKJU,The Speaker of the House,address block and salutation
+WYALXIV5EJW6PJNOMFGNRQ7WPJOIP4DB,Department of the Army,address block and salutation
+WYBVB6FSW7BLLCSR6NACAKHL7X6FGLQK,The President,address block and salutation
+WYDNQXF6ECSP4IB5M72PXGURIXPZLG5P,Mayor of Minot,address block and salutation
+WYFPPHABDWDPLQRKB6ADFAK6TTFFFPK7,Roy Blunt and Patty Murray,"address block and salutation (Subcommittee on Labor, HHS, Education & Related Agencies, Senate Appropriations Committee)"
+WYUYZJI6RO2YUSNDDMF3TWYGOEYUT7P4,Government Accountability Office,address block and salutation
+WZBAS5ZGXFJSBK2P2EI26EAAEQS7VBVZ,Lamar Alexander and Patty Murray,address block and salutation (Senate HELP Committee)
+WZG625AW5HXXBDYXP3XMTSZS2NDV7DMJ,Federal Energy Regulatory Commission,address block and salutation
+WZPKQK5KKADITF5WTHJDHDMDM6GESTVC,National Oceanic and Atmospheric Administration,address block and salutation
+X262ZBEGLPFUAJ6MCEPHCX3EGDQBQFG2,Lisa Murkowski and Maria Cantwell,address block and salutation (Senate Committee on Energy and Natural Resources)
+X26UZ3F6Z6QA53YPU6PR4XUW226THKWI,"Bob Goodlatte, John Conyers, Jr., Tom Marino and Henry C. ""Hank"" Johnson, Jr.","address block and salutation (House Committee on the Judiciary and its Subcommittee on Regulatory Reform, Commercial and Antitrust Law)"
+X2CQTK77MSHH7F5S3GCNDZKDCWKXQMNR,Environmental Protection Agency,address block and salutation
+X2EBBFBZ6JUFHL2M5DUK7YWGVMCKMA3T,Department of Justice,address block and salutation
+X2EWONL3YEB2LEHM4K2X4B4RHKICPZL3,Pete Sessions,salutation and address block
+X2LIF4KDUPBQDQMXG24CQRFKFP6SHSOG,Federal Bureau of Investigation,address block and salutation
+X2LITHNV3ZVJ5VOTRVF6LAT6PRKD73KI,"Bob Goodlatte, John Conyers, Jr., Chuck Grassley and Patrick J. Leahy",address block and salutation (House and Senate Judiciary Committees)
+X2PJKF4CM56PFKUXWPLEXISJ2TYW35DQ,Lutheran Social Services of Wisconsin and Upper Michigan,address block and salutation
+X2QDHJ46XAT5HZVDKUX6RWZJWPA2Y2UD,Harold Rogers and Nita M. Lowey,address block and salutation (House Committee on Appropriations)
+X2T24VFSQ4WKN3YLLAR6X347GGPUGLHI,Army Corps of Engineers,address block and salutation
+X2WKBMAVYY3URAACDYG2CWMCQMSBUPAQ,Governor of West Virginia,address block and salutation
+X2XEDYWGHIUEYMEZJJZWCIFUTSOWR62W,"Thad Cochran, Richard J. Durbin, Rodney P. Frelinghuysen and Peter J. Visclosky",address block and salutation (Defense Subcommittees of the House and Senate Appropriations Committees)
+X2ZTH5GVJIZNXRSJI45L2EFX3TSWW3KC,Department of Veterans Affairs,address block and salutation
+X33AF2KTUFIEPPGOYV7JXT5OX4Q4GUGS,The President,address block and salutation
+X3IDYJHFW5QGJLEP66J62RG3JLIAZ6SR,Consumer Financial Protection Bureau,address block and salutation
+X3M4DMKYC7E4AJIQXT4XJJETDTSMVOZE,National Institutes of Health,address block and salutation
+X3PD756WU3226UQPS5GOLJ4IPJMERWHZ,Environmental Protection Agency,address block and salutation
+X3TMZSEZ4Z53UCXNDZY3GWU5GDXUEHMP,ITT Educational Services,address block and salutation
+X3WM7S3ZGCGBC5YKFBBBU4KIPCHCPY4U,Department of Defense,address block and salutation
+X3XCRJSQPSOYW7272BMNUBK2IE53L6Y3,Jeff Miller,salutation and address block
+X4AROXLDMH5O7B7RJZ2SMG7HQCF6PKGZ,The Speaker of the House and Nancy Pelosi,address block and salutation
+X4BSGDMD7NEN3VP7OHY7NCL7GQL6R3MO,Department of Justice,address block and salutation
+X4CMHY2U2BVC6NHA4BJHPTIW44NCZDN2,Food and Drug Administration,address block and salutation
+X4DDLKXJX5HN6U5KP2GYNLKGSMAEYEAI,"The Speaker of the House, Nancy Pelosi, Mitch McConnell and Harry Reid",address block and salutation
+X4NQQZEM2577R76CCTCNJI2IVZLF7P4Y,Occupational Safety and Health Administration,address block and salutation
+X4PNHY5H7LH7V2KELGUG2SLDYQAI6P5T,Governor of Missouri,address block and salutation
+X4X5BKE632V374BO6DWQQQ56CJLGVNDO,Air Mobility Command,address block and salutation
+X5C6PG56WNIEADP7D7LPDP5N3F64GSO4,Office of Management and Budget,address block and salutation
+X5DUPGE22XZYD7IBMMGFSMNNXI2K2AMX,Bill Nelson,salutation and address block
+X5II5WN7EVB4YLPGD3VJ724NDWZ3R6IX,Department of Commerce,address block and salutation
+X5JWQTDCW4TXN3S7AAFYXNVD2E6XPWCY,Lisa Murkowski and Tom Udall,"address block and salutation (Appropriations Subcommittee on Interior, Environment and Related Agencies)"
+X5WVP5MXSYAA5FR4WVCMFUGFVVP7S3OA,Department of Veterans Affairs,address block and salutation
+X5XQJZH5SKQAG634PM4XRJ26BXFC5KD6,"Bob Goodlatte, Chuck Grassley, John Conyers, Jr. and Patrick J. Leahy",address block and salutation (House and Senate Judiciary Committees)
+X5YZMI2FSUXEEK3D2ZEJDZRT4XWEC42Q,Department of Health and Human Services,address block and salutation
+X62GSHJEHNZWGWWTJNMKKTK4NTNWJDYF,Department of Veterans Affairs,address block and salutation
+X67NJDZNLGFHGDJD3CBRUK63E4QMZAIB,Department of the Army,"salutation (""Dear Acting Secretary Murphy"")"
+X6BTAIGDWSE7KB3YBUIYET453CYRSYWI,Harold Rogers and Nita M. Lowey,address block/salutation
+X6CFY6EHK6XJYVGATOSQTQ2MOZ5GXCGL,Connecticut Department of Transportation,address block/salutation
+X6FIYEFCWQY56DVUZR3VEH6YNZ2KBTQR,Pac-12 Conference,address block/salutation
+X6I4WKWPLAHJRWVKHMC5PZQWPWOTQX7I,Michigan State Housing Development Authority,address block/salutation
+X6JM7QAN5Z4BUACAXOOJGKEUGVZE77YT,Air Mobility Command and Air National Guard,address block/salutation
+X6PGVILCJGRMUX55HEDOUGI4E7F5HIWD,General Services Administration,address block/salutation
+X6R6575XSDLJGFRQ5XF4W3W6JGQWVC7P,President of the People's Republic of China,address block/salutation
+X6RFLWPVGUGN5A7DCWWJCCINSNBUVFB2,The President,address block/salutation
+X6YAXDHIMNW22AIDN7IOJBB33WYLLXFB,Tom Cole and Rosa L. DeLauro,address block/salutation
+X6ZBTCTRLDERCJM745K7MF4J7FOJXZTS,Council on Environmental Quality,address block/salutation
+X734JNNFJ6XDVHDBTHKGKFJCZHIA2RZE,The President,address block/salutation
+X75P6EV4BDQXIJFQHDU7MUTOZHZHDBBA,Ron Johnson,"salutation (""Dear Senator Johnson""); As recipient"
+X77252LC6QU2A2JPPSU35G5IUJRHZOE4,Orrin G. Hatch,"salutation (""Dear Senator Hatch""); As recipient"
+X7BRWWWZCSCBVCJR56FJ4FGAL67TBUOO,"Harold Rogers, Tom Cole, Nita M. Lowey and Rosa L. DeLauro",address block/salutation
+X7EPGLACMV5ODP2NUH2CLC44YWPNBEIE,Food and Drug Administration,"salutation (""Dear Dr. Hamburg"")"
+X7GAG6TDDSGRM4EW7425H4F7G7RPGTWZ,Department of Transportation,"salutation (""Dear Secretary Foxx"")"
+X7HLMKKFXS3KPQQ5NIWXHHZQHXMSUXRS,Office of Management and Budget and Department of Health and Human Services,address block/salutation
+X7JIGZPROPZHLI7ADFOH2TLNTTH5WVFQ,"Marco Rubio, Mark R. Warner and Ron Wyden","salutation (""Dear Senators Rubio, Warner, and Wyden""); As recipient"
+X7MBNPPPA2LIL5E2YYWXPUKXFJO7AEKP,National Science Foundation,"salutation (""Dear Dr. Cérdova"")"
+X7RZFR6RJHBYGZAW4DAEMDZ7LMVSZGE2,The President,"salutation (""Dear President-elect Trump"")"
+X7YHYTJBAH3GTBG2SI4C54T6R6EC5LUK,Department of Veterans Affairs,"salutation (""Dear Secretary McDonald"")"
+X7YKENY66MNX6FOXG5Y4KUK63QGZWEPZ,Federal Communications Commission,"salutation (""Dear Chairman Wheeler"")"
+XAJJFEWNUCLIJSGRVAMJQ73X6TDWYJUO,Amtrak,"salutation (""Dear Mr. Boardman"")"
+XASJVZGFCWKWDNB4CFT4CMDLRTFIBCVH,Department of State,address block/salutation
+XAUSPLC64THLU43HLIBBHPBC7Y7ZYCSF,Department of Health and Human Services Office of Inspector General,"salutation (""Dear Inspector General Levinson"")"
+XAVPY5UVLNCR4SQJICVWETOXWIYPVVSR,Bill Cassidy,"salutation (""Dear Senator Cassidy""); As recipient"
+XAVRPY4G4DZ3P4EUSR6DHRPPBIV2GID3,Office of the US Trade Representative and Department of Commerce,"salutation (""Dear Ambassador Froman and Secretary Pritzker"")"
+XAVVCVR67FE5OOUZDPCUKK36KVGW3OGO,The President,"salutation (""Dear Mr. President"")"
+XAZUACI2R46PSZQCQE57XCTBH7PORWEU,Bureau of Reclamation,"salutation (""Dear Mr. Murillo"")"
+XB22TU66MKYNDX2INXKJCXRKXMOQYK3A,Department of Veterans Affairs,"salutation (""Dear Undersecretary Shulkin"")"
+XB72QSALJIVOGHMCL2SIUPYWZM753HRK,Utah Chiefs of Police Association,"salutation (""Dear Chief Ross""); address block"
+XBFFDWSN3LIHTPQUWJ6ERR77DWKKBL7Q,Mitch McConnell and Harry Reid,"salutation (""Dear Leader McConnell and Leader Reid"")"
+XBJ2OG7PDLJNSKROJQAWOLD7SY7S7O4S,The Speaker of the House,"salutation (""Dear Speaker Boehner"")"
+XBPJBC6ICGP2JJPNDIUOZCHBPBB3ZEOM,"Department of Health and Human Services, Department of Agriculture and Department of Defense",address block/salutation
+XBRZ4PQ2PE3WPPUEIIWIM7DXCKKHI4GV,Tom Cole and Rosa L. DeLauro,address block/salutation
+XBVWACPBJFDGTWXCCTJ22D6SMG6UAPYH,Department of Defense and Joint Chiefs of Staff,address block/salutation
+XBXHCAW5ZU7RGVRTVGJUYDWTJCQWU7MM,John McCain,"salutation (""Dear Senator McCain""); As recipient"
+XCCEEEI2FV6MZ4T53EWDNO3J76KIKAI7,Department of State,"salutation (""Dear Secretary Kerry"")"
+XCCKSXP2CKSFVMGVEWSJ2K2BGS7LQP7Z,"Rob Bishop, Raúl M. Grijalva, Don Young and Raul Ruiz",address block/salutation
+XCEUTD52ZZYXHTPQSI46PXBGS3B5NUX3,Internal Revenue Service,"salutation (""Dear Commissioner Koskinen"")"
+XCFEBQNXOTLC643IUVEGB5ELXWUFTR2V,The President,"salutation (""Dear Mr. President"")"
+XCI4SS5MBMB6QRPIMR6FBHM4FCE6MFRF,Customs and Border Protection,"salutation (""Dear Commissioner Kerlikowske"")"
+XCSKQ2WUIHE367GDGRRZMQ5GZ3RJWX26,Department of the Interior and Fish and Wildlife Service,address block/salutation
+XCUERHG6CWGQZWR33D4X2EVWDGJAC6YI,Federal Communications Commission,"salutation (""Dear Chairman Wheeler"")"
+XD2HPDDRPINAM3E36M3AOZCK3XZHUT24,Bill Cassidy,"salutation (""Dear Senator Cassidy""); As recipient"
+XDGVN2GYLBNJMDCTO7ITJFJXTG57JOZA,"Fred Upton, Frank Pallone, Jr., Lamar Alexander and Patty Murray","salutation (""Dear Chairmen and Ranking Members""); As recipient"
+XDJYXASTJJVF77CP4V676V4VE5TYAXPZ,Department of Transportation,"salutation (""Dear Secretary Foxx"")"
+XDLCL7FVEEDI475RM2OPY7PGUB5QB4PB,Vern Buchanan and Ron Kind,"salutation (""Dear Representative Buchanan and Representative Kind""); As recipient"
