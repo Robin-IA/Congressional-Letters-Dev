@@ -51,6 +51,7 @@ MXVVUFCXYREQHWUJRJI25VPDBJHWHNVF,Amtrak,"address block read (#357): ""Dear Mr. A
 WVQSUAPX24OAAGR7LYP7HLI3647VKZTQ,Amtrak,"address block read (#357): ""Dear Mr. Anderson"" is Amtrak"
 YCYMPU6JZRI4LTG7YMNSHDQ2RZTFITDD,Amtrak,"address block read (#357): ""Dear Mr. Anderson"" is Amtrak"
 Y3JJQTCH6DBNU2Z2KAQMZJPTGODL4ZRP,Amtrak,"address block read (#357): ""Dear Mr. Anderson"" is Amtrak"
+7L3KI7MSHXELUOIUMHOS2O6K44P3J3AX,Amtrak,"address block read (#357): ""Dear Mr. Gardner"" is Amtrak"
 IXXBJWA7Y65EPKTG6FQODKMVH4XMHSC4,Amtrak,"address block read (#357): ""Dear Mr. Gardner"" is Amtrak"
 ALLNLWORDLTT4DY4Q2GACK2C4WCKCQBL,Zions Bank,"address block read (#357): ""Dear Mr. Anderson"" is Zions Bank"
 YI2OG2HRK4M4GSN7WNI3GO3XSAPBIEF6,Boys & Girls Clubs of America,"address block read (#357): ""Dear Mr. Bach"" is Boys & Girls Clubs of America"
@@ -59,7 +60,6 @@ TB2JKGRNXIGQHJN5JAIFVD2ZOJN2HJ74,Boys & Girls Clubs of America,"address block re
 J6GECJ6KVUTE6FC45D2IR233XENLQ7U7,International Olympic Committee,"address block read (#357): ""Dear Mr. Bach"" is International Olympic Committee"
 MOFLBAAAGS5TUT3OYFJGJE2JZLK3C2AI,International Olympic Committee,"address block read (#357): ""Dear Mr. Bach"" is International Olympic Committee"
 ZRXLP4K5OODRUDYQX3GNAY3QM5UOW7FX,World Bank,"address block read (#357): ""Dear Mr. Banga"" is World Bank"
-JQPIDYE7KPNGKPPOZCUUCNGH7YAJ2CGV,World Bank,"address block read (#357): ""Dear Mr. Banga"" is World Bank"
 JAQ6EIX4SILVRB7ZX3NIZ354CV573ZM3,Computer and Communications Industry Association,"address block read (#357): ""Dear Mr. Black"" is Computer and Communications Industry Association"
 TNJPY5L5TNFGR6PWEJ2C2EIP7COSHJX5,Apollo Global Management,"address block read (#357): ""Dear Mr. Black"" is Apollo Global Management"
 QDGU4PWFAYWLUB4ON4TZWXU72ZYORGAR,Apollo Global Management,"address block read (#357): ""Dear Mr. Black"" is Apollo Global Management"
@@ -157,7 +157,6 @@ Z7GAPGPFI2WJJY2JXKY65NC3QON6OTV7,National Security Advisor,"address block read (
 TC6EFCR3FD2AWOHIPI3XXNDWQ4IJNL25,National Security Advisor,"address block read (#357): ""Dear Mr. Sullivan"" is National Security Advisor"
 6SKOSLKYMQVCUR3KKCDI7NIJLXX6DSXT,National Security Advisor,"address block read (#357): ""Dear Mr. Sullivan"" is National Security Advisor"
 V3BRQDJHY3YZ5CXRH2GXSMKAYKG4V2CZ,National Security Advisor,"address block read (#357): ""Dear Mr. Sullivan"" is National Security Advisor"
-IYONRI6BOQ26NDCSQ6JXR2XIL7AQYBWW,National Security Advisor,"address block read (#357): ""Dear Mr. Sullivan"" is National Security Advisor"
 YO2U5W4KEI2NXREZXVU2DJJN2DME7XX6,Northern Border Regional Commission,"address block read (#357): ""Dear Mr. Parker"" is Northern Border Regional Commission"
 JCLR6Q24XZBVHMA67KKEATLL4LXYGVEP,Sallie Mae,"address block read (#357): ""Dear Mr. Remondi"" is Sallie Mae"
 VJLG7F4YFFJ44Y2HX2SIHCUHHHZMVGJP,Navient,"address block read (#357): ""Dear Mr. Remondi"" is Navient"
@@ -222,7 +221,6 @@ N24ITQ42J5WZGVXZQPTO7GJNL6W4T47U,"Senate Committee on Agriculture, Nutrition, an
 XXLJ2QFAMTENXDLRXEMELT3WYSSDEJ26,"Senate Committee on Commerce, Science, and Transportation","#349, Robin's rule: the 118th Congress's only member named Cantwell (Maria Cantwell, Senate); the address block names Senate Committee on Commerce, Science, and Transportation"
 NTGGNYB6LCF6QWTFGW4ZG6HU7MPF43AR,Dean Phillips,"#349, Robin's rule: the 118th Congress's only member named Phillips; the address block names no committee"
 RZ4RL2PSNU55S56UPSZT5BT3SYQFHTJX,"Senate Committee on Commerce, Science, and Transportation","#349, Robin's rule: the 118th Congress's only member named Cantwell (Maria Cantwell, Senate); the address block names Senate Committee on Commerce, Science, and Transportation"
-J4ZHICK5QJWMYZDJZTGUVHWOMECSOMEM,House Committee on Homeland Security,"#349, Robin's rule: the 118th Congress's only member named Amodei (Mark E. Amodei, House); the address block names House Committee on Homeland Security"
 XTIGCMEBBUDLGHUW4PTRBX3OZA6VBHER,Senate Committee on Appropriations,"#349, Robin's rule: the 118th Congress's only member named Hollen (Chris Van Hollen, Senate); the address block names Senate Committee on Appropriations"
 NVVXMQOTEVYVZZFGKXPYFXASZ5PYTQ6B,Senate Committee on Environment and Public Works,"#349, Robin's rule: the 118th Congress's only member named Carper (Thomas R. Carper, Senate); the address block names Senate Committee on Environment and Public Works"
 KCMRXKKBRT7OTXVP6LL5TMADNKP7EVIX,Dean Phillips,"#349, Robin's rule: the 118th Congress's only member named Phillips; the address block names no committee"
@@ -232,6 +230,7 @@ NOMUDXYEFBFC7G7FPAG7NER45J5WMOB2,Senate Committee on the Judiciary,"#349, Robin'
 D7CK24UVBAUCKM5A3E2UDMCPCRWKVUEP,Senate Committee on the Judiciary,"#349, Robin's rule: the 118th Congress's only member named Durbin (Richard J. Durbin, Senate); the address block names Senate Committee on the Judiciary"
 YYIMMJ35HHGS5DI722FP7QGE6DD44TKW,Thomas R. Carper,"#349, Robin's rule: the 118th Congress's only member named Carper; the address block names no committee"
 P64KYPH3VZDXLZ3S63577U4SQRH3YDSU,"House Committee on Science, Space, and Technology","#349, Robin's rule: the 118th Congress's only member named Lucas (Frank D. Lucas, House); the address block names House Committee on Science, Space, and Technology"
+HJ7R2VYAG4PJTLKEECETFTBHY5MZ4AZW,"Senate Committee on Commerce, Science, and Transportation","#349, Robin's rule: the 118th Congress's only member named Cantwell (Maria Cantwell, Senate); the address block names Senate Committee on Commerce, Science, and Transportation"
 KE3KKX3XXMGDOGYPJU7V3NTPY6IEBFPO,Senate Committee on Environment and Public Works,"#349, Robin's rule: the 118th Congress's only member named Carper (Thomas R. Carper, Senate); the address block names Senate Committee on Environment and Public Works"
 WYHJ4FM5CHCO7PDXZYIYNI2MLGJBAHSD,Senate Committee on Finance,"#349, Robin's rule: the 116th Congress's only member named Grassley (Chuck Grassley, Senate); the address block names Senate Committee on Finance"
 F2MJU3ASD6Z5X3J4GWG4MDI3CGHFHFIK,Senate Committee on the Judiciary,"#349, Robin's rule: the 116th Congress's only member named Graham (Lindsey Graham, Senate); the address block names Senate Committee on the Judiciary"
@@ -51223,6 +51222,596 @@ DRVKHLSQIRG5NVNIIEWBTBUO6XFBH64P,The President,address block and salutation
 AGM5MAUBBSSARYZIHYX2KBSUK4SWOXGQ,Susan M. Collins and Jack Reed,address block: Chairman Collins and Ranking Member Reed
 BLXZEILAEFDPRBBKEZQLS6JJDFSRPKWW,Environmental Protection Agency,address block and salutation
 DJAQPW55LIPFMFFVYFKHA5GNRG6IAKKA,John A. Boehner,address block and salutation
+HVGF7IMSQQ3JL7SBHXKCW2WSQKLWTLXM,Office of Management and Budget,address block and salutation
+HVHSE33WEDHN4OGC4INNNU33YYPVEL22,Bureau of Consular Affairs,address block and salutation
+HVO754MLO6ZAAV4PAFQEY2JQUD2I2NRQ,American Beverage Association,address block and salutation (CEO Kevin Keane)
+HVPTX3S7JRKOUPFGODIS43EGO24BIZMK,Acadia Healthcare,address block and salutation (CEO Christopher Hunter)
+HVRK664J5RALKH4ZZ6G6FOIBF6IXMKWR,Maria Cantwell and Chuck Grassley,address block and salutation
+HVSU7BPZRJB7QERQMXJTPQWHSNTQZD2K,Surgeon General,address block and salutation (Office of the Surgeon General)
+HVVPU7SR7ENI5KN2JSFFSXV36MYEN76F,Securities and Exchange Commission,address block and salutation
+HVX5F33F5OKZXSBFEQ6T5MNIJI5QN4CB,"Mike Johnson, Hakeem S. Jeffries, Sam Graves and Rick Larsen",address block and salutation
+HVXARE5EFHNYSBLYGR7ULAG7VWCKCI2U,Arizona Health Care Cost Containment System,address block and salutation
+HW2MDBBY6SEMRZYMG3EB5NSWFAP3I62V,National Marine Fisheries Service and New England Fishery Management Council,address block and salutation
+HWCZ7TQCA66JAQSUDCQCYGBXTCTIBF3F,Internal Revenue Service,address block and salutation
+HWFHHFB5MLB6VMKPARMZSLQGIFV66TQZ,Kay Granger and Rosa L. DeLauro,address block and salutation
+HWOVHLB5SQFXLRUGL6KMCTBNN22SVVT4,Kay Granger and Rosa L. DeLauro,address block and salutation
+HWRD2LBIB4ZEIXQVPJRQNO4JTSUCIMKX,Department of the Treasury and Department of Energy,address block and salutation
+HWVNSHRWHWKA7VKWXAWJ6TSTMZEQAN3N,The President,address block and salutation
+HX2MX5MVISGK2SCQOJXZJRFCXSTGXHV2,Department of Education,address block and salutation
+HX3CK6K5GP7CQ7JZ4WTX4FWCSHINUOLP,Consumer Product Safety Commission,address block and salutation
+HX4YYX7KRDW5ZFXKOV2Y7BBPCZLADNM5,Department of the Treasury and Internal Revenue Service,address block and salutation
+HXBTPOV363UBFBNEL43QLTNWUBKWMXXX,Department of Commerce,address block and salutation
+HXCCMFVUBO4DXQT2P7SF45UO3ESEKXH4,Office of Management and Budget,salutation (Dear OMB Director Shalanda Young)
+HXCNPOGAKJQINOOCIOE2RDQEACAVGCOD,Department of State,address block and salutation
+HXORD6HANU22ED7VMEOLBEM7OI5UUGST,Consumer Financial Protection Bureau,address block and salutation
+HXSYBYUAU5VCS6Z56F63WUSW5UQ2CV5K,Charles E. Schumer and Mitch McConnell,address block and salutation
+HXWOMOTR2DD3HGU7GRCSEXM2IJ2MPEUC,Department of Veterans Affairs,address block and salutation (Under Secretary for Health)
+HXWP73SUT6K6RF7QZVIL22WYBT7SM3UR,Centers for Medicare and Medicaid Services,address block and salutation
+HY5N7XJCH7G6U56QRHFDZ7Y4OWMXDWXH,Federal Communications Commission,address block and salutation
+HYBLNK65T3YH4P2CCVCAMLWEDK4JOZMN,Food and Drug Administration,address block and salutation
+HYMXH6REKY54GUBXF73ALOQVGUVKMZKJ,Tammy Baldwin and Shelley Moore Capito,address block and salutation
+HYR54SWF7RDSNU6CFBDYHXGWAKCWUU32,AT&T,address block and salutation (CEO John Stankey)
+HYTNHCV7ZELAWHX56FQNS26A6KF6BC7P,Tom Cole and Rosa L. DeLauro,address block and salutation
+HYXZJ2FU5ZTJWGATPCUIEQTYOQCQBIJ3,Dianne Feinstein and John Kennedy,address block and salutation
+HZCCMTF6LTO67SAL6FOFNS5VV2MXA2Q6,Internal Revenue Service,address block and salutation
+HZEVUN5GWGF6Y5WSC6C2ORMQNLAJBOWC,Department of Justice,address block and salutation
+HZFRADTDQNT4YSOZTTT25GN47JNM47PJ,Internal Revenue Service,address block and salutation
+HZGHZNWTNQ7UECHGVAO77JP5DYW2MXKV,Tom Cole and Rosa L. DeLauro,address block and salutation
+HZHKLBPZKDYDJGLBBGUNMQG5L4VEQMJ6,Department of Homeland Security,address block and salutation
+HZSC2VRMWXMKSD4MLWDSLS6T4ATLW2R3,Department of Justice,address block and salutation
+HZWP64KZHSMU72DAV3KCJ3F2CPTZS6L4,Tom Cole and Rosa L. DeLauro,address block and salutation
+I263X2CMRDCANRO5G7X2GKTNQED2X6EV,Department of State and United States Mission to the United Nations,address block and salutation
+I27ERBSGYKYWJ4AZNDWPY2HC77E6QZY5,Kay Granger and Rosa L. DeLauro,address block and salutation
+I2B4IZUEWD6WNE73MIOGQR7B5RA7YX56,Kay Granger and Rosa L. DeLauro,address block and salutation
+I2IC424JLR6IMX2K3SJOB3KC7CESJ3PI,National Guard Bureau,address block and salutation
+I2P3CQR6TSHS3E7VOS4DRGQEKPHKSDQK,McKinsey & Company,address block and salutation (Global Managing Partner Robert Sternfels)
+I2TFSRRPYQL5IFXWCFLQ2SLI3RAJFXPC,Tom Cole and Rosa L. DeLauro,address block and salutation
+I3723KTO635VYRFPXFX2PLU5SX5YXPED,Governor of California,address block and salutation
+I3FZQ7DTO2AMUN45NPXXFCJEVNJ4HG4U,Kay Granger and Rosa L. DeLauro,address block and salutation
+I3GPQKFYYBSF6NOBBKHXMHQQOID3YDQE,Governor of New York,address block and salutation
+I3H3SRN4W5EFPVO4KSRM6YWSF7RROETF,Tom Cole and Rosa L. DeLauro,address block and salutation
+I3KWQ3LTY6U42XXRUK75JWWAHSSOFX6Y,Kay Granger and Rosa L. DeLauro,address block and salutation
+I3L3JBXAJMKDCCUP6XL7JQGFOBYY52SI,Centers for Medicare and Medicaid Services,address block and salutation
+I3OVZDVYBBKIQZDDB3B2YHIQB725UBPO,Department of Justice,address block and salutation
+I3UZ3A345VSS5BD6OMCAYIDD7VJ765UV,Tom Cole and Rosa L. DeLauro,address block and salutation
+I44RYQ5LU7OCZWENJCBXLWUYNBSZIAE6,Food and Drug Administration,address block and salutation
+I4CYXAE5TLTWS2GNPZPEOM5QSBJJKRMS,Meta (Facebook),address block
+I4HH6YZLCFJJNUEROQZSHHIACGBMBX4C,Tom Cole and Rosa L. DeLauro,address block and salutation
+I4JN3R7F7HCXCQTDQM5WC7HV5ISRQDBL,Department of Education and Department of Justice,address block
+I4QT4537GNQZEJLHMXTLUBOIUGYHO4LK,Department of State and National Security Council,address block
+I4V6NAAG7AS2XY74S3S5HUHMWROSGUXU,Department of Veterans Affairs,address block and salutation
+I4VJLZ7NS5QTFA36L5GMF7XVMNQQLPAM,Department of the Interior,address block and salutation
+I5FZLMJQGZMWOEQ5GUW45T54BOKYJAWC,The President,address block and salutation
+I5LK2ZB753TEERDRGSKD4CEVYA74ZILG,Centers for Medicare and Medicaid Services,address block and salutation
+I5OXY5GSMR6KSPHQCYHMWPPZWVMVROP7,The Speaker of the House,address block and salutation
+I5R3LYOVORFLWF54ZUVLLAU7BQR4POMO,Steve Womack and Mike Quigley,address block and salutation
+I63TAEZZHG66VRD2LGPUWDUP3L5RBAQB,Department of the Treasury and Internal Revenue Service,address block
+I65CRF6ADFC422RR2JGI23W3JCDCJLKK,Tom Cole and Mike Quigley,address block and salutation
+I6AHZ7AAPXYPEOZQ6SBTXZUAR2KXUICL,Massachusetts Department of Public Utilities and Massachusetts Bay Transportation Authority,address block
+I6I74OMSDFB7HCJFBUNWG4MPVRHSBRPS,Bureau of Reclamation,address block and salutation
+I6KYMPJ2RLTW4UZYFF234ALKISRDVTCH,National Collegiate Athletic Association,address block and salutation
+I6MJTBAMOFW3XZRTO3ARCCF6NPYNBOVQ,Google,address block and salutation
+I6UML5NEAVSJZSSOT7HGXURLJ3PJHYWY,Thomas R. Carper and Shelley Moore Capito,address block
+I6ZQDOID7QZELFOCBAP6LW3R2TM3W4HR,American Medical Association,address block and salutation
+I7C7YBIHZDVC6DNWZTB2PD2LG24VYJNM,Equal Employment Opportunity Commission,address block and salutation
+I7KNG6O7OQR5S7WRJVMRXCSMCCUQ5Q7Z,Kay Granger and Rosa L. DeLauro,address block and salutation
+I7R4XSTBNY7HD7HRIMWMUFPOPCWWBWQT,Tom Cole and Rosa L. DeLauro,address block and salutation
+I7TBX7IJUALXAWC6FNZULQA4ZOQQSYSE,Department of Agriculture and Forest Service,address block and salutation
+IA6VKWKBY77UZHOVROJS45WQA5OWMJ3O,Tom Cole and Rosa L. DeLauro,address block and salutation
+IAAWEXJTW4KPCBWY767IU2FUF5DWD4GE,Northeast Georgia Health System,address block and salutation
+IAEVVQMRL7HDGUYIBQGJ5KVFDZIEWA3C,Forest Service,address block and salutation
+IAGJZIEDLG7NYE2AGGJGJRYE56NIBAKQ,Department of Agriculture,address block and salutation
+IAPOVTXS5ZNCDZJO7H36KFWJNXA5UF5B,"Bureau of Alcohol, Tobacco, Firearms and Explosives",address block and salutation
+IAPSWUT6PHEEDED6NH3JBL6IYXQ26MPY,Consumer Financial Protection Bureau,address block and salutation
+IARW34WURXIS2XXEHJ6QRGXJBONKQJBE,84 Lumber,address block and salutation
+IAVLGCAIBXHGFVA32QS5TEGFTBD6EOV3,Office of the Director of National Intelligence,address block and salutation
+IAXLIWVB7VSC7DRAQZMM52MHXWNPRYVK,Office of Management and Budget,address block and salutation
+IB6PSOZ3S5DC6S7H7R3MIRWS2XU3DL52,Kay Granger and Rosa L. DeLauro,address block and salutation
+IB7FPSEUKNKLJZM64D47X53GZU7U6TOB,Tom Cole and Rosa L. DeLauro,address block and salutation
+IBCVCMM55SC3YSOIYVR6NRLAIFI37LDT,Monument,address block and salutation
+IBJOLJEGVY4PEVV7M3XXVTTNVMJZPDMZ,National Mediation Board,address block and salutation
+IBRDPF76QPNEIEPFTZU3EBGYJVJCC6X2,Mike Johnson and Hakeem S. Jeffries,address block and salutation
+IBSPV7QJR3HCMU6BHYHOZMN4ITN2A3LH,Drug Enforcement Administration,address block and salutation
+IBTP4BHZDXZP4TKJBSNN4XWC6VNYVP7V,Federal Transit Administration,address block and salutation
+IBUMWNSOWNLXJO2KKQ3IEUM3JKNZWKQ6,Tom Cole and Rosa L. DeLauro,address block and salutation
+IC2LMNRVNEL3TGQFFCYPFEJSPH6OE3BS,National Institute of Mental Health,address block and salutation
+IC4VW3U6AALBITNM2SKX4K2KZCHPSCBC,Small Business Administration,address block and salutation
+ICRJKJEEUKYD6ZPVFWOM6QJ3IDQAYN7N,Federal Communications Commission and Department of Justice,address block and salutation
+ICSHMXIEZSNARFIKPPXRFMUOPZTZ5TUL,Ohio Environmental Protection Agency and Environmental Protection Agency,address block and salutation
+ICT3MRV3KX2MW32REWWUV5BSBL4DQLR2,House Democratic Caucus,address block and salutation
+ICVX65T4LUC55XYC5Z3RTDTHGY2IAENG,Office of the US Trade Representative,address block and salutation
+ID4MX43T45EYZGJVNELTYPBK6YCWP2PH,The President,address block and salutation
+IDBFHH5NSLQTB5GMBLEYZYB6I3VSMJCQ,"Environmental Protection Agency, Department of Agriculture, Office of the US Trade Representative and Customs and Border Protection",address block
+IDFG4BBBS6LFJYHTDDRZUGWRHM6LPVFG,Federal Energy Regulatory Commission,salutation and footer address block
+IDYUAHJUXOOHUWT6DQA7HOBUN3VRQR4O,Michael K. Simpson and Chellie Pingree,address block
+IE2ASTMJACEPV7FDVSMKBHRA5WZZUYOI,Mike Johnson and Hakeem S. Jeffries,address block
+IE46DPCCRALWJIR2QZNISZCBKZFY4J2O,Department of Energy,address block
+IE5UOKSDNWV43QSGE54GU4QWOSPW3URQ,Czechoslovak Group,address block
+IEDGXC73DRDGBILYKQCBDBKBRC5CSI7K,Kay Granger and Rosa L. DeLauro,salutation and address block
+IEIEZWNDDH2DTLY7P72IGQ3RELAEGBPV,Department of Justice,address block
+IEITQJTOF7M3WQOVGTYHS5PI3YGRTE3Z,Richard Blumenthal and John Cornyn,address block
+IEJ7LZCQ46OODQXB4NYVH62VFWQDEKA3,House Democratic Caucus,salutation 'Dear Democratic Colleagues'
+IELNOFLR3G7ZP6WZAK5HKNSBKU535T3Z,Seqens,"address block (Managing Director, a company letter)"
+IEPDFK5ENUWYXT54FJOWEQKALPAVZIQV,Kay Granger and Rosa L. DeLauro,address block
+IERLW4EBDAEBWNE65QNWJ6YV6263TKUW,Department of Transportation,address block
+IERSFELSGTIXWMA3MMUEBIZUT4OTZ3QO,Department of Transportation and National Highway Traffic Safety Administration,address block
+IEVRGICO7RVKIHAQJZ54PUORBHJMUDNC,Kay Granger and Rosa L. DeLauro,address block
+IEWZFCSSX7L6K52FUEXJIO4MGQNUSPRD,National Oceanic and Atmospheric Administration,address block
+IEZ2RW3FHIRAZ7JTRXIK643AWZFA6J2P,Department of State,address block
+IEZT6CIFHRP64P74QW7KL6QPVESPEBNC,Tom Cole and Rosa L. DeLauro,address block and salutation
+IF2P3E345LIT452MSBYPATIYTRQ5NZET,Tom Cole and Rosa L. DeLauro,address block
+IFBWK47XXDAODCO3BHQZNGOYPEGM7CRB,Patrick T. McHenry and Maxine Waters,address block
+IFIKA7GRZWFMP54KUQHOFMJWVY3FKJYE,Tom Cole and Rosa L. DeLauro,salutation (no address block in the text)
+IFMQK6PHKXSC7QXQEDS6VNRZK4SDXTEU,National Telecommunications and Information Administration,address block
+IFPMI4AZFDKZTBQIIILFU73ENRKKF2A4,Department of Veterans Affairs,address block
+IFZSYHYHX4AFNPH7ICHTJ2JBM3NSCG6E,"Department of the Treasury, Department of Commerce and Department of State",address block
+IG6FV6BZKH3XQCG65AU3CG3ZYHQF4ENV,Tom Cole and Rosa L. DeLauro,address block
+IGARIPXJ35GQEKFIIGZ3XU3V3YZDS7YR,Census Bureau,address block
+IGDMEIZK7Q7Q6HJPN7D2ERFCUQOEYCU5,Department of State and Department of the Treasury,address block
+IGFCFR4ZPHFEMVHTAYS7DZA6UQ6J756U,Centers for Disease Control,address block
+IGHWFOCK7VHDQYWVE365HCEC4XLB2WSV,Tom Cole and Rosa L. DeLauro,address block
+IGIU4LZVLH33ZCQ65U4YMMYFZ7HURXTS,The President,address block
+IGNJMD5US5NSBUZGJ3Q45RURD22C5X73,Kay Granger and Rosa L. DeLauro,salutation and address block at the foot of the page
+IGRQEBYOCALCLYA4CQTRG722XIXFLCIJ,Health Resources and Services Administration,address block
+IGU7M5I6WQREYY7X5NFCLIVQQLLVLZ23,"Department of Defense, Department of State and Office of the Director of National Intelligence",address block
+IGUX4KC7ZKZKAFUXMBIHSU3QQ5RX3NGV,Kay Granger and Rosa L. DeLauro,address block
+IGVXTAXX4Q7T2R62DJJK4FPU4PPXHV2Y,United States Coast Guard,address block
+IGXJ6YOIXO7JGGYOQ6DX5HNEAEPBLYKY,Department of Agriculture,address block
+IGZRVTPS5X3TYQ2ED6FWMRXBLC4G6IZI,"Charles E. Schumer, Mike Johnson, Mitch McConnell and Hakeem S. Jeffries",address block
+IH3LB2ZD6XN4UH55VGJ4I5KN4XJLKDB5,The President,address block
+IH4BWH7RN6TUL37ZLEUZDW6LYE7LEWW4,Kay Granger and Rosa L. DeLauro,"address block (Hon. Kay Granger, Hon. Rosa DeLauro)"
+IHCGJVWJZKG4FCA5DU3BRKVQ3WJZLCMP,"Diana Harshbarger, Chellie Pingree and Sam Graves",address block
+IHQKIJ6HIFEIHW4YFUD56YLTWZ3M7SUT,"Kay Granger, Rosa L. DeLauro, Tom Cole and Mike Quigley",address block
+IIFH4O767HY5RP4MWEOC5XWLZ27LY6QC,The President,address block
+IIRJ7PUAVVO6LMVSQKJ6UXQ7ISDEBOO7,Consumer Financial Protection Bureau and Federal Trade Commission,address block
+IIWUTQRLC7IK2LKX3HJ6T3D3QOQQ4MTR,Kay Granger and Rosa L. DeLauro,address block
+IJ7IE64RZAHJBLQPONKWASTF7JPCXYSV,"Joe Manchin, III",address block
+IJCIEFAEDGYO75QCXCI4OLJ6SR5NM227,Bureau of Reclamation,address block
+IJDYTG3FLQEXHMNLKWXKSWWHJCF4AFIY,"Federal Reserve, Federal Deposit Insurance Corporation and Office of the Comptroller of the Currency",address block
+IJF5PX7ANDKRPFBTHAOIEQUOGTZYK2QS,Kay Granger and Rosa L. DeLauro,address block
+IJNGJEZ3HDFDLAIZQYKHQSDG7D5IQQXF,TikTok,address block (CEO Shou Chew; a company letter)
+IJQX27YO5SWBTJGOTDMUOSEHLOQ2WOO2,Department of Health and Human Services,address block
+IJTAJK5VKQH72RIF3PNCDVJZJ5QK6GPD,Environmental Protection Agency,address block and salutation
+IJWKR4C2F2OEXAJLYE23WBAJU5OKFICH,Christopher Murphy and Katie Boyd Britt,address block
+IJWRBMXPT64IU6RAVQPGRUZOZLLBJKGV,Centers for Medicare and Medicaid Services,address block and salutation
+IJY3MW365KERNEWXIKLHNAIOSXFN7OT3,The President,address block and salutation
+IK2O2CJQ4AYL5N2L2SXMGY63PEYYCO4W,"Dianne Feinstein, Alex Padilla and Ken Calvert",address block and salutation
+IKEUGMVGE3ENNIF6566ZUV63YEMX3V5H,Kay Granger and Rosa L. DeLauro,address block and salutation
+IKHBDHU3WUU7HO54NLXNC3FCSOAUSLQG,Kay Granger and Rosa L. DeLauro,address block and salutation
+IKIMH7OLWBF6UFJOQWNK3HOZPOETZYJZ,Department of Education,address block and salutation
+IKJAKUH6QT2SZK6NWPGPHCFCHMJH2ZVV,Environmental Protection Agency,address block and salutation
+IKTEX3LSSXE3XSCFWPD44LYFIT3LNDN3,Kay Granger and Rosa L. DeLauro,address block and salutation
+IKUCMEZ4QLOYMVLCCNGG6GYP6SWCOCMN,The President,address block and salutation
+IKXWEWINRFJDKES57MJRFLCLMFFVAJO7,Kevin McCarthy and Hakeem S. Jeffries,address block and salutation
+IL3ZA4T3ZDCXUJOS7Q7N3LN4J3SFZ5W6,Brad R. Wenstrup and Lauren Underwood,address block and salutation
+ILATSIBWJTP5GTFCWJUQC2T2A5NLMZOP,"Patty Murray, Susan M. Collins, Dianne Feinstein and John Kennedy",address block and salutation
+ILDHYH3W3WSX5K5GQQR5HBV3LOWTQNQM,Federal Communications Commission,address block and salutation
+ILEPDPMCQCF5B4QVJ542A5RXJFZXRRFD,The President,address block and salutation
+ILHTISLGYZEM4JRH6WJ4PQCWHJ6UOAJX,Office of Pandemic Preparedness and Response Policy,address block and salutation
+ILJ5HGXTCWGXDDCRRYHA3LSTVAVJ5A4V,Harold Rogers and Matt Cartwright,address block and salutation
+ILP6ESWCJSMXUZFVAF2OXTG34EZOWOP2,The President,address block and salutation
+ILZZDQF6H7XWDJMEEU63HK5KBPFEIO7P,Tom Cole and Rosa L. DeLauro,address block and salutation
+IMDFKUYYYJG7BLYQMJTWYD2M3TI6LLDM,"Charles E. Schumer, Patrick T. McHenry, Mitch McConnell and Hakeem S. Jeffries",address block and salutation
+IMEETRKRBSM22VJNLHOQ7ZCQQC7VSLVX,Patty Murray and Susan M. Collins,address block and salutation
+IMG7GBDEIUF4CXI5TAGYI2JIUD3ZK26W,Office of Personnel Management,address block and salutation
+IMKF5GUL56CU5QNIXDYUHGIS5NJBSTZ7,Health Care Services Corporation,address block and salutation
+IONLOJYUYUF4OQOANC5IJOS675QJ3JD7,The Vitamin Shoppe,address block and salutation
+IPA7ZUQIJ7UZFIMWZMYDO6XURKVHLH4N,American Academy of Family Physicians,address block and salutation
+IMRHNVITARFWZMCIAZGUFWYRCY5XNAFU,Department of Labor,address block and salutation
+IMRY5XNYDUNUBOCRVRDPK3ZMGVBIHDSY,Department of the Interior,address block and salutation
+IMXUJRFOFFDCGXSTTNUMNHD5TQZ4SUOT,National Collegiate Athletic Association,address block and salutation
+IN44ZU3WX7YUTEO6QAJ5J6TMAD6JL2TR,General Services Administration,address block and salutation
+IN4REYJ2RMIZEMLRVRQKRHAGN4B2G3B3,Tom Cole and Rosa L. DeLauro,salutation
+INCSQBUGMYI2WBY4TY7Z6BJCDJHKQWZQ,"Charles E. Schumer, Mitch McConnell, Mike Johnson and Hakeem S. Jeffries",address block and salutation
+INNOTDZFPQEL7WGMBQIY3PSGJ2Q2J5LD,Food and Drug Administration,address block and salutation
+INRP5I2YIEVG6SFYJVVUN322DVVOYGWA,Tom Cole and Rosa L. DeLauro,address block and salutation
+INRTWZYBAN4SL3Q5MUV3QLYH7C4GV4JO,Tammy Baldwin and Shelley Moore Capito,address block and salutation
+INSI4UANB3IWQMSZQ5CKEBSGLE6XPVDU,Tom Cole and Rosa L. DeLauro,salutation
+INSYYUHIGBXXE4IZ6IIYZI3XOCQC7WHJ,National Labor Relations Board,address block and salutation
+IOABYQHCGLRAA735LXOBVMYBKAH4VFGV,The President,address block and salutation
+IOAGIFN65DPPGDEXDYNH4RBOEFJAZZ7T,Kay Granger and Rosa L. DeLauro,address block and salutation
+IOLHMG5BCWIKZTORJPCXPXEIWZYY6POH,Kay Granger and Rosa L. DeLauro,address block and salutation
+IOM6VTAF66GRTGESIEUQVC4S2KXPQ7DD,Department of Transportation,address block and salutation
+IOZCMADBY6Y2JDYNFCBPYKUNVQAJ5TUX,Citizenship and Immigration Services,address block and salutation
+IP6B52BLEBDXM5WPAY2OO5SSAZNXCHHT,The President,address block and salutation
+IP6I6FS343ICVK2PWJPTQ65PITHT5WA7,Tom Cole and Rosa L. DeLauro,address block and salutation
+IPBZDPRICJJMY2R7WY3LLWJIYGWM2CT7,Department of Health and Human Services,address block and salutation
+IPDV24G4EYQYWM7DDWEQKL2X5FFN5XVJ,Customs and Border Protection,address block and salutation
+IPDW7DBVI2FZVXFGDSTAT5GYCCWUVEAL,Federal Emergency Management Agency,address block and salutation
+IPJKYMNBTKLSXGD2H24UWSDT3KJIV6U2,Kay Granger and Rosa L. DeLauro,salutation
+ILTR5SSTJL7ZZZ5DF7ZQ4LXHIZZSGCF2,President-elect of the United States,address block and salutation
+IPKA5K26FRLSOAR4LHSPNO6DGMH5ZWTC,The President,address block and salutation
+IPMJEJKVV6LVZO6J3NTKQYTQQBGJEXTF,Environmental Protection Agency,address block and salutation
+IPRRGG27BIZRXJMR3N5K6HO6BCHD43QK,The President,address block and salutation
+IPTRIACZCJFEKDTVYMMZJAHPMAPAGPAH,Meta (Facebook),address block and salutation
+IPXABU6UWVVTH35ZBFOE3ZQBDHJNLWJR,The President,address block and salutation
+IPZDRSYCVGALSZGJJEOVGZ7CPYTNAWJW,The President,address block and salutation
+IQ74PW6VY33RMJ7K2I5FRAZIZGR2XSC5,Embassy of Qatar,address block and salutation
+IQJ7QJ7ZPSQNMBDD2GW5JJVVW3AP6DYN,Governor of New York,address block and salutation
+IQOK42QQSYREAM3I247TTCPLYYH32D6X,Surface Transportation Board,address block and salutation
+IQTTYHRWWYWTUOR25RSVTQWZRL44SQGO,Tom Cole and Rosa L. DeLauro,address block and salutation
+IR23I6WALC7NXC3S4LXOFVHT3LPKGDXS,Department of Defense,address block and salutation
+IR35GETMXIT3WHVD6XU5TCCHLKU2XHUT,The President and Federal Emergency Management Agency,address block and salutation
+IR5NUUT2IHIR2652IPKABTTQFIQVLFLN,Department of Homeland Security,address block and salutation
+IR677W5SHZEI3ROA7J3LJ6WVKZL5T5PJ,"Jack Reed, Jon Tester, Roger F. Wicker and Susan M. Collins",address block and salutation
+IREQ6IHP467SCGGLB2O5ZH526AOOPV7U,The President,address block and salutation
+IRGF5SKSFCVNHNW4LCLPLACB45JOIUEC,"Andy Harris and Sanford D. Bishop, Jr.",address block and salutation
+IRLUL5HAOED36BSWRZHAXRS5ITHNJWWZ,Steward Health Care,address block and salutation
+IRPX4C7O3S7T7D7VUL7662JZE4IYZGJB,Diocese of Buffalo,address block and salutation
+IS2EKD5JWKMUXHILLKTCUX3IZ2XY5JED,Patty Murray and Susan M. Collins,address block and salutation
+ISAVF2VFLNYAUJJ6HBDPZK3NFTMD4DPL,Federal Trade Commission,address block and salutation
+ISBBCNX3BBQM2ALTCA6I6IXGNENWZCEY,The President,address block and salutation
+ISD4AQPUWPPCBY4GODHMIW5U57CGDVB4,Federal Trade Commission,address block and salutation
+ISUIPSALIMAO2SHWIL7QYYIDRGGNQAWJ,"Donald S. Beyer, Jr.",address block and salutation
+ISYFO3RWFGAUUDMVFKV4HSNQ3PHDDDHQ,"Department of Health and Human Services, Centers for Medicare and Medicaid Services, Health Resources and Services Administration, Centers for Disease Control, Agency for Healthcare Research and Quality and Substance Abuse and Mental Health Services Administration",address block and salutation
+ITHTTBAC5LXFOPNJCSA2STSUZ6UVBTJX,Kay Granger and Rosa L. DeLauro,address block and salutation
+ITJG5T3AM2JS2IYWUNXMVIPHGW4PENGO,Defense Innovation Unit,address block and salutation
+ITKAVVFZLT5EXLUMLH7OCHWVAW6TCQDX,Tom Cole and Rosa L. DeLauro,address block and salutation
+ITMXSIRDASXLFXHX667KAGRRMWSARAPW,Tom Cole and Rosa L. DeLauro,address block and salutation
+ITOENCIGNCGM5YQGXMRCTKJFVF4FB6ZH,Tom Cole and Rosa L. DeLauro,address block and salutation
+ITQXFMNTE4CZ73GZZSO5FT24KOATZJHL,The President and Department of Homeland Security,address block and salutation
+IU4SXU6H6GCDCPIHGEADWUKBW2VDWDT4,Department of State and Department of Defense,address block and salutation
+IUDEBHG5MLMNSNORQFV2KMX342PB5SCV,Kay Granger and Rosa L. DeLauro,address block and salutation
+IUDPE4T4MJP7DVKJFX4JBB6MSC6WGEW6,Tom Cole and Rosa L. DeLauro,address block and salutation
+IUEDBLXFGO7T7QIW6MYGPAR5FQCO723D,"Charles E. Schumer, Kevin McCarthy, Mitch McConnell, Hakeem S. Jeffries, Ron Wyden, Mike Crapo, Jason Smith and Richard E. Neal",address block and salutation
+IUFDLZFH7JMUAQKY45M34TF53N3V77X7,Blue Cross Blue Shield Association,address block and salutation
+IUL7QJ2DFM5ZFR6HIJLFZONAIKKI7F3J,Tom Cole and Rosa L. DeLauro,address block and salutation
+IULF6HLHUFIZZL5WRNNBDBR5E6PPFHB7,BP,address block and salutation
+IUZTRSHL24TZU4FQRZZYKBU4UB2NXJC5,Department of the Treasury and Internal Revenue Service,address block and salutation
+IV7ONXXKV3PBCYGULDTTV6YCFKJNFALQ,National Park Service,address block and salutation
+IVCXWLJL3QUYUMVJKDZPKNVXLF26RLFF,Department of Commerce,address block and salutation
+IVEPWC4DOVRE345WLWO3LUN5D275FIFB,Tom Cole and Rosa L. DeLauro,address block and salutation
+IVF7YLJWO76KIKHMWGOTNJOM5EHXIKXI,Department of Health and Human Services and Office of Management and Budget,address block and salutation
+IVGBCRZCY4UI4FRSRRRR6JGCVK52XMYN,Tom Cole and Rosa L. DeLauro,address block and salutation
+IVILHJDEUFJC26UFWKNUIEQ2FB4RD2I2,National Aeronautics and Space Administration,address block and salutation
+IVIYH2NI4VI5ROGU6CEHMJ4TYKRO7YQN,Tom Cole and Rosa L. DeLauro,address block and salutation
+IVRT3Z6UAWCQHPK5NH6CBOKFITRRF3PY,Harold Rogers and Matt Cartwright,address block and salutation
+IVU4H3JSLFYZ7AT3M3P7CV5CM4TJAFIP,Department of Defense and Defense Health Agency,address block and salutation
+IW56SRF63TQ2AV5PTYDLG4GCI27EV47N,Administrative Office of the United States Courts,address block and salutation
+IWBRMG2SVQAW64TN5ILBWGC7PPOSCZCS,Department of Transportation and Department of Energy,address block and salutation
+IWDSQCVB6SNISRK6CRECQNGGFB4KEWX2,Bureau of Consular Affairs,address block and salutation
+IWEEHBCAG5SPPLITSPXO325RTTJL26EV,Blue Cross Blue Shield Association,"address block (Kim A. Keck, President and CEO)"
+IWENLZN2YTRETLBYWT7V55EHPMSEFDZK,Jeanne Shaheen and Rick Scott,To: block / salutation
+IWHBCKBG56WAEBILYWH3DSX5LRN6II7T,United States Agency for International Development and Department of State,address blocks
+IWQTAFHMVVGFSXIO2BYGPAIM232XZ2Z4,Tom Cole and Rosa L. DeLauro,address block
+IWSVXAFA6GC2Y44KMF5ZAOZL2KDKD7LU,Tom Cole and Rosa L. DeLauro,address block
+IWXIHVZHX3VNADCCVZ67WVSCV7REELPC,Department of Homeland Security and Department of Labor,address blocks
+IX3AAVMONMGXU2VFPXBVHF6FEMHCUSMS,Department of the Treasury,address block
+IXI3JKC7773THJZO7VWMBQ5R4T7ZE4DU,"Federal Reserve, National Credit Union Administration, Office of the Comptroller of the Currency and Federal Deposit Insurance Corporation",address blocks
+IXJ6MLYYB4T7ABRZQRXBSWY4TMYPCOCI,Department of Education,address block
+IXQNG46SVFONFE2BZP7AXAESJT6YYYKA,Department of Homeland Security,address block; cc Acting Commissioner Troy Miller (CBP)
+IXS47LEK2WLNGBX3TY7BP3VXLXTVPX46,Kay Granger and Rosa L. DeLauro,salutation
+IXT4EE754YC6MEA6MPYSROWKYZPA5O3D,Office of Personnel Management,address block
+IY26PNDLXM3W7HMXGXI5HLM7IRUZ3A7G,Election Assistance Commission,address block
+IYF4P7WVVJJVVK6WRABQT2FBHOL6TEAT,Department of Education,address block
+IYH3HFLOCQDS3KT3TWKIJGGPAU5ZQN2U,Walmart,address blocks (CEOs)
+IYONRI6BOQ26NDCSQ6JXR2XIL7AQYBWW,National Security Advisor,address block (Jake Sullivan)
+IZ5UNGWXZQZH5VKBHCIO6EAEDUEM3VFF,Tom Cole and Rosa L. DeLauro,address block
+IZBETKTHPKAQKZHYRENNJ3X23SQTDHJZ,Robert B. Aderholt and Rosa L. DeLauro,address block
+IZBGK4TS5IKJ55CMY56DLGK7UZAFPYSC,"Ron Wyden, Rand Paul, Edward J. Markey, Cynthia M. Lummis, Elizabeth Warren, Mike Lee, Cory A. Booker and Steve Daines",address block
+IZISLEA7LMDWZWG7U2M5R5MBWFOPQAJ3,Federal Motor Carrier Safety Administration,address block
+IZJKY3DSW75XPEISF2PT3BUHE44BXDST,The President and Office of Management and Budget,address blocks
+IZLLICFI2QAHUCS727Y7N6HHSQDZUGMB,Centers for Disease Control,address block
+IZUUHOEZWHJPDFRLNZSQQCF4I27I543V,Kay Granger and Rosa L. DeLauro,address block
+IZXOYM4KNTD33Q6F2RZFTVJUOXSCYMMK,Department of Defense,address block
+J2AYZLJ4U32GIEX75ZATSKDKHUQD5QOM,Mario Diaz-Balart and Barbara Lee,address block
+J2EG6JVIDPTPIVTRP3DJ5WOR3IEVP2U4,"Charles E. Schumer, Mitch McConnell, Mike Johnson and Hakeem S. Jeffries",address blocks
+J2EGMDSBJ3DELKETAJ3TVEDR36ZPTMA3,Kay Granger and Rosa L. DeLauro,address block
+J2ESXZO7EQCSJ6YZP2WY6LH5ZZPZOWLS,Tom Cole and Rosa L. DeLauro,address block
+J2IYUFARTTGKNJAYSF6OV76GWMPCTXJ3,Department of State,address block
+J2KH5EBP7PI3WSFLRFLP5LVXWZZ46PLO,Bureau of Ocean Energy Management,address block
+J2UO2XGHRSMNFDUUQFWVZW2EOO2MZ2MF,Tom Cole and Rosa L. DeLauro,address block
+J2YQXNBW3426D6E5A2OGPWJKIW4ORRFV,Department of State,address block
+J33IN2HN7ZQ6HZY6WMBOIII7RLP66GGS,"Department of Justice and Bureau of Alcohol, Tobacco, Firearms and Explosives",address blocks
+J35BJSGTFYYME64VTW47U62PVWFDDKZ3,Department of Education,address block; cc Federal Student Aid
+J3FZWXLIUI5HU4SK4O2DMDQAQH2ETG5A,Prime Minister of the United Kingdom,address block
+J3GE75PDUCA7M3HSJQPAVYRRF5R52L4Q,Department of Commerce,address blocks (both Commerce)
+J3JKHBVKBBBGRPYODLFWXQ6R75WGT4OJ,Mario Diaz-Balart and Barbara Lee,address block
+J3JWYZWTR64XPNTKYBAMALTPJXLMJRD7,United States Secret Service,address block
+J3JYM7ZLIV5U2D4AR6H2J7IKY3WKJBCD,Governor of New Jersey,address block
+J3MTMPCBURNNDMSFHCO3FR4IYPKI2GQT,Department of Justice,address block
+J3VZIVRZSNS6T7MFREDZOEUC3AW2DBZD,Jason Smith and Richard E. Neal,address block
+J3WCPO7S2DJQQSSVPNIUPOCQ2LVHJKOM,Governor of California,address block
+J3WT5LG7DFL5D7LPNHQEGK72Z4L72WCR,Michael F. Bennet and Ron Wyden,address blocks
+J454VEDPWW6BRSUWTV5DE2KPJMRVSQWG,Fish and Wildlife Service,address block
+J4D42ZCCIAMLQDZSOGNWFOS3TRD6LU7S,Tom Cole and Rosa L. DeLauro,address block
+J4DZSZCLEYELFYEA3YOZWMI4CB3I2JWU,Tom Cole and Rosa L. DeLauro,address block
+J4MAT7ETWBWYQLHRAPIT6BGXWTI3BO66,Department of State and Department of the Treasury,address blocks
+J4S4QX7IQVNX7W4VEB3LKMD7BR67Z3JG,Department of Health and Human Services and Food and Drug Administration,address blocks
+J4SFCYJP3NUI4QBWVNZF5PNLTOMKEFT5,Department of Energy,address block
+J4XAKTVFOY6UG7GIVTZ4MFW27YQTX4FD,Charles E. Schumer and Mitch McConnell,address block
+J4ZHICK5QJWMYZDJZTGUVHWOMECSOMEM,Mark E. Amodei and Henry Cuellar,address block
+J5JQLZBCMLGSQEBPN77Y6GY7OYYJ3WW5,Canadian Pacific Kansas City,address block
+J5OQMVDQFF4KE37QFT7L43VNHVG5QN5I,Jason Smith and Richard E. Neal,address block
+J5PKU6VDTAUVDA5GT745Q3T2DXZ23RBU,"Bureau of Alcohol, Tobacco, Firearms and Explosives",address block
+J5ZIO7ZIKFPOJ2OGN2YXRGEBJUFZY6PE,The President,address block
+J66BBD33AIISIKQM6G3EQGKZJIMCITLM,Environmental Protection Agency,address block
+J6C77SWFTKMTKHSH7G4IMJVEBBVHPGLZ,Jeanne Shaheen and Jerry Moran,address block
+J6DOQS6FDRELQWMRU4TJ7ZA37XIBIXKM,Securities and Exchange Commission,address block
+J6IBTC4QNNLX3IGWKKHJEHWC5OFOHULB,Tom Cole and Rosa L. DeLauro,address block
+J6KLAA7AXTJOY2QA75USLKVDYSHE2BM6,The President,address block
+J6LPMBEXT74HDDPTDJIBD43EP2EU7AEN,Chris Van Hollen and Bill Hagerty,address block
+J6Y4XKFY6OHZRETQJBCZ7EG7P2HB7DLG,"Joe Manchin, III and Shelley Moore Capito",address block
+J7DROGD5JOKUEHVMEC2WKQQG4PYN54XM,(no recipient),salutation 'Dear Texas-11'
+J7ELTMAMJSVJS7NMFCKYRYJGU36CLSDA,Tom Cole and Rosa L. DeLauro,address block
+J7PWSEUDQTR7IOKQE5AKZQP32KNLWDUK,Columbia University,address block
+J7TCII6ROAANHIU4UDSCHFSM2SCTVRVI,Alphabet,address block
+J7VFXB4JAQHSF4PYBY2O7SYARFCD54SM,Harold Rogers and Matt Cartwright,address block
+JA6AWQ5HYQOGSJ3K6XXY632TYOOSZHNP,Centers for Medicare and Medicaid Services,address block
+JAADCBQHAV7XQVCFKMHFAQAVEJW2LKT2,"Department of Justice, Food and Drug Administration and Drug Enforcement Administration",address block
+JAI5TNYOSOXEYR2MQFGTFJ6TDXMZLJWA,Tom Cole and Rosa L. DeLauro,address block
+JAT3UB4I7H4EIVRX2XM64C5VM2SFBDGU,Department of Commerce,address block
+JB3VBAZU3BPVRQSRGT3YRNPRQ25DTWCJ,Aetna,address block
+JB5Z7MCZ3R64LY5BNP7HLGK2SDVNLYOZ,Brad R. Wenstrup,salutations 'Dear Congressman Wenstrup'
+JB6YMMRZICGI2UQOT63B5JLTII4HIJ5V,BAE Systems,address block
+JBEGPMB7GFDLMF4EC2LXJJEJY77NUZXG,The President,address block
+JBIXWWAYOG2J6ZYI63E77UKVUZSX5SKL,Department of Justice,address block
+JBL5H3I3ZK7ZVTAHGY3YLQQFQCVUSEF2,Tom Cole and Rosa L. DeLauro,address block
+JBYIXIJJV242RYJXKNCQCYZFZJ2DFEW4,President of the Oregon Senate and Speaker of the Oregon House of Representatives,address block
+JCDJ35RKCBVTI4MPMWGKX2EUBZ4YLXPE,Department of Veterans Affairs,address block
+JCJLLJXQ4C7WRHLN6C6AOZWRPDB3B6GS,Katie Boyd Britt,address block
+JCJMBRO6HJ7THFH6UGYD5T5QESZE6BLU,Kay Granger and Rosa L. DeLauro,address block
+JCLTWS5OKY6OGKENIMM3MPQCTOTFKXLZ,America's Health Insurance Plans,address block
+JCQWHGVZK6WBXMQRAFXFQUICNZHZZMTH,National Highway Traffic Safety Administration,address block
+JCV74EJTDGBM6CFCFLSIBBRRJTTNK7XH,Fish and Wildlife Service and National Marine Fisheries Service,address block
+JDCW2MX6VQCFNHYUVCF5ZFHZIECYY4J5,Charles E. Schumer,address block
+JDDMCDTTIPUIFCBRF6QRQ6FJF7BTI5LQ,Government Accountability Office,address block
+JDEYCZMQHE4IT46BDD3KJ6YH6I5JRV3S,Tom Cole and Rosa L. DeLauro,address block
+JDFQWC24HK2C7VD2LGPY43HXJEVUINKZ,Department of State,address block
+JDUU5ZXC52JZSGL7ZHHXZ2PTMFZ3QYCP,Kay Granger and Rosa L. DeLauro,address block
+JDXVOBM5JL6XEOM6RLYBT32WSQI3SWYY,Cory A. Booker,address block
+JDY6KHAKBIPWKBNOZEOHTDYG5EJPVCAN,Bureau of Prisons,address block
+JEENH2LC44TBZNRW6JWOFWGNDQUVYXOG,Department of Labor,address block
+JEPZORT6I4T4Y4YP3UKVNF7FBSNWDNJU,Department of Transportation,address block
+JEUMPQJPN2S2MUHQYAR5X2UQNFO7EJYK,Department of Commerce,address block
+JFCWIZOKSNOJ4JQDFXFVERIUYCQ4BNVD,The President,address block
+JFIHJIGSA4HIE2Z5XH4R6HC4P7ZTJWDH,Department of the Treasury,address block
+JFT6KO6UL74TBNCM3ATP2GW4V2EP4CQY,Defense Security Cooperation Agency and Bureau of Political-Military Affairs,address block
+JFVRUKMA6JP7BTD2XGXXD62FRKLLUI4G,Federal Aviation Administration,address block
+JFWUUK2ACNIR2GM3SSAQLZNMNJSC7S4D,Tom Cole and Rosa L. DeLauro,address block
+JFYIFOCUYB5OPXOBZWN74JGEWKAPTU4O,Chicago Tribune,address block
+JGA7VRMYE4J5QLABOEH4YZEA5WXHL4KC,The President,address block
+JGCLX26LKMWBNJHXMOY2ZSEINKITW7ZU,American College of Obstetricians and Gynecologists,address block
+JGXHIM3ATLQK6CQNGFS7NYXUH3FT3CYB,Federal Retirement Thrift Investment Board and Bureau of the Fiscal Service,address block
+JGYXRVBMMQ3CVVRNJUKENQF4YZ5NMJJT,Kay Granger and Rosa L. DeLauro,address block
+JH5AZPWLLHLVIMEB5DNJWSZPTYCMMMBS,Food and Drug Administration,address block
+JHB773OLFASSRPOIP3LUOXBZKGO3BHYU,Kay Granger and Rosa L. DeLauro,address block
+JHKCEMXEH7L3SC7YPOQZ2WMSGEIENZQD,The President,address block
+JHNXNNPVGF7XPLHBUFJCYXOJUF3JIJ2U,Mayor of Chicago,address block
+JHPHPKS5NIIT55ENZ623JFEZLFJTS4QB,Department of the Treasury and National Security Council,address block
+JHQ3ZRPNPD32CSGISI52BZIEVRCIRLKF,Federal Trade Commission and Securities and Exchange Commission,address block
+JHYDIYOFW3LU4W2KQCBMB2I3BHVCNT7Q,General Services Administration,address block
+JHZ7B4XUILDHTNY2M5UHLEBGGYT2VYRT,Department of Transportation,address block
+JI7WRPQWY4JWEACZEWIFXLRNC6QFUYBK,Tom Cole and Rosa L. DeLauro,address block
+JIFXKN3LFHNQ7JLZLEDRNYV37EICD7JA,Tom Cole and Rosa L. DeLauro,address block
+JIJO65NTF6SGTP7VWQN4M53EVAUMMSQH,Government Accountability Office,address block
+JIJQEFXRD3P5RDTBJXPJGUXLFJFAVVIK,Food and Drug Administration,address block
+JIJRY2FDRDGDTHL4W47JRJSEGP7SXBKE,Bureau of Ocean Energy Management,address block
+JIQTHJMHALF6YPDNVBMFGK2V2O7VKBL2,Tom Cole and Rosa L. DeLauro,address block
+JIXJHANJQYUFDQQG3V6ZNVTTIWWLFEH4,Department of Commerce,address block
+JJ2SJDIBLDII7AERPX6CXZVPIOGQVEPM,Department of State,address block
+JJ3GEZ7X6WKGR4CXXQDJS3I6V6MMTX5I,The President,address block
+JJ3SVKUNK2EZFGHLH7TEJ5GB2OSE2YDT,Department of Health and Human Services,address block
+JJ4WNNKZ2VEIQSYWGZP5TEXN76ZZ44RT,Department of the Army and Army Corps of Engineers,address block
+JJ5ZRI5JP3SN6CK2TQVAZB3ZWTPZQXMV,Department of Homeland Security,address block
+JJE54MHMZLQV6SBF3AQ6MU7DKGEQMF75,Pfizer,address block
+JJH4AJBJYSZH47JASNUPO3UZICTP3F7F,Association of Organ Procurement Organizations,address block
+JJJLEX2CZSLNSMLAKECGL377TO5B6JNN,The President,address block
+JJPWGBPFLKQJGD6R36U5BC4Z6X5YANQD,Tom Cole and Rosa L. DeLauro,address block
+JJSPOWFR5BV5V74K6BY26GSKGZGHHPRV,Department of State,address block
+JJTUK22ZP2PBXPJLTB6MXO52AISMVCHD,Office of Personnel Management,address block
+JJXGT3X4BHCVAKCYQCIXRU2CBGXQGNTN,Tom Cole and Rosa L. DeLauro,address block
+JJXHNN7DPTG4UAVP65ODIH5YRZV4VWEJ,Tom Cole and Rosa L. DeLauro,address block
+JJYW3SSY6VDOU2MHTFVVGA4WU3V5H7GC,United States Postal Service Office of Inspector General,address block
+JK47KRBI6QDK2ODJGVJDMZ2RHWYYCYTQ,Department of Energy,address block
+JKK2TXVIYIFO6OXX27BWV3KAGVFRVFR6,United States Agency for International Development,address block
+JKKJJHIXROMTDCPZCPVO73FUGDDME5EE,The President and Department of Homeland Security,address block
+JKUIAUOE2WIWNEJ2KOOOK5KVGDKX37IC,Food and Drug Administration,address block
+JKXLD6HZ43SLIUGAB7OC7HXM5NKQX73I,Kay Granger and Rosa L. DeLauro,address block
+JL5KGDT25526PWU2254PNYSDLBRC6BII,Brian Schatz and Cindy Hyde-Smith,address block
+JLBLWDIB2OSHQIHH2IYVXWXHCPH44IFE,Tom Cole and Rosa L. DeLauro,salutation
+JLBPFCBDXQ5BFM3BVMHDB66O3B6SY5CX,Nasdaq,address block
+JLC234BK7HGFB3QXCXSVTGX22NJN4VB6,Kay Granger and Rosa L. DeLauro,address block
+JLCI4SKJRRWXKEKDRDLUV5YNYHM4MJHZ,Tom Cole and Rosa L. DeLauro,address block
+JLGCIDGEWZWMJRWYAZYUNLQ2I7RGJSZF,Community Development Financial Institutions Fund,address block
+JLKF2GPVQIYEQACVMOHVOMCGWS3MOG4Z,Tom Cole and Rosa L. DeLauro,address block
+JLOWWPN7WPAYYLXWTEJU2IOHMDIIGUTK,Office of Management and Budget,address block
+JJOPF2IA7XGFGDKW7DWO45TY74OHCSG2,Department of the Interior,address block
+JLPDG37JNADUOL5YENUEA5PB4XHUPMZB,Greystar Real Estate Partners,address block
+JLPXVFFZFC2YSPPNYLJTRU66ATQJCUP7,X Corp,address block
+JLUHPVRMFSIT3LEXBWZH5DKMYB624O7Y,Department of the Treasury and Internal Revenue Service,address block
+JLW333NKE2CMZGETBTZVBZO75JUF37NM,The President,address block
+JLWX4AGB4QN56BBMZPLZCGEPLNXOI5MF,Department of Justice and Cybersecurity and Infrastructure Security Agency,address block
+JM4GBIQXDDTL6EB7PSTDMRKT2MMP5QCN,"Charles E. Schumer, Mitch McConnell, Maria Cantwell and Ted Cruz",address block
+JMCXXWDIZ5OEBGSBTHNAV7AHCNBKPME2,Department of Transportation,address block
+JMLCWYMYBEDGGCGTGJMNNJ5YSA5QN7C6,The President,address block
+JMOSTKX3LBUZKUYPB4KOO3NQXYT5V6T6,CIM Group,address block
+JMRMF4SUKOOMLXZQCGIM63UJR2XB5ZUV,Department of Veterans Affairs,address block
+JMTMFWYCTJOU7XJCNOA3PG3M577XSPGY,Mountain West Conference,address block
+JMWHFCFOL3TDQEL6M7MGUK6NXJVOLIOZ,The President,address block
+JMZ6FZLO3JUQBCL5MMOZYQUPCHRZO22H,Department of the Treasury and Internal Revenue Service,address block
+JN27CXUZHTQM6SQ7OYUOX7KTZYQUCNXK,Department of Homeland Security,address block
+JN2LA2VO5VFWUPOMSC6UFSAQUXWNML7U,The President,address block
+JN7SGQXB4J2HVGLLLMT3NLXEFLJURBII,Department of Justice,address block
+JNDXVDPFYV5FPMQHDODQR3GLN737JMAE,Department of the Treasury,address block
+JNHPKV5NFBYR7OV3GUZI6JYPEFN5Y6ST,Office of Information and Regulatory Affairs,address block
+JNQO7XXM57GM7T4SEOJ4JRRMI4BYFVQZ,Department of Transportation,address block
+JO7QBEONOC5I73WBX44PTJJUCWTJBMI6,"David P. Joyce, Henry Cuellar, Christopher Murphy and Katie Boyd Britt",address block
+JOET5XKICTA6LRTQHQM6W5MOFM5UHHT4,Tom Cole and Rosa L. DeLauro,address block
+JOFFJ6XCT4LCNQ3KVZ6KN5JERHDBEZZR,Binance,address block
+JONRVQS6MYZLOEJVM5SKWITREQOOJIRO,Matt Gaetz,address block
+JOTHATGJLKGEYPC3FC4YHHOUADGOCD7R,Public Company Accounting Oversight Board,address block
+JOVGI2UKTGHH7OON67W44W554DBEIXN6,Tom Cole and Rosa L. DeLauro,address block
+JP2ZMSAFVE2FXIPKEWL4RVNPTMG7HROI,Department of Homeland Security Office of Inspector General,address block
+JPCEQFYWEPDX2KVLSXOEMOJWZDQ5FNHM,Department of State,address block
+JPDMTXAHTH6KF3J7K5SZXNFCN2FZQK2E,Albertsons,address block
+JPN7XCOSQEWB6NZ6WDS3GUEDLB7OEQVD,Steve Womack and Mike Quigley,address block
+JPUOPVOXZUPPZONFUO7BBWCS5NA4ENBA,Kay Granger and Rosa L. DeLauro,address block
+JPUWT2VRHD3WPQPJB74QO26VL7XM6V7K,The President,address block
+JPV4AVCK3YV4WDBAIAPLSLCDIDPX42QX,Department of Justice,address block
+JQ2MFHYXFEISAU2FEKP2VXRVNXZXOWIJ,Department of Education,address block
+JQ5HQWXRWCLDQJFNZVDUZ7JNAI2LUNVS,Department of Health and Human Services,address block
+JQ6KCANBRVD5J52UFUIEBVZGDAA77IYF,Tom Cole and Rosa L. DeLauro,address block
+JQCQFKV6QUGLGPIL7BWNYJTO3JES222H,The President,address block
+JQPIDYE7KPNGKPPOZCUUCNGH7YAJ2CGV,World Bank,address block
+JQPNJ6UDJ3ZGQV6H5W7K3WO3KJIHTWMY,Forest Service and National Park Service,address block
+JR44VM2FOGQ5BR7DM7AYJTTO4P7QRHTF,Federal Housing Finance Agency,address block
+JRFG4YPYGFEUOO3DSNWX66YHILGTC7HF,Mike Johnson,address block
+JRNQFE2XORQMA36ULFY7NYES45XFRQ5C,Western Area Power Administration,address block
+JSGMY2FFE6SCXGNZON4Z73SNYHRHKJ4C,Martin Heinrich and John Hoeven,address block
+JSHNPAIW5ZIRIZ6SIP3BFOULOC3WGO4E,Department of State and United States Mission to the United Nations,address block
+JSIWIHRWDVBMXWBIUCKOHBLICMSGPSOS,Federal Election Commission,address block
+JSMJXGWKTIRYEMEI24W57LHYADLO4HCL,Tom Cole and Rosa L. DeLauro,salutation
+JSV6CHTC5UNAKT362MALBFQUFHYHXKI3,Federal Railroad Administration,address block
+JSWHFZ73G4TV6FAGIVUP4KL3ITKT2AYF,The President,address block
+JZDD2VIGK4OTYECLOMQUTPDAQZCMUZD5,Brian Schatz and Lisa Murkowski,address block
+JZRTSU4ML7SBE6OP2QIMDHGG7E7ZU3LA,Kay Granger and Rosa L. DeLauro,address block and salutation
+JZSEEN5B54GJA6HMXI5OLHDVEWSOAGS7,Bureau of Land Management,address block
+JZUIY2GXKQNJZU5P3WHTYFAW3T2CPOZS,Department of Health and Human Services,address block
+JZWXKSP4B3V2D2ZZQTS3EDJYK5OH5PDC,Securities and Exchange Commission,address block
+JZXHS62BSX6FYFPKIW6USO2F4CXLDAHW,Tom Cole and Rosa L. DeLauro,address block and salutation
+JZXQBXHNHR6XUFY7FI6QJ5XLFORJ62TL,Centers for Medicare and Medicaid Services,address block
+K254L7SUUFSER4M6CSXI5OLJASUKGFGM,Census Bureau,address block (no salutation name in block; 'Dear Director Santos')
+K27NCTMDGG4QR2R2RYPLTM5PD4MJTGDY,Department of Commerce,address block
+K2E3LER6DCF5R4A7T6JOJVQZ7MV6SLWI,Charles E. Schumer and Mitch McConnell,address block
+K2M55LTRZFSPWQ7WLYD7R7U2M7A3IPJW,Tom Cole and Rosa L. DeLauro,address block
+K2PFV4Q6XDXFKEBFMCNH5SCGT5S22VXD,General Services Administration,address block
+K2PTVWOKJTIWZQMXODPS2E5TNCPEENEZ,Tom Cole and Rosa L. DeLauro,address block and salutation
+K2QIQ7ZJVEV6APGFVEFWS4MT62JPRFXZ,Chris Van Hollen and Bill Hagerty,address block
+K2YHHPT22MG5EGXJYS4MHAG4YD6QEYMT,"Department of State, Department of Justice and Department of Homeland Security",address block
+K36HQZ7Y2F4WAR2I2HD6HIIWGGO6HUDX,Kay Granger and Rosa L. DeLauro,address block and salutation
+K3J4IHHK42FLBGSSCRDROVK5NKAQW74D,Federal Bureau of Investigation,address block
+K3NQNBOCOEJWVGOJPCW3P5BECMEX3R7F,"The President, Department of Health and Human Services and Centers for Medicare and Medicaid Services",address block
+K446XI2EQXF3YK5SB4RHKRYDYOKVIAF5,"Charles E. Schumer, Mitch McConnell, Richard J. Durbin and Lindsey Graham",address block
+K4FNKN3CNLUEZIU453B7G3GWRGUBLOBH,Department of State,salutation (no address block)
+K4JJT3GWFG3YKIUDEA66YKLGCUAYBUJL,The President and The Vice President,address block and salutation
+K4OGGXIL4JENDZFLE2ABY6O2Q3NJHXQW,"Federal Reserve, National Credit Union Administration, Federal Deposit Insurance Corporation and Office of the Comptroller of the Currency",address block
+K4TKNQTGRXXJMDPYVCZA4GCFBB3WBYMN,Jim Jordan and Jerrold Nadler,address block
+K53VGS2G5LH7V7JNVIDYNTBJ7QDG2YMT,Tom Cole and Rosa L. DeLauro,address block
+K5AAGGQH2TKPTDQZVNCXZL5DQRDNQAMA,"Michael F. Bennet, John W. Hickenlooper, Joe Neguse and Governor of Colorado",address block
+K5TSFGAQWJOL5SUVRTOHXCI2PI4ROUDM,Office of the Comptroller of the Currency,address block
+K5WEOECULVWHPPJAPV7PIYNC7PHJDY76,"The President, The Vice President, Department of Homeland Security and Citizenship and Immigration Services",address block
+K5XWTNOFRRTB2VCQXXJW3IMDVTGM3HI4,Kay Granger and Rosa L. DeLauro,address block and salutation
+K6AC25PQHK3YZ54KTNMWAJKN7Q3B6NEX,Tom Cole and Rosa L. DeLauro,salutation and recipient block after signature
+K6BDQIRVZSH7ALMDZPJ5LRGMGT6UCNKC,Department of Homeland Security,address block
+K6HTCU3AVQNDGHAV2A2CCE42C7LZUFDP,"Commandant of the Marine Corps, Chief of Naval Operations, Chief of Staff of the Army, Chief of Staff of the Air Force, Chief of Space Operations, United States Coast Guard and National Guard Bureau",address block
+K6QV4QN2KPMDL2IOSPYZ3LXGPHZKK24S,Centers for Medicare and Medicaid Services,address block (Administrator-designate)
+K6UQTARFWJ3MY5KQYND7PSCU2K6ZIBHH,Kay Granger and Rosa L. DeLauro,address block and salutation
+K72SXZBG2EN7E6HR7SO5WI5WOKTLEONI,Government Accountability Office,address block
+K72URZAZHYIMNUE664FAMTLQU75WOWTG,Tom Cole and Rosa L. DeLauro,address block and salutation
+K7AMLAZNB3D6WK7P6BHX7MKY6ZPHOK4R,The President,address block
+K7HQPELUJTPI7C7PQH52KAFB3TVNFGZY,Government Accountability Office,address block
+K7NOOBKGMSKTEUO6XHKPPM6ELGVB4W5J,The President,address block (White House advisers; filed under The President)
+K7NZLPXNU4CEFSG34IDVRIJKJAL26OBK,Department of State,address block
+K7OUG7OMBTEVIY4VWW7YXDM45PFS6ZEC,"Department of Health and Human Services, Department of the Treasury and Department of Labor",address block
+K7QU4NDEPUKOHUX5GA3Z3CA7V5IDZHBC,Department of Justice,address block
+K7RSN5XNONWLJV3TEYWQS4N7SGCUTQVG,Department of the Army and Army Corps of Engineers,address block
+K7ZWNF42E26CKT3MMOUJRYG5L23NRNNJ,Sam Graves and Rick Larsen,address block
+KA7BZHXMHPRVQSRHLX7J636PODKUZO7Y,Tom Cole and Rosa L. DeLauro,address block and salutation
+KAMIBGIL3YX6ARXFBQLSSM4VCELYI34I,Tom Cole and Rosa L. DeLauro,address block
+KAO72UQ3SBMCMXUSQDCQAFVT7S3KQAIZ,Department of State,address block
+KAVTSQHDGSOJABWNSQHSDB2IBMCCPSKP,Tom Cole and Rosa L. DeLauro,address block and salutation
+KAWIGJJOKLQZSF6JLTKVXQJ3RAPMQX4B,CVS Health,address block (General Counsel)
+KBAFOKD54B5EK6XQV4ZEKLP2GZY5E4WG,"Charles E. Schumer, Mitch McConnell, Mike Johnson and Hakeem S. Jeffries",address block
+KBF36PJRSIKJ3YQSO7X6BN5GBOZSNO5O,The President,address block
+KBSCUKNEQC5DLSEANMYL7MKMD6BKCOKT,Department of Energy,address block
+KBT46CPD6LMHHWHGGBQLK67RVKANIDTS,Department of Health and Human Services and Department of Justice,address block
+KBT7TSQJGHVQJTW2FPZETD3ZE6FTGKWG,Kay Granger and Rosa L. DeLauro,address block
+KBTDM7X3RQF6KKYBODSUTX25OGYOKKGD,"Department of State, Department of the Treasury and United States Mission to the United Nations",address block
+KCD6E6NXI64IAEXOOV76USOABNDK2NJW,Thomas R. Carper and Shelley Moore Capito,address block
+KCGB4DOJLQNVETAK6LI6BRY2RKBMQXE5,Allianz,address block
+KCPP3UO5WMPEMWP4UHV3R2VBOW6X6YVB,Department of Defense,address block
+KCQYPGMNEILO3EFVSXBQBE6KVJB33JWV,"Charles E. Schumer, Mitch McConnell, Mike Johnson and Hakeem S. Jeffries",address block
+KCSPCNOLF66VSZXO7CFZM7ZCR3ZMH6GS,Federal Aviation Administration,address block
+KD443QVIMEI5LUNUSPOL7QMA4TKMAIYP,Mayor of New York City,address block
+KDF3EGP7U2CBA5UE5V3624QEGCKFNPC3,Environmental Protection Agency,address block
+KDWQOHLZRMXGZSHLSSLNW7WGWBVCC7OX,The President,address block
+KEG2RTWWHPLHHU5FWLTFV5S57XWPXMUT,Kay Granger and Rosa L. DeLauro,address block
+KEI4Y5JHPKIBC5JFXYMG5HHY2GND4PVU,Tom Cole and Rosa L. DeLauro,address block
+KEIIPKBFAJPU7RGIINPDGGUATD6QZKB5,Department of the Interior,address block
+KEWJIIMJVXF4SRLFZEFZW3S2AUN7Z5DR,Harold Rogers and Matt Cartwright,address block
+KEX2VGV2AYM2NBMQMD2FE4LNQZ7DFE5Z,"Jack Reed, Jon Tester, Roger F. Wicker and Susan M. Collins",address block
+KFAN6B7DWFWK3LE4EYENPOZBWXK475VL,Kay Granger and Rosa L. DeLauro,address block
+KFBML6O5OBNH3R2RGXP2KN2BBYUHS4YS,National Oceanic and Atmospheric Administration,address block
+KFDYBKHWLNAS7MTGIAR5FMYF7KVUU6TP,Tom Cole and Rosa L. DeLauro,address block
+KFL6C4AHW46KLOUA7GQD743DG4CHXJTV,Tom Cole and Rosa L. DeLauro,address block
+KFQ62WP76367RB3GOYPTZH2KIKNICM7Y,Department of the Interior and Bureau of Land Management,address block
+KG6DMRLIX5PV3LQHZPNKOE55XGHQ7N25,Tom Cole and Rosa L. DeLauro,address block
+KG6GBZPCOYB4LQOSWKYF6S4ZGAELEARB,Robert B. Aderholt and Rosa L. DeLauro,address block
+KGCFHHYEPRU4APTDL4LFPRF4JG6KQWP5,Department of Homeland Security,address block
+KGCWXDMK5IDGRVITV3UGVODP6WOUA73P,Department of Transportation,address block
+KGOGZD2553CE4UDK4O6NWYFI4I7RRVYC,Department of Defense and National Security Agency,address block
+KGRV5Z2XXJRSQKEOBSNDGQCASAN32NW6,AdvanSix,address block
+KGW7IH6XIXKCTHHGYDRWSFMISWYRUWGR,Department of Veterans Affairs,address block
+KH3RNYUZEFLRT6GIY6NS3UUKIFYRTQO7,"Todd Young, Mike Braun, Frank J. Mrvan, Rudy Yakym III, Jim Banks, James R. Baird, Victoria Spartz, Greg Pence, André Carson, Larry Bucshon and Erin Houchin",address block
+KH7L33XXWCXNJC7SA6HPYI7E63IPX6OY,Federal Communications Commission,address block
+KHA3REBZVEXRL4N4QAJTPMNG2TTWEVLH,eBay,address block
+KHCELF6LOS5IXSAR5OWESCI6XST45PGO,Department of Homeland Security and Department of State,address block
+KHHBYDCXPDL3TC5ARPON5XSS6CZ4NZ2T,Jason Crow,address block
+KHTFDOUOGCW7VLZCIRT4YDW6LLL4JPOA,Department of Transportation,address block
+KHYKXMKTUCTYQWP7GBNOCVKEIFB6MZIK,Office of the US Trade Representative and Department of Commerce,address block
+KHZ56XCOKM254PMSFWFP7KHB3NZRBHKX,New York City Department of Buildings,address block
+KI7T4XZCLZU6DOKGZVVH7PFWJWMH4JD2,Richard J. Durbin and Lindsey Graham,address block
+KIBM2CKYMV5DXQQ5VNP5YF2DKSZIR2DR,Charles E. Schumer,salutation
+KIFAKVUUCMW7ZTNTCEB7LQ4BUX7FHDAW,The President and Department of State,address block
+KILMMIH42W3YH5JBHBT2EXUXOSKOF6MR,National Guard Bureau,address block
+KITKZXWPJCPNWMIIAZR2VGGAXQ2SQNBQ,"Federal Communications Commission, AT&T and Tegna",address block
+KIV5RVG6PE6M6BMETYJKATJZVWPMXW4N,Department of Justice,address block
+KJ7EQ32L6CW6XZVOV3Y2YUGEGTQTU5T7,Elizabeth Warren,address block
+KJK2R3QAERCALUAMF2BA2B3CD5KCBO4P,Bernard Sanders and Bill Cassidy,address block
+KJKXXZLE6UNBJ22AEFUR43HRWG3O2JRQ,Tom Cole and Rosa L. DeLauro,address block
+KJM6QHRP3I4L35K5W7YDL7PN3OBDDBFJ,Federal Emergency Management Agency,address block
+KJPXC2X3FIUVT2ZV6VDQFAGPFWFTRPYR,Bureau of Prisons,address block
+JP3MDCUGAJ72DMIQ7MP6OH5AHKGIBC4P,United States House of Representatives,salutation (Dear Committee Chairs); cc ranking members
+JPBHG5UJ6TFG2ZQA4IL527M3FH27ZWH7,Federal Reserve,address block
+K523XK6NDR4XHDAPHTHXLACDMC364275,Workit Health,address block (CEO)
+JSZ74S66JWPGGTWZXNBBJGDLTVJFVRV4,Fish and Wildlife Service,address block and salutation
+JT36HDDG5HU7PBEVYU7KCNVIIEYRQU4K,Kay Granger and Rosa L. DeLauro,address block (Appropriations chair and ranking member)
+JT4GYGE2MG4PZPA6ZWBFFGL4CBGW3LM4,Maria Cantwell and Chuck Grassley,address block and salutation
+JT6LV2YI4YGPCNJTIX2YP5QWBINMIQWC,Federal Bureau of Investigation,address block and salutation
+JT7AZVX6AW5FZ5E6OL6TFJ3ZKTV77OOS,Federal Trade Commission,address block and salutation
+JTFBUQ7S4NCQV4WWMI6RZTKJE7IQX5LJ,Federal Bureau of Investigation,address block and salutation
+JTIS7FNUS5ADKAZFH3YEKSKOTKQMLWAF,Federal Trade Commission,address block and salutation
+JTN5XQFEHP2TJ2JRBID6PKR4ZXRQ6LEY,Department of State and Department of the Treasury,address block and salutation
+JTOH75NDVCRLODAC7ZGIXWZJEQI2BOJA,National Oceanic and Atmospheric Administration and National Marine Fisheries Service,address block and salutation
+JTPB5JPUIF6HEJMKGE7AU4QVPFNQ6PRR,Kay Granger and Rosa L. DeLauro,salutation (no address block; first page missing)
+JUGVNHKM5SIOSNT3JLSUS6BR6CYEJW3M,Securities and Exchange Commission,address block and salutation
+JUKCIZRVS6T7HCDCGVECGUTBSOAL3IKV,"The President, Department of State and United States Agency for International Development",address block and salutation
+JUOQ5U4W2DA7JESFZQXACVV4ZPU5GPSE,Tom Cole and Rosa L. DeLauro,address block (Appropriations chair and ranking member)
+JUQ6YJ5N7ICJT5WPIDHWK4QFD2LCBQZN,Tom Cole and Rosa L. DeLauro,address block (Appropriations chair and ranking member)
+JV27XQHVABSZ5B3J336BHMWIQPJPV7JO,Tom Cole and Rosa L. DeLauro,address block (Appropriations chair and ranking member)
+JV2UGZC2ZTYLGQGZKUBFIHHWHHYWHWPP,National Oceanic and Atmospheric Administration,address block and salutation
+JV5X6F5PBVQ2UDN7Y6GIIUGVOFNNVSRJ,Tom Cole and Rosa L. DeLauro,address block (Appropriations chair and ranking member)
+JV5YNTTXNSLXOS7Q6OJF3Z65DYHBLEN7,Tom Cole and Rosa L. DeLauro,address block (Appropriations chair and ranking member)
+JV7BRUBBPAI2HJSMGROWRMNK5GOYVBXJ,Mike Johnson,address block and salutation
+JV7YPOTJQCE2DHY4LPR3QYIRMHJR2UXY,"Department of Justice, Securities and Exchange Commission and Federal Deposit Insurance Corporation",address block and salutation
+JVAYZTR4DHX4L2XD5PS3ZHY6TDJIQTJK,Department of the Treasury and Department of Veterans Affairs,address block and salutation
+JVCZBF2JEWVT4LNZ6N2TRVQCILP63DZS,Massachusetts Department of Transportation,address block and salutation
+JVIARTPRKEELVA6J6NE5EILY6KPWFPL7,Department of Justice and Immigration and Customs Enforcement,address block and salutation
+JVIVM6UNWEYG25EQALS5SVBXMOE5RQ7R,Tom Cole and Rosa L. DeLauro,address block (Appropriations chair and ranking member)
+JVKFUZXYJRHRHL3EZNQM5DFNUYKWAQAT,Food Safety and Inspection Service,address block and salutation
+JW4OTM4OOB4D26Y3ZUROQRDXHXO2P4KL,The President,address block and salutation
+JWEOQ4B4PPZUW3RDYJWENBT23RY5Z6JD,Department of the Army Inspector General,address block and salutation
+JWHWOCIZZYP7J5INNKUOCGRIWRMKPOMD,Office of Personnel Management,address block and salutation
+JWIBPMBHJWKBYONGF4J6QYQVXCVMLMGH,Securus Monitoring Services,address block and salutation
+JWOXQPG5QFVR7RF4YAUHSBZBMAFQN4TI,Elevance Health,address block and salutation
+JWSKC7DVQUOV4CGPYHBWGABOIVCSLTPC,Department of Health and Human Services,address block and salutation
+JWTTVH2AE6LTGLAXR5AZGXVNANICT3OH,Judicial Conference of the United States,address block and salutation
+JWWJVJTHS6ABHLQCLRYY46JTD4DZHU2W,Transportation Security Administration,address block and salutation
+JXBAS2OOH4JKMXBCDIKW6GO62IQ4PCNG,Department of the Treasury,address block and salutation
+JXHVO5MYFF2LR3IQILQ2MS4UHQ255E5Q,Federal Trade Commission,address block and salutation
+JXIKBBQESWNCUGGOXMMOAEGM6IIO2QQZ,Kay Granger and Rosa L. DeLauro,address block (Appropriations chair and ranking member)
+JXK74B45ZPLHXRHWXZCM2YXUNOMEVYDW,David Rouzer and Grace F. Napolitano,address block and salutation
+JXMTPTLTACAZU3IVT5SQYOLGGMWMUF4E,Governor of Oregon,address block and salutation
+JXNZ6BU7SJDFRCVKGSJWOPUIH2UIBFO5,American Airlines,address block and salutation
+JXRDTI6DEXKDV2AWK327LAWA4E42VFSG,Department of the Army,address block and salutation
+JY52COPYN2NNEJ3UI4PMTBTYWSYSKW5U,Tom Cole and Rosa L. DeLauro,address block (Appropriations chair and ranking member)
+JY5L66C3HGUC72GP43BCFVZIF33P42EA,International Monetary Fund,address block and salutation
+JYAS2H7UULIMAY4NJMCLAYHLQISYEH5Y,Betty McCollum,address block and salutation
+JYJHKHMZD5APYJYE2CVEEHZJKUDNZOBT,Kay Granger and Rosa L. DeLauro,address block (Appropriations chair and ranking member)
+JYQSA2NG32HPKKEWGY573TA64REGF4QH,Tom Cole and Rosa L. DeLauro,address block (Appropriations chair and ranking member)
+JYTBGOO2FXKY47ED57JNKN4VVCHYUXB2,Kay Granger and Rosa L. DeLauro,address block (Appropriations chair and ranking member)
+JZAXEA2Y3WX7ANHZ437JJJM4F7N6Z5VP,Rise,address block and salutation
 G65KTBNCCHGUT6GANINGOGPKDXX674NI,"Charles E. Schumer, Mitch McConnell, Patty Murray and Susan M. Collins",address block and salutation
 G67M2UFQKZS26576SLX7NBXUCMYZ2LF3,Department of the Treasury,address block and salutation
 G6AQQGLTMPUWLBX7DIRJMBE7GU3IETOT,Tom Cole and Rosa L. DeLauro,address block (after salutation) and salutation
@@ -51541,7 +52130,6 @@ HIX3VU2KZTEWEVVJPS2OFCFFZOI4KU6K,Department of State,address block
 HIXUXO36DYUWLR4Z5774GN2LPMUL3FNO,Federal Emergency Management Agency,address block
 HJ6UJE74VC5SPK4QEO623MQBZUW2WRT7,Department of Defense,address block
 HJ7MYKLHX5CC4SEMCXRBC6ATLVVBPJ2N,Kay Granger and Rosa L. DeLauro,address block / salutation
-HJ7R2VYAG4PJTLKEECETFTBHY5MZ4AZW,Maria Cantwell and Ted Cruz,address block / salutation
 HJJDOLHGXWZJXOCH4R3CQZ3AML7TYDC4,Bureau of Reclamation,address block
 HJPIHDDZE4VCKQUCJ7C6YHTMM7YTPMGT,The President,address block
 HJRUQ24RDZS7VJ5CGDB7RZXLXYY5XMCX,Greystar Real Estate Partners,address block
@@ -54416,7 +55004,6 @@ UY64O64X7AQJRF3IICIY3MUJ65KVNA5C,(no recipient),salutation 'Dear XXXXXXX' (place
 7KRND76GKYTGT5FVQQ5KPCUCYD3QZWVS,Department of Defense,address block
 7KSTBXUIDBGHTYAZYARCYXRBVZE4Y2UX,Tom Cole and Rosa L. DeLauro,address block
 7KTHU7PMWRG3NRSUX7Z67X62MXYJ2EG7,Department of Homeland Security,address block
-7L3KI7MSHXELUOIUMHOS2O6K44P3J3AX,Amtrak,address block (CEO of Amtrak)
 7LC22B6TXXLKLYIDVA2G67YTWFGDSL6H,Kay Granger and Rosa L. DeLauro,address block and salutation
 7LM4KDKZH6XP5UNMC73KF4WN5IU5BB5X,Department of Veterans Affairs,address block and salutation
 7LMYD3I3LKCBYCSG2GBDMUA6KC3U2K7L,Charles E. Schumer,salutation (Majority Leader Schumer)
