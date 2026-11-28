@@ -21248,6 +21248,52 @@ M-S000510,recipientName,"Adam Smith, Mac Thornberry, James M. Inhofe and Jack Re
 M-T000238,recipientName,"Adam Smith, Mac Thornberry, James M. Inhofe and Jack Reed",preferred,reviewed
 M-I000024,recipientName,"Adam Smith, Mac Thornberry, James M. Inhofe and Jack Reed",preferred,reviewed
 M-R000122,recipientName,"Adam Smith, Mac Thornberry, James M. Inhofe and Jack Reed",preferred,reviewed
+M-T000250,recipientName,John Thune and Bill Nelson,preferred,reviewed
+M-N000032,recipientName,John Thune and Bill Nelson,preferred,reviewed
+M-B001250,recipientName,Rob Bishop and Raúl M. Grijalva,preferred,reviewed
+M-G000551,recipientName,Rob Bishop and Raúl M. Grijalva,preferred,reviewed
+M-U000031,recipientName,"Fred Upton and Frank Pallone, Jr.",preferred,reviewed
+M-P000034,recipientName,"Fred Upton and Frank Pallone, Jr.",preferred,reviewed
+M-T000238,recipientName,Mac Thornberry and Adam Smith,preferred,reviewed
+M-S000510,recipientName,Mac Thornberry and Adam Smith,preferred,reviewed
+M-R000570,recipientName,"Paul D. Ryan, Nancy Pelosi, Mitch McConnell and Harry Reid",preferred,reviewed
+M-P000197,recipientName,"Paul D. Ryan, Nancy Pelosi, Mitch McConnell and Harry Reid",preferred,reviewed
+M-M000355,recipientName,"Paul D. Ryan, Nancy Pelosi, Mitch McConnell and Harry Reid",preferred,reviewed
+M-R000146,recipientName,"Paul D. Ryan, Nancy Pelosi, Mitch McConnell and Harry Reid",preferred,reviewed
+M-G000359,recipientName,Lindsey Graham and Patrick J. Leahy,preferred,reviewed
+M-L000174,recipientName,Lindsey Graham and Patrick J. Leahy,preferred,reviewed
+M-W000796,recipientName,Lynn A. Westmoreland and Carolyn B. Maloney,preferred,reviewed
+M-M000087,recipientName,Lynn A. Westmoreland and Carolyn B. Maloney,preferred,reviewed
+M-B001250,recipientName,Rob Bishop and Jason Chaffetz,preferred,reviewed
+M-C001076,recipientName,Rob Bishop and Jason Chaffetz,preferred,reviewed
+M-B000589,recipientName,"John A. Boehner, Kevin McCarthy and Steve Scalise",preferred,reviewed
+M-M001165,recipientName,"John A. Boehner, Kevin McCarthy and Steve Scalise",preferred,reviewed
+M-S001176,recipientName,"John A. Boehner, Kevin McCarthy and Steve Scalise",preferred,reviewed
+M-C000567,recipientName,"Thad Cochran, Barbara A. Mikulski and Richard C. Shelby",preferred,reviewed
+M-M000702,recipientName,"Thad Cochran, Barbara A. Mikulski and Richard C. Shelby",preferred,reviewed
+M-S000320,recipientName,"Thad Cochran, Barbara A. Mikulski and Richard C. Shelby",preferred,reviewed
+M-M000303,recipientName,"John McCain, Mac Thornberry, Jack Reed and Adam Smith",preferred,reviewed
+M-T000238,recipientName,"John McCain, Mac Thornberry, Jack Reed and Adam Smith",preferred,reviewed
+M-R000122,recipientName,"John McCain, Mac Thornberry, Jack Reed and Adam Smith",preferred,reviewed
+M-S000510,recipientName,"John McCain, Mac Thornberry, Jack Reed and Adam Smith",preferred,reviewed
+M-U000031,recipientName,"Fred Upton, Bill Shuster, Frank Pallone, Jr. and Peter A. DeFazio",preferred,reviewed
+M-S001154,recipientName,"Fred Upton, Bill Shuster, Frank Pallone, Jr. and Peter A. DeFazio",preferred,reviewed
+M-P000034,recipientName,"Fred Upton, Bill Shuster, Frank Pallone, Jr. and Peter A. DeFazio",preferred,reviewed
+M-D000191,recipientName,"Fred Upton, Bill Shuster, Frank Pallone, Jr. and Peter A. DeFazio",preferred,reviewed
+M-B000755,recipientName,Kevin Brady and Sander M. Levin,preferred,reviewed
+M-L000263,recipientName,Kevin Brady and Sander M. Levin,preferred,reviewed
+M-A000055,recipientName,Robert B. Aderholt and Sam Farr,preferred,reviewed
+M-F000030,recipientName,Robert B. Aderholt and Sam Farr,preferred,reviewed
+M-R000395,recipientName,"Harold Rogers, Nita M. Lowey, Ken Calvert and Betty McCollum",preferred,reviewed
+M-L000480,recipientName,"Harold Rogers, Nita M. Lowey, Ken Calvert and Betty McCollum",preferred,reviewed
+M-C000059,recipientName,"Harold Rogers, Nita M. Lowey, Ken Calvert and Betty McCollum",preferred,reviewed
+M-M001143,recipientName,"Harold Rogers, Nita M. Lowey, Ken Calvert and Betty McCollum",preferred,reviewed
+M-T000250,recipientName,"John Thune, Bill Nelson, Kelly Ayotte and Maria Cantwell",preferred,reviewed
+M-N000032,recipientName,"John Thune, Bill Nelson, Kelly Ayotte and Maria Cantwell",preferred,reviewed
+M-A000368,recipientName,"John Thune, Bill Nelson, Kelly Ayotte and Maria Cantwell",preferred,reviewed
+M-C000127,recipientName,"John Thune, Bill Nelson, Kelly Ayotte and Maria Cantwell",preferred,reviewed
+M-E000295,recipientName,Joni Ernst and Edward J. Markey,preferred,reviewed
+M-M000133,recipientName,Joni Ernst and Edward J. Markey,preferred,reviewed
 O-department-of-defense,recipientName,Department of Defense and Department of Justice,preferred,reviewed
 O-department-of-justice,recipientName,Department of Defense and Department of Justice,preferred,reviewed
 M-B001257,recipientName,Gus M. Bilirakis and Adam B. Schiff,preferred,reviewed
@@ -21257,15 +21303,8 @@ O-office-of-the-comptroller-of-the-currency,recipientName,"Federal Reserve, Offi
 O-federal-deposit-insurance-corporation,recipientName,"Federal Reserve, Office of the Comptroller of the Currency, Federal Deposit Insurance Corporation, Securities and Exchange Commission and Commodity Futures Trading Commission",preferred,reviewed
 O-securities-and-exchange-commission,recipientName,"Federal Reserve, Office of the Comptroller of the Currency, Federal Deposit Insurance Corporation, Securities and Exchange Commission and Commodity Futures Trading Commission",preferred,reviewed
 O-commodity-futures-trading-commission,recipientName,"Federal Reserve, Office of the Comptroller of the Currency, Federal Deposit Insurance Corporation, Securities and Exchange Commission and Commodity Futures Trading Commission",preferred,reviewed
-M-U000031,recipientName,"Fred Upton and Frank Pallone, Jr.",preferred,reviewed
-M-P000034,recipientName,"Fred Upton and Frank Pallone, Jr.",preferred,reviewed
-M-B000589,recipientName,"John A. Boehner, Kevin McCarthy and Steve Scalise",preferred,reviewed
-M-M001165,recipientName,"John A. Boehner, Kevin McCarthy and Steve Scalise",preferred,reviewed
-M-S001176,recipientName,"John A. Boehner, Kevin McCarthy and Steve Scalise",preferred,reviewed
 M-H001036,recipientName,Jeb Hensarling and Maxine Waters,preferred,reviewed
 M-W000187,recipientName,Jeb Hensarling and Maxine Waters,preferred,reviewed
-M-W000796,recipientName,Lynn A. Westmoreland and Carolyn B. Maloney,preferred,reviewed
-M-M000087,recipientName,Lynn A. Westmoreland and Carolyn B. Maloney,preferred,reviewed
 M-R000570,recipientName,"Paul D. Ryan, Kevin McCarthy, Mitch McConnell and John Cornyn",preferred,reviewed
 M-M001165,recipientName,"Paul D. Ryan, Kevin McCarthy, Mitch McConnell and John Cornyn",preferred,reviewed
 M-M000355,recipientName,"Paul D. Ryan, Kevin McCarthy, Mitch McConnell and John Cornyn",preferred,reviewed
@@ -21274,12 +21313,6 @@ M-C000567,recipientName,"Thad Cochran, Barbara A. Mikulski, Jerry Moran and Jeff
 M-M000702,recipientName,"Thad Cochran, Barbara A. Mikulski, Jerry Moran and Jeff Merkley",preferred,reviewed
 M-M000934,recipientName,"Thad Cochran, Barbara A. Mikulski, Jerry Moran and Jeff Merkley",preferred,reviewed
 M-M001176,recipientName,"Thad Cochran, Barbara A. Mikulski, Jerry Moran and Jeff Merkley",preferred,reviewed
-M-R000395,recipientName,"Harold Rogers, Nita M. Lowey, Ken Calvert and Betty McCollum",preferred,reviewed
-M-L000480,recipientName,"Harold Rogers, Nita M. Lowey, Ken Calvert and Betty McCollum",preferred,reviewed
-M-C000059,recipientName,"Harold Rogers, Nita M. Lowey, Ken Calvert and Betty McCollum",preferred,reviewed
-M-M001143,recipientName,"Harold Rogers, Nita M. Lowey, Ken Calvert and Betty McCollum",preferred,reviewed
-M-T000250,recipientName,John Thune and Bill Nelson,preferred,reviewed
-M-N000032,recipientName,John Thune and Bill Nelson,preferred,reviewed
 M-B001277,recipientName,Richard Blumenthal and Steve Daines,preferred,reviewed
 M-D000618,recipientName,Richard Blumenthal and Steve Daines,preferred,reviewed
 M-C000567,recipientName,Thad Cochran and Barbara A. Mikulski,preferred,reviewed
@@ -21294,12 +21327,8 @@ M-B000589,recipientName,"John A. Boehner, Nancy Pelosi, Paul D. Ryan and Sander 
 M-P000197,recipientName,"John A. Boehner, Nancy Pelosi, Paul D. Ryan and Sander M. Levin",preferred,reviewed
 M-R000570,recipientName,"John A. Boehner, Nancy Pelosi, Paul D. Ryan and Sander M. Levin",preferred,reviewed
 M-L000263,recipientName,"John A. Boehner, Nancy Pelosi, Paul D. Ryan and Sander M. Levin",preferred,reviewed
-M-B001250,recipientName,Rob Bishop and Raúl M. Grijalva,preferred,reviewed
-M-G000551,recipientName,Rob Bishop and Raúl M. Grijalva,preferred,reviewed
 M-C001071,recipientName,Bob Corker and Benjamin L. Cardin,preferred,reviewed
 M-C000141,recipientName,Bob Corker and Benjamin L. Cardin,preferred,reviewed
-M-E000295,recipientName,Joni Ernst and Edward J. Markey,preferred,reviewed
-M-M000133,recipientName,Joni Ernst and Edward J. Markey,preferred,reviewed
 O-department-of-veterans-affairs,recipientName,Department of Veterans Affairs and Federal Bureau of Investigation,preferred,reviewed
 O-federal-bureau-of-investigation,recipientName,Department of Veterans Affairs and Federal Bureau of Investigation,preferred,reviewed
 M-M000355,recipientName,Mitch McConnell and Chuck Grassley,preferred,reviewed
@@ -21312,8 +21341,6 @@ M-C000059,recipientName,Harold Rogers and Ken Calvert,preferred,reviewed
 M-C001098,recipientName,"Ted Cruz, James Lankford and Mike Lee",preferred,reviewed
 M-L000575,recipientName,"Ted Cruz, James Lankford and Mike Lee",preferred,reviewed
 M-L000577,recipientName,"Ted Cruz, James Lankford and Mike Lee",preferred,reviewed
-M-B001250,recipientName,Rob Bishop and Jason Chaffetz,preferred,reviewed
-M-C001076,recipientName,Rob Bishop and Jason Chaffetz,preferred,reviewed
 M-B001243,recipientName,"Marsha Blackburn, G. K. Butterfield, Doug Collins and Theodore E. Deutch",preferred,reviewed
 M-B001251,recipientName,"Marsha Blackburn, G. K. Butterfield, Doug Collins and Theodore E. Deutch",preferred,reviewed
 M-C001093,recipientName,"Marsha Blackburn, G. K. Butterfield, Doug Collins and Theodore E. Deutch",preferred,reviewed
@@ -21327,21 +21354,9 @@ O-department-of-defense,recipientName,Department of Defense and Air National Gua
 O-air-national-guard,recipientName,Department of Defense and Air National Guard,preferred,reviewed
 M-S000250,recipientName,Pete Sessions and Louise McIntosh Slaughter,preferred,reviewed
 M-S000480,recipientName,Pete Sessions and Louise McIntosh Slaughter,preferred,reviewed
-M-M000303,recipientName,"John McCain, Mac Thornberry, Jack Reed and Adam Smith",preferred,reviewed
-M-T000238,recipientName,"John McCain, Mac Thornberry, Jack Reed and Adam Smith",preferred,reviewed
-M-R000122,recipientName,"John McCain, Mac Thornberry, Jack Reed and Adam Smith",preferred,reviewed
-M-S000510,recipientName,"John McCain, Mac Thornberry, Jack Reed and Adam Smith",preferred,reviewed
 O-department-of-homeland-security,recipientName,"Department of Homeland Security, Office of Management and Budget and General Services Administration",preferred,reviewed
 O-office-of-management-and-budget,recipientName,"Department of Homeland Security, Office of Management and Budget and General Services Administration",preferred,reviewed
 O-general-services-administration,recipientName,"Department of Homeland Security, Office of Management and Budget and General Services Administration",preferred,reviewed
-M-R000570,recipientName,"Paul D. Ryan, Nancy Pelosi, Mitch McConnell and Harry Reid",preferred,reviewed
-M-P000197,recipientName,"Paul D. Ryan, Nancy Pelosi, Mitch McConnell and Harry Reid",preferred,reviewed
-M-M000355,recipientName,"Paul D. Ryan, Nancy Pelosi, Mitch McConnell and Harry Reid",preferred,reviewed
-M-R000146,recipientName,"Paul D. Ryan, Nancy Pelosi, Mitch McConnell and Harry Reid",preferred,reviewed
-M-T000250,recipientName,"John Thune, Bill Nelson, Kelly Ayotte and Maria Cantwell",preferred,reviewed
-M-N000032,recipientName,"John Thune, Bill Nelson, Kelly Ayotte and Maria Cantwell",preferred,reviewed
-M-A000368,recipientName,"John Thune, Bill Nelson, Kelly Ayotte and Maria Cantwell",preferred,reviewed
-M-C000127,recipientName,"John Thune, Bill Nelson, Kelly Ayotte and Maria Cantwell",preferred,reviewed
 O-department-of-education,recipientName,"Department of Education, Department of the Treasury and Consumer Financial Protection Bureau",preferred,reviewed
 O-department-of-the-treasury,recipientName,"Department of Education, Department of the Treasury and Consumer Financial Protection Bureau",preferred,reviewed
 O-consumer-financial-protection-bureau,recipientName,"Department of Education, Department of the Treasury and Consumer Financial Protection Bureau",preferred,reviewed
@@ -21359,16 +21374,12 @@ M-D000191,recipientName,"Bill Shuster, Sam Graves, Peter A. DeFazio and Eleanor 
 M-N000147,recipientName,"Bill Shuster, Sam Graves, Peter A. DeFazio and Eleanor Holmes Norton",preferred,reviewed
 M-J000290,recipientName,Lynn Jenkins and Ron Kind,preferred,reviewed
 M-K000188,recipientName,Lynn Jenkins and Ron Kind,preferred,reviewed
-M-A000055,recipientName,Robert B. Aderholt and Sam Farr,preferred,reviewed
-M-F000030,recipientName,Robert B. Aderholt and Sam Farr,preferred,reviewed
 M-M000355,recipientName,"Mitch McConnell, Harry Reid, Ron Johnson and Thomas R. Carper",preferred,reviewed
 M-R000146,recipientName,"Mitch McConnell, Harry Reid, Ron Johnson and Thomas R. Carper",preferred,reviewed
 M-J000293,recipientName,"Mitch McConnell, Harry Reid, Ron Johnson and Thomas R. Carper",preferred,reviewed
 M-C000174,recipientName,"Mitch McConnell, Harry Reid, Ron Johnson and Thomas R. Carper",preferred,reviewed
 O-department-of-labor,recipientName,Department of Labor and Wage and Hour Division,preferred,reviewed
 O-wage-and-hour-division,recipientName,Department of Labor and Wage and Hour Division,preferred,reviewed
-M-T000238,recipientName,Mac Thornberry and Adam Smith,preferred,reviewed
-M-S000510,recipientName,Mac Thornberry and Adam Smith,preferred,reviewed
 M-F000372,recipientName,"Rodney P. Frelinghuysen, Peter J. Visclosky, Harold Rogers and Nita M. Lowey",preferred,reviewed
 M-V000108,recipientName,"Rodney P. Frelinghuysen, Peter J. Visclosky, Harold Rogers and Nita M. Lowey",preferred,reviewed
 M-R000395,recipientName,"Rodney P. Frelinghuysen, Peter J. Visclosky, Harold Rogers and Nita M. Lowey",preferred,reviewed
@@ -21416,9 +21427,6 @@ M-L000480,recipientName,"Michael K. Simpson, Marcy Kaptur, Ken Calvert, Betty Mc
 O-office-of-personnel-management,recipientName,"Office of Personnel Management, Federal Bureau of Investigation and Office of the Director of National Intelligence",preferred,reviewed
 O-federal-bureau-of-investigation,recipientName,"Office of Personnel Management, Federal Bureau of Investigation and Office of the Director of National Intelligence",preferred,reviewed
 O-office-of-the-director-of-national-intelligence,recipientName,"Office of Personnel Management, Federal Bureau of Investigation and Office of the Director of National Intelligence",preferred,reviewed
-M-C000567,recipientName,"Thad Cochran, Barbara A. Mikulski and Richard C. Shelby",preferred,reviewed
-M-M000702,recipientName,"Thad Cochran, Barbara A. Mikulski and Richard C. Shelby",preferred,reviewed
-M-S000320,recipientName,"Thad Cochran, Barbara A. Mikulski and Richard C. Shelby",preferred,reviewed
 M-B000575,recipientName,"Roy Blunt, Shelley Moore Capito, Candice S. Miller, Tom Graves, Gregg Harper, Charles E. Schumer, Brian Schatz, Robert A. Brady and Debbie Wasserman Schultz",preferred,reviewed
 M-C001047,recipientName,"Roy Blunt, Shelley Moore Capito, Candice S. Miller, Tom Graves, Gregg Harper, Charles E. Schumer, Brian Schatz, Robert A. Brady and Debbie Wasserman Schultz",preferred,reviewed
 M-M001150,recipientName,"Roy Blunt, Shelley Moore Capito, Candice S. Miller, Tom Graves, Gregg Harper, Charles E. Schumer, Brian Schatz, Robert A. Brady and Debbie Wasserman Schultz",preferred,reviewed
@@ -21428,8 +21436,6 @@ M-S000148,recipientName,"Roy Blunt, Shelley Moore Capito, Candice S. Miller, Tom
 M-S001194,recipientName,"Roy Blunt, Shelley Moore Capito, Candice S. Miller, Tom Graves, Gregg Harper, Charles E. Schumer, Brian Schatz, Robert A. Brady and Debbie Wasserman Schultz",preferred,reviewed
 M-B001227,recipientName,"Roy Blunt, Shelley Moore Capito, Candice S. Miller, Tom Graves, Gregg Harper, Charles E. Schumer, Brian Schatz, Robert A. Brady and Debbie Wasserman Schultz",preferred,reviewed
 M-W000797,recipientName,"Roy Blunt, Shelley Moore Capito, Candice S. Miller, Tom Graves, Gregg Harper, Charles E. Schumer, Brian Schatz, Robert A. Brady and Debbie Wasserman Schultz",preferred,reviewed
-M-G000359,recipientName,Lindsey Graham and Patrick J. Leahy,preferred,reviewed
-M-L000174,recipientName,Lindsey Graham and Patrick J. Leahy,preferred,reviewed
 O-department-of-justice,recipientName,Department of Justice and Immigration and Customs Enforcement,preferred,reviewed
 O-immigration-and-customs-enforcement,recipientName,Department of Justice and Immigration and Customs Enforcement,preferred,reviewed
 M-R000570,recipientName,"Paul D. Ryan, Mitch McConnell, Kevin McCarthy, Thad Cochran and Harold Rogers",preferred,reviewed
@@ -21491,12 +21497,6 @@ M-G000289,recipientName,"Bob Goodlatte, John Conyers, Jr., Fred Upton and Frank 
 M-C000714,recipientName,"Bob Goodlatte, John Conyers, Jr., Fred Upton and Frank Pallone, Jr.",preferred,reviewed
 M-U000031,recipientName,"Bob Goodlatte, John Conyers, Jr., Fred Upton and Frank Pallone, Jr.",preferred,reviewed
 M-P000034,recipientName,"Bob Goodlatte, John Conyers, Jr., Fred Upton and Frank Pallone, Jr.",preferred,reviewed
-M-B000755,recipientName,Kevin Brady and Sander M. Levin,preferred,reviewed
-M-L000263,recipientName,Kevin Brady and Sander M. Levin,preferred,reviewed
-M-U000031,recipientName,"Fred Upton, Bill Shuster, Frank Pallone, Jr. and Peter A. DeFazio",preferred,reviewed
-M-S001154,recipientName,"Fred Upton, Bill Shuster, Frank Pallone, Jr. and Peter A. DeFazio",preferred,reviewed
-M-P000034,recipientName,"Fred Upton, Bill Shuster, Frank Pallone, Jr. and Peter A. DeFazio",preferred,reviewed
-M-D000191,recipientName,"Fred Upton, Bill Shuster, Frank Pallone, Jr. and Peter A. DeFazio",preferred,reviewed
 M-M000312,recipientName,James P. McGovern and Joseph R. Pitts,preferred,reviewed
 M-P000373,recipientName,James P. McGovern and Joseph R. Pitts,preferred,reviewed
 M-W000779,recipientName,Ron Wyden and Lloyd Doggett,preferred,reviewed
@@ -28149,10 +28149,300 @@ O-cke-restaurants,broader,C-companies,preferred,local
 C-white-house-visitors-office,broader,O-executive-office-of-the-president,preferred,local
 O-quinn-emanuel,broader,C-companies,preferred,local
 O-cypress-bay-high-school,broader,C-florida-local-government-and-agencies,preferred,local
+C-brayton-energy,broader,C-companies,preferred,local
+C-village-of-black-earth,broader,C-wisconsin-local-government-and-agencies,preferred,local
+C-federal-reserve-bank-of-boston,broader,C-federal-reserve-system,preferred,local
+C-calrecycle,broader,C-california-state-government-agencies,preferred,local
+C-ely-bloomenson-community-hospital,broader,T-hospitals,preferred,local
+C-city-of-apopka,broader,C-florida-local-government-and-agencies,preferred,local
+C-lake-apopka-natural-gas-district,broader,C-florida-local-government-and-agencies,preferred,local
+C-military-depot-and-industrial-facilities-caucus,broader,C-caucuses,preferred,local
+C-st-bernard-parish-government,broader,C-louisiana-local-government-and-agencies,preferred,local
+O-mercury-broadband,broader,C-companies,preferred,local
+C-city-of-petal,broader,C-mississippi-local-government-and-agencies,preferred,local
+C-inter-american-foundation,broader,C-independent-agencies-and-commissions,preferred,local
+C-new-york-state-assembly,broader,C-new-york-state-government-agencies,preferred,local
+C-new-york-state-senate,broader,C-new-york-state-government-agencies,preferred,local
+C-manchester-police-department,broader,C-new-hampshire-local-government-and-agencies,preferred,local
+C-new-river-ymca,broader,T-nonprofits,preferred,local
+C-hanbury,broader,C-companies,preferred,local
+C-national-endowment-for-democracy,broader,T-nonprofits,preferred,local
+C-new-jersey-state-investment-council,broader,C-new-jersey-state-government-agencies,preferred,local
+C-the-innocent-convicts,broader,T-nonprofits,preferred,local
+C-district-of-columbia-government,broader,C-district-of-columbia-local-government-and-agencies,preferred,local
+C-burbank-water-and-power,broader,C-california-local-government-and-agencies,preferred,local
+C-town-of-greenburgh,broader,C-new-york-local-government-and-agencies,preferred,local
+C-township-of-orange,broader,C-new-jersey-local-government-and-agencies,preferred,local
+C-city-of-santee,broader,C-california-local-government-and-agencies,preferred,local
+C-oakland-county-sheriff-s-office,broader,C-michigan-local-government-and-agencies,preferred,local
+C-university-of-the-district-of-columbia,broader,C-colleges-and-universities,preferred,local
+C-barren-county-sheriff-s-office,broader,C-kentucky-local-government-and-agencies,preferred,local
+C-schneider-regional-medical-center,broader,T-hospitals,preferred,local
+C-skysong-innovations-llc,broader,C-companies,preferred,local
+C-harris-county-housing-finance-corporation,broader,C-texas-local-government-and-agencies,preferred,local
+C-county-of-marin,broader,C-california-local-government-and-agencies,preferred,local
+C-commissioners-of-public-works-of-the-city-of-greenville,broader,C-south-carolina-local-government-and-agencies,preferred,local
+C-united-states-semiquincentennial-commission,broader,C-independent-agencies-and-commissions,preferred,local
+C-city-of-pooler,broader,C-georgia-local-government-and-agencies,preferred,local
+C-oakland-county-parks,broader,C-michigan-local-government-and-agencies,preferred,local
+C-polk-county-north-carolina,broader,C-north-carolina-local-government-and-agencies,preferred,local
+C-david-gotlib-luxury-cufflinks,broader,C-companies,preferred,local
+C-kings-county-board-of-supervisors,broader,C-california-local-government-and-agencies,preferred,local
+C-naval-air-station-lemoore,broader,O-department-of-the-navy,preferred,local
+C-montgomery-county-department-of-transportation,broader,C-maryland-local-government-and-agencies,preferred,local
+C-association-of-state-criminal-investigative-agencies,broader,C-associations-and-other-organizations,preferred,local
+C-correctional-leaders-association,broader,C-associations-and-other-organizations,preferred,local
+C-national-alliance-of-state-drug-enforcement-agencies,broader,C-associations-and-other-organizations,preferred,local
+C-national-hidta-directors-association,broader,C-associations-and-other-organizations,preferred,local
+C-national-homeland-security-association,broader,C-associations-and-other-organizations,preferred,local
+C-national-real-time-crime-center-association,broader,C-associations-and-other-organizations,preferred,local
+C-national-tactical-officers-association,broader,C-associations-and-other-organizations,preferred,local
+C-small-and-rural-law-enforcement-executives-association,broader,C-associations-and-other-organizations,preferred,local
+C-bipartisan-women-s-caucus,broader,C-caucuses,preferred,local
+C-nevada-humanities,broader,T-nonprofits,preferred,local
+C-michigan-department-of-state-police,broader,C-michigan-state-government-agencies,preferred,local
+C-city-of-homestead,broader,C-florida-local-government-and-agencies,preferred,local
+C-allegheny-county,broader,C-pennsylvania-local-government-and-agencies,preferred,local
+C-fellowship-foundation,broader,T-nonprofits,preferred,local
+C-town-of-grand-island,broader,C-new-york-local-government-and-agencies,preferred,local
+C-fallbrook-public-utility-district,broader,C-california-local-government-and-agencies,preferred,local
+C-cameron-county,broader,C-texas-local-government-and-agencies,preferred,local
+O-georgia-composite-medical-board,broader,C-georgia-agencies-and-organizations,preferred,local
+C-boar-s-head-provision-co,broader,C-companies,preferred,local
+C-alliance-for-opportunity,broader,T-nonprofits,preferred,local
+C-youth-guidance,broader,T-nonprofits,preferred,local
+C-national-junior-college-athletic-association,broader,C-associations-and-other-organizations,preferred,local
+C-california-community-college-athletic-association,broader,C-associations-and-other-organizations,preferred,local
+C-northwest-athletic-conference,broader,C-associations-and-other-organizations,preferred,local
+C-charles-s-kettles-va-medical-center,broader,O-department-of-veterans-affairs,preferred,local
+C-national-institute-of-justice,broader,O-department-of-justice,preferred,local
+C-university-of-chicago,broader,C-colleges-and-universities,preferred,local
+C-city-of-encinitas,broader,C-california-local-government-and-agencies,preferred,local
+C-new-hampshire-city-and-town-clerks-association,broader,C-associations-and-other-organizations,preferred,local
+C-city-of-dallas,broader,C-texas-local-government-and-agencies,preferred,local
+C-borough-of-eatontown,broader,C-new-jersey-local-government-and-agencies,preferred,local
+C-village-of-millington,broader,C-michigan-local-government-and-agencies,preferred,local
+C-town-of-weymouth,broader,C-massachusetts-local-government-and-agencies,preferred,local
+C-charlie-norwood-augusta-va-medical-center,broader,O-department-of-veterans-affairs,preferred,local
+C-city-of-ralston,broader,C-nebraska-local-government-and-agencies,preferred,local
+O-georgia-hospital-association,broader,C-associations-and-other-organizations,preferred,local
+C-office-of-presidential-personnel,broader,O-executive-office-of-the-president,preferred,local
+C-government-of-the-virgin-islands,broader,T-u-s-virgin-islands,preferred,local
+C-tweed-new-haven-airport-authority,broader,C-connecticut-local-government-and-agencies,preferred,local
+C-city-of-lewisport-municipal-water-works,broader,C-kentucky-local-government-and-agencies,preferred,local
+C-oakland-county,broader,C-michigan-local-government-and-agencies,preferred,local
+C-san-miguel-consolidated-fire-protection-district,broader,C-california-local-government-and-agencies,preferred,local
+C-kalamazoo-township-board-of-trustees,broader,C-michigan-local-government-and-agencies,preferred,local
+C-city-of-hartsville,broader,C-south-carolina-local-government-and-agencies,preferred,local
+C-iowa-economic-development-authority,broader,C-iowa-state-government-agencies,preferred,local
+C-indiana-philanthropy-alliance,broader,T-nonprofits,preferred,local
+C-borough-of-mountainside,broader,C-new-jersey-local-government-and-agencies,preferred,local
+C-erie-county-industrial-development-agency,broader,C-new-york-local-government-and-agencies,preferred,local
+C-houston-parks-and-recreation-department,broader,C-texas-local-government-and-agencies,preferred,local
+C-water-works-and-sewer-board-of-the-city-of-greenville,broader,C-alabama-agencies-and-organizations,preferred,local
+C-college-of-the-florida-keys,broader,C-colleges-and-universities,preferred,local
+C-north-county-transit-district,broader,C-california-local-government-and-agencies,preferred,local
+C-idaho-state-legislature,broader,C-idaho-state-officials,preferred,local
+O-michigan-public-service-commission,broader,C-michigan-state-government-agencies,preferred,local
+C-dte-energy,broader,C-companies,preferred,local
+C-carl-vinson-va-medical-center,broader,O-department-of-veterans-affairs,preferred,local
+C-grosse-ile-township,broader,C-michigan-local-government-and-agencies,preferred,local
+C-city-of-flint,broader,C-michigan-local-government-and-agencies,preferred,local
+C-government-of-spain,broader,C-foreign-governments,preferred,local
+C-newcap,broader,T-nonprofits,preferred,local
+C-college-sports-commission,broader,C-associations-and-other-organizations,preferred,local
+C-village-of-barrington,broader,C-illinois-local-government-and-agencies,preferred,local
+C-borough-of-mount-arlington,broader,C-new-jersey-local-government-and-agencies,preferred,local
+C-contra-costa-county-public-works-department,broader,C-california-local-government-and-agencies,preferred,local
+C-south-huron-valley-utility-authority,broader,C-michigan-local-government-and-agencies,preferred,local
+C-capistrano-unified-school-district,broader,C-california-local-government-and-agencies,preferred,local
+C-village-of-elmore,broader,C-ohio-local-government-and-agencies,preferred,local
+C-potomac-fire-co-2-inc,broader,C-maryland-local-government-and-agencies,preferred,local
+C-umpqua-community-college,broader,C-colleges-and-universities,preferred,local
+C-montgomery-county-police-department,broader,C-maryland-local-government-and-agencies,preferred,local
+C-greater-northside-management-district,broader,C-texas-local-government-and-agencies,preferred,local
+O-rockefeller-group,broader,C-companies,preferred,local
+C-united-states-district-court-for-the-district-of-minnesota,broader,T-courts,preferred,local
+C-442nd-fighter-wing,broader,O-department-of-the-air-force,preferred,local
+C-city-of-el-cajon,broader,C-california-local-government-and-agencies,preferred,local
+C-city-of-winter-garden,broader,C-florida-local-government-and-agencies,preferred,local
+C-city-of-port-wentworth,broader,C-georgia-local-government-and-agencies,preferred,local
+C-city-of-ferndale,broader,C-michigan-local-government-and-agencies,preferred,local
+C-skyhop-global,broader,C-companies,preferred,local
+C-town-of-swansea,broader,C-massachusetts-local-government-and-agencies,preferred,local
+C-city-of-long-beach,broader,C-california-local-government-and-agencies,preferred,local
+C-borough-of-hopatcong,broader,C-new-jersey-local-government-and-agencies,preferred,local
+C-montgomery-county-maryland,broader,C-maryland-local-government-and-agencies,preferred,local
+C-diablo-water-district,broader,C-california-local-government-and-agencies,preferred,local
+C-hulu,broader,C-media-platforms,preferred,local
+C-fubotv,broader,C-media-platforms,preferred,local
+C-c-span,broader,C-media-platforms,preferred,local
+C-texas-office-of-refugees,broader,C-texas-state-government-agencies,preferred,local
+C-california-state-university-northridge,broader,C-colleges-and-universities,preferred,local
+C-city-of-bloomfield-hills,broader,C-michigan-local-government-and-agencies,preferred,local
+C-santa-clara-city,broader,C-utah-agencies-and-organizations,preferred,local
+C-oregon-state-university,broader,C-colleges-and-universities,preferred,local
+C-police-benevolent-association-of-the-city-of-new-york,broader,C-associations-and-other-organizations,preferred,local
+C-biodistrict-new-orleans,broader,C-louisiana-local-government-and-agencies,preferred,local
+C-xavier-university-of-louisiana,broader,C-colleges-and-universities,preferred,local
+C-education-alliance-for-new-hampshire,broader,T-nonprofits,preferred,local
+C-federal-trio-programs,broader,O-department-of-education,preferred,local
+C-municipality-of-hatillo,broader,T-puerto-rico,preferred,local
+C-federal-defender-services,broader,O-administrative-office-of-the-u-s-courts,preferred,local
+C-city-of-west-wendover,broader,C-nevada-local-government-and-agencies,preferred,local
+C-wake-county-public-schools,broader,C-north-carolina-local-government-and-agencies,preferred,local
+C-bdo-usa,broader,C-companies,preferred,local
+C-national-all-domain-warfighting-center,broader,C-michigan-agencies-and-organizations,preferred,local
+C-montgomery-county-government,broader,C-maryland-local-government-and-agencies,preferred,local
+C-myrtle-beach-police-department,broader,C-south-carolina-local-government-and-agencies,preferred,local
+C-jefferson-parish-coroner-s-office,broader,C-louisiana-local-government-and-agencies,preferred,local
+C-marin-county-public-financing-authority,broader,C-california-local-government-and-agencies,preferred,local
+C-family-business-estate-tax-coalition,broader,C-associations-and-other-organizations,preferred,local
+C-bernards-township,broader,C-new-jersey-local-government-and-agencies,preferred,local
+C-pennsylvania-college-of-technology,broader,C-colleges-and-universities,preferred,local
+C-miccosukee-tribe-of-indians-of-florida,broader,C-florida-organizations,preferred,local
+C-central-contra-costa-transit-authority,broader,C-california-local-government-and-agencies,preferred,local
+C-texas-a-m-agrilife-research,broader,C-texas-agencies-and-organizations,preferred,local
+C-office-of-clean-energy-demonstrations,broader,O-department-of-energy,preferred,local
+C-city-of-brockton,broader,C-massachusetts-local-government-and-agencies,preferred,local
+C-housing-authority-of-the-city-of-los-angeles,broader,C-california-local-government-and-agencies,preferred,local
+C-federal-crop-insurance-corporation,broader,O-department-of-agriculture,preferred,local
+C-richland-police-department,broader,C-washington-local-government-and-agencies,preferred,local
+C-northern-california-indian-development-council,broader,T-nonprofits,preferred,local
+C-puerto-rico-department-of-the-family,broader,T-puerto-rico,preferred,local
+C-office-of-the-comptroller-of-puerto-rico,broader,T-puerto-rico,preferred,local
+C-contra-costa-county-district-attorney-s-office,broader,C-california-local-government-and-agencies,preferred,local
+C-county-of-humboldt-sheriff-s-office,broader,C-california-local-government-and-agencies,preferred,local
+C-fair-isaac-corporation,broader,C-companies,preferred,local
+C-research-foundation-for-the-state-university-of-new-york,broader,C-colleges-and-universities,preferred,local
+C-canton-township,broader,C-michigan-local-government-and-agencies,preferred,local
+C-corpus-christi-army-depot,broader,O-department-of-the-army,preferred,local
+C-alabama-state-port-authority,broader,C-alabama-state-government-agencies,preferred,local
+C-mckay-healthcare-and-rehabilitation-center,broader,C-washington-local-government-and-agencies,preferred,local
+C-bryan-county-board-of-commissioners,broader,C-georgia-local-government-and-agencies,preferred,local
+C-san-mar-family-and-community-services,broader,T-nonprofits,preferred,local
+C-havenly,broader,T-nonprofits,preferred,local
+C-children-s-health-systems-of-texas,broader,T-nonprofits,preferred,local
+C-agricultural-retailers-association,broader,C-associations-and-other-organizations,preferred,local
+C-almond-alliance,broader,C-associations-and-other-organizations,preferred,local
+C-prince-george-county-virginia,broader,C-virginia-local-government-and-agencies,preferred,local
+C-dekalb-county-government-georgia,broader,C-georgia-local-government-and-agencies,preferred,local
+C-data-center-coalition,broader,C-associations-and-other-organizations,preferred,local
+C-horseplay-therapy-center,broader,T-nonprofits,preferred,local
+C-city-of-frederick-maryland,broader,C-maryland-local-government-and-agencies,preferred,local
+O-reckitt,broader,C-companies,preferred,local
+C-oakland-county-michigan,broader,C-michigan-local-government-and-agencies,preferred,local
+C-city-of-verona-wisconsin,broader,C-wisconsin-local-government-and-agencies,preferred,local
+C-keystone-valley-fire-department,broader,C-pennsylvania-local-government-and-agencies,preferred,local
+C-city-of-camden-alabama,broader,C-alabama-local-government-and-agencies,preferred,local
+C-city-of-jefferson-missouri,broader,C-missouri-local-government-and-agencies,preferred,local
+C-vimenti,broader,T-nonprofits,preferred,local
+C-danville-area-community-center,broader,T-nonprofits,preferred,local
+C-actblue,broader,C-associations-and-other-organizations,preferred,local
+C-new-hampshire-local-government-and-agencies,broader,C-new-hampshire-agencies-and-organizations,preferred,local
+C-new-hampshire-agencies-and-organizations,broader,C-state-of-new-hampshire,preferred,local
+C-town-of-rye,broader,C-new-hampshire-local-government-and-agencies,preferred,local
+C-virgin-islands-water-and-power-authority,broader,T-u-s-virgin-islands,preferred,local
+C-central-oregon-disability-support-network,broader,T-nonprofits,preferred,local
+C-city-of-bennettsville-police-department-south-carolina,broader,C-south-carolina-local-government-and-agencies,preferred,local
+C-mineola-independent-school-district,broader,C-texas-local-government-and-agencies,preferred,local
+C-d-riv-s-r-siniques-et-terp-niques,broader,C-companies,preferred,local
+C-biolabs,broader,C-companies,preferred,local
+C-rock-island-arsenal,broader,O-department-of-defense,preferred,local
+C-children-s-village,broader,T-nonprofits,preferred,local
+C-charter-township-of-waterford,broader,C-michigan-local-government-and-agencies,preferred,local
+C-monmouth-county-sheriff-s-office-new-jersey,broader,C-new-jersey-local-government-and-agencies,preferred,local
+C-town-of-tonawanda-new-york,broader,C-new-york-local-government-and-agencies,preferred,local
+C-borough-of-watchung-new-jersey,broader,C-new-jersey-local-government-and-agencies,preferred,local
+C-chesterfield-county-sheriff-s-office-south-carolina,broader,C-south-carolina-local-government-and-agencies,preferred,local
+C-town-of-phillipsburg,broader,C-new-jersey-local-government-and-agencies,preferred,local
+C-oregon-international-port-of-coos-bay,broader,C-oregon-local-government-and-agencies,preferred,local
+C-town-of-clifton-park,broader,C-new-york-local-government-and-agencies,preferred,local
+C-douglas-county-sheriff-s-office-nebraska,broader,C-nebraska-local-government-and-agencies,preferred,local
+C-arkansas-department-of-transportation,broader,C-arkansas-agencies-and-organizations,preferred,local
+C-city-of-carpinteria,broader,C-california-local-government-and-agencies,preferred,local
+C-town-of-manchester-connecticut,broader,C-connecticut-local-government-and-agencies,preferred,local
+C-city-of-emporia,broader,C-virginia-local-government-and-agencies,preferred,local
+C-confederated-salish-and-kootenai-tribes,broader,C-associations-and-other-organizations,preferred,local
+C-florida-agricultural-and-mechanical-university,broader,C-colleges-and-universities,preferred,local
+C-town-of-hamden,broader,C-connecticut-local-government-and-agencies,preferred,local
+C-eastern-michigan-university-department-of-public-safety,broader,C-colleges-and-universities,preferred,local
+C-ruan-transportation,broader,C-companies,preferred,local
+C-new-mexico-local-government-and-agencies,broader,C-new-mexico-agencies-and-organizations,preferred,local
+C-city-of-lovington-new-mexico,broader,C-new-mexico-local-government-and-agencies,preferred,local
+C-unaids,broader,C-international-organizations,preferred,local
+C-congressional-hiv-aids-caucus,broader,C-caucuses,preferred,local
+C-north-carolina-department-of-insurance,broader,C-north-carolina-state-government-agencies,preferred,local
+C-town-of-woodbridge,broader,C-connecticut-local-government-and-agencies,preferred,local
+C-city-of-saint-louis,broader,C-missouri-local-government-and-agencies,preferred,local
+C-virgin-islands-department-of-health,broader,T-u-s-virgin-islands,preferred,local
+C-dane-county-sheriff-s-office,broader,C-wisconsin-local-government-and-agencies,preferred,local
+C-mount-olive-township,broader,C-new-jersey-local-government-and-agencies,preferred,local
+C-fulton-county-board-of-registration-and-elections,broader,C-georgia-local-government-and-agencies,preferred,local
+C-city-of-marion-south-carolina,broader,C-south-carolina-local-government-and-agencies,preferred,local
+C-ypsilanti-community-utilities-authority,broader,C-michigan-local-government-and-agencies,preferred,local
+C-pat-harrison-waterway-district,broader,C-mississippi-local-government-and-agencies,preferred,local
+C-clarke-county-board-of-supervisors,broader,C-mississippi-local-government-and-agencies,preferred,local
+C-city-of-quitman,broader,C-mississippi-local-government-and-agencies,preferred,local
+C-city-of-stone-mountain,broader,C-georgia-local-government-and-agencies,preferred,local
+C-clarke-county-health-care-authority,broader,C-alabama-local-government-and-agencies,preferred,local
+C-town-of-westernport,broader,C-maryland-local-government-and-agencies,preferred,local
+C-douglas-county-sewer-district-1,broader,C-washington-local-government-and-agencies,preferred,local
+C-fayette-county-pennsylvania,broader,C-pennsylvania-local-government-and-agencies,preferred,local
+C-city-of-buffalo,broader,C-new-york-local-government-and-agencies,preferred,local
+C-ug-solutions,broader,C-companies,preferred,local
+C-safe-reach-solutions,broader,C-companies,preferred,local
+C-mcnally-capital,broader,C-companies,preferred,local
+C-two-ocean-trust,broader,C-companies,preferred,local
+C-alaska-earthquake-center,broader,C-colleges-and-universities,preferred,local
+C-wise-county-texas,broader,C-texas-local-government-and-agencies,preferred,local
+C-the-phoenix,broader,T-nonprofits,preferred,local
+C-city-of-harbor-beach,broader,C-michigan-local-government-and-agencies,preferred,local
+C-virgin-islands-waste-management-authority,broader,T-u-s-virgin-islands,preferred,local
+C-corporal-michael-j-crescenz-va-medical-center,broader,O-department-of-veterans-affairs,preferred,local
+C-coatesville-va-medical-center,broader,O-department-of-veterans-affairs,preferred,local
+C-louisville-gas-and-electric,broader,C-companies,preferred,local
+C-first-step-domestic-sexual-violence-services,broader,T-nonprofits,preferred,local
+C-marlboro-county-sheriff-s-office,broader,C-south-carolina-local-government-and-agencies,preferred,local
+C-organized-crime-drug-enforcement-task-forces,broader,O-department-of-justice,preferred,local
+C-colonial-heights-rehabilitation-and-nursing-center,broader,C-virginia-agencies-and-organizations,preferred,local
+C-lyndon-township,broader,C-michigan-local-government-and-agencies,preferred,local
+C-american-specialty-toy-retailing-association,broader,C-associations-and-other-organizations,preferred,local
+C-the-learning-tree-toys-books-and-gifts,broader,C-companies,preferred,local
+C-pueblo-city-county-library-district,broader,C-colorado-local-government-and-agencies,preferred,local
+C-bet365,broader,C-companies,preferred,local
+C-fanduel,broader,C-companies,preferred,local
+C-fanatics,broader,C-companies,preferred,local
+C-draftkings,broader,C-companies,preferred,local
+C-sideprize,broader,C-companies,preferred,local
+C-city-of-bay-city,broader,C-michigan-local-government-and-agencies,preferred,local
+C-monroe-county-florida,broader,C-florida-local-government-and-agencies,preferred,local
+C-event-strategies-inc,broader,C-companies,preferred,local
+C-freedom-250,broader,C-associations-and-other-organizations,preferred,local
+C-town-of-barrington-new-hampshire,broader,C-associations-and-other-organizations,preferred,local
+C-city-of-tucker-georgia,broader,C-georgia-local-government-and-agencies,preferred,local
+C-city-of-d-iberville,broader,C-mississippi-local-government-and-agencies,preferred,local
+C-vermont-state-council-of-trout-unlimited,broader,T-nonprofits,preferred,local
+C-city-of-phenix-city,broader,C-alabama-local-government-and-agencies,preferred,local
+C-google-deepmind,broader,C-companies,preferred,local
+C-american-fence-association,broader,C-associations-and-other-organizations,preferred,local
+C-the-hummingbird-alliance,broader,T-nonprofits,preferred,local
+C-virgin-islands-department-of-agriculture,broader,T-u-s-virgin-islands,preferred,local
+C-triton-systems,broader,C-companies,preferred,local
+C-luna-innovations,broader,C-companies,preferred,local
+C-lynntech,broader,C-companies,preferred,local
+C-tda-research,broader,C-companies,preferred,local
+C-nanosonic,broader,C-companies,preferred,local
+C-kitware,broader,C-companies,preferred,local
+C-city-of-lawrence-indiana,broader,C-indiana-local-government-and-agencies,preferred,local
+C-great-city-mississippi-foundation,broader,T-nonprofits,preferred,local
+C-america250,broader,C-independent-agencies-and-commissions,preferred,local
+C-los-angeles-county-development-authority,broader,C-california-local-government-and-agencies,preferred,local
+C-georgetown-county-sheriff-s-office,broader,C-south-carolina-local-government-and-agencies,preferred,local
+C-san-jacinto-county,broader,C-texas-local-government-and-agencies,preferred,local
 C-collier-county,broader,C-florida-local-government-and-agencies,preferred,local
 C-city-of-manchester,broader,C-new-hampshire-local-government-and-agencies,preferred,local
 C-city-of-coronado,broader,C-california-local-government-and-agencies,preferred,local
-C-city-of-port-wentworth,broader,C-georgia-local-government-and-agencies,preferred,local
 C-federal-judicial-center,broader,C-judicial-branch,preferred,local
 C-boston-consulting-group,broader,C-companies,preferred,local
 C-city-of-sweetwater,broader,C-florida-local-government-and-agencies,preferred,local
@@ -28164,7 +28454,6 @@ C-city-of-montgomery,broader,C-alabama-local-government-and-agencies,preferred,l
 C-town-of-lake-view,broader,C-south-carolina-local-government-and-agencies,preferred,local
 C-city-of-brookhaven,broader,C-georgia-local-government-and-agencies,preferred,local
 C-great-plains-tribal-chairmen-s-association,broader,T-native-americans,preferred,local
-C-housing-authority-of-the-city-of-los-angeles,broader,C-california-local-government-and-agencies,preferred,local
 C-pagosa-springs-medical-center,broader,C-colorado-local-government-and-agencies,preferred,local
 C-solutions-at-work,broader,T-nonprofits,preferred,local
 C-st-charles-county-police-department,broader,C-missouri-local-government-and-agencies,preferred,local
@@ -28178,7 +28467,6 @@ C-pioneer-natural-resources,broader,C-companies,preferred,local
 C-city-of-pembroke-pines,broader,C-florida-local-government-and-agencies,preferred,local
 C-archer-daniels-midland,broader,C-companies,preferred,local
 C-auburn-university,broader,C-colleges-and-universities,preferred,local
-C-education-alliance-for-new-hampshire,broader,T-nonprofits,preferred,local
 C-gualala-community-center,broader,T-nonprofits,preferred,local
 C-fubo,broader,C-companies,preferred,local
 C-chino-valley-independent-fire-district,broader,C-california-local-government-and-agencies,preferred,local
@@ -28196,7 +28484,6 @@ C-gpb-capital-holdings,broader,C-companies,preferred,local
 C-sycamore-partners,broader,C-companies,preferred,local
 C-verkada,broader,C-companies,preferred,local
 C-new-season,broader,C-companies,preferred,local
-C-fanatics,broader,C-companies,preferred,local
 O-prime-healthcare,broader,C-companies,preferred,local
 C-williams-transco,broader,C-companies,preferred,local
 C-carl-vinson-dublin-va-medical-center,broader,O-department-of-veterans-affairs,preferred,local
@@ -28219,7 +28506,6 @@ O-pandemic-response-accountability-committee,broader,O-council-of-the-inspectors
 C-first-liberty-building-and-loan,broader,C-companies,preferred,local
 C-great-lakes-fishery-commission,broader,C-international-organizations,preferred,local
 C-huron-clinton-metroparks,broader,C-michigan-local-government-and-agencies,preferred,local
-C-university-of-the-district-of-columbia,broader,C-colleges-and-universities,preferred,local
 C-dallas-area-rapid-transit,broader,C-texas-local-government-and-agencies,preferred,local
 C-united-community-corporation,broader,T-nonprofits,preferred,local
 C-town-of-malta,broader,C-new-york-local-government-and-agencies,preferred,local
@@ -28256,7 +28542,6 @@ C-japanese-american-national-museum,broader,T-nonprofits,preferred,local
 C-city-of-new-haven,broader,C-connecticut-local-government-and-agencies,preferred,local
 C-carbon-schuylkill-community-hospital,broader,C-pennsylvania-organizations,preferred,local
 C-town-of-sumrall,broader,C-mississippi-local-government-and-agencies,preferred,local
-C-new-mexico-local-government-and-agencies,broader,C-new-mexico-agencies-and-organizations,preferred,local
 C-gallup-police-department,broader,C-new-mexico-local-government-and-agencies,preferred,local
 C-town-of-lovettsville,broader,C-virginia-local-government-and-agencies,preferred,local
 C-taylor-farms,broader,C-companies,preferred,local
@@ -28269,7 +28554,6 @@ C-city-of-lebanon,broader,C-pennsylvania-local-government-and-agencies,preferred
 C-dallas-county-sheriff-s-office,broader,C-alabama-local-government-and-agencies,preferred,local
 C-texas-a-m-agrilife-research,broader,C-colleges-and-universities,preferred,local
 C-city-of-hialeah,broader,C-florida-local-government-and-agencies,preferred,local
-C-schneider-regional-medical-center,broader,T-hospitals,preferred,local
 C-friendship-hose-company-no-1,broader,C-pennsylvania-local-government-and-agencies,preferred,local
 C-johnson-c-smith-university,broader,C-colleges-and-universities,preferred,local
 C-queens-university-of-charlotte,broader,C-colleges-and-universities,preferred,local
@@ -28296,7 +28580,6 @@ C-town-of-blackstone,broader,C-massachusetts-local-government-and-agencies,prefe
 C-manning-family-children-s,broader,T-nonprofits,preferred,local
 C-rockhurst-university,broader,C-colleges-and-universities,preferred,local
 C-house-freedom-caucus,broader,C-caucuses,preferred,local
-C-virgin-islands-waste-management-authority,broader,T-u-s-virgin-islands,preferred,local
 C-garfield-township,broader,C-michigan-local-government-and-agencies,preferred,local
 C-beth-medrash-govoha,broader,C-colleges-and-universities,preferred,local
 C-office-of-the-ocean-county-engineer,broader,C-new-jersey-local-government-and-agencies,preferred,local
@@ -28315,8 +28598,6 @@ C-st-thomas-east-end-medical-center-corporation,broader,T-nonprofits,preferred,l
 C-town-of-jonesport,broader,C-maine-local-government-and-agencies,preferred,local
 C-new-york-city-department-of-probation,broader,C-new-york-local-government-and-agencies,preferred,local
 C-city-of-fort-bragg,broader,C-california-local-government-and-agencies,preferred,local
-C-new-hampshire-local-government-and-agencies,broader,C-new-hampshire-agencies-and-organizations,preferred,local
-C-new-hampshire-agencies-and-organizations,broader,C-state-of-new-hampshire,preferred,local
 C-saft-america,broader,C-companies,preferred,local
 C-ohio-department-of-education,broader,C-ohio-state-government-agencies,preferred,local
 C-hinsdale-county-board-of-county-commissioners,broader,C-colorado-local-government-and-agencies,preferred,local
@@ -28410,16 +28691,13 @@ C-aceco-llc,broader,C-companies,preferred,local
 C-hillsborough-county-aviation-authority,broader,C-florida-local-government-and-agencies,preferred,local
 C-tampa-international-airport,broader,C-florida-local-government-and-agencies,preferred,local
 C-dekalb-county-department-of-recreation-parks-and-cultural-af,broader,C-georgia-local-government-and-agencies,preferred,local
-C-city-of-long-beach,broader,C-california-local-government-and-agencies,preferred,local
 C-iowa-county-highway-department,broader,C-wisconsin-local-government-and-agencies,preferred,local
 C-new-york-city-mayor-s-office-to-end-domestic-and-gender-base,broader,C-new-york-local-government-and-agencies,preferred,local
 C-hmong-family-association,broader,T-nonprofits,preferred,local
 C-santa-ana-regional-water-quality-control-board,broader,C-california-state-government-agencies,preferred,local
 C-city-of-biloxi,broader,C-mississippi-local-government-and-agencies,preferred,local
 C-conecuh-county-commission,broader,C-alabama-local-government-and-agencies,preferred,local
-C-contra-costa-county-district-attorney-s-office,broader,C-california-local-government-and-agencies,preferred,local
 C-goldentree-asset-management,broader,C-companies,preferred,local
-C-town-of-weymouth,broader,C-massachusetts-local-government-and-agencies,preferred,local
 C-city-of-farmington-hills,broader,C-michigan-local-government-and-agencies,preferred,local
 C-city-of-del-mar,broader,C-california-local-government-and-agencies,preferred,local
 C-springfield-hospital,broader,T-nonprofits,preferred,local
@@ -28461,7 +28739,6 @@ C-cristosal,broader,T-nonprofits,preferred,local
 C-university-of-hawai-i-at-hilo,broader,C-colleges-and-universities,preferred,local
 C-interstate-natural-gas-association-of-america,broader,C-associations-and-other-organizations,preferred,local
 C-city-of-west-haven,broader,C-connecticut-local-government-and-agencies,preferred,local
-C-harris-county-housing-finance-corporation,broader,C-texas-local-government-and-agencies,preferred,local
 C-city-of-glenn-heights,broader,C-texas-local-government-and-agencies,preferred,local
 C-university-of-new-haven,broader,C-colleges-and-universities,preferred,local
 C-city-of-alexandria,broader,C-virginia-local-government-and-agencies,preferred,local
@@ -28491,7 +28768,6 @@ C-one-world-recycling-llc,broader,C-companies,preferred,local
 C-port-of-iberia,broader,C-louisiana-local-government-and-agencies,preferred,local
 C-fishermen-s-energy,broader,C-companies,preferred,local
 C-interior-board-of-land-appeals,broader,O-department-of-the-interior,preferred,local
-C-cemex,broader,C-companies,preferred,local
 C-berkeley-patients-group,broader,C-companies,preferred,local
 C-harborside-health-center,broader,C-companies,preferred,local
 C-mohave-county-regional-airport-authority,broader,C-arizona-local-government-and-agencies,preferred,local
@@ -28599,7 +28875,6 @@ O-advanced-micro-devices,broader,C-companies,preferred,local
 C-black-mamas-matter-alliance,broader,T-nonprofits,preferred,local
 C-city-of-morro-bay,broader,C-california-local-government-and-agencies,preferred,local
 C-joseph-maxwell-cleland-atlanta-va-medical-center,broader,O-department-of-veterans-affairs,preferred,local
-C-fair-isaac-corporation,broader,C-companies,preferred,local
 C-dairy-farmers-of-america,broader,C-companies,preferred,local
 C-myakka-river-management-coordinating-council,broader,C-associations-and-other-organizations,preferred,local
 C-trafigura,broader,C-companies,preferred,local
@@ -28608,7 +28883,6 @@ C-virginia-health-benefit-exchange,broader,C-virginia-state-government-agencies,
 C-sparta-township,broader,C-new-jersey-local-government-and-agencies,preferred,local
 C-oregon-nurses-association,broader,C-associations-and-other-organizations,preferred,local
 C-providence-health-system,broader,T-nonprofits,preferred,local
-C-the-hummingbird-alliance,broader,T-nonprofits,preferred,local
 C-veterans-integrated-service-network-7,broader,C-federal-agencies,preferred,local
 C-white-house-office-of-presidential-personnel,broader,O-executive-office-of-the-president,preferred,local
 C-town-of-sunnyvale,broader,C-texas-local-government-and-agencies,preferred,local
@@ -28667,7 +28941,6 @@ C-the-american-city-coalition,broader,T-nonprofits,preferred,local
 C-city-of-riviera-beach-florida,broader,C-florida-local-government-and-agencies,preferred,local
 C-aerospace-industries-association,broader,C-associations-and-other-organizations,preferred,local
 C-envolve,broader,C-companies,preferred,local
-C-family-business-estate-tax-coalition,broader,C-associations-and-other-organizations,preferred,local
 C-speaker-of-the-washington-house-of-representatives,broader,C-washington-state-officials,preferred,local
 C-florida-association-of-counties,broader,C-florida-organizations,preferred,local
 C-family-business-coalition,broader,C-associations-and-other-organizations,preferred,local
@@ -28680,12 +28953,10 @@ C-metropolitan-atlanta-rapid-transit-authority,broader,C-georgia-local-governmen
 C-congressional-jewish-caucus,broader,C-caucuses,preferred,local
 C-town-of-millis,broader,C-massachusetts-local-government-and-agencies,preferred,local
 C-bloomsburg-area-ymca,broader,T-nonprofits,preferred,local
-O-georgia-hospital-association,broader,C-associations-and-other-organizations,preferred,local
 C-erie-county-sheriff-s-office,broader,C-new-york-local-government-and-agencies,preferred,local
 C-borough-of-naugatuck,broader,C-connecticut-local-government-and-agencies,preferred,local
 C-united-way-of-southeast-louisiana,broader,T-nonprofits,preferred,local
 C-fairfax-county-government,broader,C-virginia-local-government-and-agencies,preferred,local
-C-freedom-250,broader,C-associations-and-other-organizations,preferred,local
 C-american-gold-star-mothers,broader,C-associations-and-other-organizations,preferred,local
 C-manufactured-housing-institute,broader,C-associations-and-other-organizations,preferred,local
 C-city-of-independence,broader,C-missouri-local-government-and-agencies,preferred,local
@@ -28705,7 +28976,6 @@ C-harris-county-water-control-and-improvement-district-no-110,broader,C-texas-lo
 C-bridgewater-township,broader,C-new-jersey-local-government-and-agencies,preferred,local
 C-office-of-environmental-justice-and-external-civil-rights,broader,O-environmental-protection-agency,preferred,local
 C-atlantic-alumina-company,broader,C-companies,preferred,local
-C-city-of-homestead,broader,C-florida-local-government-and-agencies,preferred,local
 C-hawaii-local-government-and-agencies,broader,C-hawaii-agencies-and-organizations,preferred,local
 C-county-of-kaua-i,broader,C-hawaii-local-government-and-agencies,preferred,local
 C-town-of-lawrenceville,broader,C-virginia-local-government-and-agencies,preferred,local
@@ -28723,7 +28993,6 @@ C-village-of-oregon-water-utility,broader,C-wisconsin-local-government-and-agenc
 C-university-of-puerto-rico,broader,C-colleges-and-universities,preferred,local
 C-empower-oversight,broader,T-nonprofits,preferred,local
 C-whistleblowers-of-america,broader,T-nonprofits,preferred,local
-C-city-of-winter-garden,broader,C-florida-local-government-and-agencies,preferred,local
 C-city-of-marengo,broader,C-illinois-local-government-and-agencies,preferred,local
 C-city-of-solana-beach,broader,C-california-local-government-and-agencies,preferred,local
 C-board-of-police-commissioners-of-kansas-city,broader,C-missouri-local-government-and-agencies,preferred,local
@@ -28738,7 +29007,6 @@ C-city-of-quincy,broader,C-massachusetts-local-government-and-agencies,preferred
 C-city-of-grand-prairie-texas,broader,C-texas-local-government-and-agencies,preferred,local
 C-town-of-cottage-grove-wisconsin,broader,C-wisconsin-local-government-and-agencies,preferred,local
 C-city-of-brockton-massachusetts,broader,C-massachusetts-local-government-and-agencies,preferred,local
-C-dekalb-county-government-georgia,broader,C-georgia-local-government-and-agencies,preferred,local
 C-trinity-public-utilities-district,broader,C-california-local-government-and-agencies,preferred,local
 C-washington-suburban-sanitary-commission,broader,C-maryland-local-government-and-agencies,preferred,local
 C-congressional-mamas-caucus,broader,C-caucuses,preferred,local
@@ -28761,12 +29029,9 @@ C-great-falls-bicycle-club,broader,C-associations-and-other-organizations,prefer
 C-wai-anae-coast-comprehensive-health-center,broader,T-nonprofits,preferred,local
 C-chesterfield-county-virginia,broader,C-virginia-local-government-and-agencies,preferred,local
 C-university-of-puerto-rico-mayag-ez,broader,C-colleges-and-universities,preferred,local
-C-fanduel,broader,C-companies,preferred,local
 C-east-bay-regional-park-district,broader,C-california-local-government-and-agencies,preferred,local
 C-bullock-county-sheriff-s-department,broader,C-alabama-local-government-and-agencies,preferred,local
-C-city-of-brockton,broader,C-massachusetts-local-government-and-agencies,preferred,local
 C-american-civil-liberties-union-of-colorado,broader,T-nonprofits,preferred,local
-C-oakland-county,broader,C-michigan-local-government-and-agencies,preferred,local
 C-city-of-jefferson,broader,C-missouri-local-government-and-agencies,preferred,local
 C-white-river-energy-corporation,broader,C-companies,preferred,local
 O-maryland-public-service-commission,broader,C-maryland-state-government-agencies,preferred,local
@@ -28809,7 +29074,6 @@ C-city-of-san-ramon,broader,C-california-local-government-and-agencies,preferred
 C-city-of-eutaw,broader,C-alabama-local-government-and-agencies,preferred,local
 C-city-of-rockville,broader,C-maryland-local-government-and-agencies,preferred,local
 C-latham-watkins-llp,broader,C-companies,preferred,local
-C-town-of-hamden,broader,C-connecticut-local-government-and-agencies,preferred,local
 C-virgin-islands-department-of-public-works,broader,T-u-s-virgin-islands,preferred,local
 C-city-of-vinita-park,broader,C-missouri-local-government-and-agencies,preferred,local
 C-echostar,broader,C-companies,preferred,local
@@ -28837,7 +29101,6 @@ C-village-of-manhattan-illinois,broader,C-illinois-local-government-and-agencies
 C-upper-pine-river-special-fire-district,broader,C-colorado-local-government-and-agencies,preferred,local
 C-technology-association-of-iowa,broader,C-iowa-agencies-and-organizations,preferred,local
 C-city-of-jacinto-city-texas,broader,C-texas-local-government-and-agencies,preferred,local
-C-association-of-state-criminal-investigative-agencies,broader,C-associations-and-other-organizations,preferred,local
 C-national-nurses-organizing-committee,broader,C-associations-and-other-organizations,preferred,local
 C-mit-lincoln-laboratory,broader,C-associations-and-other-organizations,preferred,local
 C-holland-and-hart,broader,C-companies,preferred,local
@@ -28880,7 +29143,6 @@ C-uf-health-central-florida,broader,T-nonprofits,preferred,local
 C-brattleboro-housing-authority,broader,C-vermont-local-government-and-agencies,preferred,local
 C-fayetteville-state-university,broader,C-colleges-and-universities,preferred,local
 C-city-of-fayetteville,broader,C-north-carolina-local-government-and-agencies,preferred,local
-C-draftkings,broader,C-companies,preferred,local
 C-city-of-brunswick,broader,C-maryland-local-government-and-agencies,preferred,local
 C-town-of-smithsburg,broader,C-maryland-local-government-and-agencies,preferred,local
 C-california-department-of-social-services,broader,C-california-state-government-agencies,preferred,local
@@ -28915,7 +29177,6 @@ C-city-of-kannapolis,broader,C-north-carolina-local-government-and-agencies,pref
 C-city-of-tuscaloosa,broader,C-alabama-local-government-and-agencies,preferred,local
 C-jicarilla-apache-nation,broader,C-new-mexico-agencies-and-organizations,preferred,local
 C-florida-natural-gas-association,broader,C-associations-and-other-organizations,preferred,local
-C-lake-apopka-natural-gas-district,broader,C-florida-local-government-and-agencies,preferred,local
 C-city-of-fultondale,broader,C-alabama-local-government-and-agencies,preferred,local
 C-jefferson-healthcare,broader,C-washington-local-government-and-agencies,preferred,local
 C-urban-league-of-greater-atlanta,broader,T-nonprofits,preferred,local
@@ -28951,7 +29212,6 @@ C-sonoma-county-california,broader,C-california-local-government-and-agencies,pr
 C-telemessage,broader,C-companies,preferred,local
 C-peralta-community-college-district,broader,C-colleges-and-universities,preferred,local
 C-south-carolina-law-enforcement-division,broader,C-south-carolina-agencies-and-organizations,preferred,local
-C-virgin-islands-department-of-agriculture,broader,T-u-s-virgin-islands,preferred,local
 C-kings-river-conservation-district,broader,C-california-local-government-and-agencies,preferred,local
 C-boys-and-girls-clubs-of-dane-county,broader,T-nonprofits,preferred,local
 C-city-of-ferguson,broader,C-missouri-local-government-and-agencies,preferred,local
@@ -29153,7 +29413,6 @@ O-wikimedia-foundation,broader,T-nonprofits,preferred,local
 C-city-of-halfmoon,broader,C-new-york-local-government-and-agencies,preferred,local
 C-network-for-greening-the-financial-system,broader,C-associations-and-other-organizations,preferred,local
 C-petaluma-health-center-inc,broader,T-nonprofits,preferred,local
-C-borough-of-mountainside,broader,C-new-jersey-local-government-and-agencies,preferred,local
 C-carlsbad-municipal-water-district,broader,C-california-local-government-and-agencies,preferred,local
 C-plymouth-county-sheriff-s-office,broader,C-massachusetts-local-government-and-agencies,preferred,local
 C-populus-health-technologies,broader,C-companies,preferred,local
@@ -29165,7 +29424,6 @@ C-city-of-avalon,broader,C-california-local-government-and-agencies,preferred,lo
 C-elizabeth-school-board,broader,C-colorado-local-government-and-agencies,preferred,local
 C-colorado-general-assembly,broader,C-state-of-colorado,preferred,local
 C-town-of-holden,broader,C-maine-local-government-and-agencies,preferred,local
-C-polk-county-north-carolina,broader,C-north-carolina-local-government-and-agencies,preferred,local
 C-charter-township-of-royal-oak,broader,C-michigan-local-government-and-agencies,preferred,local
 C-town-of-manassa,broader,C-colorado-local-government-and-agencies,preferred,local
 C-slb,broader,C-companies,preferred,local
@@ -29178,7 +29436,6 @@ C-united-states-district-court-for-the-district-of-maryland,broader,T-courts,pre
 C-washington-county-commission,broader,C-alabama-local-government-and-agencies,preferred,local
 C-university-at-buffalo,broader,C-colleges-and-universities,preferred,local
 C-dateline-resources,broader,C-companies,preferred,local
-C-district-of-columbia-government,broader,C-district-of-columbia-local-government-and-agencies,preferred,local
 C-exchange-stabilization-fund,broader,O-department-of-the-treasury,preferred,local
 C-penlink,broader,C-companies,preferred,local
 C-prospect-cleaning-services,broader,C-companies,preferred,local
@@ -29200,7 +29457,6 @@ C-city-of-tacoma,broader,C-washington-local-government-and-agencies,preferred,lo
 C-missouri-department-of-health-and-senior-services,broader,C-missouri-state-government-agencies,preferred,local
 C-grain-belt-express,broader,C-companies,preferred,local
 C-california-labor-workforce-development-agency,broader,C-california-state-government-agencies,preferred,local
-C-montgomery-county-police-department,broader,C-maryland-local-government-and-agencies,preferred,local
 C-department-of-agriculture-office-of-inspector-general,broader,C-federal-agencies,preferred,local
 C-city-of-desoto,broader,C-texas-local-government-and-agencies,preferred,local
 C-futures-without-violence,broader,T-nonprofits,preferred,local
@@ -29230,8 +29486,6 @@ C-louis-d-brown-peace-institute,broader,T-nonprofits,preferred,local
 C-cleveland-county-water,broader,C-north-carolina-local-government-and-agencies,preferred,local
 C-oncology-nursing-society,broader,C-associations-and-other-organizations,preferred,local
 C-siskiyou-county-sheriff-s-office,broader,C-california-local-government-and-agencies,preferred,local
-C-city-of-pooler,broader,C-georgia-local-government-and-agencies,preferred,local
-C-town-of-woodbridge,broader,C-connecticut-local-government-and-agencies,preferred,local
 C-davita,broader,C-companies,preferred,local
 C-fresenius-medical-care,broader,C-companies,preferred,local
 C-city-of-harlingen,broader,C-texas-local-government-and-agencies,preferred,local
@@ -29241,7 +29495,6 @@ C-stinson-beach-fire-protection-district,broader,C-california-local-government-a
 C-university-of-akron,broader,C-colleges-and-universities,preferred,local
 C-regional-information-sharing-systems,broader,C-associations-and-other-organizations,preferred,local
 C-grand-blanc-township-police-department,broader,C-michigan-local-government-and-agencies,preferred,local
-C-city-of-dallas,broader,C-texas-local-government-and-agencies,preferred,local
 C-mount-saint-mary-s-university,broader,C-colleges-and-universities,preferred,local
 C-st-john-s-university,broader,C-colleges-and-universities,preferred,local
 C-blinkrx,broader,C-companies,preferred,local
@@ -29316,8 +29569,6 @@ C-city-of-east-orange,broader,C-new-jersey-local-government-and-agencies,preferr
 C-newmark-group,broader,C-companies,preferred,local
 C-town-of-hull,broader,C-massachusetts-local-government-and-agencies,preferred,local
 C-united-states-wildland-fire-service,broader,C-federal-agencies,preferred,local
-C-ug-solutions,broader,C-companies,preferred,local
-C-safe-reach-solutions,broader,C-companies,preferred,local
 C-natural-resources-canada,broader,C-foreign-governments,preferred,local
 C-canadian-forest-service,broader,C-foreign-governments,preferred,local
 C-dhs-office-for-civil-rights-and-civil-liberties,broader,O-department-of-homeland-security,preferred,local
@@ -29327,7 +29578,6 @@ C-clermont-main-street,broader,T-nonprofits,preferred,local
 C-software-in-defense-coalition,broader,C-associations-and-other-organizations,preferred,local
 C-charlie-norwood-va-medical-center,broader,O-veterans-health-administration,preferred,local
 C-yellowstone-county-sheriff-s-office,broader,C-montana-local-government-and-agencies,preferred,local
-C-bryan-county-board-of-commissioners,broader,C-georgia-local-government-and-agencies,preferred,local
 C-university-of-houston-arte-publico-press,broader,C-colleges-and-universities,preferred,local
 C-borough-of-hawthorne-new-jersey,broader,C-new-jersey-local-government-and-agencies,preferred,local
 C-illinois-department-of-healthcare-and-family-services,broader,C-illinois-state-government-agencies,preferred,local
@@ -29358,7 +29608,6 @@ C-city-of-auburn-hills,broader,C-michigan-local-government-and-agencies,preferre
 C-saint-joseph-medical-center,broader,T-hospitals,preferred,local
 C-city-of-shepherdsville,broader,C-kentucky-local-government-and-agencies,preferred,local
 C-cedars-sinai-medical-center,broader,T-hospitals,preferred,local
-C-city-of-flint,broader,C-michigan-local-government-and-agencies,preferred,local
 C-yellowstone-city-county-health-department,broader,C-montana-local-government-and-agencies,preferred,local
 C-washington-department-of-fish-and-wildlife,broader,C-washington-agencies-and-organizations,preferred,local
 C-clatsop-county,broader,C-oregon-local-government-and-agencies,preferred,local
@@ -29407,13 +29656,11 @@ C-white-house-pardon-czar,broader,O-executive-office-of-the-president,preferred,
 C-ann-robert-h-lurie-children-s-hospital-of-chicago,broader,T-hospitals,preferred,local
 C-national-bio-and-agro-defense-facility,broader,O-department-of-agriculture,preferred,local
 C-united-states-attorney-s-office-for-the-eastern-district-of-,broader,O-department-of-justice,preferred,local
-C-city-of-hartsville,broader,C-south-carolina-local-government-and-agencies,preferred,local
 C-smart-media-group,broader,C-companies,preferred,local
 C-collier-county-florida,broader,C-florida-local-government-and-agencies,preferred,local
 C-washington-township-new-jersey,broader,C-new-jersey-local-government-and-agencies,preferred,local
 C-city-of-doraville-georgia,broader,C-georgia-local-government-and-agencies,preferred,local
 C-mine-hill-township-new-jersey,broader,C-new-jersey-local-government-and-agencies,preferred,local
-C-marin-county-public-financing-authority,broader,C-california-local-government-and-agencies,preferred,local
 C-city-of-takoma-park-maryland,broader,C-maryland-local-government-and-agencies,preferred,local
 C-city-of-long-beach-california,broader,C-california-local-government-and-agencies,preferred,local
 C-united-states-africa-command,broader,O-department-of-defense,preferred,local
@@ -29461,7 +29708,6 @@ O-congressional-black-caucus-foundation,broader,T-nonprofits,preferred,local
 O-national-network-for-youth,broader,T-nonprofits,preferred,local
 O-olympus-corporation,broader,C-companies,preferred,local
 O-eaton-corporation,broader,C-companies,preferred,local
-C-alabama-state-port-authority,broader,C-alabama-state-government-agencies,preferred,local
 C-san-juan-county,broader,C-utah-local-government-and-agencies,preferred,local
 O-northland-investment-corporation,broader,C-companies,preferred,local
 O-united-states-golf-association,broader,C-associations-and-other-organizations,preferred,local
@@ -29521,6 +29767,61 @@ C-wyoming-local-government-and-agencies,broader,C-wyoming-agencies-and-organizat
 C-wyoming-agencies-and-organizations,broader,C-state-of-wyoming,preferred,local
 C-state-of-wyoming,broader,C-state-and-local-government,preferred,local
 C-wyoming-state-government-agencies,broader,C-wyoming-agencies-and-organizations,preferred,local
+C-children-s-health-system-of-texas,broader,T-nonprofits,preferred,local
+C-washington-terrace-city,broader,C-utah-local-government-and-agencies,preferred,local
+C-youth-in-need,broader,T-nonprofits,preferred,local
+C-village-of-round-lake-beach,broader,C-illinois-local-government-and-agencies,preferred,local
+C-city-of-burlington,broader,C-vermont-local-government-and-agencies,preferred,local
+C-goldin,broader,C-companies,preferred,local
+C-city-of-eugene,broader,C-oregon-local-government-and-agencies,preferred,local
+C-united-hatzalah,broader,T-nonprofits,preferred,local
+C-general-aviation-manufacturers-association,broader,C-associations-and-other-organizations,preferred,local
+C-national-air-transportation-association,broader,C-associations-and-other-organizations,preferred,local
+C-national-business-aviation-association,broader,C-associations-and-other-organizations,preferred,local
+C-midwest-microelectronics-consortium,broader,C-associations-and-other-organizations,preferred,local
+C-north-carolina-department-of-natural-and-cultural-resources,broader,C-north-carolina-state-government-agencies,preferred,local
+C-st-philip-s-college,broader,C-colleges-and-universities,preferred,local
+C-alamo-colleges-district,broader,C-colleges-and-universities,preferred,local
+C-american-nurses-association,broader,C-associations-and-other-organizations,preferred,local
+C-rhoads-industries,broader,C-companies,preferred,local
+C-financial-conduct-authority,broader,C-foreign-governments,preferred,local
+C-bpc-action,broader,T-nonprofits,preferred,local
+C-council-of-state-community-development-agencies,broader,C-associations-and-other-organizations,preferred,local
+C-sbp,broader,T-nonprofits,preferred,local
+C-bexar-county,broader,C-texas-local-government-and-agencies,preferred,local
+C-west-grove-borough,broader,C-pennsylvania-local-government-and-agencies,preferred,local
+C-india-home,broader,T-nonprofits,preferred,local
+C-city-of-farmington-minnesota,broader,C-minnesota-local-government-and-agencies,preferred,local
+C-behavioral-health-group,broader,C-companies,preferred,local
+C-aurora-economic-development-council,broader,T-nonprofits,preferred,local
+C-newton-county-water-and-sewerage-authority,broader,C-georgia-local-government-and-agencies,preferred,local
+C-university-medical-center-of-el-paso,broader,T-hospitals,preferred,local
+C-habitat-for-humanity-of-greater-memphis,broader,T-nonprofits,preferred,local
+C-city-of-evanston,broader,C-illinois-local-government-and-agencies,preferred,local
+C-open-door-community-health-centers,broader,C-california-local-government-and-agencies,preferred,local
+C-city-of-irving-texas,broader,C-texas-local-government-and-agencies,preferred,local
+C-town-of-benson,broader,C-north-carolina-local-government-and-agencies,preferred,local
+C-mitsubishi-motors-north-america,broader,C-auto-industry,preferred,local
+C-hertford-county-north-carolina,broader,C-north-carolina-local-government-and-agencies,preferred,local
+C-facing-fentanyl,broader,T-nonprofits,preferred,local
+C-d-youville-university,broader,C-colleges-and-universities,preferred,local
+C-association-of-organ-procurement-organizations,broader,C-associations-and-other-organizations,preferred,local
+C-h-t-hackney,broader,C-companies,preferred,local
+C-epic-systems,broader,C-tech-industry,preferred,local
+C-omnitrax,broader,C-companies,preferred,local
+C-america-s-essential-hospitals,broader,C-associations-and-other-organizations,preferred,local
+C-aerojet-rocketdyne,broader,C-companies,preferred,local
+C-quiktrip-corporation,broader,C-companies,preferred,local
+C-dexter-community-school-district,broader,C-michigan-local-government-and-agencies,preferred,local
+C-colorado-farm-bureau,broader,C-associations-and-other-organizations,preferred,local
+C-taiwan-economic-and-cultural-representative-office,broader,C-foreign-and-international,preferred,local
+C-medstar-health,broader,C-companies-and-organizations,preferred,local
+C-national-security-technology-accelerator,broader,T-nonprofits,preferred,local
+O-snowflake,broader,C-companies,preferred,local
+C-city-of-kansas-city-missouri,broader,C-missouri-local-government-and-agencies,preferred,local
+C-capital-district-physicians-health-plan,broader,C-companies,preferred,local
+C-city-of-springfield-oregon,broader,C-oregon-local-government-and-agencies,preferred,local
+C-seneca-nation-of-indians,broader,C-new-york-agencies-and-organizations,preferred,local
 C-railway-supply-institute,broader,C-associations-and-other-organizations,preferred,local
 C-american-wild-horse-preservation-campaign,broader,T-nonprofits,preferred,local
 C-salt-river-wild-horse-management-group,broader,T-nonprofits,preferred,local
@@ -29715,7 +30016,6 @@ C-auschwitz-birkenau-foundation,broader,C-associations-and-other-organizations,p
 C-american-association-of-nurse-practitioners,broader,C-associations-and-other-organizations,preferred,local
 C-central-alabama-veterans-health-care-system,broader,O-veterans-health-administration,preferred,local
 C-center-for-security-policy,broader,C-associations-and-other-organizations,preferred,local
-C-city-of-buffalo,broader,C-new-york-local-government-and-agencies,preferred,local
 C-national-treasury-employees-union,broader,C-associations-and-other-organizations,preferred,local
 C-wilmington-va-medical-center,broader,O-veterans-health-administration,preferred,local
 C-bipartisan-policy-center,broader,C-associations-and-other-organizations,preferred,local
@@ -29738,6 +30038,876 @@ C-kansas-cooperative-council,broader,C-associations-and-other-organizations,pref
 C-kansas-agribusiness-retailers-association,broader,C-associations-and-other-organizations,preferred,local
 C-easter-seals,broader,T-nonprofits,preferred,local
 C-ground-water-protection-council,broader,C-associations-and-other-organizations,preferred,local
+C-city-of-union-city,broader,C-georgia-local-government-and-agencies,preferred,local
+C-first-republic-bank,broader,C-companies,preferred,local
+C-town-of-garner,broader,C-north-carolina-local-government-and-agencies,preferred,local
+C-st-george-area-chamber-of-commerce,broader,C-associations-and-other-organizations,preferred,local
+C-elizabeth-city-police-department,broader,C-north-carolina-local-government-and-agencies,preferred,local
+C-houston-forensic-science-center,broader,C-texas-local-government-and-agencies,preferred,local
+C-t1international,broader,T-nonprofits,preferred,local
+C-monroe-county-government,broader,C-florida-local-government-and-agencies,preferred,local
+C-westchase-district,broader,C-texas-local-government-and-agencies,preferred,local
+C-under-secretary-of-defense-for-research-and-engineering,broader,O-department-of-defense,preferred,local
+C-northeast-georgia-health-system,broader,T-nonprofits,preferred,local
+C-essential-kitchen,broader,C-associations-and-other-organizations,preferred,local
+C-san-diego-county-regional-airport-authority,broader,C-california-local-government-and-agencies,preferred,local
+C-mchenry-county-government,broader,C-illinois-local-government-and-agencies,preferred,local
+C-chicago-housing-authority,broader,C-illinois-local-government-and-agencies,preferred,local
+C-university-of-massachusetts-boston,broader,C-colleges-and-universities,preferred,local
+C-anne-arundel-county,broader,C-maryland-local-government-and-agencies,preferred,local
+C-professional-background-screening-association,broader,C-associations-and-other-organizations,preferred,local
+C-united-states-military-entrance-processing-command,broader,C-federal-agencies,preferred,local
+C-clinton-county-board-of-commissioners,broader,C-ohio-local-government-and-agencies,preferred,local
+C-clinton-county-regional-planning-commission,broader,C-ohio-local-government-and-agencies,preferred,local
+C-clinton-county-port-authority,broader,C-ohio-local-government-and-agencies,preferred,local
+C-wilmington-christian-academy,broader,C-associations-and-other-organizations,preferred,local
+C-confederated-tribes-of-grand-ronde,broader,C-associations-and-other-organizations,preferred,local
+C-city-of-arlington,broader,C-washington-local-government-and-agencies,preferred,local
+C-greene-county-government,broader,C-north-carolina-local-government-and-agencies,preferred,local
+C-southwestern-pennsylvania-commission,broader,C-pennsylvania-local-government-and-agencies,preferred,local
+C-ua3-inc,broader,T-nonprofits,preferred,local
+C-city-of-woodbury,broader,C-minnesota-local-government-and-agencies,preferred,local
+C-town-of-ayden,broader,C-north-carolina-local-government-and-agencies,preferred,local
+C-george-washington-university,broader,C-colleges-and-universities,preferred,local
+C-arapahoe-county-board-of-commissioners,broader,C-colorado-local-government-and-agencies,preferred,local
+C-land-clearance-for-redevelopment-authority-for-the-county-of,broader,C-missouri-local-government-and-agencies,preferred,local
+C-city-of-carlton-oregon,broader,C-oregon-local-government-and-agencies,preferred,local
+C-congressional-renters-caucus,broader,C-caucuses,preferred,local
+C-vermont-department-of-financial-regulation,broader,C-state-of-vermont,preferred,local
+C-city-of-san-dimas,broader,C-california-local-government-and-agencies,preferred,local
+C-royal-farms,broader,C-companies,preferred,local
+C-northwest-innovation-resource-center,broader,C-state-of-washington,preferred,local
+C-poshmark,broader,C-companies,preferred,local
+C-western-berks-fire-department,broader,C-pennsylvania-local-government-and-agencies,preferred,local
+C-edison-international,broader,C-energy-sector,preferred,local
+C-town-of-babylon,broader,C-new-york-local-government-and-agencies,preferred,local
+C-jurnee-foundation,broader,T-nonprofits,preferred,local
+C-village-of-lake-orion,broader,C-michigan-local-government-and-agencies,preferred,local
+C-portland-general-electric,broader,C-energy-sector,preferred,local
+C-city-of-eureka,broader,C-california-local-government-and-agencies,preferred,local
+C-monongalia-county-commission,broader,C-west-virginia-local-government-and-agencies,preferred,local
+C-memorial-heights-redevelopment-authority,broader,C-state-of-texas,preferred,local
+C-offerup,broader,C-companies,preferred,local
+C-elliott-investment-management,broader,C-companies,preferred,local
+C-fayetteville-public-works-commission,broader,C-north-carolina-local-government-and-agencies,preferred,local
+C-women-s-sports-foundation,broader,T-nonprofits,preferred,local
+C-usa-boxing,broader,T-nonprofits,preferred,local
+C-massachusetts-association-of-school-superintendents,broader,C-associations-and-other-organizations,preferred,local
+C-filipino-american-development-foundation,broader,T-nonprofits,preferred,local
+C-children-s-creativity-museum,broader,T-nonprofits,preferred,local
+C-yerba-buena-gardens-conservancy,broader,T-nonprofits,preferred,local
+C-california-trout,broader,T-nonprofits,preferred,local
+C-tohopekaliga-water-authority,broader,C-florida-local-government-and-agencies,preferred,local
+C-gpm-investments-llc,broader,C-companies,preferred,local
+C-san-carlos-irrigation-project,broader,C-federal-agencies,preferred,local
+C-kessler-foundation,broader,T-nonprofits,preferred,local
+C-carroll-county-veterans-independence-project-inc,broader,T-nonprofits,preferred,local
+C-anchor-hocking,broader,C-companies,preferred,local
+C-transmission-developers-incorporated,broader,C-companies,preferred,local
+C-west-end-fire-company,broader,C-pennsylvania-local-government-and-agencies,preferred,local
+C-espn,broader,C-companies,preferred,local
+C-maine-emergency-management-agency,broader,C-maine-state-government-agencies,preferred,local
+C-southwest-houston-redevelopment-authority,broader,C-texas-local-government-and-agencies,preferred,local
+C-town-of-ahoskie,broader,C-north-carolina-local-government-and-agencies,preferred,local
+C-green-river-valley-water-district,broader,C-kentucky-local-government-and-agencies,preferred,local
+C-up-for-growth,broader,T-nonprofits,preferred,local
+C-city-of-tigard,broader,C-oregon-local-government-and-agencies,preferred,local
+C-leadville-lake-county-regional-housing-authority,broader,C-colorado-local-government-and-agencies,preferred,local
+C-city-of-mcminnville,broader,C-oregon-local-government-and-agencies,preferred,local
+C-bexar-county-criminal-district-attorney-s-office,broader,C-texas-local-government-and-agencies,preferred,local
+C-san-antonio-police-department,broader,C-texas-local-government-and-agencies,preferred,local
+C-national-pike-water-authority,broader,C-pennsylvania-local-government-and-agencies,preferred,local
+C-city-of-atascadero,broader,C-california-local-government-and-agencies,preferred,local
+C-city-of-maywood,broader,C-california-local-government-and-agencies,preferred,local
+C-city-of-concord-california,broader,C-california-local-government-and-agencies,preferred,local
+C-the-ensign-group,broader,C-companies,preferred,local
+C-chandra-x-ray-center,broader,C-associations-and-other-organizations,preferred,local
+C-homevestors-of-america,broader,C-companies,preferred,local
+C-zuckerberg-san-francisco-general-hospital,broader,C-california-local-government-and-agencies,preferred,local
+C-city-of-belle-isle,broader,C-florida-local-government-and-agencies,preferred,local
+C-congressional-armenian-caucus,broader,C-caucuses,preferred,local
+C-montgomery-county-texas,broader,C-texas-local-government-and-agencies,preferred,local
+C-city-of-allentown,broader,C-pennsylvania-local-government-and-agencies,preferred,local
+C-city-of-von-ormy,broader,C-texas-local-government-and-agencies,preferred,local
+C-greater-new-orleans-inc,broader,C-associations-and-other-organizations,preferred,local
+C-coalition-for-coastal-resilience-and-economy,broader,C-associations-and-other-organizations,preferred,local
+C-maryland-department-of-the-environment,broader,C-maryland-state-government-agencies,preferred,local
+C-congressional-leadership-fund,broader,C-associations-and-other-organizations,preferred,local
+C-speaker-of-the-tennessee-house-of-representatives,broader,C-tennessee-state-officials,preferred,local
+C-bikelist,broader,C-companies,preferred,local
+C-milken-institute,broader,T-nonprofits,preferred,local
+C-lawrence-county-commissioners,broader,C-ohio-local-government-and-agencies,preferred,local
+C-lawrence-county-port-authority,broader,C-ohio-local-government-and-agencies,preferred,local
+C-lawrence-economic-development-corporation,broader,T-nonprofits,preferred,local
+C-ironton-lawrence-county-area-community-action-organization,broader,T-nonprofits,preferred,local
+C-rural-healthcare-group,broader,C-companies,preferred,local
+C-grid-deployment-office,broader,C-federal-agencies,preferred,local
+C-city-of-laguna-hills,broader,C-california-local-government-and-agencies,preferred,local
+C-denver-regional-council-of-governments,broader,C-colorado-local-government-and-agencies,preferred,local
+C-national-council-for-mental-wellbeing,broader,T-nonprofits,preferred,local
+C-tides-foundation,broader,T-nonprofits,preferred,local
+C-national-students-for-justice-in-palestine,broader,T-nonprofits,preferred,local
+C-ajp-educational-foundation,broader,T-nonprofits,preferred,local
+C-gates-county-government,broader,C-north-carolina-local-government-and-agencies,preferred,local
+C-mckesson-corporation,broader,C-companies,preferred,local
+C-charitable-giving-coalition,broader,C-associations-and-other-organizations,preferred,local
+C-colorado-river-water-conservation-district,broader,C-colorado-local-government-and-agencies,preferred,local
+C-dupage-county-health-department,broader,C-illinois-local-government-and-agencies,preferred,local
+C-cameron-parish-police-jury,broader,C-louisiana-local-government-and-agencies,preferred,local
+C-the-seattle-times,broader,C-companies,preferred,local
+C-southern-crescent-habitat-for-humanity,broader,C-georgia-organizations,preferred,local
+C-ambassador-of-colombia-to-the-united-states,broader,C-foreign-governments,preferred,local
+C-latino-jewish-congressional-caucus,broader,C-caucuses,preferred,local
+C-ymca-of-greater-whittier,broader,T-nonprofits,preferred,local
+C-u-s-center-for-safesport,broader,T-nonprofits,preferred,local
+C-u-s-youth-soccer,broader,T-nonprofits,preferred,local
+C-dupage-county-sheriff-s-office,broader,C-illinois-local-government-and-agencies,preferred,local
+C-crc-advisors,broader,C-companies,preferred,local
+C-mayor-of-orlando,broader,C-florida-local-government-and-agencies,preferred,local
+C-save-the-allegheny-river,broader,T-nonprofits,preferred,local
+C-lyndon-institute-inc,broader,C-associations-and-other-organizations,preferred,local
+C-southern-connecticut-state-university,broader,C-colleges-and-universities,preferred,local
+C-city-of-huntington-park,broader,C-california-local-government-and-agencies,preferred,local
+C-village-of-greene,broader,C-new-york-local-government-and-agencies,preferred,local
+C-ohio-department-of-insurance,broader,C-ohio-state-government-agencies,preferred,local
+C-town-of-cary,broader,C-north-carolina-local-government-and-agencies,preferred,local
+C-rochelle-marine-ltd,broader,C-companies,preferred,local
+C-ocean-bay-community-development-corporation,broader,T-nonprofits,preferred,local
+C-chips-program-office,broader,O-department-of-commerce,preferred,local
+C-portage-county,broader,C-wisconsin-local-government-and-agencies,preferred,local
+C-northshore-legislative-delegation,broader,C-louisiana-state-government-agencies,preferred,local
+C-palestine-chronicle,broader,T-nonprofits,preferred,local
+C-white-house-social-secretary,broader,O-executive-office-of-the-president,preferred,local
+C-exide-technologies,broader,C-companies,preferred,local
+C-embassy-of-colombia,broader,C-foreign-governments,preferred,local
+C-colombia-ministry-of-commerce-industry-and-tourism,broader,C-foreign-governments,preferred,local
+C-upper-mississippi-river-basin-association,broader,C-associations-and-other-organizations,preferred,local
+C-trump-vance-presidential-transition-team,broader,C-executive-branch,preferred,local
+C-aziyo-biologics,broader,C-companies,preferred,local
+C-dte-electric,broader,C-companies,preferred,local
+C-georgia-department-of-corrections,broader,C-georgia-state-government-agencies,preferred,local
+C-wellpath,broader,C-companies,preferred,local
+C-georgia-ports-authority,broader,C-georgia-state-government-agencies,preferred,local
+C-teller-county-water-and-sanitation-district-no-1,broader,C-colorado-local-government-and-agencies,preferred,local
+C-mary-hitchcock-memorial-hospital,broader,C-new-hampshire-agencies-and-organizations,preferred,local
+C-washington-state-department-of-social-and-health-services,broader,C-washington-agencies-and-organizations,preferred,local
+C-outlaw-ocean-project,broader,T-nonprofits,preferred,local
+C-overton-park-conservancy,broader,T-nonprofits,preferred,local
+C-yorba-linda-water-district,broader,C-california-agencies-and-organizations,preferred,local
+C-veterans-integrated-service-network-20,broader,C-federal-agencies,preferred,local
+C-city-of-indio,broader,C-california-local-government-and-agencies,preferred,local
+C-coachella-valley-economic-partnership,broader,T-nonprofits,preferred,local
+C-rayton-solar-incorporated,broader,C-companies,preferred,local
+C-teton-capital-llc,broader,C-companies,preferred,local
+C-muslim-americans-in-public-service,broader,T-nonprofits,preferred,local
+C-diabetes-advocacy-alliance,broader,T-nonprofits,preferred,local
+C-crow-holdings-securities-llc,broader,C-companies,preferred,local
+C-city-of-madison,broader,C-wisconsin-local-government-and-agencies,preferred,local
+C-town-of-east-hartford,broader,C-connecticut-local-government-and-agencies,preferred,local
+C-calimesa-chamber-of-commerce,broader,C-associations-and-other-organizations,preferred,local
+C-american-library-association,broader,C-associations-and-other-organizations,preferred,local
+C-american-pharmacists-association,broader,C-associations-and-other-organizations,preferred,local
+C-city-of-el-monte,broader,C-california-local-government-and-agencies,preferred,local
+C-end-hunger-in-calvert-county,broader,T-nonprofits,preferred,local
+C-alpena-community-college,broader,C-colleges-and-universities,preferred,local
+C-stillwater-regional-airport,broader,C-state-of-oklahoma,preferred,local
+C-university-of-alaska-fairbanks,broader,C-colleges-and-universities,preferred,local
+C-philips-respironics,broader,C-companies,preferred,local
+C-glsen,broader,T-nonprofits,preferred,local
+C-supreme-court-of-brazil,broader,C-foreign-governments,preferred,local
+C-clay-township,broader,C-michigan-local-government-and-agencies,preferred,local
+C-united-states-district-court-for-the-southern-district-of-fl,broader,T-courts,preferred,local
+C-west-virginia-hospital-association,broader,C-associations-and-other-organizations,preferred,local
+C-prime-minister-of-the-netherlands,broader,C-foreign-governments,preferred,local
+C-taxact,broader,C-companies,preferred,local
+C-german-federal-ministry-of-finance,broader,C-foreign-governments,preferred,local
+C-phoenix-center-for-research-and-field-studies,broader,T-nonprofits,preferred,local
+C-pinduoduo,broader,C-companies,preferred,local
+C-texas-southern-university,broader,C-colleges-and-universities,preferred,local
+C-racetrac,broader,C-companies,preferred,local
+C-gotion-high-tech,broader,C-companies,preferred,local
+C-greater-allen-development-corp,broader,T-nonprofits,preferred,local
+C-clermont-county-engineer-s-office,broader,C-ohio-local-government-and-agencies,preferred,local
+C-batavia-township,broader,C-ohio-local-government-and-agencies,preferred,local
+C-o-reilly-auto-parts,broader,C-companies,preferred,local
+C-qingdao-sunsong,broader,C-companies,preferred,local
+C-president-of-argentina,broader,C-foreign-governments,preferred,local
+C-st-louis-commissioner-of-corrections,broader,C-missouri-local-government-and-agencies,preferred,local
+C-st-louis-city-justice-center,broader,C-missouri-local-government-and-agencies,preferred,local
+C-metropolitan-transit-authority-of-harris-county,broader,C-texas-local-government-and-agencies,preferred,local
+C-professional-probation-services,broader,C-companies,preferred,local
+C-temple-university,broader,C-colleges-and-universities,preferred,local
+C-city-of-signal-hill,broader,C-california-local-government-and-agencies,preferred,local
+C-city-of-cumberland,broader,C-kentucky-local-government-and-agencies,preferred,local
+C-7-eleven,broader,C-companies,preferred,local
+C-boar-s-head,broader,C-companies,preferred,local
+C-connstep,broader,T-nonprofits,preferred,local
+C-steuben-county-sheriff-s-office,broader,C-new-york-local-government-and-agencies,preferred,local
+C-brigade-capital-management,broader,C-companies,preferred,local
+C-nested-bean,broader,C-companies,preferred,local
+C-boston-city-council,broader,C-massachusetts-local-government-and-agencies,preferred,local
+C-suffolk-county-economic-development-planning,broader,C-new-york-local-government-and-agencies,preferred,local
+C-kinderhook-industries,broader,C-companies,preferred,local
+C-town-of-sharpsburg,broader,C-north-carolina-local-government-and-agencies,preferred,local
+C-fitch-ratings,broader,C-companies,preferred,local
+C-st-mary-s-county-government,broader,C-maryland-local-government-and-agencies,preferred,local
+C-borough-of-kennett-square,broader,C-pennsylvania-local-government-and-agencies,preferred,local
+C-american-shore-and-beach-preservation-association,broader,C-associations-and-other-organizations,preferred,local
+C-marion-county,broader,C-oregon-local-government-and-agencies,preferred,local
+C-arg-international-ag,broader,C-companies,preferred,local
+C-magnitude-7-metals,broader,C-companies,preferred,local
+C-university-of-rochester,broader,C-colleges-and-universities,preferred,local
+C-newton-county-board-of-commissioners,broader,C-georgia-local-government-and-agencies,preferred,local
+C-american-geophysical-union,broader,C-associations-and-other-organizations,preferred,local
+C-solenex-llc,broader,C-companies,preferred,local
+C-illinois-tollway-authority,broader,C-illinois-state-government-agencies,preferred,local
+C-montana-department-of-public-health-and-human-services,broader,C-state-of-montana,preferred,local
+C-bangor-international-airport,broader,C-maine-agencies-and-organizations,preferred,local
+C-magnolia-lng,broader,C-energy-sector,preferred,local
+C-city-of-diamond-bar,broader,C-california-local-government-and-agencies,preferred,local
+C-tiburon-salmon-institute,broader,T-nonprofits,preferred,local
+C-united-states-ambassador-to-china,broader,C-u-s-diplomats,preferred,local
+C-oregon-farm-bureau-federation,broader,C-associations-and-other-organizations,preferred,local
+C-booz-allen-hamilton,broader,C-companies,preferred,local
+C-committee-for-a-responsible-federal-budget,broader,T-nonprofits,preferred,local
+C-georgia-association-of-fire-chiefs,broader,C-associations-and-other-organizations,preferred,local
+C-national-hispanic-caucus-of-state-legislators,broader,C-associations-and-other-organizations,preferred,local
+C-american-retirement-association,broader,C-associations-and-other-organizations,preferred,local
+C-army-aviation-and-missile-command,broader,O-army-materiel-command,preferred,local
+C-veterans-assistance-foundation,broader,T-nonprofits,preferred,local
+C-british-airways,broader,C-companies,preferred,local
+C-new-york-state-governor-s-office-of-storm-recovery,broader,C-new-york-state-government-agencies,preferred,local
+C-tote,broader,C-companies,preferred,local
+C-sea-star-line,broader,C-companies,preferred,local
+C-american-commitment,broader,C-associations-and-other-organizations,preferred,local
+C-traxys-group,broader,C-companies,preferred,local
+C-connecticut-construction-industries-association,broader,C-associations-and-other-organizations,preferred,local
+C-president-of-montenegro,broader,C-foreign-governments,preferred,local
+C-montenegro-caucus,broader,C-caucuses,preferred,local
+C-marinello-schools-of-beauty,broader,C-companies,preferred,local
+C-city-of-winslow-arizona,broader,C-arizona-local-government-and-agencies,preferred,local
+C-wounded-warrior-project,broader,T-nonprofits,preferred,local
+C-mothers-against-senseless-killings,broader,T-nonprofits,preferred,local
+C-research-foundation-for-the-state-university-of-new-york,broader,T-nonprofits,preferred,local
+C-national-farmers-union,broader,C-associations-and-other-organizations,preferred,local
+C-knox-county-health-department,broader,C-illinois-local-government-and-agencies,preferred,local
+O-broward-county-board-of-county-commissioners,broader,C-florida-local-government-and-agencies,preferred,local
+C-itt-technical-institute,broader,C-colleges-and-universities,preferred,local
+C-alaska-department-of-education-and-early-development,broader,C-alaska-agencies-and-organizations,preferred,local
+C-cook-county-board-president,broader,C-illinois-local-government-and-agencies,preferred,local
+C-global-financial-integrity,broader,T-nonprofits,preferred,local
+C-food-marketing-institute,broader,C-associations-and-other-organizations,preferred,local
+C-housing-authority-of-the-city-of-camden,broader,C-new-jersey-local-government-and-agencies,preferred,local
+C-illinois-science-and-technology-coalition,broader,T-nonprofits,preferred,local
+C-president-pro-tempore-of-the-north-carolina-senate,broader,C-north-carolina-state-officials,preferred,local
+C-speaker-of-the-north-carolina-house-of-representatives,broader,C-north-carolina-state-officials,preferred,local
+C-wilmington-district-of-the-army-corps-of-engineers,broader,O-army-corps-of-engineers,preferred,local
+C-hemophilia-of-georgia,broader,T-nonprofits,preferred,local
+C-grupo-comercial-chedraui,broader,C-companies,preferred,local
+C-assessment-and-training-solutions-consulting-corporation,broader,C-companies,preferred,local
+C-student-parent-policy-working-group,broader,C-associations-and-other-organizations,preferred,local
+C-women-and-infants-hospital-of-rhode-island,broader,T-hospitals,preferred,local
+C-bae-systems-norfolk-ship-repair,broader,C-companies,preferred,local
+C-medieval-times,broader,C-companies,preferred,local
+C-capital-region-airport-commission,broader,C-virginia-local-government-and-agencies,preferred,local
+C-paxos,broader,C-companies,preferred,local
+C-loudoun-county,broader,C-virginia-local-government-and-agencies,preferred,local
+C-arapahoe-county,broader,C-colorado-local-government-and-agencies,preferred,local
+C-city-of-littleton,broader,C-colorado-local-government-and-agencies,preferred,local
+C-federal-home-loan-bank-of-atlanta,broader,C-federal-home-loan-banks,preferred,local
+C-cnh-industrial,broader,C-companies,preferred,local
+C-floyd-county-board-of-commissioners,broader,C-georgia-local-government-and-agencies,preferred,local
+C-massachusetts-health-policy-commission,broader,C-massachusetts-state-government-agencies,preferred,local
+C-puente-learning-center,broader,T-nonprofits,preferred,local
+C-hope-for-families,broader,T-nonprofits,preferred,local
+C-lamar-state-college-port-arthur,broader,C-colleges-and-universities,preferred,local
+C-waterways-council-inc,broader,C-associations-and-other-organizations,preferred,local
+C-first-brands-group,broader,C-companies,preferred,local
+C-shelby-county-health-department,broader,C-tennessee-local-government-and-agencies,preferred,local
+C-city-of-saratoga-springs,broader,C-new-york-local-government-and-agencies,preferred,local
+C-devine-volunteer-fire-and-rescue-department,broader,C-texas-local-government-and-agencies,preferred,local
+C-hope-through-housing-foundation,broader,T-nonprofits,preferred,local
+C-city-of-mount-vernon-washington,broader,C-washington-local-government-and-agencies,preferred,local
+C-valley-county-commission,broader,C-montana-local-government-and-agencies,preferred,local
+C-fort-belknap-indian-community,broader,T-native-americans,preferred,local
+C-roy-city-corporation,broader,C-utah-local-government-and-agencies,preferred,local
+C-president-pro-tempore-of-the-california-state-senate,broader,C-california-state-officials,preferred,local
+C-town-of-apex,broader,C-north-carolina-local-government-and-agencies,preferred,local
+C-sk-hynix,broader,C-companies,preferred,local
+C-st-tammany-chamber-of-commerce,broader,C-associations-and-other-organizations,preferred,local
+C-los-angeles-homeless-services-authority,broader,C-california-local-government-and-agencies,preferred,local
+C-jab-holding-company,broader,C-companies,preferred,local
+C-chelsea-area-fire-authority,broader,C-michigan-local-government-and-agencies,preferred,local
+C-cobb-county-board-of-commissioners,broader,C-georgia-local-government-and-agencies,preferred,local
+C-city-of-ashland-kentucky,broader,C-kentucky-local-government-and-agencies,preferred,local
+C-toho-water-authority,broader,C-florida-local-government-and-agencies,preferred,local
+C-mission-roll-call,broader,T-nonprofits,preferred,local
+C-national-defense-committee,broader,T-nonprofits,preferred,local
+C-b-braun,broader,C-companies,preferred,local
+C-douglas-county-board-of-commissioners,broader,C-georgia-local-government-and-agencies,preferred,local
+C-brite-semiconductor,broader,C-companies,preferred,local
+C-commonwealth-center-for-advanced-manufacturing,broader,C-associations-and-other-organizations,preferred,local
+C-uscellular,broader,C-companies,preferred,local
+C-city-of-los-altos,broader,C-california-local-government-and-agencies,preferred,local
+C-san-bernardino-valley-municipal-water-district,broader,C-california-local-government-and-agencies,preferred,local
+C-international-federation-of-pharmaceutical-manufacturers-and,broader,C-associations-and-other-organizations,preferred,local
+C-city-of-lakeville,broader,C-minnesota-local-government-and-agencies,preferred,local
+C-city-of-defuniak-springs,broader,C-florida-local-government-and-agencies,preferred,local
+C-cannon-air-force-base,broader,O-department-of-the-air-force,preferred,local
+C-tennessee-state-university,broader,C-colleges-and-universities,preferred,local
+C-southeastern-colorado-water-conservancy-district,broader,C-colorado-local-government-and-agencies,preferred,local
+C-university-of-california-san-diego,broader,C-colleges-and-universities,preferred,local
+C-alpha-omega-veterans-services,broader,T-nonprofits,preferred,local
+C-town-of-selma,broader,C-north-carolina-local-government-and-agencies,preferred,local
+C-city-of-lodi,broader,C-california-local-government-and-agencies,preferred,local
+C-baylor-college-of-medicine,broader,C-colleges-and-universities,preferred,local
+C-pacific-northwest-national-laboratory,broader,C-federal-agencies,preferred,local
+C-royalton-fire-district-1,broader,C-vermont-local-government-and-agencies,preferred,local
+C-tarrant-county-texas,broader,C-texas-local-government-and-agencies,preferred,local
+C-american-alliance-for-solar-manufacturing-trade-committee,broader,C-associations-and-other-organizations,preferred,local
+C-pace-bus,broader,C-illinois-local-government-and-agencies,preferred,local
+C-serco-north-america,broader,C-companies,preferred,local
+C-el-paso-makes,broader,C-texas-agencies-and-organizations,preferred,local
+C-catalyst-campus-ogden,broader,C-utah-agencies-and-organizations,preferred,local
+C-new-york-community-bank,broader,C-companies,preferred,local
+C-housing-authority-of-the-county-of-san-bernardino,broader,C-california-local-government-and-agencies,preferred,local
+C-seven-springs-municipal-authority,broader,C-pennsylvania-local-government-and-agencies,preferred,local
+C-friends-of-the-hubbard-lake-center,broader,T-nonprofits,preferred,local
+C-grace-cottage-family-health-hospital,broader,T-hospitals,preferred,local
+C-big-horn-county-board-of-commissioners,broader,C-montana-local-government-and-agencies,preferred,local
+C-prime-minister-of-bangladesh,broader,C-foreign-governments,preferred,local
+C-consolidated-irrigation-district,broader,C-california-local-government-and-agencies,preferred,local
+C-u-s-youth-soccer,broader,C-associations-and-other-organizations,preferred,local
+C-mcafee,broader,C-companies,preferred,local
+C-el-paso-county,broader,C-texas-local-government-and-agencies,preferred,local
+C-national-association-of-muslim-lawyers,broader,C-associations-and-other-organizations,preferred,local
+C-old-dominion-university-research-foundation,broader,T-nonprofits,preferred,local
+C-mid-america-regional-council,broader,C-missouri-local-government-and-agencies,preferred,local
+C-houston-fire-department,broader,C-texas-local-government-and-agencies,preferred,local
+C-cap-sewer-authority,broader,C-california-local-government-and-agencies,preferred,local
+C-eastern-kentucky-pride,broader,T-nonprofits,preferred,local
+C-illinois-organizations,broader,C-illinois-agencies-and-organizations,preferred,local
+C-westside-health-authority,broader,C-illinois-organizations,preferred,local
+C-tennessee-organizations,broader,C-tennessee-agencies-and-organizations,preferred,local
+C-the-works-inc,broader,C-tennessee-organizations,preferred,local
+C-buffalo-sewer-authority,broader,C-new-york-local-government-and-agencies,preferred,local
+C-county-of-tulare,broader,C-california-local-government-and-agencies,preferred,local
+C-qilu-pharmaceutical,broader,C-companies,preferred,local
+C-city-of-ypsilanti,broader,C-michigan-local-government-and-agencies,preferred,local
+C-township-of-berkeley,broader,C-new-jersey-local-government-and-agencies,preferred,local
+C-southwest-research-institute,broader,T-nonprofits,preferred,local
+C-international-association-of-fire-fighters-local-i-66,broader,C-associations-and-other-organizations,preferred,local
+C-time,broader,C-companies,preferred,local
+C-china-daily,broader,C-companies,preferred,local
+C-indiana-university-of-pennsylvania-research-institute,broader,C-colleges-and-universities,preferred,local
+C-rio-grande-council-of-governments,broader,C-texas-local-government-and-agencies,preferred,local
+C-borough-of-coraopolis,broader,C-pennsylvania-local-government-and-agencies,preferred,local
+C-united-states-mission-to-international-organizations-in-gene,broader,O-department-of-state,preferred,local
+C-midwest-transplant-network,broader,T-nonprofits,preferred,local
+C-unite-here-local-11,broader,C-associations-and-other-organizations,preferred,local
+C-city-of-riviera-beach-utility-special-district,broader,C-florida-local-government-and-agencies,preferred,local
+C-douglas-county-sheriff-s-office-oregon,broader,C-oregon-local-government-and-agencies,preferred,local
+C-city-of-st-cloud-florida,broader,C-florida-local-government-and-agencies,preferred,local
+C-utah-nonprofits-association,broader,T-nonprofits,preferred,local
+C-southeast-crescent-regional-commission,broader,C-independent-agencies-and-commissions,preferred,local
+C-city-of-bell-gardens-california,broader,C-california-local-government-and-agencies,preferred,local
+C-city-of-burlington-vermont,broader,C-vermont-local-government-and-agencies,preferred,local
+C-city-of-troy,broader,C-new-york-local-government-and-agencies,preferred,local
+C-north-east-kingdom-community-action-inc,broader,T-nonprofits,preferred,local
+C-pershing-square-capital-management,broader,C-investment-companies,preferred,local
+C-pioneer-energy,broader,C-companies,preferred,local
+C-jewish-community-alliance-of-northeastern-pennsylvania,broader,T-nonprofits,preferred,local
+C-north-austin-community-center,broader,T-nonprofits,preferred,local
+C-old-colony-ymca,broader,T-nonprofits,preferred,local
+C-cumberland-county-veterans-council,broader,C-associations-and-other-organizations,preferred,local
+C-town-of-hope-mills,broader,C-north-carolina-local-government-and-agencies,preferred,local
+C-park-county-colorado,broader,C-colorado-local-government-and-agencies,preferred,local
+C-el-paso-county-texas,broader,C-texas-local-government-and-agencies,preferred,local
+C-chiricahua-community-health-centers-inc,broader,T-nonprofits,preferred,local
+C-new-london-counseling-center,broader,T-nonprofits,preferred,local
+C-boys-girls-club-of-greenwich,broader,T-nonprofits,preferred,local
+C-timberline-fire-protection-district,broader,C-colorado-local-government-and-agencies,preferred,local
+C-village-of-glen-ellyn,broader,C-illinois-local-government-and-agencies,preferred,local
+C-city-of-laguna-niguel,broader,C-california-local-government-and-agencies,preferred,local
+C-north-carolina-state-university,broader,C-colleges-and-universities,preferred,local
+C-prasco-laboratories,broader,C-companies,preferred,local
+C-dane-county-sheriff-s-office-wisconsin,broader,C-wisconsin-local-government-and-agencies,preferred,local
+C-village-of-virginia-gardens,broader,C-florida-local-government-and-agencies,preferred,local
+C-macom-technology-solutions,broader,C-companies,preferred,local
+C-assistant-secretary-of-defense-for-health-affairs,broader,O-department-of-defense,preferred,local
+C-iii-corps-and-fort-hood,broader,O-department-of-the-army,preferred,local
+C-pseg,broader,C-energy-sector,preferred,local
+C-instawork,broader,C-tech-industry,preferred,local
+C-aimbridge-hospitality,broader,C-companies,preferred,local
+C-tohono-o-odham-nation,broader,C-associations-and-other-organizations,preferred,local
+C-military-installation-development-authority,broader,C-utah-state-government-agencies,preferred,local
+C-town-of-tarboro,broader,C-north-carolina-local-government-and-agencies,preferred,local
+C-city-of-industry,broader,C-california-local-government-and-agencies,preferred,local
+C-via-metropolitan-transit-authority,broader,C-texas-local-government-and-agencies,preferred,local
+C-oostanaula-school-community-club,broader,C-georgia-organizations,preferred,local
+C-jersey-city-redevelopment-agency,broader,C-new-jersey-local-government-and-agencies,preferred,local
+C-larue-county-water-district,broader,C-kentucky-local-government-and-agencies,preferred,local
+C-chaffee-county-board-of-commissioners,broader,C-colorado-local-government-and-agencies,preferred,local
+C-infinera-corporation,broader,C-companies,preferred,local
+C-gateway-domestic-violence-services,broader,T-nonprofits,preferred,local
+C-fort-bend-independent-school-district,broader,C-texas-local-government-and-agencies,preferred,local
+C-housing-development-alliance,broader,T-nonprofits,preferred,local
+C-indianapolis-public-safety-foundation,broader,T-nonprofits,preferred,local
+C-town-of-smithfield,broader,C-north-carolina-local-government-and-agencies,preferred,local
+C-roanoke-county-school-board,broader,C-virginia-local-government-and-agencies,preferred,local
+C-community-relations-service,broader,O-department-of-justice,preferred,local
+C-holy-name-college-friary,broader,T-nonprofits,preferred,local
+C-spaulding-family-resource-center,broader,T-nonprofits,preferred,local
+C-wayne-county-pennsylvania,broader,C-pennsylvania-local-government-and-agencies,preferred,local
+C-port-of-brownsville,broader,C-texas-local-government-and-agencies,preferred,local
+C-tc-energy,broader,C-companies,preferred,local
+C-columbia-river-inter-tribal-fish-commission,broader,C-associations-and-other-organizations,preferred,local
+C-patterson-belknap-webb-tyler-llp,broader,C-companies,preferred,local
+C-livermore-amador-valley-transit-authority,broader,C-california-local-government-and-agencies,preferred,local
+C-city-of-sun-prairie,broader,C-wisconsin-local-government-and-agencies,preferred,local
+C-attenti-group,broader,C-companies,preferred,local
+C-single-room-housing-assistance-corporation,broader,T-nonprofits,preferred,local
+C-advanced-regenerative-manufacturing-institute,broader,T-nonprofits,preferred,local
+C-reno-tahoe-airport-authority,broader,C-nevada-local-government-and-agencies,preferred,local
+C-doorways,broader,T-nonprofits,preferred,local
+C-1000-women-strong,broader,T-nonprofits,preferred,local
+C-grassland-water-district,broader,C-california-local-government-and-agencies,preferred,local
+C-breeze-airways,broader,T-airlines,preferred,local
+C-association-of-flight-attendants-cwa,broader,C-associations-and-other-organizations,preferred,local
+C-city-of-new-york,broader,C-new-york-local-government-and-agencies,preferred,local
+C-monroe-county-office-of-the-district-attorney,broader,C-pennsylvania-local-government-and-agencies,preferred,local
+C-southern-nevada-regional-housing-authority,broader,C-nevada-local-government-and-agencies,preferred,local
+C-town-of-weston-connecticut,broader,C-connecticut-local-government-and-agencies,preferred,local
+C-south-metro-fire-department,broader,C-minnesota-local-government-and-agencies,preferred,local
+C-spectrum-youth-and-family-services,broader,T-nonprofits,preferred,local
+C-make-it-home,broader,T-nonprofits,preferred,local
+C-town-of-matthews,broader,C-north-carolina-local-government-and-agencies,preferred,local
+C-association-of-nonwoven-fabrics-industry,broader,C-associations-and-other-organizations,preferred,local
+C-national-stewardship-action-council,broader,C-associations-and-other-organizations,preferred,local
+C-north-carolina-state-ports-authority,broader,C-north-carolina-state-government-agencies,preferred,local
+C-hrznar-llc,broader,C-companies,preferred,local
+C-ch-asset-company,broader,C-companies,preferred,local
+C-gerrish-lyon-utility-authority,broader,C-michigan-local-government-and-agencies,preferred,local
+C-city-of-miami-beach,broader,C-florida-local-government-and-agencies,preferred,local
+C-sacramento-county,broader,C-california-local-government-and-agencies,preferred,local
+C-whitehall-township,broader,C-pennsylvania-local-government-and-agencies,preferred,local
+C-borough-of-south-toms-river,broader,C-new-jersey-local-government-and-agencies,preferred,local
+C-south-toms-river-recreation-commission,broader,C-new-jersey-local-government-and-agencies,preferred,local
+C-van-cleef-engineering-associates,broader,C-companies,preferred,local
+C-mclane-company,broader,C-companies,preferred,local
+C-community-support-services-inc,broader,T-nonprofits,preferred,local
+C-university-of-utah,broader,C-colleges-and-universities,preferred,local
+C-united-states-center-for-safesport,broader,T-nonprofits,preferred,local
+C-barclay-friends,broader,T-nonprofits,preferred,local
+C-the-stronach-group,broader,C-companies,preferred,local
+C-macomb-county-public-works,broader,C-michigan-local-government-and-agencies,preferred,local
+C-northern-virginia-emergency-response-system,broader,T-nonprofits,preferred,local
+C-united-states-steel-corporation,broader,C-companies,preferred,local
+C-ocean-county-board-of-commissioners,broader,C-new-jersey-local-government-and-agencies,preferred,local
+C-lakewood-community-services-corporation,broader,T-nonprofits,preferred,local
+C-lakewood-study-square,broader,T-nonprofits,preferred,local
+C-town-of-whitakers,broader,C-north-carolina-local-government-and-agencies,preferred,local
+C-city-of-edcouch,broader,C-texas-local-government-and-agencies,preferred,local
+C-sacramento-county-sheriff-s-office,broader,C-california-local-government-and-agencies,preferred,local
+C-halifax-county-government,broader,C-north-carolina-local-government-and-agencies,preferred,local
+C-bosley-management,broader,C-companies,preferred,local
+C-progressive-rail,broader,C-companies,preferred,local
+C-town-of-killingly,broader,C-connecticut-local-government-and-agencies,preferred,local
+C-mosaic-company,broader,C-companies,preferred,local
+C-snohomish-county,broader,C-washington-local-government-and-agencies,preferred,local
+C-the-carrie-meek-foundation,broader,T-nonprofits,preferred,local
+C-santa-cruz-county,broader,C-arizona-local-government-and-agencies,preferred,local
+C-donor-alliance,broader,T-nonprofits,preferred,local
+C-wireless-research-center-of-north-carolina,broader,T-nonprofits,preferred,local
+C-kidizen,broader,C-companies,preferred,local
+C-communities-united-for-restorative-youth-justice,broader,T-nonprofits,preferred,local
+C-tj-regional-health,broader,T-nonprofits,preferred,local
+C-city-of-williamsport,broader,C-pennsylvania-local-government-and-agencies,preferred,local
+C-city-of-south-bay,broader,C-florida-local-government-and-agencies,preferred,local
+C-town-of-vernon,broader,C-connecticut-local-government-and-agencies,preferred,local
+C-san-antonio-water-system,broader,C-texas-local-government-and-agencies,preferred,local
+C-friends-of-the-fife-lake-public-library,broader,T-nonprofits,preferred,local
+C-packers-sanitation-services,broader,C-companies,preferred,local
+C-prime-minister-of-india,broader,C-foreign-governments,preferred,local
+C-texas-board-of-law-examiners,broader,C-texas-state-government-agencies,preferred,local
+C-hormel-institute,broader,C-colleges-and-universities,preferred,local
+C-feeding-our-future,broader,T-nonprofits,preferred,local
+C-wakemed,broader,T-nonprofits,preferred,local
+C-rich-county-utah,broader,C-utah-local-government-and-agencies,preferred,local
+C-florida-memorial-university,broader,C-colleges-and-universities,preferred,local
+C-rural-county-representatives-of-california,broader,C-associations-and-other-organizations,preferred,local
+C-board-of-police-commissioners-of-kansas-city-missouri,broader,C-missouri-local-government-and-agencies,preferred,local
+C-virginia-institute-of-marine-science,broader,C-colleges-and-universities,preferred,local
+C-wisconsin-department-of-agriculture-trade-and-consumer-prote,broader,C-wisconsin-state-government-agencies,preferred,local
+C-cleveland-national-forest,broader,O-department-of-agriculture,preferred,local
+C-united-states-mission-to-the-organisation-for-economic-co-op,broader,O-department-of-state,preferred,local
+C-city-of-tempe,broader,C-arizona-local-government-and-agencies,preferred,local
+C-oregon-coast-community-college,broader,C-colleges-and-universities,preferred,local
+C-municipal-authority-of-westmoreland-county,broader,C-pennsylvania-local-government-and-agencies,preferred,local
+C-cumberland-county-board-of-commissioners,broader,C-north-carolina-local-government-and-agencies,preferred,local
+C-fayetteville-cumberland-economic-development-corporation,broader,T-nonprofits,preferred,local
+C-sei-industries,broader,C-companies,preferred,local
+C-raptor-scientific,broader,C-companies,preferred,local
+C-republic-steel,broader,C-companies,preferred,local
+C-olivenhain-municipal-water-district,broader,C-california-local-government-and-agencies,preferred,local
+C-north-valley-friends-church,broader,T-nonprofits,preferred,local
+C-mckesson,broader,C-companies,preferred,local
+C-core-ventures,broader,C-companies,preferred,local
+C-integrated-oncology,broader,C-companies,preferred,local
+C-sterilization-services-of-tennessee,broader,C-companies,preferred,local
+C-northern-light-health,broader,T-nonprofits,preferred,local
+C-tuscaloosa-county-commission,broader,C-alabama-local-government-and-agencies,preferred,local
+C-city-of-gunnison,broader,C-colorado-local-government-and-agencies,preferred,local
+C-cemex,broader,C-companies,preferred,local
+C-texas-a-m-university-central-texas,broader,C-colleges-and-universities,preferred,local
+C-vista-outdoor,broader,C-companies,preferred,local
+C-czechoslovak-group,broader,C-companies,preferred,local
+C-am-general,broader,C-companies,preferred,local
+C-voice-of-the-arctic-i-upiat,broader,T-nonprofits,preferred,local
+C-louisiana-senate-committee-on-senate-and-governmental-affair,broader,C-louisiana-state-government-agencies,preferred,local
+O-momentive-technologies,broader,C-companies,preferred,local
+C-city-of-norwich,broader,C-connecticut-local-government-and-agencies,preferred,local
+C-california-state-transportation-agency,broader,C-california-state-government-agencies,preferred,local
+C-copyright-royalty-board,broader,C-legislative-branch,preferred,local
+C-dorchester-boys-and-girls-club,broader,T-nonprofits,preferred,local
+C-springfield-police-department-oregon,broader,C-oregon-local-government-and-agencies,preferred,local
+C-naval-support-activity-annapolis,broader,O-department-of-the-navy,preferred,local
+C-tpg,broader,C-companies,preferred,local
+C-town-of-stonington,broader,C-connecticut-local-government-and-agencies,preferred,local
+C-rockdale-county-board-of-commissioners,broader,C-georgia-local-government-and-agencies,preferred,local
+C-city-of-temple,broader,C-texas-local-government-and-agencies,preferred,local
+O-delta-protection-commission,broader,C-california-state-government-agencies,preferred,local
+C-town-of-georgetown,broader,C-indiana-local-government-and-agencies,preferred,local
+C-national-organization-of-black-law-enforcement-executives,broader,C-associations-and-other-organizations,preferred,local
+C-jefferson-county-sheriff-s-office,broader,C-colorado-local-government-and-agencies,preferred,local
+C-city-of-new-london,broader,C-connecticut-local-government-and-agencies,preferred,local
+C-city-of-manhattan-beach,broader,C-california-local-government-and-agencies,preferred,local
+C-duluth-international-airport,broader,C-minnesota-local-government-and-agencies,preferred,local
+C-yellow-corporation,broader,C-companies,preferred,local
+C-hca-florida-bayonet-point-hospital,broader,T-hospitals,preferred,local
+C-texas-higher-education-coordinating-board,broader,C-texas-state-government-agencies,preferred,local
+C-joint-office-of-energy-and-transportation,broader,C-federal-agencies,preferred,local
+C-california-state-university-san-marcos,broader,C-colleges-and-universities,preferred,local
+C-boys-girls-club-of-stamford,broader,T-nonprofits,preferred,local
+C-wisconsin-bureau-of-refugee-programs,broader,C-wisconsin-state-government-agencies,preferred,local
+C-topridge-holdings-llc,broader,C-companies,preferred,local
+C-canadian-food-inspection-agency,broader,C-foreign-governments,preferred,local
+C-village-of-addison,broader,C-illinois-local-government-and-agencies,preferred,local
+C-denver-housing-authority,broader,C-colorado-local-government-and-agencies,preferred,local
+C-illinois-guardianship-and-advocacy-commission,broader,C-illinois-state-government-agencies,preferred,local
+C-vitaminsea-seaweed,broader,C-companies,preferred,local
+C-north-carolina-state-education-assistance-authority,broader,C-north-carolina-state-government-agencies,preferred,local
+C-virgin-america,broader,C-companies,preferred,local
+C-american-association-for-the-advancement-of-science,broader,T-nonprofits,preferred,local
+C-la-24,broader,C-associations-and-other-organizations,preferred,local
+C-friends-of-the-la-river,broader,T-nonprofits,preferred,local
+C-cook-county,broader,C-illinois-local-government-and-agencies,preferred,local
+C-lake-county-illinois,broader,C-illinois-local-government-and-agencies,preferred,local
+C-dupage-county,broader,C-illinois-local-government-and-agencies,preferred,local
+C-mchenry-county,broader,C-illinois-local-government-and-agencies,preferred,local
+C-kane-county,broader,C-illinois-local-government-and-agencies,preferred,local
+C-will-county,broader,C-illinois-local-government-and-agencies,preferred,local
+C-grand-canyon-trust,broader,T-nonprofits,preferred,local
+C-washington-county-emergency-management-agency,broader,C-maine-local-government-and-agencies,preferred,local
+C-ibm,broader,C-companies,preferred,local
+C-americans-for-responsible-solutions,broader,T-nonprofits,preferred,local
+C-association-of-public-safety-communications-officials,broader,C-associations-and-other-organizations,preferred,local
+C-commercial-fishermen-s-association-of-bodega-bay,broader,C-associations-and-other-organizations,preferred,local
+C-city-of-st-petersburg,broader,C-florida-local-government-and-agencies,preferred,local
+C-the-dow-chemical-company,broader,C-companies,preferred,local
+C-siemens,broader,C-companies,preferred,local
+C-united-technologies,broader,C-companies,preferred,local
+C-new-jersey-state-police,broader,C-new-jersey-state-government-agencies,preferred,local
+C-heating-air-conditioning-refrigeration-distributors-internat,broader,C-associations-and-other-organizations,preferred,local
+C-national-association-of-electrical-distributors,broader,C-associations-and-other-organizations,preferred,local
+C-city-of-galesburg,broader,C-illinois-local-government-and-agencies,preferred,local
+C-santa-monica-city-council,broader,C-california-local-government-and-agencies,preferred,local
+C-national-hispanic-leadership-agenda,broader,C-associations-and-other-organizations,preferred,local
+C-school-and-institutional-trust-lands-administration,broader,C-utah-state-government-agencies,preferred,local
+C-city-of-rochelle,broader,C-illinois-local-government-and-agencies,preferred,local
+C-madison-river-foundation,broader,T-nonprofits,preferred,local
+C-federal-reserve-bank-of-atlanta,broader,C-federal-reserve-system,preferred,local
+C-abengoa,broader,C-companies,preferred,local
+C-islamic-society-of-north-america,broader,C-associations-and-other-organizations,preferred,local
+C-nuance-communications,broader,C-companies,preferred,local
+C-genesis-toys,broader,C-companies,preferred,local
+C-partnership-to-protect-workplace-opportunity,broader,C-associations-and-other-organizations,preferred,local
+C-international-finance-corporation,broader,C-international-organizations,preferred,local
+C-horizon-lines,broader,C-companies,preferred,local
+C-fletcher-technical-community-college,broader,C-colleges-and-universities,preferred,local
+C-south-central-louisiana-technical-college,broader,C-colleges-and-universities,preferred,local
+C-mayor-of-san-francisco,broader,C-california-local-government-and-agencies,preferred,local
+C-shatterproof-foundation,broader,T-nonprofits,preferred,local
+C-american-society-of-addiction-medicine,broader,C-associations-and-other-organizations,preferred,local
+C-insys-therapeutics,broader,C-companies,preferred,local
+C-seniors-foundation,broader,T-nonprofits,preferred,local
+C-america-first-real-estate-group,broader,C-companies,preferred,local
+C-sampson-construction,broader,C-companies,preferred,local
+C-ledic-management-group,broader,C-companies,preferred,local
+C-vietnam-veterans-of-america,broader,C-associations-and-other-organizations,preferred,local
+C-mid-america-transportation-center,broader,C-colleges-and-universities,preferred,local
+C-city-of-wildwood,broader,C-florida-local-government-and-agencies,preferred,local
+C-ohio-manufacturing-extension-partnership,broader,C-ohio-organizations,preferred,local
+C-grabagun-digital-holdings,broader,C-companies,preferred,local
+C-city-of-trenton,broader,C-michigan-local-government-and-agencies,preferred,local
+C-montana-state-university,broader,C-colleges-and-universities,preferred,local
+O-hertz,broader,C-companies,preferred,local
+C-uveye,broader,C-companies,preferred,local
+C-village-of-lindenhurst,broader,C-new-york-local-government-and-agencies,preferred,local
+C-georgia-department-of-agriculture,broader,C-georgia-state-government-agencies,preferred,local
+C-town-of-laurel-emergency-medical-services,broader,C-montana-local-government-and-agencies,preferred,local
+C-paterson-school-district,broader,C-new-jersey-local-government-and-agencies,preferred,local
+C-students-against-destructive-decisions,broader,T-nonprofits,preferred,local
+C-national-center-on-adoption-permanency,broader,T-nonprofits,preferred,local
+C-raisinghope-inc,broader,T-nonprofits,preferred,local
+C-city-of-jackson-health-care-authority,broader,C-alabama-local-government-and-agencies,preferred,local
+C-pinellas-county-school-district,broader,C-florida-local-government-and-agencies,preferred,local
+C-nassau-inter-county-express,broader,C-new-york-local-government-and-agencies,preferred,local
+C-middletown-township,broader,C-new-jersey-local-government-and-agencies,preferred,local
+C-borough-of-cliffside-park,broader,C-new-jersey-local-government-and-agencies,preferred,local
+C-north-alamo-water-supply-corporation,broader,C-texas-local-government-and-agencies,preferred,local
+C-leonard-davis-institute-of-health-economics,broader,C-colleges-and-universities,preferred,local
+C-pitkin-county-board-of-county-commissioners,broader,C-colorado-local-government-and-agencies,preferred,local
+C-wyoming-county-healthcare-center,broader,C-pennsylvania-local-government-and-agencies,preferred,local
+C-city-of-defiance,broader,C-ohio-local-government-and-agencies,preferred,local
+C-naval-air-weapons-station-china-lake,broader,O-department-of-the-navy,preferred,local
+C-china-lake-alliance,broader,C-associations-and-other-organizations,preferred,local
+C-ivy-tech-community-college,broader,C-colleges-and-universities,preferred,local
+C-lawrence-police-department,broader,C-indiana-local-government-and-agencies,preferred,local
+C-puerto-rico-army-national-guard,broader,T-puerto-rico,preferred,local
+C-shasta-county-registrar-of-voters,broader,C-california-local-government-and-agencies,preferred,local
+C-tennessee-general-assembly,broader,C-tennessee-agencies-and-organizations,preferred,local
+C-nashville-electric-service,broader,C-tennessee-local-government-and-agencies,preferred,local
+C-town-of-ridgefield,broader,C-connecticut-local-government-and-agencies,preferred,local
+O-georgia-composite-medical-board,broader,C-georgia-state-government-agencies,preferred,local
+C-mayor-of-hollywood-park-texas,broader,C-texas-local-government-and-agencies,preferred,local
+C-national-women-s-soccer-league,broader,C-associations-and-other-organizations,preferred,local
+C-pearl-river-county-sheriff-s-department-mississippi,broader,C-mississippi-local-government-and-agencies,preferred,local
+C-character-ai,broader,C-companies,preferred,local
+C-charter-township-of-fort-gratiot-michigan,broader,C-michigan-local-government-and-agencies,preferred,local
+C-university-of-texas-health-science-center-at-houston,broader,C-colleges-and-universities,preferred,local
+C-garfield-county-sheriff-s-office-utah,broader,C-utah-local-government-and-agencies,preferred,local
+C-city-of-west-hollywood-california,broader,C-california-local-government-and-agencies,preferred,local
+C-st-clair-township-michigan,broader,C-michigan-local-government-and-agencies,preferred,local
+C-mecklenburg-county-sheriff-s-office-north-carolina,broader,C-north-carolina-local-government-and-agencies,preferred,local
+C-weber-basin-water-conservancy-district-utah,broader,C-utah-local-government-and-agencies,preferred,local
+C-washington-county-florida,broader,C-florida-local-government-and-agencies,preferred,local
+C-city-of-buffalo-new-york,broader,C-new-york-local-government-and-agencies,preferred,local
+C-virginia-passenger-rail-authority,broader,C-virginia-state-government-agencies,preferred,local
+C-pasadena-independent-school-district,broader,C-texas-local-government-and-agencies,preferred,local
+C-athletes-org,broader,C-associations-and-other-organizations,preferred,local
+C-county-of-schenectady,broader,C-new-york-local-government-and-agencies,preferred,local
+C-city-of-jacinto-city,broader,C-texas-local-government-and-agencies,preferred,local
+C-reynolds-american,broader,C-companies,preferred,local
+C-town-of-abington,broader,C-massachusetts-local-government-and-agencies,preferred,local
+C-city-of-mercedes-texas,broader,C-texas-local-government-and-agencies,preferred,local
+C-township-of-warren-new-jersey,broader,C-new-jersey-local-government-and-agencies,preferred,local
+C-city-of-san-benito-texas,broader,C-texas-local-government-and-agencies,preferred,local
+C-accel-schools-of-ohio,broader,C-companies,preferred,local
+C-mainspring-energy,broader,C-companies,preferred,local
+C-eken-group,broader,C-companies,preferred,local
+C-city-of-northampton-massachusetts,broader,C-massachusetts-local-government-and-agencies,preferred,local
+C-city-of-lakeville-minnesota,broader,C-minnesota-local-government-and-agencies,preferred,local
+C-stratford-housing-authority,broader,C-connecticut-local-government-and-agencies,preferred,local
+C-city-of-lakewood-california,broader,C-california-local-government-and-agencies,preferred,local
+C-deel,broader,C-companies,preferred,local
+C-refuge-restoration,broader,T-nonprofits,preferred,local
+C-manchester-township-police-department,broader,C-new-jersey-local-government-and-agencies,preferred,local
+C-william-way-lgbt-community-center,broader,T-nonprofits,preferred,local
+C-cumberland-community-improvement-district,broader,C-georgia-local-government-and-agencies,preferred,local
+C-puget-sound-energy,broader,C-companies,preferred,local
+C-uvalde-county,broader,C-texas-local-government-and-agencies,preferred,local
+C-fll-partners,broader,C-investment-companies,preferred,local
+C-stillaguamish-tribe,broader,C-associations-and-other-organizations,preferred,local
+C-city-of-venus-texas,broader,C-texas-local-government-and-agencies,preferred,local
+C-shelby-county-district-attorney-s-office,broader,C-tennessee-local-government-and-agencies,preferred,local
+C-national-council-of-textile-organizations,broader,C-associations-and-other-organizations,preferred,local
+C-personal-care-products-council,broader,C-associations-and-other-organizations,preferred,local
+C-a-place-for-mom,broader,C-companies,preferred,local
+C-coalition-of-large-tribes,broader,C-associations-and-other-organizations,preferred,local
+C-muslim-advocates,broader,T-nonprofits,preferred,local
+C-city-of-oakley,broader,C-california-local-government-and-agencies,preferred,local
+C-georgia-department-of-human-services,broader,C-georgia-state-government-agencies,preferred,local
+C-st-tammany-corporation,broader,C-associations-and-other-organizations,preferred,local
+C-texas-a-m-university-kingsville,broader,C-colleges-and-universities,preferred,local
+C-washington-county-oregon,broader,C-oregon-local-government-and-agencies,preferred,local
+C-city-of-san-antonio,broader,C-texas-local-government-and-agencies,preferred,local
+C-prime-minister-of-kosovo,broader,C-foreign-leaders,preferred,local
+C-city-of-vine-grove,broader,C-kentucky-local-government-and-agencies,preferred,local
+C-maryland-national-capital-parks-and-planning-commission,broader,C-maryland-state-government-agencies,preferred,local
+C-city-of-redmond,broader,C-washington-local-government-and-agencies,preferred,local
+C-youngstown-city-school-district,broader,C-ohio-local-government-and-agencies,preferred,local
+C-youngstown-education-association,broader,C-associations-and-other-organizations,preferred,local
+C-washington-regional-medical-center,broader,C-north-carolina-agencies-and-organizations,preferred,local
+C-town-of-wendell-police-department,broader,C-north-carolina-local-government-and-agencies,preferred,local
+C-contra-costa-health-services,broader,C-california-local-government-and-agencies,preferred,local
+C-autozone,broader,C-companies,preferred,local
+C-advance-auto-parts,broader,C-companies,preferred,local
+C-town-of-dallas-north-carolina,broader,C-north-carolina-local-government-and-agencies,preferred,local
+C-national-consumers-league,broader,T-nonprofits,preferred,local
+C-city-of-reading-pennsylvania,broader,C-pennsylvania-local-government-and-agencies,preferred,local
+C-brooke-army-medical-center,broader,O-department-of-the-army,preferred,local
+C-futurefuel-corp,broader,C-companies,preferred,local
+C-public-health-service-commissioned-corps,broader,O-department-of-health-and-human-services,preferred,local
+C-center-for-freedom-and-prosperity,broader,T-nonprofits,preferred,local
+C-homeland-security-investigations,broader,O-immigration-and-customs-enforcement,preferred,local
+O-cleveland-clinic,broader,T-hospitals,preferred,local
+C-ohio-nurses-association,broader,C-associations-and-other-organizations,preferred,local
+C-sacramento-food-bank-family-services,broader,T-nonprofits,preferred,local
+C-early-county-board-of-commissioners,broader,C-georgia-local-government-and-agencies,preferred,local
+C-westminster-chamber-of-commerce,broader,C-associations-and-other-organizations,preferred,local
+C-roper-fire-department,broader,C-north-carolina-local-government-and-agencies,preferred,local
+C-senior-advisor-to-the-president-for-clean-energy-innovation-,broader,O-executive-office-of-the-president,preferred,local
+C-american-academy-of-physician-assistants,broader,C-associations-and-other-organizations,preferred,local
+C-garantex,broader,C-companies,preferred,local
+C-owasso-public-school-system,broader,C-oklahoma-local-government-and-agencies,preferred,local
+C-orange-county-florida,broader,C-florida-local-government-and-agencies,preferred,local
+C-stability-ai,broader,C-companies,preferred,local
+C-midjourney,broader,C-companies,preferred,local
+C-midwest-alliance-for-clean-hydrogen,broader,C-associations-and-other-organizations,preferred,local
+C-gotion,broader,C-companies,preferred,local
+C-united-states-district-court-for-the-middle-district-of-flor,broader,T-courts,preferred,local
+C-manchester-township-environmental-commission,broader,C-new-jersey-local-government-and-agencies,preferred,local
+C-manchester-township-planning-board,broader,C-new-jersey-local-government-and-agencies,preferred,local
+C-henry-county-georgia,broader,C-georgia-local-government-and-agencies,preferred,local
+C-national-center-for-health-statistics,broader,C-federal-agencies,preferred,local
+C-department-of-agriculture-office-of-inspector-general,broader,C-inspectors-general,preferred,local
+C-city-of-lomita,broader,C-california-local-government-and-agencies,preferred,local
+C-first-taxing-district-of-the-city-of-norwalk,broader,C-connecticut-local-government-and-agencies,preferred,local
+C-new-york-state-board-of-regents,broader,C-new-york-state-government-agencies,preferred,local
+C-jurupa-community-services-district,broader,C-california-local-government-and-agencies,preferred,local
+C-rwj-barnabas-health,broader,T-hospitals,preferred,local
+C-federal-financing-bank,broader,C-federal-agencies,preferred,local
+C-vermont-medical-society,broader,C-associations-and-other-organizations,preferred,local
+C-vitl,broader,T-nonprofits,preferred,local
+C-florida-office-of-the-chief-inspector-general,broader,C-florida-state-government-agencies,preferred,local
+C-cyberspace-solarium-commission,broader,C-independent-agencies-and-commissions,preferred,local
+C-united-nations-human-rights-council,broader,O-united-nations,preferred,local
+C-central-utah-water-conservancy-district,broader,C-utah-local-government-and-agencies,preferred,local
+C-pga-tour,broader,C-associations-and-other-organizations,preferred,local
+C-public-investment-fund,broader,C-foreign-governments,preferred,local
+C-village-of-manchester,broader,C-michigan-local-government-and-agencies,preferred,local
+C-slate-hill-fire-district,broader,C-new-york-local-government-and-agencies,preferred,local
+C-alamo-area-council-of-governments,broader,C-texas-local-government-and-agencies,preferred,local
+C-city-of-prior-lake,broader,C-minnesota-local-government-and-agencies,preferred,local
+C-office-of-cost-assessment-and-program-evaluation,broader,O-department-of-defense,preferred,local
+C-office-of-immigration-detention-ombudsman,broader,O-department-of-homeland-security,preferred,local
+C-city-of-tustin,broader,C-california-local-government-and-agencies,preferred,local
+C-loudoun-citizens-for-social-justice,broader,T-nonprofits,preferred,local
+C-venu-sports,broader,C-companies,preferred,local
+C-ventura-county-sheriff-s-office,broader,C-california-local-government-and-agencies,preferred,local
+C-the-blessing-center-inc,broader,C-california-organizations,preferred,local
+C-community-corporation-of-santa-monica,broader,T-nonprofits,preferred,local
+C-bregal-partners,broader,C-investment-companies,preferred,local
+C-city-of-west-covina,broader,C-california-local-government-and-agencies,preferred,local
+C-american-association-of-colleges-of-osteopathic-medicine,broader,C-associations-and-other-organizations,preferred,local
+C-american-college-of-osteopathic-family-physicians,broader,C-associations-and-other-organizations,preferred,local
+C-council-of-academic-family-medicine,broader,C-associations-and-other-organizations,preferred,local
+C-bwg-business-solutions,broader,C-companies,preferred,local
+C-clarios,broader,C-companies,preferred,local
+C-america-pac,broader,C-associations-and-other-organizations,preferred,local
+C-headcount,broader,T-nonprofits,preferred,local
+C-blink-health,broader,C-companies,preferred,local
+C-sag-aftra,broader,C-associations-and-other-organizations,preferred,local
+C-bennington-county-coalition-for-the-homeless,broader,T-nonprofits,preferred,local
+C-boys-girls-clubs-of-philadelphia,broader,T-nonprofits,preferred,local
+C-university-of-california-riverside,broader,C-colleges-and-universities,preferred,local
+C-national-queer-api-alliance,broader,T-nonprofits,preferred,local
+C-sheetz,broader,C-companies,preferred,local
+C-oklahoma-local-government-and-agencies,broader,C-oklahoma-agencies-and-organizations,preferred,local
+C-oklahoma-agencies-and-organizations,broader,C-state-of-oklahoma,preferred,local
+C-anheuser-busch-inbev,broader,C-companies,preferred,local
+C-sabmiller,broader,C-companies,preferred,local
+C-minister-of-state-for-universities-and-science-of-the-united,broader,C-foreign-governments,preferred,local
+C-fermi-national-accelerator-laboratory,broader,O-department-of-energy,preferred,local
+C-european-central-bank,broader,C-international-organizations,preferred,local
+C-new-america-alliance,broader,C-associations-and-other-organizations,preferred,local
+C-intertribal-timber-council,broader,C-associations-and-other-organizations,preferred,local
+C-mathematical-association-of-america,broader,T-nonprofits,preferred,local
+C-government-of-pakistan,broader,C-foreign-governments,preferred,local
+C-kawasaki-heavy-industries-ltd,broader,C-companies,preferred,local
+C-center-for-education-reform,broader,T-nonprofits,preferred,local
+C-commission-on-presidential-debates,broader,T-nonprofits,preferred,local
+C-georgia-college-state-university,broader,C-colleges-and-universities,preferred,local
+C-wilson-housing-authority,broader,C-north-carolina-local-government-and-agencies,preferred,local
+C-neighborhood-housing-services,broader,T-nonprofits,preferred,local
+C-american-automotive-policy-council,broader,C-associations-and-other-organizations,preferred,local
+C-cottage-grove-volunteer-fire-department,broader,C-wisconsin-local-government-and-agencies,preferred,local
+C-madison-region-economic-partnership,broader,C-wisconsin-organizations,preferred,local
+C-clean-ocean-action,broader,T-nonprofits,preferred,local
+C-florida-chamber-of-commerce,broader,C-associations-and-other-organizations,preferred,local
+C-progressive-corporation,broader,C-companies,preferred,local
+C-wghp,broader,C-companies,preferred,local
+C-san-luis-valley-irrigation-district,broader,C-colorado-local-government-and-agencies,preferred,local
+C-homeland-security-advisory-council,broader,C-federal-agencies,preferred,local
+C-port-of-everett,broader,C-washington-local-government-and-agencies,preferred,local
+C-oregon-home-builders-association,broader,C-associations-and-other-organizations,preferred,local
+C-national-association-of-home-builders,broader,C-associations-and-other-organizations,preferred,local
+C-west-slope-colorado-oil-gas-association,broader,C-associations-and-other-organizations,preferred,local
+C-new-york-city-department-of-sanitation,broader,C-new-york-local-government-and-agencies,preferred,local
+C-cooportunity-health,broader,C-companies,preferred,local
+C-vietnam-helicopter-pilots-association,broader,C-associations-and-other-organizations,preferred,local
+C-the-remembrance-project,broader,T-nonprofits,preferred,local
+C-stonington-village-improvement-association,broader,T-nonprofits,preferred,local
+C-dow-chemical-company,broader,C-companies,preferred,local
+C-rochester-institute-of-technology,broader,C-colleges-and-universities,preferred,local
+C-hr-policy-association,broader,C-associations-and-other-organizations,preferred,local
+C-maine-credit-union-league,broader,C-associations-and-other-organizations,preferred,local
+C-wellco-enterprises,broader,C-companies,preferred,local
+C-defense-criminal-investigative-service,broader,C-federal-agencies,preferred,local
+C-canopy-nwa,broader,T-nonprofits,preferred,local
+C-mayor-of-galesburg,broader,C-illinois-local-government-and-agencies,preferred,local
+C-enlarged-city-school-district-of-middletown,broader,C-new-york-local-government-and-agencies,preferred,local
+C-midcontinent-independent-system-operator,broader,C-associations-and-other-organizations,preferred,local
+C-maine-center-for-entrepreneurial-development,broader,T-nonprofits,preferred,local
+C-center-for-law-and-social-policy,broader,T-nonprofits,preferred,local
+C-young-invincibles,broader,T-nonprofits,preferred,local
+C-swedish-match,broader,C-companies,preferred,local
+C-elliotsville-plantation,broader,T-nonprofits,preferred,local
+C-monster-beverage-corp,broader,C-companies,preferred,local
+C-neiman-marcus-group,broader,C-companies,preferred,local
+C-pac-12-networks,broader,C-companies,preferred,local
+C-american-supply-association,broader,C-associations-and-other-organizations,preferred,local
+C-utah-back-country-pilots-association,broader,C-associations-and-other-organizations,preferred,local
+C-south-atlantic-fishery-management-council,broader,C-federal-agencies,preferred,local
+C-cumberland-farms-inc,broader,C-companies,preferred,local
+C-ben-venue-laboratories,broader,C-companies,preferred,local
+C-american-association-for-marriage-and-family-therapy,broader,C-associations-and-other-organizations,preferred,local
+C-white-lodging-services-corporation,broader,C-companies,preferred,local
+C-charlotte-lozier-institute,broader,C-associations-and-other-organizations,preferred,local
+C-minority-leader-of-the-north-carolina-house-of-representativ,broader,C-north-carolina-state-officials,preferred,local
+C-united-states-attorney-s-office-for-the-district-of-arizona,broader,O-department-of-justice,preferred,local
+C-alaska-national-guard,broader,C-state-of-alaska,preferred,local
+C-craven-community-college,broader,C-colleges-and-universities,preferred,local
+C-long-island-power-authority,broader,C-energy-sector,preferred,local
+C-paducah-gaseous-diffusion-plant,broader,O-department-of-energy,preferred,local
+C-national-institute-on-aging,broader,C-federal-agencies,preferred,local
+O-greenberg-traurig,broader,C-companies,preferred,local
+C-height-analytics,broader,C-companies,preferred,local
+C-national-metropolitan-business-alliance,broader,C-associations-and-other-organizations,preferred,local
+C-silicon-valley-leadership-group,broader,C-associations-and-other-organizations,preferred,local
+C-city-of-kingston,broader,C-new-york-local-government-and-agencies,preferred,local
+C-alaska-seafood-marketing-institute,broader,C-state-of-alaska,preferred,local
+C-national-association-of-convenience-stores,broader,C-associations-and-other-organizations,preferred,local
+C-archdiocese-for-the-military-services-usa,broader,T-nonprofits,preferred,local
+C-mnsure,broader,C-minnesota-state-government-agencies,preferred,local
+C-flint-hills-resources,broader,C-companies,preferred,local
+C-city-of-roseau,broader,C-minnesota-local-government-and-agencies,preferred,local
+C-energex,broader,C-companies,preferred,local
+C-tmk-ipsco,broader,C-companies,preferred,local
+C-william-mary-law-school,broader,C-colleges-and-universities,preferred,local
+C-population-council,broader,T-nonprofits,preferred,local
+C-guttmacher-institute,broader,T-nonprofits,preferred,local
+C-advocates-for-youth,broader,T-nonprofits,preferred,local
+C-sexuality-information-and-education-council-of-the-united-st,broader,T-nonprofits,preferred,local
+C-sutter-butte-flood-control-agency,broader,C-california-local-government-and-agencies,preferred,local
+C-urs-corporation,broader,C-companies,preferred,local
+C-financial-stability-board,broader,C-international-organizations,preferred,local
+C-red-cliffs-lodge,broader,C-companies,preferred,local
+C-recreational-aviation-foundation,broader,C-associations-and-other-organizations,preferred,local
+C-the-sagebrush-coalition,broader,C-associations-and-other-organizations,preferred,local
+C-loma-linda-university-health,broader,C-colleges-and-universities,preferred,local
+C-blueribbon-coalition,broader,C-associations-and-other-organizations,preferred,local
 O-the-administration,broader,O-executive-office-of-the-president,preferred,local
 O-united-states-senate,broader,C-legislative-branch,preferred,local
 O-google,broader,C-tech-industry,preferred,local
@@ -31957,17 +33127,28 @@ U-john-d-rockefeller-iv-and-kay-bailey-hutchison,broader,C-unfiled-recipients,ca
 U-principals-and-teachers,broader,C-unfiled-recipients,candidate,rule: unreviewed
 O-university-of-central-florida,broader,C-unfiled-organizations,candidate,rule: unreviewed
 U-senators-bennet-and-cassidy,broader,C-unfiled-recipients,candidate,rule: unreviewed
+O-ensign-group,broader,C-unfiled-organizations,candidate,rule: unreviewed
+U-boar-s-head,broader,C-unfiled-recipients,candidate,rule: unreviewed
 U-xai,broader,C-unfiled-recipients,candidate,rule: unreviewed
 U-of-education,broader,C-unfiled-recipients,candidate,rule: unreviewed
 O-ttam-research-institute,broader,C-unfiled-organizations,candidate,rule: unreviewed
 U-richard-pombo-and-nick-j-rahall-ii,broader,C-unfiled-recipients,candidate,rule: unreviewed
 P-governor-haslam,broader,C-unfiled-person,candidate,rule: unreviewed
+U-mnsure,broader,C-unfiled-recipients,candidate,rule: unreviewed
 U-world-wide-web-consortium,broader,C-unfiled-recipients,candidate,rule: unreviewed
 U-alexander-murray,broader,C-unfiled-recipients,candidate,rule: unreviewed
 O-senate-house-leadership,broader,C-unfiled-organizations,candidate,rule: unreviewed
+O-chandra-x-ray-center,broader,C-unfiled-organizations,candidate,rule: unreviewed
+U-usa-boxing,broader,C-unfiled-recipients,candidate,rule: unreviewed
+O-seattle-times,broader,C-unfiled-organizations,candidate,rule: unreviewed
+U-time,broader,C-unfiled-recipients,candidate,rule: unreviewed
+U-a-place-for-mom,broader,C-unfiled-recipients,candidate,rule: unreviewed
+U-pseg,broader,C-unfiled-recipients,candidate,rule: unreviewed
 U-and-mike-rogers,broader,C-unfiled-recipients,candidate,rule: unreviewed
 U-23andme,broader,C-unfiled-recipients,candidate,rule: unreviewed
 O-people-who-think-llc,broader,C-unfiled-organizations,candidate,rule: unreviewed
+U-character-ai,broader,C-unfiled-recipients,candidate,rule: unreviewed
 U-latham-watkins-llp,broader,C-unfiled-recipients,candidate,rule: unreviewed
+U-skyhop-global,broader,C-unfiled-recipients,candidate,rule: unreviewed
 P-adm-lunday,broader,C-unfiled-person,candidate,rule: unreviewed
 P-gov-kelly,broader,C-unfiled-person,candidate,rule: unreviewed
