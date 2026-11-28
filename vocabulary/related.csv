@@ -1,3 +1,5 @@
 term,related,kind,note
 Citibank,Citigroup,,"Citibank is the bank of Citigroup"
 Chrysler,Stellantis,organization,"Chrysler's parent: Fiat 2009-2014, Fiat Chrysler Automobiles 2014-2021, Stellantis since 2021"
+Executive Office of the President,Department of Government Efficiency,organization,"Created in the Executive Office of the President in 2025; pre-created here so hierarchy.csv's placement does not fall back to a bare category (letter-recipients.csv hand-files it directly, bypassing the review pipeline)"
+Maine state officials,Governor of Maine,organization,"Pre-created here, under its own state's chain, so hierarchy.csv's placement does not fall back to a bare category, the same gap as DOGE and other governors (letter-recipients.csv hand-files it, bypassing the review pipeline)"

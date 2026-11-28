@@ -21888,7 +21888,7 @@ C-new-york-agencies-and-organizations,broader,C-state-of-new-york,preferred,loca
 C-new-york-local-government-and-agencies,broader,C-new-york-agencies-and-organizations,preferred,local
 C-state-of-alabama,broader,C-state-and-local-government,preferred,local
 C-alabama-state-officials,broader,C-state-of-alabama,preferred,local
-C-governor-of-alabama,broader,C-alabama-state-officials,preferred,local
+O-governor-of-alabama,broader,C-alabama-state-officials,preferred,local
 C-state-of-alaska,broader,C-state-and-local-government,preferred,local
 C-alaska-state-officials,broader,C-state-of-alaska,preferred,local
 O-governor-of-alaska,broader,C-alaska-state-officials,preferred,local
@@ -21922,7 +21922,7 @@ C-iowa-state-officials,broader,C-state-of-iowa,preferred,local
 O-governor-of-iowa,broader,C-iowa-state-officials,preferred,local
 C-state-of-kansas,broader,C-state-and-local-government,preferred,local
 C-kansas-state-officials,broader,C-state-of-kansas,preferred,local
-C-governor-of-kansas,broader,C-kansas-state-officials,preferred,local
+O-governor-of-kansas,broader,C-kansas-state-officials,preferred,local
 C-state-of-louisiana,broader,C-state-and-local-government,preferred,local
 C-louisiana-state-officials,broader,C-state-of-louisiana,preferred,local
 O-governor-of-louisiana,broader,C-louisiana-state-officials,preferred,local
@@ -22037,7 +22037,7 @@ C-utah-state-officials,broader,C-state-of-utah,preferred,local
 O-governor-of-utah,broader,C-utah-state-officials,preferred,local
 C-state-of-new-mexico,broader,C-state-and-local-government,preferred,local
 C-new-mexico-state-officials,broader,C-state-of-new-mexico,preferred,local
-C-governor-of-new-mexico,broader,C-new-mexico-state-officials,preferred,local
+O-governor-of-new-mexico,broader,C-new-mexico-state-officials,preferred,local
 C-state-of-south-carolina,broader,C-state-and-local-government,preferred,local
 C-south-carolina-state-officials,broader,C-state-of-south-carolina,preferred,local
 O-governor-of-south-carolina,broader,C-south-carolina-state-officials,preferred,local
@@ -22066,7 +22066,7 @@ O-mexico-secretariat-of-foreign-affairs,broader,C-foreign-governments,preferred,
 O-ohio-jewish-communities,broader,C-ohio-organizations,preferred,local
 C-state-of-maine,broader,C-state-and-local-government,preferred,local
 C-maine-state-officials,broader,C-state-of-maine,preferred,local
-C-governor-of-maine,broader,C-maine-state-officials,preferred,local
+O-governor-of-maine,broader,C-maine-state-officials,preferred,local
 C-oregon-agencies-and-organizations,broader,C-state-of-oregon,preferred,local
 C-oregon-state-government-agencies,broader,C-oregon-agencies-and-organizations,preferred,local
 C-michigan-agencies-and-organizations,broader,C-state-of-michigan,preferred,local
@@ -24177,7 +24177,7 @@ C-council-of-economic-advisers,broader,O-executive-office-of-the-president,prefe
 O-riot-blockchain,broader,C-companies,preferred,local
 O-dallas-police-department,broader,C-texas-local-government-and-agencies,preferred,local
 C-defense-base-closure-and-realignment-commission,broader,C-independent-agencies-and-commissions,preferred,local
-C-department-of-government-efficiency,broader,O-executive-office-of-the-president,preferred,local
+O-department-of-government-efficiency,broader,O-executive-office-of-the-president,preferred,local
 O-illinois-department-of-insurance,broader,C-illinois-state-government-agencies,preferred,local
 C-michigan-department-of-transportation,broader,C-michigan-state-government-agencies,preferred,local
 O-dla-piper,broader,C-companies,preferred,local
@@ -31101,6 +31101,10 @@ O-citibank,related,O-citigroup,preferred,reviewed
 O-citigroup,related,O-citibank,preferred,reviewed
 O-chrysler,related,O-stellantis,preferred,reviewed
 O-stellantis,related,O-chrysler,preferred,reviewed
+O-executive-office-of-the-president,related,O-department-of-government-efficiency,preferred,reviewed
+O-department-of-government-efficiency,related,O-executive-office-of-the-president,preferred,reviewed
+C-maine-state-officials,related,O-governor-of-maine,preferred,reviewed
+O-governor-of-maine,related,C-maine-state-officials,preferred,reviewed
 O-food-and-nutrition-service,broader,C-unfiled-recipients,preferred,local
 O-university-of-michigan,broader,C-unfiled-recipients,preferred,local
 U-realpage,broader,C-unfiled-recipients,preferred,local
@@ -32816,14 +32820,11 @@ U-richard-c-shelby-and-barbara-a-mikulski,broader,C-unfiled-recipients,candidate
 P-mr-secretary-general,broader,C-unfiled-person,candidate,rule: unreviewed
 U-embassy-of-switzerland,broader,C-unfiled-recipients,candidate,rule: unreviewed
 O-maryland-department-of-labor,broader,C-unfiled-organizations,candidate,rule: unreviewed
-P-governor-of-alabama,broader,C-unfiled-person,candidate,rule: unreviewed
 O-ohio-secretary-of-state,broader,C-unfiled-organizations,candidate,rule: unreviewed
 O-orange-county-health-care-agency,broader,C-unfiled-organizations,candidate,rule: unreviewed
 O-connecticut-public-utilities-regulatory-authority,broader,C-unfiled-organizations,candidate,rule: unreviewed
 O-national-institute-on-drug-abuse,broader,C-unfiled-organizations,candidate,rule: unreviewed
-P-governor-of-kansas,broader,C-unfiled-person,candidate,rule: unreviewed
 O-environmental-protection-agency-and-department-of-energy,broader,C-unfiled-organizations,candidate,rule: unreviewed
-P-governor-of-new-mexico,broader,C-unfiled-person,candidate,rule: unreviewed
 O-massachusetts-bay-transportation-authority,broader,C-unfiled-organizations,candidate,rule: unreviewed
 U-foreign-governments,broader,C-unfiled-recipients,candidate,rule: unreviewed
 U-congress-members,broader,C-unfiled-recipients,candidate,rule: unreviewed

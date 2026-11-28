@@ -2335,17 +2335,14 @@ U-richard-c-shelby-and-barbara-a-mikulski,Richard C. Shelby and Barbara A. Mikul
 P-mr-secretary-general,Mr. Secretary General,person,recipient,candidate,letters,,12,a recipient as the file names give it; not reviewed
 U-embassy-of-switzerland,Embassy of Switzerland,unclassified,recipient,candidate,letters,,12,a recipient as the file names give it; not reviewed
 O-maryland-department-of-labor,Maryland Department of Labor,organization,recipient,candidate,letters,,12,a recipient as the file names give it; not reviewed
-P-governor-of-alabama,Governor of Alabama,person,recipient,candidate,letters,,11,a recipient as the file names give it; not reviewed
 O-ohio-secretary-of-state,Ohio Secretary of State,organization,recipient,candidate,letters,,11,a recipient as the file names give it; not reviewed
 O-house-committee-on-homeland-security,House Committee on Homeland Security,organization,body,preferred,reviewed,,101,a recipient as the file names give it; not reviewed
 O-orange-county-health-care-agency,Orange County Health Care Agency,organization,recipient,candidate,letters,,8,a recipient as the file names give it; not reviewed
 O-connecticut-public-utilities-regulatory-authority,Connecticut Public Utilities Regulatory Authority,organization,recipient,candidate,letters,,7,a recipient as the file names give it; not reviewed
 O-national-institute-on-drug-abuse,National Institute on Drug Abuse,organization,recipient,candidate,letters,,7,a recipient as the file names give it; not reviewed
-P-governor-of-kansas,Governor of Kansas,person,recipient,candidate,letters,,7,a recipient as the file names give it; not reviewed
 O-environmental-protection-agency-and-department-of-energy,Environmental Protection Agency and Department of Energy,organization,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
 O-national-governors-association,National Governors Association,organization,body,preferred,reviewed,,42,a recipient as the file names give it; not reviewed
 O-house-committee-on-science-space-and-technology,"House Committee on Science, Space, and Technology",organization,body,preferred,reviewed,,7,a recipient as the file names give it; not reviewed
-P-governor-of-new-mexico,Governor of New Mexico,person,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
 O-massachusetts-bay-transportation-authority,Massachusetts Bay Transportation Authority,organization,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
 U-foreign-governments,Foreign governments,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
 U-congress-members,Congress Members,unclassified,recipient,candidate,letters,,6,a recipient as the file names give it; not reviewed
@@ -3634,6 +3631,9 @@ O-office-of-federal-procurement-policy,Office of Federal Procurement Policy,offi
 O-embassy-of-the-united-states-in-south-korea,Embassy of the United States in South Korea,office,body,preferred,reviewed,,2,
 O-snowflake,Snowflake,organization,body,preferred,reviewed,,1,
 O-broward-county-board-of-county-commissioners,Broward County Board of County Commissioners,office,body,preferred,reviewed,,1,
+O-governor-of-new-mexico,Governor of New Mexico,organization,body,preferred,reviewed,,15,
+O-governor-of-alabama,Governor of Alabama,organization,body,preferred,reviewed,,20,
+O-governor-of-kansas,Governor of Kansas,organization,body,preferred,reviewed,,13,
 O-house-committee-on-foreign-affairs,House Committee on Foreign Affairs,organization,government body,preferred,local,,109,
 O-senate-committee-on-rules-and-administration,Senate Committee on Rules and Administration,organization,government body,preferred,local,,27,
 O-senate-committee-on-small-business,Senate Committee on Small Business,organization,government body,preferred,local,,115,
@@ -6427,6 +6427,8 @@ O-inmotion-wireless,inMotion Wireless,organization,body,preferred,reviewed,,1,
 O-loandepot,loanDepot,organization,body,preferred,reviewed,,1,
 O-telesur,teleSUR,organization,body,preferred,reviewed,,2,
 O-stellantis,Stellantis,organization,body,preferred,reviewed,,0,
+O-department-of-government-efficiency,Department of Government Efficiency,organization,body,preferred,reviewed,,0,
+O-governor-of-maine,Governor of Maine,organization,body,preferred,reviewed,,0,
 C-congress-members,Congress Members,category,group,preferred,local,,0,
 C-senators,Senators,category,group,preferred,local,,0,
 C-representatives,Representatives,category,group,preferred,local,,0,
@@ -6496,7 +6498,6 @@ C-new-york-agencies-and-organizations,New York agencies and organizations,catego
 C-new-york-local-government-and-agencies,New York local government and agencies,category,group,preferred,local,,0,
 C-state-of-alabama,State of Alabama,category,group,preferred,local,,0,
 C-alabama-state-officials,Alabama state officials,category,group,preferred,local,,0,
-C-governor-of-alabama,Governor of Alabama,category,group,preferred,local,,0,
 C-state-of-alaska,State of Alaska,category,group,preferred,local,,0,
 C-alaska-state-officials,Alaska state officials,category,group,preferred,local,,0,
 C-state-of-arizona,State of Arizona,category,group,preferred,local,,0,
@@ -6519,7 +6520,6 @@ C-state-of-iowa,State of Iowa,category,group,preferred,local,,0,
 C-iowa-state-officials,Iowa state officials,category,group,preferred,local,,0,
 C-state-of-kansas,State of Kansas,category,group,preferred,local,,0,
 C-kansas-state-officials,Kansas state officials,category,group,preferred,local,,0,
-C-governor-of-kansas,Governor of Kansas,category,group,preferred,local,,0,
 C-state-of-louisiana,State of Louisiana,category,group,preferred,local,,0,
 C-louisiana-state-officials,Louisiana state officials,category,group,preferred,local,,0,
 C-state-of-maryland,State of Maryland,category,group,preferred,local,,0,
@@ -6597,7 +6597,6 @@ C-state-of-utah,State of Utah,category,group,preferred,local,,0,
 C-utah-state-officials,Utah state officials,category,group,preferred,local,,0,
 C-state-of-new-mexico,State of New Mexico,category,group,preferred,local,,0,
 C-new-mexico-state-officials,New Mexico state officials,category,group,preferred,local,,0,
-C-governor-of-new-mexico,Governor of New Mexico,category,group,preferred,local,,0,
 C-state-of-south-carolina,State of South Carolina,category,group,preferred,local,,0,
 C-south-carolina-state-officials,South Carolina state officials,category,group,preferred,local,,0,
 C-commonwealth-of-the-northern-mariana-islands,Commonwealth of the Northern Mariana Islands,category,group,preferred,local,,0,
@@ -6608,7 +6607,6 @@ C-television-networks-several,Television networks (several),category,group,prefe
 C-insight-health,Insight Health,category,group,preferred,local,,0,
 C-state-of-maine,State of Maine,category,group,preferred,local,,0,
 C-maine-state-officials,Maine state officials,category,group,preferred,local,,0,
-C-governor-of-maine,Governor of Maine,category,group,preferred,local,,0,
 C-oregon-agencies-and-organizations,Oregon agencies and organizations,category,group,preferred,local,,0,
 C-oregon-state-government-agencies,Oregon state government agencies,category,group,preferred,local,,0,
 C-michigan-agencies-and-organizations,Michigan agencies and organizations,category,group,preferred,local,,0,
@@ -7193,7 +7191,6 @@ C-california-institute-for-regenerative-medicine,California Institute for Regene
 C-embassy-of-cambodia,Embassy of Cambodia,category,group,preferred,local,,0,
 C-council-of-economic-advisers,Council of Economic Advisers,category,group,preferred,local,,0,
 C-defense-base-closure-and-realignment-commission,Defense Base Closure and Realignment Commission,category,group,preferred,local,,0,
-C-department-of-government-efficiency,Department of Government Efficiency,category,group,preferred,local,,0,
 C-michigan-department-of-transportation,Michigan Department of Transportation,category,group,preferred,local,,0,
 C-district-of-columbia-department-of-health,District of Columbia Department of Health,category,group,preferred,local,,0,
 C-covid-19-health-equity-task-force,COVID-19 Health Equity Task Force,category,group,preferred,local,,0,

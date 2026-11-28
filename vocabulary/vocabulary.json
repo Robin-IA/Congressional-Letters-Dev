@@ -163845,25 +163845,6 @@
    ]
   },
   {
-   "term_id": "P-governor-of-alabama",
-   "label": "Governor of Alabama",
-   "kind": "person",
-   "facet": "recipient",
-   "status": "candidate",
-   "source": "letters",
-   "uri": "",
-   "letters": 11,
-   "note": "a recipient as the file names give it; not reviewed",
-   "relations": [
-    {
-     "relation": "broader",
-     "value": "C-unfiled-person",
-     "status": "candidate",
-     "source": "rule: unreviewed"
-    }
-   ]
-  },
-  {
    "term_id": "O-ohio-secretary-of-state",
    "label": "Ohio Secretary of State",
    "kind": "organization",
@@ -163989,25 +163970,6 @@
    ]
   },
   {
-   "term_id": "P-governor-of-kansas",
-   "label": "Governor of Kansas",
-   "kind": "person",
-   "facet": "recipient",
-   "status": "candidate",
-   "source": "letters",
-   "uri": "",
-   "letters": 7,
-   "note": "a recipient as the file names give it; not reviewed",
-   "relations": [
-    {
-     "relation": "broader",
-     "value": "C-unfiled-person",
-     "status": "candidate",
-     "source": "rule: unreviewed"
-    }
-   ]
-  },
-  {
    "term_id": "O-environmental-protection-agency-and-department-of-energy",
    "label": "Environmental Protection Agency and Department of Energy",
    "kind": "organization",
@@ -164091,25 +164053,6 @@
      "value": "C-house-committees",
      "status": "preferred",
      "source": "local"
-    }
-   ]
-  },
-  {
-   "term_id": "P-governor-of-new-mexico",
-   "label": "Governor of New Mexico",
-   "kind": "person",
-   "facet": "recipient",
-   "status": "candidate",
-   "source": "letters",
-   "uri": "",
-   "letters": 6,
-   "note": "a recipient as the file names give it; not reviewed",
-   "relations": [
-    {
-     "relation": "broader",
-     "value": "C-unfiled-person",
-     "status": "candidate",
-     "source": "rule: unreviewed"
     }
    ]
   },
@@ -190836,6 +190779,12 @@
      "value": "C-executive-branch",
      "status": "preferred",
      "source": "local"
+    },
+    {
+     "relation": "related",
+     "value": "O-department-of-government-efficiency",
+     "status": "preferred",
+     "source": "reviewed"
     }
    ]
   },
@@ -198683,6 +198632,63 @@
     {
      "relation": "broader",
      "value": "C-florida-local-government-and-agencies",
+     "status": "preferred",
+     "source": "local"
+    }
+   ]
+  },
+  {
+   "term_id": "O-governor-of-new-mexico",
+   "label": "Governor of New Mexico",
+   "kind": "organization",
+   "facet": "body",
+   "status": "preferred",
+   "source": "reviewed",
+   "uri": "",
+   "letters": 15,
+   "note": "",
+   "relations": [
+    {
+     "relation": "broader",
+     "value": "C-new-mexico-state-officials",
+     "status": "preferred",
+     "source": "local"
+    }
+   ]
+  },
+  {
+   "term_id": "O-governor-of-alabama",
+   "label": "Governor of Alabama",
+   "kind": "organization",
+   "facet": "body",
+   "status": "preferred",
+   "source": "reviewed",
+   "uri": "",
+   "letters": 20,
+   "note": "",
+   "relations": [
+    {
+     "relation": "broader",
+     "value": "C-alabama-state-officials",
+     "status": "preferred",
+     "source": "local"
+    }
+   ]
+  },
+  {
+   "term_id": "O-governor-of-kansas",
+   "label": "Governor of Kansas",
+   "kind": "organization",
+   "facet": "body",
+   "status": "preferred",
+   "source": "reviewed",
+   "uri": "",
+   "letters": 13,
+   "note": "",
+   "relations": [
+    {
+     "relation": "broader",
+     "value": "C-kansas-state-officials",
      "status": "preferred",
      "source": "local"
     }
@@ -251918,6 +251924,56 @@
    ]
   },
   {
+   "term_id": "O-department-of-government-efficiency",
+   "label": "Department of Government Efficiency",
+   "kind": "organization",
+   "facet": "body",
+   "status": "preferred",
+   "source": "reviewed",
+   "uri": "",
+   "letters": 0,
+   "note": "",
+   "relations": [
+    {
+     "relation": "broader",
+     "value": "O-executive-office-of-the-president",
+     "status": "preferred",
+     "source": "local"
+    },
+    {
+     "relation": "related",
+     "value": "O-executive-office-of-the-president",
+     "status": "preferred",
+     "source": "reviewed"
+    }
+   ]
+  },
+  {
+   "term_id": "O-governor-of-maine",
+   "label": "Governor of Maine",
+   "kind": "organization",
+   "facet": "body",
+   "status": "preferred",
+   "source": "reviewed",
+   "uri": "",
+   "letters": 0,
+   "note": "",
+   "relations": [
+    {
+     "relation": "broader",
+     "value": "C-maine-state-officials",
+     "status": "preferred",
+     "source": "local"
+    },
+    {
+     "relation": "related",
+     "value": "C-maine-state-officials",
+     "status": "preferred",
+     "source": "reviewed"
+    }
+   ]
+  },
+  {
    "term_id": "C-congress-members",
    "label": "Congress Members",
    "kind": "category",
@@ -253165,25 +253221,6 @@
    ]
   },
   {
-   "term_id": "C-governor-of-alabama",
-   "label": "Governor of Alabama",
-   "kind": "category",
-   "facet": "group",
-   "status": "preferred",
-   "source": "local",
-   "uri": "",
-   "letters": 0,
-   "note": "",
-   "relations": [
-    {
-     "relation": "broader",
-     "value": "C-alabama-state-officials",
-     "status": "preferred",
-     "source": "local"
-    }
-   ]
-  },
-  {
    "term_id": "C-state-of-alaska",
    "label": "State of Alaska",
    "kind": "category",
@@ -253596,25 +253633,6 @@
     {
      "relation": "broader",
      "value": "C-state-of-kansas",
-     "status": "preferred",
-     "source": "local"
-    }
-   ]
-  },
-  {
-   "term_id": "C-governor-of-kansas",
-   "label": "Governor of Kansas",
-   "kind": "category",
-   "facet": "group",
-   "status": "preferred",
-   "source": "local",
-   "uri": "",
-   "letters": 0,
-   "note": "",
-   "relations": [
-    {
-     "relation": "broader",
-     "value": "C-kansas-state-officials",
      "status": "preferred",
      "source": "local"
     }
@@ -255096,25 +255114,6 @@
    ]
   },
   {
-   "term_id": "C-governor-of-new-mexico",
-   "label": "Governor of New Mexico",
-   "kind": "category",
-   "facet": "group",
-   "status": "preferred",
-   "source": "local",
-   "uri": "",
-   "letters": 0,
-   "note": "",
-   "relations": [
-    {
-     "relation": "broader",
-     "value": "C-new-mexico-state-officials",
-     "status": "preferred",
-     "source": "local"
-    }
-   ]
-  },
-  {
    "term_id": "C-state-of-south-carolina",
    "label": "State of South Carolina",
    "kind": "category",
@@ -255307,25 +255306,12 @@
      "value": "C-state-of-maine",
      "status": "preferred",
      "source": "local"
-    }
-   ]
-  },
-  {
-   "term_id": "C-governor-of-maine",
-   "label": "Governor of Maine",
-   "kind": "category",
-   "facet": "group",
-   "status": "preferred",
-   "source": "local",
-   "uri": "",
-   "letters": 0,
-   "note": "",
-   "relations": [
+    },
     {
-     "relation": "broader",
-     "value": "C-maine-state-officials",
+     "relation": "related",
+     "value": "O-governor-of-maine",
      "status": "preferred",
-     "source": "local"
+     "source": "reviewed"
     }
    ]
   },
@@ -266420,25 +266406,6 @@
     {
      "relation": "broader",
      "value": "C-independent-agencies-and-commissions",
-     "status": "preferred",
-     "source": "local"
-    }
-   ]
-  },
-  {
-   "term_id": "C-department-of-government-efficiency",
-   "label": "Department of Government Efficiency",
-   "kind": "category",
-   "facet": "group",
-   "status": "preferred",
-   "source": "local",
-   "uri": "",
-   "letters": 0,
-   "note": "",
-   "relations": [
-    {
-     "relation": "broader",
-     "value": "O-executive-office-of-the-president",
      "status": "preferred",
      "source": "local"
     }
@@ -351073,6 +351040,16 @@
        "kind": "member"
       },
       {
+       "id": "M-M001226",
+       "label": "Robert Menendez",
+       "kind": "member",
+       "names": [
+        "Menendez And Booker"
+       ],
+       "to": 1,
+       "letters": 30
+      },
+      {
        "id": "M-M000639",
        "label": "Robert Menendez",
        "kind": "member",
@@ -351087,16 +351064,6 @@
        ],
        "to": 14,
        "letters": 855
-      },
-      {
-       "id": "M-M001226",
-       "label": "Robert Menendez",
-       "kind": "member",
-       "names": [
-        "Menendez And Booker"
-       ],
-       "to": 1,
-       "letters": 30
       },
       {
        "id": "M-M001188",
@@ -352970,6 +352937,16 @@
        "letters": 68
       },
       {
+       "id": "M-R000572",
+       "label": "Mike Rogers",
+       "kind": "member",
+       "names": [
+        "Harry Reid, Mitch McConnell, John A. Boehner, Nancy Pelosi, Patrick J. Leahy, Chuck Grassley, Bob Goodlatte, John Conyers, Jr., Dianne Feinstein, Saxby Chambliss, Mike Rogers and C. A. Dutch Ruppersberger"
+       ],
+       "to": 1,
+       "letters": 1
+      },
+      {
        "id": "M-R000575",
        "label": "Mike Rogers",
        "kind": "member",
@@ -352985,16 +352962,6 @@
        ],
        "to": 24,
        "letters": 32
-      },
-      {
-       "id": "M-R000572",
-       "label": "Mike Rogers",
-       "kind": "member",
-       "names": [
-        "Harry Reid, Mitch McConnell, John A. Boehner, Nancy Pelosi, Patrick J. Leahy, Chuck Grassley, Bob Goodlatte, John Conyers, Jr., Dianne Feinstein, Saxby Chambliss, Mike Rogers and C. A. Dutch Ruppersberger"
-       ],
-       "to": 1,
-       "letters": 1
       },
       {
        "id": "M-R000409",
@@ -361625,6 +361592,12 @@
      "tag": "Executive Office of the President",
      "filed": true,
      "letters": 894,
+     "see": [
+      {
+       "id": "O-department-of-government-efficiency",
+       "label": "Department of Government Efficiency"
+      }
+     ],
      "children": [
       {
        "id": "O-the-administration",
@@ -361695,9 +361668,18 @@
        "kind": "category"
       },
       {
-       "id": "C-department-of-government-efficiency",
+       "id": "O-department-of-government-efficiency",
        "label": "Department of Government Efficiency",
-       "kind": "category"
+       "kind": "organization",
+       "names": [
+        "Department of Government Efficiency"
+       ],
+       "see": [
+        {
+         "id": "O-executive-office-of-the-president",
+         "label": "Executive Office of the President"
+        }
+       ]
       },
       {
        "id": "C-deputy-assistant-to-the-president-for-health-policy",
@@ -372928,9 +372910,15 @@
          "letters": 3
         },
         {
-         "id": "C-governor-of-alabama",
+         "id": "O-governor-of-alabama",
          "label": "Governor of Alabama",
-         "kind": "category"
+         "kind": "organization",
+         "names": [
+          "Governor of Alabama"
+         ],
+         "tag": "Governor of Alabama",
+         "filed": true,
+         "letters": 20
         }
        ]
       },
@@ -379357,9 +379345,15 @@
        "kind": "category",
        "children": [
         {
-         "id": "C-governor-of-kansas",
+         "id": "O-governor-of-kansas",
          "label": "Governor of Kansas",
-         "kind": "category"
+         "kind": "organization",
+         "names": [
+          "Governor of Kansas"
+         ],
+         "tag": "Governor of Kansas",
+         "filed": true,
+         "letters": 13
         },
         {
          "id": "O-kansas-attorney-general",
@@ -380010,11 +380004,26 @@
        "id": "C-maine-state-officials",
        "label": "Maine state officials",
        "kind": "category",
+       "see": [
+        {
+         "id": "O-governor-of-maine",
+         "label": "Governor of Maine"
+        }
+       ],
        "children": [
         {
-         "id": "C-governor-of-maine",
+         "id": "O-governor-of-maine",
          "label": "Governor of Maine",
-         "kind": "category"
+         "kind": "organization",
+         "names": [
+          "Governor of Maine"
+         ],
+         "see": [
+          {
+           "id": "C-maine-state-officials",
+           "label": "Maine state officials"
+          }
+         ]
         }
        ]
       }
@@ -383941,9 +383950,15 @@
          "letters": 1
         },
         {
-         "id": "C-governor-of-new-mexico",
+         "id": "O-governor-of-new-mexico",
          "label": "Governor of New Mexico",
-         "kind": "category"
+         "kind": "organization",
+         "names": [
+          "Governor of New Mexico"
+         ],
+         "tag": "Governor of New Mexico",
+         "filed": true,
+         "letters": 15
         },
         {
          "id": "O-new-mexico-attorney-general",
@@ -413778,17 +413793,6 @@
        "letters": 3
       },
       {
-       "id": "O-citgo",
-       "label": "CITGO",
-       "kind": "organization",
-       "names": [
-        "CITGO"
-       ],
-       "tag": "CITGO",
-       "filed": true,
-       "letters": 1
-      },
-      {
        "id": "O-citgo-2",
        "label": "Citgo",
        "kind": "organization",
@@ -413798,6 +413802,17 @@
        "tag": "Citgo",
        "filed": true,
        "letters": 2
+      },
+      {
+       "id": "O-citgo",
+       "label": "CITGO",
+       "kind": "organization",
+       "names": [
+        "CITGO"
+       ],
+       "tag": "CITGO",
+       "filed": true,
+       "letters": 1
       },
       {
        "id": "O-city-of-barnesville-municipal-telephone",
@@ -417593,17 +417608,6 @@
        "letters": 76
       },
       {
-       "id": "O-genesis-healthcare",
-       "label": "Genesis HealthCare",
-       "kind": "organization",
-       "names": [
-        "Genesis HealthCare"
-       ],
-       "tag": "Genesis HealthCare",
-       "filed": true,
-       "letters": 2
-      },
-      {
        "id": "O-genesis-healthcare-2",
        "label": "Genesis Healthcare",
        "kind": "organization",
@@ -417611,6 +417615,17 @@
         "Genesis Healthcare"
        ],
        "tag": "Genesis Healthcare",
+       "filed": true,
+       "letters": 2
+      },
+      {
+       "id": "O-genesis-healthcare",
+       "label": "Genesis HealthCare",
+       "kind": "organization",
+       "names": [
+        "Genesis HealthCare"
+       ],
+       "tag": "Genesis HealthCare",
        "filed": true,
        "letters": 2
       },
@@ -439905,36 +439920,6 @@
        ],
        "status": "candidate",
        "letters": 1
-      },
-      {
-       "id": "P-governor-of-alabama",
-       "label": "Governor of Alabama",
-       "kind": "person",
-       "names": [
-        "Governor of Alabama"
-       ],
-       "status": "candidate",
-       "letters": 11
-      },
-      {
-       "id": "P-governor-of-kansas",
-       "label": "Governor of Kansas",
-       "kind": "person",
-       "names": [
-        "Governor of Kansas"
-       ],
-       "status": "candidate",
-       "letters": 7
-      },
-      {
-       "id": "P-governor-of-new-mexico",
-       "label": "Governor of New Mexico",
-       "kind": "person",
-       "names": [
-        "Governor of New Mexico"
-       ],
-       "status": "candidate",
-       "letters": 6
       },
       {
        "id": "P-mr-bahri",
